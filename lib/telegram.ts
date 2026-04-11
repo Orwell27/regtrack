@@ -8,19 +8,23 @@ export async function sendMessage(
   const token = process.env.TELEGRAM_BOT_TOKEN
   if (!token) throw new Error('TELEGRAM_BOT_TOKEN no configurado')
 
-  const res = await fetch(`${BASE}/bot${token}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: chatId,
-      text,
-      parse_mode: parseMode,
-    }),
-  })
+  try {
+    const res = await fetch(`${BASE}/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text,
+        parse_mode: parseMode,
+      }),
+    })
 
-  if (!res.ok) {
-    const body = await res.text()
-    console.error(`Telegram sendMessage error ${res.status}: ${body}`)
+    if (!res.ok) {
+      const body = await res.text()
+      console.error(`Telegram sendMessage error ${res.status}: ${body}`)
+    }
+  } catch (err) {
+    console.error(`Telegram fetch failed: ${err instanceof Error ? err.message : String(err)}`)
   }
 }
 
