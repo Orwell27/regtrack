@@ -28,6 +28,7 @@ export interface Alerta {
   plazo_adaptacion: number | null
   tipo_norma: TipoNorma | null
   urgencia: Urgencia | null
+  /** Puntuación de relevancia 1-10. Calculado: alcance (1-3) + perfiles (1-3) + urgencia del plazo (1-4) */
   score_relevancia: number | null
   resumen: string | null
   impacto: string | null
@@ -61,7 +62,7 @@ export interface Entrega {
   id: string
   alerta_id: string
   usuario_id: string
-  enviada_at: string
+  enviada_at: string | null
 }
 
 export interface Keyword {
@@ -70,6 +71,15 @@ export interface Keyword {
   peso: Peso
   apariciones: number
   entidades: string[]
+  updated_at: string
+}
+
+export interface Entidad {
+  id: string
+  nombre: string
+  tipo: string | null
+  descripcion: string | null
+  relevancia: number
   updated_at: string
 }
 
@@ -83,10 +93,19 @@ export function createServerClient() {
   return createClient(url, key)
 }
 
-// Para Next.js server components y API routes
+// Para Next.js server components y API routes (usa service_role — acceso total, sin cookies)
+// Nota: @supabase/ssr se usa en middleware.ts para auth basada en cookies
 export function createNextServerClient() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
   const key = process.env.SUPABASE_SERVICE_KEY
-  if (!url || !key) throw new Error('Variables de Supabase no configuradas')
+  if (!url || !key) throw new Error('NEXT_PUBLIC_SUPABASE_URL y SUPABASE_SERVICE_KEY son requeridos')
+  return createClient(url, key)
+}
+
+// Para componentes del browser (usa anon key con RLS)
+export function createBrowserClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  if (!url || !key) throw new Error('NEXT_PUBLIC_SUPABASE_URL y NEXT_PUBLIC_SUPABASE_ANON_KEY son requeridos')
   return createClient(url, key)
 }
