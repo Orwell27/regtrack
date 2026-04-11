@@ -1,0 +1,92 @@
+import { createClient } from '@supabase/supabase-js'
+
+// ─── Tipos de dominio ───────────────────────────────────────────────────────
+
+export type Fuente = 'BOE' | 'BOCM' | 'DOGC'
+export type Ambito = 'estatal' | 'ccaa' | 'municipal'
+export type Subtema =
+  | 'urbanismo' | 'fiscalidad' | 'arrendamiento' | 'hipotecas'
+  | 'obra_nueva' | 'construccion' | 'suelo' | 'rehabilitacion'
+  | 'vivienda_protegida' | 'registro_notaria' | 'comunidades_propietarios' | 'otro'
+export type Urgencia = 'alta' | 'media' | 'baja'
+export type TipoNorma =
+  | 'Ley Orgánica' | 'Ley' | 'Real Decreto-ley' | 'Real Decreto'
+  | 'Orden Ministerial' | 'Resolución' | 'Circular' | 'Anuncio'
+export type EstadoAlerta = 'pendiente_revision' | 'aprobada' | 'descartada' | 'enviada'
+export type Plan = 'free' | 'pro'
+export type Peso = 'emergente' | 'recurrente' | 'establecida'
+
+export interface Alerta {
+  id: string
+  url: string
+  titulo: string
+  fuente: Fuente
+  ambito: Ambito | null
+  subtema: Subtema | null
+  fecha_publicacion: string | null
+  fecha_entrada_vigor: string | null
+  plazo_adaptacion: number | null
+  tipo_norma: TipoNorma | null
+  urgencia: Urgencia | null
+  score_relevancia: number | null
+  resumen: string | null
+  impacto: string | null
+  afectados: string[]
+  territorios: string[]
+  deroga_modifica: string | null
+  accion_recomendada: string | null
+  texto_alerta: string | null
+  texto_alerta_pro: string | null
+  estado: EstadoAlerta
+  no_procesable: boolean
+  created_at: string
+}
+
+export interface Usuario {
+  id: string
+  email: string
+  nombre: string
+  telegram_id: string | null
+  territorios: string[]
+  subtemas: string[]
+  afectado_como: string[]
+  urgencia_minima: Urgencia
+  score_minimo: number
+  plan: Plan
+  activo: boolean
+  created_at: string
+}
+
+export interface Entrega {
+  id: string
+  alerta_id: string
+  usuario_id: string
+  enviada_at: string
+}
+
+export interface Keyword {
+  id: string
+  keyword: string
+  peso: Peso
+  apariciones: number
+  entidades: string[]
+  updated_at: string
+}
+
+// ─── Clientes ───────────────────────────────────────────────────────────────
+
+// Para scripts de servidor y GitHub Actions (usa service_role — acceso total)
+export function createServerClient() {
+  const url = process.env.SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_KEY
+  if (!url || !key) throw new Error('SUPABASE_URL y SUPABASE_SERVICE_KEY son requeridos')
+  return createClient(url, key)
+}
+
+// Para Next.js server components y API routes
+export function createNextServerClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_KEY
+  if (!url || !key) throw new Error('Variables de Supabase no configuradas')
+  return createClient(url, key)
+}
