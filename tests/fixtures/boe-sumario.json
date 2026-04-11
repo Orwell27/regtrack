@@ -1,0 +1,42 @@
+{
+  "data": {
+    "sumario": {
+      "diario": [{
+        "seccion": [
+          {
+            "num": "1",
+            "nombre": "I. Disposiciones generales",
+            "departamento": [{
+              "nombre": "MINISTERIO DE VIVIENDA",
+              "epigrafe": [{
+                "nombre": "Arrendamientos",
+                "item": [{
+                  "id": "BOE-A-2026-1234",
+                  "titulo": "Real Decreto 123/2026 sobre actualización de renta en contratos de arrendamiento",
+                  "url_html": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1234",
+                  "url_pdf": "https://www.boe.es/boe/dias/2026/04/11/pdfs/BOE-A-2026-1234.pdf"
+                }]
+              }]
+            }]
+          },
+          {
+            "num": "5",
+            "nombre": "V. Anuncios",
+            "departamento": [{
+              "nombre": "OTROS",
+              "epigrafe": [{
+                "nombre": "Varios",
+                "item": [{
+                  "id": "BOE-A-2026-9999",
+                  "titulo": "Anuncio sin interés inmobiliario",
+                  "url_html": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9999",
+                  "url_pdf": ""
+                }]
+              }]
+            }]
+          }
+        ]
+      }]
+    }
+  }
+}
