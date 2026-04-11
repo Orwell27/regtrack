@@ -52,4 +52,18 @@ describe('buildAlertText', () => {
     const { free } = buildAlertText(alertaBaja)
     expect(free).toContain('🟢')
   })
+
+  it('no produce "null" en el texto cuando los campos son null', () => {
+    const alertaConNulos = {
+      ...mockAlerta,
+      resumen: null,
+      impacto: null,
+      accion_recomendada: null,
+      tipo_norma: null,
+      subtema: null,
+    } as Alerta
+    const { free, pro } = buildAlertText(alertaConNulos)
+    expect(free).not.toContain('null')
+    expect(pro).not.toContain('null')
+  })
 })
