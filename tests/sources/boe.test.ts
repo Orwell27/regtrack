@@ -20,6 +20,34 @@ describe('parseBOESumario', () => {
     const emptyFixture = { data: { sumario: { diario: [{ seccion: [] }] } } }
     expect(parseBOESumario(emptyFixture)).toEqual([])
   })
+
+  it('omite items sin url_html', () => {
+    const fixtureWithMissingUrl = {
+      data: {
+        sumario: {
+          diario: [{
+            seccion: [{
+              num: '1',
+              nombre: 'I. Disposiciones generales',
+              departamento: [{
+                nombre: 'TEST',
+                epigrafe: [{
+                  nombre: 'Test',
+                  item: [
+                    { id: 'BOE-A-2026-GOOD', titulo: 'Con URL', url_html: 'https://boe.es/1', url_pdf: '' },
+                    { id: 'BOE-A-2026-BAD', titulo: 'Sin URL', url_html: '', url_pdf: '' },
+                  ]
+                }]
+              }]
+            }]
+          }]
+        }
+      }
+    }
+    const items = parseBOESumario(fixtureWithMissingUrl)
+    expect(items).toHaveLength(1)
+    expect(items[0].id).toBe('BOE-A-2026-GOOD')
+  })
 })
 
 describe('RELEVANT_SECTIONS', () => {
