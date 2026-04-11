@@ -24,14 +24,13 @@ export async function classifyDocument(
   titulo: string,
   texto: string
 ): Promise<ClassifyResult> {
-  const systemPrompt = loadPrompt('regtrack-clasificador.md')
-  const userContent = `Título: ${titulo}\n\nTexto:\n${texto.slice(0, 3000)}`
-
   try {
+    const systemPrompt = loadPrompt('regtrack-clasificador.md')
+    const userContent = `Título: ${titulo}\n\nTexto:\n${texto.slice(0, 3000)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
-      max_tokens: 256,
+      max_tokens: 384,
       system: systemPrompt,
       messages: [{ role: 'user', content: userContent }],
     })
@@ -66,10 +65,9 @@ export async function analyzeImpact(
   texto: string,
   fuente: string
 ): Promise<ImpactResult | null> {
-  const systemPrompt = loadPrompt('regtrack-impacto.md')
-  const userContent = `Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto completo:\n${texto.slice(0, 8000)}`
-
   try {
+    const systemPrompt = loadPrompt('regtrack-impacto.md')
+    const userContent = `Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto completo:\n${texto.slice(0, 8000)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',

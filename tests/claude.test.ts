@@ -14,10 +14,6 @@ vi.mock('@anthropic-ai/sdk', () => {
 
 import Anthropic from '@anthropic-ai/sdk'
 
-function getMockCreate() {
-  return (Anthropic as any).mock.results[0]?.value?.messages?.create
-}
-
 describe('classifyDocument', () => {
   beforeEach(() => {
     vi.clearAllMocks()
