@@ -3,8 +3,9 @@ import { createNextServerClient } from '@/lib/supabase'
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params
   const { accion } = await request.json() as { accion: 'aprobar' | 'descartar' }
   if (!['aprobar', 'descartar'].includes(accion)) {
     return NextResponse.json({ error: 'Acción inválida' }, { status: 400 })
@@ -16,7 +17,7 @@ export async function POST(
   const { error } = await db
     .from('alertas')
     .update({ estado: nuevoEstado })
-    .eq('id', params.id)
+    .eq('id', id)
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 })

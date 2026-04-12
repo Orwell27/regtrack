@@ -3,8 +3,9 @@ import { createNextServerClient } from '@/lib/supabase'
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params
   const body = await request.json()
   const db = createNextServerClient()
 
@@ -16,7 +17,7 @@ export async function POST(
     return NextResponse.json({ error: 'Nada que actualizar' }, { status: 400 })
   }
 
-  const { error } = await db.from('usuarios').update(allowed).eq('id', params.id)
+  const { error } = await db.from('usuarios').update(allowed).eq('id', id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
 
   return NextResponse.json({ ok: true })
