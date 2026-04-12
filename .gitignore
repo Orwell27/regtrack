@@ -42,3 +42,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# git worktrees
+.worktrees/
+
+# superpowers brainstorm sessions
+.superpowers/

@@ -43,6 +43,8 @@ export interface Alerta {
   created_at: string
 }
 
+export type Rol = 'admin' | 'subscriber'
+
 export interface Usuario {
   id: string
   email: string
@@ -55,6 +57,9 @@ export interface Usuario {
   score_minimo: number
   plan: Plan
   activo: boolean
+  rol: Rol
+  auth_id: string | null
+  preferencias: Record<string, unknown>
   created_at: string
 }
 

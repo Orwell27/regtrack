@@ -1,17 +1,25 @@
 import { NextResponse, type NextRequest } from 'next/server'
 
-const PROTECTED_ROUTES = ['/dashboard', '/editorial', '/usuarios', '/config']
+const ADMIN_ROUTES = ['/admin']
+const SUBSCRIBER_ROUTES = ['/alertas', '/alerta', '/cuenta']
+const PUBLIC_ROUTES = ['/login', '/registro']
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  const isProtected = PROTECTED_ROUTES.some(route => pathname.startsWith(route))
+  if (PUBLIC_ROUTES.some(r => pathname.startsWith(r))) {
+    return NextResponse.next()
+  }
+
+  const isProtected =
+    ADMIN_ROUTES.some(r => pathname.startsWith(r)) ||
+    SUBSCRIBER_ROUTES.some(r => pathname.startsWith(r))
+
   if (!isProtected) return NextResponse.next()
 
-  // Supabase stores the session in a cookie named sb-<project-ref>-auth-token
   const cookies = request.cookies.getAll()
-  const hasAuthCookie = cookies.some(c =>
-    c.name.includes('-auth-token') && c.value.length > 0
+  const hasAuthCookie = cookies.some(
+    c => c.name.includes('-auth-token') && c.value.length > 0
   )
 
   if (!hasAuthCookie) {
@@ -22,5 +30,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/editorial/:path*', '/usuarios/:path*', '/config/:path*'],
+  matcher: ['/admin/:path*', '/alertas/:path*', '/alerta/:path*', '/cuenta/:path*'],
 }

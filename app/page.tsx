@@ -1,7 +1,12 @@
-export default function HomePage() {
-  return (
-    <main className="min-h-screen flex items-center justify-center">
-      <p className="text-gray-500">RegTrack</p>
-    </main>
-  )
+import { redirect } from 'next/navigation'
+import { getAuthUser } from '@/lib/auth'
+
+export const dynamic = 'force-dynamic'
+
+export default async function HomePage() {
+  const user = await getAuthUser()
+
+  if (!user) redirect('/login')
+  if (user.rol === 'admin') redirect('/admin/dashboard')
+  redirect('/alertas')
 }
