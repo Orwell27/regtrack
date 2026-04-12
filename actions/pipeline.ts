@@ -2,6 +2,7 @@ import { createServerClient } from '@/lib/supabase'
 import { fetchBOE } from '@/lib/sources/boe'
 import { fetchBOCM } from '@/lib/sources/bocm'
 import { fetchDOGC } from '@/lib/sources/dogc'
+import { fetchBORM } from '@/lib/sources/borm'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
 import { notifyEditorial } from '@/lib/telegram'
@@ -13,13 +14,14 @@ async function run() {
   console.log('[pipeline] Iniciando ingestión...')
 
   // 1. Obtener items de todas las fuentes en paralelo
-  const [boeItems, bocmItems, dogcItems] = await Promise.all([
+  const [boeItems, bocmItems, dogcItems, bormItems] = await Promise.all([
     fetchBOE(),
     fetchBOCM(),
     fetchDOGC(),
+    fetchBORM(),
   ])
-  const allItems: NormalizedItem[] = [...boeItems, ...bocmItems, ...dogcItems]
-  console.log(`[pipeline] Total items: ${allItems.length} (BOE: ${boeItems.length}, BOCM: ${bocmItems.length}, DOGC: ${dogcItems.length})`)
+  const allItems: NormalizedItem[] = [...boeItems, ...bocmItems, ...dogcItems, ...bormItems]
+  console.log(`[pipeline] Total items: ${allItems.length} (BOE: ${boeItems.length}, BOCM: ${bocmItems.length}, DOGC: ${dogcItems.length}, BORM: ${bormItems.length})`)
 
   // 2. Deduplicar: filtrar URLs ya procesadas
   const urls = allItems.map(i => i.url)

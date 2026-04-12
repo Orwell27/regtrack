@@ -4,7 +4,7 @@ export interface NormalizedItem {
   id: string
   titulo: string
   url: string
-  fuente: 'BOE' | 'BOCM' | 'DOGC'
+  fuente: 'BOE' | 'BOCM' | 'DOGC' | 'BORM'
   texto?: string
 }
 

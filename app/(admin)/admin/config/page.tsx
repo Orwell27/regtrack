@@ -8,8 +8,8 @@ type Config = {
   fuentes_activas: string[]
 }
 
-const TERRITORIOS_OPCIONES = ['nacional', 'madrid', 'cataluña', 'valencia', 'andalucia', 'pais-vasco', 'galicia']
-const FUENTES_OPCIONES = ['BOE', 'BOCM', 'DOGC']
+const TERRITORIOS_OPCIONES = ['nacional', 'madrid', 'cataluña', 'valencia', 'andalucia', 'pais-vasco', 'galicia', 'murcia']
+const FUENTES_OPCIONES = ['BOE', 'BOCM', 'DOGC', 'BORM']
 
 export default function ConfigPage() {
   const [config, setConfig] = useState<Config>({
