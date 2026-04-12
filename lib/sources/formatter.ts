@@ -1,12 +1,26 @@
 import type { Alerta } from '@/lib/supabase'
 
+export type AlertaFormatInput = Pick<Alerta,
+  | 'titulo'
+  | 'fuente'
+  | 'urgencia'
+  | 'territorios'
+  | 'score_relevancia'
+  | 'resumen'
+  | 'impacto'
+  | 'subtema'
+  | 'fecha_entrada_vigor'
+  | 'tipo_norma'
+  | 'accion_recomendada'
+>
+
 const URGENCIA_EMOJI: Record<string, string> = {
   alta: '🔴',
   media: '🟡',
   baja: '🟢',
 }
 
-export function buildAlertText(alerta: Alerta): { free: string; pro: string } {
+export function buildAlertText(alerta: AlertaFormatInput): { free: string; pro: string } {
   const emoji = URGENCIA_EMOJI[alerta.urgencia ?? 'baja'] ?? '⚪'
   const territorios = alerta.territorios?.join(', ') || 'España'
   const score = alerta.score_relevancia ?? 0
