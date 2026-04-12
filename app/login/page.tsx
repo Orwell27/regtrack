@@ -14,15 +14,25 @@ export default function LoginPage() {
   const router = useRouter()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [error, setError] = useState('')
+  const [errorMsg, setErrorMsg] = useState('')
+  const [loading, setLoading] = useState(false)
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault()
-    const { error } = await getSupabase().auth.signInWithPassword({ email, password })
-    if (error) {
-      setError('Email o contraseña incorrectos')
-    } else {
-      router.push('/editorial')
+    setLoading(true)
+    setErrorMsg('')
+    try {
+      const { error } = await getSupabase().auth.signInWithPassword({ email, password })
+      if (error) {
+        setErrorMsg(error.message)
+      } else {
+        router.push('/editorial')
+        router.refresh()
+      }
+    } catch (err) {
+      setErrorMsg(String(err))
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -30,7 +40,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <form onSubmit={handleLogin} className="bg-white p-8 rounded shadow-md w-full max-w-sm space-y-4">
         <h1 className="text-xl font-bold">RegTrack — Admin</h1>
-        {error && <p className="text-red-500 text-sm">{error}</p>}
+        {errorMsg && <p className="text-red-500 text-sm bg-red-50 p-2 rounded">{errorMsg}</p>}
         <input
           type="email"
           placeholder="Email"
@@ -47,8 +57,12 @@ export default function LoginPage() {
           className="w-full border rounded p-2"
           required
         />
-        <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-          Entrar
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-50"
+        >
+          {loading ? 'Entrando...' : 'Entrar'}
         </button>
       </form>
     </div>
