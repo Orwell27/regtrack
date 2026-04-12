@@ -2,10 +2,12 @@
 import { useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
+function getSupabase() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
+}
 
 const TERRITORIOS = ['Madrid', 'Cataluña', 'Valencia', 'Andalucía', 'Nacional']
 const SUBTEMAS = ['urbanismo', 'fiscalidad', 'arrendamiento', 'hipotecas', 'obra_nueva', 'construccion', 'rehabilitacion']
@@ -22,6 +24,8 @@ export default function RegistroPage() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setStatus('loading')
+
+    const supabase = getSupabase()
 
     // 1. Crear cuenta en Supabase Auth
     const { data: authData, error: authError } = await supabase.auth.signUp({
