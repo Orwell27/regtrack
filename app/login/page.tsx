@@ -26,7 +26,7 @@ export default function LoginPage() {
       if (error) {
         setErrorMsg(error.message)
       } else {
-        router.push('/editorial')
+        router.push('/')
         router.refresh()
       }
     } catch (err) {
