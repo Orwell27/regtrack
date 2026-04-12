@@ -1,5 +1,7 @@
 import { createNextServerClient } from '@/lib/supabase'
 
+export const dynamic = 'force-dynamic'
+
 export default async function ConfigPage() {
   const db = createNextServerClient()
   const [{ data: keywords }, { data: entidades }] = await Promise.all([

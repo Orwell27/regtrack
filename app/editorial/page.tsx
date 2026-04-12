@@ -1,6 +1,8 @@
 import { createNextServerClient } from '@/lib/supabase'
 import AlertaCard from './AlertaCard'
 
+export const dynamic = 'force-dynamic'
+
 export default async function EditorialPage() {
   const db = createNextServerClient()
   const { data: alertas } = await db

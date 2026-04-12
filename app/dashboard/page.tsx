@@ -1,5 +1,7 @@
 import { createNextServerClient } from '@/lib/supabase'
 
+export const dynamic = 'force-dynamic'
+
 async function getStats() {
   const db = createNextServerClient()
   const today = new Date().toISOString().slice(0, 10)

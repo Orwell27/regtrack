@@ -1,6 +1,8 @@
 import { createNextServerClient } from '@/lib/supabase'
 import UsuarioRow from './UsuarioRow'
 
+export const dynamic = 'force-dynamic'
+
 export default async function UsuariosPage() {
   const db = createNextServerClient()
   const { data: usuarios } = await db
