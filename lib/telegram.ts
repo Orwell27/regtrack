@@ -44,3 +44,25 @@ export async function notifyEditorial(titulo: string, score: number, alertaId: s
 
   await sendMessage(chatId, text)
 }
+
+export async function notifyUsers(recipients: { telegramId: string; texto: string }[]) {
+  const token = process.env.TELEGRAM_BOT_TOKEN
+  if (!token) throw new Error('TELEGRAM_BOT_TOKEN no configurado')
+
+  const results = await Promise.allSettled(
+    recipients.map(({ telegramId, texto }) =>
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: telegramId,
+          text: texto,
+          parse_mode: 'HTML',
+        }),
+      })
+    )
+  )
+
+  const failed = results.filter(r => r.status === 'rejected').length
+  if (failed > 0) console.warn(`[telegram] ${failed}/${recipients.length} envíos fallaron`)
+}
