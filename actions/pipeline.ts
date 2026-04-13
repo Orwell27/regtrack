@@ -3,6 +3,14 @@ import { fetchBOE } from '@/lib/sources/boe'
 import { fetchBOCM } from '@/lib/sources/bocm'
 import { fetchDOGC } from '@/lib/sources/dogc'
 import { fetchBORM } from '@/lib/sources/borm'
+import { fetchBOJA } from '@/lib/sources/boja'
+import { fetchBOIB } from '@/lib/sources/boib'
+import { fetchBOC_CANARIAS } from '@/lib/sources/boc_canarias'
+import { fetchBOC_CANTABRIA } from '@/lib/sources/boc_cantabria'
+import { fetchBOCYL } from '@/lib/sources/bocyl'
+import { fetchDOE } from '@/lib/sources/doe'
+import { fetchDOG } from '@/lib/sources/dog'
+import { fetchBOPV } from '@/lib/sources/bopv'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
 import { notifyEditorial } from '@/lib/telegram'
@@ -14,14 +22,26 @@ async function run() {
   console.log('[pipeline] Iniciando ingestión...')
 
   // 1. Obtener items de todas las fuentes en paralelo
-  const [boeItems, bocmItems, dogcItems, bormItems] = await Promise.all([
-    fetchBOE(),
-    fetchBOCM(),
-    fetchDOGC(),
-    fetchBORM(),
+  const [
+    boeItems, bocmItems, dogcItems, bormItems,
+    bojaItems, boibItems, bocCanItems, bocCbItems,
+    bocylItems, doeItems, dogItems, bopvItems,
+  ] = await Promise.all([
+    fetchBOE(), fetchBOCM(), fetchDOGC(), fetchBORM(),
+    fetchBOJA(), fetchBOIB(), fetchBOC_CANARIAS(), fetchBOC_CANTABRIA(),
+    fetchBOCYL(), fetchDOE(), fetchDOG(), fetchBOPV(),
   ])
-  const allItems: NormalizedItem[] = [...boeItems, ...bocmItems, ...dogcItems, ...bormItems]
-  console.log(`[pipeline] Total items: ${allItems.length} (BOE: ${boeItems.length}, BOCM: ${bocmItems.length}, DOGC: ${dogcItems.length}, BORM: ${bormItems.length})`)
+  const allItems: NormalizedItem[] = [
+    ...boeItems, ...bocmItems, ...dogcItems, ...bormItems,
+    ...bojaItems, ...boibItems, ...bocCanItems, ...bocCbItems,
+    ...bocylItems, ...doeItems, ...dogItems, ...bopvItems,
+  ]
+  console.log(
+    `[pipeline] Total items: ${allItems.length}`,
+    `(BOE:${boeItems.length} BOCM:${bocmItems.length} DOGC:${dogcItems.length} BORM:${bormItems.length}`,
+    `BOJA:${bojaItems.length} BOIB:${boibItems.length} BOC-CN:${bocCanItems.length} BOC-CB:${bocCbItems.length}`,
+    `BOCYL:${bocylItems.length} DOE:${doeItems.length} DOG:${dogItems.length} BOPV:${bopvItems.length})`
+  )
 
   // 2. Deduplicar: filtrar URLs ya procesadas
   const urls = allItems.map(i => i.url)
