@@ -55,7 +55,9 @@ function buildDateRange(fromDate: Date, toDate: Date): string[] {
 
 async function fetchBOEForDate(dateStr: string): Promise<NormalizedItem[]> {
   try {
-    const res = await fetch(`https://www.boe.es/datosabiertos/api/boe/sumario/${dateStr}`)
+    const res = await fetch(`https://www.boe.es/datosabiertos/api/boe/sumario/${dateStr}`, {
+      headers: { Accept: 'application/json' },
+    })
     if (!res.ok) {
       if (res.status === 404) return [] // día sin publicación (festivo, etc.)
       console.error(`[backfill] BOE ${dateStr} error: ${res.status}`)

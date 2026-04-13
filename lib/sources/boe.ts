@@ -13,18 +13,32 @@ export function parseBOESumario(data: any): NormalizedItem[] {
   const secciones = data?.data?.sumario?.diario?.[0]?.seccion ?? []
 
   for (const seccion of secciones) {
-    if (!RELEVANT_SECTIONS.includes(seccion.num as '1' | '3')) continue
-    const departamentos = seccion.departamento ?? []
+    // La API usa 'codigo' (no 'num'). Secciones relevantes: 1 = Disposiciones generales, 3 = Otras disposiciones
+    const codigo = String(seccion.codigo ?? seccion.num ?? '')
+    if (!RELEVANT_SECTIONS.includes(codigo as '1' | '3')) continue
+
+    const departamentos = Array.isArray(seccion.departamento)
+      ? seccion.departamento
+      : seccion.departamento ? [seccion.departamento] : []
+
     for (const dept of departamentos) {
-      const epigrafes = dept.epigrafe ?? []
+      const epigrafes = Array.isArray(dept.epigrafe)
+        ? dept.epigrafe
+        : dept.epigrafe ? [dept.epigrafe] : []
+
       for (const epigrafe of epigrafes) {
-        const docItems = epigrafe.item ?? []
+        const docItems = Array.isArray(epigrafe.item)
+          ? epigrafe.item
+          : epigrafe.item ? [epigrafe.item] : []
+
         for (const item of docItems) {
-          if (item.url_html) {
+          const url = item.url_html?.texto ?? item.url_html
+          const id = item.identificador ?? item.id
+          if (url && id) {
             items.push({
-              id: item.id,
-              titulo: item.titulo,
-              url: item.url_html,
+              id,
+              titulo: item.titulo ?? '',
+              url: typeof url === 'string' ? url : String(url),
               fuente: 'BOE',
             })
           }
@@ -37,7 +51,9 @@ export function parseBOESumario(data: any): NormalizedItem[] {
 
 export async function fetchBOEText(id: string): Promise<string> {
   try {
-    const res = await fetch(`https://www.boe.es/datosabiertos/api/boe/id/${id}`)
+    const res = await fetch(`https://www.boe.es/datosabiertos/api/boe/id/${id}`, {
+      headers: { Accept: 'application/json' },
+    })
     if (!res.ok) return ''
     const data = await res.json()
     const texto: string = data?.data?.documento?.texto ?? ''
@@ -55,7 +71,9 @@ export async function fetchBOE(): Promise<NormalizedItem[]> {
 
   let data: any
   try {
-    const res = await fetch(`https://www.boe.es/datosabiertos/api/boe/sumario/${today}`)
+    const res = await fetch(`https://www.boe.es/datosabiertos/api/boe/sumario/${today}`, {
+      headers: { Accept: 'application/json' },
+    })
     if (!res.ok) {
       console.error(`BOE API error: ${res.status}`)
       return []
