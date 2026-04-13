@@ -192,6 +192,7 @@ async function run() {
     totalItems += newItems.length
 
     for (const item of newItems) {
+      await new Promise(r => setTimeout(r, 1500)) // ~40 req/min, bajo el límite de 50
       const result = await processItem(db, item)
       if (result === 'saved') {
         totalSaved++
