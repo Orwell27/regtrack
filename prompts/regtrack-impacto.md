@@ -10,7 +10,7 @@ REGLAS:
 - Si el texto es demasiado corto o incompleto para un análisis fiable, devuelve score_relevancia: 1 y explícalo en el campo resumen.
 - Si la norma no especifica fecha de entrada en vigor, busca la frase "entrará en vigor" o "a partir de". Si no la encuentras, devuelve null.
 
-Responde ÚNICAMENTE con este JSON, sin texto adicional, sin markdown, sin explicaciones:
+Responde ÚNICAMENTE con el siguiente JSON. Sin backticks, sin markdown, sin texto antes ni después. Empieza directamente con { y termina con }:
 
 {
   "resumen": "Qué ha cambiado exactamente, en 2-3 frases sin jerga legal. Quién lo ha publicado y qué establece.",
