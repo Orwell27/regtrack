@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js'
 
 // ─── Tipos de dominio ───────────────────────────────────────────────────────
 
-export type Fuente = 'BOE' | 'BOCM' | 'DOGC' | 'BORM' | 'BOJA' | 'BOIB' | 'BOC_CANARIAS' | 'BOC_CANTABRIA' | 'BOCYL' | 'DOE' | 'DOG' | 'BOPV'
+export type Fuente = 'BOE' | 'BOCM' | 'DOGC' | 'BORM' | 'BOJA' | 'BOIB' | 'BOC_CANARIAS' | 'BOC_CANTABRIA' | 'BOCYL' | 'DOE' | 'DOG' | 'BOPV' | 'BOPA' | 'BON' | 'BOR'
 export type Ambito = 'estatal' | 'ccaa' | 'municipal'
 export type Subtema =
   | 'urbanismo' | 'fiscalidad' | 'arrendamiento' | 'hipotecas'

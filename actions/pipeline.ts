@@ -11,6 +11,9 @@ import { fetchBOCYL } from '@/lib/sources/bocyl'
 import { fetchDOE } from '@/lib/sources/doe'
 import { fetchDOG } from '@/lib/sources/dog'
 import { fetchBOPV } from '@/lib/sources/bopv'
+import { fetchBOPA } from '@/lib/sources/bopa'
+import { fetchBON } from '@/lib/sources/bon'
+import { fetchBOR } from '@/lib/sources/bor'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
 import { notifyEditorial } from '@/lib/telegram'
@@ -26,21 +29,25 @@ async function run() {
     boeItems, bocmItems, dogcItems, bormItems,
     bojaItems, boibItems, bocCanItems, bocCbItems,
     bocylItems, doeItems, dogItems, bopvItems,
+    bopaItems, bonItems, borItems,
   ] = await Promise.all([
     fetchBOE(), fetchBOCM(), fetchDOGC(), fetchBORM(),
     fetchBOJA(), fetchBOIB(), fetchBOC_CANARIAS(), fetchBOC_CANTABRIA(),
     fetchBOCYL(), fetchDOE(), fetchDOG(), fetchBOPV(),
+    fetchBOPA(), fetchBON(), fetchBOR(),
   ])
   const allItems: NormalizedItem[] = [
     ...boeItems, ...bocmItems, ...dogcItems, ...bormItems,
     ...bojaItems, ...boibItems, ...bocCanItems, ...bocCbItems,
     ...bocylItems, ...doeItems, ...dogItems, ...bopvItems,
+    ...bopaItems, ...bonItems, ...borItems,
   ]
   console.log(
     `[pipeline] Total items: ${allItems.length}`,
     `(BOE:${boeItems.length} BOCM:${bocmItems.length} DOGC:${dogcItems.length} BORM:${bormItems.length}`,
     `BOJA:${bojaItems.length} BOIB:${boibItems.length} BOC-CN:${bocCanItems.length} BOC-CB:${bocCbItems.length}`,
-    `BOCYL:${bocylItems.length} DOE:${doeItems.length} DOG:${dogItems.length} BOPV:${bopvItems.length})`
+    `BOCYL:${bocylItems.length} DOE:${doeItems.length} DOG:${dogItems.length} BOPV:${bopvItems.length}`,
+    `BOPA:${bopaItems.length} BON:${bonItems.length} BOR:${borItems.length})`
   )
 
   // 2. Deduplicar: filtrar URLs ya procesadas

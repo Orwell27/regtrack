@@ -11,13 +11,14 @@ type Config = {
 const TERRITORIOS_OPCIONES = [
   'nacional', 'andalucia', 'aragon', 'asturias', 'baleares', 'canarias',
   'cantabria', 'castilla-la-mancha', 'castilla-leon', 'cataluña',
-  'extremadura', 'galicia', 'la-rioja', 'madrid', 'murcia', 'navarra',
+  'extremadura', 'galicia', 'la-rioja', 'madrid', 'murcia', 'navarra', 'asturias',
   'pais-vasco', 'valencia',
 ]
 const FUENTES_OPCIONES = [
   'BOE', 'BOCM', 'DOGC', 'BORM',
   'BOJA', 'BOIB', 'BOC_CANARIAS', 'BOC_CANTABRIA',
   'BOCYL', 'DOE', 'DOG', 'BOPV',
+  'BOPA', 'BON', 'BOR',
 ]
 
 export default function ConfigPage() {
