@@ -71,10 +71,10 @@ async function fetchBOEForDate(dateStr: string): Promise<NormalizedItem[]> {
     for (let i = 0; i < items.length; i += 5) {
       const batch = items.slice(i, i + 5)
       const withText = await Promise.all(
-        batch.map(async (item) => ({
-          ...item,
-          texto: await fetchBOEText(item.id),
-        }))
+        batch.map(async (item) => {
+          const { _xmlUrl, ...rest } = item as any
+          return { ...rest, texto: await fetchBOEText(item.id, _xmlUrl) }
+        })
       )
       results.push(...withText)
     }
@@ -95,10 +95,18 @@ async function processItem(
     const texto = item.texto ?? ''
     const classification = await classifyDocument(item.titulo, texto)
 
-    if (!classification.relevante) return 'discarded'
+    if (!classification.relevante) {
+      console.log(`  ✗ [descartado] ${item.titulo.slice(0, 80)}`)
+      return 'discarded'
+    }
+
+    console.log(`  ~ [relevante:${classification.subtema}] ${item.titulo.slice(0, 80)}`)
 
     const impact = await analyzeImpact(item.titulo, texto, item.fuente)
-    if (!impact || impact.score_relevancia < 5) return 'low_score'
+    if (!impact || impact.score_relevancia < 5) {
+      console.log(`  ✗ [score_bajo:${impact?.score_relevancia ?? 'null'}] ${item.titulo.slice(0, 80)}`)
+      return 'low_score'
+    }
 
     const alertaBase = {
       url: item.url,
