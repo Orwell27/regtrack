@@ -3,8 +3,15 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import type { Subtema, Ambito, Urgencia, TipoNorma } from './supabase'
 
-function stripJsonFences(text: string): string {
-  return text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim()
+function extractJson(text: string): string {
+  // 1. Quitar bloques ```json ... ```
+  const stripped = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim()
+  // 2. Si ya es JSON válido, devolver tal cual
+  if (stripped.startsWith('{')) return stripped
+  // 3. Extraer el primer objeto JSON que aparezca en el texto
+  const match = stripped.match(/\{[\s\S]*\}/)
+  if (match) return match[0]
+  return stripped
 }
 
 function getClient() {
@@ -40,7 +47,7 @@ export async function classifyDocument(
     })
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    return JSON.parse(stripJsonFences(text)) as ClassifyResult
+    return JSON.parse(extractJson(text)) as ClassifyResult
   } catch (err) {
     console.error('classifyDocument error:', err)
     return { relevante: false, subtema: 'otro', ambito_territorial: 'estatal', motivo: 'Error de clasificación' }
@@ -81,7 +88,7 @@ export async function analyzeImpact(
     })
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    return JSON.parse(stripJsonFences(text)) as ImpactResult
+    return JSON.parse(extractJson(text)) as ImpactResult
   } catch (err) {
     console.error('analyzeImpact error:', err)
     return null
