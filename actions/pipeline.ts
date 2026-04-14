@@ -83,7 +83,7 @@ async function run() {
       // 5. Analizar impacto con Claude Sonnet
       const impact = await analyzeImpact(item.titulo, texto, item.fuente)
 
-      if (!impact || impact.score_relevancia < 5) {
+      if (!impact || impact.score_relevancia < 4) {
         console.log(`[pipeline] Score bajo (${impact?.score_relevancia ?? 0}): descartado`)
         continue
       }

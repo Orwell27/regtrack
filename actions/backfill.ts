@@ -103,7 +103,7 @@ async function processItem(
     console.log(`  ~ [relevante:${classification.subtema}] ${item.titulo.slice(0, 80)}`)
 
     const impact = await analyzeImpact(item.titulo, texto, item.fuente)
-    if (!impact || impact.score_relevancia < 5) {
+    if (!impact || impact.score_relevancia < 4) {
       console.log(`  ✗ [score_bajo:${impact?.score_relevancia ?? 'null'}] ${item.titulo.slice(0, 80)}`)
       return 'low_score'
     }

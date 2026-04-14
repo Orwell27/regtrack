@@ -23,7 +23,7 @@ const FUENTES_OPCIONES = [
 
 export default function ConfigPage() {
   const [config, setConfig] = useState<Config>({
-    score_minimo: 5,
+    score_minimo: 4,
     territorios_activos: [],
     fuentes_activas: [],
   })
@@ -36,7 +36,7 @@ export default function ConfigPage() {
       .then(r => r.json())
       .then((data: Config) => {
         setConfig({
-          score_minimo: data.score_minimo ?? 5,
+          score_minimo: data.score_minimo ?? 4,
           territorios_activos: data.territorios_activos ?? [],
           fuentes_activas: data.fuentes_activas ?? [],
         })
