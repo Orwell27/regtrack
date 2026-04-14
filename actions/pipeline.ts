@@ -1,3 +1,18 @@
+import { readFileSync as _readEnvFile } from 'fs'
+import { join as _joinEnvPath } from 'path'
+;(function loadLocalEnv() {
+  try {
+    const content = _readEnvFile(_joinEnvPath(process.cwd(), '.env.local'), 'utf-8')
+    for (const line of content.split('\n')) {
+      const trimmed = line.trim()
+      if (!trimmed || trimmed.startsWith('#')) continue
+      const eq = trimmed.indexOf('=')
+      if (eq === -1) continue
+      process.env[trimmed.slice(0, eq).trim()] = trimmed.slice(eq + 1).trim()
+    }
+  } catch { /* sin .env.local, ignorar */ }
+})()
+
 import { createServerClient } from '@/lib/supabase'
 import { fetchBOE } from '@/lib/sources/boe'
 import { fetchBOCM } from '@/lib/sources/bocm'

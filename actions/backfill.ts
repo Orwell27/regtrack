@@ -11,6 +11,24 @@
  * igual que el pipeline diario. Ignora fechas ya procesadas (deduplicación por URL).
  */
 
+// Cargar .env.local con override explícito (necesario porque Claude Code puede dejar ANTHROPIC_API_KEY vacío)
+import { readFileSync } from 'fs'
+import { join } from 'path'
+;(function loadLocalEnv() {
+  try {
+    const content = readFileSync(join(process.cwd(), '.env.local'), 'utf-8')
+    for (const line of content.split('\n')) {
+      const trimmed = line.trim()
+      if (!trimmed || trimmed.startsWith('#')) continue
+      const eq = trimmed.indexOf('=')
+      if (eq === -1) continue
+      const key = trimmed.slice(0, eq).trim()
+      const val = trimmed.slice(eq + 1).trim()
+      process.env[key] = val
+    }
+  } catch { /* sin .env.local, ignorar */ }
+})()
+
 import { createServerClient } from '@/lib/supabase'
 import { parseBOESumario, fetchBOEText } from '@/lib/sources/boe'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
