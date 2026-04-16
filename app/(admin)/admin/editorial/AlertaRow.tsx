@@ -20,20 +20,32 @@ type Estado = 'pendiente_revision' | 'aprobada' | 'descartada' | 'enviada'
 export function AlertaRow({ alerta }: { alerta: Alerta }) {
   const [estado, setEstado] = useState<Estado>(alerta.estado)
   const [loading, setLoading] = useState<string | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   async function handleAccion(accion: 'aprobar' | 'descartar' | 'enviar') {
     setLoading(accion)
+    setError(null)
     try {
       if (accion === 'enviar') {
         const res = await fetch(`/api/alertas/${alerta.id}/enviar`, { method: 'POST' })
-        if (res.ok) setEstado('enviada')
+        if (res.ok) {
+          setEstado('enviada')
+        } else {
+          const body = await res.json().catch(() => ({}))
+          setError(body.error ?? `Error ${res.status}`)
+        }
       } else {
         const res = await fetch(`/api/alertas/${alerta.id}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ accion }),
         })
-        if (res.ok) setEstado(accion === 'aprobar' ? 'aprobada' : 'descartada')
+        if (res.ok) {
+          setEstado(accion === 'aprobar' ? 'aprobada' : 'descartada')
+        } else {
+          const body = await res.json().catch(() => ({}))
+          setError(body.error ?? `Error ${res.status}`)
+        }
       }
     } finally {
       setLoading(null)
@@ -81,6 +93,7 @@ export function AlertaRow({ alerta }: { alerta: Alerta }) {
       <p className="text-xs text-slate-600 line-clamp-2">{alerta.resumen}</p>
       <p className="text-xs text-sky-700"><strong>Acción:</strong> {alerta.accion_recomendada}</p>
 
+      {error && <p className="text-xs text-red-600">{error}</p>}
       <div className="flex gap-2 pt-1">
         {estado === 'pendiente_revision' && (
           <>

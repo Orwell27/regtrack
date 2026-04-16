@@ -26,27 +26,29 @@ export async function POST(
     .eq('activo', true)
     .not('telegram_id', 'is', null)
 
-  if (!usuarios || usuarios.length === 0) {
-    return NextResponse.json({ error: 'No hay usuarios con Telegram configurado' }, { status: 422 })
+  const conTelegram = (usuarios ?? []).filter((u: { telegram_id: string | null }) => u.telegram_id)
+
+  if (conTelegram.length > 0) {
+    await notifyUsers(
+      conTelegram.map((u: { telegram_id: string; plan: string }) => ({
+        telegramId: u.telegram_id,
+        texto: u.plan === 'pro' ? (alerta.texto_alerta_pro ?? alerta.texto_alerta ?? '') : (alerta.texto_alerta ?? ''),
+        alertaId: alerta.id,
+        urlOficial: alerta.url,
+      }))
+    )
   }
 
-  await notifyUsers(
-    usuarios.map((u: { telegram_id: string; plan: string }) => ({
-      telegramId: u.telegram_id,
-      texto: u.plan === 'pro' ? (alerta.texto_alerta_pro ?? alerta.texto_alerta ?? '') : (alerta.texto_alerta ?? ''),
-      alertaId: alerta.id,
-      urlOficial: alerta.url,
+  if (usuarios && usuarios.length > 0) {
+    const entregas = usuarios.map((u: { id: string }) => ({
+      alerta_id: id,
+      usuario_id: u.id,
+      enviada_at: new Date().toISOString(),
     }))
-  )
+    await db.from('entregas').insert(entregas)
+  }
 
-  const entregas = usuarios.map((u: { id: string }) => ({
-    alerta_id: id,
-    usuario_id: u.id,
-    enviada_at: new Date().toISOString(),
-  }))
-
-  await db.from('entregas').insert(entregas)
   await db.from('alertas').update({ estado: 'enviada' }).eq('id', id)
 
-  return NextResponse.json({ ok: true, enviados: usuarios.length })
+  return NextResponse.json({ ok: true, enviados: conTelegram.length })
 }
