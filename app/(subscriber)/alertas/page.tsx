@@ -42,9 +42,21 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
         <FilterBar
           filters={[
             { key: 'fuente', placeholder: 'Fuente', options: [
-              { value: 'BOE', label: 'BOE' },
-              { value: 'BOCM', label: 'BOCM' },
-              { value: 'DOGC', label: 'DOGC' },
+              { value: 'BOE',           label: 'BOE — Estatal' },
+              { value: 'BOCM',          label: 'BOCM — Madrid' },
+              { value: 'DOGC',          label: 'DOGC — Cataluña' },
+              { value: 'BORM',          label: 'BORM — Murcia' },
+              { value: 'BOJA',          label: 'BOJA — Andalucía' },
+              { value: 'BOIB',          label: 'BOIB — Baleares' },
+              { value: 'BOC_CANARIAS',  label: 'BOC — Canarias' },
+              { value: 'BOC_CANTABRIA', label: 'BOC — Cantabria' },
+              { value: 'BOCYL',         label: 'BOCYL — Castilla y León' },
+              { value: 'DOE',           label: 'DOE — Extremadura' },
+              { value: 'DOG',           label: 'DOG — Galicia' },
+              { value: 'BOPV',          label: 'BOPV — País Vasco' },
+              { value: 'BOPA',          label: 'BOPA — Asturias' },
+              { value: 'BON',           label: 'BON — Navarra' },
+              { value: 'BOR',           label: 'BOR — La Rioja' },
             ]},
             { key: 'urgencia', placeholder: 'Urgencia', options: [
               { value: 'alta', label: 'Alta' },

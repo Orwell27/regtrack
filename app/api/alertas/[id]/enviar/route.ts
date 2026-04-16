@@ -11,7 +11,7 @@ export async function POST(
 
   const { data: alerta } = await db
     .from('alertas')
-    .select('id, estado, texto_alerta, texto_alerta_pro, titulo')
+    .select('id, estado, url, texto_alerta, texto_alerta_pro, titulo')
     .eq('id', id)
     .single()
 
@@ -34,6 +34,8 @@ export async function POST(
     usuarios.map((u: { telegram_id: string; plan: string }) => ({
       telegramId: u.telegram_id,
       texto: u.plan === 'pro' ? (alerta.texto_alerta_pro ?? alerta.texto_alerta ?? '') : (alerta.texto_alerta ?? ''),
+      alertaId: alerta.id,
+      urlOficial: alerta.url,
     }))
   )
 

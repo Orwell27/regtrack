@@ -58,9 +58,11 @@ export function AlertaCard({ alerta, plan }: Props) {
 
       <div className="flex items-center justify-between pt-1">
         <span className="text-xs text-slate-400">
-          {alerta.fecha_publicacion
-            ? new Date(alerta.fecha_publicacion).toLocaleDateString('es-ES', { day: '2-digit', month: 'short' })
-            : ''}
+          {alerta.fecha_entrada_vigor
+            ? <>Vigor: <span className="text-amber-700 font-medium">{new Date(alerta.fecha_entrada_vigor).toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' })}</span></>
+            : alerta.fecha_publicacion
+              ? new Date(alerta.fecha_publicacion).toLocaleDateString('es-ES', { day: '2-digit', month: 'short' })
+              : ''}
         </span>
         <Link
           href={`/alerta/${alerta.id}`}
