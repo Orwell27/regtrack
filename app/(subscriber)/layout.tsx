@@ -7,7 +7,8 @@ export default async function SubscriberLayout({ children }: { children: React.R
   const user = await getAuthUser()
 
   if (!user) redirect('/login')
-  if (user.rol !== 'subscriber') redirect('/admin/dashboard')
+  // DEV: admin puede acceder a vista suscriptor temporalmente
+  // if (user.rol !== 'subscriber') redirect('/admin/dashboard')
 
   return (
     <div className="flex h-screen overflow-hidden bg-slate-50">
