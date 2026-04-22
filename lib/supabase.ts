@@ -88,6 +88,18 @@ export interface Entidad {
   updated_at: string
 }
 
+export type TipoRelacion = 'progresion' | 'deroga' | 'modifica' | 'complementa'
+
+export interface AlertaRelacion {
+  id: string
+  alerta_id: string
+  alerta_relacionada_id: string
+  tipo_relacion: TipoRelacion
+  score_similitud: number
+  razon: string | null
+  detectada_en: string
+}
+
 // ─── Clientes ───────────────────────────────────────────────────────────────
 
 // Para scripts de servidor y GitHub Actions (usa service_role — acceso total)
