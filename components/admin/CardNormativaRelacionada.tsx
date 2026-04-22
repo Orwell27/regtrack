@@ -16,18 +16,29 @@ function fmtDate(d: string | null) {
 
 export function CardNormativaRelacionada({ alertaId }: { alertaId: string }) {
   const [relaciones, setRelaciones] = useState<RelacionConAlerta[] | null>(null)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     fetch(`/api/alertas/${alertaId}/relaciones`)
       .then(r => r.json())
       .then(({ relaciones }) => setRelaciones(relaciones))
-      .catch(() => setRelaciones([]))
+      .catch(() => {
+        setError(true)
+        setRelaciones([])
+      })
   }, [alertaId])
 
   if (relaciones === null) return (
     <div className="mt-3 pt-3 border-t border-slate-100">
       <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Normativa relacionada</p>
       <p className="text-xs text-slate-400">Cargando...</p>
+    </div>
+  )
+
+  if (error) return (
+    <div className="mt-3 pt-3 border-t border-slate-100">
+      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Normativa relacionada</p>
+      <p className="text-xs text-red-400">Error al cargar normativa relacionada</p>
     </div>
   )
 

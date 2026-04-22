@@ -26,7 +26,7 @@ export function ListaRelaciones({ relaciones, alertaActualId }: ListaRelacionesP
     <ul className="space-y-3">
       {sorted.map(r => {
         const otherId = r.alerta_id === alertaActualId ? r.alerta_relacionada_id : r.alerta_id
-        const badge = TIPO_BADGE[r.tipo_relacion] ?? TIPO_BADGE.progresion
+        const badge = TIPO_BADGE[r.tipo_relacion] ?? null
         return (
           <li key={r.id} className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
             <div className="flex items-start justify-between gap-3 mb-1.5">
@@ -36,9 +36,11 @@ export function ListaRelaciones({ relaciones, alertaActualId }: ListaRelacionesP
               >
                 {r.titulo}
               </Link>
-              <span className={`shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded ${badge.className}`}>
-                {badge.label}
-              </span>
+              {badge && (
+                <span className={`shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded ${badge.className}`}>
+                  {badge.label}
+                </span>
+              )}
             </div>
             <p className="text-xs text-slate-400 mb-1">
               {r.fuente} · {fmtDate(r.fecha_publicacion)}

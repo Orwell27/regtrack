@@ -27,6 +27,9 @@ export function TimelineNormativa({
   alertaActualTitulo,
   alertaActualFecha,
 }: TimelineNormativaProps) {
+  // Timeline is only useful with ≥ 2 related norms (1 external + current)
+  if (relaciones.length < 1) return null
+
   const nodes = [
     ...relaciones.map(r => ({
       id: r.alerta_id === alertaActualId ? r.alerta_relacionada_id : r.alerta_id,

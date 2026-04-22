@@ -7,6 +7,18 @@ import { TimelineNormativa } from '@/components/subscriber/TimelineNormativa'
 import { ListaRelaciones } from '@/components/subscriber/ListaRelaciones'
 import type { RelacionConAlerta } from '@/lib/correlacion/types'
 
+interface RelRow {
+  id: string
+  alerta_id: string
+  alerta_relacionada_id: string
+  tipo_relacion: string
+  score_similitud: number
+  razon: string | null
+  detectada_en: string
+}
+
+type AlertaMeta = { id: string; titulo: string; fuente: string; fecha_publicacion: string | null; url: string }
+
 export const dynamic = 'force-dynamic'
 
 const URGENCIA: Record<string, { bar: string; badge: string; label: string; stat: string }> = {
@@ -55,11 +67,11 @@ export default async function AlertaDetailPage({ params }: { params: Promise<{ i
       .eq('alerta_relacionada_id', id),
   ])
 
-  const allRelRows = [...(asNew ?? []), ...(asOld ?? [])]
+  const allRelRows: RelRow[] = [...(asNew ?? []), ...(asOld ?? [])]
   let relaciones: RelacionConAlerta[] = []
 
   if (allRelRows.length > 0) {
-    const otherIds = allRelRows.map((r: any) =>
+    const otherIds = allRelRows.map((r: RelRow) =>
       r.alerta_id === id ? r.alerta_relacionada_id : r.alerta_id
     )
     const { data: alertasData } = await db
@@ -67,11 +79,11 @@ export default async function AlertaDetailPage({ params }: { params: Promise<{ i
       .select('id, titulo, fuente, fecha_publicacion, url')
       .in('id', otherIds)
 
-    const alertaMap = new Map((alertasData ?? []).map((a: any) => [a.id, a]))
+    const alertaMap = new Map((alertasData ?? []).map((a: AlertaMeta) => [a.id, a]))
     const seen = new Set<string>()
 
     relaciones = allRelRows
-      .filter((r: any) => {
+      .filter((r: RelRow) => {
         const key = r.alerta_id < r.alerta_relacionada_id
           ? `${r.alerta_id}-${r.alerta_relacionada_id}`
           : `${r.alerta_relacionada_id}-${r.alerta_id}`
@@ -79,7 +91,7 @@ export default async function AlertaDetailPage({ params }: { params: Promise<{ i
         seen.add(key)
         return true
       })
-      .map((r: any) => {
+      .map((r: RelRow) => {
         const otherId = r.alerta_id === id ? r.alerta_relacionada_id : r.alerta_id
         const a = alertaMap.get(otherId)
         return {
@@ -239,40 +251,38 @@ export default async function AlertaDetailPage({ params }: { params: Promise<{ i
       )}
 
       {/* ── Evolución normativa (Pro) ── */}
-      {relaciones.length > 0 && (
-        isPro ? (
+      {isPro ? (
+        relaciones.length > 0 && (
           <div className="mt-4">
             <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
               <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4">
                 Evolución normativa
               </p>
-              {relaciones.length >= 2 && (
-                <div className="mb-5">
-                  <TimelineNormativa
-                    relaciones={relaciones}
-                    alertaActualId={id}
-                    alertaActualTitulo={alerta.titulo}
-                    alertaActualFecha={alerta.fecha_publicacion}
-                  />
-                </div>
-              )}
+              <div className="mb-5">
+                <TimelineNormativa
+                  relaciones={relaciones}
+                  alertaActualId={id}
+                  alertaActualTitulo={alerta.titulo}
+                  alertaActualFecha={alerta.fecha_publicacion}
+                />
+              </div>
               <ListaRelaciones relaciones={relaciones} alertaActualId={id} />
             </div>
           </div>
-        ) : (
-          <div className="mt-4 bg-white border border-slate-200 rounded-xl p-5 text-center shadow-sm">
-            <p className="text-sm font-bold text-slate-700 mb-1">🔗 Evolución normativa — plan Pro</p>
-            <p className="text-xs text-slate-500 mb-3">
-              Ve cómo esta norma se relaciona con regulaciones anteriores y la evolución del tema.
-            </p>
-            <a
-              href="/cuenta#planes"
-              className="inline-block bg-sky-500 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors"
-            >
-              Ver planes Pro →
-            </a>
-          </div>
         )
+      ) : (
+        <div className="mt-4 bg-white border border-slate-200 rounded-xl p-5 text-center shadow-sm">
+          <p className="text-sm font-bold text-slate-700 mb-1">🔗 Evolución normativa — plan Pro</p>
+          <p className="text-xs text-slate-500 mb-3">
+            Ve cómo esta norma se relaciona con regulaciones anteriores y la evolución del tema.
+          </p>
+          <Link
+            href="/cuenta#planes"
+            className="inline-block bg-sky-500 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors"
+          >
+            Ver planes Pro →
+          </Link>
+        </div>
       )}
     </div>
   )
