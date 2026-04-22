@@ -1,5 +1,5 @@
 // lib/correlacion/detectar-relaciones.ts
-import AnthropicSDK from '@anthropic-ai/sdk'
+import Anthropic from '@anthropic-ai/sdk'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import { createServerClient } from '@/lib/supabase'
@@ -7,17 +7,6 @@ import { getSubtemasGrupo } from './subtema-grupos'
 import type { RelacionDetectada } from './types'
 import type { Subtema } from '@/lib/supabase'
 
-// Factory — called once per request so tests can control the mock
-function createAnthropicClient() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const Ctor = AnthropicSDK as any
-  // Support both `new Anthropic()` (production) and plain function call (test mocks)
-  try {
-    return new Ctor({ apiKey: process.env.ANTHROPIC_API_KEY })
-  } catch {
-    return Ctor({ apiKey: process.env.ANTHROPIC_API_KEY })
-  }
-}
 
 interface AlertaMinima {
   id: string
@@ -91,7 +80,7 @@ export async function detectarRelaciones(alerta: AlertaMinima): Promise<Relacion
 NORMAS EXISTENTES:
 ${lista}`
 
-    const client = createAnthropicClient()
+    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
       max_tokens: 512,
@@ -112,7 +101,7 @@ ${lista}`
       .map(r => ({
         alerta_relacionada_id: r.id,
         tipo_relacion: r.tipo as RelacionDetectada['tipo_relacion'],
-        score_similitud: r.score,
+        score_similitud: Math.round(r.score),
         razon: r.razon ?? null,
       }))
   } catch (err) {

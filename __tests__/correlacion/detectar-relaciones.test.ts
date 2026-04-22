@@ -13,9 +13,9 @@ vi.mock('@/lib/supabase', () => ({
 // Mock Anthropic
 const mockCreate = vi.fn()
 vi.mock('@anthropic-ai/sdk', () => ({
-  default: vi.fn().mockImplementation(() => ({
-    messages: { create: mockCreate },
-  })),
+  default: class MockAnthropic {
+    messages = { create: mockCreate }
+  },
 }))
 
 // Mock prompt loader
@@ -160,5 +160,34 @@ describe('detectarRelaciones', () => {
     })
 
     expect(result).toEqual([])
+  })
+
+  it('skips territory overlap filter when territorios is empty', async () => {
+    // When territories is empty, .overlaps() should NOT be called
+    // The query chain is: select → in → gte → neq → order → limit (no overlaps)
+    const mockLimit = vi.fn().mockResolvedValue({
+      data: [],
+      error: null,
+    })
+    const mockOrder = vi.fn().mockReturnValue({ limit: mockLimit })
+    const mockNeq = vi.fn().mockReturnValue({ order: mockOrder })
+    const mockGte = vi.fn().mockReturnValue({ neq: mockNeq })
+    const mockIn = vi.fn().mockReturnValue({ gte: mockGte })
+    mockSelect.mockReturnValue({ in: mockIn })
+
+    const result = await detectarRelaciones({
+      id: 'new-id',
+      titulo: 'Test Nacional',
+      subtema: 'urbanismo',
+      territorios: [],
+      resumen: 'Test resumen',
+    })
+
+    expect(result).toEqual([])
+    expect(mockCreate).not.toHaveBeenCalled()
+    // .in() should have been called (subtema filter applied)
+    expect(mockIn).toHaveBeenCalled()
+    // .limit() reached (query ran successfully without overlaps)
+    expect(mockLimit).toHaveBeenCalled()
   })
 })

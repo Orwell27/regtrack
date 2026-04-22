@@ -1,6 +1,7 @@
 // lib/correlacion/types.ts
 
-export type TipoRelacion = 'progresion' | 'deroga' | 'modifica' | 'complementa'
+import type { TipoRelacion } from '@/lib/supabase'
+export type { TipoRelacion }
 
 /** One relationship returned by Haiku */
 export interface RelacionDetectada {
