@@ -3,6 +3,9 @@ import { redirect, notFound } from 'next/navigation'
 import { getAuthUser } from '@/lib/auth'
 import { createNextServerClient } from '@/lib/supabase'
 import Link from 'next/link'
+import { TimelineNormativa } from '@/components/subscriber/TimelineNormativa'
+import { ListaRelaciones } from '@/components/subscriber/ListaRelaciones'
+import type { RelacionConAlerta } from '@/lib/correlacion/types'
 
 export const dynamic = 'force-dynamic'
 
@@ -39,6 +42,61 @@ export default async function AlertaDetailPage({ params }: { params: Promise<{ i
     .single()
 
   if (!alerta) notFound()
+
+  // Fetch relations — two-step to avoid Supabase FK ambiguity (two FKs to alertas)
+  const [{ data: asNew }, { data: asOld }] = await Promise.all([
+    db
+      .from('alerta_relaciones')
+      .select('id, alerta_id, alerta_relacionada_id, tipo_relacion, score_similitud, razon, detectada_en')
+      .eq('alerta_id', id),
+    db
+      .from('alerta_relaciones')
+      .select('id, alerta_id, alerta_relacionada_id, tipo_relacion, score_similitud, razon, detectada_en')
+      .eq('alerta_relacionada_id', id),
+  ])
+
+  const allRelRows = [...(asNew ?? []), ...(asOld ?? [])]
+  let relaciones: RelacionConAlerta[] = []
+
+  if (allRelRows.length > 0) {
+    const otherIds = allRelRows.map((r: any) =>
+      r.alerta_id === id ? r.alerta_relacionada_id : r.alerta_id
+    )
+    const { data: alertasData } = await db
+      .from('alertas')
+      .select('id, titulo, fuente, fecha_publicacion, url')
+      .in('id', otherIds)
+
+    const alertaMap = new Map((alertasData ?? []).map((a: any) => [a.id, a]))
+    const seen = new Set<string>()
+
+    relaciones = allRelRows
+      .filter((r: any) => {
+        const key = r.alerta_id < r.alerta_relacionada_id
+          ? `${r.alerta_id}-${r.alerta_relacionada_id}`
+          : `${r.alerta_relacionada_id}-${r.alerta_id}`
+        if (seen.has(key)) return false
+        seen.add(key)
+        return true
+      })
+      .map((r: any) => {
+        const otherId = r.alerta_id === id ? r.alerta_relacionada_id : r.alerta_id
+        const a = alertaMap.get(otherId)
+        return {
+          id: r.id,
+          alerta_id: r.alerta_id,
+          alerta_relacionada_id: r.alerta_relacionada_id,
+          tipo_relacion: r.tipo_relacion,
+          score_similitud: r.score_similitud,
+          razon: r.razon,
+          detectada_en: r.detectada_en,
+          titulo: a?.titulo ?? '',
+          fuente: a?.fuente ?? '',
+          fecha_publicacion: a?.fecha_publicacion ?? null,
+          url: a?.url ?? '',
+        } as RelacionConAlerta
+      })
+  }
 
   const isPro = user.plan === 'pro'
   const urgencia = alerta.urgencia ?? 'baja'
@@ -178,6 +236,43 @@ export default async function AlertaDetailPage({ params }: { params: Promise<{ i
             <p className="text-sm text-slate-600">{alerta.deroga_modifica}</p>
           </div>
         </details>
+      )}
+
+      {/* ── Evolución normativa (Pro) ── */}
+      {relaciones.length > 0 && (
+        isPro ? (
+          <div className="mt-4">
+            <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4">
+                Evolución normativa
+              </p>
+              {relaciones.length >= 2 && (
+                <div className="mb-5">
+                  <TimelineNormativa
+                    relaciones={relaciones}
+                    alertaActualId={id}
+                    alertaActualTitulo={alerta.titulo}
+                    alertaActualFecha={alerta.fecha_publicacion}
+                  />
+                </div>
+              )}
+              <ListaRelaciones relaciones={relaciones} alertaActualId={id} />
+            </div>
+          </div>
+        ) : (
+          <div className="mt-4 bg-white border border-slate-200 rounded-xl p-5 text-center shadow-sm">
+            <p className="text-sm font-bold text-slate-700 mb-1">🔗 Evolución normativa — plan Pro</p>
+            <p className="text-xs text-slate-500 mb-3">
+              Ve cómo esta norma se relaciona con regulaciones anteriores y la evolución del tema.
+            </p>
+            <a
+              href="/cuenta#planes"
+              className="inline-block bg-sky-500 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors"
+            >
+              Ver planes Pro →
+            </a>
+          </div>
+        )
       )}
     </div>
   )
