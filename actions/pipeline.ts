@@ -32,6 +32,8 @@ import { fetchBOR } from '@/lib/sources/bor'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
 import { notifyEditorial } from '@/lib/telegram'
+import { detectarRelaciones } from '@/lib/correlacion/detectar-relaciones'
+import { guardarRelaciones } from '@/lib/correlacion/guardar-relaciones'
 import type { NormalizedItem } from '@/lib/sources/boe'
 import type { Alerta } from '@/lib/supabase'
 
@@ -142,7 +144,21 @@ async function run() {
 
       procesados++
 
-      // 8. Notificar al editor por Telegram
+      // 8. Detectar y guardar correlaciones (no bloquea el pipeline si falla)
+      try {
+        const relaciones = await detectarRelaciones({
+          id: saved.id,
+          titulo: alertaBase.titulo,
+          subtema: alertaBase.subtema,
+          territorios: alertaBase.territorios ?? [],
+          resumen: alertaBase.resumen ?? null,
+        })
+        await guardarRelaciones(saved.id, relaciones)
+      } catch (corrErr) {
+        console.error(`[pipeline] Error en correlación (no bloqueante):`, corrErr)
+      }
+
+      // 9. Notificar al editor por Telegram
       await notifyEditorial(item.titulo, impact.score_relevancia, saved.id)
 
     } catch (err) {

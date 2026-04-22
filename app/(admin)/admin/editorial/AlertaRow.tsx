@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import type { Alerta } from '@/lib/supabase'
+import { CardNormativaRelacionada } from '@/components/admin/CardNormativaRelacionada'
 
 const URGENCIA_STYLE: Record<string, string> = {
   alta: 'bg-red-100 text-red-800',
@@ -131,6 +132,9 @@ export function AlertaRow({ alerta }: { alerta: Alerta }) {
           </>
         )}
       </div>
+
+      {/* ── Normativa relacionada ── */}
+      <CardNormativaRelacionada alertaId={alerta.id} />
     </div>
   )
 }
