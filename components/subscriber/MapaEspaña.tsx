@@ -1,9 +1,13 @@
 'use client'
+import { Suspense } from 'react'
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useCallback } from 'react'
 import { REGIONES } from '@/lib/spain-ccaa-paths'
 
-export function MapaEspaña() {
+// viewBox from lib/spain-ccaa-paths.ts — "0 0 613 544"
+const VIEWBOX = '0 0 613 544'
+
+function MapaEspañaInner() {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -18,7 +22,7 @@ export function MapaEspaña() {
       params.delete('fuente')
     }
     params.delete('page')
-    router.push(`${pathname}?${params.toString()}`)
+    router.replace(`${pathname}?${params.toString()}`)
   }, [router, pathname, searchParams])
 
   const toggleFuente = useCallback((fuente: string) => {
@@ -32,9 +36,6 @@ export function MapaEspaña() {
   }, [selectedFuentes, updateFuentes])
 
   const isBoeSelected = selectedFuentes.includes('BOE')
-
-  // viewBox from lib/spain-ccaa-paths.ts — "0 0 613 544"
-  const VIEWBOX = '0 0 613 544'
 
   return (
     <div className="bg-white border border-slate-200 rounded-lg p-4 mb-4">
@@ -68,12 +69,13 @@ export function MapaEspaña() {
               key={region.id}
               d={region.path}
               role={region.disabled ? undefined : 'button'}
-              aria-label={region.nombre}
+              aria-hidden={region.disabled ? true : undefined}
+              aria-label={region.disabled ? undefined : region.nombre}
               aria-pressed={region.disabled ? undefined : isSelected}
               tabIndex={region.disabled ? -1 : 0}
-              onClick={() => !region.disabled && toggleFuente(region.fuente)}
-              onKeyDown={e => {
-                if (!region.disabled && (e.key === 'Enter' || e.key === ' ')) {
+              onClick={region.disabled ? undefined : () => toggleFuente(region.fuente)}
+              onKeyDown={region.disabled ? undefined : (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
                   e.preventDefault()
                   toggleFuente(region.fuente)
                 }
@@ -128,5 +130,13 @@ export function MapaEspaña() {
         </div>
       )}
     </div>
+  )
+}
+
+export function MapaEspaña() {
+  return (
+    <Suspense fallback={<div className="bg-white border border-slate-200 rounded-lg p-4 mb-4 h-48 animate-pulse" />}>
+      <MapaEspañaInner />
+    </Suspense>
   )
 }
