@@ -32,7 +32,7 @@ describe('spain-ccaa-paths', () => {
   it('every region has a non-empty path string', () => {
     for (const r of REGIONES) {
       expect(typeof r.path).toBe('string')
-      expect(r.path.length).toBeGreaterThan(10)
+      expect(r.path.length).toBeGreaterThan(100)
     }
   })
 })
