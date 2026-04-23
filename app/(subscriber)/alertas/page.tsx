@@ -47,7 +47,7 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
     countByFuente[row.fuente] = (countByFuente[row.fuente] ?? 0) + 1
     if (row.created_at?.startsWith(today)) todayFuentesSet.add(row.fuente)
   }
-  const maxCount = Math.max(0, ...Object.values(countByFuente))
+  const maxCount = Math.max(1, ...Object.values(countByFuente))
   const mapStats = { countByFuente, todayFuentes: [...todayFuentesSet], maxCount }
 
   return (
