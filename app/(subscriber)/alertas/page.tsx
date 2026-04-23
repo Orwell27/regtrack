@@ -3,6 +3,7 @@ import { getAuthUser } from '@/lib/auth'
 import { createNextServerClient } from '@/lib/supabase'
 import { AlertaCard } from '@/app/components/ui/AlertaCard'
 import { FilterBar } from '@/app/components/ui/FilterBar'
+import { MapaEspaña } from '@/components/subscriber/MapaEspaña'
 
 export const dynamic = 'force-dynamic'
 
@@ -16,6 +17,7 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
   if (!user) redirect('/login')
 
   const page = parseInt(params.page ?? '1') - 1
+  const fuentes = params.fuente?.split(',').filter(Boolean)
   const db = createNextServerClient()
 
   let query = db
@@ -25,7 +27,7 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
     .order('created_at', { ascending: false })
     .range(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE - 1)
 
-  if (params.fuente && params.fuente !== 'all') query = query.eq('fuente', params.fuente)
+  if (fuentes?.length) query = query.in('fuente', fuentes)
   if (params.urgencia && params.urgencia !== 'all') query = query.eq('urgencia', params.urgencia)
 
   const { data: alertas, count } = await query
@@ -38,31 +40,20 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
         <p className="text-sm text-slate-400">{count ?? 0} alertas</p>
       </div>
 
+      <MapaEspaña />
+
       <div className="mb-4">
         <FilterBar
           filters={[
-            { key: 'fuente', placeholder: 'Fuente', options: [
-              { value: 'BOE',           label: 'BOE — Estatal' },
-              { value: 'BOCM',          label: 'BOCM — Madrid' },
-              { value: 'DOGC',          label: 'DOGC — Cataluña' },
-              { value: 'BORM',          label: 'BORM — Murcia' },
-              { value: 'BOJA',          label: 'BOJA — Andalucía' },
-              { value: 'BOIB',          label: 'BOIB — Baleares' },
-              { value: 'BOC_CANARIAS',  label: 'BOC — Canarias' },
-              { value: 'BOC_CANTABRIA', label: 'BOC — Cantabria' },
-              { value: 'BOCYL',         label: 'BOCYL — Castilla y León' },
-              { value: 'DOE',           label: 'DOE — Extremadura' },
-              { value: 'DOG',           label: 'DOG — Galicia' },
-              { value: 'BOPV',          label: 'BOPV — País Vasco' },
-              { value: 'BOPA',          label: 'BOPA — Asturias' },
-              { value: 'BON',           label: 'BON — Navarra' },
-              { value: 'BOR',           label: 'BOR — La Rioja' },
-            ]},
-            { key: 'urgencia', placeholder: 'Urgencia', options: [
-              { value: 'alta', label: 'Alta' },
-              { value: 'media', label: 'Media' },
-              { value: 'baja', label: 'Baja' },
-            ]},
+            {
+              key: 'urgencia',
+              placeholder: 'Urgencia',
+              options: [
+                { value: 'alta', label: 'Alta' },
+                { value: 'media', label: 'Media' },
+                { value: 'baja', label: 'Baja' },
+              ],
+            },
           ]}
         />
       </div>
