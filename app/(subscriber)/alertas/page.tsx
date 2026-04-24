@@ -33,6 +33,25 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
   const { data: alertas, count } = await query
   const totalPages = Math.ceil((count ?? 0) / PAGE_SIZE)
 
+  // Compute map stats for heatmap
+  const today = new Date().toISOString().slice(0, 10)
+  // TODO: replace with a DB-side aggregate query when alert volume grows
+  const { data: statsRows } = await db
+    .from('alertas')
+    .select('fuente, created_at')
+    .eq('estado', 'enviada')
+    .limit(10000)
+
+  const countByFuente: Record<string, number> = {}
+  const todayFuentesSet = new Set<string>()
+  for (const row of statsRows ?? []) {
+    if (!row.fuente) continue
+    countByFuente[row.fuente] = (countByFuente[row.fuente] ?? 0) + 1
+    if (row.created_at?.startsWith(today)) todayFuentesSet.add(row.fuente)
+  }
+  const maxCount = Math.max(1, ...Object.values(countByFuente))
+  const mapStats = { countByFuente, todayFuentes: [...todayFuentesSet], maxCount }
+
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
@@ -40,7 +59,7 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
         <p className="text-sm text-slate-400">{count ?? 0} alertas</p>
       </div>
 
-      <MapaEspaña />
+      <MapaEspaña stats={mapStats} />
 
       <div className="mb-4">
         <FilterBar

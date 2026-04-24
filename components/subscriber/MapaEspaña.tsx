@@ -3,11 +3,18 @@ import { Suspense } from 'react'
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useCallback } from 'react'
 import { REGIONES } from '@/lib/spain-ccaa-paths'
+import { getHeatColor } from '@/lib/heatmap'
 
 // viewBox from lib/spain-ccaa-paths.ts — "0 0 613 544"
 const VIEWBOX = '0 0 613 544'
 
-function MapaEspañaInner() {
+type MapStats = {
+  countByFuente: Record<string, number>
+  todayFuentes: string[]
+  maxCount: number
+}
+
+function MapaEspañaInner({ stats }: { stats: MapStats }) {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -63,39 +70,127 @@ function MapaEspañaInner() {
         aria-label="Mapa de España por comunidades autónomas"
       >
         {REGIONES.map(region => {
+          const count = stats.countByFuente[region.fuente] ?? 0
           const isSelected = selectedFuentes.includes(region.fuente)
+          const ratio = stats.maxCount > 0 ? count / stats.maxCount : 0
+          const textColor = isSelected
+            ? '#ffffff'
+            : ratio >= 0.4
+            ? '#ffffff'
+            : '#7c2d12'
+
           return (
-            <path
-              key={region.id}
-              d={region.path}
-              role={region.disabled ? undefined : 'button'}
-              aria-hidden={region.disabled ? true : undefined}
-              aria-label={region.disabled ? undefined : region.nombre}
-              aria-pressed={region.disabled ? undefined : isSelected}
-              tabIndex={region.disabled ? -1 : 0}
-              onClick={region.disabled ? undefined : () => toggleFuente(region.fuente)}
-              onKeyDown={region.disabled ? undefined : (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault()
-                  toggleFuente(region.fuente)
+            <g key={region.id}>
+              <path
+                d={region.path}
+                role={region.disabled ? undefined : 'button'}
+                aria-hidden={region.disabled ? true : undefined}
+                aria-label={region.disabled ? undefined : region.nombre}
+                aria-pressed={region.disabled ? undefined : isSelected}
+                tabIndex={region.disabled ? -1 : 0}
+                onClick={region.disabled ? undefined : () => toggleFuente(region.fuente)}
+                onKeyDown={region.disabled ? undefined : (e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault()
+                    toggleFuente(region.fuente)
+                  }
+                }}
+                strokeWidth="1"
+                style={
+                  !region.disabled && !isSelected && count > 0
+                    ? { fill: getHeatColor(count, stats.maxCount) }
+                    : undefined
                 }
-              }}
-              strokeWidth="1"
-              className={[
-                'transition-colors',
-                region.disabled
-                  ? 'fill-slate-100 stroke-slate-200 cursor-not-allowed'
-                  : isSelected
-                  ? 'fill-sky-400 stroke-sky-600 cursor-pointer'
-                  : 'fill-slate-200 stroke-slate-400 cursor-pointer hover:fill-slate-300',
-              ].join(' ')}
-            >
-              <title>
-                {region.disabled
-                  ? `${region.nombre} — Próximamente`
-                  : region.nombre}
-              </title>
-            </path>
+                className={[
+                  'transition-colors',
+                  region.disabled
+                    ? 'fill-slate-100 stroke-slate-200 cursor-not-allowed'
+                    : isSelected
+                    ? 'fill-sky-400 stroke-sky-600 cursor-pointer'
+                    : count === 0
+                    ? 'fill-slate-200 stroke-slate-400 cursor-pointer hover:fill-slate-300'
+                    : 'stroke-slate-400 cursor-pointer',
+                ].join(' ')}
+              >
+                <title>
+                  {region.disabled
+                    ? `${region.nombre} — Próximamente`
+                    : region.nombre}
+                </title>
+              </path>
+
+              {/* Region name label */}
+              <text
+                x={region.centroid[0]}
+                y={region.centroid[1] - 6}
+                textAnchor="middle"
+                fontSize="6"
+                fontWeight="600"
+                fill={textColor}
+                pointerEvents="none"
+              >
+                {region.nombre.toUpperCase()}
+              </text>
+
+              {/* Alert count */}
+              {!region.disabled && count > 0 && (
+                <text
+                  x={region.centroid[0]}
+                  y={region.centroid[1] + 6}
+                  textAnchor="middle"
+                  fontSize="9"
+                  fontWeight="700"
+                  fill={textColor}
+                  pointerEvents="none"
+                >
+                  {count}
+                </text>
+              )}
+
+              {/* Mini progress bar */}
+              {!region.disabled && count > 0 && (
+                <g pointerEvents="none">
+                  <rect
+                    x={region.centroid[0] - 15}
+                    y={region.centroid[1] + 10}
+                    width="30"
+                    height="3"
+                    rx="1.5"
+                    fill="rgba(0,0,0,0.15)"
+                  />
+                  <rect
+                    x={region.centroid[0] - 15}
+                    y={region.centroid[1] + 10}
+                    width={30 * ratio}
+                    height="3"
+                    rx="1.5"
+                    fill="rgba(255,255,255,0.7)"
+                  />
+                </g>
+              )}
+
+              {/* Pulsing dot — today activity */}
+              {!region.disabled && stats.todayFuentes.includes(region.fuente) && (
+                <g pointerEvents="none">
+                  <circle
+                    cx={region.centroid[0] + 18}
+                    cy={region.centroid[1] - 18}
+                    r="4"
+                    fill="#fef08a"
+                  />
+                  <circle
+                    cx={region.centroid[0] + 18}
+                    cy={region.centroid[1] - 18}
+                    r="4"
+                    fill="#fef08a"
+                    opacity="0.5"
+                  >
+                    <animate attributeName="r" from="4" to="9" dur="1.2s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" from="0.5" to="0" dur="1.2s" repeatCount="indefinite" />
+                  </circle>
+                </g>
+              )}
+            </g>
           )
         })}
       </svg>
@@ -133,10 +228,10 @@ function MapaEspañaInner() {
   )
 }
 
-export function MapaEspaña() {
+export function MapaEspaña({ stats }: { stats: MapStats }) {
   return (
     <Suspense fallback={<div className="bg-white border border-slate-200 rounded-lg p-4 mb-4 h-48 animate-pulse" />}>
-      <MapaEspañaInner />
+      <MapaEspañaInner stats={stats} />
     </Suspense>
   )
 }
