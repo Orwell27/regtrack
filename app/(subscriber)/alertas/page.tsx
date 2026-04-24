@@ -35,10 +35,12 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
 
   // Compute map stats for heatmap
   const today = new Date().toISOString().slice(0, 10)
+  // TODO: replace with a DB-side aggregate query when alert volume grows
   const { data: statsRows } = await db
     .from('alertas')
     .select('fuente, created_at')
     .eq('estado', 'enviada')
+    .limit(10000)
 
   const countByFuente: Record<string, number> = {}
   const todayFuentesSet = new Set<string>()
