@@ -102,7 +102,7 @@ function MapaEspañaInner({ stats }: { stats: MapStats }) {
                     : undefined
                 }
                 className={[
-                  'transition-colors',
+                  'transition-colors outline-none',
                   region.disabled
                     ? 'fill-slate-100 stroke-slate-200 cursor-not-allowed'
                     : isSelected
