@@ -119,24 +119,26 @@ function MapaEspañaInner({ stats }: { stats: MapStats }) {
                 </title>
               </path>
 
-              {/* Region name label */}
-              <text
-                x={region.centroid[0]}
-                y={region.centroid[1] - 6}
-                textAnchor="middle"
-                fontSize="6"
-                fontWeight="600"
-                fill={textColor}
-                pointerEvents="none"
-              >
-                {region.nombre.toUpperCase()}
-              </text>
+              {/* Region name label — only when selected or has data */}
+              {(isSelected || (!region.disabled && count > 0)) && (
+                <text
+                  x={region.centroid[0]}
+                  y={region.centroid[1] - (count > 0 ? 4 : 2)}
+                  textAnchor="middle"
+                  fontSize="6"
+                  fontWeight="600"
+                  fill={textColor}
+                  pointerEvents="none"
+                >
+                  {region.nombre.toUpperCase()}
+                </text>
+              )}
 
               {/* Alert count */}
               {!region.disabled && count > 0 && (
                 <text
                   x={region.centroid[0]}
-                  y={region.centroid[1] + 6}
+                  y={region.centroid[1] + 8}
                   textAnchor="middle"
                   fontSize="9"
                   fontWeight="700"
@@ -145,28 +147,6 @@ function MapaEspañaInner({ stats }: { stats: MapStats }) {
                 >
                   {count}
                 </text>
-              )}
-
-              {/* Mini progress bar */}
-              {!region.disabled && count > 0 && (
-                <g pointerEvents="none">
-                  <rect
-                    x={region.centroid[0] - 15}
-                    y={region.centroid[1] + 10}
-                    width="30"
-                    height="3"
-                    rx="1.5"
-                    fill="rgba(0,0,0,0.15)"
-                  />
-                  <rect
-                    x={region.centroid[0] - 15}
-                    y={region.centroid[1] + 10}
-                    width={30 * ratio}
-                    height="3"
-                    rx="1.5"
-                    fill="rgba(255,255,255,0.7)"
-                  />
-                </g>
               )}
 
               {/* Pulsing dot — today activity */}
