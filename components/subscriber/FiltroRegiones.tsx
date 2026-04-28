@@ -1,7 +1,6 @@
 'use client'
-import { Suspense } from 'react'
+import { Suspense, useCallback } from 'react'
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
-import { useCallback } from 'react'
 import { REGIONES } from '@/lib/regiones'
 
 const ENABLED = REGIONES.filter(r => !r.disabled).sort((a, b) =>
