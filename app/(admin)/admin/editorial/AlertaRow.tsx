@@ -18,7 +18,13 @@ const BORDER_STYLE: Record<string, string> = {
 
 type Estado = 'pendiente_revision' | 'aprobada' | 'descartada' | 'enviada'
 
-export function AlertaRow({ alerta }: { alerta: Alerta }) {
+export function AlertaRow({
+  alerta,
+  subcategorias = [],
+}: {
+  alerta: Alerta
+  subcategorias?: Array<{ nombre: string; slug: string }>
+}) {
   const [estado, setEstado] = useState<Estado>(alerta.estado)
   const [loading, setLoading] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -84,6 +90,19 @@ export function AlertaRow({ alerta }: { alerta: Alerta }) {
           </span>
         </div>
       </div>
+
+      {subcategorias.length > 0 && (
+        <div className="flex flex-wrap gap-1 mt-1">
+          {subcategorias.map(s => (
+            <span
+              key={s.slug}
+              className="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-100"
+            >
+              🏠 {s.nombre}
+            </span>
+          ))}
+        </div>
+      )}
 
       <div className="flex gap-3 text-xs text-slate-500">
         <span>📰 {alerta.fuente}</span>

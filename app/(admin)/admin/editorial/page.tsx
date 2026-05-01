@@ -14,6 +14,26 @@ export default async function EditorialPage() {
   const pendientes = alertas?.filter(a => a.estado === 'pendiente_revision') ?? []
   const aprobadas = alertas?.filter(a => a.estado === 'aprobada') ?? []
 
+  const alertaIds = (alertas ?? []).map((a: { id: string }) => a.id)
+
+  type SubEntry = { alerta_id: string; subcategorias: { nombre: string; slug: string } | null }
+  type SubMap = Record<string, Array<{ nombre: string; slug: string }>>
+
+  let subsByAlerta: SubMap = {}
+  if (alertaIds.length > 0) {
+    const { data: alertaSubs } = await db
+      .from('alerta_sectores')
+      .select('alerta_id, subcategorias(nombre, slug)')
+      .in('alerta_id', alertaIds)
+
+    for (const row of ((alertaSubs ?? []) as SubEntry[])) {
+      const sub = row.subcategorias
+      if (!sub) continue
+      if (!subsByAlerta[row.alerta_id]) subsByAlerta[row.alerta_id] = []
+      subsByAlerta[row.alerta_id].push(sub)
+    }
+  }
+
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
@@ -30,7 +50,7 @@ export default async function EditorialPage() {
       ) : (
         <div className="space-y-3">
           {[...pendientes, ...aprobadas].map(alerta => (
-            <AlertaRow key={alerta.id} alerta={alerta} />
+            <AlertaRow key={alerta.id} alerta={alerta} subcategorias={subsByAlerta[alerta.id] ?? []} />
           ))}
         </div>
       )}
