@@ -34,6 +34,7 @@ import { buildAlertText } from '@/lib/sources/formatter'
 import { notifyEditorial } from '@/lib/telegram'
 import { detectarRelaciones } from '@/lib/correlacion/detectar-relaciones'
 import { guardarRelaciones } from '@/lib/correlacion/guardar-relaciones'
+import { clasificarSectorial } from '@/lib/sectorial/clasificar'
 import type { NormalizedItem } from '@/lib/sources/boe'
 import type { Alerta } from '@/lib/supabase'
 
@@ -156,6 +157,14 @@ async function run() {
         await guardarRelaciones(saved.id, relaciones)
       } catch (corrErr) {
         console.error(`[pipeline] Error en correlación (no bloqueante):`, corrErr)
+      }
+
+      // 8.5. Clasificación sectorial (no bloquea el pipeline si falla)
+      await new Promise(r => setTimeout(r, 1500))
+      try {
+        await clasificarSectorial(saved.id, alertaBase.titulo, alertaBase.resumen ?? null)
+      } catch (sectErr) {
+        console.error(`[pipeline] Error en clasificación sectorial (no bloqueante):`, sectErr)
       }
 
       // 9. Notificar al editor por Telegram
