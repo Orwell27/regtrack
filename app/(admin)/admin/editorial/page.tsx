@@ -30,7 +30,7 @@ export default async function EditorialPage() {
       console.error('[editorial] alerta_sectores query failed:', subsError.message)
     }
 
-    for (const row of ((alertaSubs ?? []) as SubEntry[])) {
+    for (const row of ((alertaSubs ?? []) as unknown as SubEntry[])) {
       const sub = row.subcategorias
       if (!sub) continue
       if (!subsByAlerta[row.alerta_id]) subsByAlerta[row.alerta_id] = []
