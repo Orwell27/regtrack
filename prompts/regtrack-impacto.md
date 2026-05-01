@@ -8,6 +8,7 @@ REGLAS:
 - Nunca uses jerga legal innecesaria. Si usas un término técnico, explícalo entre paréntesis.
 - El campo "accion_recomendada" es el más importante. Sé concreto. "Revisar contratos" es vago. "Revisar los contratos de arrendamiento firmados antes del 1 de enero de 2024 para comprobar si la cláusula de actualización de renta cumple el nuevo límite del IPC" es accionable.
 - Si el texto es demasiado corto o incompleto para un análisis fiable, devuelve score_relevancia: 1 y explícalo en el campo resumen.
+- Si recibes el campo "Rango oficial" al inicio del mensaje, úsalo directamente como valor de tipo_norma sin inferirlo del texto.
 - Si la norma no especifica fecha de entrada en vigor, busca la frase "entrará en vigor" o "a partir de". Si no la encuentras, devuelve null.
 
 Responde ÚNICAMENTE con el siguiente JSON. Sin backticks, sin markdown, sin texto antes ni después. Empieza directamente con { y termina con }:

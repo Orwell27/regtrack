@@ -22,6 +22,22 @@ function loadPrompt(filename: string): string {
   return readFileSync(join(process.cwd(), 'prompts', filename), 'utf-8')
 }
 
+export interface MetaBOE {
+  departamento?: string
+  epigrafe?: string
+  rango?: string
+}
+
+function buildMetaHeader(meta?: MetaBOE): string {
+  if (!meta) return ''
+  const lines = [
+    meta.departamento ? `Departamento: ${meta.departamento}` : '',
+    meta.epigrafe ? `Epígrafe oficial BOE: ${meta.epigrafe}` : '',
+    meta.rango ? `Rango oficial: ${meta.rango}` : '',
+  ].filter(Boolean)
+  return lines.length > 0 ? lines.join('\n') + '\n\n' : ''
+}
+
 // ─── Clasificador ────────────────────────────────────────────────────────────
 
 export interface ClassifyResult {
@@ -33,11 +49,12 @@ export interface ClassifyResult {
 
 export async function classifyDocument(
   titulo: string,
-  texto: string
+  texto: string,
+  meta?: MetaBOE
 ): Promise<ClassifyResult> {
   try {
     const systemPrompt = loadPrompt('regtrack-clasificador.md')
-    const userContent = `Título: ${titulo}\n\nTexto:\n${texto.slice(0, 3000)}`
+    const userContent = `${buildMetaHeader(meta)}Título: ${titulo}\n\nTexto:\n${texto.slice(0, 3000)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
@@ -74,11 +91,12 @@ export interface ImpactResult {
 export async function analyzeImpact(
   titulo: string,
   texto: string,
-  fuente: string
+  fuente: string,
+  meta?: MetaBOE
 ): Promise<ImpactResult | null> {
   try {
     const systemPrompt = loadPrompt('regtrack-impacto.md')
-    const userContent = `Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto completo:\n${texto.slice(0, 8000)}`
+    const userContent = `${buildMetaHeader(meta)}Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto completo:\n${texto.slice(0, 8000)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
