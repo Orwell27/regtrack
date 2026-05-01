@@ -7,7 +7,9 @@ import { FiltroRegiones } from '@/components/subscriber/FiltroRegiones'
 
 export const dynamic = 'force-dynamic'
 
-type SearchParams = { fuente?: string; urgencia?: string; page?: string; solo_intereses?: string }
+type SearchParams = { fuente?: string; urgencia?: string; page?: string; solo_intereses?: string; subcategoria?: string }
+type SubcategoriaFiltro = { id: number; slug: string; nombre: string }
+type SubEntry = { alerta_id: string; subcategorias: { nombre: string; slug: string } | null }
 
 const PAGE_SIZE = 20
 
@@ -20,12 +22,14 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
   const fuentes = params.fuente?.split(',').filter(Boolean)
   const db = createNextServerClient()
 
-  const { data: interesesData } = await db
-    .from('suscriptor_intereses')
-    .select('subcategoria_id')
-    .eq('usuario_id', user.usuarioId)
+  const [interesesRes, subcatsRes] = await Promise.all([
+    db.from('suscriptor_intereses').select('subcategoria_id').eq('usuario_id', user.usuarioId),
+    db.from('subcategorias').select('id, slug, nombre').eq('activo', true).order('nombre'),
+  ])
 
-  const interesIds = new Set((interesesData ?? []).map(i => i.subcategoria_id))
+  const interesIds = new Set((interesesRes.data ?? []).map(i => i.subcategoria_id))
+  const subcats: SubcategoriaFiltro[] = subcatsRes.data ?? []
+  const subcatActiva = subcats.find(s => s.slug === params.subcategoria) ?? null
 
   let query = db
     .from('alertas')
@@ -37,31 +41,53 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
   if (fuentes?.length) query = query.in('fuente', fuentes)
   if (params.urgencia && params.urgencia !== 'all') query = query.eq('urgencia', params.urgencia)
 
+  if (subcatActiva) {
+    const { data: alertasConSub } = await db
+      .from('alerta_sectores')
+      .select('alerta_id')
+      .eq('subcategoria_id', subcatActiva.id)
+    const ids = (alertasConSub ?? []).map(r => r.alerta_id)
+    query = ids.length > 0
+      ? query.in('id', ids)
+      : query.in('id', ['00000000-0000-0000-0000-000000000000'])
+  }
+
   if (params.solo_intereses === 'true' && interesIds.size > 0) {
     const { data: alertasConInteres } = await db
       .from('alerta_sectores')
       .select('alerta_id')
       .in('subcategoria_id', Array.from(interesIds))
     const ids = (alertasConInteres ?? []).map(r => r.alerta_id)
-    if (ids.length === 0) {
-      query = query.in('id', ['00000000-0000-0000-0000-000000000000'])
-    } else {
-      query = query.in('id', ids)
-    }
+    query = ids.length > 0
+      ? query.in('id', ids)
+      : query.in('id', ['00000000-0000-0000-0000-000000000000'])
   }
 
   const { data: alertas, count } = await query
   const totalPages = Math.ceil((count ?? 0) / PAGE_SIZE)
 
   const alertaIds = (alertas ?? []).map(a => a.id)
+
   const relevantIds = new Set<string>()
-  if (interesIds.size > 0 && alertaIds.length > 0) {
-    const { data: matches } = await db
-      .from('alerta_sectores')
-      .select('alerta_id')
-      .in('alerta_id', alertaIds)
-      .in('subcategoria_id', Array.from(interesIds))
-    for (const m of matches ?? []) relevantIds.add(m.alerta_id)
+  type SubMap = Record<string, Array<{ nombre: string; slug: string }>>
+  let subsByAlerta: SubMap = {}
+
+  if (alertaIds.length > 0) {
+    const [relevanceRes, subsRes] = await Promise.all([
+      interesIds.size > 0
+        ? db.from('alerta_sectores').select('alerta_id').in('alerta_id', alertaIds).in('subcategoria_id', Array.from(interesIds))
+        : Promise.resolve({ data: [] }),
+      db.from('alerta_sectores').select('alerta_id, subcategorias(nombre, slug)').in('alerta_id', alertaIds),
+    ])
+
+    for (const m of relevanceRes.data ?? []) relevantIds.add(m.alerta_id)
+
+    for (const row of ((subsRes.data ?? []) as unknown as SubEntry[])) {
+      const sub = row.subcategorias
+      if (!sub) continue
+      if (!subsByAlerta[row.alerta_id]) subsByAlerta[row.alerta_id] = []
+      subsByAlerta[row.alerta_id].push(sub)
+    }
   }
 
   return (
@@ -72,6 +98,39 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
       </div>
 
       <FiltroRegiones />
+
+      {subcats.length > 0 && (
+        <div className="mb-4">
+          <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Sector inmobiliario</p>
+          <div className="flex flex-wrap gap-1.5">
+            {subcats.map(s => {
+              const isActive = params.subcategoria === s.slug
+              const nextParams = new URLSearchParams(
+                Object.fromEntries(Object.entries(params).filter(([, v]) => v !== undefined)) as Record<string, string>
+              )
+              if (isActive) {
+                nextParams.delete('subcategoria')
+              } else {
+                nextParams.set('subcategoria', s.slug)
+                nextParams.set('page', '1')
+              }
+              return (
+                <a
+                  key={s.slug}
+                  href={`?${nextParams}`}
+                  className={`text-[11px] px-2.5 py-1 rounded-full border transition-colors ${
+                    isActive
+                      ? 'bg-amber-500 text-white border-amber-500'
+                      : 'border-slate-200 text-slate-600 hover:bg-amber-50 hover:border-amber-200 hover:text-amber-700'
+                  }`}
+                >
+                  {s.nombre}
+                </a>
+              )
+            })}
+          </div>
+        </div>
+      )}
 
       <div className="mb-4">
         <FilterBar
@@ -93,7 +152,7 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
         <div className="mb-3">
           <a
             href={`?${new URLSearchParams({
-              ...params,
+              ...Object.fromEntries(Object.entries(params).filter(([, v]) => v !== undefined)) as Record<string, string>,
               solo_intereses: params.solo_intereses === 'true' ? 'false' : 'true',
               page: '1',
             })}`}
@@ -120,6 +179,7 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
               alerta={alerta}
               plan={user.plan}
               relevante={relevantIds.has(alerta.id)}
+              subcategorias={subsByAlerta[alerta.id] ?? []}
             />
           ))}
         </div>

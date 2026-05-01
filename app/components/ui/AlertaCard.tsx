@@ -17,9 +17,10 @@ type Props = {
   alerta: Alerta
   plan: Plan
   relevante?: boolean
+  subcategorias?: Array<{ nombre: string; slug: string }>
 }
 
-export function AlertaCard({ alerta, plan, relevante }: Props) {
+export function AlertaCard({ alerta, plan, relevante, subcategorias = [] }: Props) {
   const isPro = plan === 'pro'
   const urgencia = alerta.urgencia ?? 'baja'
 
@@ -47,6 +48,19 @@ export function AlertaCard({ alerta, plan, relevante }: Props) {
         <span>{alerta.subtema}</span>
         <span>{alerta.territorios?.join(', ')}</span>
       </div>
+
+      {subcategorias.length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {subcategorias.map(s => (
+            <span
+              key={s.slug}
+              className="text-[10px] px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-100 font-medium"
+            >
+              🏠 {s.nombre}
+            </span>
+          ))}
+        </div>
+      )}
 
       <p className="text-xs text-slate-600 line-clamp-3">{alerta.resumen}</p>
 
