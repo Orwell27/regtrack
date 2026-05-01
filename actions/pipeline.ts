@@ -88,7 +88,12 @@ async function run() {
       const texto = item.texto ?? ''
 
       // 4. Clasificar con Claude Haiku
-      const classification = await classifyDocument(item.titulo, texto)
+      const meta = item.fuente === 'BOE' ? {
+        departamento: item.departamento,
+        epigrafe: item.epigrafe,
+        rango: item.rango,
+      } : undefined
+      const classification = await classifyDocument(item.titulo, texto, meta)
 
       if (!classification.relevante) {
         console.log(`[pipeline] Descartado: ${item.titulo.slice(0, 60)}`)
@@ -99,7 +104,7 @@ async function run() {
       console.log(`[pipeline] Relevante (${classification.subtema}): ${item.titulo.slice(0, 60)}`)
 
       // 5. Analizar impacto con Claude Sonnet
-      const impact = await analyzeImpact(item.titulo, texto, item.fuente)
+      const impact = await analyzeImpact(item.titulo, texto, item.fuente, meta)
 
       if (!impact || impact.score_relevancia < 4) {
         console.log(`[pipeline] Score bajo (${impact?.score_relevancia ?? 0}): descartado`)
@@ -127,6 +132,11 @@ async function run() {
         score_relevancia: impact.score_relevancia,
         estado: 'pendiente_revision' as const,
         no_procesable: false,
+        boe_id: item.boe_id ?? null,
+        departamento: item.departamento ?? null,
+        epigrafe: item.epigrafe ?? null,
+        rango: item.rango ?? impact.tipo_norma ?? null,
+        referencias_boe: item.referencias_boe ?? [],
       }
 
       const { free, pro } = buildAlertText(alertaBase as unknown as Alerta)
@@ -144,6 +154,43 @@ async function run() {
       }
 
       procesados++
+
+      // 8.0 Correlación ground-truth (referencias directas del BOE)
+      if (item.fuente === 'BOE' && item.referencias_boe && item.referencias_boe.length > 0) {
+        try {
+          const refIds = item.referencias_boe
+            .filter(r => r.tipo === 'modifica' || r.tipo === 'deroga')
+            .map(r => r.boe_id)
+
+          if (refIds.length > 0) {
+            const { data: matches } = await db
+              .from('alertas')
+              .select('id, boe_id')
+              .in('boe_id', refIds)
+
+            for (const match of matches ?? []) {
+              const ref = item.referencias_boe.find(r => r.boe_id === match.boe_id)
+              if (!ref) continue
+              const { error: relErr } = await db
+                .from('alerta_relaciones')
+                .upsert({
+                  alerta_id: saved.id,
+                  alerta_relacionada_id: match.id,
+                  tipo_relacion: ref.tipo as 'modifica' | 'deroga',
+                  score_similitud: 100,
+                  razon: `Referencia directa BOE: ${ref.descripcion}`,
+                }, { onConflict: 'alerta_id,alerta_relacionada_id' })
+              if (relErr) {
+                console.error('[pipeline] Error en correlación ground-truth:', relErr.message)
+              } else {
+                console.log(`[pipeline] Relación ground-truth (${ref.tipo}): ${saved.id} → ${match.id}`)
+              }
+            }
+          }
+        } catch (gtErr) {
+          console.error('[pipeline] Error en correlación ground-truth (no bloqueante):', gtErr)
+        }
+      }
 
       // 8. Detectar y guardar correlaciones (no bloquea el pipeline si falla)
       try {
