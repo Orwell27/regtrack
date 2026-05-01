@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Cuerpo inválido' }, { status: 400 })
   }
 
-  if (!body.nombre || !body.chat_id || !body.subcategoria_id) {
+  if (!body.nombre?.trim() || !body.chat_id?.trim() || body.subcategoria_id == null) {
     return NextResponse.json({ error: 'Faltan campos requeridos: nombre, chat_id, subcategoria_id' }, { status: 400 })
   }
 
@@ -41,8 +41,8 @@ export async function POST(req: NextRequest) {
   const { data, error } = await db
     .from('telegram_grupos')
     .insert({
-      nombre: body.nombre,
-      chat_id: body.chat_id,
+      nombre: body.nombre.trim(),
+      chat_id: body.chat_id.trim(),
       subcategoria_id: body.subcategoria_id,
       invite_link: body.invite_link ?? null,
     })
@@ -73,8 +73,13 @@ export async function DELETE(req: NextRequest) {
   if (isNaN(id)) return NextResponse.json({ error: 'id inválido' }, { status: 400 })
 
   const db = createNextServerClient()
-  const { error } = await db.from('telegram_grupos').delete().eq('id', id)
+  const { data, error } = await db
+    .from('telegram_grupos')
+    .delete()
+    .eq('id', id)
+    .select('id')
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  if (!data || data.length === 0) return NextResponse.json({ error: 'Grupo no encontrado' }, { status: 404 })
   return NextResponse.json({ ok: true })
 }
