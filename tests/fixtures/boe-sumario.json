@@ -12,7 +12,9 @@
                 "nombre": "Arrendamientos",
                 "item": [{
                   "id": "BOE-A-2026-1234",
+                  "identificador": "BOE-A-2026-1234",
                   "titulo": "Real Decreto 123/2026 sobre actualización de renta en contratos de arrendamiento",
+                  "rango": "Real Decreto",
                   "url_html": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1234",
                   "url_pdf": "https://www.boe.es/boe/dias/2026/04/11/pdfs/BOE-A-2026-1234.pdf"
                 }]

@@ -55,6 +55,12 @@ export function parseBOESumario(data: any): NormalizedItem[] {
               titulo: item.titulo ?? '',
               url: typeof url === 'string' ? url : String(url),
               fuente: 'BOE',
+              boe_id: id,
+              departamento: dept.nombre ?? dept.titulo ?? undefined,
+              epigrafe: typeof epigrafe === 'object' && !Array.isArray(epigrafe)
+                ? (epigrafe.nombre ?? epigrafe.titulo ?? undefined)
+                : undefined,
+              rango: item.rango ?? undefined,
               _xmlUrl: xmlUrl ? (typeof xmlUrl === 'string' ? xmlUrl : String(xmlUrl)) : undefined,
             })
           }

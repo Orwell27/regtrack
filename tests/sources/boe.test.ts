@@ -21,6 +21,26 @@ describe('parseBOESumario', () => {
     expect(parseBOESumario(emptyFixture)).toEqual([])
   })
 
+  it('extrae boe_id del campo identificador', () => {
+    const items = parseBOESumario(fixture)
+    expect(items[0].boe_id).toBe('BOE-A-2026-1234')
+  })
+
+  it('extrae departamento del sumario', () => {
+    const items = parseBOESumario(fixture)
+    expect(items[0].departamento).toBe('MINISTERIO DE VIVIENDA')
+  })
+
+  it('extrae epigrafe del sumario', () => {
+    const items = parseBOESumario(fixture)
+    expect(items[0].epigrafe).toBe('Arrendamientos')
+  })
+
+  it('extrae rango del item', () => {
+    const items = parseBOESumario(fixture)
+    expect(items[0].rango).toBe('Real Decreto')
+  })
+
   it('omite items sin url_html', () => {
     const fixtureWithMissingUrl = {
       data: {
