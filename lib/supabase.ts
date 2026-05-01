@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import type { ReferenciaBOE } from './sources/boe'
 
 // ─── Tipos de dominio ───────────────────────────────────────────────────────
 
@@ -41,6 +42,11 @@ export interface Alerta {
   estado: EstadoAlerta
   no_procesable: boolean
   created_at: string
+  boe_id: string | null
+  departamento: string | null
+  epigrafe: string | null
+  rango: string | null
+  referencias_boe: ReferenciaBOE[]
 }
 
 export type Rol = 'admin' | 'subscriber'

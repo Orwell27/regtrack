@@ -2,6 +2,12 @@ import { XMLParser } from 'fast-xml-parser'
 
 export const RELEVANT_SECTIONS = ['1', '3'] as const // I: Disposiciones generales, III: Otras disposiciones
 
+export interface ReferenciaBOE {
+  boe_id: string
+  tipo: 'modifica' | 'deroga' | 'complementa' | 'otro'
+  descripcion: string
+}
+
 export interface NormalizedItem {
   id: string
   titulo: string
@@ -9,6 +15,12 @@ export interface NormalizedItem {
   fuente: 'BOE' | 'BOCM' | 'DOGC' | 'BORM' | 'BOJA' | 'BOIB' | 'BOC_CANARIAS' | 'BOC_CANTABRIA' | 'BOCYL' | 'DOE' | 'DOG' | 'BOPV' | 'BOPA' | 'BON' | 'BOR'
   texto?: string
   _xmlUrl?: string // URL interna para fetchBOEText, no se persiste
+  // Solo BOE:
+  boe_id?: string
+  departamento?: string
+  epigrafe?: string
+  rango?: string
+  referencias_boe?: ReferenciaBOE[]
 }
 
 export function parseBOESumario(data: any): NormalizedItem[] {
