@@ -2,6 +2,34 @@ import { XMLParser } from 'fast-xml-parser'
 
 export const RELEVANT_SECTIONS = ['1', '3'] as const // I: Disposiciones generales, III: Otras disposiciones
 
+function mapOrden(orden: string): ReferenciaBOE['tipo'] {
+  const o = (orden ?? '').toUpperCase()
+  if (o.startsWith('MODIFICA')) return 'modifica'
+  if (o.startsWith('DEROGA')) return 'deroga'
+  if (o.startsWith('AÑADE') || o.startsWith('ANADE')) return 'complementa'
+  return 'otro'
+}
+
+export function parseReferencesBOE(xml: string): ReferenciaBOE[] {
+  if (!xml) return []
+  try {
+    const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' })
+    const parsed = parser.parse(xml)
+    const raw = parsed?.documento?.referencias?.anteriores?.anterior
+    if (!raw) return []
+    const items = Array.isArray(raw) ? raw : [raw]
+    return items
+      .filter((r: any) => r?.['@_referencia'])
+      .map((r: any) => ({
+        boe_id: String(r['@_referencia']),
+        tipo: mapOrden(String(r['@_orden'] ?? '')),
+        descripcion: String(r['#text'] ?? r['_text'] ?? '').trim(),
+      }))
+  } catch {
+    return []
+  }
+}
+
 export interface ReferenciaBOE {
   boe_id: string
   tipo: 'modifica' | 'deroga' | 'complementa' | 'otro'
@@ -71,23 +99,24 @@ export function parseBOESumario(data: any): NormalizedItem[] {
   return items
 }
 
-export async function fetchBOEText(id: string, xmlUrl?: string): Promise<string> {
-  // Usar url_xml directamente si está disponible (más fiable que la API /id/)
+export async function fetchBOEText(
+  id: string,
+  xmlUrl?: string
+): Promise<{ texto: string; referencias_boe: ReferenciaBOE[] }> {
   const targetUrl = xmlUrl ?? `https://www.boe.es/diario_boe/xml.php?id=${id}`
   try {
     const res = await fetch(targetUrl)
-    if (!res.ok) return ''
+    if (!res.ok) return { texto: '', referencias_boe: [] }
     const xml = await res.text()
-    // Extraer todo el texto legible del XML eliminando tags
+    const referencias_boe = parseReferencesBOE(xml)
     const sinTags = xml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
-    // Eliminar la cabecera XML y metadatos hasta llegar al contenido
     const idxTitulo = sinTags.indexOf('Jefatura') !== -1
       ? sinTags.indexOf('Jefatura')
       : sinTags.indexOf('TEXTO')
     const texto = idxTitulo > 0 ? sinTags.slice(idxTitulo) : sinTags
-    return texto.slice(0, 8000)
+    return { texto: texto.slice(0, 8000), referencias_boe }
   } catch {
-    return ''
+    return { texto: '', referencias_boe: [] }
   }
 }
 
@@ -120,7 +149,8 @@ export async function fetchBOE(): Promise<NormalizedItem[]> {
     const withText = await Promise.all(
       batch.map(async (item) => {
         const { _xmlUrl, ...rest } = item
-        return { ...rest, texto: await fetchBOEText(item.id, _xmlUrl) }
+        const { texto, referencias_boe } = await fetchBOEText(item.id, _xmlUrl)
+        return { ...rest, texto, referencias_boe }
       })
     )
     results.push(...withText)
