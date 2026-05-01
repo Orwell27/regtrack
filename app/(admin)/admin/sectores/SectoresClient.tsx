@@ -11,11 +11,7 @@ export function SectoresClient({ sectores: initial }: { sectores: Sector[] }) {
 
   async function toggleSubcategoria(subcatId: number, activo: boolean) {
     setToggling(subcatId)
-    await fetch(`/api/admin/subcategorias/${subcatId}`, {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ activo }),
-    })
+    // Apply optimistically before the request
     setSectores(prev =>
       prev.map(sector => ({
         ...sector,
@@ -24,6 +20,22 @@ export function SectoresClient({ sectores: initial }: { sectores: Sector[] }) {
         ),
       }))
     )
+    const res = await fetch(`/api/admin/subcategorias/${subcatId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ activo }),
+    })
+    if (!res.ok) {
+      // Roll back on failure
+      setSectores(prev =>
+        prev.map(sector => ({
+          ...sector,
+          subcategorias: sector.subcategorias.map(s =>
+            s.id === subcatId ? { ...s, activo: !activo } : s
+          ),
+        }))
+      )
+    }
     setToggling(null)
   }
 

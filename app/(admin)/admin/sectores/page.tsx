@@ -1,15 +1,10 @@
 // app/(admin)/admin/sectores/page.tsx
 import { createNextServerClient } from '@/lib/supabase'
-import { getAuthUser } from '@/lib/auth'
-import { redirect } from 'next/navigation'
 import { SectoresClient } from './SectoresClient'
 
 export const dynamic = 'force-dynamic'
 
 export default async function SectoresPage() {
-  const user = await getAuthUser()
-  if (!user || user.rol !== 'admin') redirect('/login')
-
   const db = createNextServerClient()
   const [sectoresRes, subcatsRes] = await Promise.all([
     db.from('sectores').select('id, nombre, slug').order('nombre'),
