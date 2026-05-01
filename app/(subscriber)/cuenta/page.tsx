@@ -14,12 +14,20 @@ type DatosUsuario = {
   created_at: string
 }
 
+type SubcategoriaInterest = { id: number; slug: string; nombre: string; seleccionado: boolean }
+type SectorInterest = { id: number; nombre: string; slug: string; subcategorias: SubcategoriaInterest[] }
+type MiGrupo = { nombre: string; invite_link: string | null; subcategorias: { nombre: string } | null }
+
 export default function CuentaPage() {
   const [datos, setDatos] = useState<DatosUsuario | null>(null)
   const [nombre, setNombre] = useState('')
   const [telegramId, setTelegramId] = useState('')
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
+  const [sectores, setSectores] = useState<SectorInterest[]>([])
+  const [savingIntereses, setSavingIntereses] = useState(false)
+  const [savedIntereses, setSavedIntereses] = useState(false)
+  const [misGrupos, setMisGrupos] = useState<MiGrupo[]>([])
 
   useEffect(() => {
     fetch('/api/cuenta')
@@ -29,6 +37,12 @@ export default function CuentaPage() {
         setNombre(data.nombre)
         setTelegramId(data.telegram_id ?? '')
       })
+    fetch('/api/intereses')
+      .then(r => r.json())
+      .then((d: { sectores: SectorInterest[] }) => setSectores(d.sectores))
+    fetch('/api/mis-grupos')
+      .then(r => r.json())
+      .then(setMisGrupos)
   }, [])
 
   async function handleSave(e: React.FormEvent) {
@@ -42,6 +56,30 @@ export default function CuentaPage() {
     setSaving(false)
     setSaved(true)
     setTimeout(() => setSaved(false), 2000)
+  }
+
+  function toggleInteres(subcatId: number) {
+    setSectores(prev =>
+      prev.map(sector => ({
+        ...sector,
+        subcategorias: sector.subcategorias.map(s =>
+          s.id === subcatId ? { ...s, seleccionado: !s.seleccionado } : s
+        ),
+      }))
+    )
+  }
+
+  async function handleSaveIntereses() {
+    setSavingIntereses(true)
+    const ids = sectores.flatMap(s => s.subcategorias.filter(c => c.seleccionado).map(c => c.id))
+    await fetch('/api/intereses', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ subcategoria_ids: ids }),
+    })
+    setSavingIntereses(false)
+    setSavedIntereses(true)
+    setTimeout(() => setSavedIntereses(false), 2000)
   }
 
   if (!datos) return <div className="p-6 text-sm text-slate-400">Cargando...</div>
@@ -100,6 +138,78 @@ export default function CuentaPage() {
           </div>
         </form>
       </div>
+
+      {/* Mis intereses */}
+      <div className="bg-white border border-slate-200 rounded-lg p-4 mb-4">
+        <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Mis intereses</h2>
+        {datos.plan === 'free' ? (
+          <div className="p-3 bg-slate-50 border border-slate-100 rounded-md">
+            <p className="text-xs text-slate-500">Configura alertas por sector con el <strong>Plan Pro</strong>.</p>
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {sectores.map(sector => (
+              <div key={sector.id}>
+                <p className="text-xs font-semibold text-slate-600 mb-2">{sector.nombre}</p>
+                <div className="flex flex-wrap gap-2">
+                  {sector.subcategorias.map(sub => (
+                    <button
+                      key={sub.id}
+                      onClick={() => toggleInteres(sub.id)}
+                      className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
+                        sub.seleccionado
+                          ? 'bg-sky-500 text-white border-sky-500'
+                          : 'border-slate-200 text-slate-600 hover:bg-slate-50'
+                      }`}
+                    >
+                      {sub.nombre}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <div className="flex items-center gap-3 mt-2">
+              <button
+                onClick={handleSaveIntereses}
+                disabled={savingIntereses}
+                className="text-xs px-3 py-1.5 rounded bg-sky-500 text-white hover:bg-sky-600 disabled:opacity-50"
+              >
+                {savingIntereses ? 'Guardando...' : 'Guardar intereses'}
+              </button>
+              {savedIntereses && <span className="text-xs text-emerald-600">✓ Guardado</span>}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Mis grupos Telegram */}
+      {datos.plan === 'pro' && misGrupos.length > 0 && (
+        <div className="bg-white border border-slate-200 rounded-lg p-4 mb-4">
+          <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Mis grupos Telegram</h2>
+          <div className="space-y-2">
+            {misGrupos.map((g, i) => (
+              <div key={i} className="flex items-center justify-between text-sm">
+                <div>
+                  <p className="text-slate-700 font-medium">{g.nombre}</p>
+                  <p className="text-xs text-slate-400">{g.subcategorias?.nombre}</p>
+                </div>
+                {g.invite_link ? (
+                  <a
+                    href={g.invite_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-sky-600 hover:underline"
+                  >
+                    Unirse →
+                  </a>
+                ) : (
+                  <span className="text-xs text-slate-400">Sin link</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Miembro desde */}
       <p className="text-xs text-slate-400">
