@@ -28,6 +28,15 @@ export async function GET() {
     db.from('suscriptor_intereses').select('subcategoria_id').eq('usuario_id', user.usuarioId),
   ])
 
+  if (sectoresRes.error) {
+    console.error('[intereses] Error cargando sectores:', sectoresRes.error.message)
+    return NextResponse.json({ error: 'Error cargando datos' }, { status: 500 })
+  }
+  if (subcatsRes.error) {
+    console.error('[intereses] Error cargando subcategorias:', subcatsRes.error.message)
+    return NextResponse.json({ error: 'Error cargando datos' }, { status: 500 })
+  }
+
   const sectores = (sectoresRes.data ?? []) as SectorRow[]
   const subcats = (subcatsRes.data ?? []) as SubcategoriaRow[]
   const interesIds = new Set((interesesRes.data ?? []).map(i => i.subcategoria_id))
@@ -54,19 +63,36 @@ export async function PUT(req: NextRequest) {
   if (!user) return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
   if (user.plan !== 'pro') return NextResponse.json({ error: 'Plan Pro requerido' }, { status: 403 })
 
-  const body = await req.json() as { subcategoria_ids: number[] }
+  let body: { subcategoria_ids: unknown }
+  try {
+    body = await req.json()
+  } catch {
+    return NextResponse.json({ error: 'Cuerpo inválido' }, { status: 400 })
+  }
+
   if (!Array.isArray(body.subcategoria_ids)) {
     return NextResponse.json({ error: 'subcategoria_ids debe ser un array' }, { status: 400 })
   }
 
+  const ids = body.subcategoria_ids
+  if (!ids.every((x: unknown) => Number.isInteger(x))) {
+    return NextResponse.json({ error: 'subcategoria_ids debe contener solo enteros' }, { status: 400 })
+  }
+
   const db = createNextServerClient()
 
-  await db.from('suscriptor_intereses').delete().eq('usuario_id', user.usuarioId)
+  const { error: deleteError } = await db
+    .from('suscriptor_intereses')
+    .delete()
+    .eq('usuario_id', user.usuarioId)
 
-  if (body.subcategoria_ids.length > 0) {
-    await db.from('suscriptor_intereses').insert(
-      body.subcategoria_ids.map(id => ({ usuario_id: user.usuarioId, subcategoria_id: id }))
-    )
+  if (deleteError) return NextResponse.json({ error: deleteError.message }, { status: 500 })
+
+  if (ids.length > 0) {
+    const { error: insertError } = await db
+      .from('suscriptor_intereses')
+      .insert((ids as number[]).map(id => ({ usuario_id: user.usuarioId, subcategoria_id: id })))
+    if (insertError) return NextResponse.json({ error: insertError.message }, { status: 500 })
   }
 
   return NextResponse.json({ ok: true })

@@ -40,20 +40,18 @@ export async function POST(
     )
   }
 
-  // Notify sector Telegram groups
-  try {
-    await notifyGrupos(
-      alerta.id,
-      alerta.titulo,
-      alerta.resumen ?? null,
-      alerta.score_relevancia ?? 0,
-      alerta.territorios ?? [],
-      alerta.fuente,
-      alerta.url
-    )
-  } catch (gruposErr) {
-    console.error('[enviar] Error en grupos sectoriales (no bloqueante):', gruposErr)
-  }
+  // Notify sector Telegram groups (fire-and-forget — does not block the response)
+  notifyGrupos(
+    alerta.id,
+    alerta.titulo,
+    alerta.resumen ?? null,
+    alerta.score_relevancia ?? 0,
+    alerta.territorios ?? [],
+    alerta.fuente,
+    alerta.url
+  ).catch(gruposErr => {
+    console.error('[enviar] Error en grupos sectoriales:', gruposErr)
+  })
 
   if (usuarios && usuarios.length > 0) {
     const entregas = usuarios.map((u: { id: string }) => ({
