@@ -117,8 +117,12 @@ export default function ConfigPage() {
   }
 
   async function handleDeleteGrupo(id: number) {
-    await fetch(`/api/admin/grupos-telegram?id=${id}`, { method: 'DELETE' })
-    setGrupos(prev => prev.filter(g => g.id !== id))
+    const res = await fetch(`/api/admin/grupos-telegram?id=${id}`, { method: 'DELETE' })
+    if (res.ok) {
+      setGrupos(prev => prev.filter(g => g.id !== id))
+    } else {
+      setGrupoError('Error al eliminar el grupo')
+    }
   }
 
   if (loading) return <div className="p-6 text-sm text-slate-400">Cargando configuración...</div>

@@ -3,6 +3,9 @@ import { AlertaRow } from './AlertaRow'
 
 export const dynamic = 'force-dynamic'
 
+type SubEntry = { alerta_id: string; subcategorias: { nombre: string; slug: string } | null }
+type SubMap = Record<string, Array<{ nombre: string; slug: string }>>
+
 export default async function EditorialPage() {
   const db = createNextServerClient()
   const { data: alertas } = await db
@@ -16,15 +19,16 @@ export default async function EditorialPage() {
 
   const alertaIds = (alertas ?? []).map((a: { id: string }) => a.id)
 
-  type SubEntry = { alerta_id: string; subcategorias: { nombre: string; slug: string } | null }
-  type SubMap = Record<string, Array<{ nombre: string; slug: string }>>
-
   let subsByAlerta: SubMap = {}
   if (alertaIds.length > 0) {
-    const { data: alertaSubs } = await db
+    const { data: alertaSubs, error: subsError } = await db
       .from('alerta_sectores')
       .select('alerta_id, subcategorias(nombre, slug)')
       .in('alerta_id', alertaIds)
+
+    if (subsError) {
+      console.error('[editorial] alerta_sectores query failed:', subsError.message)
+    }
 
     for (const row of ((alertaSubs ?? []) as SubEntry[])) {
       const sub = row.subcategorias
