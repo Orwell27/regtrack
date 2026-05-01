@@ -9,7 +9,7 @@ CREATE TABLE sectores (
 
 CREATE TABLE subcategorias (
   id        SERIAL  PRIMARY KEY,
-  sector_id INTEGER NOT NULL REFERENCES sectores(id),
+  sector_id INTEGER NOT NULL REFERENCES sectores(id) ON DELETE RESTRICT,
   slug      TEXT    NOT NULL UNIQUE,
   nombre    TEXT    NOT NULL,
   activo    BOOLEAN NOT NULL DEFAULT true
@@ -17,20 +17,20 @@ CREATE TABLE subcategorias (
 
 CREATE TABLE alerta_sectores (
   alerta_id       UUID    NOT NULL REFERENCES alertas(id) ON DELETE CASCADE,
-  subcategoria_id INTEGER NOT NULL REFERENCES subcategorias(id),
+  subcategoria_id INTEGER NOT NULL REFERENCES subcategorias(id) ON DELETE RESTRICT,
   confianza       INTEGER NOT NULL CHECK (confianza BETWEEN 0 AND 100),
   PRIMARY KEY (alerta_id, subcategoria_id)
 );
 
 CREATE TABLE suscriptor_intereses (
   usuario_id      UUID    NOT NULL REFERENCES usuarios(id) ON DELETE CASCADE,
-  subcategoria_id INTEGER NOT NULL REFERENCES subcategorias(id),
+  subcategoria_id INTEGER NOT NULL REFERENCES subcategorias(id) ON DELETE RESTRICT,
   PRIMARY KEY (usuario_id, subcategoria_id)
 );
 
 CREATE TABLE telegram_grupos (
   id              SERIAL  PRIMARY KEY,
-  subcategoria_id INTEGER NOT NULL REFERENCES subcategorias(id),
+  subcategoria_id INTEGER NOT NULL REFERENCES subcategorias(id) ON DELETE RESTRICT,
   chat_id         TEXT    NOT NULL UNIQUE,
   nombre          TEXT    NOT NULL,
   invite_link     TEXT,
@@ -41,6 +41,7 @@ CREATE INDEX idx_alerta_sectores_alerta ON alerta_sectores(alerta_id);
 CREATE INDEX idx_alerta_sectores_sub    ON alerta_sectores(subcategoria_id);
 CREATE INDEX idx_suscriptor_intereses   ON suscriptor_intereses(usuario_id);
 CREATE INDEX idx_telegram_grupos_sub    ON telegram_grupos(subcategoria_id);
+CREATE INDEX idx_suscriptor_intereses_sub ON suscriptor_intereses(subcategoria_id);
 
 INSERT INTO sectores (nombre, slug) VALUES ('Inmobiliario', 'inmobiliario');
 
