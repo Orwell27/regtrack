@@ -7,7 +7,7 @@ import { FiltroRegiones } from '@/components/subscriber/FiltroRegiones'
 
 export const dynamic = 'force-dynamic'
 
-type SearchParams = { fuente?: string; urgencia?: string; page?: string }
+type SearchParams = { fuente?: string; urgencia?: string; page?: string; solo_intereses?: string }
 
 const PAGE_SIZE = 20
 
@@ -20,6 +20,13 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
   const fuentes = params.fuente?.split(',').filter(Boolean)
   const db = createNextServerClient()
 
+  const { data: interesesData } = await db
+    .from('suscriptor_intereses')
+    .select('subcategoria_id')
+    .eq('usuario_id', user.usuarioId)
+
+  const interesIds = new Set((interesesData ?? []).map(i => i.subcategoria_id))
+
   let query = db
     .from('alertas')
     .select('*', { count: 'exact' })
@@ -30,8 +37,32 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
   if (fuentes?.length) query = query.in('fuente', fuentes)
   if (params.urgencia && params.urgencia !== 'all') query = query.eq('urgencia', params.urgencia)
 
+  if (params.solo_intereses === 'true' && interesIds.size > 0) {
+    const { data: alertasConInteres } = await db
+      .from('alerta_sectores')
+      .select('alerta_id')
+      .in('subcategoria_id', Array.from(interesIds))
+    const ids = (alertasConInteres ?? []).map(r => r.alerta_id)
+    if (ids.length === 0) {
+      query = query.in('id', ['00000000-0000-0000-0000-000000000000'])
+    } else {
+      query = query.in('id', ids)
+    }
+  }
+
   const { data: alertas, count } = await query
   const totalPages = Math.ceil((count ?? 0) / PAGE_SIZE)
+
+  const alertaIds = (alertas ?? []).map(a => a.id)
+  const relevantIds = new Set<string>()
+  if (interesIds.size > 0 && alertaIds.length > 0) {
+    const { data: matches } = await db
+      .from('alerta_sectores')
+      .select('alerta_id')
+      .in('alerta_id', alertaIds)
+      .in('subcategoria_id', Array.from(interesIds))
+    for (const m of matches ?? []) relevantIds.add(m.alerta_id)
+  }
 
   return (
     <div className="p-6">
@@ -58,6 +89,25 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
         />
       </div>
 
+      {interesIds.size > 0 && (
+        <div className="mb-3">
+          <a
+            href={`?${new URLSearchParams({
+              ...params,
+              solo_intereses: params.solo_intereses === 'true' ? 'false' : 'true',
+              page: '1',
+            })}`}
+            className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${
+              params.solo_intereses === 'true'
+                ? 'bg-sky-500 text-white border-sky-500'
+                : 'border-slate-200 text-slate-600 hover:bg-slate-50'
+            }`}
+          >
+            Solo mis intereses
+          </a>
+        </div>
+      )}
+
       {!alertas?.length ? (
         <div className="bg-white border border-slate-200 rounded-lg p-8 text-center">
           <p className="text-slate-400 text-sm">No hay alertas disponibles todavía.</p>
@@ -65,7 +115,12 @@ export default async function SubscriberAlertasPage({ searchParams }: { searchPa
       ) : (
         <div className="space-y-3">
           {alertas.map(alerta => (
-            <AlertaCard key={alerta.id} alerta={alerta} plan={user.plan} />
+            <AlertaCard
+              key={alerta.id}
+              alerta={alerta}
+              plan={user.plan}
+              relevante={relevantIds.has(alerta.id)}
+            />
           ))}
         </div>
       )}
