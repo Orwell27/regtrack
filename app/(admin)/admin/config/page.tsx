@@ -201,6 +201,11 @@ export default function ConfigPage() {
                   <p className="text-xs text-slate-400">
                     {(g.subcategorias as { nombre: string } | null)?.nombre ?? '—'} · <span className="font-mono">{g.chat_id}</span>
                   </p>
+                  {g.invite_link && (
+                    <a href={g.invite_link} target="_blank" rel="noopener noreferrer" className="text-xs text-sky-600 hover:underline">
+                      {g.invite_link}
+                    </a>
+                  )}
                 </div>
                 <button
                   onClick={() => handleDeleteGrupo(g.id)}
