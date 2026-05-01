@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
 import { notifyUsers } from '@/lib/telegram'
+import { notifyGrupos } from '@/lib/sectorial/telegram-grupos'
 
 export async function POST(
   _req: NextRequest,
@@ -11,7 +12,7 @@ export async function POST(
 
   const { data: alerta } = await db
     .from('alertas')
-    .select('id, estado, url, texto_alerta, texto_alerta_pro, titulo')
+    .select('id, estado, url, texto_alerta, texto_alerta_pro, titulo, resumen, score_relevancia, territorios, fuente')
     .eq('id', id)
     .single()
 
@@ -37,6 +38,21 @@ export async function POST(
         urlOficial: alerta.url,
       }))
     )
+  }
+
+  // Notify sector Telegram groups
+  try {
+    await notifyGrupos(
+      alerta.id,
+      alerta.titulo,
+      alerta.resumen ?? null,
+      alerta.score_relevancia ?? 0,
+      alerta.territorios ?? [],
+      alerta.fuente,
+      alerta.url
+    )
+  } catch (gruposErr) {
+    console.error('[enviar] Error en grupos sectoriales (no bloqueante):', gruposErr)
   }
 
   if (usuarios && usuarios.length > 0) {
