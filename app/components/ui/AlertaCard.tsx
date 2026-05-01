@@ -16,9 +16,10 @@ const URGENCIA_STYLE: Record<string, string> = {
 type Props = {
   alerta: Alerta
   plan: Plan
+  relevante?: boolean
 }
 
-export function AlertaCard({ alerta, plan }: Props) {
+export function AlertaCard({ alerta, plan, relevante }: Props) {
   const isPro = plan === 'pro'
   const urgencia = alerta.urgencia ?? 'baja'
 
@@ -26,7 +27,12 @@ export function AlertaCard({ alerta, plan }: Props) {
     <div className={`bg-white border border-slate-200 border-l-2 ${BORDER_COLOR[urgencia]} rounded-lg p-4 space-y-2`}>
       <div className="flex items-start justify-between gap-4">
         <h3 className="font-medium text-slate-900 text-sm leading-snug flex-1">{alerta.titulo}</h3>
-        <div className="flex gap-1.5 shrink-0">
+        <div className="flex gap-1.5 shrink-0 flex-wrap justify-end">
+          {relevante && (
+            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-sky-50 text-sky-600 border border-sky-100 font-medium">
+              Relevante para ti
+            </span>
+          )}
           <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${URGENCIA_STYLE[urgencia]}`}>
             {alerta.urgencia}
           </span>
