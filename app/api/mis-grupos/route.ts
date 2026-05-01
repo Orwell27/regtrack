@@ -23,7 +23,7 @@ export async function GET() {
 
   const { data: grupos, error: gruposError } = await db
     .from('telegram_grupos')
-    .select('nombre, invite_link, subcategorias(nombre)')
+    .select('id, nombre, invite_link, subcategorias(nombre)')
     .in('subcategoria_id', ids)
     .eq('activo', true)
 

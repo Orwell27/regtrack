@@ -16,7 +16,7 @@ type DatosUsuario = {
 
 type SubcategoriaInterest = { id: number; slug: string; nombre: string; seleccionado: boolean }
 type SectorInterest = { id: number; nombre: string; slug: string; subcategorias: SubcategoriaInterest[] }
-type MiGrupo = { nombre: string; invite_link: string | null; subcategorias: { nombre: string } | null }
+type MiGrupo = { id: number; nombre: string; invite_link: string | null; subcategorias: { nombre: string } | null }
 
 export default function CuentaPage() {
   const [datos, setDatos] = useState<DatosUsuario | null>(null)
@@ -187,8 +187,8 @@ export default function CuentaPage() {
         <div className="bg-white border border-slate-200 rounded-lg p-4 mb-4">
           <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Mis grupos Telegram</h2>
           <div className="space-y-2">
-            {misGrupos.map((g, i) => (
-              <div key={i} className="flex items-center justify-between text-sm">
+            {misGrupos.map(g => (
+              <div key={g.id} className="flex items-center justify-between text-sm">
                 <div>
                   <p className="text-slate-700 font-medium">{g.nombre}</p>
                   <p className="text-xs text-slate-400">{g.subcategorias?.nombre}</p>
