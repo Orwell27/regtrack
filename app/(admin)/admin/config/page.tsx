@@ -8,6 +8,17 @@ type Config = {
   fuentes_activas: string[]
 }
 
+type Grupo = {
+  id: number
+  nombre: string
+  chat_id: string
+  invite_link: string | null
+  activo: boolean
+  subcategorias: { id: number; nombre: string; slug: string } | null
+}
+
+type SubcatSimple = { id: number; nombre: string; slug: string }
+
 const TERRITORIOS_OPCIONES = [
   'nacional', 'andalucia', 'aragon', 'asturias', 'baleares', 'canarias',
   'cantabria', 'castilla-la-mancha', 'castilla-leon', 'cataluña',
@@ -30,6 +41,11 @@ export default function ConfigPage() {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
+  const [grupos, setGrupos] = useState<Grupo[]>([])
+  const [subcats, setSubcats] = useState<SubcatSimple[]>([])
+  const [nuevoGrupo, setNuevoGrupo] = useState({ nombre: '', chat_id: '', subcategoria_id: '', invite_link: '' })
+  const [savingGrupo, setSavingGrupo] = useState(false)
+  const [grupoError, setGrupoError] = useState<string | null>(null)
 
   useEffect(() => {
     fetch('/api/config')
@@ -41,6 +57,12 @@ export default function ConfigPage() {
           fuentes_activas: data.fuentes_activas ?? [],
         })
         setLoading(false)
+      })
+    fetch('/api/admin/grupos-telegram').then(r => r.json()).then(setGrupos)
+    fetch('/api/intereses')
+      .then(r => r.json())
+      .then((d: { sectores: Array<{ subcategorias: SubcatSimple[] }> }) => {
+        setSubcats(d.sectores.flatMap(s => s.subcategorias))
       })
   }, [])
 
@@ -63,6 +85,40 @@ export default function ConfigPage() {
     setSaving(false)
     setSaved(true)
     setTimeout(() => setSaved(false), 2000)
+  }
+
+  async function handleAddGrupo(e: React.FormEvent) {
+    e.preventDefault()
+    setGrupoError(null)
+    if (!nuevoGrupo.nombre.trim() || !nuevoGrupo.chat_id.trim() || !nuevoGrupo.subcategoria_id) {
+      setGrupoError('Nombre, chat_id y subcategoría son obligatorios')
+      return
+    }
+    setSavingGrupo(true)
+    const res = await fetch('/api/admin/grupos-telegram', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nombre: nuevoGrupo.nombre,
+        chat_id: nuevoGrupo.chat_id,
+        subcategoria_id: parseInt(nuevoGrupo.subcategoria_id),
+        invite_link: nuevoGrupo.invite_link.trim() || undefined,
+      }),
+    })
+    if (res.ok) {
+      const updated = await fetch('/api/admin/grupos-telegram').then(r => r.json())
+      setGrupos(updated)
+      setNuevoGrupo({ nombre: '', chat_id: '', subcategoria_id: '', invite_link: '' })
+    } else {
+      const body = await res.json().catch(() => ({})) as { error?: string }
+      setGrupoError(body.error ?? 'Error al guardar')
+    }
+    setSavingGrupo(false)
+  }
+
+  async function handleDeleteGrupo(id: number) {
+    await fetch(`/api/admin/grupos-telegram?id=${id}`, { method: 'DELETE' })
+    setGrupos(prev => prev.filter(g => g.id !== id))
   }
 
   if (loading) return <div className="p-6 text-sm text-slate-400">Cargando configuración...</div>
@@ -126,6 +182,70 @@ export default function ConfigPage() {
               </button>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* Grupos Telegram */}
+      <div className="mt-6 bg-white border border-slate-200 rounded-lg overflow-hidden">
+        <div className="px-4 py-3 border-b border-slate-200 bg-slate-50">
+          <h2 className="text-sm font-bold text-slate-700">Grupos Telegram por subcategoría</h2>
+        </div>
+        <div className="p-4 space-y-3">
+          {grupos.length === 0 ? (
+            <p className="text-xs text-slate-400">No hay grupos configurados.</p>
+          ) : (
+            grupos.map(g => (
+              <div key={g.id} className="flex items-center justify-between text-sm border border-slate-100 rounded-md px-3 py-2">
+                <div>
+                  <p className="font-medium text-slate-800">{g.nombre}</p>
+                  <p className="text-xs text-slate-400">
+                    {(g.subcategorias as { nombre: string } | null)?.nombre ?? '—'} · <span className="font-mono">{g.chat_id}</span>
+                  </p>
+                </div>
+                <button
+                  onClick={() => handleDeleteGrupo(g.id)}
+                  className="text-xs text-red-500 hover:text-red-700 ml-4"
+                >
+                  Eliminar
+                </button>
+              </div>
+            ))
+          )}
+          <form onSubmit={handleAddGrupo} className="border border-dashed border-slate-200 rounded-md p-3 space-y-2 mt-2">
+            <p className="text-xs font-semibold text-slate-500">Añadir grupo</p>
+            <input
+              placeholder="Nombre del grupo"
+              value={nuevoGrupo.nombre}
+              onChange={e => setNuevoGrupo(p => ({ ...p, nombre: e.target.value }))}
+              className="w-full text-xs border border-slate-200 rounded px-2 py-1.5"
+            />
+            <input
+              placeholder="chat_id (ej: -100123456789)"
+              value={nuevoGrupo.chat_id}
+              onChange={e => setNuevoGrupo(p => ({ ...p, chat_id: e.target.value }))}
+              className="w-full text-xs border border-slate-200 rounded px-2 py-1.5 font-mono"
+            />
+            <select
+              value={nuevoGrupo.subcategoria_id}
+              onChange={e => setNuevoGrupo(p => ({ ...p, subcategoria_id: e.target.value }))}
+              className="w-full text-xs border border-slate-200 rounded px-2 py-1.5"
+            >
+              <option value="">Selecciona subcategoría</option>
+              {subcats.map(s => (
+                <option key={s.id} value={s.id}>{s.nombre}</option>
+              ))}
+            </select>
+            <input
+              placeholder="Link de invitación (opcional)"
+              value={nuevoGrupo.invite_link}
+              onChange={e => setNuevoGrupo(p => ({ ...p, invite_link: e.target.value }))}
+              className="w-full text-xs border border-slate-200 rounded px-2 py-1.5"
+            />
+            {grupoError && <p className="text-xs text-red-500">{grupoError}</p>}
+            <Button type="submit" disabled={savingGrupo} className="bg-sky-500 hover:bg-sky-600 text-xs h-7 px-3">
+              {savingGrupo ? 'Añadiendo...' : 'Añadir grupo'}
+            </Button>
+          </form>
         </div>
       </div>
 
