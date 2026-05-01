@@ -63,14 +63,18 @@ export async function clasificarSectorial(
       }))
 
     if (clasificaciones.length > 0) {
-      await db.from('alerta_sectores').insert(
+      const { error: insertError } = await db.from('alerta_sectores').insert(
         clasificaciones.map(c => ({
           alerta_id: alertaId,
           subcategoria_id: c.subcategoria_id,
           confianza: c.confianza,
         }))
       )
-      console.log(`[sectorial] ${clasificaciones.length} subcategorías para alerta ${alertaId}: ${clasificaciones.map(c => c.subcategoria_slug).join(', ')}`)
+      if (insertError) {
+        console.error('[sectorial] Error guardando clasificaciones:', insertError.message)
+      } else {
+        console.log(`[sectorial] ${clasificaciones.length} subcategorías para alerta ${alertaId}: ${clasificaciones.map(c => c.subcategoria_slug).join(', ')}`)
+      }
     }
 
     return clasificaciones
