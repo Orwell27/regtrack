@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import { getAuthUser } from '@/lib/auth'
 import { SubscriberSidebar } from '@/app/components/layouts/SubscriberSidebar'
 import { MobileNav } from '@/app/components/layouts/MobileNav'
+import { RagWidget } from '@/components/rag/RagWidget'
 
 export default async function SubscriberLayout({ children }: { children: React.ReactNode }) {
   const user = await getAuthUser()
@@ -22,6 +23,7 @@ export default async function SubscriberLayout({ children }: { children: React.R
         </div>
         {children}
       </main>
+      <RagWidget />
     </div>
   )
 }
