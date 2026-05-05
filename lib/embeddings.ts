@@ -18,6 +18,7 @@ export function buildEmbeddingText(resumen: string, impacto: string | null): str
  * Usa text-embedding-3-small de OpenAI.
  */
 export async function generateEmbedding(text: string): Promise<number[]> {
+  if (!text.trim()) throw new Error('generateEmbedding: text must not be empty')
   const client = getClient()
   const response = await client.embeddings.create({
     model: 'text-embedding-3-small',

@@ -66,4 +66,12 @@ describe('generateEmbedding', () => {
       input: 'texto de prueba',
     })
   })
+
+  it('lanza error si el texto está vacío', async () => {
+    await expect(generateEmbedding('')).rejects.toThrow('generateEmbedding: text must not be empty')
+  })
+
+  it('lanza error si el texto es solo espacios', async () => {
+    await expect(generateEmbedding('   ')).rejects.toThrow('generateEmbedding: text must not be empty')
+  })
 })
