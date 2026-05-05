@@ -24,6 +24,7 @@ export async function POST(
     return new Response('Cuerpo inválido', { status: 400 })
   }
   if (!pregunta) return new Response('Pregunta requerida', { status: 400 })
+  if (pregunta.length > 2000) return new Response('Pregunta demasiado larga', { status: 400 })
 
   const db = createNextServerClient()
   const { data: alerta } = await db
@@ -60,6 +61,10 @@ export async function POST(
             controller.enqueue(new TextEncoder().encode(event.delta.text))
           }
         }
+      } catch {
+        controller.enqueue(
+          new TextEncoder().encode('Error al procesar la consulta.')
+        )
       } finally {
         controller.close()
       }
