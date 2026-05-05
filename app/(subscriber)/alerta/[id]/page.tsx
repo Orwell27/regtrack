@@ -5,6 +5,7 @@ import { createNextServerClient } from '@/lib/supabase'
 import Link from 'next/link'
 import { TimelineNormativa } from '@/components/subscriber/TimelineNormativa'
 import { ListaRelaciones } from '@/components/subscriber/ListaRelaciones'
+import { AsistenteAlerta } from '@/components/subscriber/AsistenteAlerta'
 import type { RelacionConAlerta } from '@/lib/correlacion/types'
 
 interface RelRow {
@@ -210,6 +211,13 @@ export default async function AlertaDetailPage({ params }: { params: Promise<{ i
           >
             Ver planes Pro →
           </Link>
+        </div>
+      )}
+
+      {/* ── Asistente IA (Pro) ── */}
+      {isPro && (
+        <div className="mb-4">
+          <AsistenteAlerta alertaId={alerta.id} />
         </div>
       )}
 
