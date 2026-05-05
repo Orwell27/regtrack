@@ -35,6 +35,7 @@ import { notifyEditorial } from '@/lib/telegram'
 import { detectarRelaciones } from '@/lib/correlacion/detectar-relaciones'
 import { guardarRelaciones } from '@/lib/correlacion/guardar-relaciones'
 import { clasificarSectorial } from '@/lib/sectorial/clasificar'
+import { generateEmbedding, buildEmbeddingText } from '@/lib/embeddings'
 import type { NormalizedItem } from '@/lib/sources/boe'
 import type { Alerta } from '@/lib/supabase'
 
@@ -212,6 +213,21 @@ async function run() {
         await clasificarSectorial(saved.id, alertaBase.titulo, alertaBase.resumen ?? null)
       } catch (sectErr) {
         console.error(`[pipeline] Error en clasificación sectorial (no bloqueante):`, sectErr)
+      }
+
+      // 8.6. Generar embedding para búsqueda semántica (no bloquea el pipeline si falla)
+      try {
+        const embeddingText = buildEmbeddingText(
+          alertaBase.resumen ?? '',
+          alertaBase.impacto ?? null,
+        )
+        if (embeddingText.trim()) {
+          const embedding = await generateEmbedding(embeddingText)
+          await db.from('alertas').update({ embedding }).eq('id', saved.id)
+          console.log(`[pipeline] Embedding generado para ${saved.id}`)
+        }
+      } catch (embErr) {
+        console.error(`[pipeline] Error al generar embedding (no bloqueante):`, embErr)
       }
 
       // 9. Notificar al editor por Telegram
