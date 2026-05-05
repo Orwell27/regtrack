@@ -35,7 +35,7 @@ export async function GET(request: NextRequest) {
   })
 
   if (error) {
-    return Response.json({ error: error.message }, { status: 500 })
+    return Response.json({ error: 'Error al buscar normativa. Inténtalo de nuevo.' }, { status: 500 })
   }
 
   return Response.json({ results: data ?? [] })

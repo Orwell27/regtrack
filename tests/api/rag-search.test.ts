@@ -75,4 +75,10 @@ describe('GET /api/rag/search', () => {
     await GET(makeRequest('arrendamiento urbano'))
     expect(generateEmbedding).toHaveBeenCalledWith('arrendamiento urbano')
   })
+
+  it('devuelve 503 si generateEmbedding lanza un error', async () => {
+    ;(generateEmbedding as any).mockRejectedValue(new Error('OpenAI unavailable'))
+    const res = await GET(makeRequest('normativa sobre alquiler'))
+    expect(res.status).toBe(503)
+  })
 })
