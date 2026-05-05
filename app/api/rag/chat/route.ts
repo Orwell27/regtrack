@@ -60,6 +60,12 @@ export async function POST(request: Request) {
   if (typeof query !== 'string' || query.trim().length === 0) {
     return Response.json({ error: 'El campo query es obligatorio' }, { status: 400 })
   }
+  if (query.trim().length < 3) {
+    return Response.json({ error: 'La consulta debe tener al menos 3 caracteres' }, { status: 400 })
+  }
+  if (query.trim().length > 200) {
+    return Response.json({ error: 'La consulta no puede superar 200 caracteres' }, { status: 400 })
+  }
   if (!Array.isArray(history)) {
     return Response.json({ error: 'El campo history debe ser un array' }, { status: 400 })
   }

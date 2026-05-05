@@ -68,4 +68,14 @@ describe('POST /api/rag/chat', () => {
     await POST(makeRequest({ query: '¿qué hay de arrendamiento?', history: [] }))
     expect(generateEmbedding).toHaveBeenCalledWith('¿qué hay de arrendamiento?')
   })
+
+  it('devuelve 400 si query es menor de 3 caracteres', async () => {
+    const res = await POST(makeRequest({ query: 'ab', history: [] }))
+    expect(res.status).toBe(400)
+  })
+
+  it('devuelve 400 si query supera 200 caracteres', async () => {
+    const res = await POST(makeRequest({ query: 'a'.repeat(201), history: [] }))
+    expect(res.status).toBe(400)
+  })
 })
