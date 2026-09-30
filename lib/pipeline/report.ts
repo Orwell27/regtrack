@@ -1,6 +1,7 @@
 import { appendFileSync, mkdirSync, renameSync, writeFileSync } from 'fs'
 import { join } from 'path'
 import type { NormalizedItem } from '../sources/boe'
+import { SourceAccessBlockedError } from '../sources/http'
 
 export interface SourceResult {
   source: string
@@ -24,14 +25,24 @@ export class ScanReport {
   fatal: string[] = []
   mode: 'full' | 'sources_only' = 'full'
   finished = false
+  private blockedSources = new Map<string, string>()
   constructor(public dates: string[]) {}
 
+  blockSource(source: string, reason: string) { this.blockedSources.set(source, reason) }
+  blockedReason(source: string) { return this.blockedSources.get(source) }
+
   async source(source: string, scope: string, fetcher: () => Promise<NormalizedItem[]>): Promise<NormalizedItem[]> {
+    const previousBlock = this.blockedReason(source)
+    if (previousBlock) {
+      this.sources.push({ source, scope, status: 'error', count: 0, error: `Sin reintento en esta ejecución: ${previousBlock}` })
+      return []
+    }
     try {
       const items = await fetcher()
       this.sources.push({ source, scope, status: items.length ? 'ok' : 'empty', count: items.length })
       return items
     } catch (error) {
+      if (error instanceof SourceAccessBlockedError) this.blockSource(source, error.message)
       this.sources.push({ source, scope, status: 'error', count: 0, error: error instanceof Error ? error.message : String(error) })
       return []
     }

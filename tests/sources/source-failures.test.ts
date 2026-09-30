@@ -4,12 +4,52 @@ import { fetchBORM, fetchBORMText } from '@/lib/sources/borm'
 import { ScanReport } from '@/lib/pipeline/report'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
-import { fetchSource, requireDocument } from '@/lib/sources/http'
+import { fetchSource, requireDocument, SourceAccessBlockedError } from '@/lib/sources/http'
 import { fetchBOE, fetchBOEText } from '@/lib/sources/boe'
 
 afterEach(() => vi.unstubAllGlobals())
 
 describe('fuentes: ausencia y fallo son distintos', () => {
+  it.each([302, 307])('respeta el método de una consulta POST tras HTTP %s', async status => {
+    const calls: RequestInit[] = []
+    vi.stubGlobal('fetch', vi.fn().mockImplementation(async (_url: string, request: RequestInit) => {
+      calls.push({ ...request })
+      return calls.length === 1 ? new Response('', { status, headers: { location: '/consulta' } }) : new Response('{}')
+    }))
+    await fetchSource('https://ejemplo.es/api', { method: 'POST', body: 'language=es' })
+    expect(calls[1].method).toBe(status === 302 ? 'GET' : 'POST')
+    expect(calls[1].body).toBe(status === 302 ? undefined : 'language=es')
+  })
+  it('un bloqueo no provoca otra petición por cada fecha y todas quedan pendientes', async () => {
+    const report = new ScanReport(['2026-09-29', '2026-09-30'])
+    const blockedFetch = vi.fn().mockRejectedValue(new SourceAccessBlockedError('CAPTCHA'))
+    await report.source('BORM', '2026-09-29', blockedFetch)
+    await report.source('BORM', '2026-09-30', blockedFetch)
+    const healthyFetch = vi.fn().mockResolvedValue([])
+    await report.source('BOE', '2026-09-30', healthyFetch)
+    expect(blockedFetch).toHaveBeenCalledTimes(1)
+    expect(healthyFetch).toHaveBeenCalledOnce()
+    expect(report.sources.filter(s => s.source === 'BORM').every(s => s.status === 'error')).toBe(true)
+    expect(report.incomplete).toBe(true)
+  })
+  it('detiene la redirección al CAPTCHA antes de solicitar la página de desafío', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response('', { status: 302, headers: { location: 'https://validate.perfdrive.com/?session=private' } }))
+    vi.stubGlobal('fetch', fetchMock)
+    await expect(fetchSource('https://www.borm.es/services/boletin/fecha/30-09-2026/sumario')).rejects.toThrow('bloqueado por CAPTCHA')
+    expect(fetchMock).toHaveBeenCalledTimes(1)
+    expect(fetchMock.mock.calls[0][1].redirect).toBe('manual')
+  })
+  it('conserva redirecciones públicas normales sin aceptar un bucle infinito', async () => {
+    const fetchMock = vi.fn()
+      .mockResolvedValueOnce(new Response('', { status: 301, headers: { location: '/rss-actual' } }))
+      .mockResolvedValueOnce(new Response('<rss></rss>'))
+    vi.stubGlobal('fetch', fetchMock)
+    expect(await (await fetchSource('https://ejemplo.es/rss')).text()).toBe('<rss></rss>')
+    expect(fetchMock.mock.calls[1][0]).toBe('https://ejemplo.es/rss-actual')
+    fetchMock.mockReset().mockImplementation(async () => new Response('', { status: 302, headers: { location: '/bucle' } }))
+    await expect(fetchSource('https://ejemplo.es/rss')).rejects.toThrow('redirecciones')
+    expect(fetchMock.mock.calls.length).toBeLessThanOrEqual(6)
+  })
   it('el BOE rechaza HTML antes de quitar etiquetas y enviarlo a la IA', async () => {
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('<html><body>' + 'Mantenimiento '.repeat(50) + '</body></html>')))
     await expect(fetchBOEText('BOE-A-2026-1')).rejects.toThrow('No se pudo leer')

@@ -10,6 +10,7 @@ import type { Alerta } from '@/lib/supabase'
 
 import { collectSources, hydrateDocument } from './sources'
 import { ScanReport } from './report'
+import { SourceAccessBlockedError } from '../sources/http'
 
 export async function runPipeline(dates: string[], options: { scanOnly?: boolean; historical?: boolean; reportDir?: string } = {}) {
   const report = new ScanReport(dates)
@@ -52,6 +53,11 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
       }
       let item = rawItem
       try {
+        const blocked = report.blockedReason(item.fuente)
+        if (blocked) {
+          report.decision(item, 'unprocessed', `Acceso bloqueado en esta ejecución; sin reintento: ${blocked}`)
+          continue
+        }
         item = await hydrateDocument(rawItem)
         const texto = item.texto ?? ''
 
@@ -194,6 +200,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
         }
 
       } catch (err) {
+        if (err instanceof SourceAccessBlockedError) report.blockSource(item.fuente, err.message)
         report.decision(item, 'error', err instanceof Error ? err.message : String(err))
         if (err instanceof APIError) {
           console.error(`[pipeline] Error de la API de Claude en "${item.titulo.slice(0, 60)}": ${err.status ?? 'sin conexión'} ${err.message}`)

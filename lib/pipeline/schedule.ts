@@ -1,7 +1,8 @@
 export interface ScheduledRun { id: number; created_at: string; status: string; conclusion: string | null }
 
-export function assessSchedule(state: string, runs: ScheduledRun[], now = new Date()) {
-  const last = [...runs].sort((a, b) => b.created_at.localeCompare(a.created_at))[0]
+export function assessSchedule(state: string, runs: ScheduledRun[], now = new Date(), currentRunId?: number) {
+  // El propio arranque todavía no demuestra que el escaneo anterior se ejecutase.
+  const last = runs.filter(run => run.id !== currentRunId).sort((a, b) => b.created_at.localeCompare(a.created_at))[0]
   const ageHours = last ? (now.getTime() - Date.parse(last.created_at)) / 3_600_000 : null
   const problems: string[] = []
   if (state !== 'active') problems.push(`Workflow ${state}`)

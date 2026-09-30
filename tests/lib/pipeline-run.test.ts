@@ -4,6 +4,7 @@ import { join } from 'path'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { BadRequestError } from '@anthropic-ai/sdk'
 import { runPipeline } from '@/lib/pipeline/run'
+import { SourceAccessBlockedError } from '@/lib/sources/http'
 
 const mocks = vi.hoisted(() => ({ collect: vi.fn(), hydrate: vi.fn(), classify: vi.fn(), impact: vi.fn(), from: vi.fn(), insert: vi.fn(), lookup: vi.fn(), createDb: vi.fn() }))
 vi.mock('@/lib/pipeline/sources', () => ({ collectSources: mocks.collect, hydrateDocument: mocks.hydrate }))
@@ -31,6 +32,28 @@ beforeEach(() => {
 })
 
 describe('recorrido completo sin IA ni BD reales', () => {
+  it('no descarga documentos de una fecha anterior si la fuente se bloqueó al recopilar otra fecha', async () => {
+    mocks.collect.mockImplementationOnce(async report => {
+      const items = await report.source('BORM', '2026-09-29', async () => [item])
+      await report.source('BORM', '2026-09-30', async () => { throw new SourceAccessBlockedError('CAPTCHA') })
+      return items
+    })
+    const report = await runPipeline(['2026-09-29', '2026-09-30'], { reportDir: directory() })
+    expect(mocks.hydrate).not.toHaveBeenCalled()
+    expect(mocks.classify).not.toHaveBeenCalled()
+    expect(report.decisions[0].status).toBe('unprocessed')
+    expect(report.incomplete).toBe(true)
+  })
+  it('un CAPTCHA al descargar texto detiene esa fuente y permite procesar las demás', async () => {
+    mocks.collect.mockResolvedValueOnce([item, { ...item, url: item.url + '-2' }, { ...item, fuente: 'BOCM', url: 'https://www.bocm.es/1' }])
+    mocks.hydrate.mockRejectedValueOnce(new SourceAccessBlockedError('CAPTCHA BORM'))
+    const report = await runPipeline(['2026-09-30'], { reportDir: directory() })
+    expect(mocks.hydrate).toHaveBeenCalledTimes(2)
+    expect(mocks.classify).toHaveBeenCalledTimes(1)
+    expect(report.decisions.map(d => d.status)).toEqual(['error', 'unprocessed', 'discarded'])
+    expect(report.incomplete).toBe(true)
+    expect(mocks.insert).not.toHaveBeenCalled()
+  })
   it('guarda una alerta legítima con fecha oficial y texto completo en ambos análisis', async () => {
     mocks.classify.mockResolvedValueOnce({ relevante: true, subtema: 'arrendamiento', ambito_territorial: 'ccaa' })
     mocks.impact.mockResolvedValueOnce({ resumen: 'Cambio', impacto: 'Impacto', afectados: ['propietarios'], urgencia: 'media', territorios: ['Murcia'], accion_recomendada: 'Revisar', score_relevancia: 7, fecha_publicacion: '2020-01-01' })

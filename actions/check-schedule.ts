@@ -15,7 +15,8 @@ async function run() {
   const [workflow, result] = await Promise.all([
     get('actions/workflows/pipeline.yml'), get('actions/workflows/pipeline.yml/runs?event=schedule&per_page=5'),
   ])
-  const report = assessSchedule(workflow.state, result.workflow_runs as ScheduledRun[])
+  const currentRunId = process.env.GITHUB_RUN_ID ? Number(process.env.GITHUB_RUN_ID) : undefined
+  const report = assessSchedule(workflow.state, result.workflow_runs as ScheduledRun[], new Date(), currentRunId)
   mkdirSync('artifacts', { recursive: true })
   writeFileSync('artifacts/schedule-health.json', JSON.stringify(report, null, 2))
   console.log(JSON.stringify(report, null, 2))

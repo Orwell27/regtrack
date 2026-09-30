@@ -1,5 +1,5 @@
-import { XMLParser } from 'fast-xml-parser'
-import { fetchSource, requireDocument } from './http'
+import { XMLParser, XMLValidator } from 'fast-xml-parser'
+import { fetchSource, requireDocument, SourceAccessBlockedError } from './http'
 import { madridDate } from '../pipeline/dates'
 
 export const RELEVANT_SECTIONS = ['1', '3'] as const // I: Disposiciones generales, III: Otras disposiciones
@@ -55,52 +55,78 @@ export interface NormalizedItem {
   referencias_boe?: ReferenciaBOE[]
 }
 
-export function parseBOESumario(data: any): NormalizedItem[] {
+type JsonNode = Record<string, unknown>
+
+function objectNode(value: unknown, context: string): JsonNode {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error(`Formato BOE no reconocido: ${context}`)
+  return value as JsonNode
+}
+
+function children(node: JsonNode, key: string): JsonNode[] {
+  // La API intercala «texto» cuando un nodo XML solo tiene un hijo.
+  while (!(key in node) && node.texto && typeof node.texto === 'object' && !Array.isArray(node.texto)) {
+    node = node.texto as JsonNode
+  }
+  if (!(key in node)) throw new Error(`Formato BOE no reconocido: falta ${key}`)
+  const values = Array.isArray(node[key]) ? node[key] as unknown[] : [node[key]]
+  return values.map(value => objectNode(value, key))
+}
+
+function optionalString(value: unknown): string | undefined {
+  return typeof value === 'string' ? value : undefined
+}
+
+function linkText(value: unknown): string | undefined {
+  if (typeof value === 'string') return value
+  return value && typeof value === 'object' && !Array.isArray(value)
+    ? optionalString((value as JsonNode).texto) : undefined
+}
+
+export function parseBOESumario(data: unknown): NormalizedItem[] {
   const items: NormalizedItem[] = []
-  const secciones = data?.data?.sumario?.diario?.[0]?.seccion ?? []
+  const root = objectNode(data, 'respuesta')
+  const payload = objectNode(root.data, 'data')
+  const sumario = objectNode(payload.sumario, 'sumario')
 
-  for (const seccion of secciones) {
-    const codigo = String(seccion.codigo ?? seccion.num ?? '')
-    if (!RELEVANT_SECTIONS.includes(codigo as '1' | '3')) continue
+  for (const diario of children(sumario, 'diario')) {
+    for (const seccion of children(diario, 'seccion')) {
+      const codigo = String(seccion.codigo ?? seccion.num ?? '')
+      if (!codigo) throw new Error('Formato BOE no reconocido: sección sin código')
+      if (!RELEVANT_SECTIONS.includes(codigo as '1' | '3')) continue
 
-    const departamentos = Array.isArray(seccion.departamento)
-      ? seccion.departamento
-      : seccion.departamento ? [seccion.departamento] : []
-
-    for (const dept of departamentos) {
-      const epigrafes = Array.isArray(dept.epigrafe)
-        ? dept.epigrafe
-        : dept.epigrafe ? [dept.epigrafe] : []
-
-      for (const epigrafe of epigrafes) {
-        const docItems = Array.isArray(epigrafe.item)
-          ? epigrafe.item
-          : epigrafe.item ? [epigrafe.item] : []
-
-        for (const item of docItems) {
-          const url = item.url_html?.texto ?? item.url_html
-          const xmlUrl = item.url_xml?.texto ?? item.url_xml
-          const id = item.identificador ?? item.id
-          if (url && id) {
+      for (const dept of children(seccion, 'departamento')) {
+        for (const epigrafe of children(dept, 'epigrafe')) {
+          for (const item of children(epigrafe, 'item')) {
+            const url = linkText(item.url_html)
+            const xmlUrl = linkText(item.url_xml)
+            const id = optionalString(item.identificador ?? item.id)
+            const titulo = optionalString(item.titulo)
+            if (!url || !id || !titulo) throw new Error('Formato BOE no reconocido: documento sin identificador, URL o título')
             items.push({
               id,
-              titulo: item.titulo ?? '',
-              url: typeof url === 'string' ? url : String(url),
+              titulo,
+              url,
               fuente: 'BOE',
               boe_id: id,
-              departamento: dept.nombre ?? dept.titulo ?? undefined,
-              epigrafe: typeof epigrafe === 'object' && !Array.isArray(epigrafe)
-                ? (epigrafe.nombre ?? epigrafe.titulo ?? undefined)
-                : undefined,
-              rango: item.rango ?? undefined,
-              _xmlUrl: xmlUrl ? (typeof xmlUrl === 'string' ? xmlUrl : String(xmlUrl)) : undefined,
+              departamento: optionalString(dept.nombre ?? dept.titulo),
+              epigrafe: optionalString(epigrafe.nombre ?? epigrafe.titulo),
+              rango: optionalString(item.rango),
+              _xmlUrl: xmlUrl,
             })
           }
         }
       }
     }
   }
-  return items
+  return Array.from(new Map(items.map(item => [item.url, item])).values())
+}
+
+interface OrderedXmlNode { [key: string]: string | OrderedXmlNode[] }
+
+function plainXmlText(nodes: OrderedXmlNode[]): string {
+  return nodes.flatMap(node => Object.entries(node).map(([key, value]) =>
+    key === '#text' && typeof value === 'string' ? value : Array.isArray(value) ? plainXmlText(value) : ''
+  )).join(' ')
 }
 
 export async function fetchBOEText(
@@ -114,14 +140,16 @@ export async function fetchBOEText(
     if (!/<documento[\s>]/i.test(xml) || /<(?:!doctype|html)[\s>]/i.test(xml)) {
       throw new Error('Se esperaba el XML oficial del BOE, no una página de error')
     }
+    if (XMLValidator.validate(xml) !== true) throw new Error('XML BOE incompleto o inválido')
+    const parsed = new XMLParser({ preserveOrder: true, ignoreAttributes: true, parseTagValue: false, trimValues: false }).parse(xml) as OrderedXmlNode[]
+    const document = parsed.find(node => Array.isArray(node.documento))?.documento
+    const body = Array.isArray(document) ? document.find(node => Array.isArray(node.texto))?.texto : undefined
+    if (!Array.isArray(body)) throw new Error('El XML BOE no contiene el nodo de texto oficial')
     const referencias_boe = parseReferencesBOE(xml)
-    const sinTags = xml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
-    const idxTitulo = sinTags.indexOf('Jefatura') !== -1
-      ? sinTags.indexOf('Jefatura')
-      : sinTags.indexOf('TEXTO')
-    const texto = idxTitulo > 0 ? sinTags.slice(idxTitulo) : sinTags
+    const texto = plainXmlText(body).replace(/\s+/g, ' ').trim()
     return { texto: requireDocument(texto), referencias_boe }
   } catch (error) {
+    if (error instanceof SourceAccessBlockedError) throw error
     throw new Error(`No se pudo leer el texto BOE ${id}`, { cause: error })
   }
 }

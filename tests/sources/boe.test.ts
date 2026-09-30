@@ -41,7 +41,7 @@ describe('parseBOESumario', () => {
     expect(items[0].rango).toBe('Real Decreto')
   })
 
-  it('omite items sin url_html', () => {
+  it('rechaza una sección con documentos incompletos en lugar de perderlos silenciosamente', () => {
     const fixtureWithMissingUrl = {
       data: {
         sumario: {
@@ -64,9 +64,7 @@ describe('parseBOESumario', () => {
         }
       }
     }
-    const items = parseBOESumario(fixtureWithMissingUrl)
-    expect(items).toHaveLength(1)
-    expect(items[0].id).toBe('BOE-A-2026-GOOD')
+    expect(() => parseBOESumario(fixtureWithMissingUrl)).toThrow('documento sin identificador, URL o título')
   })
 })
 
