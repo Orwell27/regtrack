@@ -1,7 +1,8 @@
-import { mkdtempSync, readFileSync } from 'fs'
+import { mkdtempSync, readFileSync, writeFileSync } from 'fs'
 import { tmpdir } from 'os'
 import { join } from 'path'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { KnowledgeVault } from '@/lib/knowledge/vault'
 import { BadRequestError } from '@anthropic-ai/sdk'
 import { runPipeline } from '@/lib/pipeline/run'
 import { SourceAccessBlockedError } from '@/lib/sources/http'
@@ -17,6 +18,7 @@ vi.mock('@/lib/correlacion/guardar-relaciones', () => ({ guardarRelaciones: vi.f
 vi.mock('@/lib/sectorial/clasificar', () => ({ clasificarSectorial: vi.fn() }))
 
 const item = { id: 'BORM-A-300926-4715', fuente: 'BORM', titulo: 'Resolución', url: 'https://www.borm.es/#/home/anuncio/30-09-2026/4715', texto: 'Sumario', fecha_publicacion: '2026-09-30' }
+afterEach(() => vi.unstubAllEnvs())
 function directory() { return mkdtempSync(join(tmpdir(), 'regtrack-test-')) }
 
 beforeEach(() => {
@@ -34,6 +36,23 @@ beforeEach(() => {
 })
 
 describe('recorrido completo sin IA ni BD reales', () => {
+  it('con memoria configurada conserva fuente y reporte que puede leer otro proceso', async () => {
+    const root = directory()
+    vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', root)
+    await runPipeline(['2026-09-30'], { reportDir: directory() })
+    const records = new KnowledgeVault(root).list()
+    expect(records.filter(r => r.kind === 'norma')).toHaveLength(2)
+    expect(records.find(r => r.kind === 'reporte')?.content).toContain('discarded')
+    expect(records.every(r => r.review === 'pendiente')).toBe(true)
+  })
+  it('una memoria configurada inaccesible falla y deja el motivo en el reporte', async () => {
+    const root = directory(), file = join(root, 'not-a-directory')
+    writeFileSync(file, 'x')
+    vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', file)
+    await expect(runPipeline(['2026-09-30'], { reportDir: root })).rejects.toThrow('memoria')
+    expect(JSON.parse(readFileSync(join(root, 'scan-report.json'), 'utf8')).status).toBe('incomplete')
+    expect(mocks.classify).not.toHaveBeenCalled()
+  })
   it('un sumario extenso sigue pendiente: no llama IA ni inserta una alerta', async () => {
     mocks.hydrate.mockResolvedValueOnce({ ...item, contenido: 'sumario', texto: 'Un sumario extenso. '.repeat(200) })
     const dir = directory()

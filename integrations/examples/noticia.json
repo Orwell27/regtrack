@@ -1,0 +1,10 @@
+{
+  "kind": "noticia",
+  "title": "EJEMPLO FICTICIO — Empresa de vivienda anuncia una compra",
+  "sourceUrl": "https://example.org/regtrack-demo",
+  "publisher": "Ejemplo ficticio; no es una noticia real",
+  "observedAt": "2026-09-30T12:00:00Z",
+  "publishedAt": "2026-09-30",
+  "content": "Ejemplo ficticio para verificar memoria y búsqueda de vivienda. No atribuye una operación real a ninguna empresa y no acredita ningún cambio normativo.",
+  "contentKind": "extracto"
+}

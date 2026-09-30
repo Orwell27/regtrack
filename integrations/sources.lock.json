@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-30",
+  "repositories": [
+    { "name": "Normativa Educativa Canaria", "repository": "ateeducacion/normativa_educativa_canaria", "commit": "098e0bc1ce901ab4878038ec7948cf2b2d8e7708", "license": "CC0-1.0", "use": "Adaptación de fichas con procedencia, vigencia pendiente, versiones y separación de fuentes/análisis" },
+    { "name": "Basic Memory", "repository": "basicmachines-co/basic-memory", "commit": "88c3990c9a1747096c78fe330e97722a1b898f2f", "license": "AGPL-3.0", "runtime": "basic-memory==0.23.2", "use": "Servidor separado MCP; escritura y búsqueda de notas" },
+    { "name": "OpenAleph", "repository": "openaleph/openaleph", "commit": "98debd3733897104f54ae3aeec8d9145c900467f", "license": "MIT", "use": "API 2: colecciones, importación masiva y búsqueda" },
+    { "name": "FollowTheMoney", "repository": "opensanctions/followthemoney", "commit": "8aaaece224da3f46e4aa76768cf0dd363b4ce194", "license": "MIT", "runtime": "followthemoney==4.11.0", "use": "Document NDJSON y validador oficial de entidades/relaciones" },
+    { "name": "Graphiti", "repository": "getzep/graphiti", "commit": "3c427640abf909f12f71f963fce15eb514a3c493", "license": "Apache-2.0", "use": "MCP: add_memory, search_memory_facts, get_episodes; consumo explícito" },
+    { "name": "MCP-BOE", "repository": "ComputingVictor/MCP-BOE", "commit": "6b0bf48e4ca064dd9e84a0a4fe5112cc948be745", "license": "MIT", "dependencyOverride": "mcp==1.30.0", "use": "MCP: consultas consolidadas y comparación por fechas; no sustituye BORM Murcia" },
+    { "name": "changedetection.io", "repository": "dgtlmoon/changedetection.io", "commit": "0e0566721b1c483dcf7ae548210ee10532d9b181", "license": "Apache-2.0", "use": "API v1: monitores e historial completo paginado por límite local" }
+  ]
+}

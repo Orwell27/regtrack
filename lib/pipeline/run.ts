@@ -12,9 +12,12 @@ import { collectSources, hydrateDocument } from './sources'
 import { ScanReport } from './report'
 import { SourceAccessBlockedError } from '../sources/http'
 import { requireSubstantiveText, ReviewRequiredError } from '../analysis/validation'
+import { KnowledgeVault } from '../knowledge/vault'
+import { archiveDocument, archiveReport } from '../knowledge/archive'
 
 export async function runPipeline(dates: string[], options: { scanOnly?: boolean; historical?: boolean; reportDir?: string } = {}) {
   const report = new ScanReport(dates)
+  const vault = process.env.REGTRACK_KNOWLEDGE_DIR ? new KnowledgeVault(process.env.REGTRACK_KNOWLEDGE_DIR) : undefined
   report.mode = options.scanOnly ? 'sources_only' : 'full'
   const save = () => report.save(options.reportDir)
   try {
@@ -22,6 +25,8 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
     console.log('[pipeline] Iniciando ingestión...')
 
     const allItems = await collectSources(report, options.historical)
+    // Guardar también los sumarios de documentos ya conocidos o aún no procesados.
+    for (const item of allItems) archiveDocument(vault, item, new Date().toISOString())
     for (const item of allItems) report.decision(item, 'unprocessed', 'Pendiente de procesamiento')
     save()
     if (options.scanOnly) {
@@ -60,6 +65,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           continue
         }
         item = await hydrateDocument(rawItem)
+        archiveDocument(vault, item, new Date().toISOString())
         const texto = item.texto ?? ''
 
         // 4. Clasificar con Claude Haiku
@@ -238,6 +244,10 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
     throw error
   } finally {
     report.finished = true
-    report.save(options.reportDir, true)
+    try { archiveReport(vault, report) }
+    catch {
+      report.fatal.push('No se pudo conservar el informe en la memoria persistente')
+      throw new Error('No se pudo conservar el informe en la memoria persistente')
+    } finally { report.save(options.reportDir, true) }
   }
 }

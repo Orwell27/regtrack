@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Memoria y vigilancia de RegTrack
+
+La [guía de integraciones](integrations/README.md) explica el archivo Markdown, Basic Memory, OpenAleph, FollowTheMoney, Graphiti, MCP-BOE y changedetection.io. Incluye comandos, configuración y [estado de verificación](integrations/VALIDATION.md). El guardado del escáner se activa con `REGTRACK_KNOWLEDGE_DIR` en un worker con almacenamiento persistente; los servicios externos requieren su propia configuración.
+
 ## Getting Started
 
 First, run the development server:

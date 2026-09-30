@@ -17,3 +17,21 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npx tsc --noEmit
+  followthemoney:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y libicu-dev pkg-config
+      - run: python -m pip install uv==0.11.6
+      - run: npm ci
+      - run: npm run knowledge -- ingest --file integrations/examples/noticia.json --vault artifacts/knowledge-ci
+      - run: npm run knowledge -- export-ftm --vault artifacts/knowledge-ci --file artifacts/entities.ftm.jsonl
+      - run: npm run knowledge:validate-ftm -- artifacts/entities.ftm.jsonl
+      - run: uv run --python 3.12 integrations/followthemoney/check.py
