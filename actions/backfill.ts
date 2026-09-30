@@ -29,7 +29,9 @@ import { join } from 'path'
   } catch { /* sin .env.local, ignorar */ }
 })()
 
+import { APIError } from '@anthropic-ai/sdk'
 import { createServerClient } from '@/lib/supabase'
+import { VigilanteApi } from '@/lib/pipeline/vigilante-api'
 import { parseBOESumario, fetchBOEText } from '@/lib/sources/boe'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
@@ -164,6 +166,7 @@ async function processItem(
     // No notificamos por Telegram en backfill para no spam
     return 'saved'
   } catch (err) {
+    if (err instanceof APIError) throw err
     console.error(`[backfill] Error procesando "${item.titulo.slice(0, 60)}":`, err)
     return 'error'
   }
@@ -198,6 +201,7 @@ async function run() {
   let totalItems = 0
   let totalSaved = 0
   let totalDiscarded = 0
+  const api = new VigilanteApi()
 
   for (const dateStr of dates) {
     console.log(`\n[backfill] ── ${dateStr} ──────────────────`)
@@ -219,7 +223,16 @@ async function run() {
 
     for (const item of newItems) {
       await new Promise(r => setTimeout(r, 1500)) // ~40 req/min, bajo el límite de 50
-      const result = await processItem(db, item)
+      let result: Awaited<ReturnType<typeof processItem>>
+      try {
+        result = await processItem(db, item)
+        api.exito()
+      } catch (err) {
+        if (!(err instanceof APIError)) throw err
+        console.error(`  ! [error API ${err.status ?? 'sin conexión'}] ${item.titulo.slice(0, 70)}`)
+        if (api.error(err)) throw new Error(`Backfill detenido por errores de la API de Claude (${api.describirUltimo()})`)
+        continue
+      }
       if (result === 'saved') {
         totalSaved++
         console.log(`  ✓ [${item.id}] ${item.titulo.slice(0, 70)}`)

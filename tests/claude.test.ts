@@ -1,10 +1,12 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, type Mock } from 'vitest'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 
 // Mock del SDK de Anthropic
-vi.mock('@anthropic-ai/sdk', () => {
+vi.mock('@anthropic-ai/sdk', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('@anthropic-ai/sdk')>()
   const mockCreate = vi.fn()
   return {
+    ...actual,
     default: vi.fn().mockImplementation(function () {
       return { messages: { create: mockCreate } }
     }),
@@ -12,7 +14,7 @@ vi.mock('@anthropic-ai/sdk', () => {
   }
 })
 
-import Anthropic from '@anthropic-ai/sdk'
+import Anthropic, { BadRequestError } from '@anthropic-ai/sdk'
 
 describe('classifyDocument', () => {
   beforeEach(() => {
@@ -114,5 +116,24 @@ describe('analyzeImpact', () => {
     })
     const result = await analyzeImpact('Título', 'Texto', 'BOE')
     expect(result).toBeNull()
+  })
+})
+
+describe('errores de la API de Claude', () => {
+  const sinSaldo = () => new BadRequestError(400, { type: 'error', error: { type: 'invalid_request_error', message: 'Your credit balance is too low' } }, 'Your credit balance is too low', new Headers())
+
+  beforeEach(() => {
+    vi.clearAllMocks()
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
+      return { messages: { create: vi.fn().mockRejectedValue(sinSaldo()) } }
+    })
+  })
+
+  it('classifyDocument relanza el error en vez de dar el documento por irrelevante', async () => {
+    await expect(classifyDocument('Título', 'Texto')).rejects.toBeInstanceOf(BadRequestError)
+  })
+
+  it('analyzeImpact relanza el error en vez de devolver null', async () => {
+    await expect(analyzeImpact('Título', 'Texto', 'BOE')).rejects.toBeInstanceOf(BadRequestError)
   })
 })
