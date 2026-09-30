@@ -1,12 +1,12 @@
 // app/api/admin/grupos-telegram/route.ts
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
-import { getAuthUser } from '@/lib/auth'
+import { requireAdmin } from '@/lib/auth'
 import { sendMessage } from '@/lib/telegram'
 
 export async function GET() {
-  const user = await getAuthUser()
-  if (!user || user.rol !== 'admin') return NextResponse.json({ error: 'No autorizado' }, { status: 403 })
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
 
   const db = createNextServerClient()
   const { data, error } = await db
@@ -19,8 +19,8 @@ export async function GET() {
 }
 
 export async function POST(req: NextRequest) {
-  const user = await getAuthUser()
-  if (!user || user.rol !== 'admin') return NextResponse.json({ error: 'No autorizado' }, { status: 403 })
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
 
   let body: { nombre: string; chat_id: string; subcategoria_id: number; invite_link?: string }
   try {
@@ -62,8 +62,8 @@ export async function POST(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
-  const user = await getAuthUser()
-  if (!user || user.rol !== 'admin') return NextResponse.json({ error: 'No autorizado' }, { status: 403 })
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
 
   const { searchParams } = new URL(req.url)
   const idParam = searchParams.get('id')

@@ -2,11 +2,15 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
 import { notifyUsers } from '@/lib/telegram'
 import { notifyGrupos } from '@/lib/sectorial/telegram-grupos'
+import { requireAdmin } from '@/lib/auth'
 
 export async function POST(
   _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
+
   const { id } = await params
   const db = createNextServerClient()
 

@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
+import { requireAdmin } from '@/lib/auth'
 
 export async function GET() {
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
+
   const db = createNextServerClient()
   const { data, error } = await db.from('config').select('clave, valor')
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
@@ -10,6 +14,9 @@ export async function GET() {
 }
 
 export async function PUT(req: NextRequest) {
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
+
   const body = await req.json() as Record<string, unknown>
   const db = createNextServerClient()
 

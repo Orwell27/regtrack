@@ -1,11 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
 import type { RelacionConAlerta } from '@/lib/correlacion/types'
+import { requireAdmin } from '@/lib/auth'
 
+// Solo la usa el panel editorial: devuelve títulos de alertas aún sin
+// publicar o descartadas. El suscriptor lee sus relaciones en el servidor.
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
+
   const { id } = await params
   const db = createNextServerClient()
 

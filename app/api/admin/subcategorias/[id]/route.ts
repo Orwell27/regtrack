@@ -1,14 +1,14 @@
 // app/api/admin/subcategorias/[id]/route.ts
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
-import { getAuthUser } from '@/lib/auth'
+import { requireAdmin } from '@/lib/auth'
 
 export async function PATCH(
   req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  const user = await getAuthUser()
-  if (!user || user.rol !== 'admin') return NextResponse.json({ error: 'No autorizado' }, { status: 403 })
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
 
   const { id } = await params
 
