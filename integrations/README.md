@@ -6,9 +6,9 @@ Las siete referencias aceptadas tienen una función implementada. Esta capa se e
 |---|---|---|
 | [Normativa Educativa Canaria](https://github.com/ateeducacion/normativa_educativa_canaria) | Estructura adaptada: normativa, contexto, análisis, índices y decisiones; fuentes y vigencia pendiente | Seleccionar disco persistente y respaldo del worker |
 | [Basic Memory](https://github.com/basicmachines-co/basic-memory) | Escritura MCP en proyecto dedicado y búsqueda de notas | Mantener su configuración e índice local |
-| [OpenAleph](https://github.com/openaleph/openaleph) | Exportación FtM, bulk API 2, búsqueda por colección y estado de procesamiento | Servidor, colección privada y clave |
+| [OpenAleph](https://github.com/openaleph/openaleph) | API local real: colección privada, importación FtM, búsqueda exacta, reintento y recuperación tras reinicio | Resolver memoria de analizadores; validar búsqueda de nombres, UI y alojamiento continuo |
 | [FollowTheMoney](https://github.com/opensanctions/followthemoney) | Document NDJSON y validador Python oficial para documentos, empresas, personas y relaciones | La extracción/resolución automática de empresas aún no está implementada |
-| [Graphiti](https://github.com/getzep/graphiti) | Episodios JSON con fecha/procedencia, UUID estable, consulta de episodios y búsqueda de relaciones | Servidor con base de grafo, modelos y autorización de consumo |
+| [Graphiti](https://github.com/getzep/graphiti) | Servidor local y FalkorDB conectados: 13 herramientas MCP y lectura de episodios; adaptador de escritura preparado | Seleccionar modelos/embeddings, autorizar consumo y validar extracción y persistencia de hechos |
 | [MCP-BOE](https://github.com/ComputingVictor/MCP-BOE) | Consulta de norma consolidada y comparación por fechas | Validar cada resultado contra el BOE antes de utilizarlo como obligación |
 | [changedetection.io](https://github.com/dgtlmoon/changedetection.io) | Importación de instantáneas y prueba real repetible de captura, cambio, reinicio y errores | Elegir páginas y alojamiento permanente; la prueba apaga sus servidores al terminar |
 
@@ -60,6 +60,8 @@ Un único escritor por vault. Copiar el directorio completo, incluidos `.records
 ## Servicios externos
 
 [Arranque y validación de los tres servicios](SERVICE-STARTUP.md). `npm run knowledge:check-changedetection` ejecuta la prueba completa con un servidor real y una página ficticia local. `knowledge check-services` comprueba las conexiones configuradas por lectura, sin extracción ni embeddings; no confunde esa comprobación con vigilancia activa.
+
+WSL, Ubuntu y Docker instalados con autorización, sin reiniciar Windows. [Entorno local reproducible](local/README.md), imágenes fijadas y pruebas `knowledge:check-openaleph` / `knowledge:check-graphiti`. Los contenedores y puentes temporales se detienen al terminar: no queda vigilancia continua activa.
 
 Combinar las entradas necesarias de [services.example.json](services.example.json) con la configuración local, reemplazando direcciones y colección. Claves exclusivamente mediante variables de entorno. Mantenerlos privados; solo se permite HTTP en localhost y HTTPS en remoto. No se inicia ni publica ningún servidor con estos comandos.
 

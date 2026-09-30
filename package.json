@@ -14,7 +14,9 @@
     "pilot": "tsx actions/evaluate-pilot.ts",
     "knowledge": "tsx actions/knowledge.ts",
     "knowledge:check-changedetection": "tsx actions/check-changedetection.ts",
-    "knowledge:validate-ftm": "uv run --python 3.12 integrations/followthemoney/validate.py"
+    "knowledge:check-openaleph": "tsx actions/check-openaleph.ts",
+    "knowledge:validate-ftm": "uv run --python 3.12 integrations/followthemoney/validate.py",
+    "knowledge:check-graphiti": "tsx actions/check-graphiti.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.88.0",

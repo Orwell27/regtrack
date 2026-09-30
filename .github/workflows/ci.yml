@@ -6,6 +6,19 @@ on:
 permissions:
   contents: read
 jobs:
+  local-services-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test integrations/local/check.mjs
+      - run: node integrations/local/prepare.mjs artifacts/local-services-config
+      - run: docker compose --env-file artifacts/local-services-config/.env -f artifacts/local-services-config/compose.openaleph.json --profile '*' config --quiet
+      - run: docker compose -f artifacts/local-services-config/compose.graphiti.json config --quiet
+      - run: bash -n integrations/local/install-docker.sh && bash -n integrations/local/start-openaleph.sh
+      - run: python3 -m py_compile integrations/local/forward.py integrations/local/bootstrap-user.py
   changedetection:
     runs-on: ubuntu-latest
     timeout-minutes: 12

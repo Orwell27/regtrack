@@ -53,3 +53,4 @@ next-env.d.ts
 /artifacts/
 .knowledge/
 integrations/config.local.json
+integrations/local/__pycache__/

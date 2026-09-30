@@ -1,6 +1,6 @@
 {
   "vault": ".knowledge/vault",
-  "openAleph": { "url": "http://127.0.0.1:8080", "collectionId": 1, "tokenEnv": "OPENALEPH_API_KEY" },
+  "openAleph": { "url": "http://127.0.0.1:8081", "collectionId": 1, "tokenEnv": "OPENALEPH_API_KEY" },
   "changedetection": { "url": "http://127.0.0.1:5000", "tokenEnv": "CHANGEDETECTION_API_KEY" },
-  "graphiti": { "groupId": "regtrack", "mcp": { "url": "http://127.0.0.1:8000/mcp/", "tokenEnv": "GRAPHITI_MCP_TOKEN" } }
+  "graphiti": { "groupId": "regtrack", "mcp": { "url": "http://127.0.0.1:8000/mcp" } }
 }

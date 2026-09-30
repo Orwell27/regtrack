@@ -1,0 +1,37 @@
+{
+  "resolvedAt": "2026-09-30T17:57:30.810Z",
+  "images": {
+    "postgres": {
+      "source": "docker.io/library/postgres:17",
+      "image": "docker.io/library/postgres@sha256:d74eeac9a635390a49bc21bd49fccd973de707e2a53a76ac49b552b8712ec46f"
+    },
+    "redis": {
+      "source": "docker.io/library/redis:alpine",
+      "image": "docker.io/library/redis@sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0"
+    },
+    "elasticsearch": {
+      "source": "ghcr.io/openaleph/elasticsearch:latest",
+      "image": "ghcr.io/openaleph/elasticsearch@sha256:ba2012a0c77d0bff1650c07409c2cedadfbdb6cc01358818dec019f90b5b9ddd"
+    },
+    "openaleph": {
+      "source": "ghcr.io/openaleph/openaleph:latest",
+      "image": "ghcr.io/openaleph/openaleph@sha256:a772a1bef5c7d975c73514d1ee5537cfa8bda6d7e0ffe97a31610907bc38cf12"
+    },
+    "ingest": {
+      "source": "ghcr.io/openaleph/ingest-file:latest",
+      "image": "ghcr.io/openaleph/ingest-file@sha256:122925a1f461e44019df5050bec43c7fd1c503d222427ccb246d51fbb0ed55c6"
+    },
+    "analyze": {
+      "source": "ghcr.io/openaleph/ftm-analyze:latest",
+      "image": "ghcr.io/openaleph/ftm-analyze@sha256:4aca3d8c39d6b7ca67c2d8c10567e2cf898c908991c23e7e69bc17972ec3d35a"
+    },
+    "ui": {
+      "source": "ghcr.io/openaleph/aleph-ui:latest",
+      "image": "ghcr.io/openaleph/aleph-ui@sha256:06dadbb140a673115b6fa2abc022f51ece908b555b918b224bf1e4178c3c47fe"
+    },
+    "graphiti": {
+      "source": "docker.io/zepai/knowledge-graph-mcp:latest",
+      "image": "docker.io/zepai/knowledge-graph-mcp@sha256:a2536b6d59b4afb359a13aeaa4a9d2f4db195af14231168efda6a3d166228956"
+    }
+  }
+}

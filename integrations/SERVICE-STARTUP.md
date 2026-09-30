@@ -1,6 +1,6 @@
 # Conexión de servicios — preparación local
 
-Estado al 30-09-2026: changedetection.io **ejecutado y probado** en este Windows. OpenAleph y Graphiti **pendientes de infraestructura**, no desplegados. No hay Docker, Podman ni WSL instalado. Este documento prepara la siguiente intervención; no acredita un arranque que no se ha ejecutado.
+Estado al 30-09-2026: changedetection probado en Windows/Linux; OpenAleph probado localmente para importación privada, búsqueda exacta y persistencia tras reinicio; Graphiti conectado por MCP con lectura de episodios. WSL 3.0.1, Ubuntu 24.04 y Docker están instalados con autorización. Servicios detenidos al terminar; no hay vigilancia continua ni extracción con modelos activada.
 
 ## 1. Repetir la prueba real de cambios
 
@@ -23,45 +23,31 @@ Los procesos propios terminan al acabar. No queda un monitor continuo activo. `a
 
 La prueba también se ejecuta en el job `changedetection` de CI. Solo se adjunta `result.json`, nunca el datastore ni los registros del servicio.
 
-## 2. Preparar el alojamiento de OpenAleph y Graphiti
+## 2. OpenAleph y Graphiti en WSL
 
-Falta elegir entre instalar Docker/WSL en este ordenador o utilizar un servidor Linux existente. El arranque permanente debe disponer de volúmenes y respaldo fuera de este checkout. No sustituir esa decisión por un job efímero de CI. No se instala software del sistema ni se inicia consumo de modelos con los comandos de RegTrack.
+La fuente de instalación y operación es [local/README.md](local/README.md). Incluye verificación del instalador Microsoft, Docker oficial, Compose generado, imágenes por digest, secretos fuera de Git y puente temporal de loopback. Los contenedores están en una red interna sin salida a Internet. No repetir la instalación en una máquina ya preparada.
 
 ### OpenAleph
 
-Referencia de arranque verificada: [README en la revisión estudiada](https://github.com/openaleph/openaleph/blob/98debd3733897104f54ae3aeec8d9145c900467f/README.md), [stack de ejemplo](https://github.com/openaleph/openaleph/blob/98debd3733897104f54ae3aeec8d9145c900467f/docker-compose.example.yml) y [guía oficial de configuración](https://openaleph.org/docs/dev-admin-guide/104/setup/).
+Referencia estudiada: [stack oficial](https://github.com/openaleph/openaleph/blob/98debd3733897104f54ae3aeec8d9145c900467f/docker-compose.example.yml). Las imágenes ejecutadas se fijan separadamente en [images.lock.json](local/images.lock.json); la API instalada informa 5.3.3-rc3.
 
-Sobre una copia de esa revisión, preparar `aleph.env` a partir de `aleph.env.tmpl`, con `ALEPH_SECRET_KEY` propio. Mantener autenticación y crear usuario y colección privada; no activar `ALEPH_SINGLE_USER` para un servidor compartido. El stack usa PostgreSQL, Elasticsearch, Redis, API, UI y workers. La copia local del ejemplo necesita estos ajustes antes de arrancar:
+Se probaron PostgreSQL, Elasticsearch, Redis, API con un proceso Gunicorn y worker. Usuario propio sin privilegios de administrador, colección privada creada por API, prueba ficticia en vault independiente. El ID real se obtiene de la respuesta, no se presupone. La UI y los workers de OCR/archivos quedan fuera de esta comprobación.
 
-- Publicar la UI en `127.0.0.1:8080:8080`; no publicar PostgreSQL, Redis ni Elasticsearch.
-- Sustituir `POSTGRES_DATABASE` del ejemplo por `POSTGRES_DB`; usar una contraseña propia y reflejarla en las URI de base de datos.
-- Fijar y registrar las imágenes por digest después de elegir las versiones compatibles: el ejemplo oficial contiene etiquetas móviles. El commit del repositorio no fija esas imágenes.
-- Conservar los volúmenes de archivo, PostgreSQL, Redis y Elasticsearch. La propia documentación presenta este stack como prueba local, no como despliegue de producción.
+Con el servicio y su puente preparados, ejecutar `npm run knowledge:check-openaleph`. Después de detener y arrancar el stack completo, restablecer el puente y ejecutar `npm run knowledge:check-openaleph -- --verify-saved`: comprueba el mismo ID y SHA256 sin reimportar, y que solo hay un resultado. Ambos recorridos se ejecutaron realmente. Resultados locales sin claves en `artifacts/local-services`.
 
-Después de comprobar que Docker está disponible y las variables están preparadas:
-
-```sh
-docker compose -f docker-compose.example.yml config --quiet
-docker compose -f docker-compose.example.yml up -d
-# Cuando Elasticsearch esté preparado:
-docker compose -f docker-compose.example.yml run --rm worker aleph upgrade
-```
-
-Crear la colección privada en la UI y obtener su identificador y la clave del usuario; no suponer que el ID es 1. Configurarlos en `integrations/config.local.json` y `OPENALEPH_API_KEY`. Evitar mostrar `docker compose config` sin `--quiet`: puede expandir secretos.
-
-Validación pendiente: exportar el ejemplo ficticio a un vault independiente, `sync openaleph --limit 1`, esperar la indexación y recuperar **ese ID** con `search-aleph`. Un acuse `accepted` o una cola vacía por sí solos no bastan. No enviar los siete documentos reales hasta comprobar aislamiento y permisos.
+**Limitación:** Elasticsearch, con heap de 1 GB, recupera el documento exacto pero registra un límite de memoria al cargar sinónimos y utiliza un mapa vacío. Ajustar recursos y validar los analizadores antes de dar por buena la búsqueda de variantes de nombres. No se han enviado los siete documentos reales ni comprobado cruces de empresas.
 
 ### Graphiti
 
-Referencia de arranque: [MCP README en la revisión estudiada](https://github.com/getzep/graphiti/blob/3c427640abf909f12f71f963fce15eb514a3c493/mcp_server/README.md) y [Compose con FalkorDB](https://github.com/getzep/graphiti/blob/3c427640abf909f12f71f963fce15eb514a3c493/mcp_server/docker/docker-compose.yml).
+Referencia estudiada: [MCP README](https://github.com/getzep/graphiti/blob/3c427640abf909f12f71f963fce15eb514a3c493/mcp_server/README.md). Se arrancó el contenedor con FalkorDB y almacenamiento persistente configurado; se descubrieron 13 herramientas y se leyó correctamente un grupo vacío. Prueba: `npm run knowledge:check-graphiti`.
 
-Preparar una copia de esa revisión con `GRAPHITI_GROUP_ID=regtrack`, `SEMAPHORE_LIMIT=1`, `BROWSER=0` y `GRAPHITI_TELEMETRY_ENABLED=false`. Publicar exclusivamente `127.0.0.1:8000:8000`; retirar los puertos Redis/Browser del ejemplo. Fijar la imagen por digest y conservar los volúmenes del grafo y registros. Definir modelo y embeddings deliberadamente: no adoptar por accidente los valores por defecto de upstream.
+La ruta real de esta imagen es `http://127.0.0.1:8000/mcp`, sin barra final. Omitir `tokenEnv` para este servidor local: no tiene autenticación Bearer configurada. Añadir un token al cliente no protege al servidor. Un servicio remoto requiere HTTPS y autenticación efectiva antes de conectar.
 
-El ejemplo no configura autenticación Bearer del MCP. Para loopback, omitir `tokenEnv` en `graphiti.mcp`; añadir una variable en el cliente no protege al servidor. Para acceso remoto, necesita HTTPS y autenticación real en el servidor/proxy antes de conectar.
+Este perfil lleva una credencial de modelo deliberadamente inválida y no tiene salida a Internet. No invocar `add_memory` ni búsqueda semántica: extracción, embeddings y persistencia de hechos no están probados. Antes de activarlos, seleccionar proveedor/modelos, autorizar consumo y validar un documento ficticio, UUID, fechas y hechos frente al original. Un acuse `queued` no demuestra extracción.
 
-Primero ejecutar `probe graphiti` y `graphiti-episodes`, que solo descubren herramientas y leen episodios. La extracción y búsqueda semántica necesitan modelos/embeddings: siguen pendientes de seleccionar proveedor, credenciales y autorización de consumo. Los comandos de RegTrack exigen `--allow-model-calls`, pero otros clientes que accedan directamente al servidor no pasan por ese control.
+### Continuidad
 
-Validación posterior: un único documento ficticio, comprobar el UUID del episodio procesado, revisar los hechos extraídos frente al texto y probar el reintento. Un acuse `queued` no acredita extracción. No convertir relaciones inferidas en vigencia u obligaciones.
+Los volúmenes y secretos están en la distribución RegTrack, fuera del checkout. No son un respaldo. Falta exportación/restauración comprobada y alojamiento permanente. WSL puede detenerse al terminar la última sesión aunque systemd siga activo; los puentes usados en las pruebas son temporales. No hay arranque automático ni monitor continuo configurado.
 
 ## 3. Verificar las conexiones sin escribir ni consumir modelos
 
