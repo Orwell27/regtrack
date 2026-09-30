@@ -1,6 +1,6 @@
 # Piloto de validación de RegTrack
 
-**Preparado, todavía sin ejecutar la IA.** Ocho entradas, siete documentos históricos y 27 comprobaciones. Las referencias son propuestas de Codex pendientes de revisión humana. Sirven para descubrir errores y ajustar el sistema; no acreditan precisión jurídica, vigencia actual ni autonomía.
+**Primer ensayo real ejecutado el 30-sep-2026.** [Resultados y evidencia](../eval/pilot/results/2026-09-30-baseline/README.md): cuatro relevantes detectados y tres negativos descartados, pero también una alerta con texto insuficiente y problemas de plazos y respaldo. Ocho entradas, siete documentos históricos y 27 comprobaciones; revisión preliminar de Codex. Las referencias siguen pendientes de revisión humana. No acredita precisión jurídica, vigencia actual ni autonomía.
 
 ## Qué compara
 
@@ -41,7 +41,7 @@ Este comando no carga credenciales ni clientes de IA y no accede a fuentes, dato
 ## Revisión de las referencias y ejecución real
 
 1. Revisar el documento legible con alguien competente en la materia. Corregir las referencias canónicas y registrar responsable y fecha en `reference`. No atribuir una aprobación humana a Codex. Congelar esa versión antes de comparaciones definitivas: cambiar expectativas o textos cambia el hash y exige una ejecución compatible. Registrar únicamente una aprobación no cambia el hash ni obliga a repetir llamadas de pago.
-2. Con autorización expresa del coste, ejecutar el modelo existente. La implementación admite esta ejecución, pero **no se ha realizado**:
+2. Con autorización expresa del coste, ejecutar el modelo existente. El primer ensayo ya se realizó; este comando inicia otro ensayo de pago, no reproduce el anterior:
 
 ```sh
 npm run pilot -- --live --allow-paid-api --max-cases 8
@@ -76,7 +76,7 @@ No fijamos porcentajes de aceptación como si ya existiera una línea base. Para
 
 Los documentos descartados y las fuentes que no devolvieron nada también deben entrar en la validación posterior. La siguiente muestra debe reservarse antes de ajustar prompts y contener otras fechas, jurisdicciones, derogaciones, excepciones y fallos de descarga. Probar de nuevo los mismos ocho casos después de ajustar el modelo mide ajuste a esta muestra, no generalización.
 
-## Riesgos observados en el código, aún sin medición del modelo
+## Riesgos identificados antes del ensayo
 
 - El prompt de impacto asigna puntuación 1 al texto insuficiente; el flujo descarta puntuaciones menores de 4. Existe un conflicto con conservar lo insuficiente pendiente de revisión.
 - `plazo_adaptacion` se define como diferencia entre publicación y entrada en vigor. El caso murciano permite contrastarlo con un verdadero plazo de adaptación de seis meses.
@@ -84,7 +84,7 @@ Los documentos descartados y las fuentes que no devolvieron nada también deben 
 - El esquema no distingue sistemáticamente fechas literales, fechas calculadas y estado de vigencia actual.
 - La llamada de análisis recibe título y texto, pero no el metadato separado de publicación; algunos textos extraídos ya no incluyen esa fecha. El piloto admite abstención y deja registrada esta limitación del flujo actual.
 
-Son riesgos identificados leyendo prompts y código. No se presentan como respuestas erróneas observadas del modelo. Este piloto prepara la evidencia para decidir los cambios; no modifica esos prompts.
+Estos riesgos se identificaron leyendo prompts y código antes del ensayo. Los resultados enlazados arriba distinguen cuáles se observaron realmente, omisiones y hallazgos adicionales. El caso insuficiente produjo puntuación 4 y alerta, no el descarte por 1 que se había anticipado. Los prompts no se han modificado.
 
 ## Para validar la autonomía y la correlación con noticias
 

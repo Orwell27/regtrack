@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "mode": "live",
+  "corpusHash": "a9a2647939f208bd378b547adb5b52c0040fccd46a02310200e79bffc786ec30",
+  "startedAt": "2026-09-30T12:42:26.357Z",
+  "finishedAt": "2026-09-30T12:44:04.560Z",
+  "provenance": {
+    "lib/claude.ts": "a76e748693f40e0e281dd10ab825f536b61d2f4d7f864944b0e18ddb4e3c9daf",
+    "lib/pipeline/run.ts": "b06d47e17c148db14d257390cd50caad5de46255c9b71fb923450059005d51e1",
+    "actions/evaluate-pilot.ts": "5c91a168d2097e62cbaf8449ce2c653f7ae2c1e0063f01c9dbf3ba1e65d56c6d",
+    "lib/evaluation/pilot.ts": "5ca5ad3c9ab8cbf6b504438c75d0a6ffd70d125d89abd09b6c901fc185c6dc60",
+    "prompts/regtrack-clasificador.md": "bf888f8ba9aa152fa4c42482c1c59b4d6768615dc8260e3f23ceb97b715a3f24",
+    "prompts/regtrack-impacto.md": "eeb80f748375db78f04e1f3c26c4ebbfdbd79e0a26a834d747b0f043787bfc2c",
+    "gitCommit": "c541a35c5fd1739bd8cb39e1b76defbcf1b97aea",
+    "scope": "Clasificación e impacto con los prompts existentes; sin metadatos BOE opcionales, persistencia, noticias ni entrega de alertas. alert = candidato con score >= 4.",
+    "models": "claude-haiku-4-5-20251001, claude-sonnet-4-6"
+  },
+  "observations": [
+    {
+      "caseId": "BOE-A-2024-26931",
+      "outcome": "alert",
+      "classification": {
+        "relevante": true,
+        "subtema": "arrendamiento",
+        "ambito_territorial": "estatal",
+        "motivo": "Regula el registro único de arrendamientos de corta duración y crea la Ventanilla Única Digital, estableciendo obligaciones para propietarios, plataformas y autoridades competentes en materia de alquiler de viviendas y alojamientos de corta duración"
+      },
+      "impact": {
+        "resumen": "El Gobierno crea el Registro Único de Arrendamientos y la Ventanilla Única Digital de Arrendamientos (dependiente del Ministerio de Vivienda) para implementar el Reglamento europeo 2024/1028. A partir del 1 de julio de 2025, cualquier propietario que quiera ofrecer alojamiento de corta duración (turístico o de temporada) a través de plataformas online como Airbnb o Booking deberá obtener previamente un número de registro en el Registro de la Propiedad. Sin ese número, las plataformas no podrán publicar el anuncio.",
+        "impacto": "Los propietarios que actualmente alquilan por temporada o de forma turística a través de plataformas digitales deben registrar sus inmuebles en el Registro de la Propiedad y obtener un número de registro único antes de julio de 2025, sin el cual no podrán publicar anuncios. Las plataformas (Airbnb, Booking, etc.) están obligadas a mostrar ese número en cada anuncio, realizar comprobaciones aleatorias y retirar anuncios sin número válido en 48 horas tras notificación oficial. Además, cada 12 meses habrá que presentar un informe con los arrendamientos realizados, lo que intensifica el control sobre el uso real del inmueble. Se espera que inmuebles actualmente en alquiler irregular salgan del mercado, pudiendo aumentar la oferta de alquiler de larga duración.",
+        "afectados": [
+          "propietarios",
+          "inversores",
+          "agentes",
+          "gestorías",
+          "compradores"
+        ],
+        "urgencia": "media",
+        "tipo_norma": "Real Decreto",
+        "fecha_publicacion": "2024-12-23",
+        "fecha_entrada_vigor": "2025-01-02",
+        "plazo_adaptacion": "10",
+        "deroga_modifica": "No deroga normativa anterior. Desarrolla el Reglamento (UE) 2024/1028 del Parlamento Europeo y del Consejo, de 11 de abril de 2024, y complementa la Ley 29/1994 de Arrendamientos Urbanos en materia de arrendamientos de temporada. Los efectos prácticos de las obligaciones se activan el 1 de julio de 2025.",
+        "territorios": [
+          "España"
+        ],
+        "accion_recomendada": "Los propietarios que alquilen o planeen alquilar viviendas o habitaciones de corta duración (turístico o temporada) a través de Airbnb, Booking u otras plataformas deben: (1) Antes del 1 de julio de 2025, solicitar el número de registro en la sede electrónica del Colegio de Registradores (o presencialmente en el Registro de la Propiedad correspondiente), aportando referencia catastral, Código Registral Único, licencia turística o comunicación previa si aplica, y acuerdo de comunidad de propietarios si existe. (2) Verificar si la comunidad de propietarios ha aprobado algún acuerdo que prohíba o limite el alquiler turístico, ya que el registrador lo comprobará y puede denegar el número. (3) Los agentes y gestorías deben informar ya a sus clientes con activos en plataformas digitales para iniciar el proceso con tiempo. (4) Los inversores que compren activos con uso turístico previsto deben comprobar que el inmueble cumple todos los requisitos antes de la compra, dado que sin número de registro no podrán comercializarlo en plataformas a partir de julio de 2025.",
+        "score_relevancia": 8
+      },
+      "elapsedMs": 22221
+    },
+    {
+      "caseId": "BOE-A-2021-9176",
+      "outcome": "alert",
+      "classification": {
+        "relevante": true,
+        "subtema": "rehabilitacion",
+        "ambito_territorial": "estatal",
+        "motivo": "Regula el procedimiento básico para certificación de eficiencia energética de edificios, incluyendo nuevas construcciones, reformas y edificios existentes, con obligaciones para vendedores, arrendadores y agentes inmobiliarios de mostrar etiqueta energética en ofertas de compraventa y alquiler de inmuebles."
+      },
+      "impact": {
+        "resumen": "El Gobierno aprueba un nuevo procedimiento para la certificación de eficiencia energética de edificios, derogando el Real Decreto 235/2013. Las novedades principales son: obligación para agencias inmobiliarias y portales de incluir la calificación energética en toda publicidad de venta o alquiler, obligación de anexar el certificado al contrato de compraventa y la etiqueta al contrato de arrendamiento, certificados con calificación G con validez reducida a 5 años (antes 10), y visita obligatoria al inmueble por el técnico certificador.",
+        "impacto": "Los agentes inmobiliarios y portales (Idealista, Fotocasa, etc.) están obligados a mostrar la calificación energética en todos los anuncios de venta o alquiler, sin excepción. En compraventas, el certificado registrado debe anexarse físicamente al contrato; en alquileres, la etiqueta va anexa al contrato y se entrega al inquilino el documento de recomendaciones de uso. Los propietarios de inmuebles con calificación G deben renovar el certificado cada 5 años en lugar de cada 10. Los edificios con ITE obligatoria también deben tener certificado energético. Promotores de obra nueva deben obtener dos certificados: uno de proyecto y otro de obra terminada.",
+        "afectados": [
+          "agentes",
+          "promotores",
+          "propietarios",
+          "inversores",
+          "inquilinos",
+          "compradores",
+          "gestorías",
+          "notarías"
+        ],
+        "urgencia": "alta",
+        "tipo_norma": "Real Decreto",
+        "fecha_publicacion": "2021-06-02",
+        "fecha_entrada_vigor": "2021-06-03",
+        "plazo_adaptacion": "1",
+        "deroga_modifica": "Deroga íntegramente el Real Decreto 235/2013, de 5 de abril. Modifica el Real Decreto 56/2016, de 12 de febrero (auditorías energéticas) y el Real Decreto 178/2021, de 23 de marzo (instalaciones térmicas).",
+        "territorios": [
+          "España"
+        ],
+        "accion_recomendada": "1) Agentes inmobiliarios y portales: revisar de inmediato todos los anuncios activos de venta y alquiler y añadir la calificación energética; establecer un proceso interno para no publicar ningún anuncio nuevo sin este dato. 2) Propietarios que alquilan o venden: solicitar el certificado energético registrado antes de firmar cualquier contrato; comprobar si el certificado vigente tiene calificación G y, si es así, planificar su renovación en un plazo máximo de 5 años. 3) Notarías y gestorías: verificar en toda compraventa que el certificado energético registrado se adjunta como anexo al contrato; en arrendamientos, comprobar que se adjunta la etiqueta. 4) Promotores: adaptar el proceso de obra nueva para obtener certificado de proyecto y certificado de obra terminada como dos hitos diferenciados. Todas estas obligaciones de exhibición y entrega de etiqueta en edificios públicos y grandes superficies comerciales deben estar implementadas antes del 3 de junio de 2022 (12 meses desde entrada en vigor).",
+        "score_relevancia": 9
+      },
+      "elapsedMs": 20340
+    },
+    {
+      "caseId": "BOE-A-2024-26685",
+      "outcome": "alert",
+      "classification": {
+        "relevante": true,
+        "subtema": "arrendamiento",
+        "ambito_territorial": "estatal",
+        "motivo": "Define el índice de referencia para la actualización anual de rentas en contratos de arrendamiento de vivienda, estableciendo un límite legal de incrementos de alquiler aplicable a todos los arrendatarios e inquilinos."
+      },
+      "impact": {
+        "resumen": "El INE (Instituto Nacional de Estadística) ha creado un nuevo índice específico para limitar la subida anual de los alquileres de vivienda, tal como mandataba la Ley de Vivienda de 2023. Este índice sustituye al IPC como referencia máxima de actualización de renta y se calculará mensualmente como el valor más bajo entre: el IPC general, el IPC subyacente (inflación sin energía ni alimentos frescos) y una fórmula matemática amortiguadora que modera las subidas extremas usando como ancla el objetivo de inflación del BCE del 2%.",
+        "impacto": "A partir del 1 de enero de 2025, cuando un propietario quiera actualizar la renta de un contrato de alquiler, el incremento máximo permitido ya no será simplemente el IPC del último mes publicado, sino el valor más bajo entre tres cálculos. En la práctica, esto significa que en periodos de inflación alta (por encima del 2%), el nuevo índice producirá límites de subida inferiores al IPC. Por ejemplo, con un IPC del 4%, la fórmula amortiguadora daría aproximadamente un 3% (0.5 aplicado sobre la diferencia respecto al 2% de referencia). El INE publicará mensualmente este índice, por lo que los propietarios deberán consultarlo cada vez que actualicen una renta.",
+        "afectados": [
+          "propietarios",
+          "inquilinos",
+          "agentes",
+          "gestorías",
+          "inversores"
+        ],
+        "urgencia": "alta",
+        "tipo_norma": "Resolución",
+        "fecha_publicacion": "2024-12-18",
+        "fecha_entrada_vigor": "2025-01-01",
+        "plazo_adaptacion": "14",
+        "deroga_modifica": "Complementa y desarrolla el artículo 18 de la Ley 29/1994 de Arrendamientos Urbanos y la disposición adicional undécima introducida por la Ley 12/2023, de 24 de mayo, por el derecho a la vivienda. No deroga normativa anterior, pero reemplaza en la práctica al IPC como índice de referencia máximo para actualizaciones de renta.",
+        "territorios": [
+          "España"
+        ],
+        "accion_recomendada": "Desde el 1 de enero de 2025, antes de notificar cualquier actualización de renta a un inquilino, consultar en la web del INE el nuevo índice publicado para ese mes y aplicarlo como tope máximo en lugar del IPC. Si tienes contratos con cláusula de actualización 'según IPC', revisar si dicha cláusula queda por encima del nuevo índice: en ese caso, el tope legal prevalece y debes aplicar el índice INE aunque contractualmente pusieras el IPC. Para carteras de más de 10 viviendas, configurar desde ya un proceso mensual de consulta del nuevo índice en la web del INE (ine.es) y recalcular el máximo permitido antes de emitir cada carta de actualización.",
+        "score_relevancia": 9
+      },
+      "elapsedMs": 18969
+    },
+    {
+      "caseId": "BOE-A-2024-13325",
+      "outcome": "discard",
+      "classification": {
+        "relevante": false,
+        "subtema": "otro",
+        "ambito_territorial": "estatal",
+        "motivo": "Nombramiento de personal sanitario sin impacto en sector inmobiliario, construcción o urbanismo"
+      },
+      "impact": null,
+      "elapsedMs": 971
+    },
+    {
+      "caseId": "BOE-B-2024-25128",
+      "outcome": "discard",
+      "classification": {
+        "relevante": false,
+        "subtema": "otro",
+        "ambito_territorial": "estatal",
+        "motivo": "Convocatoria de becas de formación en el Museo del Prado sin impacto en sector inmobiliario, construcción, urbanismo o vivienda"
+      },
+      "impact": null,
+      "elapsedMs": 1462
+    },
+    {
+      "caseId": "BOE-A-2024-19452",
+      "outcome": "discard",
+      "classification": {
+        "relevante": false,
+        "subtema": "otro",
+        "ambito_territorial": "estatal",
+        "motivo": "Convenio de cooperación internacional para formación de profesorado extranjero en español, sin impacto directo en sectores inmobiliario, construcción o suelo"
+      },
+      "impact": null,
+      "elapsedMs": 1565
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "outcome": "alert",
+      "classification": {
+        "relevante": true,
+        "subtema": "otro",
+        "ambito_territorial": "ccaa",
+        "motivo": "Regula viviendas de uso turístico en Murcia, afectando a propietarios que alquilan residencias turísticamente, con implicaciones en arrendamiento, fiscalidad inmobiliaria, comunidades de propietarios y normativa de intermediarios inmobiliarios."
+      },
+      "impact": {
+        "resumen": "El Consejo de Gobierno de la Región de Murcia aprueba el marco regulatorio completo para las viviendas de uso turístico (VUT) en su territorio. Establece dos modalidades: vivienda cedida entera o por habitaciones (solo si el propietario vive en ella). Exige declaración responsable previa ante el Instituto de Turismo, seguro de responsabilidad civil mínimo de 300.000€ y requisitos técnicos específicos de equipamiento y capacidad.",
+        "impacto": "Todo propietario o gestor que opere una VUT en Murcia sin estar registrado pasa a ser ilegal. Las plataformas tipo Airbnb o Booking deben mostrar el número de registro en los anuncios. Los gestores de VUT (no propietarios) asumen la responsabilidad administrativa. Las VUT por habitaciones quedan restringidas a propietarios que vivan en la vivienda. Existe un plazo de 6 meses para regularizarse. Los alojamientos vacacionales ya inscritos bajo el Decreto 75/2005 tienen solo 10 días desde el requerimiento para completar sus datos o pierden la inscripción.",
+        "afectados": [
+          "propietarios",
+          "inversores",
+          "agentes",
+          "gestorías",
+          "comunidades_propietarios"
+        ],
+        "urgencia": "alta",
+        "tipo_norma": "Real Decreto",
+        "fecha_publicacion": "2019-10-19",
+        "fecha_entrada_vigor": "2019-11-08",
+        "plazo_adaptacion": "20",
+        "deroga_modifica": "Deroga el Capítulo V del Decreto 75/2005, de 24 de junio, por el que se regulan los apartamentos turísticos y alojamientos vacacionales en la Región de Murcia.",
+        "territorios": [
+          "Murcia"
+        ],
+        "accion_recomendada": "1) Si ya operas VUTs en Murcia sin registro: presentar declaración responsable ante el Instituto de Turismo de la Región de Murcia antes del 8 de mayo de 2020 (6 meses desde entrada en vigor). 2) Contratar o revisar el seguro de responsabilidad civil para asegurarse de que cubre mínimo 300.000€ por siniestro incluyendo daños corporales, materiales y perjuicios económicos. 3) Retirar de Airbnb, Booking y otras plataformas los anuncios que no incluyan el número de registro; añadirlo en cuanto se obtenga. 4) Si gestionas VUTs de terceros como empresa gestora: verificar que tienes disponibilidad formal del inmueble documentada, ya que eres el responsable administrativo ante inspecciones. 5) Si tienes VUT por habitaciones y no resides en la vivienda: esta modalidad ya no es legal; reconvierte a cesión completa o cesa la actividad. 6) Si tienes alojamientos inscritos bajo el Decreto 75/2005: espera el requerimiento de la administración y responde en el plazo de 10 días con los datos adicionales exigidos.",
+        "score_relevancia": 6
+      },
+      "elapsedMs": 19261
+    },
+    {
+      "caseId": "borm-2019-6433-title-only",
+      "outcome": "alert",
+      "classification": {
+        "relevante": true,
+        "subtema": "arrendamiento",
+        "ambito_territorial": "ccaa",
+        "motivo": "Regulación de viviendas de uso turístico que afecta a propietarios, arrendadores y gestión de inmuebles residenciales destinados a alquiler turístico en Murcia"
+      },
+      "impact": {
+        "resumen": "La Región de Murcia establece mediante este Decreto su propia regulación específica para las viviendas de uso turístico (pisos y casas alquiladas a turistas por períodos cortos, como las de Airbnb o Booking). Publicado por el Gobierno regional de Murcia, crea el marco legal que define qué es una vivienda turística, qué requisitos debe cumplir y cómo debe registrarse. El texto completo no está disponible, por lo que el análisis se basa en el título y encabezado.",
+        "impacto": "Los propietarios e inversores que operen o quieran operar viviendas de alquiler turístico en Murcia quedan sujetos a esta normativa regional: previsiblemente implica obligación de inscripción en un registro autonómico, requisitos mínimos de habitabilidad y equipamiento, y posibles limitaciones de uso. Sin el texto completo no es posible detallar requisitos concretos, sanciones ni plazos de adaptación para operadores ya en activo.",
+        "afectados": [
+          "propietarios",
+          "inversores",
+          "agentes",
+          "gestorías"
+        ],
+        "urgencia": "media",
+        "tipo_norma": "Real Decreto",
+        "fecha_publicacion": "2019-10-10",
+        "fecha_entrada_vigor": null,
+        "plazo_adaptacion": null,
+        "deroga_modifica": "Previsiblemente deroga o sustituye la regulación anterior de alojamientos turísticos en la Región de Murcia, pero no es posible confirmarlo sin el texto completo.",
+        "territorios": [
+          "Murcia"
+        ],
+        "accion_recomendada": "Si tienes viviendas en alquiler turístico en la Región de Murcia, localiza el texto íntegro de este Decreto en el BORM (Boletín Oficial de la Región de Murcia) del 10 de octubre de 2019 o fecha próxima, y verifica: (1) si tu vivienda está registrada en el registro autonómico exigido, (2) si cumple los requisitos mínimos establecidos, y (3) si hay un plazo de adaptación para operadores existentes. Consulta con una gestoría especializada en turismo antes de seguir operando o de poner en marcha nuevas viviendas turísticas en Murcia.",
+        "score_relevancia": 4
+      },
+      "elapsedMs": 13403
+    }
+  ]
+}
