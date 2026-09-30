@@ -43,4 +43,3 @@ describe('published alert queries', () => {
     expect(result.props.error).toBe(true)
   })
 })
-
