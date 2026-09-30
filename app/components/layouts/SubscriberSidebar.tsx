@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Bell, User, LogOut } from 'lucide-react'
+import { Bell, User, LogOut, MapPinned } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { Plan } from '@/lib/supabase'
 
@@ -9,6 +9,7 @@ type NavItem = { href: string; label: string; icon: React.ElementType }
 
 const NAV_ITEMS: NavItem[] = [
   { href: '/alertas', label: 'Mis alertas', icon: Bell },
+  { href: '/cartera', label: 'Mi cartera', icon: MapPinned },
   { href: '/cuenta', label: 'Mi cuenta', icon: User },
 ]
 

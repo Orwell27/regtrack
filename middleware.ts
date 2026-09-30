@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from 'next/server'
 
 const ADMIN_ROUTES = ['/admin']
-const SUBSCRIBER_ROUTES = ['/alertas', '/alerta', '/cuenta']
+const SUBSCRIBER_ROUTES = ['/alertas', '/alerta', '/cuenta', '/cartera']
 const PUBLIC_ROUTES = ['/login', '/registro']
 
 export function middleware(request: NextRequest) {
@@ -30,5 +30,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*', '/alertas/:path*', '/alerta/:path*', '/cuenta/:path*'],
+  matcher: ['/admin/:path*', '/alertas/:path*', '/alerta/:path*', '/cuenta/:path*', '/cartera/:path*'],
 }
