@@ -8,6 +8,8 @@ import { readConfig, secret, type McpEndpoint } from '../lib/integrations/config
 import { withMcp } from '../lib/integrations/mcp'
 import { boeQuery, ChangeDetection, OpenAleph, pushBasicMemory, pushGraphiti } from '../lib/integrations/providers'
 import { syncRecords } from '../lib/integrations/sync'
+import { pullWatch } from '../lib/integrations/pull-watch'
+import { checkServices } from '../lib/integrations/readiness'
 
 loadEnvConfig(process.cwd(), false, { info() {}, error() {} })
 const { values: flags, positionals: args } = parseArgs({ allowPositionals: true, options: {
@@ -120,18 +122,14 @@ async function main() {
       break
     }
     case 'watches': output(await changes().watches()); break
+    case 'check-services': {
+      const checks = await checkServices(config)
+      output({ checks, note: 'Solo lectura. readable no equivale a integración completa ni vigilancia activa.' })
+      if (checks.some(c => c.status !== 'readable')) process.exitCode = 1
+      break
+    }
     case 'pull-watch': {
-      const id = required(args[1], 'watch-id'), snapshot = await changes().snapshots(id)
-      const known = new Set(vault.list().filter(r => r.kind === 'cambio_web' && r.sourceUrl === snapshot.watch.url).map(r => r.observedAt))
-      let saved = 0, remaining = 0
-      for (const timestamp of snapshot.timestamps) {
-        const observedAt = new Date(Number(timestamp) * 1000).toISOString()
-        if (known.has(observedAt)) continue
-        if (saved >= limit) { remaining++; continue }
-        vault.put({ kind: 'cambio_web', title: snapshot.watch.title || snapshot.watch.url!, publisher: 'changedetection.io',
-          sourceUrl: snapshot.watch.url, observedAt, contentKind: 'extracto', content: await snapshot.read(timestamp) }); saved++
-      }
-      output({ saved, remaining, note: 'Instantáneas de páginas; no equivalen a cambios normativos verificados.' }); break
+      output(await pullWatch(changes(), vault, required(args[1], 'watch-id'), limit)); break
     }
     case 'probe': {
       const provider = args[1]
@@ -145,7 +143,7 @@ async function main() {
       writeFileSync(join(directory, 'records.json'), JSON.stringify(records, null, 2))
       output({ records: records.length, directory: resolve(directory), note: 'Exportación de contenido; para respaldo completo copiar el vault con .records y .receipts.' }); break
     }
-    default: output('knowledge: init | status | ingest --file ficha.json | ingest-report --file scan-report.json | search --query texto [--as-of ISO] | list | weekly --from YYYY-MM-DD --to YYYY-MM-DD | export-ftm --file entities.ftm.jsonl | sync basic-memory|openaleph|graphiti [--limit 20] | search-basic|search-aleph|search-graphiti --query texto | aleph-status | graphiti-episodes | boe BOE-ID [--from fecha --to fecha] [--save] | watches | pull-watch ID | probe basic-memory|mcp-boe|graphiti. Configuración: --config archivo.json. Graphiti exige --allow-model-calls.')
+    default: output('knowledge: init | status | check-services | ingest --file ficha.json | ingest-report --file scan-report.json | search --query texto [--as-of ISO] | list | weekly --from YYYY-MM-DD --to YYYY-MM-DD | export-ftm --file entities.ftm.jsonl | sync basic-memory|openaleph|graphiti [--limit 20] | search-basic|search-aleph|search-graphiti --query texto | aleph-status | graphiti-episodes | boe BOE-ID [--from fecha --to fecha] [--save] | watches | pull-watch ID | probe basic-memory|mcp-boe|graphiti. Configuración: --config archivo.json. Graphiti exige --allow-model-calls.')
   }
 }
 main().catch(error => { console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1 })

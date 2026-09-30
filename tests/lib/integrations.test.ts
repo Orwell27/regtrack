@@ -52,6 +52,11 @@ describe('contratos de integraciones', () => {
     await expect(new ChangeDetection('http://localhost:5000', 'key', http).snapshots('id')).rejects.toThrow('con error')
     expect(http).toHaveBeenCalledTimes(1)
   })
+  it('un monitor sin ninguna captura no acredita vigilancia', async () => {
+    const http = vi.fn().mockResolvedValueOnce(Response.json({ url: 'https://example.org' }))
+      .mockResolvedValueOnce(Response.json({}))
+    await expect(new ChangeDetection('http://localhost:5000', 'key', http).snapshots('id')).rejects.toThrow('sin capturas')
+  })
   it('MCP-BOE consulta y compara las herramientas correctas', async () => {
     const c = { call: vi.fn().mockResolvedValue('Texto') }
     await boeQuery(c, 'BOE-A-1994-26003')

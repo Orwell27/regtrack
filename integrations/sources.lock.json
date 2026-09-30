@@ -7,6 +7,6 @@
     { "name": "FollowTheMoney", "repository": "opensanctions/followthemoney", "commit": "8aaaece224da3f46e4aa76768cf0dd363b4ce194", "license": "MIT", "runtime": "followthemoney==4.11.0", "use": "Document NDJSON y validador oficial de entidades/relaciones" },
     { "name": "Graphiti", "repository": "getzep/graphiti", "commit": "3c427640abf909f12f71f963fce15eb514a3c493", "license": "Apache-2.0", "use": "MCP: add_memory, search_memory_facts, get_episodes; consumo explícito" },
     { "name": "MCP-BOE", "repository": "ComputingVictor/MCP-BOE", "commit": "6b0bf48e4ca064dd9e84a0a4fe5112cc948be745", "license": "MIT", "dependencyOverride": "mcp==1.30.0", "use": "MCP: consultas consolidadas y comparación por fechas; no sustituye BORM Murcia" },
-    { "name": "changedetection.io", "repository": "dgtlmoon/changedetection.io", "commit": "0e0566721b1c483dcf7ae548210ee10532d9b181", "license": "Apache-2.0", "use": "API v1: monitores e historial completo paginado por límite local" }
+    { "name": "changedetection.io", "repository": "dgtlmoon/changedetection.io", "commit": "0e0566721b1c483dcf7ae548210ee10532d9b181", "license": "Apache-2.0", "runtime": "changedetection.io==0.60.8", "use": "API v1: monitores e historial completo paginado por límite local; smoke real aislado sin Docker" }
   ]
 }

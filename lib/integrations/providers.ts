@@ -67,6 +67,7 @@ export class ChangeDetection {
     const history = await this.http.request(`/api/v1/watch/${id}/history`)
     if (!history || typeof history !== 'object' || Array.isArray(history)) throw new Error('Historial de monitor inválido')
     const timestamps = Object.keys(history).sort((a, b) => Number(a) - Number(b))
+    if (!timestamps.length) throw new Error('Monitor sin capturas; vigilancia todavía no verificada')
     if (timestamps.some(t => !/^\d{1,12}$/.test(t) || !Number.isFinite(new Date(Number(t) * 1000).getTime()))) throw new Error('Fechas de monitor inválidas')
     return { watch, timestamps, read: async (timestamp: string) => {
       if (!timestamps.includes(timestamp)) throw new Error('Instantánea desconocida')

@@ -13,6 +13,7 @@
     "backfill": "tsx actions/backfill.ts",
     "pilot": "tsx actions/evaluate-pilot.ts",
     "knowledge": "tsx actions/knowledge.ts",
+    "knowledge:check-changedetection": "tsx actions/check-changedetection.ts",
     "knowledge:validate-ftm": "uv run --python 3.12 integrations/followthemoney/validate.py"
   },
   "dependencies": {

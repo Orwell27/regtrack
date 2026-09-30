@@ -10,7 +10,7 @@ Las siete referencias aceptadas tienen una función implementada. Esta capa se e
 | [FollowTheMoney](https://github.com/opensanctions/followthemoney) | Document NDJSON y validador Python oficial para documentos, empresas, personas y relaciones | La extracción/resolución automática de empresas aún no está implementada |
 | [Graphiti](https://github.com/getzep/graphiti) | Episodios JSON con fecha/procedencia, UUID estable, consulta de episodios y búsqueda de relaciones | Servidor con base de grafo, modelos y autorización de consumo |
 | [MCP-BOE](https://github.com/ComputingVictor/MCP-BOE) | Consulta de norma consolidada y comparación por fechas | Validar cada resultado contra el BOE antes de utilizarlo como obligación |
-| [changedetection.io](https://github.com/dgtlmoon/changedetection.io) | Lista de monitores e importación reanudable de instantáneas a memoria | Servidor, clave y páginas seleccionadas en su interfaz |
+| [changedetection.io](https://github.com/dgtlmoon/changedetection.io) | Importación de instantáneas y prueba real repetible de captura, cambio, reinicio y errores | Elegir páginas y alojamiento permanente; la prueba apaga sus servidores al terminar |
 
 Versiones consultadas y licencias: [sources.lock.json](sources.lock.json). Las versiones de las bibliotecas Python están fijadas; el fichero de fuentes fija además las revisiones estudiadas de los servidores, no su despliegue. Basic Memory (AGPL-3.0) se usa como proceso separado; no se copia su implementación al proyecto. Graphiti declara Apache-2.0 en la revisión consultada.
 
@@ -59,11 +59,14 @@ Un único escritor por vault. Copiar el directorio completo, incluidos `.records
 
 ## Servicios externos
 
+[Arranque y validación de los tres servicios](SERVICE-STARTUP.md). `npm run knowledge:check-changedetection` ejecuta la prueba completa con un servidor real y una página ficticia local. `knowledge check-services` comprueba las conexiones configuradas por lectura, sin extracción ni embeddings; no confunde esa comprobación con vigilancia activa.
+
 Combinar las entradas necesarias de [services.example.json](services.example.json) con la configuración local, reemplazando direcciones y colección. Claves exclusivamente mediante variables de entorno. Mantenerlos privados; solo se permite HTTP en localhost y HTTPS en remoto. No se inicia ni publica ningún servidor con estos comandos.
 
 ```powershell
 npm run knowledge -- sync openaleph --config integrations/config.local.json --limit 20
 npm run knowledge -- aleph-status --config integrations/config.local.json
+npm run knowledge -- check-services --config integrations/config.local.json
 npm run knowledge -- search-aleph --query vivienda --config integrations/config.local.json
 npm run knowledge -- watches --config integrations/config.local.json
 npm run knowledge -- pull-watch WATCH_ID --config integrations/config.local.json --limit 20

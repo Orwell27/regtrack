@@ -15,8 +15,15 @@ Este registro distingue pruebas de código, conexiones reales y servicios aún p
 
 - **OpenAleph**: bulk API 2, credencial y colección, búsqueda acotada y respuesta aceptada. Transporte simulado.
 - **Graphiti**: protección de consumo, episodio JSON, fecha/UUID/procedencia, exclusión de reportes y acuse en cola. Transporte simulado; sin modelos ni base de grafo.
-- **changedetection.io**: historial de instantáneas, contenido, autenticación y rechazo de monitores con error. Transporte simulado; no se añadieron monitores reales.
+
+## Conexión real añadida en la continuación
+
+- **changedetection.io 0.60.8**, Python 3.12, ejecutado en Windows sin Docker. Prueba reproducible `npm run knowledge:check-changedetection`, con servidor real y página ficticia en loopback. Segunda ejecución completa: `artifacts/changedetection-smoke/run-5abIih/result.json`, estado `passed`; los artefactos quedan ignorados en Git y no forman parte del corpus real.
+- Se verificaron seis condiciones: API sin clave devuelve 403; monitor sin capturas no acredita vigilancia; primera captura importada; cambio recuperable con consulta temporal e importación idempotente; persistencia tras reiniciar; fuente HTTP 503 rechazada sin añadir datos ni declarar «sin novedades». Los procesos creados por la prueba se detuvieron al terminar.
+- Se extrajo `pullWatch` para que CLI y prueba utilicen exactamente el mismo importador. Se corrigió el caso de historial vacío, que antes podía devolver cero registros sin indicar que aún no existía ninguna captura.
+- Nueva comprobación `knowledge check-services`: lectura de API/colección/episodios; distingue ausencia de configuración, falta de clave, error y accesibilidad. No llama a extracción ni embeddings. Con la configuración de ejemplo devuelve los tres servicios `not_configured`; no existe configuración permanente local.
+- **257 tests en 30 archivos**, TypeScript y ESLint de los módulos afectados correctos localmente. Nuevo job `changedetection` para repetir el recorrido real en Linux; solo adjunta el resultado sin credenciales. El arranque permanente de OpenAleph/Graphiti no se ha probado: [preparación y fuentes](SERVICE-STARTUP.md).
 
 ## Alcance que sigue pendiente
 
-Servidores de OpenAleph/Graphiti/changedetection, credenciales y colección, disco persistente/respaldo del worker y activación del cron. No se desplegó, mergeó ni modificó producción. Los siete documentos del piloto son evidencia histórica pendiente de revisión, no una muestra nueva. No se repitió el ensayo de IA de pago ni se entrenó BOE-XSUM. La primera UI para explorar esta memoria y la extracción/resolución automática de empresas no forman parte de esta capa de conectores.
+Alojamiento de OpenAleph/Graphiti y de un monitor permanente changedetection, credenciales y colección, disco persistente/respaldo del worker y activación del cron. Este equipo no tiene Docker/WSL y no se ha indicado un servidor alternativo. No se desplegó, mergeó ni modificó producción. Los siete documentos del piloto son evidencia histórica pendiente de revisión, no una muestra nueva. No se repitió el ensayo de IA de pago ni se entrenó BOE-XSUM. La primera UI para explorar esta memoria y la extracción/resolución automática de empresas no forman parte de esta capa de conectores.
