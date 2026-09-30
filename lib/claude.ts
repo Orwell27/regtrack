@@ -1,4 +1,4 @@
-import Anthropic from '@anthropic-ai/sdk'
+import Anthropic, { APIError } from '@anthropic-ai/sdk'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import type { Subtema, Ambito, Urgencia, TipoNorma } from './supabase'
@@ -66,6 +66,8 @@ export async function classifyDocument(
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
     return JSON.parse(extractJson(text)) as ClassifyResult
   } catch (err) {
+    // Un fallo de la API (sin saldo, clave, caída) no significa que el documento sea irrelevante
+    if (err instanceof APIError) throw err
     console.error('classifyDocument error:', err)
     return { relevante: false, subtema: 'otro', ambito_territorial: 'estatal', motivo: 'Error de clasificación' }
   }
@@ -108,6 +110,7 @@ export async function analyzeImpact(
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
     return JSON.parse(extractJson(text)) as ImpactResult
   } catch (err) {
+    if (err instanceof APIError) throw err
     console.error('analyzeImpact error:', err)
     return null
   }

@@ -1,19 +1,17 @@
 // app/api/pipeline/run/route.ts
+// Lanza el pipeline en GitHub Actions. En Vercel no se puede ejecutar el script dentro de la función.
 import { NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/auth'
-import { exec } from 'child_process'
-import { promisify } from 'util'
-
-const execAsync = promisify(exec)
+import { lanzarPipeline } from '@/lib/github'
 
 export async function POST() {
   const rechazo = await requireAdmin()
   if (rechazo) return rechazo
 
-  // Lanzar pipeline en background — no esperamos a que termine
-  void execAsync('npm run pipeline').catch(err => {
-    console.error('[pipeline/run] Error:', err.message)
-  })
-
-  return NextResponse.json({ ok: true, message: 'Pipeline iniciado' })
+  const resultado = await lanzarPipeline(process.env.GITHUB_WORKFLOW_TOKEN)
+  if (!resultado.ok) {
+    console.error('[pipeline/run]', resultado.error)
+    return NextResponse.json({ error: resultado.error }, { status: 502 })
+  }
+  return NextResponse.json({ ok: true, url: resultado.url })
 }

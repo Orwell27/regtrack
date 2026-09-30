@@ -27,7 +27,7 @@ const efectos = vi.hoisted(() => ({
   notifyUsers: vi.fn(async () => {}),
   notifyGrupos: vi.fn(async () => {}),
   sendMessage: vi.fn(async () => {}),
-  exec: vi.fn(),
+  lanzarPipeline: vi.fn(async () => ({ ok: true, url: 'https://github.com' })),
 }))
 
 vi.mock('next/headers', () => ({
@@ -67,7 +67,7 @@ vi.mock('@/lib/supabase', () => ({
 
 vi.mock('@/lib/telegram', () => ({ notifyUsers: efectos.notifyUsers, sendMessage: efectos.sendMessage }))
 vi.mock('@/lib/sectorial/telegram-grupos', () => ({ notifyGrupos: efectos.notifyGrupos }))
-vi.mock('child_process', () => ({ exec: efectos.exec }))
+vi.mock('@/lib/github', () => ({ lanzarPipeline: efectos.lanzarPipeline }))
 
 import * as config from '@/app/api/config/route'
 import * as alerta from '@/app/api/alertas/[id]/route'
@@ -129,7 +129,7 @@ function sinEfectos() {
   expect(efectos.notifyUsers).not.toHaveBeenCalled()
   expect(efectos.notifyGrupos).not.toHaveBeenCalled()
   expect(efectos.sendMessage).not.toHaveBeenCalled()
-  expect(efectos.exec).not.toHaveBeenCalled()
+  expect(efectos.lanzarPipeline).not.toHaveBeenCalled()
 }
 
 const esBusquedaDeSesion = (l: Llamada) => l.tabla === 'usuarios' && l.metodos.join('.') === 'select.or.single'

@@ -84,3 +84,17 @@ export async function notifyUsers(
   const failed = results.filter(r => r.status === 'rejected').length
   if (failed > 0) console.warn(`[telegram] ${failed}/${recipients.length} envíos fallaron`)
 }
+
+/** Aviso al chat editorial de que el pipeline se ha detenido. Texto plano: el motivo puede traer caracteres de Markdown. */
+export async function notifyPipelineDetenido(motivo: string): Promise<void> {
+  const chatId = process.env.TELEGRAM_EDITORIAL_CHAT_ID
+  if (!chatId) return
+  const text = [
+    '⚠️ RegTrack: el pipeline se ha detenido',
+    '',
+    `La API de Claude ha rechazado las llamadas (${motivo}).`,
+    'Revisa el saldo y la clave en console.anthropic.com.',
+    'Los documentos de hoy no se han marcado como procesados: los del BOE se pueden recuperar con el backfill.',
+  ].join('\n')
+  await sendMessage(chatId, text, undefined)
+}
