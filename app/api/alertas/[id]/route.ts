@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
+import { requireAdmin } from '@/lib/auth'
 
 export async function POST(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const rechazo = await requireAdmin()
+  if (rechazo) return rechazo
+
   const { id } = await params
   const { accion } = await request.json() as { accion: 'aprobar' | 'descartar' }
   if (!['aprobar', 'descartar'].includes(accion)) {
