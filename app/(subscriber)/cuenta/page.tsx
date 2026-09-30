@@ -21,6 +21,7 @@ export default function CuentaPage() {
   const [nombre, setNombre] = useState('')
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
+  const [saveError, setSaveError] = useState('')
   const [sectores, setSectores] = useState<SectorInterest[]>([])
   const [savingIntereses, setSavingIntereses] = useState(false)
   const [savedIntereses, setSavedIntereses] = useState(false)
@@ -40,14 +41,18 @@ export default function CuentaPage() {
   async function handleSave(e: React.FormEvent) {
     e.preventDefault()
     setSaving(true)
-    await fetch('/api/cuenta', {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nombre }),
-    })
-    setSaving(false)
-    setSaved(true)
-    setTimeout(() => setSaved(false), 2000)
+    setSaved(false)
+    setSaveError('')
+    try {
+      const response = await fetch('/api/cuenta', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombre }),
+      })
+      if (!response.ok) throw new Error('No se han podido guardar tus datos. Inténtalo de nuevo.')
+      setSaved(true)
+    } catch { setSaveError('No se han podido guardar tus datos. Inténtalo de nuevo.') }
+    finally { setSaving(false) }
   }
 
   function toggleInteres(subcatId: number) {
@@ -63,15 +68,19 @@ export default function CuentaPage() {
 
   async function handleSaveIntereses() {
     setSavingIntereses(true)
-    const ids = sectores.flatMap(s => s.subcategorias.filter(c => c.seleccionado).map(c => c.id))
-    await fetch('/api/intereses', {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subcategoria_ids: ids }),
-    })
-    setSavingIntereses(false)
-    setSavedIntereses(true)
-    setTimeout(() => setSavedIntereses(false), 2000)
+    setSavedIntereses(false)
+    setSaveError('')
+    try {
+      const ids = sectores.flatMap(s => s.subcategorias.filter(c => c.seleccionado).map(c => c.id))
+      const response = await fetch('/api/intereses', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ subcategoria_ids: ids }),
+      })
+      if (!response.ok) throw new Error('No se han podido guardar tus intereses.')
+      setSavedIntereses(true)
+    } catch { setSaveError('No se han podido guardar tus intereses. Inténtalo de nuevo.') }
+    finally { setSavingIntereses(false) }
   }
 
   if (!datos) return <div className="p-6 text-sm text-slate-400">Cargando...</div>
@@ -80,6 +89,7 @@ export default function CuentaPage() {
     <div className="p-6 max-w-lg">
       <h1 className="text-xl font-bold text-slate-900 mb-6">Mi cuenta</h1>
 
+      {saveError && <p role="alert" className="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-800">{saveError}</p>}
       {/* Plan actual */}
       <div className="bg-white border border-slate-200 rounded-lg p-4 mb-4">
         <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Plan actual</h2>
@@ -113,7 +123,7 @@ export default function CuentaPage() {
             <Button type="submit" disabled={saving} className="bg-sky-500 hover:bg-sky-600">
               {saving ? 'Guardando...' : 'Guardar cambios'}
             </Button>
-            {saved && <span className="text-xs text-emerald-600">✓ Guardado</span>}
+            {saved && <span role="status" className="text-xs text-emerald-600">✓ Guardado</span>}
           </div>
         </form>
       </div>
@@ -155,7 +165,7 @@ export default function CuentaPage() {
               >
                 {savingIntereses ? 'Guardando...' : 'Guardar intereses'}
               </button>
-              {savedIntereses && <span className="text-xs text-emerald-600">✓ Guardado</span>}
+              {savedIntereses && <span role="status" className="text-xs text-emerald-600">✓ Guardado</span>}
             </div>
           </div>
         )}
