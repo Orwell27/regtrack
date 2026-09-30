@@ -111,8 +111,12 @@ async function run() {
       const impact = await analyzeImpact(item.titulo, texto, item.fuente, meta)
       api.exito()
 
-      if (!impact || impact.score_relevancia < 4) {
-        console.log(`[pipeline] Score bajo (${impact?.score_relevancia ?? 0}): descartado`)
+      if (!impact) {
+        console.error(`[pipeline] Sin análisis de impacto válido, no se guarda: ${item.titulo.slice(0, 60)}`)
+        continue
+      }
+      if (impact.score_relevancia < 4) {
+        console.log(`[pipeline] Score bajo (${impact.score_relevancia}): descartado`)
         continue
       }
 
