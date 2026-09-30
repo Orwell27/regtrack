@@ -10,7 +10,6 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "pipeline": "tsx actions/pipeline.ts",
-    "delivery": "tsx actions/delivery.ts",
     "backfill": "tsx actions/backfill.ts"
   },
   "dependencies": {

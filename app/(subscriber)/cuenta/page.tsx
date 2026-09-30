@@ -9,25 +9,21 @@ import type { Plan } from '@/lib/supabase'
 type DatosUsuario = {
   nombre: string
   email: string
-  telegram_id: string | null
   plan: Plan
   created_at: string
 }
 
 type SubcategoriaInterest = { id: number; slug: string; nombre: string; seleccionado: boolean }
 type SectorInterest = { id: number; nombre: string; slug: string; subcategorias: SubcategoriaInterest[] }
-type MiGrupo = { id: number; nombre: string; invite_link: string | null; subcategorias: { nombre: string } | null }
 
 export default function CuentaPage() {
   const [datos, setDatos] = useState<DatosUsuario | null>(null)
   const [nombre, setNombre] = useState('')
-  const [telegramId, setTelegramId] = useState('')
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
   const [sectores, setSectores] = useState<SectorInterest[]>([])
   const [savingIntereses, setSavingIntereses] = useState(false)
   const [savedIntereses, setSavedIntereses] = useState(false)
-  const [misGrupos, setMisGrupos] = useState<MiGrupo[]>([])
 
   useEffect(() => {
     fetch('/api/cuenta')
@@ -35,14 +31,10 @@ export default function CuentaPage() {
       .then((data: DatosUsuario) => {
         setDatos(data)
         setNombre(data.nombre)
-        setTelegramId(data.telegram_id ?? '')
       })
     fetch('/api/intereses')
       .then(r => r.json())
       .then((d: { sectores: SectorInterest[] }) => setSectores(d.sectores))
-    fetch('/api/mis-grupos')
-      .then(r => r.json())
-      .then(setMisGrupos)
   }, [])
 
   async function handleSave(e: React.FormEvent) {
@@ -51,7 +43,7 @@ export default function CuentaPage() {
     await fetch('/api/cuenta', {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nombre, telegram_id: telegramId }),
+      body: JSON.stringify({ nombre }),
     })
     setSaving(false)
     setSaved(true)
@@ -117,19 +109,6 @@ export default function CuentaPage() {
             <label className="text-xs font-medium text-slate-700 mb-1 block">Email</label>
             <Input value={datos.email} disabled className="opacity-60" />
           </div>
-          <div>
-            <label className="text-xs font-medium text-slate-700 mb-1 block" id="notificaciones">
-              Telegram ID
-            </label>
-            <Input
-              placeholder="Ej: 123456789"
-              value={telegramId}
-              onChange={e => setTelegramId(e.target.value)}
-            />
-            <p className="text-[11px] text-slate-400 mt-1">
-              Escribe a <strong>@userinfobot</strong> en Telegram para obtener tu ID.
-            </p>
-          </div>
           <div className="flex items-center gap-3">
             <Button type="submit" disabled={saving} className="bg-sky-500 hover:bg-sky-600">
               {saving ? 'Guardando...' : 'Guardar cambios'}
@@ -181,35 +160,6 @@ export default function CuentaPage() {
           </div>
         )}
       </div>
-
-      {/* Mis grupos Telegram */}
-      {datos.plan === 'pro' && misGrupos.length > 0 && (
-        <div className="bg-white border border-slate-200 rounded-lg p-4 mb-4">
-          <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Mis grupos Telegram</h2>
-          <div className="space-y-2">
-            {misGrupos.map(g => (
-              <div key={g.id} className="flex items-center justify-between text-sm">
-                <div>
-                  <p className="text-slate-700 font-medium">{g.nombre}</p>
-                  <p className="text-xs text-slate-400">{g.subcategorias?.nombre}</p>
-                </div>
-                {g.invite_link ? (
-                  <a
-                    href={g.invite_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-sky-600 hover:underline"
-                  >
-                    Unirse →
-                  </a>
-                ) : (
-                  <span className="text-xs text-slate-400">Sin link</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* Miembro desde */}
       <p className="text-xs text-slate-400">

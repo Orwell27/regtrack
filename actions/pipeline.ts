@@ -13,7 +13,9 @@ import { join as _joinEnvPath } from 'path'
   } catch { /* sin .env.local, ignorar */ }
 })()
 
+import { APIError } from '@anthropic-ai/sdk'
 import { createServerClient } from '@/lib/supabase'
+import { VigilanteApi } from '@/lib/pipeline/vigilante-api'
 import { fetchBOE } from '@/lib/sources/boe'
 import { fetchBOCM } from '@/lib/sources/bocm'
 import { fetchDOGC } from '@/lib/sources/dogc'
@@ -31,7 +33,6 @@ import { fetchBON } from '@/lib/sources/bon'
 import { fetchBOR } from '@/lib/sources/bor'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
-import { notifyEditorial } from '@/lib/telegram'
 import { detectarRelaciones } from '@/lib/correlacion/detectar-relaciones'
 import { guardarRelaciones } from '@/lib/correlacion/guardar-relaciones'
 import { clasificarSectorial } from '@/lib/sectorial/clasificar'
@@ -82,6 +83,7 @@ async function run() {
   // 3. Procesar cada item
   let procesados = 0
   let relevantes = 0
+  const api = new VigilanteApi()
 
   for (const item of newItems) {
     try {
@@ -94,6 +96,7 @@ async function run() {
         rango: item.rango,
       } : undefined
       const classification = await classifyDocument(item.titulo, texto, meta)
+      api.exito()
 
       if (!classification.relevante) {
         console.log(`[pipeline] Descartado: ${item.titulo.slice(0, 60)}`)
@@ -105,9 +108,14 @@ async function run() {
 
       // 5. Analizar impacto con Claude Sonnet
       const impact = await analyzeImpact(item.titulo, texto, item.fuente, meta)
+      api.exito()
 
-      if (!impact || impact.score_relevancia < 4) {
-        console.log(`[pipeline] Score bajo (${impact?.score_relevancia ?? 0}): descartado`)
+      if (!impact) {
+        console.error(`[pipeline] Sin análisis de impacto válido, no se guarda: ${item.titulo.slice(0, 60)}`)
+        continue
+      }
+      if (impact.score_relevancia < 4) {
+        console.log(`[pipeline] Score bajo (${impact.score_relevancia}): descartado`)
         continue
       }
 
@@ -214,10 +222,14 @@ async function run() {
         console.error(`[pipeline] Error en clasificación sectorial (no bloqueante):`, sectErr)
       }
 
-      // 9. Notificar al editor por Telegram
-      await notifyEditorial(item.titulo, impact.score_relevancia, saved.id)
-
     } catch (err) {
+      if (err instanceof APIError) {
+        console.error(`[pipeline] Error de la API de Claude en "${item.titulo.slice(0, 60)}": ${err.status ?? 'sin conexión'} ${err.message}`)
+        // Sin marcar como no procesable, para poder recuperarlo después (backfill)
+        if (api.error(err)) break
+        continue
+      }
+
       console.error(`[pipeline] Error procesando "${item.titulo.slice(0, 60)}":`, err)
 
       // Marcar como no_procesable para no reintentar
@@ -233,7 +245,12 @@ async function run() {
     }
   }
 
-  console.log(`[pipeline] Completado. Guardados: ${procesados}, Relevantes detectados: ${relevantes}`)
+  console.log(`[pipeline] Completado. Guardados: ${procesados}, Relevantes detectados: ${relevantes}, Errores de la API de Claude: ${api.total}`)
+
+  // Que la ejecución falle en GitHub Actions (y llegue el correo) en vez de terminar en verde sin procesar nada
+  if (api.abortado) {
+    throw new Error(`Pipeline detenido por errores de la API de Claude (${api.describirUltimo()})`)
+  }
 }
 
 run().catch(err => {

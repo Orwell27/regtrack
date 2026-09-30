@@ -1,6 +1,7 @@
 import { createNextServerClient } from '@/lib/supabase'
 import { StatCard } from '@/app/components/ui/StatCard'
 import Link from 'next/link'
+import { BotonPipeline } from '@/app/components/ui/BotonPipeline'
 
 export const dynamic = 'force-dynamic'
 
@@ -61,20 +62,13 @@ export default async function DashboardPage() {
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-xl font-bold text-slate-900">Dashboard</h1>
-        <form action="/api/pipeline/run" method="POST">
-          <button
-            type="submit"
-            className="text-sm border border-slate-200 bg-white hover:bg-slate-50 px-3 py-1.5 rounded-lg text-slate-600 transition-colors"
-          >
-            ↻ Ejecutar pipeline
-          </button>
-        </form>
+        <BotonPipeline />
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <StatCard label="Procesadas hoy" value={stats.alertasHoy} sub={stats.trendSub} trend={stats.trend as 'up' | 'down' | 'neutral'} />
         <StatCard label="Pendientes" value={stats.pendientes} sub="Requieren revisión" />
-        <StatCard label="Enviadas" value={stats.enviadas} sub="A suscriptores" />
+        <StatCard label="Publicadas" value={stats.enviadas} sub="En la web" />
         <StatCard label="Usuarios activos" value={stats.totalUsuarios} sub={`${stats.usuariosPro} Pro · ${stats.usuariosFree} Free`} />
       </div>
 
