@@ -54,3 +54,4 @@ next-env.d.ts
 .knowledge/
 integrations/config.local.json
 integrations/local/__pycache__/
+supabase/.temp/

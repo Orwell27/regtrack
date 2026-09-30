@@ -9,7 +9,8 @@ import { SourceAccessBlockedError } from '@/lib/sources/http'
 import { normalizeImpact, ReviewRequiredError } from '@/lib/analysis/validation'
 import { documentText, impactResponse } from '../fixtures/impact-response'
 
-const mocks = vi.hoisted(() => ({ collect: vi.fn(), hydrate: vi.fn(), classify: vi.fn(), impact: vi.fn(), from: vi.fn(), insert: vi.fn(), lookup: vi.fn(), createDb: vi.fn() }))
+const mocks = vi.hoisted(() => ({ collect: vi.fn(), hydrate: vi.fn(), classify: vi.fn(), impact: vi.fn(), from: vi.fn(), insert: vi.fn(), lookup: vi.fn(), createDb: vi.fn(), pushMemory: vi.fn() }))
+vi.mock('@/lib/knowledge/cloud', () => ({ pushSharedMemory: mocks.pushMemory }))
 vi.mock('@/lib/pipeline/sources', () => ({ collectSources: mocks.collect, hydrateDocument: mocks.hydrate }))
 vi.mock('@/lib/claude', () => ({ classifyDocument: mocks.classify, analyzeImpact: mocks.impact }))
 vi.mock('@/lib/supabase', () => ({ createServerClient: mocks.createDb }))
@@ -23,6 +24,9 @@ function directory() { return mkdtempSync(join(tmpdir(), 'regtrack-test-')) }
 
 beforeEach(() => {
   vi.clearAllMocks()
+  vi.stubEnv('REGTRACK_MEMORY_SYNC', '')
+  vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', '')
+  mocks.pushMemory.mockResolvedValue({ verified: 3 })
   mocks.collect.mockImplementation(async report => {
     report.sources.push({ source: 'BORM', scope: '2026-09-30', status: 'ok', count: 1 })
     return [item]
@@ -36,6 +40,23 @@ beforeEach(() => {
 })
 
 describe('recorrido completo sin IA ni BD reales', () => {
+  it('sincroniza también el informe final y hace visible un fallo remoto', async () => {
+    const root = directory(), reportDir = directory()
+    vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', root)
+    vi.stubEnv('REGTRACK_MEMORY_SYNC', '1')
+    await runPipeline(['2026-09-30'], { reportDir })
+    expect(mocks.pushMemory).toHaveBeenCalledTimes(1)
+    expect(mocks.pushMemory.mock.calls[0][1].some((r: { kind: string }) => r.kind === 'reporte')).toBe(true)
+    mocks.pushMemory.mockRejectedValueOnce(new Error('network down'))
+    await expect(runPipeline(['2026-09-30'], { reportDir })).rejects.toThrow('sincronizar')
+    expect(JSON.parse(readFileSync(join(reportDir, 'scan-report.json'), 'utf8')).status).toBe('incomplete')
+    expect(new KnowledgeVault(root).list().length).toBeGreaterThan(0)
+  })
+  it('sincronización activada sin vault falla antes del escaneo', async () => {
+    vi.stubEnv('REGTRACK_MEMORY_SYNC', '1')
+    await expect(runPipeline(['2026-09-30'], { reportDir: directory() })).rejects.toThrow('REGTRACK_KNOWLEDGE_DIR')
+    expect(mocks.collect).not.toHaveBeenCalled()
+  })
   it('con memoria configurada conserva fuente y reporte que puede leer otro proceso', async () => {
     const root = directory()
     vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', root)
@@ -155,9 +176,12 @@ describe('recorrido completo sin IA ni BD reales', () => {
     expect(report.decisions[0].status).toBe('unprocessed')
   })
   it('el diagnóstico de fuentes no crea clientes de BD ni llama a la IA', async () => {
+    vi.stubEnv('REGTRACK_MEMORY_SYNC', '1')
+    vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', directory())
     await runPipeline(['2026-09-30'], { scanOnly: true, reportDir: directory() })
     expect(mocks.createDb).not.toHaveBeenCalled()
     expect(mocks.classify).not.toHaveBeenCalled()
+    expect(mocks.pushMemory).not.toHaveBeenCalled()
   })
   it('tras tres errores API guarda también qué documentos quedaron sin procesar', async () => {
     mocks.collect.mockResolvedValueOnce(Array.from({ length: 5 }, (_, i) => ({ ...item, url: item.url + i })))

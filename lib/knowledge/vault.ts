@@ -66,6 +66,16 @@ export function markdown(record: KnowledgeRecord): string {
   ].join('\n')
 }
 
+// Same integrity rules for local files and the shared database; never trust stored JSON.
+export function parseRecord(value: unknown): KnowledgeRecord {
+  const input = parseInput(value)
+  const v = value as KnowledgeRecord
+  if (digest(input.content) !== v.contentHash || digest(JSON.stringify(input)).slice(0, 32) !== v.version ||
+    digest(`${input.kind}\n${input.sourceUrl}`).slice(0, 32) !== v.id || v.schemaVersion !== 1 ||
+    v.review !== 'pendiente' || v.legalStatus !== 'sin_verificar') throw new Error('Integridad de memoria incorrecta')
+  return { ...input, schemaVersion: 1, id: v.id, version: v.version, contentHash: v.contentHash, review: 'pendiente', legalStatus: 'sin_verificar' }
+}
+
 export function atomicWrite(path: string, text: string) {
   const temp = `${path}.${randomUUID()}.tmp`
   writeFileSync(temp, text, { encoding: 'utf8', mode: 0o600 })
@@ -103,9 +113,8 @@ export class KnowledgeVault {
     if (!existsSync(/* turbopackIgnore: true */ dir)) return []
     if (asOf && !Number.isFinite(Date.parse(asOf))) throw new Error('Fecha de consulta inválida')
     const records = readdirSync(/* turbopackIgnore: true */ dir).filter(f => /^[a-f0-9]{32}-[a-f0-9]{32}\.json$/.test(f)).map(f => {
-      const value = JSON.parse(readFileSync(/* turbopackIgnore: true */ join(/* turbopackIgnore: true */ dir, f), 'utf8')) as KnowledgeRecord
-      const input = parseInput(value)
-      if (digest(input.content) !== value.contentHash || digest(JSON.stringify(input)).slice(0, 32) !== value.version || digest(`${input.kind}\n${input.sourceUrl}`).slice(0, 32) !== value.id || `${value.id}-${value.version}.json` !== f || value.schemaVersion !== 1 || value.review !== 'pendiente' || value.legalStatus !== 'sin_verificar') throw new Error(`Integridad de memoria incorrecta: ${f}`)
+      const value = parseRecord(JSON.parse(readFileSync(/* turbopackIgnore: true */ join(/* turbopackIgnore: true */ dir, f), 'utf8')))
+      if (`${value.id}-${value.version}.json` !== f) throw new Error(`Integridad de memoria incorrecta: ${f}`)
       return value
     }).filter(r => !asOf || Date.parse(r.observedAt) <= Date.parse(asOf)).sort((a, b) => b.observedAt.localeCompare(a.observedAt) || b.version.localeCompare(a.version))
     return latest ? [...new Map(records.toReversed().map(r => [r.id, r])).values()].reverse() : records

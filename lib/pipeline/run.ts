@@ -14,6 +14,7 @@ import { SourceAccessBlockedError } from '../sources/http'
 import { requireSubstantiveText, ReviewRequiredError } from '../analysis/validation'
 import { KnowledgeVault } from '../knowledge/vault'
 import { archiveAnalysis, archiveDocument, archiveReport } from '../knowledge/archive'
+import { pushSharedMemory } from '../knowledge/cloud'
 
 export async function runPipeline(dates: string[], options: { scanOnly?: boolean; historical?: boolean; reportDir?: string } = {}) {
   const report = new ScanReport(dates)
@@ -21,6 +22,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
   report.mode = options.scanOnly ? 'sources_only' : 'full'
   const save = () => report.save(options.reportDir)
   try {
+    if (process.env.REGTRACK_MEMORY_SYNC === '1' && !options.scanOnly && !vault) throw new Error('La sincronización de memoria necesita REGTRACK_KNOWLEDGE_DIR')
     save()
     console.log('[pipeline] Iniciando ingestión...')
 
@@ -245,10 +247,15 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
     throw error
   } finally {
     report.finished = true
-    try { archiveReport(vault, report) }
+    try {
+      archiveReport(vault, report)
+      if (vault && process.env.REGTRACK_MEMORY_SYNC === '1' && !options.scanOnly) {
+        await pushSharedMemory(createServerClient(), vault.list())
+      }
+    }
     catch {
-      report.fatal.push('No se pudo conservar el informe en la memoria persistente')
-      throw new Error('No se pudo conservar el informe en la memoria persistente')
+      report.fatal.push('No se pudo conservar o sincronizar la memoria persistente; reintentar desde el vault local')
+      throw new Error('No se pudo conservar o sincronizar la memoria persistente')
     } finally { report.save(options.reportDir, true) }
   }
 }

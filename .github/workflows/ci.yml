@@ -6,6 +6,12 @@ on:
 permissions:
   contents: read
 jobs:
+  memory-database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/check-memory-db.sh
   local-services-config:
     runs-on: ubuntu-latest
     steps:

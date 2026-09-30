@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-const mocks = vi.hoisted(() => ({ user: vi.fn(), profile: vi.fn(), db: vi.fn(), list: vi.fn(), exists: vi.fn(), eq: vi.fn() }))
+const mocks = vi.hoisted(() => ({ user: vi.fn(), profile: vi.fn(), db: vi.fn(), list: vi.fn(), exists: vi.fn(), eq: vi.fn(), cloud: vi.fn() }))
+vi.mock('@/lib/knowledge/cloud', () => ({ readSharedMemory: mocks.cloud }))
 vi.mock('server-only', () => ({}))
 vi.mock('@supabase/ssr', () => ({ createServerClient: () => ({ auth: { getUser: mocks.user } }) }))
 vi.mock('next/headers', () => ({ cookies: async () => ({ getAll: () => [] }) }))
@@ -12,6 +13,7 @@ import { readPrivateMemory } from '@/lib/knowledge/server'
 beforeEach(() => {
   vi.clearAllMocks()
   vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', '/private-vault')
+  vi.stubEnv('REGTRACK_MEMORY_BACKEND', '')
   mocks.user.mockResolvedValue({ data: { user: { id: 'verified-id' } }, error: null })
   mocks.profile.mockResolvedValue({ data: { rol: 'admin' }, error: null })
   mocks.eq.mockReturnValue({ single: mocks.profile })
@@ -21,21 +23,40 @@ beforeEach(() => {
 })
 describe('memoria privada: autorización antes del lector', () => {
   it('una cookie sin usuario verificado no consulta perfiles ni abre archivos', async () => {
+    vi.stubEnv('REGTRACK_MEMORY_BACKEND', 'supabase')
     mocks.user.mockResolvedValue({ data: { user: null }, error: new Error('invalid token') })
     await expect(readPrivateMemory()).rejects.toThrow('redirect:/login')
     expect(mocks.db).not.toHaveBeenCalled()
     expect(mocks.exists).not.toHaveBeenCalled()
     expect(mocks.list).not.toHaveBeenCalled()
+    expect(mocks.cloud).not.toHaveBeenCalled()
   })
   it.each([{ rol: 'suscriptor' }, null])('un usuario verificado sin rol admin no lee el vault', async profile => {
+    vi.stubEnv('REGTRACK_MEMORY_BACKEND', 'supabase')
     mocks.profile.mockResolvedValue({ data: profile, error: null })
     await expect(readPrivateMemory()).rejects.toThrow('notFound')
     expect(mocks.eq).toHaveBeenCalledWith('auth_id', 'verified-id')
     expect(mocks.list).not.toHaveBeenCalled()
+    expect(mocks.cloud).not.toHaveBeenCalled()
   })
   it('el administrador recibe los registros del lector', async () => {
     mocks.list.mockReturnValue([{ id: 'record' }])
     expect(await readPrivateMemory()).toEqual({ status: 'ready', records: [{ id: 'record' }] })
+  })
+  it('el administrador lee el mismo archivo remoto que escribe el worker, sin depender del disco', async () => {
+    vi.stubEnv('REGTRACK_MEMORY_BACKEND', 'supabase')
+    mocks.cloud.mockResolvedValue([{ id: 'remote-record' }])
+    expect(await readPrivateMemory()).toEqual({ status: 'ready', records: [{ id: 'remote-record' }] })
+    expect(mocks.exists).not.toHaveBeenCalled()
+    expect(mocks.list).not.toHaveBeenCalled()
+  })
+  it('un fallo remoto no se sustituye silenciosamente por una copia local desactualizada', async () => {
+    vi.stubEnv('REGTRACK_MEMORY_BACKEND', 'supabase')
+    mocks.cloud.mockRejectedValue(new Error('sensitive remote error'))
+    expect(await readPrivateMemory()).toEqual({ status: 'unavailable', records: [] })
+    expect(mocks.list).not.toHaveBeenCalled()
+    vi.stubEnv('REGTRACK_MEMORY_BACKEND', 'typo')
+    expect((await readPrivateMemory()).status).toBe('unavailable')
   })
   it('configuración ausente, montaje perdido y corrupción no simulan un archivo vacío sano', async () => {
     vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', '')

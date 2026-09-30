@@ -15,7 +15,7 @@ Primera entrega privada para consultar lo que RegTrack conserva y comprobar su p
 
 ## Conexión del archivo privado
 
-El servidor Next y el worker deben tener acceso al mismo disco persistente y la misma ruta `REGTRACK_KNOWLEDGE_DIR`. Un único escritor; web solo lectora. El despliegue Vercel actual no puede leer automáticamente el disco de este PC: falta elegir almacenamiento/servidor para operación continua. No copiar el vault a `public`, a Git ni a un bundle web. No se ha modificado producción ni su configuración.
+Hay dos lectores: disco local (por defecto) y Supabase (`REGTRACK_MEMORY_BACKEND=supabase`). El segundo elimina la necesidad de compartir el disco con Vercel: web y worker consultan el mismo archivo privado en la base de datos existente. Está implementado y probado localmente; **la migración y activación remotas siguen pendientes**. Véase [Conexión de memoria compartida](memoria-compartida.md). No copiar el vault a `public`, a Git ni a un bundle web.
 
 ## Respaldo comprobable
 
@@ -54,4 +54,4 @@ Se puede generar un reporte semanal de la demo con `npm run knowledge -- weekly 
 
 ## Siguiente crecimiento
 
-Almacenamiento continuo accesible por web/worker y copia independiente; validar la sesión real privada; revisión editorial durable vinculada a versiones; cobertura por fuente y pendientes recuperables; un caso documental real completo. Después, extracción con Claude y embeddings por decidir. No confundir estas mejoras pendientes con funcionalidades entregadas.
+Activar y comprobar la conexión Supabase preparada; copia independiente completa; validar la sesión real privada; revisión editorial durable vinculada a versiones; cobertura por fuente y pendientes recuperables; un caso documental real completo. Después, extracción con Claude y embeddings por decidir. No confundir estas mejoras pendientes con funcionalidades entregadas.

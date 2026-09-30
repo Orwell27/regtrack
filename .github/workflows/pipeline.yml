@@ -72,6 +72,8 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REGTRACK_MEMORY_SYNC: ${{ vars.REGTRACK_MEMORY_SYNC }}
+          REGTRACK_KNOWLEDGE_DIR: ${{ vars.REGTRACK_MEMORY_SYNC == '1' && '.knowledge/vault' || '' }}
 
       - name: Preserve scan evidence
         if: always()
