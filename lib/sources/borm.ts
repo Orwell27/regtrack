@@ -1,9 +1,21 @@
 import type { NormalizedItem } from './boe'
 
-// Índices de campos en el JSON array-of-arrays de transparencia.carm.es
-const F = {
+// Índices de campos en el JSON array-of-arrays de transparencia.carm.es.
+// En 2026 el índice añadió una primera columna con el tipo («BOLETIN» / «SUPLEMENTO»)
+// y otras intermedias, así que se aceptan los dos formatos.
+type Campos = {
+  ID_ANUNCIO: number
+  FEC_PUBLICACION: number
+  SUMARIO: number
+  SECCION: number
+  ANUNCIANTE: number
+  RANGO: number
+  NPE: number
+  URL_HTML: number
+}
+
+const F_ANTIGUO: Campos = {
   ID_ANUNCIO: 0,
-  ID_OBJETO_DIGITAL: 1,
   FEC_PUBLICACION: 3,
   SUMARIO: 4,
   SECCION: 6,
@@ -11,7 +23,22 @@ const F = {
   RANGO: 10,
   NPE: 12,
   URL_HTML: 13,
-} as const
+}
+
+const F_ACTUAL: Campos = {
+  ID_ANUNCIO: 1,
+  FEC_PUBLICACION: 4,
+  SUMARIO: 5,
+  SECCION: 7,
+  ANUNCIANTE: 9,
+  RANGO: 12,
+  NPE: 16,
+  URL_HTML: 17,
+}
+
+function camposDe(row: unknown[]): Campos {
+  return row[0] === 'BOLETIN' || row[0] === 'SUPLEMENTO' ? F_ACTUAL : F_ANTIGUO
+}
 
 export async function fetchBORM(): Promise<NormalizedItem[]> {
   try {
@@ -37,10 +64,12 @@ export function parseBORMIndex(data: unknown[][]): NormalizedItem[] {
 
   return data
     .filter((row) => {
+      const F = camposDe(row)
       const fecha = String(row[F.FEC_PUBLICACION] ?? '')
       return fecha.startsWith(today) && row[F.URL_HTML]
     })
     .map((row) => {
+      const F = camposDe(row)
       const partes = [
         row[F.SECCION] ? `Sección: ${row[F.SECCION]}` : '',
         row[F.ANUNCIANTE] ? `Anunciante: ${row[F.ANUNCIANTE]}` : '',
@@ -49,7 +78,7 @@ export function parseBORMIndex(data: unknown[][]): NormalizedItem[] {
       ].filter(Boolean).join('\n')
 
       return {
-        id: `BORM-${row[F.NPE] ?? row[F.ID_ANUNCIO]}`,
+        id: `BORM-${row[F.NPE] || row[F.ID_ANUNCIO]}`,
         titulo: String(row[F.SUMARIO] ?? '').slice(0, 300),
         url: String(row[F.URL_HTML]),
         fuente: 'BORM' as const,
