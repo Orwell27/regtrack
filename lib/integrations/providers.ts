@@ -48,8 +48,10 @@ export class OpenAleph {
     await this.http.request(`/api/2/collections/${this.collectionId}/_bulk`, 'POST', [toFtm(record)])
     return { status: 'accepted' as const } // La indexación del servidor puede continuar en segundo plano.
   }
-  search(query: string) {
-    return this.http.request(`/api/2/entities?${new URLSearchParams({ q: query, 'filter:collection_id': String(this.collectionId), limit: '20' })}`)
+  search(query: string, options: { synonyms?: boolean } = {}) {
+    const params = new URLSearchParams({ q: query, 'filter:collection_id': String(this.collectionId), limit: '20' })
+    if (options.synonyms) params.set('synonyms', 'true')
+    return this.http.request(`/api/2/entities?${params}`)
   }
   status() { return this.http.request(`/api/2/collections/${this.collectionId}/status`) }
 }

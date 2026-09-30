@@ -18,7 +18,7 @@ jobs:
       - run: docker compose --env-file artifacts/local-services-config/.env -f artifacts/local-services-config/compose.openaleph.json --profile '*' config --quiet
       - run: docker compose -f artifacts/local-services-config/compose.graphiti.json config --quiet
       - run: bash -n integrations/local/install-docker.sh && bash -n integrations/local/start-openaleph.sh
-      - run: python3 -m py_compile integrations/local/forward.py integrations/local/bootstrap-user.py
+      - run: python3 -m py_compile integrations/local/forward.py integrations/local/bootstrap-user.py integrations/local/check-analyzers.py
   changedetection:
     runs-on: ubuntu-latest
     timeout-minutes: 12

@@ -6,7 +6,7 @@ Las siete referencias aceptadas tienen una función implementada. Esta capa se e
 |---|---|---|
 | [Normativa Educativa Canaria](https://github.com/ateeducacion/normativa_educativa_canaria) | Estructura adaptada: normativa, contexto, análisis, índices y decisiones; fuentes y vigencia pendiente | Seleccionar disco persistente y respaldo del worker |
 | [Basic Memory](https://github.com/basicmachines-co/basic-memory) | Escritura MCP en proyecto dedicado y búsqueda de notas | Mantener su configuración e índice local |
-| [OpenAleph](https://github.com/openaleph/openaleph) | API local real: colección privada, importación FtM, búsqueda exacta, reintento y recuperación tras reinicio | Resolver memoria de analizadores; validar búsqueda de nombres, UI y alojamiento continuo |
+| [OpenAleph](https://github.com/openaleph/openaleph) | API local: colección privada, importación FtM, búsqueda exacta; variantes de nombres mediante `--synonyms` y control de analizadores | Evaluar precisión con nombres/empresas reales, UI y alojamiento continuo |
 | [FollowTheMoney](https://github.com/opensanctions/followthemoney) | Document NDJSON y validador Python oficial para documentos, empresas, personas y relaciones | La extracción/resolución automática de empresas aún no está implementada |
 | [Graphiti](https://github.com/getzep/graphiti) | Servidor local y FalkorDB conectados: 13 herramientas MCP y lectura de episodios; adaptador de escritura preparado | Seleccionar modelos/embeddings, autorizar consumo y validar extracción y persistencia de hechos |
 | [MCP-BOE](https://github.com/ComputingVictor/MCP-BOE) | Consulta de norma consolidada y comparación por fechas | Validar cada resultado contra el BOE antes de utilizarlo como obligación |
@@ -70,6 +70,8 @@ npm run knowledge -- sync openaleph --config integrations/config.local.json --li
 npm run knowledge -- aleph-status --config integrations/config.local.json
 npm run knowledge -- check-services --config integrations/config.local.json
 npm run knowledge -- search-aleph --query vivienda --config integrations/config.local.json
+# Ampliación deliberada de nombres; las coincidencias requieren revisión:
+npm run knowledge -- search-aleph --query "Maruja Pruebacodex" --synonyms --config integrations/config.local.json
 npm run knowledge -- watches --config integrations/config.local.json
 npm run knowledge -- pull-watch WATCH_ID --config integrations/config.local.json --limit 20
 # Estos comandos Graphiti pueden consumir modelos/embeddings de pago:

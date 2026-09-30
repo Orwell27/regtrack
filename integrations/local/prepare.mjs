@@ -31,7 +31,9 @@ export function configurations() {
       postgres: service('postgres', { environment: { POSTGRES_USER: 'regtrack', POSTGRES_DB: 'regtrack', POSTGRES_PASSWORD: '${REGTRACK_POSTGRES_PASSWORD:?Falta password}' },
         volumes: ['postgres:/var/lib/postgresql/data'], mem_limit: '512m',
         healthcheck: { test: ['CMD-SHELL', 'pg_isready -U regtrack -d regtrack'], interval: '5s', timeout: '5s', retries: 30 } }),
-      elasticsearch: service('elasticsearch', { environment: { 'discovery.type': 'single-node', 'xpack.security.enabled': 'false', ES_JAVA_OPTS: '-Xms1g -Xmx1g' },
+      elasticsearch: service('elasticsearch', { environment: { 'discovery.type': 'single-node', 'xpack.security.enabled': 'false', ES_JAVA_OPTS: '-Xms1g -Xmx1g',
+        // Avoid loading multiple large synonym maps concurrently on the local 1 GB heap.
+        'cluster.routing.allocation.node_initial_primaries_recoveries': '1' },
         volumes: ['elasticsearch:/usr/share/elasticsearch/data'], mem_limit: '2g',
         healthcheck: { test: ['CMD-SHELL', 'curl -fsS http://localhost:9200/_cluster/health?wait_for_status=yellow'], interval: '10s', timeout: '10s', retries: 30 } }),
       redis: service('redis', { command: ['redis-server', '--save', '60', '1'], volumes: ['redis:/data'], mem_limit: '128m',

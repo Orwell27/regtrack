@@ -16,6 +16,7 @@ const { values: flags, positionals: args } = parseArgs({ allowPositionals: true,
   config: { type: 'string' }, vault: { type: 'string' }, file: { type: 'string' }, query: { type: 'string' },
   from: { type: 'string' }, to: { type: 'string' }, 'as-of': { type: 'string' }, limit: { type: 'string', default: '20' },
   'allow-model-calls': { type: 'boolean', default: false }, save: { type: 'boolean', default: false },
+  synonyms: { type: 'boolean', default: false },
 } })
 const output = (value: unknown) => console.log(typeof value === 'string' ? value : JSON.stringify(value, null, 2))
 function required(value: string | undefined, name: string): string { if (!value) throw new Error(`Falta ${name}`); return value }
@@ -101,7 +102,7 @@ async function main() {
       const c = needed(config.basicMemory, 'Basic Memory')
       output(await withMcp(c.mcp, client => client.call('search_notes', { project: c.project, query: query(), page_size: limit }))); break
     }
-    case 'search-aleph': output(await aleph().search(query())); break
+    case 'search-aleph': output(await aleph().search(query(), { synonyms: flags.synonyms })); break
     case 'aleph-status': output(await aleph().status()); break
     case 'search-graphiti': {
       if (!flags['allow-model-calls']) throw new Error('La búsqueda Graphiti puede consumir embeddings; requiere --allow-model-calls')
@@ -143,7 +144,7 @@ async function main() {
       writeFileSync(join(directory, 'records.json'), JSON.stringify(records, null, 2))
       output({ records: records.length, directory: resolve(directory), note: 'Exportación de contenido; para respaldo completo copiar el vault con .records y .receipts.' }); break
     }
-    default: output('knowledge: init | status | check-services | ingest --file ficha.json | ingest-report --file scan-report.json | search --query texto [--as-of ISO] | list | weekly --from YYYY-MM-DD --to YYYY-MM-DD | export-ftm --file entities.ftm.jsonl | sync basic-memory|openaleph|graphiti [--limit 20] | search-basic|search-aleph|search-graphiti --query texto | aleph-status | graphiti-episodes | boe BOE-ID [--from fecha --to fecha] [--save] | watches | pull-watch ID | probe basic-memory|mcp-boe|graphiti. Configuración: --config archivo.json. Graphiti exige --allow-model-calls.')
+    default: output('knowledge: init | status | check-services | ingest --file ficha.json | ingest-report --file scan-report.json | search --query texto [--as-of ISO] | list | weekly --from YYYY-MM-DD --to YYYY-MM-DD | export-ftm --file entities.ftm.jsonl | sync basic-memory|openaleph|graphiti [--limit 20] | search-basic|search-aleph|search-graphiti --query texto | aleph-status | graphiti-episodes | boe BOE-ID [--from fecha --to fecha] [--save] | watches | pull-watch ID | probe basic-memory|mcp-boe|graphiti. Configuración: --config archivo.json. search-aleph admite --synonyms para ampliar nombres. Graphiti exige --allow-model-calls.')
   }
 }
 main().catch(error => { console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1 })

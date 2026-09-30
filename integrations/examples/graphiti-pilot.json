@@ -1,0 +1,10 @@
+{
+  "kind": "noticia",
+  "title": "PRUEBA FICTICIA — adquisición y anuncio independiente",
+  "sourceUrl": "urn:regtrack:fixture:graphiti:ownership-2026-09-30",
+  "publisher": "Laboratorio ficticio RegTrack",
+  "observedAt": "2026-09-30T18:00:00Z",
+  "publishedAt": "2026-09-29",
+  "contentKind": "extracto",
+  "content": "PRUEBA FICTICIA. Las empresas, el inmueble y los hechos siguientes son inventados. La sociedad Faro Ejemplo SL adquirió el inmueble Edificio Delta Ejemplo de la sociedad Costa Ejemplo SL el 15 de abril de 2026. La operación se anunció el 20 de abril de 2026. No se conoce el precio. El anuncio no afirma que la operación fuera consecuencia de un cambio normativo ni informa de la vigencia de ninguna norma."
+}

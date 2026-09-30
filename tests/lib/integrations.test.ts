@@ -37,6 +37,16 @@ describe('contratos de integraciones', () => {
     const http = vi.fn().mockResolvedValue(new Response('secret-in-response', { status: 401 }))
     await expect(new ServiceHttp('https://example.org', {}, http).request('/')).rejects.toThrow('HTTP 401')
   })
+  it('ampliar nombres requiere opt-in y conserva el filtro de colección', async () => {
+    const http = vi.fn().mockImplementation(async () => Response.json({ results: [] }))
+    const service = new OpenAleph('https://aleph.example', 'token', 7, http)
+    await service.search('Maruja')
+    await service.search('Maruja', { synonyms: true })
+    const queries = http.mock.calls.map(call => new URL(call[0]).searchParams)
+    expect(queries[0].has('synonyms')).toBe(false)
+    expect(queries[1].get('synonyms')).toBe('true')
+    expect(queries.every(query => query.get('filter:collection_id') === '7')).toBe(true)
+  })
   it('changedetection conserva todas las fechas disponibles y descarga el contenido real', async () => {
     const http = vi.fn().mockResolvedValueOnce(Response.json({ url: 'https://example.org/noticia', title: 'Noticia' }))
       .mockResolvedValueOnce(Response.json({ '1790769600': '/a', '1790856000': '/b' }))

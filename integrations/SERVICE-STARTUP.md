@@ -1,6 +1,6 @@
 # Conexión de servicios — preparación local
 
-Estado al 30-09-2026: changedetection probado en Windows/Linux; OpenAleph probado localmente para importación privada, búsqueda exacta y persistencia tras reinicio; Graphiti conectado por MCP con lectura de episodios. WSL 3.0.1, Ubuntu 24.04 y Docker están instalados con autorización. Servicios detenidos al terminar; no hay vigilancia continua ni extracción con modelos activada.
+Estado al 30-09-2026: changedetection probado en Windows/Linux; OpenAleph probado localmente para importación privada, búsqueda exacta/variantes ficticias y persistencia tras reinicio; Graphiti conectado por MCP con lectura de episodios. WSL 3.0.1, Ubuntu 24.04 y Docker están instalados con autorización. Servicios detenidos al terminar; no hay vigilancia continua ni extracción con modelos activada.
 
 ## 1. Repetir la prueba real de cambios
 
@@ -35,7 +35,9 @@ Se probaron PostgreSQL, Elasticsearch, Redis, API con un proceso Gunicorn y work
 
 Con el servicio y su puente preparados, ejecutar `npm run knowledge:check-openaleph`. Después de detener y arrancar el stack completo, restablecer el puente y ejecutar `npm run knowledge:check-openaleph -- --verify-saved`: comprueba el mismo ID y SHA256 sin reimportar, y que solo hay un resultado. Ambos recorridos se ejecutaron realmente. Resultados locales sin claves en `artifacts/local-services`.
 
-**Limitación:** Elasticsearch, con heap de 1 GB, recupera el documento exacto pero registra un límite de memoria al cargar sinónimos y utiliza un mapa vacío. Ajustar recursos y validar los analizadores antes de dar por buena la búsqueda de variantes de nombres. No se han enviado los siete documentos reales ni comprobado cruces de empresas.
+La recuperación inicial de primarios se limita a una simultánea para evitar cargar varios diccionarios a la vez. Con el mismo heap de 1 GB, dos arranques reales verificaron los analizadores de los ocho índices sin errores de memoria ni mapas vacíos. El arranque exige `check-analyzers.py`; un servidor healthy por sí solo no acredita sinónimos.
+
+Ejecutar `npm run knowledge:check-openaleph-names` una vez y, después de reiniciar, `npm run knowledge:check-openaleph-names -- --verify-saved`. Se probó realmente con dos personas ficticias: Maruja recupera Maria únicamente cuando se activa `--synonyms`, controles negativos y persistencia de IDs, incluido el CLI. No se han enviado los siete documentos reales ni comprobado resolución de identidades o cruces de empresas.
 
 ### Graphiti
 
@@ -43,7 +45,7 @@ Referencia estudiada: [MCP README](https://github.com/getzep/graphiti/blob/3c427
 
 La ruta real de esta imagen es `http://127.0.0.1:8000/mcp`, sin barra final. Omitir `tokenEnv` para este servidor local: no tiene autenticación Bearer configurada. Añadir un token al cliente no protege al servidor. Un servicio remoto requiere HTTPS y autenticación efectiva antes de conectar.
 
-Este perfil lleva una credencial de modelo deliberadamente inválida y no tiene salida a Internet. No invocar `add_memory` ni búsqueda semántica: extracción, embeddings y persistencia de hechos no están probados. Antes de activarlos, seleccionar proveedor/modelos, autorizar consumo y validar un documento ficticio, UUID, fechas y hechos frente al original. Un acuse `queued` no demuestra extracción.
+Este perfil lleva una credencial de modelo deliberadamente inválida y no tiene salida a Internet. No invocar `add_memory` ni búsqueda semántica: extracción, embeddings y persistencia de hechos no están probados. Alfonso quiere conectarlo a la API de Claude más adelante y canceló el alta nueva de OpenAI. [GRAPHITI-PILOT.md](local/GRAPHITI-PILOT.md) conserva el caso ficticio para validar UUID, fechas y hechos; proveedor de embeddings y consumo pendientes. Un acuse `queued` no demuestra extracción.
 
 ### Continuidad
 

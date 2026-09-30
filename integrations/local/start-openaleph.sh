@@ -21,6 +21,7 @@ dc=(docker compose --env-file "$state/.env" -f "$state/compose.openaleph.json")
 if test "${1:-}" != '--skip-migration'; then
   "${dc[@]}" --profile setup run --rm migrate > "$repo_root/artifacts/local-services/openaleph-migrate.log" 2>&1
 fi
+python3 "$repo_root/integrations/local/check-analyzers.py" --output "$repo_root/artifacts/local-services/analyzers-startup.json"
 "${dc[@]}" up -d api worker
 "${dc[@]}" run --rm -T --no-deps -v "$repo_root/integrations/local/bootstrap-user.py:/tmp/regtrack-bootstrap.py:ro" api python /tmp/regtrack-bootstrap.py \
   > "$generated/openaleph-identity.json" 2> "$repo_root/artifacts/local-services/openaleph-bootstrap.log"

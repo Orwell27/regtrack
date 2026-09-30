@@ -32,17 +32,22 @@ npm run knowledge:check-openaleph
 
 El script copia configuración y secretos a `/opt/regtrack/services`, fuera del checkout, y utiliza volúmenes Docker persistentes. Inicializa un usuario API propio **sin privilegios de administrador**, sin contraseña interactiva ni correos, y guarda su clave sin mostrarla. El acceso API está en `127.0.0.1:8081`; las bases de datos no publican puertos. La red de contenedores no tiene salida a Internet. Los perfiles `ui` y `documents` quedan desactivados: esta prueba importa texto FtM, no comprueba la UI, OCR o ingestión de archivos.
 
-La API se limita a un proceso Gunicorn. La primera inicialización de índices puede tardar varios minutos con recursos limitados. Después de una migración comprobada se puede arrancar con `start-openaleph.sh --skip-migration`; no usar esa opción para saltarse una migración fallida o pendiente.
+La API se limita a un proceso Gunicorn. Elasticsearch recupera los índices de uno en uno (`node_initial_primaries_recoveries=1`) para evitar cargar varios diccionarios de sinónimos a la vez en su heap de 1 GB. La primera inicialización de índices puede tardar varios minutos con recursos limitados. Después de una migración comprobada se puede arrancar con `start-openaleph.sh --skip-migration`; no usar esa opción para saltarse una migración fallida o pendiente.
+
+Antes de arrancar API y worker, el script comprueba los analizadores reales: expansión «Maruja» ↔ «María» en cada índice, control sin sinónimos, cobertura distinta de cero y ausencia de errores de memoria desde el arranque del contenedor. Un fallo corta el script aunque Docker diga healthy. La validación aislada se ejecuta desde Linux con `python3 integrations/local/check-analyzers.py`; solo lee el Elasticsearch dedicado.
 
 En Docker 29.8.1 se observó que un contenedor conectado únicamente a una red interna conserva `PortBindings`, pero no publica realmente el puerto ([incidencia de upstream](https://github.com/moby/moby/discussions/53256)). `forward.py` reenvía TCP desde loopback de WSL al contenedor concreto sin abrirle salida a Internet; Windows accede por el reenvío local de WSL. Es un proceso temporal, no un servicio instalado. Detener y arrancar de nuevo el puente cuando se recrea el contenedor, porque su IP puede cambiar. La UI opcional tampoco se ha validado con esta red.
 
 La prueba crea una colección ficticia, verifica el rechazo anónimo, importa mediante `OpenAleph.push`, espera recuperar la huella exacta y prueba el reintento. `--verify-saved` recupera el mismo documento sin reimportarlo; ejecutarlo después de reiniciar los servicios para comprobar persistencia. Los resultados sin claves se guardan en `artifacts/local-services`; una ejecución fallida no acredita conectividad completa.
 
+Después de esa prueba, `npm run knowledge:check-openaleph-names` incorpora dos personas ficticias en la misma colección privada. Comprueba una variante conocida, el mismo ID y tres controles negativos. Tras reiniciar, `npm run knowledge:check-openaleph-names -- --verify-saved` solo lee y compara los IDs anteriores. El CLI permite `search-aleph --query "Maruja Pruebacodex" --synonyms`; sin esa opción conserva la búsqueda ordinaria. Una coincidencia ampliada es candidata a revisión, no una resolución automática de identidad.
+
 Operación desde Linux, sin borrar volúmenes:
 
 ```sh
 docker compose --env-file /opt/regtrack/services/.env -f /opt/regtrack/services/compose.openaleph.json stop
-docker compose --env-file /opt/regtrack/services/.env -f /opt/regtrack/services/compose.openaleph.json up -d
+# Desde el checkout, tras una migración ya comprobada:
+bash integrations/local/start-openaleph.sh --skip-migration
 ```
 
 No usar `down -v` para detenerlos: borra memoria persistente. El script de arranque se niega a sustituir secretos distintos de los que están guardados en Linux.
@@ -70,6 +75,6 @@ node integrations/local/prepare.mjs artifacts/local-services-config
 
 CI comprueba preservación de secretos, puertos locales, aislamiento de red, imágenes fijadas, sintaxis de Bash/Python y validez de Compose. No instala WSL ni afirma que los servidores estén arrancados. La evidencia de ejecuciones reales vive en [VALIDATION.md](../VALIDATION.md).
 
-**Límite observado:** con heap de 1 GB, Elasticsearch llega a estado sano y recupera el documento exacto, pero al reiniciar registra `CircuitBreakingException` al cargar `person_name_synonyms.txt` y usa un mapa de sinónimos vacío. No se ha validado búsqueda por variantes de nombres ni cruce de entidades. Este perfil ajustado sirve para probar el recorrido documental; antes de un uso real hay que dimensionar Elasticsearch, comprobar que carga los analizadores sin errores y repetir búsquedas de referencia. No confundir `healthy` con calidad de búsqueda validada.
+**Problema corregido en el perfil:** la recuperación paralela predeterminada podía devolver healthy mientras omitía el diccionario por falta de memoria. La recuperación secuencial mantiene el mismo heap; el nuevo control verifica el comportamiento de los analizadores. [Elastic documenta el mapa vacío con lenient=true](https://www.elastic.co/docs/reference/text-analysis/analysis-synonym-graph-tokenfilter) y el [paralelismo de recuperación](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference/cluster-level-shard-allocation-routing-settings). El ensayo de dos personas no mide precisión sobre nombres reales, homónimos o empresas ni capacidad para grandes volúmenes. Ver resultados y alcance exactos en VALIDATION.
 
 Antes de archivar el checkout, conservar los resultados de prueba necesarios; `/opt/regtrack/services` y volúmenes están en el VHD de WSL, pero **eso no es un respaldo**. No desregistrar la distribución RegTrack sin exportar y comprobar su recuperación.
