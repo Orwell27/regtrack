@@ -48,3 +48,6 @@ next-env.d.ts
 
 # superpowers brainstorm sessions
 .superpowers/
+
+# Informes locales de vigilancia (se conservan como artefactos de Actions)
+/artifacts/

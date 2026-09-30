@@ -1,20 +1,10 @@
+import { sourceText } from './http'
 import type { NormalizedItem } from './boe'
 
 const BASE = 'https://web.larioja.org'
 
 export async function fetchBOR(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch(`${BASE}/bor-portada`)
-    if (!res.ok) {
-      console.error(`BOR error: ${res.status}`)
-      return []
-    }
-    const html = await res.text()
-    return parseBORHtml(html)
-  } catch (err) {
-    console.error('BOR fetch error:', err)
-    return []
-  }
+  return parseBORHtml(await sourceText(`${BASE}/bor-portada`, 'html'))
 }
 
 export function parseBORHtml(html: string): NormalizedItem[] {

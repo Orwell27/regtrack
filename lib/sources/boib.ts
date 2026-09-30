@@ -1,19 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchBOIB(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch('https://www.caib.es/eboibfront/indexrss.do?lang=es')
-    if (!res.ok) {
-      console.error(`BOIB RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseBOIBRSS(xml)
-  } catch (err) {
-    console.error('BOIB fetch error:', err)
-    return []
-  }
+  return parseBOIBRSS(await sourceText('https://www.caib.es/eboibfront/indexrss.do?lang=es', 'rss'))
 }
 
 export function parseBOIBRSS(xml: string): NormalizedItem[] {

@@ -2,8 +2,27 @@ name: RegTrack Pipeline
 
 on:
   schedule:
-    - cron: '0 8 * * 1-5'   # 08:00 UTC lunes-viernes
-  workflow_dispatch:           # permite lanzar manualmente
+    - cron: '17 8 * * *'   # Incluye sábados; fuera del pico de la hora en punto.
+  workflow_dispatch:
+    inputs:
+      from:
+        description: 'Recuperación BOE/BORM: desde YYYY-MM-DD (máximo 31 días)'
+        type: string
+      to:
+        description: 'Recuperación BOE/BORM: hasta YYYY-MM-DD'
+        type: string
+      scan_only:
+        description: 'Solo comprobar fuentes, sin IA ni base de datos'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: regtrack-pipeline
+  cancel-in-progress: false
 
 jobs:
   pipeline:
@@ -21,9 +40,34 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run pipeline
-        run: npx tsx actions/pipeline.ts
+      - name: Check schedule continuity
+        continue-on-error: true # Una caída de la API de GitHub no impide recoger las fuentes.
+        run: npx tsx actions/check-schedule.ts --warn-only
         env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Run pipeline
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "$SCAN_FROM" || -n "$SCAN_TO" ]]; then
+            args+=(--from "$SCAN_FROM" --to "$SCAN_TO")
+          fi
+          if [[ "$SCAN_ONLY" == "true" ]]; then args+=(--scan-only); fi
+          npx tsx actions/pipeline.ts "${args[@]}"
+        env:
+          SCAN_FROM: ${{ inputs.from }}
+          SCAN_TO: ${{ inputs.to }}
+          SCAN_ONLY: ${{ inputs.scan_only }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Preserve scan evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vigilancia-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/
+          retention-days: 30
+          if-no-files-found: error

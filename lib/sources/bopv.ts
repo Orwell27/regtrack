@@ -1,19 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchBOPV(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch('https://www.euskadi.eus/bopv2/datos/Ultimo.xml')
-    if (!res.ok) {
-      console.error(`BOPV RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseBOPVRSS(xml)
-  } catch (err) {
-    console.error('BOPV fetch error:', err)
-    return []
-  }
+  return parseBOPVRSS(await sourceText('https://www.euskadi.eus/bopv2/datos/Ultimo.xml', 'rss'))
 }
 
 export function parseBOPVRSS(xml: string): NormalizedItem[] {

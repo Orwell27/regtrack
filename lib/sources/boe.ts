@@ -1,4 +1,6 @@
 import { XMLParser } from 'fast-xml-parser'
+import { fetchSource, requireDocument } from './http'
+import { madridDate } from '../pipeline/dates'
 
 export const RELEVANT_SECTIONS = ['1', '3'] as const // I: Disposiciones generales, III: Otras disposiciones
 
@@ -42,6 +44,8 @@ export interface NormalizedItem {
   url: string
   fuente: 'BOE' | 'BOCM' | 'DOGC' | 'BORM' | 'BOJA' | 'BOIB' | 'BOC_CANARIAS' | 'BOC_CANTABRIA' | 'BOCYL' | 'DOE' | 'DOG' | 'BOPV' | 'BOPA' | 'BON' | 'BOR'
   texto?: string
+  texto_url?: string
+  fecha_publicacion?: string
   _xmlUrl?: string // URL interna para fetchBOEText, no se persiste
   // Solo BOE:
   boe_id?: string
@@ -105,42 +109,44 @@ export async function fetchBOEText(
 ): Promise<{ texto: string; referencias_boe: ReferenciaBOE[] }> {
   const targetUrl = xmlUrl ?? `https://www.boe.es/diario_boe/xml.php?id=${id}`
   try {
-    const res = await fetch(targetUrl)
-    if (!res.ok) return { texto: '', referencias_boe: [] }
+    const res = await fetchSource(targetUrl)
     const xml = await res.text()
+    if (!/<documento[\s>]/i.test(xml) || /<(?:!doctype|html)[\s>]/i.test(xml)) {
+      throw new Error('Se esperaba el XML oficial del BOE, no una página de error')
+    }
     const referencias_boe = parseReferencesBOE(xml)
     const sinTags = xml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
     const idxTitulo = sinTags.indexOf('Jefatura') !== -1
       ? sinTags.indexOf('Jefatura')
       : sinTags.indexOf('TEXTO')
     const texto = idxTitulo > 0 ? sinTags.slice(idxTitulo) : sinTags
-    return { texto: texto.slice(0, 8000), referencias_boe }
-  } catch {
-    return { texto: '', referencias_boe: [] }
+    return { texto: requireDocument(texto), referencias_boe }
+  } catch (error) {
+    throw new Error(`No se pudo leer el texto BOE ${id}`, { cause: error })
   }
 }
 
-export async function fetchBOE(): Promise<NormalizedItem[]> {
-  const now = new Date()
-  const spainDate = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Madrid' }))
-  const today = spainDate.toISOString().slice(0, 10).replace(/-/g, '')
+export async function fetchBOE(date = madridDate(), hydrate = true): Promise<NormalizedItem[]> {
+  const today = date.replace(/-/g, '')
 
   let data: any
   try {
-    const res = await fetch(`https://www.boe.es/datosabiertos/api/boe/sumario/${today}`, {
+    const res = await fetchSource(`https://www.boe.es/datosabiertos/api/boe/sumario/${today}`, {
       headers: { Accept: 'application/json' },
-    })
+    }, true)
     if (!res.ok) {
-      console.error(`BOE API error: ${res.status}`)
-      return []
+      if (res.status === 404 && new Date(`${date}T12:00:00Z`).getUTCDay() === 0) return []
+      throw new Error(`BOE ${date}: HTTP ${res.status}`)
     }
     data = await res.json()
   } catch (err) {
     console.error('BOE fetch error:', err)
-    return []
+    throw err
   }
 
-  const items = parseBOESumario(data)
+  if (!data?.data?.sumario?.diario) throw new Error(`BOE ${date}: formato de sumario no reconocido`)
+  const items = parseBOESumario(data).map(item => ({ ...item, fecha_publicacion: date }))
+  if (!hydrate) return items
 
   // Obtener texto de cada item en batches de 5
   const results: NormalizedItem[] = []

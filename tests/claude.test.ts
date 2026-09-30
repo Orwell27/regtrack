@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, type Mock } from 'vitest'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
+import { readFileSync } from 'fs'
 
 // Mock del SDK de Anthropic
 vi.mock('@anthropic-ai/sdk', async (importOriginal) => {
@@ -15,6 +16,25 @@ vi.mock('@anthropic-ai/sdk', async (importOriginal) => {
 })
 
 import Anthropic, { BadRequestError } from '@anthropic-ai/sdk'
+
+describe('texto íntegro y respuestas mal formadas', () => {
+  it('envía también la disposición final del decreto real a ambas etapas de IA', async () => {
+    const document = readFileSync('tests/fixtures/borm-2019-6433.txt', 'utf8')
+    const create = vi.fn().mockResolvedValue({ content: [{ type: 'text', text: JSON.stringify({
+      relevante: true, subtema: 'turismo', ambito_territorial: 'autonomico', motivo: 'Alojamiento turístico',
+      resumen: 'Resumen', impacto: 'Impacto', afectados: [], territorios: [], accion_recomendada: 'Revisar', score_relevancia: 7,
+    }) }] })
+    ;(Anthropic as unknown as Mock).mockImplementation(function () { return { messages: { create } } })
+    await classifyDocument('Decreto 256/2019', document)
+    expect(await analyzeImpact('Decreto 256/2019', document, 'BORM')).not.toBeNull()
+    for (const [request] of create.mock.calls) expect(request.messages[0].content).toContain(document)
+  })
+  it('una clasificación con JSON válido pero sin campos no se convierte en descarte', async () => {
+    const create = vi.fn().mockResolvedValue({ content: [{ type: 'text', text: '{}' }] })
+    ;(Anthropic as unknown as Mock).mockImplementation(function () { return { messages: { create } } })
+    await expect(classifyDocument('Título', 'Texto')).rejects.toThrow()
+  })
+})
 
 describe('classifyDocument', () => {
   beforeEach(() => {
@@ -64,7 +84,7 @@ describe('classifyDocument', () => {
     expect(result.relevante).toBe(false)
   })
 
-  it('devuelve relevante: false si Claude devuelve JSON inválido', async () => {
+  it('no descarta el documento si Claude devuelve JSON inválido', async () => {
     ;(Anthropic as any).mockImplementation(function () {
       return {
         messages: {
@@ -74,11 +94,10 @@ describe('classifyDocument', () => {
         },
       }
     })
-    const result = await classifyDocument('Título', 'Texto')
-    expect(result.relevante).toBe(false)
+    await expect(classifyDocument('Título', 'Texto')).rejects.toThrow()
   })
 
-  it('devuelve relevante: false si Claude API lanza error', async () => {
+  it('conserva el error para reintentar, aunque no sea APIError', async () => {
     ;(Anthropic as any).mockImplementation(function () {
       return {
         messages: {
@@ -86,8 +105,7 @@ describe('classifyDocument', () => {
         },
       }
     })
-    const result = await classifyDocument('Título', 'Texto')
-    expect(result.relevante).toBe(false)
+    await expect(classifyDocument('Título', 'Texto')).rejects.toThrow()
   })
 })
 

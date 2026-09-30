@@ -1,3 +1,4 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
@@ -5,18 +6,7 @@ import type { NormalizedItem } from './boe'
 const DOE_RSS_URL = 'https://doe.juntaex.es/rss/rss.php?seccion=1'
 
 export async function fetchDOE(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch(DOE_RSS_URL)
-    if (!res.ok) {
-      console.error(`DOE RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseDOERSS(xml)
-  } catch (err) {
-    console.error('DOE fetch error:', err)
-    return []
-  }
+  return parseDOERSS(await sourceText(DOE_RSS_URL, 'rss'))
 }
 
 export function parseDOERSS(xml: string): NormalizedItem[] {

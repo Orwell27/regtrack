@@ -2,6 +2,14 @@ import Anthropic, { APIError } from '@anthropic-ai/sdk'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import type { Subtema, Ambito, Urgencia, TipoNorma } from './supabase'
+import { MAX_DOCUMENT_CHARS } from './sources/http'
+
+export class AnalysisError extends Error {}
+
+function inputText(text: string): string {
+  if (typeof text !== 'string' || text.length > MAX_DOCUMENT_CHARS) throw new AnalysisError('Texto inválido o demasiado largo; requiere recuperación o análisis por partes')
+  return text
+}
 
 function extractJson(text: string): string {
   // 1. Quitar bloques ```json ... ```
@@ -54,7 +62,7 @@ export async function classifyDocument(
 ): Promise<ClassifyResult> {
   try {
     const systemPrompt = loadPrompt('regtrack-clasificador.md')
-    const userContent = `${buildMetaHeader(meta)}Título: ${titulo}\n\nTexto:\n${texto.slice(0, 3000)}`
+    const userContent = `${buildMetaHeader(meta)}Título: ${titulo}\n\nTexto:\n${inputText(texto)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
@@ -64,12 +72,16 @@ export async function classifyDocument(
     })
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    return JSON.parse(extractJson(text)) as ClassifyResult
+    const result = JSON.parse(extractJson(text)) as ClassifyResult
+    if (response.stop_reason === 'max_tokens' || typeof result.relevante !== 'boolean' || typeof result.motivo !== 'string' || typeof result.subtema !== 'string' || typeof result.ambito_territorial !== 'string') {
+      throw new AnalysisError('Clasificación incompleta o con estructura inválida')
+    }
+    return result
   } catch (err) {
     // Un fallo de la API (sin saldo, clave, caída) no significa que el documento sea irrelevante
     if (err instanceof APIError) throw err
     console.error('classifyDocument error:', err)
-    return { relevante: false, subtema: 'otro', ambito_territorial: 'estatal', motivo: 'Error de clasificación' }
+    throw new AnalysisError('No se pudo interpretar la clasificación; documento pendiente de reintento', { cause: err })
   }
 }
 
@@ -98,7 +110,7 @@ export async function analyzeImpact(
 ): Promise<ImpactResult | null> {
   try {
     const systemPrompt = loadPrompt('regtrack-impacto.md')
-    const userContent = `${buildMetaHeader(meta)}Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto completo:\n${texto.slice(0, 8000)}`
+    const userContent = `${buildMetaHeader(meta)}Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto disponible:\n${inputText(texto)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
@@ -114,7 +126,11 @@ export async function analyzeImpact(
     }
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    return JSON.parse(extractJson(text)) as ImpactResult
+    const result = JSON.parse(extractJson(text)) as ImpactResult
+    if (!Number.isFinite(result.score_relevancia) || result.score_relevancia < 1 || result.score_relevancia > 10 || typeof result.resumen !== 'string' || typeof result.impacto !== 'string' || !Array.isArray(result.afectados) || !Array.isArray(result.territorios) || typeof result.accion_recomendada !== 'string') {
+      throw new AnalysisError('Análisis de impacto con estructura inválida')
+    }
+    return result
   } catch (err) {
     if (err instanceof APIError) throw err
     console.error('analyzeImpact error:', err)

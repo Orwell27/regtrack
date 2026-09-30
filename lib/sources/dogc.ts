@@ -1,19 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchDOGC(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch('https://dogc.gencat.cat/ca/inici/rss.html')
-    if (!res.ok) {
-      console.error(`DOGC RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseDOGCRSS(xml)
-  } catch (err) {
-    console.error('DOGC fetch error:', err)
-    return []
-  }
+  return parseDOGCRSS(await sourceText('https://dogc.gencat.cat/ca/inici/rss.html', 'rss'))
 }
 
 export function parseDOGCRSS(xml: string): NormalizedItem[] {

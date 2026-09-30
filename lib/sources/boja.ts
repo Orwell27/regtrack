@@ -1,19 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchBOJA(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch('https://www.juntadeandalucia.es/boja/distribucion/boja.xml')
-    if (!res.ok) {
-      console.error(`BOJA feed error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseBOJAAtom(xml)
-  } catch (err) {
-    console.error('BOJA fetch error:', err)
-    return []
-  }
+  return parseBOJAAtom(await sourceText('https://www.juntadeandalucia.es/boja/distribucion/boja.xml', 'atom'))
 }
 
 export function parseBOJAAtom(xml: string): NormalizedItem[] {

@@ -1,20 +1,10 @@
+import { sourceText } from './http'
 import type { NormalizedItem } from './boe'
 
 const BASE = 'https://miprincipado.asturias.es'
 
 export async function fetchBOPA(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch(`${BASE}/ultimos-boletines?p_r_p_summaryLastBopa=true`)
-    if (!res.ok) {
-      console.error(`BOPA error: ${res.status}`)
-      return []
-    }
-    const html = await res.text()
-    return parseBOPAHtml(html)
-  } catch (err) {
-    console.error('BOPA fetch error:', err)
-    return []
-  }
+  return parseBOPAHtml(await sourceText(`${BASE}/ultimos-boletines?p_r_p_summaryLastBopa=true`, 'html'))
 }
 
 export function parseBOPAHtml(html: string): NormalizedItem[] {

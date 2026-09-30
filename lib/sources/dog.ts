@@ -1,21 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchDOG(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch(
-      'https://www.xunta.gal/diario-oficial-galicia/rss/Sumario_es.rss'
-    )
-    if (!res.ok) {
-      console.error(`DOG RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseDOGRSS(xml)
-  } catch (err) {
-    console.error('DOG fetch error:', err)
-    return []
-  }
+  return parseDOGRSS(await sourceText('https://www.xunta.gal/diario-oficial-galicia/rss/Sumario_es.rss', 'rss'))
 }
 
 export function parseDOGRSS(xml: string): NormalizedItem[] {

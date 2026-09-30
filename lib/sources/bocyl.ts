@@ -1,19 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchBOCYL(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch('https://bocyl.jcyl.es/rss')
-    if (!res.ok) {
-      console.error(`BOCYL RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseBOCYLRSS(xml)
-  } catch (err) {
-    console.error('BOCYL fetch error:', err)
-    return []
-  }
+  return parseBOCYLRSS(await sourceText('https://bocyl.jcyl.es/rss', 'rss'))
 }
 
 export function parseBOCYLRSS(xml: string): NormalizedItem[] {

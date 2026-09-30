@@ -1,19 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchBOCM(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch('https://www.bocm.es/rss/rss.aspx')
-    if (!res.ok) {
-      console.error(`BOCM RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseBOCMRSS(xml)
-  } catch (err) {
-    console.error('BOCM fetch error:', err)
-    return []
-  }
+  return parseBOCMRSS(await sourceText('https://www.bocm.es/rss/rss.aspx', 'rss'))
 }
 
 export function parseBOCMRSS(xml: string): NormalizedItem[] {
