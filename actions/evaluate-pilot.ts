@@ -2,6 +2,7 @@ import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs'
 import { resolve, join, dirname } from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { parseArgs } from 'node:util'
+import { ReviewRequiredError } from '../lib/analysis/validation'
 import {
   canonicalText, corpusHash, evaluatePilot, loadCorpus, modelInputs, reportMarkdown,
   reviewPacket, runHash, sha256, type PilotRun, type ReviewFile, type Observation,
@@ -39,7 +40,7 @@ async function main() {
     loadEnvConfig(process.cwd())
     if (!process.env.ANTHROPIC_API_KEY) throw new Error('Falta ANTHROPIC_API_KEY; no se ha ejecutado el modelo')
     const { classifyDocument, analyzeImpact } = await import('../lib/claude')
-    const codeFiles = ['lib/claude.ts', 'lib/pipeline/run.ts', 'actions/evaluate-pilot.ts', 'lib/evaluation/pilot.ts', 'prompts/regtrack-clasificador.md', 'prompts/regtrack-impacto.md']
+    const codeFiles = ['lib/claude.ts', 'lib/analysis/validation.ts', 'lib/pipeline/run.ts', 'actions/evaluate-pilot.ts', 'lib/evaluation/pilot.ts', 'prompts/regtrack-clasificador.md', 'prompts/regtrack-impacto.md']
     const provenance = Object.fromEntries(codeFiles.map(file => [file, sha256(canonicalText(readFileSync(file, 'utf8')))]))
     provenance.gitCommit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim()
     provenance.scope = 'Clasificación e impacto con los prompts existentes; sin metadatos BOE opcionales, persistencia, noticias ni entrega de alertas. alert = candidato con score >= 4.'
@@ -60,7 +61,10 @@ async function main() {
           else observation.outcome = impact.score_relevancia < 4 ? 'discard' : 'alert'
         }
       } catch (error) {
-        observation.error = error instanceof Error ? error.message : 'Error de análisis'
+        if (error instanceof ReviewRequiredError) {
+          observation.outcome = 'needs_review'
+          observation.reviewReason = error.message
+        } else observation.error = error instanceof Error ? error.message : 'Error de análisis'
       }
       observation.elapsedMs = Math.round(performance.now() - started)
       run.observations.push(observation)

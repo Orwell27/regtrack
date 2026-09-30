@@ -2,6 +2,7 @@ import { appendFileSync, mkdirSync, renameSync, writeFileSync } from 'fs'
 import { join } from 'path'
 import type { NormalizedItem } from '../sources/boe'
 import { SourceAccessBlockedError } from '../sources/http'
+import type { ImpactResult } from '../analysis/validation'
 
 export interface SourceResult {
   source: string
@@ -14,8 +15,9 @@ export interface Decision {
   url: string
   source: string
   title: string
-  status: 'saved' | 'discarded' | 'low_score' | 'error' | 'existing' | 'unprocessed'
+  status: 'saved' | 'discarded' | 'low_score' | 'error' | 'existing' | 'unprocessed' | 'needs_review'
   reason: string
+  analysis?: ImpactResult
 }
 
 export class ScanReport {
@@ -48,15 +50,15 @@ export class ScanReport {
     }
   }
 
-  decision(item: NormalizedItem, status: Decision['status'], reason: string) {
-    const decision = { url: item.url, source: item.fuente, title: item.titulo, status, reason }
+  decision(item: NormalizedItem, status: Decision['status'], reason: string, analysis?: ImpactResult) {
+    const decision = { url: item.url, source: item.fuente, title: item.titulo, status, reason, ...(analysis ? { analysis } : {}) }
     const index = this.decisions.findIndex(d => d.url === item.url)
     if (index === -1) this.decisions.push(decision)
     else this.decisions[index] = decision
   }
 
   get incomplete() {
-    return this.fatal.length > 0 || this.sources.some(s => s.status === 'error') || this.decisions.some(d => d.status === 'error' || d.status === 'unprocessed')
+    return this.fatal.length > 0 || this.sources.some(s => s.status === 'error') || this.decisions.some(d => ['error', 'unprocessed', 'needs_review'].includes(d.status))
   }
 
   save(directory = 'artifacts', publishSummary = false) {
@@ -70,11 +72,12 @@ export class ScanReport {
     const summary = [
       '# Vigilancia RegTrack',
       this.mode === 'sources_only' ? 'Modo: **solo fuentes; no se ha evaluado ni guardado ninguna alerta**.' : 'Modo: fuentes y procesamiento de documentos.',
-      `Resultado: **${!this.finished ? 'EN CURSO — resultado aún no verificado' : this.incomplete ? 'INCOMPLETA — revisar errores' : 'Finalizada; revisar fuentes sin resultados'}**`,
+      `Resultado: **${!this.finished ? 'EN CURSO — resultado aún no verificado' : this.incomplete ? 'INCOMPLETA — revisar pendientes y errores' : 'Finalizada; revisar fuentes sin resultados'}**`,
       `BOE/BORM: ${this.dates[0]} a ${this.dates.at(-1)}. Otras fuentes: contenido reciente disponible, sin garantía de recuperación histórica.`,
       '', '| Fuente | Periodo | Estado | Documentos |', '|---|---|---|---|',
       ...this.sources.map(s => `| ${s.source} | ${s.scope} | ${s.status === 'empty' ? 'Sin resultados; no prueba ausencia de novedades' : s.status} | ${s.count} |`),
       '', `Guardadas: ${this.decisions.filter(d => d.status === 'saved').length}. Pendientes por error: ${this.decisions.filter(d => d.status === 'error' || d.status === 'unprocessed').length}.`,
+      `Pendientes de texto o revisión documental: ${this.decisions.filter(d => d.status === 'needs_review').length}.`,
       ...this.sources.filter(s => s.error).map(s => `- ${s.source}: ${escape(s.error!)}`),
       ...this.fatal.map(e => `- ${escape(e)}`),
       '', 'El JSON adjunto incluye también descartes y motivos. Una ejecución correcta no demuestra cobertura jurídica completa.',

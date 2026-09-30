@@ -84,7 +84,13 @@ Los documentos descartados y las fuentes que no devolvieron nada también deben 
 - El esquema no distingue sistemáticamente fechas literales, fechas calculadas y estado de vigencia actual.
 - La llamada de análisis recibe título y texto, pero no el metadato separado de publicación; algunos textos extraídos ya no incluyen esa fecha. El piloto admite abstención y deja registrada esta limitación del flujo actual.
 
-Estos riesgos se identificaron leyendo prompts y código antes del ensayo. Los resultados enlazados arriba distinguen cuáles se observaron realmente, omisiones y hallazgos adicionales. El caso insuficiente produjo puntuación 4 y alerta, no el descarte por 1 que se había anticipado. Los prompts no se han modificado.
+Estos riesgos se identificaron leyendo prompts y código antes del ensayo. Los resultados enlazados arriba distinguen cuáles se observaron realmente, omisiones y hallazgos adicionales. El caso insuficiente produjo puntuación 4 y alerta, no el descarte por 1 que se había anticipado. La ejecución original conserva los prompts anteriores.
+
+## Correcciones posteriores al primer ensayo
+
+Se ha cambiado el contrato de impacto y añadido validación en código: texto insuficiente queda pendiente, citas literales obligatorias, publicación oficial, fechas sin cómputos inventados y plazos con unidad. Escaneo y piloto comparten esos controles. Los conectores que solo entregan sumarios quedan pendientes antes de IA. Detalles, compatibilidad y límites en [Correcciones del piloto](correcciones-piloto.md).
+
+Estas correcciones tienen pruebas locales con respuestas simuladas. **No se ha repetido el ensayo de pago ni medido una mejora de interpretación.** El corpus y los resultados originales permanecen intactos; la revisión de 16/27 corresponde exclusivamente a la versión anterior. Sigue pendiente revisión humana y una muestra reservada.
 
 ## Para validar la autonomía y la correlación con noticias
 

@@ -27,6 +27,7 @@ export interface Observation {
   classification: unknown
   impact: unknown
   error?: string
+  reviewReason?: string
   elapsedMs: number
 }
 export interface PilotRun {
@@ -121,7 +122,7 @@ export function evaluatePilot(corpus: Corpus, run?: PilotRun, reviewFile?: Revie
     if (!item?.checks.some(check => check.id === review.checkId) || !observation || reviews.has(key)) throw new Error(`Revisión ajena, duplicada o sin resultado: ${key}`)
     if (!['pass', 'fail'].includes(review.verdict) || !review.reviewer?.trim() || !review.reviewedAt || !review.note?.trim()) throw new Error(`Revisión sin juicio, responsable o motivo: ${key}`)
     const outputText = (value: unknown): string => value == null ? '' : typeof value === 'object' ? Object.values(value).map(outputText).join('\n') : String(value)
-    if (review.outputQuote !== null && (!review.outputQuote.trim() || !normalized(outputText([observation.classification, observation.impact, observation.error])).includes(normalized(review.outputQuote)))) throw new Error(`Cita de resultado no encontrada: ${key}`)
+    if (review.outputQuote !== null && (!review.outputQuote.trim() || !normalized(outputText([observation.classification, observation.impact, observation.error, observation.reviewReason])).includes(normalized(review.outputQuote)))) throw new Error(`Cita de resultado no encontrada: ${key}`)
     reviews.set(key, review)
   }
   const hasResults = observations.size > 0

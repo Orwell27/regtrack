@@ -35,10 +35,11 @@ export async function collectSources(report: ScanReport, historical = false): Pr
 }
 
 export async function hydrateDocument(item: NormalizedItem): Promise<NormalizedItem> {
-  if (item.fuente === 'BOE') return { ...item, ...await fetchBOEText(item.id, item._xmlUrl) }
+  if (item.fuente === 'BOE') return { ...item, ...await fetchBOEText(item.id, item._xmlUrl), contenido: 'texto_completo' }
   if (item.fuente === 'BORM') {
     if (!item.texto_url) throw new Error('BORM: falta el identificador para recuperar el documento completo')
-    return { ...item, texto: await fetchBORMText(item.texto_url) }
+    return { ...item, texto: await fetchBORMText(item.texto_url), contenido: 'texto_completo' }
   }
-  return item
+  // Estos conectores solo recuperan índices/RSS. No certificar articulado completo.
+  return { ...item, contenido: 'sumario' }
 }

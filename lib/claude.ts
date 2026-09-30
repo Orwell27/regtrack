@@ -1,10 +1,12 @@
 import Anthropic, { APIError } from '@anthropic-ai/sdk'
 import { readFileSync } from 'fs'
 import { join } from 'path'
-import type { Subtema, Ambito, Urgencia, TipoNorma } from './supabase'
+import type { Subtema, Ambito } from './supabase'
 import { MAX_DOCUMENT_CHARS } from './sources/http'
+import { AnalysisError, ReviewRequiredError, requireSubstantiveText, normalizeImpact, type AnalysisContext, type ImpactResult } from './analysis/validation'
 
-export class AnalysisError extends Error {}
+export { AnalysisError } from './analysis/validation'
+export type { ImpactResult } from './analysis/validation'
 
 function inputText(text: string): string {
   if (typeof text !== 'string' || text.length > MAX_DOCUMENT_CHARS) throw new AnalysisError('Texto inválido o demasiado largo; requiere recuperación o análisis por partes')
@@ -30,11 +32,7 @@ function loadPrompt(filename: string): string {
   return readFileSync(join(process.cwd(), 'prompts', filename), 'utf-8')
 }
 
-export interface MetaBOE {
-  departamento?: string
-  epigrafe?: string
-  rango?: string
-}
+export type MetaBOE = AnalysisContext
 
 function buildMetaHeader(meta?: MetaBOE): string {
   if (!meta) return ''
@@ -42,6 +40,8 @@ function buildMetaHeader(meta?: MetaBOE): string {
     meta.departamento ? `Departamento: ${meta.departamento}` : '',
     meta.epigrafe ? `Epígrafe oficial BOE: ${meta.epigrafe}` : '',
     meta.rango ? `Rango oficial: ${meta.rango}` : '',
+    meta.fecha_publicacion ? `Fecha oficial de publicación: ${meta.fecha_publicacion}` : '',
+    meta.contenido ? `Contenido recuperado: ${meta.contenido}` : '',
   ].filter(Boolean)
   return lines.length > 0 ? lines.join('\n') + '\n\n' : ''
 }
@@ -60,6 +60,7 @@ export async function classifyDocument(
   texto: string,
   meta?: MetaBOE
 ): Promise<ClassifyResult> {
+  requireSubstantiveText(titulo, inputText(texto), meta)
   try {
     const systemPrompt = loadPrompt('regtrack-clasificador.md')
     const userContent = `${buildMetaHeader(meta)}Título: ${titulo}\n\nTexto:\n${inputText(texto)}`
@@ -87,27 +88,13 @@ export async function classifyDocument(
 
 // ─── Análisis de impacto ─────────────────────────────────────────────────────
 
-export interface ImpactResult {
-  resumen: string
-  impacto: string
-  afectados: string[]
-  urgencia: Urgencia
-  tipo_norma: TipoNorma
-  fecha_publicacion: string
-  fecha_entrada_vigor: string | null
-  plazo_adaptacion: number | null
-  deroga_modifica: string | null
-  territorios: string[]
-  accion_recomendada: string
-  score_relevancia: number
-}
-
 export async function analyzeImpact(
   titulo: string,
   texto: string,
   fuente: string,
   meta?: MetaBOE
 ): Promise<ImpactResult | null> {
+  requireSubstantiveText(titulo, inputText(texto), meta)
   try {
     const systemPrompt = loadPrompt('regtrack-impacto.md')
     const userContent = `${buildMetaHeader(meta)}Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto disponible:\n${inputText(texto)}`
@@ -126,13 +113,9 @@ export async function analyzeImpact(
     }
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    const result = JSON.parse(extractJson(text)) as ImpactResult
-    if (!Number.isFinite(result.score_relevancia) || result.score_relevancia < 1 || result.score_relevancia > 10 || typeof result.resumen !== 'string' || typeof result.impacto !== 'string' || !Array.isArray(result.afectados) || !Array.isArray(result.territorios) || typeof result.accion_recomendada !== 'string') {
-      throw new AnalysisError('Análisis de impacto con estructura inválida')
-    }
-    return result
+    return normalizeImpact(JSON.parse(extractJson(text)), titulo, texto, meta)
   } catch (err) {
-    if (err instanceof APIError) throw err
+    if (err instanceof APIError || err instanceof ReviewRequiredError) throw err
     console.error('analyzeImpact error:', err)
     return null
   }

@@ -5,6 +5,8 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { BadRequestError } from '@anthropic-ai/sdk'
 import { runPipeline } from '@/lib/pipeline/run'
 import { SourceAccessBlockedError } from '@/lib/sources/http'
+import { normalizeImpact, ReviewRequiredError } from '@/lib/analysis/validation'
+import { documentText, impactResponse } from '../fixtures/impact-response'
 
 const mocks = vi.hoisted(() => ({ collect: vi.fn(), hydrate: vi.fn(), classify: vi.fn(), impact: vi.fn(), from: vi.fn(), insert: vi.fn(), lookup: vi.fn(), createDb: vi.fn() }))
 vi.mock('@/lib/pipeline/sources', () => ({ collectSources: mocks.collect, hydrateDocument: mocks.hydrate }))
@@ -32,6 +34,41 @@ beforeEach(() => {
 })
 
 describe('recorrido completo sin IA ni BD reales', () => {
+  it('un sumario extenso sigue pendiente: no llama IA ni inserta una alerta', async () => {
+    mocks.hydrate.mockResolvedValueOnce({ ...item, contenido: 'sumario', texto: 'Un sumario extenso. '.repeat(200) })
+    const dir = directory()
+    const report = await runPipeline(['2026-09-30'], { reportDir: dir })
+    expect(report.decisions[0].status).toBe('needs_review')
+    expect(report.incomplete).toBe(true)
+    expect(mocks.classify).not.toHaveBeenCalled()
+    expect(mocks.impact).not.toHaveBeenCalled()
+    expect(mocks.insert).not.toHaveBeenCalled()
+    expect(readFileSync(join(dir, 'scan-summary.md'), 'utf8')).toContain('revisión documental: 1')
+  })
+  it('una revisión exigida por el análisis no se convierte en descarte o inserción y se vuelve a intentar', async () => {
+    mocks.classify.mockResolvedValue({ relevante: true, subtema: 'arrendamiento', ambito_territorial: 'ccaa' })
+    mocks.impact.mockRejectedValue(new ReviewRequiredError('Falta cita de la obligación'))
+    const options = { reportDir: directory() }
+    expect((await runPipeline(['2026-09-30'], options)).decisions[0].status).toBe('needs_review')
+    expect((await runPipeline(['2026-09-30'], options)).decisions[0].status).toBe('needs_review')
+    expect(mocks.impact).toHaveBeenCalledTimes(2)
+    expect(mocks.insert).not.toHaveBeenCalled()
+  })
+  it('persiste la unidad y las citas en campos legibles sin inventar días ni nuevas columnas', async () => {
+    const meta = { fecha_publicacion: '2019-10-19', rango: 'Decreto' }
+    const impact = normalizeImpact(impactResponse(), 'Decreto 256/2019', documentText, meta)
+    mocks.hydrate.mockResolvedValueOnce({ ...item, ...meta, texto: documentText, contenido: 'texto_completo' })
+    mocks.classify.mockResolvedValue({ relevante: true, subtema: 'arrendamiento', ambito_territorial: 'ccaa' })
+    mocks.impact.mockResolvedValueOnce(impact)
+    const report = await runPipeline(['2026-09-30'], { reportDir: directory() })
+    const saved = mocks.insert.mock.calls[0][0]
+    expect(saved).toMatchObject({ tipo_norma: null, rango: 'Decreto', plazo_adaptacion: null, fecha_entrada_vigor: null, fecha_publicacion: '2019-10-19', estado: 'pendiente_revision' })
+    expect(saved.impacto).toContain('6 meses')
+    expect(saved.accion_recomendada).toContain(impact.acciones[0].cita)
+    expect(saved).not.toHaveProperty('plazos_adaptacion')
+    expect(report.decisions[0].analysis?.plazos_adaptacion[0].cantidad).toBe(6)
+    expect(mocks.impact.mock.calls[0][3]).toMatchObject({ ...meta, contenido: 'texto_completo' })
+  })
   it('no descarga documentos de una fecha anterior si la fuente se bloqueó al recopilar otra fecha', async () => {
     mocks.collect.mockImplementationOnce(async report => {
       const items = await report.source('BORM', '2026-09-29', async () => [item])

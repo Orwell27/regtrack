@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, beforeEach, type Mock } from 'vitest'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { readFileSync } from 'fs'
+import { documentText, impactResponse } from './fixtures/impact-response'
 
 // Mock del SDK de Anthropic
 vi.mock('@anthropic-ai/sdk', async (importOriginal) => {
@@ -17,16 +18,59 @@ vi.mock('@anthropic-ai/sdk', async (importOriginal) => {
 
 import Anthropic, { BadRequestError } from '@anthropic-ai/sdk'
 
+describe('regresiones del ensayo real, sin llamadas de pago', () => {
+  function respond(payload: unknown) {
+    const create = vi.fn().mockResolvedValue({ content: [{ type: 'text', text: JSON.stringify(payload) }] })
+    ;(Anthropic as unknown as Mock).mockImplementation(function () { return { messages: { create } } })
+    return create
+  }
+  it('el título aislado queda pendiente antes de consumir IA aunque una respuesta ficticia daría score4', async () => {
+    const title = 'Decreto n.º 256/2019, de 10 de octubre, sobre viviendas de uso turístico'
+    const create = respond({ ...impactResponse(), score_relevancia: 4, accion_recomendada: 'Registrar' })
+    await expect(analyzeImpact(title, title, 'BORM')).rejects.toThrow(/revisión|texto/i)
+    expect(create).not.toHaveBeenCalled()
+  })
+  it('el estado de insuficiencia domina una puntuación alta', async () => {
+    respond({ ...impactResponse(), estado_analisis: 'requiere_revision', motivo_revision: 'Falta articulado', score_relevancia: 9, accion_recomendada: 'Registrar' })
+    await expect(analyzeImpact('Decreto 256/2019', documentText, 'BORM')).rejects.toThrow(/Falta articulado/)
+  })
+  it('no convierte seis meses de adaptación en los veinte días de entrada en vigor', async () => {
+    respond({ ...impactResponse(), plazo_adaptacion: 20, accion_recomendada: 'Adaptar' })
+    const result = await analyzeImpact('Decreto 256/2019', documentText, 'BORM')
+    expect(result?.plazo_adaptacion).toBeNull()
+    expect(result?.impacto).toContain('6 meses')
+  })
+  it('no permite que una fecha de publicación inventada sustituya a la oficial', async () => {
+    respond({ ...impactResponse(), fecha_publicacion: '2019-10-10', accion_recomendada: 'Adaptar' })
+    const result = await analyzeImpact('Decreto 256/2019', documentText, 'BORM', { fecha_publicacion: '2019-10-19' })
+    expect(result?.fecha_publicacion).toBe('2019-10-19')
+  })
+  it('una categoría no representable no se transforma en Real Decreto', async () => {
+    respond({ ...impactResponse(), accion_recomendada: 'Adaptar' })
+    expect((await analyzeImpact('Decreto 256/2019', documentText, 'BORM'))?.tipo_norma).toBeNull()
+  })
+  it('rechaza una cantidad numérica enviada como cadena', async () => {
+    const result = { ...impactResponse(), accion_recomendada: 'Adaptar' }
+    respond({ ...result, plazos_adaptacion: [{ ...result.plazos_adaptacion[0], cantidad: '6' }] })
+    expect(await analyzeImpact('Decreto 256/2019', documentText, 'BORM')).toBeNull()
+  })
+  it('no admite una acción cuya cita no existe en la entrada', async () => {
+    const result = impactResponse()
+    respond({ ...result, accion_recomendada: 'Adaptar', acciones: [{ ...result.acciones[0], cita: 'Una cita que no aparece en el documento oficial.' }] })
+    await expect(analyzeImpact('Decreto 256/2019', documentText, 'BORM')).rejects.toThrow(/cita|respaldo/i)
+  })
+})
+
 describe('texto íntegro y respuestas mal formadas', () => {
   it('envía también la disposición final del decreto real a ambas etapas de IA', async () => {
     const document = readFileSync('tests/fixtures/borm-2019-6433.txt', 'utf8')
     const create = vi.fn().mockResolvedValue({ content: [{ type: 'text', text: JSON.stringify({
-      relevante: true, subtema: 'turismo', ambito_territorial: 'autonomico', motivo: 'Alojamiento turístico',
-      resumen: 'Resumen', impacto: 'Impacto', afectados: [], territorios: [], accion_recomendada: 'Revisar', score_relevancia: 7,
+      relevante: true, subtema: 'arrendamiento', ambito_territorial: 'ccaa', motivo: 'Alojamiento turístico',
+      estado_analisis: 'requiere_revision', motivo_revision: 'Respuesta simulada para verificar transporte íntegro',
     }) }] })
     ;(Anthropic as unknown as Mock).mockImplementation(function () { return { messages: { create } } })
     await classifyDocument('Decreto 256/2019', document)
-    expect(await analyzeImpact('Decreto 256/2019', document, 'BORM')).not.toBeNull()
+    await expect(analyzeImpact('Decreto 256/2019', document, 'BORM')).rejects.toThrow('Respuesta simulada para verificar transporte íntegro')
     for (const [request] of create.mock.calls) expect(request.messages[0].content).toContain(document)
   })
   it('una clasificación con JSON válido pero sin campos no se convierte en descarte', async () => {
@@ -40,7 +84,7 @@ describe('classifyDocument', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     // Re-instantiate mock after clear
-    ;(Anthropic as any).mockImplementation(function () {
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
       return {
         messages: {
           create: vi.fn().mockResolvedValue({
@@ -66,7 +110,7 @@ describe('classifyDocument', () => {
   })
 
   it('devuelve relevante: false para documentos irrelevantes', async () => {
-    ;(Anthropic as any).mockImplementation(function () {
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
       return {
         messages: {
           create: vi.fn().mockResolvedValue({
@@ -85,7 +129,7 @@ describe('classifyDocument', () => {
   })
 
   it('no descarta el documento si Claude devuelve JSON inválido', async () => {
-    ;(Anthropic as any).mockImplementation(function () {
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
       return {
         messages: {
           create: vi.fn().mockResolvedValue({
@@ -98,7 +142,7 @@ describe('classifyDocument', () => {
   })
 
   it('conserva el error para reintentar, aunque no sea APIError', async () => {
-    ;(Anthropic as any).mockImplementation(function () {
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
       return {
         messages: {
           create: vi.fn().mockRejectedValue(new Error('API error')),
@@ -111,7 +155,7 @@ describe('classifyDocument', () => {
 
 describe('analyzeImpact', () => {
   it('devuelve null si Claude API lanza error', async () => {
-    ;(Anthropic as any).mockImplementation(function () {
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
       return {
         messages: {
           create: vi.fn().mockRejectedValue(new Error('API error')),
@@ -123,7 +167,7 @@ describe('analyzeImpact', () => {
   })
 
   it('devuelve null si Claude devuelve JSON inválido', async () => {
-    ;(Anthropic as any).mockImplementation(function () {
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
       return {
         messages: {
           create: vi.fn().mockResolvedValue({

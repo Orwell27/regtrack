@@ -11,6 +11,7 @@ import type { Alerta } from '@/lib/supabase'
 import { collectSources, hydrateDocument } from './sources'
 import { ScanReport } from './report'
 import { SourceAccessBlockedError } from '../sources/http'
+import { requireSubstantiveText, ReviewRequiredError } from '../analysis/validation'
 
 export async function runPipeline(dates: string[], options: { scanOnly?: boolean; historical?: boolean; reportDir?: string } = {}) {
   const report = new ScanReport(dates)
@@ -62,11 +63,14 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
         const texto = item.texto ?? ''
 
         // 4. Clasificar con Claude Haiku
-        const meta = item.fuente === 'BOE' ? {
+        const meta = {
           departamento: item.departamento,
           epigrafe: item.epigrafe,
           rango: item.rango,
-        } : undefined
+          fecha_publicacion: item.fecha_publicacion,
+          contenido: item.contenido,
+        }
+        requireSubstantiveText(item.titulo, texto, meta)
         const classification = await classifyDocument(item.titulo, texto, meta)
         api.exito()
 
@@ -89,7 +93,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           continue
         }
         if (impact.score_relevancia < 4) {
-          report.decision(item, 'low_score', `Score ${impact.score_relevancia}: ${impact.resumen}`)
+          report.decision(item, 'low_score', `Score ${impact.score_relevancia}: ${impact.resumen}`, impact)
           console.log(`[pipeline] Score bajo (${impact.score_relevancia}): descartado`)
           continue
         }
@@ -118,7 +122,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           boe_id: item.boe_id ?? null,
           departamento: item.departamento ?? null,
           epigrafe: item.epigrafe ?? null,
-          rango: item.rango ?? impact.tipo_norma ?? null,
+          rango: item.rango ?? impact.rango ?? impact.tipo_norma ?? null,
           referencias_boe: item.referencias_boe ?? [],
         }
 
@@ -138,7 +142,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
         }
 
         procesados++
-        report.decision(item, 'saved', 'Guardada para revisión editorial')
+        report.decision(item, 'saved', 'Guardada para revisión editorial', impact)
 
         // 8.0 Correlación ground-truth (referencias directas del BOE)
         if (item.fuente === 'BOE' && item.referencias_boe && item.referencias_boe.length > 0) {
@@ -200,6 +204,11 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
         }
 
       } catch (err) {
+        if (err instanceof ReviewRequiredError) {
+          report.decision(item, 'needs_review', err.message)
+          console.log(`[pipeline] Pendiente de revisión documental: ${item.titulo.slice(0, 60)}`)
+          continue
+        }
         if (err instanceof SourceAccessBlockedError) report.blockSource(item.fuente, err.message)
         report.decision(item, 'error', err instanceof Error ? err.message : String(err))
         if (err instanceof APIError) {

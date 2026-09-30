@@ -44,6 +44,7 @@ export interface NormalizedItem {
   url: string
   fuente: 'BOE' | 'BOCM' | 'DOGC' | 'BORM' | 'BOJA' | 'BOIB' | 'BOC_CANARIAS' | 'BOC_CANTABRIA' | 'BOCYL' | 'DOE' | 'DOG' | 'BOPV' | 'BOPA' | 'BON' | 'BOR'
   texto?: string
+  contenido?: 'texto_completo' | 'sumario'
   texto_url?: string
   fecha_publicacion?: string
   _xmlUrl?: string // URL interna para fetchBOEText, no se persiste
