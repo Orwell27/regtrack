@@ -23,6 +23,7 @@ Este registro distingue pruebas de código, conexiones reales y servicios aún p
 - Se extrajo `pullWatch` para que CLI y prueba utilicen exactamente el mismo importador. Se corrigió el caso de historial vacío, que antes podía devolver cero registros sin indicar que aún no existía ninguna captura.
 - Nueva comprobación `knowledge check-services`: lectura de API/colección/episodios; distingue ausencia de configuración, falta de clave, error y accesibilidad. No llama a extracción ni embeddings. Con la configuración de ejemplo devuelve los tres servicios `not_configured`; no existe configuración permanente local.
 - **257 tests en 30 archivos**, TypeScript y ESLint de los módulos afectados correctos localmente. Nuevo job `changedetection` para repetir el recorrido real en Linux; solo adjunta el resultado sin credenciales. El arranque permanente de OpenAleph/Graphiti no se ha probado: [preparación y fuentes](SERVICE-STARTUP.md).
+- [CI 36752129585](https://github.com/Orwell27/regtrack/actions/runs/36752129585), implementación `ec4986e`: pruebas y smoke real Linux correctos; preview Vercel correcto. La regresión del historial vacío falla al retirar su protección (la promesa devuelve `timestamps: []`) y pasa al restaurarla; código original restaurado sin diferencias.
 
 ## Alcance que sigue pendiente
 
