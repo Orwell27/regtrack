@@ -102,10 +102,16 @@ export async function analyzeImpact(
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
-      max_tokens: 1024,
+      // Con 1024 las normas largas (p. ej. el RDL 26/2026) cortaban el JSON a medias
+      max_tokens: 4096,
       system: systemPrompt,
       messages: [{ role: 'user', content: userContent }],
     })
+
+    if (response.stop_reason === 'max_tokens') {
+      console.error(`analyzeImpact: respuesta cortada por max_tokens en "${titulo.slice(0, 60)}"`)
+      return null
+    }
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
     return JSON.parse(extractJson(text)) as ImpactResult

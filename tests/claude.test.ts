@@ -137,3 +137,18 @@ describe('errores de la API de Claude', () => {
     await expect(analyzeImpact('Título', 'Texto', 'BOE')).rejects.toBeInstanceOf(BadRequestError)
   })
 })
+
+describe('analyzeImpact con respuestas largas', () => {
+  it('pide margen suficiente y descarta una respuesta cortada por max_tokens', async () => {
+    const create = vi.fn().mockResolvedValue({
+      stop_reason: 'max_tokens',
+      content: [{ type: 'text', text: '{"resumen": "texto cortado a med' }],
+    })
+    ;(Anthropic as unknown as Mock).mockImplementation(function () {
+      return { messages: { create } }
+    })
+    const res = await analyzeImpact('Real Decreto-ley 26/2026', 'Texto', 'BOE')
+    expect(res).toBeNull()
+    expect(create.mock.calls[0][0].max_tokens).toBeGreaterThanOrEqual(4096)
+  })
+})

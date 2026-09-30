@@ -1,6 +1,6 @@
 // lib/sectorial/telegram-grupos.ts
 import { createServerClient } from '@/lib/supabase'
-import { sendMessage } from '@/lib/telegram'
+import { sendMessage, urlApp } from '@/lib/telegram'
 
 export async function notifyGrupos(
   alertaId: string,
@@ -25,7 +25,7 @@ export async function notifyGrupos(
   }
   if (!subcats || subcats.length === 0) return
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://regtrack.vercel.app'
+  const appUrl = urlApp()
 
   for (const subcat of subcats) {
     const nombre = (subcat.subcategorias as unknown as { nombre: string } | null)?.nombre
