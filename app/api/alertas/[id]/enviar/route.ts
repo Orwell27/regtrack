@@ -1,68 +1,34 @@
+// app/api/alertas/[id]/enviar/route.ts
+// Publica en la web una alerta aprobada. Los suscriptores la ven en /alertas; no hay envío por Telegram ni correo.
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
-import { notifyUsers } from '@/lib/telegram'
-import { notifyGrupos } from '@/lib/sectorial/telegram-grupos'
+import { getAuthUser } from '@/lib/auth'
 
 export async function POST(
   _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const user = await getAuthUser()
+  if (!user || user.rol !== 'admin') {
+    return NextResponse.json({ error: 'No autorizado' }, { status: 403 })
+  }
+
   const { id } = await params
   const db = createNextServerClient()
 
   const { data: alerta } = await db
     .from('alertas')
-    .select('id, estado, url, texto_alerta, texto_alerta_pro, titulo, resumen, score_relevancia, territorios, fuente')
+    .select('id, estado')
     .eq('id', id)
     .single()
 
   if (!alerta) return NextResponse.json({ error: 'Alerta no encontrada' }, { status: 404 })
   if (alerta.estado !== 'aprobada') {
-    return NextResponse.json({ error: 'Solo se pueden enviar alertas aprobadas' }, { status: 400 })
+    return NextResponse.json({ error: 'Solo se pueden publicar alertas aprobadas' }, { status: 400 })
   }
 
-  const { data: usuarios } = await db
-    .from('usuarios')
-    .select('id, telegram_id, plan')
-    .eq('activo', true)
-    .not('telegram_id', 'is', null)
+  const { error } = await db.from('alertas').update({ estado: 'enviada' }).eq('id', id)
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 })
 
-  const conTelegram = (usuarios ?? []).filter((u: { telegram_id: string | null }) => u.telegram_id)
-
-  if (conTelegram.length > 0) {
-    await notifyUsers(
-      conTelegram.map((u: { telegram_id: string; plan: string }) => ({
-        telegramId: u.telegram_id,
-        texto: u.plan === 'pro' ? (alerta.texto_alerta_pro ?? alerta.texto_alerta ?? '') : (alerta.texto_alerta ?? ''),
-        alertaId: alerta.id,
-        urlOficial: alerta.url,
-      }))
-    )
-  }
-
-  // Notify sector Telegram groups (fire-and-forget — does not block the response)
-  notifyGrupos(
-    alerta.id,
-    alerta.titulo,
-    alerta.resumen ?? null,
-    alerta.score_relevancia ?? 0,
-    alerta.territorios ?? [],
-    alerta.fuente,
-    alerta.url
-  ).catch(gruposErr => {
-    console.error('[enviar] Error en grupos sectoriales:', gruposErr)
-  })
-
-  if (usuarios && usuarios.length > 0) {
-    const entregas = usuarios.map((u: { id: string }) => ({
-      alerta_id: id,
-      usuario_id: u.id,
-      enviada_at: new Date().toISOString(),
-    }))
-    await db.from('entregas').insert(entregas)
-  }
-
-  await db.from('alertas').update({ estado: 'enviada' }).eq('id', id)
-
-  return NextResponse.json({ ok: true, enviados: conTelegram.length })
+  return NextResponse.json({ ok: true })
 }

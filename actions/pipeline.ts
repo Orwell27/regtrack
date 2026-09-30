@@ -33,7 +33,6 @@ import { fetchBON } from '@/lib/sources/bon'
 import { fetchBOR } from '@/lib/sources/bor'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
-import { notifyEditorial, notifyPipelineDetenido } from '@/lib/telegram'
 import { detectarRelaciones } from '@/lib/correlacion/detectar-relaciones'
 import { guardarRelaciones } from '@/lib/correlacion/guardar-relaciones'
 import { clasificarSectorial } from '@/lib/sectorial/clasificar'
@@ -223,9 +222,6 @@ async function run() {
         console.error(`[pipeline] Error en clasificación sectorial (no bloqueante):`, sectErr)
       }
 
-      // 9. Notificar al editor por Telegram
-      await notifyEditorial(item.titulo, impact.score_relevancia, saved.id)
-
     } catch (err) {
       if (err instanceof APIError) {
         console.error(`[pipeline] Error de la API de Claude en "${item.titulo.slice(0, 60)}": ${err.status ?? 'sin conexión'} ${err.message}`)
@@ -253,7 +249,6 @@ async function run() {
 
   // Que la ejecución falle en GitHub Actions (y llegue el correo) en vez de terminar en verde sin procesar nada
   if (api.abortado) {
-    await notifyPipelineDetenido(api.describirUltimo())
     throw new Error(`Pipeline detenido por errores de la API de Claude (${api.describirUltimo()})`)
   }
 }

@@ -27,7 +27,6 @@ export default async function UsuariosPage() {
           <thead className="bg-slate-50 border-b border-slate-200">
             <tr>
               <th className="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide">Usuario</th>
-              <th className="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide">Telegram ID</th>
               <th className="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide">Territorios</th>
               <th className="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide">Plan</th>
               <th className="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide">Estado</th>

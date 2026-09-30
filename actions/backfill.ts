@@ -35,7 +35,6 @@ import { VigilanteApi } from '@/lib/pipeline/vigilante-api'
 import { parseBOESumario, fetchBOEText } from '@/lib/sources/boe'
 import { classifyDocument, analyzeImpact } from '@/lib/claude'
 import { buildAlertText } from '@/lib/sources/formatter'
-import { notifyEditorial } from '@/lib/telegram'
 import type { NormalizedItem } from '@/lib/sources/boe'
 import type { Alerta } from '@/lib/supabase'
 
@@ -163,7 +162,6 @@ async function processItem(
       return 'error'
     }
 
-    // No notificamos por Telegram en backfill para no spam
     return 'saved'
   } catch (err) {
     if (err instanceof APIError) throw err

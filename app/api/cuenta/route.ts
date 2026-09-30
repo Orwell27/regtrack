@@ -10,7 +10,7 @@ export async function GET() {
   const db = createNextServerClient()
   const { data } = await db
     .from('usuarios')
-    .select('nombre, email, telegram_id, plan, created_at')
+    .select('nombre, email, plan, created_at')
     .eq('id', user.usuarioId)
     .single()
 
@@ -27,9 +27,6 @@ export async function PUT(req: NextRequest) {
 
   if (typeof body.nombre === 'string' && body.nombre.trim()) {
     allowed.nombre = body.nombre.trim()
-  }
-  if (typeof body.telegram_id === 'string') {
-    allowed.telegram_id = body.telegram_id.trim() || null
   }
   if (body.preferencias && typeof body.preferencias === 'object') {
     allowed.preferencias = body.preferencias

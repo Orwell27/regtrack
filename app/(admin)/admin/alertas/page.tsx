@@ -71,7 +71,7 @@ export default async function AlertasAdminPage({ searchParams }: { searchParams:
             { key: 'estado', placeholder: 'Estado', options: [
               { value: 'pendiente_revision', label: 'Pendiente' },
               { value: 'aprobada', label: 'Aprobada' },
-              { value: 'enviada', label: 'Enviada' },
+              { value: 'enviada', label: 'Publicada' },
               { value: 'descartada', label: 'Descartada' },
             ]},
           ]}
@@ -105,7 +105,7 @@ export default async function AlertasAdminPage({ searchParams }: { searchParams:
                 </td>
                 <td className="px-4 py-3">
                   <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${ESTADO_STYLE[a.estado]}`}>
-                    {a.estado.replace('_', ' ')}
+                    {a.estado === 'enviada' ? 'publicada' : a.estado.replace('_', ' ')}
                   </span>
                 </td>
                 <td className="px-4 py-3 text-xs text-slate-600">{a.score_relevancia}/10</td>

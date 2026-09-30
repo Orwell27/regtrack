@@ -43,7 +43,7 @@ export default async function EditorialPage() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-xl font-bold text-slate-900">Cola editorial</h1>
-          <p className="text-sm text-slate-500 mt-0.5">{pendientes.length} pendientes · {aprobadas.length} aprobadas sin enviar</p>
+          <p className="text-sm text-slate-500 mt-0.5">{pendientes.length} pendientes · {aprobadas.length} aprobadas sin publicar</p>
         </div>
       </div>
 

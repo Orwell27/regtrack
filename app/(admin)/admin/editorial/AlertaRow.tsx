@@ -62,7 +62,7 @@ export function AlertaRow({
   if (estado === 'enviada') {
     return (
       <div className="px-4 py-3 flex items-center gap-3 opacity-60">
-        <span className="text-xs text-emerald-600 font-medium">✓ Enviada</span>
+        <span className="text-xs text-emerald-600 font-medium">✓ Publicada</span>
         <p className="text-sm text-slate-500 truncate flex-1">{alerta.titulo}</p>
       </div>
     )
@@ -146,7 +146,7 @@ export function AlertaRow({
               onClick={() => handleAccion('enviar')}
               disabled={!!loading}
             >
-              {loading === 'enviar' ? 'Enviando...' : '→ Enviar ahora'}
+              {loading === 'enviar' ? 'Publicando...' : '→ Publicar en la web'}
             </Button>
           </>
         )}
