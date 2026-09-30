@@ -1,5 +1,11 @@
 const BASE = 'https://api.telegram.org'
 
+// Los secretos pegados a mano pueden traer espacios o tabuladores al principio o al final
+// (el de NEXT_PUBLIC_APP_URL llevaba un tabulador y Telegram rechazaba el botón)
+export function urlApp(): string {
+  return process.env.NEXT_PUBLIC_APP_URL?.trim() || 'https://regtrack.vercel.app'
+}
+
 type InlineButton = { text: string; url: string }
 type InlineKeyboard = InlineButton[][]
 
@@ -9,7 +15,7 @@ export async function sendMessage(
   parseMode: 'Markdown' | 'HTML' | undefined = 'Markdown',
   inlineKeyboard?: InlineKeyboard
 ): Promise<void> {
-  const token = process.env.TELEGRAM_BOT_TOKEN
+  const token = process.env.TELEGRAM_BOT_TOKEN?.trim()
   if (!token) throw new Error('TELEGRAM_BOT_TOKEN no configurado')
 
   try {
@@ -34,10 +40,10 @@ export async function sendMessage(
 }
 
 export async function notifyEditorial(titulo: string, score: number, alertaId: string): Promise<void> {
-  const chatId = process.env.TELEGRAM_EDITORIAL_CHAT_ID
+  const chatId = process.env.TELEGRAM_EDITORIAL_CHAT_ID?.trim()
   if (!chatId) return
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://regtrack.vercel.app'
+  const appUrl = urlApp()
   const text = [
     `📋 *Nueva alerta pendiente de revisión*`,
     ``,
@@ -55,10 +61,10 @@ export async function notifyEditorial(titulo: string, score: number, alertaId: s
 export async function notifyUsers(
   recipients: { telegramId: string; texto: string; alertaId: string; urlOficial: string }[]
 ) {
-  const token = process.env.TELEGRAM_BOT_TOKEN
+  const token = process.env.TELEGRAM_BOT_TOKEN?.trim()
   if (!token) throw new Error('TELEGRAM_BOT_TOKEN no configurado')
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://regtrack.vercel.app'
+  const appUrl = urlApp()
 
   const results = await Promise.allSettled(
     recipients.map(({ telegramId, texto, alertaId, urlOficial }) => {
@@ -87,7 +93,7 @@ export async function notifyUsers(
 
 /** Aviso al chat editorial de que el pipeline se ha detenido. Texto plano: el motivo puede traer caracteres de Markdown. */
 export async function notifyPipelineDetenido(motivo: string): Promise<void> {
-  const chatId = process.env.TELEGRAM_EDITORIAL_CHAT_ID
+  const chatId = process.env.TELEGRAM_EDITORIAL_CHAT_ID?.trim()
   if (!chatId) return
   const text = [
     '⚠️ RegTrack: el pipeline se ha detenido',
