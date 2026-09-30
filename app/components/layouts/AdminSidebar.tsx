@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, FileCheck, Bell, Users, Settings, LogOut, Layers } from 'lucide-react'
+import { LayoutDashboard, FileCheck, Bell, Users, Settings, LogOut, Layers, MapPinned } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
@@ -22,6 +22,7 @@ const NAV_ITEMS: NavItem[] = [
   { href: '/admin/usuarios', label: 'Usuarios', icon: Users },
   { href: '/admin/config', label: 'Config', icon: Settings },
   { href: '/admin/sectores', label: 'Sectores', icon: Layers },
+  { href: '/cartera', label: 'Mi cartera', icon: MapPinned },
 ]
 
 export function AdminSidebar({ pendientes = 0 }: Props) {
