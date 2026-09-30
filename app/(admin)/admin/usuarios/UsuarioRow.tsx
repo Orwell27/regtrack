@@ -36,11 +36,6 @@ export function UsuarioRow({ usuario }: { usuario: Usuario }) {
         <p className="text-xs text-slate-400">{usuario.email}</p>
       </td>
       <td className="px-4 py-3">
-        <code className="text-xs text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded">
-          {usuario.telegram_id ?? '—'}
-        </code>
-      </td>
-      <td className="px-4 py-3">
         <div className="flex flex-wrap gap-1">
           {usuario.territorios?.map(t => (
             <span key={t} className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">{t}</span>

@@ -15,7 +15,7 @@ const PERFILES = ['promotor', 'agencia', 'despacho', 'inversor', 'propietario']
 
 export default function RegistroPage() {
   const [form, setForm] = useState({
-    nombre: '', email: '', password: '', telegram_id: '',
+    nombre: '', email: '', password: '',
     territorio: 'Madrid', subtema: 'urbanismo', perfil: 'agencia',
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -43,7 +43,6 @@ export default function RegistroPage() {
     const { error: dbError } = await supabase.from('usuarios').insert({
       email: form.email,
       nombre: form.nombre,
-      telegram_id: form.telegram_id || null,
       territorios: [form.territorio],
       subtemas: [form.subtema],
       afectado_como: [form.perfil],
@@ -66,7 +65,7 @@ export default function RegistroPage() {
         <div className="bg-white p-8 rounded shadow-md max-w-sm text-center space-y-3">
           <p className="text-4xl">✅</p>
           <h2 className="text-xl font-bold">Registro completado</h2>
-          <p className="text-gray-600">Recibirás alertas de <strong>{form.subtema}</strong> en <strong>{form.territorio}</strong> por Telegram.</p>
+          <p className="text-gray-600">Recibirás alertas de <strong>{form.subtema}</strong> en <strong>{form.territorio}</strong> en tu panel de RegTrack.</p>
           <p className="text-sm text-gray-500">Revisa tu email para confirmar la cuenta.</p>
         </div>
       </div>
@@ -77,19 +76,13 @@ export default function RegistroPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-full max-w-md space-y-4">
         <h1 className="text-xl font-bold">Registro RegTrack</h1>
-        <p className="text-sm text-gray-500">Alertas de normativa inmobiliaria en tu Telegram — plan Free.</p>
+        <p className="text-sm text-gray-500">Alertas de normativa inmobiliaria en tu panel web — plan Free.</p>
 
         {status === 'error' && <p className="text-red-500 text-sm">{errorMsg}</p>}
 
         <input required placeholder="Nombre" value={form.nombre} onChange={e => setForm({...form, nombre: e.target.value})} className="w-full border rounded p-2" />
         <input required type="email" placeholder="Email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} className="w-full border rounded p-2" />
         <input required type="password" placeholder="Contraseña" value={form.password} onChange={e => setForm({...form, password: e.target.value})} className="w-full border rounded p-2" />
-
-        <div>
-          <label className="text-sm font-medium">Telegram ID</label>
-          <input placeholder="Ej: 123456789" value={form.telegram_id} onChange={e => setForm({...form, telegram_id: e.target.value})} className="w-full border rounded p-2 mt-1" />
-          <p className="text-xs text-gray-400 mt-1">Escribe a @userinfobot en Telegram para obtener tu ID.</p>
-        </div>
 
         <div>
           <label className="text-sm font-medium">Territorio principal</label>

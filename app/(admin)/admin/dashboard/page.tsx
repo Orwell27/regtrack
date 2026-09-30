@@ -68,7 +68,7 @@ export default async function DashboardPage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <StatCard label="Procesadas hoy" value={stats.alertasHoy} sub={stats.trendSub} trend={stats.trend as 'up' | 'down' | 'neutral'} />
         <StatCard label="Pendientes" value={stats.pendientes} sub="Requieren revisión" />
-        <StatCard label="Enviadas" value={stats.enviadas} sub="A suscriptores" />
+        <StatCard label="Publicadas" value={stats.enviadas} sub="En la web" />
         <StatCard label="Usuarios activos" value={stats.totalUsuarios} sub={`${stats.usuariosPro} Pro · ${stats.usuariosFree} Free`} />
       </div>
 
