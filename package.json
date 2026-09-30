@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/check-memory-trace.mjs",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
@@ -17,7 +17,8 @@
     "knowledge:check-openaleph": "tsx actions/check-openaleph.ts",
     "knowledge:validate-ftm": "uv run --python 3.12 integrations/followthemoney/validate.py",
     "knowledge:check-graphiti": "tsx actions/check-graphiti.ts",
-    "knowledge:check-openaleph-names": "tsx actions/check-openaleph-names.ts"
+    "knowledge:check-openaleph-names": "tsx actions/check-openaleph-names.ts",
+    "knowledge:demo": "tsx actions/prepare-memory-demo.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.88.0",

@@ -74,12 +74,13 @@ export function atomicWrite(path: string, text: string) {
 
 export class KnowledgeVault {
   readonly root: string
-  constructor(root: string) { this.root = resolve(root) }
+  // Runtime mount, never a build input. Otherwise Turbopack can trace local vaults/secrets.
+  constructor(root: string) { this.root = resolve(/* turbopackIgnore: true */ root) }
 
   init() {
-    for (const directory of ['00_gobierno', '01_fuentes', ...new Set(Object.values(folders)), '05_relaciones', '06_indices', '09_decisiones', '.records', '.receipts']) mkdirSync(join(this.root, directory), { recursive: true })
-    const governance = join(this.root, '00_gobierno', 'README.md')
-    if (!existsSync(governance)) writeFileSync(governance, '# Memoria RegTrack\n\nFichas versionadas, inspiradas en Normativa Educativa Canaria. Las fuentes, análisis y reportes se conservan por separado. Una noticia o relación inferida no acredita vigencia ni causalidad. No editar las instantáneas: registrar una nueva ficha con la fecha de observación. Los JSON de .records son el registro canónico; Markdown es su vista recuperable. Un único escritor por vault. Conservar también .records y .receipts en las copias de seguridad.\n')
+    for (const directory of ['00_gobierno', '01_fuentes', ...new Set(Object.values(folders)), '05_relaciones', '06_indices', '09_decisiones', '.records', '.receipts']) mkdirSync(join(/* turbopackIgnore: true */ this.root, directory), { recursive: true })
+    const governance = join(/* turbopackIgnore: true */ this.root, '00_gobierno', 'README.md')
+    if (!existsSync(/* turbopackIgnore: true */ governance)) writeFileSync(governance, '# Memoria RegTrack\n\nFichas versionadas, inspiradas en Normativa Educativa Canaria. Las fuentes, análisis y reportes se conservan por separado. Una noticia o relación inferida no acredita vigencia ni causalidad. No editar las instantáneas: registrar una nueva ficha con la fecha de observación. Los JSON de .records son el registro canónico; Markdown es su vista recuperable. Un único escritor por vault. Conservar también .records y .receipts en las copias de seguridad.\n')
   }
 
   put(value: unknown): KnowledgeRecord {
@@ -92,17 +93,17 @@ export class KnowledgeVault {
     this.init()
     const stem = `${record.id}-${record.version}`
     // El JSON se confirma el último. Una caída previa deja solo una vista regenerable.
-    atomicWrite(join(this.root, folders[record.kind], `${stem}.md`), markdown(record))
-    atomicWrite(join(this.root, '.records', `${stem}.json`), JSON.stringify(record, null, 2) + '\n')
+    atomicWrite(join(/* turbopackIgnore: true */ this.root, folders[record.kind], `${stem}.md`), markdown(record))
+    atomicWrite(join(/* turbopackIgnore: true */ this.root, '.records', `${stem}.json`), JSON.stringify(record, null, 2) + '\n')
     return record
   }
 
   list({ latest = false, asOf }: { latest?: boolean; asOf?: string } = {}): KnowledgeRecord[] {
-    const dir = join(this.root, '.records')
-    if (!existsSync(dir)) return []
+    const dir = join(/* turbopackIgnore: true */ this.root, '.records')
+    if (!existsSync(/* turbopackIgnore: true */ dir)) return []
     if (asOf && !Number.isFinite(Date.parse(asOf))) throw new Error('Fecha de consulta inválida')
-    const records = readdirSync(dir).filter(f => /^[a-f0-9]{32}-[a-f0-9]{32}\.json$/.test(f)).map(f => {
-      const value = JSON.parse(readFileSync(join(dir, f), 'utf8')) as KnowledgeRecord
+    const records = readdirSync(/* turbopackIgnore: true */ dir).filter(f => /^[a-f0-9]{32}-[a-f0-9]{32}\.json$/.test(f)).map(f => {
+      const value = JSON.parse(readFileSync(/* turbopackIgnore: true */ join(/* turbopackIgnore: true */ dir, f), 'utf8')) as KnowledgeRecord
       const input = parseInput(value)
       if (digest(input.content) !== value.contentHash || digest(JSON.stringify(input)).slice(0, 32) !== value.version || digest(`${input.kind}\n${input.sourceUrl}`).slice(0, 32) !== value.id || `${value.id}-${value.version}.json` !== f || value.schemaVersion !== 1 || value.review !== 'pendiente' || value.legalStatus !== 'sin_verificar') throw new Error(`Integridad de memoria incorrecta: ${f}`)
       return value

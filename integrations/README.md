@@ -2,6 +2,8 @@
 
 Las siete referencias aceptadas tienen una función implementada. Esta capa se ejecuta con el worker/CLI, sin nuevas rutas públicas ni escrituras en producción. **Integrar un cliente no equivale a desplegar su servidor.** `knowledge status` distingue configuración de funcionamiento; `probe` comprueba el contrato MCP sin consumir modelos.
 
+El [MVP de memoria](../docs/mvp-memoria.md) añade consulta privada en `/admin/memoria`, explicaciones vinculadas a la captura analizada y respaldo/restauración verificables. Incluye una demo ficticia solo de desarrollo. Su conexión a almacenamiento continuo y la activación en producción siguen pendientes.
+
 | Proyecto | Integración | Qué falta para uso continuo |
 |---|---|---|
 | [Normativa Educativa Canaria](https://github.com/ateeducacion/normativa_educativa_canaria) | Estructura adaptada: normativa, contexto, análisis, índices y decisiones; fuentes y vigencia pendiente | Seleccionar disco persistente y respaldo del worker |

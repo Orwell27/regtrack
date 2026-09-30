@@ -1,0 +1,51 @@
+import { beforeEach, describe, expect, it, vi } from 'vitest'
+const mocks = vi.hoisted(() => ({ user: vi.fn(), profile: vi.fn(), db: vi.fn(), list: vi.fn(), exists: vi.fn(), eq: vi.fn() }))
+vi.mock('server-only', () => ({}))
+vi.mock('@supabase/ssr', () => ({ createServerClient: () => ({ auth: { getUser: mocks.user } }) }))
+vi.mock('next/headers', () => ({ cookies: async () => ({ getAll: () => [] }) }))
+vi.mock('next/navigation', () => ({ redirect: (url: string) => { throw new Error(`redirect:${url}`) }, notFound: () => { throw new Error('notFound') } }))
+vi.mock('@/lib/supabase', () => ({ createNextServerClient: mocks.db }))
+vi.mock('@/lib/knowledge/vault', () => ({ KnowledgeVault: class { list = mocks.list } }))
+vi.mock('node:fs', () => ({ existsSync: mocks.exists }))
+import { readPrivateMemory } from '@/lib/knowledge/server'
+
+beforeEach(() => {
+  vi.clearAllMocks()
+  vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', '/private-vault')
+  mocks.user.mockResolvedValue({ data: { user: { id: 'verified-id' } }, error: null })
+  mocks.profile.mockResolvedValue({ data: { rol: 'admin' }, error: null })
+  mocks.eq.mockReturnValue({ single: mocks.profile })
+  mocks.db.mockReturnValue({ from: () => ({ select: () => ({ eq: mocks.eq }) }) })
+  mocks.exists.mockReturnValue(true)
+  mocks.list.mockReturnValue([])
+})
+describe('memoria privada: autorización antes del lector', () => {
+  it('una cookie sin usuario verificado no consulta perfiles ni abre archivos', async () => {
+    mocks.user.mockResolvedValue({ data: { user: null }, error: new Error('invalid token') })
+    await expect(readPrivateMemory()).rejects.toThrow('redirect:/login')
+    expect(mocks.db).not.toHaveBeenCalled()
+    expect(mocks.exists).not.toHaveBeenCalled()
+    expect(mocks.list).not.toHaveBeenCalled()
+  })
+  it.each([{ rol: 'suscriptor' }, null])('un usuario verificado sin rol admin no lee el vault', async profile => {
+    mocks.profile.mockResolvedValue({ data: profile, error: null })
+    await expect(readPrivateMemory()).rejects.toThrow('notFound')
+    expect(mocks.eq).toHaveBeenCalledWith('auth_id', 'verified-id')
+    expect(mocks.list).not.toHaveBeenCalled()
+  })
+  it('el administrador recibe los registros del lector', async () => {
+    mocks.list.mockReturnValue([{ id: 'record' }])
+    expect(await readPrivateMemory()).toEqual({ status: 'ready', records: [{ id: 'record' }] })
+  })
+  it('configuración ausente, montaje perdido y corrupción no simulan un archivo vacío sano', async () => {
+    vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', '')
+    expect((await readPrivateMemory()).status).toBe('unconfigured')
+    expect(mocks.list).not.toHaveBeenCalled()
+    vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', '/private-vault')
+    mocks.exists.mockReturnValue(false)
+    expect((await readPrivateMemory()).status).toBe('unavailable')
+    mocks.exists.mockReturnValue(true)
+    mocks.list.mockImplementation(() => { throw new Error('secret-path or private-content') })
+    expect(await readPrivateMemory()).toEqual({ status: 'unavailable', records: [] })
+  })
+})

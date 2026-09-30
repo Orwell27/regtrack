@@ -3,6 +3,7 @@ import { join, resolve } from 'node:path'
 import { parseArgs } from 'node:util'
 import { loadEnvConfig } from '@next/env'
 import { KnowledgeVault } from '../lib/knowledge/vault'
+import { backupVault, restoreBackup, verifyBackup } from '../lib/knowledge/backup'
 import { toFtm } from '../lib/knowledge/ftm'
 import { readConfig, secret, type McpEndpoint } from '../lib/integrations/config'
 import { withMcp } from '../lib/integrations/mcp'
@@ -40,6 +41,9 @@ async function main() {
   // reutilizar acuses de otro proyecto que utilice el mismo comando.
   const target = (mcp: McpEndpoint) => 'url' in mcp ? mcp.url : { command: mcp.command, args: mcp.args, env: mcp.env, root: vault.root }
   switch (args[0] ?? 'help') {
+    case 'backup': output(backupVault(vault, required(flags.file, '--file (directorio nuevo de respaldo)'))); break
+    case 'verify-backup': { const m = verifyBackup(required(flags.file, '--file')); output({ status: 'verified', records: m.records, files: m.files.length }); break }
+    case 'restore': output(restoreBackup(required(flags.file, '--file (respaldo)'), required(flags.to, '--to (directorio nuevo)'))); break
     case 'init': vault.init(); output({ vault: vault.root }); break
     case 'status': output({ vault: vault.root, versions: vault.list().length,
       latestRecords: vault.list({ latest: true }).length,
@@ -144,7 +148,7 @@ async function main() {
       writeFileSync(join(directory, 'records.json'), JSON.stringify(records, null, 2))
       output({ records: records.length, directory: resolve(directory), note: 'Exportación de contenido; para respaldo completo copiar el vault con .records y .receipts.' }); break
     }
-    default: output('knowledge: init | status | check-services | ingest --file ficha.json | ingest-report --file scan-report.json | search --query texto [--as-of ISO] | list | weekly --from YYYY-MM-DD --to YYYY-MM-DD | export-ftm --file entities.ftm.jsonl | sync basic-memory|openaleph|graphiti [--limit 20] | search-basic|search-aleph|search-graphiti --query texto | aleph-status | graphiti-episodes | boe BOE-ID [--from fecha --to fecha] [--save] | watches | pull-watch ID | probe basic-memory|mcp-boe|graphiti. Configuración: --config archivo.json. search-aleph admite --synonyms para ampliar nombres. Graphiti exige --allow-model-calls.')
+    default: output('knowledge: init | status | check-services | ingest --file ficha.json | ingest-report --file scan-report.json | search --query texto [--as-of ISO] | list | weekly --from YYYY-MM-DD --to YYYY-MM-DD | backup --file directorio-nuevo | verify-backup --file respaldo | restore --file respaldo --to destino-nuevo | export-ftm --file entities.ftm.jsonl | sync basic-memory|openaleph|graphiti [--limit 20] | search-basic|search-aleph|search-graphiti --query texto | aleph-status | graphiti-episodes | boe BOE-ID [--from fecha --to fecha] [--save] | watches | pull-watch ID | probe basic-memory|mcp-boe|graphiti. Configuración: --config archivo.json. search-aleph admite --synonyms para ampliar nombres. Graphiti exige --allow-model-calls.')
   }
 }
 main().catch(error => { console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1 })

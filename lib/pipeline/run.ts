@@ -13,7 +13,7 @@ import { ScanReport } from './report'
 import { SourceAccessBlockedError } from '../sources/http'
 import { requireSubstantiveText, ReviewRequiredError } from '../analysis/validation'
 import { KnowledgeVault } from '../knowledge/vault'
-import { archiveDocument, archiveReport } from '../knowledge/archive'
+import { archiveAnalysis, archiveDocument, archiveReport } from '../knowledge/archive'
 
 export async function runPipeline(dates: string[], options: { scanOnly?: boolean; historical?: boolean; reportDir?: string } = {}) {
   const report = new ScanReport(dates)
@@ -65,7 +65,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           continue
         }
         item = await hydrateDocument(rawItem)
-        archiveDocument(vault, item, new Date().toISOString())
+        const archivedSource = archiveDocument(vault, item, new Date().toISOString())
         const texto = item.texto ?? ''
 
         // 4. Clasificar con Claude Haiku
@@ -98,6 +98,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           console.error(`[pipeline] Sin análisis de impacto válido, no se guarda: ${item.titulo.slice(0, 60)}`)
           continue
         }
+        archiveAnalysis(vault, archivedSource, impact)
         if (impact.score_relevancia < 4) {
           report.decision(item, 'low_score', `Score ${impact.score_relevancia}: ${impact.resumen}`, impact)
           console.log(`[pipeline] Score bajo (${impact.score_relevancia}): descartado`)

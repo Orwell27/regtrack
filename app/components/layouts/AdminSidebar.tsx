@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, FileCheck, Bell, Users, Settings, LogOut, Layers } from 'lucide-react'
+import { LayoutDashboard, FileCheck, Bell, Users, Settings, LogOut, Layers, BookOpen } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
@@ -19,6 +19,7 @@ const NAV_ITEMS: NavItem[] = [
   { href: '/admin/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/editorial', label: 'Cola editorial', icon: FileCheck },
   { href: '/admin/alertas', label: 'Alertas', icon: Bell },
+  { href: '/admin/memoria', label: 'Memoria', icon: BookOpen },
   { href: '/admin/usuarios', label: 'Usuarios', icon: Users },
   { href: '/admin/config', label: 'Config', icon: Settings },
   { href: '/admin/sectores', label: 'Sectores', icon: Layers },
