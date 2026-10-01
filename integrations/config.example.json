@@ -1,0 +1,17 @@
+{
+  "vault": ".knowledge/vault",
+  "basicMemory": {
+    "project": "regtrack",
+    "mcp": {
+      "command": "uvx",
+      "args": ["--offline", "--python", "3.12", "--prerelease=allow", "--from", "basic-memory==0.23.2", "basic-memory", "mcp", "--project", "regtrack"],
+      "env": { "BASIC_MEMORY_CONFIG_DIR": ".knowledge/basic-memory-config", "BASIC_MEMORY_HOME": ".knowledge/basic-memory-home", "BASIC_MEMORY_SEMANTIC_SEARCH_ENABLED": "false" }
+    }
+  },
+  "mcpBoe": {
+    "mcp": {
+      "command": "uvx",
+      "args": ["--offline", "--python", "3.12", "--with", "mcp==1.30.0", "--from", "https://github.com/ComputingVictor/MCP-BOE/archive/6b0bf48e4ca064dd9e84a0a4fe5112cc948be745.zip", "mcp-boe"]
+    }
+  }
+}

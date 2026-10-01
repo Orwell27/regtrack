@@ -1,20 +1,10 @@
+import { sourceText } from './http'
 import type { NormalizedItem } from './boe'
 
 const BASE = 'https://bon.navarra.es'
 
 export async function fetchBON(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch(`${BASE}/es/ultimo`)
-    if (!res.ok) {
-      console.error(`BON error: ${res.status}`)
-      return []
-    }
-    const html = await res.text()
-    return parseBONHtml(html)
-  } catch (err) {
-    console.error('BON fetch error:', err)
-    return []
-  }
+  return parseBONHtml(await sourceText(`${BASE}/es/ultimo`, 'html'))
 }
 
 export function parseBONHtml(html: string): NormalizedItem[] {

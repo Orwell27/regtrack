@@ -1,0 +1,242 @@
+{
+  "corpusHash": "a9a2647939f208bd378b547adb5b52c0040fccd46a02310200e79bffc786ec30",
+  "runHash": "c888476710bebffc130ce3595acf1c29a94d03dd10647e388343a758e9a6dfe4",
+  "status": "requires_review",
+  "mode": "live",
+  "cohort": "calibration",
+  "scope": "Comprensión del texto original de siete documentos históricos: cuatro relevantes, tres controles negativos y una variante con solo título. Referencias propuestas, pendientes de revisión humana. No evalúa vigencia actual, cobertura de fuentes ni noticias.",
+  "totalCases": 8,
+  "observedCases": 8,
+  "referencesPending": 8,
+  "metrics": {
+    "alertRecall": {
+      "numerator": 4,
+      "denominator": 4,
+      "value": 1
+    },
+    "alertPrecision": {
+      "numerator": 4,
+      "denominator": 5,
+      "value": 0.8
+    },
+    "insufficientTextHandling": {
+      "numerator": 0,
+      "denominator": 1,
+      "value": 0
+    },
+    "factualAccuracy": {
+      "numerator": 16,
+      "denominator": 27,
+      "value": 0.5925925925925926
+    },
+    "factualReviewCoverage": {
+      "numerator": 27,
+      "denominator": 27,
+      "value": 1
+    }
+  },
+  "factualChecks": {
+    "total": 27,
+    "passed": 16,
+    "failed": 11,
+    "pending": 0
+  },
+  "missing": [],
+  "errors": [],
+  "relevantWithoutAlert": [],
+  "falseAlerts": [
+    "borm-2019-6433-title-only"
+  ],
+  "latencyMs": [
+    22221,
+    20340,
+    18969,
+    971,
+    1462,
+    1565,
+    19261,
+    13403
+  ],
+  "actualCost": null,
+  "limits": [
+    "Referencias propuestas por Codex: no equivalen a revisión jurídica independiente.",
+    "Muestra de calibración elegida a propósito; no es una estimación poblacional ni un conjunto reservado.",
+    "Evalúa el texto original publicado, no su vigencia actual.",
+    "El análisis de documentos no acredita cobertura de los escáneres, noticias ni autonomía.",
+    "Sin medición de coste facturado ni autorización automática para publicar."
+  ],
+  "cases": [
+    {
+      "caseId": "BOE-A-2024-26931",
+      "expected": "alert",
+      "actual": "alert",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "fact-1",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-2",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-3",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-4",
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "caseId": "BOE-A-2021-9176",
+      "expected": "alert",
+      "actual": "alert",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "fact-1",
+          "verdict": "fail"
+        },
+        {
+          "id": "fact-2",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-3",
+          "verdict": "fail"
+        },
+        {
+          "id": "fact-4",
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "caseId": "BOE-A-2024-26685",
+      "expected": "alert",
+      "actual": "alert",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "fact-1",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-2",
+          "verdict": "fail"
+        },
+        {
+          "id": "fact-3",
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "caseId": "BOE-A-2024-13325",
+      "expected": "discard",
+      "actual": "discard",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "fact-1",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-2",
+          "verdict": "pass"
+        }
+      ]
+    },
+    {
+      "caseId": "BOE-B-2024-25128",
+      "expected": "discard",
+      "actual": "discard",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "fact-1",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-2",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-3",
+          "verdict": "pass"
+        }
+      ]
+    },
+    {
+      "caseId": "BOE-A-2024-19452",
+      "expected": "discard",
+      "actual": "discard",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "fact-1",
+          "verdict": "pass"
+        },
+        {
+          "id": "fact-2",
+          "verdict": "pass"
+        }
+      ]
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "expected": "alert",
+      "actual": "alert",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "insurance-minimum-per-claim",
+          "verdict": "pass"
+        },
+        {
+          "id": "responsible-declaration-does-not-replace-other-permits",
+          "verdict": "fail"
+        },
+        {
+          "id": "existing-accommodation-six-month-adaptation",
+          "verdict": "fail"
+        },
+        {
+          "id": "transitional-request-ten-days",
+          "verdict": "pass"
+        },
+        {
+          "id": "partial-repeal-only",
+          "verdict": "pass"
+        },
+        {
+          "id": "effective-date-relative-rule",
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "caseId": "borm-2019-6433-title-only",
+      "expected": "needs_review",
+      "actual": "alert",
+      "referenceStatus": "proposed",
+      "checks": [
+        {
+          "id": "potential-relevance-is-not-irrelevance",
+          "verdict": "fail"
+        },
+        {
+          "id": "no-obligations-from-title",
+          "verdict": "fail"
+        },
+        {
+          "id": "approval-date-is-not-effective-date",
+          "verdict": "pass"
+        }
+      ]
+    }
+  ]
+}

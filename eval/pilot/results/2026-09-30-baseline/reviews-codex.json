@@ -1,0 +1,250 @@
+{
+  "assessmentKind": "agent_preliminary_not_human",
+  "corpusHash": "a9a2647939f208bd378b547adb5b52c0040fccd46a02310200e79bffc786ec30",
+  "runHash": "c888476710bebffc130ce3595acf1c29a94d03dd10647e388343a758e9a6dfe4",
+  "reviews": [
+    {
+      "caseId": "BOE-A-2024-26931",
+      "checkId": "fact-1",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "El JSON conserva entrada 2025-01-02 y la prosa distingue efectos 2025-07-01. Se evalúan estas dos fechas literales; la publicación incorrecta se registra aparte.",
+      "outputQuote": "Los efectos prácticos de las obligaciones se activan el 1 de julio de 2025."
+    },
+    {
+      "caseId": "BOE-A-2024-26931",
+      "checkId": "fact-2",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Reconoce ámbito España y condiciona la obligación a corta duración mediante plataformas, coherente con el control de alcance.",
+      "outputQuote": "España"
+    },
+    {
+      "caseId": "BOE-A-2024-26931",
+      "checkId": "fact-3",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Expresa obtención previa del número antes de ofrecer el alojamiento.",
+      "outputQuote": "deberá obtener previamente un número de registro"
+    },
+    {
+      "caseId": "BOE-A-2024-26931",
+      "checkId": "fact-4",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "OMISIÓN: no recoge la inscripción voluntaria para larga duración de la disposición adicional segunda. No afirma que sea obligatoria; el fallo es cobertura de esta comprobación.",
+      "outputQuote": null
+    },
+    {
+      "caseId": "BOE-A-2021-9176",
+      "checkId": "fact-1",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "GENERALIZACIÓN: convierte una obligación sujeta al ámbito y exclusiones del artículo 3 en todos los anuncios sin excepción; tampoco delimita el supuesto de nuevo arrendatario.",
+      "outputQuote": "todos los anuncios de venta o alquiler, sin excepción"
+    },
+    {
+      "caseId": "BOE-A-2021-9176",
+      "checkId": "fact-2",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Distingue duración ordinaria de diez años y cinco para G.",
+      "outputQuote": "Los propietarios de inmuebles con calificación G deben renovar el certificado cada 5 años en lugar de cada 10."
+    },
+    {
+      "caseId": "BOE-A-2021-9176",
+      "checkId": "fact-3",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "ALCANCE/OMISIÓN: no identifica correctamente los supuestos con aplazamiento de doce meses del artículo 3.1.c-f y 16.1; reduce el cierre a exhibición/entrega en edificios públicos y grandes superficies, sin delimitar las obligaciones de obtención de certificado.",
+      "outputQuote": "Todas estas obligaciones de exhibición y entrega de etiqueta en edificios públicos y grandes superficies comerciales deben estar implementadas antes del 3 de junio de 2022"
+    },
+    {
+      "caseId": "BOE-A-2021-9176",
+      "checkId": "fact-4",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "SIN TRAZABILIDAD: acierta la fecha del catálogo, pero esta entrada no contiene publicación ni muestra cómo obtuvo ese dato. Según la referencia congelada, debía conservar la regla relativa y abstenerse de fecha absoluta. No se califica el calendario como incorrecto.",
+      "outputQuote": "2021-06-03"
+    },
+    {
+      "caseId": "BOE-A-2024-26685",
+      "checkId": "fact-1",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Define el mínimo de las tres tasas en lugar de máximo/suma/IPC único.",
+      "outputQuote": "el valor más bajo entre: el IPC general, el IPC subyacente"
+    },
+    {
+      "caseId": "BOE-A-2024-26685",
+      "checkId": "fact-2",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "OMISIÓN MENOR: identifica INE y frecuencia mensual, pero omite los dos decimales exigidos por esta comprobación. No contradice esos dos datos que sí proporciona.",
+      "outputQuote": "El INE publicará mensualmente este índice"
+    },
+    {
+      "caseId": "BOE-A-2024-26685",
+      "checkId": "fact-3",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "GENERALIZACIÓN: la fecha de efectos es correcta, pero aplica el tope a cualquier actualización sin contrastar el régimen temporal del contrato. La referencia exige evitar esa extensión desde este documento aislado.",
+      "outputQuote": "antes de notificar cualquier actualización de renta a un inquilino"
+    },
+    {
+      "caseId": "BOE-A-2024-13325",
+      "checkId": "fact-1",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Descarte por nombramiento sanitario, sin inventar regulación inmobiliaria.",
+      "outputQuote": "Nombramiento de personal sanitario sin impacto en sector inmobiliario, construcción o urbanismo"
+    },
+    {
+      "caseId": "BOE-A-2024-13325",
+      "checkId": "fact-2",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "No realiza análisis de impacto ni traslada Ceuta/plazos de toma de posesión a propietarios. Guardián negativo: no se exige recitar el documento descartado.",
+      "outputQuote": null
+    },
+    {
+      "caseId": "BOE-B-2024-25128",
+      "checkId": "fact-1",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Descarte por beca sin convertirla en ayuda inmobiliaria.",
+      "outputQuote": "Convocatoria de becas de formación en el Museo del Prado sin impacto en sector inmobiliario, construcción, urbanismo o vivienda"
+    },
+    {
+      "caseId": "BOE-B-2024-25128",
+      "checkId": "fact-2",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Descarte sin atribuir 18.000 euros o doce meses a vivienda. Guardián negativo; ausencia de afirmación improcedente.",
+      "outputQuote": null
+    },
+    {
+      "caseId": "BOE-B-2024-25128",
+      "checkId": "fact-3",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "No inventa fecha de cierre de solicitudes; el documento se descarta y no hay análisis de impacto.",
+      "outputQuote": null
+    },
+    {
+      "caseId": "BOE-A-2024-19452",
+      "checkId": "fact-1",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Identifica finalidad docente internacional sin transformar medios en intervención inmobiliaria.",
+      "outputQuote": "Convenio de cooperación internacional para formación de profesorado extranjero en español"
+    },
+    {
+      "caseId": "BOE-A-2024-19452",
+      "checkId": "fact-2",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "No atribuye el final del convenio a obligaciones de propietarios; descarte sin impacto.",
+      "outputQuote": null
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "checkId": "insurance-minimum-per-claim",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "La acción concreta recoge cobertura de 300.000 euros por siniestro y riesgos cubiertos, conforme al control.",
+      "outputQuote": "mínimo 300.000€ por siniestro"
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "checkId": "responsible-declaration-does-not-replace-other-permits",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "OMISIÓN RELEVANTE: no explica que la declaración turística no sustituye otras licencias o autorizaciones. No se afirma que las sustituya expresamente, pero falta este requisito para la acción propuesta.",
+      "outputQuote": null
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "checkId": "existing-accommodation-six-month-adaptation",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "CONTRADICCIÓN DE CAMPO: la prosa menciona seis meses, pero plazo_adaptacion contiene \"20\" y la acción se restringe a VUT sin registro. El texto exige adaptación de las viviendas ya ofertadas al entrar en vigor.",
+      "outputQuote": "Existe un plazo de 6 meses para regularizarse."
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "checkId": "transitional-request-ten-days",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Sitúa diez días desde requerimiento y en alojamientos previamente inscritos conforme al Decreto 75/2005.",
+      "outputQuote": "tienen solo 10 días desde el requerimiento para completar sus datos"
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "checkId": "partial-repeal-only",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Limita derogación al Capítulo V, no al decreto entero.",
+      "outputQuote": "Deroga el Capítulo V del Decreto 75/2005"
+    },
+    {
+      "caseId": "borm-2019-6433-full",
+      "checkId": "effective-date-relative-rule",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "SIN TRAZABILIDAD: devuelve fechas absolutas sin publicación explícita en la entrada ni explicación de origen/cómputo. No se considera falso el día calculado, sino incumplida la exigencia de respaldo y abstención.",
+      "outputQuote": "2019-11-08"
+    },
+    {
+      "caseId": "borm-2019-6433-title-only",
+      "checkId": "potential-relevance-is-not-irrelevance",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "ABSTENCIÓN: reconoce relevancia potencial pero score 4 produce outcome alert; debería conservar el caso como needs_review hasta tener texto. La recomendación de buscarlo no evita que el filtro lo considere alerta.",
+      "outputQuote": "El texto completo no está disponible"
+    },
+    {
+      "caseId": "borm-2019-6433-title-only",
+      "checkId": "no-obligations-from-title",
+      "verdict": "fail",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "SIN RESPALDO: reconoce falta de artículos, pero luego presupone registro exigido y requisitos concretos a verificar; también especula sobre derogación. Se mantienen matices de incertidumbre en la prosa, pero no bastan para justificar esas premisas desde el título.",
+      "outputQuote": "si tu vivienda está registrada en el registro autonómico exigido"
+    },
+    {
+      "caseId": "borm-2019-6433-title-only",
+      "checkId": "approval-date-is-not-effective-date",
+      "verdict": "pass",
+      "reviewer": "Codex (IA; revisión preliminar, no humana)",
+      "reviewedAt": "2026-09-30T12:47:22.348Z",
+      "note": "Deja fecha_entrada_vigor null y declara no poder detallar plazos. No exige conocer esa fecha desde el título. La fecha_publicacion 2019-10-10 errónea se registra como hallazgo adicional, fuera de este control de entrada en vigor.",
+      "outputQuote": null
+    }
+  ]
+}

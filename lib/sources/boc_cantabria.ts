@@ -1,19 +1,9 @@
+import { sourceText } from './http'
 import { XMLParser } from 'fast-xml-parser'
 import type { NormalizedItem } from './boe'
 
 export async function fetchBOC_CANTABRIA(): Promise<NormalizedItem[]> {
-  try {
-    const res = await fetch('https://www.cantabria.es/o/BOC/feed/6802081')
-    if (!res.ok) {
-      console.error(`BOC Cantabria RSS error: ${res.status}`)
-      return []
-    }
-    const xml = await res.text()
-    return parseBOCCantabriaRSS(xml)
-  } catch (err) {
-    console.error('BOC Cantabria fetch error:', err)
-    return []
-  }
+  return parseBOCCantabriaRSS(await sourceText('https://www.cantabria.es/o/BOC/feed/6802081', 'rss'))
 }
 
 export function parseBOCCantabriaRSS(xml: string): NormalizedItem[] {

@@ -2,11 +2,40 @@ name: RegTrack Pipeline
 
 on:
   schedule:
-    - cron: '0 8 * * 1-5'   # 08:00 UTC lunes-viernes
-  workflow_dispatch:           # permite lanzar manualmente
+    - cron: '17 8 * * *'   # Incluye sábados; fuera del pico de la hora en punto.
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Escaneo normal, captura de memoria sin IA o piloto documental aislado'
+        type: choice
+        options: [scan, memory, pilot]
+        default: scan
+      allow_paid_pilot:
+        description: 'Autorizar IA de pago para los ocho casos del piloto (sin BD ni alertas)'
+        type: boolean
+        default: false
+      from:
+        description: 'Recuperación BOE/BORM: desde YYYY-MM-DD (máximo 31 días)'
+        type: string
+      to:
+        description: 'Recuperación BOE/BORM: hasta YYYY-MM-DD'
+        type: string
+      scan_only:
+        description: 'Solo comprobar fuentes, sin IA ni base de datos'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: regtrack-${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'pilot' && 'pilot' || 'pipeline' }}
+  cancel-in-progress: false
 
 jobs:
   pipeline:
+    if: github.event_name != 'workflow_dispatch' || inputs.mode != 'pilot'
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -21,9 +50,78 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run pipeline
-        run: npx tsx actions/pipeline.ts
+      - name: Check schedule continuity
+        continue-on-error: true # Una caída de la API de GitHub no impide recoger las fuentes.
+        run: npx tsx actions/check-schedule.ts --warn-only
         env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Run pipeline
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "$SCAN_FROM" || -n "$SCAN_TO" ]]; then
+            args+=(--from "$SCAN_FROM" --to "$SCAN_TO")
+          fi
+          if [[ "$SCAN_ONLY" == "true" ]]; then args+=(--scan-only); fi
+          if [[ "$SCAN_MODE" == "memory" ]]; then
+            if [[ "$SCAN_ONLY" == "true" || "$REGTRACK_MEMORY_SYNC" != "1" ]]; then
+              echo 'Captura detenida: requiere sincronización privada activa y scan_only=false.'
+              exit 1
+            fi
+            args+=(--memory-only)
+          fi
+          npx tsx actions/pipeline.ts "${args[@]}"
+        env:
+          SCAN_FROM: ${{ inputs.from }}
+          SCAN_TO: ${{ inputs.to }}
+          SCAN_ONLY: ${{ inputs.scan_only }}
+          SCAN_MODE: ${{ inputs.mode }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          ANTHROPIC_API_KEY: ${{ inputs.mode != 'memory' && secrets.ANTHROPIC_API_KEY || '' }}
+          REGTRACK_MEMORY_SYNC: ${{ vars.REGTRACK_MEMORY_SYNC }}
+          REGTRACK_KNOWLEDGE_DIR: ${{ vars.REGTRACK_MEMORY_SYNC == '1' && '.knowledge/vault' || '' }}
+
+      - name: Preserve scan evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vigilancia-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/
+          retention-days: 30
+          if-no-files-found: error
+
+  pilot:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'pilot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Require explicit paid pilot authorization
+        env:
+          ALLOW_PAID_PILOT: ${{ inputs.allow_paid_pilot }}
+        run: |
+          if [[ "$ALLOW_PAID_PILOT" != "true" ]]; then
+            echo 'Piloto detenido: falta autorización explícita de IA de pago.'
+            exit 1
+          fi
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - name: Run eight pinned cases without database or publishing
+        run: npm run pilot -- --live --allow-paid-api --max-cases 8
+        env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Preserve pilot evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: piloto-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/pilot/
+          retention-days: 30
+          if-no-files-found: warn

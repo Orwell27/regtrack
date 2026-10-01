@@ -1,0 +1,463 @@
+{
+  "version": "regtrack-pilot-1",
+  "scope": "Comprensión del texto original de siete documentos históricos: cuatro relevantes, tres controles negativos y una variante con solo título. Referencias propuestas, pendientes de revisión humana. No evalúa vigencia actual, cobertura de fuentes ni noticias.",
+  "cases": [
+    {
+      "id": "BOE-A-2024-26931",
+      "title": "Real Decreto 1312/2024, de 23 de diciembre, por el que se regula el procedimiento de Registro Único de Arrendamientos y se crea la Ventanilla Única Digital de Arrendamientos para la recogida y el intercambio de datos relativos a los servicios de alquiler de alojamientos de corta duración.",
+      "source": "BOE",
+      "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26931",
+      "publicationDate": "2024-12-24",
+      "retrievedAt": "2026-09-30T12:13:08.281Z",
+      "textPath": "eval/pilot/sources/BOE-A-2024-26931.txt",
+      "sha256": "3eb2873825f8e7e0f8b8d3bb0d8c6748701ffee22736b57c0fb5563ac55e1da6",
+      "inputKind": "full_text",
+      "cohort": "calibration",
+      "expectedOutcome": "alert",
+      "reason": "El texto original regula el registro de arrendamientos de corta duración, obligaciones de arrendadores y plataformas y documentación inmobiliaria. Encaja directamente en arrendamiento y registro/notaría.",
+      "provenance": {
+        "xmlUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-26931",
+        "officialPdfUrl": "https://www.boe.es/boe/dias/2024/12/24/pdfs/BOE-A-2024-26931.pdf",
+        "documentVersion": "original_publication",
+        "extraction": "fetchBOEText: XML oficial; nodo documento/texto; orden conservado; entidades XML decodificadas; espacios consecutivos normalizados; sin recorte; UTF-8 sin BOM ni salto de línea final.",
+        "extractorPath": "lib/sources/boe.ts",
+        "extractorSha256": "9ab5bf09ee8d42a34207f31aeb29d91aec3ef316f5a48e540e5158d9248ac6c3",
+        "sourceSection": "1",
+        "currentScannerIncludesSection": true,
+        "ingestionScopeNote": "Caso de análisis de documento. La presencia en este corpus no prueba descubrimiento por el escáner; las secciones II y V están fuera del filtro BOE actual.",
+        "labelAuthor": "Codex",
+        "legalScope": "Comprensión del texto original en la fecha de publicación. No se ha verificado vigencia actual, aplicación a un caso concreto ni modificaciones, anulaciones o derogaciones posteriores.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio."
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "fact-1",
+          "question": "¿Distingue entrada en vigor y efectos?",
+          "expectedAnswer": "Distinguir entrada en vigor (2025-01-02) de despliegue de efectos (2025-07-01), ambas literales en la redacción publicada. No confundirlas con la fecha de aprobación 2024-12-23. La fecha de publicación del catálogo no se entrega al modelo y no se exige que la conozca.",
+          "locator": "Disposición final cuarta, párrafo primero",
+          "quote": "entrará en vigor el día 2 de enero de 2025, desplegando efectos sus disposiciones el 1 de julio de 2025"
+        },
+        {
+          "id": "fact-2",
+          "question": "¿Qué territorio y qué arrendamientos abarca?",
+          "expectedAnswer": "La redacción original prevé ámbito estatal; Murcia no queda excluida. El alcance material sigue condicionado por el artículo 3, no comprende cualquier alquiler.",
+          "locator": "Artículo 3.1, segundo párrafo",
+          "quote": "El ámbito geográfico de aplicación de esta norma será todo el territorio nacional."
+        },
+        {
+          "id": "fact-3",
+          "question": "¿Cuándo debe obtenerse el número de registro?",
+          "expectedAnswer": "Las personas arrendadoras incluidas deben obtener el número antes de ofrecer los servicios mediante plataformas en línea, según el texto original; no describirlo como inscripción posterior a la oferta.",
+          "locator": "Artículo 5.a",
+          "quote": "Obtener previamente el número de registro definido en el artículo 2.i)"
+        },
+        {
+          "id": "fact-4",
+          "question": "¿La extensión al alquiler de larga duración es obligatoria?",
+          "expectedAnswer": "La solicitud de número para el alquiler de larga duración del artículo 2 de la LAU se presenta como voluntaria; no convertir en obligación general la extensión de esta disposición.",
+          "locator": "Disposición adicional segunda, primer párrafo",
+          "quote": "Con carácter voluntario, la persona titular de un derecho real"
+        }
+      ]
+    },
+    {
+      "id": "BOE-A-2021-9176",
+      "title": "Real Decreto 390/2021, de 1 de junio, por el que se aprueba el procedimiento básico para la certificación de la eficiencia energética de los edificios.",
+      "source": "BOE",
+      "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-9176",
+      "publicationDate": "2021-06-02",
+      "retrievedAt": "2026-09-30T12:13:08.517Z",
+      "textPath": "eval/pilot/sources/BOE-A-2021-9176.txt",
+      "sha256": "9cac446a034c674d0385680d8b8ea033dab4b37f37e8374a4365af7a36830ba6",
+      "inputKind": "full_text",
+      "cohort": "calibration",
+      "expectedOutcome": "alert",
+      "reason": "El procedimiento de certificación energética regula edificios, venta y nuevos arrendamientos, responsabilidad de propietarios y duración de certificados. Encaja directamente en rehabilitación/eficiencia energética.",
+      "provenance": {
+        "xmlUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2021-9176",
+        "officialPdfUrl": "https://www.boe.es/boe/dias/2021/06/02/pdfs/BOE-A-2021-9176.pdf",
+        "documentVersion": "original_publication",
+        "extraction": "fetchBOEText: XML oficial; nodo documento/texto; orden conservado; entidades XML decodificadas; espacios consecutivos normalizados; sin recorte; UTF-8 sin BOM ni salto de línea final.",
+        "extractorPath": "lib/sources/boe.ts",
+        "extractorSha256": "9ab5bf09ee8d42a34207f31aeb29d91aec3ef316f5a48e540e5158d9248ac6c3",
+        "sourceSection": "1",
+        "currentScannerIncludesSection": true,
+        "ingestionScopeNote": "Caso de análisis de documento. La presencia en este corpus no prueba descubrimiento por el escáner; las secciones II y V están fuera del filtro BOE actual.",
+        "labelAuthor": "Codex",
+        "legalScope": "Comprensión del texto original en la fecha de publicación. No se ha verificado vigencia actual, aplicación a un caso concreto ni modificaciones, anulaciones o derogaciones posteriores.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio."
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "fact-1",
+          "question": "¿Qué ventas o alquileres incluye este supuesto?",
+          "expectedAnswer": "La venta o alquiler a un nuevo arrendatario de edificios existentes figura en el ámbito de aplicación, con las exclusiones del propio artículo; no afirmar que cualquier renovación del mismo contrato sea este supuesto.",
+          "locator": "Artículo 3.1.b",
+          "quote": "Edificios o partes de edificios existentes que se vendan o alquilen a un nuevo arrendatario."
+        },
+        {
+          "id": "fact-2",
+          "question": "¿Cuánto dura el certificado y qué cambia con calificación G?",
+          "expectedAnswer": "Distinguir máximo general de diez años de máximo de cinco para calificación G; no confundir esa duración del certificado con entrada en vigor o con plazo inicial de cumplimiento.",
+          "locator": "Artículo 13.1",
+          "quote": "una validez máxima de diez años, excepto cuando la calificación energética sea G, cuya validez máxima será de cinco años."
+        },
+        {
+          "id": "fact-3",
+          "question": "¿A qué obligaciones se aplica el plazo de doce meses?",
+          "expectedAnswer": "La disposición da ese plazo a las obligaciones referidas a los artículos 3.1.c), d), e), f) y 16.1. No decir que toda la norma entraba en vigor doce meses después ni extender ese aplazamiento indiscriminadamente a las ventas/alquileres del apartado b).",
+          "locator": "Disposición final tercera",
+          "quote": "deben cumplirse antes de doce meses desde la entrada en vigor de este real decreto."
+        },
+        {
+          "id": "fact-4",
+          "question": "¿Cómo obtiene la fecha de entrada en vigor?",
+          "expectedAnswer": "La regla literal es entrada en vigor al día siguiente de la publicación. Esta entrada no entrega al modelo la fecha de publicación: debe reconocer la regla y mantener desconocida la fecha absoluta en vez de inferirla de la fecha de aprobación. El revisor dispone del metadato 2021-06-02 y podría derivar 2021-06-03, pero no debe exigirlo al modelo ni premiar una fecha sin evidencia en su entrada.",
+          "locator": "Disposición final octava y fecha de publicación del BOE",
+          "quote": "entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado»."
+        }
+      ]
+    },
+    {
+      "id": "BOE-A-2024-26685",
+      "title": "Resolución de 18 de diciembre de 2024, de la Presidencia del Instituto Nacional de Estadística, por la que se define el índice de referencia para la actualización anual de los contratos de arrendamiento de vivienda.",
+      "source": "BOE",
+      "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26685",
+      "publicationDate": "2024-12-20",
+      "retrievedAt": "2026-09-30T12:13:08.615Z",
+      "textPath": "eval/pilot/sources/BOE-A-2024-26685.txt",
+      "sha256": "463daa833fe92df5e595353b76eab200bdda79699aa847bb94873978fcdf5e88",
+      "inputKind": "full_text",
+      "cohort": "calibration",
+      "expectedOutcome": "alert",
+      "reason": "Define el índice de referencia para la actualización anual de arrendamientos de vivienda y su publicación. Los índices de alquiler están expresamente incluidos en el clasificador.",
+      "provenance": {
+        "xmlUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-26685",
+        "officialPdfUrl": "https://www.boe.es/boe/dias/2024/12/20/pdfs/BOE-A-2024-26685.pdf",
+        "documentVersion": "original_publication",
+        "extraction": "fetchBOEText: XML oficial; nodo documento/texto; orden conservado; entidades XML decodificadas; espacios consecutivos normalizados; sin recorte; UTF-8 sin BOM ni salto de línea final.",
+        "extractorPath": "lib/sources/boe.ts",
+        "extractorSha256": "9ab5bf09ee8d42a34207f31aeb29d91aec3ef316f5a48e540e5158d9248ac6c3",
+        "sourceSection": "3",
+        "currentScannerIncludesSection": true,
+        "ingestionScopeNote": "Caso de análisis de documento. La presencia en este corpus no prueba descubrimiento por el escáner; las secciones II y V están fuera del filtro BOE actual.",
+        "labelAuthor": "Codex",
+        "legalScope": "Comprensión del texto original en la fecha de publicación. No se ha verificado vigencia actual, aplicación a un caso concreto ni modificaciones, anulaciones o derogaciones posteriores.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio."
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "fact-1",
+          "question": "¿Cómo se define el índice?",
+          "expectedAnswer": "El índice es el mínimo de tres tasas: IPC anual, IPC subyacente anual y tasa anual media ajustada del anexo. No es el máximo, la suma, ni solo el IPC.",
+          "locator": "Primero. Definición",
+          "quote": "será el mínimo valor entre la tasa de variación anual del Índice de Precios de Consumo"
+        },
+        {
+          "id": "fact-2",
+          "question": "¿Quién lo publica y con qué frecuencia?",
+          "expectedAnswer": "Publicación mensual a cargo del INE con dos decimales y últimos datos mensuales disponibles; no publicación anual ni cálculo específico para cada municipio.",
+          "locator": "Segundo. Publicación",
+          "quote": "publicará mensualmente el índice de referencia definido en la cláusula anterior, expresado con dos decimales"
+        },
+        {
+          "id": "fact-3",
+          "question": "¿Distingue efectos, firma y publicación?",
+          "expectedAnswer": "El texto habla de efectos desde 2025-01-01; no confundirlos con la firma 2024-12-18 ni afirmar a partir de esta cláusula que rige para todo contrato sin revisar su régimen temporal. La fecha de publicación no figura en esta entrada: mantenerla desconocida es correcto.",
+          "locator": "Tercero. Efectos",
+          "quote": "La presente resolución surtirá efectos a partir del 1 de enero de 2025."
+        }
+      ]
+    },
+    {
+      "id": "BOE-A-2024-13325",
+      "title": "Resolución de 24 de junio de 2024, del Instituto Nacional de Gestión Sanitaria, por la que se nombra personal estatutario fijo en plaza de la categoría de Titulado Especialista en Ciencias de la Salud: Alergología.",
+      "source": "BOE",
+      "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-13325",
+      "publicationDate": "2024-07-02",
+      "retrievedAt": "2026-09-30T12:13:08.721Z",
+      "textPath": "eval/pilot/sources/BOE-A-2024-13325.txt",
+      "sha256": "3a1bb661fd56173bc370d78444c24ab7b6d5ac7d8fea7d69ed2ce5a7dd3cdbb7",
+      "inputKind": "full_text",
+      "cohort": "calibration",
+      "expectedOutcome": "discard",
+      "reason": "Nombramiento individual de personal sanitario de Alergología con destino en Ceuta. No regula vivienda, suelo, edificación ni un organismo de vivienda/catastro/urbanismo; cae en la exclusión expresa de nombramientos.",
+      "provenance": {
+        "xmlUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-13325",
+        "officialPdfUrl": "https://www.boe.es/boe/dias/2024/07/02/pdfs/BOE-A-2024-13325.pdf",
+        "documentVersion": "original_publication",
+        "extraction": "fetchBOEText: XML oficial; nodo documento/texto; orden conservado; entidades XML decodificadas; espacios consecutivos normalizados; sin recorte; UTF-8 sin BOM ni salto de línea final.",
+        "extractorPath": "lib/sources/boe.ts",
+        "extractorSha256": "9ab5bf09ee8d42a34207f31aeb29d91aec3ef316f5a48e540e5158d9248ac6c3",
+        "sourceSection": "2",
+        "currentScannerIncludesSection": false,
+        "ingestionScopeNote": "Caso de análisis de documento. La presencia en este corpus no prueba descubrimiento por el escáner; las secciones II y V están fuera del filtro BOE actual.",
+        "labelAuthor": "Codex",
+        "legalScope": "Comprensión del texto original en la fecha de publicación. No se ha verificado vigencia actual, aplicación a un caso concreto ni modificaciones, anulaciones o derogaciones posteriores.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio."
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "fact-1",
+          "question": "¿Identifica el nombramiento sin inventar regulación inmobiliaria?",
+          "expectedAnswer": "Se nombra personal sanitario; mencionar un hospital como destino no equivale a regular construcción, licencias o propiedad de un hospital.",
+          "locator": "Primero",
+          "quote": "personal estatutario fijo de la categoría de Titulado Especialista en Ciencias de la Salud: Alergología"
+        },
+        {
+          "id": "fact-2",
+          "question": "¿Evita trasladar el destino o los plazos del nombramiento a propietarios?",
+          "expectedAnswer": "Ceuta es el destino administrativo citado. No atribuir efectos inmobiliarios a Murcia ni convertir el plazo de toma de posesión en plazo para propietarios.",
+          "locator": "Segundo",
+          "quote": "La toma de posesión se llevará a efecto en la Dirección Gerencia del Área Sanitaria de Ceuta."
+        }
+      ]
+    },
+    {
+      "id": "BOE-B-2024-25128",
+      "title": "Resolución del Museo Nacional del Prado, por la que se convoca 1 beca Fundación María Cristina Masaveu Peterson - Museo del Prado de formación, investigación y capacitación técnica de especialistas en desarrollo digital.",
+      "source": "BOE",
+      "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2024-25128",
+      "publicationDate": "2024-07-04",
+      "retrievedAt": "2026-09-30T12:13:08.836Z",
+      "textPath": "eval/pilot/sources/BOE-B-2024-25128.txt",
+      "sha256": "6f6f486fbdca2834723adc45359212fc0cd87b75dddf79c65e888d9463254eb0",
+      "inputKind": "full_text",
+      "cohort": "calibration",
+      "expectedOutcome": "discard",
+      "reason": "Extracto de una beca de formación y capacitación del Museo del Prado en desarrollo digital. No concede ayuda inmobiliaria ni regula rehabilitación de edificios; restauración figura como disciplina del museo.",
+      "provenance": {
+        "xmlUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-B-2024-25128",
+        "officialPdfUrl": "https://www.boe.es/boe/dias/2024/07/04/pdfs/BOE-B-2024-25128.pdf",
+        "documentVersion": "original_publication",
+        "extraction": "fetchBOEText: XML oficial; nodo documento/texto; orden conservado; entidades XML decodificadas; espacios consecutivos normalizados; sin recorte; UTF-8 sin BOM ni salto de línea final.",
+        "extractorPath": "lib/sources/boe.ts",
+        "extractorSha256": "9ab5bf09ee8d42a34207f31aeb29d91aec3ef316f5a48e540e5158d9248ac6c3",
+        "sourceSection": "5",
+        "currentScannerIncludesSection": false,
+        "ingestionScopeNote": "Caso de análisis de documento. La presencia en este corpus no prueba descubrimiento por el escáner; las secciones II y V están fuera del filtro BOE actual.",
+        "labelAuthor": "Codex",
+        "legalScope": "Comprensión del texto original en la fecha de publicación. No se ha verificado vigencia actual, aplicación a un caso concreto ni modificaciones, anulaciones o derogaciones posteriores.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio.",
+        "completenessNote": "Se conserva completo el documento publicado en el BOE. Este documento es, él mismo, un extracto de convocatoria; no se afirma haber descargado las bases completas de la BDNS."
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "fact-1",
+          "question": "¿Evita presentar la beca como ayuda inmobiliaria?",
+          "expectedAnswer": "El objeto es una beca de formación del Museo del Prado, no financiación para rehabilitación o adquisición de inmuebles.",
+          "locator": "Segundo. Objeto",
+          "quote": "la convocatoria de una beca de formación, investigación y capacitación técnica de especialistas"
+        },
+        {
+          "id": "fact-2",
+          "question": "¿Evita atribuir la cuantía y duración a una ayuda de vivienda?",
+          "expectedAnswer": "Doce meses y 18.000 euros se refieren a la beca; no son una duración de contrato de alquiler ni una ayuda de vivienda.",
+          "locator": "Cuarto. Cuantía y duración",
+          "quote": "Las becas tendrán una duración de doce meses (12) consecutivos. La cuantía de las becas se fija en 18.000€"
+        },
+        {
+          "id": "fact-3",
+          "question": "¿Evita inventar una fecha límite sin calendario?",
+          "expectedAnswer": "El plazo de solicitudes se expresa en días hábiles desde el día siguiente de publicación. No inventar una fecha final: la entrada no contiene la fecha de publicación ni el calendario de días inhábiles necesario para calcularla.",
+          "locator": "Quinto. Plazo de presentación de solicitudes",
+          "quote": "quince días hábiles (15) a contar desde el día siguiente de la publicación del extracto"
+        }
+      ]
+    },
+    {
+      "id": "BOE-A-2024-19452",
+      "title": "Resolución de 22 de septiembre de 2024, de la Subsecretaría, por la que se publica el Convenio entre el Ministerio de Educación, Formación Profesional y Deportes y el Instituto Cervantes, para la realización de cursos de formación de español dirigidos a profesorado de otras lenguas extranjeras, de lengua filipina, lengua polaca y de asignaturas no lingüísticas de Filipinas y Polonia, 2024.",
+      "source": "BOE",
+      "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-19452",
+      "publicationDate": "2024-09-27",
+      "retrievedAt": "2026-09-30T12:13:08.972Z",
+      "textPath": "eval/pilot/sources/BOE-A-2024-19452.txt",
+      "sha256": "19b71fe5b7a8f4b8be7774aa60e6adedc0e433b6d625031a5f8b64c32cc72b04",
+      "inputKind": "full_text",
+      "cohort": "calibration",
+      "expectedOutcome": "discard",
+      "reason": "Convenio para cursos de español de profesores de Filipinas y Polonia. Las menciones a instalaciones y equipamientos describen medios para docencia y su presupuesto, sin cambio de derechos, obras, vivienda o suelo. Es un negativo de la sección III que sí recorre el escáner actual.",
+      "provenance": {
+        "xmlUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-19452",
+        "officialPdfUrl": "https://www.boe.es/boe/dias/2024/09/27/pdfs/BOE-A-2024-19452.pdf",
+        "documentVersion": "original_publication",
+        "extraction": "fetchBOEText: XML oficial; nodo documento/texto; orden conservado; entidades XML decodificadas; espacios consecutivos normalizados; sin recorte; UTF-8 sin BOM ni salto de línea final.",
+        "extractorPath": "lib/sources/boe.ts",
+        "extractorSha256": "9ab5bf09ee8d42a34207f31aeb29d91aec3ef316f5a48e540e5158d9248ac6c3",
+        "sourceSection": "3",
+        "currentScannerIncludesSection": true,
+        "ingestionScopeNote": "Caso de análisis de documento. La presencia en este corpus no prueba descubrimiento por el escáner; las secciones II y V están fuera del filtro BOE actual.",
+        "labelAuthor": "Codex",
+        "legalScope": "Comprensión del texto original en la fecha de publicación. No se ha verificado vigencia actual, aplicación a un caso concreto ni modificaciones, anulaciones o derogaciones posteriores.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio."
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "fact-1",
+          "question": "¿Evita confundir medios docentes con actuación urbanística?",
+          "expectedAnswer": "Convenio de cursos de idiomas de 2024; no interpretar las partidas de instalaciones como una actuación urbanística o inmobiliaria.",
+          "locator": "Cláusula primera. Objeto del convenio",
+          "quote": "la organización y desarrollo de los cursos de formación de español que se llevarán a cabo durante el año 2024"
+        },
+        {
+          "id": "fact-2",
+          "question": "¿Evita atribuir a propietarios el plazo del convenio?",
+          "expectedAnswer": "El documento original establece ese final de vigencia del convenio; esta comprobación no atribuye obligación alguna a propietarios ni acredita el estado jurídico actual.",
+          "locator": "Cláusula sexta. Vigencia y eficacia",
+          "quote": "finalizando su vigencia el 26 de febrero de 2025."
+        }
+      ]
+    },
+    {
+      "id": "borm-2019-6433-full",
+      "title": "Decreto n.º 256/2019, de 10 de octubre, por el que se regulan las viviendas de uso turístico en la Región de Murcia.",
+      "source": "BORM",
+      "sourceUrl": "https://www.borm.es/services/anuncio/780550/txt",
+      "publicationDate": "2019-10-19",
+      "retrievedAt": "2026-09-30",
+      "textPath": "tests/fixtures/borm-2019-6433.txt",
+      "sha256": "73b0735f278b5a89d86f4c1311f56488681391941d635faedb3a969bc2f3d5ba",
+      "inputKind": "full_text",
+      "cohort": "calibration",
+      "expectedOutcome": "alert",
+      "reason": "Regula la explotación de viviendas de uso turístico en Murcia, tanto completas como por habitaciones. Afecta directamente a propietarios y gestores de estos alojamientos. La ficha evalúa el texto publicado en 2019; no se ha comprobado legislación posterior ni vigencia actual.",
+      "provenance": {
+        "labelAuthor": "Codex",
+        "legalScope": "Texto original publicado. No se ha comprobado vigencia actual ni legislación posterior.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio.",
+        "provenancePath": "tests/fixtures/borm-2019-6433.source.md",
+        "retrievedAtPrecision": "day"
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "insurance-minimum-per-claim",
+          "question": "¿Qué seguro exige, a quién y con qué cobertura?",
+          "expectedAnswer": "Según este texto, el titular de la explotación debe mantener durante la actividad un seguro de responsabilidad civil con cobertura mínima de 300.000 euros por siniestro. No describir esa cifra como una tasa, una sanción o un límite anual.",
+          "locator": "Artículo 8. Seguro de responsabilidad civil; línea 93 del fixture",
+          "quote": "la cuantía mínima de cobertura será de trescientos mil euros por siniestro"
+        },
+        {
+          "id": "responsible-declaration-does-not-replace-other-permits",
+          "question": "¿La declaración responsable sustituye otros permisos?",
+          "expectedAnswer": "La presentación completa de la declaración responsable permite ejercer la actividad turística en los términos de este artículo, pero mantiene la obligación de cumplir otras normas y obtener los títulos exigibles por otros organismos. No equiparar publicación del decreto, publicidad del alojamiento, anuncio o noticia con autorización para explotar una vivienda concreta.",
+          "locator": "Artículo 28.3; línea 184 del fixture",
+          "quote": "estar en posesión de otras licencias, autorizaciones u otros títulos de intervención que sean exigidos por otros Organismos"
+        },
+        {
+          "id": "existing-accommodation-six-month-adaptation",
+          "question": "¿A quién se aplica el plazo de adaptación de seis meses?",
+          "expectedAnswer": "El plazo de adaptación de seis meses se dirige a las viviendas que ya ofertaban esta modalidad de alojamiento al entrar en vigor la norma. Distinguirlo de los veinte días entre publicación completa y entrada en vigor. No presentarlo como un plazo nuevo contado desde la fecha actual o desde la descarga.",
+          "locator": "Disposición adicional primera; líneas 195-196 del fixture",
+          "quote": "deberán adaptarse a sus prescripciones en el plazo de 6 meses"
+        },
+        {
+          "id": "transitional-request-ten-days",
+          "question": "¿A quién se requiere información en diez días y desde cuándo?",
+          "expectedAnswer": "El plazo máximo de diez días corresponde al requerimiento de datos de alojamientos vacacionales previamente clasificados conforme al Decreto 75/2005. No aplicarlo a todos los propietarios ni situar su inicio automáticamente en la publicación. El segundo párrafo establece un plazo distinto de seis meses desde la entrada en vigor para realizar los requerimientos.",
+          "locator": "Disposición transitoria única, primer párrafo; línea 200 del fixture",
+          "quote": "se requerirá a los titulares de los alojamientos para que, en un plazo máximo de 10 días presenten el resto de los datos"
+        },
+        {
+          "id": "partial-repeal-only",
+          "question": "¿Se deroga todo el decreto anterior o solo una parte?",
+          "expectedAnswer": "La derogación expresamente indicada afecta al Capítulo V del Decreto 75/2005, al entrar en vigor este decreto. No afirmar que deroga íntegramente el Decreto 75/2005 ni inferir que cualquier norma citada queda derogada o modificada.",
+          "locator": "Disposición derogatoria única; líneas 202-203 del fixture",
+          "quote": "quedará derogado el Capítulo V del Decreto 75/2005"
+        },
+        {
+          "id": "effective-date-relative-rule",
+          "question": "¿Distingue aprobación, publicación, descarga y entrada en vigor?",
+          "expectedAnswer": "La regla literal es veinte días desde la completa publicación. Distinguirla de la aprobación 2019-10-10. La fecha de publicación del catálogo no se entrega al modelo ni figura explícitamente en el texto: mantener desconocida la fecha absoluta es correcto. No exigir descodificar el identificador A-191019-6433 ni premiar una fecha calculada con conocimiento externo sin evidencia. No atribuir vigencia actual.",
+          "locator": "Disposición final primera. Entrada en vigor; líneas 204-205 del fixture",
+          "quote": "entrará en vigor a los veinte días de su completa publicación"
+        }
+      ]
+    },
+    {
+      "id": "borm-2019-6433-title-only",
+      "title": "Decreto n.º 256/2019, de 10 de octubre, por el que se regulan las viviendas de uso turístico en la Región de Murcia.",
+      "source": "BORM",
+      "sourceUrl": "https://www.borm.es/services/anuncio/780550/txt",
+      "publicationDate": "2019-10-19",
+      "retrievedAt": "2026-09-30",
+      "textPath": "eval/pilot/sources/borm-2019-6433-summary.txt",
+      "sha256": "797d401f529bd72529a939d86393113abfbf58f6e5a51a6c8202125a398615bd",
+      "inputKind": "summary_only",
+      "cohort": "calibration",
+      "expectedOutcome": "needs_review",
+      "reason": "El título indica posible relevancia inmobiliaria, pero no permite verificar obligaciones, excepciones ni fechas de efecto. Debe solicitarse el texto íntegro o revisión y conservarse como pendiente; no etiquetarlo como irrelevante ni ocultarlo mediante una puntuación baja.",
+      "provenance": {
+        "labelAuthor": "Codex",
+        "legalScope": "Texto original publicado. No se ha comprobado vigencia actual ni legislación posterior.",
+        "textNormalization": "UTF-8, CRLF normalizado a LF; sin otro cambio.",
+        "provenancePath": "tests/fixtures/borm-2019-6433.source.md",
+        "retrievedAtPrecision": "day",
+        "derivation": "Caso de degradación sintético. Se copia exclusivamente el título del anuncio 6433 de tests/fixtures/borm-2019-6433.txt, sin el número de anuncio ni el articulado. El título se conserva literalmente. No es un nuevo documento descargado ni una noticia. retrievedAt corresponde al fixture original; no se registró hora de descarga."
+      },
+      "reference": {
+        "status": "proposed",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "checks": [
+        {
+          "id": "potential-relevance-is-not-irrelevance",
+          "question": "¿Conserva el caso pendiente de texto o revisión?",
+          "expectedAnswer": "Identificar una materia potencialmente relevante y alcance Murcia. Abstenerse del análisis sustantivo y mantener el caso pendiente de texto o revisión. Una decisión relevante:false por ausencia de contenido constituye fallo.",
+          "locator": "Título; línea 1 del texto derivado",
+          "quote": "se regulan las viviendas de uso turístico en la Región de Murcia"
+        },
+        {
+          "id": "no-obligations-from-title",
+          "question": "¿Reconoce la falta de artículos sin inventar obligaciones?",
+          "expectedAnswer": "Declarar que faltan los artículos. No inventar cifras de seguro, trámites, plazos, derogaciones ni afirmar autorización de una actividad concreta, aunque el modelo recuerde el texto completo de otra consulta.",
+          "locator": "Único contenido disponible: título; línea 1 del texto derivado",
+          "quote": "Decreto n.º 256/2019"
+        },
+        {
+          "id": "approval-date-is-not-effective-date",
+          "question": "¿Mantiene desconocida la entrada en vigor?",
+          "expectedAnswer": "La fecha de la disposición en el título no prueba su entrada en vigor. El metadato de publicación no se entrega al modelo y el título no suministra la regla de entrada en vigor. Mantenerla desconocida y no atribuir vigencia actual al documento.",
+          "locator": "Fecha incluida en el título; línea 1 del texto derivado",
+          "quote": "de 10 de octubre"
+        }
+      ]
+    }
+  ]
+}

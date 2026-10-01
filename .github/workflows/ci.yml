@@ -1,0 +1,79 @@
+name: RegTrack Tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  memory-database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/check-memory-db.sh
+  local-services-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test integrations/local/check.mjs
+      - run: node integrations/local/prepare.mjs artifacts/local-services-config
+      - run: docker compose --env-file artifacts/local-services-config/.env -f artifacts/local-services-config/compose.openaleph.json --profile '*' config --quiet
+      - run: docker compose -f artifacts/local-services-config/compose.graphiti.json config --quiet
+      - run: bash -n integrations/local/install-docker.sh && bash -n integrations/local/start-openaleph.sh
+      - run: python3 -m py_compile integrations/local/forward.py integrations/local/bootstrap-user.py integrations/local/check-analyzers.py
+  changedetection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install uv==0.11.6
+      - run: npm ci
+      - run: uvx --python 3.12 --prerelease=allow --from changedetection.io==0.60.8 python -c "import changedetectionio"
+      - run: npm run knowledge:check-changedetection
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: changedetection-smoke-result
+          path: artifacts/changedetection-smoke/*/result.json
+          # Datastore and logs may contain service-generated credentials. Never upload them.
+          if-no-files-found: warn
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npx tsc --noEmit
+  followthemoney:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y libicu-dev pkg-config
+      - run: python -m pip install uv==0.11.6
+      - run: npm ci
+      - run: npm run knowledge -- ingest --file integrations/examples/noticia.json --vault artifacts/knowledge-ci
+      - run: npm run knowledge -- export-ftm --vault artifacts/knowledge-ci --file artifacts/entities.ftm.jsonl
+      - run: npm run knowledge:validate-ftm -- artifacts/entities.ftm.jsonl
+      - run: uv run --python 3.12 integrations/followthemoney/check.py

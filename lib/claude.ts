@@ -1,7 +1,17 @@
 import Anthropic, { APIError } from '@anthropic-ai/sdk'
 import { readFileSync } from 'fs'
 import { join } from 'path'
-import type { Subtema, Ambito, Urgencia, TipoNorma } from './supabase'
+import type { Subtema, Ambito } from './supabase'
+import { MAX_DOCUMENT_CHARS } from './sources/http'
+import { AnalysisError, ReviewRequiredError, requireSubstantiveText, normalizeImpact, type AnalysisContext, type ImpactResult } from './analysis/validation'
+
+export { AnalysisError } from './analysis/validation'
+export type { ImpactResult } from './analysis/validation'
+
+function inputText(text: string): string {
+  if (typeof text !== 'string' || text.length > MAX_DOCUMENT_CHARS) throw new AnalysisError('Texto inválido o demasiado largo; requiere recuperación o análisis por partes')
+  return text
+}
 
 function extractJson(text: string): string {
   // 1. Quitar bloques ```json ... ```
@@ -22,11 +32,7 @@ function loadPrompt(filename: string): string {
   return readFileSync(join(process.cwd(), 'prompts', filename), 'utf-8')
 }
 
-export interface MetaBOE {
-  departamento?: string
-  epigrafe?: string
-  rango?: string
-}
+export type MetaBOE = AnalysisContext
 
 function buildMetaHeader(meta?: MetaBOE): string {
   if (!meta) return ''
@@ -34,6 +40,8 @@ function buildMetaHeader(meta?: MetaBOE): string {
     meta.departamento ? `Departamento: ${meta.departamento}` : '',
     meta.epigrafe ? `Epígrafe oficial BOE: ${meta.epigrafe}` : '',
     meta.rango ? `Rango oficial: ${meta.rango}` : '',
+    meta.fecha_publicacion ? `Fecha oficial de publicación: ${meta.fecha_publicacion}` : '',
+    meta.contenido ? `Contenido recuperado: ${meta.contenido}` : '',
   ].filter(Boolean)
   return lines.length > 0 ? lines.join('\n') + '\n\n' : ''
 }
@@ -52,9 +60,10 @@ export async function classifyDocument(
   texto: string,
   meta?: MetaBOE
 ): Promise<ClassifyResult> {
+  requireSubstantiveText(titulo, inputText(texto), meta)
   try {
     const systemPrompt = loadPrompt('regtrack-clasificador.md')
-    const userContent = `${buildMetaHeader(meta)}Título: ${titulo}\n\nTexto:\n${texto.slice(0, 3000)}`
+    const userContent = `${buildMetaHeader(meta)}Título: ${titulo}\n\nTexto:\n${inputText(texto)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
@@ -64,31 +73,20 @@ export async function classifyDocument(
     })
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    return JSON.parse(extractJson(text)) as ClassifyResult
+    const result = JSON.parse(extractJson(text)) as ClassifyResult
+    if (response.stop_reason === 'max_tokens' || typeof result.relevante !== 'boolean' || typeof result.motivo !== 'string' || typeof result.subtema !== 'string' || typeof result.ambito_territorial !== 'string') {
+      throw new AnalysisError('Clasificación incompleta o con estructura inválida')
+    }
+    return result
   } catch (err) {
     // Un fallo de la API (sin saldo, clave, caída) no significa que el documento sea irrelevante
     if (err instanceof APIError) throw err
     console.error('classifyDocument error:', err)
-    return { relevante: false, subtema: 'otro', ambito_territorial: 'estatal', motivo: 'Error de clasificación' }
+    throw new AnalysisError('No se pudo interpretar la clasificación; documento pendiente de reintento', { cause: err })
   }
 }
 
 // ─── Análisis de impacto ─────────────────────────────────────────────────────
-
-export interface ImpactResult {
-  resumen: string
-  impacto: string
-  afectados: string[]
-  urgencia: Urgencia
-  tipo_norma: TipoNorma
-  fecha_publicacion: string
-  fecha_entrada_vigor: string | null
-  plazo_adaptacion: number | null
-  deroga_modifica: string | null
-  territorios: string[]
-  accion_recomendada: string
-  score_relevancia: number
-}
 
 export async function analyzeImpact(
   titulo: string,
@@ -96,9 +94,10 @@ export async function analyzeImpact(
   fuente: string,
   meta?: MetaBOE
 ): Promise<ImpactResult | null> {
+  requireSubstantiveText(titulo, inputText(texto), meta)
   try {
     const systemPrompt = loadPrompt('regtrack-impacto.md')
-    const userContent = `${buildMetaHeader(meta)}Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto completo:\n${texto.slice(0, 8000)}`
+    const userContent = `${buildMetaHeader(meta)}Fuente: ${fuente}\nTítulo: ${titulo}\n\nTexto disponible:\n${inputText(texto)}`
     const client = getClient()
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
@@ -114,9 +113,9 @@ export async function analyzeImpact(
     }
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    return JSON.parse(extractJson(text)) as ImpactResult
+    return normalizeImpact(JSON.parse(extractJson(text)), titulo, texto, meta)
   } catch (err) {
-    if (err instanceof APIError) throw err
+    if (err instanceof APIError || err instanceof ReviewRequiredError) throw err
     console.error('analyzeImpact error:', err)
     return null
   }
