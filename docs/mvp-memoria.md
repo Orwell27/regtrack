@@ -15,7 +15,7 @@ Primera entrega privada para consultar lo que RegTrack conserva y comprobar su p
 
 ## Conexión del archivo privado
 
-Hay dos lectores: disco local (por defecto) y Supabase (`REGTRACK_MEMORY_BACKEND=supabase`). El segundo elimina la necesidad de compartir el disco con Vercel: web y worker consultan el mismo archivo privado en la base de datos existente. **Las siete versiones iniciales están copiadas y recuperadas desde Supabase, con 15 archivos idénticos y reintento sin duplicados.** Falta confirmar, configurar y probar la cuenta privada. Véase [Conexión de memoria compartida](memoria-compartida.md). No copiar el vault a `public`, a Git ni a un bundle web.
+Hay dos lectores: disco local (por defecto) y Supabase (`REGTRACK_MEMORY_BACKEND=supabase`). El segundo elimina la necesidad de compartir el disco con Vercel: web y worker consultan el mismo archivo privado en la base de datos existente. **Las siete versiones iniciales están copiadas y recuperadas desde Supabase, con 15 archivos idénticos y reintento sin duplicados.** Cuenta confirmada, perfil enlazado y acceso configurado en local/preview; falta que el usuario inicie sesión para completar esa prueba. Véase [Conexión de memoria compartida](memoria-compartida.md). No copiar el vault a `public`, a Git ni a un bundle web.
 
 ## Respaldo comprobable
 
