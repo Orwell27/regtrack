@@ -14,6 +14,7 @@ beforeEach(() => {
   vi.clearAllMocks()
   vi.stubEnv('REGTRACK_KNOWLEDGE_DIR', '/private-vault')
   vi.stubEnv('REGTRACK_MEMORY_BACKEND', '')
+  vi.stubEnv('REGTRACK_MEMORY_READER_IDS', 'verified-id')
   mocks.user.mockResolvedValue({ data: { user: { id: 'verified-id' } }, error: null })
   mocks.profile.mockResolvedValue({ data: { rol: 'admin' }, error: null })
   mocks.eq.mockReturnValue({ single: mocks.profile })
@@ -22,6 +23,19 @@ beforeEach(() => {
   mocks.list.mockReturnValue([])
 })
 describe('memoria privada: autorización antes del lector', () => {
+  it.each(['', 'another-id', 'verified-id-suffix'])('un perfil admin no concede memoria sin identidad autorizada: %s', async allowed => {
+    vi.stubEnv('REGTRACK_MEMORY_BACKEND', 'supabase')
+    vi.stubEnv('REGTRACK_MEMORY_READER_IDS', allowed)
+    await expect(readPrivateMemory()).rejects.toThrow('notFound')
+    expect(mocks.db).not.toHaveBeenCalled()
+    expect(mocks.exists).not.toHaveBeenCalled()
+    expect(mocks.list).not.toHaveBeenCalled()
+    expect(mocks.cloud).not.toHaveBeenCalled()
+  })
+  it('admite una identidad exacta en una lista de servidor con espacios', async () => {
+    vi.stubEnv('REGTRACK_MEMORY_READER_IDS', 'other-id, verified-id, ')
+    expect((await readPrivateMemory()).status).toBe('ready')
+  })
   it('una cookie sin usuario verificado no consulta perfiles ni abre archivos', async () => {
     vi.stubEnv('REGTRACK_MEMORY_BACKEND', 'supabase')
     mocks.user.mockResolvedValue({ data: { user: null }, error: new Error('invalid token') })

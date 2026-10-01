@@ -17,6 +17,6 @@ create role anon;
 create role authenticated;
 create role service_role bypassrls;
 SQL
-sql < supabase/migrations/20260930222941_shared_memory.sql
+sql < supabase/migrations/20261001093618_shared_memory.sql
 sql < scripts/check-memory-db.sql
 echo 'Memoria SQL: acceso público denegado; inserción, lectura, reintento e inmutabilidad comprobados.'

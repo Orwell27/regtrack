@@ -16,6 +16,10 @@ export async function readPrivateMemory(): Promise<{ status: 'ready' | 'unconfig
   // Verify with Auth before either the role query or reading any private file.
   const { data: { user }, error: authError } = await auth.auth.getUser()
   if (authError || !user) redirect('/login')
+  // The legacy usuarios table is browser-writable. Its rol alone is not an access boundary.
+  // Keep an independent server-managed list, bound to verified Auth IDs rather than emails.
+  const readers = new Set((process.env.REGTRACK_MEMORY_READER_IDS ?? '').split(',').map(id => id.trim()).filter(Boolean))
+  if (!readers.has(user.id)) notFound()
   const db = createNextServerClient()
   const { data: profile, error } = await db.from('usuarios').select('rol').eq('auth_id', user.id).single()
   if (error || profile?.rol !== 'admin') notFound()

@@ -7,7 +7,7 @@ Primera entrega privada para consultar lo que RegTrack conserva y comprobar su p
 `Captura del escáner → versión conservada → análisis vinculado a esa versión → ficha web → historial/relaciones → reporte → respaldo restaurable`.
 
 - `/admin/memoria`: búsqueda por texto y tipo, ficha, original, citas, análisis, historial y relaciones explícitas. Enlace en la navegación de administración. Reutiliza el vault del escáner, no crea otra base documental.
-- Cada lectura privada verifica el usuario contra Supabase Auth con `getUser()` y comprueba `usuarios.auth_id`/rol admin antes de acceder al disco. No cambia el helper general de otros paneles ni el PR14 de Claude. No basta una cookie local o el layout. Sin configuración, montaje o integridad aparece un estado explícito, no «sin novedades».
+- Cada lectura privada verifica el usuario contra Supabase Auth con `getUser()`, exige su ID exacto en `REGTRACK_MEMORY_READER_IDS` (lista gestionada solo por el servidor) y comprueba `usuarios.auth_id`/rol admin antes de acceder al archivo. Una lista vacía deniega el acceso. No cambia el helper general de otros paneles ni el PR14 de Claude. No basta una cookie, el layout o el perfil admin por sí solo: los permisos heredados de usuarios necesitan revisión. Sin configuración de almacenamiento, montaje o integridad aparece un estado explícito, no «sin novedades».
 - El escáner guarda el análisis que ya obtuvo de Claude junto al ID de versión y SHA256 del texto. No añade llamadas de IA. Los análisis anteriores sin esa vinculación permanecen archivados: no se asignan a una captura por semejanza de título. Cada captura muestra solo explicaciones vinculadas a su versión y con citas presentes en su texto.
 - La revisión jurídica y la vigencia siguen pendientes. El MVP consulta; no incorpora un botón que certifique obligaciones. Una cita literal no acredita por sí sola que la interpretación sea correcta.
 - El historial son **capturas**, no versiones legales certificadas. Un paso de sumario a texto completo también cambia la huella. La comparación conserva ambos textos y explica esta diferencia.
@@ -15,7 +15,7 @@ Primera entrega privada para consultar lo que RegTrack conserva y comprobar su p
 
 ## Conexión del archivo privado
 
-Hay dos lectores: disco local (por defecto) y Supabase (`REGTRACK_MEMORY_BACKEND=supabase`). El segundo elimina la necesidad de compartir el disco con Vercel: web y worker consultan el mismo archivo privado en la base de datos existente. Está implementado y probado localmente; **la migración y activación remotas siguen pendientes**. Véase [Conexión de memoria compartida](memoria-compartida.md). No copiar el vault a `public`, a Git ni a un bundle web.
+Hay dos lectores: disco local (por defecto) y Supabase (`REGTRACK_MEMORY_BACKEND=supabase`). El segundo elimina la necesidad de compartir el disco con Vercel: web y worker consultan el mismo archivo privado en la base de datos existente. **La tabla remota está creada y la lectura privada comprobada; está vacía, pendiente de autorizar la copia inicial.** Falta configurar y probar la cuenta privada. Véase [Conexión de memoria compartida](memoria-compartida.md). No copiar el vault a `public`, a Git ni a un bundle web.
 
 ## Respaldo comprobable
 
