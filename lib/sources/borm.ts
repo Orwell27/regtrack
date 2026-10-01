@@ -1,5 +1,5 @@
 import type { NormalizedItem } from './boe'
-import { fetchSource, requireDocument } from './http'
+import { fetchSource, requireDocument, type DocumentReadOptions } from './http'
 import { madridDate } from '../pipeline/dates'
 
 const BASE = 'https://www.borm.es/services'
@@ -48,7 +48,7 @@ export async function fetchBORM(date = madridDate()): Promise<NormalizedItem[]> 
   return Array.from(new Map(items.map(item => [item.url, item])).values())
 }
 
-export async function fetchBORMText(url: string): Promise<string> {
+export async function fetchBORMText(url: string, options: DocumentReadOptions = {}): Promise<string> {
   if (!/^https:\/\/www\.borm\.es\/services\/anuncio\/\d+\/txt$/.test(url)) throw new Error('URL TXT BORM inválida')
-  return requireDocument(await (await fetchSource(url)).text())
+  return requireDocument(await (await fetchSource(url)).text(), options)
 }

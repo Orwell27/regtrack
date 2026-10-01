@@ -19,7 +19,8 @@
     "knowledge:check-graphiti": "tsx actions/check-graphiti.ts",
     "knowledge:check-openaleph-names": "tsx actions/check-openaleph-names.ts",
     "knowledge:demo": "tsx actions/prepare-memory-demo.ts",
-    "memory:cloud": "tsx actions/memory-cloud.ts"
+    "memory:cloud": "tsx actions/memory-cloud.ts",
+    "memory:case": "tsx actions/prepare-memory-case.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.88.0",

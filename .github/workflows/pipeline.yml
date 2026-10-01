@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Escaneo normal o piloto documental aislado'
+        description: 'Escaneo normal, captura de memoria sin IA o piloto documental aislado'
         type: choice
-        options: [scan, pilot]
+        options: [scan, memory, pilot]
         default: scan
       allow_paid_pilot:
         description: 'Autorizar IA de pago para los ocho casos del piloto (sin BD ni alertas)'
@@ -64,14 +64,22 @@ jobs:
             args+=(--from "$SCAN_FROM" --to "$SCAN_TO")
           fi
           if [[ "$SCAN_ONLY" == "true" ]]; then args+=(--scan-only); fi
+          if [[ "$SCAN_MODE" == "memory" ]]; then
+            if [[ "$SCAN_ONLY" == "true" || "$REGTRACK_MEMORY_SYNC" != "1" ]]; then
+              echo 'Captura detenida: requiere sincronización privada activa y scan_only=false.'
+              exit 1
+            fi
+            args+=(--memory-only)
+          fi
           npx tsx actions/pipeline.ts "${args[@]}"
         env:
           SCAN_FROM: ${{ inputs.from }}
           SCAN_TO: ${{ inputs.to }}
           SCAN_ONLY: ${{ inputs.scan_only }}
+          SCAN_MODE: ${{ inputs.mode }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ inputs.mode != 'memory' && secrets.ANTHROPIC_API_KEY || '' }}
           REGTRACK_MEMORY_SYNC: ${{ vars.REGTRACK_MEMORY_SYNC }}
           REGTRACK_KNOWLEDGE_DIR: ${{ vars.REGTRACK_MEMORY_SYNC == '1' && '.knowledge/vault' || '' }}
 

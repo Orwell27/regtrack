@@ -15,6 +15,7 @@ describe('MVP: conservar, explicar y recuperar', () => {
     expect(view.history).toHaveLength(3)
     expect(view.reading?.summary).toContain('nueve meses')
     expect(view.reading?.evidence[0].cita).toContain('9 meses')
+    expect(view.reading?.limitations).toContain('Caso ficticio para probar la interfaz.')
     expect(view.related.some(r => r.kind === 'noticia')).toBe(true)
     expect(filterRecords(records, 'alojamientos', 'norma')).toHaveLength(1)
     expect(records.find(r => r.kind === 'reporte')?.content).toContain('needs_review')

@@ -110,4 +110,8 @@ describe('fuentes: ausencia y fallo son distintos', () => {
     expect(() => requireDocument('<html>' + 'error '.repeat(30) + '</html>')).toThrow()
     expect(() => requireDocument('x'.repeat(120_001))).toThrow('no se truncará')
   })
+  it('el modo de archivo mantiene su propio límite y rechaza páginas de error', () => {
+    expect(() => requireDocument('x'.repeat(1_000_001), { forArchive: true })).toThrow('límite de captura')
+    expect(() => requireDocument('<html>' + 'error '.repeat(30) + '</html>', { forArchive: true })).toThrow()
+  })
 })

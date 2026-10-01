@@ -5,7 +5,7 @@ import { runPipeline } from '../lib/pipeline/run'
 loadEnvConfig(process.cwd())
 const args = process.argv.slice(2)
 Promise.resolve().then(() => runPipeline(scanDates(args), {
-  scanOnly: args.includes('--scan-only'), historical: args.includes('--from'),
+  scanOnly: args.includes('--scan-only'), memoryOnly: args.includes('--memory-only'), historical: args.includes('--from'),
 })).then(report => {
   if (report.incomplete) process.exitCode = 1
 }).catch(error => {

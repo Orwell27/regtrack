@@ -15,7 +15,7 @@ Primera entrega privada para consultar lo que RegTrack conserva y comprobar su p
 
 ## Conexión del archivo privado
 
-Hay dos lectores: disco local (por defecto) y Supabase (`REGTRACK_MEMORY_BACKEND=supabase`). El segundo elimina la necesidad de compartir el disco con Vercel: web y worker consultan el mismo archivo privado en la base de datos existente. **Las siete versiones iniciales están copiadas y recuperadas desde Supabase, con 15 archivos idénticos y reintento sin duplicados.** Cuenta confirmada, perfil enlazado y acceso configurado en local/preview; falta que el usuario inicie sesión para completar esa prueba. Véase [Conexión de memoria compartida](memoria-compartida.md). No copiar el vault a `public`, a Git ni a un bundle web.
+Hay dos lectores: disco local (por defecto) y Supabase (`REGTRACK_MEMORY_BACKEND=supabase`). El segundo elimina la necesidad de compartir el disco con Vercel: web y worker consultan el mismo archivo privado en la base de datos existente. **Las siete versiones iniciales están copiadas y recuperadas desde Supabase, con 15 archivos idénticos y reintento sin duplicados.** Cuenta confirmada, perfil enlazado y acceso configurado en local/preview. La sesión real local ya se ha comprobado; la vista autenticada del preview sigue pendiente. Véase [Conexión de memoria compartida](memoria-compartida.md). No copiar el vault a `public`, a Git ni a un bundle web.
 
 ## Respaldo comprobable
 
@@ -55,3 +55,8 @@ Se puede generar un reporte semanal de la demo con `npm run knowledge -- weekly 
 ## Siguiente crecimiento
 
 Activar y comprobar la conexión Supabase preparada; copia independiente completa; validar la sesión real privada; revisión editorial durable vinculada a versiones; cobertura por fuente y pendientes recuperables; un caso documental real completo. Después, extracción con Claude y embeddings por decidir. No confundir estas mejoras pendientes con funcionalidades entregadas.
+
+
+## Preparación posterior para publicación
+
+Véase [Preparación de publicación del MVP](mvp-publicacion.md): captura sin IA, confirmación por documento, caso real histórico de Murcia y dependencias de seguridad. La memoria contiene ahora siete fuentes y una lectura editorial pendiente (ocho registros), verificados en la sesión local. Esta continuación sustituye el pendiente de login local indicado en los pasos anteriores; no activa producción ni el cron.

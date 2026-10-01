@@ -1,6 +1,7 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { fetchBOEText, parseBOESumario } from '@/lib/sources/boe'
 import { SourceAccessBlockedError } from '@/lib/sources/http'
+import { hydrateDocument } from '@/lib/pipeline/sources'
 import sumario from '../fixtures/boe-sumario-20200314.json'
 
 afterEach(() => vi.unstubAllGlobals())
@@ -27,6 +28,14 @@ describe('sumarios BOE con varias ediciones', () => {
 })
 
 describe('texto BOE íntegro desde el nodo oficial', () => {
+  it('la captura recupera un texto que excede el límite de IA sin perder el final', async () => {
+    const content = 'Artículo de prueba. '.repeat(10_000) + 'DISPOSICIÓN FINAL CONSERVADA'
+    vi.stubGlobal('fetch', vi.fn().mockImplementation(async () => new Response(`<documento><texto><p>${content}</p></texto></documento>`)))
+    const result = await hydrateDocument({ id: 'BOE-A-TEST', fuente: 'BOE', titulo: 'Norma de prueba', url: 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-TEST' }, { forArchive: true })
+    expect(result.texto).toBe(content)
+    expect(result.contenido).toBe('texto_completo')
+    await expect(fetchBOEText('BOE-A-TEST')).rejects.toThrow('No se pudo leer')
+  })
   it('conserva el artículo inicial aunque Jefatura aparezca después y retiene las referencias', async () => {
     const xml = `<documento>
       <metadatos><titulo>METADATO FUERA DEL TEXTO</titulo></metadatos>

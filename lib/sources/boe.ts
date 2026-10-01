@@ -1,5 +1,5 @@
 import { XMLParser, XMLValidator } from 'fast-xml-parser'
-import { fetchSource, requireDocument, SourceAccessBlockedError } from './http'
+import { fetchSource, requireDocument, SourceAccessBlockedError, type DocumentReadOptions } from './http'
 import { madridDate } from '../pipeline/dates'
 
 export const RELEVANT_SECTIONS = ['1', '3'] as const // I: Disposiciones generales, III: Otras disposiciones
@@ -132,7 +132,8 @@ function plainXmlText(nodes: OrderedXmlNode[]): string {
 
 export async function fetchBOEText(
   id: string,
-  xmlUrl?: string
+  xmlUrl?: string,
+  options: DocumentReadOptions = {}
 ): Promise<{ texto: string; referencias_boe: ReferenciaBOE[] }> {
   const targetUrl = xmlUrl ?? `https://www.boe.es/diario_boe/xml.php?id=${id}`
   try {
@@ -148,7 +149,7 @@ export async function fetchBOEText(
     if (!Array.isArray(body)) throw new Error('El XML BOE no contiene el nodo de texto oficial')
     const referencias_boe = parseReferencesBOE(xml)
     const texto = plainXmlText(body).replace(/\s+/g, ' ').trim()
-    return { texto: requireDocument(texto), referencias_boe }
+    return { texto: requireDocument(texto, options), referencias_boe }
   } catch (error) {
     if (error instanceof SourceAccessBlockedError) throw error
     throw new Error(`No se pudo leer el texto BOE ${id}`, { cause: error })

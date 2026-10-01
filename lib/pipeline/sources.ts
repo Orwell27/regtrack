@@ -14,6 +14,7 @@ import { fetchBOPA } from '../sources/bopa'
 import { fetchBON } from '../sources/bon'
 import { fetchBOR } from '../sources/bor'
 import type { ScanReport } from './report'
+import type { DocumentReadOptions } from '../sources/http'
 
 export async function collectSources(report: ScanReport, historical = false): Promise<NormalizedItem[]> {
   const items: NormalizedItem[] = []
@@ -34,11 +35,11 @@ export async function collectSources(report: ScanReport, historical = false): Pr
   return Array.from(new Map(items.map(item => [item.url, item])).values())
 }
 
-export async function hydrateDocument(item: NormalizedItem): Promise<NormalizedItem> {
-  if (item.fuente === 'BOE') return { ...item, ...await fetchBOEText(item.id, item._xmlUrl), contenido: 'texto_completo' }
+export async function hydrateDocument(item: NormalizedItem, options: DocumentReadOptions = {}): Promise<NormalizedItem> {
+  if (item.fuente === 'BOE') return { ...item, ...await fetchBOEText(item.id, item._xmlUrl, options), contenido: 'texto_completo' }
   if (item.fuente === 'BORM') {
     if (!item.texto_url) throw new Error('BORM: falta el identificador para recuperar el documento completo')
-    return { ...item, texto: await fetchBORMText(item.texto_url), contenido: 'texto_completo' }
+    return { ...item, texto: await fetchBORMText(item.texto_url, options), contenido: 'texto_completo' }
   }
   // Estos conectores solo recuperan índices/RSS. No certificar articulado completo.
   return { ...item, contenido: 'sumario' }

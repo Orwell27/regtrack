@@ -1,6 +1,6 @@
 # Memoria compartida para el MVP
 
-El archivo puede consultarse desde Vercel y recibir capturas del escáner sin depender del disco del PC. Reutiliza el proyecto Supabase de RegTrack; no necesita cuenta, motor de IA ni proveedor nuevos. **Tabla remota creada el 1-oct-2026; siete versiones copiadas y recuperadas con integridad comprobada.** La cuenta confirmada ya está enlazada al perfil admin existente y su acceso está configurado en local y en el preview de esta rama. Falta completar la prueba con su sesión real.
+El archivo puede consultarse desde Vercel y recibir capturas del escáner sin depender del disco del PC. Reutiliza el proyecto Supabase de RegTrack; no necesita cuenta, motor de IA ni proveedor nuevos. **Tabla remota creada el 1-oct-2026; siete versiones copiadas y recuperadas con integridad comprobada.** La cuenta confirmada ya está enlazada al perfil admin existente y su acceso está configurado en local y en el preview de esta rama. Sesión real local comprobada el 1-oct; la vista autenticada del preview sigue pendiente.
 
 ## Qué conserva y cómo lo lee
 
@@ -51,3 +51,8 @@ En un worker con disco persistente, repetir `memory:cloud push` recupera lo pend
 La tabla es compartida por administradores de RegTrack, no está diseñada como archivo separado para varios clientes. La credencial del servidor conserva sus facultades en otras tablas; esta migración limita únicamente la nueva tabla. No modifica las rutas administrativas del PR14 ni acredita seguridad integral de la aplicación. No hay extracción Graphiti, claves nuevas, llamadas IA, cambios en alertas ni aprobación jurídica automática.
 
 Referencias oficiales consultadas: [Upsert de Supabase](https://supabase.com/docs/reference/javascript/upsert), [roles de PostgreSQL en Supabase](https://supabase.com/docs/guides/database/postgres/roles) y documentación instalada de Next.js sobre acceso a datos desde el servidor.
+
+
+## Preparación posterior para publicación
+
+Véase [Preparación de publicación del MVP](mvp-publicacion.md): captura sin IA, confirmación por documento, caso real histórico de Murcia y dependencias de seguridad. La memoria contiene ahora siete fuentes y una lectura editorial pendiente (ocho registros), verificados en la sesión local. Esta continuación sustituye el pendiente de login local indicado en los pasos anteriores; no activa producción ni el cron.

@@ -54,10 +54,13 @@ export async function sourceText(url: string, format: 'rss' | 'atom' | 'html'): 
 }
 
 export const MAX_DOCUMENT_CHARS = 120_000
+const MAX_ARCHIVE_CHARS = 1_000_000
+export interface DocumentReadOptions { forArchive?: boolean }
 
-export function requireDocument(text: string): string {
+export function requireDocument(text: string, options: DocumentReadOptions = {}): string {
   if (typeof text !== 'string' || text.trim().length < 80) throw new Error('Texto oficial vacío o insuficiente; requiere recuperación')
-  if (text.length > MAX_DOCUMENT_CHARS) throw new Error(`Documento de ${text.length} caracteres: requiere análisis por partes, no se truncará`)
+  const limit = options.forArchive ? MAX_ARCHIVE_CHARS : MAX_DOCUMENT_CHARS
+  if (text.length > limit) throw new Error(`Documento de ${text.length} caracteres: supera el límite de ${options.forArchive ? 'captura' : 'análisis'} (${limit}), no se truncará`)
   if (/<(?:!doctype|html)[\s>]/i.test(text)) throw new Error('Se recibió una página HTML en lugar del texto oficial')
   return text.trim()
 }

@@ -15,7 +15,7 @@ export interface Decision {
   url: string
   source: string
   title: string
-  status: 'saved' | 'discarded' | 'low_score' | 'error' | 'existing' | 'unprocessed' | 'needs_review'
+  status: 'saved' | 'archived' | 'discarded' | 'low_score' | 'error' | 'existing' | 'unprocessed' | 'needs_review'
   reason: string
   analysis?: ImpactResult
 }
@@ -25,7 +25,7 @@ export class ScanReport {
   sources: SourceResult[] = []
   decisions: Decision[] = []
   fatal: string[] = []
-  mode: 'full' | 'sources_only' = 'full'
+  mode: 'full' | 'sources_only' | 'memory_only' = 'full'
   finished = false
   private blockedSources = new Map<string, string>()
   constructor(public dates: string[]) {}
@@ -71,13 +71,14 @@ export class ScanReport {
     const escape = (text: string) => text.replace(/[|\r\n]/g, ' ')
     const summary = [
       '# Vigilancia RegTrack',
-      this.mode === 'sources_only' ? 'Modo: **solo fuentes; no se ha evaluado ni guardado ninguna alerta**.' : 'Modo: fuentes y procesamiento de documentos.',
+      this.mode === 'sources_only' ? 'Modo: **solo fuentes; no se ha evaluado ni guardado ninguna alerta**.' : this.mode === 'memory_only' ? 'Modo: **captura de memoria; sin IA ni creación de alertas**.' : 'Modo: fuentes y procesamiento de documentos.',
       `Resultado: **${!this.finished ? 'EN CURSO — resultado aún no verificado' : this.incomplete ? 'INCOMPLETA — revisar pendientes y errores' : 'Finalizada; revisar fuentes sin resultados'}**`,
       `BOE/BORM: ${this.dates[0]} a ${this.dates.at(-1)}. Otras fuentes: contenido reciente disponible, sin garantía de recuperación histórica.`,
       '', '| Fuente | Periodo | Estado | Documentos |', '|---|---|---|---|',
       ...this.sources.map(s => `| ${s.source} | ${s.scope} | ${s.status === 'empty' ? 'Sin resultados; no prueba ausencia de novedades' : s.status} | ${s.count} |`),
       '', `Guardadas: ${this.decisions.filter(d => d.status === 'saved').length}. Pendientes por error: ${this.decisions.filter(d => d.status === 'error' || d.status === 'unprocessed').length}.`,
       `Pendientes de texto o revisión documental: ${this.decisions.filter(d => d.status === 'needs_review').length}.`,
+      ...(this.mode === 'memory_only' ? [`Textos completos conservados para analizar y revisar: ${this.decisions.filter(d => d.status === 'archived').length}.`] : []),
       ...this.sources.filter(s => s.error).map(s => `- ${s.source}: ${escape(s.error!)}`),
       ...this.fatal.map(e => `- ${escape(e)}`),
       '', 'El JSON adjunto incluye también descartes y motivos. Una ejecución correcta no demuestra cobertura jurídica completa.',

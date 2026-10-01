@@ -10,19 +10,30 @@ import type { Alerta } from '@/lib/supabase'
 
 import { collectSources, hydrateDocument } from './sources'
 import { ScanReport } from './report'
-import { SourceAccessBlockedError } from '../sources/http'
+import { MAX_DOCUMENT_CHARS, SourceAccessBlockedError } from '../sources/http'
 import { requireSubstantiveText, ReviewRequiredError } from '../analysis/validation'
-import { KnowledgeVault } from '../knowledge/vault'
+import { KnowledgeVault, type KnowledgeRecord } from '../knowledge/vault'
 import { archiveAnalysis, archiveDocument, archiveReport } from '../knowledge/archive'
 import { pushSharedMemory } from '../knowledge/cloud'
 
-export async function runPipeline(dates: string[], options: { scanOnly?: boolean; historical?: boolean; reportDir?: string } = {}) {
+class MemorySyncError extends Error {}
+
+export async function runPipeline(dates: string[], options: { scanOnly?: boolean; memoryOnly?: boolean; historical?: boolean; reportDir?: string } = {}) {
   const report = new ScanReport(dates)
   const vault = process.env.REGTRACK_KNOWLEDGE_DIR ? new KnowledgeVault(process.env.REGTRACK_KNOWLEDGE_DIR) : undefined
-  report.mode = options.scanOnly ? 'sources_only' : 'full'
+  report.mode = options.scanOnly ? 'sources_only' : options.memoryOnly ? 'memory_only' : 'full'
+  const syncEnabled = process.env.REGTRACK_MEMORY_SYNC === '1' && !options.scanOnly
+  let database: ReturnType<typeof createServerClient> | undefined
+  const getDb = () => database ??= createServerClient()
+  const syncMemory = async (records: KnowledgeRecord[]) => {
+    if (!syncEnabled || !records.length) return
+    try { await pushSharedMemory(getDb(), records) }
+    catch { throw new MemorySyncError('No se pudo sincronizar la captura; procesamiento detenido antes de continuar') }
+  }
   const save = () => report.save(options.reportDir)
   try {
-    if (process.env.REGTRACK_MEMORY_SYNC === '1' && !options.scanOnly && !vault) throw new Error('La sincronización de memoria necesita REGTRACK_KNOWLEDGE_DIR')
+    if (options.scanOnly && options.memoryOnly) throw new Error('Los modos scan-only y memory-only son incompatibles')
+    if ((syncEnabled || options.memoryOnly) && !vault) throw new Error('La captura de memoria necesita REGTRACK_KNOWLEDGE_DIR')
     save()
     console.log('[pipeline] Iniciando ingestión...')
 
@@ -36,11 +47,13 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
       report.decisions = []
       return report
     }
-    const db = createServerClient()
+    // Confirm captures before model calls; a crash later must not lose already analysed originals.
+    if (vault) await syncMemory(vault.list())
+    const db = options.memoryOnly ? undefined : getDb()
 
     // 2. Deduplicar: filtrar URLs ya procesadas
     const existingUrls = new Set<string>()
-    for (let offset = 0; offset < allItems.length; offset += 100) {
+    for (let offset = 0; db && offset < allItems.length; offset += 100) {
       const { data, error } = await db.from('alertas').select('url').in('url', allItems.slice(offset, offset + 100).map(item => item.url))
       if (error) throw new Error('No se pudo comprobar qué alertas existen: ' + error.message)
       for (const row of data ?? []) existingUrls.add(row.url)
@@ -66,8 +79,9 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           report.decision(item, 'unprocessed', `Acceso bloqueado en esta ejecución; sin reintento: ${blocked}`)
           continue
         }
-        item = await hydrateDocument(rawItem)
+        item = await hydrateDocument(rawItem, { forArchive: Boolean(vault) })
         const archivedSource = archiveDocument(vault, item, new Date().toISOString())
+        if (archivedSource) await syncMemory([archivedSource])
         const texto = item.texto ?? ''
 
         // 4. Clasificar con Claude Haiku
@@ -79,6 +93,15 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           contenido: item.contenido,
         }
         requireSubstantiveText(item.titulo, texto, meta)
+        if (texto.length > MAX_DOCUMENT_CHARS) {
+          report.decision(item, 'needs_review', 'Texto íntegro conservado; supera el límite de análisis y requiere lectura por partes, sin truncar ni llamar IA')
+          continue
+        }
+        if (options.memoryOnly) {
+          report.decision(item, 'archived', 'Texto conservado; pendiente de análisis y revisión, sin IA ni alerta')
+          continue
+        }
+        if (!db) throw new Error('Falta base de datos para procesar alertas')
         const classification = await classifyDocument(item.titulo, texto, meta)
         api.exito()
 
@@ -100,7 +123,8 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
           console.error(`[pipeline] Sin análisis de impacto válido, no se guarda: ${item.titulo.slice(0, 60)}`)
           continue
         }
-        archiveAnalysis(vault, archivedSource, impact)
+        const archivedAnalysis = archiveAnalysis(vault, archivedSource, impact)
+        if (archivedAnalysis) await syncMemory([archivedAnalysis])
         if (impact.score_relevancia < 4) {
           report.decision(item, 'low_score', `Score ${impact.score_relevancia}: ${impact.resumen}`, impact)
           console.log(`[pipeline] Score bajo (${impact.score_relevancia}): descartado`)
@@ -213,6 +237,8 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
         }
 
       } catch (err) {
+        // Persistence failure is global: do not continue spending or producing unarchived alerts.
+        if (err instanceof MemorySyncError) throw err
         if (err instanceof ReviewRequiredError) {
           report.decision(item, 'needs_review', err.message)
           console.log(`[pipeline] Pendiente de revisión documental: ${item.titulo.slice(0, 60)}`)
@@ -249,9 +275,7 @@ export async function runPipeline(dates: string[], options: { scanOnly?: boolean
     report.finished = true
     try {
       archiveReport(vault, report)
-      if (vault && process.env.REGTRACK_MEMORY_SYNC === '1' && !options.scanOnly) {
-        await pushSharedMemory(createServerClient(), vault.list())
-      }
+      if (vault) await syncMemory(vault.list())
     }
     catch {
       report.fatal.push('No se pudo conservar o sincronizar la memoria persistente; reintentar desde el vault local')
