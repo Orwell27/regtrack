@@ -1,6 +1,6 @@
 # Memoria compartida para el MVP
 
-El archivo puede consultarse desde Vercel y recibir capturas del escáner sin depender del disco del PC. Reutiliza el proyecto Supabase de RegTrack; no necesita cuenta, motor de IA ni proveedor nuevos. **Tabla remota creada el 1-oct-2026; lectura privada comprobada, todavía vacía.** La copia inicial y el acceso web con una cuenta real siguen pendientes.
+El archivo puede consultarse desde Vercel y recibir capturas del escáner sin depender del disco del PC. Reutiliza el proyecto Supabase de RegTrack; no necesita cuenta, motor de IA ni proveedor nuevos. **Tabla remota creada el 1-oct-2026; siete versiones copiadas y recuperadas con integridad comprobada.** El acceso web con la cuenta real sigue pendiente de confirmar la identidad y configurarla.
 
 ## Qué conserva y cómo lo lee
 
@@ -16,17 +16,18 @@ La migración `supabase/migrations/20261001093618_shared_memory.sql` se creó in
 
 282 pruebas en 33 archivos correctas; TypeScript, ESLint dirigido y build correctos. Los tests del cliente usan la librería Supabase real con transporte PostgREST simulado: paginación, reintento, historial remoto, corrupción, fallo de conexión/confirmación y autorización web antes de leer. Las tres regresiones de identidad no autorizada fallaron antes del arreglo y pasan después. La compilación comprueba que no se empaquete el vault, los respaldos ni archivos de entorno. No confundir estas pruebas con una sincronización real contra Supabase.
 
-La consulta de preparación encontró **cero perfiles admin enlazados** a Auth. El correo de Alfonso se ha solicitado para identificar el acceso; no se ha cambiado ningún rol ni creado un usuario. El conector Vercel devolvió 403, pero el CLI autenticado sí recuperó la configuración del preview. Solo las variables Supabase necesarias se copiaron a `.env.local`, ignorado en Git, comprobando el destino del proyecto sin imprimir valores. El archivo descargado queda también ignorado en `artifacts/memory-cloud/.env.preview`.
+La consulta de preparación encontró **cero perfiles admin enlazados** a Auth. Después se identificó una cuenta con correo verificado y un perfil admin del mismo correo sin enlace; se ha pedido confirmar esa identidad para el acceso. No se ha cambiado ningún rol ni creado un usuario. El conector Vercel devolvió 403, pero el CLI autenticado sí recuperó la configuración del preview. Solo las variables Supabase necesarias se copiaron a `.env.local`, ignorado en Git, comprobando el destino del proyecto sin imprimir valores. El archivo descargado queda también ignorado en `artifacts/memory-cloud/.env.preview`.
 
-La revisión automática rechazó inicialmente crear la tabla. Tras «vamos a arreglarlo» permitió la migración, pero **rechazó por separado el envío de las siete versiones**, al exigir permiso explícito para transferir ese archivo local a ese destino. Se ha solicitado esa autorización concreta; no se reintentó el envío por otro mecanismo. La tabla continúa vacía. `memory:cloud status` y la API real confirman lectura del servidor y rechazo anónimo con código 42501 (09:40 UTC); evidencia local ignorada `artifacts/memory-cloud/remote-read.json`. No se ha probado escritura ni recuperación remota de documentos.
+La revisión automática rechazó inicialmente crear la tabla y después el envío de las siete versiones, al exigir permiso explícito para transferir ese archivo local a ese destino. Tras concretar archivo y destino, Alfonso confirmó «pues vamos a hacerlo» y se ejecutó la copia autorizada. No se eludió la revisión ni se utilizó otra vía para el envío.
+
+Prueba remota real del 1-oct: siete versiones/documentos conservados a las 10:12 UTC. El CLI leyó el archivo y lo recuperó en `artifacts/memory-cloud/recovered-20261001`, directorio nuevo. Se compararon los siete JSON canónicos, siete Markdown y README de gobierno: **15 archivos idénticos por SHA256** respecto al vault original. Un segundo envío confirmó las mismas siete filas y las mismas fechas de incorporación; sin duplicados ni sobrescritura. Nueva consulta anónima rechazada con 42501, también con documentos presentes. Evidencia local ignorada: `artifacts/memory-cloud/copy-verification.json`, 10:14:31 UTC. Esta prueba sí acredita escritura/lectura/recuperación real del contenido; no sesión web autenticada ni respaldo de infraestructura/acuses.
 
 La revisión de permisos encontró que la tabla heredada `usuarios` carece de RLS y admite escrituras del navegador. Por ello su rol **no es una barrera de autorización suficiente**: la memoria añade la lista independiente de IDs verificados, sin modificar perfiles ni las rutas del PR14 ajeno. Esto protege su lector; no corrige la seguridad general de los otros paneles. El asesor señala además [RLS ausente en tablas existentes](https://supabase.com/docs/guides/database/database-linter?lint=0013_rls_disabled_in_public) y [protección de contraseñas filtradas desactivada](https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection); quedan fuera de esta activación. En memoria, el aviso informativo [RLS sin políticas](https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy) es deliberado: ningún usuario del navegador debe acceder directamente; solo el servidor.
 
 ## Activación pendiente
 
-1. Autorizar expresamente el envío de `.knowledge/vault` al proyecto `rygwmqxqjmgytnzgrnef` y su recuperación de comprobación. La tabla ya está creada; no hace falta recrearla. El acceso por CLI y la configuración privada están disponibles; nunca pegar claves en el chat.
-2. Comprobar el contenido inicial y copiar únicamente las versiones autorizadas. No ejecutar todos los SQL históricos ni resolver por esta vía el PR14 ajeno.
-3. Con `SUPABASE_URL` y `SUPABASE_SERVICE_KEY` disponibles solo para el servidor, copiar el archivo local y comprobar lectura:
+1. Confirmar la cuenta existente propuesta para el acceso; no asignar automáticamente la primera identidad encontrada. La copia inicial ya está autorizada y comprobada. No repetir la migración ni ejecutar todos los SQL históricos.
+2. Para futuras copias de contenido dentro del alcance autorizado, mantener `SUPABASE_URL` y `SUPABASE_SERVICE_KEY` disponibles solo para el servidor. Nunca pegar claves en el chat. Comandos:
 
 ```powershell
 npm run memory:cloud -- push --vault .knowledge/vault
@@ -36,8 +37,8 @@ npm run memory:cloud -- recover-content --to artifacts/cloud-recovery-nueva
 
 La recuperación crea un directorio nuevo y reconstruye JSON/Markdown sin alterar el destino existente. **Es recuperación de contenido: no conserva los acuses de otras integraciones.** Para reanudar Basic Memory/OpenAleph/Graphiti sin repetir envíos se necesita el respaldo completo anterior, no esa copia de contenido.
 
-4. Identificar la cuenta solicitada, revisar su correspondencia con `usuarios.auth_id` y autorizar su acceso admin. Añadir su UUID verificado a `REGTRACK_MEMORY_READER_IDS`, solo en el servidor. Probar sesión anónima, usuario sin permiso y sesión real de Alfonso. No deducir autorización de metadatos editables, del perfil por sí solo ni de la primera cuenta encontrada.
-5. Configurar `REGTRACK_MEMORY_BACKEND=supabase` en la web. La sincronización del worker es optativa con `REGTRACK_MEMORY_SYNC=1` y un directorio `REGTRACK_KNOWLEDGE_DIR` local escribible. La variable de GitHub del mismo nombre queda **sin activar**. El workflow la transmite y crea el vault temporal solamente cuando se habilita. No se ha fusionado la PR ni cambiado el cron remoto.
+3. Tras confirmar la cuenta, revisar su correspondencia con `usuarios.auth_id` y enlazar el perfil correcto. Añadir su UUID verificado a `REGTRACK_MEMORY_READER_IDS`, solo en el servidor. Probar sesión anónima, usuario sin permiso y sesión real de Alfonso. No deducir autorización de metadatos editables ni del perfil por sí solo. No modificar por esta vía el PR14 ajeno.
+4. Configurar `REGTRACK_MEMORY_BACKEND=supabase` en la web. La sincronización del worker es optativa con `REGTRACK_MEMORY_SYNC=1` y un directorio `REGTRACK_KNOWLEDGE_DIR` local escribible. La variable de GitHub del mismo nombre queda **sin activar**. El workflow la transmite y crea el vault temporal solamente cuando se habilita. No se ha fusionado la PR ni cambiado el cron remoto.
 
 ## Fallos y límites de continuidad
 
