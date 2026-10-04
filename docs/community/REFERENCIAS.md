@@ -1,6 +1,6 @@
 # RegTrack — Comunidad nacional de propietarios
 
-Investigación consultada el 5 de octubre de 2026. Propuesta para discutir; no hay decisiones de lanzamiento ni implementación aprobadas.
+Investigación consultada el 5 de octubre de 2026. Documento original de fundamentación: sus propuestas dieron paso al piloto implementado en esta rama. El estado técnico y los pasos pendientes de apertura están en [README.md](README.md). Los estudios no prueban resultados para RegTrack.
 
 ## Conclusión propuesta
 
