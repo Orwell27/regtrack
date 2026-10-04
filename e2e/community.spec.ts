@@ -7,6 +7,7 @@ async function login(page: Page, email: string) {
     .fill('Community-test-123!')
   await page.getByRole('button', { name: 'Entrar', exact: true }).click()
   await expect(page).toHaveURL(/\/comunidad$/)
+  await expect(page.getByRole('button', { name: 'Cerrar sesión' })).toBeVisible()
 }
 async function apply(page: Page, email: string, alias: string) {
   await page.goto('/comunidad')

@@ -31,7 +31,7 @@ export default async function CommunityLayout({
           </span>
         </Link>
         <nav aria-label="Navegación principal">
-          <Link href="/alertas">Mis alertas</Link>
+          <Link href="/alertas" prefetch={false}>Mis alertas</Link>
           {user ? (
             <form action="/api/comunidad/auth" method="POST">
               <button type="submit">Cerrar sesión</button>

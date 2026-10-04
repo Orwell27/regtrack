@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { createBrowserClient } from '@supabase/ssr'
-import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { safeReturnPath } from '@/lib/community/model'
 import Link from 'next/link'
@@ -15,7 +14,6 @@ function getSupabase() {
 }
 
 export default function LoginPage() {
-  const router = useRouter()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [errorMsg, setErrorMsg] = useState('')
@@ -30,8 +28,9 @@ export default function LoginPage() {
       if (error) {
         setErrorMsg(error.message)
       } else {
-        router.push(safeReturnPath(new URLSearchParams(window.location.search).get('next')))
-        router.refresh()
+        // A new document makes the authenticated cookies the source of truth,
+        // instead of racing a pre-login Router Cache entry against refresh().
+        window.location.assign(safeReturnPath(new URLSearchParams(window.location.search).get('next')))
       }
     } catch (err) {
       setErrorMsg(String(err))
