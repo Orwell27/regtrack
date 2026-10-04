@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, FileCheck, Bell, Users, Settings, LogOut, Layers } from 'lucide-react'
+import { MessagesSquare, LayoutDashboard, FileCheck, Bell, Users, Settings, LogOut, Layers } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
@@ -16,6 +16,7 @@ type Props = {
 }
 
 const NAV_ITEMS: NavItem[] = [
+  { href: '/comunidad', label: 'Comunidad', icon: MessagesSquare },
   { href: '/admin/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/editorial', label: 'Cola editorial', icon: FileCheck },
   { href: '/admin/alertas', label: 'Alertas', icon: Bell },

@@ -48,3 +48,10 @@ next-env.d.ts
 
 # superpowers brainstorm sessions
 .superpowers/
+
+# Local tooling
+supabase/.temp/
+/test-results/
+/playwright-report/
+/.artifacts/
+/audit-community.json
