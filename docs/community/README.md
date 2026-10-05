@@ -109,6 +109,8 @@ Comprobación **solo de lectura** de producción del 5-oct: siete tablas antigua
 
 Orden de despliegue a ensayar y aprobar:
 
+El [paquete transaccional y su procedimiento](DESPLIEGUE.md) concreta el conjunto exacto para el esquema remoto observado. Se genera con `npm run release:prepare` y se prueba completo, incluidos abortos y conservación de datos.
+
 1. Comparar el historial real con los ficheros; no ejecutar `db push` sobre todo el historial sin reconciliarlo. Verificar copia recuperable y ausencia de migraciones concurrentes.
 2. Para el producto completo, resolver la ausencia de `007_sectorial.sql`: sus tablas son lectoras de `/alertas` e intereses. Si se crean ahora, **crear tablas y cerrar sus permisos en una misma transacción** con la migración de acceso, sin intervalo público. No recrear tablas existentes ni reaplicar ciegamente los datos de fuentes de otras migraciones. Ensayar el conjunto exacto en una base aislada antes de tocar producción.
 3. Desplegar código y migración de acceso en una ventana controlada, manteniendo `COMMUNITY_ENABLED=false`. La función de alta debe existir antes de admitir registros con la versión nueva. Comprobar administrador legítimo, suscriptor, cuenta sin perfil y rechazos 401/403; repetir la comprobación de permisos en la base real.

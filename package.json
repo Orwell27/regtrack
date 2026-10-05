@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "pipeline": "tsx actions/pipeline.ts",
     "backfill": "tsx actions/backfill.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "release:prepare": "node scripts/community-release.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.131.0",
