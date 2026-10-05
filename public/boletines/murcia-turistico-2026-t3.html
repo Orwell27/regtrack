@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RegTrack Turístico Murcia</title>
+<meta name="description" content="Qué cambió en el tercer trimestre de 2026 para un particular con pisos turísticos en la Región de Murcia, traducido a euros y a tareas.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Qué ha cambiado este trimestre para tus pisos turísticos en la Región de Murcia">
+<meta property="og:description" content="IVA del 10 % desde el 1 de diciembre, el Supremo anula el Registro Único, el PGOU de Cartagena y más. Edición piloto de RegTrack, 3.er trimestre 2026.">
+<meta property="og:locale" content="es_ES">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one-column investor dispatch; each rule is a "ficha" with a meta rail (estado, fecha, efecto) that stacks on phones. */
+:root {
+  --paper: #f5f7f8;
+  --surface: #ffffff;
+  --ink: #0f212c;
+  --muted: #566873;
+  --line: #d5dde2;
+  --sea: #0b6a82;
+  --sea-soft: #e2eff2;
+  --down: #a8321f;
+  --down-soft: #f8e6e2;
+  --up: #1d7148;
+  --up-soft: #e2f2e9;
+  --watch: #8a5d00;
+  --watch-soft: #f6eed9;
+  --calm: #5b6b74;
+  --calm-soft: #e9eef1;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --step--1: 0.8125rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: 1.6rem;
+  --step-3: clamp(1.9rem, 5vw, 2.7rem);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0c161c; --surface: #122029; --ink: #e5edf1; --muted: #93a5b0; --line: #243741;
+    --sea: #5bc0d6; --sea-soft: #15313a;
+    --down: #ff8f80; --down-soft: #3a1d18; --up: #6fd29c; --up-soft: #16301f;
+    --watch: #e6b64c; --watch-soft: #33280f; --calm: #a3b3bc; --calm-soft: #1b2a33;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0c161c; --surface: #122029; --ink: #e5edf1; --muted: #93a5b0; --line: #243741;
+  --sea: #5bc0d6; --sea-soft: #15313a;
+  --down: #ff8f80; --down-soft: #3a1d18; --up: #6fd29c; --up-soft: #16301f;
+  --watch: #e6b64c; --watch-soft: #33280f; --calm: #a3b3bc; --calm-soft: #1b2a33;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  padding-inline: 16px;
+  padding-block: 0 64px;
+}
+.wrap { max-width: 780px; margin-inline: auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; }
+.wrap > *, .sec > *, .calc > *, .summary > * { min-width: 0; }
+.sec, .calc, .summary { grid-template-columns: minmax(0, 1fr); }
+a { color: var(--sea); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--sea); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.mono { font-family: var(--mono); font-size: 0.86em; }
+.label {
+  font-family: var(--display); font-stretch: 112%; font-weight: 600;
+  font-size: var(--step--1); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+}
+
+/* Masthead */
+.mast { border-bottom: 3px solid var(--ink); padding-block: 28px 22px; display: grid; gap: 18px; }
+.mast-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; align-items: baseline; }
+.brand { font-family: var(--display); font-stretch: 125%; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.02em; }
+.brand span { color: var(--sea); }
+.pilot {
+  font-family: var(--mono); font-size: 0.75rem; color: var(--watch); background: var(--watch-soft);
+  padding: 2px 8px; border-radius: 3px;
+}
+.mast h1 { font-size: var(--step-3); font-stretch: 108%; font-weight: 750; line-height: 1.08; letter-spacing: -0.01em; }
+.mast-meta { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--display); font-size: 0.9rem; color: var(--muted); }
+.mast-meta b { color: var(--ink); font-weight: 600; }
+
+/* Tally */
+.tally { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line); background: var(--surface); }
+.tally div { padding: 14px 16px; display: grid; gap: 2px; border-left: 1px solid var(--line); }
+.tally div:first-child { border-left: 0; }
+.tally strong { font-family: var(--display); font-size: 1.9rem; font-weight: 750; line-height: 1; font-variant-numeric: tabular-nums; }
+.tally span { font-family: var(--display); font-size: 0.85rem; color: var(--muted); }
+.t-down strong { color: var(--down); } .t-up strong { color: var(--up); }
+.t-watch strong { color: var(--watch); } .t-calm strong { color: var(--calm); }
+@media (max-width: 560px) {
+  .tally { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tally div:nth-child(3) { border-left: 0; }
+  .tally div:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+/* Summary */
+.summary { display: grid; gap: 14px; }
+.summary ol { margin: 0; padding-left: 1.3em; display: grid; gap: 10px; }
+.summary li::marker { font-family: var(--display); font-weight: 700; color: var(--sea); }
+
+/* Section heads */
+.sec { display: grid; gap: 20px; }
+.sec-head { display: grid; gap: 4px; }
+.sec-head h2 { font-size: var(--step-2); font-stretch: 110%; font-weight: 700; line-height: 1.15; }
+.sec-head p { color: var(--muted); font-size: 0.98rem; }
+.sec-head h3 { font-size: var(--step-1); font-stretch: 104%; font-weight: 700; line-height: 1.25; }
+
+/* Ficha */
+.ficha {
+  background: var(--surface); border: 1px solid var(--line);
+  display: grid; grid-template-columns: 172px minmax(0, 1fr);
+}
+.rail { padding: 18px 16px; border-right: 1px solid var(--line); display: grid; align-content: start; gap: 12px; font-family: var(--display); font-size: 0.85rem; }
+.rail dt { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+.rail dd { margin: 2px 0 0; font-weight: 600; }
+.rail dl { margin: 0; display: grid; gap: 10px; }
+.chip { display: inline-block; font-family: var(--display); font-weight: 700; font-size: 0.78rem; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.02em; }
+.c-down { color: var(--down); background: var(--down-soft); }
+.c-up { color: var(--up); background: var(--up-soft); }
+.c-watch { color: var(--watch); background: var(--watch-soft); }
+.c-calm { color: var(--calm); background: var(--calm-soft); }
+.ficha-body { padding: 18px 22px 20px; display: grid; gap: 12px; min-width: 0; }
+.ficha h3 { font-size: var(--step-1); font-stretch: 104%; font-weight: 700; line-height: 1.25; }
+.ficha .k { font-family: var(--display); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sea); display: block; margin-bottom: 2px; }
+.todo { background: var(--sea-soft); padding: 12px 14px; border-radius: 3px; }
+.todo .k { color: var(--ink); }
+.src { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); line-height: 1.5; word-break: break-word; }
+.src a { color: var(--muted); }
+@media (max-width: 640px) {
+  .ficha { grid-template-columns: minmax(0, 1fr); }
+  .rail { border-right: 0; border-bottom: 1px solid var(--line); }
+  .rail dl { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+  .ficha-body { padding: 16px; }
+}
+
+/* Numbers */
+.calc { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px; display: grid; gap: 16px; }
+.calc-scroll { overflow-x: auto; min-width: 0; max-width: 100%; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-family: var(--display); font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+th, td { padding: 8px 10px; text-align: right; border-bottom: 1px solid var(--line); }
+th:first-child, td:first-child { text-align: left; }
+thead th { font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+tr.total td { font-weight: 750; border-bottom: 2px solid var(--ink); }
+.neg { color: var(--down); } .pos { color: var(--up); }
+.assume { font-size: 0.92rem; color: var(--muted); }
+
+/* Calendar */
+.cal { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.cal-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--line); }
+.cal-row time { font-family: var(--display); font-weight: 700; font-stretch: 108%; }
+@media (max-width: 520px) { .cal-row { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+
+/* Quiet list */
+.quiet { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.quiet li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: start; }
+
+.foot { border-top: 3px solid var(--ink); padding-top: 18px; display: grid; gap: 10px; font-size: 0.92rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="mast-top">
+    <div class="brand">Reg<span>Track</span> · Inversor</div>
+    <div class="pilot">EDICIÓN PILOTO · MUESTRA</div>
+  </div>
+  <h1>Qué ha cambiado este trimestre para tus pisos turísticos en la Región de Murcia</h1>
+  <div class="mast-meta">
+    <span>3.<sup>er</sup> trimestre 2026 · cerrado el <b>30 de septiembre</b></span>
+    <span>Perfil: <b>particular con 1 a 5 viviendas de uso turístico</b></span>
+    <span>Foco: <b>Cartagena y costa</b></span>
+  </div>
+</header>
+
+<section class="tally" aria-label="Resumen del impacto">
+  <div class="t-down"><strong>2</strong><span>Te cuestan dinero</span></div>
+  <div class="t-watch"><strong>6</strong><span>Vigílalo</span></div>
+  <div class="t-up"><strong>2</strong><span>Te favorecen</span></div>
+  <div class="t-calm"><strong>4</strong><span>No te afectan</span></div>
+</section>
+
+<section class="summary">
+  <span class="label">Lo esencial en un minuto</span>
+  <ol>
+    <li><b>IVA del 10 % desde el 1 de diciembre</b> en estancias de hasta 30 noches, si el Congreso convalida el decreto este viernes 2 de octubre. Con gastos normales, el golpe neto es menor de lo que parece, porque el IVA de tus gastos pasa a ser recuperable. Lo que sí es seguro es más papeleo: alta en IVA y declaración trimestral.</li>
+    <li><b>El número del Registro Único estatal ya no existe.</b> El Supremo lo anuló, entre otros, a raíz de un recurso de la propia Región de Murcia. Vale tu número autonómico, pero las plataformas siguen enviando cada mes tus noches y tus datos a la Administración.</li>
+    <li><b>Cartagena:</b> el nuevo PGOU, aprobado de forma provisional, solo admite alojamiento turístico en bloques de viviendas si ocupa el edificio entero. Si se aplica a los pisos turísticos, cuando entre en vigor no se podrán abrir nuevos en pisos de bloque.</li>
+    <li><b>Los alquileres por meses a invernantes</b> dejan de poder ser turísticos por encima de 31 días. Como alquiler de temporada necesitan una causa que puedas acreditar, o pasan a ser alquiler de vivienda habitual.</li>
+    <li><b>Lo que no te toca:</b> la Región no tiene zonas tensionadas, así que no hay recargo de IBI turístico ni topes de renta. Cartagena y Murcia congelan sus impuestos municipales para 2027.</li>
+  </ol>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="label">Estatal</span>
+    <h2>El decreto de vivienda de hoy y lo que dijo el Supremo</h2>
+    <p>Real Decreto-ley 26/2026, publicado en el BOE el 30 de septiembre y en vigor desde el 1 de octubre. Si el Congreso no lo convalida, decae entero: en abril ya tumbó el Real Decreto-ley 8/2026, de alquiler.</p>
+  </div>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-down">▼ Te cuesta</span>
+      <dl>
+        <div><dt>Estado</dt><dd>Publicado. Pendiente de convalidación</dd></div>
+        <div><dt>Desde</dt><dd>1 dic 2026</dd></div>
+        <div><dt>Ámbito</dt><dd>Toda España</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>IVA del 10 % en las estancias de hasta 30 noches</h3>
+      <p><span class="k">Qué ha pasado</span>Hasta ahora, un piso turístico sin servicios de tipo hotelero estaba exento de IVA. Desde el 1 de diciembre deja de estarlo cuando la estancia de un mismo huésped no supera 30 noches, salvo que sea tu propia vivienda habitual. Tributa al 10 %, como un hotel. No hay umbral de exención para pequeños arrendadores.</p>
+      <p><span class="k">Qué significa para ti</span>Si mantienes el precio, de cada 110 € que cobras, 10 € son de Hacienda: un 9,1 % menos de ingresos. A cambio, el IVA de la limpieza, la lavandería, las comisiones, los suministros y las reformas pasa a ser recuperable. En un piso tipo el efecto neto se queda en torno al −3 %, o puede ser positivo si trasladas el IVA al precio. Lo tienes calculado más abajo.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Antes del 1 de diciembre: date de alta en IVA con tu gestoría y decide tu política de precios desde esa fecha. Pregunta cómo tratar las reservas cobradas antes del 1 de diciembre para estancias posteriores. Desde ya, pide factura con IVA desglosado de todos tus gastos.</div>
+      <p class="src">Fuente: <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20266">BOE-A-2026-20266</a>, art. 7 (Ley del IVA, arts. 20.Uno.23.º e' y 91.Uno.2.2.º).</p>
+    </div>
+  </article>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-up">▲ Te favorece</span>
+      <dl>
+        <div><dt>Estado</dt><dd>Sentencias firmes</dd></div>
+        <div><dt>Desde</dt><dd>Mayo–julio 2026</dd></div>
+        <div><dt>Ámbito</dt><dd>Toda España</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>El Supremo anula el Registro Único estatal, pero tus datos siguen viajando</h3>
+      <p><span class="k">Qué ha pasado</span>Tres sentencias del Tribunal Supremo (19 y 21 de mayo y 1 de junio de 2026) anulan el procedimiento del Registro Único de Arrendamientos y su número estatal: el Estado no tenía competencia para crear un registro superpuesto a los autonómicos. La última responde a un recurso de la Región de Murcia. Se mantiene la Ventanilla Única Digital, a la que las plataformas envían cada mes los datos de cada anuncio, como exige el Reglamento europeo 2024/1028 desde el 20 de mayo.</p>
+      <p><span class="k">Qué significa para ti</span>Menos trámites: ya no necesitas el número estatal ni su declaración anual. El número que cuenta es el de tu inscripción en el Registro de Empresas y Actividades Turísticas de la Región de Murcia (REAT). El control no baja: si ese número falla, la plataforma retira el anuncio y pierdes los ingresos de ese canal. Y Hacienda cruza de forma automática tus noches con lo que declaras.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Revisa que cada anuncio en Airbnb y Booking muestra tu número autonómico correcto. Declara todos los ingresos: una regularización cuesta entre el 50 % y el 150 % de la cuota no pagada, más intereses.</div>
+      <p class="src">Fuentes: <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-12300">BOE-A-2026-12300</a> · <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13893">BOE-A-2026-13893</a> · <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15677">BOE-A-2026-15677</a> (recurso de la Región de Murcia) · <a href="https://eur-lex.europa.eu/legal-content/es/ALL/?uri=CELEX:32024R1028">Reglamento (UE) 2024/1028</a>.</p>
+    </div>
+  </article>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-watch">◆ Vigílalo</span>
+      <dl>
+        <div><dt>Estado</dt><dd>Publicado. Pendiente de convalidación</dd></div>
+        <div><dt>Desde</dt><dd>1 oct 2026</dd></div>
+        <div><dt>Ámbito</dt><dd>Toda España</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>Se cierra la puerta del alquiler por meses sin causa</h3>
+      <p><span class="k">Qué ha pasado</span>El decreto fija en 31 días la estancia turística máxima. Por encima, el contrato es de temporada, que debe durar entre 32 días y 12 meses y recoger una causa real del desplazamiento del inquilino, que tú tendrás que probar. Sin causa, se trata como alquiler de vivienda habitual desde la firma, con sus cinco años de duración. Los contratos firmados antes del 1 de octubre siguen con su régimen anterior hasta que terminen.</p>
+      <p><span class="k">Qué significa para ti</span>En la costa murciana es habitual alquilar de noviembre a marzo a invernantes. Esas estancias ya no caben como turísticas, y como temporada dependen de la causa. Tampoco sirve pasar los pisos a temporada para esquivar el IVA turístico.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Para las estancias de invierno de más de un mes, usa contrato de temporada con la causa por escrito: trabajo, estudios, tratamiento médico. Si el motivo es solo ocio, no está claro que valga; consúltalo antes de firmar.</div>
+      <p class="src">Fuente: <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20266">BOE-A-2026-20266</a>, art. 3 (Ley de Arrendamientos Urbanos, arts. 5.e, 7 y 9 bis; disposición transitoria octava).</p>
+    </div>
+  </article>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-watch">◆ Vigílalo</span>
+      <dl>
+        <div><dt>Estado</dt><dd>En vigor</dd></div>
+        <div><dt>Desde</dt><dd>Abril 2025 · sentencia abril 2026</dd></div>
+        <div><dt>Ámbito</dt><dd>Toda España</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>Tu comunidad de vecinos manda más que tu licencia</h3>
+      <p><span class="k">Qué ha pasado</span>Desde el 3 de abril de 2025, un piso turístico nuevo necesita el voto favorable de tres quintos de los propietarios, que además sumen tres quintos de las cuotas. Los que ya funcionaban antes pueden seguir, pero la comunidad puede subirles hasta un 20 % los gastos comunes. En abril de 2026 el Supremo confirmó el cierre de un piso turístico que funcionaba desde 2018 porque los estatutos de 1962 prohibían las «hospederías»: la licencia autonómica no le protegió.</p>
+      <p><span class="k">Qué significa para ti</span>Con 1.500 € al año de comunidad, el recargo puede llegar a 300 €. Si tus estatutos prohíben de forma expresa un uso equivalente, arriesgas el 100 % de los ingresos turísticos de ese piso. Al vender, el comprador que quiera seguir con el piso turístico mirará lo mismo.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Lee los estatutos de cada edificio y busca «hospedería», «industria» o «actividad». Antes de comprar, pide a la comunidad un certificado de los acuerdos sobre uso turístico.</div>
+      <p class="src">Fuentes: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2025-76">LO 1/2025</a> (Ley de Propiedad Horizontal, arts. 7.3 y 17.12) · STS 642/2026, de 28 de abril, según <a href="https://www.idealista.com/news/inmobiliario/vivienda/2026/06/14/900822-pisos-turisticos-el-supremo-avala-su-cese-si-los-estatutos-prohiben-la-hospederia">idealista</a>.</p>
+    </div>
+  </article>
+</section>
+
+<section class="calc" aria-labelledby="calc-h">
+  <div class="sec-head">
+    <span class="label">Tus números</span>
+    <h2 id="calc-h">Cuánto te cuesta de verdad el IVA del 10 %</h2>
+    <p>Ejemplo con supuestos: un piso en Cartagena que factura 24.000 € al año a sus huéspedes y externaliza la limpieza.</p>
+  </div>
+  <div class="calc-scroll">
+    <table>
+      <thead>
+        <tr><th>Al año, por piso</th><th>Hoy (exento)</th><th>Desde 1 dic, mismo precio</th><th>Desde 1 dic, precio +10 %</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cobras a los huéspedes</td><td>24.000 €</td><td>24.000 €</td><td>26.400 €</td></tr>
+        <tr><td>IVA que ingresas a Hacienda</td><td>0 €</td><td class="neg">−2.182 €</td><td class="neg">−2.400 €</td></tr>
+        <tr><td>Gastos sin IVA (limpieza, comisiones, suministros, reposición)</td><td>−9.800 €</td><td>−9.800 €</td><td>−9.800 €</td></tr>
+        <tr><td>IVA de esos gastos que no puedes recuperar</td><td class="neg">−2.025 €</td><td>0 €</td><td>0 €</td></tr>
+        <tr><td>Gestoría adicional por llevar el IVA</td><td>0 €</td><td class="neg">−600 €</td><td class="neg">−600 €</td></tr>
+        <tr class="total"><td>Te queda antes de IRPF</td><td>12.175 €</td><td>11.418 €</td><td>13.600 €</td></tr>
+        <tr><td>Diferencia con hoy</td><td>—</td><td class="neg">−757 € (−3,2 %)</td><td class="pos">+1.425 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="assume">Supuestos: limpieza y lavandería 3.600 €, comisiones 3.600 €, luz e internet 1.300 € (todo al 21 %), agua 300 € (10 %), reposición 1.000 € (21 %), gestoría 50 € al mes. Si haces tú la limpieza, recuperas menos IVA y con el mismo precio perderías unos 1.500 € al año (−6,3 %). Si además tienes pisos en alquiler de larga duración, que sigue exento, solo recuperarás una parte del IVA (regla de prorrata). Cifras orientativas, no son asesoramiento fiscal.</p>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="label">Región de Murcia</span>
+    <h2>Comunidad Autónoma</h2>
+    <p>El decreto regional de pisos turísticos (256/2019) sigue sin cambios y no hay tasa turística. Menos competencia: los anuncios activos de pisos turísticos en Cartagena cayeron un 21 % en un año (1.307 en mayo de 2026, según el INE) y un 30 % desde el máximo de agosto de 2024.</p>
+  </div>
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-down">▼ Te cuesta</span>
+      <dl>
+        <div><dt>Estado</dt><dd>Bases aprobadas</dd></div>
+        <div><dt>Vigencia</dt><dd>Hasta 22 dic 2026, prorrogable a mayo 2027</dd></div>
+        <div><dt>Ámbito</dt><dd>Región de Murcia</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>El Bono Turístico regional deja fuera a los pisos turísticos</h3>
+      <p><span class="k">Qué ha pasado</span>La Comunidad aprobó el 29 de septiembre las bases de un bono que paga el 50 % de la estancia, con un máximo de 250 €. Pueden adherirse hoteles, apartamentos turísticos, campings, casas y hospederías rurales y albergues. Las viviendas de uso turístico no.</p>
+      <p><span class="k">Qué significa para ti</span>En temporada baja, un huésped con bono pagará la mitad en un apartamento turístico reglado de tu misma calle. Espera más presión en precio de octubre a mayo.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Revisa tus tarifas de otoño e invierno frente a los apartamentos turísticos de tu zona y refuerza las estancias largas (con contrato de temporada si superan 31 días).</div>
+      <p class="src">Fuente: <a href="https://www.borm.es/services/boletin/ano/2026/numero/225/pdf">BORM n.º 225, 29 de septiembre de 2026</a>, anuncio 4704.</p>
+    </div>
+  </article>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-watch">◆ Vigílalo</span>
+      <dl>
+        <div><dt>Estado</dt><dd>7,75 % en vigor. Rebaja bloqueada</dd></div>
+        <div><dt>Desde</dt><dd>25 jul 2025</dd></div>
+        <div><dt>Ámbito</dt><dd>Región de Murcia</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>Si vas a comprar otro piso: el ITP sigue en el 7,75 %</h3>
+      <p><span class="k">Qué ha pasado</span>El impuesto de transmisiones para la compra de vivienda usada es del 7,75 % desde julio de 2025. La rebaja al 7,5 % pactada para 2026 no se ha aprobado porque los presupuestos regionales siguen prorrogados. Algunas webs lo dan ya por vigente, y no lo está. Hacienda regional tiene como prioridad en 2026 comprobar que declaras al menos el valor de referencia del Catastro.</p>
+      <p><span class="k">Qué significa para ti</span>En un piso de 150.000 € pagas 11.625 € de ITP. Con el 7,5 % serían 11.250 €: 375 € menos. Si escrituras por debajo del valor de referencia, te llegará una liquidación complementaria.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Si la compra no corre prisa, sigue la negociación de los presupuestos de 2026. Consulta el valor de referencia en la sede del Catastro antes de ofertar.</div>
+      <p class="src">Fuentes: <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2025-16147">Ley 3/2025 de Presupuestos de la CARM</a> · <a href="https://www.borm.es/services/boletin/ano/2026/numero/78/pdf">Plan de Control Tributario 2026, BORM n.º 78</a>.</p>
+    </div>
+  </article>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="label">Municipios</span>
+    <h2>Lo que se mueve en tu ayuntamiento</h2>
+    <p>Ninguno de los municipios revisados tiene hoy una moratoria ni una ordenanza específica de pisos turísticos. El riesgo está en el planeamiento urbanístico de Cartagena.</p>
+  </div>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-watch">◆ Vigílalo</span>
+      <dl>
+        <div><dt>Estado</dt><dd>Aprobación provisional</dd></div>
+        <div><dt>Desde</dt><dd>Cuando se apruebe definitivamente</dd></div>
+        <div><dt>Ámbito</dt><dd>Cartagena</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>El nuevo PGOU de Cartagena encierra el alojamiento turístico en edificios enteros</h3>
+      <p><span class="k">Qué ha pasado</span>El pleno aprobó de forma provisional el nuevo Plan General el 12 de febrero de 2026. Faltan la evaluación ambiental y la aprobación definitiva de la Comunidad Autónoma. Sus normas definen el «uso terciario hotelero» como todas las modalidades de alojamiento turístico de la legislación turística. En zonas de residencial colectivo, lo típico del ensanche, ese uso solo se admite «como uso exclusivo de parcela», es decir, en un edificio entero. En residencial genérico, también con acceso independiente.</p>
+      <p><span class="k">Qué significa para ti</span>Es nuestra lectura: el texto no nombra los pisos turísticos. Si el Ayuntamiento o la Comunidad los incluyen en ese uso, no se podrán dar de alta pisos turísticos nuevos en bloques de viviendas cuando el plan entre en vigor. No hemos encontrado un régimen transitorio para los ya registrados. Los pisos con registro turístico en vigor ganarían valor por escasez; uno comprado para turístico y aún sin registrar podría quedarse en alquiler residencial, que en el casco rinde bastante menos.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Si vas a comprar, pide antes una consulta urbanística sobre esa parcela concreta y prioriza pisos con el registro turístico ya concedido. Si tienes pisos sin registrar, valora darlos de alta antes de la aprobación definitiva.</div>
+      <p class="src">Fuentes: <a href="https://urbanismo.cartagena.es/ExtDoc/PLDOC/2020-0001/AT/2026-02/AP_Propuesta_Normas.PDF">Propuesta de normas urbanísticas</a>, arts. 1.3.19, 1.3.44 y 1.3.45 (firmada el 22 de enero de 2026) · <a href="https://www.cartagena.es/detalle_noticias.asp?id=86998">Ayuntamiento de Cartagena, 12 de febrero de 2026</a>.</p>
+    </div>
+  </article>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-watch">◆ Vigílalo</span>
+      <dl>
+        <div><dt>Estado</dt><dd>Avance en información pública</dd></div>
+        <div><dt>Plazo</dt><dd>Hasta octubre 2026</dd></div>
+        <div><dt>Ámbito</dt><dd>Casco histórico de Cartagena</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>El Plan Especial del casco histórico, abierto a sugerencias</h3>
+      <p><span class="k">Qué ha pasado</span>En junio se abrió un plazo de cuatro meses de participación pública para el avance de la revisión del Plan Especial del casco histórico, unas 120 hectáreas que incluyen el puerto y la muralla. Todavía no contiene medidas sobre pisos turísticos. El discurso del Ayuntamiento va hacia un casco «para vivir y no solo para visitar»: entre 2005 y 2020 perdió 2.345 residentes, un 16,6 %.</p>
+      <p><span class="k">Qué significa para ti</span>Es el instrumento con más probabilidades de limitar los pisos turísticos en el centro, a medio plazo (2027–2028). Ahora mismo tienes la opción de presentar sugerencias.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Si tienes pisos en el casco, confirma la fecha de cierre en la sede del Ayuntamiento y valora presentar una sugerencia, solo o con otros propietarios.</div>
+      <p class="src">Fuentes: <a href="https://www.cartagenaactualidad.com/articulo/actualidad/cartagena-abre-participacion-publica-revision-plan-especial-casco-historico-cuatro-meses/20260603134102217587.html">Cartagena Actualidad, 3 de junio de 2026</a> · <a href="https://murciaplaza.com/murciaplaza/cartagena/el-casco-historico-ante-el-espejo-que-funciona-y-que-sigue-pendiente-en-cartagena">Murcia Plaza, 28 de junio de 2026</a>.</p>
+    </div>
+  </article>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-watch">◆ Vigílalo</span>
+      <dl>
+        <div><dt>Estado</dt><dd>En vigor</dd></div>
+        <div><dt>Desde</dt><dd>Abril 2026</dd></div>
+        <div><dt>Ámbito</dt><dd>Mazarrón</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>En Mazarrón respondes de los ruidos de tus huéspedes</h3>
+      <p><span class="k">Qué ha pasado</span>La nueva ordenanza de convivencia prohíbe los ruidos de viviendas que molesten a los vecinos. Si no se puede identificar al infractor, responden a la vez el propietario y el usuario. No colaborar para identificar al inquilino es falta grave.</p>
+      <p><span class="k">Qué significa para ti</span>Multas de 751 a 1.500 € por falta grave y hasta 3.000 € por muy grave, que pueden acabar en tu bolsillo aunque el ruido lo haga un huésped.</p>
+      <div class="todo"><span class="k">Qué hacer</span>Ten a mano el registro de viajeros de cada estancia y añade a tus normas de la casa una cláusula de convivencia que el huésped acepte al reservar.</div>
+      <p class="src">Fuente: <a href="https://www.borm.es/services/anuncio/842433/pdf">BORM, 21 de abril de 2026</a>.</p>
+    </div>
+  </article>
+
+  <article class="ficha">
+    <div class="rail">
+      <span class="chip c-up">▲ Te favorece</span>
+      <dl>
+        <div><dt>Estado</dt><dd>En tramitación</dd></div>
+        <div><dt>Desde</dt><dd>Mayo 2026</dd></div>
+        <div><dt>Ámbito</dt><dd>La Manga (San Javier)</dd></div>
+      </dl>
+    </div>
+    <div class="ficha-body">
+      <h3>San Javier deja de permitir pisos nuevos en La Manga</h3>
+      <p><span class="k">Qué ha pasado</span>La modificación n.º 79 de las normas subsidiarias elimina el uso residencial colectivo en el suelo de La Manga que queda por desarrollar y lo reserva para hoteles, apartamentos turísticos y servicios: unas 4.000 viviendas potenciales menos. Mientras se tramita, hay suspensión de licencias durante un año en 15 polígonos. Los pisos existentes pueden seguir pasando a uso turístico.</p>
+      <p><span class="k">Qué significa para ti</span>Si ya tienes un piso en La Manga, se limita la oferta futura y eso sostiene su valor. A cambio, llegará competencia de apartamentos turísticos y hoteles nuevos.</p>
+      <p class="src">Fuentes: <a href="https://www.sanjavier.es/es/noticia-17061-resumen-acuerdos-pleno-mayo">Ayuntamiento de San Javier, 14 de mayo de 2026</a> · <a href="https://murciaplaza.com/murciaplaza/mar-menor3/san-javier-aprueba-la-suspension-de-edificacion-en-15-poligonos-y-subpoligonos-de-la-manga">Murcia Plaza, 15 de mayo de 2026</a>.</p>
+    </div>
+  </article>
+
+  <div class="calc">
+    <div class="sec-head">
+      <span class="label">Impuestos municipales</span>
+      <h3>Lo que pagarás en 2027</h3>
+    </div>
+    <div class="calc-scroll">
+      <table>
+        <thead><tr><th>Municipio</th><th>IBI por cada 100.000 € de valor catastral</th><th>2027</th></tr></thead>
+        <tbody>
+          <tr><td>Cartagena</td><td>598 €</td><td>Congelado. Falta el pleno</td></tr>
+          <tr><td>Murcia</td><td>711 €</td><td>Congelado. Aprobado</td></tr>
+          <tr><td>Mazarrón</td><td>700 €</td><td class="pos">Baja a 580 € (−120 €). Aprobación provisional</td></tr>
+          <tr><td>San Pedro del Pinatar</td><td>510 €</td><td>Sin novedades. Basura subida en 2025 a unos 139 € al año</td></tr>
+          <tr><td>Los Alcázares</td><td>—</td><td>Nueva tasa de basura: 112 € al año por vivienda sin empadronados</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="assume">Tipos de las ordenanzas fiscales de 2026. En Cartagena la tasa de basura de una vivienda de primera categoría es de 197 € al año; la de «alojamientos turísticos» es de 1.417 €. No hemos encontrado que se aplique hoy a pisos turísticos, pero si ocurriera serían unos 1.220 € más al año por piso.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="label">Tranquilidad</span>
+    <h2>Lo que ha salido y no te afecta</h2>
+  </div>
+  <ul class="quiet">
+    <li><span class="chip c-calm">Sin efecto</span><p><b>Recargo de IBI a pisos turísticos (hasta +150 %).</b> El decreto lo permite solo en municipios con zona tensionada. En la Región de Murcia no hay ninguna declarada: la lista del segundo trimestre solo incluye municipios de Asturias, Galicia y País Vasco. <span class="src"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16532">BOE-A-2026-16532</a></span></p></li>
+    <li><span class="chip c-calm">Sin efecto</span><p><b>Topes de renta y nuevas reducciones del IRPF en zona tensionada.</b> Solo aplican a alquiler de vivienda habitual y, los topes, en zonas tensionadas.</p></li>
+    <li><span class="chip c-calm">Sin efecto</span><p><b>Decreto-ley regional 3/2026 de vivienda asequible.</b> No incluye medidas sobre pisos turísticos. Sí permite convertir locales en planta baja en vivienda a partir de 2027, fuera del casco antiguo y según decida cada ayuntamiento: es otra vía de inversión, para estudiarla aparte. <span class="src"><a href="https://www.boe.es/buscar/pdf/2026/BORM-s-2026-90179-consolidado.pdf">BORM, 7 de julio de 2026</a></span></p></li>
+    <li><span class="chip c-calm">Sin efecto</span><p><b>Propuesta europea de «Affordable Housing Act».</b> Permitiría limitar los alquileres cortos en zonas bajo presión, pero es solo una propuesta de la Comisión del 9 de septiembre y tardará años.</p></li>
+  </ul>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="label">Calendario</span>
+    <h2>Fechas que debes tener apuntadas</h2>
+  </div>
+  <div class="cal">
+    <div class="cal-row"><time datetime="2026-10-02">Vie 2 oct 2026</time><p>El Congreso vota si convalida el Real Decreto-ley 26/2026. Si lo deroga, caen el IVA turístico, los cambios en el alquiler de temporada y todo lo demás.</p></div>
+    <div class="cal-row"><time datetime="2026-10">Octubre 2026</time><p>Cierra el plazo de sugerencias al Plan Especial del casco histórico de Cartagena. Confirma el día exacto.</p></div>
+    <div class="cal-row"><time datetime="2026-11">Oct–nov 2026</time><p>El pleno de Cartagena aprueba la congelación de impuestos de 2027 y sale a exposición pública.</p></div>
+    <div class="cal-row"><time datetime="2026-12-01">Mar 1 dic 2026</time><p>IVA del 10 % en estancias de hasta 30 noches. Nuevos coeficientes de la plusvalía municipal, que solo te afectan si vendes.</p></div>
+    <div class="cal-row"><time datetime="2027-01-01">1 ene 2027</time><p>Cambia la imputación de rentas del IRPF para los días en que el piso no está alquilado: pasa a una escala del 1,1 % al 3 % según la suma de valores catastrales de tus inmuebles.</p></div>
+    <div class="cal-row"><time datetime="2027-02-01">Lun 1 feb 2027</time><p>Fin del plazo de tu primera declaración trimestral de IVA (modelo 303 del cuarto trimestre, que recoge diciembre). El 30 de enero cae en sábado. En enero, las plataformas también envían a Hacienda tus ingresos de 2026 (modelo 238).</p></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="label">Sin cambios</span>
+    <h2>Sigue igual, pero no lo olvides</h2>
+  </div>
+  <ul class="quiet">
+    <li><span class="chip c-watch">Obligatorio</span><p><b>Registro de viajeros en SES.Hospedajes en 24 horas.</b> La Comisión Europea abrió en junio un procedimiento contra España por pedir demasiados datos, pero el real decreto sigue vigente. Cada omisión es infracción grave: de 601 a 30.000 €. <span class="src"><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461">RD 933/2021</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-3442">LO 4/2015, art. 36.20</a></span></p></li>
+    <li><span class="chip c-watch">Obligatorio</span><p><b>Seguro de responsabilidad civil de al menos 300.000 € por siniestro.</b> Dejarlo caducar es infracción muy grave: desde 10.001 €. Anunciar sin declaración responsable es grave: de 1.001 a 10.000 €. <span class="src"><a href="https://www.borm.es/services/anuncio/780550/pdf">Decreto 256/2019</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-750">Ley 12/2013 de Turismo</a></span></p></li>
+    <li><span class="chip c-watch">En trámite</span><p><b>Nueva placa distintiva.</b> La Comunidad tramita una orden de distintivos que incluye los pisos turísticos. Cuando se apruebe, puede que tengas que cambiar la placa. <span class="src"><a href="https://www.borm.es/services/boletin/ano/2026/numero/138/pdf">BORM n.º 138, 18 de junio de 2026</a></span></p></li>
+    <li><span class="chip c-watch">Obligatorio</span><p><b>IRPF de tus pisos turísticos:</b> sin cambios. Tributan como rendimiento del capital inmobiliario, sin la reducción del alquiler de vivienda habitual.</p></li>
+  </ul>
+</section>
+
+<footer class="foot">
+  <p><b>RegTrack</b> vigila el BOE y los boletines autonómicos, como el BORM, y te cuenta qué cambia en tu cartera y cuánto te cuesta. Esta edición piloto se ha preparado con fuentes públicas a 30 de septiembre de 2026, incluidas las webs y ordenanzas de los ayuntamientos.</p>
+  <p>Resumen informativo. No es asesoramiento fiscal ni jurídico. Las cifras de los ejemplos son supuestos: consulta tu caso con tu gestoría o abogado.</p>
+</footer>
+
+</div>
+</body>
+</html>
