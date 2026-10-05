@@ -97,7 +97,25 @@ Poner `COMMUNITY_ENABLED=false` y redesplegar cierra solicitudes, API y páginas
 
 La investigación que fundamenta el piloto está en [REFERENCIAS.md](REFERENCIAS.md). Las fuentes explican mecanismos de acogida, pertenencia y contribución; no garantizan resultados comerciales para RegTrack. La comunidad es nacional y filtra por territorio sin abrir canales vacíos por provincia.
 
-El endurecimiento general del sistema antiguo de usuarios y sus API sigue siendo una revisión separada: al comenzar esta entrega había PR abiertos de autenticación, vigilancia y cartera. No se han mergeado ni alterado sus ramas. La autorización de esta comunidad no depende de esa tabla antigua. Antes de una apertura pública del producto completo, conciliar ese trabajo de seguridad con esta entrega.
+El cierre de acceso del sistema antiguo se incluye ahora en este PR: identidad verificada contra Auth, perfil activo enlazado únicamente por `auth_id`, autorización de administrador en las operaciones sensibles y comprobación de origen en escrituras. No se han mergeado ni alterado las ramas de autenticación, vigilancia o cartera de otros trabajos. La moderación comunitaria sigue siendo un permiso independiente.
+
+## Acceso y registro: preparación del despliegue
+
+`20261005122015_acceso_seguro_y_alta.sql` habilita RLS y retira permisos públicos de las tablas antiguas que existen, conserva los datos y deja su acceso en el servidor con `service_role`. La función de alta solo admite identidades confirmadas, crea suscriptores gratuitos y rechaza cuentas desactivadas o reclamaciones por coincidencia de correo. Nunca convierte un alta en administrador.
+
+`/registro` confirma primero el correo mediante Auth y después completa el perfil desde `/api/registro`. El callback permitido es `/api/auth/confirm`; no acepta un destino externo. El alta comunitaria sigue siendo distinta y requiere admisión.
+
+Comprobación **solo de lectura** de producción del 5-oct: siete tablas antiguas sin RLS ni restricción de permisos públicos; un perfil administrador activo y enlazado, sin `auth_id` duplicados; tablas sectoriales y comunitarias todavía ausentes. Auth admite altas por correo y exige confirmación. Esto no acredita envío SMTP ni significa que la reparación esté desplegada.
+
+Orden de despliegue a ensayar y aprobar:
+
+1. Comparar el historial real con los ficheros; no ejecutar `db push` sobre todo el historial sin reconciliarlo. Verificar copia recuperable y ausencia de migraciones concurrentes.
+2. Para el producto completo, resolver la ausencia de `007_sectorial.sql`: sus tablas son lectoras de `/alertas` e intereses. Si se crean ahora, **crear tablas y cerrar sus permisos en una misma transacción** con la migración de acceso, sin intervalo público. No recrear tablas existentes ni reaplicar ciegamente los datos de fuentes de otras migraciones. Ensayar el conjunto exacto en una base aislada antes de tocar producción.
+3. Desplegar código y migración de acceso en una ventana controlada, manteniendo `COMMUNITY_ENABLED=false`. La función de alta debe existir antes de admitir registros con la versión nueva. Comprobar administrador legítimo, suscriptor, cuenta sin perfil y rechazos 401/403; repetir la comprobación de permisos en la base real.
+4. Aplicar las dos migraciones comunitarias en orden, solo tras comprobar sus dependencias de alertas/relaciones. Configurar el origen canónico de cada entorno; en preview debe coincidir con la URL del preview, no con producción. Configurar los destinos de Auth autorizados.
+5. Verificar un alta real autorizada con entrega de correo, confirmación, perfil y acceso. El fixture local usa usuarios sintéticos ya confirmados: **no acredita SMTP**. Resolver responsable, correo atendido y moderador antes de activar solicitudes y anunciar la comunidad.
+
+La reversión de código no debe restaurar permisos públicos. Conservar RLS y datos; corregir hacia delante si el código antiguo de registro deja de funcionar. Las pruebas de esta rama no acreditan una auditoría exhaustiva del producto ni integración de PR14/PR18.
 # Integración normativa (5-oct-2026)
 
 La segunda migración `20261005113039_comunidad_normativa.sql` se aplica después de la comunidad inicial y de las migraciones históricas de alertas/relaciones. No aplicar a ciegas todo el historial en una base existente.

@@ -8,7 +8,7 @@ const db = new PGlite(),
   accounts = new Map(),
   tokens = new Map()
 await db.exec(`create role anon;create role authenticated;create role service_role bypassrls;create schema auth;
- create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz,banned_until timestamptz);
+ create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz,banned_until timestamptz,is_anonymous boolean default false);
  grant usage on schema auth,public to service_role;grant select on auth.users to service_role;`)
 await db.exec(
   readFileSync(
@@ -17,7 +17,10 @@ await db.exec(
   ),
 )
 await db.exec(readFileSync('supabase/migrations/001_initial.sql', 'utf8'))
+await db.exec(readFileSync('supabase/migrations/002_add_rol_config.sql', 'utf8'))
 await db.exec(readFileSync('supabase/migrations/006_correlacion.sql', 'utf8'))
+await db.exec(readFileSync('supabase/migrations/007_sectorial.sql', 'utf8'))
+await db.exec(readFileSync('supabase/migrations/20261005122015_acceso_seguro_y_alta.sql', 'utf8'))
 await db.exec(
   readFileSync(
     'supabase/migrations/20261005113039_comunidad_normativa.sql',
@@ -27,7 +30,7 @@ await db.exec(
 await db.exec(
   'grant select,insert,update,delete on alertas,alerta_relaciones to service_role',
 )
-for (const name of ['owner', 'helper', 'moderator']) {
+for (const name of ['owner', 'helper', 'moderator', 'subscriber', 'administrator']) {
   const user = {
     id: randomUUID(),
     email: `${name}@example.test`,
@@ -39,13 +42,15 @@ for (const name of ['owner', 'helper', 'moderator']) {
     user_metadata: {},
   }
   accounts.set(user.email, user)
-  await db.query('insert into auth.users values($1,$2,$3,null)', [
+  await db.query('insert into auth.users(id,email,email_confirmed_at) values($1,$2,$3)', [
     user.id,
     user.email,
     user.email_confirmed_at,
   ])
   if (name === 'moderator')
     await db.query('insert into community_moderators values($1)', [user.id])
+  if (name === 'administrator')
+    await db.query("insert into usuarios(auth_id,email,nombre,rol,plan,activo) values($1,$2,'Administrador de prueba','admin','pro',true)",[user.id,user.email])
 }
 await db.exec('set role service_role')
 const regulationId = '03f2f098-a036-4c03-bbf4-2842d4b32920'
@@ -111,6 +116,26 @@ const server = createServer(async (req, res) => {
       [regulationId],
     )
     return send({ ok: true })
+  }
+  if (url.pathname === '/rest/v1/rpc/register_subscriber') {
+    if (bearer !== 'community-test-service-key') return send({message:'permission denied'},403)
+    try {
+      const r = await db.query('select register_subscriber($1::uuid,$2::jsonb) as value',[body.actor,JSON.stringify(body.profile)])
+      return send(r.rows[0].value)
+    } catch(e) { return send({message:e.message,code:e.code ?? 'P0001'},400) }
+  }
+  if (url.pathname.startsWith('/rest/v1/') && req.method === 'GET') {
+    if (bearer !== 'community-test-service-key') return send({message:'permission denied'},403)
+    const table = url.pathname.slice('/rest/v1/'.length)
+    if (table === 'usuarios') {
+      const column = url.searchParams.has('auth_id') ? 'auth_id' : 'id'
+      const value = url.searchParams.get(column)?.replace(/^eq\./,'')
+      const result = await db.query(`select * from usuarios where ${column}=$1::uuid`,[value])
+      if (req.headers.accept?.includes('vnd.pgrst.object')) return result.rows[0] ? send(result.rows[0]) : send({code:'PGRST116',details:'0 rows'},406)
+      return send(result.rows)
+    }
+    if (['alertas','subcategorias','suscriptor_intereses','alerta_sectores'].includes(table)) return send([])
+    if (table === 'config') return send((await db.query('select * from config')).rows)
   }
   if (url.pathname === '/rest/v1/rpc/community_execute') {
     if (bearer !== 'community-test-service-key')

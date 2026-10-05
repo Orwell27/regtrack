@@ -178,7 +178,7 @@ export function formatDate(value: string) {
   }).format(new Date(value))
 }
 export function safeReturnPath(value: string | null) {
-  return (value === '/comunidad' ||
+  return (value === '/registro' || value === '/comunidad' ||
     value?.startsWith('/comunidad/') ||
     value?.startsWith('/comunidad?')) &&
     !value.includes('\\') &&
