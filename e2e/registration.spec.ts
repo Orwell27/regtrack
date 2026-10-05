@@ -6,6 +6,9 @@ test('administrator keeps verified access while anonymous callers are rejected',
  await page.getByLabel('Contraseña',{exact:true}).fill('Community-test-123!')
  await page.getByRole('button',{name:'Entrar',exact:true}).click()
  await expect(page).toHaveURL(/\/comunidad$/)
+ // The URL changes before the new document and its cookie jar have settled.
+ // Wait for the server-confirmed session, then make one authorized API request.
+ await expect(page.getByRole('button',{name:'Cerrar sesión',exact:true})).toBeVisible()
  expect((await page.request.get('/api/config')).status()).toBe(200)
 })
 test('verified registration provisions a free subscriber and rejects administration',async({page})=>{

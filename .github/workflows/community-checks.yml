@@ -43,4 +43,5 @@ jobs:
         with:
           name: community-release-package
           path: .artifacts/community-release/
+          include-hidden-files: true
           retention-days: 7
