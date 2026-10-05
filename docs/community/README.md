@@ -98,3 +98,13 @@ Poner `COMMUNITY_ENABLED=false` y redesplegar cierra solicitudes, API y páginas
 La investigación que fundamenta el piloto está en [REFERENCIAS.md](REFERENCIAS.md). Las fuentes explican mecanismos de acogida, pertenencia y contribución; no garantizan resultados comerciales para RegTrack. La comunidad es nacional y filtra por territorio sin abrir canales vacíos por provincia.
 
 El endurecimiento general del sistema antiguo de usuarios y sus API sigue siendo una revisión separada: al comenzar esta entrega había PR abiertos de autenticación, vigilancia y cartera. No se han mergeado ni alterado sus ramas. La autorización de esta comunidad no depende de esa tabla antigua. Antes de una apertura pública del producto completo, conciliar ese trabajo de seguridad con esta entrega.
+# Integración normativa (5-oct-2026)
+
+La segunda migración `20261005113039_comunidad_normativa.sql` se aplica después de la comunidad inicial y de las migraciones históricas de alertas/relaciones. No aplicar a ciegas todo el historial en una base existente.
+
+- «Qué cambia» y el detalle de cada referencia solo muestran alertas `enviada` a miembros admitidos o moderadores verificados. Nunca incluyen texto premium ni borradores.
+- Desde una alerta publicada se inicia una conversación con referencia copiada en la base: fuente, enlace, ámbito, territorios, publicación, entrada en vigor registrada y versión. El municipio del caso se indica aparte; no implica que la norma se aplique.
+- Una guía requiere permiso del autor, revisión de su versión y de la referencia normativa. Si cambian los campos de la alerta o sus publicaciones relacionadas, se ocultan las conclusiones y vuelve a la cola de revisión. Retirar la alerta también bloquea republicación.
+- La detección compara información **ya incorporada a RegTrack**. No prueba cobertura municipal completa, vigilancia continua de todas las fuentes ni vigencia jurídica. La integración del capturador de PR18 sigue siendo un hito independiente.
+- El borrador conserva la referencia original solo como contexto histórico. Las contribuciones profesionales son autodeclaradas, no verificadas por un registro profesional.
+- `docs/community/LANZAMIENTO.md` contiene mensajes, carrusel y guion preparados. No se ha publicado ni contactado a terceros.

@@ -28,7 +28,7 @@ jobs:
       - run: npm audit --omit=dev --audit-level=high
       - run: npm test
       - name: Lint community and integration
-        run: npx eslint app/comunidad app/api/comunidad components/community lib/community tests/community-api.test.ts tests/community-db.test.ts e2e playwright.config.ts middleware.ts 'app/(auth)/login/page.tsx' app/components/layouts/SubscriberSidebar.tsx app/components/layouts/AdminSidebar.tsx
+        run: npx eslint app/comunidad app/api/comunidad components/community lib/community tests/community-api.test.ts tests/community-db.test.ts e2e playwright.config.ts middleware.ts 'app/(auth)/login/page.tsx' 'app/(subscriber)/alerta/[id]/page.tsx' app/components/layouts/SubscriberSidebar.tsx app/components/layouts/AdminSidebar.tsx
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e

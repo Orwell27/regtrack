@@ -47,7 +47,7 @@ const ERROR_MESSAGES: Record<string, [number, string]> = {
   INVALID: [400, 'Revisa los campos del formulario.'],
   UNAUTHENTICATED: [401, 'Accede con tu cuenta y confirma tu correo.'],
   FORBIDDEN: [403, 'Tu cuenta no tiene acceso a esta acción.'],
-  NOT_FOUND: [404, 'Esta conversación no está disponible.'],
+  NOT_FOUND: [404, 'Este contenido no está disponible.'],
   RATE_LIMIT: [
     429,
     'Has realizado varios envíos. Espera un poco antes de intentarlo de nuevo.',

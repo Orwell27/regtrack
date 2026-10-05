@@ -89,36 +89,42 @@ export async function GET(request: Request) {
   try {
     const url = new URL(request.url)
     const action = url.searchParams.get('action') ?? 'read'
-    if (!['read', 'topic', 'admin'].includes(action))
+    if (
+      !['read', 'topic', 'admin', 'regulation', 'regulations'].includes(action)
+    )
       throw new CommunityError(400, 'Consulta no válida.')
     const user = await communityIdentity()
     const id = url.searchParams.get('id') ?? ''
-    if (action === 'topic' && !/^[0-9a-f-]{36}$/i.test(id))
+    if (
+      ['topic', 'regulation'].includes(action) &&
+      !/^[0-9a-f-]{36}$/i.test(id)
+    )
       throw new CommunityError(400, 'Identificador no válido.')
-    const payload =
-      action === 'topic'
-        ? {
-            id,
-            page: Math.floor(
-              Math.min(
-                1000,
-                Math.max(0, Number(url.searchParams.get('page')) || 0),
-              ),
+    const payload = ['topic', 'regulation'].includes(action)
+      ? {
+          id,
+          page: Math.floor(
+            Math.min(
+              1000,
+              Math.max(0, Number(url.searchParams.get('page')) || 0),
             ),
-          }
-        : {
-            q: (url.searchParams.get('q') ?? '').slice(0, 100),
-            category: url.searchParams.get('category') ?? '',
-            region: url.searchParams.get('region') ?? '',
-            following: url.searchParams.get('following') ?? '',
-            status: url.searchParams.get('status') ?? '',
-            page: Math.floor(
-              Math.min(
-                1000,
-                Math.max(0, Number(url.searchParams.get('page')) || 0),
-              ),
+          ),
+        }
+      : {
+          q: (url.searchParams.get('q') ?? '').slice(0, 100),
+          category: url.searchParams.get('category') ?? '',
+          region: url.searchParams.get('region') ?? '',
+          alert_id: url.searchParams.get('alert_id') ?? '',
+          ambito: url.searchParams.get('ambito') ?? '',
+          following: url.searchParams.get('following') ?? '',
+          status: url.searchParams.get('status') ?? '',
+          page: Math.floor(
+            Math.min(
+              1000,
+              Math.max(0, Number(url.searchParams.get('page')) || 0),
             ),
-          }
+          ),
+        }
     return response(await communityExecute(user?.id ?? null, action, payload))
   } catch (error) {
     return failure(error)

@@ -16,6 +16,17 @@ await db.exec(
     'utf8',
   ),
 )
+await db.exec(readFileSync('supabase/migrations/001_initial.sql', 'utf8'))
+await db.exec(readFileSync('supabase/migrations/006_correlacion.sql', 'utf8'))
+await db.exec(
+  readFileSync(
+    'supabase/migrations/20261005113039_comunidad_normativa.sql',
+    'utf8',
+  ),
+)
+await db.exec(
+  'grant select,insert,update,delete on alertas,alerta_relaciones to service_role',
+)
 for (const name of ['owner', 'helper', 'moderator']) {
   const user = {
     id: randomUUID(),
@@ -37,6 +48,12 @@ for (const name of ['owner', 'helper', 'moderator']) {
     await db.query('insert into community_moderators values($1)', [user.id])
 }
 await db.exec('set role service_role')
+const regulationId = '03f2f098-a036-4c03-bbf4-2842d4b32920'
+await db.query(
+  `insert into alertas(id,url,titulo,fuente,ambito,territorios,fecha_publicacion,resumen,impacto,accion_recomendada,estado) values
+ ($1,'https://www.boe.es/example-fixture','Normativa de obras · ejemplo de prueba','BOE','estatal','["España"]','2026-01-01','Resumen sintético para comprobar el recorrido; no es asesoramiento.','Impacto de prueba sobre trámites de obras.','Contrastar condiciones territoriales antes de decidir.','enviada')`,
+  [regulationId],
+)
 function session(user) {
   const encode = (x) => Buffer.from(JSON.stringify(x)).toString('base64url')
   const token = `${encode({ alg: 'HS256', typ: 'JWT' })}.${encode({ sub: user.id, email: user.email, aud: 'authenticated', role: 'authenticated', exp: Math.floor(Date.now() / 1000) + 3600, iat: Math.floor(Date.now() / 1000), session_id: randomUUID() })}.test-signature`
@@ -82,6 +99,18 @@ const server = createServer(async (req, res) => {
   if (url.pathname === '/auth/v1/logout') {
     tokens.delete(bearer)
     return send({})
+  }
+  // Test fixture only; never part of the Next.js application or remote database.
+  if (
+    url.pathname === '/__test/change-reference' &&
+    req.method === 'POST' &&
+    bearer === 'community-test-service-key'
+  ) {
+    await db.query(
+      "update alertas set fecha_entrada_vigor='2026-02-01' where id=$1",
+      [regulationId],
+    )
+    return send({ ok: true })
   }
   if (url.pathname === '/rest/v1/rpc/community_execute') {
     if (bearer !== 'community-test-service-key')

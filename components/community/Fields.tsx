@@ -112,6 +112,15 @@ export function TopicFields({ topic }: { topic?: Topic }) {
         <RegionField value={topic?.region} />
       </div>
       <label>
+        Municipio de tu caso (opcional)
+        <input
+          name="municipality"
+          maxLength={120}
+          defaultValue={topic?.municipality}
+          placeholder="Solo el municipio; no escribas tu dirección"
+        />
+      </label>
+      <label>
         Situación y qué has intentado
         <textarea
           name="body"

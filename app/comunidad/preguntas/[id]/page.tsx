@@ -10,6 +10,7 @@ import {
 } from '@/lib/community/model'
 import { CommandForm } from '@/components/community/CommandForm'
 import { Hidden, TopicFields, ReplyFields } from '@/components/community/Fields'
+import { RegulationCard } from '@/components/community/RegulationCard'
 export default async function Conversation({
   params,
   searchParams,
@@ -17,8 +18,8 @@ export default async function Conversation({
   params: Promise<{ id: string }>
   searchParams: Promise<{ page?: string }>
 }) {
-  const { actor } = await requireCommunity()
   const { id } = await params
+  const { actor } = await requireCommunity(false, `/comunidad/preguntas/${id}`)
   const page = Math.max(
     0,
     Math.min(1000, Math.floor(Number((await searchParams).page) || 0)),
@@ -51,12 +52,43 @@ export default async function Conversation({
           <div className="rc-meta">
             <span>{topic.alias}</span>
             <span>{topic.region}</span>
+            {topic.municipality && <span>{topic.municipality}</span>}
             <span>{formatDate(topic.created_at)}</span>
             {topic.revision > 1 ? (
               <span>Editado · versión {topic.revision}</span>
             ) : null}
           </div>
           <p className="rc-body">{topic.body}</p>
+          {topic.alert_id && (
+            <>
+              {topic.reference_changed && (
+                <p className="rc-error">
+                  La referencia normativa ha cambiado o ya no está disponible.
+                  Las aportaciones anteriores necesitan contrastarse de nuevo.
+                </p>
+              )}
+              {topic.regulation ? (
+                <RegulationCard regulation={topic.regulation} compact />
+              ) : (
+                <p>
+                  La alerta vinculada ya no está publicada. Consulta al equipo
+                  antes de utilizar las conclusiones de esta conversación.
+                </p>
+              )}
+              {topic.reference_changed && topic.reference_snapshot && (
+                <details className="rc-details">
+                  <summary>
+                    Referencia conservada al iniciar la conversación (histórica)
+                  </summary>
+                  <p>{topic.reference_snapshot.title}</p>
+                  <p>
+                    Esta copia identifica el contexto original; no acredita la
+                    situación actual.
+                  </p>
+                </details>
+              )}
+            </>
+          )}
           {own ? (
             <details className="rc-details">
               <summary>Editar mi pregunta</summary>
@@ -89,7 +121,7 @@ export default async function Conversation({
                       {
                         experiencia: 'Experiencia personal',
                         fuente: 'Fuente consultada',
-                        profesional: 'Aportación profesional',
+                        profesional: 'Profesional · vinculación autodeclarada',
                       }[reply.kind]
                     }
                   </span>

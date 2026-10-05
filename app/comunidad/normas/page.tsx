@@ -44,6 +44,22 @@ export default function Rules() {
         </section>
       ))}
       <section>
+        <h2>La norma, la explicación y la experiencia</h2>
+        <p>
+          La publicación oficial es la fuente de referencia. La explicación de
+          RegTrack ayuda a leerla; una experiencia o aportación profesional
+          conserva su propio contexto y no determina por sí sola cómo se aplica
+          a otra persona.
+        </p>
+        <p>
+          Indica comunidad autónoma y municipio cuando importen. Una respuesta
+          marcada como útil no equivale a una validación jurídica. Si cambia la
+          alerta vinculada o aparece en RegTrack una publicación relacionada,
+          las guías vuelven a necesitar revisión. No detectamos cambios que
+          todavía no se hayan incorporado a RegTrack.
+        </p>
+      </section>
+      <section>
         <h2>Cómo cuidamos las conversaciones</h2>
         <p>
           Puedes avisar desde una conversación o respuesta. El equipo revisa los

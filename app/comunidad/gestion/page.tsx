@@ -5,6 +5,8 @@ import { type AdminSnapshot, formatDate } from '@/lib/community/model'
 import { CommandForm } from '@/components/community/CommandForm'
 import { Hidden } from '@/components/community/Fields'
 
+import { RegulationCard } from '@/components/community/RegulationCard'
+
 const weeks = [
   [
     'Preparación',
@@ -272,11 +274,21 @@ export default async function CommunityAdmin({
         </p>
         <div className="rc-list">
           {data.review.map((t) => (
-            <details className="rc-card" key={`${t.id}-${t.revision}`}>
+            <details
+              className="rc-card"
+              key={`${t.id}-${t.revision}-${t.regulation?.version ?? ''}`}
+            >
               <summary>
                 {t.title} · {t.alias}
               </summary>
               <p className="rc-body">{t.body}</p>
+              {t.regulation && <RegulationCard regulation={t.regulation} />}
+              {t.alert_id && !t.regulation && (
+                <p className="rc-error">
+                  La referencia se ha retirado. La ficha no puede publicarse
+                  mientras no vuelva a estar disponible.
+                </p>
+              )}
               {t.outcome ? (
                 <p className="rc-outcome">Resultado: {t.outcome}</p>
               ) : null}
@@ -290,6 +302,10 @@ export default async function CommunityAdmin({
               >
                 <Hidden name="topic_id" value={t.id} />
                 <Hidden name="revision" value={t.revision} />
+                <Hidden
+                  name="regulation_version"
+                  value={t.regulation?.version ?? ''}
+                />
                 <label>
                   Título
                   <input

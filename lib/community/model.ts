@@ -37,6 +37,23 @@ export const OWNER_KINDS = [
 ] as const
 export type Category = keyof typeof CATEGORIES
 export type Member = { id: string; alias: string }
+export type Regulation = {
+  id: string
+  version: string
+  title: string
+  url: string
+  source: string
+  scope: 'estatal' | 'ccaa' | 'municipal' | null
+  territories: string[]
+  published_on: string | null
+  effective_on: string | null
+  summary: string | null
+  impact: string | null
+  affected: string[]
+  action: string | null
+  modifies: string | null
+  related: { id: string; title: string; url: string; relation: string }[]
+}
 export type Application = Member & {
   email: string
   region: string
@@ -48,6 +65,11 @@ export type Application = Member & {
   last_seen_at: string | null
 }
 export type Topic = {
+  alert_id: string | null
+  municipality: string
+  reference_snapshot: Regulation | null
+  regulation?: Regulation | null
+  reference_changed?: boolean
   id: string
   author_id: string
   alias: string
@@ -79,6 +101,9 @@ export type Reply = {
   revision: number
 }
 export type Resource = {
+  regulation?: Regulation | null
+  municipality: string
+  needs_review: boolean
   id: string
   topic_id: string
   title: string
@@ -123,10 +148,14 @@ export type AdminSnapshot = {
     reason: string
     created_at: string
   }[]
-  review: Pick<
+  review: (Pick<
     Topic,
     'id' | 'title' | 'body' | 'outcome' | 'region' | 'revision' | 'alias'
-  >[]
+  > & {
+    regulation?: Regulation | null
+    alert_id?: string | null
+    municipality?: string
+  })[]
   pilot: Pilot
   metrics: {
     topics: number
@@ -223,6 +252,7 @@ export function parseCommand(input: unknown) {
     text('body', 20, 6000)
     choice('category', Object.keys(CATEGORIES))
     choice('region', REGIONS)
+    text('municipality', 0, 120, true)
   }
   const replyFields = () => {
     text('body', 5, 4000)
@@ -259,6 +289,10 @@ export function parseCommand(input: unknown) {
       break
     case 'ask':
       topicFields()
+      if (raw.alert_id) {
+        id('alert_id')
+        text('regulation_version', 32, 32)
+      }
       break
     case 'reply':
       id('topic_id')
@@ -316,6 +350,7 @@ export function parseCommand(input: unknown) {
       text('body', 20, 6000)
       text('scope', 10, 1000)
       url()
+      text('regulation_version', 0, 32, true)
       break
     case 'pilot': {
       const date = text('started_on', 0, 10, true)

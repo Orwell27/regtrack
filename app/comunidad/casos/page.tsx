@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { requireCommunity } from '@/lib/community/pages'
 import { communityExecute } from '@/lib/community/server'
 import { type Snapshot, formatDate } from '@/lib/community/model'
+import { RegulationCard } from '@/components/community/RegulationCard'
 export default async function Cases({
   searchParams,
 }: {
@@ -30,11 +31,24 @@ export default async function Cases({
           data.resources.slice(0, 20).map((r) => (
             <article key={r.id} className="rc-card">
               <p className="rc-eyebrow">
-                {r.region} · {formatDate(r.reviewed_at)}
+                {r.region}
+                {r.municipality ? ` · ${r.municipality}` : ''} · Revisión:{' '}
+                {formatDate(r.reviewed_at)}
               </p>
               <h2>{r.title}</h2>
               <p className="rc-muted">A partir del caso de {r.alias}</p>
-              <p className="rc-body">{r.body}</p>
+              {r.needs_review ? (
+                <p className="rc-error">
+                  Pendiente de nueva revisión: la referencia normativa ha
+                  cambiado o se ha retirado. Las conclusiones quedan ocultas
+                  hasta que el equipo las contraste.
+                </p>
+              ) : (
+                <p className="rc-body">{r.body}</p>
+              )}
+              {r.regulation && (
+                <RegulationCard regulation={r.regulation} compact />
+              )}
               <div className="rc-outcome">
                 <strong>Alcance de la revisión</strong>
                 <p>{r.scope}</p>

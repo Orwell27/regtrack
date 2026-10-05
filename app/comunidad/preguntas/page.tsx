@@ -20,6 +20,7 @@ export default async function Conversations({
     category: query.category ?? '',
     region: query.region ?? '',
     following: query.following ?? '',
+    alert_id: query.alert_id ?? '',
     page,
   })
   const items = (data.topics ?? []).slice(0, 20)
@@ -43,6 +44,9 @@ export default async function Conversations({
         ) : null}
       </div>
       <form className="rc-card rc-filters" action="/comunidad/preguntas">
+        {query.alert_id && (
+          <input type="hidden" name="alert_id" value={query.alert_id} />
+        )}
         <label>
           Buscar
           <input
@@ -84,6 +88,17 @@ export default async function Conversations({
         <button className="rc-button">Filtrar</button>
       </form>
       <div className="rc-list">
+        {query.alert_id && (
+          <p>
+            Conversaciones vinculadas a una norma.{' '}
+            <Link
+              href={`/comunidad/novedades/${encodeURIComponent(query.alert_id)}`}
+            >
+              Volver a la referencia
+            </Link>{' '}
+            · <Link href="/comunidad/preguntas">Quitar filtro</Link>
+          </p>
+        )}
         {items.length ? (
           items.map((t) => (
             <article key={t.id} className="rc-conversation">
@@ -99,6 +114,12 @@ export default async function Conversations({
                 <div className="rc-meta">
                   <span>{t.alias}</span>
                   <span>{t.region}</span>
+                  {t.municipality && <span>{t.municipality}</span>}
+                  {t.alert_id && (
+                    <Link href={`/comunidad/novedades/${t.alert_id}`}>
+                      Con referencia normativa
+                    </Link>
+                  )}
                   <span>{formatDate(t.created_at)}</span>
                   {t.outcome ? <span>Con resultado</span> : null}
                 </div>

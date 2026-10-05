@@ -18,15 +18,15 @@ export default async function CommunityPage() {
     <>
       <section className="rc-hero">
         <div>
-          <p className="rc-eyebrow">PROPIETARIOS QUE APRENDEN JUNTOS</p>
+          <p className="rc-eyebrow">NORMATIVA Y COMUNIDAD DE PROPIETARIOS</p>
           <h1>
-            Lo que otro ya aprendió,
+            Entiende qué cambia.
             <br />
-            <em>puede ayudarte hoy.</em>
+            <em>Decide con más contexto.</em>
           </h1>
           <p className="rc-lead">
-            Un lugar para compartir dudas, experiencias y decisiones sobre lo
-            tuyo. Desde cualquier punto de España.
+            Consulta las fuentes, entiende su alcance y comparte cómo lo estás
+            resolviendo. Una comunidad de propietarios de toda España.
           </p>
           <div className="rc-actions">
             {approved ? (
@@ -53,23 +53,24 @@ export default async function CommunityPage() {
             {snapshot.pilot?.started_on ? 'Piloto en marcha' : 'Primer grupo'}
           </span>
           <h2>
-            Pregunta con confianza.
+            De la norma a tu pregunta.
             <br />
-            Comparte con contexto.
+            De tu caso al aprendizaje.
             <br />
-            Cuenta cómo terminó.
+            Siempre con territorio y fecha.
           </h2>
           <p>
-            Así, cada experiencia deja un camino más claro para el siguiente.
+            Las alertas publicadas abren conversaciones. Las experiencias
+            revisadas ayudan al siguiente propietario.
           </p>
           <div className="rc-note-line">
-            <span>01</span> Personas antes que perfiles.
+            <span>01</span> La publicación oficial, a mano.
           </div>
           <div className="rc-note-line">
-            <span>02</span> Ayuda antes que promoción.
+            <span>02</span> La explicación, con sus límites.
           </div>
           <div className="rc-note-line">
-            <span>03</span> Experiencias con sus límites.
+            <span>03</span> Las experiencias, con contexto.
           </div>
         </aside>
       </section>
@@ -106,10 +107,10 @@ export default async function CommunityPage() {
               <p>
                 {
                   [
-                    'Una reparación, una obra o un presupuesto.',
-                    'Decisiones del día a día de un inmueble alquilado.',
-                    'Relaciones con vecinos, inquilinos y profesionales.',
-                    'Opciones, dudas y próximos pasos sobre tu inmueble.',
+                    'Obras, permisos y decisiones sobre una reforma.',
+                    'Alquiler, obligaciones y trámites que necesitas entender.',
+                    'Comunidad de propietarios, acuerdos y responsabilidades.',
+                    'Fiscalidad, cambios de uso y decisiones sobre tu inmueble.',
                   ][i]
                 }
               </p>
@@ -121,10 +122,11 @@ export default async function CommunityPage() {
       <section className="rc-section rc-three">
         <article>
           <MessagesSquare />
-          <h3>Una pregunta concreta</h3>
+          <h3>Una norma con contexto</h3>
           <p>
-            Cuenta tu situación y qué necesitas decidir. El contexto ayuda a que
-            las respuestas encajen.
+            Consulta qué cambia, la publicación oficial y el territorio
+            señalado. La cobertura depende de las fuentes incorporadas; no es
+            exhaustiva.
           </p>
         </article>
         <article>
@@ -139,8 +141,9 @@ export default async function CommunityPage() {
           <BookOpen />
           <h3>Un aprendizaje que queda</h3>
           <p>
-            Con permiso de su autor, un caso puede convertirse en una ficha útil
-            para otros.
+            Con permiso del autor y revisión, un caso puede convertirse en guía.
+            Si cambia su referencia en RegTrack, se señala para volver a
+            revisarlo.
           </p>
         </article>
       </section>

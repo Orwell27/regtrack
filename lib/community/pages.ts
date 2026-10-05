@@ -37,10 +37,10 @@ export const communityContext = cache(async () => {
     }
   }
 })
-export async function requireCommunity(moderator = false) {
+export async function requireCommunity(moderator = false, next = '/comunidad') {
   const context = await communityContext()
   if (context.error) throw new Error(context.error)
-  if (!context.user) redirect('/login?next=/comunidad')
+  if (!context.user) redirect(`/login?next=${encodeURIComponent(next)}`)
   if (
     context.snapshot.status !== 'approved' ||
     (moderator && !context.snapshot.moderator)

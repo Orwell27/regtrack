@@ -819,3 +819,19 @@
     margin-left: auto;
   }
 }
+.rc-regulation {
+  margin-block: 1.4rem;
+  overflow-wrap: anywhere;
+}
+.rc-regulation dl {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+  margin-block: 1rem;
+}
+.rc-regulation dt {
+  font-weight: 600;
+}
+.rc-regulation dd {
+  margin: 0;
+}

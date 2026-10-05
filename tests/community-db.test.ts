@@ -2,6 +2,7 @@ import type {
   AdminSnapshot,
   Snapshot,
   TopicDetail,
+  Regulation,
 } from '@/lib/community/model'
 import { PGlite } from '@electric-sql/pglite'
 import { readFileSync } from 'node:fs'
@@ -21,7 +22,7 @@ async function call(
   rate = 'a'.repeat(64),
 ) {
   const r = await db.query<{
-    value: AdminSnapshot & Snapshot & TopicDetail & { id: string }
+    value: AdminSnapshot & Snapshot & TopicDetail & Regulation & { id: string }
   }>('select community_execute($1::uuid,$2,$3::jsonb,$4) as value', [
     actor,
     command,
@@ -59,6 +60,17 @@ beforeAll(async () => {
       'supabase/migrations/20261004224507_comunidad_nacional.sql',
       'utf8',
     ),
+  )
+  await db.exec(readFileSync('supabase/migrations/001_initial.sql', 'utf8'))
+  await db.exec(readFileSync('supabase/migrations/006_correlacion.sql', 'utf8'))
+  await db.exec(
+    readFileSync(
+      'supabase/migrations/20261005113039_comunidad_normativa.sql',
+      'utf8',
+    ),
+  )
+  await db.exec(
+    'grant select,insert,update,delete on alertas,alerta_relaciones to service_role',
   )
   for (const [id, email] of [
     [owner, 'owner@example.test'],
@@ -324,4 +336,171 @@ describe.sequential('community production SQL contract', () => {
       call(null, 'apply', application('limited@example.test'), 'b'.repeat(64)),
     ).rejects.toThrow('RATE_LIMIT')
   })
+  describe.sequential(
+    'published regulation → discussion → reviewed guide',
+    () => {
+      const alertId = randomUUID(),
+        draftId = randomUUID(),
+        relatedId = randomUUID()
+      let linkedTopic: string, version: string
+      it('only exposes published alerts to admitted members, never drafts or premium text', async () => {
+        await db.query(
+          `insert into alertas(id,url,titulo,fuente,ambito,territorios,fecha_publicacion,resumen,texto_alerta_pro,estado) values
+        ($1,'https://www.boe.es/example-test','Norma de prueba estatal','BOE','estatal','["España"]','2026-01-01','Resumen de prueba','PREMIUM_SECRET','enviada'),
+        ($2,'https://www.boe.es/draft-test','Borrador confidencial','BOE','estatal','[]','2026-01-02','INTERNAL_SECRET',null,'pendiente_revision')`,
+          [alertId, draftId],
+        )
+        await expect(call(null, 'regulation', { id: alertId })).rejects.toThrow(
+          'UNAUTHENTICATED',
+        )
+        await expect(
+          call(helper, 'regulation', { id: alertId }),
+        ).rejects.toThrow('FORBIDDEN')
+        await expect(
+          call(owner, 'regulation', { id: draftId }),
+        ).rejects.toThrow('NOT_FOUND')
+        const source = await call(owner, 'regulation', { id: alertId })
+        version = source.version
+        expect(source.territories).toEqual(['España'])
+        expect(JSON.stringify(source)).not.toContain('PREMIUM_SECRET')
+        const list = await call(owner, 'regulations')
+        expect(JSON.stringify(list)).not.toContain('INTERNAL_SECRET')
+        expect(JSON.stringify(list)).not.toContain(draftId)
+        for (const role of ['anon', 'authenticated']) {
+          await db.exec(`reset role;set role ${role}`)
+          await expect(
+            db.query('select community_alert_context($1::uuid)', [alertId]),
+          ).rejects.toThrow(/permission denied/)
+        }
+        await db.exec('reset role;set role service_role')
+      })
+      it('captures trusted reference context and municipality; rejects missing and obsolete references', async () => {
+        await expect(
+          write(owner, 'ask', {
+            ...question,
+            alert_id: draftId,
+            regulation_version: version,
+          }),
+        ).rejects.toThrow('NOT_FOUND')
+        await expect(
+          write(owner, 'ask', {
+            ...question,
+            alert_id: alertId,
+            regulation_version: 'stale',
+          }),
+        ).rejects.toThrow('CONFLICT')
+        const payload = {
+          ...question,
+          alert_id: alertId,
+          regulation_version: version,
+          municipality: 'A Coruña',
+          reference_snapshot: { title: 'Forged' },
+        }
+        const req = randomUUID()
+        linkedTopic = (
+          await call(owner, 'ask', { ...payload, request_id: req })
+        ).id
+        expect(
+          (await call(owner, 'ask', { ...payload, request_id: req })).id,
+        ).toBe(linkedTopic)
+        const t = (await call(owner, 'topic', { id: linkedTopic })).topic
+        expect(t.reference_snapshot?.title).toBe('Norma de prueba estatal')
+        expect(t.municipality).toBe('A Coruña')
+        expect(t.region).toBe('Galicia')
+        expect(t.reference_changed).toBe(false)
+        expect(
+          (await call(owner, 'read', { alert_id: alertId })).topics?.map(
+            (t) => t.id,
+          ),
+        ).toEqual([linkedTopic])
+      })
+      it('withdraws guide conclusions and queues review when a source changes; rejects stale moderator publication', async () => {
+        await write(owner, 'consent', { topic_id: linkedTopic, enabled: true })
+        const p = {
+          topic_id: linkedTopic,
+          revision: 2,
+          title: 'Aprendizaje normativo de prueba',
+          body: 'Conclusión que solo se debe mostrar mientras esté revisada.',
+          scope: 'Caso en A Coruña, Galicia. Alcance de prueba.',
+          regulation_version: version,
+        }
+        await write(mod, 'publish', p)
+        expect(
+          (await call(owner, 'read')).resources?.find(
+            (r) => r.topic_id === linkedTopic,
+          )?.needs_review,
+        ).toBe(false)
+        await db.query(
+          "update alertas set fecha_entrada_vigor='2026-02-01' where id=$1",
+          [alertId],
+        )
+        const resource = (await call(owner, 'read')).resources?.find(
+          (r) => r.topic_id === linkedTopic,
+        )
+        expect(resource?.needs_review).toBe(true)
+        expect(resource?.body).toBe('')
+        expect(
+          (await call(mod, 'admin')).review.some((t) => t.id === linkedTopic),
+        ).toBe(true)
+        expect(
+          (await call(owner, 'topic', { id: linkedTopic })).topic
+            .reference_changed,
+        ).toBe(true)
+        await expect(write(mod, 'publish', p)).rejects.toThrow('CONFLICT')
+        version = (await call(owner, 'regulation', { id: alertId })).version
+        await write(mod, 'publish', { ...p, regulation_version: version })
+        expect(
+          (await call(owner, 'read')).resources?.find(
+            (r) => r.topic_id === linkedTopic,
+          )?.body,
+        ).toBe(p.body)
+        expect(
+          (await call(mod, 'admin')).review.some((t) => t.id === linkedTopic),
+        ).toBe(false)
+      })
+      it('detects a newly published related norm and withdrawn alerts without disclosing unpublished content', async () => {
+        await db.query(
+          "insert into alertas(id,url,titulo,fuente,estado) values($1,'https://www.boe.es/related-test','Nueva norma de prueba','BOE','pendiente_revision')",
+          [relatedId],
+        )
+        await db.query(
+          "insert into alerta_relaciones(alerta_id,alerta_relacionada_id,tipo_relacion,score_similitud) values($1,$2,'modifica',90)",
+          [relatedId, alertId],
+        )
+        expect((await call(owner, 'regulation', { id: alertId })).version).toBe(
+          version,
+        )
+        await db.query("update alertas set estado='enviada' where id=$1", [
+          relatedId,
+        ])
+        expect(
+          (await call(owner, 'read')).resources?.find(
+            (r) => r.topic_id === linkedTopic,
+          )?.needs_review,
+        ).toBe(true)
+        expect(
+          (await call(owner, 'regulation', { id: alertId })).related[0].id,
+        ).toBe(relatedId)
+        await db.query("update alertas set estado='descartada' where id=$1", [
+          alertId,
+        ])
+        const r = (await call(owner, 'read')).resources?.find(
+          (r) => r.topic_id === linkedTopic,
+        )
+        expect(r?.regulation).toBeNull()
+        expect(r?.body).toBe('')
+        expect(r?.needs_review).toBe(true)
+        await expect(
+          write(mod, 'publish', {
+            topic_id: linkedTopic,
+            revision: 2,
+            title: 'Guía que no se debe publicar',
+            body: 'Texto de ejemplo demasiado desactualizado.',
+            scope: 'A Coruña, caso de prueba.',
+            regulation_version: version,
+          }),
+        ).rejects.toThrow('NOT_FOUND')
+      })
+    },
+  )
 })

@@ -7,7 +7,9 @@ async function login(page: Page, email: string) {
     .fill('Community-test-123!')
   await page.getByRole('button', { name: 'Entrar', exact: true }).click()
   await expect(page).toHaveURL(/\/comunidad$/)
-  await expect(page.getByRole('button', { name: 'Cerrar sesión' })).toBeVisible()
+  await expect(
+    page.getByRole('button', { name: 'Cerrar sesión' }),
+  ).toBeVisible()
 }
 async function apply(page: Page, email: string, alias: string) {
   await page.goto('/comunidad')
@@ -25,13 +27,18 @@ test('public recruitment and mobile layout do not leak private information', asy
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/comunidad')
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
-    'puede ayudarte hoy',
+    'Decide con más contexto',
   )
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
     ),
   ).toBe(true)
+  const imageUrl = await page.locator('meta[property="og:image"]').getAttribute('content')
+  expect(imageUrl).toMatch(/^http:\/\/127\.0\.0\.1:3100\/comunidad\/opengraph-image/)
+  const image = await page.request.get(imageUrl!)
+  expect(image.ok()).toBe(true)
+  expect(image.headers()['content-type']).toContain('image/png')
   await page
     .getByRole('link', { name: 'Cómo participamos', exact: true })
     .click()
@@ -78,7 +85,17 @@ test('application → admission → question → peer help → reviewed case →
       card.getByRole('button', { name: 'Retirar acceso' }),
     ).toBeVisible()
   }
-  await owner.goto('/comunidad/preguntas/nueva')
+  await owner.goto('/comunidad/novedades')
+  await owner
+    .getByRole('link', { name: 'Normativa de obras · ejemplo de prueba' })
+    .click()
+  await expect(
+    owner.getByRole('heading', { name: 'Qué significa para mí' }),
+  ).toBeVisible()
+  await expect(
+    owner.getByRole('link', { name: 'Consultar publicación oficial' }),
+  ).toHaveAttribute('href', 'https://www.boe.es/example-fixture')
+  await owner.getByRole('link', { name: 'Preguntar sobre esta norma' }).click()
   await owner
     .getByLabel('¿Qué necesitas decidir?')
     .fill('¿Cómo comparar presupuestos para reformar?')
@@ -89,9 +106,16 @@ test('application → admission → question → peer help → reviewed case →
     )
   await owner.getByLabel('Tema').selectOption('cuidar')
   await owner.getByLabel('Territorio').selectOption('Galicia')
+  await owner.getByLabel('Municipio de tu caso').fill('A Coruña')
   await owner.getByRole('button', { name: 'Publicar pregunta' }).click()
   await expect(owner).toHaveURL(/\/preguntas\/[a-f0-9-]+$/)
   const topicUrl = owner.url()
+  await expect(owner.getByText('A Coruña', { exact: true })).toBeVisible()
+  await expect(
+    owner.getByRole('heading', {
+      name: 'Normativa de obras · ejemplo de prueba',
+    }),
+  ).toBeVisible()
   await login(helper, 'helper@example.test')
   await helper.goto(topicUrl)
   await helper
@@ -101,12 +125,10 @@ test('application → admission → question → peer help → reviewed case →
     )
   await helper.getByRole('button', { name: 'Publicar respuesta' }).click()
   await expect(
-    helper
-      .locator('p.rc-body')
-      .filter({
-        hasText:
-          'Pedí un desglose por partidas y los plazos de ejecución por escrito. Me permitió comparar mejor.',
-      }),
+    helper.locator('p.rc-body').filter({
+      hasText:
+        'Pedí un desglose por partidas y los plazos de ejecución por escrito. Me permitió comparar mejor.',
+    }),
   ).toBeVisible()
   await owner.reload()
   await owner.getByRole('button', { name: 'Esta respuesta me ayudó' }).click()
@@ -140,13 +162,62 @@ test('application → admission → question → peer help → reviewed case →
       'Experiencia particular en Galicia durante el piloto. Los importes y condiciones dependen de cada obra.',
     )
   await review.getByRole('button', { name: 'Publicar ficha revisada' }).click()
-  await expect(mod.getByText('Aún no hay casos con permiso para preparar una ficha.')).toBeVisible()
+  await expect(
+    mod.getByText('Aún no hay casos con permiso para preparar una ficha.'),
+  ).toBeVisible()
   await helper.goto('/comunidad/casos')
   await expect(
     helper.getByRole('heading', {
       name: '¿Cómo comparar presupuestos para reformar?',
     }),
   ).toBeVisible()
+  const changed = await mod.request.post(
+    'http://127.0.0.1:54329/__test/change-reference',
+    { headers: { Authorization: 'Bearer community-test-service-key' } },
+  )
+  expect(changed.ok()).toBe(true)
+  await helper.reload()
+  await expect(helper.getByText(/Pendiente de nueva revisión:/)).toBeVisible()
+  await expect(
+    helper.getByText(
+      'Una propietaria solicitó presupuestos desglosados para comparar las mismas partidas antes de decidir.',
+      { exact: true },
+    ),
+  ).toHaveCount(0)
+  await mod.reload()
+  const updatedReview = mod.locator('#aprendizajes details')
+  await updatedReview.locator('summary').click()
+  await expect(
+    updatedReview.getByText('1 de febrero de 2026', { exact: true }),
+  ).toBeVisible()
+  await updatedReview
+    .getByLabel('Resumen revisado, sin datos personales')
+    .fill(
+      'Revisión nueva tras cambiar la referencia normativa del caso de ejemplo.',
+    )
+  await updatedReview
+    .getByLabel('Ámbito, fecha y límites de la experiencia')
+    .fill(
+      'Caso de prueba en A Coruña. Revisión posterior al cambio, sin aplicación general.',
+    )
+  await updatedReview
+    .getByRole('button', { name: 'Publicar ficha revisada' })
+    .click()
+  await expect(
+    mod.getByText('Aún no hay casos con permiso para preparar una ficha.'),
+  ).toBeVisible()
+  await helper.reload()
+  await expect(helper.getByText(/Pendiente de nueva revisión:/)).toHaveCount(0)
+  await expect(
+    helper.getByText(
+      'Revisión nueva tras cambiar la referencia normativa del caso de ejemplo.',
+      { exact: true },
+    ),
+  ).toBeVisible()
+  await helper.screenshot({
+    path: 'test-results/community-regulation-guide.png',
+    fullPage: true,
+  })
   await owner
     .getByRole('button', { name: 'Retirar permiso de reutilización' })
     .click()
