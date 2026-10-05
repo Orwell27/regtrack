@@ -1,69 +1,48 @@
-// tests/lib/auth.test.ts
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-
-// Mock de @supabase/ssr
-vi.mock('@supabase/ssr', () => ({
-  createServerClient: vi.fn(),
-}))
-
-// Mock de next/headers
-vi.mock('next/headers', () => ({
-  cookies: vi.fn().mockResolvedValue({ getAll: () => [] }),
-}))
-
-// Mock de lib/supabase
-vi.mock('@/lib/supabase', () => ({
-  createNextServerClient: vi.fn(),
-}))
-
-import { createServerClient } from '@supabase/ssr'
-import { createNextServerClient } from '@/lib/supabase'
-
-describe('getAuthUser', () => {
-  beforeEach(() => {
-    vi.resetAllMocks()
-    vi.resetModules()
-  })
-
-  it('devuelve null si no hay sesión', async () => {
-    vi.mocked(createServerClient).mockReturnValue({
-      auth: { getSession: vi.fn().mockResolvedValue({ data: { session: null } }) },
-    } as never)
-
-    const { getAuthUser } = await import('@/lib/auth')
-    const result = await getAuthUser()
-    expect(result).toBeNull()
-  })
-
-  it('devuelve null si el usuario no está en la tabla usuarios', async () => {
-    vi.mocked(createServerClient).mockReturnValue({
-      auth: { getSession: vi.fn().mockResolvedValue({
-        data: { session: { user: { id: 'uuid-1', email: 'a@b.com' } } },
-      })},
-    } as never)
-    vi.mocked(createNextServerClient).mockReturnValue({
-      from: () => ({ select: () => ({ or: () => ({ single: vi.fn().mockResolvedValue({ data: null }) }) }) }),
-    } as never)
-
-    const { getAuthUser } = await import('@/lib/auth')
-    const result = await getAuthUser()
-    expect(result).toBeNull()
-  })
-
-  it('devuelve AuthUser con rol admin', async () => {
-    vi.mocked(createServerClient).mockReturnValue({
-      auth: { getSession: vi.fn().mockResolvedValue({
-        data: { session: { user: { id: 'uuid-1', email: 'admin@test.com' } } },
-      })},
-    } as never)
-    vi.mocked(createNextServerClient).mockReturnValue({
-      from: () => ({ select: () => ({ or: () => ({ single: vi.fn().mockResolvedValue({
-        data: { id: 'u-1', rol: 'admin', plan: 'pro', nombre: 'Admin' },
-      }) }) }) }),
-    } as never)
-
-    const { getAuthUser } = await import('@/lib/auth')
-    const result = await getAuthUser()
-    expect(result).toMatchObject({ rol: 'admin', email: 'admin@test.com' })
-  })
+const mocks=vi.hoisted(()=>({getUser:vi.fn(),getSession:vi.fn(),profile:vi.fn(),eq:vi.fn(),from:vi.fn()}))
+vi.mock('@supabase/ssr',()=>({createServerClient:()=>({auth:{getUser:mocks.getUser,getSession:mocks.getSession}})}))
+vi.mock('next/headers',()=>({cookies:async()=>({getAll:()=>[]})}))
+vi.mock('@/lib/supabase',()=>({createNextServerClient:()=>({from:mocks.from})}))
+import {getAuthUser,requireAdmin,rejectForeignOrigin} from '@/lib/auth'
+const identity={id:'verified-id',email:'owner@example.test',email_confirmed_at:'2026-01-01',is_anonymous:false,user_metadata:{rol:'admin'}}
+beforeEach(()=>{
+ vi.resetAllMocks()
+ mocks.getUser.mockResolvedValue({data:{user:identity},error:null})
+ mocks.profile.mockResolvedValue({data:{id:'profile',rol:'subscriber',plan:'free',nombre:'Owner',activo:true},error:null})
+ mocks.eq.mockReturnValue({maybeSingle:mocks.profile})
+ mocks.from.mockReturnValue({select:()=>({eq:mocks.eq})})
+})
+describe('verified identity and server-controlled profile',()=>{
+ it('rejects forged cookie/session identities before any profile read',async()=>{
+  mocks.getSession.mockResolvedValue({data:{session:{user:{...identity,id:'victim'}}}})
+  mocks.getUser.mockResolvedValue({data:{user:null},error:{message:'Invalid JWT'}})
+  expect(await getAuthUser()).toBeNull();expect(mocks.from).not.toHaveBeenCalled();expect(mocks.getSession).not.toHaveBeenCalled()
+ })
+ it.each([{email_confirmed_at:null},{is_anonymous:true},{email:null}])('rejects incomplete or anonymous identities %j',async patch=>{
+  mocks.getUser.mockResolvedValue({data:{user:{...identity,...patch}},error:null})
+  expect(await getAuthUser()).toBeNull();expect(mocks.from).not.toHaveBeenCalled()
+ })
+ it('binds exclusively to verified auth ID, never email filters or metadata roles',async()=>{
+  expect(await getAuthUser()).toMatchObject({rol:'subscriber',plan:'free',authId:'verified-id'})
+  expect(mocks.eq).toHaveBeenCalledWith('auth_id','verified-id')
+  expect((await requireAdmin()).error?.status).toBe(403)
+ })
+ it.each([null,{activo:false,rol:'admin',plan:'pro'},{activo:true,rol:'superuser',plan:'pro'}])('rejects missing, disabled or malformed profiles',async data=>{
+  mocks.profile.mockResolvedValue({data,error:null});expect(await getAuthUser()).toBeNull()
+ })
+ it('preserves active administrator access and distinguishes 401/403',async()=>{
+  mocks.profile.mockResolvedValue({data:{id:'p',nombre:'Admin',activo:true,rol:'admin',plan:'pro'},error:null})
+  expect((await requireAdmin()).user?.rol).toBe('admin')
+  mocks.getUser.mockResolvedValue({data:{user:null},error:null})
+  expect((await requireAdmin()).error?.status).toBe(401)
+ })
+ it('fails closed when profile lookup fails',async()=>{
+  mocks.profile.mockResolvedValue({data:null,error:{message:'offline'}});expect(await getAuthUser()).toBeNull()
+ })
+ it('rejects cross-site, absent Origin and forged forwarded host',()=>{
+  vi.stubEnv('NEXT_PUBLIC_SITE_URL','https://regtrack.example')
+  for(const origin of ['', 'https://attacker.example']) expect(rejectForeignOrigin(new Request('https://internal/api',{headers:{origin,'x-forwarded-host':'attacker.example'}}))?.status).toBe(403)
+  expect(rejectForeignOrigin(new Request('https://internal/api',{headers:{origin:'https://regtrack.example'}}))).toBeNull()
+  vi.unstubAllEnvs()
+ })
 })

@@ -1,8 +1,9 @@
 'use client'
 import { useState } from 'react'
 import { createBrowserClient } from '@supabase/ssr'
-import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
+import { safeReturnPath } from '@/lib/community/model'
+import Link from 'next/link'
 import { Input } from '@/components/ui/input'
 
 function getSupabase() {
@@ -13,7 +14,6 @@ function getSupabase() {
 }
 
 export default function LoginPage() {
-  const router = useRouter()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [errorMsg, setErrorMsg] = useState('')
@@ -28,8 +28,9 @@ export default function LoginPage() {
       if (error) {
         setErrorMsg(error.message)
       } else {
-        router.push('/')
-        router.refresh()
+        // A new document makes the authenticated cookies the source of truth,
+        // instead of racing a pre-login Router Cache entry against refresh().
+        window.location.assign(safeReturnPath(new URLSearchParams(window.location.search).get('next')))
       }
     } catch (err) {
       setErrorMsg(String(err))
@@ -57,8 +58,10 @@ export default function LoginPage() {
 
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
-            <label className="text-sm font-medium text-slate-700 mb-1 block">Email</label>
+            <label htmlFor="login-email" className="text-sm font-medium text-slate-700 mb-1 block">Email</label>
             <Input
+              id="login-email"
+              autoComplete="email"
               type="email"
               placeholder="tu@email.com"
               value={email}
@@ -67,8 +70,10 @@ export default function LoginPage() {
             />
           </div>
           <div>
-            <label className="text-sm font-medium text-slate-700 mb-1 block">Contraseña</label>
+            <label htmlFor="login-password" className="text-sm font-medium text-slate-700 mb-1 block">Contraseña</label>
             <Input
+              id="login-password"
+              autoComplete="current-password"
               type="password"
               placeholder="••••••••"
               value={password}
@@ -80,6 +85,7 @@ export default function LoginPage() {
             {loading ? 'Entrando...' : 'Entrar'}
           </Button>
         </form>
+        <p className="mt-5 text-sm text-slate-600"><Link href="/comunidad">Conoce la comunidad de propietarios →</Link></p>
       </div>
     </div>
   )

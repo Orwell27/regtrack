@@ -1,7 +1,7 @@
 // app/api/cuenta/route.ts
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
-import { getAuthUser } from '@/lib/auth'
+import { getAuthUser, rejectForeignOrigin } from '@/lib/auth'
 
 export async function GET() {
   const user = await getAuthUser()
@@ -19,6 +19,8 @@ export async function GET() {
 }
 
 export async function PUT(req: NextRequest) {
+  const originError = rejectForeignOrigin(req)
+  if (originError) return originError
   const user = await getAuthUser()
   if (!user) return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
 

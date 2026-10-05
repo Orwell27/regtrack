@@ -2,8 +2,11 @@
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
+import { rejectForeignOrigin } from '@/lib/auth'
 
-export async function POST() {
+export async function POST(request: Request) {
+  const originError = rejectForeignOrigin(request)
+  if (originError) return originError
   const cookieStore = await cookies()
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -21,5 +24,5 @@ export async function POST() {
   )
 
   await supabase.auth.signOut()
-  return NextResponse.redirect(new URL('/login', process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'))
+  return NextResponse.redirect(new URL('/login', process.env.NEXT_PUBLIC_SITE_URL || process.env.COMMUNITY_SITE_URL || new URL(request.url).origin),303)
 }

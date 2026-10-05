@@ -1,10 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
+import { requireAdmin, rejectForeignOrigin } from '@/lib/auth'
 
 export async function POST(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const auth = await requireAdmin()
+  if (auth.error) return auth.error
+  const originError = rejectForeignOrigin(request)
+  if (originError) return originError
   const { id } = await params
   const body = await request.json()
   const db = createNextServerClient()

@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
 import type { RelacionConAlerta } from '@/lib/correlacion/types'
+import { getAuthUser } from '@/lib/auth'
 
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const user = await getAuthUser()
+  if (!user) return NextResponse.json({error:'No autenticado'},{status:401})
   const { id } = await params
   const db = createNextServerClient()
+  if (user.rol !== 'admin') {
+    const {data, error} = await db.from('alertas').select('id').eq('id',id).eq('estado','enviada').maybeSingle()
+    if (error || !data) return NextResponse.json({error:'Alerta no disponible'},{status:404})
+  }
 
   // Step 1: fetch raw relation rows from both directions
   const [{ data: asNew }, { data: asOld }] = await Promise.all([
@@ -29,17 +36,21 @@ export async function GET(
     r.alerta_id === id ? r.alerta_relacionada_id : r.alerta_id
   )
 
-  const { data: alertasData } = await db
+  let relatedQuery = db
     .from('alertas')
     .select('id, titulo, fuente, fecha_publicacion, url')
     .in('id', otherIds)
+  if (user.rol !== 'admin') relatedQuery = relatedQuery.eq('estado','enviada')
+  const { data: alertasData } = await relatedQuery
 
-  const alertaMap = new Map((alertasData ?? []).map((a: any) => [a.id, a]))
+  const alertaMap = new Map((alertasData ?? []).map((a: {id:string;titulo:string;fuente:string;fecha_publicacion:string|null;url:string}) => [a.id, a]))
 
   // Step 3: deduplicate and build response
   const seen = new Set<string>()
   const relaciones: RelacionConAlerta[] = allRows
     .filter(r => {
+      const otherId = r.alerta_id === id ? r.alerta_relacionada_id : r.alerta_id
+      if (!alertaMap.has(otherId)) return false
       const key = r.alerta_id < r.alerta_relacionada_id
         ? `${r.alerta_id}-${r.alerta_relacionada_id}`
         : `${r.alerta_relacionada_id}-${r.alerta_id}`

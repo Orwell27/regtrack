@@ -1,13 +1,14 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Bell, User, LogOut, Radio } from 'lucide-react'
+import { MessagesSquare, Bell, User, LogOut, Radio } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { Plan } from '@/lib/supabase'
 
 type NavItem = { href: string; label: string; icon: React.ElementType }
 
 const NAV_ITEMS: NavItem[] = [
+  { href: '/comunidad', label: 'Comunidad', icon: MessagesSquare },
   { href: '/alertas', label: 'Mis alertas', icon: Bell },
   { href: '/cuenta', label: 'Mi cuenta', icon: User },
 ]

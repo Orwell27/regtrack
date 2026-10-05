@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createNextServerClient } from '@/lib/supabase'
+import { requireAdmin, rejectForeignOrigin } from '@/lib/auth'
 
 export async function GET() {
+  const auth = await requireAdmin()
+  if (auth.error) return auth.error
   const db = createNextServerClient()
   const { data, error } = await db.from('config').select('clave, valor')
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
@@ -10,6 +13,10 @@ export async function GET() {
 }
 
 export async function PUT(req: NextRequest) {
+  const auth = await requireAdmin()
+  if (auth.error) return auth.error
+  const originError = rejectForeignOrigin(req)
+  if (originError) return originError
   const body = await req.json() as Record<string, unknown>
   const db = createNextServerClient()
 

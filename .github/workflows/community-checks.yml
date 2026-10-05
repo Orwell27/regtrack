@@ -1,0 +1,47 @@
+name: Community checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: community-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54329
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: community-test-anon-key
+      SUPABASE_SERVICE_KEY: community-test-service-key
+      COMMUNITY_ENABLED: 'false'
+      COMMUNITY_E2E_PRODUCTION: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm audit --omit=dev --audit-level=high
+      - run: npm test -- --maxWorkers=2
+      - run: npm run release:prepare
+      - name: Lint community and integration
+        run: npx eslint scripts/community-release.mjs tests/community-release.test.ts app/comunidad app/api app/registro components/community components/Registration.tsx lib/community lib/auth.ts tests/community-api.test.ts tests/community-db.test.ts tests/lib/auth.test.ts tests/admin-access.test.ts tests/access-db.test.ts tests/registration-api.test.ts tests/auth-confirm.test.ts e2e playwright.config.ts middleware.ts 'app/(auth)/login/page.tsx' 'app/(subscriber)/alerta/[id]/page.tsx' app/components/layouts/SubscriberSidebar.tsx app/components/layouts/AdminSidebar.tsx
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: community-browser-evidence
+          path: test-results/
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: community-release-package
+          path: .artifacts/community-release/
+          include-hidden-files: true
+          retention-days: 7
