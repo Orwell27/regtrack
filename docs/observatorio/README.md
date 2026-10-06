@@ -17,6 +17,18 @@ Ruta pública `/observatorio`. Implementación independiente del pipeline inmobi
 
 ## Fuentes y evidencia
 
+### Selección documental del tablón
+
+Las noticias y análisis pasan un filtro en el servidor antes de alimentar el mapa, los destacados, la búsqueda y las preguntas. Compartir tema, palabras generales o territorio no basta. Cada pieza incluida lleva `relatedDocuments` con el título, URL oficial y motivo de la relación.
+
+Se admite una referencia BOE exacta o una identificación normativa coincidente y única. Los reales decretos distinguen rango, número y año; las leyes ordinarias requieren también día y mes para reducir colisiones entre administraciones. Las coincidencias ambiguas se excluyen. La relación acredita una cita, no la veracidad de una noticia ni la vigencia de la norma. No se infiere que una noticia sobre propuestas describa una obligación vigente.
+
+El índice parte del último sumario BOE disponible. Además, verifica contra los metadatos XML oficiales hasta 12 identificadores BOE citados por los canales, priorizando las publicaciones recientes, con tres peticiones simultáneas y caché de 15 minutos. Así una noticia puede enlazar una norma anterior sin presentarla como una publicación de hoy. Solo se conservan identificadores del contenido extendido RSS; los extractos visibles siguen limitados a 24 palabras. Una referencia inaccesible, una respuesta incorrecta o una cita sin documento identificado no admite la noticia. No se rastrean las páginas completas de los medios.
+
+La cobertura es deliberadamente limitada: los RSS que omiten referencias normativas pueden producir cero noticias incluidas. Se muestra ese estado y se distingue entradas recibidas de incluidas por canal. La primera integración usa documentos públicos del BOE; todavía no se conecta a las alertas privadas ni al resto del archivo interno. Añadir registros almacenados requerirá una selección explícita de contenido publicable, no acceso indiscriminado a la base.
+
+La captura de 570 documentos que sigue corresponde a la ingesta anterior al filtro documental y no representa el número de noticias seleccionadas.
+
 27 canales: BOE; Europa Press general y 18 canales territoriales (Ceuta/Melilla comparten canal y se localizan por mención); El País; El Mundo; Hay Derecho; Real Instituto Elcano; Funcas; RTVE RSS como archivo; Nada es Gratis como archivo. La comprobación real de esta sesión devolvió 570 documentos únicos, 25 canales con entradas recientes y dos archivos antiguos. Es una captura de ese momento, no una garantía de disponibilidad posterior.
 
 Los RSS de RTVE que enlaza su directorio territorial devolvían datos de 2022: se descartaron como fuente regional actual y se localizaron los canales Europa Press mediante el `link rel=alternate` de sus páginas. Nada es Gratis tenía su última publicación el 27-mar-2026. Ambos archivos quedan fuera del filtro reciente. No se ha atribuido a personas un título profesional no comprobado: las firmas se toman del canal y las especialidades se describen a nivel de publicación/institución.

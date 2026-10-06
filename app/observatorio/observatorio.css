@@ -1430,6 +1430,24 @@
 .ob-answer-paragraph {
   margin: 14px 0 !important;
 }
+.ob-related {
+  background: #f1f3eb;
+  border-left: 2px solid #53734b;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.ob-related > strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #325e32;
+}
+.ob-related a { text-decoration: underline; text-underline-offset: 3px; }
+.ob-related svg { display: inline; }
+.ob-related small { display: block; color: var(--muted); margin-top: 5px; }
+.ob-related > div + div { margin-top: 10px; }
 .ob-answer-paragraph a {
   color: #325e32;
   text-decoration: underline;

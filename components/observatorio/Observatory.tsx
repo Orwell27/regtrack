@@ -88,6 +88,19 @@ function StoryCard({ story }: { story: Story }) {
         </details>
       ) : null}
       {story.excerpt ? <p>{story.excerpt}</p> : null}
+      {story.relatedDocuments?.length ? (
+        <div className="ob-related">
+          <strong>Relacionado con</strong>
+          {story.relatedDocuments.map((document) => (
+            <div key={document.id}>
+              <a href={document.url} target="_blank" rel="noreferrer">
+                {document.title} <ArrowUpRight size={13} />
+              </a>
+              <small>{document.reason}</small>
+            </div>
+          ))}
+        </div>
+      ) : null}
       <div className="ob-story-topics">
         {story.topics.slice(0, 3).map((t) => (
           <span key={t}>{TOPICS.find((topic) => topic.id === t)?.name}</span>
@@ -635,10 +648,17 @@ export function Observatory() {
             </div>
           ) : (
             <p className="ob-list-note">
-              Titulares y extractos de los canales consultados. Cada publicación
-              conserva su fecha y enlaza al original.
+              Publicaciones oficiales y noticias relacionadas con documentos
+              identificados en el observatorio. Cada noticia explica su vínculo
+              y permite consultar la referencia original.
             </p>
           )}
+          {!loading && !error && filters.kind !== "oficial" && !filtered.some((s) => s.kind !== "oficial") ? (
+            <p className="ob-list-note">
+              No se han identificado noticias con una referencia documental verificable
+              en esta selección. Coincidir en tema o territorio no basta para incluirlas.
+            </p>
+          ) : null}
           {filtered.length ? (
             <div className="ob-news-grid">
               {filtered.slice(0, limit).map((story) => (
@@ -761,7 +781,7 @@ export function Observatory() {
                     {!status
                       ? "Pendiente de consulta"
                       : status.state === "ok"
-                        ? `${status.count} referencias`
+                        ? `${status.includedCount ?? status.count} incluidas de ${status.count} recibidas`
                         : status.state === "stale"
                           ? "Archivo · sin novedades recientes"
                           : status.state === "empty"
@@ -789,6 +809,16 @@ export function Observatory() {
               </article>
             ))}
             <h3>Cómo leer el observatorio</h3>
+            <p>
+              Las noticias y opiniones solo se incluyen cuando el canal cita un
+              identificador del BOE o una norma concreta que coincide de forma
+              inequívoca con un documento oficial consultado. El vínculo acredita
+              una referencia, no la exactitud de la noticia ni la vigencia de la norma.
+              La coincidencia de tema o lugar no es suficiente. Los canales que no
+              incluyen esas referencias pueden quedar sin noticias seleccionadas.
+              Por ahora, la vinculación usa documentos públicos del BOE; las alertas
+              privadas y los expedientes internos no se publican aquí.
+            </p>
             <p>
               Los temas se asignan automáticamente por palabras del titular y
               extracto; pueden contener errores. Los lugares identifican

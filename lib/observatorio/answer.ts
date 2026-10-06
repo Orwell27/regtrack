@@ -48,6 +48,7 @@ export async function synthesize(
     source: s.source,
     author: s.author,
     date: s.publishedAt,
+    documentaryLinks: s.relatedDocuments,
   }));
   const response = await client.messages.create({
     model: "claude-haiku-4-5-20251001",

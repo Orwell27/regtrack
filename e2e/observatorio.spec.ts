@@ -29,6 +29,10 @@ const stories = [
     topics: ["vivienda", "empleo"],
     territories: ["r-13"],
     national: false,
+    relatedDocuments: [{
+      id: "fixture-local", title: "Ayudas para rehabilitar vivienda en Cartagena · ejemplo de prueba",
+      url: "https://www.boe.es/diario_boe/", reason: "El canal cita la convocatoria de prueba.",
+    }],
   },
 ];
 test.beforeEach(async ({ page }) => {
@@ -135,6 +139,9 @@ test("búsqueda directa, fuentes accesibles, teclado y móvil sin desbordamiento
     .click();
   await expect(page.locator(".ob-story")).toHaveCount(1);
   await expect(page.locator(".ob-story")).toContainText("Autora de prueba");
+  await expect(page.locator(".ob-related")).toContainText("Relacionado con");
+  await expect(page.locator(".ob-related")).toContainText("El canal cita la convocatoria de prueba.");
+  await expect(page.locator(".ob-related a")).toHaveAttribute("href", stories[0].url);
   await page.screenshot({
     path: ".artifacts/observatorio/mobile-tested.png",
     fullPage: true,

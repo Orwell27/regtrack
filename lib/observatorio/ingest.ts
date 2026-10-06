@@ -1,4 +1,5 @@
 import { XMLParser } from "fast-xml-parser";
+import { documentReferences } from "./relevance";
 import {
   classifyTopics,
   normalize,
@@ -118,6 +119,9 @@ export function parseFeed(xml: string, source: Source): Story[] {
         topics: classifyTopics(title + " " + excerpt + " " + categories),
         territories: source.region ? [source.region] : [],
         national: false,
+        documentReferences: documentReferences(
+          `${title} ${plain(item.description ?? item.summary)} ${typeof (item.description ?? item.summary) === "string" ? item.description ?? item.summary : ""} ${typeof item["content:encoded"] === "string" ? item["content:encoded"] : ""}`,
+        ),
       },
     ];
   });
@@ -166,6 +170,25 @@ export function parseBoe(data: unknown, source: Source, date: string): Story[] {
   }
   walk(data);
   return stories;
+}
+/** Verify a cited older BOE record without retaining its full legal text. */
+export function parseBoeDocument(xml: string, expectedId: string, source: Source): Story | null {
+  if (xml.length > 2500000 || /<!DOCTYPE|<!ENTITY/i.test(xml)) return null;
+  const metadata = new XMLParser({ ignoreAttributes: false, processEntities: false })
+    .parse(xml)?.documento?.metadatos;
+  if (!metadata || plain(metadata.identificador) !== expectedId) return null;
+  const title = plain(metadata.titulo);
+  const rawDate = plain(metadata.fecha_publicacion);
+  if (!title || !/^\d{8}$/.test(rawDate)) return null;
+  const date = `${rawDate.slice(0, 4)}-${rawDate.slice(4, 6)}-${rawDate.slice(6, 8)}`;
+  if (!Number.isFinite(Date.parse(date)) || new Date(date).toISOString().slice(0, 10) !== date) return null;
+  return {
+    id: expectedId, title, excerpt: "Documento oficial citado por un canal del observatorio.",
+    url: `https://www.boe.es/diario_boe/txt.php?id=${expectedId}`,
+    sourceId: source.id, source: source.name, kind: "oficial",
+    author: plain(metadata.departamento) || null,
+    publishedAt: `${date}T00:00:00Z`, topics: classifyTopics(title), territories: [], national: false,
+  };
 }
 export function territoryMatcher(territories: Territory[]) {
   const aliases = new Map<string, Territory[]>(),

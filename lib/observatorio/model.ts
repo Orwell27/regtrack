@@ -31,6 +31,14 @@ export type Story = {
   topics: string[];
   territories: string[];
   national: boolean;
+  /** Identifiers only; never the full syndicated article. */
+  documentReferences?: string[];
+  relatedDocuments?: {
+    id: string;
+    title: string;
+    url: string;
+    reason: string;
+  }[];
 };
 export type SourceStatus = {
   id: string;
@@ -39,6 +47,7 @@ export type SourceStatus = {
   kind: SourceKind;
   state: "ok" | "empty" | "error" | "stale";
   count: number;
+  includedCount?: number;
   checkedAt: string;
   latest: string | null;
 };

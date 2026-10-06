@@ -1,7 +1,8 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ALL_SOURCES } from "./sources";
-import { parseFeed, parseBoe, territoryMatcher } from "./ingest";
+import { parseFeed, parseBoe, parseBoeDocument, territoryMatcher } from "./ingest";
+import { relatedBulletin } from "./relevance";
 import type { Bulletin, Source, Story, SourceStatus, Territory } from "./model";
 
 async function fetchText(url: string) {
@@ -131,10 +132,33 @@ export async function loadBulletin(): Promise<Bulletin> {
         ];
       else merged.set(story.url, located);
     }
+  const candidates = [...merged.values()];
+  const knownIds = new Set(candidates.filter((s) => s.kind === "oficial").map((s) => s.id));
+  const citedIds = [...new Set(candidates.filter((s) => s.kind !== "oficial")
+    .sort((a, b) => (Date.parse(b.publishedAt ?? "") || 0) - (Date.parse(a.publishedAt ?? "") || 0))
+    .flatMap((s) => s.documentReferences ?? []))]
+    .filter((id) => /^BOE-[AB]-\d{4}-\d+$/.test(id) && !knownIds.has(id)).slice(0, 12);
+  const citedDocuments: Story[] = [];
+  const boe = ALL_SOURCES.find((s) => s.id === "boe");
+  if (boe) for (let i = 0; i < citedIds.length; i += 3) {
+    const verified = await Promise.all(citedIds.slice(i, i + 3).map(async (id) => {
+      try {
+        const document = parseBoeDocument(await fetchText(`https://www.boe.es/diario_boe/xml.php?id=${id}`), id, boe);
+        return document && Date.parse(document.publishedAt!) <= now.getTime() ? document : null;
+      } catch { return null; }
+    }));
+    citedDocuments.push(...verified.filter((s): s is Story => s !== null));
+  }
+  // This gate also governs map counts, trends, search and the server's AI evidence.
+  // No fallback to general news when an official reference cannot be verified.
+  const selected = relatedBulletin(candidates, citedDocuments);
   return {
     checkedAt: now.toISOString(),
-    sources: results.map((r) => r.status),
-    stories: [...merged.values()].sort(
+    sources: results.map((r) => ({
+      ...r.status,
+      includedCount: selected.filter((s) => s.sourceId === r.status.id).length,
+    })),
+    stories: selected.sort(
       (a, b) =>
         (Date.parse(b.publishedAt ?? "") || 0) -
         (Date.parse(a.publishedAt ?? "") || 0),
