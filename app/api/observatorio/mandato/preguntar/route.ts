@@ -42,7 +42,7 @@ export async function POST(request: Request) {
   let answer;
   try { answer = answerMandate(getMandateSnapshot(), question, typeof input.topic === "string" ? input.topic : ""); }
   catch { return error("El archivo documental no está disponible. No se ha generado una respuesta.", 503); }
-  if (input.mode !== "ia" || answer.mode === "no-evidence") return Response.json(answer, { headers });
+  if (input.mode !== "ia" || answer.mode === "no-evidence" || !answer.sources.length) return Response.json(answer, { headers });
   if (process.env.MANDATE_AI_ENABLED !== "true" || process.env.OBSERVATORY_AI_ENABLED !== "true") {
     return Response.json({ ...answer, note: `${answer.note} La IA en directo no está activada; puedes leer las interpretaciones preparadas y sus referencias.` }, { headers });
   }
@@ -60,6 +60,8 @@ export async function POST(request: Request) {
     const boundedAnswer = boundMandateAnswer(answer);
     const sources = boundedAnswer.sources;
     const paragraphs = await synthesize(question, mandateAnswerStories(boundedAnswer), "mandate");
-    return Response.json({ ...boundedAnswer, mode: "ia", sources, paragraphs: paragraphs.map((paragraph) => ({ text: paragraph.text, citations: paragraph.citations.map((number) => sources[number - 1].id) })), note: "Interpretación de IA de las referencias seleccionadas. Las citas se validan por identificador; eso no constituye verificación automática de cada afirmación. Consulta los originales. No atribuye causalidad ni evalúa todo el mandato." }, { headers });
+    // Preserve computed archive summaries verbatim and without attributing them to an external document.
+    const computed = boundedAnswer.paragraphs.filter((paragraph) => !paragraph.citations.length);
+    return Response.json({ ...boundedAnswer, mode: "ia", sources, paragraphs: [...computed, ...paragraphs.map((paragraph) => ({ text: paragraph.text, citations: paragraph.citations.map((number) => sources[number - 1].id) }))], note: `${computed.length ? `${answer.note} ` : ""}Interpretación de IA de las referencias seleccionadas. Las citas se validan por identificador; eso no constituye verificación automática de cada afirmación. Consulta los originales. No atribuye causalidad ni evalúa todo el mandato.` }, { headers });
   } catch { return Response.json({ ...answer, note: `${answer.note} La redacción de IA no ha podido completarse; se conserva la respuesta documental.` }, { headers }); }
 }

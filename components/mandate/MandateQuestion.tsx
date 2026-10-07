@@ -75,7 +75,7 @@ export function MandateQuestion({ topic, commitments, indicators, openRecord }: 
         <label className="mn-question-mode"><input type="checkbox" checked={withAI} onChange={(event) => setWithAI(event.target.checked)} disabled={busy} /><span>Ampliar con una explicación de IA · requiere acceso habilitado</span></label>
       </form>
       <div className="mn-suggestions" aria-label="Preguntas sugeridas">
-        {["¿Qué está documentado sobre vivienda?", "¿Cómo ha evolucionado el empleo?", "¿Qué falta por revisar?"].map((suggestion) => <button key={suggestion} disabled={busy} onClick={() => ask(undefined, suggestion)}>{suggestion}</button>)}
+        {["¿Cómo se mide la honestidad?", "¿Qué está documentado sobre vivienda?", "¿Cómo ha evolucionado el empleo?", "¿Qué falta por revisar?"].map((suggestion) => <button key={suggestion} disabled={busy} onClick={() => ask(undefined, suggestion)}>{suggestion}</button>)}
       </div>
       {busy ? <p className="mn-question-busy" role="status">Consultando las referencias de esta selección…</p> : null}
       {error ? <p className="mn-error" role="alert">{error}</p> : null}

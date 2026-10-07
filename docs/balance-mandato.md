@@ -13,6 +13,14 @@ Ruta: `/observatorio/mandato`. Entrada desde la cabecera y el bloque electoral d
 
 El periodo político del piloto parte de noviembre de 2023. No mezcla la trayectoria desde 2018 y no calcula una nota de honestidad ni un porcentaje global a partir de la muestra.
 
+## Honestidad y compromisos
+
+El bloque visible `#honestidad` aborda la coherencia entre lo prometido y lo realizado mediante cumplimiento verificable. Su estado actual es **sin calcular**: el archivo contiene contrastes de actuaciones, no evaluaciones completas de resultados, alcance, plazos y ejecución actualizada. No se presenta una nota personal ni se presume intención de engañar.
+
+La cobertura de contraste sí se calcula: `(actuaciones documentadas + contrastes parciales) / compromisos seleccionados × 100`, redondeada a un decimal. Actualmente es 8/30 = 26,7 %. El denominador es esta selección editorial, no todas las promesas. Los tres estados abren sus fichas y fuentes. La cobertura es independiente de los filtros del explorador; las respuestas documentales sí respetan el tema de la pregunta. Una selección vacía tiene cobertura no disponible; incluso 100 % de contraste no permite deducir cumplimiento.
+
+Para calificar una promesa habría que fijar y versionar el resultado esperado, su alcance, el plazo y la evidencia aplicable al corte. «Cumplido» requiere acreditar todos esos elementos; «parcial» exige comprobar la parte ejecutada y la pendiente; «incumplido» exige evidencia de que el resultado no se alcanzó dentro del plazo aplicable, no mera ausencia de revisión. El piloto no convierte los estados actuales en esas calificaciones automáticamente. Las preguntas sobre honestidad devuelven este estado y ejemplos citados en lugar de rechazar la consulta sin contexto.
+
 ## Fuentes y proyección
 
 `data/mandate/commitments.json`, `indicators.json` y `election.json` son snapshots públicos versionados. La página y las APIs leen una proyección explícita en `lib/mandate/data.ts`, validada antes de servir. Los originales públicos están en `data/mandate/evidence/`; la regla `-text` de `.gitattributes` conserva los bytes y las huellas en Windows/Linux. Ningún lector web recorre `.artifacts`, la memoria privada ni el archivo de Supabase.

@@ -1,5 +1,6 @@
 import { normalizeMandateText, type Commitment, type Indicator, type MandateAnswer, type MandateSnapshot } from "./model";
 import type { Story } from "../observatorio/model";
+import { getMandateAccountability } from "./accountability";
 
 const STOP = new Set("que como cual cuales cuanto cuantos cuando donde para por del las los una unos unas este esta esto esos esas sobre desde hasta entre durante hay han sido tiene tienen dame dime explica informacion gobierno sanchez pedro mandato promesa promesas prometio prometido cumplio cumplido cumplida cumplidas incumplida incumplidas hecho hacer puede podemos".split(" "));
 const number = (value: number | null) => value === null ? "dato no disponible" : new Intl.NumberFormat("es-ES", { maximumFractionDigits: 10 }).format(value);
@@ -43,8 +44,25 @@ export function findMandateRecords(snapshot: MandateSnapshot, question: string, 
 export function answerMandate(snapshot: MandateSnapshot, question: string, topic = ""): MandateAnswer {
   const normalized = normalizeMandateText(question);
   const empty: MandateAnswer = { mode: "no-evidence", paragraphs: [], sources: [], commitmentIds: [], indicatorIds: [], note: "No hay evidencia suficiente en esta selección para responder. La falta de datos no demuestra incumplimiento. Prueba con empleo, vivienda, deuda o pobreza." };
-  if (/honest|mentiro|corrupt|a quien.*vot|mejor.*candidato|gan(ar|ara|o).*eleccion/.test(normalized)) {
+  if (/mentiro|corrupt|a quien.*vot|mejor.*candidato|gan(ar|ara|o).*eleccion/.test(normalized)) {
     return { ...empty, note: "Este piloto no califica la honestidad de una persona ni recomienda el voto. Permite comprobar compromisos concretos y evolución de indicadores. No se ha auditado todo el mandato y una promesa incumplida no demuestra intención de engañar." };
+  }
+  if (/honest|cumplimiento|(?:promesas|compromisos).*(?:cumplid|incumplid)/.test(normalized)) {
+    const selected = snapshot.commitments.filter((item) => !topic || item.topics.includes(topic));
+    if (!selected.length) return { ...empty, note: "No hay compromisos de este tema en la selección. No se calcula una nota ni se interpreta esa ausencia como incumplimiento." };
+    const summary = getMandateAccountability(selected);
+    const matching = findMandateRecords(snapshot, question, topic).commitments;
+    const examples = (matching.length ? matching : selected.filter((item) => item.review.status !== "pending")).slice(0, 2);
+    const sources = [...new Map(examples.flatMap((item) => item.evidence).map((source) => [source.id, source])).values()];
+    return {
+      ...empty, mode: "documental",
+      paragraphs: [
+        { text: `Honestidad y compromisos: el cumplimiento verificable sigue sin calcular. Resumen del archivo RegTrack${topic ? " en el tema seleccionado" : " en la selección completa"}: ${summary.total} compromisos, ${summary.documented} con actuación documentada, ${summary.partial} con contraste parcial y ${summary.pending} pendientes. La cobertura de contraste es ${number(summary.coveragePercent)} % (${summary.contrasted} de ${summary.total}); no es un porcentaje de honestidad ni de promesas cumplidas.`, citations: [] },
+        ...examples.map((item) => ({ text: `Ejemplo de ficha documental, no calificación de cumplimiento: ${item.title}. ${item.review.conclusion}`, citations: item.evidence.map((source) => source.id) })),
+      ],
+      sources, commitmentIds: examples.map((item) => item.id),
+      note: "El resumen cuenta estados del archivo RegTrack, no una valoración publicada por el Gobierno. Este piloto no califica la honestidad de una persona. Para evaluar cumplimiento hace falta fijar resultado, alcance y plazo de cada promesa, y contrastar evidencia actualizada de ejecución. La falta de revisión no demuestra incumplimiento; un incumplimiento tampoco demuestra intención de engañar. No se extrapola esta selección al mandato completo.",
+    };
   }
   if (/eleccion/.test(normalized) && /cuando|fecha|dias|noviembre/.test(normalized)) {
     return { ...empty, mode: "documental", paragraphs: [{ text: "El artículo 2 del Real Decreto 806/2026 convoca elecciones al Congreso y al Senado para el 29 de noviembre de 2026.", citations: [snapshot.election.source.id] }], sources: [snapshot.election.source], note: "Fecha de la convocatoria conservada. Esta respuesta no aporta resultados electorales." };
@@ -76,7 +94,7 @@ export function mandateAnswerStories(answer: MandateAnswer): Story[] {
     id: source.id, title: source.title, url: source.url, sourceId: source.id,
     source: source.producer, kind: "oficial", author: null, publishedAt: source.publishedAt,
     excerpt: [source.excerpt, `Localizador: ${source.locator}.`].join(" ").slice(0, 2500),
-    editorialContext: ["Contexto elaborado por RegTrack a partir de varias referencias; no es contenido literal ni una afirmación de este documento por sí solo.", ...answer.paragraphs.filter((paragraph) => paragraph.citations.includes(source.id)).map((paragraph) => paragraph.text), answer.note].join(" ").slice(0, 6000),
+    editorialContext: ["Contexto elaborado por RegTrack a partir de varias referencias; no es contenido literal ni una afirmación de este documento por sí solo.", ...answer.paragraphs.filter((paragraph) => !paragraph.citations.length).map((paragraph) => `Resumen interno calculado por RegTrack, no atribuirlo a esta fuente: ${paragraph.text}`), ...answer.paragraphs.filter((paragraph) => paragraph.citations.includes(source.id)).map((paragraph) => paragraph.text), answer.note].join(" ").slice(0, 6000),
     topics: [], territories: [], national: true,
   }));
 }

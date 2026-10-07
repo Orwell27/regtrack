@@ -154,3 +154,60 @@ test("los enlaces de contexto abren el indicador y el móvil no desborda", async
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: ".artifacts/observatorio/mandato-mobile.png" });
 });
+
+test("honestidad separa cumplimiento sin calcular de cobertura documental y permite revisar cada estado", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/observatorio/mandato");
+  await page.getByRole("link", { name: "Honestidad", exact: true }).click();
+  const block = page.locator("#honestidad");
+  await expect(block.getByRole("heading", { name: "Honestidad y compromisos", exact: true })).toBeVisible();
+  await expect(block).toContainText("Lo prometido frente a lo documentado");
+  await expect(block.locator(".mn-accountability-score > strong")).toHaveText("Sin calcular");
+  await expect(block.locator(".mn-accountability-score")).toContainText("Cumplimiento verificable");
+  await expect(block.locator(".mn-accountability-score")).toContainText("Tampoco miden la intención de engañar");
+  await expect(block.locator(".mn-coverage-heading")).toContainText("26,7 %");
+  await expect(block.locator(".mn-coverage-description")).toContainText("8 de 30");
+  await expect(block.locator(".mn-coverage-description")).toContainText("De esta selección, no de todas las promesas");
+  await expect(block.getByRole("progressbar", { name: "Cobertura de contraste documental" })).toHaveAttribute("value", "26.7");
+  await expect(block).toContainText("Este bloque no cambia con los filtros");
+
+  await page.getByRole("button", { name: /^Indicadores \d+$/ }).click();
+  await page.getByLabel("Tema del balance", { exact: true }).selectOption("vivienda");
+  await page.getByLabel("Buscar en el balance", { exact: true }).fill("sincoincidenciasdocumentalesxyz");
+  await expect(block.locator(".mn-coverage-description")).toContainText("8 de 30");
+  for (const state of [
+    { name: "3 actuaciones documentadas", status: "documented", count: 3 },
+    { name: "5 contrastes parciales", status: "partial", count: 5 },
+    { name: "22 pendientes de contraste", status: "pending", count: 22 },
+  ]) {
+    await block.getByRole("button", { name: state.name, exact: true }).click();
+    await expect(page).toHaveURL(/#balance-documental$/);
+    await expect(page.getByRole("button", { name: "Compromisos 30", exact: true })).toHaveAttribute("aria-pressed", "true");
+    await expect(page.getByLabel("Buscar en el balance", { exact: true })).toHaveValue("");
+    await expect(page.getByLabel("Tema del balance", { exact: true })).toHaveValue("");
+    await expect(page.getByLabel("Estado de revisión RegTrack", { exact: true })).toHaveValue(state.status);
+    await expect(page.locator(".mn-commitment:visible")).toHaveCount(state.count);
+    await expect(page.locator("#ledger-heading")).toBeFocused();
+    await expect(block.locator(".mn-accountability-score > strong")).toHaveText("Sin calcular");
+    await expect(block.locator(".mn-coverage-description")).toContainText("8 de 30");
+  }
+  await page.getByRole("button", { name: "Limpiar filtros", exact: true }).click();
+  await expect(page.locator(".mn-commitment:visible")).toHaveCount(30);
+  await block.locator("summary").click();
+  for (const criterion of ["Resultado", "Alcance", "Plazo", "Evidencia", "Actualidad"]) {
+    await expect(block.getByRole("term").filter({ hasText: criterion })).toBeVisible();
+  }
+  await expect(block.locator(".mn-accountability-limit")).toContainText("Pendiente de contraste no demuestra incumplimiento");
+  await block.locator("summary").click();
+  await page.getByRole("button", { name: "¿Cómo se mide la honestidad?", exact: true }).click();
+  await expect(page.locator(".mn-answer")).toContainText("sigue sin calcular");
+  await expect(page.locator(".mn-answer")).toContainText("26,7 % (8 de 30)");
+  await expect(page.locator(".mn-answer > .mn-answer-sources a").first()).toBeVisible();
+  await block.screenshot({ path: ".artifacts/observatorio/honestidad-desktop.png" });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await block.scrollIntoViewIfNeeded();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await expect(block.locator(".mn-accountability-score > strong")).toBeVisible();
+  await block.screenshot({ path: ".artifacts/observatorio/honestidad-mobile.png" });
+});

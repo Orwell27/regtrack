@@ -26,3 +26,37 @@
 .mn-trend-note{font-size:9px;color:#7a866e;margin-top:7px!important}
 .mn-trend-empty,.mn-source-period{font-size:10px;color:#6e7c62;margin:10px 0!important}
 .mn-origin-date,.mn-origin-note{font-size:10px;color:#68795e;margin-top:7px!important}
+.mn-accountability{border:1px solid #c6cdbd;border-top:2px solid #75816d;background:#f0f1e8;padding:27px 30px 0;margin:0 0 30px;scroll-margin-top:25px}
+.mn-accountability-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:25px;margin-bottom:23px}
+.mn-accountability-heading h2{font-family:Georgia,"Times New Roman",serif;font-size:33px;line-height:1.25;font-weight:400;margin-top:8px;letter-spacing:-.6px}
+.mn-accountability-heading>p{font-size:10px;line-height:1.8;color:#6a7463;text-align:right}
+.mn-accountability-body{display:grid;grid-template-columns:1fr 1.8fr;gap:35px;margin-bottom:25px}
+.mn-accountability-score{padding-right:30px;border-right:1px solid #cdd4c4}
+.mn-accountability-score>span{font-size:11px;color:#61725b}
+.mn-accountability-score>strong{display:block;font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:38px;line-height:1.25;margin:8px 0 12px;letter-spacing:-.7px;color:#495b44}
+.mn-accountability-score p{font-size:11px;line-height:1.85;color:#65745f;max-width:335px}
+.mn-coverage-heading{display:flex;justify-content:space-between;align-items:baseline;gap:15px;margin-bottom:9px}
+.mn-coverage-heading h3{font-size:11px;font-weight:550;line-height:1.6}
+.mn-coverage-heading>strong{font-size:18px;font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums;color:#58634f}
+.mn-accountability-coverage progress{display:block;appearance:none;width:100%;height:7px;border:0;border-radius:0;background:#dfe3d7;color:#919b86;overflow:hidden}
+.mn-accountability-coverage progress::-webkit-progress-bar{background:#dfe3d7}
+.mn-accountability-coverage progress::-webkit-progress-value{background:#919b86}
+.mn-accountability-coverage progress::-moz-progress-bar{background:#919b86}
+.mn-coverage-description{font-size:10px;color:#65745f;margin-top:9px!important;line-height:1.75}
+.mn-coverage-description strong{font-weight:600}
+.mn-coverage-note{font-size:10px;color:#74806b;margin-top:6px!important}
+.mn-accountability-states{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:17px}
+.mn-accountability-states button{position:relative;background:#f8f9f2;border:1px solid #d1d8c8;padding:11px 12px 10px;text-align:left;min-height:89px;color:#4e6146;transition:background .18s ease,border-color .18s ease}
+.mn-accountability-states button:hover{background:#e9edde;border-color:#aebc9d}
+.mn-accountability-states button>strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:400;line-height:1.15;font-variant-numeric:tabular-nums}
+.mn-accountability-states button>span{display:block;font-size:9px;line-height:1.55;margin-top:5px}
+.mn-accountability-states button>svg{position:absolute;right:9px;top:10px;color:#819176}
+.mn-accountability-criteria{border-top:1px solid #ced6c4;margin:0 -30px;background:#f5f6ed}
+.mn-accountability-criteria summary{padding:14px 30px;min-height:44px;font-size:11px;color:#52654a}
+.mn-accountability-criteria>div{padding:0 30px 23px;font-size:11px;color:#63755a}
+.mn-accountability-criteria dl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;margin:18px 0}
+.mn-accountability-criteria dt{font-size:10px;color:#4e6445;font-weight:600;margin-bottom:5px}
+.mn-accountability-criteria dd{font-size:10px;line-height:1.8}
+.mn-accountability-limit{font-size:10px;color:#6e7b63;padding-top:11px;border-top:1px solid #d8dfcf}
+@media(max-width:900px){.mn-accountability-body{gap:24px;grid-template-columns:1fr 1.7fr}.mn-accountability-score{padding-right:22px}.mn-accountability-score>strong{font-size:33px}.mn-accountability-states{gap:7px}.mn-accountability-states button{padding:10px;min-height:93px}}
+@media(max-width:720px){.mn-accountability{padding:22px 20px 0}.mn-accountability-heading{align-items:flex-start;flex-direction:column;gap:10px;margin-bottom:19px}.mn-accountability-heading h2{font-size:28px}.mn-accountability-heading>p{text-align:left;font-size:9px}.mn-accountability-body{grid-template-columns:1fr;gap:21px;margin-bottom:20px}.mn-accountability-score{border-right:0;border-bottom:1px solid #cdd4c4;padding:0 0 18px}.mn-accountability-score>strong{font-size:35px;margin:6px 0 9px}.mn-accountability-score p{max-width:none}.mn-coverage-heading{gap:10px}.mn-coverage-heading h3{font-size:10px;max-width:180px}.mn-coverage-heading>strong{font-size:16px}.mn-accountability-states{gap:7px}.mn-accountability-states button{padding:10px 8px;min-height:100px}.mn-accountability-states button>strong{font-size:26px}.mn-accountability-states button>span{font-size:9px}.mn-accountability-states button>svg{right:7px;top:9px;width:11px}.mn-accountability-criteria{margin:0 -20px}.mn-accountability-criteria summary{padding:14px 20px}.mn-accountability-criteria>div{padding:0 20px 22px}.mn-accountability-criteria dl{grid-template-columns:1fr 1fr;gap:14px}}

@@ -14,6 +14,7 @@ import {
 import { MandateCountdown } from "./MandateCountdown";
 import { MandateQuestion } from "./MandateQuestion";
 import { IndicatorTrend } from "./IndicatorTrend";
+import { MandateAccountability } from "./MandateAccountability";
 
 function dateLabel(value: string | null) {
   if (!value) return "Fecha no indicada";
@@ -118,6 +119,14 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
   const visible = view === "commitments" ? commitments.length : indicators.length;
   const total = view === "commitments" ? snapshot.commitments.length : snapshot.indicators.length;
   function clearFilters() { setQuery(""); setTopic(""); setStatus(""); }
+  function openReview(reviewStatus: Commitment["review"]["status"]) {
+    setQuery(""); setTopic(""); setStatus(reviewStatus); setView("commitments");
+    window.location.hash = "balance-documental";
+    window.requestAnimationFrame(() => {
+      document.getElementById("balance-documental")?.scrollIntoView({ block: "start" });
+      document.getElementById("ledger-heading")?.focus({ preventScroll: true });
+    });
+  }
   function openRecord(kind: "commitments" | "indicators", id: string) {
     clearFilters(); setView(kind);
     // Wait for the target view to become visible before following its deep link.
@@ -128,7 +137,7 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
   }
   return <div className="mn-app">
     <a href="#mandate-content" className="mn-skip">Saltar al contenido</a>
-    <header className="mn-header"><Link href="/observatorio" className="mn-brand"><BookOpen size={25} aria-hidden="true" /><span>RegTrack<small>OBSERVATORIO PÚBLICO</small></span></Link><nav aria-label="Navegación del balance"><Link href="/observatorio"><ArrowLeft size={13} aria-hidden="true" /> Observatorio</Link><a href="#balance-documental">Explorar el balance</a><a href="#preguntar-mandato">Preguntar</a></nav></header>
+    <header className="mn-header"><Link href="/observatorio" className="mn-brand"><BookOpen size={25} aria-hidden="true" /><span>RegTrack<small>OBSERVATORIO PÚBLICO</small></span></Link><nav aria-label="Navegación del balance"><Link href="/observatorio"><ArrowLeft size={13} aria-hidden="true" /> Observatorio</Link><a href="#honestidad">Honestidad</a><a href="#balance-documental">Explorar el balance</a><a href="#preguntar-mandato">Preguntar</a></nav></header>
     <main id="mandate-content" className="mn-main">
       <section className="mn-hero" aria-labelledby="mandate-heading"><div>
         <p className="mn-eyebrow">Balance de mandato</p>
@@ -136,10 +145,11 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
         <p className="mn-intro">{snapshot.mandate.label}. Una lectura de los compromisos recogidos, las actuaciones documentadas y la evolución de los indicadores, con sus fuentes a la vista.</p>
         <p className="mn-updated">Selección actualizada el <time dateTime={snapshot.asOf}>{dateLabel(snapshot.asOf)}</time><span>·</span>Inicio del mandato: {dateLabel(snapshot.mandate.start)}</p>
       </div><MandateCountdown election={snapshot.election} nowISO={nowISO} /></section>
+      <MandateAccountability commitments={snapshot.commitments} onReview={openReview} />
       <div className="mn-summary-grid" aria-label="Cobertura de la selección"><div><strong>{snapshot.commitments.length}</strong><span>compromisos en esta selección</span></div><div><strong>{snapshot.indicators.length}</strong><span>indicadores con periodo y unidad</span></div><div><strong>{sourceCount}</strong><span>referencias de origen distintas</span></div></div>
       <aside className="mn-method" aria-labelledby="method-heading"><h2 id="method-heading">Qué sabemos.<br />Qué queda por revisar.</h2><div><p>{snapshot.mandate.scope}</p><p>{snapshot.selection}</p><details className="mn-method-details"><summary>Ver método de contraste y límites</summary>{snapshot.methodology.map((point) => <p key={point}>{point}</p>)}</details></div></aside>
       <section id="balance-documental" className="mn-ledger" aria-labelledby="ledger-heading">
-        <div className="mn-section-heading"><div><p className="mn-eyebrow">Un balance que se puede consultar</p><h2 id="ledger-heading">Abre las fichas. Sigue las fuentes.</h2></div><p>La información del Gobierno y el contraste documental del piloto RegTrack aparecen por separado en cada compromiso.</p></div>
+        <div className="mn-section-heading"><div><p className="mn-eyebrow">Un balance que se puede consultar</p><h2 id="ledger-heading" tabIndex={-1}>Abre las fichas. Sigue las fuentes.</h2></div><p>La información del Gobierno y el contraste documental del piloto RegTrack aparecen por separado en cada compromiso.</p></div>
         <div className="mn-tabs" aria-label="Contenido del balance"><button aria-pressed={view === "commitments"} onClick={() => setView("commitments")}>Compromisos <span>{snapshot.commitments.length}</span></button><button aria-pressed={view === "indicators"} onClick={() => setView("indicators")}>Indicadores <span>{snapshot.indicators.length}</span></button></div>
         <div className="mn-filters"><label className="mn-search"><span>Buscar en el balance</span><div><Search size={16} aria-hidden="true" /><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Vivienda, empleo, una referencia…" /></div></label><label><span>Tema</span><select aria-label="Tema del balance" value={topic} onChange={(event) => setTopic(event.target.value)}><option value="">Todos los temas</option>{topics.map((id) => <option key={id} value={id}>{topicLabel(id)}</option>)}</select></label><label><span>Revisión RegTrack</span><select aria-label="Estado de revisión RegTrack" value={status} onChange={(event) => setStatus(event.target.value)} disabled={view === "indicators"}><option value="">Todos los estados</option>{statuses.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label></div>
         <p className="mn-filter-note">{view === "commitments" ? "El estado describe la revisión de evidencia de cada ficha; no es una nota de cumplimiento del Gobierno." : "Los indicadores muestran observaciones. El filtro de revisión solo se aplica a los compromisos."}</p>

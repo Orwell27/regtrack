@@ -61,4 +61,21 @@ describe("API pública de mandato y opt-in de IA", () => {
     expect((await POST(request({ question: "vivienda", mode: "ia" }))).status).toBe(429);
     expect(mocks.synthesize).toHaveBeenCalledTimes(1);
   });
+  it("mantiene el resumen calculado fuera de la redacción del modelo", async () => {
+    vi.stubEnv("MANDATE_AI_ENABLED", "true"); vi.stubEnv("OBSERVATORY_AI_ENABLED", "true");
+    mocks.synthesize.mockResolvedValue([{ text: "Explicación de prueba", citations: [1] }]);
+    const result = await (await POST(request({ question: "Honestidad", mode: "ia" }))).json();
+    expect(result.paragraphs[0].text).toContain("26,7 % (8 de 30)");
+    expect(result.paragraphs[0].citations).toEqual([]);
+    expect(result.paragraphs[1].text).toBe("Explicación de prueba");
+    expect(result.note).toContain("no califica la honestidad");
+  });
+  it("devuelve el resumen documental sin modelo si el tema carece de contrastes", async () => {
+    vi.stubEnv("MANDATE_AI_ENABLED", "true"); vi.stubEnv("OBSERVATORY_AI_ENABLED", "true");
+    const result = await (await POST(request({ question: "Honestidad", topic: "educacion", mode: "ia" }))).json();
+    expect(result.mode).toBe("documental");
+    expect(result.paragraphs[0].text).toContain("sigue sin calcular");
+    expect(result.sources).toEqual([]);
+    expect(mocks.synthesize).not.toHaveBeenCalled();
+  });
 });
