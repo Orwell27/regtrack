@@ -31,6 +31,8 @@ jobs:
       - name: Lint community and integration
         run: npx eslint scripts/community-release.mjs tests/community-release.test.ts app/comunidad app/api app/registro components/community components/Registration.tsx lib/community lib/auth.ts tests/community-api.test.ts tests/community-db.test.ts tests/lib/auth.test.ts tests/admin-access.test.ts tests/access-db.test.ts tests/registration-api.test.ts tests/auth-confirm.test.ts e2e playwright.config.ts middleware.ts 'app/(auth)/login/page.tsx' 'app/(subscriber)/alerta/[id]/page.tsx' app/components/layouts/SubscriberSidebar.tsx app/components/layouts/AdminSidebar.tsx
       - run: npm run build
+      - name: Verify public documentary packaging
+        run: node scripts/check-observatory-trace.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4

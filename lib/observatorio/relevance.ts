@@ -42,6 +42,7 @@ export function relatedBulletin(stories: Story[], citedDocuments: Story[] = []):
       const record = matches[0];
       related.set(record.id, {
         id: record.id, title: record.title, url: record.url,
+        ...(record.libraryKey ? { libraryKey: record.libraryKey } : {}),
         reason: ref.startsWith("BOE-")
           ? `El canal cita la publicación ${ref}.`
           : `El canal cita la misma norma: ${ref.slice(6).replaceAll(":", " · ")}.`,

@@ -4,6 +4,7 @@ import { ALL_SOURCES } from "./sources";
 import { parseFeed, parseBoe, parseBoeDocument, territoryMatcher } from "./ingest";
 import { relatedBulletin } from "./relevance";
 import type { Bulletin, Source, Story, SourceStatus, Territory } from "./model";
+import { publishedStories } from "./published-library";
 
 async function fetchText(url: string) {
   const res = await fetch(url, {
@@ -132,6 +133,12 @@ export async function loadBulletin(): Promise<Bulletin> {
         ];
       else merged.set(story.url, located);
     }
+  // Persisted public evidence remains searchable during source outages. Original
+  // publication dates keep it out of recent-news counts; no private vault is read.
+  for (const story of publishedStories()) {
+    // Curated jurisdiction/topics take precedence over title keyword matching.
+    merged.set(story.url, story);
+  }
   const candidates = [...merged.values()];
   const knownIds = new Set(candidates.filter((s) => s.kind === "oficial").map((s) => s.id));
   const citedIds = [...new Set(candidates.filter((s) => s.kind !== "oficial")
@@ -156,7 +163,7 @@ export async function loadBulletin(): Promise<Bulletin> {
     checkedAt: now.toISOString(),
     sources: results.map((r) => ({
       ...r.status,
-      includedCount: selected.filter((s) => s.sourceId === r.status.id).length,
+      includedCount: selected.filter((s) => s.sourceId === r.status.id && r.stories.some((live) => live.id === s.id)).length,
     })),
     stories: selected.sort(
       (a, b) =>

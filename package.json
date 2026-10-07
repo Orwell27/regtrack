@@ -12,7 +12,8 @@
     "pipeline": "tsx actions/pipeline.ts",
     "backfill": "tsx actions/backfill.ts",
     "test:e2e": "playwright test",
-    "release:prepare": "node scripts/community-release.mjs"
+    "release:prepare": "node scripts/community-release.mjs",
+    "library:ingest": "tsx scripts/import-observatory-library.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.131.0",

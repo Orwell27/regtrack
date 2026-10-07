@@ -61,6 +61,7 @@ vi.mock("@/lib/observatorio/sources", () => ({ ALL_SOURCES: [
   { id: "boe", name: "BOE", url: "https://www.boe.es", hosts: ["boe.es"], kind: "oficial" },
   { id: "medio", name: "Medio", url: "https://medio.es", feed: "https://medio.es/rss", hosts: ["medio.es"], kind: "noticia" },
 ] }));
+vi.mock("@/lib/observatorio/published-library", () => ({ publishedStories: () => [] }));
 afterEach(() => vi.unstubAllGlobals());
 describe("el boletín público aplica el filtro antes de devolver datos", () => {
   it.each([true, false])("referencia antigua disponible: %s; nunca admite actualidad sin relación", async (available) => {

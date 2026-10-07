@@ -97,6 +97,7 @@ function StoryCard({ story }: { story: Story }) {
                 {document.title} <ArrowUpRight size={13} />
               </a>
               <small>{document.reason}</small>
+              {document.libraryKey ? <a href={`/observatorio/biblioteca#${document.libraryKey}`}>Ver evidencia conservada</a> : null}
             </div>
           ))}
         </div>
@@ -106,6 +107,7 @@ function StoryCard({ story }: { story: Story }) {
           <span key={t}>{TOPICS.find((topic) => topic.id === t)?.name}</span>
         ))}
       </div>
+      {story.libraryKey ? <a className="ob-library-link" href={`/observatorio/biblioteca#${story.libraryKey}`}>Ver ficha y evidencia conservada <ArrowRight size={14} /></a> : null}
       <footer>
         <span>
           <strong>{story.source}</strong>
@@ -281,6 +283,7 @@ export function Observatory() {
         <nav aria-label="Navegación principal">
           <a href="#territorio">Territorio</a>
           <a href="#actualidad">Actualidad</a>
+          <a href="/observatorio/biblioteca">Biblioteca</a>
           <button onClick={() => setDirectory(true)}>Fuentes</button>
         </nav>
         <a className="ob-account" href="/login">

@@ -31,6 +31,8 @@ export type Story = {
   topics: string[];
   territories: string[];
   national: boolean;
+  /** Explicitly published snapshot, separate from the private memory. */
+  libraryKey?: string;
   /** Identifiers only; never the full syndicated article. */
   documentReferences?: string[];
   relatedDocuments?: {
@@ -38,6 +40,7 @@ export type Story = {
     title: string;
     url: string;
     reason: string;
+    libraryKey?: string;
   }[];
 };
 export type SourceStatus = {

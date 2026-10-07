@@ -1453,3 +1453,5 @@
   text-decoration: underline;
   font-weight: 650;
 }
+/* The archive link is available without waiting for live sources. */
+.ob-library-link { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 16px; color: #28614f; font-size: 12px; font-weight: 600; }
