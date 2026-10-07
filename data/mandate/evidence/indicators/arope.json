@@ -1,0 +1,12 @@
+{"COD":"ECV6190", "Nombre":"Ambos sexos. Total. Total Nacional. Tasa de riesgo de pobreza o exclusión social (indicador AROPE). Base 2013. ", "FK_Unidad":101, "FK_Escala":1, "Notas":[{"texto" : "Nueva definición", "Fk_TipoNota" : 1, "textoTipo" : null}], "Data":[{"Fecha":1451602800000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2016, "Valor":28.8, "Secreto":false}
+,{"Fecha":1483225200000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2017, "Valor":27.5, "Secreto":false}
+,{"Fecha":1514761200000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2018, "Valor":27.3, "Secreto":false}
+,{"Fecha":1546297200000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2019, "Valor":26.2, "Secreto":false}
+,{"Fecha":1577833200000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2020, "Valor":27.0, "Secreto":false}
+,{"Fecha":1609455600000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2021, "Valor":27.8, "Secreto":false}
+,{"Fecha":1640991600000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2022, "Valor":26.0, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2023, "Valor":26.5, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2024, "Valor":25.8, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2025, "Valor":25.7, "Secreto":false}
+]
+}

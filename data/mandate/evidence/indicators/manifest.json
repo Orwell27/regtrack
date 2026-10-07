@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "captures": [
+    {
+      "id": "epa-employment",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/EPA387796?nult=20",
+      "retrievedAt": "2026-10-07T10:14:23.800Z",
+      "evidencePath": "data/mandate/evidence/indicators/epa-employment.json",
+      "sha256": "00769c25855c49d535eabdbfa7769ce581f3fbde932505246882aa61f5d99a88"
+    },
+    {
+      "id": "epa-unemployment",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/EPA423474?nult=20",
+      "retrievedAt": "2026-10-07T10:14:24.047Z",
+      "evidencePath": "data/mandate/evidence/indicators/epa-unemployment.json",
+      "sha256": "8aa6fdc269951a183f8497f7c36bfd5dd3cc61378494c42b8b82d78d4967a3ae"
+    },
+    {
+      "id": "cpi-level",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPC290751?nult=60",
+      "retrievedAt": "2026-10-07T10:14:24.164Z",
+      "evidencePath": "data/mandate/evidence/indicators/cpi-level.json",
+      "sha256": "33d0298e1fbc73c876e4a64eafa30aefcc045be68ad1082b90e3481384f20bd1"
+    },
+    {
+      "id": "cpi-inflation",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPC290750?nult=60",
+      "retrievedAt": "2026-10-07T10:14:24.360Z",
+      "evidencePath": "data/mandate/evidence/indicators/cpi-inflation.json",
+      "sha256": "9bd1b4cbad208d1c336f7bbcf07c5e9085bce6d67f545771dfec5edde740cab7"
+    },
+    {
+      "id": "income-person",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV3763?nult=10",
+      "retrievedAt": "2026-10-07T10:14:24.469Z",
+      "evidencePath": "data/mandate/evidence/indicators/income-person.json",
+      "sha256": "18b2552adc90fa1328632e1ec2ca9798efdab6b59dd12718d9c857330b252034"
+    },
+    {
+      "id": "arope",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV6190?nult=10",
+      "retrievedAt": "2026-10-07T10:14:24.583Z",
+      "evidencePath": "data/mandate/evidence/indicators/arope.json",
+      "sha256": "6f74416b5e49b7470cb3fb83f36fc54d47be004fc9d5783af2cdf6c67048b4cb"
+    },
+    {
+      "id": "poverty-risk",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV5416?nult=10",
+      "retrievedAt": "2026-10-07T10:14:24.695Z",
+      "evidencePath": "data/mandate/evidence/indicators/poverty-risk.json",
+      "sha256": "7901f85e440e46362413ba89583e24f706152e2cc8cac4ca7093235f5eca4ce9"
+    },
+    {
+      "id": "severe-deprivation",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV6189?nult=10",
+      "retrievedAt": "2026-10-07T10:14:24.798Z",
+      "evidencePath": "data/mandate/evidence/indicators/severe-deprivation.json",
+      "sha256": "2c72c2926f06f595d0126589dce6e822caa4f187800e5c767454459b49364679"
+    },
+    {
+      "id": "gini",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV7186?nult=10",
+      "retrievedAt": "2026-10-07T10:14:24.901Z",
+      "evidencePath": "data/mandate/evidence/indicators/gini.json",
+      "sha256": "205a401adb6b1c2408d8eb0549510838c06d12b4f3f88e812c4f62d69b5603e7"
+    },
+    {
+      "id": "house-prices",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPV1209?nult=20",
+      "retrievedAt": "2026-10-07T10:14:25.087Z",
+      "evidencePath": "data/mandate/evidence/indicators/house-prices.json",
+      "sha256": "74d2faeac60c9b4ad66ce54c035f6debea47dfe94541c9f84b6fba6f13a7c1d9"
+    },
+    {
+      "id": "rental-prices",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPVA4962?nult=10",
+      "retrievedAt": "2026-10-07T10:14:25.290Z",
+      "evidencePath": "data/mandate/evidence/indicators/rental-prices.json",
+      "sha256": "ed5b936fbd407e3404164b506f6b97e9f5ba09b8c1838975520787ff812bde22"
+    },
+    {
+      "id": "gdp-real-per-capita",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_10?freq=A&unit=CLV20_EUR_HAB&na_item=B1GQ&geo=ES&sinceTimePeriod=2023",
+      "retrievedAt": "2026-10-07T10:14:25.778Z",
+      "evidencePath": "data/mandate/evidence/indicators/gdp-real-per-capita.json",
+      "sha256": "fd89470cceba00bc5b6e49e9f3c352e2ab84bf1718d250746b98c4a7d4c50ab3"
+    },
+    {
+      "id": "debt-stock",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?freq=Q&na_item=GD&sector=S13&unit=MIO_EUR&geo=ES&sinceTimePeriod=2023-Q1",
+      "retrievedAt": "2026-10-07T10:14:26.177Z",
+      "evidencePath": "data/mandate/evidence/indicators/debt-stock.json",
+      "sha256": "c885c23c4eca85c25e0079052ba5df4d2c1db15a3d41740c348b7b74a9832ed2"
+    },
+    {
+      "id": "debt-gdp",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?freq=Q&na_item=GD&sector=S13&unit=PC_GDP&geo=ES&sinceTimePeriod=2023-Q1",
+      "retrievedAt": "2026-10-07T10:14:26.594Z",
+      "evidencePath": "data/mandate/evidence/indicators/debt-gdp.json",
+      "sha256": "4bf745f0f6e82819fe2b92de13538d9292602a5964f0e55dcf41ab4b6bb20d8d"
+    },
+    {
+      "id": "public-balance",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?freq=A&unit=PC_GDP&sector=S13&na_item=B9&geo=ES&sinceTimePeriod=2023",
+      "retrievedAt": "2026-10-07T10:14:26.930Z",
+      "evidencePath": "data/mandate/evidence/indicators/public-balance.json",
+      "sha256": "8419747fa2dfaa2482c5f41adb01f7de1dc35b019900f62d0be0d9a3e2d727bd"
+    }
+  ]
+}

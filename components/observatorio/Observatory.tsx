@@ -30,6 +30,8 @@ import {
 import { ALL_SOURCES, REFERENCE_DIRECTORY } from "@/lib/observatorio/sources";
 import { TerritoryMap } from "./TerritoryMap";
 import { QuestionPanel } from "./QuestionPanel";
+import { ElectionNotice } from "./ElectionNotice";
+import type { Election } from "@/lib/mandate/model";
 
 const EMPTY: Bulletin = { stories: [], sources: [], checkedAt: "" };
 type SearchCount = { topic: string; at: number };
@@ -126,7 +128,7 @@ function StoryCard({ story }: { story: Story }) {
   );
 }
 
-export function Observatory() {
+export function Observatory({ election, nowISO }: { election: Election; nowISO: string }) {
   const [data, setData] = useState<Bulletin>(EMPTY),
     [territories, setTerritories] = useState<Territory[]>([]),
     [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
@@ -284,6 +286,7 @@ export function Observatory() {
           <a href="#territorio">Territorio</a>
           <a href="#actualidad">Actualidad</a>
           <a href="/observatorio/biblioteca">Biblioteca</a>
+          <a href="/observatorio/mandato">Balance de mandato</a>
           <button onClick={() => setDirectory(true)}>Fuentes</button>
         </nav>
         <a className="ob-account" href="/login">
@@ -324,6 +327,7 @@ export function Observatory() {
             </button>
           </div>
         </div>
+        <ElectionNotice election={election} nowISO={nowISO} />
         {error ? (
           <div className="ob-notice" role="alert">
             {error}

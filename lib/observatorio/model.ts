@@ -27,6 +27,8 @@ export type Story = {
   source: string;
   kind: SourceKind;
   author: string | null;
+  /** Server-composed interpretation, kept separate from the source's own extract. */
+  editorialContext?: string;
   publishedAt: string | null;
   topics: string[];
   territories: string[];

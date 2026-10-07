@@ -8,6 +8,9 @@ const REQUIRED = [
   "app/observatorio/biblioteca/page.js.nft.json",
   "app/api/observatorio/biblioteca/route.js.nft.json",
   "app/api/observatorio/route.js.nft.json",
+  "app/observatorio/mandato/page.js.nft.json",
+  "app/api/observatorio/mandato/route.js.nft.json",
+  "app/api/observatorio/mandato/preguntar/route.js.nft.json",
 ];
 const temporaryDirectories: string[] = [];
 
@@ -72,9 +75,9 @@ describe("post-build observatory trace coverage and private data exclusion", () 
     const { next } = await fixture();
     await validTraces(next);
     await expect(checkObservatoryTrace(next)).resolves.toEqual({
-      traceCount: 3,
+      traceCount: REQUIRED.length,
       dependencyCount: 1,
-      requiredTraceCount: 3,
+      requiredTraceCount: REQUIRED.length,
     });
   });
 

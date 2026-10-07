@@ -1,7 +1,7 @@
 import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "./e2e",
-  testMatch: ["observatorio.spec.ts", "observatorio-library.spec.ts"],
+  testMatch: ["observatorio.spec.ts", "observatorio-library.spec.ts", "mandato.spec.ts"],
   workers: 1,
   retries: 0,
   timeout: 45000,

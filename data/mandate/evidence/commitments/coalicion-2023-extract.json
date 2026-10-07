@@ -1,0 +1,33 @@
+{
+  "captureType": "parafrasis_editorial_de_fuente_primaria",
+  "capturedAt": "2026-10-07T10:13:53.289Z",
+  "url": "https://www.socialistes.cat/wp-content/uploads/2023/10/ACUERDO_GOBIERNO_COALICIO%CC%81N_2023-.pdf",
+  "title": "Una nueva coalición de Gobierno progresista para España",
+  "organisation": "PSOE y Sumar; copia publicada por el PSC",
+  "publishedAt": "2023-10-24",
+  "dateEvidenceUrl": "https://www.socialistes.cat/actualitat/acuerdo-psoesumar/",
+  "dateEvidenceLocator": "Fecha de la noticia: 24 octubre 2023; enlace al texto del acuerdo",
+  "notes": "Extracto editorial limitado. No es una copia del PDF ni un hash de sus bytes. Las páginas se cuentan desde 1, incluida la portada. No se ha verificado una licencia de redistribución del documento completo.",
+  "extracts": [
+    {
+      "locator": "Página 4, primer punto del apartado 1",
+      "paraphrase": "Vincula la convergencia del paro con la media europea al conjunto de la legislatura."
+    },
+    {
+      "locator": "Página 11, reducción de jornada",
+      "paraphrase": "Prevé 38,5 horas semanales en 2024 y culminar la reducción a 37,5 horas en 2025."
+    },
+    {
+      "locator": "Página 11, salario mínimo",
+      "paraphrase": "Propone una garantía en el Estatuto de los Trabajadores ligada al 60 % del salario medio durante la legislatura."
+    },
+    {
+      "locator": "Página 12, desempleo de larga duración",
+      "paraphrase": "Sitúa en 2024 los perfiles individualizados para personas en desempleo de larga duración."
+    },
+    {
+      "locator": "Página 22, permisos",
+      "paraphrase": "Incluye ampliar los permisos de nacimiento a veinte semanas y remunerar al menos cuatro semanas del permiso parental desde agosto de 2024."
+    }
+  ]
+}

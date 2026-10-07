@@ -1137,6 +1137,7 @@
   .ob-header {
     gap: 12px;
     padding: 15px 5%;
+    flex-wrap: wrap;
   }
   .ob-brand {
     font-size: 19px;
@@ -1146,6 +1147,10 @@
     font-size: 6px;
   }
   .ob-header nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 15px;
     font-size: 10px;
   }
@@ -1153,6 +1158,7 @@
     display: none;
   }
   .ob-account {
+    margin-left: auto;
     padding: 7px 9px;
     font-size: 10px;
     gap: 5px;
@@ -1455,3 +1461,13 @@
 }
 /* The archive link is available without waiting for live sources. */
 .ob-library-link { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 16px; color: #28614f; font-size: 12px; font-weight: 600; }
+.ob-election { display:grid; grid-template-columns:180px minmax(0,1fr); gap:32px; margin:0 0 30px; padding:28px 32px; border:1px solid #cbd5c7; background:#e9eee3; border-radius:5px; }
+.ob-election-date { display:flex; flex-direction:column; gap:7px; border-right:1px solid #bcc9b9; padding-right:22px; }
+.ob-election-date > span { font-size:9px; letter-spacing:.12em; font-weight:700; }
+.ob-election-date > strong { font-family:Georgia,serif; font-size:44px; line-height:1.08; font-weight:400; }
+.ob-election-date time { font-size:12px; }
+.ob-election-date a { display:inline-flex; align-items:center; gap:4px; margin-top:5px; font-size:11px; text-decoration:underline; text-underline-offset:3px; }
+.ob-election-copy h2 { margin:8px 0; font-family:Georgia,serif; font-size:clamp(24px,3vw,34px); font-weight:400; letter-spacing:-.03em; }
+.ob-election-copy p { max-width:710px; font-size:13px; line-height:1.65; margin:0 0 15px; }
+.ob-election-cta { display:inline-flex; align-items:center; gap:12px; font-size:13px; font-weight:650; border-bottom:1px solid currentColor; padding-bottom:4px; }
+@media (max-width:680px) { .ob-election { grid-template-columns:1fr; gap:18px; padding:22px; } .ob-election-date { display:grid; grid-template-columns:1fr auto; border-right:0; border-bottom:1px solid #bcc9b9; padding:0 0 17px; } .ob-election-date > strong { grid-column:2; grid-row:1 / 3; font-size:35px; align-self:center; } .ob-election-date time { grid-column:1; } .ob-election-date a { grid-column:1 / -1; } }
