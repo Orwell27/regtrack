@@ -1,0 +1,10 @@
+{
+  "source": "https://api-features.ign.es/collections/administrativeunit/items",
+  "license": "https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf",
+  "attribution": "Obra derivada de BDLJE CC-BY 4.0 ign.es",
+  "retrievedAt": "2026-10-06T23:04:04.244Z",
+  "regions": 19,
+  "provinces": 52,
+  "municipalities": 8213,
+  "simplification": "0.10 screen units; illustrative boundaries, not cadastral/legal evidence"
+}

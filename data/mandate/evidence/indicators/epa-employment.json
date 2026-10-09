@@ -1,0 +1,22 @@
+{"COD":"EPA387796", "Nombre":"Total Nacional. Ambos sexos. Total. Ocupados. Valor absoluto. ", "FK_Unidad":3, "FK_Escala":4, "Notas":[{"texto" : "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595#~#https://www.ine.es/consul/serie.do?s=EPA87&nult=100&TB_iframe=true&position=center&width=700&height=500&L=0&nocab=1", "Fk_TipoNota" : 6, "textoTipo" : null}], "Data":[{"Fecha":1625090400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2021, "Valor":20103.3, "Secreto":false}
+,{"Fecha":1633039200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2021, "Valor":20274.8, "Secreto":false}
+,{"Fecha":1640991600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2022, "Valor":20196.7, "Secreto":false}
+,{"Fecha":1648764000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2022, "Valor":20607.2, "Secreto":false}
+,{"Fecha":1656626400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2022, "Valor":20745.4, "Secreto":false}
+,{"Fecha":1664575200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2022, "Valor":20640.7, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":20634.2, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":21258.4, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":21446.5, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":21389.7, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":21250.0, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":21684.7, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":21823.0, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":21857.9, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":21765.4, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":22268.7, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":22387.1, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":22463.3, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":22293.0, "Secreto":false}
+,{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":22779.0, "Secreto":false}
+]
+}

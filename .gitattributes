@@ -1,0 +1,2 @@
+# Preserve the exact bytes underlying the published evidence hashes on every OS.
+data/mandate/evidence/** -text

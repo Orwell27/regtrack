@@ -1,0 +1,1624 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-10-07T10:14:26.930Z",
+  "coverage": "15 indicadores oficiales de ámbito nacional desde 2023. Fechas de cierre diferentes según la operación; el IPVA excluye los territorios forales. Piloto de contexto, sin índice global ni atribución causal al Gobierno.",
+  "caveats": [
+    "Periodo político de referencia: investidura de noviembre de 2023. Las series mensuales y trimestrales toman como base octubre y tercer trimestre de 2023; el año 2023 es una referencia mixta en las anuales.",
+    "date es el primer día del periodo estadístico, no la fecha de publicación, entrevista o captura. retrievedAt identifica la descarga; sourcePeriod conserva la referencia ECV cuando se transforma el año de ingresos.",
+    "Las variaciones describen evolución observada. No prueban cumplimiento de promesas ni que una administración sea su causa.",
+    "Se muestra el último periodo devuelto por cada fuente seleccionada, no se supone que todas las fuentes estén actualizadas a la misma fecha. No hay actualización automática remota configurada."
+  ],
+  "indicators": [
+    {
+      "id": "epa-employment",
+      "label": "Personas ocupadas",
+      "topic": "empleo",
+      "unit": "miles de personas",
+      "frequency": "quarterly",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "epa-employment",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/EPA387796?nult=20",
+        "retrievedAt": "2026-10-07T10:14:23.800Z",
+        "evidencePath": "data/mandate/evidence/indicators/epa-employment.json",
+        "sha256": "00769c25855c49d535eabdbfa7769ce581f3fbde932505246882aa61f5d99a88",
+        "title": "Total Nacional. Ambos sexos. Total. Ocupados. Valor absoluto.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "EPA387796"
+      },
+      "baseline": {
+        "period": "2023-Q3",
+        "date": "2023-07-01",
+        "value": 21446.5,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023-Q1",
+          "date": "2023-01-01",
+          "value": 20634.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q2",
+          "date": "2023-04-01",
+          "value": 21258.4,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q3",
+          "date": "2023-07-01",
+          "value": 21446.5,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q4",
+          "date": "2023-10-01",
+          "value": 21389.7,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q1",
+          "date": "2024-01-01",
+          "value": 21250,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q2",
+          "date": "2024-04-01",
+          "value": 21684.7,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q3",
+          "date": "2024-07-01",
+          "value": 21823,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q4",
+          "date": "2024-10-01",
+          "value": 21857.9,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q1",
+          "date": "2025-01-01",
+          "value": 21765.4,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q2",
+          "date": "2025-04-01",
+          "value": 22268.7,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q3",
+          "date": "2025-07-01",
+          "value": 22387.1,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q4",
+          "date": "2025-10-01",
+          "value": 22463.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-Q1",
+          "date": "2026-01-01",
+          "value": 22293,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-Q2",
+          "date": "2026-04-01",
+          "value": 22779,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "higher",
+      "directionNote": "Un aumento indica más ocupados; no mide por sí solo la tasa de empleo, horas, productividad o calidad laboral.",
+      "caveats": [
+        "EPA: estimación de encuesta, población de 16 o más años en viviendas familiares. Serie sin desestacionalizar; el trimestre de comparación afecta al resultado. Se conserva la serie oficial vigente, susceptible de revisiones poblacionales."
+      ],
+      "transformation": "Serie EPA387796; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "epa-unemployment",
+      "label": "Tasa de paro",
+      "topic": "empleo",
+      "unit": "% de población activa",
+      "frequency": "quarterly",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "epa-unemployment",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/EPA423474?nult=20",
+        "retrievedAt": "2026-10-07T10:14:24.047Z",
+        "evidencePath": "data/mandate/evidence/indicators/epa-unemployment.json",
+        "sha256": "8aa6fdc269951a183f8497f7c36bfd5dd3cc61378494c42b8b82d78d4967a3ae",
+        "title": "Total Nacional. Tasa de paro de la población. Ambos sexos. Total.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "EPA423474"
+      },
+      "baseline": {
+        "period": "2023-Q3",
+        "date": "2023-07-01",
+        "value": 11.89,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023-Q1",
+          "date": "2023-01-01",
+          "value": 13.38,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q2",
+          "date": "2023-04-01",
+          "value": 11.67,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q3",
+          "date": "2023-07-01",
+          "value": 11.89,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q4",
+          "date": "2023-10-01",
+          "value": 11.8,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q1",
+          "date": "2024-01-01",
+          "value": 12.29,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q2",
+          "date": "2024-04-01",
+          "value": 11.27,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q3",
+          "date": "2024-07-01",
+          "value": 11.21,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q4",
+          "date": "2024-10-01",
+          "value": 10.61,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q1",
+          "date": "2025-01-01",
+          "value": 11.36,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q2",
+          "date": "2025-04-01",
+          "value": 10.29,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q3",
+          "date": "2025-07-01",
+          "value": 10.45,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q4",
+          "date": "2025-10-01",
+          "value": 9.93,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-Q1",
+          "date": "2026-01-01",
+          "value": 10.83,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-Q2",
+          "date": "2026-04-01",
+          "value": 9.87,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "lower",
+      "directionNote": "Una caída indica una menor proporción de desempleados entre la población activa; puede variar también por cambios de actividad.",
+      "caveats": [
+        "EPA: estimación de encuesta, población de 16 o más años en viviendas familiares. Serie sin desestacionalizar; el trimestre de comparación afecta al resultado. Se conserva la serie oficial vigente, susceptible de revisiones poblacionales.",
+        "El denominador es la población activa, no toda la población. No equivale al paro registrado del SEPE."
+      ],
+      "transformation": "Serie EPA423474; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "cpi-level",
+      "label": "Nivel de precios de consumo",
+      "topic": "economia",
+      "unit": "índice, base 2025 = 100",
+      "frequency": "monthly",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "cpi-level",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPC290751?nult=60",
+        "retrievedAt": "2026-10-07T10:14:24.164Z",
+        "evidencePath": "data/mandate/evidence/indicators/cpi-level.json",
+        "sha256": "33d0298e1fbc73c876e4a64eafa30aefcc045be68ad1082b90e3481384f20bd1",
+        "title": "Nacional. Índice general. Índice.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "IPC290751"
+      },
+      "baseline": {
+        "period": "2023-10",
+        "date": "2023-10-01",
+        "value": 95.998,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023-01",
+          "date": "2023-01-01",
+          "value": 92.613,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-02",
+          "date": "2023-02-01",
+          "value": 93.487,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-03",
+          "date": "2023-03-01",
+          "value": 93.831,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-04",
+          "date": "2023-04-01",
+          "value": 94.39,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-05",
+          "date": "2023-05-01",
+          "value": 94.345,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-06",
+          "date": "2023-06-01",
+          "value": 94.881,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-07",
+          "date": "2023-07-01",
+          "value": 95.042,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-08",
+          "date": "2023-08-01",
+          "value": 95.552,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-09",
+          "date": "2023-09-01",
+          "value": 95.721,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-10",
+          "date": "2023-10-01",
+          "value": 95.998,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-11",
+          "date": "2023-11-01",
+          "value": 95.663,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-12",
+          "date": "2023-12-01",
+          "value": 95.687,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-01",
+          "date": "2024-01-01",
+          "value": 95.768,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-02",
+          "date": "2024-02-01",
+          "value": 96.108,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-03",
+          "date": "2024-03-01",
+          "value": 96.84,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-04",
+          "date": "2024-04-01",
+          "value": 97.514,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-05",
+          "date": "2024-05-01",
+          "value": 97.771,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-06",
+          "date": "2024-06-01",
+          "value": 98.139,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-07",
+          "date": "2024-07-01",
+          "value": 97.673,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-08",
+          "date": "2024-08-01",
+          "value": 97.713,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-09",
+          "date": "2024-09-01",
+          "value": 97.123,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-10",
+          "date": "2024-10-01",
+          "value": 97.729,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-11",
+          "date": "2024-11-01",
+          "value": 97.968,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-12",
+          "date": "2024-12-01",
+          "value": 98.411,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-01",
+          "date": "2025-01-01",
+          "value": 98.579,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-02",
+          "date": "2025-02-01",
+          "value": 98.966,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-03",
+          "date": "2025-03-01",
+          "value": 99.024,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-04",
+          "date": "2025-04-01",
+          "value": 99.647,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-05",
+          "date": "2025-05-01",
+          "value": 99.714,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-06",
+          "date": "2025-06-01",
+          "value": 100.382,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-07",
+          "date": "2025-07-01",
+          "value": 100.305,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-08",
+          "date": "2025-08-01",
+          "value": 100.345,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-09",
+          "date": "2025-09-01",
+          "value": 100.059,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-10",
+          "date": "2025-10-01",
+          "value": 100.748,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-11",
+          "date": "2025-11-01",
+          "value": 100.943,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-12",
+          "date": "2025-12-01",
+          "value": 101.289,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-01",
+          "date": "2026-01-01",
+          "value": 100.836,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-02",
+          "date": "2026-02-01",
+          "value": 101.261,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-03",
+          "date": "2026-03-01",
+          "value": 102.44,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-04",
+          "date": "2026-04-01",
+          "value": 102.883,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-05",
+          "date": "2026-05-01",
+          "value": 102.951,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-06",
+          "date": "2026-06-01",
+          "value": 103.598,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-07",
+          "date": "2026-07-01",
+          "value": 103.899,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-08",
+          "date": "2026-08-01",
+          "value": 104.638,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "context",
+      "directionNote": "El índice mide el nivel de precios. Una inflación menor puede coexistir con un nivel de precios mayor.",
+      "caveats": [
+        "IPC general nacional, misma base 2025 en toda la serie. El índice no es un importe en euros ni mide la cesta particular de cada hogar."
+      ],
+      "transformation": "Serie IPC290751; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "cpi-inflation",
+      "label": "Inflación interanual",
+      "topic": "economia",
+      "unit": "% respecto al mismo mes del año anterior",
+      "frequency": "monthly",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "cpi-inflation",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPC290750?nult=60",
+        "retrievedAt": "2026-10-07T10:14:24.360Z",
+        "evidencePath": "data/mandate/evidence/indicators/cpi-inflation.json",
+        "sha256": "9bd1b4cbad208d1c336f7bbcf07c5e9085bce6d67f545771dfec5edde740cab7",
+        "title": "Nacional. Índice general. Variación anual.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "IPC290750"
+      },
+      "baseline": {
+        "period": "2023-10",
+        "date": "2023-10-01",
+        "value": 3.5,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023-01",
+          "date": "2023-01-01",
+          "value": 5.9,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-02",
+          "date": "2023-02-01",
+          "value": 6,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-03",
+          "date": "2023-03-01",
+          "value": 3.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-04",
+          "date": "2023-04-01",
+          "value": 4.1,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-05",
+          "date": "2023-05-01",
+          "value": 3.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-06",
+          "date": "2023-06-01",
+          "value": 1.9,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-07",
+          "date": "2023-07-01",
+          "value": 2.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-08",
+          "date": "2023-08-01",
+          "value": 2.6,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-09",
+          "date": "2023-09-01",
+          "value": 3.5,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-10",
+          "date": "2023-10-01",
+          "value": 3.5,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-11",
+          "date": "2023-11-01",
+          "value": 3.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-12",
+          "date": "2023-12-01",
+          "value": 3.1,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-01",
+          "date": "2024-01-01",
+          "value": 3.4,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-02",
+          "date": "2024-02-01",
+          "value": 2.8,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-03",
+          "date": "2024-03-01",
+          "value": 3.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-04",
+          "date": "2024-04-01",
+          "value": 3.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-05",
+          "date": "2024-05-01",
+          "value": 3.6,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-06",
+          "date": "2024-06-01",
+          "value": 3.4,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-07",
+          "date": "2024-07-01",
+          "value": 2.8,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-08",
+          "date": "2024-08-01",
+          "value": 2.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-09",
+          "date": "2024-09-01",
+          "value": 1.5,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-10",
+          "date": "2024-10-01",
+          "value": 1.8,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-11",
+          "date": "2024-11-01",
+          "value": 2.4,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-12",
+          "date": "2024-12-01",
+          "value": 2.8,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-01",
+          "date": "2025-01-01",
+          "value": 2.9,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-02",
+          "date": "2025-02-01",
+          "value": 3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-03",
+          "date": "2025-03-01",
+          "value": 2.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-04",
+          "date": "2025-04-01",
+          "value": 2.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-05",
+          "date": "2025-05-01",
+          "value": 2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-06",
+          "date": "2025-06-01",
+          "value": 2.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-07",
+          "date": "2025-07-01",
+          "value": 2.7,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-08",
+          "date": "2025-08-01",
+          "value": 2.7,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-09",
+          "date": "2025-09-01",
+          "value": 3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-10",
+          "date": "2025-10-01",
+          "value": 3.1,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-11",
+          "date": "2025-11-01",
+          "value": 3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-12",
+          "date": "2025-12-01",
+          "value": 2.9,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-01",
+          "date": "2026-01-01",
+          "value": 2.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-02",
+          "date": "2026-02-01",
+          "value": 2.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-03",
+          "date": "2026-03-01",
+          "value": 3.4,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-04",
+          "date": "2026-04-01",
+          "value": 3.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-05",
+          "date": "2026-05-01",
+          "value": 3.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-06",
+          "date": "2026-06-01",
+          "value": 3.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-07",
+          "date": "2026-07-01",
+          "value": 3.6,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-08",
+          "date": "2026-08-01",
+          "value": 4.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-09",
+          "date": "2026-09-01",
+          "value": 4.9,
+          "status": "avance"
+        }
+      ],
+      "direction": "context",
+      "directionNote": "Mide la velocidad de variación de los precios, no su nivel. Una tasa negativa no se califica automáticamente como mejora.",
+      "caveats": [
+        "IPC general nacional. La tasa incluye efectos base y choques externos; no es una medida causal de la política nacional.",
+        "Las observaciones marcadas como avance están sujetas a confirmación. El último periodo de la tasa puede ser posterior al del índice; no se imputa un nivel de precios para completar ese desfase."
+      ],
+      "transformation": "Serie IPC290750; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "income-person",
+      "label": "Renta neta media por persona",
+      "topic": "bienestar",
+      "unit": "euros corrientes por persona y año",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "income-person",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV3763?nult=10",
+        "retrievedAt": "2026-10-07T10:14:24.469Z",
+        "evidencePath": "data/mandate/evidence/indicators/income-person.json",
+        "sha256": "18b2552adc90fa1328632e1ec2ca9798efdab6b59dd12718d9c857330b252034",
+        "title": "Ambos sexos. Total. Total Nacional. Renta neta media por persona. Base 2013.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "ECV3763"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": 14807,
+        "status": "definitivo",
+        "sourcePeriod": "2024"
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": 14807,
+          "status": "definitivo",
+          "sourcePeriod": "2024"
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": 15620,
+          "status": "definitivo",
+          "sourcePeriod": "2025"
+        }
+      ],
+      "direction": "context",
+      "directionNote": "Es una media nominal: su aumento no demuestra por sí solo una mejora del poder adquisitivo ni de la renta mediana.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "El periodo mostrado es el año al que pertenecen los ingresos, un año anterior al de la ECV. Se conserva sourcePeriod con el año original de la encuesta.",
+        "No incluye alquiler imputado. No se deflacta ni se presenta como renta real."
+      ],
+      "transformation": "Serie ECV3763; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos. Se resta un año al periodo ECV para mostrar el año de ingresos; sourcePeriod conserva el periodo original."
+    },
+    {
+      "id": "arope",
+      "label": "Riesgo de pobreza o exclusión social",
+      "topic": "bienestar",
+      "unit": "% de población",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "arope",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV6190?nult=10",
+        "retrievedAt": "2026-10-07T10:14:24.583Z",
+        "evidencePath": "data/mandate/evidence/indicators/arope.json",
+        "sha256": "6f74416b5e49b7470cb3fb83f36fc54d47be004fc9d5783af2cdf6c67048b4cb",
+        "title": "Ambos sexos. Total. Total Nacional. Tasa de riesgo de pobreza o exclusión social (indicador AROPE). Base 2013.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "ECV6190"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": 26.5,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": 26.5,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": 25.8,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025",
+          "date": "2025-01-01",
+          "value": 25.7,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "lower",
+      "directionNote": "Una caída indica menor proporción de población incluida en al menos uno de los componentes AROPE.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "Año de la encuesta ECV: sus variables de ingresos se refieren al año natural anterior. No es una medición de todos los componentes en el mismo momento.",
+        "Definición AROPE Europa 2030. Sus tres componentes se solapan: no deben sumarse. No mezclar con la antigua definición Europa 2020."
+      ],
+      "transformation": "Serie ECV6190; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "poverty-risk",
+      "label": "Riesgo de pobreza relativa",
+      "topic": "bienestar",
+      "unit": "% de población",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "poverty-risk",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV5416?nult=10",
+        "retrievedAt": "2026-10-07T10:14:24.695Z",
+        "evidencePath": "data/mandate/evidence/indicators/poverty-risk.json",
+        "sha256": "7901f85e440e46362413ba89583e24f706152e2cc8cac4ca7093235f5eca4ce9",
+        "title": "Ambos sexos. Total. Total Nacional. En riesgo de pobreza (renta año anterior a la entrevista). Base 2013.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "ECV5416"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": 20.2,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": 20.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": 19.7,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025",
+          "date": "2025-01-01",
+          "value": 19.5,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "lower",
+      "directionNote": "Una caída indica menos personas bajo el umbral relativo; no demuestra que el poder adquisitivo de todos los hogares haya mejorado.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "Año de la encuesta ECV: sus variables de ingresos se refieren al año natural anterior. No es una medición de todos los componentes en el mismo momento.",
+        "Ingresos por debajo del 60% de la mediana nacional equivalente, después de transferencias. El umbral cambia con la distribución de ingresos; no es pobreza absoluta."
+      ],
+      "transformation": "Serie ECV5416; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "severe-deprivation",
+      "label": "Carencia material y social severa",
+      "topic": "bienestar",
+      "unit": "% de población",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "severe-deprivation",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV6189?nult=10",
+        "retrievedAt": "2026-10-07T10:14:24.798Z",
+        "evidencePath": "data/mandate/evidence/indicators/severe-deprivation.json",
+        "sha256": "2c72c2926f06f595d0126589dce6e822caa4f187800e5c767454459b49364679",
+        "title": "Ambos sexos. Total. Total Nacional. Con carencia material y social severa. Base 2013.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "ECV6189"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": 9,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": 9,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": 8.3,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025",
+          "date": "2025-01-01",
+          "value": 8.1,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "lower",
+      "directionNote": "Una caída indica menos población que no puede permitirse el número de elementos definido por esta medida de privación.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "Componente AROPE Europa 2030: carencia de al menos 7 de 13 elementos. Se refiere al año de la encuesta; no a los ingresos del año anterior.",
+        "No mezclar con la antigua carencia material severa de Europa 2020."
+      ],
+      "transformation": "Serie ECV6189; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "gini",
+      "label": "Desigualdad de renta (Gini)",
+      "topic": "bienestar",
+      "unit": "puntos, escala 0–100",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "gini",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV7186?nult=10",
+        "retrievedAt": "2026-10-07T10:14:24.901Z",
+        "evidencePath": "data/mandate/evidence/indicators/gini.json",
+        "sha256": "205a401adb6b1c2408d8eb0549510838c06d12b4f3f88e812c4f62d69b5603e7",
+        "title": "Total Nacional. Ambos sexos. Total. Gini. Base 2013.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "ECV7186"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": 31.5,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": 31.5,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": 31.2,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025",
+          "date": "2025-01-01",
+          "value": 30.8,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "lower",
+      "directionNote": "Una caída indica menor desigualdad relativa de ingresos en esta medida; no informa del nivel de renta o riqueza.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "Año de la encuesta ECV: sus variables de ingresos se refieren al año natural anterior. No es una medición de todos los componentes en el mismo momento.",
+        "Renta sin alquiler imputado. El índice de Gini de ingresos no mide la desigualdad de patrimonio."
+      ],
+      "transformation": "Serie ECV7186; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "house-prices",
+      "label": "Precio de compra de vivienda",
+      "topic": "vivienda",
+      "unit": "índice, base 2025 = 100",
+      "frequency": "quarterly",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "house-prices",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPV1209?nult=20",
+        "retrievedAt": "2026-10-07T10:14:25.087Z",
+        "evidencePath": "data/mandate/evidence/indicators/house-prices.json",
+        "sha256": "74d2faeac60c9b4ad66ce54c035f6debea47dfe94541c9f84b6fba6f13a7c1d9",
+        "title": "Nacional. General. Índice.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "IPV1209"
+      },
+      "baseline": {
+        "period": "2023-Q3",
+        "date": "2023-07-01",
+        "value": 83.529,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023-Q1",
+          "date": "2023-01-01",
+          "value": 79.809,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q2",
+          "date": "2023-04-01",
+          "value": 81.478,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q3",
+          "date": "2023-07-01",
+          "value": 83.529,
+          "status": "definitivo"
+        },
+        {
+          "period": "2023-Q4",
+          "date": "2023-10-01",
+          "value": 82.649,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q1",
+          "date": "2024-01-01",
+          "value": 84.833,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q2",
+          "date": "2024-04-01",
+          "value": 87.87,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q3",
+          "date": "2024-07-01",
+          "value": 90.337,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024-Q4",
+          "date": "2024-10-01",
+          "value": 91.956,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q1",
+          "date": "2025-01-01",
+          "value": 95.215,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q2",
+          "date": "2025-04-01",
+          "value": 99.043,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q3",
+          "date": "2025-07-01",
+          "value": 101.937,
+          "status": "definitivo"
+        },
+        {
+          "period": "2025-Q4",
+          "date": "2025-10-01",
+          "value": 103.805,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-Q1",
+          "date": "2026-01-01",
+          "value": 107.458,
+          "status": "definitivo"
+        },
+        {
+          "period": "2026-Q2",
+          "date": "2026-04-01",
+          "value": 111.095,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "context",
+      "directionNote": "Un alza encarece la compra y eleva el valor del activo de sus propietarios; no se asigna una valoración única.",
+      "caveats": [
+        "IPV general: viviendas nuevas y usadas adquiridas por hogares. Misma base 2025 en toda la serie. No mide alquileres, vivienda ofertada o esfuerzo de acceso.",
+        "Sin ajuste estacional. La evolución depende también de condiciones financieras, oferta local y composición de las compraventas."
+      ],
+      "transformation": "Serie IPV1209; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "rental-prices",
+      "label": "Precio del alquiler residencial",
+      "topic": "vivienda",
+      "unit": "índice, base 2015 = 100",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España, excepto País Vasco y Navarra",
+        "level": "national"
+      },
+      "source": {
+        "id": "rental-prices",
+        "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPVA4962?nult=10",
+        "retrievedAt": "2026-10-07T10:14:25.290Z",
+        "evidencePath": "data/mandate/evidence/indicators/rental-prices.json",
+        "sha256": "ed5b936fbd407e3404164b506f6b97e9f5ba09b8c1838975520787ff812bde22",
+        "title": "Total Nacional. Total. Índice.",
+        "producer": "Instituto Nacional de Estadística (INE)",
+        "seriesCode": "IPVA4962"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": 118.727,
+        "status": "definitivo"
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": 118.727,
+          "status": "definitivo"
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": 122.92,
+          "status": "definitivo"
+        }
+      ],
+      "direction": "context",
+      "directionNote": "Describe la evolución de las rentas de alquiler observadas; su impacto difiere entre inquilinos y arrendadores.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "IPVA: estadística experimental basada en fuentes tributarias sobre arrendamientos de vivienda habitual. No es un índice de ofertas inmobiliarias ni el índice legal de actualización de contratos.",
+        "La cobertura territorial excluye País Vasco y Navarra por el régimen fiscal foral. El agregado etiquetado Total Nacional no representa esos territorios."
+      ],
+      "transformation": "Serie IPVA4962; se conservan los valores y la escala de origen, se ordenan los periodos desde 2023 y no se interpolan huecos."
+    },
+    {
+      "id": "gdp-real-per-capita",
+      "label": "PIB real por habitante",
+      "topic": "economia",
+      "unit": "euros por habitante, volumen encadenado de 2020",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "gdp-real-per-capita",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_10?freq=A&unit=CLV20_EUR_HAB&na_item=B1GQ&geo=ES&sinceTimePeriod=2023",
+        "retrievedAt": "2026-10-07T10:14:25.778Z",
+        "evidencePath": "data/mandate/evidence/indicators/gdp-real-per-capita.json",
+        "sha256": "fd89470cceba00bc5b6e49e9f3c352e2ab84bf1718d250746b98c4a7d4c50ab3",
+        "title": "Real GDP per capita",
+        "producer": "Eurostat",
+        "datasetCode": "sdg_08_10",
+        "updatedAt": "2026-10-07T11:00:00+0200"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": 27130
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": 27130
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": 27820,
+          "status": "p"
+        },
+        {
+          "period": "2025",
+          "date": "2025-01-01",
+          "value": 28260,
+          "status": "p"
+        }
+      ],
+      "direction": "higher",
+      "directionNote": "Un aumento indica más producción real por habitante; no equivale a renta disponible mediana ni es una medida completa de bienestar.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "Volumen encadenado de referencia 2020: se elimina el efecto agregado de precios. El denominador es la población media anual.",
+        "Se conservan las banderas provisionales de Eurostat. Las cuentas nacionales pueden revisarse."
+      ],
+      "transformation": "Selección exacta de dimensiones {\"freq\":\"A\",\"unit\":\"CLV20_EUR_HAB\",\"na_item\":\"B1GQ\",\"geo\":\"ES\"}. Se conservan valores, unidad y banderas; ausencia de celda = null."
+    },
+    {
+      "id": "debt-stock",
+      "label": "Deuda pública: volumen",
+      "topic": "economia",
+      "unit": "millones de euros corrientes",
+      "frequency": "quarterly",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "debt-stock",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?freq=Q&na_item=GD&sector=S13&unit=MIO_EUR&geo=ES&sinceTimePeriod=2023-Q1",
+        "retrievedAt": "2026-10-07T10:14:26.177Z",
+        "evidencePath": "data/mandate/evidence/indicators/debt-stock.json",
+        "sha256": "c885c23c4eca85c25e0079052ba5df4d2c1db15a3d41740c348b7b74a9832ed2",
+        "title": "Quarterly government debt",
+        "producer": "Eurostat",
+        "datasetCode": "gov_10q_ggdebt",
+        "updatedAt": "2026-07-21T11:00:00+0200"
+      },
+      "baseline": {
+        "period": "2023-Q3",
+        "date": "2023-07-01",
+        "value": 1578812
+      },
+      "observations": [
+        {
+          "period": "2023-Q1",
+          "date": "2023-01-01",
+          "value": 1536723
+        },
+        {
+          "period": "2023-Q2",
+          "date": "2023-04-01",
+          "value": 1570119
+        },
+        {
+          "period": "2023-Q3",
+          "date": "2023-07-01",
+          "value": 1578812
+        },
+        {
+          "period": "2023-Q4",
+          "date": "2023-10-01",
+          "value": 1575377
+        },
+        {
+          "period": "2024-Q1",
+          "date": "2024-01-01",
+          "value": 1614713
+        },
+        {
+          "period": "2024-Q2",
+          "date": "2024-04-01",
+          "value": 1625668
+        },
+        {
+          "period": "2024-Q3",
+          "date": "2024-07-01",
+          "value": 1635731
+        },
+        {
+          "period": "2024-Q4",
+          "date": "2024-10-01",
+          "value": 1620573
+        },
+        {
+          "period": "2025-Q1",
+          "date": "2025-01-01",
+          "value": 1667376
+        },
+        {
+          "period": "2025-Q2",
+          "date": "2025-04-01",
+          "value": 1690906
+        },
+        {
+          "period": "2025-Q3",
+          "date": "2025-07-01",
+          "value": 1709349
+        },
+        {
+          "period": "2025-Q4",
+          "date": "2025-10-01",
+          "value": 1698225
+        },
+        {
+          "period": "2026-Q1",
+          "date": "2026-01-01",
+          "value": 1739501,
+          "status": "p"
+        }
+      ],
+      "direction": "context",
+      "directionNote": "El importe nominal debe leerse junto al porcentaje del PIB y a los costes de financiación; no es el déficit del periodo.",
+      "caveats": [
+        "Deuda bruta consolidada PDE del conjunto de las Administraciones Públicas (S13), a fin de trimestre. Incluye administraciones central, autonómica, local y Seguridad Social: no atribuir el total únicamente al Gobierno central.",
+        "Fuente armonizada Eurostat, alimentada por los datos nacionales del procedimiento de déficit excesivo. La última observación disponible aquí puede ir por detrás de las publicaciones del Banco de España."
+      ],
+      "transformation": "Selección exacta de dimensiones {\"freq\":\"Q\",\"na_item\":\"GD\",\"sector\":\"S13\",\"unit\":\"MIO_EUR\",\"geo\":\"ES\"}. Se conservan valores, unidad y banderas; ausencia de celda = null."
+    },
+    {
+      "id": "debt-gdp",
+      "label": "Deuda pública sobre el PIB",
+      "topic": "economia",
+      "unit": "% del PIB",
+      "frequency": "quarterly",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "debt-gdp",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?freq=Q&na_item=GD&sector=S13&unit=PC_GDP&geo=ES&sinceTimePeriod=2023-Q1",
+        "retrievedAt": "2026-10-07T10:14:26.594Z",
+        "evidencePath": "data/mandate/evidence/indicators/debt-gdp.json",
+        "sha256": "4bf745f0f6e82819fe2b92de13538d9292602a5964f0e55dcf41ab4b6bb20d8d",
+        "title": "Quarterly government debt",
+        "producer": "Eurostat",
+        "datasetCode": "gov_10q_ggdebt",
+        "updatedAt": "2026-07-21T11:00:00+0200"
+      },
+      "baseline": {
+        "period": "2023-Q3",
+        "date": "2023-07-01",
+        "value": 107.3
+      },
+      "observations": [
+        {
+          "period": "2023-Q1",
+          "date": "2023-01-01",
+          "value": 108.9
+        },
+        {
+          "period": "2023-Q2",
+          "date": "2023-04-01",
+          "value": 108.8
+        },
+        {
+          "period": "2023-Q3",
+          "date": "2023-07-01",
+          "value": 107.3
+        },
+        {
+          "period": "2023-Q4",
+          "date": "2023-10-01",
+          "value": 105.2
+        },
+        {
+          "period": "2024-Q1",
+          "date": "2024-01-01",
+          "value": 106.3
+        },
+        {
+          "period": "2024-Q2",
+          "date": "2024-04-01",
+          "value": 105.2
+        },
+        {
+          "period": "2024-Q3",
+          "date": "2024-07-01",
+          "value": 104.2
+        },
+        {
+          "period": "2024-Q4",
+          "date": "2024-10-01",
+          "value": 101.6
+        },
+        {
+          "period": "2025-Q1",
+          "date": "2025-01-01",
+          "value": 103.3
+        },
+        {
+          "period": "2025-Q2",
+          "date": "2025-04-01",
+          "value": 103.4
+        },
+        {
+          "period": "2025-Q3",
+          "date": "2025-07-01",
+          "value": 103.1
+        },
+        {
+          "period": "2025-Q4",
+          "date": "2025-10-01",
+          "value": 100.7
+        },
+        {
+          "period": "2026-Q1",
+          "date": "2026-01-01",
+          "value": 101.6,
+          "status": "p"
+        }
+      ],
+      "direction": "context",
+      "directionNote": "La ratio puede bajar aunque aumente la deuda en euros si crece el PIB nominal. Leer ambas series conjuntamente.",
+      "caveats": [
+        "Deuda bruta consolidada PDE del conjunto de las Administraciones Públicas (S13), a fin de trimestre. Incluye administraciones central, autonómica, local y Seguridad Social: no atribuir el total únicamente al Gobierno central.",
+        "El denominador es el PIB nominal acumulado de los cuatro últimos trimestres. La inflación y las revisiones del PIB afectan a la ratio.",
+        "Serie de la misma fuente y captura que el volumen de deuda; las observaciones provisionales se conservan."
+      ],
+      "transformation": "Selección exacta de dimensiones {\"freq\":\"Q\",\"na_item\":\"GD\",\"sector\":\"S13\",\"unit\":\"PC_GDP\",\"geo\":\"ES\"}. Se conservan valores, unidad y banderas; ausencia de celda = null."
+    },
+    {
+      "id": "public-balance",
+      "label": "Saldo de las Administraciones Públicas",
+      "topic": "economia",
+      "unit": "% del PIB",
+      "frequency": "annual",
+      "geography": {
+        "code": "ES",
+        "label": "España",
+        "level": "national"
+      },
+      "source": {
+        "id": "public-balance",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?freq=A&unit=PC_GDP&sector=S13&na_item=B9&geo=ES&sinceTimePeriod=2023",
+        "retrievedAt": "2026-10-07T10:14:26.930Z",
+        "evidencePath": "data/mandate/evidence/indicators/public-balance.json",
+        "sha256": "8419747fa2dfaa2482c5f41adb01f7de1dc35b019900f62d0be0d9a3e2d727bd",
+        "title": "Government deficit/surplus, debt and associated data",
+        "producer": "Eurostat",
+        "datasetCode": "gov_10dd_edpt1",
+        "updatedAt": "2026-04-22T11:00:00+0200"
+      },
+      "baseline": {
+        "period": "2023",
+        "date": "2023-01-01",
+        "value": -3.3
+      },
+      "observations": [
+        {
+          "period": "2023",
+          "date": "2023-01-01",
+          "value": -3.3
+        },
+        {
+          "period": "2024",
+          "date": "2024-01-01",
+          "value": -3.2
+        },
+        {
+          "period": "2025",
+          "date": "2025-01-01",
+          "value": -2.4
+        }
+      ],
+      "direction": "context",
+      "directionNote": "Los valores negativos son déficit y los positivos superávit. Es un flujo anual; su valoración requiere contexto económico y presupuestario.",
+      "caveats": [
+        "La referencia anual 2023 mezcla meses anteriores y posteriores a la investidura; no representa una medición al 17 de noviembre.",
+        "Capacidad (+) o necesidad (−) de financiación B9 del conjunto S13 en contabilidad nacional SEC 2010. No es la ejecución mensual de caja del Estado ni la deuda acumulada.",
+        "No se excluyen medidas extraordinarias ni se presenta como saldo estructural. Distinguir competencias de cada administración."
+      ],
+      "transformation": "Selección exacta de dimensiones {\"freq\":\"A\",\"unit\":\"PC_GDP\",\"sector\":\"S13\",\"na_item\":\"B9\",\"geo\":\"ES\"}. Se conservan valores, unidad y banderas; ausencia de celda = null."
+    }
+  ]
+}
