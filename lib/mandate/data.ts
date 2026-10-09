@@ -1,7 +1,7 @@
 import commitmentsInput from "@/data/mandate/commitments.json";
 import indicatorsInput from "@/data/mandate/indicators.json";
 import electionInput from "@/data/mandate/election.json";
-import { type Commitment, type Election, type Evidence, type Indicator, type MandateSnapshot, type Observation } from "./model";
+import { type Commitment, type CommitmentAssessment, type Election, type Evidence, type Indicator, type MandateSnapshot, type Observation } from "./model";
 import { validateMandateSnapshot } from "./validate";
 
 type RawSource = { id: string; url: string; title: string; organisation: string; publishedAt: string | null; capturedAt: string; sha256: string; captureType?: string };
@@ -13,6 +13,7 @@ type RawCommitment = {
   governmentAssessment: { text: string; asOf: string; sourceId: string; locator: string };
   governmentMeasures?: { text: string; sourceId: string; locator: string }[];
   review: { status: string; asOf: string; criterion: string; conclusion: string; evidence: { sourceId: string; locator: string; paraphrase: string; relation: string }[] };
+  assessment: Omit<CommitmentAssessment, "evidenceIds"> & { evidenceSourceIds: string[] };
 };
 type RawCommitments = { cutoffDate: string; selection: { description: string }; sources: RawSource[]; commitments: RawCommitment[] };
 type RawIndicator = {
@@ -63,11 +64,18 @@ function commitmentProjection(item: RawCommitment, indicators: Indicator[]): Com
       ...(item.originSourceId ? [evidence(item.originSourceId, `${item.id}-origin`, `Documento de origen atribuido a la fila ${item.officialId} del inventario`, item.originVerification?.note ?? "Origen atribuido por el inventario, pendiente de correspondencia literal completa.", "promise")] : []),
       ...(item.officialDeadline?.sourceId ? [evidence(item.officialDeadline.sourceId, `${item.id}-deadline`, item.officialDeadline.locator ?? item.governmentAssessment.locator,
         `${item.officialDeadline.text}. ${item.officialDeadline.scope ?? ""}`, "promise")] : []),
-      ...item.review.evidence.map((entry, index) => evidence(entry.sourceId, `${item.id}-evidence-${index}`, entry.locator, entry.paraphrase, entry.sourceId === "coalicion-2023" ? "promise" : "action")),
+      ...item.review.evidence.map((entry, index) => evidence(entry.sourceId, `${item.id}-evidence-${index}`, entry.locator, entry.paraphrase, entry.sourceId === "coalicion-2023" ? "promise" : entry.relation === "resultado_estadistico" ? "indicator" : entry.relation === "declaracion_de_actuacion" ? "government" : "action")),
     ],
     // These links are visibly labelled as thematic context, never proof of fulfilment.
     indicatorIds: indicators.filter((indicator) => item.topics.includes(indicator.topic)).slice(0, 4).map((indicator) => indicator.id),
     simpleExplanation: item.simpleExplanation ?? item.review.criterion,
+    assessment: {
+      verdict: item.assessment.verdict, expected: item.assessment.expected,
+      observed: item.assessment.observed, practicalEffect: item.assessment.practicalEffect,
+      missingEvidence: item.assessment.missingEvidence, temporalScope: item.assessment.temporalScope,
+      scope: item.assessment.scope, reviewedAt: item.assessment.reviewedAt,
+      evidenceIds: item.review.evidence.flatMap((entry, index) => item.assessment.evidenceSourceIds.includes(entry.sourceId) ? [`${item.id}-evidence-${index}`] : []),
+    },
   };
 }
 
@@ -85,6 +93,9 @@ export function getMandateSnapshot(): MandateSnapshot {
       "El inventario Cumpliendo pertenece al Gobierno. Su información se atribuye a esa fuente y se contrasta por separado con documentos originales.",
       "Origen de los datos de compromisos: sitio web de lamoncloa.gob.es. Ministerio de la Presidencia. Entrega publicada el 28 de julio de 2026, con corte al 30 de junio; la revisión del piloto no amplía ese corte.",
       "Una norma acredita una actuación, no necesariamente una entrega o el resultado prometido. No se publica un porcentaje global de cumplimiento a partir de esta selección.",
+      "Los 30 compromisos tienen una revisión fechada de qué se esperaba, qué acredita la evidencia, su alcance temporal, el efecto práctico y lo que falta. Completar la revisión no convierte las medidas aprobadas en resultados ni elimina la incertidumbre.",
+      "Medidas acreditadas señala instrumentos o decisiones publicados, incluidos anuncios atribuidos al organismo. Resultado parcial documentado señala un componente o evolución comprobables. Objetivo no alcanzado en el plazo requiere meta y plazo explícitos y evidencia contraria. Resultado no concluyente significa que las fuentes no bastan para juzgar el resultado prometido.",
+      "Las revisiones anteriores se conservan en el archivo. Las fuentes estadísticas retienen sus periodos y fecha de captura: la revisión del 10 de octubre no las convierte en observaciones de ese día. Las normas recientes deben revisarse de nuevo tras su convalidación o modificación.",
       "Pendiente de contraste significa que falta revisión documental. No significa promesa incumplida. Se conserva el plazo original cuando consta.",
       "Las series tienen diferentes periodos de referencia, fechas de publicación y revisiones. Un dato provisional o antiguo se muestra como tal.",
       "La referencia inicial es el tercer trimestre u octubre de 2023; las series anuales usan 2023 y mezclan meses anteriores y posteriores a la investidura. No es una medición exacta del día de comienzo.",

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, BookOpen, Search, Sparkles } from "lucide-react";
 import {
   MANDATE_TOPICS,
+  ASSESSMENT_LABELS,
   normalizeMandateText,
   type Commitment,
   type Evidence,
@@ -42,12 +43,15 @@ function CommitmentCard({ item, indicators, openIndicator }: { item: Commitment;
   return <article className="mn-card mn-commitment" id={`compromiso-${item.id}`} aria-labelledby={`title-${item.id}`}>
     <div className="mn-card-top"><div className="mn-topics">{item.topics.map((topic) => <span key={topic}>{topicLabel(topic)}</span>)}</div><span className="mn-card-id">{item.officialId}</span></div>
     <h3 id={`title-${item.id}`}>{item.title}</h3>
-    <p className="mn-card-summary">{item.simpleExplanation}</p>
+    <p className="mn-assessment-verdict" data-verdict={item.assessment.verdict}>{ASSESSMENT_LABELS[item.assessment.verdict]}</p>
+    <p className="mn-card-summary"><strong>Qué se prometió.</strong> {item.assessment.expected}</p>
     <dl className="mn-dual-status">
       <div><dt>Información del Gobierno</dt><dd>{item.governmentAssessment.label}</dd></div>
       <div><dt>Contraste RegTrack · piloto</dt><dd><span className="mn-status" data-status={item.review.status}>{item.review.label}</span></dd></div>
     </dl>
     <p className="mn-card-summary">{item.review.conclusion}</p>
+    <div className="mn-practical-effect"><h4>Qué cambia en la práctica</h4><p>{item.assessment.practicalEffect}</p></div>
+    <p className="mn-assessment-period"><strong>Periodo comprobado:</strong> {item.assessment.temporalScope}</p>
     <div className="mn-card-links"><a href={`#compromiso-${item.id}`}>Enlace a esta ficha <ArrowUpRight size={11} aria-hidden="true" /></a><span>Revisión: {dateLabel(item.review.date)}</span></div>
     <details className="mn-evidence">
       <summary>Leer compromiso y evidencia · {item.evidence.length} fuentes</summary>
@@ -55,6 +59,8 @@ function CommitmentCard({ item, indicators, openIndicator }: { item: Commitment;
         <h4>Texto del inventario</h4><p>{item.text}</p>
         <dl className="mn-card-meta"><div><dt>Origen atribuido</dt><dd>{item.origin}<p className="mn-origin-date">Documento de origen atribuido: {dateLabel(item.originDate)}</p><p className="mn-origin-note">{item.originNote}</p></dd></div><div><dt>Plazo recogido</dt><dd>{item.deadline}</dd></div><div><dt>Competencia</dt><dd>{item.competence}</dd></div><div><dt>Información del Gobierno fechada</dt><dd>{dateLabel(item.governmentAssessment.date)}</dd></div></dl>
         <h4>Criterio de revisión</h4><p>{item.review.criterion}</p>
+        <h4>Alcance de esta conclusión</h4><p>{item.assessment.scope}</p>
+        <h4>Qué falta para concluir más</h4><p className="mn-assessment-missing">{item.assessment.missingEvidence}</p>
         <h4>Fuentes para contrastar</h4><Sources sources={item.evidence} />
         {item.indicatorIds.length ? <div className="mn-correlation"><strong>Indicadores de contexto</strong><p>La relación es temática y documental. No demuestra que el compromiso haya causado el cambio del indicador.</p>{item.indicatorIds.map((id) => {
           const indicator = indicators.find((candidate) => candidate.id === id);
@@ -94,6 +100,7 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState("");
   const [status, setStatus] = useState("");
+  const [verdict, setVerdict] = useState("");
   useEffect(() => {
     let frame = 0;
     const showLinkedRecord = () => {
@@ -103,7 +110,7 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
       const commitment = snapshot.commitments.find((item) => anchor === `compromiso-${item.id}`);
       if (!indicator && !commitment) return;
       setView(indicator ? "indicators" : "commitments");
-      setQuery(""); setTopic(""); setStatus("");
+      setQuery(""); setTopic(""); setStatus(""); setVerdict("");
       frame = window.requestAnimationFrame(() => document.getElementById(anchor)?.scrollIntoView({ block: "start" }));
     };
     const first = window.setTimeout(showLinkedRecord, 0);
@@ -112,15 +119,23 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
   }, [snapshot.commitments, snapshot.indicators]);
   const terms = normalizeMandateText(query).trim().split(/\s+/).filter(Boolean);
   const topics = [...new Set([...snapshot.commitments.flatMap((item) => item.topics), ...snapshot.indicators.map((item) => item.topic)])];
-  const statuses = [...new Map(snapshot.commitments.map((item) => [item.review.status, item.review.label])).entries()];
-  const commitments = snapshot.commitments.filter((item) => (!topic || item.topics.includes(topic)) && (!status || item.review.status === status) && terms.every((term) => normalizeMandateText([item.title, item.text, item.simpleExplanation, item.officialId, ...item.topics.map(topicLabel)].join(" ")).includes(term)));
+  const statuses = [["documented", "Actuación documentada"], ["partial", "Contraste parcial"], ["pending", "Pendiente de contraste"]];
+  const commitments = snapshot.commitments.filter((item) => (!topic || item.topics.includes(topic)) && (!status || item.review.status === status) && (!verdict || item.assessment.verdict === verdict) && terms.every((term) => normalizeMandateText([item.title, item.text, item.simpleExplanation, item.assessment.expected, item.assessment.practicalEffect, item.officialId, ...item.topics.map(topicLabel)].join(" ")).includes(term)));
   const indicators = snapshot.indicators.filter((item) => (!topic || item.topic === topic) && terms.every((term) => normalizeMandateText([item.label, item.explanation, item.geography, item.source.producer, topicLabel(item.topic)].join(" ")).includes(term)));
   const sourceCount = new Set([...snapshot.commitments.flatMap((item) => item.evidence.map((source) => source.url)), ...snapshot.indicators.map((item) => item.source.url), snapshot.election.source.url]).size;
   const visible = view === "commitments" ? commitments.length : indicators.length;
   const total = view === "commitments" ? snapshot.commitments.length : snapshot.indicators.length;
-  function clearFilters() { setQuery(""); setTopic(""); setStatus(""); }
+  function clearFilters() { setQuery(""); setTopic(""); setStatus(""); setVerdict(""); }
   function openReview(reviewStatus: Commitment["review"]["status"]) {
-    setQuery(""); setTopic(""); setStatus(reviewStatus); setView("commitments");
+    setQuery(""); setTopic(""); setVerdict(""); setStatus(reviewStatus); setView("commitments");
+    window.location.hash = "balance-documental";
+    window.requestAnimationFrame(() => {
+      document.getElementById("balance-documental")?.scrollIntoView({ block: "start" });
+      document.getElementById("ledger-heading")?.focus({ preventScroll: true });
+    });
+  }
+  function openAssessment(value: Commitment["assessment"]["verdict"]) {
+    clearFilters(); setVerdict(value); setView("commitments");
     window.location.hash = "balance-documental";
     window.requestAnimationFrame(() => {
       document.getElementById("balance-documental")?.scrollIntoView({ block: "start" });
@@ -145,7 +160,7 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
         <p className="mn-intro">{snapshot.mandate.label}. Una lectura de los compromisos recogidos, las actuaciones documentadas y la evolución de los indicadores, con sus fuentes a la vista.</p>
         <p className="mn-updated">Selección actualizada el <time dateTime={snapshot.asOf}>{dateLabel(snapshot.asOf)}</time><span>·</span>Inicio del mandato: {dateLabel(snapshot.mandate.start)}</p>
       </div><MandateCountdown election={snapshot.election} nowISO={nowISO} /></section>
-      <MandateAccountability commitments={snapshot.commitments} onReview={openReview} />
+      <MandateAccountability commitments={snapshot.commitments} onReview={openReview} onAssessment={openAssessment} />
       <div className="mn-summary-grid" aria-label="Cobertura de la selección"><div><strong>{snapshot.commitments.length}</strong><span>compromisos en esta selección</span></div><div><strong>{snapshot.indicators.length}</strong><span>indicadores con periodo y unidad</span></div><div><strong>{sourceCount}</strong><span>referencias de origen distintas</span></div></div>
       <aside className="mn-method" aria-labelledby="method-heading"><h2 id="method-heading">Qué sabemos.<br />Qué queda por revisar.</h2><div><p>{snapshot.mandate.scope}</p><p>{snapshot.selection}</p><details className="mn-method-details"><summary>Ver método de contraste y límites</summary>{snapshot.methodology.map((point) => <p key={point}>{point}</p>)}</details></div></aside>
       <section id="balance-documental" className="mn-ledger" aria-labelledby="ledger-heading">
@@ -153,7 +168,8 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
         <div className="mn-tabs" aria-label="Contenido del balance"><button aria-pressed={view === "commitments"} onClick={() => setView("commitments")}>Compromisos <span>{snapshot.commitments.length}</span></button><button aria-pressed={view === "indicators"} onClick={() => setView("indicators")}>Indicadores <span>{snapshot.indicators.length}</span></button></div>
         <div className="mn-filters"><label className="mn-search"><span>Buscar en el balance</span><div><Search size={16} aria-hidden="true" /><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Vivienda, empleo, una referencia…" /></div></label><label><span>Tema</span><select aria-label="Tema del balance" value={topic} onChange={(event) => setTopic(event.target.value)}><option value="">Todos los temas</option>{topics.map((id) => <option key={id} value={id}>{topicLabel(id)}</option>)}</select></label><label><span>Revisión RegTrack</span><select aria-label="Estado de revisión RegTrack" value={status} onChange={(event) => setStatus(event.target.value)} disabled={view === "indicators"}><option value="">Todos los estados</option>{statuses.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label></div>
         <p className="mn-filter-note">{view === "commitments" ? "El estado describe la revisión de evidencia de cada ficha; no es una nota de cumplimiento del Gobierno." : "Los indicadores muestran observaciones. El filtro de revisión solo se aplica a los compromisos."}</p>
-        <div className="mn-results"><p role="status">{visible} de {total} {view === "commitments" ? "compromisos" : "indicadores"}</p>{query || topic || status ? <button onClick={clearFilters}>Limpiar filtros</button> : null}</div>
+        <label className="mn-verdict-filter">Qué permite concluir la evidencia <select aria-label="Conclusión del contraste" value={verdict} onChange={(event) => setVerdict(event.target.value)} disabled={view === "indicators"}><option value="">Todas las conclusiones</option>{Object.entries(ASSESSMENT_LABELS).map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>
+        <div className="mn-results"><p role="status">{visible} de {total} {view === "commitments" ? "compromisos" : "indicadores"}</p>{query || topic || status || verdict ? <button onClick={clearFilters}>Limpiar filtros</button> : null}</div>
         {!visible ? <div className="mn-empty"><h3>No hay fichas con esta selección</h3><p>Prueba con otro término o amplía los filtros.</p><button onClick={clearFilters}>Ver todas las fichas</button></div> : null}
         <div className="mn-card-grid" hidden={view !== "commitments"}>{commitments.map((item) => <CommitmentCard key={item.id} item={item} indicators={snapshot.indicators} openIndicator={(id) => openRecord("indicators", id)} />)}</div>
         <div className="mn-card-grid" hidden={view !== "indicators"}>{indicators.map((indicator) => <IndicatorCard key={indicator.id} indicator={indicator} />)}</div>

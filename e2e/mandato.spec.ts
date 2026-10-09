@@ -1,5 +1,6 @@
 import { test, expect, type APIRequestContext } from "@playwright/test";
 import type { MandateSnapshot } from "../lib/mandate/model";
+import { ASSESSMENT_LABELS } from "../lib/mandate/model";
 
 async function readSnapshot(request: APIRequestContext) {
   const response = await request.get("/api/observatorio/mandato");
@@ -7,6 +8,47 @@ async function readSnapshot(request: APIRequestContext) {
   return await response.json() as MandateSnapshot;
 }
 const number = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 10 });
+
+test("las treinta fichas explican promesa, efecto, periodo y lagunas, y los grupos llevan a sus pruebas", async ({ page, request }) => {
+  const snapshot = await readSnapshot(request);
+  await page.goto("/observatorio/mandato");
+  for (const item of snapshot.commitments) {
+    const card = page.locator(`[id="compromiso-${item.id}"]`);
+    await expect(card).toContainText(item.assessment.expected);
+    await expect(card.locator(".mn-practical-effect")).toContainText(item.assessment.practicalEffect);
+    await expect(card.locator(".mn-assessment-period")).toContainText(item.assessment.temporalScope);
+    await card.locator("summary").click();
+    await expect(card.locator(".mn-assessment-missing")).toHaveText(item.assessment.missingEvidence);
+    for (const id of item.assessment.evidenceIds) {
+      const source = item.evidence.find(source => source.id === id)!;
+      await expect(card.locator(".mn-source-list a").filter({ hasText: source.title }).first()).toHaveAttribute("href", source.url);
+    }
+    await card.locator("summary").click();
+  }
+  await page.getByLabel("Buscar en el balance", { exact: true }).fill("becas");
+  for (const [verdict, label] of Object.entries(ASSESSMENT_LABELS)) {
+    const count = snapshot.commitments.filter(item => item.assessment.verdict === verdict).length;
+    await page.locator(".mn-findings-grid").getByRole("button", { name: `${count} ${label}` }).click();
+    await expect(page.getByLabel("Conclusión del contraste", { exact: true })).toHaveValue(verdict);
+    await expect(page.getByLabel("Buscar en el balance", { exact: true })).toHaveValue("");
+    await expect(page.locator(".mn-commitment:visible")).toHaveCount(count);
+    await expect(page.locator("#ledger-heading")).toBeFocused();
+  }
+  await page.getByRole("button", { name: "Limpiar filtros", exact: true }).click();
+  await page.getByLabel("Tu pregunta sobre el mandato", { exact: true }).fill("¿Cómo me afectan las viviendas públicas?");
+  await page.getByRole("button", { name: "Consultar", exact: true }).click();
+  await expect(page.locator(".mn-answer")).toContainText("184.000");
+  await expect(page.locator(".mn-answer")).toContainText("Qué cambia en la práctica");
+  await expect(page.locator(".mn-answer")).toContainText("Qué falta:");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato#compromiso-c-170");
+  const card = page.locator("#compromiso-c-170");
+  await card.locator("summary").click();
+  await expect(card).toContainText("Objetivo no alcanzado en el plazo");
+  await expect(card.locator(".mn-assessment-missing")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await card.screenshot({ path: ".artifacts/observatorio/revision-jornada-mobile.png" });
+});
 
 test("el balance entrega 30 compromisos, al menos 12 indicadores y distingue información y contraste", async ({ page, request }) => {
   const snapshot = await readSnapshot(request);
@@ -165,20 +207,20 @@ test("honestidad separa cumplimiento sin calcular de cobertura documental y perm
   await expect(block.locator(".mn-accountability-score > strong")).toHaveText("Sin calcular");
   await expect(block.locator(".mn-accountability-score")).toContainText("Cumplimiento verificable");
   await expect(block.locator(".mn-accountability-score")).toContainText("Tampoco miden la intención de engañar");
-  await expect(block.locator(".mn-coverage-heading")).toContainText("26,7 %");
-  await expect(block.locator(".mn-coverage-description")).toContainText("8 de 30");
+  await expect(block.locator(".mn-coverage-heading")).toContainText("100,0 %");
+  await expect(block.locator(".mn-coverage-description")).toContainText("30 de 30");
   await expect(block.locator(".mn-coverage-description")).toContainText("De esta selección, no de todas las promesas");
-  await expect(block.getByRole("progressbar", { name: "Cobertura de contraste documental" })).toHaveAttribute("value", "26.7");
+  await expect(block.getByRole("progressbar", { name: "Cobertura de contraste documental" })).toHaveAttribute("value", "100");
   await expect(block).toContainText("Este bloque no cambia con los filtros");
 
   await page.getByRole("button", { name: /^Indicadores \d+$/ }).click();
   await page.getByLabel("Tema del balance", { exact: true }).selectOption("vivienda");
   await page.getByLabel("Buscar en el balance", { exact: true }).fill("sincoincidenciasdocumentalesxyz");
-  await expect(block.locator(".mn-coverage-description")).toContainText("8 de 30");
+  await expect(block.locator(".mn-coverage-description")).toContainText("30 de 30");
   for (const state of [
-    { name: "3 actuaciones documentadas", status: "documented", count: 3 },
-    { name: "5 contrastes parciales", status: "partial", count: 5 },
-    { name: "22 pendientes de contraste", status: "pending", count: 22 },
+    { name: "18 actuaciones documentadas", status: "documented", count: 18 },
+    { name: "12 contrastes parciales", status: "partial", count: 12 },
+    { name: "0 pendientes de contraste", status: "pending", count: 0 },
   ]) {
     await block.getByRole("button", { name: state.name, exact: true }).click();
     await expect(page).toHaveURL(/#balance-documental$/);
@@ -189,7 +231,7 @@ test("honestidad separa cumplimiento sin calcular de cobertura documental y perm
     await expect(page.locator(".mn-commitment:visible")).toHaveCount(state.count);
     await expect(page.locator("#ledger-heading")).toBeFocused();
     await expect(block.locator(".mn-accountability-score > strong")).toHaveText("Sin calcular");
-    await expect(block.locator(".mn-coverage-description")).toContainText("8 de 30");
+    await expect(block.locator(".mn-coverage-description")).toContainText("30 de 30");
   }
   await page.getByRole("button", { name: "Limpiar filtros", exact: true }).click();
   await expect(page.locator(".mn-commitment:visible")).toHaveCount(30);
@@ -201,7 +243,7 @@ test("honestidad separa cumplimiento sin calcular de cobertura documental y perm
   await block.locator("summary").click();
   await page.getByRole("button", { name: "¿Cómo se mide la honestidad?", exact: true }).click();
   await expect(page.locator(".mn-answer")).toContainText("sigue sin calcular");
-  await expect(page.locator(".mn-answer")).toContainText("26,7 % (8 de 30)");
+  await expect(page.locator(".mn-answer")).toContainText("100 % (30 de 30)");
   await expect(page.locator(".mn-answer > .mn-answer-sources a").first()).toBeVisible();
   await block.screenshot({ path: ".artifacts/observatorio/honestidad-desktop.png" });
   await page.setViewportSize({ width: 390, height: 844 });

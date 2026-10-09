@@ -4,6 +4,7 @@ vi.mock("@/lib/auth", () => ({ requireAdmin: mocks.auth, rejectForeignOrigin: mo
 vi.mock("@/lib/observatorio/answer", () => ({ synthesize: mocks.synthesize }));
 import { GET } from "@/app/api/observatorio/mandato/route";
 import { POST } from "@/app/api/observatorio/mandato/preguntar/route";
+import * as mandateData from "@/lib/mandate/data";
 const request = (body: unknown) => new Request("https://regtrack.test/api/observatorio/mandato/preguntar", { method: "POST", headers: { "Content-Type": "application/json", Origin: "https://regtrack.test" }, body: JSON.stringify(body) });
 beforeEach(() => {
   vi.clearAllMocks();
@@ -12,7 +13,7 @@ beforeEach(() => {
   mocks.origin.mockReturnValue(null);
   mocks.auth.mockResolvedValue({ user: { usuarioId: crypto.randomUUID() }, error: null });
 });
-afterEach(() => vi.unstubAllEnvs());
+afterEach(() => { vi.unstubAllEnvs(); vi.restoreAllMocks(); });
 describe("API pública de mandato y opt-in de IA", () => {
   it("publica solo el snapshot explícito sin rutas de archivo o capturas privadas", async () => {
     const response = GET();
@@ -65,13 +66,17 @@ describe("API pública de mandato y opt-in de IA", () => {
     vi.stubEnv("MANDATE_AI_ENABLED", "true"); vi.stubEnv("OBSERVATORY_AI_ENABLED", "true");
     mocks.synthesize.mockResolvedValue([{ text: "Explicación de prueba", citations: [1] }]);
     const result = await (await POST(request({ question: "Honestidad", mode: "ia" }))).json();
-    expect(result.paragraphs[0].text).toContain("26,7 % (8 de 30)");
+    expect(result.paragraphs[0].text).toContain("100 % (30 de 30)");
     expect(result.paragraphs[0].citations).toEqual([]);
     expect(result.paragraphs[1].text).toBe("Explicación de prueba");
     expect(result.note).toContain("no califica la honestidad");
   });
   it("devuelve el resumen documental sin modelo si el tema carece de contrastes", async () => {
     vi.stubEnv("MANDATE_AI_ENABLED", "true"); vi.stubEnv("OBSERVATORY_AI_ENABLED", "true");
+    const snapshot = mandateData.getMandateSnapshot();
+    // Exercise the absence branch explicitly; education now has real reviewed evidence.
+    snapshot.commitments = snapshot.commitments.map(item => ({ ...item, review: { ...item.review, status: "pending", label: "Pendiente de contraste" } }));
+    vi.spyOn(mandateData, "getMandateSnapshot").mockReturnValueOnce(snapshot);
     const result = await (await POST(request({ question: "Honestidad", topic: "educacion", mode: "ia" }))).json();
     expect(result.mode).toBe("documental");
     expect(result.paragraphs[0].text).toContain("sigue sin calcular");

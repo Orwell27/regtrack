@@ -1,4 +1,4 @@
-import type { Evidence, MandateSnapshot, Observation } from "./model";
+import { ASSESSMENT_LABELS, type Evidence, type MandateSnapshot, type Observation } from "./model";
 const fail = (message: string): never => { throw Error(`Archivo de mandato inválido: ${message}`); };
 function text(value: unknown, label: string) { if (typeof value !== "string" || !value.trim()) fail(label); }
 function date(value: unknown, label: string) {
@@ -46,10 +46,17 @@ export function validateMandateSnapshot(snapshot: MandateSnapshot): void {
     if (item.originDate !== null) date(item.originDate, "fecha del documento de origen");
     if (!["pending", "partial", "documented"].includes(item.review.status)) fail("estado de contraste");
     if (!item.evidence.length || !item.evidence.some((entry) => entry.role === "government")) fail("compromiso sin origen");
-    if (item.review.status !== "pending" && !item.evidence.some((entry) => entry.role === "action")) fail("contraste sin evidencia adicional");
+    if (item.review.status !== "pending" && !item.evidence.some((entry) => entry.id.startsWith(`${item.id}-evidence-`))) fail("contraste sin evidencia adicional");
     text(item.review.conclusion, "conclusión"); text(item.review.criterion, "criterio de contraste");
     date(item.review.date, "fecha de contraste");
     item.evidence.forEach(source);
+    const assessment = item.assessment;
+    if (!assessment || !Object.hasOwn(ASSESSMENT_LABELS, assessment.verdict)) fail("evaluación sin estado válido");
+    for (const key of ["expected", "observed", "practicalEffect", "missingEvidence", "temporalScope", "scope"] as const) text(assessment[key], `evaluación sin ${key}`);
+    date(assessment.reviewedAt, "fecha de evaluación individual");
+    if (assessment.reviewedAt !== item.review.date || assessment.reviewedAt > snapshot.asOf) fail("fechas de revisión incompatibles");
+    if (!assessment.evidenceIds.length || assessment.evidenceIds.some(id => !item.evidence.some(entry => entry.id === id))) fail("evaluación con evidencia inexistente");
+    if (new Set(assessment.evidenceIds).size !== assessment.evidenceIds.length) fail("evaluación con evidencia duplicada");
     if (item.indicatorIds.some((id) => !indicators.has(id))) fail("relación con indicador inexistente");
   }
   for (const item of snapshot.commentary) {

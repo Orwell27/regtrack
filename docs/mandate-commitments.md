@@ -1,5 +1,7 @@
 # Compromisos del piloto de balance de mandato
 
+> **Estado actual:** véase [revisión nacional del 10 de octubre de 2026](mandate-review-2026-10-10.md). Las 30 fichas están revisadas, con 18 medidas acreditadas, seis resultados parciales, un objetivo no alcanzado en plazo y cinco resultados no concluyentes. Lo que sigue documenta el estado inicial del 7 de octubre y sus límites históricos.
+
 Captura realizada el 7 de octubre de 2026. `data/mandate/commitments.json` contiene **30 compromisos reales** del inventario oficial Cumpliendo de julio de 2026: 8 con un contraste documental acotado y 22 `sin_verificar`. No contiene una nota global del Gobierno, una estimación de honestidad ni una atribución causal de resultados.
 
 ## Universo, selección y fechas

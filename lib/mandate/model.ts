@@ -12,6 +12,23 @@ export type Evidence = {
   sha256?: string;
   captureNote?: string;
 };
+export const ASSESSMENT_LABELS = {
+  measures: "Medidas acreditadas; efecto por verificar",
+  partial: "Resultado parcial documentado",
+  not_met: "Objetivo no alcanzado en el plazo",
+  inconclusive: "Resultado no concluyente",
+} as const;
+export type CommitmentAssessment = {
+  verdict: keyof typeof ASSESSMENT_LABELS;
+  expected: string;
+  observed: string;
+  practicalEffect: string;
+  missingEvidence: string;
+  temporalScope: string;
+  scope: string;
+  reviewedAt: string;
+  evidenceIds: string[];
+};
 export type Commitment = {
   id: string;
   officialId: string;
@@ -34,6 +51,7 @@ export type Commitment = {
   evidence: Evidence[];
   indicatorIds: string[];
   simpleExplanation: string;
+  assessment: CommitmentAssessment;
 };
 export type Observation = { period: string; value: number | null; date?: string; status?: string; sourcePeriod?: string };
 export type Indicator = {

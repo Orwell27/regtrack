@@ -72,8 +72,8 @@ describe("balance documental con evidencia real", () => {
     expect(answerMandate(snapshot, "¿Cuándo son las elecciones?").sources[0].id).toBe(snapshot.election.source.id);
     const pending = answerMandate(snapshot, "¿Qué falta por revisar?");
     expect(pending.mode).toBe("documental");
-    expect(pending.note).toContain("22 compromisos pendientes");
-    expect(pending.commitmentIds.every((id) => snapshot.commitments.find((item) => item.id === id)!.review.status === "pending")).toBe(true);
+    expect(pending.note).toContain("0 compromisos pendientes de primera revisión");
+    expect(pending.commitmentIds.every((id) => snapshot.commitments.find((item) => item.id === id)!.assessment.verdict === "inconclusive")).toBe(true);
   });
   it("prioriza las series de deuda y conserva avance y límites de renta nominal", () => {
     const snapshot = getMandateSnapshot();

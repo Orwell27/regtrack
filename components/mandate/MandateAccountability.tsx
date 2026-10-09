@@ -1,12 +1,13 @@
 import { ArrowUpRight } from "lucide-react";
 import { getMandateAccountability } from "@/lib/mandate/accountability";
-import type { Commitment } from "@/lib/mandate/model";
+import { ASSESSMENT_LABELS, type Commitment } from "@/lib/mandate/model";
 
 const percent = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 
-export function MandateAccountability({ commitments, onReview }: {
+export function MandateAccountability({ commitments, onReview, onAssessment }: {
   commitments: Commitment[];
   onReview: (status: Commitment["review"]["status"]) => void;
+  onAssessment: (verdict: Commitment["assessment"]["verdict"]) => void;
 }) {
   const accountability = getMandateAccountability(commitments);
   const states = [
@@ -23,7 +24,7 @@ export function MandateAccountability({ commitments, onReview }: {
       <div className="mn-accountability-score">
         <span>Cumplimiento verificable</span>
         <strong>Sin calcular</strong>
-        <p>Los datos disponibles aún no permiten una nota global de cumplimiento. Tampoco miden la intención de engañar.</p>
+        <p>Cada ficha explica qué se esperaba, qué se acredita y qué falta. Las conclusiones tienen distinto alcance y no se suman en una nota global. Tampoco miden la intención de engañar.</p>
       </div>
       <div className="mn-accountability-coverage">
         <div className="mn-coverage-heading"><h3>Cobertura de contraste documental</h3><strong>{accountability.coveragePercent === null ? "No disponible" : `${percent.format(accountability.coveragePercent)} %`}</strong></div>
@@ -34,6 +35,14 @@ export function MandateAccountability({ commitments, onReview }: {
           {states.map((state) => <button key={state.status} onClick={() => onReview(state.status)} aria-label={`${state.count} ${state.label.toLocaleLowerCase("es")}`}><strong>{state.count}</strong><span>{state.label}</span><ArrowUpRight size={13} aria-hidden="true" /></button>)}
         </div>
       </div>
+    </div>
+    <div className="mn-findings" aria-label="Conclusiones de los compromisos revisados">
+      <h3>Qué permite concluir la revisión</h3>
+      <p>Abre un grupo para ver los compromisos y sus pruebas. Una medida aprobada no equivale a un resultado conseguido.</p>
+      <div className="mn-findings-grid">{(Object.entries(ASSESSMENT_LABELS) as [Commitment["assessment"]["verdict"], string][]).map(([value,label]) => {
+        const count = commitments.filter(item => item.assessment.verdict === value).length;
+        return <button key={value} onClick={() => onAssessment(value)} data-verdict={value}><strong>{count}</strong><span>{label}</span><ArrowUpRight size={13} aria-hidden="true" /></button>;
+      })}</div>
     </div>
     <details className="mn-accountability-criteria"><summary>Qué falta para valorar el cumplimiento</summary><div>
       <p>Antes de clasificar un compromiso como cumplido, parcialmente cumplido o incumplido, hay que contrastar estos elementos:</p>

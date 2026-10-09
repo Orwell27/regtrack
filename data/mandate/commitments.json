@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "mandateId": "es-2023",
-  "cutoffDate": "2026-10-07",
+  "cutoffDate": "2026-10-10",
   "governmentCutoffDate": "2026-06-30",
   "selection": {
     "description": "Selección editorial no representativa de 30 compromisos del inventario Cumpliendo julio de 2026, atribuibles por ese inventario a la investidura o al acuerdo de coalición de 2023. Prioriza empleo, vivienda, economía, educación, sanidad y bienestar; no calcula un porcentaje global de cumplimiento.",
     "totalAvailable": 203,
     "totalImported": 30,
-    "reviewedCount": 8,
-    "reviewScope": "Ocho contrastes documentales de actuaciones o de componentes; no auditoría completa de ejecución, resultados o vigencia normativa.",
+    "reviewedCount": 30,
+    "reviewScope": "Revisión documental de los 30 compromisos al 10 de octubre de 2026: resultado esperado, evidencia observada, alcance, periodo, efecto práctico y lagunas específicas. No equivale a una auditoría completa de ejecución ni a cumplimiento de las 30 promesas.",
     "attribution": "Origen de los datos: sitio web de lamoncloa.gob.es. Ministerio de la Presidencia.",
     "sourcePublicationDate": "2026-07-28",
     "importedAt": "2026-10-07T10:16:11.777Z",
@@ -313,6 +313,365 @@
       "sha256": "744fcb66dc62e4d438e4b406d3e2efd829f74b855f8a685d1f6bf90e31429989",
       "snapshotPath": "data/mandate/evidence/commitments/boe-aviso-legal.html",
       "bytes": 36293
+    },
+    {
+      "id": "BOE-A-2026-13643",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13643",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-13643",
+      "title": "Real Decreto-ley 17/2026, de 23 de junio, de medidas extraordinarias para el fortalecimiento y consolidación del Sistema para la Autonomía y Atención a la Dependencia.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-06-24",
+      "capturedAt": "2026-10-09T23:28:34.385Z",
+      "sha256": "19dae5a2ee9d70691a53870083dbf1ce740c425a349ac2ccd90ff2ea85989648",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2026-13643-review-2026-10-10.xml",
+      "bytes": 44620,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2026-5713",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5713",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-5713",
+      "title": "Real Decreto 179/2026, de 11 de marzo, por el que se establecen los umbrales de renta y patrimonio familiar y las cuantías de las becas y ayudas al estudio para el curso 2026-2027, y se modifica el Real Decreto 1721/2007, de 21 de diciembre, por el que se establece el régimen de las becas y ayudas al estudio personalizadas.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-03-12",
+      "capturedAt": "2026-10-09T23:28:34.518Z",
+      "sha256": "6ed5b187c7402c6c52e2b9f38df5bee2cf0bedd223e9db55a0761cda119e4492",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2026-5713-review-2026-10-10.xml",
+      "bytes": 109290,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2026-8872",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8872",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-8872",
+      "title": "Real Decreto 326/2026, de 22 de abril, por el que se regula el Plan Estatal de Vivienda 2026-2030.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-04-23",
+      "capturedAt": "2026-10-09T23:28:34.725Z",
+      "sha256": "78354e800e74fe5fd7cb5de3b8d534a7d04ea0e05cc3c0aa52d46fa9b2e1694f",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2026-8872-review-2026-10-10.xml",
+      "bytes": 419322,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2026-20823",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20823",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-20823",
+      "title": "Real Decreto-ley 29/2026, de 6 de octubre, por el que se adoptan medidas urgentes para la protección de la función social de la vivienda y la ampliación de la oferta de vivienda asequible.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-10-07",
+      "capturedAt": "2026-10-09T23:28:34.848Z",
+      "sha256": "85fd8f495be14e00b85595152ec21ebd70059917afae9a12f28105468c835786",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2026-20823-review-2026-10-10.xml",
+      "bytes": 430620,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2026-8287",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8287",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-8287",
+      "title": "Resolución de 14 de abril de 2026, de la Secretaría de Estado de Función Pública, por la que se dictan instrucciones sobre jornada y horarios de trabajo del personal al servicio de la Administración General del Estado y sus organismos públicos.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-04-15",
+      "capturedAt": "2026-10-09T23:28:34.928Z",
+      "sha256": "502f855dc4d66c9c0252e389e974d1c5207e0b6ee14736d1d6f2c7459333d372",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2026-8287-review-2026-10-10.xml",
+      "bytes": 62818,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2026-5714",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5714",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-5714",
+      "title": "Real Decreto 180/2026, de 11 de marzo, por el que se regula el reconocimiento del derecho a la protección de la salud y a la atención sanitaria con cargo a fondos públicos de las personas extranjeras que encontrándose en España no tengan su residencia legal en el territorio español.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-03-12",
+      "capturedAt": "2026-10-09T23:28:35.010Z",
+      "sha256": "dd918607dfc6b4c2610501aa46ff8c58f80ede9edeafaa327e780e382b2d0172",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2026-5714-review-2026-10-10.xml",
+      "bytes": 65633,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2026-5843",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5843",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-5843",
+      "title": "Resolución de 11 de marzo de 2026, de la Dirección General de la Agencia Estatal de Administración Tributaria, por la que se aprueban las directrices generales del Plan Anual de Control Tributario y Aduanero de 2026.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-03-12",
+      "capturedAt": "2026-10-09T23:28:35.105Z",
+      "sha256": "ea4f2e2ff31d665763a807f39a5cb270357040ac87d7b694ba2a509ac68fa02a",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2026-5843-review-2026-10-10.xml",
+      "bytes": 175402,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2024-8710",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-8710",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-8710",
+      "title": "Real Decreto 438/2024, de 30 de abril, por el que se desarrollan la Cartera Común de Servicios del Sistema Nacional de Empleo y los servicios garantizados establecidos en la Ley 3/2023, de 28 de febrero, de Empleo.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2024-05-01",
+      "capturedAt": "2026-10-09T23:28:35.196Z",
+      "sha256": "d0efa267846e62ffab5b09a87dcea440bfc0d575be58a4a13dd35b75a2e84f9b",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2024-8710-review-2026-10-10.xml",
+      "bytes": 191953,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2021-21651",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-21651",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2021-21651",
+      "title": "Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2021-12-29",
+      "capturedAt": "2026-10-09T23:28:35.267Z",
+      "sha256": "662de6b143649b7d3edd424fd4c061b0ce9998355957c516b132d129d7263b03",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2021-21651-review-2026-10-10.xml",
+      "bytes": 81949,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2023-26452",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2023-26452",
+      "title": "Real Decreto-ley 8/2023, de 27 de diciembre, por el que se adoptan medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo, así como para paliar los efectos de la sequía.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2023-12-28",
+      "capturedAt": "2026-10-09T23:28:35.500Z",
+      "sha256": "7e3ee95b7c12179a1ab8235aa21e19f44c32c46ac8457ca51d0a5a21272995e7",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2023-26452-review-2026-10-10.xml",
+      "bytes": 777380,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "BOE-A-2025-1137",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1137",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-1137",
+      "title": "Resolución de 22 de enero de 2025, del Congreso de los Diputados, por la que se ordena la publicación del Acuerdo de derogación del Real Decreto-ley 10/2024, de 23 de diciembre, para el establecimiento de un gravamen temporal energético durante el año 2025.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2025-01-23",
+      "capturedAt": "2026-10-09T23:28:35.593Z",
+      "sha256": "d76da8260042eae0261ec1604b38aded3ec2f54bd29cab82714b36564abdb125",
+      "snapshotPath": "data/mandate/evidence/commitments/BOE-A-2025-1137-review-2026-10-10.xml",
+      "bytes": 8478,
+      "captureType": "bytes_originales",
+      "kind": "norma"
+    },
+    {
+      "id": "estatuto-2026-10-10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430&p=20261010&tn=1",
+      "downloadUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430&p=20261010&tn=1",
+      "title": "Estatuto de los Trabajadores, consolidado consultado al corte",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": null,
+      "capturedAt": "2026-10-09T23:28:39.835Z",
+      "sha256": "46e60cf29b1c6d6dd6a942512f8aec5a9d47afdd59f3b4e9a7299859d6d7bb93",
+      "snapshotPath": "data/mandate/evidence/commitments/estatuto-2026-10-10-review-2026-10-10.html",
+      "bytes": 947462,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "libros-2026",
+      "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/03/20260310-librosdetexto.html",
+      "downloadUrl": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/03/20260310-librosdetexto.html",
+      "title": "Reparto de ayudas para libros de texto y material didáctico en 2026",
+      "organisation": "Ministerio de Educación, Formación Profesional y Deportes",
+      "publishedAt": "2026-03-10",
+      "capturedAt": "2026-10-09T23:28:40.869Z",
+      "sha256": "23c707334b8a9822491827e070c67a8ce77ab5f790c2cb588301b0b304384d21",
+      "snapshotPath": "data/mandate/evidence/commitments/libros-2026-review-2026-10-10.html",
+      "bytes": 70427,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "salud-mental-plan",
+      "url": "https://www.sanidad.gob.es/gl/gabinete/notasPrensa.do?id=6650",
+      "downloadUrl": "https://www.sanidad.gob.es/gl/gabinete/notasPrensa.do?id=6650",
+      "title": "Aprobación del Plan de Acción de Salud Mental 2025-2027",
+      "organisation": "Ministerio de Sanidad",
+      "publishedAt": "2025-04-04",
+      "capturedAt": "2026-10-09T23:28:41.192Z",
+      "sha256": "90ecf57340558ee1ddb1f98c77e2feaf100ca23193f27f03fa00246b19b62190",
+      "snapshotPath": "data/mandate/evidence/commitments/salud-mental-plan-review-2026-10-10.html",
+      "bytes": 23120,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "salud-mental-financiacion",
+      "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6698&metodo=detalle",
+      "downloadUrl": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6698&metodo=detalle",
+      "title": "Distribución de fondos para atención primaria, salud mental y prevención del suicidio",
+      "organisation": "Ministerio de Sanidad",
+      "publishedAt": "2025-06-18",
+      "capturedAt": "2026-10-09T23:28:41.266Z",
+      "sha256": "e7784e4b6b7acb6839d516adcd2d2267a0f3ab95336af9b8253a607da1ff1c47",
+      "snapshotPath": "data/mandate/evidence/commitments/salud-mental-financiacion-review-2026-10-10.html",
+      "bytes": 18869,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "epa-2026-t2",
+      "url": "https://www.ine.es/dyngs/Prensa/EPA2T26.htm?print=1",
+      "downloadUrl": "https://www.ine.es/dyngs/Prensa/EPA2T26.htm?print=1",
+      "title": "Encuesta de Población Activa, segundo trimestre de 2026",
+      "organisation": "Instituto Nacional de Estadística",
+      "publishedAt": "2026-07-28",
+      "capturedAt": "2026-10-09T23:28:41.517Z",
+      "sha256": "e44fc9a01abed3d66cfaa93a1646bff2fd3b480d59e92be9b6536b5705514b79",
+      "snapshotPath": "data/mandate/evidence/commitments/epa-2026-t2-review-2026-10-10.html",
+      "bytes": 29525,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "paro-ue-agosto-2026",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/3-01102026-ap",
+      "downloadUrl": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/3-01102026-ap",
+      "title": "Unemployment, August 2026",
+      "organisation": "Eurostat",
+      "publishedAt": "2026-10-01",
+      "capturedAt": "2026-10-09T23:28:41.904Z",
+      "sha256": "f4a62cd35d52f822132cbe3cfa44e1160b12aff7c867e6d1be3e3dde76082053",
+      "snapshotPath": "data/mandate/evidence/commitments/paro-ue-agosto-2026-review-2026-10-10.html",
+      "bytes": 617070,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "cliente-financiero-julio-2026",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/economia-comercio-empresa/Paginas/2026/240726-autoridad-deensa-cliente-financiero.aspx",
+      "downloadUrl": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/economia-comercio-empresa/Paginas/2026/240726-autoridad-deensa-cliente-financiero.aspx",
+      "title": "Estado de tramitación de la Autoridad de Defensa del Cliente Financiero",
+      "organisation": "Ministerio de Economía, Comercio y Empresa",
+      "publishedAt": "2026-07-24",
+      "capturedAt": "2026-10-09T23:28:42.985Z",
+      "sha256": "8d933319b1ab38ee9a9feaefb2ddfb897d0189e40ae79283f45a052ab00ace5a",
+      "snapshotPath": "data/mandate/evidence/commitments/cliente-financiero-julio-2026-review-2026-10-10.html",
+      "bytes": 71894,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "creditos-consumo-2026",
+      "url": "https://portal-cec.consumo.gob.es/es/comunicacion/noticias/2026/las-nuevas-normas-sobre-creditos-al-consumo-limitaran-los-intereses-para",
+      "downloadUrl": "https://portal-cec.consumo.gob.es/es/comunicacion/noticias/2026/las-nuevas-normas-sobre-creditos-al-consumo-limitaran-los-intereses-para",
+      "title": "Anteproyecto de regulación de créditos al consumo",
+      "organisation": "Centro Europeo del Consumidor en España — Ministerio de Consumo",
+      "publishedAt": "2026-04-24",
+      "capturedAt": "2026-10-09T23:30:09.700Z",
+      "sha256": "4f702367817266456bf00a69464a7dce7e0edfa06e8c3df7a205c0d03fd12033",
+      "snapshotPath": "data/mandate/evidence/commitments/creditos-consumo-2026-review-2026-10-10.html",
+      "bytes": 60188,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "estabilizacion-junio-2026",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/secretaria-estado-funcion-publica/2026/06/el-gobierno-emplaza-a-las-ccaa-a-una-reunion-para-abordar-medida",
+      "downloadUrl": "https://digital.gob.es/comunicacion/notas-prensa/secretaria-estado-funcion-publica/2026/06/el-gobierno-emplaza-a-las-ccaa-a-una-reunion-para-abordar-medida",
+      "title": "Seguimiento de procesos de estabilización y medidas para reducir la temporalidad",
+      "organisation": "Ministerio para la Transformación Digital y de la Función Pública",
+      "publishedAt": "2026-06-30",
+      "capturedAt": "2026-10-09T23:30:17.666Z",
+      "sha256": "421f4a01250daf4ce64439ec7d19193e0c4fd2513d50665c31cd0f65dd9d7d2b",
+      "snapshotPath": "data/mandate/evidence/commitments/estabilizacion-junio-2026-review-2026-10-10.html",
+      "bytes": 521502,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "indicator-public-balance",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?freq=A&unit=PC_GDP&sector=S13&na_item=B9&geo=ES&sinceTimePeriod=2023",
+      "title": "Government deficit/surplus, debt and associated data",
+      "organisation": "Eurostat",
+      "publishedAt": null,
+      "capturedAt": "2026-10-07T10:14:26.930Z",
+      "sha256": "8419747fa2dfaa2482c5f41adb01f7de1dc35b019900f62d0be0d9a3e2d727bd",
+      "snapshotPath": "data/mandate/evidence/commitments/indicator-public-balance-review-2026-10-10.json",
+      "bytes": 2825,
+      "captureType": "bytes_originales",
+      "kind": "estadistica"
+    },
+    {
+      "id": "indicator-debt-gdp",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?freq=Q&na_item=GD&sector=S13&unit=PC_GDP&geo=ES&sinceTimePeriod=2023-Q1",
+      "title": "Quarterly government debt",
+      "organisation": "Eurostat",
+      "publishedAt": null,
+      "capturedAt": "2026-10-07T10:14:26.594Z",
+      "sha256": "4bf745f0f6e82819fe2b92de13538d9292602a5964f0e55dcf41ab4b6bb20d8d",
+      "snapshotPath": "data/mandate/evidence/commitments/indicator-debt-gdp-review-2026-10-10.json",
+      "bytes": 3337,
+      "captureType": "bytes_originales",
+      "kind": "estadistica"
+    },
+    {
+      "id": "indicator-arope",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV6190?nult=10",
+      "title": "Ambos sexos. Total. Total Nacional. Tasa de riesgo de pobreza o exclusión social (indicador AROPE). Base 2013.",
+      "organisation": "Instituto Nacional de Estadística (INE)",
+      "publishedAt": null,
+      "capturedAt": "2026-10-07T10:14:24.583Z",
+      "sha256": "6f74416b5e49b7470cb3fb83f36fc54d47be004fc9d5783af2cdf6c67048b4cb",
+      "snapshotPath": "data/mandate/evidence/commitments/indicator-arope-review-2026-10-10.json",
+      "bytes": 1298,
+      "captureType": "bytes_originales",
+      "kind": "estadistica"
+    },
+    {
+      "id": "indicator-poverty-risk",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV5416?nult=10",
+      "title": "Ambos sexos. Total. Total Nacional. En riesgo de pobreza (renta año anterior a la entrevista). Base 2013.",
+      "organisation": "Instituto Nacional de Estadística (INE)",
+      "publishedAt": null,
+      "capturedAt": "2026-10-07T10:14:24.695Z",
+      "sha256": "7901f85e440e46362413ba89583e24f706152e2cc8cac4ca7093235f5eca4ce9",
+      "snapshotPath": "data/mandate/evidence/commitments/indicator-poverty-risk-review-2026-10-10.json",
+      "bytes": 1211,
+      "captureType": "bytes_originales",
+      "kind": "estadistica"
+    },
+    {
+      "id": "indicator-severe-deprivation",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECV6189?nult=10",
+      "title": "Ambos sexos. Total. Total Nacional. Con carencia material y social severa. Base 2013.",
+      "organisation": "Instituto Nacional de Estadística (INE)",
+      "publishedAt": null,
+      "capturedAt": "2026-10-07T10:14:24.798Z",
+      "sha256": "2c72c2926f06f595d0126589dce6e822caa4f187800e5c767454459b49364679",
+      "snapshotPath": "data/mandate/evidence/commitments/indicator-severe-deprivation-review-2026-10-10.json",
+      "bytes": 1180,
+      "captureType": "bytes_originales",
+      "kind": "estadistica"
+    },
+    {
+      "id": "estatuto-2025-12-31",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430&p=20251231&tn=1",
+      "downloadUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430&p=20251231&tn=1",
+      "title": "Estatuto de los Trabajadores, versión a 31 de diciembre de 2025",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": null,
+      "capturedAt": "2026-10-09T23:37:31.654Z",
+      "sha256": "a5bb0b0ae630c87b11f80e33285ad64417dc71b0adefaca7a5e319f3286334af",
+      "snapshotPath": "data/mandate/evidence/commitments/estatuto-2025-12-31-review-2026-10-10.html",
+      "bytes": 947462,
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
     }
   ],
   "commitments": [
@@ -365,11 +724,39 @@
         "logicalDataRecord": 1
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Aumentar los recursos y mejorar la autonomía, calidad y personalización de la atención a la dependencia. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RDL 17/2026 aumenta las cuantías del nivel mínimo estatal y concede suplementos de crédito. Acredita financiación aprobada, no su llegada a cada persona ni una mejora medida de la atención.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-13643",
+            "locator": "Artículos primero y segundo; disposición final tercera",
+            "paraphrase": "Actualiza el mínimo de protección estatal y habilita crédito adicional; las cuantías no son una transferencia automática al beneficiario.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Aumentar los recursos y mejorar la autonomía, calidad y personalización de la atención a la dependencia.",
+        "observed": "El RDL 17/2026 aumenta las cuantías del nivel mínimo estatal y concede suplementos de crédito. Acredita financiación aprobada, no su llegada a cada persona ni una mejora medida de la atención.",
+        "practicalEffect": "Las administraciones cuentan con financiación estatal reforzada desde julio de 2026; la prestación individual depende del reconocimiento y de la atención efectivamente concedida.",
+        "missingEvidence": "Ejecución de los créditos, beneficiarios atendidos, tiempos de espera y mediciones comparables de calidad y autonomía.",
+        "temporalScope": "Financiación aplicable desde julio de 2026; resultados asistenciales no evaluados.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-13643"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -422,11 +809,39 @@
         "logicalDataRecord": 10
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Ampliar ayudas de comedor, actividades extraescolares y material escolar. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "Educación comunica la autorización de 58,5 millones para libros y material didáctico en 2026. Es evidencia de una decisión de financiación sobre un componente, no de ejecución ni de ampliación de los tres.",
+        "evidence": [
+          {
+            "sourceId": "libros-2026",
+            "locator": "Noticia del 10 de marzo: acuerdo de distribución territorial",
+            "paraphrase": "El ministerio informa de 58,5 millones autorizados para libros y material. No es una cuenta de pagos.",
+            "relation": "declaracion_de_actuacion"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Ampliar ayudas de comedor, actividades extraescolares y material escolar.",
+        "observed": "Educación comunica la autorización de 58,5 millones para libros y material didáctico en 2026. Es evidencia de una decisión de financiación sobre un componente, no de ejecución ni de ampliación de los tres.",
+        "practicalEffect": "El apoyo para material se canaliza con las comunidades; esta autorización no equivale a una ayuda concedida a cada familia.",
+        "missingEvidence": "Comparación con el inicio del mandato y pagos/beneficiarios de comedor, extraescolares y material en cada territorio.",
+        "temporalScope": "Autorización publicada el 10 de marzo de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "libros-2026"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -486,17 +901,52 @@
       },
       "review": {
         "status": "actuacion_documentada",
-        "criterion": "Comprobar la creación de un instrumento de apoyo; separar diseño financiero y acceso efectivo a vivienda.",
-        "conclusion": "El convenio MIVAU–ICO documenta un instrumento de avales para primera vivienda. No comprueba cuántos jóvenes recibieron financiación ni el efecto sobre el acceso a vivienda o los precios. Su antecedente de 2023 no se atribuye íntegramente al mandato iniciado en noviembre.",
+        "criterion": "Facilitar a jóvenes la compra o el alquiler de vivienda. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
         "evidence": [
           {
             "sourceId": "BOE-A-2024-9128",
-            "locator": "Anejo, estipulaciones primera.a y segunda.b",
-            "paraphrase": "El convenio regula la gestión de avales y prevé inicialmente un máximo de 2.500 millones de euros. La cifra es capacidad prevista, no gasto ni préstamos concedidos.",
+            "locator": "Anejo, estipulaciones primera y segunda",
+            "paraphrase": "Define la línea de avales para adquisición de primera vivienda.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "BOE-A-2026-8872",
+            "locator": "Artículos 1 y 2; líneas de ayuda al acceso",
+            "paraphrase": "Regula instrumentos de financiación y ayudas; la ejecución se articula mediante administraciones territoriales.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "actuacion_documentada",
+            "conclusion": "El convenio MIVAU–ICO documenta un instrumento de avales para primera vivienda. No comprueba cuántos jóvenes recibieron financiación ni el efecto sobre el acceso a vivienda o los precios. Su antecedente de 2023 no se atribuye íntegramente al mandato iniciado en noviembre.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2024-9128",
+                "locator": "Anejo, estipulaciones primera.a y segunda.b",
+                "paraphrase": "El convenio regula la gestión de avales y prevé inicialmente un máximo de 2.500 millones de euros. La cifra es capacidad prevista, no gasto ni préstamos concedidos.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Facilitar a jóvenes la compra o el alquiler de vivienda.",
+        "observed": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
+        "practicalEffect": "Puede haber vías de aval o ayudas sujetas a edad, renta, vivienda y convocatoria; la ficha no acredita que una persona concreta pueda obtenerlas.",
+        "missingEvidence": "Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
+        "temporalScope": "Convenio de 2024 y plan 2026–2030; revisión documental al 10 de octubre de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2024-9128",
+          "BOE-A-2026-8872"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -548,11 +998,46 @@
         "logicalDataRecord": 29
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Mejorar progresividad del IRPF, bases fiscales y lucha contra la economía sumergida. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "La Ley 7/2024 modifica la escala del ahorro del IRPF y el plan de control 2026 prevé actuaciones contra el fraude. Son medidas en dos componentes; no una medición del efecto redistributivo de toda la reforma.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2024-26694",
+            "locator": "Disposición final séptima",
+            "paraphrase": "Modifica la Ley del IRPF, incluida la escala del ahorro.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "BOE-A-2026-5843",
+            "locator": "Directrices generales: control del fraude",
+            "paraphrase": "Documenta líneas de control para 2026; no equivale a resultados de recaudación.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Mejorar progresividad del IRPF, bases fiscales y lucha contra la economía sumergida.",
+        "observed": "La Ley 7/2024 modifica la escala del ahorro del IRPF y el plan de control 2026 prevé actuaciones contra el fraude. Son medidas en dos componentes; no una medición del efecto redistributivo de toda la reforma.",
+        "practicalEffect": "La tributación del ahorro y el control fiscal cuentan con cambios concretos. El efecto personal depende de la renta y de las reglas aplicables.",
+        "missingEvidence": "Evaluación distributiva por niveles de renta, ensanchamiento de bases y estimación comparable de economía sumergida.",
+        "temporalScope": "Modificación legal de 2024 y planificación de control de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2024-26694",
+          "BOE-A-2026-5843"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -604,11 +1089,46 @@
         "logicalDataRecord": 32
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Definir y contrastar el resultado con una serie primaria comparable, su cobertura territorial y el plazo original.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Avanzar en consolidación fiscal, distinguiendo saldo público y deuda. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "La serie Eurostat conservada pasa de un saldo del −3,3 % del PIB en 2023 al −2,4 % en 2025. La deuda baja del 107,3 % en 2023T3 al 101,6 % en 2026T1, dato provisional. Hay mejora observada en esas series, sin atribución causal ni evaluación del mandato entero.",
+        "evidence": [
+          {
+            "sourceId": "indicator-public-balance",
+            "locator": "Serie gov_10dd_edpt1, ES, saldo de administraciones públicas/PIB, 2023 y 2025",
+            "paraphrase": "Valores conservados: −3,3 y −2,4 % del PIB; no se elimina ningún ajuste de la serie.",
+            "relation": "resultado_estadistico"
+          },
+          {
+            "sourceId": "indicator-debt-gdp",
+            "locator": "Serie trimestral de deuda/PIB, 2023T3 y 2026T1",
+            "paraphrase": "El 101,6 % de 2026T1 es provisional.",
+            "relation": "resultado_estadistico"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "partial",
+        "expected": "Avanzar en consolidación fiscal, distinguiendo saldo público y deuda.",
+        "observed": "La serie Eurostat conservada pasa de un saldo del −3,3 % del PIB en 2023 al −2,4 % en 2025. La deuda baja del 107,3 % en 2023T3 al 101,6 % en 2026T1, dato provisional. Hay mejora observada en esas series, sin atribución causal ni evaluación del mandato entero.",
+        "practicalEffect": "El déficit es menor en el periodo comparable; eso no significa superávit ni que disminuya la deuda en euros.",
+        "missingEvidence": "Cierre de 2026, ajuste estructural y comparación con una senda/objetivo explícitos. El −2,2 % comunicado por el Gobierno no se mezcla con el −2,4 % de esta captura Eurostat.",
+        "temporalScope": "Saldo anual 2023–2025; deuda 2023T3–2026T1. Las referencias de 2023 incluyen meses anteriores a la investidura.",
+        "scope": "Conjunto de administraciones públicas españolas, no solo el Gobierno central.",
+        "evidenceSourceIds": [
+          "indicator-public-balance",
+          "indicator-debt-gdp"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -660,11 +1180,39 @@
         "logicalDataRecord": 33
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Definir y contrastar el resultado con una serie primaria comparable, su cobertura territorial y el plazo original.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Avanzar en la eliminación de la brecha de género en el empleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+        "evidence": [
+          {
+            "sourceId": "epa-2026-t2",
+            "locator": "Apartado Desempleo y tasa de paro, desglose por sexo",
+            "paraphrase": "Tasas de paro: mujeres 11,02 %, hombres 8,84 %. Diferencia calculada por RegTrack: 2,18 puntos.",
+            "relation": "resultado_estadistico"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "inconclusive",
+        "expected": "Avanzar en la eliminación de la brecha de género en el empleo.",
+        "observed": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+        "practicalEffect": "Mujeres y hombres siguen teniendo tasas de paro distintas. No permite atribuir a una medida concreta la diferencia ni equiparar paro, empleo y salario.",
+        "missingEvidence": "Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
+        "temporalScope": "EPA 2026T2, publicada el 28 de julio. La falta de base comparable limita el juicio sobre el avance.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "epa-2026-t2"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -722,11 +1270,39 @@
         "logicalDataRecord": 53
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Reducir precios públicos universitarios y abonar las becas al inicio del curso. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RD 179/2026 regula umbrales y cuantías de becas para 2026–2027. No contiene un registro de las fechas reales de abono ni demuestra por sí solo una reducción general de tasas universitarias.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-5713",
+            "locator": "Artículos 1 a 4 y disposiciones de beca de matrícula",
+            "paraphrase": "Establece parámetros económicos de convocatoria; no acredita el calendario efectivo de pagos.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "inconclusive",
+        "expected": "Reducir precios públicos universitarios y abonar las becas al inicio del curso.",
+        "observed": "El RD 179/2026 regula umbrales y cuantías de becas para 2026–2027. No contiene un registro de las fechas reales de abono ni demuestra por sí solo una reducción general de tasas universitarias.",
+        "practicalEffect": "Hay reglas para solicitar la beca, pero no se puede prometer con esta evidencia que el dinero llegue al comienzo del curso.",
+        "missingEvidence": "Fechas de pagos por cohorte y universidad, proporción cobrada al inicio de curso y evolución de precios públicos por comunidad.",
+        "temporalScope": "Curso 2026–2027; el compromiso fija el inicio del curso, no un día universal de ingreso.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-5713"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -778,11 +1354,46 @@
         "logicalDataRecord": 55
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Crear y aplicar mecanismos de acceso a vivienda digna y asequible en ámbitos urbanos y rurales. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El Plan Estatal 2026–2030 y el RDL 29/2026 documentan instrumentos de financiación y cambios regulatorios. La publicación de octubre es reciente y no permite medir aún su efecto sobre asequibilidad o acceso.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-8872",
+            "locator": "Artículos 1, 2 y 7",
+            "paraphrase": "Regula financiación y distribución entre líneas de vivienda social, rehabilitación y acceso.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "BOE-A-2026-20823",
+            "locator": "Artículos 3 y 4; disposición final decimoprimera",
+            "paraphrase": "Introduce cambios en arrendamientos y derecho a la vivienda. Sus efectos tienen regímenes temporales propios.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Crear y aplicar mecanismos de acceso a vivienda digna y asequible en ámbitos urbanos y rurales.",
+        "observed": "El Plan Estatal 2026–2030 y el RDL 29/2026 documentan instrumentos de financiación y cambios regulatorios. La publicación de octubre es reciente y no permite medir aún su efecto sobre asequibilidad o acceso.",
+        "practicalEffect": "Existen nuevas vías de ayuda y reglas de vivienda, con aplicación dependiente del supuesto y del territorio; aprobación no significa vivienda adjudicada.",
+        "missingEvidence": "Convenios y convocatorias ejecutadas, viviendas efectivamente disponibles, esfuerzo de renta y acceso urbano/rural.",
+        "temporalScope": "Plan publicado en abril; RDL publicado el 7 de octubre, entrada general el 8 con excepciones y control de convalidación pendiente de verificar.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-8872",
+          "BOE-A-2026-20823"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -834,11 +1445,46 @@
         "logicalDataRecord": 58
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Definir y contrastar el resultado con una serie primaria comparable, su cobertura territorial y el plazo original.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Culminar la estabilización y alcanzar como máximo un 8 % de temporalidad en el conjunto de empleados públicos. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "La Ley 20/2021 fijó la finalización de sus procesos antes del 31 de diciembre de 2024. Función Pública informa en junio de 2026 de 440.168 procesos de estabilización y tasas territoriales muy distintas. Esa cifra de procesos no prueba el 8 % agregado ni una culminación completa.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2021-21651",
+            "locator": "Artículo 2.2",
+            "paraphrase": "Fija que la resolución de estos procesos deberá finalizar antes del 31 de diciembre de 2024; es una norma anterior al mandato.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "estabilizacion-junio-2026",
+            "locator": "Nota de 30 de junio, seguimiento y diferencias entre administraciones",
+            "paraphrase": "El ministerio comunica 440.168 procesos y pide tiempo adicional para reducir temporalidad. No aporta aquí una tasa conjunta comparable.",
+            "relation": "declaracion_de_actuacion"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "inconclusive",
+        "expected": "Culminar la estabilización y alcanzar como máximo un 8 % de temporalidad en el conjunto de empleados públicos.",
+        "observed": "La Ley 20/2021 fijó la finalización de sus procesos antes del 31 de diciembre de 2024. Función Pública informa en junio de 2026 de 440.168 procesos de estabilización y tasas territoriales muy distintas. Esa cifra de procesos no prueba el 8 % agregado ni una culminación completa.",
+        "practicalEffect": "Una plaza estabilizada no significa que todo el empleo público haya dejado de ser temporal; tampoco la tasa estatal describe sanidad y educación autonómicas.",
+        "missingEvidence": "Denominador y numerador homogéneos de empleados temporales de todas las administraciones, y cierre de procesos a la fecha de corte.",
+        "temporalScope": "Plazo legal de los procesos de la Ley 20/2021: diciembre de 2024; balance ministerial de junio de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2021-21651",
+          "estabilizacion-junio-2026"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -891,11 +1537,46 @@
         "logicalDataRecord": 65
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Desarrollar atención pública de salud mental universal y de calidad. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "Sanidad acredita la aprobación del Plan de Acción 2025–2027 y una distribución de 39 millones en 2025 para salud mental. Una decisión de planificación y reparto no acredita atención recibida, accesibilidad universal ni calidad.",
+        "evidence": [
+          {
+            "sourceId": "salud-mental-plan",
+            "locator": "Acuerdo del CISNS de 4 de abril de 2025",
+            "paraphrase": "Publicación ministerial que documenta la aprobación del plan.",
+            "relation": "declaracion_de_actuacion"
+          },
+          {
+            "sourceId": "salud-mental-financiacion",
+            "locator": "CISNS de 18 de junio de 2025; salud mental",
+            "paraphrase": "Distribución aprobada de 39 millones para salud mental; no relación de pagos ni contrataciones.",
+            "relation": "declaracion_de_actuacion"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Desarrollar atención pública de salud mental universal y de calidad.",
+        "observed": "Sanidad acredita la aprobación del Plan de Acción 2025–2027 y una distribución de 39 millones en 2025 para salud mental. Una decisión de planificación y reparto no acredita atención recibida, accesibilidad universal ni calidad.",
+        "practicalEffect": "El plan contempla refuerzo de recursos y atención comunitaria; la disponibilidad real debe comprobarse en el servicio de salud correspondiente.",
+        "missingEvidence": "Plantillas incorporadas, fondos ejecutados, tiempos de espera, cobertura y resultados asistenciales comparables.",
+        "temporalScope": "Plan 2025–2027; reparto documentado de 2025, sin extrapolarlo al gasto ejecutado de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "salud-mental-plan",
+          "salud-mental-financiacion"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -954,18 +1635,53 @@
         "logicalDataRecord": 74
       },
       "review": {
-        "status": "contraste_parcial",
-        "criterion": "Contrastar una medida normativa de alquiler sin inferir resultados de precios o protección efectiva ante desahucios.",
-        "conclusion": "Se documenta la definición del índice para actualizar rentas. Este índice es distinto del sistema de referencia de nuevos contratos en zonas tensionadas; la prueba no cubre todo el compromiso ni acredita la protección efectiva ante desahucios.",
+        "status": "actuacion_documentada",
+        "criterion": "Desarrollar regulación de precios de alquiler y protección frente a desahucios. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "Se documentan el índice anual de actualización y los cambios del RDL 29/2026 en arrendamientos y procedimientos. Son instrumentos distintos; ninguno acredita por sí solo una bajada de alquileres ni la protección efectiva de todos los hogares.",
         "evidence": [
           {
             "sourceId": "BOE-A-2024-26685",
             "locator": "Apartados primero a tercero",
-            "paraphrase": "El INE define el índice de actualización anual y su publicación mensual, con efectos desde el 1 de enero de 2025.",
+            "paraphrase": "Define el índice de referencia para actualización anual.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "BOE-A-2026-20823",
+            "locator": "Artículos 3 a 5 y disposición final decimoprimera",
+            "paraphrase": "Modifica arrendamientos, vivienda y normas procesales; no acredita resultados de aplicación.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "contraste_parcial",
+            "conclusion": "Se documenta la definición del índice para actualizar rentas. Este índice es distinto del sistema de referencia de nuevos contratos en zonas tensionadas; la prueba no cubre todo el compromiso ni acredita la protección efectiva ante desahucios.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2024-26685",
+                "locator": "Apartados primero a tercero",
+                "paraphrase": "El INE define el índice de actualización anual y su publicación mensual, con efectos desde el 1 de enero de 2025.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Desarrollar regulación de precios de alquiler y protección frente a desahucios.",
+        "observed": "Se documentan el índice anual de actualización y los cambios del RDL 29/2026 en arrendamientos y procedimientos. Son instrumentos distintos; ninguno acredita por sí solo una bajada de alquileres ni la protección efectiva de todos los hogares.",
+        "practicalEffect": "La regla aplicable depende de contrato, territorio, fecha y situación del hogar. Un índice de actualización no es un límite universal al precio de cualquier contrato.",
+        "missingEvidence": "Efectos territoriales, contratos sujetos a cada regla, aplicación judicial y alternativas habitacionales; seguimiento del decreto reciente.",
+        "temporalScope": "Índice aprobado en 2024; nueva norma publicada el 7 de octubre de 2026, con entrada y transitorios propios.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2024-26685",
+          "BOE-A-2026-20823"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1017,11 +1733,46 @@
         "logicalDataRecord": 76
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Desarrollar un marco jurídico y fiscal para aumentar la oferta de alquiler. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El Plan de Vivienda y el RDL 29/2026 incorporan financiación y cambios jurídicos y fiscales. Se acredita el marco aprobado; el número de alquileres adicionales atribuibles a él no está medido en las fuentes conservadas.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-8872",
+            "locator": "Artículos 1, 2 y 7",
+            "paraphrase": "Financiación orientada a ampliar oferta social y asequible.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "BOE-A-2026-20823",
+            "locator": "Artículos 3, 4 y 6",
+            "paraphrase": "Marco arrendaticio y medidas tributarias; no recuento de oferta ejecutada.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Desarrollar un marco jurídico y fiscal para aumentar la oferta de alquiler.",
+        "observed": "El Plan de Vivienda y el RDL 29/2026 incorporan financiación y cambios jurídicos y fiscales. Se acredita el marco aprobado; el número de alquileres adicionales atribuibles a él no está medido en las fuentes conservadas.",
+        "practicalEffect": "Propietarios e inquilinos tienen medidas que consultar según su caso. Una bonificación o una licitación no equivale a una vivienda adicional ya alquilada.",
+        "missingEvidence": "Oferta neta de alquiler, entrada efectiva de viviendas, permanencia y evaluación que separe el efecto de otras condiciones del mercado.",
+        "temporalScope": "Plan de abril y decreto de octubre de 2026; resultados posteriores todavía no evaluados.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-8872",
+          "BOE-A-2026-20823"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1073,11 +1824,39 @@
         "logicalDataRecord": 78
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Desarrollar becas que favorezcan el acceso a la educación. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RD 179/2026 fija umbrales, cuantías y componentes de becas para 2026–2027. La convocatoria es una actuación verificable; asegurar el acceso requiere además conocer concesiones, pagos y continuidad educativa.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-5713",
+            "locator": "Artículos 1 a 7",
+            "paraphrase": "Establece los parámetros de becas y ayudas del curso 2026–2027.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Desarrollar becas que favorezcan el acceso a la educación.",
+        "observed": "El RD 179/2026 fija umbrales, cuantías y componentes de becas para 2026–2027. La convocatoria es una actuación verificable; asegurar el acceso requiere además conocer concesiones, pagos y continuidad educativa.",
+        "practicalEffect": "El alumnado dispone de reglas de acceso a las ayudas del curso; la concesión depende de requisitos y tramitación.",
+        "missingEvidence": "Solicitudes, concesiones, pagos, cobertura de alumnado elegible y efecto en abandono o continuidad de estudios.",
+        "temporalScope": "Convocatorias del curso 2026–2027; no se interpreta presupuesto previsto como gasto ejecutado.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-5713"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1136,11 +1915,39 @@
         "logicalDataRecord": 79
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Definir y contrastar el resultado con una serie primaria comparable, su cobertura territorial y el plazo original.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Crear empleo de calidad, alcanzar pleno empleo y acercar el paro a la media europea durante la legislatura. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "Eurostat sitúa en agosto de 2026 el paro desestacionalizado de España en el 10,0 % y el de la UE en el 6,1 %: 3,9 puntos de distancia, frente a 4,5 en agosto de 2025 (10,5 % y 6,0 %). Hay acercamiento en ese año, pero no convergencia completa. No se mezcla la EPA trimestral con esta comparación mensual.",
+        "evidence": [
+          {
+            "sourceId": "paro-ue-agosto-2026",
+            "locator": "Tabla Seasonally adjusted unemployment, totals; filas Spain y EU, columnas Aug-25 y Aug-26",
+            "paraphrase": "Agosto 2025: España 10,5 %, UE 6,0 %. Agosto 2026: España 10,0 %, UE 6,1 %. Distancias calculadas: 4,5 y 3,9 puntos, con reducción de 0,6 puntos en un año.",
+            "relation": "resultado_estadistico"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "partial",
+        "expected": "Crear empleo de calidad, alcanzar pleno empleo y acercar el paro a la media europea durante la legislatura.",
+        "observed": "Eurostat sitúa en agosto de 2026 el paro desestacionalizado de España en el 10,0 % y el de la UE en el 6,1 %: 3,9 puntos de distancia, frente a 4,5 en agosto de 2025 (10,5 % y 6,0 %). Hay acercamiento en ese año, pero no convergencia completa. No se mezcla la EPA trimestral con esta comparación mensual.",
+        "practicalEffect": "El desempleo español sigue por encima de la media de la UE en la comparación homogénea disponible. Tener más ocupados no demuestra por sí solo mejor calidad laboral.",
+        "missingEvidence": "Serie homogénea de la distancia desde el inicio, definición operativa de pleno empleo, calidad laboral y cierre del periodo comprometido.",
+        "temporalScope": "Comparación mensual Eurostat de agosto de 2025 y agosto de 2026, publicada el 1 de octubre de 2026; no representa todo el mandato.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "paro-ue-agosto-2026"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1192,11 +1999,39 @@
         "logicalDataRecord": 87
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Evaluar el impuesto de grandes fortunas y avanzar hacia nueva tributación patrimonial en la financiación autonómica. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RDL 8/2023 prolonga el impuesto hasta revisar la tributación patrimonial en el contexto autonómico. La prórroga es verificable; no demuestra por sí sola que exista una evaluación de resultados ni una reforma del modelo ya culminada.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2023-26452",
+            "locator": "Disposición adicional quinta, apartado 2",
+            "paraphrase": "Prorroga el impuesto hasta la revisión de la tributación patrimonial en el contexto de la reforma autonómica.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "inconclusive",
+        "expected": "Evaluar el impuesto de grandes fortunas y avanzar hacia nueva tributación patrimonial en la financiación autonómica.",
+        "observed": "El RDL 8/2023 prolonga el impuesto hasta revisar la tributación patrimonial en el contexto autonómico. La prórroga es verificable; no demuestra por sí sola que exista una evaluación de resultados ni una reforma del modelo ya culminada.",
+        "practicalEffect": "La continuidad de un tributo y la reforma prometida son cosas diferentes; no puede darse por terminada la segunda por haberse prorrogado el primero.",
+        "missingEvidence": "Informe de evaluación, conclusiones y decisión normativa sobre la financiación autonómica, con alcance y fecha.",
+        "temporalScope": "Prórroga aprobada en diciembre de 2023; no se presenta como una evaluación publicada en 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2023-26452"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1248,11 +2083,39 @@
         "logicalDataRecord": 102
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Garantizar acceso sanitario equitativo y universal y mejorar la gestión del SNS. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RD 180/2026 regula el reconocimiento del derecho a atención con fondos públicos de personas extranjeras sin residencia legal. Acredita un desarrollo del acceso, no la universalidad efectiva ni todos los cambios de gestión sanitaria.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-5714",
+            "locator": "Objeto, requisitos y procedimiento de reconocimiento",
+            "paraphrase": "Regula el acceso con cargo a fondos públicos para el colectivo definido; no mide toda la población ni la gestión del SNS.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Garantizar acceso sanitario equitativo y universal y mejorar la gestión del SNS.",
+        "observed": "El RD 180/2026 regula el reconocimiento del derecho a atención con fondos públicos de personas extranjeras sin residencia legal. Acredita un desarrollo del acceso, no la universalidad efectiva ni todos los cambios de gestión sanitaria.",
+        "practicalEffect": "Se regula un procedimiento de reconocimiento del derecho; atención efectiva, documentación y tramitación requieren revisar la aplicación territorial.",
+        "missingEvidence": "Reconocimientos efectivos, denegaciones, barreras de acceso, tiempos de atención y resultados de gestión del SNS.",
+        "temporalScope": "Norma publicada en marzo de 2026; evidencia de procedimiento, no de resultados nacionales.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-5714"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1318,23 +2181,58 @@
       },
       "review": {
         "status": "contraste_parcial",
-        "criterion": "Distinguir la fijación anual del SMI de una garantía legal permanente y de la comprobación estadística del 60 %.",
-        "conclusion": "Los reales decretos fijan el SMI de 2025 y 2026. Eso documenta subidas anuales, pero no acredita por sí solo la garantía permanente en el Estatuto de los Trabajadores ni una comparación independiente y homogénea con el salario medio.",
+        "criterion": "Elevar anualmente el SMI y garantizar por ley su relación con el 60 % del sueldo medio. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RD 126/2026 fija 1.221 euros mensuales en 14 pagas. El artículo 27 del Estatuto consultado regula la fijación anual, pero no incorpora la garantía permanente del 60 % prometida. La cuantía anual no acredita por sí sola esa relación estadística.",
         "evidence": [
           {
-            "sourceId": "BOE-A-2025-2576",
-            "locator": "Artículo 1",
-            "paraphrase": "Fija para 2025 un salario mínimo de 39,47 euros al día o 1.184 euros al mes.",
+            "sourceId": "BOE-A-2026-3815",
+            "locator": "Artículos 1 y 3",
+            "paraphrase": "Fija el SMI de 2026 y su referencia anual.",
             "relation": "actuacion_normativa"
           },
           {
-            "sourceId": "BOE-A-2026-3815",
-            "locator": "Artículos 1 y 3; disposición final tercera",
-            "paraphrase": "Fija para 2026 un mínimo de 1.221 euros mensuales y 17.094 euros anuales, con efectos desde enero de 2026.",
+            "sourceId": "estatuto-2026-10-10",
+            "locator": "Artículo 27.1",
+            "paraphrase": "Regula criterios y revisión anual del SMI; no contiene una regla automática del 60 % del salario medio.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "contraste_parcial",
+            "conclusion": "Los reales decretos fijan el SMI de 2025 y 2026. Eso documenta subidas anuales, pero no acredita por sí solo la garantía permanente en el Estatuto de los Trabajadores ni una comparación independiente y homogénea con el salario medio.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2025-2576",
+                "locator": "Artículo 1",
+                "paraphrase": "Fija para 2025 un salario mínimo de 39,47 euros al día o 1.184 euros al mes.",
+                "relation": "actuacion_normativa"
+              },
+              {
+                "sourceId": "BOE-A-2026-3815",
+                "locator": "Artículos 1 y 3; disposición final tercera",
+                "paraphrase": "Fija para 2026 un mínimo de 1.221 euros mensuales y 17.094 euros anuales, con efectos desde enero de 2026.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "partial",
+        "expected": "Elevar anualmente el SMI y garantizar por ley su relación con el 60 % del sueldo medio.",
+        "observed": "El RD 126/2026 fija 1.221 euros mensuales en 14 pagas. El artículo 27 del Estatuto consultado regula la fijación anual, pero no incorpora la garantía permanente del 60 % prometida. La cuantía anual no acredita por sí sola esa relación estadística.",
+        "practicalEffect": "Hay un mínimo salarial fijado para 2026; su aplicación depende de jornada y cómputo legal. No se puede presentar esa subida como una garantía legal permanente del porcentaje.",
+        "missingEvidence": "Definición y cálculo comparable del salario medio, y norma que establezca la garantía permanente comprometida.",
+        "temporalScope": "SMI para 2026; artículo 27 consolidado consultado al 10 de octubre.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-3815",
+          "estatuto-2026-10-10"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1386,11 +2284,39 @@
         "logicalDataRecord": 112
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Definir y contrastar el resultado con una serie primaria comparable, su cobertura territorial y el plazo original.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Habilitar 184.000 viviendas públicas en alquiler asequible y aumentar el parque público hasta el 20 %. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El Plan 2026–2030 reserva financiación para oferta social y asequible. Es un mecanismo de producción futura, no un inventario de 184.000 viviendas disponibles ni una medición del 20 % del parque.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-8872",
+            "locator": "Artículos 1, 2 y 7",
+            "paraphrase": "Financia ampliación de oferta social y asequible; no certifica las viviendas entregadas de la promesa.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "inconclusive",
+        "expected": "Habilitar 184.000 viviendas públicas en alquiler asequible y aumentar el parque público hasta el 20 %.",
+        "observed": "El Plan 2026–2030 reserva financiación para oferta social y asequible. Es un mecanismo de producción futura, no un inventario de 184.000 viviendas disponibles ni una medición del 20 % del parque.",
+        "practicalEffect": "Un anuncio, suelo, financiación o vivienda licitada no implica que una familia pueda ocuparla ya.",
+        "missingEvidence": "Inventario con vivienda única, fase, titularidad, entrega y ocupación; denominador del parque y horizonte temporal del 20 %. Sin esos datos no se calcula un porcentaje de cumplimiento.",
+        "temporalScope": "Plan 2026–2030; no consta en el inventario un día límite único para las dos metas.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-8872"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1449,11 +2375,39 @@
         "logicalDataRecord": 122
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Reforzar apoyo al empleo, especialmente para jóvenes, desempleados y mayores de 45 años. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RD 438/2024 desarrolla la cartera común de empleo y servicios garantizados, incluida atención personalizada. Se acredita el marco; no que cada persona tuviera su perfil en 2024 ni que esos servicios causaran nuevas colocaciones.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2024-8710",
+            "locator": "Objeto y servicios de orientación para el empleo personalizados",
+            "paraphrase": "Desarrolla servicios garantizados y atención personalizada del Sistema Nacional de Empleo.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Reforzar apoyo al empleo, especialmente para jóvenes, desempleados y mayores de 45 años.",
+        "observed": "El RD 438/2024 desarrolla la cartera común de empleo y servicios garantizados, incluida atención personalizada. Se acredita el marco; no que cada persona tuviera su perfil en 2024 ni que esos servicios causaran nuevas colocaciones.",
+        "practicalEffect": "Los servicios públicos tienen una cartera y atención que prestar; la existencia del derecho no prueba que se haya recibido a tiempo.",
+        "missingEvidence": "Perfiles y tutorías efectivamente realizados en 2024, cobertura por colectivo, inserciones y calidad y permanencia del empleo.",
+        "temporalScope": "Cartera aprobada en 2024; plazo de 2024 limitado al componente de perfil individualizado del acuerdo.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2024-8710"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1505,11 +2459,53 @@
         "logicalDataRecord": 123
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Impulsar protección del consumidor financiero. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "Hay propuestas de regulación del crédito al consumo y la nota de julio situaba la Autoridad de Defensa del Cliente Financiero en tramitación. El RDL 29/2026 sí incorpora protección en cesiones de crédito hipotecario. Un anteproyecto no se presenta como ley vigente.",
+        "evidence": [
+          {
+            "sourceId": "creditos-consumo-2026",
+            "locator": "Noticia de 24 de abril; anteproyecto",
+            "paraphrase": "El organismo describe un anteproyecto de crédito al consumo, no una ley promulgada.",
+            "relation": "declaracion_de_actuacion"
+          },
+          {
+            "sourceId": "cliente-financiero-julio-2026",
+            "locator": "Nota de 24 de julio; tramitación prevista",
+            "paraphrase": "El ministerio prevé retomar la tramitación; no acredita una autoridad operativa.",
+            "relation": "declaracion_de_actuacion"
+          },
+          {
+            "sourceId": "BOE-A-2026-20823",
+            "locator": "Disposición final primera y disposición final decimoprimera.2",
+            "paraphrase": "Añade protección del prestatario en cesiones de crédito hipotecario, con ámbito temporal específico.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Impulsar protección del consumidor financiero.",
+        "observed": "Hay propuestas de regulación del crédito al consumo y la nota de julio situaba la Autoridad de Defensa del Cliente Financiero en tramitación. El RDL 29/2026 sí incorpora protección en cesiones de crédito hipotecario. Un anteproyecto no se presenta como ley vigente.",
+        "practicalEffect": "Las protecciones documentadas tienen un ámbito concreto; no se promete que la nueva autoridad ya resuelva reclamaciones ni que los límites anunciados de crédito estén operativos.",
+        "missingEvidence": "Estado parlamentario actualizado, puesta en funcionamiento, reclamaciones resueltas, reparación al consumidor y aplicación de las nuevas reglas.",
+        "temporalScope": "Anteproyecto de abril, estado comunicado en julio y disposición publicada el 7 de octubre de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "creditos-consumo-2026",
+          "cliente-financiero-julio-2026",
+          "BOE-A-2026-20823"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1562,11 +2558,46 @@
         "logicalDataRecord": 131
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Promover flexibilidad horaria y teletrabajo para conciliar vida laboral, familiar y personal. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "La resolución de abril de 2026 fija jornada y horarios en la Administración General del Estado e incorpora medidas de conciliación para cuidadores. El Estatuto recoge adaptación de jornada. No acredita la adopción general de teletrabajo ni sus efectos en corresponsabilidad.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-8287",
+            "locator": "Ámbito de aplicación y medidas de conciliación",
+            "paraphrase": "Regula jornada y flexibilidad para personal de la AGE; no se extiende automáticamente al sector privado.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "estatuto-2026-10-10",
+            "locator": "Artículo 34.8",
+            "paraphrase": "Reconoce solicitudes de adaptación de jornada y forma de prestación con condiciones y negociación.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Promover flexibilidad horaria y teletrabajo para conciliar vida laboral, familiar y personal.",
+        "observed": "La resolución de abril de 2026 fija jornada y horarios en la Administración General del Estado e incorpora medidas de conciliación para cuidadores. El Estatuto recoge adaptación de jornada. No acredita la adopción general de teletrabajo ni sus efectos en corresponsabilidad.",
+        "practicalEffect": "Existen mecanismos de adaptación y medidas para colectivos definidos; no todos los trabajadores tienen automáticamente jornada de 35 horas ni derecho incondicional a teletrabajar.",
+        "missingEvidence": "Solicitudes y concesiones de adaptación y teletrabajo, uso por sexo, denegaciones y efectos sobre cuidados.",
+        "temporalScope": "Norma de abril de 2026 para AGE y artículo 34.8 del Estatuto; ámbitos distintos.",
+        "scope": "AGE en la resolución; relaciones laborales bajo el Estatuto en el artículo 34.8.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-8287",
+          "estatuto-2026-10-10"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1618,11 +2649,39 @@
         "logicalDataRecord": 136
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Combatir fraude, evasión y elusión fiscal. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-5843",
+            "locator": "Anexo, líneas de información, prevención, investigación y control",
+            "paraphrase": "Planifica actuaciones; su aprobación no constituye un resultado de recaudación.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Combatir fraude, evasión y elusión fiscal.",
+        "observed": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+        "practicalEffect": "Se publican prioridades de control. Las liquidaciones detectadas, ingresos cobrados y fraude estimado deben leerse por separado.",
+        "missingEvidence": "Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+        "temporalScope": "Plan Anual de Control Tributario 2026; no balance final del ejercicio.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-5843"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1675,11 +2734,46 @@
         "logicalDataRecord": 137
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Definir y contrastar el resultado con una serie primaria comparable, su cobertura territorial y el plazo original.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Combatir pobreza y exclusión, incluido el sinhogarismo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "En las series INE conservadas, AROPE pasa del 26,5 % en 2023 al 25,7 % en 2025, y la carencia material/social severa del 9,0 % al 8,1 %. Es mejora observada de esos indicadores, no erradicación ni prueba causal de una política.",
+        "evidence": [
+          {
+            "sourceId": "indicator-arope",
+            "locator": "ECV6190, España, 2023 y 2025",
+            "paraphrase": "AROPE: 26,5 % y 25,7 % en los periodos de encuesta conservados.",
+            "relation": "resultado_estadistico"
+          },
+          {
+            "sourceId": "indicator-severe-deprivation",
+            "locator": "ECV6189, España, 2023 y 2025",
+            "paraphrase": "Carencia material y social severa: 9,0 % y 8,1 %.",
+            "relation": "resultado_estadistico"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "partial",
+        "expected": "Combatir pobreza y exclusión, incluido el sinhogarismo.",
+        "observed": "En las series INE conservadas, AROPE pasa del 26,5 % en 2023 al 25,7 % en 2025, y la carencia material/social severa del 9,0 % al 8,1 %. Es mejora observada de esos indicadores, no erradicación ni prueba causal de una política.",
+        "practicalEffect": "El riesgo y las privaciones siguen afectando a parte importante de la población; los porcentajes nacionales no describen cada hogar ni miden todo el sinhogarismo.",
+        "missingEvidence": "Cobertura específica del sinhogarismo y grupos vulnerables, ejecución de políticas y evaluación causal. Las variables de renta de la ECV tienen desfase respecto a la encuesta.",
+        "temporalScope": "ECV 2023–2025; la referencia anual de 2023 no coincide exactamente con el comienzo del mandato.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "indicator-arope",
+          "indicator-severe-deprivation"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1748,23 +2842,58 @@
       },
       "review": {
         "status": "contraste_parcial",
-        "criterion": "Comparar el alcance de la ampliación aprobada con los componentes y el plazo del acuerdo original.",
-        "conclusion": "El RDL 9/2025 amplía el permiso de nacimiento a diecinueve semanas. El acuerdo de 2023 incluía veinte semanas y un componente de permiso parental retribuido desde agosto de 2024. Esta norma prueba una actuación, pero no el cumplimiento íntegro de ambas promesas ni su calendario.",
+        "criterion": "Ampliar permisos retribuidos: veinte semanas por nacimiento y componente parental previsto desde agosto de 2024. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RDL 9/2025 y el Estatuto consultado recogen diecinueve semanas en el supuesto general, no veinte. Hay ampliación aprobada, pero los componentes y el calendario del acuerdo no quedan íntegramente satisfechos por esa cifra.",
         "evidence": [
           {
-            "sourceId": "coalicion-2023",
-            "locator": "Página 22, permisos",
-            "paraphrase": "El acuerdo contempla veinte semanas de nacimiento y al menos cuatro semanas parentales retribuidas desde agosto de 2024.",
-            "relation": "alcance_original"
+            "sourceId": "BOE-A-2025-15741",
+            "locator": "Artículos primero y segundo; disposiciones transitorias",
+            "paraphrase": "Amplía el permiso general a diecinueve semanas con reglas específicas de disfrute.",
+            "relation": "actuacion_normativa"
           },
           {
-            "sourceId": "BOE-A-2025-15741",
-            "locator": "Artículo primero, artículo 48.4 del Estatuto de los Trabajadores; artículo segundo",
-            "paraphrase": "La norma establece diecinueve semanas de suspensión por nacimiento y modifica también los permisos del empleo público.",
+            "sourceId": "estatuto-2026-10-10",
+            "locator": "Artículo 48.4 y permiso parental del artículo 48 bis",
+            "paraphrase": "Permite contrastar duración y distinguir suspensión por nacimiento y permiso parental.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "contraste_parcial",
+            "conclusion": "El RDL 9/2025 amplía el permiso de nacimiento a diecinueve semanas. El acuerdo de 2023 incluía veinte semanas y un componente de permiso parental retribuido desde agosto de 2024. Esta norma prueba una actuación, pero no el cumplimiento íntegro de ambas promesas ni su calendario.",
+            "evidence": [
+              {
+                "sourceId": "coalicion-2023",
+                "locator": "Página 22, permisos",
+                "paraphrase": "El acuerdo contempla veinte semanas de nacimiento y al menos cuatro semanas parentales retribuidas desde agosto de 2024.",
+                "relation": "alcance_original"
+              },
+              {
+                "sourceId": "BOE-A-2025-15741",
+                "locator": "Artículo primero, artículo 48.4 del Estatuto de los Trabajadores; artículo segundo",
+                "paraphrase": "La norma establece diecinueve semanas de suspensión por nacimiento y modifica también los permisos del empleo público.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "partial",
+        "expected": "Ampliar permisos retribuidos: veinte semanas por nacimiento y componente parental previsto desde agosto de 2024.",
+        "observed": "El RDL 9/2025 y el Estatuto consultado recogen diecinueve semanas en el supuesto general, no veinte. Hay ampliación aprobada, pero los componentes y el calendario del acuerdo no quedan íntegramente satisfechos por esa cifra.",
+        "practicalEffect": "El régimen general permite un permiso más largo, con partes y edades de disfrute diferentes. Las familias monoparentales y otros supuestos tienen reglas específicas.",
+        "missingEvidence": "Acreditar los componentes pendientes del acuerdo, su aplicación temporal y datos de disfrute y pago; no sumar permisos de distinta naturaleza sin explicar su alcance.",
+        "temporalScope": "Ampliación de julio de 2025; consulta del Estatuto al corte. El plazo de agosto de 2024 correspondía al componente parental.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2025-15741",
+          "estatuto-2026-10-10"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1825,17 +2954,45 @@
       },
       "review": {
         "status": "actuacion_documentada",
-        "criterion": "Comprobar una reforma de la protección asistencial; no confundirla con su cobertura y suficiencia efectiva.",
-        "conclusion": "El RDL 2/2024 documenta una reforma del nivel asistencial por desempleo. Falta contrastar cobertura, acceso efectivo y suficiencia mediante datos de prestaciones; no se deduce que haya mejorado toda la protección ni que haya reducido el paro.",
+        "criterion": "Mejorar la protección por desempleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
         "evidence": [
           {
             "sourceId": "BOE-A-2024-10235",
-            "locator": "Artículo segundo, apartado ocho, artículo 278 de la LGSS",
-            "paraphrase": "Fija la cuantía general del subsidio en el 95 % del IPREM durante 180 días, el 90 % durante los 180 siguientes y el 80 % después, con los requisitos y excepciones del régimen.",
+            "locator": "Artículo segundo, apartado ocho",
+            "paraphrase": "Reforma el subsidio y su cuantía escalonada; no ofrece aquí una evaluación de resultados.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "actuacion_documentada",
+            "conclusion": "El RDL 2/2024 documenta una reforma del nivel asistencial por desempleo. Falta contrastar cobertura, acceso efectivo y suficiencia mediante datos de prestaciones; no se deduce que haya mejorado toda la protección ni que haya reducido el paro.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2024-10235",
+                "locator": "Artículo segundo, apartado ocho, artículo 278 de la LGSS",
+                "paraphrase": "Fija la cuantía general del subsidio en el 95 % del IPREM durante 180 días, el 90 % durante los 180 siguientes y el 80 % después, con los requisitos y excepciones del régimen.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Mejorar la protección por desempleo.",
+        "observed": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+        "practicalEffect": "Las personas elegibles tienen un régimen de subsidio reformado; cuantía y duración dependen de su situación y del tiempo de percepción.",
+        "missingEvidence": "Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+        "temporalScope": "Reforma de 2024; no se extiende el resultado a todas las medidas o pagos de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2024-10235"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1887,11 +3044,39 @@
         "logicalDataRecord": 160
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "actuacion_documentada",
+        "criterion": "Impulsar rehabilitación de vivienda, en particular eficiencia energética. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El Plan 2026–2030 incluye financiación de rehabilitación y modifica programas anteriores del PRTR. Se acredita continuidad y cambio de instrumentos; obras iniciadas, ayudas concedidas y rehabilitaciones terminadas son magnitudes diferentes.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-8872",
+            "locator": "Artículo 2; línea de rehabilitación; disposición final segunda",
+            "paraphrase": "Prevé rehabilitación y modifica programas del RD 853/2021; no es una certificación de obras finalizadas.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Impulsar rehabilitación de vivienda, en particular eficiencia energética.",
+        "observed": "El Plan 2026–2030 incluye financiación de rehabilitación y modifica programas anteriores del PRTR. Se acredita continuidad y cambio de instrumentos; obras iniciadas, ayudas concedidas y rehabilitaciones terminadas son magnitudes diferentes.",
+        "practicalEffect": "Hay programas sujetos a requisitos y convocatorias; la mejora energética se comprueba tras la actuación, no con su anuncio.",
+        "missingEvidence": "Viviendas terminadas y certificadas, importes pagados, ahorro energético antes/después y ausencia de duplicados entre programas.",
+        "temporalScope": "Plan de abril de 2026; resultados de obras y ahorro todavía no evaluados en esta ficha.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-8872"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -1950,11 +3135,53 @@
         "logicalDataRecord": 170
       },
       "review": {
-        "status": "sin_verificar",
-        "criterion": "Contrastar las actuaciones y su aplicación con documentos primarios; separar aprobación, ejecución y resultado.",
-        "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
-        "evidence": [],
-        "asOf": "2026-10-07"
+        "status": "contraste_parcial",
+        "criterion": "Reducir la jornada máxima general a 37,5 horas semanales, culminando en 2025. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El artículo 34.1 del Estatuto consolidado consultado mantiene cuarenta horas semanales de promedio anual. La reducción general a 37,5 horas comprometida para 2025 no se alcanzó en ese plazo. Las jornadas inferiores de convenios o de la AGE no cumplen por sí solas esta meta general.",
+        "evidence": [
+          {
+            "sourceId": "estatuto-2025-12-31",
+            "locator": "Artículo 34.1, versión aplicable al cierre de 2025",
+            "paraphrase": "Al vencimiento del año comprometido mantiene cuarenta horas semanales de promedio anual.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "estatuto-2026-10-10",
+            "locator": "Artículo 34.1",
+            "paraphrase": "Mantiene la duración máxima general de cuarenta horas semanales de promedio anual.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "coalicion-2023",
+            "locator": "Página 11, reducción de jornada",
+            "paraphrase": "El acuerdo prevé culminar en 2025 la reducción a 37,5 horas.",
+            "relation": "promesa_original"
+          }
+        ],
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "sin_verificar",
+            "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+            "evidence": []
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "not_met",
+        "expected": "Reducir la jornada máxima general a 37,5 horas semanales, culminando en 2025.",
+        "observed": "El artículo 34.1 del Estatuto consolidado consultado mantiene cuarenta horas semanales de promedio anual. La reducción general a 37,5 horas comprometida para 2025 no se alcanzó en ese plazo. Las jornadas inferiores de convenios o de la AGE no cumplen por sí solas esta meta general.",
+        "practicalEffect": "La promesa no ha cambiado el máximo legal general a 37,5 horas. Cada convenio o contrato puede fijar una jornada inferior.",
+        "missingEvidence": "Para cambiar esta conclusión debe constar la modificación legal general y su fecha de efectos. No se deduce intención de engañar ni se atribuye responsabilidad exclusiva por el resultado.",
+        "temporalScope": "Plazo del acuerdo: culminar en 2025. Texto consolidado contrastado al 10 de octubre de 2026.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "estatuto-2025-12-31",
+          "estatuto-2026-10-10",
+          "coalicion-2023"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -2013,18 +3240,53 @@
         "logicalDataRecord": 186
       },
       "review": {
-        "status": "contraste_parcial",
-        "criterion": "Documentar regulación estatal de alquileres de corta duración y separar su ejecución territorial.",
-        "conclusion": "El RD 1312/2024 crea registro y ventanilla digital para alquileres de corta duración. No demuestra por sí solo una revisión completa de los usos turísticos en zonas tensionadas ni la retirada efectiva de anuncios que comunica el Gobierno.",
+        "status": "actuacion_documentada",
+        "criterion": "Revisar regulación de alojamientos temporales y turísticos en zonas tensionadas. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RD 1312/2024 crea registro y obligaciones para plataformas. El RDL 29/2026 modifica también el régimen de arrendamientos temporales. Hay cambios normativos verificables; notificar anuncios no demuestra su retirada efectiva ni cumplimiento territorial completo.",
         "evidence": [
           {
             "sourceId": "BOE-A-2024-26931",
             "locator": "Artículos 1 y 6",
-            "paraphrase": "La norma crea la ventanilla y el procedimiento de registro, y establece obligaciones para las plataformas. No sustituye todas las competencias autonómicas y locales en turismo y urbanismo.",
+            "paraphrase": "Crea procedimiento de registro y obligaciones para plataformas.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "BOE-A-2026-20823",
+            "locator": "Artículo 3, modificación de artículos 2 y 7 de la LAU",
+            "paraphrase": "Regula arrendamiento temporal y acreditación de la causa; no sustituye todas las competencias turísticas.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "contraste_parcial",
+            "conclusion": "El RD 1312/2024 crea registro y ventanilla digital para alquileres de corta duración. No demuestra por sí solo una revisión completa de los usos turísticos en zonas tensionadas ni la retirada efectiva de anuncios que comunica el Gobierno.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2024-26931",
+                "locator": "Artículos 1 y 6",
+                "paraphrase": "La norma crea la ventanilla y el procedimiento de registro, y establece obligaciones para las plataformas. No sustituye todas las competencias autonómicas y locales en turismo y urbanismo.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Revisar regulación de alojamientos temporales y turísticos en zonas tensionadas.",
+        "observed": "El RD 1312/2024 crea registro y obligaciones para plataformas. El RDL 29/2026 modifica también el régimen de arrendamientos temporales. Hay cambios normativos verificables; notificar anuncios no demuestra su retirada efectiva ni cumplimiento territorial completo.",
+        "practicalEffect": "Temporada, vivienda habitual y alojamiento turístico tienen reglas y competencias distintas. La causa temporal y los requisitos del registro requieren comprobar el caso concreto.",
+        "missingEvidence": "Aplicación territorial, anuncios retirados y que no reaparecen, inspecciones y efectos en el alquiler habitual; seguimiento de la norma reciente.",
+        "temporalScope": "Registro de 2024 y cambios publicados el 7 de octubre de 2026; entrada y régimen transitorio específicos.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2024-26931",
+          "BOE-A-2026-20823"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -2083,17 +3345,52 @@
       },
       "review": {
         "status": "contraste_parcial",
-        "criterion": "Contrastar por separado la banca y las empresas energéticas, sin convertir una de las dos partes en cumplimiento total.",
-        "conclusion": "La Ley 7/2024 documenta el impuesto sobre intereses y comisiones de determinadas entidades financieras. En este piloto no se acredita la continuidad del componente energético ni la recaudación o incidencia distributiva de ambos.",
+        "criterion": "Readaptar y mantener las figuras sobre banca y empresas energéticas. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "La Ley 7/2024 crea el impuesto sobre intereses y comisiones de determinadas entidades financieras. El Congreso derogó en enero de 2025 el RDL 10/2024 del gravamen energético para 2025. La continuidad de ambas figuras no puede darse por acreditada con el impuesto bancario.",
         "evidence": [
           {
             "sourceId": "BOE-A-2024-26694",
             "locator": "Disposición final novena",
-            "paraphrase": "Crea el impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras.",
+            "paraphrase": "Crea el impuesto sobre margen de intereses y comisiones de determinadas entidades financieras.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "BOE-A-2025-1137",
+            "locator": "Acuerdo del Congreso de 22 de enero de 2025",
+            "paraphrase": "Publica la derogación del RDL 10/2024 de gravamen energético para 2025.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "contraste_parcial",
+            "conclusion": "La Ley 7/2024 documenta el impuesto sobre intereses y comisiones de determinadas entidades financieras. En este piloto no se acredita la continuidad del componente energético ni la recaudación o incidencia distributiva de ambos.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2024-26694",
+                "locator": "Disposición final novena",
+                "paraphrase": "Crea el impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "partial",
+        "expected": "Readaptar y mantener las figuras sobre banca y empresas energéticas.",
+        "observed": "La Ley 7/2024 crea el impuesto sobre intereses y comisiones de determinadas entidades financieras. El Congreso derogó en enero de 2025 el RDL 10/2024 del gravamen energético para 2025. La continuidad de ambas figuras no puede darse por acreditada con el impuesto bancario.",
+        "practicalEffect": "Banca y energéticas tienen trayectorias normativas distintas; no se debe afirmar que ambas medidas siguieron el mismo camino.",
+        "missingEvidence": "Normas posteriores que sustituyan la figura energética, recaudación efectiva e incidencia distributiva de ambas figuras.",
+        "temporalScope": "Impuesto bancario de diciembre de 2024 y derogación energética publicada el 23 de enero de 2025.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2024-26694",
+          "BOE-A-2025-1137"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     },
     {
@@ -2154,17 +3451,45 @@
       },
       "review": {
         "status": "actuacion_documentada",
-        "criterion": "Contrastar una revalorización normativa vinculada al IPC y separar esa norma de los pagos reales y de todos los ejercicios del mandato.",
-        "conclusion": "El RDL 3/2026 documenta la revalorización general del 2,7 % para 2026 y explicita su referencia al IPC. No audita los pagos ni toda la trayectoria del mandato. La fuente normativa correcta es BOE-A-2026-2548; el inventario conserva también un enlace terminado en 2547, que no se usa como prueba de esta norma.",
+        "criterion": "Seguir revalorizando las pensiones conforme al IPC. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+        "conclusion": "El RDL 3/2026 fija para 2026 una revalorización general del 2,7 % vinculada al IPC. Acredita la regla y el incremento normativo de ese ejercicio; no audita todos los pagos ni cada año del mandato.",
         "evidence": [
           {
             "sourceId": "BOE-A-2026-2548",
             "locator": "Artículo 2.1",
-            "paraphrase": "Revaloriza con carácter general un 2,7 % las pensiones contributivas y de Clases Pasivas, con la referencia al IPC definida en el precepto.",
+            "paraphrase": "Revalorización general del 2,7 % para 2026 vinculada al IPC según el precepto.",
             "relation": "actuacion_normativa"
           }
         ],
-        "asOf": "2026-10-07"
+        "asOf": "2026-10-10",
+        "history": [
+          {
+            "asOf": "2026-10-07",
+            "status": "actuacion_documentada",
+            "conclusion": "El RDL 3/2026 documenta la revalorización general del 2,7 % para 2026 y explicita su referencia al IPC. No audita los pagos ni toda la trayectoria del mandato. La fuente normativa correcta es BOE-A-2026-2548; el inventario conserva también un enlace terminado en 2547, que no se usa como prueba de esta norma.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2026-2548",
+                "locator": "Artículo 2.1",
+                "paraphrase": "Revaloriza con carácter general un 2,7 % las pensiones contributivas y de Clases Pasivas, con la referencia al IPC definida en el precepto.",
+                "relation": "actuacion_normativa"
+              }
+            ]
+          }
+        ]
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Seguir revalorizando las pensiones conforme al IPC.",
+        "observed": "El RDL 3/2026 fija para 2026 una revalorización general del 2,7 % vinculada al IPC. Acredita la regla y el incremento normativo de ese ejercicio; no audita todos los pagos ni cada año del mandato.",
+        "practicalEffect": "La subida general y las mejoras de pensiones mínimas o no contributivas tienen reglas distintas; esta ficha no calcula la nómina individual.",
+        "missingEvidence": "Aplicación efectiva a las nóminas y revisión homogénea de todos los ejercicios del mandato, con bases y excepciones.",
+        "temporalScope": "Ejercicio 2026; no conclusión automática sobre 2024 y 2025.",
+        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "evidenceSourceIds": [
+          "BOE-A-2026-2548"
+        ],
+        "reviewedAt": "2026-10-10"
       }
     }
   ]

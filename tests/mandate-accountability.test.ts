@@ -4,9 +4,9 @@ import { getMandateAccountability } from "@/lib/mandate/accountability";
 import { answerMandate, boundMandateAnswer, mandateAnswerStories } from "@/lib/mandate/answer";
 
 describe("honestidad y cobertura documental separadas", () => {
-  it("no convierte los ocho contrastes existentes en cumplimiento ni honestidad", () => {
+  it("no convierte las treinta revisiones en cumplimiento ni honestidad", () => {
     const summary = getMandateAccountability(getMandateSnapshot().commitments);
-    expect(summary).toEqual({ total: 30, documented: 3, partial: 5, pending: 22, contrasted: 8, coveragePercent: 26.7, fulfilmentPercent: null });
+    expect(summary).toEqual({ total: 30, documented: 18, partial: 12, pending: 0, contrasted: 30, coveragePercent: 100, fulfilmentPercent: null });
   });
   it("ni una selección totalmente contrastada permite deducir cumplimiento", () => {
     const reviewed = getMandateSnapshot().commitments.filter((item) => item.review.status !== "pending");
@@ -21,7 +21,7 @@ describe("honestidad y cobertura documental separadas", () => {
       const answer = answerMandate(snapshot, question);
       expect(answer.mode).toBe("documental");
       expect(answer.paragraphs[0].text).toContain("sigue sin calcular");
-      expect(answer.paragraphs[0].text).toContain("26,7 % (8 de 30)");
+      expect(answer.paragraphs[0].text).toContain("100 % (30 de 30)");
       expect(answer.paragraphs[0].text).toContain("no es un porcentaje de honestidad");
       expect(answer.sources.length).toBeGreaterThan(0);
       const bounded = boundMandateAnswer(answer);
@@ -29,8 +29,8 @@ describe("honestidad y cobertura documental separadas", () => {
       for (const paragraph of bounded.paragraphs) expect(paragraph.citations.every((id) => bounded.sources.some((source) => source.id === id))).toBe(true);
       for (const story of mandateAnswerStories(bounded)) {
         expect(story.editorialContext).toContain("Resumen interno calculado por RegTrack, no atribuirlo a esta fuente");
-        expect(story.editorialContext).toContain("26,7 % (8 de 30)");
-        expect(story.excerpt).not.toContain("26,7 % (8 de 30)");
+        expect(story.editorialContext).toContain("100 % (30 de 30)");
+        expect(story.excerpt).not.toContain("100 % (30 de 30)");
       }
     }
   });

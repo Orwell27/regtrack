@@ -1,5 +1,7 @@
 # Piloto público de balance de mandato
 
+> **Estado actual:** véase [revisión nacional del 10 de octubre de 2026](mandate-review-2026-10-10.md). Las 30 fichas están revisadas, con 18 medidas acreditadas, seis resultados parciales, un objetivo no alcanzado en plazo y cinco resultados no concluyentes. Lo que sigue documenta el estado inicial del 7 de octubre y sus límites históricos.
+
 Ruta: `/observatorio/mandato`. Entrada desde la cabecera y el bloque electoral de `/observatorio`.
 
 ## Qué contiene
