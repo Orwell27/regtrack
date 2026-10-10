@@ -42,15 +42,22 @@ describe("inventario municipal reproducible y separado de la revisión", () => {
     expect(balance.reviews.map(review => review.commitmentId)).toEqual(["m-28079-103", "m-28079-163", "m-28079-181", "m-28079-246"]);
     expect(balance.inventoryTotal - balance.reviews.length).toBe(296);
     expect(getCoverage().find(item => item.id === balance.jurisdictionId)).toMatchObject({ imported: 300, reviewed: 4, independentlyReviewed: 0 });
-    expect(new Set(balance.sources.map(source => source.family))).toEqual(new Set(["ayto-madrid"]));
+    expect(new Set(balance.sources.map(source => source.family))).toEqual(new Set(["ayto-madrid", "elpais"]));
     expect(getTerritorialBalance("r-13")).toBeNull();
     expect(getTerritorialBalance("es")).toBeNull();
     expect(getTerritorialBalance("../../m-28079")).toBeNull();
   });
   it("la proyección pública omite originales y rutas locales", () => {
     const json = JSON.stringify(getTerritorialBalance("m-28079"));
-    expect(json).not.toMatch(/rawText|snapshotPath|bytes_originales|expectedText/);
+    expect(json).not.toMatch(/rawText|snapshotPath|expectedText/);
     expect(Buffer.byteLength(json)).toBeLessThan(250_000);
+  });
+  it("distingue un extracto periodístico de los originales y no lo cuenta como revisión independiente", () => {
+    const balance = getTerritorialBalance("m-28079")!;
+    expect(balance.sources.find(source => source.id === "bicimad-contraste-2025")).toMatchObject({ role: "reporting", family: "elpais", captureType: "extracto_editorial" });
+    expect(balance.sources.filter(source => source.captureType === "bytes_originales")).toHaveLength(8);
+    expect(balance.reviews[0].components[2].status).toBe("unresolved");
+    expect(getCoverage().find(item => item.id === "m-28079")?.independentlyReviewed).toBe(0);
   });
   it("no declara completadas ni independientes promesas con componentes abiertos", () => {
     const balance = getTerritorialBalance("m-28079")!;

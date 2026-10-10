@@ -23,7 +23,9 @@ export function getCoverage() {
       mandate: { label: balance.mandateLabel, sourceId: balance.sourceId },
       sources: balance.sources.map(source => ({ ...source,
         consultedAt: source.retrievedAt.slice(0, 10),
-        scopeNote: source.role === "programme" ? balance.scope : "Documento conservado y consultado. Comparte origen municipal; no cuenta como corroboración independiente.",
+        scopeNote: source.role === "programme" ? balance.scope : source.role === "reporting"
+          ? "Reportaje ajeno a la administración: observación localizada, no auditoría global. Se conserva un extracto editorial, no el artículo original."
+          : "Documento conservado y consultado. Comparte origen municipal; no cuenta como corroboración independiente.",
       })),
       inventoryTotal: balance.inventoryTotal, imported: balance.records.length, reviewed: balance.reviews.length, independentlyReviewed: 0,
       blockers: [`${balance.inventoryTotal - balance.reviews.length} compromisos pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],

@@ -83,7 +83,7 @@ Fichas examinadas:
 - 181, comercios centenarios: artículo 15 bis de la consolidación municipal del IBI de 2026; bonificación del 95 % con requisitos y usos catastrales delimitados. No se acreditan beneficiarios por la sola existencia de la norma.
 - 246, IBI: ficha tributaria y artículo 8.2 de la consolidación coinciden en 0,414 % para 2026, por encima del objetivo 0,4 %. No se declara incumplido al cierre un mandato todavía abierto ni se infiere ahorro en 2,2 millones de recibos. La consolidación es informativa, no sustituye el cotejo de sus modificaciones con los boletines originales.
 
-Ocho fuentes conservadas, todas de la familia institucional municipal. Ni el BOAM, ni la agencia tributaria, ni EMT cuentan aquí como corroboradores independientes del Ayuntamiento. Once componentes: las lagunas quedan visibles. Las cuatro fichas son primeras revisiones parciales, sin historial anterior inventado. No se calcula una tasa global de cumplimiento.
+Ocho originales conservados de la familia institucional municipal y un extracto editorial de un reportaje de EL PAÍS con observación directa. Su huella identifica la nota, no el artículo original. La evidencia periodística es localizada y no permite extrapolar al servicio completo o a otro periodo. Ni el BOAM, ni la agencia tributaria, ni EMT cuentan aquí como corroboradores independientes del Ayuntamiento. Once componentes: las lagunas quedan visibles. La fuente periodística tampoco equivale a una revisión humana independiente de RegTrack. Las cuatro fichas son primeras revisiones parciales, sin historial anterior inventado. No se calcula una tasa global de cumplimiento.
 
 Reproducir la importación conservada:
 

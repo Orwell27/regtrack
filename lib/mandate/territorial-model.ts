@@ -6,8 +6,9 @@ export const TERRITORIAL_STATUS_LABELS = {
 } as const;
 export type TerritorialSource = {
   id: string; jurisdictionId: string; title: string; publisher: string; family: string;
-  url: string; role: "programme" | "register" | "government-report" | "action" | "control";
+  url: string; role: "programme" | "register" | "government-report" | "action" | "control" | "reporting";
   publicationDate: string | null; retrievedAt: string; sha256: string;
+  captureType: "bytes_originales" | "extracto_editorial";
 };
 export type TerritorialReview = {
   commitmentId: string; reviewedAt: string; title: string; conclusion: string; periodNote: string;
@@ -32,7 +33,8 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
   for (const source of sources.values()) {
     if (source.jurisdictionId !== balance.jurisdictionId || !/^https:\/\//.test(source.url)
       || !/^[a-f0-9]{64}$/.test(source.sha256) || !source.title || !source.publisher || !source.family
-      || !["programme", "register", "government-report", "action", "control"].includes(source.role)
+      || !["programme", "register", "government-report", "action", "control", "reporting"].includes(source.role)
+      || !["bytes_originales", "extracto_editorial"].includes(source.captureType)
       || !Number.isFinite(Date.parse(source.retrievedAt))
       || (source.publicationDate !== null && !/^\d{4}-\d{2}-\d{2}$/.test(source.publicationDate))) throw Error("Fuente territorial inválida");
   }

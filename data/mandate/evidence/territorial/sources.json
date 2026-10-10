@@ -130,5 +130,21 @@
     "bytes": 127864,
     "retrievedAt": "2026-10-10T08:11:26.523Z",
     "captureType": "bytes_originales"
+  },
+  {
+    "id": "bicimad-contraste-2025",
+    "jurisdictionId": "m-28079",
+    "role": "reporting",
+    "family": "elpais",
+    "title": "BiciMAD · observación periodística de una incidencia",
+    "publisher": "EL PAÍS",
+    "publicationDate": "2025-09-11",
+    "format": "editorial-excerpt",
+    "url": "https://elpais.com/espana/madrid/2025-09-11/el-caos-de-ir-a-la-universidad-con-la-linea-6-de-metro-cerrada-mas-rapido-a-pie-que-en-bici-colas-para-el-bus-y-10-euros-al-dia-en-taxi.html",
+    "snapshotPath": "data/mandate/evidence/territorial/bicimad-contraste-2025.md",
+    "sha256": "02b377f4349f2be111d080fce780a4c50fb8fc05eb16c2ad35cf0248f3d03c5e",
+    "bytes": 656,
+    "retrievedAt": "2026-10-10T08:23:01.297Z",
+    "captureType": "extracto_editorial"
   }
 ]

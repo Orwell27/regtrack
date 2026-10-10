@@ -6,6 +6,7 @@ test("el balance municipal separa el inventario, las cuatro revisiones y sus lí
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Ayuntamiento de Madrid · mandato 2023–2027");
   await expect(page.locator(".mc-intro")).toContainText("Ninguna de estas fichas ha pasado una revisión humana independiente");
   await expect(page.locator(".mt-review")).toHaveCount(4);
+  await expect(page.getByText("Extracto editorial conservado; la huella no corresponde al artículo original.", { exact: true })).toBeVisible();
   await expect(page.locator("#compromiso-m-28079-246")).toContainText("0,414 %");
   await expect(page.locator("#compromiso-m-28079-246")).toContainText("no lo declara incumplido al cierre");
   await expect(page.getByRole("status")).toHaveText("300 resultados · página 1 de 20");

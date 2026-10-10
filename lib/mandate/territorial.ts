@@ -14,8 +14,8 @@ export function getTerritorialBalance(id: string): TerritorialBalance | null {
     inventoryTotal: inventory.inventoryTotal, scope: inventory.scope, textNote: inventory.textNote,
     records: inventory.records.map(({ id, officialId, text, topic, page, endPage, sourceId }) => ({ id, officialId, text, topic, page, endPage, sourceId })),
     reviews: reviews as TerritorialReview[],
-    sources: sources.filter(source => source.jurisdictionId === id).map(({ id, jurisdictionId, title, publisher, family, url, role, publicationDate, retrievedAt, sha256 }) =>
-      ({ id, jurisdictionId, title, publisher, family, url, role, publicationDate, retrievedAt, sha256 })) as TerritorialSource[],
+    sources: sources.filter(source => source.jurisdictionId === id).map(({ id, jurisdictionId, title, publisher, family, url, role, publicationDate, retrievedAt, sha256, captureType }) =>
+      ({ id, jurisdictionId, title, publisher, family, url, role, publicationDate, retrievedAt, sha256, captureType })) as TerritorialSource[],
   };
   validateTerritorialBalance(balance);
   return balance;
