@@ -1,6 +1,6 @@
 # Balance nacional: revisión de los 30 compromisos
 
-Corte editorial: **10 de octubre de 2026**. Esta es la revisión vigente; los documentos del 7 de octubre describen el estado inicial. El inventario del Gobierno conserva su propio corte: **30 de junio de 2026**. Revisar hoy no convierte una observación histórica en un dato de hoy.
+Corte editorial: **10 de octubre de 2026**. Este documento conserva la primera revisión (v1). La [segunda pasada y sus correcciones](mandate-calibration-2026-10-10.md) documentan la versión v2; los documentos del 7 de octubre describen el estado inicial. El inventario del Gobierno conserva su propio corte: **30 de junio de 2026**. Revisar hoy no convierte una observación histórica en un dato de hoy.
 
 ## Entrega
 

@@ -1,0 +1,1309 @@
+{
+  "schemaVersion": 1,
+  "revision": "2026-10-10-v2",
+  "reviewedAt": "2026-10-10",
+  "reviewer": "Codex",
+  "reviewMode": "same-author-second-pass",
+  "independentReview": "pending",
+  "blind": false,
+  "accuracyRate": null,
+  "initialSample": [
+    "c-170",
+    "c-33",
+    "c-53",
+    "c-58",
+    "c-87",
+    "c-112",
+    "c-10",
+    "c-78",
+    "c-139"
+  ],
+  "selection": {
+    "totalAvailable": 203,
+    "selectedCount": 30,
+    "method": "Selección heredada no representativa, basada en temas. No se reconstruyen razones individuales de exclusión que no se registraron.",
+    "limitation": "Los componentes no aumentan el denominador de treinta promesas. Las fichas pueden compartir medidas: no se suman como logros independientes."
+  },
+  "rules": [
+    "Fijar componente, población, periodo y criterio antes de volver a clasificar. Esta segunda pasada no es ciega: el autor conocía las conclusiones anteriores.",
+    "Una norma prueba su contenido publicado; una nota institucional prueba lo comunicado por su emisor. Ninguna acredita automáticamente ejecución, resultado o causalidad.",
+    "La evidencia contraria se conserva. Ausencia de evidencia no significa objetivo incumplido; un juicio fuera de plazo exige meta, vencimiento y evidencia aplicable al vencimiento.",
+    "Las conclusiones se limitan a las fuentes conservadas. Referencias de contexto o ausencia de registros no se cuentan como prueba positiva.",
+    "La coincidencia entre documentos de un mismo origen o entre revisiones del mismo agente no es corroboración independiente.",
+    "Antes de calcular exactitud se necesita una muestra de referencia con revisión humana independiente y resolución documentada de desacuerdos. No hay porcentaje de fiabilidad disponible.",
+    "Las nuevas fuentes o correcciones deben conservar versión previa, motivo y fecha. Los disparadores de revisión son pendientes editoriales, no una automatización activa."
+  ],
+  "audits": [
+    {
+      "commitmentId": "c-1",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Recursos",
+          "criterion": "Comparar financiación aprobada y ejecutada con una base anterior.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Se documenta refuerzo normativo, no ejecución.",
+          "sourceIds": [
+            "BOE-A-2026-13643"
+          ],
+          "id": "c-1-part-1"
+        },
+        {
+          "label": "Calidad y autonomía",
+          "criterion": "Comparar atención efectiva, tiempos y autonomía con definición y población constantes.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Faltan medidas de resultados asistenciales.",
+          "sourceIds": [],
+          "id": "c-1-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Faltan medidas de resultados asistenciales.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Ejecución de los créditos, beneficiarios atendidos, tiempos de espera y mediciones comparables de calidad y autonomía.",
+      "overlaps": [
+        "c-65"
+      ],
+      "correction": {
+        "kind": "precision",
+        "reason": "La financiación aprobada no prueba que los recursos ya estén a disposición efectiva de cada administración.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Aumentar los recursos y mejorar la autonomía, calidad y personalización de la atención a la dependencia.",
+          "observed": "El RDL 17/2026 aumenta las cuantías del nivel mínimo estatal y concede suplementos de crédito. Acredita financiación aprobada, no su llegada a cada persona ni una mejora medida de la atención.",
+          "practicalEffect": "Las administraciones cuentan con financiación estatal reforzada desde julio de 2026; la prestación individual depende del reconocimiento y de la atención efectivamente concedida.",
+          "missingEvidence": "Ejecución de los créditos, beneficiarios atendidos, tiempos de espera y mediciones comparables de calidad y autonomía.",
+          "temporalScope": "Financiación aplicable desde julio de 2026; resultados asistenciales no evaluados.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-13643"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "measures",
+          "expected": "Aumentar los recursos y mejorar la autonomía, calidad y personalización de la atención a la dependencia.",
+          "observed": "El RDL 17/2026 aumenta las cuantías del nivel mínimo estatal y concede suplementos de crédito. Acredita financiación aprobada, no su llegada a cada persona ni una mejora medida de la atención.",
+          "practicalEffect": "La norma refuerza la financiación estatal prevista desde julio de 2026. Su libramiento, ejecución y llegada a cada persona requieren registros adicionales.",
+          "missingEvidence": "Ejecución de los créditos, beneficiarios atendidos, tiempos de espera y mediciones comparables de calidad y autonomía.",
+          "temporalScope": "Financiación aplicable desde julio de 2026; resultados asistenciales no evaluados.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-13643"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-10",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Material escolar",
+          "criterion": "Comprobar ampliación respecto a un ejercicio base y ayudas pagadas.",
+          "stage": "delivery",
+          "state": "reported",
+          "finding": "El ministerio comunica una dotación; sin base y pagos no demuestra ampliación.",
+          "sourceIds": [
+            "libros-2026"
+          ],
+          "id": "c-10-part-1"
+        },
+        {
+          "label": "Comedor y extraescolares",
+          "criterion": "Verificar por separado cobertura y pagos de ambos apoyos.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La fuente sobre material no cubre estos otros dos apoyos.",
+          "sourceIds": [],
+          "id": "c-10-part-2"
+        }
+      ],
+      "challenge": "La dotación anunciada podría existir sin ampliación ni pagos: falta una base comparable.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Comparación con el inicio del mandato y pagos/beneficiarios de comedor, extraescolares y material en cada territorio.",
+      "overlaps": [
+        "c-53",
+        "c-78"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-17",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Instrumentos de compra y alquiler",
+          "criterion": "Identificar normas o convocatorias que habiliten cada vía para jóvenes.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Convenio de avales y plan de vivienda acreditados.",
+          "sourceIds": [
+            "BOE-A-2024-9128",
+            "BOE-A-2026-8872"
+          ],
+          "id": "c-17-part-1"
+        },
+        {
+          "label": "Acceso efectivo",
+          "criterion": "Contar operaciones y ayudas finalizadas por edad, renta y territorio sin duplicarlas.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se ha verificado el total de jóvenes beneficiados.",
+          "sourceIds": [],
+          "id": "c-17-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se ha verificado el total de jóvenes beneficiados.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
+      "overlaps": [
+        "c-55",
+        "c-76",
+        "c-112"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-29",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Cambio tributario",
+          "criterion": "Identificar precepto, fecha y población de la reforma del IRPF.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Modificación de la escala del ahorro; no de todo el sistema.",
+          "sourceIds": [
+            "BOE-A-2024-26694"
+          ],
+          "id": "c-29-part-1"
+        },
+        {
+          "label": "Progresividad y bases",
+          "criterion": "Evaluación distributiva y evolución comparable de bases y economía sumergida.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Un tipo mayor o un plan de control no prueba la magnitud redistributiva.",
+          "sourceIds": [
+            "BOE-A-2026-5843"
+          ],
+          "id": "c-29-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Un tipo mayor o un plan de control no prueba la magnitud redistributiva.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Evaluación distributiva por niveles de renta, ensanchamiento de bases y estimación comparable de economía sumergida.",
+      "overlaps": [
+        "c-136",
+        "c-187"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-32",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Saldo y deuda relativos",
+          "criterion": "Comparar series homogéneas, periodos, perímetro público y revisiones.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "Mejora de las observaciones conservadas; no evaluación estructural completa.",
+          "sourceIds": [
+            "indicator-public-balance",
+            "indicator-debt-gdp"
+          ],
+          "id": "c-32-part-1"
+        },
+        {
+          "label": "Senda y atribución",
+          "criterion": "Fijar senda exigible y separar ciclo, decisiones y revisiones estadísticas.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La discrepancia de déficit con el inventario sigue sin reconciliarse.",
+          "sourceIds": [
+            "cumpliendo-2026-07"
+          ],
+          "id": "c-32-part-2"
+        }
+      ],
+      "challenge": "El inventario comunica otro saldo; se conserva la discrepancia y no se elige silenciosamente la cifra favorable.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Cierre de 2026, ajuste estructural y comparación con una senda/objetivo explícitos. El −2,2 % comunicado por el Gobierno no se mezcla con el −2,4 % de esta captura Eurostat.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-33",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Brecha de paro",
+          "criterion": "Comparar mujeres y hombres en la misma EPA y unidad.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "2,18 puntos en 2026T2, observación de paro y no de toda la brecha laboral.",
+          "sourceIds": [
+            "epa-2026-t2"
+          ],
+          "id": "c-33-part-1"
+        },
+        {
+          "label": "Avance en empleo",
+          "criterion": "Usar serie de empleo por sexo desde la base, con edad y definición constantes.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Sin base comparable no se clasifica mejora o empeoramiento del objetivo.",
+          "sourceIds": [],
+          "id": "c-33-part-2"
+        }
+      ],
+      "challenge": "Una brecha de paro positiva no demuestra empeoramiento de la brecha de empleo: falta serie de base.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-53",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Precios públicos",
+          "criterion": "Comparar tarifas universitarias y población cubierta por territorio y curso.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "El decreto de becas no demuestra reducción de tasas.",
+          "sourceIds": [
+            "BOE-A-2026-5713"
+          ],
+          "id": "c-53-part-1"
+        },
+        {
+          "label": "Pago al inicio de curso",
+          "criterion": "Distribución de fechas efectivas de ingreso frente al comienzo de cada curso.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "El acuerdo expresa avance gradual; faltan cohortes de pagos.",
+          "sourceIds": [
+            "coalicion-2023-verificada"
+          ],
+          "id": "c-53-part-2"
+        }
+      ],
+      "challenge": "El acuerdo usa una formulación gradual; no convertir inicio de curso en un día universal vencido.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Fechas de pagos por cohorte y universidad, proporción cobrada al inicio de curso y evolución de precios públicos por comunidad.",
+      "overlaps": [
+        "c-10",
+        "c-78"
+      ],
+      "correction": {
+        "kind": "scope",
+        "reason": "Se incorpora la formulación gradual del acuerdo original y se mantiene intacta la redacción del inventario.",
+        "before": {
+          "verdict": "inconclusive",
+          "expected": "Reducir precios públicos universitarios y abonar las becas al inicio del curso.",
+          "observed": "El RD 179/2026 regula umbrales y cuantías de becas para 2026–2027. No contiene un registro de las fechas reales de abono ni demuestra por sí solo una reducción general de tasas universitarias.",
+          "practicalEffect": "Hay reglas para solicitar la beca, pero no se puede prometer con esta evidencia que el dinero llegue al comienzo del curso.",
+          "missingEvidence": "Fechas de pagos por cohorte y universidad, proporción cobrada al inicio de curso y evolución de precios públicos por comunidad.",
+          "temporalScope": "Curso 2026–2027; el compromiso fija el inicio del curso, no un día universal de ingreso.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5713"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "inconclusive",
+          "expected": "Continuar reduciendo tasas y acelerar las becas. El acuerdo original propone tender a su ingreso al inicio del curso; el inventario lo resume como finalidad del pago.",
+          "observed": "El RD 179/2026 regula umbrales y cuantías de becas para 2026–2027. No contiene un registro de las fechas reales de abono ni demuestra por sí solo una reducción general de tasas universitarias.",
+          "practicalEffect": "Hay reglas para solicitar la beca, pero no se puede prometer con esta evidencia que el dinero llegue al comienzo del curso.",
+          "missingEvidence": "Fechas de pagos por cohorte y universidad, proporción cobrada al inicio de curso y evolución de precios públicos por comunidad.",
+          "temporalScope": "Curso 2026–2027 en la norma examinada; el acuerdo no fija un día universal ni permite declarar vencida toda la promesa.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5713",
+            "coalicion-2023-verificada"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-55",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Crear mecanismos",
+          "criterion": "Verificar instrumentos urbanos y rurales y su ámbito normativo.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Plan y decreto acreditan instrumentos, no adjudicaciones.",
+          "sourceIds": [
+            "BOE-A-2026-8872",
+            "BOE-A-2026-20823"
+          ],
+          "id": "c-55-part-1"
+        },
+        {
+          "label": "Aplicarlos y mejorar acceso",
+          "criterion": "Verificar adjudicaciones, cobertura y esfuerzo de renta urbano/rural.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay medición de acceso efectivo atribuible.",
+          "sourceIds": [],
+          "id": "c-55-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No hay medición de acceso efectivo atribuible.",
+      "refreshTrigger": "Convalidación o modificación del decreto de octubre, y registros de aplicación.",
+      "overlaps": [
+        "c-17",
+        "c-74",
+        "c-76",
+        "c-112",
+        "c-160",
+        "c-186"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-58",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Cerrar estabilización",
+          "criterion": "Identificar procesos, plazas y cierre real; distinguir plazo legal de 2024.",
+          "stage": "delivery",
+          "state": "reported",
+          "finding": "Función Pública comunica procesos, no acredita aquí el cierre de todo el universo.",
+          "sourceIds": [
+            "BOE-A-2021-21651",
+            "estabilizacion-junio-2026"
+          ],
+          "id": "c-58-part-1"
+        },
+        {
+          "label": "Temporalidad máxima del 8 %",
+          "criterion": "Numerador y denominador homogéneos de todas las administraciones al mismo corte.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Las tasas territoriales y los procesos no permiten calcular la tasa conjunta.",
+          "sourceIds": [],
+          "id": "c-58-part-2"
+        }
+      ],
+      "challenge": "Ni procesos ni porcentajes autonómicos se pueden sumar como tasa de todas las administraciones.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Denominador y numerador homogéneos de empleados temporales de todas las administraciones, y cierre de procesos a la fecha de corte.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-65",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Plan y financiación",
+          "criterion": "Distinguir acuerdo publicado y declaración del organismo sobre él.",
+          "stage": "rule",
+          "state": "reported",
+          "finding": "Dos notas de Sanidad, un mismo origen institucional.",
+          "sourceIds": [
+            "salud-mental-plan",
+            "salud-mental-financiacion"
+          ],
+          "id": "c-65-part-1"
+        },
+        {
+          "label": "Universalidad y calidad",
+          "criterion": "Medir acceso, espera, plantillas y resultados de atención con base comparable.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se ha verificado la atención efectivamente recibida.",
+          "sourceIds": [],
+          "id": "c-65-part-2"
+        }
+      ],
+      "challenge": "Dos notas del mismo ministerio no son dos corroboraciones independientes.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Plantillas incorporadas, fondos ejecutados, tiempos de espera, cobertura y resultados asistenciales comparables.",
+      "overlaps": [
+        "c-1",
+        "c-102"
+      ],
+      "correction": {
+        "kind": "attribution",
+        "reason": "Las dos notas proceden del mismo ministerio; su comunicación no es una comprobación independiente.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Desarrollar atención pública de salud mental universal y de calidad.",
+          "observed": "Sanidad acredita la aprobación del Plan de Acción 2025–2027 y una distribución de 39 millones en 2025 para salud mental. Una decisión de planificación y reparto no acredita atención recibida, accesibilidad universal ni calidad.",
+          "practicalEffect": "El plan contempla refuerzo de recursos y atención comunitaria; la disponibilidad real debe comprobarse en el servicio de salud correspondiente.",
+          "missingEvidence": "Plantillas incorporadas, fondos ejecutados, tiempos de espera, cobertura y resultados asistenciales comparables.",
+          "temporalScope": "Plan 2025–2027; reparto documentado de 2025, sin extrapolarlo al gasto ejecutado de 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "salud-mental-plan",
+            "salud-mental-financiacion"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "measures",
+          "expected": "Desarrollar atención pública de salud mental universal y de calidad.",
+          "observed": "Sanidad comunica la aprobación del Plan de Acción 2025–2027 y una distribución de 39 millones en 2025 para salud mental. Las dos notas tienen el mismo origen institucional; no verifican de forma independiente atención recibida, accesibilidad universal ni calidad.",
+          "practicalEffect": "El plan contempla refuerzo de recursos y atención comunitaria; la disponibilidad real debe comprobarse en el servicio de salud correspondiente.",
+          "missingEvidence": "Plantillas incorporadas, fondos ejecutados, tiempos de espera, cobertura y resultados asistenciales comparables.",
+          "temporalScope": "Plan 2025–2027; reparto documentado de 2025, sin extrapolarlo al gasto ejecutado de 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "salud-mental-plan",
+            "salud-mental-financiacion"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-74",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Regulación de alquileres",
+          "criterion": "Separar índice de actualización y límites de contratos en zonas tensionadas.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Hay instrumentos diferentes con ámbitos y transitorios propios.",
+          "sourceIds": [
+            "BOE-A-2024-26685",
+            "BOE-A-2026-20823"
+          ],
+          "id": "c-74-part-1"
+        },
+        {
+          "label": "Protección ante desahucios",
+          "criterion": "Verificar aplicación judicial y alternativa residencial efectivamente ofrecida.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La reforma procesal no equivale a protección efectiva de cada hogar.",
+          "sourceIds": [
+            "BOE-A-2026-20823"
+          ],
+          "id": "c-74-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: La reforma procesal no equivale a protección efectiva de cada hogar.",
+      "refreshTrigger": "Convalidación o modificación del decreto de octubre, y registros de aplicación.",
+      "overlaps": [
+        "c-55",
+        "c-76",
+        "c-186"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-76",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Marco jurídico y fiscal",
+          "criterion": "Identificar instrumentos y población afectada.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Marco aprobado; no producción de oferta neta.",
+          "sourceIds": [
+            "BOE-A-2026-8872",
+            "BOE-A-2026-20823"
+          ],
+          "id": "c-76-part-1"
+        },
+        {
+          "label": "Más oferta",
+          "criterion": "Medir entradas y salidas netas de alquiler y separar factores concurrentes.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No existe evaluación causal en las fuentes de esta ficha.",
+          "sourceIds": [],
+          "id": "c-76-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No existe evaluación causal en las fuentes de esta ficha.",
+      "refreshTrigger": "Convalidación o modificación del decreto de octubre, y registros de aplicación.",
+      "overlaps": [
+        "c-17",
+        "c-55",
+        "c-74",
+        "c-112"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-78",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Reglas de becas",
+          "criterion": "Identificar parámetros normativos sin confundirlos con una convocatoria.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "RD de umbrales y cuantías; no resolución de concesión.",
+          "sourceIds": [
+            "BOE-A-2026-5713"
+          ],
+          "id": "c-78-part-1"
+        },
+        {
+          "label": "Acceso educativo",
+          "criterion": "Comparar pagos, elegibles cubiertos y continuidad de estudios.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Faltan resultados de acceso y permanencia.",
+          "sourceIds": [],
+          "id": "c-78-part-2"
+        }
+      ],
+      "challenge": "Se leyó el artículo 2: prevé convocatorias, no constituye por sí solo su apertura.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Solicitudes, concesiones, pagos, cobertura de alumnado elegible y efecto en abandono o continuidad de estudios.",
+      "overlaps": [
+        "c-10",
+        "c-53"
+      ],
+      "correction": {
+        "kind": "error",
+        "reason": "Se llamó convocatoria a un decreto de umbrales y cuantías. El artículo 2 prevé convocatorias; no es por sí mismo la resolución de convocatoria.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Desarrollar becas que favorezcan el acceso a la educación.",
+          "observed": "El RD 179/2026 fija umbrales, cuantías y componentes de becas para 2026–2027. La convocatoria es una actuación verificable; asegurar el acceso requiere además conocer concesiones, pagos y continuidad educativa.",
+          "practicalEffect": "El alumnado dispone de reglas de acceso a las ayudas del curso; la concesión depende de requisitos y tramitación.",
+          "missingEvidence": "Solicitudes, concesiones, pagos, cobertura de alumnado elegible y efecto en abandono o continuidad de estudios.",
+          "temporalScope": "Convocatorias del curso 2026–2027; no se interpreta presupuesto previsto como gasto ejecutado.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5713"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "measures",
+          "expected": "Desarrollar becas que favorezcan el acceso a la educación.",
+          "observed": "El RD 179/2026 fija umbrales, cuantías y componentes de becas para 2026–2027. Es el marco normativo de futuras convocatorias, no la convocatoria ni un registro de concesiones. Asegurar el acceso exige comprobar pagos y continuidad educativa.",
+          "practicalEffect": "Se han fijado parámetros económicos para las ayudas del curso. La apertura, plazos y resolución de la solicitud deben comprobarse en la convocatoria correspondiente.",
+          "missingEvidence": "Solicitudes, concesiones, pagos, cobertura de alumnado elegible y efecto en abandono o continuidad de estudios.",
+          "temporalScope": "Convocatorias del curso 2026–2027; no se interpreta presupuesto previsto como gasto ejecutado.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5713"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-79",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Convergencia con UE",
+          "criterion": "Comparar distancia en una serie mensual homogénea durante el periodo comprometido.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "La distancia baja 0,6 puntos entre agosto de 2025 y 2026; no todo el mandato.",
+          "sourceIds": [
+            "paro-ue-agosto-2026"
+          ],
+          "id": "c-79-part-1"
+        },
+        {
+          "label": "Pleno empleo y calidad",
+          "criterion": "Definir umbral de pleno empleo e indicadores de calidad antes de valorar.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se inventa un umbral ni se equipara ocupación con calidad.",
+          "sourceIds": [],
+          "id": "c-79-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se inventa un umbral ni se equipara ocupación con calidad.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Serie homogénea de la distancia desde el inicio, definición operativa de pleno empleo, calidad laboral y cierre del periodo comprometido.",
+      "overlaps": [
+        "c-33",
+        "c-122",
+        "c-143"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-87",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Evaluación del impuesto",
+          "criterion": "Localizar estudio con método, periodo y efectos territoriales y recaudatorios.",
+          "stage": "outcome",
+          "state": "reported",
+          "finding": "Hacienda aporta información recaudatoria; no completa la evaluación territorial.",
+          "sourceIds": [
+            "hacienda-progreso-2025"
+          ],
+          "id": "c-87-part-1"
+        },
+        {
+          "label": "Reforma autonómica",
+          "criterion": "Identificar reforma y conexión documentada con los resultados de la evaluación.",
+          "stage": "rule",
+          "state": "unknown",
+          "finding": "Prorrogar el impuesto no acredita culminar la reforma.",
+          "sourceIds": [
+            "BOE-A-2023-26452"
+          ],
+          "id": "c-87-part-2"
+        }
+      ],
+      "challenge": "Se buscó información que contradijera una lectura de ausencia total de resultados: el informe de Hacienda la aporta, con alcance recaudatorio limitado.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Evaluación con método, periodo y resultados sobre competencia fiscal territorial, y trazabilidad de sus conclusiones hacia la reforma. La información recaudatoria localizada no basta por sí sola.",
+      "overlaps": [],
+      "correction": {
+        "kind": "new_evidence",
+        "reason": "La revisión anterior solo conservaba la prórroga; se añade información oficial de resultados sin elevarla a evaluación completa.",
+        "before": {
+          "verdict": "inconclusive",
+          "expected": "Evaluar el impuesto de grandes fortunas y avanzar hacia nueva tributación patrimonial en la financiación autonómica.",
+          "observed": "El RDL 8/2023 prolonga el impuesto hasta revisar la tributación patrimonial en el contexto autonómico. La prórroga es verificable; no demuestra por sí sola que exista una evaluación de resultados ni una reforma del modelo ya culminada.",
+          "practicalEffect": "La continuidad de un tributo y la reforma prometida son cosas diferentes; no puede darse por terminada la segunda por haberse prorrogado el primero.",
+          "missingEvidence": "Informe de evaluación, conclusiones y decisión normativa sobre la financiación autonómica, con alcance y fecha.",
+          "temporalScope": "Prórroga aprobada en diciembre de 2023; no se presenta como una evaluación publicada en 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2023-26452"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "inconclusive",
+          "expected": "Evaluar el impuesto de grandes fortunas y avanzar hacia nueva tributación patrimonial en la financiación autonómica.",
+          "observed": "El RDL 8/2023 prolonga el impuesto. El anexo VII del Informe de Progreso Anual 2025 de Hacienda incluye información sobre su efecto recaudatorio; hay información de resultados, aunque ese apartado no acredita una evaluación territorial completa ni la reforma de financiación culminada.",
+          "practicalEffect": "La continuidad de un tributo y la reforma prometida son cosas diferentes; no puede darse por terminada la segunda por haberse prorrogado el primero.",
+          "missingEvidence": "Evaluación con método, periodo y resultados sobre competencia fiscal territorial, y trazabilidad de sus conclusiones hacia la reforma. La información recaudatoria localizada no basta por sí sola.",
+          "temporalScope": "Prórroga de diciembre de 2023 e Informe de Progreso Anual 2025; no se presenta este último como una evaluación independiente de 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2023-26452",
+            "hacienda-progreso-2025"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-102",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Reconocimiento del acceso",
+          "criterion": "Verificar reglas para el colectivo expresamente cubierto.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Norma para personas extranjeras sin residencia legal.",
+          "sourceIds": [
+            "BOE-A-2026-5714"
+          ],
+          "id": "c-102-part-1"
+        },
+        {
+          "label": "Universalidad y gestión",
+          "criterion": "Medir acceso efectivo de la población y resultados de gestión, con barreras territoriales.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Ese procedimiento no evalúa todo el SNS.",
+          "sourceIds": [],
+          "id": "c-102-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Ese procedimiento no evalúa todo el SNS.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Reconocimientos efectivos, denegaciones, barreras de acceso, tiempos de atención y resultados de gestión del SNS.",
+      "overlaps": [
+        "c-65"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-107",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Cuantía anual",
+          "criterion": "Verificar el mínimo fijado para cada ejercicio sin extrapolar uno a todos.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Existe cuantía de 2026; falta revisión de todos los ejercicios.",
+          "sourceIds": [
+            "BOE-A-2026-3815"
+          ],
+          "id": "c-107-part-1"
+        },
+        {
+          "label": "Garantía legal permanente",
+          "criterion": "Comprobar si el artículo 27 incorpora el vínculo automático al 60 %.",
+          "stage": "rule",
+          "state": "contradicted",
+          "finding": "El texto consultado no incorpora esa garantía; sin plazo específico no se declara incumplimiento temporal.",
+          "sourceIds": [
+            "estatuto-2026-10-10",
+            "coalicion-2023-verificada"
+          ],
+          "id": "c-107-part-2"
+        },
+        {
+          "label": "Relación con salario medio",
+          "criterion": "Fijar población, bruto/neto, jornada y periodo para calcular el cociente.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay denominador validado para ese cociente.",
+          "sourceIds": [],
+          "id": "c-107-part-3"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No hay denominador validado para ese cociente.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Definición y cálculo comparable del salario medio, y norma que establezca la garantía permanente comprometida.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-112",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "184.000 viviendas",
+          "criterion": "Inventario sin duplicados de viviendas públicas habilitadas y disponibles para alquiler.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "Suelo, financiación y planes no acreditan viviendas entregadas.",
+          "sourceIds": [
+            "BOE-A-2026-8872"
+          ],
+          "id": "c-112-part-1"
+        },
+        {
+          "label": "20 % del parque",
+          "criterion": "Definir parque público, denominador y horizonte a medio/largo plazo.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "El acuerdo no fija un vencimiento para esta legislatura.",
+          "sourceIds": [
+            "coalicion-2023-verificada"
+          ],
+          "id": "c-112-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el horizonte del 20 % en el acuerdo; el plan futuro no prueba 184.000 viviendas disponibles.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Inventario de viviendas únicas, fase, titularidad, entrega y ocupación para las 184.000; denominador homogéneo del parque para el 20 %. Falta verificar la correspondencia original completa de la cifra 184.000, atribuida aquí al inventario.",
+      "overlaps": [
+        "c-17",
+        "c-55",
+        "c-76"
+      ],
+      "correction": {
+        "kind": "scope",
+        "reason": "Se explicita el horizonte a medio y largo plazo del 20 % y se separan las dos metas.",
+        "before": {
+          "verdict": "inconclusive",
+          "expected": "Habilitar 184.000 viviendas públicas en alquiler asequible y aumentar el parque público hasta el 20 %.",
+          "observed": "El Plan 2026–2030 reserva financiación para oferta social y asequible. Es un mecanismo de producción futura, no un inventario de 184.000 viviendas disponibles ni una medición del 20 % del parque.",
+          "practicalEffect": "Un anuncio, suelo, financiación o vivienda licitada no implica que una familia pueda ocuparla ya.",
+          "missingEvidence": "Inventario con vivienda única, fase, titularidad, entrega y ocupación; denominador del parque y horizonte temporal del 20 %. Sin esos datos no se calcula un porcentaje de cumplimiento.",
+          "temporalScope": "Plan 2026–2030; no consta en el inventario un día límite único para las dos metas.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-8872"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "inconclusive",
+          "expected": "Habilitar 184.000 viviendas públicas para alquiler asequible, según el inventario, y aumentar el parque público al 20 %. El acuerdo sitúa esta segunda meta a medio y largo plazo, sin fecha concreta.",
+          "observed": "El Plan 2026–2030 reserva financiación para oferta social y asequible. Es un mecanismo de producción futura, no un inventario de 184.000 viviendas disponibles ni una medición del 20 % del parque.",
+          "practicalEffect": "Un anuncio, suelo, financiación o vivienda licitada no implica que una familia pueda ocuparla ya.",
+          "missingEvidence": "Inventario de viviendas únicas, fase, titularidad, entrega y ocupación para las 184.000; denominador homogéneo del parque para el 20 %. Falta verificar la correspondencia original completa de la cifra 184.000, atribuida aquí al inventario.",
+          "temporalScope": "Plan 2026–2030 como instrumento. La meta del 20 % tiene horizonte a medio y largo plazo en el acuerdo; no se convierte en una obligación de alcanzarla en esta legislatura.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-8872",
+            "coalicion-2023-verificada"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-122",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Servicios de empleo",
+          "criterion": "Verificar cartera de servicios y colectivos cubiertos.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Cartera aprobada en 2024.",
+          "sourceIds": [
+            "BOE-A-2024-8710"
+          ],
+          "id": "c-122-part-1"
+        },
+        {
+          "label": "Perfiles y colocaciones",
+          "criterion": "Contrastar perfiles prestados en 2024 e inserciones por colectivo.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "Una cartera de servicios no demuestra que todas las personas recibieran el perfil.",
+          "sourceIds": [
+            "coalicion-2023"
+          ],
+          "id": "c-122-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Una cartera de servicios no demuestra que todas las personas recibieran el perfil.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Perfiles y tutorías efectivamente realizados en 2024, cobertura por colectivo, inserciones y calidad y permanencia del empleo.",
+      "overlaps": [
+        "c-79",
+        "c-143"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-123",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Protección hipotecaria",
+          "criterion": "Verificar cambio normativo y ámbito temporal.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Protección específica en cesiones; no todo el consumo financiero.",
+          "sourceIds": [
+            "BOE-A-2026-20823"
+          ],
+          "id": "c-123-part-1"
+        },
+        {
+          "label": "Crédito y autoridad",
+          "criterion": "Separar anteproyecto, tramitación, aprobación y órgano operativo.",
+          "stage": "rule",
+          "state": "reported",
+          "finding": "Notas de abril/julio no prueban estado parlamentario actual ni autoridad operativa.",
+          "sourceIds": [
+            "creditos-consumo-2026",
+            "cliente-financiero-julio-2026"
+          ],
+          "id": "c-123-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Se preservan los límites de ámbito y periodo.",
+      "refreshTrigger": "Convalidación o modificación del decreto de octubre, y registros de aplicación.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-131",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Flexibilidad",
+          "criterion": "Identificar derechos y ámbito de la norma sin extender AGE al sector privado.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Reglas de AGE y adaptación en el Estatuto tienen distinto alcance.",
+          "sourceIds": [
+            "BOE-A-2026-8287",
+            "estatuto-2026-10-10"
+          ],
+          "id": "c-131-part-1"
+        },
+        {
+          "label": "Teletrabajo y corresponsabilidad",
+          "criterion": "Medir adopción, acceso por sexo y efectos en cuidados.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Las reglas de flexibilidad no prueban adopción general del teletrabajo.",
+          "sourceIds": [],
+          "id": "c-131-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Las reglas de flexibilidad no prueban adopción general del teletrabajo.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Solicitudes y concesiones de adaptación y teletrabajo, uso por sexo, denegaciones y efectos sobre cuidados.",
+      "overlaps": [
+        "c-139",
+        "c-170"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-136",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Plan contra fraude",
+          "criterion": "Comprobar existencia y prioridades sin contarlas como cobros.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Directrices de control para 2026.",
+          "sourceIds": [
+            "BOE-A-2026-5843"
+          ],
+          "id": "c-136-part-1"
+        },
+        {
+          "label": "Resultados contra fraude",
+          "criterion": "Separar liquidaciones, cobros firmes y estimación de fraude con metodología constante.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se ha incorporado una serie auditada de resultados.",
+          "sourceIds": [],
+          "id": "c-136-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se ha incorporado una serie auditada de resultados.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+      "overlaps": [
+        "c-29"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-137",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Riesgo y privaciones",
+          "criterion": "Comparar definiciones y años de encuesta/renta constantes.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "Mejora observada de AROPE y carencia severa; no prueba causal.",
+          "sourceIds": [
+            "indicator-arope",
+            "indicator-severe-deprivation"
+          ],
+          "id": "c-137-part-1"
+        },
+        {
+          "label": "Sinhogarismo",
+          "criterion": "Contar población sin hogar con cobertura y definición apropiadas.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La ECV de hogares no cubre por sí sola a toda la población sin hogar.",
+          "sourceIds": [],
+          "id": "c-137-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: La ECV de hogares no cubre por sí sola a toda la población sin hogar.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Cobertura específica del sinhogarismo y grupos vulnerables, ejecución de políticas y evaluación causal. Las variables de renta de la ECV tienen desfase respecto a la encuesta.",
+      "overlaps": [
+        "c-143",
+        "c-196"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-139",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Duración por nacimiento",
+          "criterion": "Comparar duración y distribución por edad con las veinte semanas prometidas.",
+          "stage": "rule",
+          "state": "contradicted",
+          "finding": "El régimen general es 17 + 2, no veinte; no todas en el primer año.",
+          "sourceIds": [
+            "BOE-A-2025-15741",
+            "estatuto-2026-10-10",
+            "coalicion-2023-verificada"
+          ],
+          "id": "c-139-part-1"
+        },
+        {
+          "label": "Permiso parental retribuido",
+          "criterion": "Contrastar cuatro semanas desde agosto de 2024 y distinguir el artículo 48 bis.",
+          "stage": "rule",
+          "state": "unknown",
+          "finding": "La ampliación de nacimiento de 2025 no demuestra este componente ni su cumplimiento en 2024.",
+          "sourceIds": [
+            "coalicion-2023-verificada",
+            "estatuto-2026-10-10"
+          ],
+          "id": "c-139-part-2"
+        }
+      ],
+      "challenge": "La cifra total de diecinueve semanas oculta diferencias de edad y naturaleza; se desglosa antes de comparar.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Acreditar los componentes pendientes del acuerdo, su aplicación temporal y datos de disfrute y pago; no sumar permisos de distinta naturaleza sin explicar su alcance.",
+      "overlaps": [
+        "c-131"
+      ],
+      "correction": {
+        "kind": "precision",
+        "reason": "Diecinueve semanas sin desglose puede hacer creer que todas son del primer año o que satisfacen el permiso parental distinto.",
+        "before": {
+          "verdict": "partial",
+          "expected": "Ampliar permisos retribuidos: veinte semanas por nacimiento y componente parental previsto desde agosto de 2024.",
+          "observed": "El RDL 9/2025 y el Estatuto consultado recogen diecinueve semanas en el supuesto general, no veinte. Hay ampliación aprobada, pero los componentes y el calendario del acuerdo no quedan íntegramente satisfechos por esa cifra.",
+          "practicalEffect": "El régimen general permite un permiso más largo, con partes y edades de disfrute diferentes. Las familias monoparentales y otros supuestos tienen reglas específicas.",
+          "missingEvidence": "Acreditar los componentes pendientes del acuerdo, su aplicación temporal y datos de disfrute y pago; no sumar permisos de distinta naturaleza sin explicar su alcance.",
+          "temporalScope": "Ampliación de julio de 2025; consulta del Estatuto al corte. El plazo de agosto de 2024 correspondía al componente parental.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2025-15741",
+            "estatuto-2026-10-10"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "partial",
+          "expected": "Ampliar permisos retribuidos: veinte semanas por nacimiento y componente parental previsto desde agosto de 2024.",
+          "observed": "El RDL 9/2025 y el artículo 48.4 del Estatuto recogen diecinueve semanas generales: seis obligatorias, once hasta los doce meses y dos hasta los ocho años. No son veinte semanas ni acreditan por sí solas las cuatro retribuidas del permiso parental del artículo 48 bis prometidas desde agosto de 2024.",
+          "practicalEffect": "En el supuesto general, diecisiete semanas se sitúan en torno al nacimiento y el primer año, y otras dos pueden disfrutarse hasta los ocho años. Existen reglas específicas y transitorias; no se deben sumar como si todos los permisos fueran equivalentes.",
+          "missingEvidence": "Acreditar los componentes pendientes del acuerdo, su aplicación temporal y datos de disfrute y pago; no sumar permisos de distinta naturaleza sin explicar su alcance.",
+          "temporalScope": "Ampliación de julio de 2025; consulta del Estatuto al corte. El plazo de agosto de 2024 correspondía al componente parental.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2025-15741",
+            "estatuto-2026-10-10",
+            "coalicion-2023-verificada"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-143",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Reforma del subsidio",
+          "criterion": "Identificar cuantías, elegibilidad y fechas aplicables.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Reforma del nivel asistencial, no todo el desempleo.",
+          "sourceIds": [
+            "BOE-A-2024-10235"
+          ],
+          "id": "c-143-part-1"
+        },
+        {
+          "label": "Protección efectiva",
+          "criterion": "Medir cobertura, pagos y suficiencia frente al coste de vida.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay evaluación de cobertura y suficiencia en esta ficha.",
+          "sourceIds": [],
+          "id": "c-143-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No hay evaluación de cobertura y suficiencia en esta ficha.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+      "overlaps": [
+        "c-79",
+        "c-122",
+        "c-137"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-160",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Instrumentos de rehabilitación",
+          "criterion": "Verificar líneas normativas y destinatarios.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Plan y modificación del programa PRTR.",
+          "sourceIds": [
+            "BOE-A-2026-8872"
+          ],
+          "id": "c-160-part-1"
+        },
+        {
+          "label": "Obras y ahorro",
+          "criterion": "Contar viviendas terminadas sin duplicados y comparar certificados energéticos.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Ayudas anunciadas o concedidas no prueban obras terminadas ni ahorro.",
+          "sourceIds": [],
+          "id": "c-160-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Ayudas anunciadas o concedidas no prueban obras terminadas ni ahorro.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Viviendas terminadas y certificadas, importes pagados, ahorro energético antes/después y ausencia de duplicados entre programas.",
+      "overlaps": [
+        "c-55"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-170",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Máximo general en plazo",
+          "criterion": "Contrastar 37,5 horas en 2025 con norma general aplicable al vencimiento.",
+          "stage": "rule",
+          "state": "contradicted",
+          "finding": "La versión al cierre de 2025 mantiene cuarenta horas; conclusión acotada a máximo general.",
+          "sourceIds": [
+            "estatuto-2025-12-31",
+            "estatuto-2026-10-10",
+            "coalicion-2023-verificada"
+          ],
+          "id": "c-170-part-1"
+        },
+        {
+          "label": "Actuación del Gobierno",
+          "criterion": "Comprobar si hubo tramitación sin equipararla a aprobación.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Se presentó un proyecto que el Congreso devolvió. No demuestra ausencia de iniciativa.",
+          "sourceIds": [
+            "congreso-jornada-2025"
+          ],
+          "id": "c-170-part-2"
+        }
+      ],
+      "challenge": "Se contrastó la hipótesis de ausencia de iniciativa: el expediente prueba tramitación y rechazo. No cambia el máximo legal al vencimiento.",
+      "refreshTrigger": "Una modificación del máximo legal o evidencia de vigencia distinta al cierre de 2025.",
+      "overlaps": [
+        "c-131"
+      ],
+      "correction": {
+        "kind": "context",
+        "reason": "Se añade el expediente parlamentario para distinguir resultado no alcanzado y ausencia de iniciativa, y una segunda lectura del plazo original.",
+        "before": {
+          "verdict": "not_met",
+          "expected": "Reducir la jornada máxima general a 37,5 horas semanales, culminando en 2025.",
+          "observed": "El artículo 34.1 del Estatuto consolidado consultado mantiene cuarenta horas semanales de promedio anual. La reducción general a 37,5 horas comprometida para 2025 no se alcanzó en ese plazo. Las jornadas inferiores de convenios o de la AGE no cumplen por sí solas esta meta general.",
+          "practicalEffect": "La promesa no ha cambiado el máximo legal general a 37,5 horas. Cada convenio o contrato puede fijar una jornada inferior.",
+          "missingEvidence": "Para cambiar esta conclusión debe constar la modificación legal general y su fecha de efectos. No se deduce intención de engañar ni se atribuye responsabilidad exclusiva por el resultado.",
+          "temporalScope": "Plazo del acuerdo: culminar en 2025. Texto consolidado contrastado al 10 de octubre de 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "estatuto-2025-12-31",
+            "estatuto-2026-10-10",
+            "coalicion-2023"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "not_met",
+          "expected": "Reducir la jornada máxima general a 37,5 horas semanales, culminando en 2025.",
+          "observed": "El artículo 34.1 del Estatuto consultado al cierre de 2025 y al corte conserva cuarenta horas semanales de promedio anual. El Congreso devolvió el proyecto de reducción el 10 de septiembre de 2025: hubo iniciativa, pero no se alcanzó la reducción general a 37,5 horas en el plazo prometido. Convenios y AGE tienen ámbitos distintos.",
+          "practicalEffect": "La promesa no ha cambiado el máximo legal general a 37,5 horas. Cada convenio o contrato puede fijar una jornada inferior.",
+          "missingEvidence": "Para cambiar esta conclusión debe constar la modificación legal general y su fecha de efectos. No se deduce intención de engañar ni se atribuye responsabilidad exclusiva por el resultado.",
+          "temporalScope": "Plazo del acuerdo: culminar en 2025; versiones del Estatuto al 31 de diciembre de 2025 y al 10 de octubre de 2026. Expediente parlamentario de septiembre de 2025.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "estatuto-2025-12-31",
+            "estatuto-2026-10-10",
+            "coalicion-2023",
+            "coalicion-2023-verificada",
+            "congreso-jornada-2025"
+          ],
+          "reviewedAt": "2026-10-10"
+        }
+      }
+    },
+    {
+      "commitmentId": "c-186",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Regulación diferenciada",
+          "criterion": "Separar registro de corta duración, alquiler temporal y regulación turística territorial.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Registro y reglas arrendaticias de ámbitos distintos.",
+          "sourceIds": [
+            "BOE-A-2024-26931",
+            "BOE-A-2026-20823"
+          ],
+          "id": "c-186-part-1"
+        },
+        {
+          "label": "Aplicación",
+          "criterion": "Verificar inspecciones y retiradas persistentes, con cobertura territorial.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "Una orden de retirada no acredita desaparición efectiva ni mejora de oferta.",
+          "sourceIds": [],
+          "id": "c-186-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: Una orden de retirada no acredita desaparición efectiva ni mejora de oferta.",
+      "refreshTrigger": "Convalidación o modificación del decreto de octubre, y registros de aplicación.",
+      "overlaps": [
+        "c-55",
+        "c-74"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-187",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Figura bancaria",
+          "criterion": "Identificar figura sucesora, duración y efectos.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Impuesto sobre margen bancario aprobado; no prueba recaudación final.",
+          "sourceIds": [
+            "BOE-A-2024-26694"
+          ],
+          "id": "c-187-part-1"
+        },
+        {
+          "label": "Figura energética",
+          "criterion": "Revisar continuidad y modificaciones, incluida evidencia contraria.",
+          "stage": "rule",
+          "state": "contradicted",
+          "finding": "Derogación del RDL 10/2024: la norma bancaria no acredita continuidad energética. No se descartan sustitutos no localizados.",
+          "sourceIds": [
+            "BOE-A-2025-1137"
+          ],
+          "id": "c-187-part-2"
+        }
+      ],
+      "challenge": "La derogación energética contradice que una sola norma bancaria pruebe continuidad en ambos sectores.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Normas posteriores que sustituyan la figura energética, recaudación efectiva e incidencia distributiva de ambas figuras.",
+      "overlaps": [
+        "c-29"
+      ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-196",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Regla anual de pensiones",
+          "criterion": "Comparar fórmula e incremento para cada ejercicio con el IPC pertinente.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Regla de 2026 acreditada; no revisión completa de todos los años.",
+          "sourceIds": [
+            "BOE-A-2026-2548"
+          ],
+          "id": "c-196-part-1"
+        },
+        {
+          "label": "Aplicación a nóminas",
+          "criterion": "Verificar población cubierta, excepciones y pagos efectivos.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se han auditado nóminas ni todos los regímenes.",
+          "sourceIds": [],
+          "id": "c-196-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se han auditado nóminas ni todos los regímenes.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Aplicación efectiva a las nóminas y revisión homogénea de todos los ejercicios del mandato, con bases y excepciones.",
+      "overlaps": [
+        "c-137"
+      ],
+      "correction": null
+    }
+  ]
+}

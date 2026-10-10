@@ -97,7 +97,7 @@ export function answerMandate(snapshot: MandateSnapshot, question: string, topic
 function commitmentParagraph(item: Commitment): MandateAnswer["paragraphs"][number] {
   const a = item.assessment;
   return {
-    text: `${item.title}. ${ASSESSMENT_LABELS[a.verdict]}. Se prometió: ${a.expected} ${a.observed} Qué cambia en la práctica (lectura de RegTrack): ${a.practicalEffect} Periodo: ${a.temporalScope} Qué falta: ${a.missingEvidence}`,
+    text: `${item.title}. ${ASSESSMENT_LABELS[a.verdict]}. Se prometió: ${a.expected} ${a.observed} Qué cambia en la práctica (lectura de RegTrack): ${a.practicalEffect} Periodo: ${a.temporalScope} Qué falta: ${a.missingEvidence} Revisión: segunda pasada del mismo agente; exactitud no medida y revisión independiente pendiente.${item.quality.correction ? ` Cambio de revisión: ${item.quality.correction.reason}` : ""}`,
     citations: [`${item.id}-commitment`, ...a.evidenceIds],
   };
 }

@@ -29,6 +29,28 @@ export type CommitmentAssessment = {
   reviewedAt: string;
   evidenceIds: string[];
 };
+export const COMPONENT_STATE_LABELS = {
+  documented: "Hecho documentado",
+  reported: "Información del organismo",
+  contradicted: "Evidencia contraria a la meta",
+  unknown: "No demostrado con estas fuentes",
+} as const;
+export const EVIDENCE_STAGE_LABELS = { rule: "Norma o instrumento", delivery: "Ejecución", outcome: "Resultado" } as const;
+export type CommitmentQuality = {
+  reviewedAt: string;
+  components: { id: string; label: string; criterion: string; stage: keyof typeof EVIDENCE_STAGE_LABELS; state: keyof typeof COMPONENT_STATE_LABELS; finding: string; evidenceIds: string[] }[];
+  challenge: string;
+  refreshTrigger: string;
+  overlaps: string[];
+  correction: null | { kind: "error" | "precision" | "scope" | "attribution" | "new_evidence" | "context"; reason: string; changes: { field: string; before: string; after: string }[] };
+};
+export type Calibration = {
+  revision: string; reviewedAt: string; reviewer: string;
+  reviewMode: "same-author-second-pass"; independentReview: "pending"; blind: false; accuracyRate: null;
+  initialSample: string[];
+  selection: { totalAvailable: number; selectedCount: number; method: string; limitation: string };
+  rules: string[];
+};
 export type Commitment = {
   id: string;
   officialId: string;
@@ -52,6 +74,7 @@ export type Commitment = {
   indicatorIds: string[];
   simpleExplanation: string;
   assessment: CommitmentAssessment;
+  quality: CommitmentQuality;
 };
 export type Observation = { period: string; value: number | null; date?: string; status?: string; sourcePeriod?: string };
 export type Indicator = {
@@ -89,6 +112,7 @@ export type MandateSnapshot = {
   indicators: Indicator[];
   methodology: string[];
   commentary: Interpretation[];
+  calibration: Calibration;
 };
 export type MandateAnswer = {
   mode: "documental" | "ia" | "no-evidence";

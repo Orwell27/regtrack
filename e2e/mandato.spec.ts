@@ -19,6 +19,16 @@ test("las treinta fichas explican promesa, efecto, periodo y lagunas, y los grup
     await expect(card.locator(".mn-assessment-period")).toContainText(item.assessment.temporalScope);
     await card.locator("summary").click();
     await expect(card.locator(".mn-assessment-missing")).toHaveText(item.assessment.missingEvidence);
+    await expect(card.locator(".mn-quality-parts > ol > li")).toHaveCount(item.quality.components.length);
+    for (const part of item.quality.components) {
+      const component = card.locator(".mn-quality-parts > ol > li").filter({ has: page.getByRole("heading", { name: part.label, exact: true }) });
+      await expect(component).toContainText(part.criterion);
+      await expect(component).toContainText(part.finding);
+      for (const id of part.evidenceIds) {
+        const source = item.evidence.find(source => source.id === id)!;
+        await expect(component.getByRole("link", { name: source.title, exact: true })).toHaveAttribute("href", source.url);
+      }
+    }
     for (const id of item.assessment.evidenceIds) {
       const source = item.evidence.find(source => source.id === id)!;
       await expect(card.locator(".mn-source-list a").filter({ hasText: source.title }).first()).toHaveAttribute("href", source.url);
@@ -48,6 +58,31 @@ test("las treinta fichas explican promesa, efecto, periodo y lagunas, y los grup
   await expect(card.locator(".mn-assessment-missing")).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await card.screenshot({ path: ".artifacts/observatorio/revision-jornada-mobile.png" });
+});
+
+test("la calibración distingue exactitud desconocida y muestra la corrección con versión anterior", async ({ page, request }) => {
+  const snapshot = await readSnapshot(request);
+  await page.goto("/observatorio/mandato");
+  const quality = page.locator(".mn-quality-summary");
+  await expect(quality).toContainText("Exactitud todavía no medida");
+  await expect(quality).toContainText("revisión humana independiente sigue pendiente");
+  await expect(quality).toContainText("30 fichas desglosadas en 61 comprobaciones");
+  await expect(quality).toContainText("30 de 203");
+  await quality.getByText("Reglas, actualización y correcciones", { exact: true }).click();
+  await expect(quality).toContainText("no hay actualización automática");
+  await quality.screenshot({ path: ".artifacts/observatorio/calibracion-desktop.png" });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato#compromiso-c-78");
+  const card = page.locator("#compromiso-c-78");
+  await card.locator("summary").click();
+  const correction = snapshot.commitments.find(item => item.id === "c-78")!.quality.correction!;
+  await expect(card.locator(".mn-correction")).toContainText(correction.reason);
+  for (const change of correction.changes) {
+    await expect(card.locator(".mn-correction")).toContainText(change.before);
+    await expect(card.locator(".mn-correction")).toContainText(change.after);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await card.locator(".mn-correction").screenshot({ path: ".artifacts/observatorio/correccion-mobile.png" });
 });
 
 test("el balance entrega 30 compromisos, al menos 12 indicadores y distingue información y contraste", async ({ page, request }) => {
@@ -235,12 +270,12 @@ test("honestidad separa cumplimiento sin calcular de cobertura documental y perm
   }
   await page.getByRole("button", { name: "Limpiar filtros", exact: true }).click();
   await expect(page.locator(".mn-commitment:visible")).toHaveCount(30);
-  await block.locator("summary").click();
+  await block.locator(".mn-accountability-criteria > summary").click();
   for (const criterion of ["Resultado", "Alcance", "Plazo", "Evidencia", "Actualidad"]) {
     await expect(block.getByRole("term").filter({ hasText: criterion })).toBeVisible();
   }
   await expect(block.locator(".mn-accountability-limit")).toContainText("Pendiente de contraste no demuestra incumplimiento");
-  await block.locator("summary").click();
+  await block.locator(".mn-accountability-criteria > summary").click();
   await page.getByRole("button", { name: "¿Cómo se mide la honestidad?", exact: true }).click();
   await expect(page.locator(".mn-answer")).toContainText("sigue sin calcular");
   await expect(page.locator(".mn-answer")).toContainText("100 % (30 de 30)");
