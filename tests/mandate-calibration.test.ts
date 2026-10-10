@@ -8,16 +8,17 @@ import { answerMandate, boundMandateAnswer } from "@/lib/mandate/answer";
 const snapshot = () => structuredClone(getMandateSnapshot());
 
 describe("calibración editorial y límites de la evidencia", () => {
-  it("mantiene treinta promesas y conserva las versiones anteriores sin fabricar exactitud", () => {
+  it("amplía a treinta y ocho promesas y conserva las versiones anteriores sin fabricar exactitud", () => {
     const data = snapshot();
     expect(data.calibration.accuracyRate).toBeNull();
     expect(data.calibration.independentReview).toBe("pending");
     expect(data.calibration.blind).toBe(false);
-    expect(data.calibration.selection.selectedCount).toBe(30);
-    expect(calibration.audits).toHaveLength(30);
-    expect(new Set(calibration.audits.map(audit => audit.commitmentId)).size).toBe(30);
-    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(61);
-    for (const item of collection.commitments) {
+    expect(data.calibration.selection.selectedCount).toBe(38);
+    expect(calibration.audits).toHaveLength(38);
+    expect(new Set(calibration.audits.map(audit => audit.commitmentId)).size).toBe(38);
+    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(82);
+    expect(collection.commitments.filter(item => item.assessmentHistory.length)).toHaveLength(30);
+    for (const item of collection.commitments.filter(item => item.assessmentHistory.length)) {
       const previous = item.assessmentHistory[0];
       expect(previous.revision).toBe("2026-10-10-v1");
       const audit = calibration.audits.find(audit => audit.commitmentId === item.id)!;

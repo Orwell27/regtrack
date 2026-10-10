@@ -9,7 +9,7 @@ import { electionCountdown } from "@/lib/mandate/model";
 describe("balance documental con evidencia real", () => {
   it("valida una selección explícita sin fabricar estados de cumplimiento", () => {
     const snapshot = getMandateSnapshot();
-    expect(snapshot.commitments).toHaveLength(30);
+    expect(snapshot.commitments).toHaveLength(38);
     expect(snapshot.indicators.length).toBeGreaterThanOrEqual(12);
     expect(snapshot.commitments.filter((item) => item.review.status !== "pending").length).toBeGreaterThanOrEqual(6);
     expect(snapshot.methodology.join(" ")).toContain("No demuestra correlación");

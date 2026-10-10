@@ -28,11 +28,11 @@ test("el inventario muestra pendientes sin veredicto y enlaza las revisiones exi
   await page.getByRole("button", { name: "Inventario nacional · 203" }).click();
   await expect(page.getByRole("status")).toContainText("203 resultados");
   await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
-  await expect(page.getByRole("status")).toContainText("173 resultados");
+  await expect(page.getByRole("status")).toContainText("165 resultados");
   await expect(page.locator(".mc-card").first()).toContainText("Sin conclusión de RegTrack");
   await expect(page.locator(".mc-card").getByRole("link")).toHaveCount(0);
   await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("reviewed");
-  await expect(page.getByRole("status")).toContainText("30 resultados");
+  await expect(page.getByRole("status")).toContainText("38 resultados");
   const link = page.getByRole("link", { name: "Leer evidencia, límites y correcciones" }).first();
   const href = await link.getAttribute("href");
   await link.click();

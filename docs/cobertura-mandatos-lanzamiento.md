@@ -57,3 +57,13 @@ Siguiente trabajo necesario:
 5. Verificar la versión desplegada y revisar los requisitos operativos de `docs/community/LANZAMIENTO.md` para distinguir la apertura de la comunidad del Observatorio ya público.
 
 Reproducción: `npx tsx scripts/import-mandate-inventory.ts`, `npx tsx scripts/build-mandate-coverage.ts`, `npm test -- --maxWorkers=2`, compilación Next y `node scripts/check-observatory-trace.mjs`. Las comprobaciones de navegador están en `e2e/mandato-cobertura.spec.ts` y se ejecutan también en CI.
+
+## Segundo bloque documental — 10 de octubre
+
+La ampliación incorpora ocho revisiones: desperdicio alimentario (20), paridad (22), discapacidad/artículo 49 (154), organización judicial (132), pacto y medidas LGTBI (126), bienestar animal (118), economía social (191) y vigilancia sanitaria (146). Se conservan ocho normas originales del BOE y el acuerdo de 20 de enero de 2026 del CGPJ, con huellas y localizadores.
+
+La revisión distingue los actos legislativos acreditados de sus efectos. En las promesas de aprobar una ley o modificar la Constitución, se reconoce expresamente el acto alcanzado; las lagunas de resultados no se convierten en requisitos nuevos de la promesa original. En las promesas compuestas, una medida no acredita todo el objetivo: el RD laboral LGTBI no es un pacto de Estado; la ley de economía social no certifica la ejecución del PERTE o de la estrategia; crear una agencia no demuestra capacidad operativa.
+
+La segunda lectura cotejó los componentes y las conclusiones con las disposiciones originales, especialmente los calendarios de paridad y desperdicio alimentario. El acuerdo del CGPJ corrobora la constitución legal de los tribunales y documenta el régimen transitorio de oficinas en tres partidos asturianos; no certifica el estado operativo posterior a enero de 2026 ni refuta por sí solo declaraciones gubernamentales posteriores. Se trata de una fuente institucional distinta del balance del Ejecutivo, no de una revisión humana independiente de RegTrack.
+
+Estado preparado en esta rama: **38/203 revisiones nacionales, 82 componentes, 165 pendientes y 0/69 balances territoriales revisados**. Las ocho fichas nuevas no reciben una fecha de origen no verificada ni un historial ficticio de octubre de 2026. Se conservan las treinta revisiones y correcciones anteriores. La revisión independiente, los restantes compromisos y la cobertura territorial siguen pendientes; este bloque tampoco da por finalizada la sección. El estado de publicación debe comprobarse en el despliegue, no inferirse de este documento.

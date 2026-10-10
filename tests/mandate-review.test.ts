@@ -5,13 +5,13 @@ import { getMandateSnapshot } from "@/lib/mandate/data";
 import { validateMandateSnapshot } from "@/lib/mandate/validate";
 import { answerMandate, boundMandateAnswer } from "@/lib/mandate/answer";
 
-describe("revisión de las 30 promesas y efecto práctico", () => {
+describe("revisión de las 38 promesas y efecto práctico", () => {
   it("cierra las 22 primeras revisiones sin perder las 8 anteriores ni llamar cumplimiento a cobertura", () => {
-    expect(collection.commitments).toHaveLength(30);
-    expect(new Set(collection.commitments.map(item => item.officialId)).size).toBe(30);
-    expect(collection.commitments.filter(item => item.review.history[0].status === "sin_verificar")).toHaveLength(22);
+    expect(collection.commitments).toHaveLength(38);
+    expect(new Set(collection.commitments.map(item => item.officialId)).size).toBe(38);
+    expect(collection.commitments.filter(item => item.review.history[0]?.status === "sin_verificar")).toHaveLength(22);
     for (const item of collection.commitments) {
-      expect(item.review.history[0].asOf).toBe("2026-10-07");
+      if (item.review.history.length) expect(item.review.history[0].asOf).toBe("2026-10-07");
       expect(item.review.asOf).toBe("2026-10-10");
       expect(item.review.status).not.toBe("sin_verificar");
       expect(item.assessment.evidenceSourceIds.length).toBeGreaterThan(0);
