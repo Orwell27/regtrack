@@ -20,7 +20,7 @@ describe("API pública de mandato y opt-in de IA", () => {
     expect(response.status).toBe(200);
     const text = await response.text();
     expect(text).not.toMatch(/snapshotPath|evidencePath|\.artifacts|\.env|service_role/i);
-    expect(JSON.parse(text).commitments).toHaveLength(30);
+    expect(JSON.parse(text).commitments).toHaveLength(38);
   });
   it("responde sin gastar por defecto y conserva evidencia si se solicita IA apagada", async () => {
     for (const mode of ["documental", "ia"]) {
@@ -66,7 +66,7 @@ describe("API pública de mandato y opt-in de IA", () => {
     vi.stubEnv("MANDATE_AI_ENABLED", "true"); vi.stubEnv("OBSERVATORY_AI_ENABLED", "true");
     mocks.synthesize.mockResolvedValue([{ text: "Explicación de prueba", citations: [1] }]);
     const result = await (await POST(request({ question: "Honestidad", mode: "ia" }))).json();
-    expect(result.paragraphs[0].text).toContain("100 % (30 de 30)");
+    expect(result.paragraphs[0].text).toContain("100 % (38 de 38)");
     expect(result.paragraphs[0].citations).toEqual([]);
     expect(result.paragraphs[1].text).toBe("Explicación de prueba");
     expect(result.note).toContain("no califica la honestidad");

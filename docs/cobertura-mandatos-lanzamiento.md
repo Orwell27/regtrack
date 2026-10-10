@@ -1,0 +1,98 @@
+# Cierre de la sección de balances y lanzamiento
+
+Alcance acordado con Alfonso el 10 de octubre de 2026: balance estatal, 17 comunidades autónomas, Ceuta y Melilla y las 50 capitales de provincia. Otros municipios se amplían después. Objetivo orientativo de lanzamiento: alrededor del 17 de octubre; no es una tarea programada ni una promesa de auditoría terminada sin evidencia.
+
+**Estado de la rama tras el bloque municipal:** 38/203 fichas nacionales y 4/300 fichas del Ayuntamiento de Madrid con revisión parcial. Madrid tiene su inventario completo del documento, no su balance cerrado. Los otros 68 territorios aún no tienen un inventario importado ni revisión sustantiva; la revisión humana independiente sigue pendiente en todos los ámbitos. Los bloques de abajo conservan la secuencia de trabajo.
+
+## Condiciones para dar una ficha por revisada
+
+1. Identificar territorio, administración, mandato y documento original del compromiso. No heredar automáticamente 2023–2027: hay cambios de legislatura autonómica.
+2. Conservar el texto y su fuente, fecha, localizador y alcance; separar el balance declarado por el Gobierno de la valoración editorial.
+3. Buscar actuación, ejecución y resultado; explicar qué acredita cada documento y qué no. Un presupuesto aprobado no es gasto ejecutado ni entrega.
+4. Buscar evidencia contraria o limitaciones y registrar las fuentes realmente consultadas. Dos publicaciones del mismo emisor no se cuentan como corroboraciones independientes.
+5. No asignar cumplimiento o incumplimiento sin criterio y plazo aplicables. Una laguna queda abierta y visible, no se rellena por inferencia.
+6. Validar referencias, integridad, navegación, consulta, móvil y límites de las respuestas. Conservar revisiones anteriores y correcciones.
+
+## Entregas de trabajo
+
+- Inventario nacional completo de 203 compromisos, con conservación exacta del CSV y trazabilidad de la selección anterior.
+- Matriz de 70 ámbitos: España, 19 gobiernos autonómicos/ciudades autónomas y 50 ayuntamientos capitales. Ceuta y Melilla no se duplican como capitales de provincia.
+- Fuentes primarias de compromisos, seguimiento y control externo por territorio. Los territorios sin material suficiente deben mostrar esa carencia.
+- Contrastes sustantivos y límites por ficha, con cobertura medida por documentos revisados y no solo por enlaces o territorios presentes.
+- Sección navegable, consulta documental y pruebas de producción; lista de pendientes operativos para abrir RegTrack.
+
+## Plan orientativo de la semana
+
+| Tramo | Resultado esperado | Condición de cierre |
+| --- | --- | --- |
+| Inventario | Universo nacional y territorial identificado | IDs únicos, mandatos separados y fuentes localizadas |
+| Contraste | Revisión de documentos y resultados disponibles | Afirmaciones acotadas y referencias que las respalden |
+| Corroboración | Control externo, estadísticas y evidencia contraria | Independencia y límites explícitos; discrepancias conservadas |
+| Producto | Navegación territorial, filtros y respuestas | No mezclar gobiernos, fechas o competencias |
+| Validación | Comprobación de datos y recorridos completos | Sin fallos que cambien conclusiones ni referencias rotas internas |
+| Publicación | Entrega revisable y despliegue autorizado | Separar alcance publicado, lagunas y mantenimiento pendiente |
+
+La revisión humana independiente sigue pendiente. Es necesaria para medir la exactitud; los tests y la repetición por el mismo agente no la sustituyen. No se fija una nota de fiabilidad por adelantado.
+
+Estado inicial: 30 compromisos nacionales revisados y publicados; ampliación en curso en `feat/cobertura-mandatos`. Este documento no certifica por sí mismo que las entregas anteriores estén completadas.
+
+## Primera entrega de la ampliación — 10 de octubre
+
+Implementado:
+
+- `/observatorio/mandato/cobertura`: catálogo de las 70 administraciones, buscador, filtros y paginación; acceso desde el balance nacional y su lector documental.
+- 203 compromisos nacionales importados de la captura original, comprobando SHA-256, codificación Windows-1252, cabecera completa, registros únicos y conservación literal de las 30 fichas anteriores. El CSV contiene campos multilínea y una columna final vacía; no se divide por saltos de línea ni por punto y coma sin tratar comillas.
+- 30 fichas enlazan sus revisiones; las otras 173 se muestran sin veredicto. Solo se envía al navegador una proyección breve, sin los campos completos de iniciativas y referencias del Gobierno.
+- Catálogo territorial generado a partir de los códigos del IGN existentes en el proyecto y una selección explícita de las 50 capitales. Asturias corresponde a Oviedo, Pontevedra a Pontevedra; Ceuta y Melilla no se duplican.
+- Registro de descubrimiento con fuentes en 13 comunidades y 3 capitales. Las notas distinguen página leída, referencia localizada e incidencias de acceso. No se cuenta ninguna de estas referencias como un compromiso contrastado.
+- El lector nacional rechaza preguntas que identifica como territoriales antes de recuperar fichas o devolver la convocatoria electoral estatal. La detección por nombres y contexto es conservadora; no constituye un clasificador geográfico exhaustivo de todas las localidades o expresiones posibles.
+- Control de empaquetado ampliado a la nueva ruta. Pruebas negativas para inventarios vacíos, recuentos incompatibles y revisiones sin fuente.
+
+Estado editorial real: **30/203 revisiones nacionales; 0 balances territoriales revisados; revisión humana independiente pendiente**. Esta entrega prepara la cobertura y evita falsas atribuciones; no cierra la revisión sustantiva ni certifica que la sección esté finalizada.
+
+Siguiente trabajo necesario:
+
+1. Completar y conservar los documentos de mandato de las 19 administraciones autonómicas/ciudades autónomas, comprobando los cambios electorales de 2026. Siguen sin referencia específica Cantabria, Castilla y León, Extremadura, Murcia, Ceuta y Melilla.
+2. Localizar y extraer programas y seguimiento de las 50 capitales. Los repositorios de cuentas de Barcelona y València no sustituyen a sus programas ni a la lectura de informes concretos.
+3. Revisar los 173 compromisos nacionales restantes y cada inventario territorial con fuente original, actuación, ejecución, resultado, plazo, competencia y búsqueda de evidencia contraria. Las magnitudes todavía desconocidas quedan como `null`, no como cero.
+4. Incorporar corroboración externa por afirmación, registrar discrepancias y someter las conclusiones a revisión independiente antes de considerar cerrados los balances.
+5. Verificar la versión desplegada y revisar los requisitos operativos de `docs/community/LANZAMIENTO.md` para distinguir la apertura de la comunidad del Observatorio ya público.
+
+Reproducción: `npx tsx scripts/import-mandate-inventory.ts`, `npx tsx scripts/build-mandate-coverage.ts`, `npm test -- --maxWorkers=2`, compilación Next y `node scripts/check-observatory-trace.mjs`. Las comprobaciones de navegador están en `e2e/mandato-cobertura.spec.ts` y se ejecutan también en CI.
+
+## Segundo bloque documental — 10 de octubre
+
+La ampliación incorpora ocho revisiones: desperdicio alimentario (20), paridad (22), discapacidad/artículo 49 (154), organización judicial (132), pacto y medidas LGTBI (126), bienestar animal (118), economía social (191) y vigilancia sanitaria (146). Se conservan ocho normas originales del BOE y el acuerdo de 20 de enero de 2026 del CGPJ, con huellas y localizadores.
+
+La revisión distingue los actos legislativos acreditados de sus efectos. En las promesas de aprobar una ley o modificar la Constitución, se reconoce expresamente el acto alcanzado; las lagunas de resultados no se convierten en requisitos nuevos de la promesa original. En las promesas compuestas, una medida no acredita todo el objetivo: el RD laboral LGTBI no es un pacto de Estado; la ley de economía social no certifica la ejecución del PERTE o de la estrategia; crear una agencia no demuestra capacidad operativa.
+
+La segunda lectura cotejó los componentes y las conclusiones con las disposiciones originales, especialmente los calendarios de paridad y desperdicio alimentario. El acuerdo del CGPJ corrobora la constitución legal de los tribunales y documenta el régimen transitorio de oficinas en tres partidos asturianos; no certifica el estado operativo posterior a enero de 2026 ni refuta por sí solo declaraciones gubernamentales posteriores. Se trata de una fuente institucional distinta del balance del Ejecutivo, no de una revisión humana independiente de RegTrack.
+
+Estado preparado en esta rama: **38/203 revisiones nacionales, 82 componentes, 165 pendientes y 0/69 balances territoriales revisados**. Las ocho fichas nuevas no reciben una fecha de origen no verificada ni un historial ficticio de octubre de 2026. Se conservan las treinta revisiones y correcciones anteriores. La revisión independiente, los restantes compromisos y la cobertura territorial siguen pendientes; este bloque tampoco da por finalizada la sección. El estado de publicación debe comprobarse en el despliegue, no inferirse de este documento.
+
+## Primer inventario municipal y cuatro revisiones parciales — 10 de octubre
+
+Madrid: 300 medidas numeradas del programa electoral que el Ayuntamiento publica como Programa de Gobierno 2023–2027. Se conserva el PDF original de 73 páginas, su registro institucional, SHA-256 y extracción por página. Un importador específico exige las 300 medidas, la numeración continua por eje y las páginas previstas; normaliza espacios y guiones de maquetación sin interpretar la promesa. No pretende recoger todas las declaraciones externas a ese documento.
+
+La ruta `/observatorio/mandato/territorios/m-28079` permite leer las cuatro revisiones, buscar las 300 medidas, filtrar las 296 pendientes y consultar cada página de origen. La matriz de cobertura obtiene sus recuentos de ese inventario y esas revisiones. Los originales y el texto bruto no cruzan la proyección al navegador. Las consultas del lector nacional siguen sin reutilizar evidencia estatal para contestar sobre Madrid; esta nueva vista no añade un lector territorial de preguntas.
+
+Fichas examinadas:
+
+- 103, BiciMAD: 634 estaciones y 7.782 bicicletas comunicadas por EMT el 7/03/2026, frente a los umbrales del programa. No se verificó disponibilidad diaria ni calidad homogénea de servicio. La renovación comenzó antes del mandato: no se atribuye todo el despliegue a 2023–2027.
+- 163, turismo: documento 2024–2027 y acuerdo de aprobación de 23/01/2025, publicado en BOAM 9814/449 el 7/02/2025. Participación descrita por el promotor, actas y resultados sin corroboración externa incorporada.
+- 181, comercios centenarios: artículo 15 bis de la consolidación municipal del IBI de 2026; bonificación del 95 % con requisitos y usos catastrales delimitados. No se acreditan beneficiarios por la sola existencia de la norma.
+- 246, IBI: ficha tributaria y artículo 8.2 de la consolidación coinciden en 0,414 % para 2026, por encima del objetivo 0,4 %. No se declara incumplido al cierre un mandato todavía abierto ni se infiere ahorro en 2,2 millones de recibos. La consolidación es informativa, no sustituye el cotejo de sus modificaciones con los boletines originales.
+
+Ocho originales conservados de la familia institucional municipal y un extracto editorial de un reportaje de EL PAÍS con observación directa. Su huella identifica la nota, no el artículo original. La evidencia periodística es localizada y no permite extrapolar al servicio completo o a otro periodo. Ni el BOAM, ni la agencia tributaria, ni EMT cuentan aquí como corroboradores independientes del Ayuntamiento. Once componentes: las lagunas quedan visibles. La fuente periodística tampoco equivale a una revisión humana independiente de RegTrack. Las cuatro fichas son primeras revisiones parciales, sin historial anterior inventado. No se calcula una tasa global de cumplimiento.
+
+Reproducir la importación conservada:
+
+```sh
+python scripts/extract-territorial-pdf.py data/mandate/evidence/territorial/madrid-programme-2023.pdf data/mandate/evidence/territorial/madrid-programme-2023.pages.json
+npx tsx scripts/import-madrid-programme.ts
+npx vitest run tests/mandate-territorial.test.ts
+```
+
+La extracción requiere `pypdf` (versión registrada dentro del artefacto). CI verifica el texto derivado y las huellas de los originales conservados; no vuelve a descargar ni extraer PDFs. Para nuevas capturas, `node scripts/capture-territorial-sources.mjs <id>` usa una lista explícita de fuentes y comprueba formato/contenido. Las fuentes ya conservadas solo se verifican, no se sobrescriben. Este importador no constituye revisión editorial automática.
+
+Investigación autonómica abierta: Navarra publica un acuerdo y un seguimiento de 347 compromisos, pero su captura íntegra no se ha conseguido todavía; no se importa el total como fichas ni se cuenta como revisado. La planificación general de Canarias tampoco sustituye la lectura de su acuerdo de gobierno. Continúan pendientes el resto de inventarios, 165 fichas nacionales, 296 municipales de Madrid, controles externos, revisión independiente y publicación integral.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-10-v2",
+  "revision": "2026-10-10-v3",
   "reviewedAt": "2026-10-10",
   "reviewer": "Codex",
   "reviewMode": "same-author-second-pass",
@@ -20,9 +20,9 @@
   ],
   "selection": {
     "totalAvailable": 203,
-    "selectedCount": 30,
-    "method": "Selección heredada no representativa, basada en temas. No se reconstruyen razones individuales de exclusión que no se registraron.",
-    "limitation": "Los componentes no aumentan el denominador de treinta promesas. Las fichas pueden compartir medidas: no se suman como logros independientes."
+    "selectedCount": 38,
+    "method": "Selección inicial de 30 fichas por temas, ampliada con ocho compromisos con normas originales localizadas. La selección por disponibilidad documental no es representativa.",
+    "limitation": "Los componentes no aumentan el denominador de 38 promesas revisadas sobre 203 registros oficiales. Las medidas compartidas no se suman como logros independientes."
   },
   "rules": [
     "Fijar componente, población, periodo y criterio antes de volver a clasificar. Esta segunda pasada no es ciega: el autor conocía las conclusiones anteriores.",
@@ -1303,6 +1303,293 @@
       "overlaps": [
         "c-137"
       ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-20",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-20-part-1",
+          "label": "Aprobación de la ley",
+          "criterion": "Comprobar una ley publicada cuyo objeto sea prevenir pérdidas y desperdicio alimentario.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 1/2025 acredita la aprobación normativa.",
+          "sourceIds": [
+            "BOE-A-2025-6597"
+          ]
+        },
+        {
+          "id": "c-20-part-2",
+          "label": "Aplicación y reducción del desperdicio",
+          "criterion": "Comprobar aplicación y comparar cantidades con periodos y cobertura homogéneos.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "El texto legal no mide el desperdicio evitado. Este resultado contextual no forma parte de la promesa literal de aprobar la ley.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se comprobó la disposición final vigésima para evitar confundir publicación, entrada en vigor y aplicación de obligaciones. El objetivo literal es aprobar una ley: su aprobación está acreditada, aunque el efecto social no está medido aquí.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Para valorar sus efectos faltan registros de aplicación y controles, así como una medición comparable de pérdidas y desperdicio posterior a la aplicación de las obligaciones. No son requisitos adicionales para acreditar la aprobación de la ley.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-22",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-22-part-1",
+          "label": "Aprobación legislativa",
+          "criterion": "Localizar una ley orgánica de representación paritaria publicada.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La LO 2/2024 acredita el instrumento legislativo prometido.",
+          "sourceIds": [
+            "BOE-A-2024-15936"
+          ]
+        },
+        {
+          "id": "c-22-part-2",
+          "label": "Representación efectiva",
+          "criterion": "Verificar composición y fecha aplicable en cada tipo de entidad.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se han contrastado las composiciones de todas las entidades; los plazos no son uniformes.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el calendario para evitar tratar como incumplidas obligaciones que todavía no vencen o equiparar las 35 sociedades definidas por la ley con cualquier composición posterior del IBEX. La aprobación no mide la representación efectiva.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Para valorar la aplicación faltan composiciones verificadas por entidad, fecha y régimen aplicable. La aprobación de la ley sí está acreditada; no se condiciona a demostrar todos sus resultados posteriores.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-154",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-154-part-1",
+          "label": "Modificación del artículo 49",
+          "criterion": "Comparar el acto publicado con el objeto constitucional prometido.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El artículo único sustituye la redacción del artículo 49 con garantías expresas sobre discapacidad.",
+          "sourceIds": [
+            "BOE-A-2024-3099"
+          ]
+        },
+        {
+          "id": "c-154-part-2",
+          "label": "Desarrollo práctico de derechos",
+          "criterion": "Medir accesibilidad, autonomía e inclusión después de la reforma.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La publicación constitucional no aporta esas mediciones.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el actor que aprueba la reforma y el alcance del nuevo texto. El cumplimiento del acto constitucional no permite afirmar la eliminación de barreras o desigualdades.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: La modificación constitucional está acreditada. Para evaluar su desarrollo práctico faltan medidas de accesibilidad, inclusión y ejercicio efectivo de derechos, con población y periodo definidos.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-132",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-132-part-1",
+          "label": "Reorganización normativa",
+          "criterion": "Localizar organización y calendario en la ley.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La LO 1/2025 regula Tribunales de Instancia y oficinas judiciales.",
+          "sourceIds": [
+            "BOE-A-2025-76"
+          ]
+        },
+        {
+          "id": "c-132-part-4",
+          "label": "Constitución legal de los tribunales",
+          "criterion": "Contrastar la constitución con un documento del órgano de gobierno judicial distinto del balance del Ejecutivo.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El CGPJ confirma la constitución legal de todos los tribunales el 31/12/2025 y distingue la transición de oficinas. Esta corroboración se limita al estado jurídico descrito en enero de 2026.",
+          "sourceIds": [
+            "cgpj-instancia-20260120"
+          ]
+        },
+        {
+          "id": "c-132-part-2",
+          "label": "Implantación territorial",
+          "criterion": "Comprobar funcionamiento y dotación efectiva por partido judicial.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se dispone en esta ficha de un registro completo de implantación.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-132-part-3",
+          "label": "Calidad del servicio",
+          "criterion": "Comparar tiempos y capacidad con periodos y materias homogéneos.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La norma no demuestra una mejora medida del servicio.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó la ley con un acuerdo del CGPJ, distinto del emisor del balance gubernamental. Confirma la constitución legal, pero documenta fechas y condiciones diferentes para las oficinas. La evidencia de enero no permite certificar ni negar por sí sola el estado operativo comunicado en junio. Tampoco es revisión humana independiente de esta ficha.",
+      "refreshTrigger": "Revisar con registros actualizados de implantación y dotación por partido judicial, y comprobar la efectividad posterior de las oficinas mencionadas por el CGPJ.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-126",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-126-part-1",
+          "label": "Pacto de Estado",
+          "criterion": "Identificar acuerdo, participantes y alcance del pacto.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "El real decreto laboral no documenta un pacto de Estado.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-126-part-2",
+          "label": "Medidas laborales",
+          "criterion": "Localizar obligaciones, ámbito empresarial y protocolo.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Los artículos 1 y 2 y los anexos desarrollan medidas laborales y protocolo.",
+          "sourceIds": [
+            "BOE-A-2024-20402"
+          ]
+        },
+        {
+          "id": "c-126-part-3",
+          "label": "Reducción de discriminación",
+          "criterion": "Medir cambios comparables y distinguirlos de la aprobación normativa.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Esta fuente no ofrece una evaluación de la discriminación.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separó el pacto de Estado de las medidas laborales. La existencia de un real decreto no permite declarar logrado el compromiso completo ni medir una reducción de la discriminación.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Documento y adhesiones del pacto de Estado, registros de negociación y aplicación empresarial y mediciones comparables de discriminación. No encontrar el pacto en esta fuente no demuestra que no exista.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-118",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-118-part-1",
+          "label": "Coordinación y referencia",
+          "criterion": "Comprobar creación, funciones y ámbito de los órganos.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Los artículos 1 a 3 y 7 regulan la mesa y el centro de referencia.",
+          "sourceIds": [
+            "BOE-A-2026-2727"
+          ]
+        },
+        {
+          "id": "c-118-part-2",
+          "label": "Protección efectiva",
+          "criterion": "Contrastar controles y resultados para cada población animal.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se documentan aquí resultados de bienestar ni todos los ámbitos de protección.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el ámbito material del artículo 1. Una mesa y un centro de referencia de producción agraria y acuícola son una medida concreta, no evidencia de bienestar efectivo de todos los animales.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Actas y actividades de los órganos, controles y resultados de bienestar comparables. Para evaluar toda la promesa falta también evidencia de los ámbitos animales no cubiertos por este real decreto.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-191",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-191-part-1",
+          "label": "Ley integral",
+          "criterion": "Comprobar aprobación y contenido de la ley.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 1/2026 acredita el componente legislativo.",
+          "sourceIds": [
+            "BOE-A-2026-7967"
+          ]
+        },
+        {
+          "id": "c-191-part-2",
+          "label": "Desarrollo del PERTE",
+          "criterion": "Verificar ejecución, proyectos y beneficiarios del PERTE.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La publicación de la ley no acredita la ejecución del PERTE.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-191-part-3",
+          "label": "Estrategia de Economía Social",
+          "criterion": "Contrastar seguimiento de acciones y objetivos de la estrategia.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se ha incorporado un seguimiento verificado de la estrategia.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se desglosaron los tres instrumentos de la promesa. El título de la ley no basta para certificar el desarrollo del PERTE ni de la estrategia, ni su efecto en el empleo.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Ejecución presupuestaria y proyectos del PERTE, seguimiento de los objetivos de la estrategia e indicadores de resultados con base comparable y atribución delimitada.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-146",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-146-part-1",
+          "label": "Marco de la Agencia Estatal de Salud Pública",
+          "criterion": "Localizar creación y funciones en una ley publicada.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Los artículos 1 y 2 crean la agencia y definen sus fines.",
+          "sourceIds": [
+            "BOE-A-2025-15652"
+          ]
+        },
+        {
+          "id": "c-146-part-2",
+          "label": "Capacidad operativa",
+          "criterion": "Comprobar desarrollo, medios, actividad y sistemas.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La ley por sí sola no acredita operatividad ni dotación efectiva.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-146-part-3",
+          "label": "Mejora de vigilancia y respuesta",
+          "criterion": "Comparar calidad y tiempos con una base explícita.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay en esta ficha indicadores comparables que demuestren la mejora prometida.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separó la creación legal de la agencia de su capacidad operativa. Tampoco se convirtió el plazo de aprobar su estatuto en un veredicto sobre toda la vigilancia sanitaria sin comprobar su desarrollo.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Estatuto y registros de constitución operativa, dotación y actividad; indicadores de oportunidad de alertas, cobertura de vigilancia y respuesta a crisis. La falta de esas capturas aquí no prueba incumplimiento del plazo del estatuto.",
+      "overlaps": [],
       "correction": null
     }
   ]

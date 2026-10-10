@@ -4,11 +4,11 @@
   "cutoffDate": "2026-10-10",
   "governmentCutoffDate": "2026-06-30",
   "selection": {
-    "description": "Selección editorial no representativa de 30 compromisos del inventario Cumpliendo julio de 2026, atribuibles por ese inventario a la investidura o al acuerdo de coalición de 2023. Prioriza empleo, vivienda, economía, educación, sanidad y bienestar; no calcula un porcentaje global de cumplimiento.",
+    "description": "Selección editorial no representativa de 38 compromisos del inventario Cumpliendo julio de 2026. Amplía los 30 iniciales con ocho compromisos contrastados mediante normas originales; no calcula un porcentaje global de cumplimiento.",
     "totalAvailable": 203,
-    "totalImported": 30,
-    "reviewedCount": 30,
-    "reviewScope": "Revisión documental de los 30 compromisos al 10 de octubre de 2026: resultado esperado, evidencia observada, alcance, periodo, efecto práctico y lagunas específicas. No equivale a una auditoría completa de ejecución ni a cumplimiento de las 30 promesas.",
+    "totalImported": 38,
+    "reviewedCount": 38,
+    "reviewScope": "Revisión documental de 38 compromisos al 10 de octubre de 2026, con criterios, evidencia, límites y componentes. Los 203 registros oficiales están importados en el inventario completo; 165 siguen pendientes de revisión.",
     "attribution": "Origen de los datos: sitio web de lamoncloa.gob.es. Ministerio de la Presidencia.",
     "sourcePublicationDate": "2026-07-28",
     "importedAt": "2026-10-07T10:16:11.777Z",
@@ -712,6 +712,132 @@
       "kind": "origen_compromiso",
       "captureType": "parafrasis_editorial",
       "licenseNote": "La huella identifica solo la paráfrasis con páginas. No se conserva ni se redistribuye el PDF del partido."
+    },
+    {
+      "id": "BOE-A-2025-6597",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6597",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-6597",
+      "title": "Ley 1/2025, de 1 de abril, de prevención de las pérdidas y el desperdicio alimentario.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2025-04-02",
+      "capturedAt": "2026-10-10T07:24:43.411Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2025-6597.xml",
+      "sha256": "ee81dd4bb80160dc39ddf5e97f54dd615787203a98f00d85badc7050ca0f5dcb",
+      "bytes": 206133,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "BOE-A-2024-15936",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-15936",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-15936",
+      "title": "Ley Orgánica 2/2024, de 1 de agosto, de representación paritaria y presencia equilibrada de mujeres y hombres.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2024-08-02",
+      "capturedAt": "2026-10-10T07:24:43.549Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2024-15936.xml",
+      "sha256": "c46d315eb34eb01d2622f77ab9c298ed09df508a398503744a5c0de560f1395c",
+      "bytes": 164924,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "BOE-A-2024-3099",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-3099",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-3099",
+      "title": "Reforma del artículo 49 de la Constitución Española, de 15 de febrero de 2024.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2024-02-17",
+      "capturedAt": "2026-10-10T07:24:43.613Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2024-3099.xml",
+      "sha256": "434b78243ff5242820e9b94f44edeed33a803e521f6a62d66ad9fc2304771389",
+      "bytes": 36732,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "BOE-A-2025-76",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-76",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-76",
+      "title": "Ley Orgánica 1/2025, de 2 de enero, de medidas en materia de eficiencia del Servicio Público de Justicia.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2025-01-03",
+      "capturedAt": "2026-10-10T07:24:44.025Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2025-76.xml",
+      "sha256": "e2df2f9614b5d8a632f7de751bac68aebb80dc284ddfe832860a25b1803278e8",
+      "bytes": 1753606,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "BOE-A-2024-20402",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-20402",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2024-20402",
+      "title": "Real Decreto 1026/2024, de 8 de octubre, por el que se desarrolla el conjunto planificado de las medidas para la igualdad y no discriminación de las personas LGTBI en las empresas.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2024-10-09",
+      "capturedAt": "2026-10-10T07:24:44.116Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2024-20402.xml",
+      "sha256": "b4ae2790721f57ba935e622ff2a902c82e0ea6aac05b3c30c3c9d89c0619da82",
+      "bytes": 51242,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "BOE-A-2026-2727",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-2727",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-2727",
+      "title": "Real Decreto 69/2026, de 4 de febrero, por el que se regulan aspectos organizativos en materia de bienestar y protección de los animales mantenidos con fines agrarios y para la acuicultura.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-02-06",
+      "capturedAt": "2026-10-10T07:24:44.181Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2026-2727.xml",
+      "sha256": "3b25120f4fba310c6fd5f3736739764d1965c6f12e4d8ad1fa3e7580879de0ca",
+      "bytes": 38844,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "BOE-A-2026-7967",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-7967",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-7967",
+      "title": "Ley 1/2026, de 8 de abril, integral de impulso de la economía social.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2026-04-09",
+      "capturedAt": "2026-10-10T07:24:44.341Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2026-7967.xml",
+      "sha256": "2e8275a51bcf89e0465c479da8b600a122ad616ff9af4292ec7aecb17007bbbf",
+      "bytes": 224202,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "BOE-A-2025-15652",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-15652",
+      "downloadUrl": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-15652",
+      "title": "Ley 7/2025, de 28 de julio, por la que se crea la Agencia Estatal de Salud Pública y se modifica la Ley 33/2011, de 4 de octubre, General de Salud Pública.",
+      "organisation": "Agencia Estatal Boletín Oficial del Estado",
+      "publishedAt": "2025-07-29",
+      "capturedAt": "2026-10-10T07:24:44.478Z",
+      "snapshotPath": "data/mandate/evidence/expansion/BOE-A-2025-15652.xml",
+      "sha256": "ea7a26afecc1c2ec33af6be0d26526ba0ee3dedfa6b970fe35d7d170102f03ea",
+      "bytes": 118576,
+      "kind": "norma",
+      "captureType": "bytes_originales"
+    },
+    {
+      "id": "cgpj-instancia-20260120",
+      "url": "https://www.poderjudicial.es/stfls/CGPJ/0%20LO%201-2025/ACUERDOS%20COMISI%C3%93N%20PERMANENTE%20CGPJ/20260120%20Acuerdo%2011.1%20CP%20CGPJ.pdf",
+      "title": "Acuerdo de la Comisión Permanente del CGPJ de 20 de enero de 2026: constitución de Tribunales de Instancia y oficinas judiciales (anexo 11, acuerdo 1)",
+      "organisation": "Consejo General del Poder Judicial",
+      "publishedAt": null,
+      "documentDate": "2026-01-20",
+      "capturedAt": "2026-10-10T07:39:48.427Z",
+      "snapshotPath": "data/mandate/evidence/expansion/cgpj-20260120.pdf",
+      "sha256": "737f7c42b30ea87682063029628876d28a1a3e573034fcb6f32c84ec3c00f6e3",
+      "bytes": 152984,
+      "kind": "acuerdo_institucional",
+      "captureType": "bytes_originales"
     }
   ],
   "commitments": [
@@ -4144,6 +4270,570 @@
           }
         }
       ]
+    },
+    {
+      "id": "c-20",
+      "officialId": "20",
+      "title": "Ley contra el desperdicio alimentario",
+      "text": "Aprobar una ley contra el desperdicio alimentario ",
+      "simpleExplanation": "Aprobar una ley contra el desperdicio alimentario.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": "C.G.P. 3.24; Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=20; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "medioambiente"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; aprobación legislativa. La ejecución y los resultados requieren evidencia de los agentes y administraciones competentes."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=20"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=20",
+        "previousInitiatives": "[6/2025]: Se ha aprobado la Ley de Prevención de las Pérdidas y el Desperdicio Alimentario. La Ley contempla que las empresas de la cadena alimentaria deberán elaborar planes de prevención de pérdidas y desperdicios, priorizándose la donación o redistribución de alimentos a entidades sociales. Las empresas de hostelería tendrán la obligación de facilitar al consumidor que pueda llevarse los alimentos que no haya consumido sin coste adicional alguno en envases reutilizables o fácilmente reciclables. La ley también articula medidas de buenas prácticas en cuestiones como la venta de productos 'imperfectos'; de productos de temporada, de proximidad o ecológicos. Y también para la venta de productos de consumo preferente o de caducidad próxima\n\r[6/2024]: Se ha aprobado el proyecto de Ley de Prevención de las Pérdidas y el Desperdicio Alimentario\n\r[6/2025]: Se ha publicado un documento de preguntas y respuestas para implementar la Ley, que permitirá que la población en general y los distintos agentes, empresas y colectivos implicados en su desarrollo, tengan un mejor conocimiento de los aspectos clave",
+        "currentInitiatives": "Ha entrado en aplicación de las medidas obligatorias del artículo 6 de la Ley de prevención de las pérdidas y el desperdicio alimentario.",
+        "verificationSources": "BOE - https://www.boe.es/buscar/act.php?id=BOE-A-2025-6597"
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Aprobar una ley contra el desperdicio alimentario. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "La Ley 1/2025, publicada el 2 de abril de 2025, acredita la aprobación de la ley solicitada. Regula prioridades y obligaciones de prevención. La disposición final vigésima separa la entrada en vigor general de la aplicación de las medidas obligatorias del artículo 6, prevista un año después de la publicación.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2025-6597",
+            "locator": "Ley 1/2025: artículos 1, 5 y 6; disposición final vigésima",
+            "paraphrase": "La Ley 1/2025, publicada el 2 de abril de 2025, acredita la aprobación de la ley solicitada. Regula prioridades y obligaciones de prevención. La disposición final vigésima separa la entrada en vigor general de la aplicación de las medidas obligatorias del artículo 6, prevista un año después de la publicación.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Aprobar una ley contra el desperdicio alimentario.",
+        "observed": "La Ley 1/2025, publicada el 2 de abril de 2025, acredita la aprobación de la ley solicitada. Regula prioridades y obligaciones de prevención. La disposición final vigésima separa la entrada en vigor general de la aplicación de las medidas obligatorias del artículo 6, prevista un año después de la publicación.",
+        "practicalEffect": "Existe un marco normativo para prevenir pérdidas y orientar el destino de los excedentes. Aprobarlo no demuestra que todos los operadores lo apliquen ni cuánto desperdicio se haya evitado.",
+        "missingEvidence": "Para valorar sus efectos faltan registros de aplicación y controles, así como una medición comparable de pérdidas y desperdicio posterior a la aplicación de las obligaciones. No son requisitos adicionales para acreditar la aprobación de la ley.",
+        "temporalScope": "Texto original publicado el 2 de abril de 2025; régimen de aplicación diferida del artículo 6. No se deduce su aplicación efectiva de que haya transcurrido el plazo.",
+        "scope": "España; aprobación legislativa. La ejecución y los resultados requieren evidencia de los agentes y administraciones competentes.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2025-6597"
+        ]
+      },
+      "assessmentHistory": []
+    },
+    {
+      "id": "c-22",
+      "officialId": "22",
+      "title": "Ley de representación paritaria",
+      "text": "Aprobar una ley de representación paritaria",
+      "simpleExplanation": "Aprobar una ley de representación paritaria.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": "Discurso de investidura; C.G.P. 6.12; Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=22; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "igualdad",
+        "politica"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; ámbitos electorales, institucionales y societarios regulados por la ley, con disposiciones transitorias propias."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=22"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=22",
+        "previousInitiatives": "[12/2024]: Se ha aprobado y publicado en el BOE la Ley Orgánica 2/2024, de 1 de agosto, de representación paritaria y presencia equilibrada de mujeres y hombres. También se ha iniciado una ronda de contactos con los agentes sociales y económicos, con el objetivo de acompañar y facilitar la implementación de la Ley de Paridad\n\r[6/2024]: Se está tramitando en las Cortes Generales el Proyecto de Ley Orgánica de representación paritaria y presencia equilibrada de mujeres y hombres, que busca garantizar la representación efectiva de las mujeres en los ámbitos decisorios de la vida política y económica. Para ello, el proyecto de ley incorpora el principio de representación equilibrada al ámbito empresarial. En el ámbito político, modifica la legislación electoral con el fin de establecer la obligatoriedad de las conocidas como listas cremallera.[[En el ámbito de la Administración General del Estado, los órganos superiores y directivos deberán incorporar también este principio en los próximos cinco años. La obligación se extenderá a todas las entidades del sector público estatal[[",
+        "currentInitiatives": "",
+        "verificationSources": ""
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Aprobar una ley de representación paritaria. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "La Ley Orgánica 2/2024, publicada el 2 de agosto de 2024, acredita la aprobación de la ley. Su aplicación es escalonada: entre otros supuestos, la disposición transitoria primera fija el 30 de junio de 2026 para las 35 cotizadas de mayor capitalización definida por la propia norma y el 30 de junio de 2027 para las demás cotizadas.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2024-15936",
+            "locator": "Ley Orgánica 2/2024: título y disposiciones transitorias primera y segunda; disposición final decimoquinta",
+            "paraphrase": "La Ley Orgánica 2/2024, publicada el 2 de agosto de 2024, acredita la aprobación de la ley. Su aplicación es escalonada: entre otros supuestos, la disposición transitoria primera fija el 30 de junio de 2026 para las 35 cotizadas de mayor capitalización definida por la propia norma y el 30 de junio de 2027 para las demás cotizadas.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Aprobar una ley de representación paritaria.",
+        "observed": "La Ley Orgánica 2/2024, publicada el 2 de agosto de 2024, acredita la aprobación de la ley. Su aplicación es escalonada: entre otros supuestos, la disposición transitoria primera fija el 30 de junio de 2026 para las 35 cotizadas de mayor capitalización definida por la propia norma y el 30 de junio de 2027 para las demás cotizadas.",
+        "practicalEffect": "La norma introduce requisitos de representación y participación equilibrada. No establece que todas las entidades deban alcanzar simultáneamente el mismo porcentaje ni prueba que ya lo hayan alcanzado.",
+        "missingEvidence": "Para valorar la aplicación faltan composiciones verificadas por entidad, fecha y régimen aplicable. La aprobación de la ley sí está acreditada; no se condiciona a demostrar todos sus resultados posteriores.",
+        "temporalScope": "Texto original publicado el 2 de agosto de 2024; calendarios de aplicación diferenciados, incluidos plazos posteriores a esta revisión.",
+        "scope": "España; ámbitos electorales, institucionales y societarios regulados por la ley, con disposiciones transitorias propias.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2024-15936"
+        ]
+      },
+      "assessmentHistory": []
+    },
+    {
+      "id": "c-154",
+      "officialId": "154",
+      "title": "Reforma constitucional sobre discapacidad",
+      "text": "Modificar el artículo 49 de la Constitución para reforzar la protección constitucional de los derechos de las personas con discapacidad",
+      "simpleExplanation": "Modificar el artículo 49 de la Constitución para reforzar la protección constitucional de los derechos de las personas con discapacidad.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": "Discurso de investidura; C.G.P. 4.11; Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=154; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "bienestar",
+        "igualdad",
+        "politica"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; reforma de las Cortes Generales y obligaciones de los poderes públicos. No se atribuyen todos sus efectos al Ejecutivo."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=154"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=154",
+        "previousInitiatives": "\n\r[12/2025]: Se ha aprobado el primer Plan de acción para la promoción y protección de los derechos de las mujeres y niñas con discapacidad (2025-2035). Se trata de un plan de acción transversal en el que se plantean seis grandes objetivos y 43 acciones concretas para lograrlos, y que contará con una dotación presupuestaria que asciende a 65.156.207 euros. El proyecto busca asegurar que las mujeres y las niñas con discapacidad accedan a sus derechos en igualdad de condiciones y erradicar las situaciones de violencia y discriminación que experimentan[[\n\r[6/2024]:  Se ha aprobado un Anteproyecto de Ley que incluye el cambio en la denominación de las prestaciones hasta ahora conocidas por ‘gran invalidez’ e ‘invalidez no contributivas’, que pasan a ser ‘complemento de asistencia de tercera persona’ y de ‘incapacidad no contributiva’, en aras de fomentar un lenguaje más respetuoso e inclusivo hacia las personas perceptoras de estas pensiones de la Seguridad Social\n\r[6/2024]:  Se ha realizado la consulta pública sobre el Anteproyecto de Ley por el que se modifica el texto refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, y de la Ley 39/2006, de 14 de diciembre, de promoción de la autonomía personal y atención a las personas en situación de dependencia, para la extensión y refuerzo de los derechos de las personas con discapacidad a la inclusión, la autonomía y la accesibilidad universal conforme al artículo 49 de la Constitución Española. Esta norma pretende establecer una coordinación normativa y, por lo tanto, una mayor seguridad jurídica en materia de discapacidad, adaptando el TRLGD y la LAPAD a la nueva realidad impuesta por la reforma del artículo 49 de la Constitución Española, así como por la Convención sobre los Derechos de las Personas con Discapacidad de Naciones Unidas[[\n\r[6/2024]: Se ha aprobado la Proposición de Reforma del artículo 49 de la Constitución Española, que amplía los derechos de las personas con discapacidad y elimina del texto la expresión \"disminuidos físicos, sensoriales y psíquicos\". Esta reforma, además de eliminar el término disminuidos y consagra la expresión personas con discapacidad en la Carta Magna. Esta modificación constitucional también incorpora el enfoque de derechos humanos como único abordaje para la discapacidad, asimismo otorga una protección reforzada a las mujeres y a la infancia con discapacidad\n\r[6/2025]: Como consecuencia de la modificación del artículo 49 de la Constitución Española, la disposición adicional única de la Ley 2/2025 regula la adaptación terminológica en virtud de la  cual todas las referencias contenidas en el TRLGSS, en TRLET y en la Ley reguladora de la  protección social de las personas trabajadoras del sector marítimo-pesquero y su normativa de desarrollo, a la “gran invalidez” se sustituyen por “gran incapacidad”. Igualmente, las referencias a la “invalidez no contributiva” se sustituyen por “incapacidad no contributiva”\n\r[6/2025]: Las Cortes Generales han aprobado, y se ha publicado en el BOE, la Ley 2/2025, por la que se elimina como causa automática de extinción de la relación laboral el reconocimiento de la Incapacidad Permanente de la persona trabajadora. Se obliga a las empresas a adaptar el puesto de trabajo o a reubicar al trabajador, siempre que sea posible y no constituya una carga excesiva\n\r[6/2024]: Se ha aprobado el Anteproyecto de Ley que reforma el Estatuto de los Trabajadores para eliminar como causa automática de extinción de la relación laboral el reconocimiento de la Incapacidad Permanente de la persona trabajadora. Con esta medida, la posibilidad de extinguir el contrato, hasta ahora en manos de la empresa, se condiciona a la voluntad de la persona trabajadora, quien podrá optar entre una adaptación de su puesto de trabajo o un cambio a otro puesto de trabajo vacante acorde con su perfil profesional y compatible con su nueva situación\n\r[6/2025]: Se ha aprobado el Anteproyecto de Ley por el que se modifican la Ley de Dependencia y la Ley de Discapacidad para  garantizar mayores derechos para las personas con dependencia o con discapacidad y ampliar el catálogo de servicios a los que pueden optar\n\r[6/2025]: Se ha aprobado el Real Decreto por el que se regula la actividad y bienestar de los perros de asistencia, una norma que regula el régimen de tenencia y bienestar de los perros de asistencia, adecuándolo a la Ley 7/2023, de 28 de marzo, de protección de los derechos y el bienestar de los animales \n\r[6/2025]: Se ha aprobado la Ley 2/2025, de 29 de abril, en su artículo segundo, modifica el apartado 5 del artículo 174 del TRLGSS, en aquellos casos en los que, de acuerdo con lo establecido en el artículo 49.1.n) del TRLET, la declaración de incapacidad permanente en los grados de total, absoluta o gran incapacidad no determine la extinción de la relación laboral, por llevar a cabo la empresa la adaptación razonable, necesaria y adecuada del puesto de trabajo a la nueva situación de incapacidad declarada o por haber destinado a otro puesto a la persona trabajadora, la prestación de incapacidad permanente (que habrá tenido efectos iniciales desde la fecha de la [[resolución por la que fue reconocida o desde la extinción de la incapacidad temporal, según lo ya [[indicado) se suspenderá durante el desempeño del mismo puesto de trabajo con adaptaciones u otro que resulte incompatible con la percepción de la pensión que corresponda, de acuerdo con el artículo 198 del TRLGSS.\n\r[6/2025]: Se ha aprobado una declaración institucional por el Día Nacional de la Convención Internacional sobre los Derechos de las Personas con Discapacidad de Naciones Unidas, celebrado el día 3 de mayo. Se hace un llamamiento a continuar avanzando en derechos para las personas con discapacidad, especialmente en materia de accesibilidad universal ",
+        "currentInitiatives": "Se ha redactado un informe de las actuaciones emprendidas por el Gobierno de España para el despliegue del artículo 49 de la Constitución Española\n\rPara blindar el derecho a la accesibilidad universal se ha puesto en marcha la Unidad Técnica de Apoyo y Coordinación de las Autoridades de vigilancia en materia de requisitos de accesibilidad, vinculada orgánicamente a la Dirección General de Derechos de las Personas con Discapacidad y, más concretamente, a la Subdirección General de Diálogo Civil. Su objetivo es apoyar a las autoridades de vigilancia de las CCAA para dar cumplimiento a la Directiva Europea de Accesibilidad 2019/882. Esta Unidad es un punto de contacto clave para la ciudadanía al facilitar los medios para la recepción de denuncias y reclamaciones relacionadas con el incumplimiento de los requisitos de accesibilidad de los productos y servicios señalados en la Ley 11/2023, de 8 de mayo, transpuesta de la citada Directiva",
+        "verificationSources": "Consejo de Ministros - https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260224-referencia-rueda-de-prensa-ministros.aspx\n\rBOE - https://www.boe.es/boe/dias/2026/02/27/pdfs/BOE-A-2026-4520.pdf\n\rWeb del Ministerio - https://www.dsca.gob.es/es/derechos-sociales/discapacidad/unidad-tecnica-apoyo-coordinacion-autoridades-vigilancia-materia"
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Modificar el artículo 49 de la Constitución para reforzar la protección constitucional de los derechos de las personas con discapacidad. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "La reforma publicada el 17 de febrero de 2024 modifica el artículo 49 e incorpora libertad e igualdad efectivas, autonomía, inclusión y accesibilidad, con atención específica a mujeres y menores con discapacidad. El documento registra su aprobación por las Cortes Generales: no es una decisión exclusiva del Gobierno.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2024-3099",
+            "locator": "Reforma del artículo 49: encabezamiento, artículo único y disposición final única",
+            "paraphrase": "La reforma publicada el 17 de febrero de 2024 modifica el artículo 49 e incorpora libertad e igualdad efectivas, autonomía, inclusión y accesibilidad, con atención específica a mujeres y menores con discapacidad. El documento registra su aprobación por las Cortes Generales: no es una decisión exclusiva del Gobierno.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Modificar el artículo 49 de la Constitución para reforzar la protección constitucional de los derechos de las personas con discapacidad.",
+        "observed": "La reforma publicada el 17 de febrero de 2024 modifica el artículo 49 e incorpora libertad e igualdad efectivas, autonomía, inclusión y accesibilidad, con atención específica a mujeres y menores con discapacidad. El documento registra su aprobación por las Cortes Generales: no es una decisión exclusiva del Gobierno.",
+        "practicalEffect": "El texto constitucional recoge expresamente esas garantías y orientaciones para los poderes públicos. La reforma no equivale a que todos los entornos sean ya accesibles ni a la concesión automática de una prestación individual.",
+        "missingEvidence": "La modificación constitucional está acreditada. Para evaluar su desarrollo práctico faltan medidas de accesibilidad, inclusión y ejercicio efectivo de derechos, con población y periodo definidos.",
+        "temporalScope": "Reforma de 15 de febrero de 2024, publicada y con entrada en vigor el 17 de febrero de 2024, según su disposición final única.",
+        "scope": "España; reforma de las Cortes Generales y obligaciones de los poderes públicos. No se atribuyen todos sus efectos al Ejecutivo.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2024-3099"
+        ]
+      },
+      "assessmentHistory": []
+    },
+    {
+      "id": "c-132",
+      "officialId": "132",
+      "title": "Organización de la Administración de Justicia",
+      "text": "Llevar a cabo una nueva organización de la Administración de Justicia",
+      "simpleExplanation": "Llevar a cabo una nueva organización de la Administración de Justicia.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": "C.G.P. 9.6; C.G.P. 9.21; C.G.P. 9.23; Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=132; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "politica"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; organización judicial y competencias de gestión del Ministerio y de las comunidades autónomas. No se extrapola la norma a un balance autonómico individual."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=132"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=132",
+        "previousInitiatives": "[12/2024]: Se ha aprobado la reforma de Ley Orgánica del Poder Judicial. La norma, que modifica tanto la Ley Orgánica del Poder Judicial como el Estatuto Orgánico del Ministerio Fiscal, refuerza la independencia y los medios para los profesionales de la Justicia e incorpora las recomendaciones identificadas por la Comisión Europea en su Informe sobre el Estado de Derecho referido a España\n\r[12/2025]: El 1 de julio han entrado en funcionamiento 315 Tribunales de Instancia, pertenecientes a la primera fase de la implantación de la Ley de Eficiencia del Servicio Público de Justicia, aprobada por las Cortes Generales el pasado mes de enero. En esta Fase I, se activan 236 Tribunales de Instancia en comunidades autónomas con competencias transferidas en materia de Justicia y 79 en el territorio gestionado por el Ministerio, lo que representa el 100% de los previstos, cumpliendo así con lo establecido en la Ley. A lo largo del año se completarán otras dos fases: 16 nuevos tribunales el 1 de octubre y 100 adicionales el 31 de diciembre, hasta alcanzar los 431 Tribunales de Instancia en todo el territorio nacional\n\r[6/2025]: Se continúa avanzando en la implantación de la Ley Orgánica 1/2025 de Eficiencia del Servicio Público de Justicia, en el territorio donde ejerce esta competencia. En este sentido, se ha publicado en el Boletín Oficial del Estado la convocatoria de dos procesos para integrar  al personal de los Juzgados existentes actualmente en los futuros Tribunales de Instancia. En concreto, se trata de (i) el procedimiento de libre designación del cuerpo de letrados de la Administración de Justicia y (ii) el concurso específico para puestos singularizados de los cuerpos generales de la Administración de Justicia\n\r[12/2025]: Se está tramitando en las Cortes Generales el Proyecto de Ley Orgánica para la Ampliación y Fortalecimiento de las Carreras Judicial y Fiscal, cuya aprobación supondrá la incorporación de 2.500 nuevos efectivos a las Carreras Judicial y Fiscal (1.500 de acceso, en tres años, por turno libre y cuarto turno, y 1.000 de estabilización de jueces sustitutos, magistrados suplentes y fiscales sustitutos). Asimismo, en dicha norma se prevé el ascenso automático de jueces, transcurrido el tiempo preceptivo, sin necesidad de concursar a una nueva plaza\n\r[6/2025]: Se ha aprobado el Anteproyecto de Ley Orgánica para la Ampliación y Fortalecimiento de las Carreras Judicial y Fiscal, cuyo objetivo es adecuar la Administración de Justicia y la labor de sus profesionales a la nueva realidad de este servicio público y a las demandas sociales emergentes. Se trata de la mayor reforma de la Ley Orgánica del Poder Judicial de 1985, y afianza la gran transformación de la Justicia que está llevando a cabo este Gobierno basada en los principios de digitalización, modernización y vocación social. Los ejes fundamentales de la actualización de esta ley son: promover la igualdad de oportunidades en el acceso de los profesionales del sistema judicial; buscar la excelencia y diversidad de los miembros de la Administración de Justicia; mejorar su carrera profesional; e impulsar la pluralidad y la transparencia de sus estructuras\n\r[12/2025]: Se ha aprobado el Proyecto de Ley Orgánica de Enjuiciamiento Criminal (LOECrim), la norma que regula el procedimiento penal y define las reglas y garantías para investigar y enjuiciar delitos. Se trata de un proyecto histórico, de completa modificación de una ley esencial para el ordenamiento jurídico\n\r[6/2025]: Se ha aprobado en Consejo de Ministros, en primera vuelta, la reforma de la Ley 50/1981, de 30 de diciembre, por la que se regula el Estatuto Orgánico del Ministerio Fiscal, para fortalecer su autonomía y mejorar su capacidad funcional. A la vez, adapta esta institución al nuevo papel que tendrá con la futura Ley de Enjuiciamiento Criminal (LECrim), que convertirá al Ministerio Fiscal en el encargado de la instrucción de los procesos penales, como ocurre en el resto de países de la Unión Europea[[[[Se trata de la mayor reforma de la Ley 50/1981, que regula el Ministerio Público desde hace cerca de 45 años. Con ella, el Gobierno atiende, además, a las principales recomendaciones de la Comisión Europea y del Grupo de Estados contra la Corrupción del Consejo de Europa (GRECO) para el refuerzo de la autonomía e independencia del Ministerio Fiscal.\n\r[12/2025]: Se han aprobado el Real Decreto 422/25 que dota 50 nuevas plazas en las Secciones de Violencia sobre la Mujer de distintos tribunales de instancia, así como constituir tres nueva secciones de Violencia sobre la Infancia y la Adolescencia en distintos tribunales de instancia, el Real Decreto 388/2025  por el que se transforma el Juzgado de lo Contencioso-Administrativo número 3 de Melilla en Juzgado de Primera Instancia e Instrucción número 6 de Melilla y el Real Decreto 930/2025, por el que se establece la separación de la Sección Única,  de Civil y de Instrucción, en los Tribunales de Instancia de Puerto del Rosario y Arganda del Rey, en Sección Civil y Sección de Instrucción\n\r[6/2024]: Se ha aprobado un real decreto de creación de setenta unidades judiciales correspondientes a la programación de 2023, que conlleva, además, la adecuación de la planta judicial. El objetivo es canalizar el previsible incremento de la litigiosidad y adaptar la planta judicial a las necesidades existentes, para garantizar a la ciudadanía la efectividad de la protección judicial de sus derechos\n\r[6/2024]: Se ha publicado una orden que establece el día 31 de marzo como la fecha de entrada en funcionamiento de cuatro nuevos juzgados: el de Primera Instancia nº 23 de Zaragoza; los juzgados de Primera Instancia e Instrucción nº 8 de Illescas y nº 8 de Lorca, respectivamente; y el de Violencia sobre la Mujer nº1 de Toledo. Asimismo, el 30 de junio han entrado en funcionamiento los Juzgados de Primera Instancia nº13 de Santander, nº 18 de Las Palmas de Gran Canaria, nº 11 de Santa Cruz de Tenerife y nº 8 de San Cristóbal de La Laguna; el Juzgado de primera Instancia e Instrucción nº 8 de Puerto del Rosario, el Juzgado de lo Mercantil número 4 de Oviedo; y el Juzgado de Violencia sobre la Mujer nº 3 de Las Palmas de Gran Canaria\n\r[6/2025]: Se ha publicado en el Boletín Oficial del Estado las relaciones de puestos de trabajo, en los territorios de su competencia, de todas las Oficinas de Justicia en los Municipios, de las Oficinas Judiciales y de las oficinas generales del Registro Civil de la primera fase de implantación de la Ley Orgánica 1/2025 de Eficiencia del Servicio Público de Justicia. Además, el 3 de abril entró en vigor una parte esencial de la Ley Orgánica 1/2025, de Eficiencia del Servicio Público de Justicia, que introduce la obligación de recurrir a los Medios Adecuados de Solución de Controversias (MASC) en asuntos civiles y mercantiles antes de iniciar cualquier proceso judicial, con el objetivo de reducir litigios y agilizar la tramitación de conflictos\n\r[12/2024]: Se ha aprobado la Ley Orgánica de medidas en materia de eficiencia del Servicio Público de Justicia. La norma crea los Tribunales de Instancia, un órgano colegiado que integra todos los juzgados unipersonales y de primera instancia. También crea las Oficinas de Justicia en los Municipios. La ley incluye modificaciones en materia procesal haciendo una clara apuesta por los llamados medios alternativos de solución de controversias (MASC) en vía no jurisdiccional . La reforma organizativa y procesal de la Ley es posible gracias al despliegue tecnológico que se está desarrollando en el marco de la Justicia[[\n\r[6/2024]: Se ha aprobado el Anteproyecto de Ley Orgánica de medidas en materia de eficiencia del servicio público de justicia y de acciones colectivas para la protección y defensa de los derechos e intereses de los consumidores y usuarios\n\r[6/2025]: Se han publicado las plantillas de la nueva estructura judicial creada por la Ley de Eficiencia. Esta primera fase aborda la constitución de los Tribunales de Instancia en aquellos partidos judiciales en los que solo existen juzgados mixtos de primera instancia e instrucción y, en su caso, juzgados de violencia sobre la mujer. A partir de este momento, se inicia la fase de concurso y adjudicación del personal en los puestos de trabajo de las nuevas oficinas.[[[[",
+        "currentInitiatives": "Desde el 31 de diciembre de 2025 todas las plazas creadas y dotadas por el Real Decreto 422/2025 están en funcionamiento\n\rActualmente, se está tramitando dos reales decretos: uno para la creación de 500 unidades judiciales correspondientes a la programación de 2026 y de adecuación de la planta judicial, que supondrá la mayor ampliación de la planta judicial de la historia; y otro por el que se amplía y modifica la plantilla orgánica del Ministerio Fiscal para adecuarla a las necesidades existentes, creando 200 nuevas plazas. A estos reales decretos se unirá este año una macroconvocatoria de 700 plazas (500 para la Carrera Judicial y 200 para la Carrera Fiscal)",
+        "verificationSources": "Documentación interna - Documentación interna\n\rDocumentación interna - Documentación interna"
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Llevar a cabo una nueva organización de la Administración de Justicia. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "La LO 1/2025 regula la nueva organización judicial. El CGPJ, en su acuerdo de 20 de enero de 2026, confirma la constitución legal de todos los Tribunales de Instancia el 31 de diciembre de 2025. A la vez, distingue la oficina judicial: para Oviedo, Gijón y Avilés recoge el 15 de febrero de 2026 como fecha prevista, o la implantación efectiva posterior, manteniendo entretanto la oficina anterior. No certifica la puesta en funcionamiento completa a la fecha de esta revisión.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2025-76",
+            "locator": "LO 1/2025: título I; disposiciones transitorias primera, segunda y quinta",
+            "paraphrase": "La LO 1/2025 regula los Tribunales de Instancia y la nueva organización judicial. Su disposición transitoria primera fija fases para el 1 de julio, el 1 de octubre y el 31 de diciembre de 2025. La transitoria quinta distingue la implantación de las oficinas judiciales y permite fechas diferentes bajo las condiciones que establece.",
+            "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "cgpj-instancia-20260120",
+            "locator": "Acuerdo de 20/01/2026, segundo a)–d), páginas 2–3",
+            "paraphrase": "El CGPJ confirma la constitución legal nacional de los tribunales el 31/12/2025 y documenta la transición de oficinas en Oviedo, Gijón y Avilés. Para Gijón condiciona la efectividad de la nueva plaza y la extensión de jurisdicción a la implantación de la oficina. No es una comprobación de su situación posterior.",
+            "relation": "actuacion_documentada"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Llevar a cabo una nueva organización de la Administración de Justicia.",
+        "observed": "La LO 1/2025 regula la nueva organización judicial. El CGPJ, en su acuerdo de 20 de enero de 2026, confirma la constitución legal de todos los Tribunales de Instancia el 31 de diciembre de 2025. A la vez, distingue la oficina judicial: para Oviedo, Gijón y Avilés recoge el 15 de febrero de 2026 como fecha prevista, o la implantación efectiva posterior, manteniendo entretanto la oficina anterior. No certifica la puesta en funcionamiento completa a la fecha de esta revisión.",
+        "practicalEffect": "Hay una reorganización legal con calendario y régimen transitorio. El texto no acredita por sí solo la dotación operativa de cada oficina, la ocupación de todas las plazas ni menores tiempos de resolución.",
+        "missingEvidence": "Registros actualizados por partido judicial de puesta en funcionamiento de oficinas, dotación y provisión de plazas e indicadores comparables de servicio. Se ha corroborado la constitución legal, no el cierre de la implantación operativa.",
+        "temporalScope": "Ley publicada el 3 de enero de 2025 y acuerdo del CGPJ fechado el 20 de enero de 2026. El acuerdo no verifica lo sucedido después ni permite refutar por sí solo declaraciones gubernamentales de junio de 2026.",
+        "scope": "España; organización judicial y competencias de gestión del Ministerio y de las comunidades autónomas. No se extrapola la norma a un balance autonómico individual.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2025-76",
+          "cgpj-instancia-20260120"
+        ]
+      },
+      "assessmentHistory": []
+    },
+    {
+      "id": "c-126",
+      "officialId": "126",
+      "title": "Pacto y medidas contra la discriminación LGTBI",
+      "text": "Impulsar un pacto de Estado por las personas LGTBI, así como medidas para luchar contra la discriminación del colectivo",
+      "simpleExplanation": "Impulsar un pacto de Estado por las personas LGTBI y medidas contra la discriminación del colectivo.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": "Discurso de investidura; C.G.P. 7.3; C.G.P. 7.5; C.G.P. 7.6; Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=126; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "igualdad",
+        "empleo"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; componente laboral de un compromiso más amplio. Las empresas de cincuenta o menos personas tienen negociación voluntaria según el artículo 2."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=126"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=126",
+        "previousInitiatives": "\n\r[12/2024]: Se ha aprobado el Real Decreto por el que se desarrolla el conjunto planificado de las medidas para la igualdad y no discriminación de las personas LGTBI en las empresas\n\r[12/2025]: Se ha aprobado  Real Decreto 1034/2025, de 12 de noviembre, por el que se regula la concesión directa de subvenciones a determinadas entidades para actuaciones en el área de igualdad de trato y no discriminación.[[\n\r[12/2024]: Se ha aprobado el Real Decreto 1182/2024, de 28 de noviembre, por el que se regula la concesión directa de subvenciones a determinadas entidades para actuaciones en el ámbito de igualdad de trato y no discriminación\n\r[12/2025]: Se ha aprobado por el Consejo de Ministros, la primera Estrategia LGTBI y la primera Estrategia Trans a nivel estatal que constituyen los principales instrumentos de coordinación entre administraciones, sector privado y sociedad civil para luchar por la igualdad y la no discriminación de las personas LGTBI\n\r[6/2025]: El Ministerio de Igualdad y las comunidades autónomas han acordado en la Conferencia Sectorial de Igualdad celebrada hoy la Estrategia Estatal para la Igualdad de Trato y No Discriminación de las personas LGTBI. Esta estrategia será el instrumento principal de colaboración territorial para el impulso y el desarrollo de la Ley 4/2023 para la igualdad real y efectiva de las personas trans y las políticas públicas que garanticen los derechos de las personas LGTBI\n\r[12/2025]: Se ha producio la primera reunión de la Mesa de Diálogo Social que aborda el protocolo de acompañamiento de las personas trans en las empresas\n\r[12/2025]: Se ha terminado el estudio sobre el Sexilio en España que está previsto que se presente el próximo 18 de diciembre .  Se ha lanzado una campaña institucional con motivo de la celebración del XX aniversario de la aprobación del matrimonio igualitario, cuya difusión se realizó entre el 20 de junio y el 20 de julio. Se ha firmado convenio para el 028 con el País Vasco y en el mismo sentido está en fase de tramitación la firma con Cataluña.[[\n\r[6/2025]: Se ha presentado el estudio sobre las personas LGTBI con discapacidad en España (27 de enero) y se ha realizado una jornada técnica para analizar sus resultados (7 de abril) \n\r[12/2024]: Se ha elaborado el  Estudio de personas LGTBI con discapacidad, en cumplimiento de los artículos 10 y  52 respectivamente se han elaborado los borradores de la Estrategia Estatal para la igualdad de trato y no discriminación de las personas LGTBI y  la Estrategia estatal para la inclusión social de las personas trans. En la actualidad se han enviado para aportaciones a los diferentes departamentos ministeriales y se están recibiendo e integrando las correspondientes aportaciones. Además, se han firmado convenios de colaboración con las CCAA de Navarra, Valencia y la Rioja en relación al Servicio 028 de información y atención integral en materia de derechos LGTBI y delitos de odio por LGTBIfobia\n\r[6/2024]: En el marco del Orgullo 2024, se ha lanzado una campaña institucional que pone el foco en el Servicio 028 Arcoíris de información y atención integral en derechos LGTBI+\n\r[6/2024]: Se ha constituido la primera mesa específica de Diálogo Social que aborda la Igualdad y la discriminación al colectivo LGTBI en el entorno laboral. Fruto del Diálogo Social, se ha firmado el acuerdo tripartito por la igualdad y la no discriminación de las personas LGTBI en el ámbito laboral. El acuerdo alcanzado cumple con el mandato de desarrollar reglamentariamente un conjunto planificado de medidas para la igualdad y discriminación del colectivo en la empresa\n\r[6/2025]: Se ha puesto en marcha el procedimiento sancionador descrito en el Título IV de la Ley 4/2023, de 28 de febrero, para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI. Se está trabajando con el Ministerio de Justicia en la propuesta de introducción de un artículo en el Código Penal relativo a las prácticas o \"terapias\" de aversión o conversión\n\r[12/2024]: Se ha interpuesto recurso de inconstitucionalidad contra los apartados once, doce, quince, diecisiete y veintidós bis del artículo único de la Ley de la Comunidad de Madrid 17/2023, de 27 de diciembre, por la que se modifica la Ley 2/2016, de 29 de marzo, de identidad y expresión de género e igualdad social y no discriminación; y contra el apartado catorce ter del artículo único de la Ley de la Comunidad de Madrid 18/2023, de 27 de diciembre, por la que se modifica la Ley 3/2016, de 22 de julio, de protección integral contra la LGTBIfobia y la discriminación por razón de orientación e identidad sexual en la Comunidad de Madrid\n\r[6/2024]: Se han interpuesto recursos de inconstitucionalidad contra la normativa aprobada por la Comunidad de Madrid en 2023 en materia de derechos de las personas trans y LGTBI. Concretamente, contra las leyes 17/2023 y 18/2023 que modifican dos leyes autonómicas previas en un sentido regresivo para los derechos de las personas LGTBI. La primera se refiere específicamente a los derechos y la protección de las personas trans y la segunda más genéricamente a la protección de las personas LGTBI en su conjunto. No se impugnan todas las previsiones de la normativa autonómica, sino aquellos aspectos que se consideran anticonstitucionales por ser contrarios a los derechos fundamentales o por invadir competencias del Estado\n\r[6/2025]: Se han realizado nuevas actividades en el marco del programa \"Cultura Orgullosa\". con el objetivo de impulsar la visibilidad de la diversidad sexual y de género, coincidentes con las efemérides del día de la visibilidad trans y día de la visibilidad lésbica. \n\r[12/2024]: Se ha puesto en marcha el programa \"Cultura Orgullosa\" en el marco del cual se ha realizado una serie de actividades culturales que han dado protagonismo a las creaciones LGTBI+ y a la diversidad. Este programa nace para poner en valor la diversidad sexual, de género y familiar a través de los diferentes museos estatales gestionados por el Ministerio de Cultura así como instituciones culturales adscritas al mismo, desde el convencimiento de que las sociedades inclusivas, igualitarias, solidarias y tolerantes son también más fuertes y resilientes[[\n\r[6/2024]: Se ha hecho entrega de los “Reconocimientos Arcoíris”, destinados a personas y organizaciones destacadas en la visibilización, apoyo y defensa de los derechos de las personas LGTBI+\n\r[6/2025]: Se han recogido aportaciones y propuestas de actuaciones por parte de ministerios implicados en la implementación de las estrategias Trans y LGTBI. En el caso de la Estrategia LGTBI se han recogido aportaciones y propuestas de actuaciones por parte de las CCAA. Se han presentado los borradores de las estrategias al Consejo de Participación de las Personas LGTBI\n\r[12/2024]: Se está ultimando el desarrollo de las Estrategias Trans y LGTBI, cuya aprobación está prevista por Ley",
+        "currentInitiatives": "Se ha puesto en marcha la siguiente edición del programa \"Cultura Orgullosa\" en el marco del cual se ha programado una serie de actividades culturales para dar protagonismo a las creaciones LGTBI+ y a la diversidad. Este programa nació en 2024 para poner en valor la diversidad sexual, de género y familiar a través de los diferentes museos estatales gestionados por el Ministerio de Cultura así como instituciones culturales adscritas al mismo, desde el convencimiento de que las sociedades inclusivas, igualitarias, solidarias y tolerantes son también más fuertes y resilientes\n\n\rSe ha  realizado en el Ateneo de Madrid el 14 de enero de 2026 el acto de memoria LGTBI en España, donde se  ha reconocido a las personas LGTBI+ represaliadas por la dictadura franquista y ha valorado su lucha histórica.  Durante el acto, se ha realizado un reconocimiento oficial a través de la entrega de la Medalla a la Promoción de los Valores de Igualdad a Jordi Lozano González, también conocido como “Jordi Petit”, uno de los primeros activistas LGBTI en España, reconociendo su trayectoria, la implicación y el firme compromiso a lo largo de toda su vida con los valores de igualdad y de lucha contra la discriminación por razón de orientación sexual e identidad de género. También se ha entregado la placa a la promoción de los valores de igualdad al Front d’Alliberament Gai de Catalunya (FAGC), primera organización LGTBI con personalidad jurídica del Estado español y organizadora, en 1977, de la primera manifestación LGTBI en Barcelona                                                                                                  \n\n\n\n                                                                                                                        \n\n\n\rSe han desarrollado los Planes Operativos Anuales para el seguimiento de la Estrategia  Estatal para la inclusión social de las Personas Trans y la Estrategia Estatal para la igualdad de trato y no discriminación de las personas LGTBI\n\rSe ha realizado la publicación \"Nosaltres no tenim por, nosaltres som: Primera manifestación LGTBI+. Barcelona, 26 de junio de 1977\".  presentada en el Circulo de Bellas Artes de Madrid y  en el Ayuntamiento de Barcelona,  en el marco del Día Internacional de la Visibilidad Trans\n\rSe ha firmado el acuerdo de Protocolo de acompañamiento para las personas trans en el ámbito de la empresa con  las organizaciones sindicales CC.OO y UGT con el apoyo de la Federación Estatal LGTBI+\n\rSe ha aprobado una declaración institucional con motivo del Día Internacional contra la LGTBIfobia con el objetivo de reafirmar el compromiso del Gobierno con la igualdad real y efectiva de las personas LGTBI+ y con la puesta en marcha de políticas públicas que pongan fin a todos los tipos de discriminación, desigualdades y violencias que sufren las personas LGTBI+",
+        "verificationSources": "Documentación interna - Documentación interna\n\rWeb del Ministerio - https://www.igualdad.gob.es/nosaltres-no-tenim-por-nosaltres-som/\n\rWeb Moncloa - https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/igualdad/paginas/2026/140125-redondo-torres-memoria-lgtbi.aspx\n\rDocumentación interna - Documentación interna\n\rWeb del Ministerio - https://www.igualdad.gob.es/nosaltres-no-tenim-por-nosaltres-som/\n\rWeb del Ministerio - https://prensa.mites.gob.es/webPrensa/listado-noticia/noticia/4508\n\rConsejo de Ministros - https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260512-referencia-rueda-de-prensa-ministros.aspx"
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Impulsar un pacto de Estado por las personas LGTBI y medidas contra la discriminación del colectivo. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "El RD 1026/2024 desarrolla las medidas planificadas para la igualdad LGTBI en las empresas con más de cincuenta personas trabajadoras y el protocolo frente al acoso. Acredita un instrumento laboral específico. No acredita la adopción de un pacto de Estado.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2024-20402",
+            "locator": "Real Decreto 1026/2024: artículos 1 y 2; anexos I y II",
+            "paraphrase": "El RD 1026/2024 desarrolla las medidas planificadas para la igualdad LGTBI en las empresas con más de cincuenta personas trabajadoras y el protocolo frente al acoso. Acredita un instrumento laboral específico. No acredita la adopción de un pacto de Estado.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Impulsar un pacto de Estado por las personas LGTBI y medidas contra la discriminación del colectivo.",
+        "observed": "El RD 1026/2024 desarrolla las medidas planificadas para la igualdad LGTBI en las empresas con más de cincuenta personas trabajadoras y el protocolo frente al acoso. Acredita un instrumento laboral específico. No acredita la adopción de un pacto de Estado.",
+        "practicalEffect": "La regulación concreta medidas y protocolos dentro del ámbito empresarial al que se aplica. No demuestra su negociación o aplicación en cada empresa ni cubre por sí sola todos los ámbitos de discriminación.",
+        "missingEvidence": "Documento y adhesiones del pacto de Estado, registros de negociación y aplicación empresarial y mediciones comparables de discriminación. No encontrar el pacto en esta fuente no demuestra que no exista.",
+        "temporalScope": "Real decreto publicado el 9 de octubre de 2024; se revisa su contenido normativo, no una serie posterior de resultados.",
+        "scope": "España; componente laboral de un compromiso más amplio. Las empresas de cincuenta o menos personas tienen negociación voluntaria según el artículo 2.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2024-20402"
+        ]
+      },
+      "assessmentHistory": []
+    },
+    {
+      "id": "c-118",
+      "officialId": "118",
+      "title": "Protección y bienestar animal",
+      "text": "Impulsar la protección de los derechos y el bienestar de los animales",
+      "simpleExplanation": "Impulsar la protección de los derechos y el bienestar de los animales.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": "C.G.P. 3.42; Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=118; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "medioambiente"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; animales mantenidos con fines agrarios y para acuicultura. No se generaliza a todos los animales ni a toda la política de protección."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=118"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=118",
+        "previousInitiatives": "\n\r[12/2024]: Se ha celebrado el IV Congreso Estatal de Derechos de los Animales, centrado este año en la problemática del abandono de animales de compañía, con la asistencia de más de 300 personas de la sociedad civil y de diversos sectores profesionales. En ese foro se ha anunciado la elaboración del I Plan de Acción Estatal contra el Abandono a lo largo de 2025\n\r[12/2024]: Se ha celebrado una Jornada técnico-formativa para policías locales en materia de protección animal, con la participación presencial de unos 100 agentes procedentes de toda España, a través de la cual se ha tratado de mejorar la capacitación de los agentes participantes en áreas como el conocimiento de la normativa en vigor, la recogida de evidencias y pruebas en casos de maltrato animal o la retirada de animales abandonados en la vía pública\n\r[12/2024]: Se han aprobado subvenciones de concesión directa para las entidades protectoras de animales ubicadas en los municipios afectados por la DANA, por un importe máximo de 390.000 euros. Esta subvención está destinada a posibilitar que restablezcan, de forma urgente sus infraestructuras de forma que puedan en el más breve plazo posible reanudar su labor de asistencia y acogimiento de animales abandonados\n\r[12/2025]: Se ha celebrado el  V Congreso Estatal de Derechos de los Animales, centrado este año en la evolución del vínculo humano-animal y su estudio por parte de diversas disciplinas académicas, desde la antropología, biología, filosofía, ética o las ciencias veterinarias. A este evento se han inscrito más de 150 personas de la sociedad civil y de diversos sectores profesionales, y ha contado con la presencia de cátedras de investigación de diversas universidades españolas y extranjeras\n\r[12/2025]: Se ha celebrado una Jornada sobre bienestar de perros utilizados en terapias asistidas, con la participación presencial de unos 50 profesionales de las intervenciones con animales en los ámbitos sanitario, educativo, judicial o asistencial. En las jornadas se ha reflexionado acerca de la necesidad de mejorar el bienestar de los perros y caballos utilizados en estas actividades, a través de una mayor regulación de su utilización y adiestramiento\n\r[12/2025]: Se ha constituido el Consejo Estatal de la Protección Animal contemplado en la Ley 7/2023. Este órgano de carácter consultivo y de cooperación tiene entre sus objetivos fomentar la participación y colaboración entre diferentes administraciones públicas y de la ciudadanía en materia de bienestar animal\n\r[12/2025]: Se ha tomado razón de la declaración de emergencia para la adquisición de vacunas frente al virus de la Dermatosis Nodular Contagiosa por un importe de 660.000 euros. El virus se detectó por primera vez el 3 de octubre en Girona. Tras el primer caso, España puso en marcha todas las medidas del plan nacional, siguiendo la normativa europea\n\r[12/2025]: Se han aprobado medidas adicionales para luchar contra el riesgo de propagación de la influenza aviar en España. Entre las principales medidas se incluye la prohibición de cría de aves de corral al aire libre\n\r[6/2024]: Se han presentado las guías de bienestar animal para las especies de lubina y dorada\n\r[6/2025]: Se  han celebrado varias Jornadas técnico-formativa para entidades locales en materia de gestión de colonias felinas, con la participación telemática de unas 400 personas de Ayuntamientos de toda España, a través de las cuales se ha impartido una formación básica a través de videos, resolución de dudas técnicas y jurídicas y planteamiento de casos prácticos.\n\r[12/2024]: Se ha firmado un convenio con la Federación Española de Municipios y Provincias para la impartición de formación a todos los Ayuntamientos de España en materia de protección animal, en distintos ámbitos como la gestión de colonias felinas, la aplicación de la normativa en vigor en casos de maltrato animal o la respuesta de los servicios sociales ante problemáticas ligadas al vínculo humano-animal en los hogares\n\r[6/2025]: Se ha aprobado el Real Decreto por el que se regula la actividad y bienestar de los perros de asistencia, una norma que regula el régimen de tenencia y bienestar de los perros de asistencia, adecuándolo a la Ley 7/2023, de 28 de marzo, de protección de los derechos y el bienestar de los animales \n\r[6/2025]: Se ha celebrado una Jornada sobre Bienestar Equino, centrada en analizar el actual régimen de protección jurídica del que gozan los equinos en España, así como las posibilidades de mejora de su bienestar y protección\n\r[6/2025]: Se ha lanzado la convocatoria correspondiente a  2025 relativas a ayudas por un valor cercano a los 2 millones de euros para entidades protectoras que trabajan por el bienestar de los animales\n\r[12/2024]: Se ha resuelto la convocatoria 2024 de subvenciones a entidades locales para para entidades protectoras que trabajan por el bienestar de los animales\n\r[6/2024]: Se ha lanzado una convocatoria de ayudas por un valor cercano a los 2 millones de euros para entidades protectoras que trabajan por el bienestar de los animales\n\r[6/2025]: Se ha presentado el estudio sobre la gestión de la protección animal en España, elaborado a partir de encuestas realizadas a ayuntamientos y entidades protectoras de todo el país, y del cual se han obtenido los datos necesarios para elaborar el primer Plan de Acción contra el Abandono en España\n\r[6/2025]: Se ha presentado el programa “Mejores Amigos”, una iniciativa cuyos objetivos son acompañar a los agentes vinculados a los Servicios Sociales en los casos de personas atendidas que son titulares de animales de compañía y asumir la atención veterinaria gratuita o a precios reducidos para los animales de personas sin hogar y aquellas que puedan acreditar graves problemas económicos\n\r[6/2025]: Se ha presentado la nueva edición del programa ACOPET, un servicio de acogida de animales de compañía de víctimas de violencia de género, que se presta a través de la FEMP. Este programa, que se desarrolla bajo el Pacto de Estado contra la Violencia de Género, se encarga del traslado de estos animales de compañía a casas de acogida profesionales a través de los servicios sociales[[\n\r[6/2025]: Se han aprobado dos reales decretos sobre sanidad animal que establecen las obligaciones de vigilancia de los titulares de las explotaciones ganaderas y aprueban la voluntariedad de que éstas dispongan de un veterinario, un plan sanitario integral y un plan de bienestar de los animales. Con esta medida se reducen, además, las cargas administrativas de las explotaciones, al tener estos requisitos carácter voluntario\n\r[6/2025]: Se han convocado las subvenciones a entidades locales para la gestión de colonias felinas 2025. El objeto de esta línea de subvenciones es sufragar los gastos que hayan de afrontar las entidades locales (Ayuntamientos, Diputaciones provinciales y forales, cabildos y consejos insulares, comarcas, mancomunidades u otros entes supramunicipales) en el periodo comprendido entre el 1 de enero de 2026 y el 31 de diciembre del año 2026, en la ejecución de proyectos destinados a impulsar el control poblacional de colonias felinas mediante el método ético de captura, esterilización y retorno\n\r[12/2024]: Se ha resuelto la convocatoria 2024 de subvenciones a  entidades locales  para la gestión de colonias felinas\n\r[6/2024]: Se han convocado las subvenciones a entidades locales para la gestión de colonias felinas 2024. El objeto de esta línea de subvenciones es sufragar los gastos que hayan de afrontar las entidades locales (Ayuntamientos, Diputaciones provinciales y forales, cabildos y consejos insulares, comarcas, mancomunidades u otros entes supramunicipales) en el periodo comprendido entre el 1 de enero de 2025 y el 31 de diciembre del año 2025, en la ejecución de proyectos destinados a impulsar el control poblacional de colonias felinas mediante el método ético de captura, esterilización y retorno\n\r[6/2025]: Se han convocado los Premios Derechos de los Animales 2025. Se trata de unos premios dirigidos a fomentar la I+D de métodos alternativos a la experimentación animal en España, mediante el reconocimiento de proyectos científicos, métodos o estrategias de ensayo científicamente satisfactorios que no conlleven la utilización de animales vivos o reduzcan su número al mínimo, velen por minimizar el estrés, dolor o angustia de estos y garanticen su bienestar\n\r[6/2024]: Se han convocado los Premios Derechos de los Animales al proyecto más innovador de experimentación alternativa 2024. Se trata de unos premios dirigidos a fomentar la I+D de métodos alternativos a la experimentación animal en España, mediante el reconocimiento de proyectos científicos, métodos o estrategias de ensayo científicamente satisfactorios que no conlleven la utilización de animales vivos o reduzcan su número al mínimo, velen por minimizar el estrés, dolor o angustia de estos y garanticen su bienestar",
+        "currentInitiatives": "Se ha realizado una nueva adquisición de 757.575 dosis de vacunas frente al virus de la Dermatosis Nodular Contagiosa, por valor de cerca de 1 millón de euros\n\rSe han levantado, en todo el territorio nacional, las medidas adicionales para luchar contra el riesgo de propagación de la influenza aviar en España, gracias a la evolución favorable de la influenza aviar y la disminución del riesgo de diseminación de la enfermedad\n\rSe ha aprobado el real decreto por el que se regulan aspectos organizativos en materia de bienestar y protección de los animales mantenidos con fines agrarios y para la acuicultura\n\rSe convocan las subvenciones a entidades locales para la gestión de colonias felinas 2025. El objeto de esta línea de subvenciones es sufragar los gastos que hayan de afrontar las entidades locales (Ayuntamientos, Diputaciones provinciales y forales, cabildos y consejos insulares, comarcas, mancomunidades u otros entes supramunicipales) en el periodo comprendido entre el 1 de enero de 2027 y el 31 de diciembre del año 2027, en la ejecución de proyectos destinados a impulsar el control poblacional de colonias felinas mediante el método ético de captura, esterilización y retorno. \n\rSe han convocado por primera vez loa Premios Nacionales a la Protección Animal, dirigidos a reconocer actuaciones y buenas prácticas en protección animal en 3 modalidades: a) Trayectoria y Compromiso con la Protección Animal; b)  Mejor Iniciativa Institucional en Protección Animal, y c) Premio Nacional a la Mejor Iniciativa Social y Comunitaria en Protección Animal\n\rSe ha celebrado la Jornada “Proteger y cuidar: el papel de la Policía en la defensa de los animales”, organizada junto con la Unión Jefes de Policía Local de España (UNIJEPOL), centrada en proporcionar formación y herramientas en materia de protección animal a los cuerpos de Policía Local de toda España. En una línea similar se celebraron también las VIII Jornadas Felinas Andaluzas en Huelva, organizadas junto con la entidad de protección animal FdCats, centradas este año en el papel de la gestión de colonias felinas en la reducción del impacto de los gatos comunitarios sobre la biodiversidad",
+        "verificationSources": "Web del Ministerio - https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-reafirma-su-compromiso-con-la-ganader-a-espa-ola-y-destina-un-mill-n-de-euros-m-s-a-la-lucha-contra-la-dermatosis-nodular-contagiosa/a0d270b6-2a9e-48ac-b4bd-6904ed79bf7d \n\rWeb del Ministerio - https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-levanta-las-medidas-de-confinamiento-de-aves-de-corral-en-toda-espa-a/27bc36a1-d106-44bb-88d2-3a93812551c9\n\rBOE - https://www.boe.es/eli/es/rd/2026/02/04/69\n\rConsejo de Ministros - https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260203-referencia-rueda-de-prensa-ministros.aspx\n\rWeb del Ministerio - https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-aprueba-un-real-decreto-que-refuerza-la-coordinaci-n-entre-administraciones-y-mejora-la-gesti-n-del-conocimiento-en-bienestar-animal/03ae8db1-34c8-47d6-a2d2-a76698ecdef4\n\rWeb del Ministerio - https://www.dsca.gob.es/es/derechos-sociales/derechos-animales/subvenciones/EELL/subvenciones-ayuntamientos-2026\n\rWeb del Ministerio - https://www.dsca.gob.es/ca/comunicacion/notas-prensa/derechos-sociales-convoca-primera-edicion-premios-nacionales-proteccion\n\rNota de prensa - https://jornadasfelinasandaluzas.com/\n\rPortal AGE - https://unijepol.eu/proteger-y-cuidar-el-papel-de-los-servicios-policiales-en-la-defensa-de-los-animales-abierta-la-inscripcion/"
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Impulsar la protección de los derechos y el bienestar de los animales. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "El RD 69/2026 constituye una mesa de coordinación sobre bienestar y protección de animales mantenidos con fines agrarios y para acuicultura y designa un centro nacional de referencia. Es una actuación organizativa en ese ámbito concreto.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-2727",
+            "locator": "Real Decreto 69/2026: artículos 1 a 3 y 7",
+            "paraphrase": "El RD 69/2026 constituye una mesa de coordinación sobre bienestar y protección de animales mantenidos con fines agrarios y para acuicultura y designa un centro nacional de referencia. Es una actuación organizativa en ese ámbito concreto.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Impulsar la protección de los derechos y el bienestar de los animales.",
+        "observed": "El RD 69/2026 constituye una mesa de coordinación sobre bienestar y protección de animales mantenidos con fines agrarios y para acuicultura y designa un centro nacional de referencia. Es una actuación organizativa en ese ámbito concreto.",
+        "practicalEffect": "La norma asigna funciones de coordinación y referencia. Crear órganos no demuestra controles realizados, mejoras del bienestar ni protección efectiva de todas las categorías de animales.",
+        "missingEvidence": "Actas y actividades de los órganos, controles y resultados de bienestar comparables. Para evaluar toda la promesa falta también evidencia de los ámbitos animales no cubiertos por este real decreto.",
+        "temporalScope": "Real Decreto 69/2026, de 4 de febrero; se acredita su publicación y diseño institucional, no resultados posteriores.",
+        "scope": "España; animales mantenidos con fines agrarios y para acuicultura. No se generaliza a todos los animales ni a toda la política de protección.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2026-2727"
+        ]
+      },
+      "assessmentHistory": []
+    },
+    {
+      "id": "c-191",
+      "officialId": "191",
+      "title": "Ley, PERTE y estrategia de economía social",
+      "text": "Seguir impulsando la economía social, a través de una Ley integral, el desarrollo del PERTE y la Estrategia de Economía Social",
+      "simpleExplanation": "Impulsar la economía social mediante una ley integral, el desarrollo del PERTE y la Estrategia de Economía Social.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": " C.G.P. 2.17; Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=191; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "economia",
+        "empleo"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; componente normativo de un compromiso que incluye instrumentos distintos. No se suman ley, PERTE y estrategia como tres promesas independientes."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=191"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=191",
+        "previousInitiatives": "\n\r[12/2024]: Se ha aprobado el Proyecto de Ley Integral de Impulso de la Economía Social\n\r[12/2024]: Se ha aprobado el Real Decreto por el que se regula la concesión directa de una subvención a la Confederación Empresarial Española de la Economía Social (CEPES), dentro del Plan Integral de Impulso a la Economía Social para la Generación de un Tejido Económico, Inclusivo y Sostenible. La subvención está destinada a la creación de un Hub de Vanguardia que permita la transferencia e intercambio de conocimiento, aglutinar la investigación, generar sinergias entre los actores y fomentar las redes de actuación en materia de economía social. El hub se ubicará en Donostia y contará con una dotación económica de 1,5 millones de euros procedentes de los fondos europeos del Mecanismo de Recuperación y Resiliencia, correspondientes a la Inversión 6 del componente 23 del Plan de Recuperación, Trasformación y Resiliencia (PRTR)\n\r[12/2024]: Se ha aprobado la Orden TES/889/2024, de 19 de agosto, por la que se establecen las bases reguladoras de la concesión de subvenciones a las actividades de promoción de la economía social y de la responsabilidad social de las empresas y para sufragar los gastos de funcionamiento de los entes representativos de la economía social de ámbito estatal \n\r[12/2025]: Se ha acordado que la ciudad catalana de Mataró sea Capital de la Economía Social en 2026. Es la primera ciudad que sin ser sede de las instituciones políticas de la comunidad autónoma asume la capitalidad de la Economía Social. Mataró combina una rica tradición cooperativa, que comenzó en 1864 con la creación de la Cooperativa Obrera Mataronense. Además, cuenta “con un ecosistema dinámico que hoy suma más de 100 entidades que innovan en sectores como la cultura, la energía, los servicios y la inclusión social\n\r[6/2024]: Se ha propuesto la ciudad de Valencia como nueva capital de la Economía Social para el año 2024. La elección de la ciudad mediterránea pone en valor el papel de la Economía Social en el modelo ecónomico de Valencia, que fomenta así un modelo sostenible y solidario, generador de empleo y de oportunidades laborales para las personas en situación de vulnerabilidad social. La propuesta ha sido ratificada por el Consejo de Fomento de la Economía Social\n\r[6/2024]: Se ha lanzado en México la primera Red Iberoamericana de Fomento de la Economía Social y Solidaria. La Red busca promover a los organismos de la Economía Social para crear condiciones que permitan el desarrollo de un sector conformado por cooperativas, sociedades laborales, empresas de inserción, centros especiales de empleo o mutualidades, entre otros, y la plena integración de todo ese ecosistema productivo en el comercio regional\n\r[6/2024]: Se han convocado las ayudas para la realización de proyectos en materia de Economía Social para los años 2024-2025 en el marco del Plan Integral de Impulso a la Economía Social para la Generación de un Tejido Económico, Inclusivo y Sostenible. El presupuesto total de la convocatoria asciende a 80 millones de euros\n\r[6/2025]: Se ha inaugurado hoy en Donostia el hub de vanguardia Arizmendarrieta Social Economy Think Tank (ASETT), un centro de investigación y laboratorio de proyectos para impulsar el potencial de la Economía Social dentro y fuera de España. El hub cuenta con un centro de estudios dedicado al análisis del impacto de las empresas de la Economía Social, así como con un instituto de prospectiva\n\r[6/2025]: Se ha lanzado la tercera convocatoria del Plan Integral de Impulso de la Economía Social, que adjudicará 39 millones de euros para incentivar proyectos que contribuyan a alentar un sistema productivo que genera trabajo de calidad. En las dos convocatorias anteriores se destinaron 71 millones de euros para 255 proyectos. Estas ayudas forman parte del Proyecto Estratégico para la Recuperación y la Transformación Económica (PERTE) de la Economía Social y los Cuidados",
+        "currentInitiatives": "Se ha aprobado la Ley Integral de Impulso de la Economía Social, una Ley pactada con todo el sector de la economía social. La Economía Social española agrupa a más de 127.000 empresas y entidades y sostiene más de 2.250.000 empleos. Esta norma moderniza y mejora el ecosistema legislativo del tejido productivo con el consenso y el apoyo de las organizaciones que lo integran. Favorece las cooperativas de vivienda de cesión de uso, al considerarlas especialmente protegidas. Además digitaliza y adapta al siglo XXI el funcionamiento interno de las cooperativas a las  nuevas formas de comunicación y participación.  El texto permite combatir el intrusismo en las cooperativas al clarificar qué empresas forman parte de la Economía Social. \n\n\rSe ha aprobado el Real Decreto por el que se modifica el Real Decreto 221/2008, de 15 de febrero, por el que se crea y regula el Consejo Estatal de Responsabilidad Social de las Empresas.\n\rSe ha acordado la autorización al Ministerio de Trabajo y Economía Social el pago de una contribución voluntaria a la Organización Internacional del Trabajo (OIT) para financiar el proyecto \"Apoyo a la coherencia mundial de las políticas sobre la economía social y solidaria\", por un importe total de 100.000 euros.",
+        "verificationSources": "Web del Ministerio - https://prensa.mites.gob.es/webPrensa/listado-noticia/noticia/4514\n\rConsejo de Ministros - https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260407-referencia-rueda-de-prensa-ministros.aspx\n\rConsejo de Ministros - https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260526-referencia-rueda-de-prensa-ministros.aspx"
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Impulsar la economía social mediante una ley integral, el desarrollo del PERTE y la Estrategia de Economía Social. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "La Ley 1/2026, publicada el 9 de abril de 2026, acredita el componente legislativo y modifica la regulación de cooperativas, empresas de inserción y economía social. Su publicación no acredita por sí sola la ejecución del PERTE ni de la estrategia.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2026-7967",
+            "locator": "Ley 1/2026, de 8 de abril, integral de impulso de la economía social: artículos primero, segundo y tercero",
+            "paraphrase": "La Ley 1/2026, publicada el 9 de abril de 2026, acredita el componente legislativo y modifica la regulación de cooperativas, empresas de inserción y economía social. Su publicación no acredita por sí sola la ejecución del PERTE ni de la estrategia.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Impulsar la economía social mediante una ley integral, el desarrollo del PERTE y la Estrategia de Economía Social.",
+        "observed": "La Ley 1/2026, publicada el 9 de abril de 2026, acredita el componente legislativo y modifica la regulación de cooperativas, empresas de inserción y economía social. Su publicación no acredita por sí sola la ejecución del PERTE ni de la estrategia.",
+        "practicalEffect": "Se modifica el marco legal de entidades de economía social. El texto no certifica ayudas cobradas, proyectos terminados ni empleos creados por el PERTE o la estrategia.",
+        "missingEvidence": "Ejecución presupuestaria y proyectos del PERTE, seguimiento de los objetivos de la estrategia e indicadores de resultados con base comparable y atribución delimitada.",
+        "temporalScope": "Ley de 8 de abril de 2026, publicada el 9 de abril; no se extrapolan sus disposiciones a resultados económicos posteriores.",
+        "scope": "España; componente normativo de un compromiso que incluye instrumentos distintos. No se suman ley, PERTE y estrategia como tres promesas independientes.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2026-7967"
+        ]
+      },
+      "assessmentHistory": []
+    },
+    {
+      "id": "c-146",
+      "officialId": "146",
+      "title": "Vigilancia y respuesta en salud pública",
+      "text": "Mejorar la vigilancia de la salud pública y la capacidad de respuesta ante crisis sanitarias",
+      "simpleExplanation": "Mejorar la vigilancia de la salud pública y la capacidad de respuesta ante crisis sanitarias.",
+      "editorialNote": "Título, explicación, temas y contraste son elaboración editorial. Texto y origen se conservan literalmente del inventario.",
+      "origin": "Comparecencia Ministra/o",
+      "originVerification": {
+        "status": "atribucion_del_inventario",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=146; Origen",
+        "dateBasis": "Fecha individual de primera formulación no verificada.",
+        "note": "Se conserva la atribución del inventario sin asignar una fecha de investidura a una comparecencia ministerial no identificada."
+      },
+      "officialDeadline": null,
+      "deadlineNote": "El inventario no fija un plazo individual; los calendarios de desarrollo normativo se explican sin convertirlos en el plazo original de la promesa.",
+      "kind": "mixto",
+      "topics": [
+        "sanidad"
+      ],
+      "competence": {
+        "level": "compartida",
+        "note": "España; vigilancia y coordinación estatal con otras administraciones. La fuente de origen atribuye el compromiso a comparecencia ministerial, sin fecha individual verificada."
+      },
+      "governmentAssessment": {
+        "text": "El inventario publica medidas, sin calificación individual de cumplimiento",
+        "asOf": "2026-06-30",
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=146"
+      },
+      "governmentMeasures": [],
+      "governmentReportedData": {
+        "sourceId": "cumpliendo-2026-07",
+        "locator": "CSV, Identificador del compromiso=146",
+        "previousInitiatives": "\n\r[12/2024]: Se ha aprobado una modificación del Real Decreto que establece los requisitos sanitarios para la prevención y control de la legionelosis. La actualización tiene como objetivo principal mejorar la seguridad y claridad en la gestión de las instalaciones que utilizan agua y pueden producir aerosoles, reduciendo así el riesgo de legionelosis para la población\n\r[6/2024]: Se ha aprobado el Plan Nacional contra el Radón con el objetivo de proteger la salud del conjunto de la población, y las personas trabajadoras en particular, frente a los riesgos de la exposición a este elemento químico en forma gaseosa. El Plan describe los riesgos derivados de la exposición al mismo, analiza la situación en España con respecto a las medidas de protección y recoge las estrategias y actuaciones que se desarrollarán por las distintas administraciones durante un periodo de 5 años, para el control del riesgo para la salud de la población derivado de la exposición al gas\n\r[12/2024]: Se ha autorizado ejercer el derecho de adquisición de 1,2 millones de \"dosis pactadas\" de vacuna contra la COVID-19, previsto en la quinta modificación del tercer Acuerdo de adquisición suscrito por la Comisión Europea con la empresa Pfizer/BioNTech, de 26 de mayo de 2023\n\r[12/2024]: Se ha puesto en marcha un nuevo servicio gratuito de autodiagnóstico de VIH a domicilio. El objetivo de este servicio es facilitar el acceso a la detección del VIH, permitiendo a cualquier persona realizarse la prueba del VIH de manera confidencial, en el lugar y momento que prefiera. En España, en 2023, más del 48,6% de los nuevos diagnósticos fueron diagnósticos tardíos y un 7,5% de las personas con el VIH no sabe que tiene esta infección\n\r[12/2025]: Durante el segundo semestre de 2025, INGESA  ha formalizado dos  contratos basados en Joint Procurement Agreement a los que ha decidido adherirse el Estado español para la adquisición de medicamentos estratégicos[[\n\r[12/2025]: El Centro Nacional de Dosimetría ha sido designado por el Consejo de Seguridad Nuclear como el organismo único que se encargará del control radiológico del personal de intervención exterior  en caso de respuesta a  emergencias. \n\r[12/2025]: Se ha celebrado la reunión de constitución del nuevo  Grupo de Trabajo de Depósitos de Reservas Estratégicas del SNS, aprobado por el CISNS y en el que participan todas las Comunidades Autónomas, INGESA y Ministerio de Sanidad[[\n\r[12/2025]: Se ha generado nuevos datos e indicadores que aporten información relevante para mejorar la vigilancia de la salud pública, como los contenidos en los informes específicos de Esperanza de vida al nacer, indicadores PRAN, Problemas de salud o Resultados en Salud en Atención Primaria, que se suman a la información que el Ministerio aporta periódicamente\n\r[12/2025]: Se ha iniciado el proceso para elegir la sede de la Agencia de Salud Pública (AESAP), que albergará el nodo central de la Red Estatal de Vigilancia en Salud Pública y coordinará la preparación ante crisis sanitarias\n\r[12/2025]: Se han mantenido reuniones por parte del Grupo de trabajo de la Reserva Estratégica Nacional (REN), en el que participan distintos centros directivos del Ministerio de Sanidad, así como el Ministerio de Defensa en calidad de observador,  y se ha iniciado la compra de los primeros medicamentos estratégicos para la dotación de la REN\n\r[6/2024]: Se ha aprobado el proyecto de ley por el que se crea la Agencia Estatal de Salud Pública (AESAP) que servirá para vigilar, identificar y evaluar el estado de salud de la población, así como reconocer los problemas, amenazas o riesgos que pueden surgir en materia de salud pública, prestando especial atención a las desigualdades en salud \n\r[6/2024]: Se ha aprobado el Real Decreto por el que se crea la Red Estatal de Vigilancia en Salud Pública. Su objetivo principal es proporcionar información relevante y oportuna a los profesionales sanitarios, al Sistema Nacional de Salud (SNS) y a la ciudadanía en general. Para ello, amplía el alcance de la vigilancia en salud pública, abarcando no solo las enfermedades transmisibles, sino también otros factores que influyen en el bienestar, la morbilidad y la mortalidad de la población\n\r[6/2024]: Se ha aprobado la distribución de 1 millón de euros a las comunidades autónomas destinados a la puesta en marcha del Sistema de Vigilancia del Cáncer\n\r[6/2025]: Se han constituido tres grupos de trabajo en el Observatorio sobre Salud y Cambio Climático. Están centrados en: 1) temperaturas extremas; 2) Comunicación y capacitación y 3) salud laboral. Todos ellos cuentan con una agenda propia y se reúnen de manera regular\n\r[6/2024]: Se ha presentado el Observatorio de Salud y Cambio Climático (OSCC). Este organismo, que destaca por su composición interdisciplinar, nace de la necesidad de abordar transversalmente el impacto que el cambio climático tiene sobre la salud y con el objetivo de coordinar de manera óptima el trabajo de seguimiento, anticipación y valoración de las medidas que se toman. Con su puesta en marcha se da cumplimiento a lo previsto en el Plan Nacional de Adaptación al Cambio Climático (PNACC), coordinado por el MITECO, y el Plan Estratégico de Salud y Medio Ambiente (PESMA), coordinado por el Ministerio de Sanidad",
+        "currentInitiatives": "Se ha presentado el ‘Libro Blanco de la ciencia del clima en España’\n\rSe ha impulsado la innovación médica y la mejora de la atención sanitaria con la apertura del Espacio Nacional de Datos de Salud\n\rSe ha creado el Grupo de Trabajo de la Reserva Estratégica Nacional (REN), adscrito a la Secretaría de Estado de Sanidad, para mejorar la toma de decisiones vinculada a la REN, mediante el análisis y realización de informes técnicos de carácter no vinculante\n\n\rSe han publicado los resultados EMIS (Encuesta de salud en hombres gays, bisexuales y otros hombres que tienen sexo con hombres, personas trans y no binarias), que actualizan los realizados en  2010 y 2017 \n\n\rSe ha realizado la segunda edición de la Encuesta Nacional de Salud Sexual (2026) que actualiza la realizada en 2008 con el objetivo de comprender la salud sexual en España que ayude a diseñar las políticas de salud\n\rSe ha puesto a disposición del Centro de Coordinación de Alertas y Emergencias Sanitarias la plataforma tecnológica AVISAP para apoyar tecnológicamente la gestión de la salud pública, con sistemas de información relacionados con enfermedades transmisibles, no transmisibles, de alerta y respuesta rápida, medioambientales y de salud laboral\n\rSe ha aprobado la financiación de la  profilaxis preexposición (PrEP) inyectable como prestación del SNS para personas con alto riesgo de infección\n\rSe ha presentado la Hoja de Ruta 2026-2030 para frenar el aumento de las infecciones de transmisión sexual (ITS), tras registrarse más de 93.000 casos en 2024, la cifra más alta de la última década. La estrategia contempla medidas como la financiación de preservativos para jóvenes de 16 a 22 años, la ampliación del acceso al autodiagnóstico y el refuerzo de la vigilancia epidemiológica y de las resistencias antimicrobianas. El objetivo es avanzar hacia la eliminación del VIH y las ITS como problema de salud pública antes de 2030\n\rSe ha aprobado una estrategia común de vacunación para personas migrantes y refugiadas recién llegadas a España, que establece recomendaciones para homogeneizar la administración de vacunas prioritarias como la triple vírica, poliomielitis, tétanos y difteria, garantizando su aplicación temprana —preferiblemente en las primeras tres semanas de estancia— y coordinada entre los servicios de salud de las comunidades autónoma\n\rSe ha aprobado y actualizado protocolo de manejo de personas afectadas por el Hantavirus en seguimiento, reforzando la vigilancia epidemiológica, la coordinación de la respuesta sanitaria y la colaboración con organismos internacionales\n\rSe ha publicado la primera guía de recomendaciones sanitarias ante incendios forestales\n\rSe ha publicado un nuevo informe monográfico sobre detección precoz del cáncer basado en los datos de la Encuesta de Salud de España 2023",
+        "verificationSources": "Nota de prensa - https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/enero/el-gobierno-presenta-el--libro-blanco-de-la-ciencia-del-clima-en.html \n\rWeb del Ministerio - https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/01/el-gobierno-abre-el-espacio-nacional-de-datos-de-salud-para-impu \n\rDocumentación interna - Documentación interna\n\rRedes sociales - https://www.emis-project.eu/\n\rBOE - https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14174\n\rWeb del Ministerio - https://avisap-for.sanidad.gob.es/avisap_front/#/\n\rNota de prensa - https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6860\n\rNota de prensa - https://www.sanidad.gob.es/eu/gabinete/notasPrensa.do?id=6931\n\rNota de prensa - https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6939\n\rWeb del Ministerio - https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6916\n\rNota de prensa - https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6951\n\rNota de prensa - https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6947"
+      },
+      "review": {
+        "status": "actuacion_documentada",
+        "asOf": "2026-10-10",
+        "criterion": "Mejorar la vigilancia de la salud pública y la capacidad de respuesta ante crisis sanitarias. Se contrastan norma, ejecución y resultado por separado.",
+        "conclusion": "La Ley 7/2025 crea la Agencia Estatal de Salud Pública y define sus fines de vigilancia, evaluación y preparación. La disposición final quinta prevé aprobar su estatuto mediante real decreto en seis meses. Esta ley acredita el diseño normativo, no la puesta en funcionamiento ni una mejora ya medida.",
+        "evidence": [
+          {
+            "sourceId": "BOE-A-2025-15652",
+            "locator": "Ley 7/2025: artículos 1 y 2; disposición final quinta",
+            "paraphrase": "La Ley 7/2025 crea la Agencia Estatal de Salud Pública y define sus fines de vigilancia, evaluación y preparación. La disposición final quinta prevé aprobar su estatuto mediante real decreto en seis meses. Esta ley acredita el diseño normativo, no la puesta en funcionamiento ni una mejora ya medida.",
+            "relation": "actuacion_normativa"
+          }
+        ],
+        "history": []
+      },
+      "assessment": {
+        "verdict": "measures",
+        "expected": "Mejorar la vigilancia de la salud pública y la capacidad de respuesta ante crisis sanitarias.",
+        "observed": "La Ley 7/2025 crea la Agencia Estatal de Salud Pública y define sus fines de vigilancia, evaluación y preparación. La disposición final quinta prevé aprobar su estatuto mediante real decreto en seis meses. Esta ley acredita el diseño normativo, no la puesta en funcionamiento ni una mejora ya medida.",
+        "practicalEffect": "Se establece un organismo y sus funciones de coordinación. La capacidad real depende también de estatuto, medios, personal, sistemas de información y cooperación con las comunidades autónomas.",
+        "missingEvidence": "Estatuto y registros de constitución operativa, dotación y actividad; indicadores de oportunidad de alertas, cobertura de vigilancia y respuesta a crisis. La falta de esas capturas aquí no prueba incumplimiento del plazo del estatuto.",
+        "temporalScope": "Ley publicada el 29 de julio de 2025; el plazo de seis meses es una obligación de desarrollo de la ley, no un plazo original del compromiso general.",
+        "scope": "España; vigilancia y coordinación estatal con otras administraciones. La fuente de origen atribuye el compromiso a comparecencia ministerial, sin fecha individual verificada.",
+        "reviewedAt": "2026-10-10",
+        "evidenceSourceIds": [
+          "BOE-A-2025-15652"
+        ]
+      },
+      "assessmentHistory": []
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { ASSESSMENT_LABELS, normalizeMandateText, type Commitment, type Indicator, type MandateAnswer, type MandateSnapshot } from "./model";
 import type { Story } from "../observatorio/model";
 import { getMandateAccountability } from "./accountability";
+import { asksTerritorialBalance } from "./territorial-scope";
 
 const STOP = new Set("que como cual cuales cuanto cuantos cuando donde para por del las los una unos unas este esta esto esos esas sobre desde hasta entre durante hay han sido tiene tienen dame dime explica informacion gobierno sanchez pedro mandato promesa promesas prometio prometido cumplio cumplido cumplida cumplidas incumplida incumplidas hecho hacer puede podemos".split(" "));
 const number = (value: number | null) => value === null ? "dato no disponible" : new Intl.NumberFormat("es-ES", { maximumFractionDigits: 10 }).format(value);
@@ -31,6 +32,7 @@ function score(title: string, text: string, topics: string[], tokens: string[]) 
   return tokens.reduce((total, token) => total + (name.includes(token) ? 8 : 0) + (body.includes(token) ? 3 : 0) + (context.includes(token) ? 1 : 0), 0);
 }
 export function findMandateRecords(snapshot: MandateSnapshot, question: string, topic = "") {
+  if (asksTerritorialBalance(question)) return { commitments: [], indicators: [] };
   const normalized = normalizeMandateText(question);
   if (/falta|pendiente/.test(normalized) && /revis|contrast/.test(normalized)) {
     return { commitments: snapshot.commitments.filter((item) => (item.review.status === "pending" || item.assessment.verdict === "inconclusive") && (!topic || item.topics.includes(topic))).slice(0, 4), indicators: [] };
@@ -51,6 +53,9 @@ export function findMandateRecords(snapshot: MandateSnapshot, question: string, 
 export function answerMandate(snapshot: MandateSnapshot, question: string, topic = ""): MandateAnswer {
   const normalized = normalizeMandateText(question);
   const empty: MandateAnswer = { mode: "no-evidence", paragraphs: [], sources: [], commitmentIds: [], indicatorIds: [], note: "No hay evidencia suficiente en esta selección para responder. La falta de datos no demuestra incumplimiento. Prueba con empleo, vivienda, deuda o pobreza." };
+  if (asksTerritorialBalance(question)) {
+    return { ...empty, note: "Esta consulta pide información territorial. El lector actual solo dispone de revisiones nacionales y no permite atribuirlas a un gobierno autonómico o ayuntamiento, ni trasladarles el calendario electoral estatal. Los balances territoriales están pendientes de elaboración; consulta la página de cobertura para ver las fuentes y carencias de cada administración. La falta de revisión no demuestra incumplimiento." };
+  }
   if (/mentiro|corrupt|a quien.*vot|mejor.*candidato|gan(ar|ara|o).*eleccion/.test(normalized)) {
     return { ...empty, note: "Este piloto no califica la honestidad de una persona ni recomienda el voto. Permite comprobar compromisos concretos y evolución de indicadores. No se ha auditado todo el mandato y una promesa incumplida no demuestra intención de engañar." };
   }
@@ -90,7 +95,7 @@ export function answerMandate(snapshot: MandateSnapshot, question: string, topic
     ],
     sources, commitmentIds: commitments.map((item) => item.id), indicatorIds: indicators.map((item) => item.id),
     note: "Respuesta documental a partir de una selección limitada; no es una auditoría completa ni una generación de IA en directo. Las relaciones son de contexto, no una prueba de causalidad. Cada fuente tiene su fecha de corte."
-      + (/falta|pendiente/.test(normalized) && /revis|contrast/.test(normalized) ? ` Hay ${snapshot.commitments.filter((item) => item.review.status === "pending" && (!topic || item.topics.includes(topic))).length} compromisos pendientes de primera revisión en este ámbito. Una revisión terminada puede tener un resultado no concluyente: estas fichas explican qué evidencia falta. Se muestran hasta cuatro referencias.` : ""),
+      + (/falta|pendiente/.test(normalized) && /revis|contrast/.test(normalized) ? ` Hay ${snapshot.commitments.filter((item) => item.review.status === "pending" && (!topic || item.topics.includes(topic))).length} compromisos pendientes de primera revisión dentro de estas fichas seleccionadas. Hay compromisos del inventario completo fuera de esta selección que aún no se han revisado. Una revisión terminada puede tener un resultado no concluyente: estas fichas explican qué evidencia falta. Se muestran hasta cuatro referencias.` : ""),
   };
 }
 
