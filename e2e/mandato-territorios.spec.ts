@@ -1,5 +1,40 @@
 import { expect, test } from "@playwright/test";
 
+test("Navarra conserva el estado declarado sin convertirlo en veredicto y enlaza el acuerdo", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Navarra");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-15$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Navarra · mandato 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.getByRole("link", { name: "Consultar el programa original" })).toHaveAttribute("href", /2023_ACUERDO_PROGRAMATICO/);
+  await expect(page.getByRole("status")).toHaveText("347 resultados · página 1 de 24");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("344 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("03.01.39");
+  const inventory = page.locator("#territorial-inventory");
+  await expect(inventory).toContainText("Personal referente");
+  await expect(inventory).toContainText("Descartado");
+  await expect(inventory).toContainText("Sin conclusión de RegTrack");
+  await expect(inventory).toContainText("No es una valoración de RegTrack");
+  await expect(inventory.getByRole("link", { name: "Balance del Gobierno 2025 · página 78" })).toHaveAttribute("href", /Rendici.*#page=78$/);
+  await expect(page.locator("#compromiso-r-15-01\\.01\\.02")).toContainText("Plazo comprometido vencido");
+});
+
+test("Navarra es legible en móvil y distingue las condiciones omitidas en el resumen", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-15");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  const review = page.locator('[id="compromiso-r-15-01.01.04"]');
+  await expect(review).toContainText("criterio geográfico");
+  await review.getByText("Promesa y página de origen", { exact: true }).click();
+  await expect(review).toContainText("Estado declarado por el Gobierno a 2025-12-31");
+  await expect(review).toContainText("Finalizado");
+  await expect(review).toContainText("Evidencia insuficiente para esta parte");
+});
+
 const url = "/observatorio/mandato/territorios/m-28079";
 test("el balance municipal separa el inventario, las cuatro revisiones y sus límites", async ({ page }) => {
   await page.goto(url);

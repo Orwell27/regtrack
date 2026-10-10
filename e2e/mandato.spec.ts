@@ -9,10 +9,13 @@ async function readSnapshot(request: APIRequestContext) {
 }
 const number = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 10 });
 
-test("las treinta y ocho fichas explican promesa, efecto, periodo y lagunas con sus fuentes", async ({ page, request }) => {
+// Keep every assertion while bounding each browser journey as the ledger grows.
+for (const block of [0, 1]) {
+test(`las treinta y ocho fichas explican promesa, efecto, periodo y lagunas con sus fuentes · bloque ${block + 1}`, async ({ page, request }) => {
   const snapshot = await readSnapshot(request);
   await page.goto("/observatorio/mandato");
-  for (const item of snapshot.commitments) {
+  const size = Math.ceil(snapshot.commitments.length / 2);
+  for (const item of snapshot.commitments.slice(block * size, (block + 1) * size)) {
     const card = page.locator(`[id="compromiso-${item.id}"]`);
     await expect(card).toContainText(item.assessment.expected);
     await expect(card.locator(".mn-practical-effect")).toContainText(item.assessment.practicalEffect);
@@ -36,6 +39,7 @@ test("las treinta y ocho fichas explican promesa, efecto, periodo y lagunas con 
     await card.locator("summary").click();
   }
 });
+}
 
 test("los grupos de conclusiones llevan a sus pruebas y la ficha móvil conserva sus límites", async ({ page, request }) => {
   const snapshot = await readSnapshot(request);

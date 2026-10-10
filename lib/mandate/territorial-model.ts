@@ -3,6 +3,7 @@ export const TERRITORIAL_STATUS_LABELS = {
   reported: "Avance comunicado por la administración",
   unresolved: "Evidencia insuficiente para esta parte",
   "target-pending": "Objetivo aún no alcanzado en el ejercicio examinado",
+  "deadline-missed": "Plazo comprometido vencido sin alcanzar el hito",
 } as const;
 export type TerritorialSource = {
   id: string; jurisdictionId: string; title: string; publisher: string; family: string;
@@ -18,10 +19,12 @@ export type TerritorialReview = {
 };
 export type TerritorialRecord = {
   id: string; officialId: string; text: string; topic: string; page: number; endPage: number; sourceId: string;
+  governmentState?: string;
 };
 export type TerritorialBalance = {
   jurisdictionId: string; mandateId: string; mandateLabel: string; sourceId: string; registerSourceId: string;
   sourceSha256: string; inventoryTotal: number; scope: string; textNote: string;
+  mandateSourceId: string; sourceLabel: string; level: "municipality" | "region"; governmentCutoff?: string;
   records: TerritorialRecord[]; reviews: TerritorialReview[]; sources: TerritorialSource[];
 };
 
@@ -38,14 +41,17 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
       || !Number.isFinite(Date.parse(source.retrievedAt))
       || (source.publicationDate !== null && !/^\d{4}-\d{2}-\d{2}$/.test(source.publicationDate))) throw Error("Fuente territorial inválida");
   }
-  if (sources.get(balance.sourceId)?.role !== "programme" || sources.get(balance.sourceId)?.sha256 !== balance.sourceSha256
+  if (!["programme", "government-report"].includes(sources.get(balance.sourceId)?.role ?? "") || sources.get(balance.sourceId)?.sha256 !== balance.sourceSha256
+    || sources.get(balance.mandateSourceId)?.role !== "programme" || !balance.sourceLabel
     || sources.get(balance.registerSourceId)?.role !== "register") throw Error("Inventario sin programa o registro comprobado");
+  if (balance.governmentCutoff !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(balance.governmentCutoff)) throw Error("Corte gubernamental inválido");
   const ids = new Set<string>();
   for (const record of balance.records) {
     if (ids.has(record.id) || !record.id.startsWith(`${balance.jurisdictionId}-`) || !record.text || !record.officialId
       || record.sourceId !== balance.sourceId || !Number.isInteger(record.page) || record.page < 1
       || !Number.isInteger(record.endPage) || record.endPage < record.page) throw Error("Compromiso territorial inválido");
     ids.add(record.id);
+    if (record.governmentState && (!balance.governmentCutoff || sources.get(balance.sourceId)?.role !== "government-report")) throw Error("Estado gubernamental sin fecha o informe");
   }
   const reviews = new Set<string>();
   for (const review of balance.reviews) {

@@ -2,7 +2,7 @@
 
 Alcance acordado con Alfonso el 10 de octubre de 2026: balance estatal, 17 comunidades autónomas, Ceuta y Melilla y las 50 capitales de provincia. Otros municipios se amplían después. Objetivo orientativo de lanzamiento: alrededor del 17 de octubre; no es una tarea programada ni una promesa de auditoría terminada sin evidencia.
 
-**Estado de la rama tras el bloque municipal:** 38/203 fichas nacionales y 4/300 fichas del Ayuntamiento de Madrid con revisión parcial. Madrid tiene su inventario completo del documento, no su balance cerrado. Los otros 68 territorios aún no tienen un inventario importado ni revisión sustantiva; la revisión humana independiente sigue pendiente en todos los ámbitos. Los bloques de abajo conservan la secuencia de trabajo.
+**Estado de la rama tras incorporar Navarra:** 38/203 fichas nacionales, 4/300 del Ayuntamiento de Madrid y 3/347 de Navarra con revisión parcial. Los inventarios importados son completos respecto de sus documentos, no balances cerrados. Los otros 67 territorios aún no tienen un inventario importado ni revisión sustantiva; la revisión humana independiente sigue pendiente en todos los ámbitos. Los bloques de abajo conservan la secuencia de trabajo.
 
 ## Condiciones para dar una ficha por revisada
 
@@ -95,4 +95,26 @@ npx vitest run tests/mandate-territorial.test.ts
 
 La extracción requiere `pypdf` (versión registrada dentro del artefacto). CI verifica el texto derivado y las huellas de los originales conservados; no vuelve a descargar ni extraer PDFs. Para nuevas capturas, `node scripts/capture-territorial-sources.mjs <id>` usa una lista explícita de fuentes y comprueba formato/contenido. Las fuentes ya conservadas solo se verifican, no se sobrescriben. Este importador no constituye revisión editorial automática.
 
-Investigación autonómica abierta: Navarra publica un acuerdo y un seguimiento de 347 compromisos, pero su captura íntegra no se ha conseguido todavía; no se importa el total como fichas ni se cuenta como revisado. La planificación general de Canarias tampoco sustituye la lectura de su acuerdo de gobierno. Continúan pendientes el resto de inventarios, 165 fichas nacionales, 296 municipales de Madrid, controles externos, revisión independiente y publicación integral.
+La captura de Navarra que estaba pendiente en este bloque se resolvió en la continuación siguiente. La planificación general de Canarias tampoco sustituye la lectura de su acuerdo de gobierno.
+
+## Navarra: inventario y primeras revisiones — 10 y 11 de octubre
+
+Se conservan el acuerdo original (63 páginas) y el Balance II de 2025 (115 páginas), descargados de los enlaces públicos del registro de la Oficina de Análisis y Prospectiva. El importador reproduce las 347 fichas del anexo, exige identificadores únicos, páginas completas, 13 áreas y distribución de estados coincidente con el informe. Incluye el caso 03.01.39, cuyo estado está en la misma línea que el resumen. Una alteración de esas condiciones impide la importación.
+
+La fuente del inventario es el balance gubernamental; la del mandato es el acuerdo. Se mantienen separadas. Los resúmenes no son transcripciones íntegras de las promesas: la ficha de Bidean omite la condición sobre equidad territorial que figura en el acuerdo. Cada estado gubernamental muestra su atribución y el cierre de 2025; no se usa para generar un veredicto ni contar fichas revisadas.
+
+La ruta `/observatorio/mandato/territorios/r-15` incorpora tres revisiones parciales y diez componentes:
+
+- Ley de Salud: se coteja el plazo de presentación anterior a diciembre de 2024 con los trámites pendientes que el propio Gobierno describía el 30/03/2026. La inferencia de retraso se refiere a ese hito y no al estado parlamentario en octubre. Quedan por comprobar el expediente posterior y las bases del contenido prometido.
+- Bidean: actividad comunicada por el operador, antecedentes de creación anteriores al mandato, condiciones laborales y equidad sin prueba suficiente. El informe de Comptos de noviembre de 2024 sobre las cuentas de 2023 aporta una objeción externa sobre la justificación de la creación, sin extrapolarla al servicio iniciado en 2025. Se distingue el texto del fiscalizador de las alegaciones anexas de CPEN.
+- Zonas tensionadas: resolución estatal y corrección de enlaces conservadas; 21 municipios y efectos desde el 30/07/2025. La publicación formal no acredita inmediatez de los trámites ni impacto en alquileres; tampoco se confunde ese impacto con el hito administrativo prometido.
+
+Nueve originales conservados, de tres familias institucionales. El BOE reproduce el acto autonómico y no se cuenta como una auditoría de resultados. Comptos tiene un alcance temporal y material acotado. Ninguna fuente externa sustituye la revisión humana independiente de RegTrack.
+
+```sh
+python scripts/extract-territorial-pdf.py data/mandate/evidence/territorial/navarra-balance-2025.pdf data/mandate/evidence/territorial/navarra-balance-2025.pages.json
+npx tsx scripts/import-navarra-balance.ts
+npx vitest run tests/mandate-navarra.test.ts tests/mandate-territorial.test.ts
+```
+
+Quedan 165 compromisos nacionales, 296 de Madrid, 344 de Navarra y los inventarios y balances de otros 67 territorios. Se mantiene el objetivo integral; esta incorporación no finaliza la sección.
