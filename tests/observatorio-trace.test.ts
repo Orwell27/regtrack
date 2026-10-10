@@ -10,6 +10,7 @@ const REQUIRED = [
   "app/api/observatorio/route.js.nft.json",
   "app/observatorio/mandato/page.js.nft.json",
   "app/observatorio/mandato/cobertura/page.js.nft.json",
+  "app/observatorio/mandato/territorios/[id]/page.js.nft.json",
   "app/api/observatorio/mandato/route.js.nft.json",
   "app/api/observatorio/mandato/preguntar/route.js.nft.json",
 ];

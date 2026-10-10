@@ -34,7 +34,7 @@ jobs:
       - name: Verify public documentary packaging
         run: node scripts/check-observatory-trace.mjs
       - name: Lint mandate pilot and its evidence readers
-        run: npx eslint lib/mandate components/mandate components/observatorio/ElectionNotice.tsx app/observatorio/mandato app/api/observatorio/mandato scripts/import-mandate-election.mjs scripts/import-mandate-indicators.ts scripts/import-mandate-inventory.ts scripts/build-mandate-coverage.ts scripts/capture-mandate-expansion.mjs tests/mandate*.test.*
+        run: npx eslint lib/mandate components/mandate components/observatorio/ElectionNotice.tsx app/observatorio/mandato app/api/observatorio/mandato scripts/import-mandate-election.mjs scripts/import-mandate-indicators.ts scripts/import-mandate-inventory.ts scripts/build-mandate-coverage.ts scripts/capture-mandate-expansion.mjs scripts/capture-territorial-sources.mjs scripts/import-madrid-programme.ts tests/mandate*.test.*
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4

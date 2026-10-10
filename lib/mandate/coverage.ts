@@ -3,6 +3,7 @@ import geography from "@/data/mandate/jurisdictions.json";
 import { getMandateSnapshot } from "./data";
 import { territorialDossiers } from "./coverage-sources";
 import { validateCoverage, type Jurisdiction } from "./coverage-model";
+import { getTerritorialBalance } from "./territorial";
 
 export function getCoverage() {
   const snapshot = getMandateSnapshot();
@@ -16,6 +17,17 @@ export function getCoverage() {
     independentlyReviewed: 0,
     blockers: [`${inventory.records.length - snapshot.commitments.length} compromisos del inventario pendientes de revisión sustantiva.`, "Revisión humana independiente pendiente. El inventario del Gobierno no abarca necesariamente todas las promesas formuladas."],
   }, ...geography.jurisdictions.map(item => {
+    const balance = getTerritorialBalance(item.id);
+    if (balance) return {
+      ...item, level: item.level as Jurisdiction["level"],
+      mandate: { label: balance.mandateLabel, sourceId: balance.sourceId },
+      sources: balance.sources.map(source => ({ ...source,
+        consultedAt: source.retrievedAt.slice(0, 10),
+        scopeNote: source.role === "programme" ? balance.scope : "Documento conservado y consultado. Comparte origen municipal; no cuenta como corroboración independiente.",
+      })),
+      inventoryTotal: balance.inventoryTotal, imported: balance.records.length, reviewed: balance.reviews.length, independentlyReviewed: 0,
+      blockers: [`${balance.inventoryTotal - balance.reviews.length} compromisos pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
+    };
     const dossier = territorialDossiers[item.id];
     return { ...item, level: item.level as Jurisdiction["level"], mandate: dossier?.mandate ?? null,
       sources: dossier?.sources ?? [], inventoryTotal: null, imported: 0, reviewed: 0, independentlyReviewed: 0,

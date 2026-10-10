@@ -5,7 +5,7 @@ export type CoverageSource = {
   url: string;
   publisher: string;
   family: string;
-  role: "programme" | "government-report" | "control" | "register";
+  role: "programme" | "government-report" | "control" | "register" | "action";
   consultedAt: string;
   scopeNote: string;
 };

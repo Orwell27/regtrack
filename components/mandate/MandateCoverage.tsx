@@ -28,7 +28,7 @@ export function MandateCoverage({ jurisdictions, inventory }: { jurisdictions: J
     <main className="mn-main" id="coverage-content">
       <section className="mc-intro"><p className="mn-eyebrow">Balance de mandato · cobertura</p><h1>Qué hemos revisado.<br /><em>Qué falta por comprobar.</em></h1>
         <p>España, las 17 comunidades autónomas, Ceuta y Melilla y las 50 capitales de provincia. Cada administración necesita su propio inventario, sus plazos y su evidencia.</p>
-        <p className="mc-warning">Ampliación en curso. Los perfiles territoriales todavía no tienen balances revisados. Estar incluido aquí no significa tener una evaluación completada.</p>
+        <p className="mc-warning">Ampliación en curso. Las revisiones territoriales disponibles son parciales. Estar incluido aquí no significa tener una evaluación completada.</p>
       </section>
       <div className="mn-summary-grid"><div><strong>{jurisdictions.length}</strong><span>administraciones en el alcance acordado</span></div><div><strong>{reviewed} / {inventory.records.length}</strong><span>compromisos nacionales con revisión sustantiva</span></div><div><strong>{jurisdictions.filter(isCoverageComplete).length}</strong><span>balances con cobertura y revisión independiente completas</span></div></div>
       <section className="mn-method"><h2>Cómo leer la cobertura</h2><div><p>Un enlace localizado no es una corroboración. Las notas y balances de un mismo gobierno comparten origen; no se cuentan como confirmaciones independientes. Una norma acredita una medida, pero la ejecución y sus resultados necesitan pruebas adicionales.</p><p>«Sin inventario» significa que desconocemos todavía el total aplicable. No significa cero compromisos ni incumplimiento. Los porcentajes entre administraciones no son comparables mientras sus universos y criterios difieran.</p></div></section>
@@ -41,9 +41,10 @@ export function MandateCoverage({ jurisdictions, inventory }: { jurisdictions: J
         {tab === "inventory" ? <p className="mc-warning">{inventory.limitation} Corte del inventario: {inventory.governmentCutoff}. <a href={inventory.sourceUrl} target="_blank" rel="noreferrer">Consultar original</a>.</p> : null}
         <div className="mc-list">{tab === "territories" ? territories.slice(start, start + PAGE_SIZE).map(item => <article className="mc-card" key={item.id}>
           <p className="mn-eyebrow">{JURISDICTION_LABELS[item.level]} · {item.id}</p><h3>{item.name}</h3>
-          <p><strong>{item.id === "es" ? "Balance parcial disponible" : "Balance pendiente de elaboración"}</strong></p><p>{item.mandate?.label ?? "Mandato vigente pendiente de comprobación documental."}</p>
+          <p><strong>{item.reviewed > 0 ? "Balance parcial disponible" : "Balance pendiente de elaboración"}</strong></p><p>{item.mandate?.label ?? "Mandato vigente pendiente de comprobación documental."}</p>
           <dl className="mc-counts"><div><dt>Inventario importado</dt><dd>{item.inventoryTotal === null ? "Universo aún no determinado" : `${item.imported} de ${item.inventoryTotal}`}</dd></div><div><dt>Revisión sustantiva</dt><dd>{item.reviewed} compromisos</dd></div><div><dt>Revisión independiente</dt><dd>{item.independentlyReviewed} compromisos</dd></div></dl>
           {item.id === "es" ? <Link className="mc-link" href="/observatorio/mandato#balance-documental">Leer las revisiones nacionales</Link> : null}
+          {item.id !== "es" && item.imported > 0 ? <Link className="mc-link" href={`/observatorio/mandato/territorios/${item.id}`}>Leer inventario y revisiones territoriales</Link> : null}
           <details><summary>Fuentes localizadas y trabajo pendiente</summary><ul>{item.blockers.map(blocker => <li key={blocker}>{blocker}</li>)}</ul>
             {item.sources.length ? <ul className="mn-source-list">{item.sources.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a><p>{source.publisher} · consulta {source.consultedAt}</p><p>{source.scopeNote}</p></li>)}</ul> : <p>Todavía no se ha incorporado una fuente específica a este perfil.</p>}
           </details>

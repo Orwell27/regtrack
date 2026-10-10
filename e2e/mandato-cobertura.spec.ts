@@ -10,8 +10,9 @@ test("la cobertura diferencia el catálogo territorial de las revisiones disponi
   await expect(page.getByRole("status")).toContainText("1 resultados");
   const card = page.locator(".mc-card");
   await expect(card.getByRole("heading", { level: 3 })).toHaveText("Madrid");
-  await expect(card).toContainText("Balance pendiente de elaboración");
-  await expect(card).toContainText("Universo aún no determinado");
+  await expect(card).toContainText("Balance parcial disponible");
+  await expect(card).toContainText("300 de 300");
+  await expect(card.getByRole("link", { name: "Leer inventario y revisiones territoriales" })).toHaveAttribute("href", "/observatorio/mandato/territorios/m-28079");
   await card.locator("summary").click();
   await expect(card).toContainText("Ayuntamiento de Madrid");
   await page.getByLabel("Buscar administración").fill("");
