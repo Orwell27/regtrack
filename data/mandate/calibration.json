@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-10-v3",
-  "reviewedAt": "2026-10-10",
+  "revision": "2026-10-11-v4",
+  "reviewedAt": "2026-10-11",
   "reviewer": "Codex",
   "reviewMode": "same-author-second-pass",
   "independentReview": "pending",
@@ -20,9 +20,9 @@
   ],
   "selection": {
     "totalAvailable": 203,
-    "selectedCount": 38,
-    "method": "Selección inicial de 30 fichas por temas, ampliada con ocho compromisos con normas originales localizadas. La selección por disponibilidad documental no es representativa.",
-    "limitation": "Los componentes no aumentan el denominador de 38 promesas revisadas sobre 203 registros oficiales. Las medidas compartidas no se suman como logros independientes."
+    "selectedCount": 46,
+    "method": "Selección inicial de 30 fichas ampliada por disponibilidad documental. Las nuevas revisiones contrastan normas, correcciones, actos parlamentarios y evaluación de AIReF; no constituyen una muestra representativa.",
+    "limitation": "Los componentes no aumentan el denominador de 46 promesas revisadas sobre 203 registros oficiales. Las medidas compartidas no se suman como logros independientes."
   },
   "rules": [
     "Fijar componente, población, periodo y criterio antes de volver a clasificar. Esta segunda pasada no es ciega: el autor conocía las conclusiones anteriores.",
@@ -1589,6 +1589,308 @@
       ],
       "challenge": "Se separó la creación legal de la agencia de su capacidad operativa. Tampoco se convirtió el plazo de aprobar su estatuto en un veredicto sobre toda la vigilancia sanitaria sin comprobar su desarrollo.",
       "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Estatuto y registros de constitución operativa, dotación y actividad; indicadores de oportunidad de alertas, cobertura de vigilancia y respuesta a crisis. La falta de esas capturas aquí no prueba incumplimiento del plazo del estatuto.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-52",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-52-part-1",
+          "label": "Reforma del incentivo laboral",
+          "criterion": "Identificar modificaciones publicadas y su calendario.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El RD 240/2026 modifica la compatibilidad con ingresos laborales.",
+          "sourceIds": [
+            "BOE-A-2026-6976"
+          ]
+        },
+        {
+          "id": "c-52-part-2",
+          "label": "Cobertura y acceso en 2025",
+          "criterion": "Comparar hogares, territorio y periodo homogéneos, distinguiendo estimación de solicitud resuelta.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "AIReF documenta mayor cobertura, del 41,8 % al 44,2 %, y persistencia de un 52 % de no solicitud entre hogares potenciales del territorio fiscal común.",
+          "sourceIds": [
+            "airef-imv-quinta-opinion-2026"
+          ]
+        },
+        {
+          "id": "c-52-part-3",
+          "label": "Efecto de la reforma de 2026",
+          "criterion": "Medir resultados posteriores sin atribuirle cambios anteriores.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Los datos de 2025 no miden el efecto del incentivo reformado en marzo de 2026.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el balance con una evaluación externa al Ejecutivo. Se conservan tanto la mejora de cobertura como el acceso insuficiente. El 52 % de no solicitud no se interpreta como denegación; tampoco se atribuye la mejora de 2025 al real decreto de 2026.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Evaluación posterior del incentivo de 2026, resultados comparables de inclusión y una referencia explícita que permita juzgar cuánto refuerzo se prometió. La estimación de hogares potenciales de AIReF no es una resolución individual de reconocimiento del derecho.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-69",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-69-part-1",
+          "label": "Instrumento de alimentación escolar",
+          "criterion": "Verificar objeto, centros y obligaciones de la norma.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El RD 315/2025 regula calidad nutricional, sostenibilidad y menús.",
+          "sourceIds": [
+            "BOE-A-2025-7659"
+          ]
+        },
+        {
+          "id": "c-69-part-2",
+          "label": "Aplicación en centros",
+          "criterion": "Comprobar menús, contratación e inspecciones según la fecha aplicable.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se han auditado los centros ni la aplicación de sus obligaciones.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-69-part-3",
+          "label": "Vida saludable y sostenible",
+          "criterion": "Evaluar resultados y políticas más allá del comedor escolar.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La norma no mide el cambio en salud ni agota el compromiso general.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separó el ámbito escolar del compromiso general y se leyó la excepción temporal del artículo 4.2. No se convierte una norma alimentaria en una mejora medida de toda la salud infantil.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Contratos, menús y controles de aplicación por centro, además de resultados nutricionales comparables y otras políticas de vida saludable. No se considera vencida en 2026 la obligación diferida a 2027.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-104",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-104-part-1",
+          "label": "Vocalías del CGPJ",
+          "criterion": "Comprobar los nombramientos correspondientes a ambas Cámaras.",
+          "stage": "delivery",
+          "state": "documented",
+          "finding": "Los dos decretos documentan los veinte nombramientos.",
+          "sourceIds": [
+            "BOE-A-2024-15351",
+            "BOE-A-2024-15352"
+          ]
+        },
+        {
+          "id": "c-104-part-2",
+          "label": "Conjunto de órganos constitucionales",
+          "criterion": "Revisar órgano, vencimiento y renovación sin extrapolar un caso.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "Estos decretos solo se refieren al CGPJ.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se cotejaron los dos decretos para no confundir diez nombramientos de una Cámara con veinte. Son dos actos complementarios, no dos corroboraciones independientes de un logro exclusivo del Ejecutivo.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Relación de los demás órganos, mandatos y fechas aplicables, junto con sus acuerdos de renovación. Para valorar el servicio judicial hacen falta indicadores distintos de los nombramientos.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-110",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-110-part-1",
+          "label": "Marco del mínimo global",
+          "criterion": "Verificar tipo mínimo, umbral, exclusiones y transposición.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 7/2024 regula el Impuesto Complementario para los grandes grupos incluidos.",
+          "sourceIds": [
+            "BOE-A-2024-26694"
+          ]
+        },
+        {
+          "id": "c-110-part-2",
+          "label": "Tributación y recaudación efectivas",
+          "criterion": "Comprobar liquidaciones y aplicación real del mecanismo.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "El texto legal no aporta liquidaciones ni una medición de la tributación efectiva obtenida.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-110-part-3",
+          "label": "Distribución justa",
+          "criterion": "Definir el criterio de justicia distributiva y contrastar el reparto.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay aquí un criterio cuantificado ni una evaluación del reparto de recaudación.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se comprobaron umbral, exclusiones y cálculo por jurisdicción. Se evita presentar el 15 % como un impuesto general nuevo para todas las sociedades o como recaudación ya ingresada.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Recaudación efectivamente liquidada, aplicación por jurisdicción, alcance de exclusiones y una definición verificable de distribución justa. Tampoco se presume que el impuesto complementario agote todas las medidas españolas de tributación mínima.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-127",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-127-part-1",
+          "label": "Marco europeo aprobado",
+          "criterion": "Comprobar instrumento, atribución institucional y correcciones.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El reglamento y la corrección de su artículo 85 acreditan marco y fecha general.",
+          "sourceIds": [
+            "DOUE-L-2024-80742",
+            "DOUE-L-2025-81799"
+          ]
+        },
+        {
+          "id": "c-127-part-2",
+          "label": "Actuación española de aplicación",
+          "criterion": "Identificar un acto español y delimitar su objeto.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El acuerdo de agosto organiza la notificación en el procedimiento fronterizo.",
+          "sourceIds": [
+            "BOE-A-2026-17614"
+          ]
+        },
+        {
+          "id": "c-127-part-3",
+          "label": "Resultados y contribución española",
+          "criterion": "Medir funcionamiento, garantías e impulso español sin inferirlos de la aprobación europea.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Los documentos no miden esas mejoras ni individualizan la negociación española.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "El original conservaba el 1 de julio: se buscaron y capturaron sus correcciones antes de publicar la fecha. Se diferencia el acto europeo de la contribución española y la encomienda de notificaciones de una mejora del sistema.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Aplicación efectiva y resultados por procedimiento, tiempos, recursos, garantías y mecanismos de solidaridad. Para valorar el impulso específico español se necesitan documentos de negociación; la norma europea por sí sola no lo individualiza.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-163",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-163-part-1",
+          "label": "Instrumentos de reforma",
+          "criterion": "Localizar mecanismos aprobados y su calendario.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El reglamento regula contratos de compra y apoyo mediante diferencias.",
+          "sourceIds": [
+            "DOUE-L-2024-80974"
+          ]
+        },
+        {
+          "id": "c-163-part-2",
+          "label": "Implantación y traslado de ingresos",
+          "criterion": "Contrastar contratos efectivos y distribución según el régimen aplicable.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La publicación no documenta todos los contratos ni ingresos trasladados en España.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-163-part-3",
+          "label": "Ahorro para hogares y empresas",
+          "criterion": "Comparar facturas y aislar el efecto de la reforma.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se ha medido aquí una rebaja atribuible de la factura.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se leyó el calendario de los instrumentos y se separó la reforma legal del precio final. La evolución agregada de precios no permite atribuir un ahorro a esta norma ni afirmar que desapareció el mercado marginalista.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Contratos y apoyos efectivamente implantados, distribución de ingresos y facturas comparables separando energía, impuestos, peajes, consumo y demás factores. Falta una estimación causal de la rebaja atribuible a la reforma.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-177",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-177-part-1",
+          "label": "Refuerzo normativo de atención",
+          "criterion": "Verificar instrumento y ámbito empresarial.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 10/2025 establece mínimos de calidad y evaluación.",
+          "sourceIds": [
+            "BOE-A-2025-26698"
+          ]
+        },
+        {
+          "id": "c-177-part-2",
+          "label": "Aplicación y derechos efectivos",
+          "criterion": "Contrastar controles, reclamaciones y resultados según el plazo aplicable.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se han verificado adaptación general ni resultados; el plazo de doce meses sigue abierto.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastaron el ámbito y el régimen transitorio antes de valorar la ejecución. Se evita un falso incumplimiento por un plazo todavía abierto y una conclusión global a partir de una sola ley.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Auditorías y controles de adaptación, resolución de reclamaciones y experiencia de consumidores con periodos comparables, además de las otras dimensiones del compromiso general.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-184",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-184-part-1",
+          "label": "Renovación parlamentaria",
+          "criterion": "Localizar aprobación del pacto por el Pleno.",
+          "stage": "delivery",
+          "state": "documented",
+          "finding": "El Congreso documenta la renovación de febrero de 2025.",
+          "sourceIds": [
+            "congreso-renovacion-pacto-2025"
+          ]
+        },
+        {
+          "id": "c-184-part-2",
+          "label": "Compromisos financieros de 2026",
+          "criterion": "Distinguir distribución acordada de pago y gasto ejecutado.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La resolución publica el acuerdo de distribución de 160 millones.",
+          "sourceIds": [
+            "BOE-A-2026-9355"
+          ]
+        },
+        {
+          "id": "c-184-part-3",
+          "label": "Eficacia y protección",
+          "criterion": "Evaluar ejecución y resultados de las medidas.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se ha incorporado una evaluación de eficacia del conjunto de medidas.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separaron renovación, financiación y eficacia. La fuente del Congreso acredita su acto parlamentario y la del BOE el acuerdo financiero: no son dos evaluaciones independientes de resultados.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Pagos y gasto justificado, seguimiento de las 461 medidas, cobertura y calidad de servicios y evaluaciones de eficacia. El total presupuestario no se traduce automáticamente en atención recibida por las víctimas.",
       "overlaps": [],
       "correction": null
     }

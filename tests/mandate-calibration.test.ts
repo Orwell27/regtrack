@@ -8,15 +8,15 @@ import { answerMandate, boundMandateAnswer } from "@/lib/mandate/answer";
 const snapshot = () => structuredClone(getMandateSnapshot());
 
 describe("calibración editorial y límites de la evidencia", () => {
-  it("amplía a treinta y ocho promesas y conserva las versiones anteriores sin fabricar exactitud", () => {
+  it("amplía a cuarenta y seis promesas y conserva las versiones anteriores sin fabricar exactitud", () => {
     const data = snapshot();
     expect(data.calibration.accuracyRate).toBeNull();
     expect(data.calibration.independentReview).toBe("pending");
     expect(data.calibration.blind).toBe(false);
-    expect(data.calibration.selection.selectedCount).toBe(38);
-    expect(calibration.audits).toHaveLength(38);
-    expect(new Set(calibration.audits.map(audit => audit.commitmentId)).size).toBe(38);
-    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(82);
+    expect(data.calibration.selection.selectedCount).toBe(46);
+    expect(calibration.audits).toHaveLength(46);
+    expect(new Set(calibration.audits.map(audit => audit.commitmentId)).size).toBe(46);
+    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(104);
     expect(collection.commitments.filter(item => item.assessmentHistory.length)).toHaveLength(30);
     for (const item of collection.commitments.filter(item => item.assessmentHistory.length)) {
       const previous = item.assessmentHistory[0];

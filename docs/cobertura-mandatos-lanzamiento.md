@@ -2,7 +2,7 @@
 
 Alcance acordado con Alfonso el 10 de octubre de 2026: balance estatal, 17 comunidades autónomas, Ceuta y Melilla y las 50 capitales de provincia. Otros municipios se amplían después. Objetivo orientativo de lanzamiento: alrededor del 17 de octubre; no es una tarea programada ni una promesa de auditoría terminada sin evidencia.
 
-**Estado de la rama tras incorporar Navarra:** 38/203 fichas nacionales, 4/300 del Ayuntamiento de Madrid y 3/347 de Navarra con revisión parcial. Los inventarios importados son completos respecto de sus documentos, no balances cerrados. Los otros 67 territorios aún no tienen un inventario importado ni revisión sustantiva; la revisión humana independiente sigue pendiente en todos los ámbitos. Los bloques de abajo conservan la secuencia de trabajo.
+**Estado de la rama tras el contraste nacional del 11 de octubre:** 46/203 fichas nacionales (104 componentes), 4/300 del Ayuntamiento de Madrid y 3/347 de Navarra con revisión parcial. Quedan 157 compromisos nacionales pendientes. Los inventarios importados son completos respecto de sus documentos, no balances cerrados. Los otros 67 territorios aún no tienen un inventario importado ni revisión sustantiva; la revisión humana independiente sigue pendiente en todos los ámbitos. Los bloques de abajo conservan la secuencia de trabajo.
 
 ## Condiciones para dar una ficha por revisada
 
@@ -118,3 +118,18 @@ npx vitest run tests/mandate-navarra.test.ts tests/mandate-territorial.test.ts
 ```
 
 Quedan 165 compromisos nacionales, 296 de Madrid, 344 de Navarra y los inventarios y balances de otros 67 territorios. Se mantiene el objetivo integral; esta incorporación no finaliza la sección.
+
+## Contraste nacional — 11 de octubre
+
+Ocho fichas nuevas (52, 69, 104, 110, 127, 163, 177 y 184), con 22 componentes y catorce originales adicionales: doce documentos del BOE/DOUE, la quinta Opinión del IMV de AIReF y la nota del Pleno del Congreso sobre la renovación del pacto contra la violencia de género. El total pasa a 46 fichas y 104 componentes. Las 38 revisiones anteriores conservan su contenido y fecha; no se fabrica una revisión histórica de las ocho nuevas.
+
+- IMV: resultado parcial sustentado por AIReF. La cobertura estimada crece del 41,8 % al 44,2 % en 2025, mientras el 52 % de hogares potenciales no solicita la prestación. Se delimita territorio fiscal común, exclusión de Navarra y País Vasco, estimación mediante simulador y diferencia entre hogares y personas. Los datos de 2025 no evalúan la reforma de marzo de 2026.
+- Alimentación escolar, atención al cliente y electricidad: se conservan las entradas o aplicaciones diferidas. No se declaran incumplidas obligaciones todavía abiertas en 2027/2029 ni se deduce la ejecución de la fecha de una norma.
+- CGPJ: veinte nombramientos a propuesta de ambas Cámaras; no se extrapola a todos los órganos ni se atribuye al Ejecutivo en exclusiva.
+- Impuesto mínimo: se conserva el umbral de grandes grupos y el cálculo por jurisdicción. No es un 15 % universal del beneficio contable ni prueba de recaudación.
+- Asilo: el artículo 85 original mostraba 1 de julio de 2026; la corrección oficial de noviembre de 2025 lo cambia al 12 de junio. También se conserva y lee la corrección de septiembre de 2026. La encomienda española de notificaciones acredita un acto concreto posterior al corte gubernamental, no mejora probada de todos los procedimientos.
+- Violencia de género: renovación parlamentaria, distribución presupuestaria y eficacia se examinan por separado. Un crédito distribuido no equivale a gasto justificado ni atención efectiva.
+
+Los originales se conservan con huellas verificables. La prueba de integridad comprueba también identificador, título y fecha de los documentos DOUE. La página 28 de AIReF se inspeccionó visualmente para cotejar gráficos, porcentajes y definición de no solicitud.
+
+Pendientes actuales: 157 nacionales, 296 de Madrid, 344 de Navarra y los otros 67 inventarios/balances territoriales; revisión humana independiente pendiente. Esta ampliación no cierra la cobertura ni autoriza a presentarla como completa.

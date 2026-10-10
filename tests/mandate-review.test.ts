@@ -5,14 +5,15 @@ import { getMandateSnapshot } from "@/lib/mandate/data";
 import { validateMandateSnapshot } from "@/lib/mandate/validate";
 import { answerMandate, boundMandateAnswer } from "@/lib/mandate/answer";
 
-describe("revisión de las 38 promesas y efecto práctico", () => {
+describe("revisión de las 46 promesas y efecto práctico", () => {
   it("cierra las 22 primeras revisiones sin perder las 8 anteriores ni llamar cumplimiento a cobertura", () => {
-    expect(collection.commitments).toHaveLength(38);
-    expect(new Set(collection.commitments.map(item => item.officialId)).size).toBe(38);
+    expect(collection.commitments).toHaveLength(46);
+    expect(new Set(collection.commitments.map(item => item.officialId)).size).toBe(46);
     expect(collection.commitments.filter(item => item.review.history[0]?.status === "sin_verificar")).toHaveLength(22);
     for (const item of collection.commitments) {
       if (item.review.history.length) expect(item.review.history[0].asOf).toBe("2026-10-07");
-      expect(item.review.asOf).toBe("2026-10-10");
+      const addedOnOct11 = ["c-52", "c-69", "c-104", "c-110", "c-127", "c-163", "c-177", "c-184"].includes(item.id);
+      expect(item.review.asOf).toBe(addedOnOct11 ? "2026-10-11" : "2026-10-10");
       expect(item.review.status).not.toBe("sin_verificar");
       expect(item.assessment.evidenceSourceIds.length).toBeGreaterThan(0);
       for (const id of item.assessment.evidenceSourceIds) {

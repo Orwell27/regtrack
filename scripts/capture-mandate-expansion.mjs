@@ -3,7 +3,14 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { XMLParser } from 'fast-xml-parser';
 
-const ids = ['BOE-A-2025-6597', 'BOE-A-2024-15936', 'BOE-A-2024-3099', 'BOE-A-2025-76', 'BOE-A-2024-20402', 'BOE-A-2026-2727', 'BOE-A-2026-7967', 'BOE-A-2025-15652'];
+const ids = [
+  'BOE-A-2025-6597', 'BOE-A-2024-15936', 'BOE-A-2024-3099', 'BOE-A-2025-76',
+  'BOE-A-2024-20402', 'BOE-A-2026-2727', 'BOE-A-2026-7967', 'BOE-A-2025-15652',
+  'BOE-A-2026-6976', 'BOE-A-2025-7659', 'BOE-A-2024-15351', 'BOE-A-2024-15352',
+  'BOE-A-2024-26694', 'BOE-A-2025-26698', 'BOE-A-2026-9355', 'BOE-A-2026-17614',
+  'DOUE-L-2024-80742', 'DOUE-L-2024-80974',
+  'DOUE-L-2025-81799', 'DOUE-L-2026-81426',
+];
 const directory = 'data/mandate/evidence/expansion';
 const manifestPath = `${directory}/sources.json`;
 await mkdir(directory, { recursive: true });

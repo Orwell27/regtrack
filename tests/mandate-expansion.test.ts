@@ -19,8 +19,8 @@ const original = (id: string) => {
 };
 
 describe("ampliación documental con límites por componente", () => {
-  it("conserva ocho filas exactas sin fabricar una revisión histórica ni fecha de origen", () => {
-    expect(collection.commitments.filter(item => !item.assessmentHistory.length).map(item => item.id).sort()).toEqual([...ids].sort());
+  it("conserva las filas exactas del primer bloque sin fabricar una revisión histórica ni fecha de origen", () => {
+    expect(collection.commitments.filter(item => ids.includes(item.id)).map(item => item.id).sort()).toEqual([...ids].sort());
     for (const id of ids) {
       const raw = collection.commitments.find(item => item.id === id)!;
       const imported = inventory.records.find(item => item.id === id)!;

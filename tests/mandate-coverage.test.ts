@@ -33,11 +33,11 @@ describe("inventario nacional completo, sin convertir importaciones en revisione
     expect(() => readInventoryRecords(header + "1;A")).toThrow("Registro inválido");
     expect(() => readInventoryRecords(header.replace("Compromiso", "Otro") + "1;A;B")).toThrow("Cabecera");
   });
-  it("muestra 165 pendientes sin asignarles un veredicto y no serializa la captura completa", () => {
+  it("muestra 157 pendientes sin asignarles un veredicto y no serializa la captura completa", () => {
     const data = getPublicInventory();
-    expect(data.records.filter(item => item.reviewed)).toHaveLength(38);
+    expect(data.records.filter(item => item.reviewed)).toHaveLength(46);
     const pending = data.records.filter(item => !item.reviewed);
-    expect(pending).toHaveLength(165);
+    expect(pending).toHaveLength(157);
     expect(pending.every(item => item.verdict === null)).toBe(true);
     const json = JSON.stringify(data);
     expect(json).not.toMatch(/snapshotPath|currentInitiatives|previousInitiatives|verificationSources/);
@@ -70,9 +70,9 @@ describe("cobertura de 70 administraciones con responsabilidades separadas", () 
     expect(cities.find(item => item.province === "p-33")?.name).toBe("Oviedo");
     expect(cities.find(item => item.province === "p-36")?.name).toBe("Pontevedra");
   });
-  it("no hereda los 38 contrastes nacionales en ningún territorio", () => {
+  it("no hereda los 46 contrastes nacionales en ningún territorio", () => {
     const all = getCoverage();
-    expect(all[0].reviewed).toBe(38);
+    expect(all[0].reviewed).toBe(46);
     for (const item of all.slice(1)) {
       expect(item.reviewed).toBe(item.id === "m-28079" ? 4 : item.id === "r-15" ? 3 : 0);
       expect(item.inventoryTotal).toBe(item.id === "m-28079" ? 300 : item.id === "r-15" ? 347 : null);
