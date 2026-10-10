@@ -25,7 +25,7 @@ El balance permite consultar hechos acotados, fuentes y lagunas. No permite una 
 | --- | --- | --- |
 | 1 · Dependencia | Precisión | Financiación aprobada no prueba disponibilidad efectiva o desembolso. No cambia el veredicto. |
 | 53 · Pago de becas | Alcance | El acuerdo propone «tender» al pago al inicio de curso. No se transforma en un plazo universal de pago. Sigue no concluyente. |
-| 65 · Salud bucodental | Atribución | Las dos comunicaciones sanitarias tienen el mismo origen institucional. Se atribuye lo comunicado, sin llamarlo ejecución independiente auditada. |
+| 65 · Salud mental | Atribución | Las dos comunicaciones sanitarias tienen el mismo origen institucional. Se atribuye lo comunicado, sin llamarlo ejecución independiente auditada. |
 | 78 · Becas | Error factual | El RD 179/2026 fija umbrales y cuantías; no es por sí mismo la convocatoria. Se corrigen la descripción y su efecto práctico. |
 | 87 · Grandes fortunas | Evidencia añadida | El informe de Hacienda aporta información recaudatoria atribuida al emisor. No prueba una evaluación territorial independiente ni reforma definitiva. Sigue no concluyente. |
 | 112 · Vivienda | Alcance temporal | El objetivo del 20 % se formula a medio y largo plazo. Se separa de las 184.000 viviendas y no se inventa un vencimiento al final de la legislatura. |
