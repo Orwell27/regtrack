@@ -1,4 +1,4 @@
-import { ASSESSMENT_LABELS, type Evidence, type MandateSnapshot, type Observation } from "./model";
+import { ASSESSMENT_LABELS, COMPONENT_STATE_LABELS, EVIDENCE_STAGE_LABELS, type Evidence, type MandateSnapshot, type Observation } from "./model";
 const fail = (message: string): never => { throw Error(`Archivo de mandato inválido: ${message}`); };
 function text(value: unknown, label: string) { if (typeof value !== "string" || !value.trim()) fail(label); }
 function date(value: unknown, label: string) {
@@ -57,8 +57,46 @@ export function validateMandateSnapshot(snapshot: MandateSnapshot): void {
     if (assessment.reviewedAt !== item.review.date || assessment.reviewedAt > snapshot.asOf) fail("fechas de revisión incompatibles");
     if (!assessment.evidenceIds.length || assessment.evidenceIds.some(id => !item.evidence.some(entry => entry.id === id))) fail("evaluación con evidencia inexistente");
     if (new Set(assessment.evidenceIds).size !== assessment.evidenceIds.length) fail("evaluación con evidencia duplicada");
+    const quality = item.quality;
+    if (!quality?.components.length) fail("calibración sin componentes");
+    date(quality.reviewedAt, "fecha de calibración");
+    if (quality.reviewedAt > snapshot.asOf) fail("calibración posterior al corte");
+    text(quality.challenge, "calibración sin contraste adicional");
+    text(quality.refreshTrigger, "calibración sin criterio de actualización");
+    const parts = new Set<string>();
+    for (const part of quality.components) {
+      if (parts.has(part.id) || !part.id.startsWith(`${item.id}-part-`)) fail("componente duplicado o ajeno");
+      parts.add(part.id);
+      text(part.label, "componente sin nombre"); text(part.criterion, "componente sin criterio"); text(part.finding, "componente sin resultado de revisión");
+      if (!Object.hasOwn(COMPONENT_STATE_LABELS,part.state) || !Object.hasOwn(EVIDENCE_STAGE_LABELS,part.stage)) fail("componente sin estado o etapa válidos");
+      if (part.evidenceIds.some(id => !item.evidence.some(source => source.id === id))) fail("componente con evidencia inexistente");
+      if (new Set(part.evidenceIds).size !== part.evidenceIds.length) fail("componente con evidencia duplicada");
+      const refs = item.evidence.filter(source => part.evidenceIds.includes(source.id));
+      if (part.state !== "unknown" && !refs.length) fail("afirmación de componente sin evidencia");
+      if (["documented","contradicted"].includes(part.state) && !refs.some(source => source.role === "action" || source.role === "indicator")) fail("afirmación directa basada solo en promesa o declaración");
+    }
+    if (assessment.verdict === "not_met" && !quality.components.some(part => part.state === "contradicted")) fail("objetivo fuera de plazo sin evidencia contraria");
+    if (quality.correction) {
+      text(quality.correction.reason, "corrección sin motivo");
+      if (!["error","precision","scope","attribution","new_evidence","context"].includes(quality.correction.kind) || !quality.correction.changes.length) fail("corrección sin tipo o cambios");
+      for (const change of quality.correction.changes) {
+        if (!["expected","observed","practicalEffect","missingEvidence","temporalScope","scope","verdict"].includes(change.field)) fail("campo de corrección desconocido");
+        text(change.before, "corrección sin versión anterior"); text(change.after, "corrección sin versión nueva");
+        if (change.before === change.after || assessment[change.field as keyof typeof assessment] !== change.after) fail("historial de corrección incoherente");
+      }
+    }
     if (item.indicatorIds.some((id) => !indicators.has(id))) fail("relación con indicador inexistente");
   }
+  const calibration = snapshot.calibration;
+  if (!calibration || calibration.reviewMode !== "same-author-second-pass" || calibration.independentReview !== "pending" || calibration.blind !== false || calibration.accuracyRate !== null) fail("no atribuir independencia o exactitud no medidas");
+  date(calibration.reviewedAt, "fecha de protocolo"); text(calibration.revision, "protocolo sin versión"); text(calibration.reviewer, "revisor ausente");
+  if (calibration.reviewedAt > snapshot.asOf || !calibration.rules.length) fail("protocolo sin reglas o posterior al corte");
+  calibration.rules.forEach(rule => text(rule, "regla vacía"));
+  const selection = calibration.selection;
+  if (!Number.isInteger(selection.totalAvailable) || selection.totalAvailable < snapshot.commitments.length || selection.selectedCount !== snapshot.commitments.length) fail("universo de selección incoherente");
+  text(selection.method, "selección sin método"); text(selection.limitation, "selección sin límites");
+  if (new Set(calibration.initialSample).size !== calibration.initialSample.length || calibration.initialSample.some(id => !commitments.has(id))) fail("muestra de calibración inválida");
+  for (const item of snapshot.commitments) if (item.quality.overlaps.some(id => id === item.id || !commitments.has(id))) fail("solapamiento de promesas inválido");
   for (const item of snapshot.commentary) {
     if (item.kind !== "ai-editorial") fail("interpretación sin autoría IA");
     if (!item.commitmentIds.length && !item.indicatorIds.length) fail("interpretación sin referencias");

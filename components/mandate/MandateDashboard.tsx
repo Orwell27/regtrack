@@ -6,6 +6,8 @@ import { ArrowLeft, ArrowUpRight, BookOpen, Search, Sparkles } from "lucide-reac
 import {
   MANDATE_TOPICS,
   ASSESSMENT_LABELS,
+  COMPONENT_STATE_LABELS,
+  EVIDENCE_STAGE_LABELS,
   normalizeMandateText,
   type Commitment,
   type Evidence,
@@ -61,6 +63,19 @@ function CommitmentCard({ item, indicators, openIndicator }: { item: Commitment;
         <h4>Criterio de revisión</h4><p>{item.review.criterion}</p>
         <h4>Alcance de esta conclusión</h4><p>{item.assessment.scope}</p>
         <h4>Qué falta para concluir más</h4><p className="mn-assessment-missing">{item.assessment.missingEvidence}</p>
+        <section className="mn-quality-parts" aria-label={`Comprobación por objetivos: ${item.title}`}>
+          <h4>Comprobación por objetivos</h4>
+          <p>Solidez del hecho indicado, no del compromiso entero. Un dato puede estar bien documentado y dejar sin demostrar el objetivo final.</p>
+          <ol>{item.quality.components.map(part => <li key={part.id}>
+            <h5>{part.label}</h5><p className="mn-part-state" data-state={part.state}>{EVIDENCE_STAGE_LABELS[part.stage]} · {COMPONENT_STATE_LABELS[part.state]}</p>
+            <p><strong>Criterio editorial:</strong> {part.criterion}</p><p>{part.finding}</p>
+            {part.evidenceIds.length ? <ul className="mn-part-sources">{part.evidenceIds.map(id => { const source = item.evidence.find(source => source.id === id)!; return <li key={id}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a><span> · {source.locator}</span></li>; })}</ul> : <p>Sin evidencia suficiente incorporada para resolver este componente.</p>}
+          </li>)}</ol>
+          <h4>Contraste adicional y límites</h4><p>{item.quality.challenge}</p>
+          <p><strong>Revisar cuando:</strong> {item.quality.refreshTrigger}</p>
+          {item.quality.overlaps.length ? <p>Comparte medidas o ámbito con {item.quality.overlaps.map((id,index) => <span key={id}>{index ? ", " : ""}<a href={`#compromiso-${id}`}>{id.replace("c-", "ficha ")}</a></span>)}. No sumar estas fichas como logros independientes.</p> : null}
+          {item.quality.correction ? <div className="mn-correction"><h4>{item.quality.correction.kind === "error" ? "Corrección" : "Aclaración o evidencia añadida"} · {dateLabel(item.quality.reviewedAt)}</h4><p>{item.quality.correction.reason}</p><dl>{item.quality.correction.changes.map(change => <div key={change.field}><dt>Antes</dt><dd>{change.before}</dd><dt>Ahora</dt><dd>{change.after}</dd></div>)}</dl></div> : null}
+        </section>
         <h4>Fuentes para contrastar</h4><Sources sources={item.evidence} />
         {item.indicatorIds.length ? <div className="mn-correlation"><strong>Indicadores de contexto</strong><p>La relación es temática y documental. No demuestra que el compromiso haya causado el cambio del indicador.</p>{item.indicatorIds.map((id) => {
           const indicator = indicators.find((candidate) => candidate.id === id);
@@ -160,7 +175,7 @@ export function MandateDashboard({ snapshot, nowISO }: { snapshot: MandateSnapsh
         <p className="mn-intro">{snapshot.mandate.label}. Una lectura de los compromisos recogidos, las actuaciones documentadas y la evolución de los indicadores, con sus fuentes a la vista.</p>
         <p className="mn-updated">Selección actualizada el <time dateTime={snapshot.asOf}>{dateLabel(snapshot.asOf)}</time><span>·</span>Inicio del mandato: {dateLabel(snapshot.mandate.start)}</p>
       </div><MandateCountdown election={snapshot.election} nowISO={nowISO} /></section>
-      <MandateAccountability commitments={snapshot.commitments} onReview={openReview} onAssessment={openAssessment} />
+      <MandateAccountability commitments={snapshot.commitments} calibration={snapshot.calibration} onReview={openReview} onAssessment={openAssessment} />
       <div className="mn-summary-grid" aria-label="Cobertura de la selección"><div><strong>{snapshot.commitments.length}</strong><span>compromisos en esta selección</span></div><div><strong>{snapshot.indicators.length}</strong><span>indicadores con periodo y unidad</span></div><div><strong>{sourceCount}</strong><span>referencias de origen distintas</span></div></div>
       <aside className="mn-method" aria-labelledby="method-heading"><h2 id="method-heading">Qué sabemos.<br />Qué queda por revisar.</h2><div><p>{snapshot.mandate.scope}</p><p>{snapshot.selection}</p><details className="mn-method-details"><summary>Ver método de contraste y límites</summary>{snapshot.methodology.map((point) => <p key={point}>{point}</p>)}</details></div></aside>
       <section id="balance-documental" className="mn-ledger" aria-labelledby="ledger-heading">

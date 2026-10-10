@@ -1,11 +1,12 @@
 import { ArrowUpRight } from "lucide-react";
 import { getMandateAccountability } from "@/lib/mandate/accountability";
-import { ASSESSMENT_LABELS, type Commitment } from "@/lib/mandate/model";
+import { ASSESSMENT_LABELS, type Calibration, type Commitment } from "@/lib/mandate/model";
 
 const percent = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 
-export function MandateAccountability({ commitments, onReview, onAssessment }: {
+export function MandateAccountability({ commitments, calibration, onReview, onAssessment }: {
   commitments: Commitment[];
+  calibration: Calibration;
   onReview: (status: Commitment["review"]["status"]) => void;
   onAssessment: (verdict: Commitment["assessment"]["verdict"]) => void;
 }) {
@@ -44,6 +45,13 @@ export function MandateAccountability({ commitments, onReview, onAssessment }: {
         return <button key={value} onClick={() => onAssessment(value)} data-verdict={value}><strong>{count}</strong><span>{label}</span><ArrowUpRight size={13} aria-hidden="true" /></button>;
       })}</div>
     </div>
+    <section className="mn-quality-summary" aria-labelledby="quality-heading">
+      <h3 id="quality-heading">Cómo de sólida es esta revisión</h3>
+      <p><strong>Exactitud todavía no medida.</strong> Segunda pasada de {calibration.reviewer}, el mismo agente que preparó las fichas. No es una revisión independiente ni ciega; la revisión humana independiente sigue pendiente.</p>
+      <p>{commitments.length} fichas desglosadas en {commitments.reduce((sum,item) => sum + item.quality.components.length,0)} comprobaciones. Se ha corregido {commitments.filter(item => item.quality.correction?.kind === "error").length} error de redacción factual y se han aclarado o ampliado otras {commitments.filter(item => item.quality.correction && item.quality.correction.kind !== "error").length} fichas. Esto no permite calcular una tasa de errores del conjunto.</p>
+      <p><strong>{calibration.selection.selectedCount} de {calibration.selection.totalAvailable} compromisos del inventario de referencia.</strong> {calibration.selection.method} {calibration.selection.limitation}</p>
+      <details><summary>Reglas, actualización y correcciones</summary><ul>{calibration.rules.map(rule => <li key={rule}>{rule}</li>)}</ul><p>Las fuentes mantienen sus fechas de publicación y captura. «Revisar cuando» indica el trabajo necesario ante cambios; no hay actualización automática.</p><p>En cada ficha modificada puedes leer el texto anterior, el nuevo y el motivo.</p></details>
+    </section>
     <details className="mn-accountability-criteria"><summary>Qué falta para valorar el cumplimiento</summary><div>
       <p>Antes de clasificar un compromiso como cumplido, parcialmente cumplido o incumplido, hay que contrastar estos elementos:</p>
       <dl><div><dt>Resultado</dt><dd>Qué se prometió y qué se ha entregado o conseguido.</dd></div><div><dt>Alcance</dt><dd>A quién, dónde y en qué medida debía aplicarse.</dd></div><div><dt>Plazo</dt><dd>Si había una fecha comprometida y si ya venció.</dd></div><div><dt>Evidencia</dt><dd>Qué documentos y registros permiten comprobarlo.</dd></div><div><dt>Actualidad</dt><dd>Si las fuentes siguen vigentes y reflejan el periodo evaluado.</dd></div></dl>

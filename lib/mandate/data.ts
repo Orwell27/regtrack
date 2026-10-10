@@ -1,7 +1,8 @@
 import commitmentsInput from "@/data/mandate/commitments.json";
 import indicatorsInput from "@/data/mandate/indicators.json";
 import electionInput from "@/data/mandate/election.json";
-import { type Commitment, type CommitmentAssessment, type Election, type Evidence, type Indicator, type MandateSnapshot, type Observation } from "./model";
+import calibrationInput from "@/data/mandate/calibration.json";
+import { type Calibration, type CommitmentQuality, type Commitment, type CommitmentAssessment, type Election, type Evidence, type Indicator, type MandateSnapshot, type Observation } from "./model";
 import { validateMandateSnapshot } from "./validate";
 
 type RawSource = { id: string; url: string; title: string; organisation: string; publishedAt: string | null; capturedAt: string; sha256: string; captureType?: string };
@@ -64,7 +65,7 @@ function commitmentProjection(item: RawCommitment, indicators: Indicator[]): Com
       ...(item.originSourceId ? [evidence(item.originSourceId, `${item.id}-origin`, `Documento de origen atribuido a la fila ${item.officialId} del inventario`, item.originVerification?.note ?? "Origen atribuido por el inventario, pendiente de correspondencia literal completa.", "promise")] : []),
       ...(item.officialDeadline?.sourceId ? [evidence(item.officialDeadline.sourceId, `${item.id}-deadline`, item.officialDeadline.locator ?? item.governmentAssessment.locator,
         `${item.officialDeadline.text}. ${item.officialDeadline.scope ?? ""}`, "promise")] : []),
-      ...item.review.evidence.map((entry, index) => evidence(entry.sourceId, `${item.id}-evidence-${index}`, entry.locator, entry.paraphrase, entry.sourceId === "coalicion-2023" ? "promise" : entry.relation === "resultado_estadistico" ? "indicator" : entry.relation === "declaracion_de_actuacion" ? "government" : "action")),
+      ...item.review.evidence.map((entry, index) => evidence(entry.sourceId, `${item.id}-evidence-${index}`, entry.locator, entry.paraphrase, entry.sourceId.startsWith("coalicion-2023") ? "promise" : entry.relation === "resultado_estadistico" ? "indicator" : entry.relation === "declaracion_de_actuacion" ? "government" : "action")),
     ],
     // These links are visibly labelled as thematic context, never proof of fulfilment.
     indicatorIds: indicators.filter((indicator) => item.topics.includes(indicator.topic)).slice(0, 4).map((indicator) => indicator.id),
@@ -76,10 +77,32 @@ function commitmentProjection(item: RawCommitment, indicators: Indicator[]): Com
       scope: item.assessment.scope, reviewedAt: item.assessment.reviewedAt,
       evidenceIds: item.review.evidence.flatMap((entry, index) => item.assessment.evidenceSourceIds.includes(entry.sourceId) ? [`${item.id}-evidence-${index}`] : []),
     },
+    quality: qualityProjection(item),
+  };
+}
+
+function qualityProjection(item: RawCommitment): CommitmentQuality {
+  const audit = calibrationInput.audits.find(audit => audit.commitmentId === item.id);
+  if (!audit) throw Error(`Falta calibración: ${item.id}`);
+  const sourceRef = (id: string) => {
+    if (id === item.governmentAssessment.sourceId) return `${item.id}-commitment`;
+    const index = item.review.evidence.findIndex(entry => entry.sourceId === id);
+    if (index < 0) throw Error(`Falta evidencia de calibración: ${item.id}/${id}`);
+    return `${item.id}-evidence-${index}`;
+  };
+  const correction = audit.correction;
+  const fields = ["expected", "observed", "practicalEffect", "missingEvidence", "temporalScope", "scope", "verdict"] as const;
+  return {
+    reviewedAt: audit.reviewedAt,
+    components: audit.components.map(part => ({ id: part.id, label: part.label, criterion: part.criterion, stage: part.stage as CommitmentQuality["components"][number]["stage"], state: part.state as CommitmentQuality["components"][number]["state"], finding: part.finding, evidenceIds: part.sourceIds.map(sourceRef) })),
+    challenge: audit.challenge, refreshTrigger: audit.refreshTrigger, overlaps: audit.overlaps,
+    correction: correction ? {kind: correction.kind as NonNullable<CommitmentQuality["correction"]>["kind"],reason:correction.reason,changes:fields.filter(field => correction.before[field] !== correction.after[field]).map(field => ({field,before:correction.before[field],after:correction.after[field]}))} : null,
   };
 }
 
 export function getMandateSnapshot(): MandateSnapshot {
+  const auditIds = new Set(calibrationInput.audits.map(audit => audit.commitmentId));
+  if (calibrationInput.audits.length !== rawCommitments.commitments.length || auditIds.size !== calibrationInput.audits.length || rawCommitments.commitments.some(item => !auditIds.has(item.id))) throw Error("Calibración con fichas duplicadas, huérfanas o ausentes");
   const indicators = rawIndicators.indicators.map(indicatorProjection);
   const commitments = rawCommitments.commitments.map((item) => commitmentProjection(item, indicators));
   const forTopic = (topic: string) => ({ commitmentIds: commitments.filter((item) => item.topics.includes(topic)).slice(0, 3).map((item) => item.id), indicatorIds: indicators.filter((item) => item.topic === topic).slice(0, 4).map((item) => item.id) });
@@ -89,11 +112,19 @@ export function getMandateSnapshot(): MandateSnapshot {
     election: electionInput as Election,
     selection: rawCommitments.selection.description,
     commitments, indicators,
+    calibration: {
+      revision: calibrationInput.revision, reviewedAt: calibrationInput.reviewedAt, reviewer: calibrationInput.reviewer,
+      reviewMode: calibrationInput.reviewMode as Calibration["reviewMode"], independentReview: calibrationInput.independentReview as Calibration["independentReview"],
+      blind: calibrationInput.blind as false, accuracyRate: calibrationInput.accuracyRate, initialSample: calibrationInput.initialSample,
+      selection: calibrationInput.selection, rules: calibrationInput.rules,
+    },
     methodology: [
       "El inventario Cumpliendo pertenece al Gobierno. Su información se atribuye a esa fuente y se contrasta por separado con documentos originales.",
       "Origen de los datos de compromisos: sitio web de lamoncloa.gob.es. Ministerio de la Presidencia. Entrega publicada el 28 de julio de 2026, con corte al 30 de junio; la revisión del piloto no amplía ese corte.",
       "Una norma acredita una actuación, no necesariamente una entrega o el resultado prometido. No se publica un porcentaje global de cumplimiento a partir de esta selección.",
       "Los 30 compromisos tienen una revisión fechada de qué se esperaba, qué acredita la evidencia, su alcance temporal, el efecto práctico y lo que falta. Completar la revisión no convierte las medidas aprobadas en resultados ni elimina la incertidumbre.",
+      "La segunda pasada desglosa los objetivos y distingue norma, ejecución y resultado. Conserva evidencia contraria, solapamientos entre fichas, criterios de actualización y textos corregidos.",
+      "La revisión la realiza el mismo agente y no es ciega. La revisión humana independiente está pendiente y la exactitud no se ha medido. Las comprobaciones automáticas validan coherencia e integridad, no la verdad de todas las conclusiones.",
       "Medidas acreditadas señala instrumentos o decisiones publicados, incluidos anuncios atribuidos al organismo. Resultado parcial documentado señala un componente o evolución comprobables. Objetivo no alcanzado en el plazo requiere meta y plazo explícitos y evidencia contraria. Resultado no concluyente significa que las fuentes no bastan para juzgar el resultado prometido.",
       "Las revisiones anteriores se conservan en el archivo. Las fuentes estadísticas retienen sus periodos y fecha de captura: la revisión del 10 de octubre no las convierte en observaciones de ese día. Las normas recientes deben revisarse de nuevo tras su convalidación o modificación.",
       "Pendiente de contraste significa que falta revisión documental. No significa promesa incumplida. Se conserva el plazo original cuando consta.",
