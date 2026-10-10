@@ -9,7 +9,7 @@ async function readSnapshot(request: APIRequestContext) {
 }
 const number = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 10 });
 
-test("las treinta y ocho fichas explican promesa, efecto, periodo y lagunas, y los grupos llevan a sus pruebas", async ({ page, request }) => {
+test("las treinta y ocho fichas explican promesa, efecto, periodo y lagunas con sus fuentes", async ({ page, request }) => {
   const snapshot = await readSnapshot(request);
   await page.goto("/observatorio/mandato");
   for (const item of snapshot.commitments) {
@@ -35,6 +35,11 @@ test("las treinta y ocho fichas explican promesa, efecto, periodo y lagunas, y l
     }
     await card.locator("summary").click();
   }
+});
+
+test("los grupos de conclusiones llevan a sus pruebas y la ficha móvil conserva sus límites", async ({ page, request }) => {
+  const snapshot = await readSnapshot(request);
+  await page.goto("/observatorio/mandato");
   await page.getByLabel("Buscar en el balance", { exact: true }).fill("becas");
   for (const [verdict, label] of Object.entries(ASSESSMENT_LABELS)) {
     const count = snapshot.commitments.filter(item => item.assessment.verdict === verdict).length;
