@@ -1,3 +1,5 @@
+import balearsInventory from "@/data/mandate/balears-inventory.json";
+import balearsReviews from "@/data/mandate/balears-reviews.json";
 import aragonInventory from "@/data/mandate/aragon-inventory.json";
 import aragonReviews from "@/data/mandate/aragon-reviews.json";
 import cantabriaInventory from "@/data/mandate/cantabria-inventory.json";
@@ -34,6 +36,7 @@ import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "r-04": { inventory: balearsInventory, reviews: balearsReviews, level: "region", mandateSourceId: balearsInventory.sourceId, sourceLabel: balearsInventory.sourceLabel, governmentCutoff: undefined },
   "r-02": { inventory: aragonInventory, reviews: aragonReviews, level: "region", mandateSourceId: aragonInventory.sourceId, sourceLabel: aragonInventory.sourceLabel, governmentCutoff: undefined },
   "r-06": { inventory: cantabriaInventory, reviews: cantabriaReviews, level: "region", mandateSourceId: cantabriaInventory.sourceId, sourceLabel: cantabriaInventory.sourceLabel, governmentCutoff: undefined },
   "r-17": { inventory: riojaInventory, reviews: riojaReviews, level: "region", mandateSourceId: riojaInventory.sourceId, sourceLabel: riojaInventory.sourceLabel, governmentCutoff: undefined },

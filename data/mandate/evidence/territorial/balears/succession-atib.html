@@ -1,0 +1,528 @@
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
+<head id="Head1">
+    <base src="/" />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=9,10,11" /><meta http-equiv="Content-language" content="ca" /><meta name="language" content="ca" /><meta name="keywords" content="atib, ibi, contribucions, tributs, tributos, pagament imposts" /><meta name="description" content="Portal tributari de l&#39;Agència Tributària de les Illes Balears | Portal A.T.I.B." />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />-->
+    <title>
+	Agència Tributària de les Illes Balears - A.T.I.B. 78
+</title><link rel="icon" type="image/x-icon" href="/App_Themes/Azul/img/favicon.png" /><link rel="stylesheet" href="/design/Css/Azul/blueprint/screen.css" type="text/css" media="screen, projection" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="/design/Css/Azul/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+
+    
+
+    <script type="text/javascript" src="/design/js/jquery-1.11.3.js"></script>
+
+    <script type="text/javascript" src="/design/js/libs.js"></script>
+    <script type="text/javascript" src="/design/js/atib.js"></script>
+    <script type="text/javascript" src="/design/js/general.js"></script>
+    <script type="text/javascript" src="/design/js/functions.js"></script>
+    <script type="text/javascript" src="/design/js/grayscale.js"></script>
+    <script type="text/javascript" src="/design/js/countdown.js?v=3"></script>
+    <script type="text/javascript" src="/design/js/FileSaver.min.js"></script>
+    <script type="text/javascript" src="/App_Themes/Default/js/modalPDF.js"></script>
+
+    <script type="text/javascript" src="/design/js/base64.min.js"></script>
+    
+
+        
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="/design/Css/Azul/atib_ie.css" type="text/css" media="all" /><![endif]-->
+    <link href="/App_Themes/Default/css/municipios.css" rel="stylesheet" type="text/css" />
+    <!-- hola2 -->
+    <link id="atib" href="/App_Themes/Azul/css/atib.css?v=1" type="text/css" rel="stylesheet" /><link id="modalPDF" href="/App_Themes/Default/css/modalPDF.css" rel="stylesheet" /><link href="/App_Themes/Azul/css/forms.css" type="text/css" rel="stylesheet" /><link href="/App_Themes/Azul/css/normalize.css" type="text/css" rel="stylesheet" /><link href="/App_Themes/Azul/css/grayscale.css" type="text/css" rel="stylesheet" />
+    
+
+    <style type="text/css">
+        .blancinegre {
+            -webkit-filter: grayscale(1) !important;
+            -moz-filter: grayscale(1) !important;
+            -ms-filter: grayscale(1) !important;
+            filter: grayscale(1) !important;
+            filter: gray !important;
+        }
+
+        .atib-bn {
+            color: #000000;
+        }
+
+            .atib-bn h1, .atib-bn h2, .atib-bn h3, .atib-bn h4, .atib-bn h5, .atib-bn h6 {
+                color: #000000;
+            }
+
+            .atib-bn .ph2 {
+                color: #000000;
+            }
+
+            .atib-bn a {
+                color: #000000;
+            }
+
+                .atib-bn a:hover {
+                    color: #000000;
+                }
+
+            .atib-bn #header #menu {
+                background: #424242 url(../img/fondos/footer.png) repeat-x 0 0 !important;
+            }
+
+                .atib-bn #header #menu li a {
+                    position: relative !important;
+                    background: #424242 url(../img/fondos/footer.png) repeat-x 0px 0px !important;
+                    padding: 8px 19px !important;
+                    color: #fff !important;
+                    font-size: 1em !important;
+                }
+
+                .atib-bn #header #menu a.active, #header #menu a:hover {
+                    border-bottom: 3px solid #6F6F6F !important;
+                }
+
+            .atib-bn .gridView th {
+                background: #424242 url(../img/fondos/footer.png) repeat-x 0px 0px !important;
+            }
+
+            .atib-bn .cParte1 {
+                background: #424242 url(/App_Themes/Default/imgs/modelos/modelonegro.png) no-repeat !important;
+                color: #000000 !important;
+                border-bottom: solid 1px #C7C7C7 !important;
+            }
+
+            .atib-bn .cParte2 {
+                background-color: #404040 !important;
+                border-bottom: solid 1px #C7C7C7 !important;
+                border-right: solid 1px #C7C7C7 !important;
+                border-top: solid 1px #C7C7C7 !important;
+                color: #FFFFFF !important;
+            }
+
+            .atib-bn .cParte3 {
+                background-color: #C7C7C7 !important;
+            }
+
+            .atib-bn .roundBox {
+                background: #C7C7C7 !important;
+                color: #000000 !important;
+            }
+
+            .atib-bn .tlApartadoSelec {
+                background-color: #1B1B1B !important;
+                color: #FFFFFF !important;
+            }
+
+            .atib-bn .tipBajo {
+                background: transparent url(/design/tooltip/images/tipTop_atib_bn.png) no-repeat top !important;
+            }
+
+            .atib-bn .tipMidBajo {
+                background: transparent url(/design/tooltip/images/tipMid_atib_bn.png) repeat-y !important;
+                color: #000000;
+            }
+
+            .atib-bn .tipBtmBajo {
+                background: transparent url(/design/tooltip/images/tipBtm_atib_bn.png) no-repeat top !important;
+            }
+
+            .atib-bn .button {
+                background: #00626D url(/App_Themes/Azul/img/fondos/negro.gif) repeat-x 0 1% !important;
+            }
+
+            .atib-bn .alerta {
+                border: #000000 1px solid !important;
+                color: #000000 !important;
+            }
+
+            .atib-bn .errors {
+                color: #000000 !important;
+            }
+
+        .cookies {
+            background-color: #0D5EA0;
+            color: #fff;
+            opacity: 0.8;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 10px 40px;
+            box-sizing: border-box;
+        }
+
+            .cookies a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .cookies img {
+                vertical-align: middle;
+            }
+    </style>
+
+   
+    
+    
+</head>
+
+<body id="atibBody" class="atib">
+
+    <form method="post" action="./Mostrar_TextoLargo.aspx?idTexto=16199&amp;lang=es" id="formCuerpo">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="869002C9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/KIxDPGTV2aGQ/O5W0oQl+HMxXHGDyx2pQFCJNvLALfe3gQFToTNAPYx6YjFDHeLJHHkDDvUdww+dEE85d+Kc5zJLrlZCH1dz97nvCqdjzT/fR5+NOmUyGuAqI0ciLpz" />
+</div>
+        <div id="cookies" class="cookies">
+            <div style="flex: 1; padding-right: 20px;">
+                
+                <p>Este portal web utiliza exclusivamente cookies propias con finalidad técnica, imprescindibles para garantizar el correcto funcionamiento y la prestación de los servicios electrónicos disponibles, y no recaba ni cede datos de carácter personal de las personas usuarias sin su conocimiento. Asimismo, puede contener enlaces a sitios web de terceros con políticas de privacidad ajenas a la de la ATIB, cuyo acceso se realiza bajo la responsabilidad de la persona usuaria, que podrá decidir libremente si accede a ellos y acepta sus condiciones.</p>
+                <p><a href="https://www.atib.es/General/Mostrar_TextoLargo.aspx?idTexto=5350" target="_blank">Consulte la Política de privacidad (Cookies)</a></p>
+                
+            </div>
+            <div style="flex-shrink: 0; margin-left: 20px;">
+                <input type="submit" name="ctl00$ctl00$bAceptarCookies" value="Aceptar" id="bAceptarCookies" title="Aceptar" class="bAceptar" />
+            </div>
+        </div>
+        <div id="global">
+            <div id="header">
+                
+    
+
+<script type="text/javascript">
+
+    var textoBuscar = 'Buscar...';
+
+	function OnBlurInput(objetoInput) {
+	    objetoInput.value = objetoInput.value == "" ? textoBuscar : objetoInput.value;
+	}
+
+	function OnClickInput(objetoInput) {
+	    objetoInput.value = objetoInput.value == textoBuscar ? "" : objetoInput.value;
+	}
+
+	function Busqueda() {
+	    var iBusqueda = document.getElementById('iBusqueda').value == textoBuscar ? "ATIB" : document.getElementById('iBusqueda').value;
+	    document.location.href = "/buscador/?busqueda="+iBusqueda;
+	}
+
+	$(document).ready( function () {
+            $("#iBusqueda").val();
+            $('#iBusqueda').bind('keypress', function (e) {
+                if (e.keyCode == 13) {
+                    Busqueda();
+                }
+            });
+
+            $('#btnbusqueda').click(function () {
+                Busqueda();
+            });
+        }
+    );
+</script>
+
+<div>
+    <div id="logo" style="float:left;">
+        <a href="/Default.aspx" title="Anar a la pàgina principal">
+            <img id="cabeceraWeb" class="imagenJPG" src="/App_Themes/Azul/img/banners/cabeceraweb.jpg" alt="ATIB" />
+        </a>
+    </div>
+    <div style="float:right;">
+        
+        <div id="opciones" style="padding-top:40px; width:170px;">
+            <div id="idiomas">
+                <a id="cph_header_PageHeader1_lnkCatala" title="CA" class="desactivo" lang="ca" href="https://www.atib.es/General/Mostrar_TextoLargo.aspx?idTexto=16199&amp;lang=ca"><h1>Català</h1></a>
+                
+            </div>
+
+            <div style="clear:left;"></div>
+        </div>
+		
+    </div>
+    <div style="clear:both;"></div>
+</div>
+    
+    
+<ol id="menu" class="clearfix" style="display:flex; justify-content:space-between">
+    <li><a href="../Default.aspx" id="cph_header_PageMenu1_menu_index" class="homeButton" style="font-weight:bold">
+        Inicio</a></li>
+    <li><a href="Mostrar_TextoLargo.aspx?idTexto=5369" id="cph_header_PageMenu1_menu_atib" style="font-weight:bold">Oficinas y servicios</a></li>
+    <li><a href="../TA/Default.aspx" id="cph_header_PageMenu1_menu_ta" class="menu_ta" style="font-weight:bold">
+        Tributos autonómicos</a></li>
+    <li><a href="../TL/Default.aspx" id="cph_header_PageMenu1_menu_tl" class="menu_tl" style="font-weight:bold">
+        Tributos locales - Multas</a></li>
+
+    <li><a href="Contacto.aspx" id="cph_header_PageMenu1_menu_consultas" style="font-weight:bold">
+        Consultas y sugerencias</a></li>
+    <li><a href="Mostrar_TextoLargo.aspx?idTexto=5370" id="cph_header_PageMenu1_menu_contacto" style="font-weight:bold">
+        Contacto</a></li>
+</ol>
+
+    
+        <ul id="cph_header_cph_breadcrumbs_breadcrumbs" class="breadcrumbs">
+            <li><span class="crumb" style="padding-left: 0px">&gt;&gt;</span></li>
+        </ul>
+    
+
+            </div>
+
+            <div id="content">
+                <div id="main">
+                    
+    <script type="text/javascript" src="/maint.js?v=11/10/2026 8:39:42"></script>
+    
+    <div class="ph2 articleTitle">
+        <span id="cph_main_cph_main_lblTitulo">Bonificaciones del Impuesto sobre sucesiones</span>
+    </div>
+    <div style="text-align:justify;">
+        <span id="cph_main_cph_main_lblTexto"><br /><div align="justify">El <strong><a title="Decreto Ley 2023" href="http://www.atib.es/normas/DL4-2023_s.pdf" target="_blank">Decreto
+ Ley 4/2023, de 18 de julio, de modificación del Decreto legislativo 
+1/2014, de 6 de junio, por el que se aprueba el Texto refundido de las 
+disposiciones legales de la Comunidad Autónoma de las Illes Balears en 
+materia de tributos cedidos por el Estado</a></strong> establece las 
+siguientes bonificaciones del Impuesto 
+sobre sucesiones <strong>en caso de devengo a partir del 18 de 
+julio de 2023</strong>:<br /><br /><strong>1. Bonificación del 100% sobre la cuota íntegra corregida del impuesto en las adquisiciones por causa de muerte</strong> <strong>y</strong>, por asimilación, <strong>en los pactos sucesorios</strong> a que se refiere la&nbsp;<a title="Ley 8/2022, de 11 de noviembre, de sucesión voluntaria paccionada o contractual de las Illes Balears" href="http://www.atib.es/normas/LleiPS_s.pdf" target="_blank">Ley 8/2022, de 11 de noviembre, de sucesión voluntaria paccionada o contractual de las Illes Balears</a>,
+ <strong>a los sujetos pasivos por obligación personal de contribuir a que se 
+encuentren comprendidos en los grupos I (descendientes menores de 21 
+años) y II (descendientes de 21 años o más)</strong>.<br /><br />Esta bonificación no exime de la obligación 
+de presentar la autoliquidación del impuesto, si bien el sujeto pasivo 
+sólo debe presentar la copia autorizada de las disposiciones 
+testamentarias si las hubiere y, en su defecto, testigo de la 
+declaración de herederos (en el caso de sucesión intestada, si no está 
+hecha la declaración judicial de herederos, debe presentarse una 
+relación de los presuntos herederos con expresión del parentesco con el 
+causante).<br /><br /><strong>2.</strong> <strong>Bonificación del 50% sobre la cuota 
+íntegra corregidn en las adquisiciones por causa de muerte y</strong>, por asimilación, <strong>en los pactos sucesorios</strong> a que se refiere la&nbsp;<a title="Ley 8/2022, de 11 de noviembre, de sucesión voluntaria paccionada o contractual de las Illes Balears" href="http://www.atib.es/normas/LleiPS_s.pdf" target="_blank">Ley 8/2022, de 11 de noviembre, de sucesión voluntaria paccionada o contractual de las Illes Balears</a>,
+ <strong>a los sujetos pasivos por obligación personal de contribuir a que sean 
+colaterales de segundo o tercer grado por consanguinidad del causante, 
+incluidos en el grupo III</strong>, y no concurran con descendientes o adoptados 
+del causante, o concurran con descendientes o adoptados del causante 
+desheredados. Al resto de sujetos pasivos del grupo III debe 
+aplicarse una bonificación del 25% sobre la cuota íntegra corregida.<br /><br />Esta bonificación no exime de la obligación de presentar la autoliquidación del impuesto.<br /><br />Debe tenerse en cuenta que, de acuerdo con lo previsto en la <strong><a title="Ley medidas tributarias" href="http://www.atib.es/normas/Llei_11-2023_s.pdf" target="_blank">Ley 11/2023, de 14 de noviembre, de modificación del Decreto legislativo 
+1/2014, de 6 de junio, por el que se aprueba el Texto refundido de las 
+disposiciones legales de la Comunidad Autónoma de las Illes Balears en 
+materia de tributos cedidos por el Estado</a></strong>, para la aplicación de las citadas bonificaciones, en caso de que se adquieran bienes inmuebles, se consignará en la 
+escritura pública correspondiente el valor de los bienes inmuebles 
+adquiridos, que no podrá superar en cada caso el valor de referencia 
+incrementado en un 20% o, cuando no exista este valor de referencia o no
+ se pueda certificar por la Dirección General del Catastro, el valor de 
+mercado (<img style="VERTICAL-ALIGN: middle" alt="" class="imagenJPG" src="http://www.atib.es/App_Themes/Default/imgs/vermas_turquesa.jpg" /><strong> Info: <a title="aloración bienes inmuebles" href="https://www.atib.es/TA/valoraciones/default.aspx?lang=es" target="_blank">Valoración bienes inmuebles</a></strong>). <br /><strong><br />Consulte:</strong> <strong><a href="https://sede.atib.es/cva/faqs/3" target="_blank" title="Preguntas y dudas">preguntas y dudas sobre aplicación de las bonificaciones</a></strong>.<br /><br />Para hacer la correspondiente declaración liquidación, tiene a su disposición el <strong><a href="https://www.atib.es/TA/contenido.aspx?Id=10155&amp;lang=es" target="_blank" title="Programa ayuda impuesto sucesiones">programa de ayuda para la autoliquidación del impuesto</a></strong>.</div><div align="justify"><div align="justify"><br /></div><div align="justify"><img style="VERTICAL-ALIGN: middle" alt="" class="imagenJPG" src="http://www.atib.es/App_Themes/Default/imgs/vermas_turquesa.jpg" /> <strong>Info general: <a title="Impuesto sobre sucesiones y donaciones" href="https://www.atib.es/TA/contenido.aspx?Id=9855&amp;lang=es" target="_blank">Impuesto sobre sucesiones y donaciones</a></strong>. </div></div></span>
+    </div>
+
+
+                </div>
+                <div id="rcolumn">
+                    
+    
+    
+
+<div id="banners">
+            
+    <div style="margin:0px 0px 0px 0px;">            
+        <a href="https://sede.atib.es/cva/cita-previa" target="_blank" title="Cita Prèvia" style="text-decoration:none;display:block;">
+            <img src="/App_Themes/Azul/img/banners/es/citaprevia.jpg" id="cph_rcolumn_Banners1_bannerCitaPrevia" class="imagenJPG" alt="Cita prèvia més rapit" width="184" height="65" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="https://sede.atib.es/cva/tributos/impuesto-estancias-turisticas" target="_blank"style="text-decoration:none;" title="Impost sobre estades turístiques">
+            <img src="../App_Themes/Azul/img/banners/ca/turistico.jpg" id="cph_rcolumn_Banners1_banner_turistico" class="imagenJPG" alt="Mantenimiento" width="184" height="82" />
+        </a>
+    </div>
+
+
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/ServeiMissatges/Solicitud.aspx?idsol=21" style="text-decoration:none;" title="Denuncies Tributaries">
+            <img src="/App_Themes/Azul/img/banners/es/buzon.jpg" id="cph_rcolumn_Banners1_bannerDenuncias" class="imagenJPG" alt="Denuncies" width="190" height="72" />
+        </a>
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/serveimissatges/previa.aspx" title="Servei de missatges" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/servicios_sms.jpg" id="cph_rcolumn_Banners1_bannerServicioMensajes" class="imagenJPG" alt="mail/sms" width="180" height="74" />
+        </a>        
+    </div>
+
+
+    
+    <div style="margin:0px 0px 0px 0px;">    
+        <a href="/TL/Notificaciones/" title="Consulta por código de información / identificación de documento" style="text-decoration:none;display:block;">
+            <img src="/App_Themes/Azul/img/banners/es/codigo-cid.jpg" id="cph_rcolumn_Banners1_bannerCID" class="imagenJPG" alt="CID códi de informació" width="190" height="71" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="https://sede.atib.es/cva/faqs" target="_blank" title="Dubtes i Criteris" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/dudas.png" id="cph_rcolumn_Banners1_banner_dudas" class="imagenJPG" alt="Dubtes" width="185" height="67" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/Diligencias/Comunicacion/" title="Comunicació i pagament d'embargament de crèdits o salaris" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/comunicacion_embargo.jpg" id="cph_rcolumn_Banners1_banner_comunicacion" class="imagenJPG" alt="Embargament de crèdits o salaris" width="190" height="85" />
+        </a>        
+    </div>
+                
+    <div style="margin:0px 0px 0px 0px;">            
+        <a href="https://sede.atib.es/cva/tramites/embargos" target="_blank" title="Informació de l´embargament de comptes bancaris" style="text-decoration:none;">
+            <img src="/App_Themes/Azul/img/banners/es/embargo.jpg" id="cph_rcolumn_Banners1_banner_embargos" class="imagenJPG" alt="Informació de l´embargaments" width="190" height="61" />
+        </a>
+    </div>
+    
+    <div style="margin:0px 0px 0px 0px;">    
+        <a href="/TA/modelos/Default.aspx?m=600" style="text-decoration:none;margin:0;" title="Model 600">
+            <img src="/App_Themes/Azul/img/banners/es/modelo600.jpg" id="cph_rcolumn_Banners1_banner_m600" class="imagenJPG" alt="Model 600" />
+        </a>
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TA/modelos/Default.aspx?m=621" target="_blank" style="text-decoration:none;margin:0;" title="Model 620">
+            <img src="/App_Themes/Azul/img/banners/es/modelo620.jpg" id="cph_rcolumn_Banners1_banner_m620" class="imagenJPG" alt="Model 620" />
+        </a>
+    </div>
+
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="https://sede.atib.es/cva/tramites/contenido/Subastas" target="_blank" style="text-decoration:none;" title="consulta de Subhastes">
+            <img src="/App_Themes/Azul/img/banners/es/subasta.jpg" id="cph_rcolumn_Banners1_banner_subasta" class="imagenJPG" alt="subhastes" width="190" height="66" />
+        </a>        
+    </div>
+
+    <div style="margin:0px 0px 0px 0px;">
+        <a href="/TL/PreviaTL.aspx" title="consulta de Subhastes" style="text-decoration:none;display:none;"> 
+            <img src="/App_Themes/Azul/img/banners/es/localesv.jpg" id="cph_rcolumn_Banners1_banner_ivtm" class="imagenJPG" alt="Tributs Locals" width="185" height="78" />
+        </a>       
+    </div>
+
+</div>
+    
+
+                </div>
+                
+    
+    
+
+                <div class="clear"></div>
+            </div>
+
+            <div id="footer">
+                
+    
+<ul style="width:200px; margin-left:75px">
+    <li class="footerTitle">Información ATIB</li>
+    
+    
+    <li><a href="mostrar_textolargo.aspx?idTexto=5361" id="cph_footer_ctl00_A2" target="_blank" rel="noopener noreferrer">
+        Naturaleza, objetivos y funciones</a></li>
+    <li><a href="mostrar_textolargo.aspx?idTexto=5368" id="cph_footer_ctl00_A6" target="_blank" rel="noopener noreferrer">
+        Normativa reguladora</a></li>
+    <li><a href="mostrar_textolargo.aspx?idTexto=5363" id="cph_footer_ctl00_A3" target="_blank" rel="noopener noreferrer">
+        Órganos y estructura</a></li>
+
+
+    <li><a href="../DescargaDocs/CartamarcAtib.pdf" id="cph_footer_ctl00_A8" onclick="alert(&#39;Se va a abrir un archivo PDF&#39;)" target="_blank" rel="noopener noreferrer">
+        Carta marco de servicios</a></li>
+    <li><a href="../DescargaDocs/CARTADRETSATIB_s.pdf" id="cph_footer_ctl00_lnkCartaDerechosContribuyente" onclick="alert(&#39;Se va a abrir un archivo PDF&#39;)" target="_blank" rel="noopener noreferrer">
+        Carta de derechos de los contribuyentes</a></li>
+    <li><a href="mostrar_textolargo.aspx?idTexto=12484" id="cph_footer_ctl00_recursosHumanos" target="_blank" rel="noopener noreferrer">
+        Recursos humanos</a></li>
+</ul>
+
+
+<ul style="width:200px; margin-left:50px">
+    <li class="footerTitle">
+        Utilidades</li>
+    <li><a href="https://sede.atib.es/cva/informacion-general/portal-transparencia/contenidos" id="cph_footer_ctl00_A4" target="_blank" rel="noopener noreferrer">
+        Portal de transparencia</a></li>
+    <li><a href="https://contrataciondelestado.es/wps/portal/plataforma/perfil_contratante/lista_perfiles/!ut/p/z1/hZDLbsJADEW_hUWWjd2EzEB3EwohUavyECnjTZWIIYxKHkqmpOLrO0IsWJTWO9vnXl0bCLZAVXbSRWZ0XWVHkCCJf4h0uhTx2MdotZiiF644G87ebIuwKbNvXeqz2sEaCEjvwgYk53zEeMCsnyR2V48epPD-H0J2jXdKoNXTBQn8yTBN0gVbxxFiPJ89v2weA4w8dgX-8EiAimOd24NtYFHl_qgAatVetap1v1o7PhjTdE8OOtj3vWvfk7uqc_A3_lB3BrY3GDRlcjpPHj73ryaQYjD4AZ_daIM!/dz/d5/L2dBISEvZ0FBIS9nQSEh/" id="cph_footer_ctl00_A24" target="_blank" rel="noopener noreferrer">
+        Perfil del contratante</a></li>
+    <li><a href="../DescargaDocs/manual_identitat_atib.pdf" id="cph_footer_ctl00_A26" onclick="alert(&#39;Se va a abrir un archivo PDF&#39;)" target="_blank" rel="noopener noreferrer">
+        Manual de identidad corporativa</a></li>
+    <li><a href="https://reg.redsara.es/#/login" id="cph_footer_ctl00_A5" target="_blank" rel="noopener noreferrer">
+        Registro electrónico de documentos</a></li>
+    <li><a href="https://sede.atib.es/cva/informacion-general/informacion-aplicacion/contenidos" id="cph_footer_ctl00_A9" target="_blank" rel="noopener noreferrer">
+        Aplicación móvil ATIB (App ATIB)</a></li>
+    
+</ul>
+<ul style="width:220px; margin-left:50px">
+    <li class="footerTitle">
+        Enlaces de interés</li>
+   
+
+    <li><a href="https://sede.atib.es/cva/informacion-general/junta-superior-hacienda/contenidos" id="cph_footer_ctl00_A19" target="_blank" rel="noopener noreferrer">
+        Junta Superior de Hacienda</a></li>    
+    <li><a href="https://sede.atib.es/cva/informacion-general/consejo-asesor-fiscal/contenidos" id="cph_footer_ctl00_A7" target="_blank" rel="noopener noreferrer">
+        Consejo Asesor Fiscal</a></li>
+    
+ 
+    
+     
+    <li><a href="https://sede.agenciatributaria.gob.es/" id="cph_footer_ctl00_A1" target="_blank" rel="noopener noreferrer">
+        Agencia Estatal de Administración Tributaria</a></li>
+    <li><a href="https://www.agenciatributaria.es/AEAT.fisterritorial/InicioF.shtml" id="cph_footer_ctl00_A10" target="_blank" rel="noopener noreferrer">
+        Fiscalidad autonómica y local</a></li>
+    <li><a href="https://sede.atib.es/cva/informacion-general/instituciones-organismos/contenidos" id="cph_footer_ctl00_A25" target="_blank" rel="noopener noreferrer">
+        Instituciones y organismos</a></li>
+</ul>
+<div class="clear">
+</div>
+
+            </div>
+            <div id="footer2">
+                <a href="Mostrar_TextoLargo.aspx?idTexto=5350" id="A1" style="font-size: 1em;">Aviso legal</a>|
+                    <a href="Mostrar_TextoLargo.aspx?idTexto=12771" id="A7" style="font-size: 1em;">Política de privacidad</a>|                 
+                    <a href="Mostrar_TextoLargo.aspx?idTexto=5351" id="A2" style="font-size: 1em;">Accesibilidad</a>|
+                    <a href="#" style="font-size: 1em; cursor: pointer;" id="A3" onclick="javascript:atib.changeTheme('mono');return false;">Versión monocromática</a>&nbsp;|&nbsp;
+                    <a href="#" style="font-size: 1em; cursor: pointer;" id="A4" onclick="javascript:atib.changeTheme('normal');return false;">Versión normal</a>&nbsp;
+                
+                <div id="txtcopyright">
+                    <div><span>&copy; Agència Tributària de les Illes Balears</span></div>
+                    <div>
+                        <a href=" https://www.caib.es/webgoib/es/w/vicepresidencia-primera-y-consejeria-economia-hacienda-e-innovacion" id="conselleria" style="font-size: 1em;" target="_blank">
+                           Consejería de Economía, Hacienda e Innovación
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.caib.es/webgoib/es" id="govern" style="font-size: 1em;" title="Govern de les Illes Balears" target="_blank">Gobierno de las Illes Balears
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+                
+            var time = '1080000';
+            setInterval("mantenerSesion()", time);
+        </script>
+
+
+
+    </form>
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    <script async defer data-domain="atib.es" src="https://analytics.atib.es/js/plausible.js"></script>
+</body>
+</html>

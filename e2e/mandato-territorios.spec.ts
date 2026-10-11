@@ -1,5 +1,37 @@
 import { expect, test } from "@playwright/test";
 
+test("Baleares conserva el pacto inicial y no oculta los apartados pendientes", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Balears");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await expect(page.locator(".mc-list")).toContainText("117 de 117");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-04$/);
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.locator(".mn-method").filter({ has: page.getByRole("heading", { name: "Qué se ha comprobado", exact: true }) })).toContainText("12/07/2024");
+  await expect(page.getByRole("status")).toHaveText("117 resultados · página 1 de 8");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("114 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("bimensual");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 15/ })).toHaveAttribute("href", /Acuerdo-PP-VOX-Baleares\.pdf#page=15$/);
+});
+
+test("Baleares en móvil diferencia norma, oferta y acceso universal", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-04");
+  await expect(page.locator("#compromiso-r-04-6")).toContainText("25 %");
+  await expect(page.locator("#compromiso-r-04-6")).toContainText("35 %");
+  await expect(page.locator('section[aria-labelledby="r-04-63-oferta"]')).toContainText("15.451");
+  await expect(page.locator('section[aria-labelledby="r-04-63-acceso"]')).toContainText("Evidencia insuficiente");
+  await expect(page.locator("#compromiso-r-04-acuerdo-6")).toContainText("no borra las promesas originales");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/balears-mobile-top.png" });
+  await page.locator("#r-04-63-acceso").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/balears-mobile-access.png" });
+});
+
 test("Aragón identifica el nuevo mandato, OCR provisional y discrepancia de plazos", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Aragón");
