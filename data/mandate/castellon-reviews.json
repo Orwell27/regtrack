@@ -1,0 +1,237 @@
+[
+  {
+    "commitmentId": "m-12040-6",
+    "reviewedAt": "2026-10-11",
+    "title": "Policía de Barrio: presentación acreditada, dotación y cobertura por contrastar",
+    "conclusion": "El gobierno presentó la unidad en febrero de 2025. La oposición cuestionó su alcance un año después. Faltan órdenes de servicio y datos de despliegue para resolver la diferencia entre la nueva unidad y el conjunto de Proximidad.",
+    "periodNote": "Pacto de agosto de 2023, presentación de 11/02/2025 y crítica de 24/02/2026. Son fechas y ámbitos de plantilla distintos. Consulta: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Puesta en marcha, sin una cifra de plantilla en este punto",
+        "status": "promise-documented",
+        "finding": "El punto 6 promete poner en marcha la Policía de Barrio. No fija aquí un número de agentes ni una reducción de delitos.",
+        "citations": [
+          {
+            "sourceId": "castellon-programme",
+            "locator": "Punto 6 · Seguridad",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "anuncio",
+        "claim": "Presentación municipal difundida por el grupo gobernante",
+        "status": "reported",
+        "finding": "La nota del Grupo Municipal Popular recoge la presentación por la alcaldesa y el responsable de Seguridad. Atribuye 30 efectivos a toda la Sección de Proximidad, excluido el Grao; no acredita que sean 30 nuevas incorporaciones exclusivas de Barrios.",
+        "citations": [
+          {
+            "sourceId": "castellon-police-announcement",
+            "locator": "Composición de Proximidad y presentación de la unidad"
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Crítica de la oposición, pendiente de comprobación",
+        "status": "unresolved",
+        "finding": "En febrero de 2026, el PSPV denunció una redistribución de un oficial, un inspector y tres agentes, sin refuerzo suficiente. Castellón Plaza reproduce esa posición: no equivale a una auditoría del despliegue. Las cifras de 5 y 30 no son directamente comparables sin precisar unidad, fecha y turnos.",
+        "citations": [
+          {
+            "sourceId": "castellon-police-contrast",
+            "locator": "Declaraciones de José Luis López y Anunciación Láinez"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Cobertura real de barrios y urbanizaciones",
+        "status": "unresolved",
+        "finding": "Para comprobar la puesta en marcha y su alcance faltan la orden organizativa, dotación adscrita, horas de patrulla por distrito y atención a incidencias. La presentación no demuestra por sí sola presencia continua ni mejora de seguridad.",
+        "citations": [
+          {
+            "sourceId": "castellon-police-announcement",
+            "locator": "Funciones anunciadas y relación con asociaciones"
+          }
+        ]
+      }
+    ],
+    "contrast": "Gobierno y oposición son partes interesadas. La noticia que recoge críticas no las convierte en hechos corroborados. No se usan datos de Burriana ni de Vila-real para evaluar la capital.",
+    "pending": [
+      "Obtener la orden de creación y adscripción de efectivos, diferenciando Proximidad, Barrios y Grao.",
+      "Contrastar con datos agregados de servicio y asociaciones vecinales, sin publicar información operativa sensible.",
+      "Conciliar las promesas del programa electoral y del pacto; no dar por verificada la cifra global del 87 %."
+    ]
+  },
+  {
+    "commitmentId": "m-12040-55",
+    "reviewedAt": "2026-10-11",
+    "title": "Bicicas: adjudicación y renovación anunciada, ejecución integral pendiente",
+    "conclusion": "Está documentada la adjudicación de mayo de 2024. El operador anunció la entrada en servicio de 500 bicicletas en febrero de 2025. Faltan recepción, inventario y controles de calidad para cerrar la renovación integral.",
+    "periodNote": "Pacto de 2023; adjudicación de 03/05/2024; previsión municipal de septiembre de 2024 y anuncio del operador de 04/02/2025. Corte de revisión: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Renovación integral del sistema y del servicio",
+        "status": "promise-documented",
+        "finding": "El punto 55 incluye el sistema y el servicio de préstamo. El programa electoral del PP añade vehículos de reparto eléctricos: esa ampliación debe conciliarse y no se borra al reducir el inventario al pacto.",
+        "citations": [
+          {
+            "sourceId": "castellon-programme",
+            "locator": "Punto 55 · Movilidad",
+            "page": 6
+          },
+          {
+            "sourceId": "castellon-campaign-programme",
+            "locator": "Movilidad: sistema Bicicas y vehículos de reparto",
+            "page": 22
+          }
+        ]
+      },
+      {
+        "id": "contrato",
+        "claim": "Adjudicación y alcance contractual",
+        "status": "documented",
+        "finding": "La Junta adjudicó a Maquinaria Vehículos y Recambios, S.L.U. por 9.375.394,27 € más IVA y ocho años. El acuerdo acepta mejoras en anclajes, estaciones, flota y mantenimiento. El importe adjudicado no es gasto ejecutado; la formalización posterior aún se ordena en el documento.",
+        "citations": [
+          {
+            "sourceId": "castellon-bicicas-award",
+            "locator": "Acuerdo de adjudicación",
+            "page": 4
+          },
+          {
+            "sourceId": "castellon-bicicas-award",
+            "locator": "Mejoras aceptadas",
+            "page": 5
+          },
+          {
+            "sourceId": "castellon-bicicas-award",
+            "locator": "Trámite de formalización",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "recurso",
+        "claim": "Recurso contra los pliegos y límites de la prueba",
+        "status": "documented",
+        "finding": "El certificado registra un solo licitador y un recurso de Citybike contra los pliegos, con suspensión cautelar. Según el propio expediente, el TACRC inadmitió el recurso y levantó la suspensión. Inadmitir no equivale a desestimar el fondo ni a certificar la calidad de ejecución.",
+        "citations": [
+          {
+            "sourceId": "castellon-bicicas-award",
+            "locator": "Licitación y recurso",
+            "page": 1
+          },
+          {
+            "sourceId": "castellon-bicicas-award",
+            "locator": "Inadmisión y levantamiento de suspensión",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "prestacion",
+        "claim": "Comunicación del operador y previsión municipal",
+        "status": "unresolved",
+        "finding": "Bicicas anunció 500 nuevas bicicletas en funcionamiento el 04/02/2025. La alcaldesa había previsto la renovación antes de terminar 2024 y objetivos de 7.000 usuarios y un millón de trayectos para 2025. El anuncio posterior no determina por sí solo cuándo terminó el despliegue ni prueba esos objetivos.",
+        "citations": [
+          {
+            "sourceId": "castellon-bicicas-operator",
+            "locator": "Entrada publicada el 04/02/2025"
+          },
+          {
+            "sourceId": "castellon-bicicas-forecast",
+            "locator": "Calendario y objetivos anunciados"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Recepción y funcionamiento completo",
+        "status": "unresolved",
+        "finding": "Faltan actas de recepción, inventario de bicicletas y bases, disponibilidad, incidencias y datos anuales comparables. El operador participa en la prestación y no constituye un evaluador independiente de su propio servicio.",
+        "citations": [
+          {
+            "sourceId": "castellon-bicicas-award",
+            "locator": "Designación de responsable técnico",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "contrast": "Se distinguen acuerdo administrativo, previsión política y comunicación del operador. El certificado municipal relata el recurso, pero falta su resolución original para un contraste externo directo. Ninguna de estas pruebas cierra la ejecución integral.",
+    "pending": [
+      "Obtener formalización, pliegos completos, resolución original del TACRC y recepción de las mejoras.",
+      "Comprobar inventario operativo y objetivos de usuarios y trayectos de 2025 con definiciones y periodos comparables.",
+      "Contrastar incidencias y accesibilidad con usuarios y controles externos."
+    ]
+  },
+  {
+    "commitmentId": "m-12040-63",
+    "reviewedAt": "2026-10-11",
+    "title": "Doble topónimo: cambio normativo acreditado y seguimiento judicial pendiente",
+    "conclusion": "El decreto publicado en el BOE acredita la aprobación de la forma bilingüe. La revisión no certifica su aplicación en todos los registros ni la firmeza de las resoluciones judiciales posteriores.",
+    "periodNote": "Promesa de 2023; Decreto 187/2024, publicado en el BOE el 20/01/2025; información judicial de 21/05/2026. Consulta: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Recuperar ambas denominaciones oficiales",
+        "status": "promise-documented",
+        "finding": "El punto 63 propone recuperar el nombre oficial en valenciano y castellano.",
+        "citations": [
+          {
+            "sourceId": "castellon-programme",
+            "locator": "Punto 63 · Topónimo",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Cambio aprobado por el Consell",
+        "status": "documented",
+        "finding": "El artículo único establece Castelló de la Plana/Castellón de la Plana. Vincula las referencias al nuevo nombre a su publicación en el BOE. El orden de las formas difiere del impreso en el pacto, conservándose ambas.",
+        "citations": [
+          {
+            "sourceId": "castellon-toponym-decree",
+            "locator": "Artículo único y fecha de publicación"
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Criterio lingüístico y litigios",
+        "status": "unresolved",
+        "finding": "El preámbulo recoge que la Acadèmia prefería la forma valenciana única, aunque indicó una solución bilingüe adecuada. SER informó de dos recursos desestimados en mayo de 2026 y de posible casación. Faltan las sentencias originales y su estado posterior; no se afirma firmeza.",
+        "citations": [
+          {
+            "sourceId": "castellon-toponym-decree",
+            "locator": "Informe de la Acadèmia Valenciana de la Llengua"
+          },
+          {
+            "sourceId": "castellon-toponym-judgment-report",
+            "locator": "Sentencias y posibilidad de casación"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Alcance limitado al cambio normativo",
+        "status": "unresolved",
+        "finding": "La aprobación acredita el hito jurídico. No prueba la actualización completa de registros y señalización ni el resto de compromisos lingüísticos del pacto.",
+        "citations": [
+          {
+            "sourceId": "castellon-toponym-decree",
+            "locator": "Artículo único"
+          }
+        ]
+      }
+    ],
+    "contrast": "El BOE publica la decisión del Consell, no una auditoría del mandato. Se mantiene visible el criterio distinto de la Acadèmia y se atribuye la noticia judicial. No confundir esta capital con Villanueva de Castellón.",
+    "pending": [
+      "Obtener las sentencias y comprobar recursos o firmeza posteriores.",
+      "Cotejar registros y aplicación administrativa; mantener separado el punto 61 sobre rotulación.",
+      "Revisión humana independiente del alcance y de la transcripción."
+    ]
+  }
+]

@@ -1,5 +1,37 @@
 import { expect, test } from "@playwright/test";
 
+test("Castellón municipal permite consultar el pacto y sus pendientes", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Castell");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("municipality");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-12040$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Castellón · mandato municipal 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("87 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("Menjar");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  const police = page.locator("#compromiso-m-12040-6");
+  await police.getByText("Apartado del programa y página de origen", { exact: true }).click();
+  await expect(police.getByRole("link", { name: "Pacto municipal PP–VOX · agosto de 2023 · página 2", exact: true })).toHaveAttribute("href", /pacto-pp-vox-ayuntamiento-de-castello-pdf.pdf#page=2$/);
+});
+
+test("Castellón municipal conserva el contraste en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-12040");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await page.screenshot({ path: "test-results/castellon-mobile-intro.png" });
+  await expect(page.locator("#compromiso-m-12040-6")).toContainText("no son directamente comparables");
+  await expect(page.locator("#compromiso-m-12040-55")).toContainText("no es gasto ejecutado");
+  const toponym = page.locator("#compromiso-m-12040-63");
+  await expect(toponym).toContainText("no se afirma firmeza");
+  await toponym.scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/castellon-mobile-toponym.png" });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
 test("Alicante municipal permite consultar el programa y sus pendientes", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Alicante");
