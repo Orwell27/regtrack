@@ -74,8 +74,8 @@ describe("cobertura de 70 administraciones con responsabilidades separadas", () 
     const all = getCoverage();
     expect(all[0].reviewed).toBe(46);
     for (const item of all.slice(1)) {
-      expect(item.reviewed).toBe(item.id === "r-08" ? 5 : ["r-13", "m-28079"].includes(item.id) ? 4 : ["r-12", "r-04", "r-14", "r-15", "r-18", "r-19"].includes(item.id) ? 3 : ["r-02", "r-06", "r-17", "r-03", "r-05", "r-16", "r-09", "m-08019", "m-01059", "m-20069", "m-48020"].includes(item.id) ? 2 : 0);
-      expect(item.inventoryTotal).toBe(item.id === "r-08" ? 861 : item.id === "r-13" ? 459 : item.id === "r-12" ? 793 : ["r-02", "r-04"].includes(item.id) ? 117 : item.id === "r-06" ? 1228 : item.id === "r-17" ? 949 : item.id === "m-28079" ? 300 : item.id === "r-03" ? 37 : item.id === "r-14" ? 38 : item.id === "r-15" ? 347 : item.id === "r-18" ? 138 : item.id === "r-19" ? 816 : item.id === "r-05" ? 145 : item.id === "r-16" ? 154 : item.id === "r-09" ? 260 : item.id === "m-08019" ? 1248 : item.id === "m-01059" ? 100 : item.id === "m-20069" ? 129 : item.id === "m-48020" ? 80 : null);
+      expect(item.reviewed).toBe(item.id === "r-08" ? 5 : ["r-13", "m-28079"].includes(item.id) ? 4 : ["r-01", "r-12", "r-04", "r-14", "r-15", "r-18", "r-19"].includes(item.id) ? 3 : ["r-02", "r-06", "r-17", "r-03", "r-05", "r-16", "r-09", "m-08019", "m-01059", "m-20069", "m-48020"].includes(item.id) ? 2 : 0);
+      expect(item.inventoryTotal).toBe(item.id === "r-01" ? 150 : item.id === "r-08" ? 861 : item.id === "r-13" ? 459 : item.id === "r-12" ? 793 : ["r-02", "r-04"].includes(item.id) ? 117 : item.id === "r-06" ? 1228 : item.id === "r-17" ? 949 : item.id === "m-28079" ? 300 : item.id === "r-03" ? 37 : item.id === "r-14" ? 38 : item.id === "r-15" ? 347 : item.id === "r-18" ? 138 : item.id === "r-19" ? 816 : item.id === "r-05" ? 145 : item.id === "r-16" ? 154 : item.id === "r-09" ? 260 : item.id === "m-08019" ? 1248 : item.id === "m-01059" ? 100 : item.id === "m-20069" ? 129 : item.id === "m-48020" ? 80 : null);
       expect(isCoverageComplete(item)).toBe(false);
     }
     expect(all.filter(isCoverageComplete)).toHaveLength(0);
@@ -95,7 +95,7 @@ describe("cobertura de 70 administraciones con responsabilidades separadas", () 
   it("rechaza duplicados, revisiones huérfanas y mandatos sin fuente", () => {
     const all = getCoverage();
     expect(() => validateCoverage([...all, all[0]])).toThrow("Jurisdicción duplicada");
-    const item = structuredClone(all[1]); item.reviewed = 1;
+    const item = structuredClone(all.find(item => item.inventoryTotal === null)!); item.reviewed = 1;
     expect(() => validateCoverage([item])).toThrow("Revisión sin inventario");
     item.reviewed = 0; item.mandate = { label: "2023–2027", sourceId: "missing" };
     expect(() => validateCoverage([item])).toThrow("Mandato sin fuente");

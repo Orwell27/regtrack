@@ -1,0 +1,297 @@
+[
+  {
+    "commitmentId": "r-01-47",
+    "reviewedAt": "2026-10-11",
+    "title": "Vivienda protegida: obras iniciadas y dos horizontes que no coinciden",
+    "conclusion": "La Junta y EMVISESA comunican el inicio de una promoción de 691 unidades en Sevilla Este. No son viviendas terminadas ni una prueba del total autonómico de 20.000. Además, el pacto fija el final de la legislatura y la comunicación de septiembre habla de cinco años: ambos horizontes quedan pendientes de conciliación.",
+    "periodNote": "Acuerdo de 02/07/2026; comunicación autonómica de 28/09 y municipal de 30/09/2026. EMVISESA sitúa la licencia en febrero y el inicio de obras el 16/07/2026: se separan los trámites previos al mandato y la ejecución posterior.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Alcance y plazo del compromiso",
+        "status": "promise-documented",
+        "finding": "La medida 47 propone impulsar al menos 20.000 nuevas viviendas protegidas mediante colaboración público-privada antes del fin de la legislatura. La existencia de suelo o de una promoción anunciada no basta para acreditar ese volumen.",
+        "citations": [
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 47: objetivo, condiciones y plazo",
+            "page": 21
+          }
+        ]
+      },
+      {
+        "id": "inicio",
+        "claim": "Promoción FIBES R-1 y origen de los trámites",
+        "status": "reported",
+        "finding": "EMVISESA comunica 691 alojamientos protegidos, licencia de 23/02/2026 e inicio de obras el 16/07/2026. La nota autonómica sitúa el arranque en julio. Son dos administraciones participantes en el mismo proyecto; falta el acta de inicio y no acreditan entregas.",
+        "citations": [
+          {
+            "sourceId": "andalucia-housing-municipal",
+            "locator": "Una tramitación especialmente ágil; 691 alojamientos protegidos"
+          },
+          {
+            "sourceId": "andalucia-housing-start",
+            "locator": "Primeros párrafos: primera piedra e inicio en julio"
+          },
+          {
+            "sourceId": "andalucia-appointment",
+            "locator": "Nombramiento de julio",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "plazo",
+        "claim": "Conciliar legislatura y cinco años",
+        "status": "unresolved",
+        "finding": "El pacto utiliza el fin de la legislatura; la nota de septiembre presenta 20.000 viviendas asequibles en cinco años. Falta precisar el punto inicial de esos cinco años y conciliar también las categorías protegida y asequible. No se sustituye silenciosamente un plazo por otro.",
+        "citations": [
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 47",
+            "page": 21
+          },
+          {
+            "sourceId": "andalucia-housing-start",
+            "locator": "Objetivo global de 20.000 viviendas en cinco años"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Volumen terminado y disponible del nuevo mandato",
+        "status": "unresolved",
+        "finding": "Faltan un registro de promociones, calificaciones definitivas, finalizaciones y adjudicaciones al mismo corte. Las 18.300 unidades que la Junta comunica desde 2019 mezclan periodos; no se imputan al mandato iniciado en julio de 2026 ni se calcula con ellas un porcentaje de la promesa.",
+        "citations": [
+          {
+            "sourceId": "andalucia-housing-start",
+            "locator": "Balance acumulado desde 2019"
+          },
+          {
+            "sourceId": "andalucia-housing-municipal",
+            "locator": "Proyecto en marcha y unidades previstas"
+          }
+        ]
+      }
+    ],
+    "contrast": "Junta y EMVISESA ofrecen contraste entre administraciones, pero ambas participan en la promoción. Sus comunicaciones no equivalen a una auditoría externa. Se mantiene la diferencia entre alojamientos, viviendas protegidas, viviendas asequibles, obra iniciada y entrega.",
+    "pending": [
+      "Obtener acta de inicio, licencia y calificación de FIBES R-1; conciliar las categorías utilizadas.",
+      "Publicar inventario regional de promociones con financiación, fechas y estado, sin duplicar aportaciones de distintas administraciones.",
+      "Aclarar oficialmente el horizonte de cinco años frente al fin de la legislatura.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-01-63",
+    "reviewedAt": "2026-10-11",
+    "title": "Infantil 0–3: el tramo de cero años se anuncia para un curso posterior al pactado",
+    "conclusion": "El pacto extiende la gratuidad socioeducativa al tramo de 0 a 1 años desde 2026–2027. La norma examinada conserva precios y bonificaciones condicionadas para ese tramo, y la Junta sitúa su gratuidad universal en 2027–2028. La extensión completa no se acredita al inicio del curso prometido; sí se comunica gratuidad en uno y dos años.",
+    "periodNote": "Promesa firmada el 02/07/2026. Acuerdo de precios publicado el 31/03/2026, anterior al nuevo mandato y aplicable desde 2026–2027. Comunicación oficial del inicio de curso de 03/09/2026. Corte documental 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Extensión al tramo de 0 a 1 años",
+        "status": "promise-documented",
+        "finding": "La medida 63 incluye red pública y centros adheridos al Programa de Ayuda a las Familias, dotación finalista y actualización del modelo de financiación. El plazo impreso es desde el curso 2026/2027; se refiere al servicio socioeducativo, no a todos los servicios complementarios.",
+        "citations": [
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 63",
+            "page": 28
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Regulación de los centros de titularidad de la Junta",
+        "status": "documented",
+        "finding": "El anexo fija para el primer curso un precio mensual de 240,53 euros, gratuidad en supuestos determinados y bonificaciones. Para segundo y tercer curso establece gratuidad socioeducativa. Esta norma acredita condiciones reguladas, no recibos de cada familia; su ámbito no se extrapola sin más a todos los centros privados.",
+        "citations": [
+          {
+            "sourceId": "andalucia-infant-prices",
+            "locator": "Anexo: primer curso, precio y supuestos de gratuidad",
+            "page": 2
+          },
+          {
+            "sourceId": "andalucia-infant-prices",
+            "locator": "Bonificaciones del primer curso",
+            "page": 3
+          },
+          {
+            "sourceId": "andalucia-infant-prices",
+            "locator": "Segundo y tercer curso: atención socioeducativa",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "plazo",
+        "claim": "Gratuidad universal del tramo de cero años en el curso prometido",
+        "status": "target-pending",
+        "finding": "En la apertura del curso, la Junta mantiene bonificaciones para cero años y prevé la gratuidad total en 2027–2028. Contradice la extensión universal desde 2026–2027 que figura en el pacto. Se registra el objetivo pendiente en el curso examinado; no se declara fallida toda la legislatura ni se da por cumplido el anuncio para el curso siguiente.",
+        "citations": [
+          {
+            "sourceId": "andalucia-infant-course",
+            "locator": "Párrafo sobre cero años y previsión para 2027–2028"
+          },
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 63: plazo",
+            "page": 28
+          }
+        ]
+      },
+      {
+        "id": "cobertura",
+        "claim": "Cobertura comunicada y servicios incluidos",
+        "status": "reported",
+        "finding": "La Junta comunica gratuidad para uno y dos años y para aproximadamente el 30 % del alumnado de cero años. Es una cifra administrativa, no una comprobación de todas las facturas. Comedor, aula matinal y aula de tarde tienen reglas propias; gratuidad socioeducativa no significa ausencia de cualquier gasto familiar.",
+        "citations": [
+          {
+            "sourceId": "andalucia-infant-course",
+            "locator": "Distribución de edades y bonificaciones de cero años"
+          },
+          {
+            "sourceId": "andalucia-infant-prices",
+            "locator": "Servicios complementarios y bonificaciones",
+            "page": 4
+          },
+          {
+            "sourceId": "andalucia-infant-prices",
+            "locator": "Comedor y aula de tarde",
+            "page": 5
+          }
+        ]
+      },
+      {
+        "id": "financiacion",
+        "claim": "Suficiencia, pagos y estabilidad de centros",
+        "status": "unresolved",
+        "finding": "La comunicación anuncia una actualización del precio por alumno desde enero de 2027, pero no demuestra su pago efectivo ni la suficiencia para cada centro. Faltan ejecución presupuestaria, transferencias, facturas y condiciones de los centros adheridos.",
+        "citations": [
+          {
+            "sourceId": "andalucia-infant-course",
+            "locator": "Precio por alumno y actualización prevista para enero de 2027"
+          }
+        ]
+      }
+    ],
+    "contrast": "Norma y comunicación proceden de la misma administración. El contraste entre ambas y el pacto permite identificar la diferencia de curso, pero no constituye una segunda medición independiente. La regulación de marzo es un antecedente anterior al Gobierno de julio.",
+    "pending": [
+      "Comprobar modificaciones posteriores y reglas de centros adheridos, además de pagos y facturas por tramo de edad.",
+      "Obtener una conciliación independiente de matrícula, gratuidad y servicios complementarios.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-01-88",
+    "reviewedAt": "2026-10-11",
+    "title": "Materno Infantil de Huelva: contratación previa y obras comunicadas, apertura sin acreditar",
+    "conclusion": "Una resolución del tribunal contractual acredita que el procedimiento del hospital ya estaba en marcha antes del acuerdo de julio. En septiembre la Junta comunica que las obras avanzan según lo previsto. La apertura, la dotación y la actividad asistencial no quedan acreditadas por estas pruebas; tampoco se ha obtenido el calendario vinculante exigido en los tres primeros meses.",
+    "periodNote": "Pacto de 02/07/2026; nombramiento publicado el 04/07. Resolución contractual fechada el 06/02/2026, anuncio del SAS de 10/02 y actualización de 28/09/2026. Se distingue el hito inicial de calendario del plazo de apertura durante la legislatura.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Obra, calendario, personal y funcionamiento efectivo",
+        "status": "promise-documented",
+        "finding": "La medida 88 exige calendario vinculante en los tres primeros meses, seguimiento trimestral y apertura dentro de la legislatura. Enumera hitos de obra, presupuesto ejecutado, plantilla, servicios y actividad: una adjudicación por sí sola no completa el compromiso.",
+        "citations": [
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 88: objeto",
+            "page": 36
+          },
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 88: indicadores y plazos",
+            "page": 37
+          }
+        ]
+      },
+      {
+        "id": "antecedente",
+        "claim": "Procedimiento contractual anterior al nuevo mandato",
+        "status": "documented",
+        "finding": "La Resolución 58/2026 recoge la licitación de julio de 2025 y la adjudicación publicada en enero de 2026. Inadmite el recurso por falta de legitimación y extemporaneidad y levanta la suspensión. Acredita un trámite previo a julio, sin constituir una validación técnica del hospital, una certificación de obra ni un acta de apertura.",
+        "citations": [
+          {
+            "sourceId": "andalucia-huelva-appeal",
+            "locator": "Antecedentes del procedimiento",
+            "page": 1
+          },
+          {
+            "sourceId": "andalucia-huelva-appeal",
+            "locator": "Acuerdos primero y segundo",
+            "page": 16
+          },
+          {
+            "sourceId": "andalucia-appointment",
+            "locator": "Nombramiento del nuevo mandato",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "avance",
+        "claim": "Ejecución comunicada por la administración",
+        "status": "reported",
+        "finding": "El SAS anunció en febrero adjudicación y un plazo de obras de 34 meses. En septiembre la Consejería declara que la construcción avanza dentro de los plazos previstos. Se atribuye esta valoración al Gobierno; faltan certificaciones de obra y gasto que permitan verificarla.",
+        "citations": [
+          {
+            "sourceId": "andalucia-huelva-award",
+            "locator": "Adjudicación y plazo de 34 meses"
+          },
+          {
+            "sourceId": "andalucia-huelva-progress",
+            "locator": "Infraestructuras e inversión: construcción del Materno Infantil"
+          }
+        ]
+      },
+      {
+        "id": "calendario",
+        "claim": "Calendario vinculante y seguimiento trimestral",
+        "status": "unresolved",
+        "finding": "El corte de octubre ya permite revisar el hito de los tres primeros meses. No se ha obtenido un calendario vinculante con los indicadores del pacto ni un informe trimestral. Un plazo general de obra comunicado en febrero y una declaración de septiembre no prueban ese documento; su falta en este corpus no demuestra que no exista.",
+        "citations": [
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 88: calendario y seguimiento",
+            "page": 37
+          },
+          {
+            "sourceId": "andalucia-huelva-award",
+            "locator": "Plazo general comunicado"
+          },
+          {
+            "sourceId": "andalucia-huelva-progress",
+            "locator": "Actualización de septiembre"
+          }
+        ]
+      },
+      {
+        "id": "apertura",
+        "claim": "Hospital operativo y asistencia efectiva",
+        "status": "unresolved",
+        "finding": "No se han incorporado acta de recepción, autorizaciones de funcionamiento, plantilla asignada ni registros de actividad. El plazo final es la legislatura y no se trata como vencido. La unidad de salud mental inaugurada en septiembre es otro servicio: no se confunde con la apertura del Materno Infantil.",
+        "citations": [
+          {
+            "sourceId": "andalucia-huelva-progress",
+            "locator": "Inauguración de la unidad de salud mental y apartado diferenciado sobre el Materno Infantil"
+          },
+          {
+            "sourceId": "andalucia-programme",
+            "locator": "Medida 88: apertura y actividad",
+            "page": 37
+          }
+        ]
+      }
+    ],
+    "contrast": "El tribunal aporta un control administrativo separado del SAS, limitado al recurso contractual. Las comunicaciones sanitarias pertenecen a una misma familia y no son auditorías. Se conserva el documento original: el índice del tribunal sitúa la resolución el día 7, mientras el PDF está fechado el 6 de febrero. No se adopta el importe mal expresado como «82.640.649 millones» en la nota del SAS; queda pendiente su conciliación con el contrato.",
+    "pending": [
+      "Obtener contrato formalizado, importe, acta de inicio, certificaciones y ejecución presupuestaria.",
+      "Localizar el calendario vinculante y el seguimiento trimestral; contrastar después plantilla, servicios y actividad.",
+      "Revisión humana independiente de la ficha."
+    ]
+  }
+]

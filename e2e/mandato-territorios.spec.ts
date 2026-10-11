@@ -1,5 +1,39 @@
 import { expect, test } from "@playwright/test";
 
+test("Andalucía separa el pacto de 2026, tres revisiones y medidas pendientes", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Andalucía");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-01$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Andalucía · mandato iniciado en julio de 2026");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.getByRole("status")).toHaveText("150 resultados · página 1 de 10");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("147 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("litigar");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("primer semestre de 2026");
+  await expect(page.locator("#territorial-inventory")).toContainText("anterior a la firma");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 32/ })).toHaveAttribute("href", /pactopp-vox-andalucia\.pdf#page=32$/);
+});
+
+test("Andalucía en móvil distingue cursos escolares, trámites y resultados", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-01");
+  await expect(page.locator(".mc-intro")).toContainText("revisión humana independiente");
+  await expect(page.locator('section[aria-labelledby="r-01-63-plazo"]')).toContainText("2027–2028");
+  await expect(page.locator('section[aria-labelledby="r-01-63-plazo"]')).toContainText("Objetivo aún no alcanzado");
+  await expect(page.locator('section[aria-labelledby="r-01-47-plazo"]')).toContainText("cinco años");
+  await expect(page.locator('section[aria-labelledby="r-01-88-antecedente"]')).toContainText("sin constituir una validación técnica");
+  await expect(page.locator('section[aria-labelledby="r-01-88-apertura"]')).toContainText("no se trata como vencido");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/andalucia-mobile-intro.png" });
+  await page.locator("#r-01-63-plazo").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/andalucia-mobile-school.png" });
+});
+
 test("Castilla-La Mancha conserva el programa inicial y separa sus cinco fichas", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Castilla-La Mancha");
