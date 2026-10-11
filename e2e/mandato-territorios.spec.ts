@@ -1,5 +1,36 @@
 import { expect, test } from "@playwright/test";
 
+test("Murcia permite consultar también las ocho cláusulas finales del pacto", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Murcia");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-14$/);
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("pacto de 5/09/2023");
+  await expect(page.getByRole("status")).toHaveText("38 resultados · página 1 de 3");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await page.getByLabel("Buscar medida autonómica").fill("Defensor del Pueblo");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Octavo");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("35 resultados");
+});
+
+test("Murcia en móvil distingue copias, extractos y datos pendientes de comprobar", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-14");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Consultar la copia del programa", exact: true })).toHaveAttribute("href", "https://multimedia.laverdad.es/documentos/acuerdo-pp-vox-murcia.pdf");
+  await expect(page.locator("#compromiso-r-14-17")).toContainText("personas únicas");
+  await expect(page.locator("#compromiso-r-14-17")).toContainText("extracto editorial conservado");
+  await expect(page.locator("#compromiso-r-14-21")).toContainText("0,25 puntos porcentuales");
+  await expect(page.locator("#compromiso-r-14-acuerdo-4")).toContainText("15 de julio de 2024");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/murcia-mobile.png", fullPage: true });
+});
+
 test("Melilla conserva el número repetido y el contexto sin inflar el inventario", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Melilla");

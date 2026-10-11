@@ -32,7 +32,7 @@ export function getCoverage() {
       ...(balance.inventoryKind ? { inventoryKind: balance.inventoryKind, originalInventoryComplete: false } : {}),
       ...(balance.programmeCopy ? { originalInventoryComplete: false } : {}),
       blockers: [
-        ...(balance.programmeCopy ? ["Programa importado desde una copia de otro editor; cotejo con el archivo municipal pendiente."] : []),
+        ...(balance.programmeCopy ? ["Programa importado desde una copia de otro editor; cotejo con un archivo publicado por su autor pendiente."] : []),
         ...(balance.inventoryKind === "action-catalogue" ? ["Catálogo de seguimiento importado; reconstrucción de las promesas originales y cambios del plan pendiente."] : []),
         ...(balance.inventoryKind === "strategic-plan" ? ["Plan estratégico administrativo importado; inventario completo y correspondencia de las promesas políticas pendientes."] : []),
         ...(balance.inventoryKind === "initial-programme" ? ["Programa inicial no exhaustivo importado; inventario completo del mandato y modificaciones posteriores pendientes."] : []),
