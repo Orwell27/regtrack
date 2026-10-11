@@ -1,11 +1,29 @@
 import type { CoverageSource, Jurisdiction } from "./coverage-model";
 
-type Dossier = Pick<Jurisdiction, "mandate" | "sources">;
-function source(id: string, title: string, url: string, publisher: string, family: string, role: CoverageSource["role"], scopeNote: string): CoverageSource {
-  return { id, title, url, publisher, family, role, consultedAt: "2026-10-10", scopeNote };
+type Dossier = Pick<Jurisdiction, "mandate" | "sources"> & { blockers?: string[] };
+function source(id: string, title: string, url: string, publisher: string, family: string, role: CoverageSource["role"], scopeNote: string, consultedAt = "2026-10-10"): CoverageSource {
+  return { id, title, url, publisher, family, role, consultedAt, scopeNote };
 }
 /** Discovery register. Sources here do not count as reviewed commitments. */
 export const territorialDossiers: Record<string, Dossier> = {
+  "m-22125": {
+    mandate: null, sources: [],
+    blockers: [
+      "Consulta de 11/10/2026: la web de campaña lorenatieneunplan.es no resolvió; no se ha recuperado el programa original. La recopilación periodística localizada no se presenta como inventario completo.",
+      "La consulta de disponibilidad del archivo para esa dirección y 27/05/2023 no devolvió una captura; el índice CDX respondió 503. Esto no demuestra que no exista otra copia. La web municipal respondió 403 en el lector utilizado.",
+    ],
+  },
+  "m-44216": {
+    mandate: { label: "Corporación municipal constituida el 17/06/2023", sourceId: "teruel-constitution" },
+    sources: [
+      source("teruel-constitution", "Acta de constitución · 17 de junio de 2023", "https://plenos.teruel.es/src/lib/php/get.php?afile=/alfresco/download/direct/workspace/SpacesStore/d64c4d4c-b7ad-4787-84a5-1edaafded910/Acta_Pleno_Constitucion.pdf&afileName=Acta_Pleno_Constitucion.pdf", "Ayuntamiento de Teruel · Secretaría General", "ayuntamiento-teruel", "register", "PDF original de diez páginas conservado con huella. Las páginas 8–9 recogen 11 votos a Emma Buj, 5 a Enrique Marín, 3 a José Antonio Guillén y 2 a Alejandro Nolasco; Buj fue proclamada con mayoría absoluta. El acta remite las intervenciones al vídeo: no transcribe el discurso ni acredita un programa completo. Firmas electrónicas no validadas por RegTrack.", "2026-10-11"),
+      source("teruel-register", "Corporación municipal · datos biográficos", "https://www.teruel.es/portal-de-transparencia/concejales-datos-biograficos-y-de-contacto/", "Ayuntamiento de Teruel", "ayuntamiento-teruel", "register", "Ficha leída mediante el lector web que identifica a Emma Buj como alcaldesa desde febrero de 2016 y senadora desde julio de 2023. Se conserva una nota editorial, no el HTML original: la descarga directa devolvió 403. Esta ficha y el acta proceden del mismo ayuntamiento y no son corroboraciones independientes de resultados.", "2026-10-11"),
+    ],
+    blockers: [
+      "Recuperar el programa electoral municipal de 2023 y comprobar cambios y anuncios posteriores. El 11/10/2026, ppteruel.es agotó la conexión HTTPS; su dirección HTTP devolvió un marco hacia pparagon.es/ppteruel, cuyo contenido tampoco se pudo recuperar por tiempo de espera.",
+      "El acta acredita la constitución y elección, pero el discurso permanece en la videoacta sin transcripción cotejada. Un mandato identificado no equivale a un inventario de compromisos ni a actuaciones revisadas.",
+    ],
+  },
   "r-01": { mandate: null, sources: [source("andalucia-government", "Composición del Gobierno · XIII Legislatura", "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/217411/juanmamoreno/nuevogobiernoandaluz/consejeros/ejecutivo/xiiilegislatura/juntadeandalucia", "Junta de Andalucía", "gob-andalucia", "register", "Composición localizada que remite al BOJA extraordinario de 9 de julio de 2026. Hay que revisar el nuevo mandato y sus compromisos antes de atribuirle actuaciones anteriores.")] },
   "r-02": { mandate: null, sources: [source("aragon-transparency", "Transparencia Aragón", "https://www.aragon.es/transparencia", "Gobierno de Aragón", "gob-aragon", "register", "Portal de publicidad activa localizado. Falta identificar el acuerdo aplicable tras las elecciones de 2026 y separar las actuaciones de la legislatura anterior.")] },
   "r-03": { mandate: null, sources: [source("asturias-plans", "Planes y programas estratégicos", "https://transparencia.asturias.es/administracion/planes-estrategicos", "Principado de Asturias", "gob-asturias", "programme", "Catálogo sectorial consultado. No equivale a un inventario completo de compromisos de mandato.")] },

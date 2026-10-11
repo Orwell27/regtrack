@@ -1,0 +1,11 @@
+{
+  "url": "https://plenos.teruel.es/src/lib/php/get.php?afile=/alfresco/download/direct/workspace/SpacesStore/d64c4d4c-b7ad-4787-84a5-1edaafded910/Acta_Pleno_Constitucion.pdf&afileName=Acta_Pleno_Constitucion.pdf",
+  "finalUrl": "https://plenos.teruel.es/src/lib/php/get.php?afile=/alfresco/download/direct/workspace/SpacesStore/d64c4d4c-b7ad-4787-84a5-1edaafded910/Acta_Pleno_Constitucion.pdf&afileName=Acta_Pleno_Constitucion.pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "0124acfc26686c38707c875c87c7b30a7dffc1c2a9f9dfce0b548c6a94db4d77",
+  "bytes": 221434,
+  "retrievedAt": "2026-10-11T13:17:01.779143+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/teruel/constitution.pdf",
+  "extractionSha256": "e64acf44ae3cda452a1696377b8f05e8027953cb227b69504d8c8dcb11d91785"
+}

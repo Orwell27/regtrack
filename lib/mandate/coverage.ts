@@ -50,6 +50,7 @@ export function getCoverage() {
       sources: dossier?.sources ?? [], inventoryTotal: null, imported: 0, reviewed: 0, independentlyReviewed: 0,
       blockers: [
         ...(!dossier?.mandate ? ["Identificar y comprobar el mandato vigente y su documento de compromisos."] : []),
+        ...(dossier?.blockers ?? []),
         "Importar el inventario y fijar su alcance: el total de compromisos aún no está determinado.",
         "Contrastar actuaciones, ejecución y resultados, buscar evidencia contraria y registrar sus límites.",
         "Revisión humana independiente pendiente.",
