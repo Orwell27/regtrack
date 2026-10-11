@@ -24,7 +24,7 @@ export function getCoverage() {
       sources: balance.sources.map(source => ({ ...source,
         consultedAt: source.retrievedAt.slice(0, 10),
         scopeNote: source.role === "programme" ? balance.scope : source.role === "reporting"
-          ? "Reportaje ajeno a la administración: observación localizada, no auditoría global. Se conserva un extracto editorial, no el artículo original."
+          ? "Fuente ajena a la administración: consultar su autoría, intereses y límites en la revisión. Se conserva un extracto editorial, no el documento original; no constituye por sí sola una auditoría."
           : `Documento conservado y consultado. Origen: ${source.family}. Un enlace adicional no acredita una corroboración independiente; consultar los límites de cada revisión.`,
       })),
       inventoryTotal: balance.inventoryTotal, imported: balance.records.length, reviewed: balance.reviews.length, independentlyReviewed: 0,

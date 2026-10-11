@@ -19,13 +19,27 @@ function Initiatives({ record, sourceUrl }: { record: TerritorialRecord; sourceU
   if (!record.initiatives) return null;
   return <details><summary>Iniciativas del compromiso · {record.initiatives.length}</summary><ol>{record.initiatives.map(initiative => <li key={initiative.officialId} value={Number(initiative.officialId)}><p>{initiative.text}</p><a className="mc-link" href={`${sourceUrl}#page=${initiative.page}`} target="_blank" rel="noreferrer">Página {initiative.page}{initiative.endPage !== initiative.page ? `–${initiative.endPage}` : ""}</a></li>)}</ol></details>;
 }
+function ProgrammeSheet({ record, language }: { record: TerritorialRecord; language?: string }) {
+  if (!record.programmeText) return null;
+  return <details><summary>Ficha completa del programa original</summary><p lang={language} style={{ whiteSpace: "pre-line" }}>{record.programmeText}</p></details>;
+}
+function GovernmentFollowup({ record }: { record: TerritorialRecord }) {
+  const report = record.governmentReport;
+  if (!report) return null;
+  return <details><summary>Seguimiento publicado por el Ayuntamiento · {report.percentage}% declarado</summary>
+    <p>Ficha municipal {report.officialId}: {report.title}. Este porcentaje corresponde a la metodología del Ayuntamiento; no es una valoración de RegTrack ni una medida independiente de impacto. Los periodos particulares se conservan en el texto.</p>
+    <p style={{ whiteSpace: "pre-line" }}>{report.text}</p>
+    <a className="mc-link" href={report.url} target="_blank" rel="noreferrer">Consultar el seguimiento municipal original</a>
+    {report.links.length ? <details><summary>Enlaces aportados por el Ayuntamiento</summary><ul>{report.links.map((url, index) => <li key={url}><a className="mc-link" href={url} target="_blank" rel="noreferrer">Referencia municipal {index + 1}</a></li>)}</ul><p>Su presencia en el seguimiento no significa que RegTrack haya revisado cada enlace. Las pruebas incorporadas se identifican en las revisiones y en Fuentes y trazabilidad.</p></details> : null}
+  </details>;
+}
 export function TerritorialBalance({ balance }: { balance: Balance }) {
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("all");
   const [page, setPage] = useState(1);
   const reviews = new Map(balance.reviews.map(review => [review.commitmentId, review]));
   const sources = new Map(balance.sources.map(source => [source.id, source]));
-  const searchable = useMemo(() => balance.records.map(record => ({ record, text: normalizeMandateText(`${record.officialId} ${record.text} ${record.topic} ${record.detailText ?? ""} ${record.initiatives?.map(initiative => initiative.text).join(" ") ?? ""}`) })), [balance.records]);
+  const searchable = useMemo(() => balance.records.map(record => ({ record, text: normalizeMandateText(`${record.officialId} ${record.text} ${record.topic} ${record.detailText ?? ""} ${record.programmeText ?? ""} ${record.governmentReport?.officialId ?? ""} ${record.governmentReport?.text ?? ""} ${record.initiatives?.map(initiative => initiative.text).join(" ") ?? ""}`) })), [balance.records]);
   const terms = normalizeMandateText(query).split(/\s+/).filter(Boolean);
   const records = searchable.filter(({ record, text }) => (filter === "all" || (filter === "reviewed" ? reviews.has(record.id) : !reviews.has(record.id)))
     && terms.every(term => text.includes(term))).map(({ record }) => record);
@@ -50,7 +64,7 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
           return <article className="mc-card mt-review" key={record.id} id={`compromiso-${record.id}`}>
             <p className="mn-eyebrow">Medida {record.officialId} · revisión {review.reviewedAt}</p><h3>{review.title}</h3>
             <details><summary>{catalogue ? "Actuación publicada y fuente" : "Promesa y página de origen"}</summary><p lang={balance.textLanguage}>{record.text}</p>{record.governmentState ? <p>{governmentLabel} {balance.governmentCutoff}: <strong>{record.governmentState}</strong>. No es una valoración de RegTrack.</p> : null}
-          <RecordSource record={record} fallback={inventorySource.url} label={balance.sourceLabel} /><WebDetail record={record} language={balance.textLanguage} /><Initiatives record={record} sourceUrl={inventorySource.url} /></details>
+          <RecordSource record={record} fallback={inventorySource.url} label={balance.sourceLabel} /><ProgrammeSheet record={record} language={balance.textLanguage} /><GovernmentFollowup record={record} /><WebDetail record={record} language={balance.textLanguage} /><Initiatives record={record} sourceUrl={inventorySource.url} /></details>
             <p><strong>{review.conclusion}</strong></p><p>{review.periodNote}</p>
             <div className="mt-components">{review.components.map(component => <section key={component.id} aria-labelledby={`${record.id}-${component.id}`}>
               <h4 id={`${record.id}-${component.id}`}>{component.claim}</h4><p className="mn-eyebrow">{TERRITORIAL_STATUS_LABELS[component.status]}</p><p>{component.finding}</p>
@@ -70,6 +84,8 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
           <p className="mn-eyebrow">Medida {record.officialId} · {record.topic}</p><h3 lang={balance.textLanguage}>{record.text}</h3><p>{reviews.has(record.id) ? "Con revisión documental parcial" : "Pendiente de revisión · Sin conclusión de RegTrack"}</p>
           <Initiatives record={record} sourceUrl={inventorySource.url} />
           <WebDetail record={record} language={balance.textLanguage} />
+          <ProgrammeSheet record={record} language={balance.textLanguage} />
+          <GovernmentFollowup record={record} />
           {record.governmentState ? <p>{governmentLabel} {balance.governmentCutoff}: <strong>{record.governmentState}</strong>{record.governmentProgress ? ` · porcentaje municipal ${record.governmentProgress}` : ""}. No es una valoración de RegTrack.</p> : null}
           <RecordSource record={record} fallback={inventorySource.url} label={balance.sourceLabel} />
           {reviews.has(record.id) ? <p><a className="mc-link" href={`#compromiso-${record.id}`}>Leer evidencia y límites</a></p> : null}

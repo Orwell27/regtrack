@@ -8,10 +8,13 @@ import catalunyaInventory from "@/data/mandate/catalunya-inventory.json";
 import catalunyaReviews from "@/data/mandate/catalunya-reviews.json";
 import barcelonaInventory from "@/data/mandate/barcelona-inventory.json";
 import barcelonaReviews from "@/data/mandate/barcelona-reviews.json";
+import vitoriaInventory from "@/data/mandate/vitoria-inventory.json";
+import vitoriaReviews from "@/data/mandate/vitoria-reviews.json";
 import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "m-01059": { inventory: vitoriaInventory, reviews: vitoriaReviews, level: "municipality", mandateSourceId: vitoriaInventory.sourceId, sourceLabel: vitoriaInventory.sourceLabel, governmentCutoff: undefined },
   "m-08019": { inventory: barcelonaInventory, reviews: barcelonaReviews, level: "municipality", mandateSourceId: barcelonaInventory.mandateSourceId, sourceLabel: barcelonaInventory.sourceLabel, governmentCutoff: barcelonaInventory.governmentCutoff },
   "r-09": { inventory: catalunyaInventory, reviews: catalunyaReviews, level: "region", mandateSourceId: catalunyaInventory.sourceId, sourceLabel: catalunyaInventory.sourceLabel, governmentCutoff: undefined },
   "m-28079": { inventory: madridInventory, reviews: madridReviews, level: "municipality", mandateSourceId: madridInventory.sourceId, sourceLabel: "Programa", governmentCutoff: undefined },
@@ -38,6 +41,8 @@ export function getTerritorialBalance(id: string): TerritorialBalance | null {
       return { id, officialId, text, topic, page, endPage, sourceId,
         ...(record.governmentState ? { governmentState: record.governmentState } : {}),
         ...(record.governmentProgress ? { governmentProgress: record.governmentProgress } : {}),
+        ...(record.programmeText ? { programmeText: record.programmeText } : {}),
+        ...(record.governmentReport ? { governmentReport: { officialId: record.governmentReport.officialId, title: record.governmentReport.title, text: record.governmentReport.text, percentage: record.governmentReport.percentage, sourceId: record.governmentReport.sourceId, url: record.governmentReport.url, links: record.governmentReport.links } } : {}),
         ...(record.webSource ? { webSource: { url: record.webSource.url, sha256: record.webSource.sha256, retrievedAt: record.webSource.retrievedAt }, detailText: record.detailText, detailLinks: record.detailLinks } : {}),
         ...(record.initiatives ? { initiatives: record.initiatives.map(({ officialId, text, page, endPage }) => ({ officialId, text, page, endPage })) } : {}) };
     }),

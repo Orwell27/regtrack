@@ -22,6 +22,8 @@ export type TerritorialRecord = {
   governmentState?: string;
   governmentProgress?: string;
   detailText?: string;
+  programmeText?: string;
+  governmentReport?: { officialId: string; title: string; text: string; percentage: number; sourceId: string; url: string; links: string[] };
   detailLinks?: string[];
   webSource?: { url: string; sha256: string; retrievedAt: string };
   initiatives?: { officialId: string; text: string; page: number; endPage: number }[];
@@ -68,6 +70,14 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
     } else if (record.page === null || record.endPage === null || !Number.isInteger(record.page) || record.page < 1
       || !Number.isInteger(record.endPage) || record.endPage < record.page) throw Error("Compromiso territorial inválido");
     ids.add(record.id);
+    if (record.programmeText !== undefined && (!record.programmeText.trim() || record.page === null)) throw Error("Ficha de programa incompleta");
+    if (record.governmentReport) {
+      const report = record.governmentReport;
+      const source = sources.get(report.sourceId);
+      if (!report.officialId || !report.title || !report.text.trim() || source?.role !== "government-report"
+        || !report.url.startsWith(`${source.url}#`) || !Number.isInteger(report.percentage) || report.percentage < 0 || report.percentage > 100
+        || report.links.some(url => !/^https?:\/\//.test(url))) throw Error("Seguimiento municipal inválido");
+    }
     if (record.initiatives !== undefined) {
       if (!record.initiatives.length) throw Error("Iniciativas territoriales vacías");
       const initiativeIds = new Set<string>();

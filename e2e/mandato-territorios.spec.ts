@@ -1,5 +1,39 @@
 import { expect, test } from "@playwright/test";
 
+test("Vitoria conserva los originales y el seguimiento posterior sin convertir el 100% en revisión", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Vitoria");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-01059$/);
+  await expect(page.getByRole("status")).toHaveText("100 resultados · página 1 de 7");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("98 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("5.8 sombras");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  const inventory = page.locator("#territorial-inventory");
+  await expect(inventory).toContainText("Sin conclusión de RegTrack");
+  await inventory.getByText("Ficha completa del programa original", { exact: true }).click();
+  await expect(inventory).toContainText("BENEFICIOS PARA LA CIUDADANÍA");
+  await inventory.locator("summary").filter({ hasText: "Seguimiento publicado por el Ayuntamiento" }).click();
+  await expect(inventory).toContainText("no es una valoración de RegTrack");
+  await expect(inventory.getByRole("link", { name: "Consultar el seguimiento municipal original" })).toHaveAttribute("href", /#E\d+-L\d+-C\d+$/);
+});
+
+test("Vitoria en móvil separa norma, cambio del APR y obras sin apertura acreditada", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-01059");
+  const zbe = page.locator('[id="compromiso-m-01059-2.17"]');
+  await expect(zbe).toContainText("23 de agosto de 2026");
+  await expect(zbe).toContainText("no se afirma anulación, suspensión ni validación judicial");
+  await zbe.getByText("Promesa y página de origen", { exact: true }).click();
+  await zbe.getByText("Seguimiento publicado por el Ayuntamiento · 75% declarado", { exact: true }).click();
+  await expect(zbe).toContainText("Ficha municipal 2.3.3");
+  await expect(page.locator('[id="compromiso-m-01059-2.19"]')).toContainText("No son gasto ejecutado ni una fecha de apertura");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.getByRole("heading", { level: 1 }).scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/vitoria-mobile-viewport.png" });
+});
+
 test("Barcelona publica el catálogo completo y busca dentro de las fichas conservadas", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Barcelona");

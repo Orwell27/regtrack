@@ -74,8 +74,8 @@ describe("cobertura de 70 administraciones con responsabilidades separadas", () 
     const all = getCoverage();
     expect(all[0].reviewed).toBe(46);
     for (const item of all.slice(1)) {
-      expect(item.reviewed).toBe(item.id === "m-28079" ? 4 : item.id === "r-15" ? 3 : ["r-16", "r-09", "m-08019"].includes(item.id) ? 2 : 0);
-      expect(item.inventoryTotal).toBe(item.id === "m-28079" ? 300 : item.id === "r-15" ? 347 : item.id === "r-16" ? 154 : item.id === "r-09" ? 260 : item.id === "m-08019" ? 1248 : null);
+      expect(item.reviewed).toBe(item.id === "m-28079" ? 4 : item.id === "r-15" ? 3 : ["r-16", "r-09", "m-08019", "m-01059"].includes(item.id) ? 2 : 0);
+      expect(item.inventoryTotal).toBe(item.id === "m-28079" ? 300 : item.id === "r-15" ? 347 : item.id === "r-16" ? 154 : item.id === "r-09" ? 260 : item.id === "m-08019" ? 1248 : item.id === "m-01059" ? 100 : null);
       expect(isCoverageComplete(item)).toBe(false);
     }
     expect(all.filter(isCoverageComplete)).toHaveLength(0);
