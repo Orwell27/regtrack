@@ -1,0 +1,261 @@
+[
+  {
+    "commitmentId": "m-03014-43",
+    "reviewedAt": "2026-10-11",
+    "title": "Comercios centenarios: el 95 % general no prueba su aplicación específica",
+    "conclusion": "La ordenanza permite bonificaciones por especial interés municipal, con requisitos y decisión del Pleno. No se ha acreditado en esta revisión la concesión del 95 % a los comercios centenarios prometida en el programa.",
+    "periodNote": "Programa de 2023; antecedente comunicado en 2020, trámite actualizado en mayo de 2023 y texto normativo municipal de diciembre de 2025. Corte de consulta: 11/10/2026. No es asesoramiento tributario ni un censo completo de concesiones.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Destinatarios y porcentaje",
+        "status": "promise-documented",
+        "finding": "El apartado se refiere a los comercios centenarios de la ciudad y fija el 95 %. No promete aquí una bonificación indistinta para todas las actividades económicas.",
+        "citations": [
+          {
+            "sourceId": "alicante-programme",
+            "locator": "Fiscalidad: primera viñeta del IBI",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Bonificación condicionada por especial interés",
+        "status": "documented",
+        "finding": "El artículo 4.2.3 permite hasta el 95 % por circunstancias sociales, culturales, histórico-artísticas o de empleo. Exige solicitud, declaración del Pleno y que el titular de la actividad sea sujeto pasivo del IBI; el Pleno determina el porcentaje. Este mecanismo general no acredita por sí solo las concesiones a comercios centenarios.",
+        "citations": [
+          {
+            "sourceId": "alicante-ibi-2025",
+            "locator": "Artículo 4.2.3: fundamento y decisión del Pleno",
+            "page": 4
+          },
+          {
+            "sourceId": "alicante-ibi-2025",
+            "locator": "Requisitos comunes y porcentaje determinado por el Pleno",
+            "page": 5
+          }
+        ]
+      },
+      {
+        "id": "antecedente",
+        "claim": "Medida anunciada antes de este mandato",
+        "status": "reported",
+        "finding": "La comunicación de septiembre de 2020 ya anunciaba bonificaciones de hasta el 95 % por especial interés. Acredita un antecedente anunciado, no la ejecución de la promesa específica de 2023.",
+        "citations": [
+          {
+            "sourceId": "alicante-ibi-2020",
+            "locator": "Reforma fiscal anunciada por la comisión de Hacienda"
+          }
+        ]
+      },
+      {
+        "id": "versiones",
+        "claim": "No intercambiar el trámite antiguo con la ordenanza posterior",
+        "status": "unresolved",
+        "finding": "La página de trámite, actualizada el 12/05/2023, limita a cinco periodos impositivos la bonificación general por especial interés; la ordenanza de diciembre de 2025 permite hasta diez. Ambas recogen un mínimo de 5 empleos en el supuesto de fomento del empleo. Los 25 empleos citados en esa misma página corresponden al IAE, no al IBI. No deben mezclarse tributos ni versiones.",
+        "citations": [
+          {
+            "sourceId": "alicante-tax-procedure",
+            "locator": "Apartado IBI: duración máxima; apartado IAE: umbral de empleo; fecha de actualización"
+          },
+          {
+            "sourceId": "alicante-ibi-2025",
+            "locator": "Requisitos específicos de fomento del empleo",
+            "page": 5
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Beneficiarios y ahorro por comprobar",
+        "status": "unresolved",
+        "finding": "Faltan acuerdos concretos de declaración y concesión, identificación del universo de comercios centenarios y liquidaciones que permitan comprobar destinatarios, porcentaje y ahorro. No localizar una categoría nominal en este texto no prueba que no haya concesiones por la vía general.",
+        "citations": [
+          {
+            "sourceId": "alicante-ibi-2025",
+            "locator": "Régimen de especial interés",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "contrast": "Las fuentes fiscales proceden del Ayuntamiento. El contraste entre fechas evita atribuir una medida antigua a este mandato, pero no sustituye un control externo de beneficiarios o ejecución.",
+    "pending": [
+      "Cotejar el texto municipal con la publicación íntegra del BOP y modificaciones posteriores.",
+      "Obtener acuerdos de concesión y datos agregados de beneficiarios y ahorro, protegiendo los datos tributarios.",
+      "Buscar una corroboración externa de la aplicación específica a comercios centenarios."
+    ]
+  },
+  {
+    "commitmentId": "m-03014-672",
+    "reviewedAt": "2026-10-11",
+    "title": "Centro de Congresos: trámite urbanístico acreditado, obra pendiente de verificar",
+    "conclusion": "El acuerdo de mayo de 2026 inicia la evaluación de una modificación urbanística necesaria. No acredita una obra contratada o terminada. El contraste periodístico de septiembre informa de retrasos cuya situación contractual requiere documentación posterior.",
+    "periodNote": "Promesa de ejecución en el programa de 2023, previsión de Diputación del 03/02/2025, acuerdo municipal del 05/05/2026 e información periodística del 21/09/2026, actualizada el 22/09. Consulta a 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Obra comprometida",
+        "status": "promise-documented",
+        "finding": "El programa incluye ejecutar la obra del nuevo Centro de Congresos. La viñeta no fija una fecha concreta ni un presupuesto.",
+        "citations": [
+          {
+            "sourceId": "alicante-programme",
+            "locator": "Turismo: ejecución del nuevo Centro de Congresos",
+            "page": 48
+          }
+        ]
+      },
+      {
+        "id": "calendario",
+        "claim": "Previsión condicionada de Diputación",
+        "status": "reported",
+        "finding": "En febrero de 2025, la Diputación anunció licitación para primavera de 2026 y estimó 30 meses de ejecución tras la adjudicación. Condicionó el calendario a permisos, licencias y planeamiento; una previsión no demuestra que se licitara en ese plazo.",
+        "citations": [
+          {
+            "sourceId": "alicante-congress-forecast",
+            "locator": "Calendario y condiciones pendientes"
+          }
+        ]
+      },
+      {
+        "id": "actuacion",
+        "claim": "Inicio de evaluación; no aprobación final ni recepción",
+        "status": "documented",
+        "finding": "La Junta de Gobierno acordó iniciar la modificación número 7 del Plan Especial del Puerto y solicitar la evaluación ambiental ante el órgano autonómico. El informe propone ajustes de acceso, aparcamiento y altura. El acuerdo no aprueba definitivamente el planeamiento, adjudica obras ni acredita su recepción.",
+        "citations": [
+          {
+            "sourceId": "alicante-congress-board",
+            "locator": "Observaciones de planeamiento",
+            "page": 54
+          },
+          {
+            "sourceId": "alicante-congress-board",
+            "locator": "Acuerdos primero y segundo",
+            "page": 58
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Información posterior sobre demoras",
+        "status": "unresolved",
+        "finding": "Alicante Plaza informó en septiembre de que aún faltaban contrato de redacción y consorcio de gestión, apoyándose en fuentes consultadas. Es un contraste periodístico atribuido: faltan el expediente contractual actualizado y las actas de las administraciones para corroborar completamente esa situación.",
+        "citations": [
+          {
+            "sourceId": "alicante-congress-contrast",
+            "locator": "Estado del proyecto y del consorcio, septiembre de 2026"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Construcción y reparto de responsabilidades",
+        "status": "unresolved",
+        "finding": "No se incorpora una certificación de obras ni acta de recepción. Ayuntamiento, Diputación, Puerto y Generalitat intervienen con funciones diferentes; no se atribuye al municipio toda la financiación o ejecución. Tampoco se convierte la previsión de 2025 en un plazo literal del programa de 2023.",
+        "citations": [
+          {
+            "sourceId": "alicante-congress-board",
+            "locator": "Objeto y reparto de competencias de tramitación",
+            "page": 50
+          },
+          {
+            "sourceId": "alicante-congress-forecast",
+            "locator": "Administraciones participantes y licitación provincial"
+          }
+        ]
+      }
+    ],
+    "contrast": "Diputación y Ayuntamiento son promotores participantes, no evaluadores externos del resultado. El medio añade contraste editorial, pero sus fuentes no identificadas requieren corroboración documental. No confundir este proyecto de Alicante con el Palacio de Congresos de Elche.",
+    "pending": [
+      "Conciliar expediente de contratación, proyecto ejecutivo, financiación y constitución del órgano gestor.",
+      "Revisar el resultado de la evaluación ambiental y la aprobación urbanística posterior.",
+      "Obtener certificaciones de avance o recepción e indicadores de funcionamiento cuando existan."
+    ]
+  },
+  {
+    "commitmentId": "m-03014-890",
+    "reviewedAt": "2026-10-11",
+    "title": "Ciudad Amiga de la Infancia: preparación comunicada, solicitud por acreditar",
+    "conclusion": "El Ayuntamiento comunica trabajos de preparación del plan de infancia. La promesa concreta es solicitar el sello: las reuniones y el diagnóstico no acreditan por sí solos una solicitud presentada ni la concesión de UNICEF.",
+    "periodNote": "Antecedente de octubre de 2022, programa de 2023 y nota municipal actualizada el 09/03/2026 sobre reuniones de febrero y marzo. Convocatoria UNICEF 2026 consultada el 11/10/2026; su resolución se prevé a final de año.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Solicitud, no concesión garantizada",
+        "status": "promise-documented",
+        "finding": "La viñeta promete solicitar el sello. Deben separarse presentación de solicitud, admisión como candidata, reconocimiento e impacto real sobre la infancia.",
+        "citations": [
+          {
+            "sourceId": "alicante-programme",
+            "locator": "Ayuntamiento: solicitud del sello de UNICEF",
+            "page": 58
+          }
+        ]
+      },
+      {
+        "id": "preparacion",
+        "claim": "Trabajo comunicado y antecedente",
+        "status": "reported",
+        "finding": "La nota de marzo de 2026 sitúa el PLIA 2026–2030 en recogida de información y diagnóstico, tras reuniones de coordinación. Ya en octubre de 2022 se había anunciado un estudio con el mismo objetivo general. No se trata de una iniciativa nacida íntegramente después de las elecciones de 2023.",
+        "citations": [
+          {
+            "sourceId": "alicante-childhood-2026",
+            "locator": "Reuniones del 6 de febrero y 2 de marzo; fase de diagnóstico"
+          },
+          {
+            "sourceId": "alicante-childhood-2022",
+            "locator": "Estudio y objetivo anunciados antes del mandato"
+          }
+        ]
+      },
+      {
+        "id": "requisitos",
+        "claim": "Criterios externos y calendario",
+        "status": "documented",
+        "finding": "UNICEF distingue acuerdo de compromiso, candidatura y reconocimiento. La convocatoria fija entrega hasta el 01/07/2026 y decisión a finales de 2026. Para reconocimiento exige candidatura previa, al menos un año de ejecución del plan y resultados mediante indicadores. Son reglas del proceso, no una evaluación favorable de Alicante.",
+        "citations": [
+          {
+            "sourceId": "alicante-unicef-rules",
+            "locator": "Calendario de presentación y evaluación",
+            "page": 4
+          },
+          {
+            "sourceId": "alicante-unicef-rules",
+            "locator": "Pasos del proceso",
+            "page": 7
+          },
+          {
+            "sourceId": "alicante-unicef-rules",
+            "locator": "Requisitos para entidad reconocida",
+            "page": 16
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Solicitud y resolución no acreditadas",
+        "status": "unresolved",
+        "finding": "Faltan justificante de presentación, categoría solicitada, plan aprobado y respuesta de UNICEF. No disponer aquí de estos documentos no demuestra que Alicante no se presentara. La resolución prevista para finales de 2026 no se considera vencida a la fecha de consulta.",
+        "citations": [
+          {
+            "sourceId": "alicante-childhood-2026",
+            "locator": "Preparación del plan y requisitos para optar"
+          },
+          {
+            "sourceId": "alicante-unicef-rules",
+            "locator": "Presentación y resolución de candidatura",
+            "page": 15
+          }
+        ]
+      }
+    ],
+    "contrast": "UNICEF aporta criterios externos al Ayuntamiento, pero el documento general no verifica una candidatura concreta. Dos notas municipales de años distintos no son dos evaluaciones independientes. La obtención del sello tampoco sustituiría la medición de resultados para niños y adolescentes.",
+    "pending": [
+      "Localizar el justificante municipal de solicitud y el acuerdo y plan aprobados que la respaldan.",
+      "Conciliar la categoría solicitada y la respuesta formal de UNICEF.",
+      "Contrastar presupuesto ejecutado, participación infantil y resultados medibles del plan."
+    ]
+  }
+]

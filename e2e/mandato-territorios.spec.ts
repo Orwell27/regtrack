@@ -1,5 +1,37 @@
 import { expect, test } from "@playwright/test";
 
+test("Alicante municipal permite consultar el programa y sus pendientes", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Alicante");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("municipality");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-03014$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Alicante · mandato municipal iniciado en 2023");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("898 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("bullying");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  const tax = page.locator("#compromiso-m-03014-43");
+  await tax.getByText("Apartado del programa y página de origen", { exact: true }).click();
+  await expect(tax.getByRole("link", { name: "Programa electoral del PP de Alicante · 2023 · página 6", exact: true })).toHaveAttribute("href", /PROGRAMAPP.pdf#page=6$/);
+});
+
+test("Alicante municipal mantiene condiciones y límites en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-03014");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await page.screenshot({ path: "test-results/alicante-mobile-intro.png" });
+  await expect(page.locator("#compromiso-m-03014-43")).toContainText("sujeto pasivo");
+  await expect(page.locator("#compromiso-m-03014-672")).toContainText("no aprueba definitivamente");
+  const childhood = page.locator("#compromiso-m-03014-890");
+  await expect(childhood).toContainText("no se considera vencida");
+  await childhood.scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/alicante-mobile-childhood.png" });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
 test("València municipal permite filtrar el discurso sin mezclar la comunidad", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("València");

@@ -1,0 +1,13 @@
+{
+  "url": "https://media.alicanteplaza.es/public/Attachment/2023/5/PROGRAMAPP.pdf",
+  "finalUrl": "https://media.alicanteplaza.es/public/Attachment/2023/5/PROGRAMAPP.pdf",
+  "sha256": "243cc9178378b1e54d81b42be29644c05aec84f420e02988adaac9122db22424",
+  "bytes": 54041977,
+  "retrievedAt": "2026-10-11T11:16:37.458761+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/alicante/programme.pdf",
+  "extractionSha256": "3f85074a7ef445ddcbdc8498e6f17622b132ac7c98d05c6bdb8d7a3e723a419e",
+  "ocrSha256": "0da316fce83569c15feee6203b95c439b787304f4fb7a7b81e26d17166d51a71",
+  "orderedSha256": "ad4e8230579db6a28f0a873cde48f428331125de65f2b6ef19b733602421e59f",
+  "ocrMethod": "Windows.Media.Ocr es-ES, PDF render at scale 2; original OCR retained with word coordinates.",
+  "orderingNote": "Editorial column order on PDF pages 5, 9, 13, 16, 20, 21; headings not recognized by OCR are mapped from the visual index. Bullet classification provisional, text not a certified transcription."
+}
