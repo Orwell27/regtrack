@@ -1,5 +1,39 @@
 import { expect, test } from "@playwright/test";
 
+test("Cataluña conserva el original catalán y permite buscar sus temas en español", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Cataluña");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-09$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Cataluña · XV legislatura · plan 2024–2027");
+  await expect(page.getByRole("status")).toHaveText("260 resultados · página 1 de 18");
+  await page.getByLabel("Buscar medida autonómica").fill("vivienda");
+  await expect(page.getByRole("status")).toContainText("11 resultados");
+  await expect(page.locator("#territorial-inventory h3[lang=ca]")).toHaveCount(11);
+  await page.getByLabel("Buscar medida autonómica").fill("1.7.6");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("bonificació dels interessos");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("258 resultados");
+});
+
+test("Cataluña en móvil distingue créditos aprobados, emisiones futuras y archivo pendiente", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-09");
+  const loan = page.locator('[id="compromiso-r-09-1.7.6"]');
+  await expect(loan).toContainText("18–40 años");
+  await expect(loan).toContainText("343 operaciones aprobadas");
+  await loan.getByText("Promesa y página de origen", { exact: true }).click();
+  await expect(loan.locator("p[lang=ca]")).toContainText("Fons Públic");
+  const carbon = page.locator('[id="compromiso-r-09-2.2.6"]');
+  await expect(carbon).toContainText("161,562 millones acumulados en cinco años");
+  await expect(carbon).toContainText("extracto editorial conservado");
+  await expect(page.locator(".mt-review")).toHaveCount(2);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/catalunya-mobile.png", fullPage: true });
+});
+
 test("Euskadi conserva las iniciativas y busca dentro de ellas sin inflar las revisiones", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("País Vasco");
@@ -81,7 +115,7 @@ test("el balance municipal separa el inventario, las cuatro revisiones y sus lí
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Ayuntamiento de Madrid · mandato 2023–2027");
   await expect(page.locator(".mc-intro")).toContainText("Ninguna de estas fichas ha pasado una revisión humana independiente");
   await expect(page.locator(".mt-review")).toHaveCount(4);
-  await expect(page.getByText("Extracto editorial conservado; la huella no corresponde al artículo original.", { exact: true })).toBeVisible();
+  await expect(page.getByText("Extracto editorial conservado; la huella no corresponde al documento original.", { exact: true })).toBeVisible();
   await expect(page.locator("#compromiso-m-28079-246")).toContainText("0,414 %");
   await expect(page.locator("#compromiso-m-28079-246")).toContainText("no lo declara incumplido al cierre");
   await expect(page.getByRole("status")).toHaveText("300 resultados · página 1 de 20");

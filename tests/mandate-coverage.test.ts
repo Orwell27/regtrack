@@ -74,8 +74,8 @@ describe("cobertura de 70 administraciones con responsabilidades separadas", () 
     const all = getCoverage();
     expect(all[0].reviewed).toBe(46);
     for (const item of all.slice(1)) {
-      expect(item.reviewed).toBe(item.id === "m-28079" ? 4 : item.id === "r-15" ? 3 : item.id === "r-16" ? 2 : 0);
-      expect(item.inventoryTotal).toBe(item.id === "m-28079" ? 300 : item.id === "r-15" ? 347 : item.id === "r-16" ? 154 : null);
+      expect(item.reviewed).toBe(item.id === "m-28079" ? 4 : item.id === "r-15" ? 3 : ["r-16", "r-09"].includes(item.id) ? 2 : 0);
+      expect(item.inventoryTotal).toBe(item.id === "m-28079" ? 300 : item.id === "r-15" ? 347 : item.id === "r-16" ? 154 : item.id === "r-09" ? 260 : null);
       expect(isCoverageComplete(item)).toBe(false);
     }
     expect(all.filter(isCoverageComplete)).toHaveLength(0);

@@ -1,0 +1,2618 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "r-09",
+  "mandateId": "r-09-2024",
+  "mandateLabel": "Cataluña · XV legislatura · plan 2024–2027",
+  "sourceId": "catalunya-programme-2024",
+  "mandateSourceId": "catalunya-programme-2024",
+  "sourceLabel": "Pla de Govern",
+  "sourceSha256": "4e6f0cc8f7333930aed4cf0ee277e54882ad2981cb91b0d293542e3fa78c70fb",
+  "registerSourceId": "catalunya-programme-register",
+  "importedAt": "2026-10-11",
+  "inventoryTotal": 260,
+  "textLanguage": "ca",
+  "scope": "Las 260 medidas prioritarias del Pla de Govern de la XV legislatura, agrupadas en 35 objetivos y cinco prioridades. El periodo 2024–2027 corresponde al plan, no a una fecha electoral. Algunas medidas fijan horizontes posteriores, que se conservan en su texto.",
+  "textNote": "Se conserva el texto original en catalán, normalizando espacios y guiones de final de línea. Los temas breves son etiquetas editoriales en español para facilitar la búsqueda. El inventario no incluye como medidas nuevas los 35 objetivos ni las 30 actuaciones destacadas, que son una selección del mismo plan. Importar una medida no acredita su ejecución.",
+  "records": [
+    {
+      "id": "r-09-1.1.1",
+      "officialId": "1.1.1",
+      "text": "Elaborar i desplegar un pla estratègic per liderar l’atracció de projectes i inversions que completin les mancances de la cadena de valor de l’economia catalana dels sectors prioritaris (digital, industrial i salut) i garantir més creixement econòmic.",
+      "rawText": "Elaborar i desplegar un pla estratègic per liderar l’atracció de projectes i\ninversions que completin les mancances de la cadena de valor de l’economia\ncatalana dels sectors prioritaris (digital, industrial i salut) i garantir més creixement\neconòmic.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 53,
+      "endPage": 53,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.2",
+      "officialId": "1.1.2",
+      "text": "Establir la figura de \"projectes estratègics\", d'acord amb la Llei 18/2020 de facilitació de l'activitat econòmica, per reconèixer els projectes d'inversió més rellevants pel seu impacte positiu i singular en l'economia catalana.",
+      "rawText": "Establir la figura de \"projectes estratègics\", d'acord amb la Llei 18/2020 de\nfacilitació de l'activitat econòmica, per reconèixer els projectes d'inversió més\nrellevants pel seu impacte positiu i singular en l'economia catalana.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 53,
+      "endPage": 53,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.3",
+      "officialId": "1.1.3",
+      "text": "Elaborar un pla per reduir les càrregues administratives de les empreses i facilitar l’activitat econòmica, incloent-hi la reducció de terminis i la finestreta única empresarial.",
+      "rawText": "Elaborar un pla per reduir les càrregues administratives de les empreses i\nfacilitar l’activitat econòmica, incloent-hi la reducció de terminis i la finestreta\núnica empresarial.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 53,
+      "endPage": 53,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.4",
+      "officialId": "1.1.4",
+      "text": "Elaborar i desplegar un pla estratègic i d'impuls del treball autònom, junt amb els agents socials i econòmics, per estimular l'emprenedoria, les iniciatives empresarials i l’autoocupació i donar-hi suport.",
+      "rawText": "Elaborar i desplegar un pla estratègic i d'impuls del treball autònom, junt\namb els agents socials i econòmics, per estimular l'emprenedoria, les iniciatives\nempresarials i l’autoocupació i donar-hi suport.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 53,
+      "endPage": 53,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.5",
+      "officialId": "1.1.5",
+      "text": "Consolidar l’Institut Català de Finances com a banca pública que finança el teixit econòmic, en especial les petites i mitjanes empreses, racionalitzant i agilitzant les ajudes existents i potenciant nous instruments per canalitzar les inversions cap a l’economia productiva.",
+      "rawText": "Consolidar l’Institut Català de Finances com a banca pública que finança el\nteixit econòmic, en especial les petites i mitjanes empreses, racionalitzant i\nagilitzant les ajudes existents i potenciant nous instruments per canalitzar les\ninversions cap a l’economia productiva.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 53,
+      "endPage": 53,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.6",
+      "officialId": "1.1.6",
+      "text": "Reforçar l’Autoritat Catalana de la Competència, pel que fa a seva funció de vigilància i promoció per garantir l’eficiència de l’economia i el control del poder de mercat.",
+      "rawText": "Reforçar l’Autoritat Catalana de la Competència, pel que fa a seva funció de\nvigilància i promoció per garantir l’eficiència de l’economia i el control del poder\nde mercat.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 53,
+      "endPage": 53,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.7",
+      "officialId": "1.1.7",
+      "text": "Impulsar un pacte per a un nou model turístic, per tal de millorar les condicions laborals amb una nova fiscalitat que augmenti el benestar del territori i dels seus habitants i estableixi les mesures pertinents per no superar la capacitat de càrrega tenint en compte la sostenibilitat econòmica, social i mediambiental.",
+      "rawText": "Impulsar un pacte per a un nou model turístic, per tal de millorar les\ncondicions laborals amb una nova fiscalitat que augmenti el benestar del territori i\ndels seus habitants i estableixi les mesures pertinents per no superar la capacitat\nde càrrega tenint en compte la sostenibilitat econòmica, social i mediambiental.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.8",
+      "officialId": "1.1.8",
+      "text": "Actualitzar la Llei de comerç per garantir la seguretat jurídica i impulsar la millora de la competitivitat del sector a través de la transformació digital i la sostenibilitat.",
+      "rawText": "Actualitzar la Llei de comerç per garantir la seguretat jurídica i impulsar la\nmillora de la competitivitat del sector a través de la transformació digital i la\nsostenibilitat.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.9",
+      "officialId": "1.1.9",
+      "text": "Aprofundir en la transformació del Servei d’Ocupació de Catalunya per fer un veritable servei d’intermediació laboral, oferir itineraris personalitzats i desplegar un pla integral de lluita contra l’atur de llarga durada.",
+      "rawText": "Aprofundir en la transformació del Servei d’Ocupació de Catalunya per fer\nun veritable servei d’intermediació laboral, oferir itineraris personalitzats i\ndesplegar un pla integral de lluita contra l’atur de llarga durada.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.10",
+      "officialId": "1.1.10",
+      "text": "Impulsar el diàleg i la concertació social per garantir unes relacions laborals de qualitat i un creixement econòmic sostenible.",
+      "rawText": "Impulsar el diàleg i la concertació social per garantir unes relacions\nlaborals de qualitat i un creixement econòmic sostenible.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.11",
+      "officialId": "1.1.11",
+      "text": "Potenciar la formació i l’orientació a les persones ocupades d’acord amb les necessitats de les empreses.",
+      "rawText": "Potenciar la formació i l’orientació a les persones ocupades d’acord amb\nles necessitats de les empreses.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.12",
+      "officialId": "1.1.12",
+      "text": "Reforçar la inspecció de treball per exercir la vigilància i el compliment de la normativa laboral quant a la igualtat i no-discriminació, el treball no declarat, la contractació en frau de llei i el temps de treball, a fi de millorar les condicions laborals i la qualitat de l'ocupació, especialment dels col·lectius més vulnerables, així com la competitivitat lleial entre empreses.",
+      "rawText": "Reforçar la inspecció de treball per exercir la vigilància i el compliment de\nla normativa laboral quant a la igualtat i no-discriminació, el treball no declarat, la\ncontractació en frau de llei i el temps de treball, a fi de millorar les condicions\nlaborals i la qualitat de l'ocupació, especialment dels col·lectius més vulnerables,\naixí com la competitivitat lleial entre empreses.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.13",
+      "officialId": "1.1.13",
+      "text": "Impulsar l’aprovació de la Llei d’economia social i solidària per modernitzar el sector i fer-lo més competitiu, sostenible i arrelat al territori.",
+      "rawText": "Impulsar l’aprovació de la Llei d’economia social i solidària per\nmodernitzar el sector i fer-lo més competitiu, sostenible i arrelat al territori.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.14",
+      "officialId": "1.1.14",
+      "text": "Impulsar l'economia catalana a través d’aliances estratègiques globals i establir acords de col·laboració amb els principals actors internacionals en sectors clau per a l’economia catalana, com la innovació, l’energia verda i la digitalització i reforçar la reputació internacional de Catalunya com a destinació segura d’inversions productives, tot enfortint el paper d’ACCIÓ per acompanyar les empreses catalanes.",
+      "rawText": "Impulsar l'economia catalana a través d’aliances estratègiques globals i\nestablir acords de col·laboració amb els principals actors internacionals en\nsectors clau per a l’economia catalana, com la innovació, l’energia verda i la\ndigitalització i reforçar la reputació internacional de Catalunya com a destinació\nsegura d’inversions productives, tot enfortint el paper d’ACCIÓ per acompanyar\nles empreses catalanes.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.15",
+      "officialId": "1.1.15",
+      "text": "Impulsar programes i serveis de suport a la competitivitat de les empreses a través del foment de la seva internacionalització i de l’impuls de la R+D+I empresarial.",
+      "rawText": "Impulsar programes i serveis de suport a la competitivitat de les empreses\na través del foment de la seva internacionalització i de l’impuls de la R+D+I\nempresarial.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.1.16",
+      "officialId": "1.1.16",
+      "text": "Continuar ampliant els projectes de transformació firal a Catalunya per consolidar-nos com a seu dels grans esdeveniments de negocis a Europa.",
+      "rawText": "Continuar ampliant els projectes de transformació firal a Catalunya per\nconsolidar-nos com a seu dels grans esdeveniments de negocis a Europa.",
+      "topic": "Economía y empleo · objetivo 1.1",
+      "page": 54,
+      "endPage": 54,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.1",
+      "officialId": "1.2.1",
+      "text": "Acordar un nou Pacte Nacional per a la Indústria 2026-2030 que permeti augmentar la productivitat, accelerar una reindustrialització sostenible i resilient, generar ocupació de qualitat i avançar cap a l’autonomia estratègica, industrial i tecnològica.",
+      "rawText": "Acordar un nou Pacte Nacional per a la Indústria 2026-2030 que\npermeti augmentar la productivitat, accelerar una reindustrialització sostenible i\nresilient, generar ocupació de qualitat i avançar cap a l’autonomia estratègica,\nindustrial i tecnològica.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 55,
+      "endPage": 55,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.2",
+      "officialId": "1.2.2",
+      "text": "Augmentar la captació de fons europeus dirigits a indústria, principalment NGEU-MRR (Next Generation - Mecanisme de Recuperació i Resiliència), per donar suport a les inversions previstes en el sector industrial de Catalunya i en la renovació i transformació de les cadenes de valor.",
+      "rawText": "Augmentar la captació de fons europeus dirigits a indústria, principalment\nNGEU-MRR (Next Generation - Mecanisme de Recuperació i Resiliència), per\ndonar suport a les inversions previstes en el sector industrial de Catalunya i en la\nrenovació i transformació de les cadenes de valor.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 55,
+      "endPage": 55,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.3",
+      "officialId": "1.2.3",
+      "text": "Mobilitzar els instruments per facilitar l’accés al finançament i el suport públic a les empreses emergents industrials, com a vectors clau per a la reindustrialització.",
+      "rawText": "Mobilitzar els instruments per facilitar l’accés al finançament i el suport\npúblic a les empreses emergents industrials, com a vectors clau per a la\nreindustrialització.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 55,
+      "endPage": 55,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.4",
+      "officialId": "1.2.4",
+      "text": "Oferir serveis i convocatòries d’ajuts al teixit empresarial per a la reindustrialització, modernització i captació de noves inversions industrials estratègiques.",
+      "rawText": "Oferir serveis i convocatòries d’ajuts al teixit empresarial per a la\nreindustrialització, modernització i captació de noves inversions industrials\nestratègiques.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 55,
+      "endPage": 55,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.5",
+      "officialId": "1.2.5",
+      "text": "Impulsar el programa Pime transversal i elaborar el Pla de foment i impuls de tecnologies digitals avançades basat en la formació i capacitació digital per a pimes, l’accés a recursos i eines digitals i el suport a la transformació digital.",
+      "rawText": "Impulsar el programa Pime transversal i elaborar el Pla de foment i impuls\nde tecnologies digitals avançades basat en la formació i capacitació digital per a\npimes, l’accés a recursos i eines digitals i el suport a la transformació digital.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 55,
+      "endPage": 55,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.6",
+      "officialId": "1.2.6",
+      "text": "Continuar amb el desplegament de l’aliança de semiconductors i assegurar la part del finançament a través del PERTE xip per avançar en la construcció de la planta de preproducció de xips.",
+      "rawText": "Continuar amb el desplegament de l’aliança de semiconductors i assegurar\nla part del finançament a través del PERTE xip per avançar en la construcció de la\nplanta de preproducció de xips.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 55,
+      "endPage": 55,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.7",
+      "officialId": "1.2.7",
+      "text": "Establir acceleradores i espais d’innovació al territori que permetin impulsar la competitivitat de les empreses i la indústria digital i convertir Catalunya en un hub de tecnologia digital avançada.",
+      "rawText": "Establir acceleradores i espais d’innovació al territori que permetin impulsar\nla competitivitat de les empreses i la indústria digital i convertir Catalunya en un\nhub de tecnologia digital avançada.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 56,
+      "endPage": 56,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.8",
+      "officialId": "1.2.8",
+      "text": "Promoure el projecte del Centre d'Innovació del Vehicle Autònom i Connectat al Penedès.",
+      "rawText": "Promoure el projecte del Centre d'Innovació del Vehicle Autònom i\nConnectat al Penedès.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 56,
+      "endPage": 56,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.2.9",
+      "officialId": "1.2.9",
+      "text": "Potenciar els esports com a motor econòmic i turístic innovador i sostenible, així com la indústria del sector esportiu.",
+      "rawText": "Potenciar els esports com a motor econòmic i turístic innovador i\nsostenible, així com la indústria del sector esportiu.",
+      "topic": "Industria · objetivo 1.2",
+      "page": 56,
+      "endPage": 56,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.3.1",
+      "officialId": "1.3.1",
+      "text": "Continuar desplegant la Llei 9/2022 de la ciència mitjançant quatre plans i estratègies (el Pla estratègic d’innovació i transferència del coneixement, el Pla estratègic universitari en recerca d'excel·lència, l’Estratègia de ciència oberta i l’Estratègia d’igualtat de gènere a la ciència) a través dels òrgans que estableix la Llei (la Comissió Interdepartamental de Recerca i Innovació; el Consell per a la Recerca i la Innovació de Catalunya i el Comitè per a la Integritat de la Recerca a Catalunya).",
+      "rawText": "Continuar desplegant la Llei 9/2022 de la ciència mitjançant quatre plans i\nestratègies (el Pla estratègic d’innovació i transferència del coneixement, el Pla\nestratègic universitari en recerca d'excel·lència, l’Estratègia de ciència oberta i\nl’Estratègia d’igualtat de gènere a la ciència) a través dels òrgans que estableix la\nLlei (la Comissió Interdepartamental de Recerca i Innovació; el Consell per a la\nRecerca i la Innovació de Catalunya i el Comitè per a la Integritat de la Recerca a\nCatalunya).",
+      "topic": "Investigación · objetivo 1.3",
+      "page": 57,
+      "endPage": 57,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.3.2",
+      "officialId": "1.3.2",
+      "text": "Impulsar projectes estratègics en R+D+I per al desenvolupament de les grans estructures científiques, generar nous models de col·laboració publicoprivada com la Vall de la Quàntica, el Centre de Recerca en Descarbonització, el centre One-Health, el Centre de teràpies avançades i emergents de Catalunya, Innofab, el projecte DARE, el projecte PIXEurope i les factories d’intel·ligència artificial, així com el desenvolupament i enfortiment d’aquelles infraestructures cientificotècniques singulars clau per al sistema i compartides amb l’Administració General de l’Estat: Barcelona Supercomputing Center; Sincrotró Alba, el Centre Nacional d’Anàlisi Genòmica i l’Institut de Ciències Fotòniques.",
+      "rawText": "Impulsar projectes estratègics en R+D+I per al desenvolupament\nde les grans estructures científiques, generar nous models de\ncol·laboració publicoprivada com la Vall de la Quàntica, el Centre de\nRecerca en Descarbonització, el centre One-Health, el Centre de teràpies\navançades i emergents de Catalunya, Innofab, el projecte DARE, el projecte\nPIXEurope i les factories d’intel·ligència artificial, així com el desenvolupament\ni enfortiment d’aquelles infraestructures cientificotècniques singulars\nclau per al sistema i compartides amb l’Administració General de l’Estat:\nBarcelona Supercomputing Center; Sincrotró Alba, el Centre Nacional d’Anàlisi\nGenòmica i l’Institut de Ciències Fotòniques.",
+      "topic": "Investigación · objetivo 1.3",
+      "page": 57,
+      "endPage": 57,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.3.3",
+      "officialId": "1.3.3",
+      "text": "Consolidar el nivell de participació del sistema català de recerca en l'àmbit internacional i fomentar consorcis i iniciatives en transferència del coneixement, a través dels agents del territori, en el marc de la línia d’ajuts Crida a Regions del Coneixement de la UE fins al 2029.",
+      "rawText": "Consolidar el nivell de participació del sistema català de recerca en l'àmbit\ninternacional i fomentar consorcis i iniciatives en transferència del coneixement, a\ntravés dels agents del territori, en el marc de la línia d’ajuts Crida a Regions del\nConeixement de la UE fins al 2029.",
+      "topic": "Investigación · objetivo 1.3",
+      "page": 57,
+      "endPage": 57,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.3.4",
+      "officialId": "1.3.4",
+      "text": "Crear el primer data lake (repositori de dades) de recerca en obert per a projectes singulars.",
+      "rawText": "Crear el primer data lake (repositori de dades) de recerca en obert per a\nprojectes singulars.",
+      "topic": "Investigación · objetivo 1.3",
+      "page": 57,
+      "endPage": 57,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.3.5",
+      "officialId": "1.3.5",
+      "text": "Potenciar l’excel·lència clínica i la generació de coneixement i aprofitar les sinergies entre les diferents institucions dedicades a la recerca i innovació biomèdica a Catalunya executant el Pla de recerca i innovació en salut vigent fins a l’any 2027.",
+      "rawText": "Potenciar l’excel·lència clínica i la generació de coneixement i aprofitar les\nsinergies entre les diferents institucions dedicades a la recerca i innovació\nbiomèdica a Catalunya executant el Pla de recerca i innovació en salut vigent fins\na l’any 2027.",
+      "topic": "Investigación · objetivo 1.3",
+      "page": 58,
+      "endPage": 58,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.3.6",
+      "officialId": "1.3.6",
+      "text": "Redissenyar l’estratègia d’internacionalització i posicionament de Catalunya en esdeveniments líders en tecnologies digitals avançades (intel·ligència artificial, big data, nova economia de l’espai, quàntica, microelectrònica/semiconductors, fotònica, 5G i blockchain).",
+      "rawText": "Redissenyar l’estratègia d’internacionalització i posicionament de Catalunya\nen esdeveniments líders en tecnologies digitals avançades (intel·ligència artificial,\nbig data, nova economia de l’espai, quàntica, microelectrònica/semiconductors,\nfotònica, 5G i blockchain).",
+      "topic": "Investigación · objetivo 1.3",
+      "page": 58,
+      "endPage": 58,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.4.1",
+      "officialId": "1.4.1",
+      "text": "Elaborar l’Estratègia d’internacionalització i de qualitat del sistema universitari i de recerca.",
+      "rawText": "Elaborar l’Estratègia d’internacionalització i de qualitat del sistema\nuniversitari i de recerca.",
+      "topic": "Universidades · objetivo 1.4",
+      "page": 59,
+      "endPage": 59,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.4.2",
+      "officialId": "1.4.2",
+      "text": "Enfortir l'equitat en l'accés a l'educació superior: igualar tots els preus dels graus i màsters habilitants al nivell més baix, reduir un 30 % el preu dels màsters no habilitants i promoure un marc propi de política de beques i ajuts.",
+      "rawText": "Enfortir l'equitat en l'accés a l'educació superior: igualar tots els preus dels\ngraus i màsters habilitants al nivell més baix, reduir un 30 % el preu dels màsters\nno habilitants i promoure un marc propi de política de beques i ajuts.",
+      "topic": "Universidades · objetivo 1.4",
+      "page": 59,
+      "endPage": 59,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.4.3",
+      "officialId": "1.4.3",
+      "text": "Incrementar les places de personal docent i investigador així com les de personal tècnic, de gestió i d’administració i serveis, reduir la precarietat docent, renovar el Pla Serra Húnter (2024-27) i crear el Pla Serra Húnter sènior, així com finançar el quart any dels contractes predoctorals.",
+      "rawText": "Incrementar les places de personal docent i investigador així com les de\npersonal tècnic, de gestió i d’administració i serveis, reduir la precarietat docent,\nrenovar el Pla Serra Húnter (2024-27) i crear el Pla Serra Húnter sènior, així com\nfinançar el quart any dels contractes predoctorals.",
+      "topic": "Universidades · objetivo 1.4",
+      "page": 59,
+      "endPage": 59,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.4.4",
+      "officialId": "1.4.4",
+      "text": "Adoptar un nou model de finançament pluriennal per a les universitats amb retiment de comptes i incrementar la dotació del Pla d’inversions universitàries (PIU).",
+      "rawText": "Adoptar un nou model de finançament pluriennal per a les universitats amb\nretiment de comptes i incrementar la dotació del Pla d’inversions universitàries\n(PIU).",
+      "topic": "Universidades · objetivo 1.4",
+      "page": 59,
+      "endPage": 59,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.4.5",
+      "officialId": "1.4.5",
+      "text": "Desplegar el Pla d’inclusió i diversitat de les universitats catalanes (PIDUC).",
+      "rawText": "Desplegar el Pla d’inclusió i diversitat de les universitats catalanes (PIDUC).",
+      "topic": "Universidades · objetivo 1.4",
+      "page": 59,
+      "endPage": 59,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.5.1",
+      "officialId": "1.5.1",
+      "text": "Incrementar l’oferta pública de formació professional, de grau mitjà i de grau superior i dels cursos d’especialització, d’acord amb les necessitats del teixit econòmic, dels territoris i de la transició digital, social i verda.",
+      "rawText": "Incrementar l’oferta pública de formació professional, de grau mitjà i de\ngrau superior i dels cursos d’especialització, d’acord amb les necessitats del teixit\neconòmic, dels territoris i de la transició digital, social i verda.",
+      "topic": "Formación profesional · objetivo 1.5",
+      "page": 60,
+      "endPage": 60,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.5.2",
+      "officialId": "1.5.2",
+      "text": "Digitalitzar el sistema d'inscripció de la formació professional per finalitzar el procés abans de l’inici de curs i facilitar l’assignació de places, i augmentar el nombre d'espais disponibles en col·laboració amb les administracions públiques.",
+      "rawText": "Digitalitzar el sistema d'inscripció de la formació professional per finalitzar el\nprocés abans de l’inici de curs i facilitar l’assignació de places, i augmentar el\nnombre d'espais disponibles en col·laboració amb les administracions públiques.",
+      "topic": "Formación profesional · objetivo 1.5",
+      "page": 60,
+      "endPage": 60,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.5.3",
+      "officialId": "1.5.3",
+      "text": "Ordenar i redimensionar el mapa de la formació professional augmentant els perfils qualificats més demandats pel teixit productiu i pels sectors tradicionals de difícil relleu i cobertura, tenint en compte les necessitats de les zones rurals.",
+      "rawText": "Ordenar i redimensionar el mapa de la formació professional augmentant\nels perfils qualificats més demandats pel teixit productiu i pels sectors tradicionals\nde difícil relleu i cobertura, tenint en compte les necessitats de les zones rurals.",
+      "topic": "Formación profesional · objetivo 1.5",
+      "page": 60,
+      "endPage": 60,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.5.4",
+      "officialId": "1.5.4",
+      "text": "Impulsar l’acreditació de competències per l’experiència laboral i la integració de la formació professional en un sistema únic, modular i flexible i desplegar la xarxa de centres integrats de formació professional.",
+      "rawText": "Impulsar l’acreditació de competències per l’experiència laboral i la\nintegració de la formació professional en un sistema únic, modular i flexible i\ndesplegar la xarxa de centres integrats de formació professional.",
+      "topic": "Formación profesional · objetivo 1.5",
+      "page": 60,
+      "endPage": 60,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.5.5",
+      "officialId": "1.5.5",
+      "text": "Elaborar i executar el Pla estratègic de formació professional dual amb tots els agents implicats i desplegar-lo en la formació per a l’ocupació per incrementar el grau d’inserció i d’estabilitat laboral.",
+      "rawText": "Elaborar i executar el Pla estratègic de formació professional dual amb tots\nels agents implicats i desplegar-lo en la formació per a l’ocupació per incrementar\nel grau d’inserció i d’estabilitat laboral.",
+      "topic": "Formación profesional · objetivo 1.5",
+      "page": 60,
+      "endPage": 60,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.5.6",
+      "officialId": "1.5.6",
+      "text": "Impulsar la formació al llarg de la vida, especialment la formació programada i optimitzar el crèdit disponible per a les empreses per augmentar la participació dels treballadors en la formació contínua.",
+      "rawText": "Impulsar la formació al llarg de la vida, especialment la formació\nprogramada i optimitzar el crèdit disponible per a les empreses per augmentar la\nparticipació dels treballadors en la formació contínua.",
+      "topic": "Formación profesional · objetivo 1.5",
+      "page": 60,
+      "endPage": 60,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.5.7",
+      "officialId": "1.5.7",
+      "text": "Promoure mesures per facilitar la conciliació entre treball i formació reforçant la formació semipresencial o no presencial i desplegar les potencialitats de l’Institut Obert de Catalunya i del Consorci de Formació Contínua de Catalunya.",
+      "rawText": "Promoure mesures per facilitar la conciliació entre treball i formació\nreforçant la formació semipresencial o no presencial i desplegar les potencialitats\nde l’Institut Obert de Catalunya i del Consorci de Formació Contínua de\nCatalunya.",
+      "topic": "Formación profesional · objetivo 1.5",
+      "page": 60,
+      "endPage": 60,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.6.1",
+      "officialId": "1.6.1",
+      "text": "Desplegar la Llei 11/2022 de millorament urbà, ambiental i social dels barris i les viles mitjançant el Pla de barris per tal de desenvolupar la regeneració urbana, la sostenibilitat, la promoció d’oportunitats i la rehabilitació del parc d’habitatges per beneficiar fins a noranta barris de Catalunya.",
+      "rawText": "Desplegar la Llei 11/2022 de millorament urbà, ambiental i\nsocial dels barris i les viles mitjançant el Pla de barris per tal de\ndesenvolupar la regeneració urbana, la sostenibilitat, la promoció\nd’oportunitats i la rehabilitació del parc d’habitatges per beneficiar fins a\nnoranta barris de Catalunya.",
+      "topic": "Barrios y regeneración urbana · objetivo 1.6",
+      "page": 61,
+      "endPage": 61,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.6.2",
+      "officialId": "1.6.2",
+      "text": "Desplegar el projecte “Barris amb futur” a quinze barris de Catalunya amb l’objectiu d’analitzar les estratègies de regeneració social associades al futur Pla de barris.",
+      "rawText": "Desplegar el projecte “Barris amb futur” a quinze barris de Catalunya amb\nl’objectiu d’analitzar les estratègies de regeneració social associades al futur Pla\nde barris.",
+      "topic": "Barrios y regeneración urbana · objetivo 1.6",
+      "page": 61,
+      "endPage": 61,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.6.3",
+      "officialId": "1.6.3",
+      "text": "Adoptar el Projecte de policia comunitària i de prevenció per oferir a la ciutadania un servei de policia com a referent per tractar i resoldre conflictes comunitaris.",
+      "rawText": "Adoptar el Projecte de policia comunitària i de prevenció per oferir a la ciutadania\nun servei de policia com a referent per tractar i resoldre conflictes comunitaris.",
+      "topic": "Barrios y regeneración urbana · objetivo 1.6",
+      "page": 61,
+      "endPage": 61,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.6.4",
+      "officialId": "1.6.4",
+      "text": "Desenvolupar el Pla estratègic de modernització d’equipaments escolars per eliminar els barracons de forma progressiva, reformar o construir centres; en total es preveuen 3.282 actuacions, de les quals 120 són noves construccions o grans inversions. Per altra banda, endegar el Pla de confort climàtic en col·laboració amb el món local, que oferirà millores a 2.530 centres a tot Catalunya.",
+      "rawText": "\nDesenvolupar el Pla estratègic de modernització d’equipaments\nescolars per eliminar els barracons de forma progressiva, reformar o construir\ncentres; en total es preveuen 3.282 actuacions, de les quals 120 són noves\nconstruccions o grans inversions. Per altra banda, endegar el Pla de\nconfort climàtic en col·laboració amb el món local, que oferirà millores a\n2.530 centres a tot Catalunya.",
+      "topic": "Barrios y regeneración urbana · objetivo 1.6",
+      "page": 61,
+      "endPage": 61,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.6.5",
+      "officialId": "1.6.5",
+      "text": "Consolidar i estendre els plans educatius d’entorn com a eina d’educació a temps complet en col·laboració amb el món local i en el marc de les noves zones educatives, implantant la vehicularitat de la llengua catalana en l’àmbit de les activitats extraescolars i de l’esport de base i el lleure.",
+      "rawText": "Consolidar i estendre els plans educatius d’entorn com a eina d’educació a\ntemps complet en col·laboració amb el món local i en el marc de les noves zones\neducatives, implantant la vehicularitat de la llengua catalana en l’àmbit de les\nactivitats extraescolars i de l’esport de base i el lleure.",
+      "topic": "Barrios y regeneración urbana · objetivo 1.6",
+      "page": 61,
+      "endPage": 61,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.6.6",
+      "officialId": "1.6.6",
+      "text": "Impulsar intervencions comunitàries intersectorials adaptades a grups vulnerables per a la promoció de la salut, la prevenció primària i el diagnòstic precoç dels trastorns de salut més prevalents en aquesta població.",
+      "rawText": "Impulsar intervencions comunitàries intersectorials adaptades a grups\nvulnerables per a la promoció de la salut, la prevenció primària i el diagnòstic\nprecoç dels trastorns de salut més prevalents en aquesta població.",
+      "topic": "Barrios y regeneración urbana · objetivo 1.6",
+      "page": 61,
+      "endPage": 61,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.1",
+      "officialId": "1.7.1",
+      "text": "Generar 50.000 habitatges protegits de lloguer per a l’horitzó 2030 i mobilitzar sòl residencial per construir habitatge protegit, agilitzant les tramitacions urbanístiques i la inversió pública i privada.",
+      "rawText": "Generar 50.000 habitatges protegits de lloguer per a l’horitzó\n2030 i mobilitzar sòl residencial per construir habitatge protegit, agilitzant les\ntramitacions urbanístiques i la inversió pública i privada.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 62,
+      "endPage": 62,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.2",
+      "officialId": "1.7.2",
+      "text": "Posar a disposició de la Reserva Pública de Solars tots els sòls disponibles del patrimoni de la Generalitat de Catalunya per contribuir a la promoció i construcció d’habitatges de protecció oficial.",
+      "rawText": "Posar a disposició de la Reserva Pública de Solars tots els sòls disponibles\ndel patrimoni de la Generalitat de Catalunya per contribuir a la promoció i\nconstrucció d’habitatges de protecció oficial.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 62,
+      "endPage": 62,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.3",
+      "officialId": "1.7.3",
+      "text": "Ampliar el parc d’habitatge protegit de lloguer mitjançant el finançament de l’Institut Català de Finances.",
+      "rawText": "Ampliar el parc d’habitatge protegit de lloguer mitjançant el finançament de\nl’Institut Català de Finances.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 62,
+      "endPage": 62,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.4",
+      "officialId": "1.7.4",
+      "text": "Ampliar el parc públic de lloguer amb 5.000 habitatges mitjançant la compra per tanteig i retracte en els propers quatre anys.",
+      "rawText": "Ampliar el parc públic de lloguer amb 5.000 habitatges mitjançant la\ncompra per tanteig i retracte en els propers quatre anys.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 62,
+      "endPage": 62,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.5",
+      "officialId": "1.7.5",
+      "text": "Concertar amb els municipis de demanda residencial forta i acreditada, les estratègies per disposar d’un parc d’habitatge assequible del 15 % respecte del total dels habitatges principals, en el termini de vint anys.",
+      "rawText": "Concertar amb els municipis de demanda residencial forta i acreditada, les\nestratègies per disposar d’un parc d’habitatge assequible del 15 % respecte del\ntotal dels habitatges principals, en el termini de vint anys.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 62,
+      "endPage": 62,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.6",
+      "officialId": "1.7.6",
+      "text": "Donar suport als joves amb el “Fons Públic d’Emancipació\", que avança el pagament de l'entrada de la hipoteca, per facilitar l’adquisició de l’habitatge. L’entrada es pagarà al final del pagament concedit i a terminis, mentre que, a més, es convocaran ajuts per a la bonificació dels interessos generats en la compra d’aquest tipus d’habitatges.",
+      "rawText": "Donar suport als joves amb el “Fons Públic d’Emancipació\", que avança el\npagament de l'entrada de la hipoteca, per facilitar l’adquisició de l’habitatge.\nL’entrada es pagarà al final del pagament concedit i a terminis, mentre que, a\nmés, es convocaran ajuts per a la bonificació dels interessos generats en la\ncompra d’aquest tipus d’habitatges.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 62,
+      "endPage": 62,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.7",
+      "officialId": "1.7.7",
+      "text": "Desplegar la Llei 12/2023, pel dret a l’habitatge i en especial l'índex de referència dels preus dels lloguers.",
+      "rawText": "Desplegar la Llei 12/2023, pel dret a l’habitatge i en especial l'índex de\nreferència dels preus dels lloguers.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 63,
+      "endPage": 63,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.8",
+      "officialId": "1.7.8",
+      "text": "Mantenir el Decret Llei 3/2023, de mesures urgents sobre el règim urbanístic dels HUT.",
+      "rawText": "Mantenir el Decret Llei 3/2023, de mesures urgents sobre el règim\nurbanístic dels HUT.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 63,
+      "endPage": 63,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.9",
+      "officialId": "1.7.9",
+      "text": "Impulsar l’aprovació de la Llei catalana d’arrendaments urbans i la regulació dels contractes de lloguer, lloguer de temporada, habitacions i habitatges d’ús turístic.",
+      "rawText": "Impulsar l’aprovació de la Llei catalana d’arrendaments urbans i la regulació\ndels contractes de lloguer, lloguer de temporada, habitacions i habitatges d’ús\nturístic.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 63,
+      "endPage": 63,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.10",
+      "officialId": "1.7.10",
+      "text": "Crear un programa de rehabilitació d’habitatges per incrementar el parc de lloguer assequible i social en set anys i per millorar les condicions de vida de les persones.",
+      "rawText": "Crear un programa de rehabilitació d’habitatges per incrementar el parc\nde lloguer assequible i social en set anys i per millorar les condicions de vida de\nles persones.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 63,
+      "endPage": 63,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.7.11",
+      "officialId": "1.7.11",
+      "text": "Desplegar l’Estratègia integral per a l’abordatge del sensellarisme a Catalunya.",
+      "rawText": "Desplegar l’Estratègia integral per a l’abordatge del sensellarisme a\nCatalunya.",
+      "topic": "Vivienda · objetivo 1.7",
+      "page": 63,
+      "endPage": 63,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.8.1",
+      "officialId": "1.8.1",
+      "text": "Impulsar el programa Catalunya Media City a les Tres Xemeneies del Besòs i també el Parc Audiovisual de Catalunya a Terrassa, perquè siguin un hub d’innovació i producció audiovisual, digital i del videojoc líder al sud d’Europa, així com convertir la Foneria en un nou centre de cultura digital.",
+      "rawText": "Impulsar el programa Catalunya Media City a les Tres Xemeneies del\nBesòs i també el Parc Audiovisual de Catalunya a Terrassa, perquè siguin un\nhub d’innovació i producció audiovisual, digital i del videojoc líder al\nsud d’Europa, així com convertir la Foneria en un nou centre de cultura\ndigital.",
+      "topic": "Industrias culturales · objetivo 1.8",
+      "page": 64,
+      "endPage": 64,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.8.2",
+      "officialId": "1.8.2",
+      "text": "Impulsar la creació, els artistes i les empreses culturals i treballar per millorar les condicions laborals i l’estabilitat dels professionals de la cultura en el marc del desplegament de l’Estatut de l’artista a Catalunya.",
+      "rawText": "Impulsar la creació, els artistes i les empreses culturals i treballar per\nmillorar les condicions laborals i l’estabilitat dels professionals de la cultura en el\nmarc del desplegament de l’Estatut de l’artista a Catalunya.",
+      "topic": "Industrias culturales · objetivo 1.8",
+      "page": 64,
+      "endPage": 64,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.8.3",
+      "officialId": "1.8.3",
+      "text": "Potenciar el patrimoni cultural de Catalunya com a eina educativa i d’identitat col·lectiva i com a motor del desenvolupament econòmic i social del territori, i invertir-hi. Per exemple, el programa “Els ulls de la història”, l’ampliació del MNAC i el nou marc normatiu en patrimoni material i immaterial.",
+      "rawText": "Potenciar el patrimoni cultural de Catalunya com a eina educativa i\nd’identitat col·lectiva i com a motor del desenvolupament econòmic i social del\nterritori, i invertir-hi. Per exemple, el programa “Els ulls de la història”, l’ampliació\ndel MNAC i el nou marc normatiu en patrimoni material i immaterial.",
+      "topic": "Industrias culturales · objetivo 1.8",
+      "page": 64,
+      "endPage": 64,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-1.8.4",
+      "officialId": "1.8.4",
+      "text": "Promoure la cultura catalana i acompanyar els creadors i les empreses culturals a l’exterior, per difondre la llengua, la creació i les diverses manifestacions culturals catalanes als països del sud, intensificant la presència de l'Institut Ramon Llull i la seva xarxa en aquests territoris.",
+      "rawText": "Promoure la cultura catalana i acompanyar els creadors i les empreses\nculturals a l’exterior, per difondre la llengua, la creació i les diverses\nmanifestacions culturals catalanes als països del sud, intensificant la presència de\nl'Institut Ramon Llull i la seva xarxa en aquests territoris.",
+      "topic": "Industrias culturales · objetivo 1.8",
+      "page": 64,
+      "endPage": 64,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.1.1",
+      "officialId": "2.1.1",
+      "text": "Implantar 12.000 MW de potència nova, 5.000 MW eòlics i 7.000 MW fotovoltaics, per arribar al 50 % de la generació elèctrica amb renovables el 2030, tal i com marquen els objectius de la UE.",
+      "rawText": "Implantar 12.000 MW de potència nova, 5.000 MW eòlics i 7.000 MW\nfotovoltaics, per arribar al 50 % de la generació elèctrica amb\nrenovables el 2030, tal i com marquen els objectius de la UE.",
+      "topic": "Energía · objetivo 2.1",
+      "page": 67,
+      "endPage": 67,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.1.2",
+      "officialId": "2.1.2",
+      "text": "Potenciar i acompanyar la transició cap a energies renovables i reduir la petjada de carboni en els edificis i equipaments públics de titularitat de la Generalitat de Catalunya i consolidar l’Energètica per aconseguir la neutralitat climàtica de la Generalitat i el seu sector públic el 2030.",
+      "rawText": "Potenciar i acompanyar la transició cap a energies renovables i reduir la\npetjada de carboni en els edificis i equipaments públics de titularitat de la\nGeneralitat de Catalunya i consolidar l’Energètica per aconseguir la neutralitat\nclimàtica de la Generalitat i el seu sector públic el 2030.",
+      "topic": "Energía · objetivo 2.1",
+      "page": 67,
+      "endPage": 67,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.1.3",
+      "officialId": "2.1.3",
+      "text": "Reforçar la xarxa elèctrica i instal·lacions de producció elèctrica renovable.",
+      "rawText": "Reforçar la xarxa elèctrica i instal·lacions de producció elèctrica renovable.",
+      "topic": "Energía · objetivo 2.1",
+      "page": 67,
+      "endPage": 67,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.1.4",
+      "officialId": "2.1.4",
+      "text": "Impulsar tres biopolígons en zones rurals i cinquanta plantes de biogàs.",
+      "rawText": "Impulsar tres biopolígons en zones rurals i cinquanta plantes de biogàs.",
+      "topic": "Energía · objetivo 2.1",
+      "page": 67,
+      "endPage": 67,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.1.5",
+      "officialId": "2.1.5",
+      "text": "Desenvolupar el Pla territorial sectorial per al desenvolupament de les energies renovables a Catalunya (PLATER) com a mapa català de les energies renovables per a l’ordenació territorial, promoció d’energia verda, equilibri territorial, transparència, eficiència i participació.",
+      "rawText": "Desenvolupar el Pla territorial sectorial per al desenvolupament de les\nenergies renovables a Catalunya (PLATER) com a mapa català de les energies\nrenovables per a l’ordenació territorial, promoció d’energia verda, equilibri\nterritorial, transparència, eficiència i participació.",
+      "topic": "Energía · objetivo 2.1",
+      "page": 67,
+      "endPage": 67,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.1",
+      "officialId": "2.2.1",
+      "text": "Impulsar i consensuar un nou acord verd, en el marc de l’estratègia de transició ecològica, que incorpori mesures de suport i promoció de l’economia verda, blava i circular, la rehabilitació energètica d’edificis i la mobilitat elèctrica i sostenible.",
+      "rawText": "Impulsar i consensuar un nou acord verd, en el marc de l’estratègia de\ntransició ecològica, que incorpori mesures de suport i promoció de l’economia\nverda, blava i circular, la rehabilitació energètica d’edificis i la mobilitat elèctrica i\nsostenible.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.2",
+      "officialId": "2.2.2",
+      "text": "Desplegar el Pla d’impuls al vehicle elèctric a Catalunya 2025-2030 per acompanyar la descarbonització de la indústria de l’automòbil.",
+      "rawText": "Desplegar el Pla d’impuls al vehicle elèctric a Catalunya 2025-2030 per\nacompanyar la descarbonització de la indústria de l’automòbil.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.3",
+      "officialId": "2.2.3",
+      "text": "Electrificar la flota de vehicles de la Generalitat de Catalunya i instal·lar punts de recàrrega en els edificis públics.",
+      "rawText": "Electrificar la flota de vehicles de la Generalitat de Catalunya i instal·lar\npunts de recàrrega en els edificis públics.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.4",
+      "officialId": "2.2.4",
+      "text": "Posar en marxa l’Associació de la Vall de l’Hidrogen per al foment de projectes de descarbonització com el de la indústria petroquímica de Tarragona.",
+      "rawText": "Posar en marxa l’Associació de la Vall de l’Hidrogen per al foment de\nprojectes de descarbonització com el de la indústria petroquímica de Tarragona.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.5",
+      "officialId": "2.2.5",
+      "text": "Oferir serveis i ajuts al teixit economicoempresarial i impulsar l’Institut Català de Finances com a palanca de finançament per desenvolupar projectes vinculats a la sostenibilitat, la implantació d’energies verdes i la descarbonització.",
+      "rawText": "Oferir serveis i ajuts al teixit economicoempresarial i impulsar l’Institut\nCatalà de Finances com a palanca de finançament per desenvolupar projectes\nvinculats a la sostenibilitat, la implantació d’energies verdes i la descarbonització.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.6",
+      "officialId": "2.2.6",
+      "text": "Aprovar els pressupostos de carboni de Catalunya per complir els compromisos climàtics i accelerar la descarbonització de l'economia catalana, i elaborar un pla d’estímul, ajudes i mercat d'emissions d'àmbit català per ajudar els sectors productius en la transició verda.",
+      "rawText": "Aprovar els pressupostos de carboni de Catalunya per complir els\ncompromisos climàtics i accelerar la descarbonització de l'economia catalana, i\nelaborar un pla d’estímul, ajudes i mercat d'emissions d'àmbit català per ajudar\nels sectors productius en la transició verda.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.7",
+      "officialId": "2.2.7",
+      "text": "Impulsar l’aprovació d’una llei de residus i fomentar l’economia circular a Catalunya.",
+      "rawText": "Impulsar l’aprovació d’una llei de residus i fomentar l’economia circular a\nCatalunya.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.2.8",
+      "officialId": "2.2.8",
+      "text": "Impulsar l’aprovació de la Llei sobre la qualitat de l’aire a Catalunya per acomplir les noves directrius europees fixades per al 2030.",
+      "rawText": "Impulsar l’aprovació de la Llei sobre la qualitat de l’aire a Catalunya per\nacomplir les noves directrius europees fixades per al 2030.",
+      "topic": "Descarbonización · objetivo 2.2",
+      "page": 68,
+      "endPage": 68,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.3.1",
+      "officialId": "2.3.1",
+      "text": "Constituir l’Agència de la Natura de Catalunya, creada per la Llei 7/2020, i desplegar-ne les funcions per conservar el patrimoni natural i protegir la biodiversitat del medi natural terrestre i marí.",
+      "rawText": "Constituir l’Agència de la Natura de Catalunya, creada per la Llei 7/2020, i\ndesplegar-ne les funcions per conservar el patrimoni natural i protegir la\nbiodiversitat del medi natural terrestre i marí.",
+      "topic": "Biodiversidad · objetivo 2.3",
+      "page": 69,
+      "endPage": 69,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.3.2",
+      "officialId": "2.3.2",
+      "text": "Impulsar l’aprovació de la Llei de biodiversitat de Catalunya, que estableixi una estratègia global de conservació i un ús sostenible de la diversitat biològica.",
+      "rawText": "Impulsar l’aprovació de la Llei de biodiversitat de Catalunya, que estableixi\nuna estratègia global de conservació i un ús sostenible de la diversitat biològica.",
+      "topic": "Biodiversidad · objetivo 2.3",
+      "page": 69,
+      "endPage": 69,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.3.3",
+      "officialId": "2.3.3",
+      "text": "Adoptar una nova estratègia de gestió forestal per incrementar la superfície forestal gestionada centrada en l’adaptació al canvi climàtic, la prevenció d’incendis, la provisió d’aigua blava i el desenvolupament de la bioeconomia.",
+      "rawText": "Adoptar una nova estratègia de gestió forestal per incrementar la superfície\nforestal gestionada centrada en l’adaptació al canvi climàtic, la prevenció\nd’incendis, la provisió d’aigua blava i el desenvolupament de la bioeconomia.",
+      "topic": "Biodiversidad · objetivo 2.3",
+      "page": 69,
+      "endPage": 69,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.3.4",
+      "officialId": "2.3.4",
+      "text": "Impulsar nous parcs naturals de les Muntanyes de Prades, l’Albera, el Garraf, l’Alta Garrotxa i el Montsec.",
+      "rawText": "Impulsar nous parcs naturals de les Muntanyes de Prades, l’Albera, el\nGarraf, l’Alta Garrotxa i el Montsec.",
+      "topic": "Biodiversidad · objetivo 2.3",
+      "page": 69,
+      "endPage": 69,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.3.5",
+      "officialId": "2.3.5",
+      "text": "Acabar els Plans de protecció de les espècies en perill d’extinció.",
+      "rawText": "Acabar els Plans de protecció de les espècies en perill d’extinció.",
+      "topic": "Biodiversidad · objetivo 2.3",
+      "page": 69,
+      "endPage": 69,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.3.6",
+      "officialId": "2.3.6",
+      "text": "Fomentar la biodiversitat animal amb la complementarietat de zones agrícoles en benefici d’ambdues parts.",
+      "rawText": "Fomentar la biodiversitat animal amb la complementarietat de zones\nagrícoles en benefici d’ambdues parts.",
+      "topic": "Biodiversidad · objetivo 2.3",
+      "page": 69,
+      "endPage": 69,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.1",
+      "officialId": "2.4.1",
+      "text": "Accelerar els tràmits per obtenir l’ampliació de la dessalinitzadora de la Tordera, la nova planta del Foix i la nova construcció de la Costa Brava.",
+      "rawText": "Accelerar els tràmits per obtenir l’ampliació de la dessalinitzadora\nde la Tordera, la nova planta del Foix i la nova construcció de la Costa\nBrava.",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 70,
+      "endPage": 70,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.2",
+      "officialId": "2.4.2",
+      "text": "Enllestir les millores de la potabilitzadora de Sant Joan Despí, la potabilitzadora del Llobregat (2028) i la planta de tractament d’aigua potable del Ter que permetran incrementar la garantia del recurs hídric. També es posarà en servei la potabilitzadora de Montcada (2028).",
+      "rawText": "Enllestir les millores de la potabilitzadora de Sant Joan Despí, la\npotabilitzadora del Llobregat (2028) i la planta de tractament d’aigua\npotable del Ter que permetran incrementar la garantia del recurs hídric.\nTambé es posarà en servei la potabilitzadora de Montcada (2028).",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 70,
+      "endPage": 70,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.3",
+      "officialId": "2.4.3",
+      "text": "Finalització de les obres del nou tram de l'aqüeducte d'ATL entre Cardedeu i Trinitat, que donarà solució a les fuites històriques a l'altura de Badalona.",
+      "rawText": "Finalització de les obres del nou tram de l'aqüeducte d'ATL entre Cardedeu\ni Trinitat, que donarà solució a les fuites històriques a l'altura de Badalona.",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 70,
+      "endPage": 70,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.4",
+      "officialId": "2.4.4",
+      "text": "Apostar per la regeneració d’aigües amb la posada en servei de l'Estació de Regeneració d'Aigua de Sant Feliu de Llobregat, la de Mataró i la de Figueres. També es connectaran les aigües residuals del Besòs fins a la depuradora del Llobregat (2028).",
+      "rawText": "Apostar per la regeneració d’aigües amb la posada en servei de l'Estació de\nRegeneració d'Aigua de Sant Feliu de Llobregat, la de Mataró i la de Figueres.\nTambé es connectaran les aigües residuals del Besòs fins a la depuradora del\nLlobregat (2028).",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 70,
+      "endPage": 70,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.5",
+      "officialId": "2.4.5",
+      "text": "Activar els nous pous de Sant Joan Despí i la recuperació de pous en l’àmbit del Ter Llobregat, Baix Camp, Priorat i la Muga.",
+      "rawText": "Activar els nous pous de Sant Joan Despí i la recuperació de pous en\nl’àmbit del Ter Llobregat, Baix Camp, Priorat i la Muga.",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 70,
+      "endPage": 70,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.6",
+      "officialId": "2.4.6",
+      "text": "Construir i millorar els sistemes de sanejament per a la correcta depuració de les aigües residuals i possibilitar-ne la correcta reutilització.",
+      "rawText": "Construir i millorar els sistemes de sanejament per a la correcta depuració\nde les aigües residuals i possibilitar-ne la correcta reutilització.",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 70,
+      "endPage": 70,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.7",
+      "officialId": "2.4.7",
+      "text": "Destinar ajuts als ens locals per millorar l’eficiència de les infraestructures de subministrament d’aigua de competència local, per garantir el subministrament a domicili.",
+      "rawText": "Destinar ajuts als ens locals per millorar l’eficiència de les infraestructures\nde subministrament d’aigua de competència local, per garantir el\nsubministrament a domicili.",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 71,
+      "endPage": 71,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.4.8",
+      "officialId": "2.4.8",
+      "text": "Desplegar els “Contractes de riu” de la Directiva Marc de l’Aigua com a eina de gestió, amb la finalitat d’agilitzar l’arranjament de rius i rieres com a prevenció d’inundabilitats.",
+      "rawText": "Desplegar els “Contractes de riu” de la Directiva Marc de l’Aigua com a\neina de gestió, amb la finalitat d’agilitzar l’arranjament de rius i rieres com a\nprevenció d’inundabilitats.",
+      "topic": "Agua y sequía · objetivo 2.4",
+      "page": 71,
+      "endPage": 71,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.5.1",
+      "officialId": "2.5.1",
+      "text": "Incrementar la connectivitat de l’aeroport Josep Tarradellas Barcelona-el Prat i del port de Barcelona i protegir-ne les àrees naturals.",
+      "rawText": "Incrementar la connectivitat de l’aeroport Josep Tarradellas Barcelona-el\nPrat i del port de Barcelona i protegir-ne les àrees naturals.",
+      "topic": "Movilidad e infraestructuras · objetivo 2.5",
+      "page": 72,
+      "endPage": 72,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.5.2",
+      "officialId": "2.5.2",
+      "text": "Assumir la transferència de la xarxa de rodalia, constituir l’empresa mixta Rodalies de Catalunya i aprovar el nou Pla de rodalies 2025-2030 per a la millora del servei.",
+      "rawText": "Assumir la transferència de la xarxa de rodalia, constituir l’empresa mixta\nRodalies de Catalunya i aprovar el nou Pla de rodalies 2025-2030 per a la millora\ndel servei.",
+      "topic": "Movilidad e infraestructuras · objetivo 2.5",
+      "page": 72,
+      "endPage": 72,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.5.3",
+      "officialId": "2.5.3",
+      "text": "Posar en funcionament Rodalies de Lleida, desenvolupar el tram tren al Camp de Tarragona i iniciar els estudis per desenvolupar trams trens a les Terres de l’Ebre, el Bages, la Costa Brava, la Selva Marítima entre Blanes i Lloret de Mar, i el Pirineu.",
+      "rawText": "Posar en funcionament Rodalies de Lleida, desenvolupar el tram tren al\nCamp de Tarragona i iniciar els estudis per desenvolupar trams trens a les Terres\nde l’Ebre, el Bages, la Costa Brava, la Selva Marítima entre Blanes i Lloret de Mar,\ni el Pirineu.",
+      "topic": "Movilidad e infraestructuras · objetivo 2.5",
+      "page": 72,
+      "endPage": 72,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.5.4",
+      "officialId": "2.5.4",
+      "text": "Dissenyar una nova xarxa de serveis de transport públic de Catalunya per millorar l’eficiència del servei, la descarbonització de la flota i la connexió de tots els territoris.",
+      "rawText": "Dissenyar una nova xarxa de serveis de transport públic de Catalunya per\nmillorar l’eficiència del servei, la descarbonització de la flota i la connexió de tots\nels territoris.",
+      "topic": "Movilidad e infraestructuras · objetivo 2.5",
+      "page": 72,
+      "endPage": 72,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.5.5",
+      "officialId": "2.5.5",
+      "text": "Signar amb el Ministeri de Transports i Mobilitat Sostenible els convenis de l’AP-7 i l’AP-2, l’Eix Pirinenc (N-260) i la ronda Nord, els intercanviadors ferroviaris de l’R8 de Rodalies amb FGC i la pacificació de l’N-II al Maresme i la millora d’accessos a la C32 nord.",
+      "rawText": "Signar amb el Ministeri de Transports i Mobilitat Sostenible els convenis de\nl’AP-7 i l’AP-2, l’Eix Pirinenc (N-260) i la ronda Nord, els intercanviadors\nferroviaris de l’R8 de Rodalies amb FGC i la pacificació de l’N-II al Maresme i la\nmillora d’accessos a la C32 nord.",
+      "topic": "Movilidad e infraestructuras · objetivo 2.5",
+      "page": 72,
+      "endPage": 72,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.5.6",
+      "officialId": "2.5.6",
+      "text": "Dur a terme intervencions a la xarxa viària catalana incorporant sistemes de transport Intel·ligent (ITS) per millorar la gestió del trànsit i la seguretat viària.",
+      "rawText": "Dur a terme intervencions a la xarxa viària catalana incorporant sistemes de\ntransport Intel·ligent (ITS) per millorar la gestió del trànsit i la seguretat viària.",
+      "topic": "Movilidad e infraestructuras · objetivo 2.5",
+      "page": 72,
+      "endPage": 72,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.5.7",
+      "officialId": "2.5.7",
+      "text": "Adoptar la xarxa de carreteres 2+1 a favor d’augmentar la seguretat vial.",
+      "rawText": "Adoptar la xarxa de carreteres 2+1 a favor d’augmentar la seguretat vial.",
+      "topic": "Movilidad e infraestructuras · objetivo 2.5",
+      "page": 72,
+      "endPage": 72,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.1",
+      "officialId": "2.6.1",
+      "text": "Definir i executar un nou Pla de regadius (2025-2040) per modernitzar els regs agrícoles, optimitzar l’ús de l’aigua de reg i ampliar la superfície regable per assegurar la viabilitat de les explotacions agràries.",
+      "rawText": "Definir i executar un nou Pla de regadius (2025-2040) per modernitzar els\nregs agrícoles, optimitzar l’ús de l’aigua de reg i ampliar la superfície regable per\nassegurar la viabilitat de les explotacions agràries.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 73,
+      "endPage": 73,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.2",
+      "officialId": "2.6.2",
+      "text": "Impulsar l’aprovació de la Llei de l’alimentació de Catalunya que ha de vetllar per la sostenibilitat en la producció, transformació i distribució dels aliments, regular la contractació pública perquè afavoreixi els productes de proximitat, protegir el patrimoni gastronòmic català i promoure l’educació alimentària a les escoles i el relleu generacional en el sector agroalimentari.",
+      "rawText": "Impulsar l’aprovació de la Llei de l’alimentació de Catalunya que\nha de vetllar per la sostenibilitat en la producció, transformació i\ndistribució dels aliments, regular la contractació pública perquè afavoreixi\nels productes de proximitat, protegir el patrimoni gastronòmic català i\npromoure l’educació alimentària a les escoles i el relleu generacional en el\nsector agroalimentari.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 73,
+      "endPage": 73,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.3",
+      "officialId": "2.6.3",
+      "text": "Desplegar l’Estratègia de relleu generacional agrari 2024-2027 per renovar les empreses agràries i per donar suport a les noves generacions, tant familiars com nouvingudes.",
+      "rawText": "Desplegar l’Estratègia de relleu generacional agrari 2024-2027 per renovar\nles empreses agràries i per donar suport a les noves generacions, tant familiars\ncom nouvingudes.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 73,
+      "endPage": 73,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.4",
+      "officialId": "2.6.4",
+      "text": "Elaborar un pla de xoc per fer front a l’emergència cinegètica i revisar el sistema de compensació de danys de la fauna salvatge, consolidant un model de gestió i protecció de les explotacions agràries.",
+      "rawText": "Elaborar un pla de xoc per fer front a l’emergència cinegètica i revisar el\nsistema de compensació de danys de la fauna salvatge, consolidant un model de\ngestió i protecció de les explotacions agràries.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 73,
+      "endPage": 73,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.5",
+      "officialId": "2.6.5",
+      "text": "Desenvolupar actuacions per donar suport al sector agrari, pesquer i forestal en l’adaptació al canvi climàtic i mitigar-ne els efectes, i també per millorar-ne la competitivitat, com ara l’activació d’un fons de 70,8 M€.",
+      "rawText": "Desenvolupar actuacions per donar suport al sector agrari, pesquer i\nforestal en l’adaptació al canvi climàtic i mitigar-ne els efectes, i també per\nmillorar-ne la competitivitat, com ara l’activació d’un fons de 70,8 M€.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 73,
+      "endPage": 73,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.6",
+      "officialId": "2.6.6",
+      "text": "Definir i desplegar un model d’acompanyament al sector agrícola, ramader, pesquer, forestal i agroindustrial que garanteixi l’assessorament de proximitat, impulsi la formació a les escoles agràries, promogui la innovació, la transferència tecnològica i la digitalització.",
+      "rawText": "Definir i desplegar un model d’acompanyament al sector agrícola, ramader,\npesquer, forestal i agroindustrial que garanteixi l’assessorament de proximitat,\nimpulsi la formació a les escoles agràries, promogui la innovació, la transferència\ntecnològica i la digitalització.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 73,
+      "endPage": 73,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.7",
+      "officialId": "2.6.7",
+      "text": "En el marc de l’Estratègia alimentària de Catalunya, impulsar les inversions i mesures adreçades a la indústria agroalimentària i de bioeconomia circular que millorin la seva competitivitat, sostenibilitat i aportin valor al conjunt de la cadena alimentària.",
+      "rawText": "En el marc de l’Estratègia alimentària de Catalunya, impulsar les inversions i\nmesures adreçades a la indústria agroalimentària i de bioeconomia circular que\nmillorin la seva competitivitat, sostenibilitat i aportin valor al conjunt de la cadena\nalimentària.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 74,
+      "endPage": 74,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-2.6.8",
+      "officialId": "2.6.8",
+      "text": "Dur a terme mesures i projectes en el marc de l’Any Catalunya Regió Mundial de la Gastronomia 2025 per promoure el patrimoni vinculat a la gastronomia i els paisatges agroalimentaris i potenciar tota la cadena de valor per contribuir a enfortir tots els sectors productors del conjunt agroalimentari, especialment el de l’oli d’oliva, el del vi, el sector pesquer, el ramader, la fruita dolça i la fruita seca.",
+      "rawText": "Dur a terme mesures i projectes en el marc de l’Any Catalunya Regió\nMundial de la Gastronomia 2025 per promoure el patrimoni vinculat a la\ngastronomia i els paisatges agroalimentaris i potenciar tota la cadena de valor per\ncontribuir a enfortir tots els sectors productors del conjunt agroalimentari,\nespecialment el de l’oli d’oliva, el del vi, el sector pesquer, el ramader, la fruita\ndolça i la fruita seca.",
+      "topic": "Sector agroalimentario · objetivo 2.6",
+      "page": 74,
+      "endPage": 74,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.1.1",
+      "officialId": "3.1.1",
+      "text": "Acordar un marc de col·laboració estable amb l'OCDE per a la millora dels resultats educatius a Catalunya al llarg de tota la legislatura.",
+      "rawText": "Acordar un marc de col·laboració estable amb l'OCDE per a la millora dels\nresultats educatius a Catalunya al llarg de tota la legislatura.",
+      "topic": "Resultados educativos · objetivo 3.1",
+      "page": 77,
+      "endPage": 77,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.1.2",
+      "officialId": "3.1.2",
+      "text": "Desenvolupar un pla per a la millora dels resultats i els aprenentatges que potenciï el rendiment en lectura i matemàtiques, i impulsar acords de corresponsabilitat amb els centres, que rebran formació i acompanyament de la inspecció educativa i dels serveis territorials.",
+      "rawText": "Desenvolupar un pla per a la millora dels resultats i els aprenentatges que\npotenciï el rendiment en lectura i matemàtiques, i impulsar acords de\ncorresponsabilitat amb els centres, que rebran formació i acompanyament de la\ninspecció educativa i dels serveis territorials.",
+      "topic": "Resultados educativos · objetivo 3.1",
+      "page": 77,
+      "endPage": 77,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.1.3",
+      "officialId": "3.1.3",
+      "text": "Millorar l'orientació de l’alumnat, especialment en les transicions entre etapes educatives i en la formació professional.",
+      "rawText": "Millorar l'orientació de l’alumnat, especialment en les transicions entre\netapes educatives i en la formació professional.",
+      "topic": "Resultados educativos · objetivo 3.1",
+      "page": 77,
+      "endPage": 77,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.1.4",
+      "officialId": "3.1.4",
+      "text": "Garantir l’assoliment del domini oral i escrit del català i del castellà al final de l’etapa d’educació obligatòria i de l’occità-aranès a l’Aran, així com la promoció de l’ús social del català.",
+      "rawText": "Garantir l’assoliment del domini oral i escrit del català i del castellà al final\nde l’etapa d’educació obligatòria i de l’occità-aranès a l’Aran, així com la promoció\nde l’ús social del català.",
+      "topic": "Resultados educativos · objetivo 3.1",
+      "page": 77,
+      "endPage": 77,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.1.5",
+      "officialId": "3.1.5",
+      "text": "Impulsar i millorar l’aprenentatge de l’anglès i d’altres llengües estrangeres.",
+      "rawText": "Impulsar i millorar l’aprenentatge de l’anglès i d’altres llengües estrangeres.",
+      "topic": "Resultados educativos · objetivo 3.1",
+      "page": 77,
+      "endPage": 77,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.1.6",
+      "officialId": "3.1.6",
+      "text": "Impulsar la reforma de la professió i la carrera docent, reforçant el lideratge pedagògic i la formació en atenció a la diversitat i la didàctica.",
+      "rawText": "Impulsar la reforma de la professió i la carrera docent, reforçant el lideratge\npedagògic i la formació en atenció a la diversitat i la didàctica.",
+      "topic": "Resultados educativos · objetivo 3.1",
+      "page": 77,
+      "endPage": 77,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.2.1",
+      "officialId": "3.2.1",
+      "text": "Impulsar el Pacte contra la Segregació i acordar un model de finançament equitatiu dels centres educatius en funció de les seves necessitats o complexitat per enfortir la igualtat d’oportunitats i l’equiparació progressiva entre centres del servei d’educació de Catalunya.",
+      "rawText": "Impulsar el Pacte contra la Segregació i acordar un model de finançament\nequitatiu dels centres educatius en funció de les seves necessitats o complexitat\nper enfortir la igualtat d’oportunitats i l’equiparació progressiva entre centres del\nservei d’educació de Catalunya.",
+      "topic": "Equidad educativa · objetivo 3.2",
+      "page": 78,
+      "endPage": 78,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.2.2",
+      "officialId": "3.2.2",
+      "text": "Revisar el Decret 150/2017 d’educació inclusiva per tal d’estendre’n l’aplicació al primer cicle d'educació infantil, al batxillerat i als cicles formatius, i accelerar-ne el desplegament amb un mapa de recursos al territori.",
+      "rawText": "Revisar el Decret 150/2017 d’educació inclusiva per tal d’estendre’n\nl’aplicació al primer cicle d'educació infantil, al batxillerat i als cicles formatius, i\naccelerar-ne el desplegament amb un mapa de recursos al territori.",
+      "topic": "Equidad educativa · objetivo 3.2",
+      "page": 78,
+      "endPage": 78,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.2.3",
+      "officialId": "3.2.3",
+      "text": "Impulsar un pla integral de prevenció i retorn de l’abandonament escolar prematur, que faciliti itineraris flexibles per graduar-se en l’ESO; l’ampliació de places de cicle formatiu de grau mitjà (CFGM), formació professional bàsica i programes de formació i inserció (PFI), la millora de l’orientació educativa i la concertació de noves oportunitats de continuïtat formativa amb el món local i el tercer sector.",
+      "rawText": "Impulsar un pla integral de prevenció i retorn de l’abandonament escolar\nprematur, que faciliti itineraris flexibles per graduar-se en l’ESO; l’ampliació de\nplaces de cicle formatiu de grau mitjà (CFGM), formació professional bàsica i\nprogrames de formació i inserció (PFI), la millora de l’orientació educativa i la\nconcertació de noves oportunitats de continuïtat formativa amb el món local i el\ntercer sector.",
+      "topic": "Equidad educativa · objetivo 3.2",
+      "page": 78,
+      "endPage": 78,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.2.4",
+      "officialId": "3.2.4",
+      "text": "Promoure els ajuts al transport per a l’alumnat de grau mitjà i grau superior de formació professional.",
+      "rawText": "Promoure els ajuts al transport per a l’alumnat de grau mitjà i grau superior\nde formació professional.",
+      "topic": "Equidad educativa · objetivo 3.2",
+      "page": 78,
+      "endPage": 78,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.2.5",
+      "officialId": "3.2.5",
+      "text": "Incrementar les places públiques d’escola bressol planificades conjuntament amb el món local amb criteris d’equitat territorial, per garantir la universalitat de l’oferta pública del primer cicle d’educació infantil de manera progressiva.",
+      "rawText": "Incrementar les places públiques d’escola bressol planificades\nconjuntament amb el món local amb criteris d’equitat territorial, per garantir la\nuniversalitat de l’oferta pública del primer cicle d’educació infantil de manera\nprogressiva.",
+      "topic": "Equidad educativa · objetivo 3.2",
+      "page": 78,
+      "endPage": 78,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.2.6",
+      "officialId": "3.2.6",
+      "text": "Incrementar el finançament de les escoles bressol i llars d’infants d’iniciativa social, de manera que es redueixin de forma gradual els costos familiars fins a assolir la gratuïtat de l’etapa educativa de zero a tres anys, i acordar amb el món local un marc de finançament suficient i estable per mantenir la gratuïtat I2 i implementar la gratuïtat de l'1 en el curs 2025 - 2026.",
+      "rawText": "Incrementar el finançament de les escoles bressol i llars\nd’infants d’iniciativa social, de manera que es redueixin de forma gradual\nels costos familiars fins a assolir la gratuïtat de l’etapa educativa de zero a\ntres anys, i acordar amb el món local un marc de finançament suficient i\nestable per mantenir la gratuïtat I2 i implementar la gratuïtat de l'1 en el\ncurs 2025 - 2026.",
+      "topic": "Equidad educativa · objetivo 3.2",
+      "page": 79,
+      "endPage": 79,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.2.7",
+      "officialId": "3.2.7",
+      "text": "Impulsar l’aprovació de Llei la d'universalització i gratuïtat del cicle inicial d’educació infantil.",
+      "rawText": "Impulsar l’aprovació de Llei la d'universalització i gratuïtat del cicle inicial\nd’educació infantil.",
+      "topic": "Equidad educativa · objetivo 3.2",
+      "page": 79,
+      "endPage": 79,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.1",
+      "officialId": "3.3.1",
+      "text": "Impulsar un nou model de cures amb l’aprovació i el desplegament de la Llei de l'Agència d'Atenció Integrada Social i Sanitària de Catalunya, com a instrument facilitador de l’organització dels departaments, ens locals i altres actors implicats amb l’objectiu de prestar una atenció més àgil, eficient i de qualitat.",
+      "rawText": "Impulsar un nou model de cures amb l’aprovació i el desplegament de la\nLlei de l'Agència d'Atenció Integrada Social i Sanitària de Catalunya, com a\ninstrument facilitador de l’organització dels departaments, ens locals i altres\nactors implicats amb l’objectiu de prestar una atenció més àgil, eficient i de\nqualitat.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 80,
+      "endPage": 80,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.2",
+      "officialId": "3.3.2",
+      "text": "Incrementar el nombre d’experiències territorials d’atenció integrada social i sanitària en l’entorn domiciliari i comunitari per afavorir que les persones puguin desenvolupar durant el màxim de temps possible el seu projecte de vida a casa.",
+      "rawText": "Incrementar el nombre d’experiències territorials d’atenció\nintegrada social i sanitària en l’entorn domiciliari i comunitari per\nafavorir que les persones puguin desenvolupar durant el màxim de temps\npossible el seu projecte de vida a casa.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 80,
+      "endPage": 80,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.3",
+      "officialId": "3.3.3",
+      "text": "Desplegar l’atenció integrada social i sanitària a les residències de gent gran, amb l’objectiu de garantir una atenció́ sanitària de qualitat, prestada pel Sistema Sanitari Integral d’Utilització Pública de Catalunya, conjuntament amb els professionals de les residències.",
+      "rawText": "Desplegar l’atenció integrada social i sanitària a les residències de gent\ngran, amb l’objectiu de garantir una atenció́ sanitària de qualitat, prestada pel\nSistema Sanitari Integral d’Utilització Pública de Catalunya, conjuntament amb els\nprofessionals de les residències.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 80,
+      "endPage": 80,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.4",
+      "officialId": "3.3.4",
+      "text": "Millorar els resultats en l’atenció a les persones grans definint i desplegant un pla d’intervenció comunitari d’envelliment sa i actiu i un pla de prevenció de la fragilitat per prevenir la discapacitat.",
+      "rawText": "Millorar els resultats en l’atenció a les persones grans definint i desplegant\nun pla d’intervenció comunitari d’envelliment sa i actiu i un pla de prevenció de la\nfragilitat per prevenir la discapacitat.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 80,
+      "endPage": 80,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.5",
+      "officialId": "3.3.5",
+      "text": "Integrar els sistemes d’informació socials i sanitaris, per facilitar les pràctiques col·laboratives entre professionals i millorar la planificació de l’atenció.",
+      "rawText": "Integrar els sistemes d’informació socials i sanitaris, per facilitar les\npràctiques col·laboratives entre professionals i millorar la planificació de l’atenció.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 80,
+      "endPage": 80,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.6",
+      "officialId": "3.3.6",
+      "text": "Incorporar ajudes econòmiques atenent el criteri de disponibilitat de renda dins de la cobertura sanitària d'oftalmologia i audiometria per a la població més envellida.",
+      "rawText": "Incorporar ajudes econòmiques atenent el criteri de disponibilitat de renda\ndins de la cobertura sanitària d'oftalmologia i audiometria per a la població més\nenvellida.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 80,
+      "endPage": 80,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.7",
+      "officialId": "3.3.7",
+      "text": "Impulsar la inserció de les persones amb discapacitat en el món del treball ordinari per contribuir a la cohesió sociolaboral d’aquest col·lectiu.",
+      "rawText": "Impulsar la inserció de les persones amb discapacitat en el món del treball\nordinari per contribuir a la cohesió sociolaboral d’aquest col·lectiu.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 81,
+      "endPage": 81,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.3.8",
+      "officialId": "3.3.8",
+      "text": "Impulsar l’aprovació de la Llei del tercer sector social.",
+      "rawText": "Impulsar l’aprovació de la Llei del tercer sector social.",
+      "topic": "Cuidados y atención integrada · objetivo 3.3",
+      "page": 81,
+      "endPage": 81,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.4.1",
+      "officialId": "3.4.1",
+      "text": "Garantir, en l’àmbit de l’atenció primària i comunitària, la resposta dels professionals dels equips d’atenció primària (EAP) pels diferents canals existents per atendre en un termini màxim de 48 h almenys el 90 % dels casos, i alhora prioritzar el desplegament de programes d’ordenació de la demanda “Programació per motius” i “Planifica’t”.",
+      "rawText": "Garantir, en l’àmbit de l’atenció primària i comunitària, la resposta dels\nprofessionals dels equips d’atenció primària (EAP) pels diferents canals\nexistents per atendre en un termini màxim de 48 h almenys el 90 %\ndels casos, i alhora prioritzar el desplegament de programes d’ordenació de\nla demanda “Programació per motius” i “Planifica’t”.",
+      "topic": "Listas de espera · objetivo 3.4",
+      "page": 82,
+      "endPage": 82,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.4.2",
+      "officialId": "3.4.2",
+      "text": "Assegurar el compliment dels terminis garantits establerts en l’atenció especialitzada per a les visites de consultes externes, proves diagnòstiques i intervencions quirúrgiques, i reduir el nombre de pacients fora del termini de referència.",
+      "rawText": "Assegurar el compliment dels terminis garantits establerts en l’atenció\nespecialitzada per a les visites de consultes externes, proves diagnòstiques i\nintervencions quirúrgiques, i reduir el nombre de pacients fora del termini de\nreferència.",
+      "topic": "Listas de espera · objetivo 3.4",
+      "page": 82,
+      "endPage": 82,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.4.3",
+      "officialId": "3.4.3",
+      "text": "Executar un pla de xoc de reducció de les llistes d’espera en dependència i discapacitat (2024-2025) i definir una estratègia en drets socials a llarg-termini per fer front a l’envelliment de la població que inclogui la creació de 6.000 noves places residencials.",
+      "rawText": "Executar un pla de xoc de reducció de les llistes d’espera en dependència i\ndiscapacitat (2024-2025) i definir una estratègia en drets socials a llarg-termini\nper fer front a l’envelliment de la població que inclogui la creació de 6.000 noves\nplaces residencials.",
+      "topic": "Listas de espera · objetivo 3.4",
+      "page": 82,
+      "endPage": 82,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.4.4",
+      "officialId": "3.4.4",
+      "text": "Impulsar l’aprovació de la Llei d’instruments de provisió del sistema públic de serveis socials, i posar en marxa l’Agència Pública de Serveis Socials per millorar la gestió dels serveis de la xarxa pública, així com la llei d’instruments de provisió no contractuals del sistema públic de salut.",
+      "rawText": "Impulsar l’aprovació de la Llei d’instruments de provisió del sistema públic\nde serveis socials, i posar en marxa l’Agència Pública de Serveis Socials per\nmillorar la gestió dels serveis de la xarxa pública, així com la llei d’instruments de\nprovisió no contractuals del sistema públic de salut.",
+      "topic": "Listas de espera · objetivo 3.4",
+      "page": 82,
+      "endPage": 82,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.4.5",
+      "officialId": "3.4.5",
+      "text": "Aprovar i desplegar el Pacte Nacional pels Drets de les Persones amb Discapacitat i, així, complir el procés participatiu d’entitats i agents del sector, tot desplegant el Codi d'Accessibilitat de Catalunya.",
+      "rawText": "Aprovar i desplegar el Pacte Nacional pels Drets de les Persones amb\nDiscapacitat i, així, complir el procés participatiu d’entitats i agents del sector, tot\ndesplegant el Codi d'Accessibilitat de Catalunya.",
+      "topic": "Listas de espera · objetivo 3.4",
+      "page": 82,
+      "endPage": 82,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.1",
+      "officialId": "3.5.1",
+      "text": "Acordar la ruta de creixement de la despesa sanitària a Catalunya, assolir un marc de finançament pluriennal i destinar a l’atenció primària i comunitària el 25 % del pressupost, perquè esdevingui realment l’eix del sistema.",
+      "rawText": "Acordar la ruta de creixement de la despesa sanitària a Catalunya, assolir\nun marc de finançament pluriennal i destinar a l’atenció primària i comunitària el\n25 % del pressupost, perquè esdevingui realment l’eix del sistema.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 83,
+      "endPage": 83,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.2",
+      "officialId": "3.5.2",
+      "text": "Desenvolupar les accions i els canvis estructurals, organitzatius i tecnològics que permetin la reforma i la transformació del sistema sanitari d’acord amb les directrius i propostes del Comitè d'Avaluació, Innovació, Reforma Operativa i Sostenibilitat del Sistema de Salut (CAIROS).",
+      "rawText": "Desenvolupar les accions i els canvis estructurals, organitzatius i\ntecnològics que permetin la reforma i la transformació del sistema sanitari d’acord\namb les directrius i propostes del Comitè d'Avaluació, Innovació, Reforma\nOperativa i Sostenibilitat del Sistema de Salut (CAIROS).",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 83,
+      "endPage": 83,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.3",
+      "officialId": "3.5.3",
+      "text": "Actualitzar el Pla d’actuacions d’inversió en salut vigent, d’acord amb les necessitats en planificació sanitària, i impulsar, durant la legislatura, les inversions en centres i equipaments sanitaris que contemplin l’acabament i la realització d’obres compromeses i la realització de projectes per respondre a les necessitats futures en tots els àmbits assistencials: atenció primària, atenció hospitalària, atenció intermèdia i atenció a la salut mental. S’estima abordar més de 60 projectes d’inversió en l’àmbit de l’atenció primària i, en l’àmbit de l’atenció especialitzada, es preveu l’impuls a projectes rellevants com el nou Hospital Clínic de Barcelona, el nou Campus de Salut de Girona –el nou Trueta– i el nou Hospital de Tortosa i també inversions d’ampliació i millora a l’Hospital de la Vall d’Hebron, l’Hospital del Mar, l’Hospital Joan XXIII, el Parc Hospitalari de Lleida, entre altres.",
+      "rawText": "Actualitzar el Pla d’actuacions d’inversió en salut vigent, d’acord\namb les necessitats en planificació sanitària, i impulsar, durant la legislatura, les\ninversions en centres i equipaments sanitaris que contemplin\nl’acabament i la realització d’obres compromeses i la realització de\nprojectes per respondre a les necessitats futures en tots els àmbits\nassistencials: atenció primària, atenció hospitalària, atenció intermèdia i\natenció a la salut mental. S’estima abordar més de 60 projectes d’inversió en\nl’àmbit de l’atenció primària i, en l’àmbit de l’atenció especialitzada, es preveu\nl’impuls a projectes rellevants com el nou Hospital Clínic de Barcelona, el nou\nCampus de Salut de Girona –el nou Trueta– i el nou Hospital de Tortosa i\ntambé inversions d’ampliació i millora a l’Hospital de la Vall d’Hebron, l’Hospital\ndel Mar, l’Hospital Joan XXIII, el Parc Hospitalari de Lleida, entre altres.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 83,
+      "endPage": 83,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.4",
+      "officialId": "3.5.4",
+      "text": "Garantir la retenció, incorporació i promoció del talent per dotar el sistema sanitari dels professionals que requereix, atenent el seu benestar, consolidant les millores laborals (retributives i organitzatives) culminant l'harmonització de les condicions laborals, i orientar aquests professionals d'atenció a les persones. cap als nous models",
+      "rawText": "Garantir la retenció, incorporació i promoció del talent per dotar el sistema\nsanitari dels professionals que requereix, atenent el seu benestar, consolidant les\nmillores laborals (retributives i organitzatives) culminant l'harmonització de les\ncondicions laborals, i orientar aquests professionals\nd'atenció a les persones.\ncap als nous models",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 83,
+      "endPage": 83,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.5",
+      "officialId": "3.5.5",
+      "text": "Desenvolupar el Pla integral de política del medicament per garantir-ne un ús centrat en la persona, basat en l'evidència i eficiència, de qualitat i segur, i vetllar per la innovació, l’equitat i la sostenibilitat i amb orientació a resultats en salut.",
+      "rawText": "Desenvolupar el Pla integral de política del medicament per garantir-ne un\nús centrat en la persona, basat en l'evidència i eficiència, de qualitat i segur, i\nvetllar per la innovació, l’equitat i la sostenibilitat i amb orientació a resultats en\nsalut.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.6",
+      "officialId": "3.5.6",
+      "text": "Constituir i desplegar la Xarxa d’Intel·ligència Epidemiològica de Catalunya (XIEC) per respondre als reptes derivats de les noves epidèmies, les malalties emergents i els brots subjectes al sistema de notificació a la xarxa de vigilància epidemiològica i donar resposta immediata a qualsevol alerta o emergència epidemiològica a Catalunya.",
+      "rawText": "Constituir i desplegar la Xarxa d’Intel·ligència Epidemiològica de Catalunya\n(XIEC) per respondre als reptes derivats de les noves epidèmies, les malalties\nemergents i els brots subjectes al sistema de notificació a la xarxa de vigilància\nepidemiològica i donar resposta immediata a qualsevol alerta o emergència\nepidemiològica a Catalunya.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.7",
+      "officialId": "3.5.7",
+      "text": "Promoure accions integrades de salut pública (local i global) humana, animal i ambiental i accions de salut en totes les polítiques que donin resposta als reptes derivats de l’emergència climàtica, dels problemes de salut emergents i reemergents i l’envelliment de la població, amb un enfocament d’una sola salut (One Health).",
+      "rawText": "Promoure accions integrades de salut pública (local i global) humana, animal i\nambiental i accions de salut en totes les polítiques que donin resposta als reptes\nderivats de l’emergència climàtica, dels problemes de salut emergents i reemergents\ni l’envelliment de la població, amb un enfocament d’una sola salut (One Health).",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.8",
+      "officialId": "3.5.8",
+      "text": "Desenvolupar la figura dels coordinadors de convivència i benestar (COCOBE) dels centres educatius i reforçar l’acció tutorial i personalitzada per prevenir problemes de salut mental i conductes disruptives.",
+      "rawText": "Desenvolupar la figura dels coordinadors de convivència i benestar\n(COCOBE) dels centres educatius i reforçar l’acció tutorial i personalitzada per\nprevenir problemes de salut mental i conductes disruptives.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.9",
+      "officialId": "3.5.9",
+      "text": "Aprovar el Pacte Nacional de Salut Mental i el seu desplegament mitjançant un programa temporal que garanteixi la seva governança i aplicació.",
+      "rawText": "Aprovar el Pacte Nacional de Salut Mental i el seu\ndesplegament mitjançant un programa temporal que garanteixi la seva\ngovernança i aplicació.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.10",
+      "officialId": "3.5.10",
+      "text": "Millorar l’abordatge integral del benestar emocional, la salut mental i les addiccions dels infants, adolescents i joves, impulsant i desplegant projectes i actuacions basats en l’evidència que abordin la promoció, la prevenció, la detecció precoç, l’atenció integrada i la recuperació.",
+      "rawText": "Millorar l’abordatge integral del benestar emocional, la salut mental i les\naddiccions dels infants, adolescents i joves, impulsant i desplegant projectes i\nactuacions basats en l’evidència que abordin la promoció, la prevenció, la\ndetecció precoç, l’atenció integrada i la recuperació.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.11",
+      "officialId": "3.5.11",
+      "text": "Elaborar i desplegar un pla integral dels trastorns del neurodesenvolupament i l’aprenentatge que incorpori accions dels serveis sanitaris, educatius i socials per millorar la detecció precoç, l’atenció compartida i la recuperació dels infants i adolescents.",
+      "rawText": "Elaborar i desplegar un pla integral dels trastorns del\nneurodesenvolupament i l’aprenentatge que incorpori accions dels serveis\nsanitaris, educatius i socials per millorar la detecció precoç, l’atenció compartida i\nla recuperació dels infants i adolescents.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.12",
+      "officialId": "3.5.12",
+      "text": "Reforçar l’atenció comunitària de la salut mental i les addiccions i les alternatives a l’hospitalització per atendre les persones en el seu entorn natural, i continuar la reconversió de la llarga estada per afavorir la recuperació de les persones amb trastorns de salut mental severs amb plena autonomia.",
+      "rawText": "Reforçar l’atenció comunitària de la salut mental i les addiccions i les\nalternatives a l’hospitalització per atendre les persones en el seu entorn natural, i\ncontinuar la reconversió de la llarga estada per afavorir la recuperació de les\npersones amb trastorns de salut mental severs amb plena autonomia.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.13",
+      "officialId": "3.5.13",
+      "text": "Desenvolupar a la Xarxa de Salut Mental i Addiccions el model d'atenció basada en drets (Quality Rights, OMS) per promoure i facilitar una atenció de qualitat basada en els estàndards internacionals de drets humans en tot tipus de serveis de salut mental i discapacitat.",
+      "rawText": "Desenvolupar a la Xarxa de Salut Mental i Addiccions el model d'atenció\nbasada en drets (Quality Rights, OMS) per promoure i facilitar una atenció de\nqualitat basada en els estàndards internacionals de drets humans en tot tipus de\nserveis de salut mental i discapacitat.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.14",
+      "officialId": "3.5.14",
+      "text": "Reforçar l’atenció als centres de desenvolupament infantil i atenció precoç CDIAP per a infants d’entre zero i sis anys, incrementar la cobertura territorial i millorar la qualitat de l’atenció directa.",
+      "rawText": "Reforçar l’atenció als centres de desenvolupament infantil i atenció precoç\nCDIAP per a infants d’entre zero i sis anys, incrementar la cobertura territorial i\nmillorar la qualitat de l’atenció directa.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.5.15",
+      "officialId": "3.5.15",
+      "text": "Transformar el sistema de protecció a la infància, desplegant el Pla de desinstitucionalització dels menors, afavorint les famílies d’acollida i reforçant el programa d’extutelats.",
+      "rawText": "Transformar el sistema de protecció a la infància, desplegant el Pla de\ndesinstitucionalització dels menors, afavorint les famílies d’acollida i reforçant el\nprograma d’extutelats.",
+      "topic": "Servicios públicos, salud e infancia · objetivo 3.5",
+      "page": 84,
+      "endPage": 84,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.6.1",
+      "officialId": "3.6.1",
+      "text": "Fer efectiu el traspàs de l’ingrés mínim vital (IMV) i reformar la Llei de la renda garantida de ciutadania (RGC), amb l'objectiu de facilitar-hi l'accés, i fer-la compatible amb l’IMV i altres prestacions.",
+      "rawText": "Fer efectiu el traspàs de l’ingrés mínim vital (IMV) i reformar la\nLlei de la renda garantida de ciutadania (RGC), amb l'objectiu de\nfacilitar-hi l'accés, i fer-la compatible amb l’IMV i altres prestacions.",
+      "topic": "Prestaciones y pobreza · objetivo 3.6",
+      "page": 85,
+      "endPage": 85,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.6.2",
+      "officialId": "3.6.2",
+      "text": "Revisar l’Estratègia catalana contra la pobresa infantil i alhora desplegar els complements d’infància a l’IMV i la RGC, amb plans d’inclusió i acompanyament familiar com a estratègia de la lluita contra la pobresa infantil.",
+      "rawText": "Revisar l’Estratègia catalana contra la pobresa infantil i alhora desplegar els\ncomplements d’infància a l’IMV i la RGC, amb plans d’inclusió i acompanyament\nfamiliar com a estratègia de la lluita contra la pobresa infantil.",
+      "topic": "Prestaciones y pobreza · objetivo 3.6",
+      "page": 85,
+      "endPage": 85,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.6.3",
+      "officialId": "3.6.3",
+      "text": "Actualitzar anualment l’indicador de renda de suficiència de Catalunya (IRSC) d’acord amb l’increment del cost de la vida a través de la Llei de pressupostos.",
+      "rawText": "Actualitzar anualment l’indicador de renda de suficiència de Catalunya\n(IRSC) d’acord amb l’increment del cost de la vida a través de la Llei de\npressupostos.",
+      "topic": "Prestaciones y pobreza · objetivo 3.6",
+      "page": 85,
+      "endPage": 85,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.6.4",
+      "officialId": "3.6.4",
+      "text": "Actualitzar la cartera de serveis socials, endegar el III Pla estratègic de serveis socials 2027-2030 i integrar les prestacions socials sobre la base de la interoperabilitat de dades i la digitalització d’expedients compartits (E-social).",
+      "rawText": "Actualitzar la cartera de serveis socials, endegar el III Pla estratègic de\nserveis socials 2027-2030 i integrar les prestacions socials sobre la base de la\ninteroperabilitat de dades i la digitalització d’expedients compartits (E-social).",
+      "topic": "Prestaciones y pobreza · objetivo 3.6",
+      "page": 85,
+      "endPage": 85,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.6.5",
+      "officialId": "3.6.5",
+      "text": "Desplegar la Llei de salut bucodental i posar en pràctica la cartera de serveis prioritzant les persones en situació de vulnerabilitat social, econòmica i funcional.",
+      "rawText": "Desplegar la Llei de salut bucodental i posar en pràctica la cartera de\nserveis prioritzant les persones en situació de vulnerabilitat social, econòmica i\nfuncional.",
+      "topic": "Prestaciones y pobreza · objetivo 3.6",
+      "page": 85,
+      "endPage": 85,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.7.1",
+      "officialId": "3.7.1",
+      "text": "Redissenyar els programes d’integració i acompanyament de la població migrant per facilitar una igualtat d’oportunitats que en garanteixi la plena inclusió social i laboral.",
+      "rawText": "Redissenyar els programes d’integració i acompanyament de la població\nmigrant per facilitar una igualtat d’oportunitats que en garanteixi la plena inclusió\nsocial i laboral.",
+      "topic": "Inclusión y migración · objetivo 3.7",
+      "page": 86,
+      "endPage": 86,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.7.2",
+      "officialId": "3.7.2",
+      "text": "Reforçar l’atenció a joves migrants sols garantint programes de suport i acompanyament que els assegurin l’acompliment del projecte de vida autònom.",
+      "rawText": "Reforçar l’atenció a joves migrants sols garantint programes de suport i\nacompanyament que els assegurin l’acompliment del projecte de vida autònom.",
+      "topic": "Inclusión y migración · objetivo 3.7",
+      "page": 86,
+      "endPage": 86,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.7.3",
+      "officialId": "3.7.3",
+      "text": "Incrementar les aules d’acollida a primària i secundària per a l’alumnat nouvingut, en el marc del servei educatiu de Catalunya.",
+      "rawText": "Incrementar les aules d’acollida a primària i secundària per a l’alumnat\nnouvingut, en el marc del servei educatiu de Catalunya.",
+      "topic": "Inclusión y migración · objetivo 3.7",
+      "page": 86,
+      "endPage": 86,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.7.4",
+      "officialId": "3.7.4",
+      "text": "Crear un nou certificat A1 per facilitar l’acolliment lingüístic i diversificar i millorar l’oferta d’aprenentatge de català per a adults més enllà de l’ensenyament formal.",
+      "rawText": "Crear un nou certificat A1 per facilitar l’acolliment lingüístic i diversificar i\nmillorar l’oferta d’aprenentatge de català per a adults més enllà de l’ensenyament\nformal.",
+      "topic": "Inclusión y migración · objetivo 3.7",
+      "page": 86,
+      "endPage": 86,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.7.5",
+      "officialId": "3.7.5",
+      "text": "Incrementar la línia ACOL del Programa de formació i treball, adreçada a immigrants en situació d’irregularitat administrativa, potenciar la formació professionalitzada i optimitzar l’arrelament per formació.",
+      "rawText": "Incrementar la línia ACOL del Programa de formació i treball, adreçada a\nimmigrants en situació d’irregularitat administrativa, potenciar la formació\nprofessionalitzada i optimitzar l’arrelament per formació.",
+      "topic": "Inclusión y migración · objetivo 3.7",
+      "page": 86,
+      "endPage": 86,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.7.6",
+      "officialId": "3.7.6",
+      "text": "Elaborar i executar el Pla per promoure el coneixement de la diversitat religiosa i la convivència interreligiosa com a mesures preventives de discursos d’odi.",
+      "rawText": "Elaborar i executar el Pla per promoure el coneixement de la diversitat\nreligiosa i la convivència interreligiosa com a mesures preventives de discursos\nd’odi.",
+      "topic": "Inclusión y migración · objetivo 3.7",
+      "page": 86,
+      "endPage": 86,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.1",
+      "officialId": "3.8.1",
+      "text": "Dissenyar i executar una resposta integral i coordinada en l’erradicació de totes les formes de violència masclista, amb un Pacte català contra la violència masclista que tradueixi la voluntat del Govern de liderar una transformació social profunda i assolir una Catalunya on les dones i les nenes puguin viure lliures de por, discriminació i violència.",
+      "rawText": "Dissenyar i executar una resposta integral i coordinada en l’erradicació de\ntotes les formes de violència masclista, amb un Pacte català contra la violència\nmasclista que tradueixi la voluntat del Govern de liderar una transformació social\nprofunda i assolir una Catalunya on les dones i les nenes puguin viure lliures de\npor, discriminació i violència.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 87,
+      "endPage": 87,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.2",
+      "officialId": "3.8.2",
+      "text": "Integrar la coeducació a tots els nivells de l’educació formal a Catalunya, des de les primeres etapes fins a l’ensenyament superior. Promoure una educació afectivosexual basada en la igualtat entre nois i noies, reforçant la formació dels equips educatius i incorporant la prevenció de les violències masclistes als currículums.",
+      "rawText": "Integrar la coeducació a tots els nivells de l’educació formal a Catalunya,\ndes de les primeres etapes fins a l’ensenyament superior. Promoure una\neducació afectivosexual basada en la igualtat entre nois i noies, reforçant la\nformació dels equips educatius i incorporant la prevenció de les violències\nmasclistes als currículums.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 87,
+      "endPage": 87,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.3",
+      "officialId": "3.8.3",
+      "text": "Promoure la coeducació en l’educació no formal, establint espais d’aprenentatge que incloguin valors d’igualtat i respecte. Desenvolupar eines específiques per al sector de la cultura popular, les arts escèniques i visuals i la música, per fomentar aquests valors en les activitats culturals i artístiques.",
+      "rawText": "Promoure la coeducació en l’educació no formal, establint espais\nd’aprenentatge que incloguin valors d’igualtat i respecte. Desenvolupar eines\nespecífiques per al sector de la cultura popular, les arts escèniques i visuals i la\nmúsica, per fomentar aquests valors en les activitats culturals i artístiques.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 87,
+      "endPage": 87,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.4",
+      "officialId": "3.8.4",
+      "text": "Convertir l’Institut Català de les Dones (ICD) en un referent i centre d’excel·lència per generar coneixement i eines en matèria d’igualtat, que promogui la memòria històrica i la construcció d’una genealogia feminista que enforteixi el reconeixement de les aportacions de les dones.",
+      "rawText": "Convertir l’Institut Català de les Dones (ICD) en un referent i centre\nd’excel·lència per generar coneixement i eines en matèria d’igualtat, que\npromogui la memòria històrica i la construcció d’una genealogia feminista que\nenforteixi el reconeixement de les aportacions de les dones.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 87,
+      "endPage": 87,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.5",
+      "officialId": "3.8.5",
+      "text": "Dissenyar i executar programes de formació per a professionals de l'educació, sanitat, serveis socials i empreses, cossos de seguretat i sistema judicial en la identificació precoç i resposta eficaç davant de casos de violència masclista.",
+      "rawText": "Dissenyar i executar programes de formació per a professionals de\nl'educació, sanitat, serveis socials i empreses, cossos de seguretat i sistema\njudicial en la identificació precoç i resposta eficaç davant de casos de violència\nmasclista.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 87,
+      "endPage": 87,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.6",
+      "officialId": "3.8.6",
+      "text": "Dotar tots els municipis de Catalunya de protocols i recursos específics per abordar les violències masclistes. Impulsar programes d’acompanyament per a entitats i ciutadania, especialment en prevenció de les violències masclistes i la LGBTI-fòbia.",
+      "rawText": "Dotar tots els municipis de Catalunya de protocols i recursos específics per\nabordar les violències masclistes. Impulsar programes d’acompanyament per a\nentitats i ciutadania, especialment en prevenció de les violències masclistes i la\nLGBTI-fòbia.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 88,
+      "endPage": 88,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.7",
+      "officialId": "3.8.7",
+      "text": "Crear el servei d’acompanyament sociocomunitari al col·lectiu LGBTI+ i fer front a la LGBTI-fòbia, garantint el dret de totes les persones LGBTI+ a viure la seva diversitat sexual en plena llibertat, consolidant i reforçant la xarxa del Servei d’Atenció Integral (SAI) i vetllant especialment per les persones grans.",
+      "rawText": "Crear el servei d’acompanyament sociocomunitari al col·lectiu LGBTI+ i fer\nfront a la LGBTI-fòbia, garantint el dret de totes les persones LGBTI+ a viure la\nseva diversitat sexual en plena llibertat, consolidant i reforçant la xarxa del Servei\nd’Atenció Integral (SAI) i vetllant especialment per les persones grans.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 88,
+      "endPage": 88,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.8",
+      "officialId": "3.8.8",
+      "text": "Crear i desplegar la Comissaria General de la Dona per a l'abordatge integral de la prevenció i l’acompanyament a les víctimes de violències masclistes.",
+      "rawText": "Crear i desplegar la Comissaria General de la Dona per a\nl'abordatge integral de la prevenció i l’acompanyament a les víctimes de\nviolències masclistes.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 88,
+      "endPage": 88,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.9",
+      "officialId": "3.8.9",
+      "text": "Ampliar la capacitat del Servei d’Intervenció en Crisis per oferir atenció integral les 24 hores a dones i infants víctimes de violència masclista arreu del territori i crear un Servei d’Intervenció Especialitzada Digital per combatre les noves formes de violència en l’entorn digital.",
+      "rawText": "Ampliar la capacitat del Servei d’Intervenció en Crisis per oferir atenció\nintegral les 24 hores a dones i infants víctimes de violència masclista arreu del\nterritori i crear un Servei d’Intervenció Especialitzada Digital per combatre les\nnoves formes de violència en l’entorn digital.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 88,
+      "endPage": 88,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.10",
+      "officialId": "3.8.10",
+      "text": "Augmentar els recursos dels serveis d’intervenció especialitzada, i reforçar les xarxes de suport comunitari i mentoria social amb perspectiva de gènere per garantir un acompanyament emocional prolongat i afavorir la recuperació i la reintegració social de les dones que han patit violència masclista.",
+      "rawText": "Augmentar els recursos dels serveis d’intervenció especialitzada, i\nreforçar les xarxes de suport comunitari i mentoria social amb perspectiva de\ngènere per garantir un acompanyament emocional prolongat i afavorir la\nrecuperació i la reintegració social de les dones que han patit violència masclista.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 88,
+      "endPage": 88,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.11",
+      "officialId": "3.8.11",
+      "text": "Modernitzar els instruments per erradicar l’assetjament i altres formes de violència laboral. Fomentar la implicació de les empreses en plans d’igualtat, la reducció de la bretxa salarial i el desenvolupament de protocols antiassetjament, enfortint el paper de la Xarxa de Professionals d’Igualtat en els Treballs.",
+      "rawText": "Modernitzar els instruments per erradicar l’assetjament i altres formes de\nviolència laboral. Fomentar la implicació de les empreses en plans d’igualtat, la\nreducció de la bretxa salarial i el desenvolupament de protocols antiassetjament,\nenfortint el paper de la Xarxa de Professionals d’Igualtat en els Treballs.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 88,
+      "endPage": 88,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.8.12",
+      "officialId": "3.8.12",
+      "text": "Establir mecanismes de cooperació europea i internacional per compartir bones pràctiques, participar en projectes conjunts i alinear estratègies en la lluita contra la violència masclista, reforçant el posicionament de Catalunya com a referent en polítiques d'igualtat i prevenció de la violència de gènere.",
+      "rawText": "Establir mecanismes de cooperació europea i internacional per compartir\nbones pràctiques, participar en projectes conjunts i alinear estratègies en la lluita\ncontra la violència masclista, reforçant el posicionament de Catalunya com a\nreferent en polítiques d'igualtat i prevenció de la violència de gènere.",
+      "topic": "Violencia machista e igualdad · objetivo 3.8",
+      "page": 88,
+      "endPage": 88,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.9.1",
+      "officialId": "3.9.1",
+      "text": "Impulsar l'Estratègia de l’esport 360 desenvolupant un enfocament transversal associat a la salut i el benestar al llarg de tot el cicle de vida, la indústria esportiva, la construcció sostenible d’equipaments i la democratització inclusiva i educadora de la pràctica esportiva i de l’activitat física.",
+      "rawText": "Impulsar l'Estratègia de l’esport 360 desenvolupant un enfocament\ntransversal associat a la salut i el benestar al llarg de tot el cicle de vida, la\nindústria esportiva, la construcció sostenible d’equipaments i la democratització\ninclusiva i educadora de la pràctica esportiva i de l’activitat física.",
+      "topic": "Deporte · objetivo 3.9",
+      "page": 89,
+      "endPage": 89,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.9.2",
+      "officialId": "3.9.2",
+      "text": "Impulsar l’aprovació de la nova Llei de l’esport per garantir el dret a l’esport i l’activitat física com a bé essencial i per vertebrar un sistema públic esportiu d’accés universal.",
+      "rawText": "Impulsar l’aprovació de la nova Llei de l’esport per garantir el dret a l’esport\ni l’activitat física com a bé essencial i per vertebrar un sistema públic esportiu\nd’accés universal.",
+      "topic": "Deporte · objetivo 3.9",
+      "page": 89,
+      "endPage": 89,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.9.3",
+      "officialId": "3.9.3",
+      "text": "Impulsar programes inclusius que fomentin l’accés als esports i l’activitat física saludable per a infants, adults, persones grans i persones amb discapacitat. Per a aquests últims s’elaborarà un pla estratègic d’esports per a persones amb discapacitats.",
+      "rawText": "Impulsar programes inclusius que fomentin l’accés als esports i l’activitat\nfísica saludable per a infants, adults, persones grans i persones amb discapacitat.\nPer a aquests últims s’elaborarà un pla estratègic d’esports per a persones amb\ndiscapacitats.",
+      "topic": "Deporte · objetivo 3.9",
+      "page": 89,
+      "endPage": 89,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.9.4",
+      "officialId": "3.9.4",
+      "text": "Desplegar un pla de xoc per a la modernització i millora del parc d’equipaments i instal·lacions esportives de Catalunya per avançar cap a nou model més accessible i sostenible, en col·laboració amb el món local.",
+      "rawText": "Desplegar un pla de xoc per a la modernització i millora del parc\nd’equipaments i instal·lacions esportives de Catalunya per avançar cap a nou\nmodel més accessible i sostenible, en col·laboració amb el món local.",
+      "topic": "Deporte · objetivo 3.9",
+      "page": 89,
+      "endPage": 89,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.9.5",
+      "officialId": "3.9.5",
+      "text": "Potenciar l’accés de les dones als esports i la paritat en el sistema esportiu i lluitar contra l’abandonament de la pràctica esportiva i l’activitat física, especialment entre adolescents i joves mitjançant l’esport escolar, l’esport popular, l’esport no competitiu i l’esport federat.",
+      "rawText": "Potenciar l’accés de les dones als esports i la paritat en el sistema esportiu i\nlluitar contra l’abandonament de la pràctica esportiva i l’activitat física,\nespecialment entre adolescents i joves mitjançant l’esport escolar, l’esport\npopular, l’esport no competitiu i l’esport federat.",
+      "topic": "Deporte · objetivo 3.9",
+      "page": 89,
+      "endPage": 89,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.9.6",
+      "officialId": "3.9.6",
+      "text": "Constituir una Oficina del Govern per promoure les seleccions esportives catalanes.",
+      "rawText": "Constituir una Oficina del Govern per promoure les seleccions esportives\ncatalanes.",
+      "topic": "Deporte · objetivo 3.9",
+      "page": 89,
+      "endPage": 89,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.9.7",
+      "officialId": "3.9.7",
+      "text": "Revisar en col·laboració amb els ajuntaments els equipaments educatius susceptibles de ser utilitzats per a activitats esportives en horari no lectiu.",
+      "rawText": "Revisar en col·laboració amb els ajuntaments els equipaments educatius\nsusceptibles de ser utilitzats per a activitats esportives en horari no lectiu.",
+      "topic": "Deporte · objetivo 3.9",
+      "page": 89,
+      "endPage": 89,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.10.1",
+      "officialId": "3.10.1",
+      "text": "Impulsar l’aprovació de la Llei de drets culturals per afavorir l’accés universal, la participació cultural i la cohesió social, i promoure un nou marc participat de governança amb el sector.",
+      "rawText": "Impulsar l’aprovació de la Llei de drets culturals per afavorir l’accés\nuniversal, la participació cultural i la cohesió social, i promoure un nou marc\nparticipat de governança amb el sector.",
+      "topic": "Artes y cultura · objetivo 3.10",
+      "page": 90,
+      "endPage": 90,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.10.2",
+      "officialId": "3.10.2",
+      "text": "Assolir el 2 % del pressupost de la Generalitat destinat a cultura i llengua.",
+      "rawText": "Assolir el 2 % del pressupost de la Generalitat destinat a cultura\ni llengua.",
+      "topic": "Artes y cultura · objetivo 3.10",
+      "page": 90,
+      "endPage": 90,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.10.3",
+      "officialId": "3.10.3",
+      "text": "Impulsar i aprovar el Pacte Nacional per la Cultura mitjançant un acord parlamentari ampli, la concertació amb el món local i els sectors culturals, que reforci les polítiques estratègiques amb l’augment progressiu de la despesa pública.",
+      "rawText": "Impulsar i aprovar el Pacte Nacional per la Cultura mitjançant un acord\nparlamentari ampli, la concertació amb el món local i els sectors culturals, que\nreforci les polítiques estratègiques amb l’augment progressiu de la despesa\npública.",
+      "topic": "Artes y cultura · objetivo 3.10",
+      "page": 90,
+      "endPage": 90,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.10.4",
+      "officialId": "3.10.4",
+      "text": "Construir i organitzar una xarxa d'equipaments culturals de proximitat d’acord amb els municipis i el teixit associatiu, ampliar l’oferta de serveis culturals, i actualitzar el Pla d’equipaments i serveis culturals de Catalunya.",
+      "rawText": "Construir i organitzar una xarxa d'equipaments culturals de proximitat\nd’acord amb els municipis i el teixit associatiu, ampliar l’oferta de serveis culturals,\ni actualitzar el Pla d’equipaments i serveis culturals de Catalunya.",
+      "topic": "Artes y cultura · objetivo 3.10",
+      "page": 90,
+      "endPage": 90,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.10.5",
+      "officialId": "3.10.5",
+      "text": "Incrementar els ajuts a la cultura de base mitjançant el suport a l’associacionisme i l’ateneisme com a elements bàsics d’integració social i educativa.",
+      "rawText": "Incrementar els ajuts a la cultura de base mitjançant el suport a\nl’associacionisme i l’ateneisme com a elements bàsics d’integració social i\neducativa.",
+      "topic": "Artes y cultura · objetivo 3.10",
+      "page": 90,
+      "endPage": 90,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.10.6",
+      "officialId": "3.10.6",
+      "text": "Impulsar el programa interdepartamental de Cultura, Educació i Universitats que incorpori el Pla nacional del llibre i la lectura, la presència de les arts i la creativitat al sistema educatiu i la formació del professorat.",
+      "rawText": "Impulsar el programa interdepartamental de Cultura, Educació i\nUniversitats que incorpori el Pla nacional del llibre i la lectura, la presència de les\narts i la creativitat al sistema educatiu i la formació del professorat.",
+      "topic": "Artes y cultura · objetivo 3.10",
+      "page": 90,
+      "endPage": 90,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-3.10.7",
+      "officialId": "3.10.7",
+      "text": "Impulsar l’Estratègia d’arts en salut que incorpora la potencialitat del teatre, les arts, la música o la literatura en la millora de la salut i el benestar de les persones.",
+      "rawText": "Impulsar l’Estratègia d’arts en salut que incorpora la potencialitat del\nteatre, les arts, la música o la literatura en la millora de la salut i el benestar de les\npersones.",
+      "topic": "Artes y cultura · objetivo 3.10",
+      "page": 90,
+      "endPage": 90,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.1",
+      "officialId": "4.1.1",
+      "text": "Impulsar l’estratègia de transformació i millora de l’Administració i la gestió pública de la mà d’una comissió d’experts (CETRA) que prioritzarà la millora dels serveis públics, la transparència i la traçabilitat dels tràmits i serveis.",
+      "rawText": "Impulsar l’estratègia de transformació i millora de l’Administració i la gestió\npública de la mà d’una comissió d’experts (CETRA) que prioritzarà la millora dels\nserveis públics, la transparència i la traçabilitat dels tràmits i serveis.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.2",
+      "officialId": "4.1.2",
+      "text": "Desenvolupar en el marc de l’estratègia de transformació un pla de xoc amb mesures com garantir l’atenció presencial sense necessitat de cita prèvia i la creació de 2.000 places de pràctiques remunerades per a joves estudiants per atraure talent a l’Administració.",
+      "rawText": "Desenvolupar en el marc de l’estratègia de transformació un pla de xoc\namb mesures com garantir l’atenció presencial sense necessitat de cita prèvia i la\ncreació de 2.000 places de pràctiques remunerades per a joves estudiants per\natraure talent a l’Administració.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.3",
+      "officialId": "4.1.3",
+      "text": "Impulsar l’aprovació de la Llei de l'ocupació pública i el decret de la direcció pública professional per desenvolupar un model d’ocupació pública de qualitat.",
+      "rawText": "Impulsar l’aprovació de la Llei de l'ocupació pública i el decret de la\ndirecció pública professional per desenvolupar un model d’ocupació\npública de qualitat.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.4",
+      "officialId": "4.1.4",
+      "text": "Impulsar l’aprovació de la Llei d’organització de l’Administració de la Generalitat i del seu sector públic institucional per simplificar-ne l’organització administrativa i per optimitzar la presa de decisions.",
+      "rawText": "Impulsar l’aprovació de la Llei d’organització de l’Administració de la\nGeneralitat i del seu sector públic institucional per simplificar-ne l’organització\nadministrativa i per optimitzar la presa de decisions.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.5",
+      "officialId": "4.1.5",
+      "text": "Impulsar l’aprovació de la Llei catalana de compra pública per simplificar els processos de contractació, incrementar la seguretat jurídica en aquest àmbit i millorar l'execució dels contractes.",
+      "rawText": "Impulsar l’aprovació de la Llei catalana de compra pública per simplificar\nels processos de contractació, incrementar la seguretat jurídica en aquest àmbit i\nmillorar l'execució dels contractes.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.6",
+      "officialId": "4.1.6",
+      "text": "Adoptar una estratègia de simplificació normativa per depurar l’ordenament jurídic de disposicions obsoletes, agilitzar procediments administratius i mesurar els costos de la regulació.",
+      "rawText": "Adoptar una estratègia de simplificació normativa per depurar l’ordenament\njurídic de disposicions obsoletes, agilitzar procediments administratius i mesurar\nels costos de la regulació.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.7",
+      "officialId": "4.1.7",
+      "text": "Crear un cos d’acció exterior i Unió Europea, destinat als departaments del Govern, per assessorar sobre els afers europeus que els afectin i facilitar el disseny, implementació i gestió de projectes europeus i internacionals.",
+      "rawText": "Crear un cos d’acció exterior i Unió Europea, destinat als departaments del\nGovern, per assessorar sobre els afers europeus que els afectin i facilitar el\ndisseny, implementació i gestió de projectes europeus i internacionals.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.1.8",
+      "officialId": "4.1.8",
+      "text": "Impulsar l’aprovació de la llei de l’Agència Catalana de Notícies que n’asseguri el control per part del Parlament i en nomeni per director o directora.",
+      "rawText": "Impulsar l’aprovació de la llei de l’Agència Catalana de Notícies que\nn’asseguri el control per part del Parlament i en nomeni per\ndirector o directora.",
+      "topic": "Reforma de la administración · objetivo 4.1",
+      "page": 93,
+      "endPage": 93,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.2.1",
+      "officialId": "4.2.1",
+      "text": "Elaborar i desplegar el Pla de transformació digital de la Generalitat de Catalunya per modernitzar els sistemes i aplicacions de l’Administració pública, simplificant processos i facilitant la transparència, la traçabilitat dels tràmits i serveis, i l’experiència ciutadana.",
+      "rawText": "Elaborar i desplegar el Pla de transformació digital de la Generalitat de\nCatalunya per modernitzar els sistemes i aplicacions de l’Administració pública,\nsimplificant processos i facilitant la transparència, la traçabilitat dels tràmits i\nserveis, i l’experiència ciutadana.",
+      "topic": "Simplificación administrativa · objetivo 4.2",
+      "page": 94,
+      "endPage": 94,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.2.2",
+      "officialId": "4.2.2",
+      "text": "Simplificar l'ecosistema de webs i aplicacions mòbils de la Generalitat de Catalunya i implementar una nova plataforma de serveis digitals que agilitzi els tràmits més demanats per la ciutadania, les empreses i els sectors econòmics i socials, en especial l’agroalimentari, el cultural i l’esportiu.",
+      "rawText": "Simplificar l'ecosistema de webs i aplicacions mòbils de la Generalitat de\nCatalunya i implementar una nova plataforma de serveis digitals que agilitzi els\ntràmits més demanats per la ciutadania, les empreses i els sectors econòmics i\nsocials, en especial l’agroalimentari, el cultural i l’esportiu.",
+      "topic": "Simplificación administrativa · objetivo 4.2",
+      "page": 94,
+      "endPage": 94,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.2.3",
+      "officialId": "4.2.3",
+      "text": "Desplegar el model d’acompanyament a la ciutadania, mitjançant una xarxa d’atenció integrada que introdueixi els agents digitals als punts d’autoservei, que estengui les oficines d’atenció ciutadana, que implementi l’oficina virtual i que posi en marxa el servei d’oficina mòbil.",
+      "rawText": "Desplegar el model d’acompanyament a la ciutadania, mitjançant una xarxa\nd’atenció integrada que introdueixi els agents digitals als punts d’autoservei, que\nestengui les oficines d’atenció ciutadana, que implementi l’oficina virtual i que\nposi en marxa el servei d’oficina mòbil.",
+      "topic": "Simplificación administrativa · objetivo 4.2",
+      "page": 94,
+      "endPage": 94,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.2.4",
+      "officialId": "4.2.4",
+      "text": "Adoptar un sistema de valoració dels serveis digitals públics per introduir la millora contínua en el procés de transformació digital de l’Administració.",
+      "rawText": "Adoptar un sistema de valoració dels serveis digitals públics per introduir la\nmillora contínua en el procés de transformació digital de l’Administració.",
+      "topic": "Simplificación administrativa · objetivo 4.2",
+      "page": 94,
+      "endPage": 94,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.2.5",
+      "officialId": "4.2.5",
+      "text": "Impulsar la comunicació clara de la Generalitat i el seu sector públic, per tal que les comunicacions i notificacions amb la ciutadania es facin amb criteris de comunicació fàcil i llenguatge jurídic accessible.",
+      "rawText": "Impulsar la comunicació clara de la Generalitat i el seu sector públic, per tal\nque les comunicacions i notificacions amb la ciutadania es facin amb criteris de\ncomunicació fàcil i llenguatge jurídic accessible.",
+      "topic": "Simplificación administrativa · objetivo 4.2",
+      "page": 94,
+      "endPage": 94,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.3.1",
+      "officialId": "4.3.1",
+      "text": "Potenciar i estendre l’avaluació de polítiques públiques a través de l’Institut Català d’Avaluació de Polítiques Públiques (IVÀLUA), de Agència de Qualitat i Avaluació Sanitàries (AQUAS) i d’altres organismes públics, i recuperar l’Agència d’Avaluació i Prospectiva Educativa per aportar evidència en la millora dels serveis públics i l’Administració.",
+      "rawText": "Potenciar i estendre l’avaluació de polítiques públiques a través de l’Institut\nCatalà d’Avaluació de Polítiques Públiques (IVÀLUA), de Agència de Qualitat i\nAvaluació Sanitàries (AQUAS) i d’altres organismes públics, i recuperar l’Agència\nd’Avaluació i Prospectiva Educativa per aportar evidència en la millora dels\nserveis públics i l’Administració.",
+      "topic": "Evaluación, transparencia y participación · objetivo 4.3",
+      "page": 95,
+      "endPage": 95,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.3.2",
+      "officialId": "4.3.2",
+      "text": "Vertebrar un ecosistema per estructurar el coneixement, la formació i la recerca en gestió pública i generar indicadors d’impacte i anàlisi de big-data administratiu en col·laboració amb l’Institut d’Estadística de Catalunya i amb l’assessorament científic de les grans infraestructures de recerca (Barcelona Supercomputing Center, BSC), les universitats i els centres de recerca de Catalunya.",
+      "rawText": "Vertebrar un ecosistema per estructurar el coneixement, la formació i la\nrecerca en gestió pública i generar indicadors d’impacte i anàlisi de big-data\nadministratiu en col·laboració amb l’Institut d’Estadística de Catalunya i amb\nl’assessorament científic de les grans infraestructures de recerca (Barcelona\nSupercomputing Center, BSC), les universitats i els centres de recerca de\nCatalunya.",
+      "topic": "Evaluación, transparencia y participación · objetivo 4.3",
+      "page": 95,
+      "endPage": 95,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.3.3",
+      "officialId": "4.3.3",
+      "text": "Elaborar i desenvolupar el Pla d’interoperabilitat de dades i col·laboració entre administracions públiques catalanes per interconnectar els sistemes d’informació i assegurar que les dades només s’aporten una vegada.",
+      "rawText": "Elaborar i desenvolupar el Pla d’interoperabilitat de dades i\ncol·laboració entre administracions públiques catalanes per\ninterconnectar els sistemes d’informació i assegurar que les dades\nnomés s’aporten una vegada.",
+      "topic": "Evaluación, transparencia y participación · objetivo 4.3",
+      "page": 95,
+      "endPage": 95,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.3.4",
+      "officialId": "4.3.4",
+      "text": "Impulsar l’aprovació de la Llei de participació ciutadana de Catalunya.",
+      "rawText": "Impulsar l’aprovació de la Llei de participació ciutadana de Catalunya.",
+      "topic": "Evaluación, transparencia y participación · objetivo 4.3",
+      "page": 95,
+      "endPage": 95,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.3.5",
+      "officialId": "4.3.5",
+      "text": "Aplicar l'avaluació econòmica de les intervencions de l'Administració de la Generalitat de Catalunya i la coordinació dels processos de revisió de despesa per garantir l’assignació i gestió eficient de recursos públics.",
+      "rawText": "Aplicar l'avaluació econòmica de les intervencions de l'Administració de la\nGeneralitat de Catalunya i la coordinació dels processos de revisió de despesa\nper garantir l’assignació i gestió eficient de recursos públics.",
+      "topic": "Evaluación, transparencia y participación · objetivo 4.3",
+      "page": 95,
+      "endPage": 95,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.3.6",
+      "officialId": "4.3.6",
+      "text": "Implantar una agenda de millora de la regulació que potenciï l’avaluació de l’impacte regulatori, a fi d’incrementar l’eficàcia i l’eficiència de l’activitat normativa del Govern i, alhora, asseguri un procés normatiu transparent, informat per l’evidència i la participació dels afectats.",
+      "rawText": "Implantar una agenda de millora de la regulació que potenciï l’avaluació de\nl’impacte regulatori, a fi d’incrementar l’eficàcia i l’eficiència de l’activitat\nnormativa del Govern i, alhora, asseguri un procés normatiu transparent, informat\nper l’evidència i la participació dels afectats.",
+      "topic": "Evaluación, transparencia y participación · objetivo 4.3",
+      "page": 95,
+      "endPage": 95,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.4.1",
+      "officialId": "4.4.1",
+      "text": "Estendre la xarxa de fibra òptica de titularitat pública al territori i millorar les condicions d'accés a les operadores, posant un èmfasi especial a les zones menys poblades.",
+      "rawText": "Estendre la xarxa de fibra òptica de titularitat pública al\nterritori i millorar les condicions d'accés a les operadores, posant un\nèmfasi especial a les zones menys poblades.",
+      "topic": "Conectividad y ciberseguridad · objetivo 4.4",
+      "page": 96,
+      "endPage": 96,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.4.2",
+      "officialId": "4.4.2",
+      "text": "Desplegar un nou model de connectivitat de les seus de la Generalitat de Catalunya mitjançant la infraestructura de xarxa pública, i fer-la més sostenible econòmicament.",
+      "rawText": "Desplegar un nou model de connectivitat de les seus de la Generalitat de\nCatalunya mitjançant la infraestructura de xarxa pública, i fer-la més sostenible\neconòmicament.",
+      "topic": "Conectividad y ciberseguridad · objetivo 4.4",
+      "page": 96,
+      "endPage": 96,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.4.3",
+      "officialId": "4.4.3",
+      "text": "Implantar un model de governança de les infraestructures digitals de titularitat pública compartit amb totes les administracions de Catalunya, i, així, facilitar una gestió homogènia, transparent i competitiva.",
+      "rawText": "Implantar un model de governança de les infraestructures digitals de\ntitularitat pública compartit amb totes les administracions de Catalunya, i, així,\nfacilitar una gestió homogènia, transparent i competitiva.",
+      "topic": "Conectividad y ciberseguridad · objetivo 4.4",
+      "page": 96,
+      "endPage": 96,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.4.4",
+      "officialId": "4.4.4",
+      "text": "Desplegar l’estratègia de ciberseguretat a les administracions catalanes i donar suport als ens locals i sectors socials estratègics.",
+      "rawText": "Desplegar l’estratègia de ciberseguretat a les administracions catalanes i\ndonar suport als ens locals i sectors socials estratègics.",
+      "topic": "Conectividad y ciberseguridad · objetivo 4.4",
+      "page": 96,
+      "endPage": 96,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.4.5",
+      "officialId": "4.4.5",
+      "text": "Impulsar una cultura de ciberseguretat en la lluita contra les ciberamenaces i els ciberatacs amb projectes de conscienciació i formació per a la ciutadania i implementar un canal d’avisos i alertes de ciberseguretat mitjançant WhatsApp i pàgines web.",
+      "rawText": "Impulsar una cultura de ciberseguretat en la lluita contra les ciberamenaces\ni els ciberatacs amb projectes de conscienciació i formació per a la ciutadania i\nimplementar un canal d’avisos i alertes de ciberseguretat mitjançant WhatsApp i\npàgines web.",
+      "topic": "Conectividad y ciberseguridad · objetivo 4.4",
+      "page": 96,
+      "endPage": 96,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.4.6",
+      "officialId": "4.4.6",
+      "text": "Elaborar i desplegar el Pla per a la promoció de l'autonomia digital per revertir la bretxa de competència digital, transformar els punts TIC/ÒMNIA i assegurar que el 2030 el 80 % de la població activa posseeixi competències digitals bàsiques i el 50 % competències avançades.",
+      "rawText": "Elaborar i desplegar el Pla per a la promoció de l'autonomia digital per\nrevertir la bretxa de competència digital, transformar els punts TIC/ÒMNIA i\nassegurar que el 2030 el 80 % de la població activa posseeixi competències\ndigitals bàsiques i el 50 % competències avançades.",
+      "topic": "Conectividad y ciberseguridad · objetivo 4.4",
+      "page": 96,
+      "endPage": 96,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.4.7",
+      "officialId": "4.4.7",
+      "text": "Impuls de la Regió virtual del cos de Mossos d'Esquadra per fer front als delictes en l’entorn virtual.",
+      "rawText": "Impuls de la Regió virtual del cos de Mossos d'Esquadra per fer front als\ndelictes en l’entorn virtual.",
+      "topic": "Conectividad y ciberseguridad · objetivo 4.4",
+      "page": 96,
+      "endPage": 96,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.5.1",
+      "officialId": "4.5.1",
+      "text": "Ampliar la capacitat operativa dels diferents cossos de seguretat i emergències per assolir 25.000 Mossos el 2030, 3.300 bombers el 2028 i 900 agents rurals el 2030, tenint en compte la distribució territorial i potenciant el personal d'administració i serveis i de l’escala de suport.",
+      "rawText": "\nAmpliar la capacitat operativa dels diferents cossos de seguretat i\nemergències per assolir 25.000 Mossos el 2030, 3.300 bombers el 2028\ni 900 agents rurals el 2030, tenint en compte la distribució territorial i\npotenciant el personal d'administració i serveis i de l’escala de suport.",
+      "topic": "Seguridad y emergencias · objetivo 4.5",
+      "page": 97,
+      "endPage": 97,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.5.2",
+      "officialId": "4.5.2",
+      "text": "Desenvolupar plans específics dirigits per combatre l'ús d'armes blanques, el cultiu i tràfic de marihuana, la multireincidència i altres fenòmens delictius.",
+      "rawText": "Desenvolupar plans específics dirigits per combatre l'ús d'armes blanques,\nel cultiu i tràfic de marihuana, la multireincidència i altres fenòmens delictius.",
+      "topic": "Seguridad y emergencias · objetivo 4.5",
+      "page": 97,
+      "endPage": 97,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.5.3",
+      "officialId": "4.5.3",
+      "text": "Elaborar i posar en pràctica una estratègia per al desenvolupament de la protecció civil local a Catalunya 2025-2027.",
+      "rawText": "Elaborar i posar en pràctica una estratègia per al desenvolupament de la\nprotecció civil local a Catalunya 2025-2027.",
+      "topic": "Seguridad y emergencias · objetivo 4.5",
+      "page": 97,
+      "endPage": 97,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.5.4",
+      "officialId": "4.5.4",
+      "text": "Revisar els protocols d’actuació per afrontar les situacions de catàstrofe o calamitats públiques, i, si escau, de la normativa aplicable, així com reforçar les funcions de la Comissió de Protecció Civil de Catalunya.",
+      "rawText": "Revisar els protocols d’actuació per afrontar les situacions de catàstrofe o\ncalamitats públiques, i, si escau, de la normativa aplicable, així com reforçar les\nfuncions de la Comissió de Protecció Civil de Catalunya.",
+      "topic": "Seguridad y emergencias · objetivo 4.5",
+      "page": 97,
+      "endPage": 97,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.5.5",
+      "officialId": "4.5.5",
+      "text": "Elaborar i desplegar els plans estratègics 2030 dels Bombers de la Generalitat de Catalunya i del cos d’Agents Rurals de Catalunya com a instruments de protecció i conservació de la biodiversitat territorial, protecció del medi natural, prevenció i extinció dels incendis forestals, el control i la reducció dels incidents crítics, i col·laboració amb el món rural.",
+      "rawText": "Elaborar i desplegar els plans estratègics 2030 dels Bombers de la\nGeneralitat de Catalunya i del cos d’Agents Rurals de Catalunya com a\ninstruments de protecció i conservació de la biodiversitat territorial, protecció del\nmedi natural, prevenció i extinció dels incendis forestals, el control i la reducció\ndels incidents crítics, i col·laboració amb el món rural.",
+      "topic": "Seguridad y emergencias · objetivo 4.5",
+      "page": 97,
+      "endPage": 97,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.5.6",
+      "officialId": "4.5.6",
+      "text": "Reestructurar i adequar l'Institut de Seguretat Pública de Catalunya per garantir la formació de les noves promocions d'efectius dels cossos operatius de seguretat i emergències.",
+      "rawText": "Reestructurar i adequar l'Institut de Seguretat Pública de Catalunya per\ngarantir la formació de les noves promocions d'efectius dels cossos operatius de\nseguretat i emergències.",
+      "topic": "Seguridad y emergencias · objetivo 4.5",
+      "page": 97,
+      "endPage": 97,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.5.7",
+      "officialId": "4.5.7",
+      "text": "Millorar l’accessibilitat del servei del CAT112, en especial per als col·lectius vulnerables.",
+      "rawText": "Millorar l’accessibilitat del servei del CAT112, en especial per als col·lectius\nvulnerables.",
+      "topic": "Seguridad y emergencias · objetivo 4.5",
+      "page": 97,
+      "endPage": 97,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.1",
+      "officialId": "4.6.1",
+      "text": "Elaborar i executar el Pla de descongestió de l’Administració de Justícia, que permetrà reforçar els recursos materials i humans dels òrgans judicials i posar en pràctica mesures organitzatives i tecnològiques, per garantir que els procediments siguin àgils.",
+      "rawText": "Elaborar i executar el Pla de descongestió de l’Administració de Justícia,\nque permetrà reforçar els recursos materials i humans dels òrgans judicials i\nposar en pràctica mesures organitzatives i tecnològiques, per garantir que els\nprocediments siguin àgils.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 98,
+      "endPage": 98,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.2",
+      "officialId": "4.6.2",
+      "text": "Crear noves unitats judicials i implementar mesures d’eficiència organitzativa per facilitar la reducció dels terminis dels judicis penals i contribuir a la reducció de la multireincidència.",
+      "rawText": "Crear noves unitats judicials i implementar mesures\nd’eficiència organitzativa per facilitar la reducció dels terminis dels\njudicis penals i contribuir a la reducció de la multireincidència.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 98,
+      "endPage": 98,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.3",
+      "officialId": "4.6.3",
+      "text": "Millorar el servei de justícia gratuïta i l’atenció ciutadana del servei públic de la Justícia per fer que estigui a l’abast de tothom per garantir drets i llibertats.",
+      "rawText": "Millorar el servei de justícia gratuïta i l’atenció ciutadana del servei públic de\nla Justícia per fer que estigui a l’abast de tothom per garantir drets i llibertats.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 98,
+      "endPage": 98,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.4",
+      "officialId": "4.6.4",
+      "text": "Adoptar l’Estratègia justícia digital 2030 amb la finalitat de digitalitzar tots els expedients i introduir l’expedient electrònic en totes les jurisdiccions, incloenthi la jurisdicció penal i la fiscalia i facilitar eines tecnològiques de suport a les funcions judicials.",
+      "rawText": "Adoptar l’Estratègia justícia digital 2030 amb la finalitat de digitalitzar tots\nels expedients i introduir l’expedient electrònic en totes les jurisdiccions, incloent-\nhi la jurisdicció penal i la fiscalia i facilitar eines tecnològiques de suport a les\nfuncions judicials.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 98,
+      "endPage": 98,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.5",
+      "officialId": "4.6.5",
+      "text": "Potenciar la mediació per facilitar la resolució dels conflictes entre la ciutadania sense judicialitzar-los i impulsar la justícia restaurativa fomentant la participació, la responsabilitat i la reparació com a camí cap a una societat més justa i cohesionada.",
+      "rawText": "Potenciar la mediació per facilitar la resolució dels conflictes entre la\nciutadania sense judicialitzar-los i impulsar la justícia restaurativa fomentant la\nparticipació, la responsabilitat i la reparació com a camí cap a una societat més\njusta i cohesionada.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 98,
+      "endPage": 98,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.6",
+      "officialId": "4.6.6",
+      "text": "Establir un nou model de selecció i formació del personal penitenciari per tal de potenciar el model de competències professionals, la formació i les pràctiques selectives.",
+      "rawText": "Establir un nou model de selecció i formació del personal penitenciari per\ntal de potenciar el model de competències professionals, la formació i les\npràctiques selectives.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 98,
+      "endPage": 98,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.7",
+      "officialId": "4.6.7",
+      "text": "Elaborar i executar el Pla per a l’increment de la presència i participació de les entitats socials amb la finalitat d’impulsar-ne la col·laboració en matèria d’interculturalitat i en els processos de reinserció a internades sense xarxa de suport social. la societat de persones",
+      "rawText": "Elaborar i executar el Pla per a l’increment de la presència i participació de\nles entitats socials amb la finalitat d’impulsar-ne la col·laboració en matèria\nd’interculturalitat i en els processos de reinserció a\ninternades sense xarxa de suport social.\nla societat de persones",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 98,
+      "endPage": 98,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.8",
+      "officialId": "4.6.8",
+      "text": "Impulsar la intervenció integral i l’acompanyament a la víctima del delicte i la millora de la intervenció a través de l’especialització i el desplegament territorial.",
+      "rawText": "Impulsar la intervenció integral i l’acompanyament a la víctima del delicte i\nla millora de la intervenció a través de l’especialització i el desplegament\nterritorial.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 99,
+      "endPage": 99,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-4.6.9",
+      "officialId": "4.6.9",
+      "text": "Desplegar el dret civil català per tal d’adaptar-lo a les noves necessitats de la societat.",
+      "rawText": "Desplegar el dret civil català per tal d’adaptar-lo a les noves necessitats de\nla societat.",
+      "topic": "Justicia · objetivo 4.6",
+      "page": 99,
+      "endPage": 99,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.1.1",
+      "officialId": "5.1.1",
+      "text": "Negociar el nou sistema de finançament singular i analitzar les propostes per implementar les noves competències que se’n puguin derivar.",
+      "rawText": "Negociar el nou sistema de finançament singular i analitzar les\npropostes per implementar les noves competències que se’n puguin\nderivar.",
+      "topic": "Financiación y fiscalidad · objetivo 5.1",
+      "page": 103,
+      "endPage": 103,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.1.2",
+      "officialId": "5.1.2",
+      "text": "Desenvolupar una fiscalitat progressiva i verda, incloent l’impost d’activitats generadores de gasos d’efecte hivernacle, per incentivar la transició cap a un model productiu i cap a una societat més verda, descarbonitzada i justa.",
+      "rawText": "Desenvolupar una fiscalitat progressiva i verda, incloent l’impost d’activitats\ngeneradores de gasos d’efecte hivernacle, per incentivar la transició cap a un\nmodel productiu i cap a una societat més verda, descarbonitzada i justa.",
+      "topic": "Financiación y fiscalidad · objetivo 5.1",
+      "page": 103,
+      "endPage": 103,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.1.3",
+      "officialId": "5.1.3",
+      "text": "Elaborar un pla per disminuir i simplificar la complexitat normativa en matèria fiscal, proporcionant coherència i homogeneïtat al gran nombre de beneficis fiscals que divergeixen en criteris d’aplicació.",
+      "rawText": "Elaborar un pla per disminuir i simplificar la complexitat normativa en\nmatèria fiscal, proporcionant coherència i homogeneïtat al gran nombre de\nbeneficis fiscals que divergeixen en criteris d’aplicació.",
+      "topic": "Financiación y fiscalidad · objetivo 5.1",
+      "page": 103,
+      "endPage": 103,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.1.4",
+      "officialId": "5.1.4",
+      "text": "Analitzar l’eficàcia dels impostos propis en relació amb els objectius que van justificar-ne la implantació, per tenir els recursos necessaris però compatibles amb una fiscalitat eficient.",
+      "rawText": "Analitzar l’eficàcia dels impostos propis en relació amb els objectius que\nvan justificar-ne la implantació, per tenir els recursos necessaris però compatibles\namb una fiscalitat eficient.",
+      "topic": "Financiación y fiscalidad · objetivo 5.1",
+      "page": 103,
+      "endPage": 103,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.2.1",
+      "officialId": "5.2.1",
+      "text": "Posicionar Catalunya com a actor proactiu dins del projecte europeu i les institucions europees amb una presència permanent i decisiva en espais com el Comitè de les Regions, els grups de treball de la Comissió Europea i el Consell de la UE, i participar activament en la definició de les polítiques europees que afecten el futur de Catalunya.",
+      "rawText": "Posicionar Catalunya com a actor proactiu dins del projecte\neuropeu i les institucions europees amb una presència permanent i\ndecisiva en espais com el Comitè de les Regions, els grups de treball de la\nComissió Europea i el Consell de la UE, i participar activament en la definició\nde les polítiques europees que afecten el futur de Catalunya.",
+      "topic": "Acción exterior y cooperación · objetivo 5.2",
+      "page": 104,
+      "endPage": 104,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.2.2",
+      "officialId": "5.2.2",
+      "text": "Incrementar progressivament els recursos destinats a la cooperació al desenvolupament fins a assolir el 0,7 % el 2030, ajustar el marc normatiu per garantir que la cooperació catalana sigui un exemple d’eficiència i impacte global i continuar desplegant la política pública de cooperació feminista.",
+      "rawText": "Incrementar progressivament els recursos destinats a la\ncooperació al desenvolupament fins a assolir el 0,7 % el 2030, ajustar\nel marc normatiu per garantir que la cooperació catalana sigui un exemple\nd’eficiència i impacte global i continuar desplegant la política pública de\ncooperació feminista.",
+      "topic": "Acción exterior y cooperación · objetivo 5.2",
+      "page": 104,
+      "endPage": 104,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.2.3",
+      "officialId": "5.2.3",
+      "text": "Fomentar la incidència de Catalunya en les agendes globals impulsades per organismes multilaterals, el treball en xarxa amb altres governs subestatals a escala global i l’enfocament regional de l’acció exterior, amb un focus especial en la Mediterrània.",
+      "rawText": "Fomentar la incidència de Catalunya en les agendes globals impulsades per\norganismes multilaterals, el treball en xarxa amb altres governs subestatals a\nescala global i l’enfocament regional de l’acció exterior, amb un focus especial en\nla Mediterrània.",
+      "topic": "Acción exterior y cooperación · objetivo 5.2",
+      "page": 104,
+      "endPage": 104,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.2.4",
+      "officialId": "5.2.4",
+      "text": "Consolidar la xarxa de les delegacions del Govern a l’exterior com a eix vertebrador de la presència internacional, reforçant la relació i la col·laboració amb la comunitat catalana a l’exterior.",
+      "rawText": "Consolidar la xarxa de les delegacions del Govern a l’exterior com a eix\nvertebrador de la presència internacional, reforçant la relació i la col·laboració\namb la comunitat catalana a l’exterior.",
+      "topic": "Acción exterior y cooperación · objetivo 5.2",
+      "page": 104,
+      "endPage": 104,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.1",
+      "officialId": "5.3.1",
+      "text": "Impulsar l’aprovació de la Llei de governs locals per reforçar l’autonomia municipal, millorar l’eficiència en la prestació dels serveis públics a la ciutadania i construir una administració pública local propera, oberta i participativa.",
+      "rawText": "Impulsar l’aprovació de la Llei de governs locals per reforçar l’autonomia\nmunicipal, millorar l’eficiència en la prestació dels serveis públics a la ciutadania i\nconstruir una administració pública local propera, oberta i participativa.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.2",
+      "officialId": "5.3.2",
+      "text": "Impulsar l’aprovació de la Llei de finances locals regida pels principis de suficiència de recursos, equitat, autonomia i responsabilitat fiscal, enfortint la singularitat institucional dels governs locals en el marc de l’autogovern de Catalunya.",
+      "rawText": "Impulsar l’aprovació de la Llei de finances locals regida pels principis de\nsuficiència de recursos, equitat, autonomia i responsabilitat fiscal, enfortint la\nsingularitat institucional dels governs locals en el marc de l’autogovern de\nCatalunya.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.3",
+      "officialId": "5.3.3",
+      "text": "Aprovar i desplegar la Llei-estatut de municipis rurals.",
+      "rawText": "Aprovar i desplegar la Llei-estatut de municipis rurals.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.4",
+      "officialId": "5.3.4",
+      "text": "Reformar la Llei d’urbanisme i elaborar el Pla territorial general de Catalunya amb la finalitat d’adaptar el model territorial als efectes del canvi climàtic, que faciliti l’atracció de projectes estratègics d’inversió i potenciï els actius dels territoris i la cohesió social, amb l’horitzó 2050.",
+      "rawText": "Reformar la Llei d’urbanisme i elaborar el Pla territorial general de\nCatalunya amb la finalitat d’adaptar el model territorial als efectes del canvi\nclimàtic, que faciliti l’atracció de projectes estratègics d’inversió i potenciï els\nactius dels territoris i la cohesió social, amb l’horitzó 2050.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.5",
+      "officialId": "5.3.5",
+      "text": "Aprovar el nou contracte programa de serveis socials (2026) per establir una nova relació amb el món local.",
+      "rawText": "Aprovar el nou contracte programa de serveis socials (2026) per establir\nuna nova relació amb el món local.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.6",
+      "officialId": "5.3.6",
+      "text": "Desplegar l’Agenda Rural per evitar el despoblament, garantir uns serveis públics dignes i diversificar l’activitat econòmica en entorns rurals i zones de muntanya.",
+      "rawText": "Desplegar l’Agenda Rural per evitar el despoblament, garantir\nuns serveis públics dignes i diversificar l’activitat econòmica en\nentorns rurals i zones de muntanya.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.7",
+      "officialId": "5.3.7",
+      "text": "Continuar impulsant el servei d’oficines bancàries mòbils perquè arribi a tots els municipis de Catalunya col·laboració amb el món local. que no disposen d’oficina bancària, en",
+      "rawText": "Continuar impulsant el servei d’oficines bancàries mòbils perquè arribi a\ntots els municipis de Catalunya\ncol·laboració amb el món local.\nque no disposen d’oficina bancària, en",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.8",
+      "officialId": "5.3.8",
+      "text": "Mantenir la millora de les condicions dels professionals d l’àmbit rural per garantir l’atenció a la salut al conjunt del país. e la salut en",
+      "rawText": "Mantenir la millora de les condicions dels professionals d\nl’àmbit rural per garantir l’atenció a la salut al conjunt del país.\ne la salut en",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 105,
+      "endPage": 105,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.9",
+      "officialId": "5.3.9",
+      "text": "Redactar el Pla director per a les policies locals per millorar la coordinació institucional i operativa entre les policies locals i els diferents serveis de seguretat i emergències.",
+      "rawText": "Redactar el Pla director per a les policies locals per millorar la coordinació\ninstitucional i operativa entre les policies locals i els diferents serveis de seguretat\ni emergències.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 106,
+      "endPage": 106,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.10",
+      "officialId": "5.3.10",
+      "text": "Reforçar la cooperació i el suport a l'àmbit local per a la millora de la seguretat viària urbana, i impulsar accions de formació, educació i sensibilització per a una mobilitat segura i sostenible.",
+      "rawText": "Reforçar la cooperació i el suport a l'àmbit local per a la millora de la\nseguretat viària urbana, i impulsar accions de formació, educació i sensibilització\nper a una mobilitat segura i sostenible.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 106,
+      "endPage": 106,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.3.11",
+      "officialId": "5.3.11",
+      "text": "Impulsar la participació directa dels municipis catalans en els afers europeus, aprofitant els programes i fons de finançament per a la transformació social, digital i verda liderada per la UE.",
+      "rawText": "Impulsar la participació directa dels municipis catalans en els afers\neuropeus, aprofitant els programes i fons de finançament per a la transformació\nsocial, digital i verda liderada per la UE.",
+      "topic": "Cohesión territorial · objetivo 5.3",
+      "page": 106,
+      "endPage": 106,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.4.1",
+      "officialId": "5.4.1",
+      "text": "Aprovar el Pacte Nacional per la Llengua des d’un diagnòstic compartit que permetrà dissenyar i dur a terme una política lingüística renovada i transversal per protegir els drets lingüístics en un context de diversitat i incrementar l’ús social del català com a llengua comuna i de trobada.",
+      "rawText": "Aprovar el Pacte Nacional per la Llengua des d’un diagnòstic compartit que\npermetrà dissenyar i dur a terme una política lingüística renovada i transversal per\nprotegir els drets lingüístics en un context de diversitat i incrementar l’ús social\ndel català com a llengua comuna i de trobada.",
+      "topic": "Lenguas · objetivo 5.4",
+      "page": 107,
+      "endPage": 107,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.4.2",
+      "officialId": "5.4.2",
+      "text": "Proporcionar acompanyament i suport al procés negociador per assolir la plena oficialitat del català i el seu ús normalitzat en totes les institucions comunitàries.",
+      "rawText": "Proporcionar acompanyament i suport al procés negociador per assolir la\nplena oficialitat del català i el seu ús normalitzat en totes les institucions\ncomunitàries.",
+      "topic": "Lenguas · objetivo 5.4",
+      "page": 107,
+      "endPage": 107,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.4.3",
+      "officialId": "5.4.3",
+      "text": "Elaborar i executar un Pla estratègic per a l’aprenentatge del català per a adults i reforçar el Consorci per a la Normalització Lingüística, amb ampliació de l’oferta de places.",
+      "rawText": "Elaborar i executar un Pla estratègic per a l’aprenentatge del\ncatalà per a adults i reforçar el Consorci per a la Normalització\nLingüística, amb ampliació de l’oferta de places.",
+      "topic": "Lenguas · objetivo 5.4",
+      "page": 107,
+      "endPage": 107,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.4.4",
+      "officialId": "5.4.4",
+      "text": "Elaborar i desplegar plans de foment del català en sectors deficitaris i estratègics, com ara l’àmbit judicial, audiovisual i digital, extraescolars, serveis a les persones o comerç.",
+      "rawText": "Elaborar i desplegar plans de foment del català en sectors deficitaris i\nestratègics, com ara l’àmbit judicial, audiovisual i digital, extraescolars, serveis a\nles persones o comerç.",
+      "topic": "Lenguas · objetivo 5.4",
+      "page": 107,
+      "endPage": 107,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.4.5",
+      "officialId": "5.4.5",
+      "text": "Potenciar el coneixement i l’ús del català en el sistema públic de salut de Catalunya, facilitant la formació necessària a tots els professionals sanitaris per garantir els drets lingüístics d’usuaris i pacients.",
+      "rawText": "Potenciar el coneixement i l’ús del català en el sistema públic de salut de\nCatalunya, facilitant la formació necessària a tots els professionals sanitaris per\ngarantir els drets lingüístics d’usuaris i pacients.",
+      "topic": "Lenguas · objetivo 5.4",
+      "page": 107,
+      "endPage": 107,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.4.6",
+      "officialId": "5.4.6",
+      "text": "Elaborar i desplegar un Pla integral de l’occità, aranès a l’Aran, per millorarne la situació actual.",
+      "rawText": "Elaborar i desplegar un Pla integral de l’occità, aranès a l’Aran, per millorar-\nne la situació actual.",
+      "topic": "Lenguas · objetivo 5.4",
+      "page": 107,
+      "endPage": 107,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.4.7",
+      "officialId": "5.4.7",
+      "text": "Impulsar un pla sobre la llengua de signes catalana.",
+      "rawText": "Impulsar un pla sobre la llengua de signes catalana.",
+      "topic": "Lenguas · objetivo 5.4",
+      "page": 107,
+      "endPage": 107,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.1",
+      "officialId": "5.5.1",
+      "text": "Elaborar i executar el Pla integral per a la igualtat de tracte i no discriminació, i consolidar l’Oficina d’Igualtat de Tracte i No-discriminació (OITND) com a ens de garantia de la lluita contra les discriminacions.",
+      "rawText": "Elaborar i executar el Pla integral per a la igualtat de tracte i no\ndiscriminació, i consolidar l’Oficina d’Igualtat de Tracte i No-discriminació (OITND)\ncom a ens de garantia de la lluita contra les discriminacions.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 108,
+      "endPage": 108,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.2",
+      "officialId": "5.5.2",
+      "text": "Crear el Consell Assessor dels Drets Humans a Catalunya per elaborar un pla per a la defensa i promoció dels drets humans, impulsar campanyes de difusió per fomentar la inclusió i combatre els discursos d’odi.",
+      "rawText": "Crear el Consell Assessor dels Drets Humans a Catalunya per elaborar un\npla per a la defensa i promoció dels drets humans, impulsar campanyes de\ndifusió per fomentar la inclusió i combatre els discursos d’odi.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 108,
+      "endPage": 108,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.3",
+      "officialId": "5.5.3",
+      "text": "Crear el primer pacte nacional contra els discursos d’odi per erradicar discriminacions i discursos homòfobs, xenòfobs i masclistes que atempten contra la llibertat i els drets humans de les persones.",
+      "rawText": "Crear el primer pacte nacional contra els discursos d’odi per erradicar\ndiscriminacions i discursos homòfobs, xenòfobs i masclistes que atempten contra\nla llibertat i els drets humans de les persones.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 108,
+      "endPage": 108,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.4",
+      "officialId": "5.5.4",
+      "text": "Modificar la Llei 19/2020, i desplegar normativa i instruments específics en igualtat de tracte i no-discriminació, com ara el decret sancionador o el comitè de persones expertes.",
+      "rawText": "Modificar la Llei 19/2020, i desplegar normativa i instruments específics en\nigualtat de tracte i no-discriminació, com ara el decret sancionador o el comitè de\npersones expertes.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 108,
+      "endPage": 108,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.5",
+      "officialId": "5.5.5",
+      "text": "Impulsar l’aprovació de la Llei de l’audiovisual, transposant la Directiva Europea i la normativa bàsica de l’Estat per adaptar-se al nou ecosistema de plataformes i fer front a la desinformació, la infodèmia i l’accés dels menors a la pornografia.",
+      "rawText": "Impulsar l’aprovació de la Llei de l’audiovisual, transposant la Directiva\nEuropea i la normativa bàsica de l’Estat per adaptar-se al nou ecosistema de\nplataformes i fer front a la desinformació, la infodèmia i l’accés dels menors a la\npornografia.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 108,
+      "endPage": 108,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.6",
+      "officialId": "5.5.6",
+      "text": "Impulsar l’aprovació de la Llei contra el racisme en totes les seves formes i expressions, amb la voluntat de lluitar contra les discriminacions i la intolerància en tots els àmbits, com ara l’activitat esportiva, i promoure accions positives envers la població racialitzada.",
+      "rawText": "Impulsar l’aprovació de la Llei contra el racisme en totes les seves\nformes i expressions, amb la voluntat de lluitar contra les discriminacions i la\nintolerància en tots els àmbits, com ara l’activitat esportiva, i promoure accions\npositives envers la població racialitzada.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 108,
+      "endPage": 108,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.7",
+      "officialId": "5.5.7",
+      "text": "Impulsar l’aprovació de la Llei de memòria democràtica per crear, consolidar i ampliar els instruments i recursos per desenvolupar-la.",
+      "rawText": "Impulsar l’aprovació de la Llei de memòria democràtica per crear,\nconsolidar i ampliar els instruments i recursos per desenvolupar-la.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 109,
+      "endPage": 109,
+      "sourceId": "catalunya-programme-2024"
+    },
+    {
+      "id": "r-09-5.5.8",
+      "officialId": "5.5.8",
+      "text": "Reforçar l’ajuda humanitària i l’establiment de la pau com a eix indissociable de l’acció exterior del Govern, promovent la democràcia, els drets humans i el compliment del dret internacional.",
+      "rawText": "Reforçar l’ajuda humanitària i l’establiment de la pau com a eix\nindissociable de l’acció exterior del Govern, promovent la democràcia, els drets\nhumans i el compliment del dret internacional.",
+      "topic": "Derechos humanos y memoria democrática · objetivo 5.5",
+      "page": 109,
+      "endPage": 109,
+      "sourceId": "catalunya-programme-2024"
+    }
+  ]
+}

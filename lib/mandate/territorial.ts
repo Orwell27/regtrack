@@ -4,10 +4,13 @@ import navarraInventory from "@/data/mandate/navarra-inventory.json";
 import navarraReviews from "@/data/mandate/navarra-reviews.json";
 import euskadiInventory from "@/data/mandate/euskadi-inventory.json";
 import euskadiReviews from "@/data/mandate/euskadi-reviews.json";
+import catalunyaInventory from "@/data/mandate/catalunya-inventory.json";
+import catalunyaReviews from "@/data/mandate/catalunya-reviews.json";
 import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "r-09": { inventory: catalunyaInventory, reviews: catalunyaReviews, level: "region", mandateSourceId: catalunyaInventory.sourceId, sourceLabel: catalunyaInventory.sourceLabel, governmentCutoff: undefined },
   "m-28079": { inventory: madridInventory, reviews: madridReviews, level: "municipality", mandateSourceId: madridInventory.sourceId, sourceLabel: "Programa", governmentCutoff: undefined },
   "r-15": { inventory: navarraInventory, reviews: navarraReviews, level: "region", mandateSourceId: navarraInventory.mandateSourceId, sourceLabel: navarraInventory.sourceLabel, governmentCutoff: navarraInventory.governmentCutoff },
   "r-16": { inventory: euskadiInventory, reviews: euskadiReviews, level: "region", mandateSourceId: euskadiInventory.mandateSourceId, sourceLabel: euskadiInventory.sourceLabel, governmentCutoff: undefined },
@@ -23,6 +26,7 @@ export function getTerritorialBalance(id: string): TerritorialBalance | null {
     sourceId: inventory.sourceId, registerSourceId: inventory.registerSourceId, sourceSha256: inventory.sourceSha256,
     inventoryTotal: inventory.inventoryTotal, scope: inventory.scope, textNote: inventory.textNote,
     level, mandateSourceId, sourceLabel,
+    ...("textLanguage" in inventory ? { textLanguage: inventory.textLanguage as TerritorialBalance["textLanguage"] } : {}),
     ...(governmentCutoff ? { governmentCutoff } : {}),
     records: (inventory.records as TerritorialRecord[]).map(record => {
       const { id, officialId, text, topic, page, endPage, sourceId } = record;
