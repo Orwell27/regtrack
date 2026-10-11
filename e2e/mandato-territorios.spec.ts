@@ -8,9 +8,11 @@ test("Zaragoza municipal consulta las juntas y sus pendientes", async ({ page })
   await expect(page).toHaveURL(/\/territorios\/m-50297$/);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Zaragoza · mandato municipal 2023–2027");
   await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.locator(".mn-summary-grid")).toContainText("secciones del programa del documento importadas");
+  await expect(page.locator(".mc-intro")).not.toContainText("Apartados con viñeta");
   await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
   await expect(page.getByRole("status")).toContainText("34 resultados");
-  await page.getByLabel("Buscar medida municipal").fill("Alfocea");
+  await page.getByLabel("Buscar sección municipal").fill("Alfocea");
   await expect(page.getByRole("status")).toContainText("1 resultados");
   await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
   const housing = page.locator("#compromiso-m-50297-7");

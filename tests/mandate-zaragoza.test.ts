@@ -6,7 +6,7 @@ import { isCoverageComplete } from "@/lib/mandate/coverage-model";
 describe("Zaragoza: secciones, fechas y actuaciones sin equiparar", () => {
   it("separa municipio y región y no presenta secciones como promesas verificadas", () => {
     const b = getTerritorialBalance("m-50297")!;
-    expect(b).toMatchObject({ inventoryTotal: 37, mandateId: "m-50297-2023", transcriptionPending: true });
+    expect(b).toMatchObject({ inventoryTotal: 37, inventoryKind: "programme-sections", mandateId: "m-50297-2023", transcriptionPending: true });
     expect(b.contextBlocks).toHaveLength(2);
     expect(b.reviews).toHaveLength(3);
     expect(b.reviews.flatMap(r => r.components)).toHaveLength(14);
