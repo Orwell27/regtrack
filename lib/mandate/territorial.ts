@@ -1,3 +1,5 @@
+import murciaCityInventory from "@/data/mandate/murcia-city-inventory.json";
+import murciaCityReviews from "@/data/mandate/murcia-city-reviews.json";
 import castellonInventory from "@/data/mandate/castellon-inventory.json";
 import castellonReviews from "@/data/mandate/castellon-reviews.json";
 import alicanteInventory from "@/data/mandate/alicante-inventory.json";
@@ -56,6 +58,7 @@ import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "m-30030": { inventory: murciaCityInventory, reviews: murciaCityReviews, level: "municipality", mandateSourceId: murciaCityInventory.sourceId, sourceLabel: murciaCityInventory.sourceLabel, governmentCutoff: undefined },
   "m-12040": { inventory: castellonInventory, reviews: castellonReviews, level: "municipality", mandateSourceId: castellonInventory.sourceId, sourceLabel: castellonInventory.sourceLabel, governmentCutoff: undefined },
   "m-03014": { inventory: alicanteInventory, reviews: alicanteReviews, level: "municipality", mandateSourceId: alicanteInventory.sourceId, sourceLabel: alicanteInventory.sourceLabel, governmentCutoff: undefined },
   "m-46250": { inventory: valenciaInventory, reviews: valenciaReviews, level: "municipality", mandateSourceId: valenciaInventory.sourceId, sourceLabel: valenciaInventory.sourceLabel, governmentCutoff: undefined },

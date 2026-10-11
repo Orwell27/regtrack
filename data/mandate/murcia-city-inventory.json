@@ -1,0 +1,1305 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "m-30030",
+  "mandateId": "m-30030-2023",
+  "mandateLabel": "Murcia · mandato municipal 2023–2027",
+  "sourceId": "murcia-city-programme",
+  "mandateSourceId": "murcia-city-programme",
+  "registerSourceId": "murcia-city-register",
+  "sourceLabel": "Discurso de investidura municipal · 17/06/2023",
+  "sourceSha256": "acfd56de346afc62cd8b12108a2194386dd121e808170603d553bd395469e961",
+  "importedAt": "2026-10-11",
+  "inventoryKind": "speech-sections",
+  "transcriptionPending": true,
+  "transcriptionMethod": "digital",
+  "inventoryTotal": 11,
+  "scope": "11 secciones editoriales del discurso de José Ballesta tras su elección de 17/06/2023, páginas 16–21. Apertura y cierre se conservan aparte. No equivalen a 11 promesas únicas ni al programa electoral completo.",
+  "textNote": "Mandato municipal 2023–2027, distinto del gobierno autonómico. El acta de 2023 recoge la elección de Ballesta con 15 votos (p. 15). Tras la vacante, el decreto de 11/05/2026 mantiene delegaciones con Rebeca Pérez en funciones; el acta de 22/05/2026 acredita su elección con 15 votos y 14 en blanco (p. 8). El relevo no reinicia el mandato ni atribuye a Pérez la autoría del discurso de 2023. La referencia a un decreto de 11/05/2025 en la p. 1 del acta de 2026 discrepa del decreto capturado, fechado en 2026; se conserva el original sin corregirlo. Las firmas impresas de las actas son de 26/07/2023 y 26/06/2026: no son las fechas de las sesiones y no se han validado electrónicamente. El programa electoral de 2023 y sus propuestas por pedanía, así como los anuncios posteriores y el discurso completo de 2026, siguen pendientes de conciliación con el inventario. Cotejo íntegro y revisión humana independiente pendientes.",
+  "contextBlocks": [
+    {
+      "id": "m-30030-context-1",
+      "topic": "Apertura, responsabilidad institucional y moderación",
+      "page": 16,
+      "endPage": 18,
+      "rawText": "El Alcalde, D. José Francisco Ballesta Germán subió a ocupar la Presidencia \ndel Pleno del Ayuntamiento, y haciendo uso de la palabra dijo lo siguiente: \n\"Excelentísimo Señor Presidente de la Región de Murcia, querido Fernando, \nseñoras y señores concejales, compañeras y compañeros de corporación, Excelentísimas \ne Ilustrísimas autoridades, queridas familias, queridas amigas y amigos que hoy nos \nacompañáis desde el Salón de Plenos, desde las salas adyacentes y desde vuestras casas \na través de la retrasmisión televisiva, señoras y señores. \nComo decíamos ayer en la sociedad líquida que nos ha tocado vivir, sin apenas un \nsistema de ideas estructuradas, en la que se transita fácilmente de unas a otras, en la que \ntodo es efímero, voluble, relativo, en la que las responsabilidades se nos diluyen entre los \ndedos, en la que todo pasa y cambia, en la que todo vale y nada sirve, en la que cada uno \ntiene su propia verdad y no es necesario fundamentarla sino que basta con afirmarla, es \nfácil no aferrarse a nada, no sorprenderse por nada, no adquirir compromisos con nada. \n Sin embargo y precisamente por todo ello el acto de juramento o promesa que \nacabamos de realizar no puede quedarse en un mero acto protocolario, hueco, vacío, sin \ncontenido. Hoy compañeras y compañeros de corporación, nuestros nombres han sido \npronunciados en este histórico Salón de Plenos, hemos sido llamados uno por uno, ante \nel pueblo de Murcia y los representantes legítimos de la sociedad de la Región de Murcia \npara comprometernos con este Ayuntamiento y sería bueno recordar que una parte \nimportante de la historia brillante de esta ciudad está escrita en el aire que estamos \nrespirando en este momento. Que conviene que sintamos la grandeza de esta institución, \nque percibamos que juramos o prometemos fidelidad a unas obligaciones que \ntranscienden la esfera personal de nuestras, a veces, raquíticas aspiraciones, que conviene \nen definitiva sentirse y verse institución. \nEs tiempo de responsabilidad, la responsabilidad de demostrar que somos hijos de \nuna tierra única, afirmada en la verdad de lo que se hizo en el pasado y sustentada en la \ninsaciable voluntad de construir juntos el futuro como territorio de realización de nuestros \nsueños. No vivamos en edades oscuras, aquellas que mitifican lo que se fue antes de lo \nque se podría llegar a ser. Piense que en este páramo de banalidad en el que nos ha tocado \nvivir, quien hable hoy de responsabilidad, de límites, de ideas compartidas, tiene todas \nlas de perder frente a quien establece unas demarcaciones rotundas entre nosotros y ellos, \no entre las élites y el pueblo. \nSé que no son buenos tiempos, para los que creemos profundamente en la \nmoderación, en la templanza, en la concordia. Siempre hay quien lo confunde con el \nconformismo, con la equidistancia, con la tibieza, incluso con la falta de convicciones. \nTodo lo contrario, como recientemente escribía Adolfo Suárez Illana recordando a su \npadre, hace falta mucho valor para no contestar al mal con el mal mismo, hace falta \nmucho valor y muy profundas convicciones para no caer en la trampa que \npermanentemente tienden espíritus desequilibrados, respondiendo a sus provocaciones \ncon las mismas armas, el insulto, la descalificación y la retórica violenta. Pero estamos \nen un tiempo nuevo en el que, si queremos avanzar, no tendrán cabida el cinismo y el \nfundamentalismo. Hace falta una ética renovada y creíble, ilusión pero humildad, \ncreatividad pero capacidad técnica y por encima de todo espíritu de diálogo. Debemos \nesforzarnos en alejar la tentación de ajustar la realidad a aquello que más nos conviene, \npara avanzar egoístamente en la posición personal o partidista, pues no olvidemos que en \neste mar de palabras libres, de una semántica clara, navegan mejor las proclamas que \nmezclan emocionalidad y simpleza y naufraga nuestra herencia ilustrada que siempre \npropugnó la fuerza de la razón. \nPor eso no cabe otra salida que ofrecer un diagnóstico frio y desapasionado de \nnuestra realidad social, organizar cuales son las opciones que están a nuestra disposición \ny buscar formas de elegir las mejores mediante el entendimiento. Esta es la fórmula \nauténticamente ilustrada, carece de épica, sí ya sé, carece de épica revolucionaria, pero \nnadie dijo que ese debía ser uno de los rasgos de la política democrática. El fundamental \nes pensar que no hay un único mundo posible y que en nuestras manos está el decidir \ncómo queremos vivir, pero para saberlo tendremos que poder entendernos, no negar las \nevidencias fácticas, tolerarnos en vez de demonizarnos o situarnos en posiciones de \nsuperioridad moral calificando de indigno todo lo que no se avenga a nuestro interés \nparticular. \nSer moderado no consiste en negar el conflicto, de hecho la política es inevitable \nporque el conflicto también lo es. La firmeza y la moderación no son enemigas, tampoco \nla discrepancia y la moderación son incompatibles, pero la moderación se lleva mal con \nlas categorías absolutas, con el fanatismo, el sectarismo y la confianza en la posesión de \nla única verdad. ",
+      "text": "El Alcalde, D. José Francisco Ballesta Germán subió a ocupar la Presidencia del Pleno del Ayuntamiento, y haciendo uso de la palabra dijo lo siguiente: \"Excelentísimo Señor Presidente de la Región de Murcia, querido Fernando, señoras y señores concejales, compañeras y compañeros de corporación, Excelentísimas e Ilustrísimas autoridades, queridas familias, queridas amigas y amigos que hoy nos acompañáis desde el Salón de Plenos, desde las salas adyacentes y desde vuestras casas a través de la retrasmisión televisiva, señoras y señores. Como decíamos ayer en la sociedad líquida que nos ha tocado vivir, sin apenas un sistema de ideas estructuradas, en la que se transita fácilmente de unas a otras, en la que todo es efímero, voluble, relativo, en la que las responsabilidades se nos diluyen entre los dedos, en la que todo pasa y cambia, en la que todo vale y nada sirve, en la que cada uno tiene su propia verdad y no es necesario fundamentarla sino que basta con afirmarla, es fácil no aferrarse a nada, no sorprenderse por nada, no adquirir compromisos con nada. Sin embargo y precisamente por todo ello el acto de juramento o promesa que acabamos de realizar no puede quedarse en un mero acto protocolario, hueco, vacío, sin contenido. Hoy compañeras y compañeros de corporación, nuestros nombres han sido pronunciados en este histórico Salón de Plenos, hemos sido llamados uno por uno, ante el pueblo de Murcia y los representantes legítimos de la sociedad de la Región de Murcia para comprometernos con este Ayuntamiento y sería bueno recordar que una parte importante de la historia brillante de esta ciudad está escrita en el aire que estamos respirando en este momento. Que conviene que sintamos la grandeza de esta institución, que percibamos que juramos o prometemos fidelidad a unas obligaciones que transcienden la esfera personal de nuestras, a veces, raquíticas aspiraciones, que conviene en definitiva sentirse y verse institución. Es tiempo de responsabilidad, la responsabilidad de demostrar que somos hijos de una tierra única, afirmada en la verdad de lo que se hizo en el pasado y sustentada en la insaciable voluntad de construir juntos el futuro como territorio de realización de nuestros sueños. No vivamos en edades oscuras, aquellas que mitifican lo que se fue antes de lo que se podría llegar a ser. Piense que en este páramo de banalidad en el que nos ha tocado vivir, quien hable hoy de responsabilidad, de límites, de ideas compartidas, tiene todas las de perder frente a quien establece unas demarcaciones rotundas entre nosotros y ellos, o entre las élites y el pueblo. Sé que no son buenos tiempos, para los que creemos profundamente en la moderación, en la templanza, en la concordia. Siempre hay quien lo confunde con el conformismo, con la equidistancia, con la tibieza, incluso con la falta de convicciones. Todo lo contrario, como recientemente escribía Adolfo Suárez Illana recordando a su padre, hace falta mucho valor para no contestar al mal con el mal mismo, hace falta mucho valor y muy profundas convicciones para no caer en la trampa que permanentemente tienden espíritus desequilibrados, respondiendo a sus provocaciones con las mismas armas, el insulto, la descalificación y la retórica violenta. Pero estamos en un tiempo nuevo en el que, si queremos avanzar, no tendrán cabida el cinismo y el fundamentalismo. Hace falta una ética renovada y creíble, ilusión pero humildad, creatividad pero capacidad técnica y por encima de todo espíritu de diálogo. Debemos esforzarnos en alejar la tentación de ajustar la realidad a aquello que más nos conviene, para avanzar egoístamente en la posición personal o partidista, pues no olvidemos que en este mar de palabras libres, de una semántica clara, navegan mejor las proclamas que mezclan emocionalidad y simpleza y naufraga nuestra herencia ilustrada que siempre propugnó la fuerza de la razón. Por eso no cabe otra salida que ofrecer un diagnóstico frio y desapasionado de nuestra realidad social, organizar cuales son las opciones que están a nuestra disposición y buscar formas de elegir las mejores mediante el entendimiento. Esta es la fórmula auténticamente ilustrada, carece de épica, sí ya sé, carece de épica revolucionaria, pero nadie dijo que ese debía ser uno de los rasgos de la política democrática. El fundamental es pensar que no hay un único mundo posible y que en nuestras manos está el decidir cómo queremos vivir, pero para saberlo tendremos que poder entendernos, no negar las evidencias fácticas, tolerarnos en vez de demonizarnos o situarnos en posiciones de superioridad moral calificando de indigno todo lo que no se avenga a nuestro interés particular. Ser moderado no consiste en negar el conflicto, de hecho la política es inevitable porque el conflicto también lo es. La firmeza y la moderación no son enemigas, tampoco la discrepancia y la moderación son incompatibles, pero la moderación se lleva mal con las categorías absolutas, con el fanatismo, el sectarismo y la confianza en la posesión de la única verdad.",
+      "fragments": [
+        {
+          "page": 16,
+          "index": 6,
+          "start": 0,
+          "end": 76,
+          "text": "El Alcalde, D. José Francisco Ballesta Germán subió a ocupar la Presidencia "
+        },
+        {
+          "page": 16,
+          "index": 7,
+          "start": 0,
+          "end": 76,
+          "text": "del Pleno del Ayuntamiento, y haciendo uso de la palabra dijo lo siguiente: "
+        },
+        {
+          "page": 16,
+          "index": 8,
+          "start": 0,
+          "end": 74,
+          "text": "\"Excelentísimo Señor Presidente de la Región de Murcia, querido Fernando, "
+        },
+        {
+          "page": 16,
+          "index": 9,
+          "start": 0,
+          "end": 85,
+          "text": "señoras y señores concejales, compañeras y compañeros de corporación, Excelentísimas "
+        },
+        {
+          "page": 16,
+          "index": 10,
+          "start": 0,
+          "end": 84,
+          "text": "e Ilustrísimas autoridades, queridas familias, queridas amigas y amigos que hoy nos "
+        },
+        {
+          "page": 16,
+          "index": 11,
+          "start": 0,
+          "end": 87,
+          "text": "acompañáis desde el Salón de Plenos, desde las salas adyacentes y desde vuestras casas "
+        },
+        {
+          "page": 16,
+          "index": 12,
+          "start": 0,
+          "end": 59,
+          "text": "a través de la retrasmisión televisiva, señoras y señores. "
+        },
+        {
+          "page": 16,
+          "index": 13,
+          "start": 0,
+          "end": 81,
+          "text": "Como decíamos ayer en la sociedad líquida que nos ha tocado vivir, sin apenas un "
+        },
+        {
+          "page": 16,
+          "index": 14,
+          "start": 0,
+          "end": 92,
+          "text": "sistema de ideas estructuradas, en la que se transita fácilmente de unas a otras, en la que "
+        },
+        {
+          "page": 16,
+          "index": 15,
+          "start": 0,
+          "end": 93,
+          "text": "todo es efímero, voluble, relativo, en la que las responsabilidades se nos diluyen entre los "
+        },
+        {
+          "page": 16,
+          "index": 16,
+          "start": 0,
+          "end": 90,
+          "text": "dedos, en la que todo pasa y cambia, en la que todo vale y nada sirve, en la que cada uno "
+        },
+        {
+          "page": 16,
+          "index": 17,
+          "start": 0,
+          "end": 88,
+          "text": "tiene su propia verdad y no es necesario fundamentarla sino que basta con afirmarla, es "
+        },
+        {
+          "page": 16,
+          "index": 18,
+          "start": 0,
+          "end": 87,
+          "text": "fácil no aferrarse a nada, no sorprenderse por nada, no adquirir compromisos con nada. "
+        },
+        {
+          "page": 16,
+          "index": 19,
+          "start": 0,
+          "end": 77,
+          "text": " Sin embargo y precisamente por todo ello el acto de juramento o promesa que "
+        },
+        {
+          "page": 16,
+          "index": 20,
+          "start": 0,
+          "end": 87,
+          "text": "acabamos de realizar no puede quedarse en un mero acto protocolario, hueco, vacío, sin "
+        },
+        {
+          "page": 16,
+          "index": 21,
+          "start": 0,
+          "end": 81,
+          "text": "contenido. Hoy compañeras y compañeros de corporación, nuestros nombres han sido "
+        },
+        {
+          "page": 16,
+          "index": 22,
+          "start": 0,
+          "end": 86,
+          "text": "pronunciados en este histórico Salón de Plenos, hemos sido llamados uno por uno, ante "
+        },
+        {
+          "page": 16,
+          "index": 23,
+          "start": 0,
+          "end": 89,
+          "text": "el pueblo de Murcia y los representantes legítimos de la sociedad de la Región de Murcia "
+        },
+        {
+          "page": 16,
+          "index": 24,
+          "start": 0,
+          "end": 79,
+          "text": "para comprometernos con este Ayuntamiento y sería bueno recordar que una parte "
+        },
+        {
+          "page": 16,
+          "index": 25,
+          "start": 0,
+          "end": 87,
+          "text": "importante de la historia brillante de esta ciudad está escrita en el aire que estamos "
+        },
+        {
+          "page": 16,
+          "index": 26,
+          "start": 0,
+          "end": 87,
+          "text": "respirando en este momento. Que conviene que sintamos la grandeza de esta institución, "
+        },
+        {
+          "page": 16,
+          "index": 27,
+          "start": 0,
+          "end": 74,
+          "text": "que percibamos que juramos o prometemos fidelidad a unas obligaciones que "
+        },
+        {
+          "page": 16,
+          "index": 28,
+          "start": 0,
+          "end": 92,
+          "text": "transcienden la esfera personal de nuestras, a veces, raquíticas aspiraciones, que conviene "
+        },
+        {
+          "page": 16,
+          "index": 29,
+          "start": 0,
+          "end": 44,
+          "text": "en definitiva sentirse y verse institución. "
+        },
+        {
+          "page": 16,
+          "index": 30,
+          "start": 0,
+          "end": 81,
+          "text": "Es tiempo de responsabilidad, la responsabilidad de demostrar que somos hijos de "
+        },
+        {
+          "page": 16,
+          "index": 31,
+          "start": 0,
+          "end": 90,
+          "text": "una tierra única, afirmada en la verdad de lo que se hizo en el pasado y sustentada en la "
+        },
+        {
+          "page": 16,
+          "index": 32,
+          "start": 0,
+          "end": 93,
+          "text": "insaciable voluntad de construir juntos el futuro como territorio de realización de nuestros "
+        },
+        {
+          "page": 16,
+          "index": 33,
+          "start": 0,
+          "end": 87,
+          "text": "sueños. No vivamos en edades oscuras, aquellas que mitifican lo que se fue antes de lo "
+        },
+        {
+          "page": 16,
+          "index": 34,
+          "start": 0,
+          "end": 91,
+          "text": "que se podría llegar a ser. Piense que en este páramo de banalidad en el que nos ha tocado "
+        },
+        {
+          "page": 16,
+          "index": 35,
+          "start": 0,
+          "end": 89,
+          "text": "vivir, quien hable hoy de responsabilidad, de límites, de ideas compartidas, tiene todas "
+        },
+        {
+          "page": 16,
+          "index": 36,
+          "start": 0,
+          "end": 91,
+          "text": "las de perder frente a quien establece unas demarcaciones rotundas entre nosotros y ellos, "
+        },
+        {
+          "page": 17,
+          "index": 6,
+          "start": 0,
+          "end": 32,
+          "text": "o entre las élites y el pueblo. "
+        },
+        {
+          "page": 17,
+          "index": 7,
+          "start": 0,
+          "end": 71,
+          "text": "Sé que no son buenos tiempos, para los que creemos profundamente en la "
+        },
+        {
+          "page": 17,
+          "index": 8,
+          "start": 0,
+          "end": 83,
+          "text": "moderación, en la templanza, en la concordia. Siempre hay quien lo confunde con el "
+        },
+        {
+          "page": 17,
+          "index": 9,
+          "start": 0,
+          "end": 89,
+          "text": "conformismo, con la equidistancia, con la tibieza, incluso con la falta de convicciones. "
+        },
+        {
+          "page": 17,
+          "index": 10,
+          "start": 0,
+          "end": 84,
+          "text": "Todo lo contrario, como recientemente escribía Adolfo Suárez Illana recordando a su "
+        },
+        {
+          "page": 17,
+          "index": 11,
+          "start": 0,
+          "end": 84,
+          "text": "padre, hace falta mucho valor para no contestar al mal con el mal mismo, hace falta "
+        },
+        {
+          "page": 17,
+          "index": 12,
+          "start": 0,
+          "end": 71,
+          "text": "mucho valor y muy profundas convicciones para no caer en la trampa que "
+        },
+        {
+          "page": 17,
+          "index": 13,
+          "start": 0,
+          "end": 84,
+          "text": "permanentemente tienden espíritus desequilibrados, respondiendo a sus provocaciones "
+        },
+        {
+          "page": 17,
+          "index": 14,
+          "start": 0,
+          "end": 90,
+          "text": "con las mismas armas, el insulto, la descalificación y la retórica violenta. Pero estamos "
+        },
+        {
+          "page": 17,
+          "index": 15,
+          "start": 0,
+          "end": 85,
+          "text": "en un tiempo nuevo en el que, si queremos avanzar, no tendrán cabida el cinismo y el "
+        },
+        {
+          "page": 17,
+          "index": 16,
+          "start": 0,
+          "end": 81,
+          "text": "fundamentalismo. Hace falta una ética renovada y creíble, ilusión pero humildad, "
+        },
+        {
+          "page": 17,
+          "index": 17,
+          "start": 0,
+          "end": 85,
+          "text": "creatividad pero capacidad técnica y por encima de todo espíritu de diálogo. Debemos "
+        },
+        {
+          "page": 17,
+          "index": 18,
+          "start": 0,
+          "end": 90,
+          "text": "esforzarnos en alejar la tentación de ajustar la realidad a aquello que más nos conviene, "
+        },
+        {
+          "page": 17,
+          "index": 19,
+          "start": 0,
+          "end": 89,
+          "text": "para avanzar egoístamente en la posición personal o partidista, pues no olvidemos que en "
+        },
+        {
+          "page": 17,
+          "index": 20,
+          "start": 0,
+          "end": 85,
+          "text": "este mar de palabras libres, de una semántica clara, navegan mejor las proclamas que "
+        },
+        {
+          "page": 17,
+          "index": 21,
+          "start": 0,
+          "end": 83,
+          "text": "mezclan emocionalidad y simpleza y naufraga nuestra herencia ilustrada que siempre "
+        },
+        {
+          "page": 17,
+          "index": 22,
+          "start": 0,
+          "end": 32,
+          "text": "propugnó la fuerza de la razón. "
+        },
+        {
+          "page": 17,
+          "index": 23,
+          "start": 0,
+          "end": 79,
+          "text": "Por eso no cabe otra salida que ofrecer un diagnóstico frio y desapasionado de "
+        },
+        {
+          "page": 17,
+          "index": 24,
+          "start": 0,
+          "end": 91,
+          "text": "nuestra realidad social, organizar cuales son las opciones que están a nuestra disposición "
+        },
+        {
+          "page": 17,
+          "index": 25,
+          "start": 0,
+          "end": 84,
+          "text": "y buscar formas de elegir las mejores mediante el entendimiento. Esta es la fórmula "
+        },
+        {
+          "page": 17,
+          "index": 26,
+          "start": 0,
+          "end": 90,
+          "text": "auténticamente ilustrada, carece de épica, sí ya sé, carece de épica revolucionaria, pero "
+        },
+        {
+          "page": 17,
+          "index": 27,
+          "start": 0,
+          "end": 90,
+          "text": "nadie dijo que ese debía ser uno de los rasgos de la política democrática. El fundamental "
+        },
+        {
+          "page": 17,
+          "index": 28,
+          "start": 0,
+          "end": 84,
+          "text": "es pensar que no hay un único mundo posible y que en nuestras manos está el decidir "
+        },
+        {
+          "page": 17,
+          "index": 29,
+          "start": 0,
+          "end": 85,
+          "text": "cómo queremos vivir, pero para saberlo tendremos que poder entendernos, no negar las "
+        },
+        {
+          "page": 17,
+          "index": 30,
+          "start": 0,
+          "end": 84,
+          "text": "evidencias fácticas, tolerarnos en vez de demonizarnos o situarnos en posiciones de "
+        },
+        {
+          "page": 17,
+          "index": 31,
+          "start": 0,
+          "end": 85,
+          "text": "superioridad moral calificando de indigno todo lo que no se avenga a nuestro interés "
+        },
+        {
+          "page": 17,
+          "index": 32,
+          "start": 0,
+          "end": 12,
+          "text": "particular. "
+        },
+        {
+          "page": 17,
+          "index": 33,
+          "start": 0,
+          "end": 83,
+          "text": "Ser moderado no consiste en negar el conflicto, de hecho la política es inevitable "
+        },
+        {
+          "page": 17,
+          "index": 34,
+          "start": 0,
+          "end": 87,
+          "text": "porque el conflicto también lo es. La firmeza y la moderación no son enemigas, tampoco "
+        },
+        {
+          "page": 17,
+          "index": 35,
+          "start": 0,
+          "end": 87,
+          "text": "la discrepancia y la moderación son incompatibles, pero la moderación se lleva mal con "
+        },
+        {
+          "page": 17,
+          "index": 36,
+          "start": 0,
+          "end": 91,
+          "text": "las categorías absolutas, con el fanatismo, el sectarismo y la confianza en la posesión de "
+        },
+        {
+          "page": 18,
+          "index": 6,
+          "start": 0,
+          "end": 17,
+          "text": "la única verdad. "
+        }
+      ]
+    },
+    {
+      "id": "m-30030-context-2",
+      "topic": "Recapitulación, agradecimientos y cierre",
+      "page": 19,
+      "endPage": 21,
+      "rawText": "Ya ven, no nos faltan ilusiones y entusiasmo, proyectos e ideas, no es el momento \nde detallarlos. Ya sé que lo mencionado puede parecer un desiderátum, pero para saber \nhacia dónde vamos es preciso fijar puntos de mira muy elevados como nos recuerdan los \nversos del gran Fernando Pessoa la luna brilla por igual en el mar y en los pequeños \ncharcos, porque está lo suficientemente alta. \nLlega el momento de anteponer los intereses colectivos a los personales, los \ninstitucionales a los corporativos, el bien común al beneficio particular. Es por tanto la \nhora de la generosidad y la amplitud de miras, no nos quedemos en la mezquina \ncontemplación de los particularismos y pensemos siempre en aquello que pueda hacer \nmás grande a nuestra querida Murcia. En ello humildemente he intentado aplicarme en \nmis responsabilidades públicas y en ese esfuerzo intentaré perseverar. \nMi agradecimiento personal y reconocimiento institucional a todos los miembros \nde la anterior corporación que hoy dejan sus responsabilidades. Un recuerdo a algunas \npersonas muy especiales, con las que he compartido el gobierno de esta institución, \ngracias Eduardo, gracias Felipe, excelente trabajo, cuanto he aprendido de vosotros, \nsiempre en mi corazón. Gracias a los que a partir de hoy vais a compartir conmigo más \ndirectamente el gobierno de este Ayuntamiento, ya os lo dije, fuiste llamados por dos \ncaracterísticas y por este orden: tenéis una calidad humana única y sois unos excelentes \ngestores. Y ya sabéis desde el alba a la madrugada, de lunes a domingo, los 365 días del \naño, la misión encomendada merece la pena. \nTodo el cariñó a nuestras familias, a los que hoy estáis aquí, pero que habéis estado \nsiempre, estuvisteis antes, ahora y mañana también estaréis a nuestro lado. Nuestra deuda \nde gratitud con vosotras y vosotros es impagable. \nGracias a todos los representantes de organizaciones y colectivos, a la sociedad \ncivil de Murcia, a los legítimos representantes de las instituciones que hoy nos hacen el \nhonor de acompañarnos, gracias Presidente. \nAnte todos ustedes, solemnemente y en nombre de toda la corporación adquirimos \nen esta mañana de junio, pública y voluntariamente, el compromiso profundo de trabajar \npor Murcia y los murcianos. \nY a todos ustedes, los que hoy nos acompañan directamente en este Salón de \nPlenos, a los que nos siguen desde las salas anexas a través de las pantallas, a los que lo \nhacen desde sus casas a través de la retrasmisión televisiva, a todas, a todos, Murcia nos \nllama esta mañana, nos llama a aceptar con coraje la responsabilidad de ponernos en pie \ny sacar a delante nuestra tierra con voluntad férrea, en cada pedanía, en cada barrio, en \ncada calle, en cada plaza. La misión encomendada no es tarea que pueda desarrollarse en \nsolitario, os necesitamos a todos y por ello me atrevo a recordar los versos de León Felipe, \na los que ya he acudido en otras ocasiones, Venid todos y ayudadme a sacudir este árbol \n¿No veis que solo no puedo? Venid pronto, que el fruto ya está maduro. Venid pronto, \nantes de que a las estrellas se las coman los gusanos. ",
+      "text": "Ya ven, no nos faltan ilusiones y entusiasmo, proyectos e ideas, no es el momento de detallarlos. Ya sé que lo mencionado puede parecer un desiderátum, pero para saber hacia dónde vamos es preciso fijar puntos de mira muy elevados como nos recuerdan los versos del gran Fernando Pessoa la luna brilla por igual en el mar y en los pequeños charcos, porque está lo suficientemente alta. Llega el momento de anteponer los intereses colectivos a los personales, los institucionales a los corporativos, el bien común al beneficio particular. Es por tanto la hora de la generosidad y la amplitud de miras, no nos quedemos en la mezquina contemplación de los particularismos y pensemos siempre en aquello que pueda hacer más grande a nuestra querida Murcia. En ello humildemente he intentado aplicarme en mis responsabilidades públicas y en ese esfuerzo intentaré perseverar. Mi agradecimiento personal y reconocimiento institucional a todos los miembros de la anterior corporación que hoy dejan sus responsabilidades. Un recuerdo a algunas personas muy especiales, con las que he compartido el gobierno de esta institución, gracias Eduardo, gracias Felipe, excelente trabajo, cuanto he aprendido de vosotros, siempre en mi corazón. Gracias a los que a partir de hoy vais a compartir conmigo más directamente el gobierno de este Ayuntamiento, ya os lo dije, fuiste llamados por dos características y por este orden: tenéis una calidad humana única y sois unos excelentes gestores. Y ya sabéis desde el alba a la madrugada, de lunes a domingo, los 365 días del año, la misión encomendada merece la pena. Todo el cariñó a nuestras familias, a los que hoy estáis aquí, pero que habéis estado siempre, estuvisteis antes, ahora y mañana también estaréis a nuestro lado. Nuestra deuda de gratitud con vosotras y vosotros es impagable. Gracias a todos los representantes de organizaciones y colectivos, a la sociedad civil de Murcia, a los legítimos representantes de las instituciones que hoy nos hacen el honor de acompañarnos, gracias Presidente. Ante todos ustedes, solemnemente y en nombre de toda la corporación adquirimos en esta mañana de junio, pública y voluntariamente, el compromiso profundo de trabajar por Murcia y los murcianos. Y a todos ustedes, los que hoy nos acompañan directamente en este Salón de Plenos, a los que nos siguen desde las salas anexas a través de las pantallas, a los que lo hacen desde sus casas a través de la retrasmisión televisiva, a todas, a todos, Murcia nos llama esta mañana, nos llama a aceptar con coraje la responsabilidad de ponernos en pie y sacar a delante nuestra tierra con voluntad férrea, en cada pedanía, en cada barrio, en cada calle, en cada plaza. La misión encomendada no es tarea que pueda desarrollarse en solitario, os necesitamos a todos y por ello me atrevo a recordar los versos de León Felipe, a los que ya he acudido en otras ocasiones, Venid todos y ayudadme a sacudir este árbol ¿No veis que solo no puedo? Venid pronto, que el fruto ya está maduro. Venid pronto, antes de que a las estrellas se las coman los gusanos.",
+      "fragments": [
+        {
+          "page": 19,
+          "index": 34,
+          "start": 0,
+          "end": 82,
+          "text": "Ya ven, no nos faltan ilusiones y entusiasmo, proyectos e ideas, no es el momento "
+        },
+        {
+          "page": 19,
+          "index": 35,
+          "start": 0,
+          "end": 86,
+          "text": "de detallarlos. Ya sé que lo mencionado puede parecer un desiderátum, pero para saber "
+        },
+        {
+          "page": 19,
+          "index": 36,
+          "start": 0,
+          "end": 86,
+          "text": "hacia dónde vamos es preciso fijar puntos de mira muy elevados como nos recuerdan los "
+        },
+        {
+          "page": 20,
+          "index": 6,
+          "start": 0,
+          "end": 85,
+          "text": "versos del gran Fernando Pessoa la luna brilla por igual en el mar y en los pequeños "
+        },
+        {
+          "page": 20,
+          "index": 7,
+          "start": 0,
+          "end": 46,
+          "text": "charcos, porque está lo suficientemente alta. "
+        },
+        {
+          "page": 20,
+          "index": 8,
+          "start": 0,
+          "end": 77,
+          "text": "Llega el momento de anteponer los intereses colectivos a los personales, los "
+        },
+        {
+          "page": 20,
+          "index": 9,
+          "start": 0,
+          "end": 91,
+          "text": "institucionales a los corporativos, el bien común al beneficio particular. Es por tanto la "
+        },
+        {
+          "page": 20,
+          "index": 10,
+          "start": 0,
+          "end": 78,
+          "text": "hora de la generosidad y la amplitud de miras, no nos quedemos en la mezquina "
+        },
+        {
+          "page": 20,
+          "index": 11,
+          "start": 0,
+          "end": 83,
+          "text": "contemplación de los particularismos y pensemos siempre en aquello que pueda hacer "
+        },
+        {
+          "page": 20,
+          "index": 12,
+          "start": 0,
+          "end": 84,
+          "text": "más grande a nuestra querida Murcia. En ello humildemente he intentado aplicarme en "
+        },
+        {
+          "page": 20,
+          "index": 13,
+          "start": 0,
+          "end": 71,
+          "text": "mis responsabilidades públicas y en ese esfuerzo intentaré perseverar. "
+        },
+        {
+          "page": 20,
+          "index": 14,
+          "start": 0,
+          "end": 79,
+          "text": "Mi agradecimiento personal y reconocimiento institucional a todos los miembros "
+        },
+        {
+          "page": 20,
+          "index": 15,
+          "start": 0,
+          "end": 86,
+          "text": "de la anterior corporación que hoy dejan sus responsabilidades. Un recuerdo a algunas "
+        },
+        {
+          "page": 20,
+          "index": 16,
+          "start": 0,
+          "end": 84,
+          "text": "personas muy especiales, con las que he compartido el gobierno de esta institución, "
+        },
+        {
+          "page": 20,
+          "index": 17,
+          "start": 0,
+          "end": 85,
+          "text": "gracias Eduardo, gracias Felipe, excelente trabajo, cuanto he aprendido de vosotros, "
+        },
+        {
+          "page": 20,
+          "index": 18,
+          "start": 0,
+          "end": 86,
+          "text": "siempre en mi corazón. Gracias a los que a partir de hoy vais a compartir conmigo más "
+        },
+        {
+          "page": 20,
+          "index": 19,
+          "start": 0,
+          "end": 86,
+          "text": "directamente el gobierno de este Ayuntamiento, ya os lo dije, fuiste llamados por dos "
+        },
+        {
+          "page": 20,
+          "index": 20,
+          "start": 0,
+          "end": 89,
+          "text": "características y por este orden: tenéis una calidad humana única y sois unos excelentes "
+        },
+        {
+          "page": 20,
+          "index": 21,
+          "start": 0,
+          "end": 89,
+          "text": "gestores. Y ya sabéis desde el alba a la madrugada, de lunes a domingo, los 365 días del "
+        },
+        {
+          "page": 20,
+          "index": 22,
+          "start": 0,
+          "end": 43,
+          "text": "año, la misión encomendada merece la pena. "
+        },
+        {
+          "page": 20,
+          "index": 23,
+          "start": 0,
+          "end": 86,
+          "text": "Todo el cariñó a nuestras familias, a los que hoy estáis aquí, pero que habéis estado "
+        },
+        {
+          "page": 20,
+          "index": 24,
+          "start": 0,
+          "end": 90,
+          "text": "siempre, estuvisteis antes, ahora y mañana también estaréis a nuestro lado. Nuestra deuda "
+        },
+        {
+          "page": 20,
+          "index": 25,
+          "start": 0,
+          "end": 50,
+          "text": "de gratitud con vosotras y vosotros es impagable. "
+        },
+        {
+          "page": 20,
+          "index": 26,
+          "start": 0,
+          "end": 81,
+          "text": "Gracias a todos los representantes de organizaciones y colectivos, a la sociedad "
+        },
+        {
+          "page": 20,
+          "index": 27,
+          "start": 0,
+          "end": 90,
+          "text": "civil de Murcia, a los legítimos representantes de las instituciones que hoy nos hacen el "
+        },
+        {
+          "page": 20,
+          "index": 28,
+          "start": 0,
+          "end": 43,
+          "text": "honor de acompañarnos, gracias Presidente. "
+        },
+        {
+          "page": 20,
+          "index": 29,
+          "start": 0,
+          "end": 79,
+          "text": "Ante todos ustedes, solemnemente y en nombre de toda la corporación adquirimos "
+        },
+        {
+          "page": 20,
+          "index": 30,
+          "start": 0,
+          "end": 87,
+          "text": "en esta mañana de junio, pública y voluntariamente, el compromiso profundo de trabajar "
+        },
+        {
+          "page": 20,
+          "index": 31,
+          "start": 0,
+          "end": 28,
+          "text": "por Murcia y los murcianos. "
+        },
+        {
+          "page": 20,
+          "index": 32,
+          "start": 0,
+          "end": 75,
+          "text": "Y a todos ustedes, los que hoy nos acompañan directamente en este Salón de "
+        },
+        {
+          "page": 20,
+          "index": 33,
+          "start": 0,
+          "end": 92,
+          "text": "Plenos, a los que nos siguen desde las salas anexas a través de las pantallas, a los que lo "
+        },
+        {
+          "page": 20,
+          "index": 34,
+          "start": 0,
+          "end": 91,
+          "text": "hacen desde sus casas a través de la retrasmisión televisiva, a todas, a todos, Murcia nos "
+        },
+        {
+          "page": 20,
+          "index": 35,
+          "start": 0,
+          "end": 88,
+          "text": "llama esta mañana, nos llama a aceptar con coraje la responsabilidad de ponernos en pie "
+        },
+        {
+          "page": 20,
+          "index": 36,
+          "start": 0,
+          "end": 90,
+          "text": "y sacar a delante nuestra tierra con voluntad férrea, en cada pedanía, en cada barrio, en "
+        },
+        {
+          "page": 21,
+          "index": 6,
+          "start": 0,
+          "end": 88,
+          "text": "cada calle, en cada plaza. La misión encomendada no es tarea que pueda desarrollarse en "
+        },
+        {
+          "page": 21,
+          "index": 7,
+          "start": 0,
+          "end": 93,
+          "text": "solitario, os necesitamos a todos y por ello me atrevo a recordar los versos de León Felipe, "
+        },
+        {
+          "page": 21,
+          "index": 8,
+          "start": 0,
+          "end": 88,
+          "text": "a los que ya he acudido en otras ocasiones, Venid todos y ayudadme a sacudir este árbol "
+        },
+        {
+          "page": 21,
+          "index": 9,
+          "start": 0,
+          "end": 85,
+          "text": "¿No veis que solo no puedo? Venid pronto, que el fruto ya está maduro. Venid pronto, "
+        },
+        {
+          "page": 21,
+          "index": 10,
+          "start": 0,
+          "end": 55,
+          "text": "antes de que a las estrellas se las coman los gusanos. "
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "m-30030-1",
+      "topic": "Ética, diálogo y acuerdos",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Creo en la política basada en la ética, en la razón y en las ideas. Una política de \nverdad y una política de verdades, en la que el sentido institucional y la capacidad de \nacuerdo sustituyan al tacticismo y al cortoplacismo. \nCreo en la serenidad, en no interpretar la política como un combate, en no \nempequeñecerla en un antagonismo que opone un nosotros virtuoso frente a un ellos \nvicioso, en no reducirla a una dialéctica amigo-enemigo, en el que el eje capital de la \npolítica sea ser uno de los nuestros. \nCreo en la palabra como el requisito para el diálogo y la acción política. Creo que \nhay que darse la mano y no la espalda, mirar al futuro y no al pasado, solucionar los \nproblemas de nuestros hijos y nietos y no las querellas de nuestros abuelos, realizar el \nesfuerzo de oponer la complejidad al simplismo, el argumento a la consigna, y el diálogo \na la provocación. \nCreo que los acuerdos son los que transforman la sociedad y la hacen avanzar, \nmientras que los desacuerdos conducen a la inacción y son conservadores. Hay que \nremplazar las descalificaciones por pactos, los embates por debates, no es correcta una \ndialéctica de seducción de los propios y enfrentamiento y revancha de los otros, esa es \nuna lógica de enemigos y no de simples adversarios. ",
+      "text": "Creo en la política basada en la ética, en la razón y en las ideas. Una política de verdad y una política de verdades, en la que el sentido institucional y la capacidad de acuerdo sustituyan al tacticismo y al cortoplacismo. Creo en la serenidad, en no interpretar la política como un combate, en no empequeñecerla en un antagonismo que opone un nosotros virtuoso frente a un ellos vicioso, en no reducirla a una dialéctica amigo-enemigo, en el que el eje capital de la política sea ser uno de los nuestros. Creo en la palabra como el requisito para el diálogo y la acción política. Creo que hay que darse la mano y no la espalda, mirar al futuro y no al pasado, solucionar los problemas de nuestros hijos y nietos y no las querellas de nuestros abuelos, realizar el esfuerzo de oponer la complejidad al simplismo, el argumento a la consigna, y el diálogo a la provocación. Creo que los acuerdos son los que transforman la sociedad y la hacen avanzar, mientras que los desacuerdos conducen a la inacción y son conservadores. Hay que remplazar las descalificaciones por pactos, los embates por debates, no es correcta una dialéctica de seducción de los propios y enfrentamiento y revancha de los otros, esa es una lógica de enemigos y no de simples adversarios.",
+      "fragments": [
+        {
+          "page": 18,
+          "index": 7,
+          "start": 0,
+          "end": 84,
+          "text": "Creo en la política basada en la ética, en la razón y en las ideas. Una política de "
+        },
+        {
+          "page": 18,
+          "index": 8,
+          "start": 0,
+          "end": 88,
+          "text": "verdad y una política de verdades, en la que el sentido institucional y la capacidad de "
+        },
+        {
+          "page": 18,
+          "index": 9,
+          "start": 0,
+          "end": 53,
+          "text": "acuerdo sustituyan al tacticismo y al cortoplacismo. "
+        },
+        {
+          "page": 18,
+          "index": 10,
+          "start": 0,
+          "end": 75,
+          "text": "Creo en la serenidad, en no interpretar la política como un combate, en no "
+        },
+        {
+          "page": 18,
+          "index": 11,
+          "start": 0,
+          "end": 82,
+          "text": "empequeñecerla en un antagonismo que opone un nosotros virtuoso frente a un ellos "
+        },
+        {
+          "page": 18,
+          "index": 12,
+          "start": 0,
+          "end": 88,
+          "text": "vicioso, en no reducirla a una dialéctica amigo-enemigo, en el que el eje capital de la "
+        },
+        {
+          "page": 18,
+          "index": 13,
+          "start": 0,
+          "end": 38,
+          "text": "política sea ser uno de los nuestros. "
+        },
+        {
+          "page": 18,
+          "index": 14,
+          "start": 0,
+          "end": 84,
+          "text": "Creo en la palabra como el requisito para el diálogo y la acción política. Creo que "
+        },
+        {
+          "page": 18,
+          "index": 15,
+          "start": 0,
+          "end": 86,
+          "text": "hay que darse la mano y no la espalda, mirar al futuro y no al pasado, solucionar los "
+        },
+        {
+          "page": 18,
+          "index": 16,
+          "start": 0,
+          "end": 89,
+          "text": "problemas de nuestros hijos y nietos y no las querellas de nuestros abuelos, realizar el "
+        },
+        {
+          "page": 18,
+          "index": 17,
+          "start": 0,
+          "end": 89,
+          "text": "esfuerzo de oponer la complejidad al simplismo, el argumento a la consigna, y el diálogo "
+        },
+        {
+          "page": 18,
+          "index": 18,
+          "start": 0,
+          "end": 18,
+          "text": "a la provocación. "
+        },
+        {
+          "page": 18,
+          "index": 19,
+          "start": 0,
+          "end": 78,
+          "text": "Creo que los acuerdos son los que transforman la sociedad y la hacen avanzar, "
+        },
+        {
+          "page": 18,
+          "index": 20,
+          "start": 0,
+          "end": 81,
+          "text": "mientras que los desacuerdos conducen a la inacción y son conservadores. Hay que "
+        },
+        {
+          "page": 18,
+          "index": 21,
+          "start": 0,
+          "end": 88,
+          "text": "remplazar las descalificaciones por pactos, los embates por debates, no es correcta una "
+        },
+        {
+          "page": 18,
+          "index": 22,
+          "start": 0,
+          "end": 88,
+          "text": "dialéctica de seducción de los propios y enfrentamiento y revancha de los otros, esa es "
+        },
+        {
+          "page": 18,
+          "index": 23,
+          "start": 0,
+          "end": 52,
+          "text": "una lógica de enemigos y no de simples adversarios. "
+        }
+      ],
+      "officialId": "Sección editorial 1",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-2",
+      "topic": "Convivencia cívica",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Creo en la ciudad como lugar de civilización, de convivencia cívica, de \nexperimentar el arte de estar juntos y compartir valores. ",
+      "text": "Creo en la ciudad como lugar de civilización, de convivencia cívica, de experimentar el arte de estar juntos y compartir valores.",
+      "fragments": [
+        {
+          "page": 18,
+          "index": 24,
+          "start": 0,
+          "end": 72,
+          "text": "Creo en la ciudad como lugar de civilización, de convivencia cívica, de "
+        },
+        {
+          "page": 18,
+          "index": 25,
+          "start": 0,
+          "end": 58,
+          "text": "experimentar el arte de estar juntos y compartir valores. "
+        }
+      ],
+      "officialId": "Sección editorial 2",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-3",
+      "topic": "Proyecto de ciudad y capital humano",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Creo en la forma más inteligente de creación de ventajas competitivas en una \nsociedad globalizada y abierta es a través de un proyecto de ciudad, que dinamice los \ndiferentes actores sociales, estimule el sentimiento de pertenencia a esta tierra y ponga en \nvalor el capital humano local. ",
+      "text": "Creo en la forma más inteligente de creación de ventajas competitivas en una sociedad globalizada y abierta es a través de un proyecto de ciudad, que dinamice los diferentes actores sociales, estimule el sentimiento de pertenencia a esta tierra y ponga en valor el capital humano local.",
+      "fragments": [
+        {
+          "page": 18,
+          "index": 26,
+          "start": 0,
+          "end": 77,
+          "text": "Creo en la forma más inteligente de creación de ventajas competitivas en una "
+        },
+        {
+          "page": 18,
+          "index": 27,
+          "start": 0,
+          "end": 86,
+          "text": "sociedad globalizada y abierta es a través de un proyecto de ciudad, que dinamice los "
+        },
+        {
+          "page": 18,
+          "index": 28,
+          "start": 0,
+          "end": 93,
+          "text": "diferentes actores sociales, estimule el sentimiento de pertenencia a esta tierra y ponga en "
+        },
+        {
+          "page": 18,
+          "index": 29,
+          "start": 0,
+          "end": 31,
+          "text": "valor el capital humano local. "
+        }
+      ],
+      "officialId": "Sección editorial 3",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-4",
+      "topic": "Bienestar, honestidad y austeridad",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Creo en una Murcia armónica, estable, capaz de garantizar el bienestar y la \nconvivencia, en la que el derecho a la autonomía y la libertad individual se concilian con \nel respeto al orden colectivo, en la que las conductas públicas se gobiernen por los valores \nde la honestidad y la austeridad, y que la templanza y el respeto impregnen todas las \nformas de conducta social. ",
+      "text": "Creo en una Murcia armónica, estable, capaz de garantizar el bienestar y la convivencia, en la que el derecho a la autonomía y la libertad individual se concilian con el respeto al orden colectivo, en la que las conductas públicas se gobiernen por los valores de la honestidad y la austeridad, y que la templanza y el respeto impregnen todas las formas de conducta social.",
+      "fragments": [
+        {
+          "page": 18,
+          "index": 30,
+          "start": 0,
+          "end": 76,
+          "text": "Creo en una Murcia armónica, estable, capaz de garantizar el bienestar y la "
+        },
+        {
+          "page": 18,
+          "index": 31,
+          "start": 0,
+          "end": 91,
+          "text": "convivencia, en la que el derecho a la autonomía y la libertad individual se concilian con "
+        },
+        {
+          "page": 18,
+          "index": 32,
+          "start": 0,
+          "end": 93,
+          "text": "el respeto al orden colectivo, en la que las conductas públicas se gobiernen por los valores "
+        },
+        {
+          "page": 18,
+          "index": 33,
+          "start": 0,
+          "end": 86,
+          "text": "de la honestidad y la austeridad, y que la templanza y el respeto impregnen todas las "
+        },
+        {
+          "page": 18,
+          "index": 34,
+          "start": 0,
+          "end": 27,
+          "text": "formas de conducta social. "
+        }
+      ],
+      "officialId": "Sección editorial 4",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-5",
+      "topic": "Transformación y colaboración",
+      "page": 18,
+      "endPage": 19,
+      "rawText": "Creo que la mera gestión de unos presupuestos municipales tiene efectos muy \nlimitados sobre el potencial transformador de nuestra Murcia. No somos solo \nadministradores económicos o interventores de cuentas, debemos aspirar a ser \ntransformadores de nuestra realidad social y por ello es imprescindible un proyecto de \nciudad, con liderazgo y capacidad de colaboración entre los distintos actores de la ciudad \nmultiplicando así las posibilidades de futuro, construir sobre la esperanza y no sobre el \nresentimiento, sobre el fervor del futuro y no sobre el miedo al pasado. Hay que tener la \naudacia de la esperanza. ",
+      "text": "Creo que la mera gestión de unos presupuestos municipales tiene efectos muy limitados sobre el potencial transformador de nuestra Murcia. No somos solo administradores económicos o interventores de cuentas, debemos aspirar a ser transformadores de nuestra realidad social y por ello es imprescindible un proyecto de ciudad, con liderazgo y capacidad de colaboración entre los distintos actores de la ciudad multiplicando así las posibilidades de futuro, construir sobre la esperanza y no sobre el resentimiento, sobre el fervor del futuro y no sobre el miedo al pasado. Hay que tener la audacia de la esperanza.",
+      "fragments": [
+        {
+          "page": 18,
+          "index": 35,
+          "start": 0,
+          "end": 76,
+          "text": "Creo que la mera gestión de unos presupuestos municipales tiene efectos muy "
+        },
+        {
+          "page": 18,
+          "index": 36,
+          "start": 0,
+          "end": 76,
+          "text": "limitados sobre el potencial transformador de nuestra Murcia. No somos solo "
+        },
+        {
+          "page": 19,
+          "index": 6,
+          "start": 0,
+          "end": 77,
+          "text": "administradores económicos o interventores de cuentas, debemos aspirar a ser "
+        },
+        {
+          "page": 19,
+          "index": 7,
+          "start": 0,
+          "end": 87,
+          "text": "transformadores de nuestra realidad social y por ello es imprescindible un proyecto de "
+        },
+        {
+          "page": 19,
+          "index": 8,
+          "start": 0,
+          "end": 91,
+          "text": "ciudad, con liderazgo y capacidad de colaboración entre los distintos actores de la ciudad "
+        },
+        {
+          "page": 19,
+          "index": 9,
+          "start": 0,
+          "end": 90,
+          "text": "multiplicando así las posibilidades de futuro, construir sobre la esperanza y no sobre el "
+        },
+        {
+          "page": 19,
+          "index": 10,
+          "start": 0,
+          "end": 90,
+          "text": "resentimiento, sobre el fervor del futuro y no sobre el miedo al pasado. Hay que tener la "
+        },
+        {
+          "page": 19,
+          "index": 11,
+          "start": 0,
+          "end": 25,
+          "text": "audacia de la esperanza. "
+        }
+      ],
+      "officialId": "Sección editorial 5",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-6",
+      "topic": "Equilibrio territorial y servicios",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Creo en una Murcia vertebrada territorialmente y cohesionada socialmente, en la \nque exista un equilibrio urbano y de servicios entre los distintos núcleos de población. ",
+      "text": "Creo en una Murcia vertebrada territorialmente y cohesionada socialmente, en la que exista un equilibrio urbano y de servicios entre los distintos núcleos de población.",
+      "fragments": [
+        {
+          "page": 19,
+          "index": 12,
+          "start": 0,
+          "end": 80,
+          "text": "Creo en una Murcia vertebrada territorialmente y cohesionada socialmente, en la "
+        },
+        {
+          "page": 19,
+          "index": 13,
+          "start": 0,
+          "end": 89,
+          "text": "que exista un equilibrio urbano y de servicios entre los distintos núcleos de población. "
+        }
+      ],
+      "officialId": "Sección editorial 6",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-7",
+      "topic": "Sostenibilidad y conservación de la huerta",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Creo en el desarrollo sostenible de Murcia, en la naturaleza, en la huerta como \nobjeto precioso y precario, necesitado de protección y conservación que se equilibre con \nun inteligente proceso de avance y crecimiento que dé satisfacción a las necesidades de \nla población que afortunadamente sigue aumentando día a día. ",
+      "text": "Creo en el desarrollo sostenible de Murcia, en la naturaleza, en la huerta como objeto precioso y precario, necesitado de protección y conservación que se equilibre con un inteligente proceso de avance y crecimiento que dé satisfacción a las necesidades de la población que afortunadamente sigue aumentando día a día.",
+      "fragments": [
+        {
+          "page": 19,
+          "index": 14,
+          "start": 0,
+          "end": 80,
+          "text": "Creo en el desarrollo sostenible de Murcia, en la naturaleza, en la huerta como "
+        },
+        {
+          "page": 19,
+          "index": 15,
+          "start": 0,
+          "end": 89,
+          "text": "objeto precioso y precario, necesitado de protección y conservación que se equilibre con "
+        },
+        {
+          "page": 19,
+          "index": 16,
+          "start": 0,
+          "end": 88,
+          "text": "un inteligente proceso de avance y crecimiento que dé satisfacción a las necesidades de "
+        },
+        {
+          "page": 19,
+          "index": 17,
+          "start": 0,
+          "end": 61,
+          "text": "la población que afortunadamente sigue aumentando día a día. "
+        }
+      ],
+      "officialId": "Sección editorial 7",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-8",
+      "topic": "Planeamiento, comercio y acceso a la vivienda",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Creo que los proyectos y planes municipales compartidos, bien reflexionados y \nmejor ejecutados son los que necesitamos, si no es así corremos paradójicamente el riesgo \nde la centrificación de los centros urbanos, el abandono del comercio de proximidad y el \naumento de la especulación inmobiliaria. Proyectos de ciudades paradisiacas pueden \nquedar abolidos por la realidad palpable de unas clases medias empobrecidas, que tienen \nque irse a buscar su hogar lejos de su lugar de trabajo, ya que es allí donde está el precio \ndel suelo que pueden pagar. ",
+      "text": "Creo que los proyectos y planes municipales compartidos, bien reflexionados y mejor ejecutados son los que necesitamos, si no es así corremos paradójicamente el riesgo de la centrificación de los centros urbanos, el abandono del comercio de proximidad y el aumento de la especulación inmobiliaria. Proyectos de ciudades paradisiacas pueden quedar abolidos por la realidad palpable de unas clases medias empobrecidas, que tienen que irse a buscar su hogar lejos de su lugar de trabajo, ya que es allí donde está el precio del suelo que pueden pagar.",
+      "fragments": [
+        {
+          "page": 19,
+          "index": 18,
+          "start": 0,
+          "end": 78,
+          "text": "Creo que los proyectos y planes municipales compartidos, bien reflexionados y "
+        },
+        {
+          "page": 19,
+          "index": 19,
+          "start": 0,
+          "end": 90,
+          "text": "mejor ejecutados son los que necesitamos, si no es así corremos paradójicamente el riesgo "
+        },
+        {
+          "page": 19,
+          "index": 20,
+          "start": 0,
+          "end": 89,
+          "text": "de la centrificación de los centros urbanos, el abandono del comercio de proximidad y el "
+        },
+        {
+          "page": 19,
+          "index": 21,
+          "start": 0,
+          "end": 83,
+          "text": "aumento de la especulación inmobiliaria. Proyectos de ciudades paradisiacas pueden "
+        },
+        {
+          "page": 19,
+          "index": 22,
+          "start": 0,
+          "end": 88,
+          "text": "quedar abolidos por la realidad palpable de unas clases medias empobrecidas, que tienen "
+        },
+        {
+          "page": 19,
+          "index": 23,
+          "start": 0,
+          "end": 93,
+          "text": "que irse a buscar su hogar lejos de su lugar de trabajo, ya que es allí donde está el precio "
+        },
+        {
+          "page": 19,
+          "index": 24,
+          "start": 0,
+          "end": 28,
+          "text": "del suelo que pueden pagar. "
+        }
+      ],
+      "officialId": "Sección editorial 8",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-9",
+      "topic": "Pluralidad y libertad civil",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Creo en una Murcia abierta, plural, cosmopolita, como forma necesaria de la \nlibertad civil. ",
+      "text": "Creo en una Murcia abierta, plural, cosmopolita, como forma necesaria de la libertad civil.",
+      "fragments": [
+        {
+          "page": 19,
+          "index": 25,
+          "start": 0,
+          "end": 76,
+          "text": "Creo en una Murcia abierta, plural, cosmopolita, como forma necesaria de la "
+        },
+        {
+          "page": 19,
+          "index": 26,
+          "start": 0,
+          "end": 16,
+          "text": "libertad civil. "
+        }
+      ],
+      "officialId": "Sección editorial 9",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-10",
+      "topic": "Cultura accesible",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Creo en una Murcia vibrante, alegre, llena de energía, llena de intensidad en sus \ncalles y plazas, inundada por la cultura en todas sus ramas y facetas, disfrutadas por todos, \nsin elitismos ni limitaciones de cualquier orden. ",
+      "text": "Creo en una Murcia vibrante, alegre, llena de energía, llena de intensidad en sus calles y plazas, inundada por la cultura en todas sus ramas y facetas, disfrutadas por todos, sin elitismos ni limitaciones de cualquier orden.",
+      "fragments": [
+        {
+          "page": 19,
+          "index": 27,
+          "start": 0,
+          "end": 82,
+          "text": "Creo en una Murcia vibrante, alegre, llena de energía, llena de intensidad en sus "
+        },
+        {
+          "page": 19,
+          "index": 28,
+          "start": 0,
+          "end": 94,
+          "text": "calles y plazas, inundada por la cultura en todas sus ramas y facetas, disfrutadas por todos, "
+        },
+        {
+          "page": 19,
+          "index": 29,
+          "start": 0,
+          "end": 50,
+          "text": "sin elitismos ni limitaciones de cualquier orden. "
+        }
+      ],
+      "officialId": "Sección editorial 10",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    },
+    {
+      "id": "m-30030-11",
+      "topic": "Oportunidades para nuevas generaciones",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Creo en una Murcia de oportunidades, donde nuestros hijos y nietos puedan \ndesarrollarse, donde puedan hacer realidad sus sueños, donde encuentren su hogar, donde \nfunden sus familias y donde en el futuro puedan mirar con orgullo el legado de la actual \ngeneración de murcianos. ",
+      "text": "Creo en una Murcia de oportunidades, donde nuestros hijos y nietos puedan desarrollarse, donde puedan hacer realidad sus sueños, donde encuentren su hogar, donde funden sus familias y donde en el futuro puedan mirar con orgullo el legado de la actual generación de murcianos.",
+      "fragments": [
+        {
+          "page": 19,
+          "index": 30,
+          "start": 0,
+          "end": 74,
+          "text": "Creo en una Murcia de oportunidades, donde nuestros hijos y nietos puedan "
+        },
+        {
+          "page": 19,
+          "index": 31,
+          "start": 0,
+          "end": 88,
+          "text": "desarrollarse, donde puedan hacer realidad sus sueños, donde encuentren su hogar, donde "
+        },
+        {
+          "page": 19,
+          "index": 32,
+          "start": 0,
+          "end": 89,
+          "text": "funden sus familias y donde en el futuro puedan mirar con orgullo el legado de la actual "
+        },
+        {
+          "page": 19,
+          "index": 33,
+          "start": 0,
+          "end": 25,
+          "text": "generación de murcianos. "
+        }
+      ],
+      "officialId": "Sección editorial 11",
+      "sourceId": "murcia-city-programme",
+      "sourceNote": "Sección editorial del discurso de José Ballesta de 17/06/2023, sin numeración oficial. Son orientaciones generales, no promesas únicas con metas cuantificadas; no se incorporan aquí las intervenciones de otros candidatos ni el discurso de Rebeca Pérez de 2026."
+    }
+  ]
+}

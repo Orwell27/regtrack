@@ -1,5 +1,38 @@
 import { expect, test } from "@playwright/test";
 
+test("Murcia municipal distingue el municipio de la región y filtra el discurso", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Murcia");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("municipality");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-30030$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Murcia · mandato municipal 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("8 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("pluralidad");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  const housing = page.locator("#compromiso-m-30030-8");
+  await housing.getByText("Promesa y página de origen", { exact: true }).click();
+  await expect(housing.getByRole("link", { name: "Discurso de investidura municipal · 17/06/2023 · página 19", exact: true })).toHaveAttribute("href", /acta-sesion-constitutiva-17-junio.pdf#page=19$/);
+});
+
+test("Murcia municipal conserva los límites de inversión y vivienda en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-30030");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await page.screenshot({ path: "test-results/murcia-city-mobile-intro.png" });
+  await expect(page.locator("#compromiso-m-30030-6")).toContainText("13 proyectos");
+  await expect(page.locator("#compromiso-m-30030-7")).toContainText("fase I en 2019");
+  const housing = page.locator("#compromiso-m-30030-8");
+  await expect(housing).toContainText("sin ofertas");
+  await expect(housing).toContainText("No acredita que se hayan entregado las 25");
+  await housing.scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/murcia-city-mobile-housing.png" });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
 test("Castellón municipal permite consultar el pacto y sus pendientes", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Castell");
