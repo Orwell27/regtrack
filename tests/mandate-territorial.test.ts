@@ -10,6 +10,7 @@ import { validateTerritorialBalance } from "@/lib/mandate/territorial-model";
 import { getCoverage } from "@/lib/mandate/coverage";
 
 describe("inventario municipal reproducible y separado de la revisión", () => {
+  // This reads the full multi-territory archive, including hundreds of MB of PDFs.
   it("reproduce las 300 medidas de las páginas conservadas y verifica los originales", () => {
     for (const source of sources) {
       const bytes = readFileSync(source.snapshotPath);
@@ -19,7 +20,7 @@ describe("inventario municipal reproducible y separado de la revisión", () => {
     expect(extraction.sourceSha256).toBe(inventory.sourceSha256);
     expect(parseMadridProgramme(extraction.pages)).toEqual(inventory.records);
     expect(inventory.records.map(record => +record.officialId)).toEqual(Array.from({ length: 300 }, (_, index) => index + 1));
-  });
+  }, 30_000);
   it("une palabras partidas por guiones y elimina pies de página multilínea", () => {
     const records = parseMadridProgramme(extraction.pages);
     expect(records[162].text).toMatch(/consolidando su imagen fuera de España\.$/);

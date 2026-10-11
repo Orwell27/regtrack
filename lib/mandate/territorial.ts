@@ -1,3 +1,5 @@
+import clmInventory from "@/data/mandate/clm-inventory.json";
+import clmReviews from "@/data/mandate/clm-reviews.json";
 import madridRegionInventory from "@/data/mandate/madrid-region-inventory.json";
 import madridRegionReviews from "@/data/mandate/madrid-region-reviews.json";
 import galiciaInventory from "@/data/mandate/galicia-inventory.json";
@@ -40,6 +42,7 @@ import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "r-08": { inventory: clmInventory, reviews: clmReviews, level: "region", mandateSourceId: clmInventory.sourceId, sourceLabel: clmInventory.sourceLabel, governmentCutoff: undefined },
   "r-13": { inventory: madridRegionInventory, reviews: madridRegionReviews, level: "region", mandateSourceId: madridRegionInventory.sourceId, sourceLabel: madridRegionInventory.sourceLabel, governmentCutoff: undefined },
   "r-12": { inventory: galiciaInventory, reviews: galiciaReviews, level: "region", mandateSourceId: galiciaInventory.sourceId, sourceLabel: galiciaInventory.sourceLabel, governmentCutoff: undefined },
   "r-04": { inventory: balearsInventory, reviews: balearsReviews, level: "region", mandateSourceId: balearsInventory.sourceId, sourceLabel: balearsInventory.sourceLabel, governmentCutoff: undefined },

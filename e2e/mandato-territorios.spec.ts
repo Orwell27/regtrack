@@ -1,5 +1,41 @@
 import { expect, test } from "@playwright/test";
 
+test("Castilla-La Mancha conserva el programa inicial y separa sus cinco fichas", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Castilla-La Mancha");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-08$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Castilla-La Mancha · mandato 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(5);
+  await expect(page.getByRole("status")).toHaveText("861 resultados · página 1 de 58");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("856 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("767");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("reviewed");
+  await expect(page.getByRole("status")).toContainText("5 resultados");
+  const university = page.locator("#compromiso-r-08-384");
+  await university.getByText("Medida inicial y página de origen", { exact: true }).click();
+  await expect(university).toContainText("si primero se queda despejado");
+  await expect(university.getByRole("link", { name: "Programa de Gobierno inicial · página 30", exact: true })).toHaveAttribute("href", /\.pdf#page=30$/);
+});
+
+test("Castilla-La Mancha en móvil distingue unidades y avance de cumplimiento", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-08");
+  await expect(page.locator("#compromiso-r-08-1")).toContainText("78.035 personas");
+  await expect(page.locator("#compromiso-r-08-257")).toContainText("No son un cobro universal anual");
+  await expect(page.locator("#compromiso-r-08-384")).toContainText("60 o 72");
+  await expect(page.locator("#compromiso-r-08-446")).toContainText("37,4 %");
+  await expect(page.locator("#compromiso-r-08-446")).toContainText("no se ha auditado la totalidad");
+  await expect(page.locator(".mc-intro")).toContainText("revisión humana independiente");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/clm-mobile-intro.png" });
+  await page.screenshot({ path: "test-results/clm-mobile.png", fullPage: true });
+});
+
 test("Madrid autonómico conserva el programa y no se mezcla con el Ayuntamiento", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Madrid");
