@@ -1,5 +1,46 @@
 import { expect, test } from "@playwright/test";
 
+test("Valenciana muestra secciones del discurso y permite distinguir las pendientes", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Valenciana");
+  await expect(page.locator(".mc-counts")).toContainText("3 secciones del discurso");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-10$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Comunitat Valenciana · investidura de noviembre de 2025");
+  await expect(page.locator(".mc-intro")).toContainText("no son promesas únicas");
+  await expect(page.getByRole("status")).toHaveText("19 resultados · página 1 de 2");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("16 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("Cofrentes");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("reviewed");
+  await expect(page.getByRole("status")).toContainText("3 resultados");
+  const university = page.locator("#compromiso-r-10-12");
+  await university.getByText("Promesa y página de origen", { exact: true }).click();
+  await expect(university.getByRole("link", { name: "Discurso inicial de investidura · 27/11/2025 · página 8", exact: true })).toHaveAttribute("href", /XI000780.pdf#page=8$/);
+});
+
+test("Valenciana conserva condiciones y límites en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-10");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await expect(page.locator(".mn-summary-grid")).toContainText("secciones pendientes de revisión");
+  await page.screenshot({ path: "test-results/valenciana-mobile-intro.png" });
+  const university = page.locator("#compromiso-r-10-12");
+  await expect(university).toContainText("hasta agotar 20 millones");
+  await expect(university).toContainText("tres meses");
+  const music = page.locator("#compromiso-r-10-13");
+  await expect(music).toContainText("150 € por contribuyente, no por hijo");
+  await expect(music).toContainText("la fórmula da cero");
+  await music.scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/valenciana-mobile-music.png" });
+  await expect(page.locator("#compromiso-r-10-15")).toContainText("deroga expresamente");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
 test("Extremadura separa el nuevo mandato, 62 apartados y cuatro fichas", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Extremadura");

@@ -1,0 +1,267 @@
+[
+  {
+    "commitmentId": "r-10-12",
+    "reviewedAt": "2026-10-11",
+    "title": "Primer curso universitario: ayuda convocada con condiciones y pagos por acreditar",
+    "conclusion": "La convocatoria de Impulso Universitario desarrolla la promesa, pero limita destinatarios e importes y adjudica por nota hasta agotar 20 millones. UV y UPV documentan tramitación en octubre; esas comunicaciones no acreditan pagos ni cobertura de todo el alumnado que aprobó primero.",
+    "periodNote": "Promesa del 27/11/2025; resolución del 29/05/2026 publicada el 03/06; aviso de la UPV del 05/10 y página de la UV capturada el 11/10/2026. El corte es 11/10/2026, anterior a los plazos de aceptación publicados por ambas universidades.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Gratuidad anunciada y alcance verbal",
+        "status": "promise-documented",
+        "finding": "El candidato anuncia efectos inmediatos para jóvenes que aprueben todas las asignaturas del primer curso y alude a todos los estudiantes del sistema universitario valenciano. La formulación no detalla las restricciones que después introduce la convocatoria.",
+        "citations": [
+          {
+            "sourceId": "valenciana-programme",
+            "locator": "Discurso inicial: gratuidad del primer curso",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "convocatoria",
+        "claim": "Condiciones y límite presupuestario",
+        "status": "documented",
+        "finding": "Las bases exigen nacimiento en 2000 o después, primera matrícula a tiempo completo en 2025–2026 y superar los créditos; para determinados accesos desde FP o enseñanzas artísticas se prevén al menos 48 ECTS sin contar reconocidos. Exigen continuar y mantener los mismos estudios y centro en 2026–2027, condiciones de nacionalidad o residencia y empadronamiento valenciano a 30/06/2026. Cubren lo realmente pagado y no financiado por otras ayudas, excluyen gastos administrativos y créditos reconocidos, y limitan los centros privados al precio público. La concurrencia competitiva ordena por nota, con coeficientes por ramas y desempates, hasta agotar 20 millones: la convocatoria no garantiza devolución universal a todo el que aprueba.",
+        "citations": [
+          {
+            "sourceId": "valenciana-impulso-law",
+            "locator": "Base segunda: requisitos académicos",
+            "page": 4
+          },
+          {
+            "sourceId": "valenciana-impulso-law",
+            "locator": "Base segunda: residencia, incompatibilidades y tope en centros privados",
+            "page": 5
+          },
+          {
+            "sourceId": "valenciana-impulso-law",
+            "locator": "Bases tercera y cuarta: exclusiones, prelación y crédito",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "tramitacion",
+        "claim": "Actuaciones de dos universidades",
+        "status": "reported",
+        "finding": "La UPV informa de que ha contactado con estudiantes y pide documentación antes del 13 de octubre. La UV publica aceptación hasta el 16 de octubre y mantiene pendiente la concesión o denegación. Son plazos propios de cada universidad, no dos fechas alternativas para todo el sistema. Acreditan instrucciones de tramitación comunicadas por entidades colaboradoras, no transferencias recibidas.",
+        "citations": [
+          {
+            "sourceId": "valenciana-impulso-upv",
+            "locator": "Aviso del 05/10/2026: correo del servicio de estudiantes y documentación"
+          },
+          {
+            "sourceId": "valenciana-impulso-uv",
+            "locator": "Aceptación, concesión pendiente y documentación; captura del 11/10/2026"
+          }
+        ]
+      },
+      {
+        "id": "calendario",
+        "claim": "Calendario de resolución por conciliar",
+        "status": "unresolved",
+        "finding": "La base sexta del original fija tres meses desde la publicación para resolver, mientras las bases quinta y octava prevén documentación antes del 31 de octubre y las universidades siguen tramitando en octubre. Se conserva esta tensión del calendario: falta cotejar posibles correcciones, modificaciones y resoluciones antes de concluir sobre el plazo. La mención política a efectos inmediatos tampoco demuestra una ayuda disponible desde noviembre.",
+        "citations": [
+          {
+            "sourceId": "valenciana-impulso-law",
+            "locator": "Base quinta: envío de documentación antes del 31 de octubre",
+            "page": 7
+          },
+          {
+            "sourceId": "valenciana-impulso-law",
+            "locator": "Bases sexta y octava: resolución y documentación",
+            "page": 8
+          },
+          {
+            "sourceId": "valenciana-programme",
+            "locator": "Efectos inmediatos anunciados",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "pagos",
+        "claim": "Beneficiarios, transferencias y resultado",
+        "status": "unresolved",
+        "finding": "No se incorporan aquí resoluciones de concesión, transferencias agregadas a universidades, pagos al alumnado ni una evaluación del acceso o abandono universitario. La tramitación observada no permite afirmar que no existan pagos en otros centros. Faltan denominadores y datos de ejecución para medir el alcance real.",
+        "citations": [
+          {
+            "sourceId": "valenciana-impulso-law",
+            "locator": "Bases quinta y sexta: transferencia y resolución previstas",
+            "page": 7
+          },
+          {
+            "sourceId": "valenciana-impulso-uv",
+            "locator": "Estado de concesión publicado por la UV"
+          }
+        ]
+      }
+    ],
+    "contrast": "La resolución acredita diseño y crédito; UV y UPV aportan evidencia operativa de sus propios trámites. Son entidades colaboradoras del mismo programa, no auditorías independientes de resultados. Las condiciones de la norma acotan el anuncio político y las fechas universitarias se atribuyen a cada centro.",
+    "pending": [
+      "Conciliar el calendario de tres meses con el de octubre y localizar correcciones o modificaciones de las bases.",
+      "Cotejar concesiones, denegaciones, crédito agotado y pagos agregados; no publicar datos personales del alumnado.",
+      "Evaluar cobertura y continuidad de estudios con denominadores comparables y revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-10-13",
+    "reviewedAt": "2026-10-11",
+    "title": "Música: deducción aprobada y convalidada; ahorro efectivo pendiente",
+    "conclusion": "Existe una deducción autonómica con límite de 150 € por contribuyente y efectos fiscales desde 2025. Su aprobación y la valoración favorable de la FSMCV no demuestran el número de beneficiarios ni que haya desaparecido la barrera económica para estudiar música.",
+    "periodNote": "Compromiso del 27/11/2025 que retoma una propuesta anterior. Decreto-ley del 06/03/2026, entrada en vigor al día siguiente y efectos para devengos desde 01/01/2025; convalidación del 26/03 publicada el 01/04. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Anuncio inmediato con antecedente reconocido",
+        "status": "promise-documented",
+        "finding": "El candidato promete aplicar de inmediato deducciones por formación y práctica musical y reconoce que rescata una propuesta del anterior debate de política general. Su discurso no permite atribuir la iniciativa íntegramente a esta nueva presidencia.",
+        "citations": [
+          {
+            "sourceId": "valenciana-programme",
+            "locator": "Propuesta musical y antecedente del debate anterior",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Límites y gastos admisibles",
+        "status": "documented",
+        "finding": "El Decreto-ley 2/2026 crea la deducción con límite de 150 € por contribuyente, no por hijo. Incluye gastos educativos, cuotas de sociedades de la FSMCV, formación oficial, instrumentos o partituras vinculados a las actividades previstas y determinadas entradas. No toda compra musical es elegible. El límite se reduce progresivamente entre bases liquidables conjuntas general y del ahorro de 54.000–60.000 € en tributación individual y 72.000–78.000 € en conjunta; en los extremos superiores la fórmula da cero. Prevé gastos del contribuyente, cónyuge o descendientes elegibles, prorrateo y medios de pago exigidos por la ley. La compra de instrumentos o partituras excluye la parte subvencionada.",
+        "citations": [
+          {
+            "sourceId": "valenciana-music-law",
+            "locator": "Artículo 2: creación, efectos y gastos",
+            "page": 2
+          },
+          {
+            "sourceId": "valenciana-music-law",
+            "locator": "Artículo 2: umbrales, prorrateo y pago; entrada en vigor",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "convalidacion",
+        "claim": "Convalidación y valoración del sector",
+        "status": "documented",
+        "finding": "Les Corts convalidan el decreto-ley. La FSMCV, en su asamblea de junio, valora positivamente la deducción; su posición es relevante como entidad del sector, pero también representa colectivos potencialmente beneficiarios. Ni la convalidación ni esa valoración son una auditoría del ahorro efectivo. La página está fechada el 06/06/2026, pero su entradilla dice 06/06/2025; esta inconsistencia se conserva y no se usa la nota para fijar la fecha legal de la deducción.",
+        "citations": [
+          {
+            "sourceId": "valenciana-music-validation",
+            "locator": "Resolución 366/XI, adoptada el 26/03/2026"
+          },
+          {
+            "sourceId": "valenciana-music-fsmcv",
+            "locator": "Asamblea general ordinaria de 06/06/2026: valoración de la deducción"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Aplicación fiscal y accesibilidad",
+        "status": "unresolved",
+        "finding": "Faltan datos agregados de declaraciones, importes deducidos, distribución por renta y acceso a la formación. La retroactividad fiscal no equivale a disponibilidad inmediata del beneficio desde el discurso. No se acredita que todas las familias puedan asumir los costes restantes.",
+        "citations": [
+          {
+            "sourceId": "valenciana-music-law",
+            "locator": "Artículo 2 y disposición final: efectos fiscales y vigencia",
+            "page": 2
+          },
+          {
+            "sourceId": "valenciana-music-law",
+            "locator": "Límites económicos",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "contrast": "Norma, convalidación parlamentaria y valoración de la federación tienen funciones diferentes. El BOE aloja una norma autonómica: no es una segunda decisión estatal. La valoración sectorial no se convierte en corroboración independiente del resultado.",
+    "pending": [
+      "Cotejar datos agregados de aplicación de IRPF y ahorro neto, sin confundir límite máximo con devolución recibida.",
+      "Contrastar acceso a enseñanza musical, costes restantes y distribución de beneficiarios; revisión humana independiente pendiente."
+    ]
+  },
+  {
+    "commitmentId": "r-10-15",
+    "reviewedAt": "2026-10-11",
+    "title": "Simplificación: secuencia normativa documentada, plazo y efectos por verificar",
+    "conclusion": "Se documentan el Decreto-ley 14/2025, su convalidación y la Ley 3/2026 que lo deroga. Esta secuencia no demuestra por sí sola la presentación parlamentaria dentro de los 30 días prometidos ni la reducción real de trámites y esperas.",
+    "periodNote": "Discurso del 27/11/2025; decreto-ley del 26/12 publicado el 29/12; convalidación del 29/01/2026; ley del 29/06 publicada en el BOE el 18/07. Corte documental: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Treinta días para traer la ley a la Cámara",
+        "status": "promise-documented",
+        "finding": "La promesa es traer una segunda ley en 30 días para que comience su tramitación en Les Corts. No promete terminar su aprobación y aplicación completa en ese plazo. También anuncia menos trámites, formularios repetidos y barreras digitales.",
+        "citations": [
+          {
+            "sourceId": "valenciana-programme",
+            "locator": "Segunda ley de simplificación y plazo",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "normas",
+        "claim": "Decreto-ley, convalidación y ley posterior",
+        "status": "documented",
+        "finding": "El Decreto-ley 14/2025 se publica el 29 de diciembre. La Resolución 14/XI acredita su convalidación el 29 de enero. La Ley 3/2026 regula medidas de simplificación y deroga expresamente ese decreto-ley. Se conserva la secuencia y no se presenta el decreto inicial como norma vigente sin cambios.",
+        "citations": [
+          {
+            "sourceId": "valenciana-simplification-decree",
+            "locator": "Texto original y fecha de publicación"
+          },
+          {
+            "sourceId": "valenciana-simplification-validation",
+            "locator": "Resolución y referencias de entrada parlamentaria",
+            "page": 1
+          },
+          {
+            "sourceId": "valenciana-simplification-law",
+            "locator": "Disposición derogatoria única, apartado 1.c"
+          }
+        ]
+      },
+      {
+        "id": "plazo",
+        "claim": "Entrada parlamentaria y cómputo",
+        "status": "unresolved",
+        "finding": "Aprobación por el Consell, publicación, entrada en Les Corts y convalidación son hitos distintos. La resolución cita registros de entrada, pero la evidencia incorporada no determina sus fechas ni resuelve el inicio del cómputo de los 30 días. No se sustituye la presentación prometida por la fecha de convalidación para declarar cumplido o incumplido el plazo.",
+        "citations": [
+          {
+            "sourceId": "valenciana-simplification-validation",
+            "locator": "RE 63756 y corrección RE 64536",
+            "page": 1
+          },
+          {
+            "sourceId": "valenciana-programme",
+            "locator": "Plazo y trámite comprometidos",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "efectos",
+        "claim": "Evaluación y reducción efectiva de cargas",
+        "status": "unresolved",
+        "finding": "Los artículos 10 y 11 de la Ley 3/2026 prevén un cuadro público y auditorías periódicas; el artículo 14 permite precargar datos con condiciones. La obligación o habilitación legal no acredita implantación ni ahorro de tiempo. Falta contrastar el cuadro, auditorías, series comparables de plazos y acceso de personas con dificultades digitales; tampoco se evalúa aquí toda la reforma sectorial de la ley.",
+        "citations": [
+          {
+            "sourceId": "valenciana-simplification-law",
+            "locator": "Artículos 10, 11 y 14 del texto original"
+          }
+        ]
+      }
+    ],
+    "contrast": "El decreto, la convalidación y la ley forman parte de una secuencia legislativa. No son tres mediciones independientes de resultados. El análisis se acota al compromiso de presentación y simplificación, sin emitir una valoración global de todos los cambios de la ley.",
+    "pending": [
+      "Localizar el registro y expediente parlamentarios con fechas y fijar el criterio de cómputo del compromiso.",
+      "Cotejar la evolución normativa posterior y datos del cuadro público, auditorías y experiencia de usuarios.",
+      "Revisión humana independiente de la atribución, el plazo y los efectos."
+    ]
+  }
+]

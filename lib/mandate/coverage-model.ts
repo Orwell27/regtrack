@@ -21,7 +21,7 @@ export type Jurisdiction = {
   imported: number;
   reviewed: number;
   independentlyReviewed: number;
-  inventoryKind?: "action-catalogue" | "strategic-plan" | "initial-programme" | "preagreement" | "bullet-sections" | "numbered-sections";
+  inventoryKind?: "action-catalogue" | "strategic-plan" | "initial-programme" | "preagreement" | "bullet-sections" | "numbered-sections" | "speech-sections";
   originalInventoryComplete?: boolean;
   blockers: string[];
 };
