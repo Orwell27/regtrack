@@ -37,7 +37,7 @@ export function getCoverage() {
         ...(balance.programmeCopy ? ["Programa importado desde una copia de otro editor; cotejo con un archivo publicado por su autor pendiente."] : []),
         ...(balance.inventoryKind === "action-catalogue" ? ["Catálogo de seguimiento importado; reconstrucción de las promesas originales y cambios del plan pendiente."] : []),
         ...(balance.inventoryKind === "strategic-plan" ? ["Plan estratégico administrativo importado; inventario completo y correspondencia de las promesas políticas pendientes."] : []),
-        ...(balance.inventoryKind === "speech-sections" ? ["Secciones editoriales del discurso inicial; conciliación de réplicas, antecedentes y anuncios posteriores pendiente. No son promesas únicas."] : []),
+        ...(balance.inventoryKind === "speech-sections" ? ["Secciones editoriales del discurso inicial; conciliación con otros documentos del mandato pendiente. No son promesas únicas."] : []),
         ...(balance.inventoryKind === "numbered-sections" ? ["Apartados numerados importados; descomposición de submedidas y conciliación de reiteraciones y compromisos posteriores pendientes."] : []),
         ...(balance.inventoryKind === "bullet-sections" ? ["Apartados con viñeta importados; conciliación de reiteraciones y compromisos formulados en prosa pendiente."] : []),
         ...(balance.inventoryKind === "preagreement" ? ["Preacuerdo importado; cotejo con el texto final firmado e inventario definitivo del mandato pendientes."] : []),

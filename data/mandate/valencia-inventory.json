@@ -1,0 +1,2431 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "m-46250",
+  "mandateId": "m-46250-2023",
+  "mandateLabel": "València · mandato municipal 2023–2027",
+  "sourceId": "valencia-programme",
+  "mandateSourceId": "valencia-programme",
+  "registerSourceId": "valencia-register",
+  "sourceLabel": "Discurso de investidura municipal · 17/06/2023",
+  "sourceSha256": "9380950bc07d64ec5c7b5f1b2d8ca85113098823e393869e6b4bfdd417c92e05",
+  "importedAt": "2026-10-11",
+  "inventoryKind": "speech-sections",
+  "transcriptionPending": true,
+  "transcriptionMethod": "digital",
+  "inventoryTotal": 19,
+  "scope": "19 secciones temáticas editoriales del discurso de María José Catalá en la sesión constitutiva municipal de 17/06/2023, páginas 22–29. Apertura y recapitulación se conservan aparte. No son 19 promesas únicas ni el programa electoral completo.",
+  "textNote": "Copia informativa pública del acta municipal, de 29 páginas, con firma impresa fechada el 27/09/2023. No se ha validado una firma electrónica: el propio documento advierte que la copia no es verificable en sede. El acta acredita la intervención y la toma de posesión, no la veracidad de sus balances y valoraciones. Programa electoral completo, posibles acuerdos de gobierno y anuncios posteriores pendientes de conciliación. No se traslada el pacto autonómico a este ayuntamiento. Las secciones y títulos son editoriales; algunas reúnen varias políticas o competencias de otras administraciones. Cotejo íntegro y revisión humana independiente pendientes.",
+  "contextBlocks": [
+    {
+      "id": "m-46250-context-1",
+      "topic": "Saludo, antecedentes y apertura de la alcaldesa",
+      "page": 22,
+      "endPage": 24,
+      "rawText": "Sra. Alcaldessa\n\"Disculpen l'espera, però és que he demanat un atril per a poder llegir millor. Bé, vaig\nsaludant-los, eh?, i aixina no n´hi ha este silenci tan raro, no? Ja està? val. Als músics açò dels\natrils ens agrada molt. Autoritats civils, polítiques i acadèmiques. Estimats i estimades rectors i\nrectores. Conseller. Vicepresident quart de la Mesa del Congrés. Comissari principal. Cap de la\nPolicia Local de València. President de Cámara de Comerç. President autonòmic de la CEV i\npresidenta de la CEV en València. Secretari general d'AVE. President d'AVA. Representants de\ntots els sindicats. President de Lo Rat Penat. Presidenta de l'Ateneu Mercantil de València.\nDelegat territorial de l'ONCE. Presidenta de la Federació de Veïns i Veïnes -l´havia vista ahí,\nMaría José-. Coordinadora de Mercats Municipals. Representants de mitjans de comunicació i\ntambé directors dels mitjans de comunicació. Moltíssimes gràcies per estar hui ací. Companys\nde corporació, amics i amigues, i companys, i en especial, molt especial, president del Partit\nPopular de la Comunitat Valenciana i pròxim president de la Generalitat, Carlos Mazón.\nVicesecretari d'Acció Institucional del Partit Popular i gran amic Esteban González Pons i\nfamília. Gràcies a tots per vindre hui i engalanar en la vostra presència la constitució d'una\nnova corporació de l'Ajuntament de València. Gràcies per estar en un dia tan especial per a tots\nels que estem ací. \nEl pasado 28 de mayo, con la tercera participación más alta de la serie histórica, más de un\n72 %, los valencianos se pronunciaron sobre el futuro de la ciudad de València con claridad y\ncon contundencia. Permítanme, en primer lugar, que en estos tiempos tan convulsos en los que no\nnos es ajena cierta apatía hacia la política y en la que en los que las familias sufren para llegar a\ntodo, dé las gracias a los valencianos por seguir comprometidos con el futuro de su ciudad y por\ndar con esta participación un ejemplo claro de sana democracia. Gracias a los 417.512\nvalencianos que acudieron a votar. A todos, especialmente a los 152.000 valencianos que votaron\nel proyecto del Partido Popular, depositando su confianza en nuestro proyecto político para los\npróximos años y particularmente en mí para ser alcaldesa de València. Sepan que tengo la firme\nintención de no fallarles, de hacerles sentir orgullosos de su ciudad y de su rumbo. Sepan que en\nmí tienen a su primera servidora y que me dejaré la piel para agradecer en horas y en esfuerzo la\nconfianza depositada en mí. Soy muy consciente del honor que supone dirigir esta ciudad, de\nlarga tradición, heredera de más de 2.000 años de historia, que hunde sus raíces en época romana,\ncrisol y punto de encuentro de pueblos y culturas, puerta de entrada del Renacimiento a la\nPenínsula Ibérica, cuna de personajes ilustres como Vicente Martínez Soler, Joaquín Sorolla,\nMariano Benlliure o Vicente Blasco Ibáñez, embajadores todos ellos de nuestra tierra. Heredera\nde una ciudad de impronta gótica y alma barroca que vivió su segunda edad de oro con la\nIlustración y que buscó homologarse al resto de grandes capitales europeas con la Exposición\nRegional de 1909, haciendo de ella su mejor escaparate de una ciudad consciente de sus\nposibilidades, de sus capacidades y que nunca baja los brazos ante las dificultades. Lo vimos en\n1957 en la riada y lo seguimos viendo hoy en cada reto que supone esta ciudad y que esta ciudad\natraviesa. De una ciudad, en fin, que se siente orgullosa de su pasado y que quiere escribir ahora\nun nuevo capítulo glorioso de su historia, sentando las bases para su florecimiento y que aspira\nclaramente a ser la capital cultural del Mediterráneo.\nSoy muy consciente de que se espera mucho de nosotros y que lo primero que se nos pide\nes serenidad, sensatez, cordialidad y cuidar de esta institución por encima de todo, por encima de\nideologías, de siglas y de personas. València es mucha València y València está por encima de\ntodo y de todos. Permítanme, por tanto, que consciente del honor que supone ser la alcaldesa de\nValència, les diga que mi objetivo es recuperar su luz en los próximos años. Esa luz que ha\ndeslumbrado a propios y extraños y que ha inspirado a maestros de las artes, entre otros, nuestro\nmaestro por excelencia, Sorolla, en un año en el que se conmemora el centenario de su muerte.\nLes confieso que a mí no se me ha pasado por alto que tomo posesión en el Año Sorolla, el\nmaestro que le mostró al mundo nuestra luz, nuestras calles y costumbres y la calidez con la que\nnos acaricia el mar Mediterráneo. Sorolla siempre nos hizo volar alto y ese va a ser nuestro\nobjetivo, volar siempre alto. Releyendo las cartas de nuestro pintor más universal reviví con\nemoción la que mandaba a su mujer cuando pintaba el cuadro València, Las grupas: 'Las\nlágrimas se asomaron a mis ojos al contemplar les banderoles junto a las grupas y sobre el cielo\nbonito de Valencia. Todo ello tiene tal alegría y es tan hermoso que yo no recuerdo haber hecho\nnada tan emocionante como esto'. Les puedo asegurar que yo no he hecho nada tan emocionante\ncomo el camino que emprendo hoy como alcaldesa de València. \nEs por todos sabido que mi amor por esta ciudad tiene nombre de familia. Es cierto que mi\nsangre tiene ese sabor a sal de los que están cerca del mar, de los graueros. Mi familia paterna,\ndel Grau, salió adelante con una pequeña carbonería en tiempos de Blasco Ibáñez. Mi padre pasó\nsu infancia a la sombra de Santa María del Mar y su juventud trabajando en el puerto de València\ndesde los 16 años. Ahí forjó su destino y su futuro. Desde el puerto de València, como tantas\nfamilias valencianas. També és sabut que la meua família materna té eixa pell bronzejada pel sol\nde l'Horta Sud. Els meus iaios y besiaios materns, llauradors i gent del camp, m'han regalat el\ntresor fent del valencià la meua llengua materna i arrelant-me a l'horta de València i a la seua\nàrea metropolitana. Sepan también los que han pretendido ofenderme alguna vez diciendo que\nera menos valenciana por haber sido alcaldesa de Torrent que nunca lo han hecho, que Torrent\nme enseñó a ser alcaldesa y que València me ha enseñado a ser madre y que ambas cosas eran\nnecesarias para llegar hasta aquí, ya que València necesita con urgencia gestores con experiencia,\npero también una actitud de protección y de cariño. Ambas, ambas cosas se han echado en falta\nrecientemente. Mis padres forman parte de esa clase media trabajadora que ha levantado este país\ncon su esfuerzo. Ellas, ella, rompía techos de cristal y ellos, él, trabajaba de día y estudiaba de\nnoche para prosperar en un empleo mejor que facilitar a sus hijos, a sus hijas, unos mejores\nestudios. Nadie les regaló nada y ellos nunca se pusieron horarios que cumplir. Si hoy debo dar\nlas gracias es a una familia que me ha educado con valores como el esfuerzo, el trabajo y el\nrespeto. Trabajando, esforzándonos y respetando al adversario hemos ganado estas elecciones y\neste es un legado que quiero dejar a mis hijos y que como alcaldesa del cap i casal quiero para mi\nciudad. \nHoy València empieza un nuevo tiempo, hoy después de ocho años, València empieza a\npintar un nuevo lienzo. Un nuevo lienzo donde la luz de Sorolla volverá a brillar y donde sus\nblancos y sus azules reinarán por las calles de esta maravillosa ciudad. Y para eso tenemos que\ndedicarle mucho mimo, mucho trellat y mucha humildad. Y por eso quiero empezar\nagradeciendo el trabajo de todos aquellos que me han precedido. Reconocer el trabajo realizado\npor todos ellos no es solo una obligación, es sobre todo un deber, porque València no sería lo que\nes sin ellos y sin su trabajo. Por eso, vaya por delante mi agradecimiento a los alcaldes Fernando\nMartínez Castellano, Ricard Pérez Casado, Clementina Ródenas, nuestra añorada y querida Rita\nBarberá, y también a Joan Ribó. Gracias por su trabajo, siempre, sempre tindràs el meu respecte\ncom alcalde de València. Y por supuesto, gracias a todos los funcionarios y miembros de la casa\nrepresentados aquí también por todos los altos funcionarios de esta institución. Gracias por su\nlabor y por su trabajo al frente de este Ayuntamiento. Son ellos los que hacen que la\nadministración de València funcione, funcione de verdad, independientemente de colores y de\nsímbolos políticos, y de colores políticos y de gobierno. ",
+      "text": "Sra. Alcaldessa \"Disculpen l'espera, però és que he demanat un atril per a poder llegir millor. Bé, vaig saludant-los, eh?, i aixina no n´hi ha este silenci tan raro, no? Ja està? val. Als músics açò dels atrils ens agrada molt. Autoritats civils, polítiques i acadèmiques. Estimats i estimades rectors i rectores. Conseller. Vicepresident quart de la Mesa del Congrés. Comissari principal. Cap de la Policia Local de València. President de Cámara de Comerç. President autonòmic de la CEV i presidenta de la CEV en València. Secretari general d'AVE. President d'AVA. Representants de tots els sindicats. President de Lo Rat Penat. Presidenta de l'Ateneu Mercantil de València. Delegat territorial de l'ONCE. Presidenta de la Federació de Veïns i Veïnes -l´havia vista ahí, María José-. Coordinadora de Mercats Municipals. Representants de mitjans de comunicació i també directors dels mitjans de comunicació. Moltíssimes gràcies per estar hui ací. Companys de corporació, amics i amigues, i companys, i en especial, molt especial, president del Partit Popular de la Comunitat Valenciana i pròxim president de la Generalitat, Carlos Mazón. Vicesecretari d'Acció Institucional del Partit Popular i gran amic Esteban González Pons i família. Gràcies a tots per vindre hui i engalanar en la vostra presència la constitució d'una nova corporació de l'Ajuntament de València. Gràcies per estar en un dia tan especial per a tots els que estem ací. El pasado 28 de mayo, con la tercera participación más alta de la serie histórica, más de un 72 %, los valencianos se pronunciaron sobre el futuro de la ciudad de València con claridad y con contundencia. Permítanme, en primer lugar, que en estos tiempos tan convulsos en los que no nos es ajena cierta apatía hacia la política y en la que en los que las familias sufren para llegar a todo, dé las gracias a los valencianos por seguir comprometidos con el futuro de su ciudad y por dar con esta participación un ejemplo claro de sana democracia. Gracias a los 417.512 valencianos que acudieron a votar. A todos, especialmente a los 152.000 valencianos que votaron el proyecto del Partido Popular, depositando su confianza en nuestro proyecto político para los próximos años y particularmente en mí para ser alcaldesa de València. Sepan que tengo la firme intención de no fallarles, de hacerles sentir orgullosos de su ciudad y de su rumbo. Sepan que en mí tienen a su primera servidora y que me dejaré la piel para agradecer en horas y en esfuerzo la confianza depositada en mí. Soy muy consciente del honor que supone dirigir esta ciudad, de larga tradición, heredera de más de 2.000 años de historia, que hunde sus raíces en época romana, crisol y punto de encuentro de pueblos y culturas, puerta de entrada del Renacimiento a la Península Ibérica, cuna de personajes ilustres como Vicente Martínez Soler, Joaquín Sorolla, Mariano Benlliure o Vicente Blasco Ibáñez, embajadores todos ellos de nuestra tierra. Heredera de una ciudad de impronta gótica y alma barroca que vivió su segunda edad de oro con la Ilustración y que buscó homologarse al resto de grandes capitales europeas con la Exposición Regional de 1909, haciendo de ella su mejor escaparate de una ciudad consciente de sus posibilidades, de sus capacidades y que nunca baja los brazos ante las dificultades. Lo vimos en 1957 en la riada y lo seguimos viendo hoy en cada reto que supone esta ciudad y que esta ciudad atraviesa. De una ciudad, en fin, que se siente orgullosa de su pasado y que quiere escribir ahora un nuevo capítulo glorioso de su historia, sentando las bases para su florecimiento y que aspira claramente a ser la capital cultural del Mediterráneo. Soy muy consciente de que se espera mucho de nosotros y que lo primero que se nos pide es serenidad, sensatez, cordialidad y cuidar de esta institución por encima de todo, por encima de ideologías, de siglas y de personas. València es mucha València y València está por encima de todo y de todos. Permítanme, por tanto, que consciente del honor que supone ser la alcaldesa de València, les diga que mi objetivo es recuperar su luz en los próximos años. Esa luz que ha deslumbrado a propios y extraños y que ha inspirado a maestros de las artes, entre otros, nuestro maestro por excelencia, Sorolla, en un año en el que se conmemora el centenario de su muerte. Les confieso que a mí no se me ha pasado por alto que tomo posesión en el Año Sorolla, el maestro que le mostró al mundo nuestra luz, nuestras calles y costumbres y la calidez con la que nos acaricia el mar Mediterráneo. Sorolla siempre nos hizo volar alto y ese va a ser nuestro objetivo, volar siempre alto. Releyendo las cartas de nuestro pintor más universal reviví con emoción la que mandaba a su mujer cuando pintaba el cuadro València, Las grupas: 'Las lágrimas se asomaron a mis ojos al contemplar les banderoles junto a las grupas y sobre el cielo bonito de Valencia. Todo ello tiene tal alegría y es tan hermoso que yo no recuerdo haber hecho nada tan emocionante como esto'. Les puedo asegurar que yo no he hecho nada tan emocionante como el camino que emprendo hoy como alcaldesa de València. Es por todos sabido que mi amor por esta ciudad tiene nombre de familia. Es cierto que mi sangre tiene ese sabor a sal de los que están cerca del mar, de los graueros. Mi familia paterna, del Grau, salió adelante con una pequeña carbonería en tiempos de Blasco Ibáñez. Mi padre pasó su infancia a la sombra de Santa María del Mar y su juventud trabajando en el puerto de València desde los 16 años. Ahí forjó su destino y su futuro. Desde el puerto de València, como tantas familias valencianas. També és sabut que la meua família materna té eixa pell bronzejada pel sol de l'Horta Sud. Els meus iaios y besiaios materns, llauradors i gent del camp, m'han regalat el tresor fent del valencià la meua llengua materna i arrelant-me a l'horta de València i a la seua àrea metropolitana. Sepan también los que han pretendido ofenderme alguna vez diciendo que era menos valenciana por haber sido alcaldesa de Torrent que nunca lo han hecho, que Torrent me enseñó a ser alcaldesa y que València me ha enseñado a ser madre y que ambas cosas eran necesarias para llegar hasta aquí, ya que València necesita con urgencia gestores con experiencia, pero también una actitud de protección y de cariño. Ambas, ambas cosas se han echado en falta recientemente. Mis padres forman parte de esa clase media trabajadora que ha levantado este país con su esfuerzo. Ellas, ella, rompía techos de cristal y ellos, él, trabajaba de día y estudiaba de noche para prosperar en un empleo mejor que facilitar a sus hijos, a sus hijas, unos mejores estudios. Nadie les regaló nada y ellos nunca se pusieron horarios que cumplir. Si hoy debo dar las gracias es a una familia que me ha educado con valores como el esfuerzo, el trabajo y el respeto. Trabajando, esforzándonos y respetando al adversario hemos ganado estas elecciones y este es un legado que quiero dejar a mis hijos y que como alcaldesa del cap i casal quiero para mi ciudad. Hoy València empieza un nuevo tiempo, hoy después de ocho años, València empieza a pintar un nuevo lienzo. Un nuevo lienzo donde la luz de Sorolla volverá a brillar y donde sus blancos y sus azules reinarán por las calles de esta maravillosa ciudad. Y para eso tenemos que dedicarle mucho mimo, mucho trellat y mucha humildad. Y por eso quiero empezar agradeciendo el trabajo de todos aquellos que me han precedido. Reconocer el trabajo realizado por todos ellos no es solo una obligación, es sobre todo un deber, porque València no sería lo que es sin ellos y sin su trabajo. Por eso, vaya por delante mi agradecimiento a los alcaldes Fernando Martínez Castellano, Ricard Pérez Casado, Clementina Ródenas, nuestra añorada y querida Rita Barberá, y también a Joan Ribó. Gracias por su trabajo, siempre, sempre tindràs el meu respecte com alcalde de València. Y por supuesto, gracias a todos los funcionarios y miembros de la casa representados aquí también por todos los altos funcionarios de esta institución. Gracias por su labor y por su trabajo al frente de este Ayuntamiento. Son ellos los que hacen que la administración de València funcione, funcione de verdad, independientemente de colores y de símbolos políticos, y de colores políticos y de gobierno.",
+      "fragments": [
+        {
+          "page": 22,
+          "index": 49,
+          "start": 0,
+          "end": 15,
+          "text": "Sra. Alcaldessa"
+        },
+        {
+          "page": 22,
+          "index": 50,
+          "start": 0,
+          "end": 88,
+          "text": "\"Disculpen l'espera, però és que he demanat un atril per a poder llegir millor. Bé, vaig"
+        },
+        {
+          "page": 22,
+          "index": 51,
+          "start": 0,
+          "end": 99,
+          "text": "saludant-los, eh?, i aixina no n´hi ha este silenci tan raro, no? Ja està? val. Als músics açò dels"
+        },
+        {
+          "page": 22,
+          "index": 52,
+          "start": 0,
+          "end": 99,
+          "text": "atrils ens agrada molt. Autoritats civils, polítiques i acadèmiques. Estimats i estimades rectors i"
+        },
+        {
+          "page": 23,
+          "index": 10,
+          "start": 0,
+          "end": 95,
+          "text": "rectores. Conseller. Vicepresident quart de la Mesa del Congrés. Comissari principal. Cap de la"
+        },
+        {
+          "page": 23,
+          "index": 11,
+          "start": 0,
+          "end": 89,
+          "text": "Policia Local de València. President de Cámara de Comerç. President autonòmic de la CEV i"
+        },
+        {
+          "page": 23,
+          "index": 12,
+          "start": 0,
+          "end": 92,
+          "text": "presidenta de la CEV en València. Secretari general d'AVE. President d'AVA. Representants de"
+        },
+        {
+          "page": 23,
+          "index": 13,
+          "start": 0,
+          "end": 92,
+          "text": "tots els sindicats. President de Lo Rat Penat. Presidenta de l'Ateneu Mercantil de València."
+        },
+        {
+          "page": 23,
+          "index": 14,
+          "start": 0,
+          "end": 95,
+          "text": "Delegat territorial de l'ONCE. Presidenta de la Federació de Veïns i Veïnes -l´havia vista ahí,"
+        },
+        {
+          "page": 23,
+          "index": 15,
+          "start": 0,
+          "end": 90,
+          "text": "María José-. Coordinadora de Mercats Municipals. Representants de mitjans de comunicació i"
+        },
+        {
+          "page": 23,
+          "index": 16,
+          "start": 0,
+          "end": 92,
+          "text": "també directors dels mitjans de comunicació. Moltíssimes gràcies per estar hui ací. Companys"
+        },
+        {
+          "page": 23,
+          "index": 17,
+          "start": 0,
+          "end": 94,
+          "text": "de corporació, amics i amigues, i companys, i en especial, molt especial, president del Partit"
+        },
+        {
+          "page": 23,
+          "index": 18,
+          "start": 0,
+          "end": 86,
+          "text": "Popular de la Comunitat Valenciana i pròxim president de la Generalitat, Carlos Mazón."
+        },
+        {
+          "page": 23,
+          "index": 19,
+          "start": 0,
+          "end": 90,
+          "text": "Vicesecretari d'Acció Institucional del Partit Popular i gran amic Esteban González Pons i"
+        },
+        {
+          "page": 23,
+          "index": 20,
+          "start": 0,
+          "end": 94,
+          "text": "família. Gràcies a tots per vindre hui i engalanar en la vostra presència la constitució d'una"
+        },
+        {
+          "page": 23,
+          "index": 21,
+          "start": 0,
+          "end": 96,
+          "text": "nova corporació de l'Ajuntament de València. Gràcies per estar en un dia tan especial per a tots"
+        },
+        {
+          "page": 23,
+          "index": 22,
+          "start": 0,
+          "end": 19,
+          "text": "els que estem ací. "
+        },
+        {
+          "page": 23,
+          "index": 23,
+          "start": 0,
+          "end": 92,
+          "text": "El pasado 28 de mayo, con la tercera participación más alta de la serie histórica, más de un"
+        },
+        {
+          "page": 23,
+          "index": 24,
+          "start": 0,
+          "end": 93,
+          "text": "72 %, los valencianos se pronunciaron sobre el futuro de la ciudad de València con claridad y"
+        },
+        {
+          "page": 23,
+          "index": 25,
+          "start": 0,
+          "end": 95,
+          "text": "con contundencia. Permítanme, en primer lugar, que en estos tiempos tan convulsos en los que no"
+        },
+        {
+          "page": 23,
+          "index": 26,
+          "start": 0,
+          "end": 101,
+          "text": "nos es ajena cierta apatía hacia la política y en la que en los que las familias sufren para llegar a"
+        },
+        {
+          "page": 23,
+          "index": 27,
+          "start": 0,
+          "end": 96,
+          "text": "todo, dé las gracias a los valencianos por seguir comprometidos con el futuro de su ciudad y por"
+        },
+        {
+          "page": 23,
+          "index": 28,
+          "start": 0,
+          "end": 85,
+          "text": "dar con esta participación un ejemplo claro de sana democracia. Gracias a los 417.512"
+        },
+        {
+          "page": 23,
+          "index": 29,
+          "start": 0,
+          "end": 95,
+          "text": "valencianos que acudieron a votar. A todos, especialmente a los 152.000 valencianos que votaron"
+        },
+        {
+          "page": 23,
+          "index": 30,
+          "start": 0,
+          "end": 95,
+          "text": "el proyecto del Partido Popular, depositando su confianza en nuestro proyecto político para los"
+        },
+        {
+          "page": 23,
+          "index": 31,
+          "start": 0,
+          "end": 94,
+          "text": "próximos años y particularmente en mí para ser alcaldesa de València. Sepan que tengo la firme"
+        },
+        {
+          "page": 23,
+          "index": 32,
+          "start": 0,
+          "end": 97,
+          "text": "intención de no fallarles, de hacerles sentir orgullosos de su ciudad y de su rumbo. Sepan que en"
+        },
+        {
+          "page": 23,
+          "index": 33,
+          "start": 0,
+          "end": 97,
+          "text": "mí tienen a su primera servidora y que me dejaré la piel para agradecer en horas y en esfuerzo la"
+        },
+        {
+          "page": 23,
+          "index": 34,
+          "start": 0,
+          "end": 91,
+          "text": "confianza depositada en mí. Soy muy consciente del honor que supone dirigir esta ciudad, de"
+        },
+        {
+          "page": 23,
+          "index": 35,
+          "start": 0,
+          "end": 97,
+          "text": "larga tradición, heredera de más de 2.000 años de historia, que hunde sus raíces en época romana,"
+        },
+        {
+          "page": 23,
+          "index": 36,
+          "start": 0,
+          "end": 90,
+          "text": "crisol y punto de encuentro de pueblos y culturas, puerta de entrada del Renacimiento a la"
+        },
+        {
+          "page": 23,
+          "index": 37,
+          "start": 0,
+          "end": 92,
+          "text": "Península Ibérica, cuna de personajes ilustres como Vicente Martínez Soler, Joaquín Sorolla,"
+        },
+        {
+          "page": 23,
+          "index": 38,
+          "start": 0,
+          "end": 94,
+          "text": "Mariano Benlliure o Vicente Blasco Ibáñez, embajadores todos ellos de nuestra tierra. Heredera"
+        },
+        {
+          "page": 23,
+          "index": 39,
+          "start": 0,
+          "end": 87,
+          "text": "de una ciudad de impronta gótica y alma barroca que vivió su segunda edad de oro con la"
+        },
+        {
+          "page": 23,
+          "index": 40,
+          "start": 0,
+          "end": 92,
+          "text": "Ilustración y que buscó homologarse al resto de grandes capitales europeas con la Exposición"
+        },
+        {
+          "page": 23,
+          "index": 41,
+          "start": 0,
+          "end": 86,
+          "text": "Regional de 1909, haciendo de ella su mejor escaparate de una ciudad consciente de sus"
+        },
+        {
+          "page": 23,
+          "index": 42,
+          "start": 0,
+          "end": 96,
+          "text": "posibilidades, de sus capacidades y que nunca baja los brazos ante las dificultades. Lo vimos en"
+        },
+        {
+          "page": 23,
+          "index": 43,
+          "start": 0,
+          "end": 95,
+          "text": "1957 en la riada y lo seguimos viendo hoy en cada reto que supone esta ciudad y que esta ciudad"
+        },
+        {
+          "page": 23,
+          "index": 44,
+          "start": 0,
+          "end": 98,
+          "text": "atraviesa. De una ciudad, en fin, que se siente orgullosa de su pasado y que quiere escribir ahora"
+        },
+        {
+          "page": 23,
+          "index": 45,
+          "start": 0,
+          "end": 96,
+          "text": "un nuevo capítulo glorioso de su historia, sentando las bases para su florecimiento y que aspira"
+        },
+        {
+          "page": 23,
+          "index": 46,
+          "start": 0,
+          "end": 54,
+          "text": "claramente a ser la capital cultural del Mediterráneo."
+        },
+        {
+          "page": 23,
+          "index": 47,
+          "start": 0,
+          "end": 86,
+          "text": "Soy muy consciente de que se espera mucho de nosotros y que lo primero que se nos pide"
+        },
+        {
+          "page": 23,
+          "index": 48,
+          "start": 0,
+          "end": 98,
+          "text": "es serenidad, sensatez, cordialidad y cuidar de esta institución por encima de todo, por encima de"
+        },
+        {
+          "page": 23,
+          "index": 49,
+          "start": 0,
+          "end": 93,
+          "text": "ideologías, de siglas y de personas. València es mucha València y València está por encima de"
+        },
+        {
+          "page": 23,
+          "index": 50,
+          "start": 0,
+          "end": 95,
+          "text": "todo y de todos. Permítanme, por tanto, que consciente del honor que supone ser la alcaldesa de"
+        },
+        {
+          "page": 23,
+          "index": 51,
+          "start": 0,
+          "end": 91,
+          "text": "València, les diga que mi objetivo es recuperar su luz en los próximos años. Esa luz que ha"
+        },
+        {
+          "page": 23,
+          "index": 52,
+          "start": 0,
+          "end": 97,
+          "text": "deslumbrado a propios y extraños y que ha inspirado a maestros de las artes, entre otros, nuestro"
+        },
+        {
+          "page": 23,
+          "index": 53,
+          "start": 0,
+          "end": 93,
+          "text": "maestro por excelencia, Sorolla, en un año en el que se conmemora el centenario de su muerte."
+        },
+        {
+          "page": 23,
+          "index": 54,
+          "start": 0,
+          "end": 89,
+          "text": "Les confieso que a mí no se me ha pasado por alto que tomo posesión en el Año Sorolla, el"
+        },
+        {
+          "page": 24,
+          "index": 10,
+          "start": 0,
+          "end": 96,
+          "text": "maestro que le mostró al mundo nuestra luz, nuestras calles y costumbres y la calidez con la que"
+        },
+        {
+          "page": 24,
+          "index": 11,
+          "start": 0,
+          "end": 92,
+          "text": "nos acaricia el mar Mediterráneo. Sorolla siempre nos hizo volar alto y ese va a ser nuestro"
+        },
+        {
+          "page": 24,
+          "index": 12,
+          "start": 0,
+          "end": 93,
+          "text": "objetivo, volar siempre alto. Releyendo las cartas de nuestro pintor más universal reviví con"
+        },
+        {
+          "page": 24,
+          "index": 13,
+          "start": 0,
+          "end": 85,
+          "text": "emoción la que mandaba a su mujer cuando pintaba el cuadro València, Las grupas: 'Las"
+        },
+        {
+          "page": 24,
+          "index": 14,
+          "start": 0,
+          "end": 96,
+          "text": "lágrimas se asomaron a mis ojos al contemplar les banderoles junto a las grupas y sobre el cielo"
+        },
+        {
+          "page": 24,
+          "index": 15,
+          "start": 0,
+          "end": 95,
+          "text": "bonito de Valencia. Todo ello tiene tal alegría y es tan hermoso que yo no recuerdo haber hecho"
+        },
+        {
+          "page": 24,
+          "index": 16,
+          "start": 0,
+          "end": 91,
+          "text": "nada tan emocionante como esto'. Les puedo asegurar que yo no he hecho nada tan emocionante"
+        },
+        {
+          "page": 24,
+          "index": 17,
+          "start": 0,
+          "end": 60,
+          "text": "como el camino que emprendo hoy como alcaldesa de València. "
+        },
+        {
+          "page": 24,
+          "index": 18,
+          "start": 0,
+          "end": 89,
+          "text": "Es por todos sabido que mi amor por esta ciudad tiene nombre de familia. Es cierto que mi"
+        },
+        {
+          "page": 24,
+          "index": 19,
+          "start": 0,
+          "end": 97,
+          "text": "sangre tiene ese sabor a sal de los que están cerca del mar, de los graueros. Mi familia paterna,"
+        },
+        {
+          "page": 24,
+          "index": 20,
+          "start": 0,
+          "end": 94,
+          "text": "del Grau, salió adelante con una pequeña carbonería en tiempos de Blasco Ibáñez. Mi padre pasó"
+        },
+        {
+          "page": 24,
+          "index": 21,
+          "start": 0,
+          "end": 96,
+          "text": "su infancia a la sombra de Santa María del Mar y su juventud trabajando en el puerto de València"
+        },
+        {
+          "page": 24,
+          "index": 22,
+          "start": 0,
+          "end": 93,
+          "text": "desde los 16 años. Ahí forjó su destino y su futuro. Desde el puerto de València, como tantas"
+        },
+        {
+          "page": 24,
+          "index": 23,
+          "start": 0,
+          "end": 96,
+          "text": "familias valencianas. També és sabut que la meua família materna té eixa pell bronzejada pel sol"
+        },
+        {
+          "page": 24,
+          "index": 24,
+          "start": 0,
+          "end": 95,
+          "text": "de l'Horta Sud. Els meus iaios y besiaios materns, llauradors i gent del camp, m'han regalat el"
+        },
+        {
+          "page": 24,
+          "index": 25,
+          "start": 0,
+          "end": 96,
+          "text": "tresor fent del valencià la meua llengua materna i arrelant-me a l'horta de València i a la seua"
+        },
+        {
+          "page": 24,
+          "index": 26,
+          "start": 0,
+          "end": 90,
+          "text": "àrea metropolitana. Sepan también los que han pretendido ofenderme alguna vez diciendo que"
+        },
+        {
+          "page": 24,
+          "index": 27,
+          "start": 0,
+          "end": 92,
+          "text": "era menos valenciana por haber sido alcaldesa de Torrent que nunca lo han hecho, que Torrent"
+        },
+        {
+          "page": 24,
+          "index": 28,
+          "start": 0,
+          "end": 90,
+          "text": "me enseñó a ser alcaldesa y que València me ha enseñado a ser madre y que ambas cosas eran"
+        },
+        {
+          "page": 24,
+          "index": 29,
+          "start": 0,
+          "end": 98,
+          "text": "necesarias para llegar hasta aquí, ya que València necesita con urgencia gestores con experiencia,"
+        },
+        {
+          "page": 24,
+          "index": 30,
+          "start": 0,
+          "end": 93,
+          "text": "pero también una actitud de protección y de cariño. Ambas, ambas cosas se han echado en falta"
+        },
+        {
+          "page": 24,
+          "index": 31,
+          "start": 0,
+          "end": 96,
+          "text": "recientemente. Mis padres forman parte de esa clase media trabajadora que ha levantado este país"
+        },
+        {
+          "page": 24,
+          "index": 32,
+          "start": 0,
+          "end": 99,
+          "text": "con su esfuerzo. Ellas, ella, rompía techos de cristal y ellos, él, trabajaba de día y estudiaba de"
+        },
+        {
+          "page": 24,
+          "index": 33,
+          "start": 0,
+          "end": 92,
+          "text": "noche para prosperar en un empleo mejor que facilitar a sus hijos, a sus hijas, unos mejores"
+        },
+        {
+          "page": 24,
+          "index": 34,
+          "start": 0,
+          "end": 95,
+          "text": "estudios. Nadie les regaló nada y ellos nunca se pusieron horarios que cumplir. Si hoy debo dar"
+        },
+        {
+          "page": 24,
+          "index": 35,
+          "start": 0,
+          "end": 92,
+          "text": "las gracias es a una familia que me ha educado con valores como el esfuerzo, el trabajo y el"
+        },
+        {
+          "page": 24,
+          "index": 36,
+          "start": 0,
+          "end": 93,
+          "text": "respeto. Trabajando, esforzándonos y respetando al adversario hemos ganado estas elecciones y"
+        },
+        {
+          "page": 24,
+          "index": 37,
+          "start": 0,
+          "end": 98,
+          "text": "este es un legado que quiero dejar a mis hijos y que como alcaldesa del cap i casal quiero para mi"
+        },
+        {
+          "page": 24,
+          "index": 38,
+          "start": 0,
+          "end": 8,
+          "text": "ciudad. "
+        },
+        {
+          "page": 24,
+          "index": 39,
+          "start": 0,
+          "end": 82,
+          "text": "Hoy València empieza un nuevo tiempo, hoy después de ocho años, València empieza a"
+        },
+        {
+          "page": 24,
+          "index": 40,
+          "start": 0,
+          "end": 93,
+          "text": "pintar un nuevo lienzo. Un nuevo lienzo donde la luz de Sorolla volverá a brillar y donde sus"
+        },
+        {
+          "page": 24,
+          "index": 41,
+          "start": 0,
+          "end": 95,
+          "text": "blancos y sus azules reinarán por las calles de esta maravillosa ciudad. Y para eso tenemos que"
+        },
+        {
+          "page": 24,
+          "index": 42,
+          "start": 0,
+          "end": 78,
+          "text": "dedicarle mucho mimo, mucho trellat y mucha humildad. Y por eso quiero empezar"
+        },
+        {
+          "page": 24,
+          "index": 43,
+          "start": 0,
+          "end": 94,
+          "text": "agradeciendo el trabajo de todos aquellos que me han precedido. Reconocer el trabajo realizado"
+        },
+        {
+          "page": 24,
+          "index": 44,
+          "start": 0,
+          "end": 98,
+          "text": "por todos ellos no es solo una obligación, es sobre todo un deber, porque València no sería lo que"
+        },
+        {
+          "page": 24,
+          "index": 45,
+          "start": 0,
+          "end": 98,
+          "text": "es sin ellos y sin su trabajo. Por eso, vaya por delante mi agradecimiento a los alcaldes Fernando"
+        },
+        {
+          "page": 24,
+          "index": 46,
+          "start": 0,
+          "end": 92,
+          "text": "Martínez Castellano, Ricard Pérez Casado, Clementina Ródenas, nuestra añorada y querida Rita"
+        },
+        {
+          "page": 24,
+          "index": 47,
+          "start": 0,
+          "end": 95,
+          "text": "Barberá, y también a Joan Ribó. Gracias por su trabajo, siempre, sempre tindràs el meu respecte"
+        },
+        {
+          "page": 24,
+          "index": 48,
+          "start": 0,
+          "end": 95,
+          "text": "com alcalde de València. Y por supuesto, gracias a todos los funcionarios y miembros de la casa"
+        },
+        {
+          "page": 24,
+          "index": 49,
+          "start": 0,
+          "end": 95,
+          "text": "representados aquí también por todos los altos funcionarios de esta institución. Gracias por su"
+        },
+        {
+          "page": 24,
+          "index": 50,
+          "start": 0,
+          "end": 85,
+          "text": "labor y por su trabajo al frente de este Ayuntamiento. Son ellos los que hacen que la"
+        },
+        {
+          "page": 24,
+          "index": 51,
+          "start": 0,
+          "end": 91,
+          "text": "administración de València funcione, funcione de verdad, independientemente de colores y de"
+        },
+        {
+          "page": 24,
+          "index": 52,
+          "start": 0,
+          "end": 58,
+          "text": "símbolos políticos, y de colores políticos y de gobierno. "
+        }
+      ]
+    },
+    {
+      "id": "m-46250-context-2",
+      "topic": "Recapitulación, compromisos generales y agradecimientos",
+      "page": 28,
+      "endPage": 29,
+      "rawText": "Termino, València vivió hace más de dos décadas una primera transformación con ojos de\nmujer. Voy a poner en marcha como alcaldesa y con un gran equipo de personas que me\nacompañan al frente de este gobierno una segunda transformación de esta ciudad. Y quiero que\neste proyecto de ciudad sea compartido por todos los valencianos, sin generar enfrentamientos,\ncon cercanía, sensibilidad, con diálogo, con fortaleza, pero también con mucha ambición. El 28\nde mayo no solo ganó el Partido Popular, ganó la buena política, aquella que ilusiona, que ofrece\nproyectos a los vecinos y que no arremete contra el adversario con mentiras y con\nmanipulaciones. Ha vuelto la buena política, la política sana, esa en la que me comprometo a\nejercer como alcaldesa, la que defiende con convicción sus ideas, pero la que escucha\nactivamente por el interés general. La política centrada en la gestión, pero impulsada desde el\ncorazón. La política que huye de sectarismos y abraza la moderación. Lejos, muy lejos, de\nataques personales y de críticas infundadas. La buena política, la del respeto, la de todos y la de\nla sensatez, va a volver a este Ayuntamiento. Todos me van a tener a su disposición. Y asumo el\nreto de ser una alcaldesa cercana. Lo asumo ante ustedes y delante de toda la ciudad. Me voy a\ndedicar en cuerpo y alma por esta ciudad y lo voy a hacer desde el diálogo sereno y con una hoja\nde ruta muy clara, València está por encima de todo, Como decía al inicio, hoy València empieza\nun nuevo lienzo. Y si me lo permiten, empieza para mí un capítulo precioso de mi vida. Asumo\nel reto de presidir esta corporación y el reto de gobernar esta magnífica ciudad con orgullo, con\nresponsabilidad, con humildad y con ilusión, porque no puede haber mayor honor que ser\nalcaldesa del Cap i Casal. Y lo haré siguiendo el consejo del historiador Nicolau Primitiu:\ntrabajar, persistir y esperar. Con estos tres verbos actuaré en este mandato. Trabajaré siempre por\nlos valencianos, persistiré para poner en marcha los mejores proyectos para esta ciudad y\nesperaré y me esmeraré para tener los mayores consensos y acuerdos para València. \nNo puedo terminar sin hacer de nuevo referencia a mi familia. Son mi soporte, sin ellos\nnada de esto hubiera sido posible. Gracias de verdad por estar siempre ahí. Y no solo a mis\npadres y a mi hermana sino a mi mejor equipo, a Gus, a Júlia y especialmente a Cesc. Ellos hacen\nposible que yo esté aquí, me ayudan a levantarme cada mañana y me ponen los pies en el suelo.\nY especialmente el pequeño me ha ayudado a llegar al final de la meta como si fuera un relojito y\ncumpliendo exactamente todos sus tiempos. Hoy está aquí, Júlia no porque no hubieran podido\nescuchar nada ustedes de este discurso. No puedo acabar tampoco sin dar las gracias a todas las\npersonas que han confiado en mí, a mi presidente de siempre, a mi segundo padre, Vicente Soria,\na mi presidente regional y próximo presidente de la Generalitat, Carlos Mazón, a la Dirección\nNacional de mi partido y concretamente a Esteban González Pons. Gracias a todos mis\ncompañeros que me han acompañado en esta última legislatura y a todos los que se incorporan\nahora a esta aventura. A mis concejales, a mi equipo, a esos que siempre están desde hace ya\nmuchos años. Pero sobre todo, nuevamente, permítanme que dé las gracias a los 152.000\nvalencianos anónimos que el 28 de mayo confiaron en mí, a todos ellos y al resto de valencianos\nque optaron legítimamente también por otra fuerza política quiero daros las gracias más sinceras.\nYo voy a desvivirme por València. Como el maestro Sorolla, deseo de corazón difundir las\nmaravillas de esta ciudad, de su patrimonio y la bonhomía de su gente. Pintar y amarte, como\ndecía Joaquín Sorolla por carta a su esposa, a Clotilde García, otra valenciana a la que dedicaba\nsu vida allá donde estuviera. Así lo voy a hacer como alcaldesa de València, gobernarla y amarla\nahora y siempre. \nMoltes gràcies.\"",
+      "text": "Termino, València vivió hace más de dos décadas una primera transformación con ojos de mujer. Voy a poner en marcha como alcaldesa y con un gran equipo de personas que me acompañan al frente de este gobierno una segunda transformación de esta ciudad. Y quiero que este proyecto de ciudad sea compartido por todos los valencianos, sin generar enfrentamientos, con cercanía, sensibilidad, con diálogo, con fortaleza, pero también con mucha ambición. El 28 de mayo no solo ganó el Partido Popular, ganó la buena política, aquella que ilusiona, que ofrece proyectos a los vecinos y que no arremete contra el adversario con mentiras y con manipulaciones. Ha vuelto la buena política, la política sana, esa en la que me comprometo a ejercer como alcaldesa, la que defiende con convicción sus ideas, pero la que escucha activamente por el interés general. La política centrada en la gestión, pero impulsada desde el corazón. La política que huye de sectarismos y abraza la moderación. Lejos, muy lejos, de ataques personales y de críticas infundadas. La buena política, la del respeto, la de todos y la de la sensatez, va a volver a este Ayuntamiento. Todos me van a tener a su disposición. Y asumo el reto de ser una alcaldesa cercana. Lo asumo ante ustedes y delante de toda la ciudad. Me voy a dedicar en cuerpo y alma por esta ciudad y lo voy a hacer desde el diálogo sereno y con una hoja de ruta muy clara, València está por encima de todo, Como decía al inicio, hoy València empieza un nuevo lienzo. Y si me lo permiten, empieza para mí un capítulo precioso de mi vida. Asumo el reto de presidir esta corporación y el reto de gobernar esta magnífica ciudad con orgullo, con responsabilidad, con humildad y con ilusión, porque no puede haber mayor honor que ser alcaldesa del Cap i Casal. Y lo haré siguiendo el consejo del historiador Nicolau Primitiu: trabajar, persistir y esperar. Con estos tres verbos actuaré en este mandato. Trabajaré siempre por los valencianos, persistiré para poner en marcha los mejores proyectos para esta ciudad y esperaré y me esmeraré para tener los mayores consensos y acuerdos para València. No puedo terminar sin hacer de nuevo referencia a mi familia. Son mi soporte, sin ellos nada de esto hubiera sido posible. Gracias de verdad por estar siempre ahí. Y no solo a mis padres y a mi hermana sino a mi mejor equipo, a Gus, a Júlia y especialmente a Cesc. Ellos hacen posible que yo esté aquí, me ayudan a levantarme cada mañana y me ponen los pies en el suelo. Y especialmente el pequeño me ha ayudado a llegar al final de la meta como si fuera un relojito y cumpliendo exactamente todos sus tiempos. Hoy está aquí, Júlia no porque no hubieran podido escuchar nada ustedes de este discurso. No puedo acabar tampoco sin dar las gracias a todas las personas que han confiado en mí, a mi presidente de siempre, a mi segundo padre, Vicente Soria, a mi presidente regional y próximo presidente de la Generalitat, Carlos Mazón, a la Dirección Nacional de mi partido y concretamente a Esteban González Pons. Gracias a todos mis compañeros que me han acompañado en esta última legislatura y a todos los que se incorporan ahora a esta aventura. A mis concejales, a mi equipo, a esos que siempre están desde hace ya muchos años. Pero sobre todo, nuevamente, permítanme que dé las gracias a los 152.000 valencianos anónimos que el 28 de mayo confiaron en mí, a todos ellos y al resto de valencianos que optaron legítimamente también por otra fuerza política quiero daros las gracias más sinceras. Yo voy a desvivirme por València. Como el maestro Sorolla, deseo de corazón difundir las maravillas de esta ciudad, de su patrimonio y la bonhomía de su gente. Pintar y amarte, como decía Joaquín Sorolla por carta a su esposa, a Clotilde García, otra valenciana a la que dedicaba su vida allá donde estuviera. Así lo voy a hacer como alcaldesa de València, gobernarla y amarla ahora y siempre. Moltes gràcies.\"",
+      "fragments": [
+        {
+          "page": 28,
+          "index": 32,
+          "start": 0,
+          "end": 86,
+          "text": "Termino, València vivió hace más de dos décadas una primera transformación con ojos de"
+        },
+        {
+          "page": 28,
+          "index": 33,
+          "start": 0,
+          "end": 83,
+          "text": "mujer. Voy a poner en marcha como alcaldesa y con un gran equipo de personas que me"
+        },
+        {
+          "page": 28,
+          "index": 34,
+          "start": 0,
+          "end": 92,
+          "text": "acompañan al frente de este gobierno una segunda transformación de esta ciudad. Y quiero que"
+        },
+        {
+          "page": 28,
+          "index": 35,
+          "start": 0,
+          "end": 94,
+          "text": "este proyecto de ciudad sea compartido por todos los valencianos, sin generar enfrentamientos,"
+        },
+        {
+          "page": 28,
+          "index": 36,
+          "start": 0,
+          "end": 94,
+          "text": "con cercanía, sensibilidad, con diálogo, con fortaleza, pero también con mucha ambición. El 28"
+        },
+        {
+          "page": 28,
+          "index": 37,
+          "start": 0,
+          "end": 97,
+          "text": "de mayo no solo ganó el Partido Popular, ganó la buena política, aquella que ilusiona, que ofrece"
+        },
+        {
+          "page": 28,
+          "index": 38,
+          "start": 0,
+          "end": 81,
+          "text": "proyectos a los vecinos y que no arremete contra el adversario con mentiras y con"
+        },
+        {
+          "page": 28,
+          "index": 39,
+          "start": 0,
+          "end": 92,
+          "text": "manipulaciones. Ha vuelto la buena política, la política sana, esa en la que me comprometo a"
+        },
+        {
+          "page": 28,
+          "index": 40,
+          "start": 0,
+          "end": 85,
+          "text": "ejercer como alcaldesa, la que defiende con convicción sus ideas, pero la que escucha"
+        },
+        {
+          "page": 28,
+          "index": 41,
+          "start": 0,
+          "end": 95,
+          "text": "activamente por el interés general. La política centrada en la gestión, pero impulsada desde el"
+        },
+        {
+          "page": 28,
+          "index": 42,
+          "start": 0,
+          "end": 89,
+          "text": "corazón. La política que huye de sectarismos y abraza la moderación. Lejos, muy lejos, de"
+        },
+        {
+          "page": 28,
+          "index": 43,
+          "start": 0,
+          "end": 99,
+          "text": "ataques personales y de críticas infundadas. La buena política, la del respeto, la de todos y la de"
+        },
+        {
+          "page": 28,
+          "index": 44,
+          "start": 0,
+          "end": 95,
+          "text": "la sensatez, va a volver a este Ayuntamiento. Todos me van a tener a su disposición. Y asumo el"
+        },
+        {
+          "page": 28,
+          "index": 45,
+          "start": 0,
+          "end": 94,
+          "text": "reto de ser una alcaldesa cercana. Lo asumo ante ustedes y delante de toda la ciudad. Me voy a"
+        },
+        {
+          "page": 28,
+          "index": 46,
+          "start": 0,
+          "end": 96,
+          "text": "dedicar en cuerpo y alma por esta ciudad y lo voy a hacer desde el diálogo sereno y con una hoja"
+        },
+        {
+          "page": 28,
+          "index": 47,
+          "start": 0,
+          "end": 95,
+          "text": "de ruta muy clara, València está por encima de todo, Como decía al inicio, hoy València empieza"
+        },
+        {
+          "page": 28,
+          "index": 48,
+          "start": 0,
+          "end": 92,
+          "text": "un nuevo lienzo. Y si me lo permiten, empieza para mí un capítulo precioso de mi vida. Asumo"
+        },
+        {
+          "page": 28,
+          "index": 49,
+          "start": 0,
+          "end": 97,
+          "text": "el reto de presidir esta corporación y el reto de gobernar esta magnífica ciudad con orgullo, con"
+        },
+        {
+          "page": 28,
+          "index": 50,
+          "start": 0,
+          "end": 86,
+          "text": "responsabilidad, con humildad y con ilusión, porque no puede haber mayor honor que ser"
+        },
+        {
+          "page": 28,
+          "index": 51,
+          "start": 0,
+          "end": 91,
+          "text": "alcaldesa del Cap i Casal. Y lo haré siguiendo el consejo del historiador Nicolau Primitiu:"
+        },
+        {
+          "page": 28,
+          "index": 52,
+          "start": 0,
+          "end": 99,
+          "text": "trabajar, persistir y esperar. Con estos tres verbos actuaré en este mandato. Trabajaré siempre por"
+        },
+        {
+          "page": 28,
+          "index": 53,
+          "start": 0,
+          "end": 89,
+          "text": "los valencianos, persistiré para poner en marcha los mejores proyectos para esta ciudad y"
+        },
+        {
+          "page": 28,
+          "index": 54,
+          "start": 0,
+          "end": 82,
+          "text": "esperaré y me esmeraré para tener los mayores consensos y acuerdos para València. "
+        },
+        {
+          "page": 29,
+          "index": 10,
+          "start": 0,
+          "end": 87,
+          "text": "No puedo terminar sin hacer de nuevo referencia a mi familia. Son mi soporte, sin ellos"
+        },
+        {
+          "page": 29,
+          "index": 11,
+          "start": 0,
+          "end": 91,
+          "text": "nada de esto hubiera sido posible. Gracias de verdad por estar siempre ahí. Y no solo a mis"
+        },
+        {
+          "page": 29,
+          "index": 12,
+          "start": 0,
+          "end": 96,
+          "text": "padres y a mi hermana sino a mi mejor equipo, a Gus, a Júlia y especialmente a Cesc. Ellos hacen"
+        },
+        {
+          "page": 29,
+          "index": 13,
+          "start": 0,
+          "end": 93,
+          "text": "posible que yo esté aquí, me ayudan a levantarme cada mañana y me ponen los pies en el suelo."
+        },
+        {
+          "page": 29,
+          "index": 14,
+          "start": 0,
+          "end": 97,
+          "text": "Y especialmente el pequeño me ha ayudado a llegar al final de la meta como si fuera un relojito y"
+        },
+        {
+          "page": 29,
+          "index": 15,
+          "start": 0,
+          "end": 91,
+          "text": "cumpliendo exactamente todos sus tiempos. Hoy está aquí, Júlia no porque no hubieran podido"
+        },
+        {
+          "page": 29,
+          "index": 16,
+          "start": 0,
+          "end": 95,
+          "text": "escuchar nada ustedes de este discurso. No puedo acabar tampoco sin dar las gracias a todas las"
+        },
+        {
+          "page": 29,
+          "index": 17,
+          "start": 0,
+          "end": 95,
+          "text": "personas que han confiado en mí, a mi presidente de siempre, a mi segundo padre, Vicente Soria,"
+        },
+        {
+          "page": 29,
+          "index": 18,
+          "start": 0,
+          "end": 93,
+          "text": "a mi presidente regional y próximo presidente de la Generalitat, Carlos Mazón, a la Dirección"
+        },
+        {
+          "page": 29,
+          "index": 19,
+          "start": 0,
+          "end": 83,
+          "text": "Nacional de mi partido y concretamente a Esteban González Pons. Gracias a todos mis"
+        },
+        {
+          "page": 29,
+          "index": 20,
+          "start": 0,
+          "end": 91,
+          "text": "compañeros que me han acompañado en esta última legislatura y a todos los que se incorporan"
+        },
+        {
+          "page": 29,
+          "index": 21,
+          "start": 0,
+          "end": 92,
+          "text": "ahora a esta aventura. A mis concejales, a mi equipo, a esos que siempre están desde hace ya"
+        },
+        {
+          "page": 29,
+          "index": 22,
+          "start": 0,
+          "end": 85,
+          "text": "muchos años. Pero sobre todo, nuevamente, permítanme que dé las gracias a los 152.000"
+        },
+        {
+          "page": 29,
+          "index": 23,
+          "start": 0,
+          "end": 95,
+          "text": "valencianos anónimos que el 28 de mayo confiaron en mí, a todos ellos y al resto de valencianos"
+        },
+        {
+          "page": 29,
+          "index": 24,
+          "start": 0,
+          "end": 97,
+          "text": "que optaron legítimamente también por otra fuerza política quiero daros las gracias más sinceras."
+        },
+        {
+          "page": 29,
+          "index": 25,
+          "start": 0,
+          "end": 88,
+          "text": "Yo voy a desvivirme por València. Como el maestro Sorolla, deseo de corazón difundir las"
+        },
+        {
+          "page": 29,
+          "index": 26,
+          "start": 0,
+          "end": 92,
+          "text": "maravillas de esta ciudad, de su patrimonio y la bonhomía de su gente. Pintar y amarte, como"
+        },
+        {
+          "page": 29,
+          "index": 27,
+          "start": 0,
+          "end": 97,
+          "text": "decía Joaquín Sorolla por carta a su esposa, a Clotilde García, otra valenciana a la que dedicaba"
+        },
+        {
+          "page": 29,
+          "index": 28,
+          "start": 0,
+          "end": 96,
+          "text": "su vida allá donde estuviera. Así lo voy a hacer como alcaldesa de València, gobernarla y amarla"
+        },
+        {
+          "page": 29,
+          "index": 29,
+          "start": 0,
+          "end": 17,
+          "text": "ahora y siempre. "
+        },
+        {
+          "page": 29,
+          "index": 30,
+          "start": 0,
+          "end": 16,
+          "text": "Moltes gràcies.\""
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "m-46250-1",
+      "topic": "Gobernanza, diálogo y acuerdos",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "Asumimos el reto de gobernar con un objetivo claro, hacerlo para todos los valencianos y\npor València, con altura de miras. Gobernaremos con unas máximas muy claras, València por\nencima de todo, el diálogo y la escucha como premisa y la búsqueda de consensos como vía. El\n28 de mayo los valencianos, insisto, hablaron alto y claro. Y quisieron que el Partido Popular\nfuera el partido más votado. Lo dijeron con contundencia y con claridad. Pero también nos han\npedido que lleguemos a acuerdos porque por encima de los partidos está la ciudad. Dice Adela\nCortina, la primera mujer que ingresó en la Real Academia de las Ciencias Morales y Políticas,\nque los ciudadanos son conscientes de que las discrepancias son inevitables, son la sustancia de\nuna sociedad pluralista, pero saben también que en cuestiones de justicia es indispensable\ndialogar y tratar de descubrir acuerdos. Y eso es lo que van a encontrar en mí como alcaldesa de\nValència, firmeza y contundencia para defender a los valencianos y voluntad permanente de\ndiálogo y búsqueda de acuerdos para mejorar su día a día. Por eso pido a todos los representantes\nde esta institución, los representantes políticos de València, responsabilidad y lealtad. Les pido\nque se sumen a aquellas propuestas que sean buenas para València, como hemos hecho nosotros\nen las últimas legislaturas. Mi mano siempre estará ahí para llegar a acuerdos que beneficien a\nlos valencianos y para ir juntos, para reivindicar las mejoras que necesita nuestra ciudad ante\ncualquier administración. ",
+      "text": "Asumimos el reto de gobernar con un objetivo claro, hacerlo para todos los valencianos y por València, con altura de miras. Gobernaremos con unas máximas muy claras, València por encima de todo, el diálogo y la escucha como premisa y la búsqueda de consensos como vía. El 28 de mayo los valencianos, insisto, hablaron alto y claro. Y quisieron que el Partido Popular fuera el partido más votado. Lo dijeron con contundencia y con claridad. Pero también nos han pedido que lleguemos a acuerdos porque por encima de los partidos está la ciudad. Dice Adela Cortina, la primera mujer que ingresó en la Real Academia de las Ciencias Morales y Políticas, que los ciudadanos son conscientes de que las discrepancias son inevitables, son la sustancia de una sociedad pluralista, pero saben también que en cuestiones de justicia es indispensable dialogar y tratar de descubrir acuerdos. Y eso es lo que van a encontrar en mí como alcaldesa de València, firmeza y contundencia para defender a los valencianos y voluntad permanente de diálogo y búsqueda de acuerdos para mejorar su día a día. Por eso pido a todos los representantes de esta institución, los representantes políticos de València, responsabilidad y lealtad. Les pido que se sumen a aquellas propuestas que sean buenas para València, como hemos hecho nosotros en las últimas legislaturas. Mi mano siempre estará ahí para llegar a acuerdos que beneficien a los valencianos y para ir juntos, para reivindicar las mejoras que necesita nuestra ciudad ante cualquier administración.",
+      "fragments": [
+        {
+          "page": 25,
+          "index": 10,
+          "start": 0,
+          "end": 88,
+          "text": "Asumimos el reto de gobernar con un objetivo claro, hacerlo para todos los valencianos y"
+        },
+        {
+          "page": 25,
+          "index": 11,
+          "start": 0,
+          "end": 89,
+          "text": "por València, con altura de miras. Gobernaremos con unas máximas muy claras, València por"
+        },
+        {
+          "page": 25,
+          "index": 12,
+          "start": 0,
+          "end": 92,
+          "text": "encima de todo, el diálogo y la escucha como premisa y la búsqueda de consensos como vía. El"
+        },
+        {
+          "page": 25,
+          "index": 13,
+          "start": 0,
+          "end": 94,
+          "text": "28 de mayo los valencianos, insisto, hablaron alto y claro. Y quisieron que el Partido Popular"
+        },
+        {
+          "page": 25,
+          "index": 14,
+          "start": 0,
+          "end": 93,
+          "text": "fuera el partido más votado. Lo dijeron con contundencia y con claridad. Pero también nos han"
+        },
+        {
+          "page": 25,
+          "index": 15,
+          "start": 0,
+          "end": 92,
+          "text": "pedido que lleguemos a acuerdos porque por encima de los partidos está la ciudad. Dice Adela"
+        },
+        {
+          "page": 25,
+          "index": 16,
+          "start": 0,
+          "end": 94,
+          "text": "Cortina, la primera mujer que ingresó en la Real Academia de las Ciencias Morales y Políticas,"
+        },
+        {
+          "page": 25,
+          "index": 17,
+          "start": 0,
+          "end": 96,
+          "text": "que los ciudadanos son conscientes de que las discrepancias son inevitables, son la sustancia de"
+        },
+        {
+          "page": 25,
+          "index": 18,
+          "start": 0,
+          "end": 90,
+          "text": "una sociedad pluralista, pero saben también que en cuestiones de justicia es indispensable"
+        },
+        {
+          "page": 25,
+          "index": 19,
+          "start": 0,
+          "end": 96,
+          "text": "dialogar y tratar de descubrir acuerdos. Y eso es lo que van a encontrar en mí como alcaldesa de"
+        },
+        {
+          "page": 25,
+          "index": 20,
+          "start": 0,
+          "end": 89,
+          "text": "València, firmeza y contundencia para defender a los valencianos y voluntad permanente de"
+        },
+        {
+          "page": 25,
+          "index": 21,
+          "start": 0,
+          "end": 97,
+          "text": "diálogo y búsqueda de acuerdos para mejorar su día a día. Por eso pido a todos los representantes"
+        },
+        {
+          "page": 25,
+          "index": 22,
+          "start": 0,
+          "end": 98,
+          "text": "de esta institución, los representantes políticos de València, responsabilidad y lealtad. Les pido"
+        },
+        {
+          "page": 25,
+          "index": 23,
+          "start": 0,
+          "end": 91,
+          "text": "que se sumen a aquellas propuestas que sean buenas para València, como hemos hecho nosotros"
+        },
+        {
+          "page": 25,
+          "index": 24,
+          "start": 0,
+          "end": 95,
+          "text": "en las últimas legislaturas. Mi mano siempre estará ahí para llegar a acuerdos que beneficien a"
+        },
+        {
+          "page": 25,
+          "index": 25,
+          "start": 0,
+          "end": 95,
+          "text": "los valencianos y para ir juntos, para reivindicar las mejoras que necesita nuestra ciudad ante"
+        },
+        {
+          "page": 25,
+          "index": 26,
+          "start": 0,
+          "end": 26,
+          "text": "cualquier administración. "
+        }
+      ],
+      "officialId": "Sección editorial 1",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-2",
+      "topic": "Prioridades generales: demografía, economía, cultura y juventud",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "Debemos estar todos a la altura de los valencianos porque este es un momento clave para\nesta ciudad, eso es así. Las decisiones que tomemos en los próximos cuatro años marcarán el\ndevenir de València en las próximas décadas. Las grandes ciudades tienen objetivos muy claros\nen este momento. Primero, el reto demográfico hace que necesariamente abordemos políticas de\nnatalidad y mejores servicios para una generación de personas mayores con más calidad de vida\ny mucho más activas. La sostenibilidad y las nuevas políticas de movilidad, pero siempre de la\nmano de la seguridad de las personas. La eficiencia y el gasto público no deben estar reñidas\ntampoco con el progreso. La innovación, la tecnología, el emprendedurismo, protagonizarán\nnuestro futuro, y eso es verdad, pero también lo harán las políticas verdes, la política social que\nno deja a nadie atrás y volver a centrar en la familia el objetivo de atención pública. Solo las\nciudades que progresen con una mano y cuiden con la otra serán verdaderos emblemas de\nmodernidad. La juventud y sus inquietudes, la vivienda, el empleo y el ocio alternativo no deben\nser la maría de un gobierno ni un eslogan que nadie se encarga de cumplir. Los jóvenes tienen\nderecho a tener oportunidades en su ciudad y eso no solo hay que decirlo, hay que hacerlo. Las\npolíticas económicas que dinamizan una ciudad y que desahogan a las familias, esas que generan\nprosperidad, esas son nuestras señas de identidad como formación política, así como la agilidad\nen la administración, el control del gasto público y facilidades a los emprendedores. Todo ello\nson retos que vamos a asumir. Economía y empleo, sí, oyen bien, economía y empleo para unos\nmejores servicios públicos. Lo segundo nunca fue sin lo primero y eso lo sabe muy bien la clase\nmedia trabajadora. La cultura, finalmente, como motor de una sociedad formada, de un turismo\nde calidad, como emblema de València, como carta de presentación al mundo. La cultura, la\nmúsica, las artes y el deporte. En la ciudad de la música, la música debe sonar tan alto que llegue\na todos los oídos. València como la ciudad de la cultura por excelencia del Mediterráneo. Porque\ncomo reivindicaba Blasco Ibáñez en 1921, València tiene la materia prima, que son los artistas.\nUna de las grandes tareas que nos dejó el escritor de La Barraca era hacer todo lo que estuviera\nen nuestra mano para que València sea la ciudad española del arte, porque nosotros, decía, somos\nun pueblo de artistas. ",
+      "text": "Debemos estar todos a la altura de los valencianos porque este es un momento clave para esta ciudad, eso es así. Las decisiones que tomemos en los próximos cuatro años marcarán el devenir de València en las próximas décadas. Las grandes ciudades tienen objetivos muy claros en este momento. Primero, el reto demográfico hace que necesariamente abordemos políticas de natalidad y mejores servicios para una generación de personas mayores con más calidad de vida y mucho más activas. La sostenibilidad y las nuevas políticas de movilidad, pero siempre de la mano de la seguridad de las personas. La eficiencia y el gasto público no deben estar reñidas tampoco con el progreso. La innovación, la tecnología, el emprendedurismo, protagonizarán nuestro futuro, y eso es verdad, pero también lo harán las políticas verdes, la política social que no deja a nadie atrás y volver a centrar en la familia el objetivo de atención pública. Solo las ciudades que progresen con una mano y cuiden con la otra serán verdaderos emblemas de modernidad. La juventud y sus inquietudes, la vivienda, el empleo y el ocio alternativo no deben ser la maría de un gobierno ni un eslogan que nadie se encarga de cumplir. Los jóvenes tienen derecho a tener oportunidades en su ciudad y eso no solo hay que decirlo, hay que hacerlo. Las políticas económicas que dinamizan una ciudad y que desahogan a las familias, esas que generan prosperidad, esas son nuestras señas de identidad como formación política, así como la agilidad en la administración, el control del gasto público y facilidades a los emprendedores. Todo ello son retos que vamos a asumir. Economía y empleo, sí, oyen bien, economía y empleo para unos mejores servicios públicos. Lo segundo nunca fue sin lo primero y eso lo sabe muy bien la clase media trabajadora. La cultura, finalmente, como motor de una sociedad formada, de un turismo de calidad, como emblema de València, como carta de presentación al mundo. La cultura, la música, las artes y el deporte. En la ciudad de la música, la música debe sonar tan alto que llegue a todos los oídos. València como la ciudad de la cultura por excelencia del Mediterráneo. Porque como reivindicaba Blasco Ibáñez en 1921, València tiene la materia prima, que son los artistas. Una de las grandes tareas que nos dejó el escritor de La Barraca era hacer todo lo que estuviera en nuestra mano para que València sea la ciudad española del arte, porque nosotros, decía, somos un pueblo de artistas.",
+      "fragments": [
+        {
+          "page": 25,
+          "index": 27,
+          "start": 0,
+          "end": 87,
+          "text": "Debemos estar todos a la altura de los valencianos porque este es un momento clave para"
+        },
+        {
+          "page": 25,
+          "index": 28,
+          "start": 0,
+          "end": 91,
+          "text": "esta ciudad, eso es así. Las decisiones que tomemos en los próximos cuatro años marcarán el"
+        },
+        {
+          "page": 25,
+          "index": 29,
+          "start": 0,
+          "end": 93,
+          "text": "devenir de València en las próximas décadas. Las grandes ciudades tienen objetivos muy claros"
+        },
+        {
+          "page": 25,
+          "index": 30,
+          "start": 0,
+          "end": 92,
+          "text": "en este momento. Primero, el reto demográfico hace que necesariamente abordemos políticas de"
+        },
+        {
+          "page": 25,
+          "index": 31,
+          "start": 0,
+          "end": 93,
+          "text": "natalidad y mejores servicios para una generación de personas mayores con más calidad de vida"
+        },
+        {
+          "page": 25,
+          "index": 32,
+          "start": 0,
+          "end": 94,
+          "text": "y mucho más activas. La sostenibilidad y las nuevas políticas de movilidad, pero siempre de la"
+        },
+        {
+          "page": 25,
+          "index": 33,
+          "start": 0,
+          "end": 93,
+          "text": "mano de la seguridad de las personas. La eficiencia y el gasto público no deben estar reñidas"
+        },
+        {
+          "page": 25,
+          "index": 34,
+          "start": 0,
+          "end": 89,
+          "text": "tampoco con el progreso. La innovación, la tecnología, el emprendedurismo, protagonizarán"
+        },
+        {
+          "page": 25,
+          "index": 35,
+          "start": 0,
+          "end": 99,
+          "text": "nuestro futuro, y eso es verdad, pero también lo harán las políticas verdes, la política social que"
+        },
+        {
+          "page": 25,
+          "index": 36,
+          "start": 0,
+          "end": 96,
+          "text": "no deja a nadie atrás y volver a centrar en la familia el objetivo de atención pública. Solo las"
+        },
+        {
+          "page": 25,
+          "index": 37,
+          "start": 0,
+          "end": 85,
+          "text": "ciudades que progresen con una mano y cuiden con la otra serán verdaderos emblemas de"
+        },
+        {
+          "page": 25,
+          "index": 38,
+          "start": 0,
+          "end": 96,
+          "text": "modernidad. La juventud y sus inquietudes, la vivienda, el empleo y el ocio alternativo no deben"
+        },
+        {
+          "page": 25,
+          "index": 39,
+          "start": 0,
+          "end": 93,
+          "text": "ser la maría de un gobierno ni un eslogan que nadie se encarga de cumplir. Los jóvenes tienen"
+        },
+        {
+          "page": 25,
+          "index": 40,
+          "start": 0,
+          "end": 94,
+          "text": "derecho a tener oportunidades en su ciudad y eso no solo hay que decirlo, hay que hacerlo. Las"
+        },
+        {
+          "page": 25,
+          "index": 41,
+          "start": 0,
+          "end": 94,
+          "text": "políticas económicas que dinamizan una ciudad y que desahogan a las familias, esas que generan"
+        },
+        {
+          "page": 25,
+          "index": 42,
+          "start": 0,
+          "end": 95,
+          "text": "prosperidad, esas son nuestras señas de identidad como formación política, así como la agilidad"
+        },
+        {
+          "page": 25,
+          "index": 43,
+          "start": 0,
+          "end": 95,
+          "text": "en la administración, el control del gasto público y facilidades a los emprendedores. Todo ello"
+        },
+        {
+          "page": 25,
+          "index": 44,
+          "start": 0,
+          "end": 91,
+          "text": "son retos que vamos a asumir. Economía y empleo, sí, oyen bien, economía y empleo para unos"
+        },
+        {
+          "page": 25,
+          "index": 45,
+          "start": 0,
+          "end": 95,
+          "text": "mejores servicios públicos. Lo segundo nunca fue sin lo primero y eso lo sabe muy bien la clase"
+        },
+        {
+          "page": 25,
+          "index": 46,
+          "start": 0,
+          "end": 92,
+          "text": "media trabajadora. La cultura, finalmente, como motor de una sociedad formada, de un turismo"
+        },
+        {
+          "page": 25,
+          "index": 47,
+          "start": 0,
+          "end": 89,
+          "text": "de calidad, como emblema de València, como carta de presentación al mundo. La cultura, la"
+        },
+        {
+          "page": 25,
+          "index": 48,
+          "start": 0,
+          "end": 99,
+          "text": "música, las artes y el deporte. En la ciudad de la música, la música debe sonar tan alto que llegue"
+        },
+        {
+          "page": 25,
+          "index": 49,
+          "start": 0,
+          "end": 96,
+          "text": "a todos los oídos. València como la ciudad de la cultura por excelencia del Mediterráneo. Porque"
+        },
+        {
+          "page": 25,
+          "index": 50,
+          "start": 0,
+          "end": 95,
+          "text": "como reivindicaba Blasco Ibáñez en 1921, València tiene la materia prima, que son los artistas."
+        },
+        {
+          "page": 25,
+          "index": 51,
+          "start": 0,
+          "end": 96,
+          "text": "Una de las grandes tareas que nos dejó el escritor de La Barraca era hacer todo lo que estuviera"
+        },
+        {
+          "page": 25,
+          "index": 52,
+          "start": 0,
+          "end": 96,
+          "text": "en nuestra mano para que València sea la ciudad española del arte, porque nosotros, decía, somos"
+        },
+        {
+          "page": 25,
+          "index": 53,
+          "start": 0,
+          "end": 23,
+          "text": "un pueblo de artistas. "
+        }
+      ],
+      "officialId": "Sección editorial 2",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-3",
+      "topic": "Gestión y compromiso contra la violencia de género",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Abordemos todos estos retos centrándonos en la buena gestión, primando la libertad y\nsellando nuestro compromiso con convivencia y con acuerdos. Lo he reiterado en los últimos\nmeses, cuidar de lo pequeño y ambicionar lo grande. Ese va a ser el proyecto, mi proyecto, para\nValència. Porque quiero a València, porque creo en València, en una València sensible, amable,\nacogedora, atractiva, ambiciosa, reivindicativa y orgullosa. Y permítanme, soy hija de una gran\nmadre, soy hermana de una gran hermana y soy madre de una pequeña niña. Así que ni un paso\natrás en la lucha contra la violencia de género y tampoco ni una lección más en esta cuestión.",
+      "text": "Abordemos todos estos retos centrándonos en la buena gestión, primando la libertad y sellando nuestro compromiso con convivencia y con acuerdos. Lo he reiterado en los últimos meses, cuidar de lo pequeño y ambicionar lo grande. Ese va a ser el proyecto, mi proyecto, para València. Porque quiero a València, porque creo en València, en una València sensible, amable, acogedora, atractiva, ambiciosa, reivindicativa y orgullosa. Y permítanme, soy hija de una gran madre, soy hermana de una gran hermana y soy madre de una pequeña niña. Así que ni un paso atrás en la lucha contra la violencia de género y tampoco ni una lección más en esta cuestión.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 10,
+          "start": 0,
+          "end": 84,
+          "text": "Abordemos todos estos retos centrándonos en la buena gestión, primando la libertad y"
+        },
+        {
+          "page": 26,
+          "index": 11,
+          "start": 0,
+          "end": 90,
+          "text": "sellando nuestro compromiso con convivencia y con acuerdos. Lo he reiterado en los últimos"
+        },
+        {
+          "page": 26,
+          "index": 12,
+          "start": 0,
+          "end": 95,
+          "text": "meses, cuidar de lo pequeño y ambicionar lo grande. Ese va a ser el proyecto, mi proyecto, para"
+        },
+        {
+          "page": 26,
+          "index": 13,
+          "start": 0,
+          "end": 94,
+          "text": "València. Porque quiero a València, porque creo en València, en una València sensible, amable,"
+        },
+        {
+          "page": 26,
+          "index": 14,
+          "start": 0,
+          "end": 95,
+          "text": "acogedora, atractiva, ambiciosa, reivindicativa y orgullosa. Y permítanme, soy hija de una gran"
+        },
+        {
+          "page": 26,
+          "index": 15,
+          "start": 0,
+          "end": 90,
+          "text": "madre, soy hermana de una gran hermana y soy madre de una pequeña niña. Así que ni un paso"
+        },
+        {
+          "page": 26,
+          "index": 16,
+          "start": 0,
+          "end": 94,
+          "text": "atrás en la lucha contra la violencia de género y tampoco ni una lección más en esta cuestión."
+        }
+      ],
+      "officialId": "Sección editorial 3",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-4",
+      "topic": "Rebaja fiscal y bonificaciones de plusvalía",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Dedicaré un tiempo muy breve a nuestras primeras medidas en el Gobierno. Miren, no hay nada\nmás progresista, nada más progresista que adaptar la política fiscal al contexto económico. Y\ntodos sabemos cuál es el contexto económico actual para las familias: una inflación desbocada,\nuna cesta de la compra inasumible, costes energéticos y combustibles cada vez más caros. La\nrealidad requiere que apliquemos una gestión pública correcta y que a partir de enero de 2024\nbajemos en más de 67 millones de euros los impuestos a los valencianos. Lo haremos con el IBI\ny las tasas municipales, y también una bonificación del 95 % de la plusvalía para herencias y\ntransmisión de negocios familiares. Será la primera vez en la última década, permítanme esta\nlicencia, que después de unas elecciones, a los valencianos no se le suben los impuestos, se le\nbajan los impuestos. ",
+      "text": "Dedicaré un tiempo muy breve a nuestras primeras medidas en el Gobierno. Miren, no hay nada más progresista, nada más progresista que adaptar la política fiscal al contexto económico. Y todos sabemos cuál es el contexto económico actual para las familias: una inflación desbocada, una cesta de la compra inasumible, costes energéticos y combustibles cada vez más caros. La realidad requiere que apliquemos una gestión pública correcta y que a partir de enero de 2024 bajemos en más de 67 millones de euros los impuestos a los valencianos. Lo haremos con el IBI y las tasas municipales, y también una bonificación del 95 % de la plusvalía para herencias y transmisión de negocios familiares. Será la primera vez en la última década, permítanme esta licencia, que después de unas elecciones, a los valencianos no se le suben los impuestos, se le bajan los impuestos.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 17,
+          "start": 0,
+          "end": 91,
+          "text": "Dedicaré un tiempo muy breve a nuestras primeras medidas en el Gobierno. Miren, no hay nada"
+        },
+        {
+          "page": 26,
+          "index": 18,
+          "start": 0,
+          "end": 93,
+          "text": "más progresista, nada más progresista que adaptar la política fiscal al contexto económico. Y"
+        },
+        {
+          "page": 26,
+          "index": 19,
+          "start": 0,
+          "end": 94,
+          "text": "todos sabemos cuál es el contexto económico actual para las familias: una inflación desbocada,"
+        },
+        {
+          "page": 26,
+          "index": 20,
+          "start": 0,
+          "end": 91,
+          "text": "una cesta de la compra inasumible, costes energéticos y combustibles cada vez más caros. La"
+        },
+        {
+          "page": 26,
+          "index": 21,
+          "start": 0,
+          "end": 93,
+          "text": "realidad requiere que apliquemos una gestión pública correcta y que a partir de enero de 2024"
+        },
+        {
+          "page": 26,
+          "index": 22,
+          "start": 0,
+          "end": 93,
+          "text": "bajemos en más de 67 millones de euros los impuestos a los valencianos. Lo haremos con el IBI"
+        },
+        {
+          "page": 26,
+          "index": 23,
+          "start": 0,
+          "end": 93,
+          "text": "y las tasas municipales, y también una bonificación del 95 % de la plusvalía para herencias y"
+        },
+        {
+          "page": 26,
+          "index": 24,
+          "start": 0,
+          "end": 92,
+          "text": "transmisión de negocios familiares. Será la primera vez en la última década, permítanme esta"
+        },
+        {
+          "page": 26,
+          "index": 25,
+          "start": 0,
+          "end": 95,
+          "text": "licencia, que después de unas elecciones, a los valencianos no se le suben los impuestos, se le"
+        },
+        {
+          "page": 26,
+          "index": 26,
+          "start": 0,
+          "end": 21,
+          "text": "bajan los impuestos. "
+        }
+      ],
+      "officialId": "Sección editorial 4",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-5",
+      "topic": "Exclusión social y personas sin hogar",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Junto a esta medida reforzaremos las políticas sociales necesarias para\nreducir y evitar la exclusión social. Lo haremos en colaboración con las entidades sociales que\nrealizan un trabajo encomiable y de las que no quiero olvidarme. No hay nada más doloroso que\nver a una persona durmiendo en la calle en València. Y esto, esto se va a acabar. ",
+      "text": "Junto a esta medida reforzaremos las políticas sociales necesarias para reducir y evitar la exclusión social. Lo haremos en colaboración con las entidades sociales que realizan un trabajo encomiable y de las que no quiero olvidarme. No hay nada más doloroso que ver a una persona durmiendo en la calle en València. Y esto, esto se va a acabar.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 26,
+          "start": 21,
+          "end": 92,
+          "text": "Junto a esta medida reforzaremos las políticas sociales necesarias para"
+        },
+        {
+          "page": 26,
+          "index": 27,
+          "start": 0,
+          "end": 95,
+          "text": "reducir y evitar la exclusión social. Lo haremos en colaboración con las entidades sociales que"
+        },
+        {
+          "page": 26,
+          "index": 28,
+          "start": 0,
+          "end": 93,
+          "text": "realizan un trabajo encomiable y de las que no quiero olvidarme. No hay nada más doloroso que"
+        },
+        {
+          "page": 26,
+          "index": 29,
+          "start": 0,
+          "end": 82,
+          "text": "ver a una persona durmiendo en la calle en València. Y esto, esto se va a acabar. "
+        }
+      ],
+      "officialId": "Sección editorial 5",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-6",
+      "topic": "Empleo, licencias y simplificación administrativa",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "El empleo debe\nser una obsesión para esta administración. Lo he dicho antes, el gobierno municipal no debe ser\nun lastre y no lo será, no lo será. Vamos a convertir el Ayuntamiento en el principal aliado de los\nvalientes que crean empleo en esta ciudad. Y para ello vamos a poner en marcha un plan de\nchoque para acabar con el atasco de licencias y un plan de optimización y simplificación\nnormativa que haga más fáciles las cosas a los que se dirigen a esta administración. ",
+      "text": "El empleo debe ser una obsesión para esta administración. Lo he dicho antes, el gobierno municipal no debe ser un lastre y no lo será, no lo será. Vamos a convertir el Ayuntamiento en el principal aliado de los valientes que crean empleo en esta ciudad. Y para ello vamos a poner en marcha un plan de choque para acabar con el atasco de licencias y un plan de optimización y simplificación normativa que haga más fáciles las cosas a los que se dirigen a esta administración.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 29,
+          "start": 82,
+          "end": 96,
+          "text": "El empleo debe"
+        },
+        {
+          "page": 26,
+          "index": 30,
+          "start": 0,
+          "end": 95,
+          "text": "ser una obsesión para esta administración. Lo he dicho antes, el gobierno municipal no debe ser"
+        },
+        {
+          "page": 26,
+          "index": 31,
+          "start": 0,
+          "end": 99,
+          "text": "un lastre y no lo será, no lo será. Vamos a convertir el Ayuntamiento en el principal aliado de los"
+        },
+        {
+          "page": 26,
+          "index": 32,
+          "start": 0,
+          "end": 89,
+          "text": "valientes que crean empleo en esta ciudad. Y para ello vamos a poner en marcha un plan de"
+        },
+        {
+          "page": 26,
+          "index": 33,
+          "start": 0,
+          "end": 88,
+          "text": "choque para acabar con el atasco de licencias y un plan de optimización y simplificación"
+        },
+        {
+          "page": 26,
+          "index": 34,
+          "start": 0,
+          "end": 85,
+          "text": "normativa que haga más fáciles las cosas a los que se dirigen a esta administración. "
+        }
+      ],
+      "officialId": "Sección editorial 6",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-7",
+      "topic": "Vivienda pública, PAI y emancipación",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Y sí, por fin\nla vivienda va a ser una prioridad, porque vamos a impulsar viviendas públicas, a desbloquear los\nPAI pendientes y vamos a ayudar a los jóvenes a poder emprender su proyecto de vida. ",
+      "text": "Y sí, por fin la vivienda va a ser una prioridad, porque vamos a impulsar viviendas públicas, a desbloquear los PAI pendientes y vamos a ayudar a los jóvenes a poder emprender su proyecto de vida.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 34,
+          "start": 85,
+          "end": 98,
+          "text": "Y sí, por fin"
+        },
+        {
+          "page": 26,
+          "index": 35,
+          "start": 0,
+          "end": 97,
+          "text": "la vivienda va a ser una prioridad, porque vamos a impulsar viviendas públicas, a desbloquear los"
+        },
+        {
+          "page": 26,
+          "index": 36,
+          "start": 0,
+          "end": 85,
+          "text": "PAI pendientes y vamos a ayudar a los jóvenes a poder emprender su proyecto de vida. "
+        }
+      ],
+      "officialId": "Sección editorial 7",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-8",
+      "topic": "Atención a personas mayores",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Pero\ndéjenme que me recree un poco más en los mayores y la infancia. La València en la que sueño y\nen la que voy a trabajar es esa en la que nuestros mayores se sientan acompañados y atendidos.\nTenemos una necesidad apremiante de nuevas residencias, de más y mayores centros de mayores\ny de una atención individualizada y cercana que haga próxima y accesible cualquier atención que\nnecesiten. Los mayores no pueden ser los grandes olvidados de esta administración. ",
+      "text": "Pero déjenme que me recree un poco más en los mayores y la infancia. La València en la que sueño y en la que voy a trabajar es esa en la que nuestros mayores se sientan acompañados y atendidos. Tenemos una necesidad apremiante de nuevas residencias, de más y mayores centros de mayores y de una atención individualizada y cercana que haga próxima y accesible cualquier atención que necesiten. Los mayores no pueden ser los grandes olvidados de esta administración.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 36,
+          "start": 85,
+          "end": 89,
+          "text": "Pero"
+        },
+        {
+          "page": 26,
+          "index": 37,
+          "start": 0,
+          "end": 93,
+          "text": "déjenme que me recree un poco más en los mayores y la infancia. La València en la que sueño y"
+        },
+        {
+          "page": 26,
+          "index": 38,
+          "start": 0,
+          "end": 94,
+          "text": "en la que voy a trabajar es esa en la que nuestros mayores se sientan acompañados y atendidos."
+        },
+        {
+          "page": 26,
+          "index": 39,
+          "start": 0,
+          "end": 91,
+          "text": "Tenemos una necesidad apremiante de nuevas residencias, de más y mayores centros de mayores"
+        },
+        {
+          "page": 26,
+          "index": 40,
+          "start": 0,
+          "end": 95,
+          "text": "y de una atención individualizada y cercana que haga próxima y accesible cualquier atención que"
+        },
+        {
+          "page": 26,
+          "index": 41,
+          "start": 0,
+          "end": 83,
+          "text": "necesiten. Los mayores no pueden ser los grandes olvidados de esta administración. "
+        }
+      ],
+      "officialId": "Sección editorial 8",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-9",
+      "topic": "Familias, natalidad y educación infantil",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Pero\ntampoco lo serán nuestros niños. Tenemos un reto demográfico importante que se va a traducir\nen un apoyo a la natalidad y a la familia muy firme y decidido. Me gustaría solo destacar cuatro\nejes. Primero, vamos a aprobar bonificaciones y ayudas para las familias, tanto numerosas como\nmonoparentales. Vamos a aprobar un plan de natalidad con ayudas por primer nacimiento. La\neducación de 0 a 3 años será gratuita para todos, sin distinciones. Y los padres podrán elegir el\ncolegio y la lengua en la que quieran estudiar sus hijos. Y eso va a ser así, libertad y conciliación,\nfundamentales. Ser madre o padre en València debe ser más fácil y este gobierno se va a volcar\nen esto. ",
+      "text": "Pero tampoco lo serán nuestros niños. Tenemos un reto demográfico importante que se va a traducir en un apoyo a la natalidad y a la familia muy firme y decidido. Me gustaría solo destacar cuatro ejes. Primero, vamos a aprobar bonificaciones y ayudas para las familias, tanto numerosas como monoparentales. Vamos a aprobar un plan de natalidad con ayudas por primer nacimiento. La educación de 0 a 3 años será gratuita para todos, sin distinciones. Y los padres podrán elegir el colegio y la lengua en la que quieran estudiar sus hijos. Y eso va a ser así, libertad y conciliación, fundamentales. Ser madre o padre en València debe ser más fácil y este gobierno se va a volcar en esto.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 41,
+          "start": 83,
+          "end": 87,
+          "text": "Pero"
+        },
+        {
+          "page": 26,
+          "index": 42,
+          "start": 0,
+          "end": 92,
+          "text": "tampoco lo serán nuestros niños. Tenemos un reto demográfico importante que se va a traducir"
+        },
+        {
+          "page": 26,
+          "index": 43,
+          "start": 0,
+          "end": 96,
+          "text": "en un apoyo a la natalidad y a la familia muy firme y decidido. Me gustaría solo destacar cuatro"
+        },
+        {
+          "page": 26,
+          "index": 44,
+          "start": 0,
+          "end": 94,
+          "text": "ejes. Primero, vamos a aprobar bonificaciones y ayudas para las familias, tanto numerosas como"
+        },
+        {
+          "page": 26,
+          "index": 45,
+          "start": 0,
+          "end": 89,
+          "text": "monoparentales. Vamos a aprobar un plan de natalidad con ayudas por primer nacimiento. La"
+        },
+        {
+          "page": 26,
+          "index": 46,
+          "start": 0,
+          "end": 97,
+          "text": "educación de 0 a 3 años será gratuita para todos, sin distinciones. Y los padres podrán elegir el"
+        },
+        {
+          "page": 26,
+          "index": 47,
+          "start": 0,
+          "end": 102,
+          "text": "colegio y la lengua en la que quieran estudiar sus hijos. Y eso va a ser así, libertad y conciliación,"
+        },
+        {
+          "page": 26,
+          "index": 48,
+          "start": 0,
+          "end": 94,
+          "text": "fundamentales. Ser madre o padre en València debe ser más fácil y este gobierno se va a volcar"
+        },
+        {
+          "page": 26,
+          "index": 49,
+          "start": 0,
+          "end": 9,
+          "text": "en esto. "
+        }
+      ],
+      "officialId": "Sección editorial 9",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-10",
+      "topic": "Limpieza, arbolado y zonas infantiles",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Finalmente y resumo, existen problemas acuciantes, y lo sabemos, en esta ciudad que\nvamos a resolver cuanto antes. Parece mentira que tengo que nombrarlos, pero los nombraré: la\nsuciedad, la falta de seguridad y los problemas de tráfico y de movilidad. Sobre estos tres puntos\nvamos a trabajar inmediatamente. Vamos a poner en marcha un plan de limpieza efectivo que\nllegue a cada calle de la ciudad y vamos a cuidar el arbolado, las zonas verdes y las zonas\ninfantiles de cada barrio. ",
+      "text": "Finalmente y resumo, existen problemas acuciantes, y lo sabemos, en esta ciudad que vamos a resolver cuanto antes. Parece mentira que tengo que nombrarlos, pero los nombraré: la suciedad, la falta de seguridad y los problemas de tráfico y de movilidad. Sobre estos tres puntos vamos a trabajar inmediatamente. Vamos a poner en marcha un plan de limpieza efectivo que llegue a cada calle de la ciudad y vamos a cuidar el arbolado, las zonas verdes y las zonas infantiles de cada barrio.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 50,
+          "start": 0,
+          "end": 83,
+          "text": "Finalmente y resumo, existen problemas acuciantes, y lo sabemos, en esta ciudad que"
+        },
+        {
+          "page": 26,
+          "index": 51,
+          "start": 0,
+          "end": 93,
+          "text": "vamos a resolver cuanto antes. Parece mentira que tengo que nombrarlos, pero los nombraré: la"
+        },
+        {
+          "page": 26,
+          "index": 52,
+          "start": 0,
+          "end": 98,
+          "text": "suciedad, la falta de seguridad y los problemas de tráfico y de movilidad. Sobre estos tres puntos"
+        },
+        {
+          "page": 26,
+          "index": 53,
+          "start": 0,
+          "end": 89,
+          "text": "vamos a trabajar inmediatamente. Vamos a poner en marcha un plan de limpieza efectivo que"
+        },
+        {
+          "page": 26,
+          "index": 54,
+          "start": 0,
+          "end": 91,
+          "text": "llegue a cada calle de la ciudad y vamos a cuidar el arbolado, las zonas verdes y las zonas"
+        },
+        {
+          "page": 26,
+          "index": 55,
+          "start": 0,
+          "end": 27,
+          "text": "infantiles de cada barrio. "
+        }
+      ],
+      "officialId": "Sección editorial 10",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-11",
+      "topic": "Policía de barrio y ocupación ilegal",
+      "page": 26,
+      "endPage": 27,
+      "rawText": "Vamos a poner velocidad de crucero en la maquinaria burocrática para\nponer más agentes en la calle, recuperar la policía de barrio y luchar contra la ocupación ilegal. ",
+      "text": "Vamos a poner velocidad de crucero en la maquinaria burocrática para poner más agentes en la calle, recuperar la policía de barrio y luchar contra la ocupación ilegal.",
+      "fragments": [
+        {
+          "page": 26,
+          "index": 55,
+          "start": 27,
+          "end": 95,
+          "text": "Vamos a poner velocidad de crucero en la maquinaria burocrática para"
+        },
+        {
+          "page": 27,
+          "index": 10,
+          "start": 0,
+          "end": 99,
+          "text": "poner más agentes en la calle, recuperar la policía de barrio y luchar contra la ocupación ilegal. "
+        }
+      ],
+      "officialId": "Sección editorial 11",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-12",
+      "topic": "Movilidad, transporte y aparcamiento",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "Y\nles anuncio que la movilidad dejará de ser un foco de enfrentamiento y de tensión. Van a primar\nlos criterios técnicos, profesionales y de seguridad. Se van a desalojar los caprichos y las\nimprovisaciones de este ayuntamiento. Vamos a hacer de esta una ciudad amable, cómoda, con\nun buen transporte público, conectada con el área metropolitana y con algo que parece de cajón\npero que no lo es hoy en día, vamos a dar alternativas al vehículo privado y vamos a facilitar que\nla gente pueda acceder y pueda aparcar en su barrio. ",
+      "text": "Y les anuncio que la movilidad dejará de ser un foco de enfrentamiento y de tensión. Van a primar los criterios técnicos, profesionales y de seguridad. Se van a desalojar los caprichos y las improvisaciones de este ayuntamiento. Vamos a hacer de esta una ciudad amable, cómoda, con un buen transporte público, conectada con el área metropolitana y con algo que parece de cajón pero que no lo es hoy en día, vamos a dar alternativas al vehículo privado y vamos a facilitar que la gente pueda acceder y pueda aparcar en su barrio.",
+      "fragments": [
+        {
+          "page": 27,
+          "index": 10,
+          "start": 99,
+          "end": 100,
+          "text": "Y"
+        },
+        {
+          "page": 27,
+          "index": 11,
+          "start": 0,
+          "end": 95,
+          "text": "les anuncio que la movilidad dejará de ser un foco de enfrentamiento y de tensión. Van a primar"
+        },
+        {
+          "page": 27,
+          "index": 12,
+          "start": 0,
+          "end": 92,
+          "text": "los criterios técnicos, profesionales y de seguridad. Se van a desalojar los caprichos y las"
+        },
+        {
+          "page": 27,
+          "index": 13,
+          "start": 0,
+          "end": 90,
+          "text": "improvisaciones de este ayuntamiento. Vamos a hacer de esta una ciudad amable, cómoda, con"
+        },
+        {
+          "page": 27,
+          "index": 14,
+          "start": 0,
+          "end": 94,
+          "text": "un buen transporte público, conectada con el área metropolitana y con algo que parece de cajón"
+        },
+        {
+          "page": 27,
+          "index": 15,
+          "start": 0,
+          "end": 98,
+          "text": "pero que no lo es hoy en día, vamos a dar alternativas al vehículo privado y vamos a facilitar que"
+        },
+        {
+          "page": 27,
+          "index": 16,
+          "start": 0,
+          "end": 53,
+          "text": "la gente pueda acceder y pueda aparcar en su barrio. "
+        }
+      ],
+      "officialId": "Sección editorial 12",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-13",
+      "topic": "Identidad, denominación bilingüe y tradiciones",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "No puc acabar les meues prioritats com a\ngovern sense anunciar-los que esta nova corporació va a acabar amb l'orfandat identitària.\nValència té una cultura i unes senyes d'identitat que protegir i preservar. Sí, formem part d'un\nprojecte comú que és Espanya i Europa, i una cosa mai ha sigut incompatible amb l'altra.\nValència és Espanya i Espanya és València. Les nostres llengües oficials són el valencià i el\ncastellà. La nostra terra és la Comunitat Valenciana i la nostra bandera és la senyera. Punt. No\nhi ha més que parlar. L'Ajuntament va a protegir les nostres senyes d'identitat i va a estar al\ncostat de les nostres tradicions i festes de la ciutat. No hi haurà orfandat identitària i els anuncie\nque esta mateixa setmana aprovarem l'acord per a recuperar la denominació bilingüe de la\nnostra ciutat i començar a treballar en un Nou d'Octubre que recupere les tradicions d'esta\nciutat. ",
+      "text": "No puc acabar les meues prioritats com a govern sense anunciar-los que esta nova corporació va a acabar amb l'orfandat identitària. València té una cultura i unes senyes d'identitat que protegir i preservar. Sí, formem part d'un projecte comú que és Espanya i Europa, i una cosa mai ha sigut incompatible amb l'altra. València és Espanya i Espanya és València. Les nostres llengües oficials són el valencià i el castellà. La nostra terra és la Comunitat Valenciana i la nostra bandera és la senyera. Punt. No hi ha més que parlar. L'Ajuntament va a protegir les nostres senyes d'identitat i va a estar al costat de les nostres tradicions i festes de la ciutat. No hi haurà orfandat identitària i els anuncie que esta mateixa setmana aprovarem l'acord per a recuperar la denominació bilingüe de la nostra ciutat i començar a treballar en un Nou d'Octubre que recupere les tradicions d'esta ciutat.",
+      "fragments": [
+        {
+          "page": 27,
+          "index": 16,
+          "start": 53,
+          "end": 93,
+          "text": "No puc acabar les meues prioritats com a"
+        },
+        {
+          "page": 27,
+          "index": 17,
+          "start": 0,
+          "end": 90,
+          "text": "govern sense anunciar-los que esta nova corporació va a acabar amb l'orfandat identitària."
+        },
+        {
+          "page": 27,
+          "index": 18,
+          "start": 0,
+          "end": 96,
+          "text": "València té una cultura i unes senyes d'identitat que protegir i preservar. Sí, formem part d'un"
+        },
+        {
+          "page": 27,
+          "index": 19,
+          "start": 0,
+          "end": 88,
+          "text": "projecte comú que és Espanya i Europa, i una cosa mai ha sigut incompatible amb l'altra."
+        },
+        {
+          "page": 27,
+          "index": 20,
+          "start": 0,
+          "end": 93,
+          "text": "València és Espanya i Espanya és València. Les nostres llengües oficials són el valencià i el"
+        },
+        {
+          "page": 27,
+          "index": 21,
+          "start": 0,
+          "end": 96,
+          "text": "castellà. La nostra terra és la Comunitat Valenciana i la nostra bandera és la senyera. Punt. No"
+        },
+        {
+          "page": 27,
+          "index": 22,
+          "start": 0,
+          "end": 95,
+          "text": "hi ha més que parlar. L'Ajuntament va a protegir les nostres senyes d'identitat i va a estar al"
+        },
+        {
+          "page": 27,
+          "index": 23,
+          "start": 0,
+          "end": 102,
+          "text": "costat de les nostres tradicions i festes de la ciutat. No hi haurà orfandat identitària i els anuncie"
+        },
+        {
+          "page": 27,
+          "index": 24,
+          "start": 0,
+          "end": 88,
+          "text": "que esta mateixa setmana aprovarem l'acord per a recuperar la denominació bilingüe de la"
+        },
+        {
+          "page": 27,
+          "index": 25,
+          "start": 0,
+          "end": 91,
+          "text": "nostra ciutat i començar a treballar en un Nou d'Octubre que recupere les tradicions d'esta"
+        },
+        {
+          "page": 27,
+          "index": 26,
+          "start": 0,
+          "end": 8,
+          "text": "ciutat. "
+        }
+      ],
+      "officialId": "Sección editorial 13",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-14",
+      "topic": "Patrimonio, huerta, pedanías y Albufera",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "Tenemos muchos retos como ciudad en la próxima década y permítanme solo que me\ndetenga en tres de ellos. En primer lugar, la protección del patrimonio cultural. En segundo lugar,\nla Marina. Y en tercer lugar, culminar el antiguo cauce del río Turia. Seré muy escueta. Sobre el\npatrimonio cultural, Teodoro Llorente describió la belleza de València, el esplendor de su huerta\ny de sus pedanías, con sus caminos hondos, encauzados en tres ribazos, siempre verdes o ceñidos\npor acequias de corriente continua. Con el mismo esfuerzo y sudor de nuestros agricultores\nlabrando su tierra debemos cuidar y proteger nuestra huerta, la esencia de nuestras pedanías y la\nsalud de nuestra Albufera, nuestra joya más preciada. I ho farem escoltant als que saben, als que\nsaben de veres, als que de matinada s'alcen per a regar els tarongers, el camp de tomates o els\nseus arrossals. Són ells els que senten i palpen la terra, la coneixen com la palma de la mà i\nseran ells els que ens guien. ",
+      "text": "Tenemos muchos retos como ciudad en la próxima década y permítanme solo que me detenga en tres de ellos. En primer lugar, la protección del patrimonio cultural. En segundo lugar, la Marina. Y en tercer lugar, culminar el antiguo cauce del río Turia. Seré muy escueta. Sobre el patrimonio cultural, Teodoro Llorente describió la belleza de València, el esplendor de su huerta y de sus pedanías, con sus caminos hondos, encauzados en tres ribazos, siempre verdes o ceñidos por acequias de corriente continua. Con el mismo esfuerzo y sudor de nuestros agricultores labrando su tierra debemos cuidar y proteger nuestra huerta, la esencia de nuestras pedanías y la salud de nuestra Albufera, nuestra joya más preciada. I ho farem escoltant als que saben, als que saben de veres, als que de matinada s'alcen per a regar els tarongers, el camp de tomates o els seus arrossals. Són ells els que senten i palpen la terra, la coneixen com la palma de la mà i seran ells els que ens guien.",
+      "fragments": [
+        {
+          "page": 27,
+          "index": 27,
+          "start": 0,
+          "end": 78,
+          "text": "Tenemos muchos retos como ciudad en la próxima década y permítanme solo que me"
+        },
+        {
+          "page": 27,
+          "index": 28,
+          "start": 0,
+          "end": 99,
+          "text": "detenga en tres de ellos. En primer lugar, la protección del patrimonio cultural. En segundo lugar,"
+        },
+        {
+          "page": 27,
+          "index": 29,
+          "start": 0,
+          "end": 97,
+          "text": "la Marina. Y en tercer lugar, culminar el antiguo cauce del río Turia. Seré muy escueta. Sobre el"
+        },
+        {
+          "page": 27,
+          "index": 30,
+          "start": 0,
+          "end": 97,
+          "text": "patrimonio cultural, Teodoro Llorente describió la belleza de València, el esplendor de su huerta"
+        },
+        {
+          "page": 27,
+          "index": 31,
+          "start": 0,
+          "end": 95,
+          "text": "y de sus pedanías, con sus caminos hondos, encauzados en tres ribazos, siempre verdes o ceñidos"
+        },
+        {
+          "page": 27,
+          "index": 32,
+          "start": 0,
+          "end": 90,
+          "text": "por acequias de corriente continua. Con el mismo esfuerzo y sudor de nuestros agricultores"
+        },
+        {
+          "page": 27,
+          "index": 33,
+          "start": 0,
+          "end": 97,
+          "text": "labrando su tierra debemos cuidar y proteger nuestra huerta, la esencia de nuestras pedanías y la"
+        },
+        {
+          "page": 27,
+          "index": 34,
+          "start": 0,
+          "end": 97,
+          "text": "salud de nuestra Albufera, nuestra joya más preciada. I ho farem escoltant als que saben, als que"
+        },
+        {
+          "page": 27,
+          "index": 35,
+          "start": 0,
+          "end": 95,
+          "text": "saben de veres, als que de matinada s'alcen per a regar els tarongers, el camp de tomates o els"
+        },
+        {
+          "page": 27,
+          "index": 36,
+          "start": 0,
+          "end": 94,
+          "text": "seus arrossals. Són ells els que senten i palpen la terra, la coneixen com la palma de la mà i"
+        },
+        {
+          "page": 27,
+          "index": 37,
+          "start": 0,
+          "end": 30,
+          "text": "seran ells els que ens guien. "
+        }
+      ],
+      "officialId": "Sección editorial 14",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-15",
+      "topic": "Gestión y apertura ciudadana de la Marina",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "Les reconozco que en el tema de la Marina estoy preocupada. Su\nsituación es una situación de inseguridad jurídica insostenible que está suponiendo un freno para\nel avance económico de esta ciudad innovadora y emprendedora. Pero quiero decirles a los\nvalencianos que vamos a poner a los mejores al frente para dar una solución. Y sé que voy a\ncontar con la complicidad del próximo president de la Generalitat Valenciana para que la Marina\nse convierta en lo que verdaderamente es, en un barrio más de la ciudad, accesible y abierto a la\nciudadanía en el eje de la modernidad de esta València. ",
+      "text": "Les reconozco que en el tema de la Marina estoy preocupada. Su situación es una situación de inseguridad jurídica insostenible que está suponiendo un freno para el avance económico de esta ciudad innovadora y emprendedora. Pero quiero decirles a los valencianos que vamos a poner a los mejores al frente para dar una solución. Y sé que voy a contar con la complicidad del próximo president de la Generalitat Valenciana para que la Marina se convierta en lo que verdaderamente es, en un barrio más de la ciudad, accesible y abierto a la ciudadanía en el eje de la modernidad de esta València.",
+      "fragments": [
+        {
+          "page": 27,
+          "index": 37,
+          "start": 30,
+          "end": 92,
+          "text": "Les reconozco que en el tema de la Marina estoy preocupada. Su"
+        },
+        {
+          "page": 27,
+          "index": 38,
+          "start": 0,
+          "end": 97,
+          "text": "situación es una situación de inseguridad jurídica insostenible que está suponiendo un freno para"
+        },
+        {
+          "page": 27,
+          "index": 39,
+          "start": 0,
+          "end": 88,
+          "text": "el avance económico de esta ciudad innovadora y emprendedora. Pero quiero decirles a los"
+        },
+        {
+          "page": 27,
+          "index": 40,
+          "start": 0,
+          "end": 91,
+          "text": "valencianos que vamos a poner a los mejores al frente para dar una solución. Y sé que voy a"
+        },
+        {
+          "page": 27,
+          "index": 41,
+          "start": 0,
+          "end": 95,
+          "text": "contar con la complicidad del próximo president de la Generalitat Valenciana para que la Marina"
+        },
+        {
+          "page": 27,
+          "index": 42,
+          "start": 0,
+          "end": 97,
+          "text": "se convierta en lo que verdaderamente es, en un barrio más de la ciudad, accesible y abierto a la"
+        },
+        {
+          "page": 27,
+          "index": 43,
+          "start": 0,
+          "end": 56,
+          "text": "ciudadanía en el eje de la modernidad de esta València. "
+        }
+      ],
+      "officialId": "Sección editorial 15",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-16",
+      "topic": "Transformación de la fachada marítima",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "La fachada marítima desde Nazaret al\nGrao y Cabanyal-Cañamelar o la Malvarrosa será el epicentro de la segunda transformación de\nValència en la próxima década, respetando su esencia y su protección patrimonial. ",
+      "text": "La fachada marítima desde Nazaret al Grao y Cabanyal-Cañamelar o la Malvarrosa será el epicentro de la segunda transformación de València en la próxima década, respetando su esencia y su protección patrimonial.",
+      "fragments": [
+        {
+          "page": 27,
+          "index": 43,
+          "start": 56,
+          "end": 92,
+          "text": "La fachada marítima desde Nazaret al"
+        },
+        {
+          "page": 27,
+          "index": 44,
+          "start": 0,
+          "end": 91,
+          "text": "Grao y Cabanyal-Cañamelar o la Malvarrosa será el epicentro de la segunda transformación de"
+        },
+        {
+          "page": 27,
+          "index": 45,
+          "start": 0,
+          "end": 82,
+          "text": "València en la próxima década, respetando su esencia y su protección patrimonial. "
+        }
+      ],
+      "officialId": "Sección editorial 16",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-17",
+      "topic": "Jardín del Turia y soterramiento de Serrería",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "Uno de los\ngrandes proyectos que voy a impulsar de manera determinante en esta transformación será la\nculminación del jardín del río Turia hasta el mar. Ese, como como he repetido en los últimos\nmeses, es mi kilómetro cero. Y para eso no voy a renunciar jamás al soterramiento de las vías de\nSerrería. Quiero acabar con el muro ferroviario que divide el Grau y Penya-roja. Voy a\nreivindicar esta inversión absolutamente necesaria para la ciudad de València y lo voy a hacer de\nforma clara. Nos vamos a hacer valer, nos vamos a hacer valer en España. Y para ello, hago un\nllamamiento a todos los partidos para exigir al Gobierno un balance y una cuenta de resultados\ncon las infraestructuras necesarias para nuestra ciudad. ",
+      "text": "Uno de los grandes proyectos que voy a impulsar de manera determinante en esta transformación será la culminación del jardín del río Turia hasta el mar. Ese, como como he repetido en los últimos meses, es mi kilómetro cero. Y para eso no voy a renunciar jamás al soterramiento de las vías de Serrería. Quiero acabar con el muro ferroviario que divide el Grau y Penya-roja. Voy a reivindicar esta inversión absolutamente necesaria para la ciudad de València y lo voy a hacer de forma clara. Nos vamos a hacer valer, nos vamos a hacer valer en España. Y para ello, hago un llamamiento a todos los partidos para exigir al Gobierno un balance y una cuenta de resultados con las infraestructuras necesarias para nuestra ciudad.",
+      "fragments": [
+        {
+          "page": 27,
+          "index": 45,
+          "start": 82,
+          "end": 92,
+          "text": "Uno de los"
+        },
+        {
+          "page": 27,
+          "index": 46,
+          "start": 0,
+          "end": 90,
+          "text": "grandes proyectos que voy a impulsar de manera determinante en esta transformación será la"
+        },
+        {
+          "page": 27,
+          "index": 47,
+          "start": 0,
+          "end": 92,
+          "text": "culminación del jardín del río Turia hasta el mar. Ese, como como he repetido en los últimos"
+        },
+        {
+          "page": 27,
+          "index": 48,
+          "start": 0,
+          "end": 96,
+          "text": "meses, es mi kilómetro cero. Y para eso no voy a renunciar jamás al soterramiento de las vías de"
+        },
+        {
+          "page": 27,
+          "index": 49,
+          "start": 0,
+          "end": 86,
+          "text": "Serrería. Quiero acabar con el muro ferroviario que divide el Grau y Penya-roja. Voy a"
+        },
+        {
+          "page": 27,
+          "index": 50,
+          "start": 0,
+          "end": 97,
+          "text": "reivindicar esta inversión absolutamente necesaria para la ciudad de València y lo voy a hacer de"
+        },
+        {
+          "page": 27,
+          "index": 51,
+          "start": 0,
+          "end": 93,
+          "text": "forma clara. Nos vamos a hacer valer, nos vamos a hacer valer en España. Y para ello, hago un"
+        },
+        {
+          "page": 27,
+          "index": 52,
+          "start": 0,
+          "end": 94,
+          "text": "llamamiento a todos los partidos para exigir al Gobierno un balance y una cuenta de resultados"
+        },
+        {
+          "page": 27,
+          "index": 53,
+          "start": 0,
+          "end": 57,
+          "text": "con las infraestructuras necesarias para nuestra ciudad. "
+        }
+      ],
+      "officialId": "Sección editorial 17",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-18",
+      "topic": "Puerto, ferrocarril y financiación estatal",
+      "page": 27,
+      "endPage": 28,
+      "rawText": "Es irrenunciable la puesta en marcha de la\nampliación norte del puerto de Valencia. El 50 % del PIB de España pasa por el puerto de\nValència. Perder esta infraestructura es perder el liderazgo y poner alfombra roja a nuestros\ncompetidores. Por ahí no voy a pasar. La licitación de las obras del túnel pasante y poner el\nacelerador en el canal de acceso y la estación central con una financiación adecuada es también\nprioritaria. No nos conformamos con una foto, ni con una maqueta, ni con un excel en los\nPresupuestos Generales del Estado. Vamos a ser muy vigilantes con la ejecución presupuestaria y\nno vamos a caer en el buenismo de la promesa que nunca llega o en la que hace a medias las\ncuentas y que una lleva una letra pequeña que nadie cuenta. ",
+      "text": "Es irrenunciable la puesta en marcha de la ampliación norte del puerto de Valencia. El 50 % del PIB de España pasa por el puerto de València. Perder esta infraestructura es perder el liderazgo y poner alfombra roja a nuestros competidores. Por ahí no voy a pasar. La licitación de las obras del túnel pasante y poner el acelerador en el canal de acceso y la estación central con una financiación adecuada es también prioritaria. No nos conformamos con una foto, ni con una maqueta, ni con un excel en los Presupuestos Generales del Estado. Vamos a ser muy vigilantes con la ejecución presupuestaria y no vamos a caer en el buenismo de la promesa que nunca llega o en la que hace a medias las cuentas y que una lleva una letra pequeña que nadie cuenta.",
+      "fragments": [
+        {
+          "page": 27,
+          "index": 53,
+          "start": 57,
+          "end": 99,
+          "text": "Es irrenunciable la puesta en marcha de la"
+        },
+        {
+          "page": 27,
+          "index": 54,
+          "start": 0,
+          "end": 88,
+          "text": "ampliación norte del puerto de Valencia. El 50 % del PIB de España pasa por el puerto de"
+        },
+        {
+          "page": 27,
+          "index": 55,
+          "start": 0,
+          "end": 93,
+          "text": "València. Perder esta infraestructura es perder el liderazgo y poner alfombra roja a nuestros"
+        },
+        {
+          "page": 28,
+          "index": 10,
+          "start": 0,
+          "end": 93,
+          "text": "competidores. Por ahí no voy a pasar. La licitación de las obras del túnel pasante y poner el"
+        },
+        {
+          "page": 28,
+          "index": 11,
+          "start": 0,
+          "end": 95,
+          "text": "acelerador en el canal de acceso y la estación central con una financiación adecuada es también"
+        },
+        {
+          "page": 28,
+          "index": 12,
+          "start": 0,
+          "end": 88,
+          "text": "prioritaria. No nos conformamos con una foto, ni con una maqueta, ni con un excel en los"
+        },
+        {
+          "page": 28,
+          "index": 13,
+          "start": 0,
+          "end": 95,
+          "text": "Presupuestos Generales del Estado. Vamos a ser muy vigilantes con la ejecución presupuestaria y"
+        },
+        {
+          "page": 28,
+          "index": 14,
+          "start": 0,
+          "end": 90,
+          "text": "no vamos a caer en el buenismo de la promesa que nunca llega o en la que hace a medias las"
+        },
+        {
+          "page": 28,
+          "index": 15,
+          "start": 0,
+          "end": 60,
+          "text": "cuentas y que una lleva una letra pequeña que nadie cuenta. "
+        }
+      ],
+      "officialId": "Sección editorial 18",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    },
+    {
+      "id": "m-46250-19",
+      "topic": "Representación y reivindicación de la ciudad",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "València necesita un liderazgo firme y volver a pisar fuerte en España. Yo quiero que esta\nciudad vuelva a jugar en la partida nacional. Que se nos escuche, que se nos respete y que se nos\nadmire. Para ello, gobierne quien gobierne, a partir del 23 de julio, Moncloa se va a encontrar\ncon una alcaldesa que defienda lo que los valencianos merecen. Sé que tengo la complicidad de\nmi presidente, Alberto Núñez Feijóo, que conoce perfectamente los sinsabores que hemos sufrido\nlos valencianos. Se acabó el tiempo de la desgana, del tedio o de la falta de liderazgo. Tengo\nmuchísimas ganas y mucha ilusión de trabajar por esta València. Pero como dicen en mi casa, el\ntreball no es pensa, el treball es fa. Y por eso no voy a perder ni un minuto para llevar esta\nciudad a lo más alto y posicionarla en el panorama nacional. Debemos hacer que València forme\nparte de esa España que pintó Sorolla en su visión de España y que también explicó el fundador\ndel Museo Nacional de Cerámica, Manuel González Martí, hijo predilecto de València. La\nEspaña de Sorolla es la que gana el pan con el sudor de su frente, la España agrícola industrial, la\nque nos muestra sus atractivos en la playa, la del pensamiento moderno, la del trabajo fecundo,\ndel progreso radical. En una palabra, la España europea. Pues así será, me comprometo a que\nvuelva la València trabajadora y orgullosa, la València que es parte de España y la València que\nno se entiende sin Europa. ",
+      "text": "València necesita un liderazgo firme y volver a pisar fuerte en España. Yo quiero que esta ciudad vuelva a jugar en la partida nacional. Que se nos escuche, que se nos respete y que se nos admire. Para ello, gobierne quien gobierne, a partir del 23 de julio, Moncloa se va a encontrar con una alcaldesa que defienda lo que los valencianos merecen. Sé que tengo la complicidad de mi presidente, Alberto Núñez Feijóo, que conoce perfectamente los sinsabores que hemos sufrido los valencianos. Se acabó el tiempo de la desgana, del tedio o de la falta de liderazgo. Tengo muchísimas ganas y mucha ilusión de trabajar por esta València. Pero como dicen en mi casa, el treball no es pensa, el treball es fa. Y por eso no voy a perder ni un minuto para llevar esta ciudad a lo más alto y posicionarla en el panorama nacional. Debemos hacer que València forme parte de esa España que pintó Sorolla en su visión de España y que también explicó el fundador del Museo Nacional de Cerámica, Manuel González Martí, hijo predilecto de València. La España de Sorolla es la que gana el pan con el sudor de su frente, la España agrícola industrial, la que nos muestra sus atractivos en la playa, la del pensamiento moderno, la del trabajo fecundo, del progreso radical. En una palabra, la España europea. Pues así será, me comprometo a que vuelva la València trabajadora y orgullosa, la València que es parte de España y la València que no se entiende sin Europa.",
+      "fragments": [
+        {
+          "page": 28,
+          "index": 16,
+          "start": 0,
+          "end": 90,
+          "text": "València necesita un liderazgo firme y volver a pisar fuerte en España. Yo quiero que esta"
+        },
+        {
+          "page": 28,
+          "index": 17,
+          "start": 0,
+          "end": 97,
+          "text": "ciudad vuelva a jugar en la partida nacional. Que se nos escuche, que se nos respete y que se nos"
+        },
+        {
+          "page": 28,
+          "index": 18,
+          "start": 0,
+          "end": 95,
+          "text": "admire. Para ello, gobierne quien gobierne, a partir del 23 de julio, Moncloa se va a encontrar"
+        },
+        {
+          "page": 28,
+          "index": 19,
+          "start": 0,
+          "end": 93,
+          "text": "con una alcaldesa que defienda lo que los valencianos merecen. Sé que tengo la complicidad de"
+        },
+        {
+          "page": 28,
+          "index": 20,
+          "start": 0,
+          "end": 94,
+          "text": "mi presidente, Alberto Núñez Feijóo, que conoce perfectamente los sinsabores que hemos sufrido"
+        },
+        {
+          "page": 28,
+          "index": 21,
+          "start": 0,
+          "end": 94,
+          "text": "los valencianos. Se acabó el tiempo de la desgana, del tedio o de la falta de liderazgo. Tengo"
+        },
+        {
+          "page": 28,
+          "index": 22,
+          "start": 0,
+          "end": 94,
+          "text": "muchísimas ganas y mucha ilusión de trabajar por esta València. Pero como dicen en mi casa, el"
+        },
+        {
+          "page": 28,
+          "index": 23,
+          "start": 0,
+          "end": 94,
+          "text": "treball no es pensa, el treball es fa. Y por eso no voy a perder ni un minuto para llevar esta"
+        },
+        {
+          "page": 28,
+          "index": 24,
+          "start": 0,
+          "end": 93,
+          "text": "ciudad a lo más alto y posicionarla en el panorama nacional. Debemos hacer que València forme"
+        },
+        {
+          "page": 28,
+          "index": 25,
+          "start": 0,
+          "end": 94,
+          "text": "parte de esa España que pintó Sorolla en su visión de España y que también explicó el fundador"
+        },
+        {
+          "page": 28,
+          "index": 26,
+          "start": 0,
+          "end": 86,
+          "text": "del Museo Nacional de Cerámica, Manuel González Martí, hijo predilecto de València. La"
+        },
+        {
+          "page": 28,
+          "index": 27,
+          "start": 0,
+          "end": 100,
+          "text": "España de Sorolla es la que gana el pan con el sudor de su frente, la España agrícola industrial, la"
+        },
+        {
+          "page": 28,
+          "index": 28,
+          "start": 0,
+          "end": 95,
+          "text": "que nos muestra sus atractivos en la playa, la del pensamiento moderno, la del trabajo fecundo,"
+        },
+        {
+          "page": 28,
+          "index": 29,
+          "start": 0,
+          "end": 91,
+          "text": "del progreso radical. En una palabra, la España europea. Pues así será, me comprometo a que"
+        },
+        {
+          "page": 28,
+          "index": 30,
+          "start": 0,
+          "end": 96,
+          "text": "vuelva la València trabajadora y orgullosa, la València que es parte de España y la València que"
+        },
+        {
+          "page": 28,
+          "index": 31,
+          "start": 0,
+          "end": 27,
+          "text": "no se entiende sin Europa. "
+        }
+      ],
+      "officialId": "Sección editorial 19",
+      "sourceId": "valencia-programme",
+      "sourceNote": "Agrupación temática editorial del discurso de la alcaldesa, sin numeración oficial. Puede reunir varias propuestas y valoraciones políticas; no equivale a una promesa única ni a hechos corroborados."
+    }
+  ]
+}

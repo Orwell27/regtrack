@@ -1,5 +1,37 @@
 import { expect, test } from "@playwright/test";
 
+test("València municipal permite filtrar el discurso sin mezclar la comunidad", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("València");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("municipality");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-46250$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("València · mandato municipal 2023–2027");
+  await expect(page.locator(".mc-intro")).toContainText("no son promesas únicas");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("16 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("natalidad");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  const tax = page.locator("#compromiso-m-46250-4");
+  await tax.getByText("Promesa y página de origen", { exact: true }).click();
+  await expect(tax.getByRole("link", { name: "Discurso de investidura municipal · 17/06/2023 · página 26", exact: true })).toHaveAttribute("href", /#page=26$/);
+});
+test("València municipal conserva límites de impuestos, licencias y Marina en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-46250");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await page.screenshot({ path: "test-results/valencia-mobile-intro.png" });
+  await expect(page.locator("#compromiso-m-46250-4")).toContainText("dos años");
+  const licences = page.locator("#compromiso-m-46250-6");
+  await expect(licences).toContainText("primer trimestre de 2023");
+  await expect(licences).toContainText("primer semestre de 2023");
+  await licences.scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/valencia-mobile-licences.png" });
+  await expect(page.locator("#compromiso-m-46250-15")).toContainText("antes de este mandato");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
 test("Valenciana muestra secciones del discurso y permite distinguir las pendientes", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Valenciana");
