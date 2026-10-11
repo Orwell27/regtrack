@@ -1,0 +1,9 @@
+{
+  "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1442641800505",
+  "finalUrl": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1442641800505",
+  "sha256": "6030ccf7f3b790d21d9956e1088a34bcd5e34318e23920456be6a694851cba53",
+  "bytes": 176675,
+  "retrievedAt": "2026-10-11T06:05:41.029366+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/aragon/education-order.pdf",
+  "extractionSha256": "b9a99a75f5360c10785d5e4f196ae707ab62ea811480aff23da6ba3fd820f336"
+}

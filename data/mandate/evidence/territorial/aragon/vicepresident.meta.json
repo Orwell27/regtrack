@@ -1,0 +1,9 @@
+{
+  "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1445754711010&type=pdf",
+  "finalUrl": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1445754711010&type=pdf",
+  "sha256": "ca2ed5ffa80e1bd8995f0ef622b95bf5001d457e3a3866ce89f943fae1315bfe",
+  "bytes": 136638,
+  "retrievedAt": "2026-10-11T06:05:41.615183+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/aragon/vicepresident.pdf",
+  "extractionSha256": "53c5ad00dcaa5a71dfd1d4319a02055a05c2cae7213c5e2cc2ed89743ddcbfdc"
+}

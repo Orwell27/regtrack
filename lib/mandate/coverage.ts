@@ -31,7 +31,9 @@ export function getCoverage() {
       inventoryTotal: balance.inventoryTotal, imported: balance.records.length, reviewed: balance.reviews.length, independentlyReviewed: 0,
       ...(balance.inventoryKind ? { inventoryKind: balance.inventoryKind, originalInventoryComplete: false } : {}),
       ...(balance.programmeCopy ? { originalInventoryComplete: false } : {}),
+      ...(balance.transcriptionPending ? { originalInventoryComplete: false } : {}),
       blockers: [
+        ...(balance.transcriptionPending ? ["Transcripción OCR provisional; cotejo íntegro independiente del texto escaneado pendiente."] : []),
         ...(balance.programmeCopy ? ["Programa importado desde una copia de otro editor; cotejo con un archivo publicado por su autor pendiente."] : []),
         ...(balance.inventoryKind === "action-catalogue" ? ["Catálogo de seguimiento importado; reconstrucción de las promesas originales y cambios del plan pendiente."] : []),
         ...(balance.inventoryKind === "strategic-plan" ? ["Plan estratégico administrativo importado; inventario completo y correspondencia de las promesas políticas pendientes."] : []),

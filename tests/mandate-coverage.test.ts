@@ -74,8 +74,8 @@ describe("cobertura de 70 administraciones con responsabilidades separadas", () 
     const all = getCoverage();
     expect(all[0].reviewed).toBe(46);
     for (const item of all.slice(1)) {
-      expect(item.reviewed).toBe(item.id === "m-28079" ? 4 : ["r-14", "r-15", "r-18", "r-19"].includes(item.id) ? 3 : ["r-06", "r-17", "r-03", "r-05", "r-16", "r-09", "m-08019", "m-01059", "m-20069", "m-48020"].includes(item.id) ? 2 : 0);
-      expect(item.inventoryTotal).toBe(item.id === "r-06" ? 1228 : item.id === "r-17" ? 949 : item.id === "m-28079" ? 300 : item.id === "r-03" ? 37 : item.id === "r-14" ? 38 : item.id === "r-15" ? 347 : item.id === "r-18" ? 138 : item.id === "r-19" ? 816 : item.id === "r-05" ? 145 : item.id === "r-16" ? 154 : item.id === "r-09" ? 260 : item.id === "m-08019" ? 1248 : item.id === "m-01059" ? 100 : item.id === "m-20069" ? 129 : item.id === "m-48020" ? 80 : null);
+      expect(item.reviewed).toBe(item.id === "m-28079" ? 4 : ["r-14", "r-15", "r-18", "r-19"].includes(item.id) ? 3 : ["r-02", "r-06", "r-17", "r-03", "r-05", "r-16", "r-09", "m-08019", "m-01059", "m-20069", "m-48020"].includes(item.id) ? 2 : 0);
+      expect(item.inventoryTotal).toBe(item.id === "r-02" ? 117 : item.id === "r-06" ? 1228 : item.id === "r-17" ? 949 : item.id === "m-28079" ? 300 : item.id === "r-03" ? 37 : item.id === "r-14" ? 38 : item.id === "r-15" ? 347 : item.id === "r-18" ? 138 : item.id === "r-19" ? 816 : item.id === "r-05" ? 145 : item.id === "r-16" ? 154 : item.id === "r-09" ? 260 : item.id === "m-08019" ? 1248 : item.id === "m-01059" ? 100 : item.id === "m-20069" ? 129 : item.id === "m-48020" ? 80 : null);
       expect(isCoverageComplete(item)).toBe(false);
     }
     expect(all.filter(isCoverageComplete)).toHaveLength(0);

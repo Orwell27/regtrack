@@ -1,5 +1,36 @@
 import { expect, test } from "@playwright/test";
 
+test("Aragón identifica el nuevo mandato, OCR provisional y discrepancia de plazos", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Aragón");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await expect(page.locator(".mc-list")).toContainText("117 de 117");
+  await expect(page.locator(".mc-list")).toContainText("mandato iniciado en 2026");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-02$/);
+  await expect(page.locator(".mc-warning").filter({ hasText: "Consulta la imagen" })).toBeVisible();
+  await page.getByLabel("Buscar medida autonómica").fill("clases de refuerzo");
+  await expect(page.getByRole("status")).toContainText("2 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("ejercicio 2028");
+  await expect(page.locator("#territorial-inventory")).toContainText("ejercicio 2027");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("115 resultados");
+});
+
+test("Aragón en móvil distingue cautelar, consulta y nombramiento", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-02");
+  await expect(page.locator("#compromiso-r-02-80")).toContainText("actuación previa");
+  await expect(page.locator("#compromiso-r-02-80")).toContainText("Distrito7 incluye ciclos de FP");
+  await expect(page.locator('section[aria-labelledby="r-02-80-consulta"]')).toContainText("terminó su plazo de aportaciones");
+  await expect(page.locator('section[aria-labelledby="r-02-114-precedencia"]')).toContainText("No se interpreta esa omisión como incumplimiento");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/aragon-mobile-top.png" });
+  await page.locator("#r-02-80-cautelar").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/aragon-mobile-contrast.png" });
+});
+
 test("Cantabria conserva las subcláusulas y separa importación de revisión", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Cantabria");

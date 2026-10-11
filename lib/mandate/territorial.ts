@@ -1,3 +1,5 @@
+import aragonInventory from "@/data/mandate/aragon-inventory.json";
+import aragonReviews from "@/data/mandate/aragon-reviews.json";
 import cantabriaInventory from "@/data/mandate/cantabria-inventory.json";
 import cantabriaReviews from "@/data/mandate/cantabria-reviews.json";
 import riojaInventory from "@/data/mandate/rioja-inventory.json";
@@ -32,6 +34,7 @@ import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "r-02": { inventory: aragonInventory, reviews: aragonReviews, level: "region", mandateSourceId: aragonInventory.sourceId, sourceLabel: aragonInventory.sourceLabel, governmentCutoff: undefined },
   "r-06": { inventory: cantabriaInventory, reviews: cantabriaReviews, level: "region", mandateSourceId: cantabriaInventory.sourceId, sourceLabel: cantabriaInventory.sourceLabel, governmentCutoff: undefined },
   "r-17": { inventory: riojaInventory, reviews: riojaReviews, level: "region", mandateSourceId: riojaInventory.sourceId, sourceLabel: riojaInventory.sourceLabel, governmentCutoff: undefined },
   "r-03": { inventory: asturiasInventory, reviews: asturiasReviews, level: "region", mandateSourceId: asturiasInventory.sourceId, sourceLabel: asturiasInventory.sourceLabel, governmentCutoff: undefined },
@@ -61,6 +64,7 @@ export function getTerritorialBalance(id: string): TerritorialBalance | null {
     level, mandateSourceId, sourceLabel,
     ...("contextBlocks" in inventory ? { contextBlocks: inventory.contextBlocks.map(({ id, topic, text, page, endPage }) => ({ id, topic, text, page, endPage })) } : {}),
     ...("programmeCopy" in inventory ? { programmeCopy: inventory.programmeCopy } : {}),
+    ...("transcriptionPending" in inventory ? { transcriptionPending: inventory.transcriptionPending } : {}),
     ...("textLanguage" in inventory ? { textLanguage: inventory.textLanguage as TerritorialBalance["textLanguage"] } : {}),
     ...(governmentCutoff ? { governmentCutoff } : {}),
     ...("inventoryKind" in inventory ? { inventoryKind: inventory.inventoryKind as TerritorialBalance["inventoryKind"] } : {}),
