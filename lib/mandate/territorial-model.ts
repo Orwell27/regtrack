@@ -75,7 +75,7 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
       const report = record.governmentReport;
       const source = sources.get(report.sourceId);
       if (!report.officialId || !report.title || !report.text.trim() || source?.role !== "government-report"
-        || !report.url.startsWith(`${source.url}#`) || !Number.isInteger(report.percentage) || report.percentage < 0 || report.percentage > 100
+        || (report.url !== source.url && !report.url.startsWith(`${source.url}#`)) || !Number.isFinite(report.percentage) || report.percentage < 0 || report.percentage > 100
         || report.links.some(url => !/^https?:\/\//.test(url))) throw Error("Seguimiento municipal inválido");
     }
     if (record.initiatives !== undefined) {

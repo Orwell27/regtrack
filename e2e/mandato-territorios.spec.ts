@@ -1,5 +1,39 @@
 import { expect, test } from "@playwright/test";
 
+test("Donostia conserva 129 fichas, 27 seguimientos y plazos más allá del mandato", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Donostia");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-20069$/);
+  await expect(page.locator(".mc-intro")).toContainText("La portada anuncia 127 proyectos");
+  await expect(page.locator(".mc-intro")).toContainText("seguimiento detallado en 27");
+  await expect(page.getByRole("status")).toHaveText("129 resultados · página 1 de 9");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("127 resultados");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("all");
+  await page.getByLabel("Buscar medida municipal").fill("673 2033");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  const inventory = page.locator("#territorial-inventory");
+  await inventory.getByText("Seguimiento publicado por el Ayuntamiento · 36,5% declarado", { exact: true }).click();
+  await expect(inventory).toContainText("673 (datos de 2023 y 2024)");
+  await expect(inventory.getByRole("link", { name: "Consultar el seguimiento municipal original" })).toHaveAttribute("href", /&projectId=14$/);
+  await expect(page.locator('a[href*="#page=null"]')).toHaveCount(0);
+});
+
+test("Donostia en móvil muestra discrepancias y no confunde 100% con revisión completa", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-20069");
+  const mobility = page.locator("#compromiso-m-20069-definicion-nueva-movilidad-urbana-sostenible");
+  await expect(mobility).toContainText("Objetivo aún no alcanzado en el ejercicio examinado");
+  await expect(mobility).toContainText("16,55 y 18");
+  await mobility.getByText("Actuación publicada y fuente", { exact: true }).click();
+  await mobility.getByText("Seguimiento publicado por el Ayuntamiento · 100% declarado", { exact: true }).click();
+  await expect(mobility).toContainText("no es una valoración de RegTrack");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.getByRole("heading", { level: 1 }).scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/donostia-mobile-viewport.png" });
+});
+
 test("Vitoria conserva los originales y el seguimiento posterior sin convertir el 100% en revisión", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Vitoria");

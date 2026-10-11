@@ -26,7 +26,7 @@ function ProgrammeSheet({ record, language }: { record: TerritorialRecord; langu
 function GovernmentFollowup({ record }: { record: TerritorialRecord }) {
   const report = record.governmentReport;
   if (!report) return null;
-  return <details><summary>Seguimiento publicado por el Ayuntamiento · {report.percentage}% declarado</summary>
+  return <details><summary>Seguimiento publicado por el Ayuntamiento · {report.percentage.toLocaleString("es-ES")}% declarado</summary>
     <p>Ficha municipal {report.officialId}: {report.title}. Este porcentaje corresponde a la metodología del Ayuntamiento; no es una valoración de RegTrack ni una medida independiente de impacto. Los periodos particulares se conservan en el texto.</p>
     <p style={{ whiteSpace: "pre-line" }}>{report.text}</p>
     <a className="mc-link" href={report.url} target="_blank" rel="noreferrer">Consultar el seguimiento municipal original</a>

@@ -10,10 +10,13 @@ import barcelonaInventory from "@/data/mandate/barcelona-inventory.json";
 import barcelonaReviews from "@/data/mandate/barcelona-reviews.json";
 import vitoriaInventory from "@/data/mandate/vitoria-inventory.json";
 import vitoriaReviews from "@/data/mandate/vitoria-reviews.json";
+import donostiaInventory from "@/data/mandate/donostia-inventory.json";
+import donostiaReviews from "@/data/mandate/donostia-reviews.json";
 import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "m-20069": { inventory: donostiaInventory, reviews: donostiaReviews, level: "municipality", mandateSourceId: donostiaInventory.mandateSourceId, sourceLabel: donostiaInventory.sourceLabel, governmentCutoff: donostiaInventory.governmentCutoff },
   "m-01059": { inventory: vitoriaInventory, reviews: vitoriaReviews, level: "municipality", mandateSourceId: vitoriaInventory.sourceId, sourceLabel: vitoriaInventory.sourceLabel, governmentCutoff: undefined },
   "m-08019": { inventory: barcelonaInventory, reviews: barcelonaReviews, level: "municipality", mandateSourceId: barcelonaInventory.mandateSourceId, sourceLabel: barcelonaInventory.sourceLabel, governmentCutoff: barcelonaInventory.governmentCutoff },
   "r-09": { inventory: catalunyaInventory, reviews: catalunyaReviews, level: "region", mandateSourceId: catalunyaInventory.sourceId, sourceLabel: catalunyaInventory.sourceLabel, governmentCutoff: undefined },
