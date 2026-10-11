@@ -1,5 +1,41 @@
 import { expect, test } from "@playwright/test";
 
+test("Ceuta conserva el alcance inicial, el anexo y los números repetidos", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Ceuta");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-18$/);
+  await expect(page.locator(".mc-intro")).toContainText("Programa inicial no exhaustivo");
+  await expect(page.getByRole("status")).toHaveText("138 resultados · página 1 de 10");
+  await page.getByLabel("Buscar medida de la ciudad autónoma").fill("Nicaragua");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  const inventory = page.locator("#territorial-inventory");
+  await inventory.getByText("Fases del anexo de obras · 5", { exact: true }).click();
+  await expect(inventory.locator("ol > li")).toHaveCount(5);
+  await expect(inventory).toContainText("Nicaragua");
+  await page.getByLabel("Buscar medida de la ciudad autónoma").fill("modernización autobuses");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(inventory).toContainText("El número 26 se repite");
+  await page.getByLabel("Buscar medida de la ciudad autónoma").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("135 resultados");
+});
+
+test("Ceuta en móvil distingue actos, condiciones y resultados sin certificar", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-18");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  const bus = page.locator("#compromiso-r-18-F-28");
+  await expect(bus).toContainText("33,81 y 35,30 litros por 100 km");
+  await bus.getByText("Medida inicial y página de origen", { exact: true }).click();
+  await expect(bus).toContainText("El número 26 se repite");
+  await expect(page.locator("#compromiso-r-18-F-18")).toContainText("ni como pago ya ejecutado");
+  await expect(page.locator("#compromiso-r-18-H-2")).toContainText("no cierra esas fichas");
+  await expect(page.getByRole("link", { name: "Consultar el programa inicial y sus condiciones" })).toHaveAttribute("href", /Objetivos_Gobierno.*\.pdf$/);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/ceuta-mobile-viewport.png" });
+});
+
 test("Canarias conserva los objetivos específicos repetidos y permite buscar sus códigos", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));

@@ -19,6 +19,7 @@ export type TerritorialReview = {
 };
 export type TerritorialRecord = {
   id: string; officialId: string; text: string; topic: string; page: number | null; endPage: number | null; sourceId: string;
+  sourceNote?: string;
   governmentState?: string;
   governmentProgress?: string;
   detailText?: string;
@@ -33,16 +34,16 @@ export type TerritorialBalance = {
   sourceSha256: string; inventoryTotal: number; scope: string; textNote: string;
   textLanguage?: "ca" | "es";
   programmeCopy?: boolean;
-  inventoryKind?: "action-catalogue" | "strategic-plan";
+  inventoryKind?: "action-catalogue" | "strategic-plan" | "initial-programme";
   governmentDateKind?: "capture";
-  mandateSourceId: string; sourceLabel: string; level: "municipality" | "region"; governmentCutoff?: string;
+  mandateSourceId: string; sourceLabel: string; level: "municipality" | "region" | "autonomous-city"; governmentCutoff?: string;
   records: TerritorialRecord[]; reviews: TerritorialReview[]; sources: TerritorialSource[];
 };
 
 /** Invalid evidence must stop publication; an import cannot create a review. */
 export function validateTerritorialBalance(balance: TerritorialBalance) {
   if (balance.programmeCopy !== undefined && typeof balance.programmeCopy !== "boolean") throw Error("Procedencia del programa inválida");
-  if (balance.inventoryKind !== undefined && !["action-catalogue", "strategic-plan"].includes(balance.inventoryKind)) throw Error("Tipo de inventario inválido");
+  if (balance.inventoryKind !== undefined && !["action-catalogue", "strategic-plan", "initial-programme"].includes(balance.inventoryKind)) throw Error("Tipo de inventario inválido");
   if (balance.governmentDateKind !== undefined && (balance.governmentDateKind !== "capture" || !balance.governmentCutoff)) throw Error("Fecha de captura inválida");
   if (balance.textLanguage !== undefined && !["ca", "es"].includes(balance.textLanguage)) throw Error("Idioma territorial inválido");
   if (balance.inventoryTotal <= 0 || balance.inventoryTotal !== balance.records.length) throw Error("Inventario territorial incompleto");
@@ -64,6 +65,7 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
   for (const record of balance.records) {
     if (ids.has(record.id) || !record.id.startsWith(`${balance.jurisdictionId}-`) || !record.text || !record.officialId
       || record.sourceId !== balance.sourceId) throw Error("Compromiso territorial inválido");
+    if (record.sourceNote !== undefined && !record.sourceNote.trim()) throw Error("Nota de origen territorial vacía");
     if (record.webSource) {
       if (record.page !== null || record.endPage !== null || !record.detailText?.trim()
         || !/^https:\/\//.test(record.webSource.url) || !/^[a-f0-9]{64}$/.test(record.webSource.sha256)

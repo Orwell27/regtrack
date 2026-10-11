@@ -1,3 +1,5 @@
+import ceutaInventory from "@/data/mandate/ceuta-inventory.json";
+import ceutaReviews from "@/data/mandate/ceuta-reviews.json";
 import canariasInventory from "@/data/mandate/canarias-inventory.json";
 import canariasReviews from "@/data/mandate/canarias-reviews.json";
 import madridInventory from "@/data/mandate/madrid-inventory.json";
@@ -20,6 +22,7 @@ import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "r-18": { inventory: ceutaInventory, reviews: ceutaReviews, level: "autonomous-city", mandateSourceId: ceutaInventory.sourceId, sourceLabel: ceutaInventory.sourceLabel, governmentCutoff: undefined },
   "r-05": { inventory: canariasInventory, reviews: canariasReviews, level: "region", mandateSourceId: canariasInventory.mandateSourceId, sourceLabel: canariasInventory.sourceLabel, governmentCutoff: undefined },
   "m-48020": { inventory: bilbaoInventory, reviews: bilbaoReviews, level: "municipality", mandateSourceId: bilbaoInventory.sourceId, sourceLabel: bilbaoInventory.sourceLabel, governmentCutoff: undefined },
   "m-20069": { inventory: donostiaInventory, reviews: donostiaReviews, level: "municipality", mandateSourceId: donostiaInventory.mandateSourceId, sourceLabel: donostiaInventory.sourceLabel, governmentCutoff: donostiaInventory.governmentCutoff },
@@ -49,6 +52,7 @@ export function getTerritorialBalance(id: string): TerritorialBalance | null {
     records: (inventory.records as TerritorialRecord[]).map(record => {
       const { id, officialId, text, topic, page, endPage, sourceId } = record;
       return { id, officialId, text, topic, page, endPage, sourceId,
+        ...(record.sourceNote ? { sourceNote: record.sourceNote } : {}),
         ...(record.governmentState ? { governmentState: record.governmentState } : {}),
         ...(record.governmentProgress ? { governmentProgress: record.governmentProgress } : {}),
         ...(record.programmeText ? { programmeText: record.programmeText } : {}),
