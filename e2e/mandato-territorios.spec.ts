@@ -1,5 +1,36 @@
 import { expect, test } from "@playwright/test";
 
+test("Castilla y León separa 220 apartados y tres fichas del mandato de junio", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Castilla y León");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-07$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Castilla y León · mandato iniciado en junio de 2026");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.getByRole("status")).toHaveText("220 resultados · página 1 de 15");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("217 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("11.8");
+  await expect(page.locator("#territorial-inventory")).toContainText("Numeración cotejada");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 38/ })).toHaveAttribute("href", /acuerdo-pp-vox-pdf\.pdf#page=38$/);
+});
+
+test("Castilla y León en móvil conserva condiciones, fechas y límites de las pruebas", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-07");
+  await expect(page.locator(".mc-intro")).toContainText("revisión humana independiente");
+  await expect(page.locator("#compromiso-r-07-13-17")).toContainText("disponibilidad presupuestaria");
+  await expect(page.locator("#compromiso-r-07-13-17")).toContainText("acreditación posterior");
+  await expect(page.locator("#compromiso-r-07-15-3")).toContainText("primer presupuesto en 2027");
+  await expect(page.locator("#compromiso-r-07-6-2")).toContainText("no demuestra que el problema continúe");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/cyl-mobile-intro.png" });
+  await page.locator("#r-07-13-17-pago-matricula").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/cyl-mobile-university.png" });
+});
+
 test("Andalucía separa el pacto de 2026, tres revisiones y medidas pendientes", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Andalucía");
