@@ -1,0 +1,12 @@
+{
+  "url": "https://almeriaciudad.es/uploads/media/document/certificado-aprobacion---plan-anual-contratacion-2024.pdf",
+  "finalUrl": "https://almeriaciudad.es/uploads/media/document/certificado-aprobacion---plan-anual-contratacion-2024.pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "c34f787548c1c5b3949a66a1cdfbf1379f255d071b7b79f79f805906144b8a66",
+  "bytes": 279567,
+  "retrievedAt": "2026-10-11T14:31:22.686546+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/almeria/procurement-2024.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "6319f744b2cbbc3e25fd416b695f5fa6779368a5c5c6308227ae64772fb2fbb1"
+}

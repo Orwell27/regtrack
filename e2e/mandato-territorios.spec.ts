@@ -1,5 +1,27 @@
 import { expect, test } from "@playwright/test";
 
+test("Almería separa viviendas previstas, reconocimiento y desistimiento en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Almería");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-04013$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Almería · programa municipal 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.locator("#compromiso-m-04013-p15-07")).toContainText("no se suman 203 y 92");
+  await expect(page.locator("#compromiso-m-04013-p08-07")).toContainText("UNICEF");
+  await expect(page.locator("#compromiso-m-04013-p17-11")).toContainText("No pertenece a la tabla de remanentes incorporados");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("152 resultados");
+  await page.getByLabel("Buscar sección municipal").fill("Mercado Central");
+  await expect(page.getByRole("status")).toContainText("1 resultado");
+  await expect(page.locator("#territorial-inventory")).toContainText("no es un número oficial");
+  await expect(page.locator("#territorial-inventory")).not.toContainText("apartados con viñeta");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 19/ })).toHaveAttribute("href", /Programa-Electoral-MMV\.pdf#page=19$/);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/almeria-mobile-evidence.png" });
+});
+
 test("Albacete distingue apartados, compromisos éticos y pruebas de ejecución en móvil", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/observatorio/mandato/cobertura");

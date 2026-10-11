@@ -1,0 +1,262 @@
+[
+  {
+    "commitmentId": "m-04013-p15-07",
+    "reviewedAt": "2026-10-11",
+    "title": "Vivienda protegida: obras comunicadas, entregas del mandato sin conciliar",
+    "conclusion": "El Ayuntamiento anuncia 203 viviendas en construcción en mayo de 2026 y una promoción de 92 con final previsto en 2028. No hay una relación de entregas del mandato que permita acreditar las 300 viviendas prometidas.",
+    "periodNote": "Programa 2023–2027; comunicación municipal de 26/05/2026. Corte documental: 11/10/2026. No se convierte la trayectoria histórica de Almería XXI en producción del mandato.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Construir 300 viviendas nuevas en venta y alquiler",
+        "status": "promise-documented",
+        "finding": "El destacado de la página 15 fija 300 viviendas protegidas nuevas. Construcción, promoción, adjudicación y entrega son hitos diferentes.",
+        "citations": [
+          {
+            "sourceId": "almeria-programme",
+            "locator": "Destacado de vivienda · P15-07",
+            "page": 15
+          }
+        ]
+      },
+      {
+        "id": "obras",
+        "claim": "Cartera de obras comunicada",
+        "status": "reported",
+        "finding": "El Ayuntamiento comunica cuatro promociones con 203 viviendas en construcción. La misma noticia presenta la primera piedra de 92 viviendas en la Vega de Acá; no se suman 203 y 92 sin una relación que aclare el solapamiento.",
+        "citations": [
+          {
+            "sourceId": "almeria-housing-2026",
+            "locator": "Cartera de cuatro promociones y acto de primera piedra"
+          }
+        ]
+      },
+      {
+        "id": "plazo",
+        "claim": "Promoción de 92 viviendas y horizonte posterior al mandato",
+        "status": "reported",
+        "finding": "La comunicación describe 92 VPO en venta de precio limitado, adjudicación por más de 12,3 millones y un plazo de 20 meses, con posible finalización en enero de 2028. Es una previsión, posterior al periodo electoral 2023–2027, no una entrega acreditada.",
+        "citations": [
+          {
+            "sourceId": "almeria-housing-2026",
+            "locator": "Descripción de la promoción y plazo previsto"
+          }
+        ]
+      },
+      {
+        "id": "historico",
+        "claim": "Las 1.116 entregas no son una cifra del mandato",
+        "status": "unresolved",
+        "finding": "La nota atribuye 19 promociones culminadas y 1.116 viviendas entregadas a la trayectoria de Almería XXI. No las fecha como entregas desde junio de 2023; utilizarlas para superar la meta de 300 sería mezclar periodos.",
+        "citations": [
+          {
+            "sourceId": "almeria-housing-2026",
+            "locator": "Trayectoria de Almería XXI"
+          }
+        ]
+      },
+      {
+        "id": "resultados",
+        "claim": "Entregas y acceso efectivo de los hogares",
+        "status": "unresolved",
+        "finding": "Faltan el inventario fechado por promoción, certificaciones de final de obra, ocupación, entregas y desglose de venta y alquiler. Esta selección no permite calcular un porcentaje de cumplimiento ni la mejora de asequibilidad.",
+        "citations": [
+          {
+            "sourceId": "almeria-housing-2026",
+            "locator": "Alcance de la comunicación municipal"
+          }
+        ]
+      }
+    ],
+    "contrast": "La información de ejecución procede del propio Ayuntamiento. El programa acredita la promesa, pero no corrobora las obras. Pendientes contratos y actas de recepción, registros de entrega y una comprobación externa de resultados.",
+    "pending": [
+      "Conciliar todas las promociones y entregas desde el 17/06/2023, sin sumar existencias, previsiones y obras duplicadas.",
+      "Contrastar contratos, certificaciones, régimen de acceso y costes para hogares con documentación primaria.",
+      "Revisión humana independiente pendiente."
+    ]
+  },
+  {
+    "commitmentId": "m-04013-p08-07",
+    "reviewedAt": "2026-10-11",
+    "title": "Infancia: renovación de UNICEF y plan aprobado; resultados pendientes",
+    "conclusion": "La resolución de UNICEF acredita la renovación para 2024–2027 y el certificado municipal acredita la aprobación del plan 2026–2030. Son avances institucionales; aún falta comprobar ejecución e impacto.",
+    "periodNote": "Programa 2023; resolución de 27/11/2023, acto municipal de 23/05/2024 y acuerdo plenario de 10/02/2026. El plan llega a 2030, después del mandato examinado. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Continuar como Ciudad Amiga de la Infancia",
+        "status": "promise-documented",
+        "finding": "La página 8 propone seguir impulsando la ciudad dentro de esta iniciativa. No fija una mejora cuantificada del bienestar infantil.",
+        "citations": [
+          {
+            "sourceId": "almeria-programme",
+            "locator": "Infancia · P08-07",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "renovacion",
+        "claim": "Renovación 2024–2027 corroborada por la entidad que la concede",
+        "status": "documented",
+        "finding": "El acta de la Secretaría Permanente abre la lista de renovaciones en la página 2 e incluye a Almería, Andalucía, en la 3. Se comprobó visualmente el PDF escaneado. El Ayuntamiento informa de la entrega el 23/05/2024. Huércal de Almería es otra entidad y no se utiliza para acreditar a la capital.",
+        "citations": [
+          {
+            "sourceId": "almeria-unicef-2023",
+            "locator": "Inicio del listado de renovaciones",
+            "page": 2
+          },
+          {
+            "sourceId": "almeria-unicef-2023",
+            "locator": "Fila Almería · Andalucía",
+            "page": 3
+          },
+          {
+            "sourceId": "almeria-childhood-renewal",
+            "locator": "Acto de entrega del reconocimiento"
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "claim": "Aprobación del III Plan 2026–2030",
+        "status": "documented",
+        "finding": "El certificado del pleno del 10/02/2026 acredita la aprobación por 16 votos favorables, cuatro contrarios y seis abstenciones. El documento contiene programas e indicadores; la aprobación no acredita que se hayan ejecutado.",
+        "citations": [
+          {
+            "sourceId": "almeria-childhood-certificate",
+            "locator": "Acuerdo de aprobación",
+            "page": 1
+          },
+          {
+            "sourceId": "almeria-childhood-certificate",
+            "locator": "Votación y aprobación del dictamen",
+            "page": 4
+          },
+          {
+            "sourceId": "almeria-childhood-plan",
+            "locator": "Indicadores del programa cultural y educativo",
+            "page": 49
+          }
+        ]
+      },
+      {
+        "id": "impacto",
+        "claim": "Aplicación, recursos y bienestar infantil",
+        "status": "unresolved",
+        "finding": "Faltan memorias de ejecución, gasto reconocido y pagado, resultados de indicadores y evaluación externa de acceso y desigualdades. Un sello y un plan no prueban por sí solos que todas las medidas estén cumplidas.",
+        "citations": [
+          {
+            "sourceId": "almeria-childhood-plan",
+            "locator": "Continuidad con el plan 2022–2025 y diagnóstico",
+            "page": 17
+          },
+          {
+            "sourceId": "almeria-childhood-plan",
+            "locator": "Programas e indicadores previstos",
+            "page": 49
+          }
+        ]
+      }
+    ],
+    "contrast": "UNICEF aporta una fuente distinta del Ayuntamiento para el reconocimiento, no una auditoría de toda la política infantil. La resolución de 2023 se leyó como imagen: la extracción automática no contiene texto. La crónica, el certificado y el plan municipales comparten familia de origen. Firmas y CSV no validados.",
+    "pending": [
+      "Revisar ejecución anual e informe intermedio de UNICEF, con resultados comparables y datos agregados.",
+      "Conciliar el primer reconocimiento: la crónica municipal menciona 2017; no se usa esa fecha como hecho verificado.",
+      "Cotejo humano independiente del expediente y del PDF escaneado pendiente."
+    ]
+  },
+  {
+    "commitmentId": "m-04013-p17-11",
+    "reviewedAt": "2026-10-11",
+    "title": "Costacabana: planificación y desistimiento documentados; apertura sin acreditar",
+    "conclusion": "El plan de contratación de febrero de 2024 preveía la playa canina. Una resolución posterior incluye el proyecto entre aquellos cuya ejecución se desiste. No se ha acreditado aquí una reactivación o apertura posterior.",
+    "periodNote": "Autorización anunciada en agosto de 2022, programa 2023–2027 y documentos presupuestarios y de contratación de 2024. Corte: 11/10/2026; la falta de una prueba posterior no demuestra que nada haya cambiado.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Playa canina en Costacabana",
+        "status": "promise-documented",
+        "finding": "El programa fija 3.500 m² y 300 metros de costa. Es una propuesta distinta de la playa de El Bobar y de los parques caninos del barrio.",
+        "citations": [
+          {
+            "sourceId": "almeria-programme",
+            "locator": "Litoral · P17-11",
+            "page": 17
+          }
+        ]
+      },
+      {
+        "id": "antecedente",
+        "claim": "Tramitación anterior a las elecciones",
+        "status": "reported",
+        "finding": "La nota municipal del 03/08/2022 anuncia autorización de la Junta y dimensiones de 3.500 m² y 330 metros. Los 330 metros difieren de los 300 del programa; no se elige una cifra de obra ejecutada sin proyecto y recepción. La autorización antecede al mandato.",
+        "citations": [
+          {
+            "sourceId": "almeria-beach-2022",
+            "locator": "Autorización anunciada y dimensiones"
+          }
+        ]
+      },
+      {
+        "id": "prevision",
+        "claim": "Contrato previsto, no adjudicación ni ejecución",
+        "status": "documented",
+        "finding": "El plan aprobado el 16/02/2024 recoge la playa con base de licitación de 100.000 euros, duración de tres meses y formalización prevista para 01/06/2024. Su inclusión en el plan no acredita la contratación.",
+        "citations": [
+          {
+            "sourceId": "almeria-procurement-2024",
+            "locator": "Fecha del acuerdo",
+            "page": 1
+          },
+          {
+            "sourceId": "almeria-procurement-2024",
+            "locator": "Fila 9 · playa canina de Costacabana",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "desistimiento",
+        "claim": "Desistimiento del proyecto 2023.2.032.1",
+        "status": "documented",
+        "finding": "La resolución de rectificación MP1626-0142024, que cita informe de 19/03 y fiscalización de 21/03/2024, incluye 100.000 euros de Costacabana bajo el apartado segundo, que desiste de continuar esos proyectos. No pertenece a la tabla de remanentes incorporados. Esto respalda un desistimiento concreto, sin acreditar el destino final de los fondos.",
+        "citations": [
+          {
+            "sourceId": "almeria-budget-amendment-2024",
+            "locator": "Antecedentes y fiscalización",
+            "page": 1
+          },
+          {
+            "sourceId": "almeria-budget-amendment-2024",
+            "locator": "Apartado segundo · proyecto 2023.2.032.1",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "situacion",
+        "claim": "Estado posterior y denuncia de la oposición",
+        "status": "unresolved",
+        "finding": "El PSOE denuncia la retirada de 100.000 euros y la falta de adaptación. La resolución municipal corrobora el desistimiento concreto, pero no acredita por sí sola el estado en octubre de 2026. Faltan modificaciones posteriores, expediente de obra, recepción e inspección de apertura.",
+        "citations": [
+          {
+            "sourceId": "almeria-beach-opposition",
+            "locator": "Denuncia sobre Costacabana, distinta de El Bobar"
+          },
+          {
+            "sourceId": "almeria-budget-amendment-2024",
+            "locator": "Alcance del desistimiento",
+            "page": 2
+          }
+        ]
+      }
+    ],
+    "contrast": "Se contrasta un programa, documentación administrativa y una denuncia del PSOE, identificado como oposición interesada. No se cuentan las reproducciones de esa denuncia en distintos medios como testimonios independientes. El desistimiento figura en el original municipal, no se infiere de una búsqueda sin resultados. Fecha exacta de firma de la resolución y CSV pendientes de validación.",
+    "pending": [
+      "Localizar presupuesto definitivo, modificaciones y expedientes posteriores de Costacabana hasta el corte.",
+      "Verificar eventual reactivación, ejecución, recepción y acceso público sin confundir playa, parque canino y El Bobar.",
+      "Cotejar dimensiones autorizadas y proyecto final; revisión humana independiente pendiente."
+    ]
+  }
+]
