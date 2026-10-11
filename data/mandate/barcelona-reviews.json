@@ -1,0 +1,90 @@
+[
+  {
+    "commitmentId": "m-08019-538",
+    "reviewedAt": "2026-10-11",
+    "title": "Port Olímpic: reapertura y mejoras, con reparos de accesibilidad documentados",
+    "conclusion": "La transformación y reapertura están documentadas. La Sindicatura recoge barreras de acceso en la inauguración y mejoras resueltas o en curso después. La etiqueta municipal de finalizada no acredita por sí sola accesibilidad universal ni todos los resultados económicos y ambientales.",
+    "periodNote": "Ficha 538 del catálogo consultado en octubre de 2026. La resolución de la Sindicatura examina la reapertura de julio de 2024 e información municipal recibida hasta enero de 2025. No prueba el estado de cada acceso en octubre de 2026. La fecha exacta de publicación del PDF no se ha identificado.",
+    "components": [
+      {
+        "id": "transformacion",
+        "claim": "Abrir el puerto a la ciudadanía y renovar sus usos",
+        "status": "reported",
+        "finding": "La ficha municipal declara finalizada la transformación y describe más de 20.000 m² de espacio público, nuevos accesos, economía azul, reforma del centro de vela y Balcó Gastronòmic. Estas magnitudes y el estado son del Ayuntamiento; no se incorporan actas de recepción ni mediciones independientes de cada elemento.",
+        "citations": [{ "sourceId": "barcelona-port-ficha", "locator": "Título, descripción de la actuación y estado municipal. Captura de la página, no fecha de finalización acreditada." }]
+      },
+      {
+        "id": "origen-y-apertura",
+        "claim": "Situar las actuaciones y la reapertura en su periodo real",
+        "status": "documented",
+        "finding": "La Sindicatura sitúa el encargo de transformación a B:SM en abril de 2020, el inicio de las obras en 2022 y la fiesta de reapertura el 21 de julio de 2024. El proyecto atraviesa dos mandatos. Su presencia en el catálogo 2023–2027 no permite atribuirle a ese gobierno toda la concepción o ejecución.",
+        "citations": [{ "sourceId": "barcelona-port-sindicatura", "locator": "Consideración 1, antecedentes de la transformación y reapertura.", "page": 2 }]
+      },
+      {
+        "id": "accesibilidad",
+        "claim": "Contrastar la accesibilidad de los espacios reabiertos",
+        "status": "documented",
+        "finding": "La Sindicatura recoge quejas por espacios inaccesibles en la reapertura. También señala mejoras graduales y problemas resueltos o en fase de resolución. Recomienda garantizar el acceso en igualdad antes de organizar eventos. El expediente aporta contraste externo sobre esos casos; parte de su información técnica procede de B:SM y Barcelona Regional, no de una inspección independiente integral.",
+        "citations": [{ "sourceId": "barcelona-port-sindicatura", "locator": "Antecedentes (p. 1), información técnica (pp. 3–5), valoración de la reapertura (p. 6) y decisión/recomendación (p. 9).", "page": 6 }]
+      },
+      {
+        "id": "resultados",
+        "claim": "Comprobar accesibilidad actual, actividad económica e impacto ambiental",
+        "status": "unresolved",
+        "finding": "Faltan comprobaciones actuales de los recorridos y ascensores, seguimiento de la recomendación, ocupación y empleo del centro de economía azul, rendimiento energético y resultados ambientales. La resolución de 2025 no demuestra que las barreras persistan hoy, y la ficha municipal tampoco certifica que todas estén resueltas.",
+        "citations": []
+      }
+    ],
+    "contrast": "El catálogo se contrasta con un expediente de la Sindicatura, preservando tanto las quejas como las mejoras que esta reconoce. No se convierten todas las respuestas técnicas del gestor en comprobaciones externas. El catálogo actual tampoco reconstruye la promesa inicial ni sus modificaciones: ese cotejo sigue pendiente.",
+    "pending": [
+      "Recuperar el programa original y relacionar sus compromisos con la ficha y las fases previas a 2023.",
+      "Incorporar actas de recepción y seguimiento de la recomendación de accesibilidad, con fechas y ámbito de inspección.",
+      "Contrastar los resultados económicos, ambientales y de uso con series y denominadores comparables.",
+      "Completar revisión humana independiente de las fuentes y de esta interpretación."
+    ]
+  },
+  {
+    "commitmentId": "m-08019-493",
+    "reviewedAt": "2026-10-11",
+    "title": "Via Laietana: apertura corroborada; coste final, efectos y situación judicial pendientes",
+    "conclusion": "La apertura cuenta con una crónica periodística además de la ficha municipal. Esto no certifica el coste ejecutado, las mejoras de movilidad o la situación judicial definitiva. Las obras habían comenzado antes del mandato 2023–2027.",
+    "periodNote": "Ficha 493 del catálogo consultado en octubre de 2026; crónica de junio de 2025 e información judicial de julio de 2025. Estas publicaciones no fijan por sí solas el estado de un recurso ni los resultados actuales.",
+    "components": [
+      {
+        "id": "declaracion-municipal",
+        "claim": "Completar la reforma con prioridad peatonal y movilidad sostenible",
+        "status": "reported",
+        "finding": "La ficha municipal declara la reforma finalizada, presenta un presupuesto de 38,16 millones de euros y sitúa el final en verano de 2025. Describe aceras de más de cuatro metros y espacios de estancia. El importe publicado no se interpreta como una liquidación auditada; faltan mediciones del conjunto de las mejoras y sus efectos.",
+        "citations": [{ "sourceId": "barcelona-laietana-ficha", "locator": "Descripción, novedades, presupuesto y calendario de la ficha. Se conserva el texto completo, incluidas formulaciones de futuro junto al estado finalizada." }]
+      },
+      {
+        "id": "apertura",
+        "claim": "Corroborar el hito de apertura y evitar atribuciones de todo el proyecto a un mandato",
+        "status": "documented",
+        "finding": "El País describe la inauguración del 29 de junio de 2025 y el inicio de las obras en marzo de 2022. Aporta corroboración periodística del hito; no una auditoría de ejecución.",
+        "citations": [{ "sourceId": "barcelona-laietana-opening", "locator": "Crónica de 29-06-2025. Extracto editorial conservado; no se archiva el artículo original." }]
+      },
+      {
+        "id": "situacion-judicial",
+        "claim": "Resolver el alcance y vigencia de la controversia judicial",
+        "status": "unresolved",
+        "finding": "Europa Press, publicada por El País el 11 de julio de 2025, informa de una sentencia adversa y un recurso anunciado. Sin resolución original ni seguimiento, no se afirma una anulación firme actual.",
+        "citations": [{ "sourceId": "barcelona-laietana-court", "locator": "Información de 11-07-2025, conservada como extracto editorial. Fuente de origen Europa Press; publicación en El País." }]
+      },
+      {
+        "id": "coste-e-impacto",
+        "claim": "Verificar coste final y efectos sobre accesibilidad, movilidad y actividad",
+        "status": "unresolved",
+        "finding": "Faltan liquidación, modificaciones contractuales, mediciones antes y después de tráfico, siniestralidad, accesibilidad y actividad comercial. La apertura y el estado del catálogo no prueban que se hayan alcanzado todos los efectos previstos ni permiten atribuir cambios económicos a la reforma.",
+        "citations": []
+      }
+    ],
+    "contrast": "Se separa una declaración municipal de una crónica de apertura y una noticia de agencia sobre litigios. Las dos noticias aparecen en el mismo medio, pero tienen distinto origen identificado; no son dos auditorías. Los textos conservados son extractos editoriales. La situación judicial posterior y la reconstrucción del compromiso original siguen abiertas.",
+    "pending": [
+      "Recuperar el plan y proyecto originales, las fases anteriores a 2023 y sus modificaciones.",
+      "Conservar y leer la sentencia completa, el recurso y las resoluciones posteriores antes de valorar sus efectos.",
+      "Contrastar liquidación, costes y resultados con fuentes de control y series comparables.",
+      "Completar revisión humana independiente de las fuentes y de esta interpretación."
+    ]
+  }
+]

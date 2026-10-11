@@ -55,3 +55,4 @@ supabase/.temp/
 /playwright-report/
 /.artifacts/
 /audit-community.json
+__pycache__/

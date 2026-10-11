@@ -28,7 +28,10 @@ export function getCoverage() {
           : `Documento conservado y consultado. Origen: ${source.family}. Un enlace adicional no acredita una corroboración independiente; consultar los límites de cada revisión.`,
       })),
       inventoryTotal: balance.inventoryTotal, imported: balance.records.length, reviewed: balance.reviews.length, independentlyReviewed: 0,
-      blockers: [`${balance.inventoryTotal - balance.reviews.length} compromisos pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
+      ...(balance.inventoryKind ? { inventoryKind: balance.inventoryKind, originalInventoryComplete: false } : {}),
+      blockers: [
+        ...(balance.inventoryKind === "action-catalogue" ? ["Catálogo de seguimiento importado; reconstrucción de las promesas originales y cambios del plan pendiente."] : []),
+        `${balance.inventoryTotal - balance.reviews.length} ${balance.inventoryKind ? "actuaciones" : "compromisos"} pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
     };
     const dossier = territorialDossiers[item.id];
     return { ...item, level: item.level as Jurisdiction["level"], mandate: dossier?.mandate ?? null,

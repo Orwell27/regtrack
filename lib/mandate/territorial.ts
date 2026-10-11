@@ -6,10 +6,13 @@ import euskadiInventory from "@/data/mandate/euskadi-inventory.json";
 import euskadiReviews from "@/data/mandate/euskadi-reviews.json";
 import catalunyaInventory from "@/data/mandate/catalunya-inventory.json";
 import catalunyaReviews from "@/data/mandate/catalunya-reviews.json";
+import barcelonaInventory from "@/data/mandate/barcelona-inventory.json";
+import barcelonaReviews from "@/data/mandate/barcelona-reviews.json";
 import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "m-08019": { inventory: barcelonaInventory, reviews: barcelonaReviews, level: "municipality", mandateSourceId: barcelonaInventory.mandateSourceId, sourceLabel: barcelonaInventory.sourceLabel, governmentCutoff: barcelonaInventory.governmentCutoff },
   "r-09": { inventory: catalunyaInventory, reviews: catalunyaReviews, level: "region", mandateSourceId: catalunyaInventory.sourceId, sourceLabel: catalunyaInventory.sourceLabel, governmentCutoff: undefined },
   "m-28079": { inventory: madridInventory, reviews: madridReviews, level: "municipality", mandateSourceId: madridInventory.sourceId, sourceLabel: "Programa", governmentCutoff: undefined },
   "r-15": { inventory: navarraInventory, reviews: navarraReviews, level: "region", mandateSourceId: navarraInventory.mandateSourceId, sourceLabel: navarraInventory.sourceLabel, governmentCutoff: navarraInventory.governmentCutoff },
@@ -28,10 +31,14 @@ export function getTerritorialBalance(id: string): TerritorialBalance | null {
     level, mandateSourceId, sourceLabel,
     ...("textLanguage" in inventory ? { textLanguage: inventory.textLanguage as TerritorialBalance["textLanguage"] } : {}),
     ...(governmentCutoff ? { governmentCutoff } : {}),
+    ...("inventoryKind" in inventory ? { inventoryKind: inventory.inventoryKind as TerritorialBalance["inventoryKind"] } : {}),
+    ...("governmentDateKind" in inventory ? { governmentDateKind: inventory.governmentDateKind as TerritorialBalance["governmentDateKind"] } : {}),
     records: (inventory.records as TerritorialRecord[]).map(record => {
       const { id, officialId, text, topic, page, endPage, sourceId } = record;
       return { id, officialId, text, topic, page, endPage, sourceId,
         ...(record.governmentState ? { governmentState: record.governmentState } : {}),
+        ...(record.governmentProgress ? { governmentProgress: record.governmentProgress } : {}),
+        ...(record.webSource ? { webSource: { url: record.webSource.url, sha256: record.webSource.sha256, retrievedAt: record.webSource.retrievedAt }, detailText: record.detailText, detailLinks: record.detailLinks } : {}),
         ...(record.initiatives ? { initiatives: record.initiatives.map(({ officialId, text, page, endPage }) => ({ officialId, text, page, endPage })) } : {}) };
     }),
     reviews: reviews as TerritorialReview[],

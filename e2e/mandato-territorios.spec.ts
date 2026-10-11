@@ -1,5 +1,46 @@
 import { expect, test } from "@playwright/test";
 
+test("Barcelona publica el catálogo completo y busca dentro de las fichas conservadas", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Barcelona");
+  await expect(page.locator(".mc-list")).toContainText("promesas originales sigue pendiente");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-08019$/);
+  await expect(page.getByRole("status")).toHaveText("1248 resultados · página 1 de 84");
+  await expect(page.locator(".mc-intro")).toContainText("reconstrucción de las promesas originales pendiente");
+  await page.getByRole("button", { name: "Siguiente" }).click();
+  await expect(page.getByRole("status")).toContainText("página 2 de 84");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("1246 resultados");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("all");
+  await page.getByLabel("Buscar medida municipal").fill("538 20.000");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  const inventory = page.locator("#territorial-inventory");
+  await inventory.getByText("Texto completo de la ficha municipal", { exact: true }).click();
+  await expect(inventory.locator("div[lang=ca]")).toContainText("20.000");
+  await expect(inventory).toContainText("SHA-256 del HTML original");
+  await expect(inventory).toContainText("No es una valoración de RegTrack");
+  await expect(inventory.getByRole("link", { name: "Ficha municipal original" })).toHaveAttribute("href", /nou-port-olimpic_538$/);
+});
+
+test("Barcelona en móvil conserva límites temporales y separa apertura, coste y litigios", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-08019");
+  await expect(page.locator(".mt-review")).toHaveCount(2);
+  const port = page.locator("#compromiso-m-08019-538");
+  await expect(port).toContainText("dos mandatos");
+  await expect(port).toContainText("no demuestra que las barreras persistan hoy");
+  const laietana = page.locator("#compromiso-m-08019-493");
+  await expect(laietana).toContainText("no se interpreta como una liquidación auditada");
+  await expect(laietana).toContainText("no se afirma una anulación firme actual");
+  await port.getByText("Actuación publicada y fuente", { exact: true }).click();
+  await port.getByText("Texto completo de la ficha municipal", { exact: true }).click();
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/barcelona-mobile.png", fullPage: true });
+  await page.getByRole("heading", { level: 1 }).scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/barcelona-mobile-viewport.png" });
+});
+
 test("Cataluña conserva el original catalán y permite buscar sus temas en español", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Cataluña");

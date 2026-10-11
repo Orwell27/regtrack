@@ -21,6 +21,8 @@ export type Jurisdiction = {
   imported: number;
   reviewed: number;
   independentlyReviewed: number;
+  inventoryKind?: "action-catalogue";
+  originalInventoryComplete?: boolean;
   blockers: string[];
 };
 export const JURISDICTION_LABELS: Record<JurisdictionLevel, string> = {
@@ -30,6 +32,7 @@ export const JURISDICTION_LABELS: Record<JurisdictionLevel, string> = {
 /** A portal, source count, or empty inventory can never close a balance. */
 export function isCoverageComplete(item: Jurisdiction): boolean {
   return item.mandate !== null && item.inventoryTotal !== null && item.inventoryTotal > 0
+    && item.originalInventoryComplete !== false
     && item.imported === item.inventoryTotal && item.reviewed === item.inventoryTotal
     && item.independentlyReviewed === item.inventoryTotal && item.blockers.length === 0;
 }

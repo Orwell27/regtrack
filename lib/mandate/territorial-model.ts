@@ -18,20 +18,28 @@ export type TerritorialReview = {
   contrast: string; pending: string[];
 };
 export type TerritorialRecord = {
-  id: string; officialId: string; text: string; topic: string; page: number; endPage: number; sourceId: string;
+  id: string; officialId: string; text: string; topic: string; page: number | null; endPage: number | null; sourceId: string;
   governmentState?: string;
+  governmentProgress?: string;
+  detailText?: string;
+  detailLinks?: string[];
+  webSource?: { url: string; sha256: string; retrievedAt: string };
   initiatives?: { officialId: string; text: string; page: number; endPage: number }[];
 };
 export type TerritorialBalance = {
   jurisdictionId: string; mandateId: string; mandateLabel: string; sourceId: string; registerSourceId: string;
   sourceSha256: string; inventoryTotal: number; scope: string; textNote: string;
   textLanguage?: "ca" | "es";
+  inventoryKind?: "action-catalogue";
+  governmentDateKind?: "capture";
   mandateSourceId: string; sourceLabel: string; level: "municipality" | "region"; governmentCutoff?: string;
   records: TerritorialRecord[]; reviews: TerritorialReview[]; sources: TerritorialSource[];
 };
 
 /** Invalid evidence must stop publication; an import cannot create a review. */
 export function validateTerritorialBalance(balance: TerritorialBalance) {
+  if (balance.inventoryKind !== undefined && balance.inventoryKind !== "action-catalogue") throw Error("Tipo de inventario inválido");
+  if (balance.governmentDateKind !== undefined && (balance.governmentDateKind !== "capture" || !balance.governmentCutoff)) throw Error("Fecha de captura inválida");
   if (balance.textLanguage !== undefined && !["ca", "es"].includes(balance.textLanguage)) throw Error("Idioma territorial inválido");
   if (balance.inventoryTotal <= 0 || balance.inventoryTotal !== balance.records.length) throw Error("Inventario territorial incompleto");
   const sources = new Map(balance.sources.map(source => [source.id, source]));
@@ -51,7 +59,13 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
   const ids = new Set<string>();
   for (const record of balance.records) {
     if (ids.has(record.id) || !record.id.startsWith(`${balance.jurisdictionId}-`) || !record.text || !record.officialId
-      || record.sourceId !== balance.sourceId || !Number.isInteger(record.page) || record.page < 1
+      || record.sourceId !== balance.sourceId) throw Error("Compromiso territorial inválido");
+    if (record.webSource) {
+      if (record.page !== null || record.endPage !== null || !record.detailText?.trim()
+        || !/^https:\/\//.test(record.webSource.url) || !/^[a-f0-9]{64}$/.test(record.webSource.sha256)
+        || !Number.isFinite(Date.parse(record.webSource.retrievedAt))
+        || record.detailLinks?.some(url => !/^https?:\/\//.test(url))) throw Error("Ficha web territorial inválida");
+    } else if (record.page === null || record.endPage === null || !Number.isInteger(record.page) || record.page < 1
       || !Number.isInteger(record.endPage) || record.endPage < record.page) throw Error("Compromiso territorial inválido");
     ids.add(record.id);
     if (record.initiatives !== undefined) {
@@ -60,11 +74,13 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
       for (const initiative of record.initiatives) {
         if (!initiative.officialId || initiativeIds.has(initiative.officialId) || !initiative.text.trim()
           || !Number.isInteger(initiative.page) || !Number.isInteger(initiative.endPage)
-          || initiative.page < record.page || initiative.endPage < initiative.page || initiative.endPage > record.endPage) throw Error("Iniciativa territorial inválida");
+          || record.page === null || record.endPage === null || initiative.page < record.page || initiative.endPage < initiative.page || initiative.endPage > record.endPage) throw Error("Iniciativa territorial inválida");
         initiativeIds.add(initiative.officialId);
       }
     }
     if (record.governmentState && (!balance.governmentCutoff || sources.get(balance.sourceId)?.role !== "government-report")) throw Error("Estado gubernamental sin fecha o informe");
+    if (record.governmentProgress && (!record.governmentState || !/^\d{1,3}(?:[.,]\d+)?%$/.test(record.governmentProgress)
+      || Number(record.governmentProgress.slice(0, -1).replace(",", ".")) > 100)) throw Error("Porcentaje gubernamental inválido");
   }
   const reviews = new Set<string>();
   for (const review of balance.reviews) {
