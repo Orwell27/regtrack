@@ -1,0 +1,121 @@
+[
+  {
+    "commitmentId": "r-17-894",
+    "reviewedAt": "2026-10-11",
+    "title": "Deducción deportiva: regulación y aplicación acreditadas, cifras y beneficiarios por conciliar",
+    "conclusion": "La deducción del 30 %, con límite de 300 euros, tiene respaldo normativo y aparece aplicada en la estadística tributaria. Persisten diferencias entre el resumen electoral y la norma, y entre las cifras comunicadas por el Gobierno y la tabla publicada por la AEAT.",
+    "periodNote": "La Ley 11/2023 crea la deducción con efectos desde el 1/01/2023. La Ley 13/2023 modifica su alcance personal con la misma retroactividad. Se distinguen el ejercicio fiscal 2023, la comunicación de septiembre de 2024 y el manual de Renta 2025 consultado en octubre de 2026.",
+    "components": [
+      {
+        "id": "norma",
+        "claim": "Creación y alcance de la deducción",
+        "status": "documented",
+        "finding": "La Ley 11/2023 introduce el artículo 32.17 de la Ley 10/2017. La Ley 13/2023 precisa que se incluyen gastos del contribuyente, su cónyuge y personas que dan derecho al mínimo personal y familiar. El manual de la AEAT para 2025 mantiene el 30 % y el máximo anual de 300 euros, con servicios prestados en La Rioja, factura completa y prorrateo cuando existe derecho compartido. No equivale a una devolución universal de 300 euros.",
+        "citations": [
+          { "sourceId": "rioja-sports-law-2023", "locator": "Artículo único, uno; disposición final única" },
+          { "sourceId": "rioja-sports-law-2024", "locator": "Artículo 1, cinco: modificación de los dos primeros párrafos del artículo 32.17" },
+          { "sourceId": "rioja-sports-guide-2025", "locator": "Cuantía, límite, requisitos y prorrateo; ejercicio 2025" }
+        ]
+      },
+      {
+        "id": "beneficiarios",
+        "claim": "Diferencia entre el resumen electoral y la norma",
+        "status": "documented",
+        "finding": "La página 15 del programa anuncia el 100 % para jubilados y personas con discapacidad superior al 33 %; el desarrollo de la página 161 solo repite el 30 % y el límite. La norma y el manual fijan el 100 % para mayores de 65 años o discapacidad igual o superior al 33 %. La edad no equivale a la condición de jubilado, y el umbral legal incluye exactamente el 33 %. Estas diferencias impiden afirmar una coincidencia literal de todos los beneficiarios prometidos.",
+        "citations": [
+          { "sourceId": "rioja-programme", "locator": "Resumen, eje Deporte y juventud", "page": 15 },
+          { "sourceId": "rioja-programme", "locator": "Propuestas en materia deportiva", "page": 161 },
+          { "sourceId": "rioja-sports-guide-2025", "locator": "Porcentaje reforzado por edad y discapacidad" }
+        ]
+      },
+      {
+        "id": "aplicacion",
+        "claim": "Aplicación en las declaraciones del ejercicio 2023",
+        "status": "documented",
+        "finding": "La partida 1168 de la estadística de la AEAT para La Rioja recoge 50.668 liquidaciones y 5.316.485 euros. El total se concilia exactamente con 46.024 individuales y 4.644 conjuntas, por 4.590.921 y 725.564 euros, respectivamente. La metodología define el número como liquidaciones con contenido en la partida: no se transforma en un número de personas beneficiarias ni en deportistas nuevos. Las tres tablas pertenecen a la misma operación estadística, no son tres corroboraciones independientes.",
+        "citations": [
+          { "sourceId": "rioja-sports-statistics-total-2023", "locator": "La Rioja, ejercicio 2023, total, partida 1168; importe en euros" },
+          { "sourceId": "rioja-sports-statistics-individual-2023", "locator": "Partida 1168, declaración individual" },
+          { "sourceId": "rioja-sports-statistics-joint-2023", "locator": "Partida 1168, declaración conjunta" },
+          { "sourceId": "rioja-sports-statistics-methodology", "locator": "Estadística por partidas: definición de número, importe y media", "page": 7 }
+        ]
+      },
+      {
+        "id": "discrepancia",
+        "claim": "Balance comunicado y diferencia sin conciliar",
+        "status": "unresolved",
+        "finding": "El Gobierno comunicó el 18/09/2024 que 57.402 contribuyentes se beneficiaron por 5.914.786 euros en Renta 2023, atribuyendo los datos a la AEAT. No coincide con la tabla conservada. Faltan el fichero entregado al Gobierno, su fecha de corte y la conciliación de población y versión. No se elige la cifra mayor ni se declara falsa la comunicación sin resolver esas diferencias. De la noticia se conserva una nota editorial de lectura; la descarga directa del original respondió 403.",
+        "citations": [
+          { "sourceId": "rioja-sports-government-2024", "locator": "Noticia de 18/09/2024; nota editorial, no HTML original" },
+          { "sourceId": "rioja-sports-statistics-total-2023", "locator": "Partida 1168, total publicado para el ejercicio 2023" }
+        ]
+      },
+      {
+        "id": "impacto",
+        "claim": "Más práctica deportiva y mejora de salud",
+        "status": "unresolved",
+        "finding": "Una deducción aplicada acredita uso fiscal, pero no identifica cuánto deporte adicional generó ni su efecto sobre la salud. Faltan indicadores comparables, distribución entre colectivos y una evaluación que separe otros factores. Tampoco se han revisado aquí todos los ejercicios posteriores a 2023.",
+        "citations": []
+      }
+    ],
+    "contrast": "El programa, las normas autonómicas y las tablas de la AEAT se contrastan por contenido, periodo y unidad. El BOE publica la norma riojana y no añade una evaluación de resultados. La AEAT es un origen distinto al Gobierno regional, pero su estadística no verifica por sí sola el impacto sanitario.",
+    "pending": [
+      "Conciliar el balance de 57.402 contribuyentes con la estadística de 50.668 liquidaciones y sus importes.",
+      "Examinar ejercicios posteriores y el alcance efectivo para jubilados menores de 66 años.",
+      "Evaluar práctica deportiva adicional y completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-17-714",
+    "reviewedAt": "2026-10-11",
+    "title": "Medicina: evaluación favorable y oferta docente; relevo sanitario todavía por comprobar",
+    "conclusion": "El registro de ANECA recoge una evaluación favorable de Medicina en la Universidad de La Rioja, que publica guías del curso 2026–2027 y comunica su incorporación a la oferta. Esto no resuelve todas las partes del compromiso: ampliación de Enfermería, investigación, integración sanitaria y retención de profesionales.",
+    "periodNote": "El programa de 2023 repite Medicina en Sanidad, páginas 102–103, en Educación, página 132, y en el resumen de la página 15. Esta ficha revisa el apartado educativo; las reiteraciones no representan tres grados implantados. La comunicación universitaria examinada es del 16/09/2026.",
+    "components": [
+      {
+        "id": "evaluacion",
+        "claim": "Evaluación externa del título",
+        "status": "documented",
+        "finding": "El registro público de ANECA contiene la fila Universidad de La Rioja, Graduado o Graduada en Medicina, trámite de alegación y resultado favorable. Acredita una evaluación externa del diseño del título; no es una auditoría de la ejecución del programa político ni del funcionamiento de todos los cursos.",
+        "citations": [
+          { "sourceId": "rioja-medicine-aneca-register", "locator": "Informes por institución y rama; Ciencias de Salud, Universidad de La Rioja, Medicina, Alegación, Favorable" }
+        ]
+      },
+      {
+        "id": "documentacion",
+        "claim": "Secuencia administrativa publicada por la Universidad",
+        "status": "reported",
+        "finding": "El registro universitario enumera memoria de 15/05/2026, informe de ANECA de 28/05/2026, resolución del Consejo de Universidades de 18/06/2026 y acuerdo autonómico de 14/07/2026, con referencia al BOR de 20/07/2026. Se conserva el registro, pero los enlaces a los documentos completos no devolvieron PDF en esta consulta. Las fechas se atribuyen al registro universitario; queda pendiente cotejar directamente las resoluciones y sus condiciones.",
+        "citations": [
+          { "sourceId": "rioja-medicine-documents", "locator": "Verificación inicial, alta inicial: cuatro documentos enlazados" }
+        ]
+      },
+      {
+        "id": "docencia",
+        "claim": "Oferta y comienzo del curso 2026–2027",
+        "status": "reported",
+        "finding": "La Universidad publica asignaturas y guías docentes para 2026–2027. En la apertura oficial del 16 de septiembre, la rectora incluye Medicina entre las nuevas titulaciones de ese curso. Se contrasta la comunicación con la oferta académica publicada; no se ha auditado la matrícula efectiva, la impartición de cada asignatura ni la dotación de los cursos futuros.",
+        "citations": [
+          { "sourceId": "rioja-medicine-courses-2026", "locator": "Asignaturas y guías docentes, curso 2026–2027" },
+          { "sourceId": "rioja-medicine-opening-2026", "locator": "Apertura del curso, 16/09/2026; nuevas titulaciones" }
+        ]
+      },
+      {
+        "id": "resto",
+        "claim": "Enfermería, investigación, integración y retención de profesionales",
+        "status": "unresolved",
+        "finding": "El apartado también promete ampliar Enfermería, desarrollar investigación, reforzar la Facultad y su relación con Hospital San Pedro y CIBIR, y atraer profesionales para que permanezcan en La Rioja. La existencia de Medicina no acredita esas partes. Faltan series comparables de plazas y matrícula de Enfermería, ejecución de recursos, actividad conjunta y seguimiento de egresados y personal sanitario.",
+        "citations": [
+          { "sourceId": "rioja-programme", "locator": "Apartado de oferta académica e investigación en ciencias de la salud", "page": 132 },
+          { "sourceId": "rioja-programme", "locator": "Relevo generacional del personal sanitario; continuación en página 103", "page": 102 }
+        ]
+      }
+    ],
+    "contrast": "ANECA aporta un origen evaluador distinto de la Universidad y del Gobierno autonómico. La evaluación favorable se limita al título. Los enlaces universitarios a resoluciones se presentan como registro, sin afirmar que se hayan leído documentos completos no recuperados. La implantación académica y los resultados del sistema sanitario se mantienen separados.",
+    "pending": [
+      "Obtener y cotejar íntegramente las resoluciones de verificación y autorización y sus condiciones.",
+      "Comprobar matrícula, docencia efectiva y recursos de Medicina, y las partes restantes de Enfermería e investigación.",
+      "Conciliar reiteraciones del programa y completar revisión humana independiente."
+    ]
+  }
+]

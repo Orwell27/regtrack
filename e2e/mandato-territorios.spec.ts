@@ -1,5 +1,37 @@
 import { expect, test } from "@playwright/test";
 
+test("La Rioja distingue los apartados documentales de las promesas únicas", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("La Rioja");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await expect(page.locator(".mc-list")).toContainText("949 de 949");
+  await expect(page.locator(".mc-list")).toContainText("formuladas en prosa pendiente");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-17$/);
+  await expect(page.locator(".mc-intro")).toContainText("Apartados con viñeta importados");
+  await expect(page.getByRole("status")).toHaveText("949 resultados · página 1 de 64");
+  await page.getByLabel("Buscar medida autonómica").fill("relevo generacional de los profesionales sanitarios");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Enfermería ya existente");
+  await expect(page.locator("#territorial-inventory")).toContainText("página 102–103");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("947 resultados");
+});
+
+test("La Rioja en móvil conserva la discrepancia fiscal y los límites académicos", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-17");
+  const sport = page.locator("#compromiso-r-17-894");
+  await expect(sport).toContainText("50.668 liquidaciones");
+  await expect(sport).toContainText("57.402 contribuyentes");
+  await expect(sport).toContainText("nota editorial");
+  await expect(page.locator("#compromiso-r-17-714")).toContainText("no devolvieron PDF");
+  await expect(page.locator("#compromiso-r-17-714")).toContainText("Enfermería");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/rioja-mobile.png", fullPage: true });
+});
+
 test("Asturias distingue el preacuerdo y conserva las condiciones sin numeración oficial", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Asturias");

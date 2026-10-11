@@ -34,7 +34,7 @@ export type TerritorialBalance = {
   sourceSha256: string; inventoryTotal: number; scope: string; textNote: string;
   textLanguage?: "ca" | "es";
   programmeCopy?: boolean;
-  inventoryKind?: "action-catalogue" | "strategic-plan" | "initial-programme" | "preagreement";
+  inventoryKind?: "action-catalogue" | "strategic-plan" | "initial-programme" | "preagreement" | "bullet-sections";
   governmentDateKind?: "capture";
   mandateSourceId: string; sourceLabel: string; level: "municipality" | "region" | "autonomous-city"; governmentCutoff?: string;
   records: TerritorialRecord[]; reviews: TerritorialReview[]; sources: TerritorialSource[];
@@ -44,7 +44,7 @@ export type TerritorialBalance = {
 /** Invalid evidence must stop publication; an import cannot create a review. */
 export function validateTerritorialBalance(balance: TerritorialBalance) {
   if (balance.programmeCopy !== undefined && typeof balance.programmeCopy !== "boolean") throw Error("Procedencia del programa inválida");
-  if (balance.inventoryKind !== undefined && !["action-catalogue", "strategic-plan", "initial-programme", "preagreement"].includes(balance.inventoryKind)) throw Error("Tipo de inventario inválido");
+  if (balance.inventoryKind !== undefined && !["action-catalogue", "strategic-plan", "initial-programme", "preagreement", "bullet-sections"].includes(balance.inventoryKind)) throw Error("Tipo de inventario inválido");
   if (balance.governmentDateKind !== undefined && (balance.governmentDateKind !== "capture" || !balance.governmentCutoff)) throw Error("Fecha de captura inválida");
   if (balance.textLanguage !== undefined && !["ca", "es"].includes(balance.textLanguage)) throw Error("Idioma territorial inválido");
   if (balance.inventoryTotal <= 0 || balance.inventoryTotal !== balance.records.length) throw Error("Inventario territorial incompleto");
