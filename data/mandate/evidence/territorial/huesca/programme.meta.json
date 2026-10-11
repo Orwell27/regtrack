@@ -1,0 +1,14 @@
+{
+  "url": "https://web.archive.org/web/20230518162522/https://www.lorenatieneunplan.es/wp-content/uploads/PP.pdf",
+  "originalUrl": "https://www.lorenatieneunplan.es/wp-content/uploads/PP.pdf",
+  "archiveTimestamp": "20230518162522",
+  "sha256": "b30d2b8b6521f43a50e420f008fd41fc1215581e428792dec8650811eac8f13e",
+  "bytes": 1700245,
+  "retrievedAt": "2026-10-11T13:35:43.878223+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/huesca/programme.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "fdee04a8dbc0f21db6be7aa97970988b53475da727a95e48667369d70d92f8cd",
+  "extractionMethod": "pypdfium2 get_text_range",
+  "extractionVersion": "5.13.0",
+  "limitation": "PDF recuperado de una captura de Internet Archive. No es una descarga del servidor de campaña vigente ni contiene el programa completo. Dos páginas cotejadas visualmente por el agente; sin revisión humana independiente."
+}

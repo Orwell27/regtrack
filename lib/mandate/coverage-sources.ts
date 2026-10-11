@@ -6,13 +6,6 @@ function source(id: string, title: string, url: string, publisher: string, famil
 }
 /** Discovery register. Sources here do not count as reviewed commitments. */
 export const territorialDossiers: Record<string, Dossier> = {
-  "m-22125": {
-    mandate: null, sources: [],
-    blockers: [
-      "Consulta de 11/10/2026: la web de campaña lorenatieneunplan.es no resolvió; no se ha recuperado el programa original. La recopilación periodística localizada no se presenta como inventario completo.",
-      "La consulta de disponibilidad del archivo para esa dirección y 27/05/2023 no devolvió una captura; el índice CDX respondió 503. Esto no demuestra que no exista otra copia. La web municipal respondió 403 en el lector utilizado.",
-    ],
-  },
   "m-44216": {
     mandate: { label: "Corporación municipal constituida el 17/06/2023", sourceId: "teruel-constitution" },
     sources: [

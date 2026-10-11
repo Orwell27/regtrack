@@ -1,6 +1,6 @@
 # Huesca y Teruel: registro de fuentes y límites
 
-Corte de consulta: 11/10/2026. Ambas capitales siguen **sin inventario** y con cero compromisos revisados. Estas comprobaciones no elevan el número de administraciones con revisión ni el de fichas.
+Corte de consulta: 11/10/2026. Teruel sigue **sin inventario**. Huesca incorpora una selección de cinco puntos electorales, tres fichas parciales y trece componentes contrastados. El conjunto alcanza 31 administraciones con revisión parcial y 130 fichas; quedan 39 capitales sin inventario, además de compromisos sin revisar en los territorios ya incorporados. Ninguna administración está cerrada y no hay revisión humana independiente registrada.
 
 ## Teruel, municipio `m-44216`
 
@@ -20,4 +20,19 @@ La web de campaña `lorenatieneunplan.es`, identificada por prensa contemporáne
 
 La [recopilación periodística de 16/05/2023](https://www.eldiariodehuesca.com/elecciones-2023/pp-huesca-apuesta-por-ciudad-activa-atractiva-vivir-en-entorno-unico_9174_102.html) contiene 18 encabezados temáticos. Se conserva como pista de búsqueda, sin copiarla como programa original ni asumir que contiene todas las promesas. El material de otras candidaturas o propuestas de asociaciones tampoco se atribuye al gobierno.
 
-Pendientes: localizar original o copia contrastable, verificar el acta de constitución y la continuidad del mandato, fijar unidades del inventario y revisar resultados. Las incidencias de acceso se muestran con fecha: no se atribuye falta de transparencia deliberada ni incumplimiento material a una descarga fallida.
+### Recuperación posterior durante la misma consulta
+
+La variante `http://www.lorenatieneunplan.es/` sí devolvió una captura en Wayback Availability. Se recuperó la [portada archivada el 18/05/2023](https://web.archive.org/web/20230518144405/https://www.lorenatieneunplan.es/) y su enlace a un [PDF de lectura fácil de dos páginas](https://web.archive.org/web/20230518162522/https://www.lorenatieneunplan.es/wp-content/uploads/PP.pdf). Esto sustituye el estado inicial de «original no recuperado» por «selección recuperada; programa íntegro pendiente». Las cuatro rutas temáticas ensayadas en esa captura devolvieron 404. No se usa el texto de plantilla del pie de la portada como contenido electoral.
+
+El PDF tiene 1.700.245 bytes y SHA-256 `b30d2b8b6521f43a50e420f008fd41fc1215581e428792dec8650811eac8f13e`. La descarga al primer timestamp devolvió un visor HTML con HTTP 200; solo se aceptó la respuesta posterior con cabecera `%PDF-` y dos páginas legibles. La huella de la portada corresponde al HTML reescrito por el servicio de archivo. La captura de mayo de 2023 no se presenta como fecha exacta de publicación.
+
+La primera página describe expresamente una selección de cinco puntos. Se conservan los originales y la extracción digital, con errores de ligaturas, y se han cotejado visualmente ambas páginas. La vista pública contiene resúmenes editoriales de los puntos 1–5, todos en la página 2, con esa naturaleza indicada. No reproduce íntegramente el texto ni lo confunde con el programa completo. «Walqua» es la grafía del original. Las declaraciones políticas sobre otras ciudades no se convierten en hechos de RegTrack.
+
+### Mandato y contraste
+
+- El convenio inscrito el 09/07/2024 (firma impresa de 04/06/2024) identifica en su página 1 la toma de posesión de Lorena Orduna el 17/06/2023. El decreto de delegaciones publicado el 20/02/2026 y la comunicación universitaria de septiembre de 2026 la identifican como alcaldesa. No se afirma haber recuperado el acta de constitución ni validado criptográficamente las firmas.
+- Vivienda: el BOP corregido de 01/10/2024 acredita una convocatoria de 391.941,86 euros para el Casco Histórico y Ensanche. No demuestra pagos, obras terminadas ni recuperación de solares. Se conserva la corrección de los puntos cuarto y quinto y se distingue plazo de solicitudes de ejecución.
+- Universidad: el anuncio de 28/03/2023 precede a la alcaldía actual. La nota de 14/09/2026 comunica apertura e inversión entre varias instituciones. La ficha académica conservada en español sitúa los seis cursos en 2029–2030: capacidad del edificio no equivale a implantación completa. La versión del lector web estaba en inglés y no devolvía ese pasaje; la comprobación usa el HTML español descargado. Las tres fuentes son de Unizar, entidad ejecutora, no tres corroboraciones independientes.
+- Impuestos: el BOP de 29/12/2025 acredita el cambio de coeficiente de turismos de 1,875 a 1,87 para 2026. El cambio relativo es aproximadamente 0,267 %. La modificación del IBI examinada se refiere a empleados; no se extrapola a vivienda general ni familias numerosas. Faltan la serie normativa del mandato y los efectos familiares.
+
+Nueve documentos originales conservados en `data/mandate/evidence/territorial/huesca/`, agrupados en tres familias de origen. Los anuncios municipales del BOP no se clasifican como control independiente por publicarlos la Diputación. Ocio y patrimonio permanecen sin revisión. Quedan el programa íntegro, propuestas posteriores, componentes sin resolver y revisión humana independiente. Los errores DNS/403/503 se registran como incidencias de consulta, sin atribuirles incumplimiento político.

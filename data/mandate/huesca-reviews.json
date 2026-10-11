@@ -1,0 +1,226 @@
+[
+  {
+    "commitmentId": "m-22125-1",
+    "reviewedAt": "2026-10-11",
+    "title": "Casco histórico: ayudas convocadas; obras y solares sin conciliar",
+    "conclusion": "El BOP acredita una convocatoria de rehabilitación. No acredita su pago, la terminación de las obras ni la recuperación de todos los solares.",
+    "periodNote": "Selección electoral de mayo de 2023 y convocatoria corregida de octubre de 2024; corte de revisión 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Vivienda y solares son partes diferentes",
+        "status": "promise-documented",
+        "finding": "El primer punto reúne rehabilitación urbana y reutilización de solares. Una ayuda a edificios no resuelve automáticamente ambas partes.",
+        "citations": [
+          {
+            "sourceId": "huesca-programme",
+            "locator": "Punto 1",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "convocatoria",
+        "claim": "Acto administrativo con importe y plazo",
+        "status": "documented",
+        "finding": "El anuncio corregido de 01/10/2024 destina 391.941,86 euros a rehabilitación en el Casco Histórico y Ensanche. Abre solicitudes del 1 de octubre al 2 de diciembre de 2024. Es una convocatoria, no gasto ejecutado.",
+        "citations": [
+          {
+            "sourceId": "huesca-housing-call",
+            "locator": "Objeto, cuantía y plazo de solicitudes",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "correccion",
+        "claim": "Versión de la convocatoria utilizada",
+        "status": "documented",
+        "finding": "La publicación corrige los puntos cuarto y quinto del anuncio de 30/09/2024. Se usa esta versión corregida y no se confunden las fechas de solicitud con las de terminación de obras.",
+        "citations": [
+          {
+            "sourceId": "huesca-housing-call",
+            "locator": "Corrección del anuncio anterior",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Ejecución, impacto y solares",
+        "status": "unresolved",
+        "finding": "Faltan concesiones, pagos, obras justificadas y un inventario de solares con usos efectivos. Esta documentación no permite declarar cumplida ni incumplida la rehabilitación prometida.",
+        "citations": [
+          {
+            "sourceId": "huesca-housing-call",
+            "locator": "Alcance de la convocatoria",
+            "page": 2
+          }
+        ]
+      }
+    ],
+    "contrast": "El BOP conserva el acto del Ayuntamiento; su publicación por la Diputación no es una auditoría independiente de resultados. No se ha obtenido corroboración externa de las obras terminadas.",
+    "pending": [
+      "Conciliar convocatoria completa BDNS 787742, modificaciones posteriores, concesiones, pagos y justificación final.",
+      "Localizar el inventario de solares y contrastar adquisiciones, obras, recepción y uso efectivo.",
+      "Separar financiación y actuaciones anteriores a junio de 2023 del trabajo del mandato actual."
+    ]
+  },
+  {
+    "commitmentId": "m-22125-2",
+    "reviewedAt": "2026-10-11",
+    "title": "Medicina: origen anterior al mandato y ampliación gradual",
+    "conclusion": "La Universidad documenta la planificación previa a junio de 2023 y comunica nuevas instalaciones en 2026. La ampliación académica continúa por cursos; no se acredita todavía todo el objetivo universitario y biotecnológico.",
+    "periodNote": "Anuncio de 28/03/2023, ficha académica 2025–2026 y apertura comunicada el 14/09/2026; corte 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Estudios biosanitarios y empresas",
+        "status": "promise-documented",
+        "finding": "El punto segundo combina expansión universitaria, estudios biosanitarios y apoyo a empresas biotecnológicas. La revisión de Medicina no cubre por sí sola esos tres ámbitos.",
+        "citations": [
+          {
+            "sourceId": "huesca-programme",
+            "locator": "Punto 2",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "origen",
+        "claim": "Preparación anterior a la toma de posesión",
+        "status": "documented",
+        "finding": "La Universidad publicó el acuerdo Aragón–Unizar el 28/03/2023, antes de la toma de posesión municipal del 17/06/2023. El anuncio preveía empezar la implantación en 2024–2025 y tercero en 2026–2027, condicionando la financiación a un contrato programa.",
+        "citations": [
+          {
+            "sourceId": "huesca-medicine-origin",
+            "locator": "Calendario y financiación requerida"
+          },
+          {
+            "sourceId": "huesca-register-2024",
+            "locator": "Identificación de la alcaldesa y toma de posesión",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "instalaciones",
+        "claim": "Apertura comunicada en 2026",
+        "status": "reported",
+        "finding": "La Universidad comunica la presentación de las nuevas instalaciones el 14/09/2026 y una rehabilitación superior a siete millones de euros, más equipamiento. Describe una colaboración entre varias instituciones; no se atribuye todo el coste ni el resultado al Ayuntamiento.",
+        "citations": [
+          {
+            "sourceId": "huesca-medicine-open",
+            "locator": "Presentación e inversión"
+          }
+        ]
+      },
+      {
+        "id": "calendario",
+        "claim": "Edificio preparado y cursos implantados son hechos distintos",
+        "status": "documented",
+        "finding": "La ficha académica 2025–2026 sitúa la impartición completa de los seis cursos en 2029–2030. La capacidad del nuevo edificio para alojarlos no demuestra que todos se impartan ya en 2026.",
+        "citations": [
+          {
+            "sourceId": "huesca-medicine-study",
+            "locator": "Presentación de los estudios · implantación en Huesca"
+          },
+          {
+            "sourceId": "huesca-medicine-open",
+            "locator": "Capacidad futura del edificio"
+          }
+        ]
+      },
+      {
+        "id": "pendientes",
+        "claim": "Contribución municipal y restantes propuestas",
+        "status": "unresolved",
+        "finding": "Faltan los compromisos financieros municipales ejecutados, matrícula y docencia efectiva por curso, y resultados del apoyo a empresas biotecnológicas. Farmacia aparece en la comunicación de 2026 como siguiente paso, no como titulación ya implantada.",
+        "citations": [
+          {
+            "sourceId": "huesca-medicine-open",
+            "locator": "Intervención de la alcaldesa"
+          },
+          {
+            "sourceId": "huesca-programme",
+            "locator": "Alcance del punto 2",
+            "page": 2
+          }
+        ]
+      }
+    ],
+    "contrast": "Las tres fuentes universitarias pertenecen a una sola institución, que además ejecuta el proyecto. Son externas al Ayuntamiento, pero no tres auditorías independientes. La cronología permite separar preparación y ejecución, sin atribuir causalidad exclusiva.",
+    "pending": [
+      "Cotejar convenios, aportaciones municipales y liquidaciones con Aragón, Diputación y Universidad.",
+      "Verificar implantación efectiva por curso y resultados de las empresas biotecnológicas, sin equiparar centros de datos con biotecnología.",
+      "Conciliar este resumen electoral con el programa íntegro y las propuestas biosanitarias posteriores."
+    ]
+  },
+  {
+    "commitmentId": "m-22125-5",
+    "reviewedAt": "2026-10-11",
+    "title": "Impuestos: reducción normativa en turismos; balance familiar pendiente",
+    "conclusion": "El BOP acredita una pequeña reducción del coeficiente de turismos para 2026. Los cambios del IBI examinados se refieren a empleo; no bastan para comprobar la rebaja general sobre vivienda ni el apoyo a familias numerosas.",
+    "periodNote": "Programa de 2023 y modificación aprobada el 22/12/2025, publicada el 29/12/2025 y aplicable desde el 01/01/2026; corte 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Tres objetivos fiscales y familiares",
+        "status": "promise-documented",
+        "finding": "El quinto punto propone reducciones sobre vivienda y vehículos y ayuda a familias numerosas. No cuantifica una rebaja. Su comparación inicial con otras ciudades no se adopta como hecho verificado.",
+        "citations": [
+          {
+            "sourceId": "huesca-programme",
+            "locator": "Punto 5",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "turismos",
+        "claim": "Cambio normativo aplicable en 2026",
+        "status": "documented",
+        "finding": "El anexo sustituye el coeficiente de turismos 1,875 por 1,87. Esa variación es de 0,005 unidades, aproximadamente un 0,267 % del coeficiente anterior; no de medio punto porcentual de un tipo tributario. Se acredita la norma, no el ahorro real de cada hogar.",
+        "citations": [
+          {
+            "sourceId": "huesca-tax-change",
+            "locator": "Ordenanza fiscal nº 2",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "ibi",
+        "claim": "Bonificaciones por empleo, no por número de hijos",
+        "status": "documented",
+        "finding": "La modificación del IBI en este anexo utiliza tramos de empleados. No acredita por sí sola una reducción general para viviendas ni cambios en la bonificación por familia numerosa.",
+        "citations": [
+          {
+            "sourceId": "huesca-tax-change",
+            "locator": "Ordenanza fiscal nº 1, artículo 5.7",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "balance",
+        "claim": "Evolución completa de la carga familiar",
+        "status": "unresolved",
+        "finding": "Faltan textos comparables desde 2023, bonificaciones familiares aplicadas y liquidaciones. Una reducción parcial del IVTM no permite concluir que la carga total haya bajado para todos los hogares.",
+        "citations": [
+          {
+            "sourceId": "huesca-tax-change",
+            "locator": "Alcance de las modificaciones para 2026",
+            "page": 1
+          }
+        ]
+      }
+    ],
+    "contrast": "El boletín acredita la disposición municipal y su entrada en vigor, no una evaluación externa de su aplicación. La comprobación no usa titulares periodísticos ni propuestas para 2027 como si fueran normas vigentes.",
+    "pending": [
+      "Comparar ordenanzas vigentes en 2023, 2024, 2025 y 2026; separar impuestos, tasas y bonificaciones.",
+      "Contrastar beneficiarios y ahorro efectivo con liquidaciones, sin publicar datos personales.",
+      "Revisar por separado la comparación con otras ciudades, usando bases y perfiles fiscales homogéneos."
+    ]
+  }
+]

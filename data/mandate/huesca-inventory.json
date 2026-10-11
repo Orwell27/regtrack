@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "m-22125",
+  "mandateId": "m-22125-2023",
+  "mandateLabel": "Huesca · mandato municipal iniciado el 17/06/2023",
+  "sourceId": "huesca-programme",
+  "mandateSourceId": "huesca-programme",
+  "registerSourceId": "huesca-register-2024",
+  "sourceLabel": "Selección electoral de cinco puntos · resumen editorial",
+  "sourceSha256": "b30d2b8b6521f43a50e420f008fd41fc1215581e428792dec8650811eac8f13e",
+  "importedAt": "2026-10-11",
+  "textLanguage": "es",
+  "inventoryKind": "initial-programme",
+  "inventoryTotal": 5,
+  "scope": "Cinco puntos seleccionados por el documento electoral de lectura fácil del PP de Huesca, enlazado desde la web de Lorena Orduna y archivado el 18/05/2023. Es un subconjunto del programa, no el universo completo del mandato; cada punto puede contener varias propuestas.",
+  "textNote": "Las cinco entradas son resúmenes editoriales, no transcripciones literales. El PDF original tiene dos páginas y atribuye la adaptación de lectura fácil a Valentia; se recuperó de Internet Archive, no de la web de campaña actual. La extracción digital conserva errores de ligaturas; ambas páginas se cotejaron visualmente por el agente. El original escribe «Walqua» para el parque tecnológico. La fecha del archivo no se trata como fecha de publicación. El convenio registrado en julio de 2024 identifica la toma de posesión de Lorena Orduna el 17/06/2023; un decreto de febrero de 2026 y la comunicación universitaria de septiembre de 2026 la identifican como alcaldesa. No se ha recuperado el acta de constitución ni el programa íntegro. Firmas electrónicas no validadas y revisión humana independiente pendiente.",
+  "records": [
+    {
+      "id": "m-22125-1",
+      "officialId": "1",
+      "text": "Rehabilitar el casco antiguo y dar uso a los solares abandonados.",
+      "topic": "Vivienda y solares",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "huesca-programme",
+      "sourceNote": "Resumen editorial del punto numerado del PDF; consultar el original para el texto completo."
+    },
+    {
+      "id": "m-22125-2",
+      "officialId": "2",
+      "text": "Ampliar la presencia universitaria, apoyar estudios biosanitarios y favorecer empresas de biotecnología en el parque tecnológico citado por el documento.",
+      "topic": "Universidad y biotecnología",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "huesca-programme",
+      "sourceNote": "Resumen editorial del punto numerado del PDF; consultar el original para el texto completo."
+    },
+    {
+      "id": "m-22125-3",
+      "officialId": "3",
+      "text": "Ampliar las actividades culturales y de ocio para todas las edades, con atención a la juventud.",
+      "topic": "Ocio y cultura",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "huesca-programme",
+      "sourceNote": "Resumen editorial del punto numerado del PDF; consultar el original para el texto completo."
+    },
+    {
+      "id": "m-22125-4",
+      "officialId": "4",
+      "text": "Proteger el patrimonio local, incluidos monumentos, tradiciones y fondos documentales, y vincular su conservación a la mejora de la ciudad.",
+      "topic": "Patrimonio histórico",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "huesca-programme",
+      "sourceNote": "Resumen editorial del punto numerado del PDF; consultar el original para el texto completo."
+    },
+    {
+      "id": "m-22125-5",
+      "officialId": "5",
+      "text": "Reducir los impuestos sobre vivienda y vehículos y apoyar a las familias numerosas. La comparación fiscal con otras ciudades pertenece al discurso del programa y no está verificada aquí.",
+      "topic": "Impuestos y familias",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "huesca-programme",
+      "sourceNote": "Resumen editorial del punto numerado del PDF; consultar el original para el texto completo."
+    }
+  ]
+}

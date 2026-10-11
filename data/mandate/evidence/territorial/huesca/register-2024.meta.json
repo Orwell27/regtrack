@@ -1,0 +1,12 @@
+{
+  "url": "https://www.boa.aragon.es/cgi-bin/RECO/BRSCGI?CMD=VEROBJ&MLKOB=1342336820303",
+  "finalUrl": "https://www.boa.aragon.es/cgi-bin/RECO/BRSCGI?CMD=VEROBJ&MLKOB=1342336820303",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "3445f42280851f9dcb4c4de2981e0dd3e090a1515666b20e28e3d3f73846da64",
+  "bytes": 904773,
+  "retrievedAt": "2026-10-11T13:34:30.878379+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/huesca/register-2024.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "bf66b3b33fe940fb69e6b44a04c92a5d4660e3ddd0d96e0e3f97945ef280567e"
+}

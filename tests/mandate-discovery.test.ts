@@ -8,7 +8,7 @@ import { getTerritorialBalance } from "@/lib/mandate/territorial";
 describe("fuentes localizadas sin convertirlas en compromisos revisados", () => {
   it("conserva el universo desconocido aunque se haya acreditado la constitución de Teruel", () => {
     const all = getCoverage();
-    for (const id of ["m-22125", "m-44216"]) {
+    for (const id of ["m-44216"]) {
       const item = all.find(item => item.id === id)!;
       expect(item).toMatchObject({ inventoryTotal: null, imported: 0, reviewed: 0, independentlyReviewed: 0 });
       expect(isCoverageComplete(item)).toBe(false);
@@ -20,8 +20,8 @@ describe("fuentes localizadas sin convertirlas en compromisos revisados", () => 
     expect(teruel.sources.every(source => source.role === "register" && source.consultedAt === "2026-10-11")).toBe(true);
     expect(new Set(teruel.sources.map(source => source.family)).size).toBe(1);
     expect(teruel.blockers.join(" ")).toContain("sin transcripción cotejada");
-    expect(all.filter(item => item.inventoryTotal === null)).toHaveLength(40);
-    expect(all.reduce((sum, item) => sum + item.reviewed, 0)).toBe(127);
+    expect(all.filter(item => item.inventoryTotal === null)).toHaveLength(39);
+    expect(all.reduce((sum, item) => sum + item.reviewed, 0)).toBe(130);
     expect(JSON.stringify(all)).not.toMatch(/snapshotPath|extractionSha256|14613671553607447415/);
   });
 

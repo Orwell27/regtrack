@@ -1,5 +1,27 @@
 import { expect, test } from "@playwright/test";
 
+test("Huesca conserva el alcance resumido, las pruebas y los pendientes", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Huesca");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-22125$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Huesca · mandato municipal iniciado el 17/06/2023");
+  await expect(page.locator(".mc-intro")).toContainText("subconjunto del programa");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.locator("#compromiso-m-22125-2")).toContainText("2029–2030");
+  await expect(page.locator("#compromiso-m-22125-5")).toContainText("tramos de empleados");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("2 resultados");
+  await expect(page.locator("#territorial-inventory .mc-card")).toHaveCount(2);
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  const housing = page.locator("#compromiso-m-22125-1");
+  await housing.getByText("Medida inicial y página de origen", { exact: true }).click();
+  await expect(housing.getByRole("link", { name: "Selección electoral de cinco puntos · resumen editorial · página 2", exact: true })).toHaveAttribute("href", /20230518162522.*PP\.pdf#page=2$/);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/huesca-mobile-evidence.png" });
+});
+
 test("Zaragoza municipal consulta las juntas y sus pendientes", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Zaragoza");
