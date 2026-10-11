@@ -26,14 +26,14 @@ export type TerritorialRecord = {
   governmentReport?: { officialId: string; title: string; text: string; percentage: number; sourceId: string; url: string; links: string[] };
   detailLinks?: string[];
   webSource?: { url: string; sha256: string; retrievedAt: string };
-  initiatives?: { officialId: string; text: string; page: number; endPage: number }[];
+  initiatives?: { id?: string; sourceNote?: string; officialId: string; text: string; page: number; endPage: number }[];
 };
 export type TerritorialBalance = {
   jurisdictionId: string; mandateId: string; mandateLabel: string; sourceId: string; registerSourceId: string;
   sourceSha256: string; inventoryTotal: number; scope: string; textNote: string;
   textLanguage?: "ca" | "es";
   programmeCopy?: boolean;
-  inventoryKind?: "action-catalogue";
+  inventoryKind?: "action-catalogue" | "strategic-plan";
   governmentDateKind?: "capture";
   mandateSourceId: string; sourceLabel: string; level: "municipality" | "region"; governmentCutoff?: string;
   records: TerritorialRecord[]; reviews: TerritorialReview[]; sources: TerritorialSource[];
@@ -42,7 +42,7 @@ export type TerritorialBalance = {
 /** Invalid evidence must stop publication; an import cannot create a review. */
 export function validateTerritorialBalance(balance: TerritorialBalance) {
   if (balance.programmeCopy !== undefined && typeof balance.programmeCopy !== "boolean") throw Error("Procedencia del programa inválida");
-  if (balance.inventoryKind !== undefined && balance.inventoryKind !== "action-catalogue") throw Error("Tipo de inventario inválido");
+  if (balance.inventoryKind !== undefined && !["action-catalogue", "strategic-plan"].includes(balance.inventoryKind)) throw Error("Tipo de inventario inválido");
   if (balance.governmentDateKind !== undefined && (balance.governmentDateKind !== "capture" || !balance.governmentCutoff)) throw Error("Fecha de captura inválida");
   if (balance.textLanguage !== undefined && !["ca", "es"].includes(balance.textLanguage)) throw Error("Idioma territorial inválido");
   if (balance.inventoryTotal <= 0 || balance.inventoryTotal !== balance.records.length) throw Error("Inventario territorial incompleto");
@@ -84,10 +84,13 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
       if (!record.initiatives.length) throw Error("Iniciativas territoriales vacías");
       const initiativeIds = new Set<string>();
       for (const initiative of record.initiatives) {
-        if (!initiative.officialId || initiativeIds.has(initiative.officialId) || !initiative.text.trim()
+        const identity = initiative.id ?? initiative.officialId;
+        if (!initiative.officialId || initiativeIds.has(identity) || !initiative.text.trim()
+          || (initiative.id !== undefined && !initiative.id.startsWith(`${record.id}-`))
+          || (initiative.sourceNote !== undefined && !initiative.sourceNote.trim())
           || !Number.isInteger(initiative.page) || !Number.isInteger(initiative.endPage)
           || record.page === null || record.endPage === null || initiative.page < record.page || initiative.endPage < initiative.page || initiative.endPage > record.endPage) throw Error("Iniciativa territorial inválida");
-        initiativeIds.add(initiative.officialId);
+        initiativeIds.add(identity);
       }
     }
     if (record.governmentState && (!balance.governmentCutoff || sources.get(balance.sourceId)?.role !== "government-report")) throw Error("Estado gubernamental sin fecha o informe");

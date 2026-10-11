@@ -1,0 +1,894 @@
+
+
+
+
+<!DOCTYPE html><html lang="es"> 
+		<head>
+			<meta charset="ISO-UTF-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">   
+			
+			
+			
+				
+				
+				
+				
+			<title>
+	
+  			Listas de espera: Situación a 30 de junio de 2026
+			
+	</title><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/><meta content="all" name="robots"/><meta content="no-cache" http-equiv="pragma"/><meta content="gobierno canarias, Servicio Canario de la Salud" name="keywords"/><meta content="Servicio Canario de la Salud" name="description"/><meta content="SCS" name="author"/><meta content="no" http-equiv="imagetoolbar"/><meta lang="es"/><link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/><script type="text/javascript" src="scripts/jquery/jquery-3.2.1.min.js">
+		//Comentario
+	</script><script type="text/javascript" src="scripts/jquery/paginathing.js">
+		//Comentario
+	</script><script type="text/javascript" src="scripts/popper/popper.min.js">
+		//Comentario
+	</script><script type="text/javascript" src="bootstrap/js/bootstrap.min.js">
+		//Comentario
+	</script><script src="./scripts/expandir_bloq_interior.js" type="text/javascript">
+		//Comentario
+	</script><script src="//f1-eu.readspeaker.com/script/7294/webReader/webReader.js?pids=wr&amp;dload=DocReader.AutoAdd" type="text/javascript">
+		//Comentario
+	</script><script src="./scripts/prototype.js" type="text/javascript">
+		//Comentario
+	</script><script type="text/javascript">
+	//
+	//<![CDATA[
+	var ventana;
+	function prepareTargetBlank() {		
+		var className = 'externo';
+		var className2 = 'popup';
+		var as = document.getElementsByTagName('a');
+		var requestURL = 'http://10.137.2.39/sanidad/scs/listaImagenes.jsp?idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6&idDocument=2b4e97fd-a525-11f1-939a-6125e2f18b9e#';
+		for (i = 0; i < as.length; i++) {
+			var a = as[i];
+			if (a.href == '' || a.href == requestURL || a.href=="#") {
+				continue;
+			}			
+			r = new RegExp("(^| )" + className + "($| )");
+			r2 = new RegExp("(^| )" + className2 + "($| )");
+			if (r.test(a.className) && (a.target == null || a.target == "")) {
+				a.onselect = a.onclick = function() {
+					window.open(this.href);
+					return false;
+				}
+			}
+			if (r2.test(a.className)) {				
+				a.onselect = a.onclick = function() {
+					
+					if (ventana && !ventana.closed) {
+						ventana.location = this.href;
+						ventana.focus() ; 
+					} else {
+						ventana = window.open(this.href, 
+											  "local" + 'ventana',
+											  'width=952, height=600, resizable=yes, scrollbars=yes, left=3, top=3, status=yes, toolbar=yes');
+					}
+					return false;
+				}
+			}			
+		}
+	}	
+	//
+	//]]>
+	</script><script type="text/javascript">
+	function diferencia_dias(f1,f2)	{
+		var aFecha1 = f1.split('/'); 
+		var aFecha2 = f2.split('/'); 
+		var fFecha1 = Date.UTC(aFecha1[2],aFecha1[1]-1,aFecha1[0]); 
+		var fFecha2 = Date.UTC(aFecha2[2],aFecha2[1]-1,aFecha2[0]); 
+		var dif = fFecha2 - fFecha1;
+		var dias = Math.floor(dif / (1000 * 60 * 60 * 24)); 
+		return dias;
+	}	
+				
+	function filtrarNovedades() {
+		var maximo_dias = 30;
+		var mostrar_capa_novedades = 'none';
+		var hoy = new Date();
+		dia = hoy.getDate(); 
+		mes = hoy.getMonth() + 1;
+		anio= hoy.getFullYear();
+		fecha_actual = String(dia+"/"+mes+"/"+anio);					
+				
+		var noticias = document.querySelectorAll('.f_noticia');		
+		var size = noticias.length;
+			for ( var i=0; i < size; i++ ) {
+				var f_noticia = document.getElementById("f_publicacion" + i).innerHTML;
+				if (diferencia_dias( f_noticia,fecha_actual)  > maximo_dias ) {
+					var noticia = document.getElementById("noticia" + i);
+					noticia.style.display = "none";
+				} else {
+					mostrar_capa_novedades = 'visible';			
+				}						
+			}
+			var capa_novedades = document.getElementById("novedades");
+			capa_novedades.style.display = mostrar_capa_novedades;	
+	}
+	
+	function recorrerEnlaces (lista, fecha_actual, maximo_dias, tipo_resaltado, textoTitle, listaImagenes) {
+		var size = lista.length;		
+		for ( var i=0; i < size; i++ ) {
+			var elemento = lista[i];
+			if ( elemento.className == tipo_resaltado)
+				if (diferencia_dias( elemento.title, fecha_actual)  <= maximo_dias ) {
+					elemento.style.display = 'inline';
+					if (elemento.className == "btn-nuevo") 							
+						elemento.title =  textoTitle + elemento.firstElementChild.alt;
+					else
+						elemento.title =  textoTitle + elemento.title;										
+					if (listaImagenes) {
+						var elementoPadre = elemento.parentNode;
+						var hijos = elementoPadre.childNodes;
+						var imagenLista = null;
+						for (var j=0; j < hijos.length; j++) {
+							if (hijos[j].nodeName == "IMG") {
+								imagenLista = hijos[j];
+								break;
+							}
+						}						
+						if ( imagenLista != null) {
+							//Si existe imagen, modificamos el estilo de la capa de resaltado y del enlace para ubicar div en la esquina de la imagen
+							elemento.style.top = '-8px';
+							elemento.style.position = 'absolute';																																						
+							elementoPadre.style.position = 'relative';																			
+							var anchoImagen = imagenLista.width;
+							var mitadAnchoImagen = anchoImagen/2;						
+							elemento.style.right = "calc(50% - " + mitadAnchoImagen + "px - 8px)";
+						}
+					} 
+				}				
+		}		
+	}
+	
+	function resaltarEnlaces(listaImagenes) {		
+		var maximo_dias = 20;		
+		var hoy = new Date();
+		dia = hoy.getDate(); 
+		mes = hoy.getMonth() + 1;
+		anio= hoy.getFullYear();
+		fecha_actual = String(dia+"/"+mes+"/"+anio);							
+		var enlacesActualizados = document.querySelectorAll('.btn-actualizado');
+		var enlacesNuevos = document.querySelectorAll('.btn-nuevo');		
+		recorrerEnlaces (enlacesActualizados, fecha_actual, maximo_dias, "btn-actualizado", "Actualizado el ", listaImagenes);
+		recorrerEnlaces (enlacesNuevos, fecha_actual, maximo_dias, "btn-nuevo", "Añadido el ", listaImagenes);
+		
+	}
+	
+	function inicializarOnLoad() {	
+		prepareTargetBlank();	
+		listener_resaltado();
+		filtrarNovedades();
+	}
+	
+	function inicializarOnLoad_Resaltado(listaImagenes) {	
+		prepareTargetBlank();
+		listener_resaltado();
+		resaltarEnlaces(listaImagenes);
+		filtrarNovedades();
+	}
+	
+	
+	function listener_resaltado() {
+		
+		rslink.addEventListener("mouseenter", function() {
+			centercontainer.classList.toggle("borde-resaltado");
+			});
+		rslink.addEventListener("mouseleave", function() {
+			centercontainer.classList.toggle("borde-resaltado");
+			});
+		var encoded = "//app-eu.readspeaker.com/cgi-bin/rsent?customerid=7294&lang=es_es&readid=centercontainer&url=" + encodeURIComponent(document.location.href);
+		rslink.href = encoded;
+	}
+	
+	
+	window.onload = inicializarOnLoad;
+	</script><script src="https://www.googletagmanager.com/gtag/js?id=G-MDL7GG4E6S" async="async" type="text/javascript">
+	//Comentario
+	</script><script type="text/javascript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'G-MDL7GG4E6S');
+	</script><link href="css_custom/estilos.css" rel="stylesheet"/><link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/><link href="https://fonts.gstatic.com" rel="preconnect"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto"/><link href="img/favicon.png" rel="shortcut icon"/>
+		</head>
+		<body onload="inicializarOnLoad_Resaltado(true)">
+			<div id="principal_interior" role="main">				
+				<div id="container">
+				<div class="row">
+					<div class="col-xs-12 cold-md-12 col-lg-12">						
+						<div aria-level="1" role="heading" id="bloq_menu"><div role="form" id="listado_superior"><ul><li class="nobarra"><a title="Ir a bloque de contenido (tecla de acceso: p)" accesskey="p" href="#centercontainer" id="salto_cabecera">Contenido</a></li><li><a title="Opciones de Accesibilidad (tecla de acceso: a)" accesskey="a" href="./contenidoGenerico.jsp?idDocument=7262e091-77b1-11e9-8ac8-49591977bf73&amp;idCarpeta=bedb3cec-51ab-11de-929f-bd8858499706">Accesibilidad</a></li><li><a title="Mapa web (tecla de acceso: m)" accesskey="m" href="./mapaweb.jsp">Mapa web</a></li><li><a title="Contacte con nosotros (tecla de acceso: c)" accesskey="c" class="popup" href="./ContacteWeb">Contacto</a></li><li><a title="Buzón de Sugerencias (tecla de acceso: s)" accesskey="s" href="./contenidoGenerico.jsp?idDocument=aa110981-e055-11e0-be18-774245c3825e&amp;idCarpeta=bedb3cec-51ab-11de-929f-bd8858499706">Sugerencias</a></li><li><a title="El SCS - Estructura y funciones (tecla acceso: l)" accesskey="l" href="./contenidoGenerico.jsp?idDocument=75f4ddaf-37db-11ec-a51e-4dfe93b8bd70&amp;idCarpeta=decafabb-b7d9-11e7-a18d-018d8523a46d">El SCS</a></li><li style="display:none"><a title="Buscador (tecla acceso: b)" accesskey="b" href="./buscar.jsp">Buscador</a></li></ul></div><div id="logo"><h1 class="logo"><a accesskey="i" title="Le lleva a la página principal del Servicio Canario de Salud (tecla de acceso: i)" href="index.jsp"><img alt="Servicio Canario de la Salud" src="images/SCS_logo_texBajo.jpg" class="logo_izquierdo"/></a><span>Servicio Canario de la Salud</span></h1>
+						<img class="logo_derecho" src="images/logo_derecho.jpg" alt="Logo Derecho"/>
+					<div style="margin-left:15px;" class="w-100" role="application" id="rs_banner"><div class="my-repro" id="repro_readspeaker"><div class="rs_skip rsbtn rs_preserve" id="readspeaker_button"><a href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=7294&amp;lang=es_es&amp;readid=centercontainer" title="Escucha esta página utilizando ReadSpeaker webReader" accesskey="L" class="rsbtn_play" id="rslink" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="12" width="12" style="margin-left: 9px;margin-bottom: 3px;float: left;" class="d-inline align-middle"><path d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"/></svg><span style="font-size: 10px !important;padding-right: 5px !important;margin-left: 10px;" class="font-weight-bold d-inline rsbtn_left">
+						        Escuchar</span></a></div></div></div></div><nav class="navbar navbar-expand-lg bg-primary navbar-dark navbar-custom"><div class="boton_derecha"><button aria-expanded="false" aria-controls="navbarSupportedContent" data-target="#navbarSupportedContent" data-toggle="collapse" type="button" class="navbar-toggler"><span class="navbar-toggler-icon"/></button></div><div id="navbarSupportedContent" class="collapse navbar-collapse"><ul class="navbar-nav mr-auto"><li class="nav-item active"><a title="Página Principal (tecla de acceso: 1)" accesskey="1" href="./index.jsp" class="nav-link">Inicio</a></li><!-- Si hubiera que indicar en los enlaces si abren una nueva ventana, modificar
+	 el segundo assign de esta macro para concatenar el texto que se quiera -->
+
+
+
+
+
+				
+	   			<li class="nav-item">
+					
+					
+					
+						
+            
+            
+            
+								<a accesskey="2" href="./tematica.jsp?idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Ciudadanía (tecla de acceso: 2)" class="nav-link" target="">
+							
+									Ciudadanía
+							
+							</a>
+						
+					
+					
+	  	   		</li>
+				
+				
+	   			<li class="nav-item">
+					
+					
+					
+						
+            
+            
+            
+								<a accesskey="3" href="./tematica.jsp?idCarpeta=381a58ec-a15a-11e9-a502-d7333c007c29" title="Profesionales (tecla de acceso: 3)" class="nav-link" target="">
+							
+									Profesionales
+							
+							</a>
+						
+					
+					
+	  	   		</li>
+				
+				
+	   			<li class="nav-item">
+					
+					
+					
+						
+            
+            
+            
+								<a accesskey="4" href="./tematica.jsp?idCarpeta=6289decf-a21b-11e9-a4e9-33da73d00c9b" title="Servicios (tecla de acceso: 4)" class="nav-link" target="">
+							
+									Servicios
+							
+							</a>
+						
+					
+					
+	  	   		</li><li class="nav-item"><a title="Página de ayuda (tecla de acceso: 5)" accesskey="1" href="./contenidoGenerico.jsp?idDocument=1139973f-3724-11ec-88a8-d554050a441b&amp;idCarpeta=bedb3cec-51ab-11de-929f-bd8858499706" class="nav-link">Ayuda</a></li></ul><div style="z-index:0" id="form"><form action="buscar.jsp" method="get"><div class="input-group"><input title="Formulario de búsqueda" onblur="if (this.value==&apos;&apos;) this.value=this.defaultValue;" onfocus="if (this.value==this.defaultValue) this.value=&apos;&apos;;" value="Texto de Búsqueda ..." id="cajabusca_red" name="q" placeholder="" class="form-control buscar" type="text"/><div class="input-group-btn"><button class="btn btn-outline-secondary boton_buscar" type="submit"><div class="icon-center"><span title="Buscar" class="fa fa-search"/></div></button></div></div><input name="pagina" value="1" type="hidden"/><input name="resultados" value="10" type="hidden"/></form></div></div></nav></div>
+						<div role="complementary" style="display: none; width: 100%;" id="aviso-cookies"><div id="texto-cookies"><h2>INFORMACIÓN IMPORTANTE SOBRE COOKIES</h2><p>El portal web del Servicio canario de la Salud utiliza cookies propias y de terceros para recopilar información 
+		que ayuda a optimizar su visita. Las cookies no se utilizan para recoger información de carácter personal. 
+		Usted puede permitir su uso o rechazarlo, también puede cambiar su configuración siempre que lo desee. 
+		Dispone de más información en nuestra
+		<a title="Política de Cookies" href="http://www.gobiernodecanarias.org/sanidad/scs/contenidoGenerico.jsp?idDocument=7f41a987-d5c5-11e3-afe3-adc9cf9775fd&amp;idCarpeta=bedb3cec-51ab-11de-929f-bd8858499706" target="_self" class="lightBlue-link">Política de Cookies</a>.</p><button type="button" class="btn btn-sedondary btn-sm mt-2" onclick="putCookie()">Cerrar aviso</button></div></div><script type="text/javascript">
+
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+ 
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+function putCookie(){
+    setCookie('aceptCookies','1',365);
+    document.getElementById("aviso-cookies").style.display="none";
+}
+
+var r = getCookie('aceptCookies');
+if(r != "1"){
+    document.getElementById("aviso-cookies").style.display="block";
+} else {
+	document.getElementById("aviso-cookies").style.display="none";
+}
+</script>
+						
+							 
+						
+
+
+
+<html>
+
+
+	<div id="migas" role="navigation">
+	
+		<div class="div-redes-sociales">
+			<a href="http://www.facebook.com/sanidad.gobcan" target="_blank" title="Facebook Sanidad"><img src="images/facebook_20x20.png" title="Facebook Sanidad" alt="Facebook Sanidad"/></a>
+			<a href="https://twitter.com/sanidadgobcan" target="_blank" title="Twitter Sanidad"><img src="images/twitter_20x20.png" title="Twitter Sanidad" alt="Twitter Sanidad"/></a>
+		</div> 
+		<p class="txt">Estás en:</p>
+		
+			
+			
+				
+		
+	<ul>
+	   		<li title="Servicios Centrales"
+					>
+	    		Servicios Centrales
+			</li>
+	   		<li title="Dirección General de Programas Asistenciales"
+	    			><a href="./organica.jsp?idCarpeta=836a31bf-a72b-11dd-b574-dd4e320f085c">
+	    		Programas Asistenciales
+	    			</a>
+			</li>
+	   		<li title="Evaluación de la Calidad Asistencial, Sistemas de Información y Gestión de la Demanda Asistencial"
+	    			><a href="./organica.jsp?idCarpeta=5993c79b-a98e-11dd-b574-dd4e320f085c">
+	    		Evaluación y Gestión de la Demanda
+	    			</a>
+			</li>
+	   		<li title="Sistemas de Información"
+	    			><a href="./contenidoGenerico.jsp?idCarpeta=3534f806-9fa8-11df-a8f7-a5f8b064fefa&amp;idDocument=3e349b76-9ef7-11df-a8f7-a5f8b064fefa">
+	    		Sistemas de Información
+	    			</a>
+			</li>
+	   		<li title="Listas de espera"
+	    			><a href="./contenidoGenerico.jsp?idCarpeta=e7fd389a-3f55-11e5-aee0-5d88c4b7f7db&amp;idDocument=33d1bcff-6c6a-11de-b75e-bbb3e7dd3aa4">
+	    		Listas de espera
+	    			</a>
+			</li>
+	   		<li title="2026"
+					>
+	    		2026
+			</li>
+	   		<li title="Listas de espera: Situación a 30 de junio de 2026"
+					class="selected">
+	    		Junio 2026
+			</li>
+	</ul>
+		
+	
+			
+		
+		
+	</div>	
+	<div id="fin-cabecera"></div>
+</html>					
+					</div>
+				</div>				
+				<br></br>								
+				<div class="row elevar">					
+					
+						<div class="col-xs-12 cold-md-3 col-lg-2 order-md-2 order-lg-1 izquierda_personalizado xs-md-hidden">						
+							<div class="bloq_izd">
+								
+									
+									
+									
+									
+									
+								<div class="abajo"><h2 class="pesta_peke"><span>Ciudadanía</span></h2><div class="menu_izd">
+		
+		<ul  class="nav"  >
+					
+						<li>
+							
+            
+            
+            
+										<a href="./tematica.jsp?idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Ciudadanía" class="" target="">
+									
+											Ciudadanía
+									
+									</a>
+							
+		<ul  >
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=9090ca1f-a9bb-11de-ae50-15aa3b9230b7&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Información sobre la Tarjeta Sanitaria Canaria, dónde solicitarla y los requisitos establecidos." class="" target="">
+									
+											Tarjeta Sanitaria Individual
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=e45cab49-e543-11eb-9ab3-25cb48a1e555&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Información, normativa y formularios sobre la prestación de ayuda para morir." class="" target="">
+									
+											Eutanasia
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=c1bbf92c-7e97-11e3-bbfc-2b2271166eb1&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Información sobre derechos de los pacientes residentes en la Unión Europea en asistencia sanitaria transfronteriza." class="" target="">
+									
+											Asistencia sanitaria transfronteriza en la UE
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=00ffcea2-44ff-11e2-a5ba-c162420e469e&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title=" Información básica para solicitar el reconocimiento, de acuerdo a las situaciones en las que pueden encontrarse las personas españolas o extranjeras." class="" target="">
+									
+											Reconocimiento del derecho a la asistencia sanitaria
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="http://www.gobiernodecanarias.org/sanidad/oddus/" title="Datos de interés sobre la unidad encargada de velar por derechos y deberes de los usuarios y pacientes." class="externo" target="">
+									
+											Oficina de Defensa de de los Derechos de los Usuarios
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="http://www.gobiernodecanarias.org/sanidad/mav/" title="Información, normativa y formularios sobre  las Manifestaciones Anticipadas de Voluntad, cuyo registro está adscrito a la Consejería de Sanidad." class="externo" target="">
+									
+											Manifestaciones Anticipadas
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=6a2d238c-3a3e-11de-ac1c-2ff2cc426c4d&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Información sobre el procedimiento para solicitar el reintegro de los gastos motivados por asistencia sanitaria no concertada y la adquisición de medicamentos extranjeros y especiales." class="" target="">
+									
+											Reintegro de gastos por asistencia sanitaria.
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=69bab29c-3a3e-11de-ac1c-2ff2cc426c4d&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Consulte cómo solicitar el reembolso de gastos en los supuestos de desplazamientos debidamente autorizados, por razón de asistencia sanitaria, a centros, servicios o establecimientos sanitarios radicados fuera del Área de Salud." class="" target="">
+									
+											Reembolso de gastos
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=6a8c81a8-3a3e-11de-ac1c-2ff2cc426c4d&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Nuevo procedimiento sobre el traslado de pacientes del SCS para su diagnóstico y/o atención en centros sanitarios de referencia, hospitales ajenos a su Área de Salud u otros servicios de salud del Sistema Nacional de Salud." class="" target="">
+									
+											Traslado de pacientes
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./contenidoGenerico.jsp?idDocument=69bab29c-3a3e-11de-ac1c-2ff2cc426c4d&amp;idCarpeta=ae273cd1-b385-11e9-82f7-8d5cff9227e6" title="Información sobre la solicitud de compensación en concepto de manutención (dieta) por desplazamientos debidamente autorizados, cuando requieran pernoctar fuera del Área de Salud." class="" target="">
+									
+											Dietas por desplazamiento
+									
+									</a>
+							
+						</li>
+		</ul>
+	
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./tematica.jsp?idCarpeta=381a58ec-a15a-11e9-a502-d7333c007c29" title="Profesionales" class="" target="">
+									
+											Profesionales
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./tematica.jsp?idCarpeta=6289decf-a21b-11e9-a4e9-33da73d00c9b" title="Servicios" class="" target="">
+									
+											Servicios
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./tematica.jsp?idCarpeta=85902744-c31f-11e9-a8a0-7f273508434f" title="Campañas" class="" target="">
+									
+											Campañas
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./tematica.jsp?idCarpeta=0b1b3f02-aeb1-11e9-98f6-6940b8c76cbc" title="Normativa sanitaria" class="" target="">
+									
+											Normativa sanitaria
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./tematica.jsp?idCarpeta=decafabb-b7d9-11e7-a18d-018d8523a46d" title="Transparencia del SCS" class="" target="">
+									
+											Transparencia
+									
+									</a>
+							
+						</li>
+					
+						<li>
+							
+            
+            
+            
+										<a href="./tematica.jsp?idCarpeta=8f94f980-d052-11e7-836b-953b40afb30b" title="mi SCS" class="" target="">
+									
+											mi SCS
+									
+									</a>
+							
+						</li>
+		</ul>
+	
+		
+	</div></div>
+							</div>
+						</div>
+					
+					
+					
+    					
+							<div id="centercontainer" class="col-xs-12 col-md-12 col-lg-10 order-md-1 order-lg-2  container-fluid ancho_automatico">
+						
+						
+					
+						
+						
+							
+							
+							
+							
+							
+						<h2 class="pesta_grande"><span>
+	
+  			Listas de espera: Situación a 30 de junio de 2026
+			
+	</span></h2><div class="conten">
+		
+			
+	
+	<div><p class="text-right mt-0 mb-0 texto-gris">Actualizado a: [01/09/2026]</p></div>
+	<div class="listaImagenes">
+  		
+  		
+			<div class="header">
+			
+				
+						<div class="columna_centrada">
+	
+
+	
+		
+		
+		<img class="img-thumbnail img-thumbnail" src="./content/9243e1dd-427f-11e5-aee0-5d88c4b7f7db/ListasEspera.jpg"
+			 title="Listas de Espera" alt="Listas de Espera"/> 
+			 
+						</div>	
+			</div>
+	  			<h3>
+	  					Lista de espera quirúrgica estructural (L.E.Q.) en los centros hospitalarios.
+	  			</h3>
+	  		
+		  			<div class="description">
+		  				<p style="text-align: justify;">El Real Decreto 605/2003, de 23 de mayo, por el que se establecen medidas para el tratamiento homogéneo de la información sobre las listas de espera en el Sistema Nacional de Salud hace la siguiente clasificación de la lista de espera:</p>
+<p style="text-align: justify;"><strong>LISTA DE ESPERA ESTRUCTURAL: </strong>Son aquellos pacientes que, en un momento dado, se encuentran en situación de ser intervenidos quirúrgicamente y cuya espera es atribuible a la organización y recursos disponibles (programables sin incidencia, programados, rechazados por centros concertados).</p>
+<table border="1" cellspacing="2" cellpadding="2" width="100%" align="center" bordercolor="#ffffff">
+<tbody>
+<tr>
+<td rowspan="2" bgcolor="#6692b5" bordercolor="#003366">
+<div style="text-align: center;"><strong>HOSPITAL</strong></div>
+</td>
+<td colspan="5" bgcolor="#6692b5" bordercolor="#003366">
+<div style="text-align: center;"><strong>Personas en L.E.Q.</strong></div>
+</td>
+</tr>
+<tr>
+<td width="12%" bgcolor="#6692b5" bordercolor="#003366">
+<div style="text-align: center;"><strong>menos de</strong></div>
+<div style="text-align: center;"><strong>6 meses</strong></div>
+</td>
+<td width="12%" bgcolor="#6692b5" bordercolor="#003366">
+<div style="text-align: center;"><strong> más de </strong></div>
+<div style="text-align: center;"><strong>6 meses</strong></div>
+</td>
+<td width="12%" bgcolor="#6692b5" bordercolor="#003366">
+<div style="text-align: center;"><strong>TOTAL</strong></div>
+</td>
+<td width="12%" bgcolor="#6692b5" bordercolor="#003366">
+<div style="text-align: center;"><strong>Demora</strong></div>
+<div style="text-align: center;"><strong>media</strong></div>
+</td>
+<td width="12%" bgcolor="#6692b5" bordercolor="#003366">
+<div style="text-align: center;"><strong>Mediana*</strong><strong></strong></div>
+</td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>Ntra. Sra. de los Reyes</strong></td>
+<td class="bordeceldas" align="center"><span class="letranegra">49</span></td>
+<td class="bordeceldas" align="center">0</td>
+<td class="bordeceldas" align="center"><strong>49</strong></td>
+<td class="bordeceldas" align="center"><span class="letranegra">22,08</span></td>
+<td class="bordeceldas" align="center"><span class="letranegra">17,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>General de La Palma</strong></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff">1.310</td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff">251</td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra"><strong>1.561</strong></span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">96,30</span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">77,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>Ntra. Sra. de Guadalupe</strong></td>
+<td class="bordeceldas" align="center">225</td>
+<td class="bordeceldas" align="center"><span class="letranegra">0</span></td>
+<td class="bordeceldas" align="center"><strong>225</strong></td>
+<td class="bordeceldas" align="center">53,91</td>
+<td class="bordeceldas" align="center"><span class="letranegra">42,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>Universitario Ntra. Sra. de Candelaria</strong></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">5.873</span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">1.312</span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><strong>7.185</strong></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff">102,49</td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff">69,00</td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>Universitario de Canarias (HUC)</strong></td>
+<td class="bordeceldas" align="center"><span class="letranegra">5.801</span></td>
+<td class="bordeceldas" align="center"><span class="letranegra">2.466</span></td>
+<td class="bordeceldas" align="center"><strong>8.267</strong></td>
+<td class="bordeceldas" align="center">156,11</td>
+<td class="bordeceldas" align="center"><span class="letranegra">91,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>Universitario de Gran Canaria Dr. Negrín</strong></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">3.943</span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff">590</td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra"><strong>4.533</strong></span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff">90,88</td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">69,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>Universitario Insular Materno-Infantil de Canarias</strong></td>
+<td class="bordeceldas" align="center">8.236</td>
+<td class="bordeceldas" align="center">1.350</td>
+<td class="bordeceldas" align="center"><strong>9.586</strong></td>
+<td class="bordeceldas" align="center">95,48</td>
+<td class="bordeceldas" align="center"><span class="letranegra">71,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>General de Fuerteventura</strong></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff">1.107</td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">3</span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra"><strong>1.110</strong></span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">44,08</span></td>
+<td class="bordeceldas" align="center" bgcolor="#d9ebff"><span class="letranegra">36,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ec" bordercolor="#003366"><strong>Dr. José Molina Orosa</strong></td>
+<td class="bordeceldas" align="center">1.791</td>
+<td class="bordeceldas" align="center"><span class="letranegra">75</span></td>
+<td class="bordeceldas" align="center"><span class="letranegra"><strong>1.866</strong></span></td>
+<td class="bordeceldas" style="text-align: center;">60,86</td>
+<td class="bordeceldas" align="center"><span class="letranegra">48,00</span></td>
+</tr>
+<tr>
+<td bgcolor="#ffdfdf">
+<div style="text-align: center;"><strong>TOTAL</strong></div>
+</td>
+<td class="bordeceldas" align="center" valign="middle" bgcolor="#ffdfdf"><span class="letranegra"><strong>28.335</strong></span></td>
+<td class="bordeceldas" align="center" valign="middle" bgcolor="#ffdfdf"><strong>6.047</strong></td>
+<td class="bordeceldas" align="center" valign="middle" bgcolor="#ffdfdf"><span class="letranegra"><strong>34.382</strong></span></td>
+<td class="bordeceldas" align="center" valign="middle" bgcolor="#ffdfdf"><span class="letranegra"><strong>107,04</strong></span></td>
+<td class="bordeceldas" align="center" valign="middle" bgcolor="#ffdfdf"><span class="letranegra"><strong>70,00</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p>* La <strong>MEDIANA</strong> refleja que la mitad de los pacientes pendientes de una intervención quirúrgica esperan ese número de días o menos.</p>
+		  			</div>
+	  		<ul class="contenido_imagen">
+	  				
+	  			<li class="clearBoth">
+		
+		
+		
+							
+									<a href="./content/2e6d19db-a529-11f1-939a-6125e2f18b9e/2026_06_LEQ_Desglose.pdf" style="width:100%;clear:both;;padding-bottom: 20px;" class="popup" target="" title="L.E.Q.: Desglose por especialidades en los centros hospitalarios"> 
+		
+
+	
+		
+		
+		<img src="./content/bf4c1a74-4284-11e5-aee0-5d88c4b7f7db/LE_datos.jpg"			 
+			title="Listas de espera" alt="Listas de espera"/>
+										<label> L.E.Q.: Desglose por especialidades en los centros hospitalarios</label> 
+			<div class="btn-nuevo" title="31/08/2026" style="display:none">
+				<img src="images/nuevo.png" class="img-nuevo" alt="31/08/2026"/>
+			</div>	
+									</a>
+									  
+					</li>
+	  		</ul>
+	  		<div class="tope">   </div>  		
+	  			<h3>
+	  					Especialidades médicas y pruebas complementarias.
+	  			</h3>
+	  		
+		  			<div class="description">
+		  				
+		  			</div>
+	  		<ul class="contenido_imagen">
+	  				
+	  			<li class="clearBoth">
+		
+		
+		
+							
+									<a href="./content/933656fd-a529-11f1-939a-6125e2f18b9e/2026_06_EspecialidadesMedicasGral.pdf" style="width:050%;clear:both;;padding-bottom: 20px;" class="popup" target="" title="Listas de espera: Especialidades Médicas"> 
+		
+
+	
+		
+		
+		<img src="./content/bf4c1a74-4284-11e5-aee0-5d88c4b7f7db/LE_datos.jpg"			 
+			title="Listas de espera" alt="Listas de espera"/>
+										<label> Listas de espera: Especialidades Médicas</label> 
+			<div class="btn-nuevo" title="31/08/2026" style="display:none">
+				<img src="images/nuevo.png" class="img-nuevo" alt="31/08/2026"/>
+			</div>	
+									</a>
+									  
+					</li>
+	  				
+	 			<li>
+		
+		
+		
+							
+									<a href="./content/7ec2be05-a529-11f1-939a-6125e2f18b9e/2026_06_PruebasComplementariasGral.pdf" style="width:050%;float:left;;padding-bottom: 20px;" class="popup" target="" title="Listas de espera: Pruebas Complementarias"> 
+		
+
+	
+		
+		
+		<img src="./content/bf4c1a74-4284-11e5-aee0-5d88c4b7f7db/LE_datos.jpg"			 
+			title="Listas de espera" alt="Listas de espera"/>
+										<label> Listas de espera: Pruebas Complementarias</label> 
+			<div class="btn-nuevo" title="31/08/2026" style="display:none">
+				<img src="images/nuevo.png" class="img-nuevo" alt="31/08/2026"/>
+			</div>	
+									</a>
+									  
+					</li>
+	  		</ul>
+	  		<div class="tope">   </div>  		
+		<div><p class="centra text-right"><a class="text-dark font-weight-bold" href="javascript:history.back();" accesskey="" title="Volver a la p&aacute;gina anterior">Volver</a></p></div>
+	 </div>
+		
+	</div>
+					</div>
+				</div>				
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-lg-12">
+						<div id="pie" role="search">
+	<div class="color_pie">
+		<p class="izda">© Gobierno de Canarias</p>
+		<div class="dcha">
+			<ul>
+				<li class="nobarra3"><a href="./contenidoGenerico.jsp?idDocument=ec8df846-ec92-11ec-8fe7-7df176364451&amp;idCarpeta=bedb3cec-51ab-11de-929f-bd8858499706" title="Aviso Legal">Aviso Legal</a></li>
+				<li><a href="./contenidoGenerico.jsp?idDocument=6cb0c8bb-ec95-11ec-8fe7-7df176364451&amp;idCarpeta=bedb3cec-51ab-11de-929f-bd8858499706" title="Política de privacidad">Política de privacidad</a></li>
+				<li><a href="http://www.gobiernodecanarias.org/principal/sugrec/" title="Sugerencias y Reclamaciones">Sugerencias y Reclamaciones</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		var links =  jQuery('a[href*=".pdf"]');
+		links.on('click', function() { 		 								
+			ga('send', 'event', 'PDF', 'click', jQuery(this).attr('href'), '1');			 
+		});
+	</script>
+</div>
+
+					</div>
+				</div>
+			</div>					
+		</body>
+</html>
+
+

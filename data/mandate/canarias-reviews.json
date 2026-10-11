@@ -1,0 +1,166 @@
+[
+  {
+    "commitmentId": "r-05-S.OEst.1",
+    "reviewedAt": "2026-10-11",
+    "title": "Espera máxima de tres meses: el corte de junio de 2026 conserva esperas superiores a seis meses",
+    "conclusion": "Objetivo de espera no alcanzado en el corte examinado. La ficha conserva una incoherencia del plan: S.OEsp.1.1 aparece bajo un objetivo estratégico sobre decisiones sanitarias anticipadas. Esta revisión no resuelve ese otro objetivo ni cierra el mandato.",
+    "periodNote": "Plan aprobado el 26 de diciembre de 2024 para 2024–2027. Se compara cirugía estructural a 31 de diciembre de 2025 y 30 de junio de 2026; sus publicaciones son de febrero y septiembre de 2026. No se presenta el corte de junio como la situación de octubre ni como balance final de 2027.",
+    "components": [
+      {
+        "id": "origen-incoherente",
+        "claim": "Qué dice el plan y qué parte se revisa",
+        "status": "documented",
+        "finding": "La tabla de la página 58 vincula S.OEst.1, sobre decidir tratamientos futuros al perder capacidad, con S.OEsp.1.1, que fija una espera máxima de tres meses. Se conserva la asociación impresa y se revisa solo el objetivo específico de espera. Hace falta aclarar la correspondencia y revisar por separado las decisiones anticipadas.",
+        "citations": [
+          {
+            "sourceId": "canarias-strategic-plan-2024",
+            "locator": "Tabla de Sanidad · S.OEst.1 y S.OEsp.1.1",
+            "page": 58
+          }
+        ]
+      },
+      {
+        "id": "corte-junio",
+        "claim": "Situación de la espera quirúrgica en junio de 2026",
+        "status": "target-pending",
+        "finding": "El SCS comunica 34.382 personas en espera quirúrgica estructural, de las que 6.047 llevan más de seis meses. Ese subgrupo basta para concluir que no se alcanzaba una espera máxima de tres meses en cirugía estructural a ese corte. La demora media es 107,04 días y la mediana 70; ninguna sustituye al máximo individual. La tabla no permite contar exactamente cuántas personas superan tres meses.",
+        "citations": [
+          {
+            "sourceId": "canarias-waiting-2026",
+            "locator": "Tabla por hospitales · fila TOTAL; corte 30/06/2026, actualización 01/09/2026"
+          }
+        ]
+      },
+      {
+        "id": "comparacion",
+        "claim": "Evolución desde diciembre de 2025 y cotejo de publicaciones",
+        "status": "reported",
+        "finding": "En diciembre de 2025 el SCS publicaba 32.131 personas y 5.575 con más de seis meses, media de 106,49 días. Junio de 2026 registra 2.251 personas más y 472 más en el tramo superior a seis meses; son diferencias calculadas entre los totales publicados, sin atribuir causalidad. La tabla ministerial de diciembre coincide en 32.131 y 5.575 y redondea la media a 106 días. El Ministerio advierte que agrega información suministrada por cada comunidad: el cotejo no constituye una auditoría independiente.",
+        "citations": [
+          {
+            "sourceId": "canarias-waiting-2025",
+            "locator": "Tabla por hospitales · fila TOTAL"
+          },
+          {
+            "sourceId": "canarias-waiting-2026",
+            "locator": "Tabla por hospitales · fila TOTAL"
+          },
+          {
+            "sourceId": "canarias-waiting-national-2025",
+            "locator": "Indicadores globales por comunidad · fila CANARIAS y nota de procedencia",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "universo-control",
+        "claim": "Otras esperas, cambios de registro y comprobación externa",
+        "status": "unresolved",
+        "finding": "No se ha incorporado un control externo del registro individual ni se ha resuelto el alcance de la espera máxima para consultas y pruebas. El inventario administrativo no especifica aquí excepciones ni un calendario intermedio. No se extrapola el tramo quirúrgico a toda la asistencia ni se atribuye el cambio exclusivamente al Gobierno.",
+        "citations": [
+          {
+            "sourceId": "canarias-strategic-plan-2024",
+            "locator": "Objetivo específico S.OEsp.1.1",
+            "page": 58
+          }
+        ]
+      }
+    ],
+    "contrast": "La evidencia contraria a una espera máxima ya alcanzada procede del propio registro del SCS. La publicación del Ministerio permite cotejar el corte anterior, pero depende de los datos autonómicos y se agrupa con ese origen. Las medias, medianas y existencias al cierre miden cosas distintas; no se convierten en una garantía de atención ni en un juicio final del mandato.",
+    "pending": [
+      "Aclarar la asociación entre S.OEst.1 y S.OEsp.1.1 y revisar el objetivo de decisiones anticipadas.",
+      "Comprobar la distribución por encima de tres meses y las definiciones, exclusiones, entradas y salidas del registro.",
+      "Ampliar a consultas y pruebas con sus respectivos cortes; buscar auditoría o fiscalización externa del sistema.",
+      "Completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-05-S.OEst.9",
+    "reviewedAt": "2026-10-11",
+    "title": "Donación de sangre: 45.578 donantes comunicados en 2025 frente al objetivo de 70.000 anuales",
+    "conclusion": "La cifra de donantes comunicada para 2025 queda por debajo de la meta anual del plan. La autosuficiencia en componentes sanguíneos es una declaración del SCS; faltan controles específicos sobre abastecimiento, plasmaderivados y seguridad transfusional.",
+    "periodNote": "Objetivos S.OEst.9 y S.OEsp.9.1 del plan 2024–2027. Datos del ejercicio 2025 publicados el 10 de marzo de 2026. El informe nacional también corresponde a 2025; su fecha exacta de publicación no se ha fijado. No es una medición del ejercicio 2026 aún en curso.",
+    "components": [
+      {
+        "id": "meta",
+        "claim": "Unidad de la meta y dimensiones del compromiso",
+        "status": "documented",
+        "finding": "El objetivo estratégico reúne autoabastecimiento y calidad y seguridad de la sangre y sus componentes. El objetivo específico fija 70.000 donantes anuales y mejora de la hemovigilancia. La unidad impresa es donantes, no donaciones: se conserva sin reinterpretarla.",
+        "citations": [
+          {
+            "sourceId": "canarias-strategic-plan-2024",
+            "locator": "Tabla de Sanidad · S.OEst.9 y S.OEsp.9.1",
+            "page": 59
+          }
+        ]
+      },
+      {
+        "id": "donantes",
+        "claim": "Personas donantes frente a la meta anual",
+        "status": "target-pending",
+        "finding": "El SCS comunica 45.578 personas donantes en 2025. La diferencia aritmética con 70.000 es de 24.422 personas; no se convierte en porcentaje de cumplimiento del objetivo compuesto. Las 59.106 donaciones de sangre y aféresis son actos y no personas únicas, por lo que no sustituyen al indicador de donantes.",
+        "citations": [
+          {
+            "sourceId": "canarias-blood-2025",
+            "locator": "Párrafo inicial del balance 2025: donaciones, personas donantes y exclusiones"
+          },
+          {
+            "sourceId": "canarias-strategic-plan-2024",
+            "locator": "S.OEsp.9.1 · meta de donantes anuales",
+            "page": 59
+          }
+        ]
+      },
+      {
+        "id": "abastecimiento",
+        "claim": "Autosuficiencia comunicada y alcance de la afirmación",
+        "status": "reported",
+        "finding": "El balance del SCS afirma que mantuvo la autosuficiencia en componentes sanguíneos durante 2025. Esa afirmación no acredita por sí sola el autoabastecimiento de medicamentos plasmaderivados ni ausencia de desabastecimientos por componente. Se mantiene como dato comunicado, pendiente de series de necesidades, suministro y transferencias.",
+        "citations": [
+          {
+            "sourceId": "canarias-blood-2025",
+            "locator": "Párrafo sobre autosuficiencia y evolución anual"
+          }
+        ]
+      },
+      {
+        "id": "cotejo-metodologico",
+        "claim": "Qué permite contrastar el informe nacional",
+        "status": "documented",
+        "finding": "El informe nacional diferencia donantes y donaciones y publica las donaciones por donante en el gráfico 28. Su metodología indica que usa registros de centros y servicios validados previamente por cada comunidad. Es un contraste de definiciones y procedencia, no una segunda auditoría de las 45.578 personas comunicadas por Canarias. No se deduce un total de donantes a partir de una barra sin valor exacto.",
+        "citations": [
+          {
+            "sourceId": "canarias-blood-national-2025",
+            "locator": "Material y métodos · origen y validación de los registros",
+            "page": 4
+          },
+          {
+            "sourceId": "canarias-blood-national-2025",
+            "locator": "Gráfico 28 · número de donaciones por donante",
+            "page": 36
+          }
+        ]
+      },
+      {
+        "id": "seguridad",
+        "claim": "Hemovigilancia y resultados de seguridad",
+        "status": "unresolved",
+        "finding": "Falta contrastar la evolución canaria de incidentes y reacciones adversas, la cobertura de notificación y las medidas correctoras. Un aumento de donantes o una afirmación de autosuficiencia no demuestran por sí solos la mejora de la seguridad transfusional.",
+        "citations": [
+          {
+            "sourceId": "canarias-strategic-plan-2024",
+            "locator": "S.OEsp.9.1 · mejora de la hemovigilancia",
+            "page": 59
+          }
+        ]
+      }
+    ],
+    "contrast": "Se contrasta la meta publicada con el resultado anual comunicado y se comprueba en el informe nacional que donantes y donaciones son indicadores distintos. Los registros se originan en los centros y la comunidad; su publicación por el Ministerio no añade independencia automática. Autoabastecimiento, captación de personas y seguridad se mantienen separados.",
+    "pending": [
+      "Confirmar el perímetro y la deduplicación del registro de donantes; revisar 2024 y las metas anuales formalizadas.",
+      "Obtener las series de abastecimiento, transferencias y necesidades por componente y para plasmaderivados.",
+      "Incorporar control externo y resultados de hemovigilancia específicos de Canarias.",
+      "Completar revisión humana independiente."
+    ]
+  }
+]

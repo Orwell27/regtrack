@@ -15,9 +15,9 @@ function WebDetail({ record, language }: { record: TerritorialRecord; language?:
     {record.detailLinks?.length ? <details><summary>Enlaces de la ficha original</summary><ul>{record.detailLinks.map((url, index) => <li key={url}><a className="mc-link" href={url} target="_blank" rel="noreferrer">Enlace relacionado {index + 1}</a></li>)}</ul></details> : null}
     <p>Captura de esta ficha: {record.webSource.retrievedAt.slice(0, 10)}. La fecha de consulta no acredita cuándo se ejecutó.</p><p className="mt-hash">SHA-256 del HTML original: {record.webSource.sha256}</p></details>;
 }
-function Initiatives({ record, sourceUrl }: { record: TerritorialRecord; sourceUrl: string }) {
+function Initiatives({ record, sourceUrl, strategic }: { record: TerritorialRecord; sourceUrl: string; strategic: boolean }) {
   if (!record.initiatives) return null;
-  return <details><summary>Iniciativas del compromiso · {record.initiatives.length}</summary><ol>{record.initiatives.map(initiative => <li key={initiative.officialId} value={Number(initiative.officialId)}><p>{initiative.text}</p><a className="mc-link" href={`${sourceUrl}#page=${initiative.page}`} target="_blank" rel="noreferrer">Página {initiative.page}{initiative.endPage !== initiative.page ? `–${initiative.endPage}` : ""}</a></li>)}</ol></details>;
+  return <details><summary>{strategic ? "Objetivos específicos" : "Iniciativas del compromiso"} · {record.initiatives.length}</summary><ol>{record.initiatives.map(initiative => <li key={initiative.id ?? initiative.officialId} value={strategic ? undefined : Number(initiative.officialId)}>{strategic ? <p><strong>{initiative.officialId}</strong></p> : null}<p>{initiative.text}</p>{initiative.sourceNote ? <p className="mc-warning">{initiative.sourceNote}</p> : null}<a className="mc-link" href={`${sourceUrl}#page=${initiative.page}`} target="_blank" rel="noreferrer">Página {initiative.page}{initiative.endPage !== initiative.page ? `–${initiative.endPage}` : ""}</a></li>)}</ol></details>;
 }
 function ProgrammeSheet({ record, language, copy }: { record: TerritorialRecord; language?: string; copy?: boolean }) {
   if (!record.programmeText) return null;
@@ -39,7 +39,7 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
   const [page, setPage] = useState(1);
   const reviews = new Map(balance.reviews.map(review => [review.commitmentId, review]));
   const sources = new Map(balance.sources.map(source => [source.id, source]));
-  const searchable = useMemo(() => balance.records.map(record => ({ record, text: normalizeMandateText(`${record.officialId} ${record.text} ${record.topic} ${record.detailText ?? ""} ${record.programmeText ?? ""} ${record.governmentReport?.officialId ?? ""} ${record.governmentReport?.text ?? ""} ${record.initiatives?.map(initiative => initiative.text).join(" ") ?? ""}`) })), [balance.records]);
+  const searchable = useMemo(() => balance.records.map(record => ({ record, text: normalizeMandateText(`${record.officialId} ${record.text} ${record.topic} ${record.detailText ?? ""} ${record.programmeText ?? ""} ${record.governmentReport?.officialId ?? ""} ${record.governmentReport?.text ?? ""} ${record.initiatives?.map(initiative => `${initiative.officialId} ${initiative.text}`).join(" ") ?? ""}`) })), [balance.records]);
   const terms = normalizeMandateText(query).split(/\s+/).filter(Boolean);
   const records = searchable.filter(({ record, text }) => (filter === "all" || (filter === "reviewed" ? reviews.has(record.id) : !reviews.has(record.id)))
     && terms.every(term => text.includes(term))).map(({ record }) => record);
@@ -49,22 +49,23 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
   const programme = sources.get(balance.mandateSourceId)!;
   const territorialLabel = balance.level === "municipality" ? "municipal" : "autonómico";
   const catalogue = balance.inventoryKind === "action-catalogue";
-  const recordUnit = catalogue ? "actuaciones" : "compromisos";
+  const strategic = balance.inventoryKind === "strategic-plan";
+  const recordUnit = strategic ? "objetivos estratégicos" : catalogue ? "actuaciones" : "compromisos";
   const governmentLabel = balance.governmentDateKind === "capture" ? "Estado declarado por el Ayuntamiento en el catálogo consultado el" : "Estado declarado por el Gobierno a";
   return <div className="mn-app">
     <a className="mn-skip" href="#territorial-content">Saltar al contenido</a>
     <header className="mn-header"><Link className="mn-brand" href="/observatorio">RegTrack<small>OBSERVATORIO PÚBLICO</small></Link><nav aria-label="Navegación territorial"><Link href="/observatorio/mandato/cobertura">Toda la cobertura</Link><a href="#territorial-reviews">Revisiones disponibles</a><a href="#territorial-inventory">Inventario {territorialLabel}</a></nav></header>
     <main className="mn-main" id="territorial-content">
-      <section className="mc-intro"><p className="mn-eyebrow">Balance {territorialLabel} · revisión documental parcial</p><h1>{balance.mandateLabel}</h1><p>{balance.scope}</p><p className="mc-warning">{catalogue ? "Catálogo consultado completo; reconstrucción de las promesas originales pendiente." : "Inventario completo del documento, balance todavía parcial."} Ninguna de estas fichas ha pasado una revisión humana independiente. Las fuentes de una misma administración comparten origen. La publicación de un acto en otro boletín no verifica por sí sola sus resultados.</p></section>
+      <section className="mc-intro"><p className="mn-eyebrow">Balance {territorialLabel} · revisión documental parcial</p><h1>{balance.mandateLabel}</h1><p>{balance.scope}</p><p className="mc-warning">{strategic ? "Plan estratégico importado; inventario y correspondencia de las promesas políticas pendientes." : catalogue ? "Catálogo consultado completo; reconstrucción de las promesas originales pendiente." : "Inventario completo del documento, balance todavía parcial."} Ninguna de estas fichas ha pasado una revisión humana independiente. Las fuentes de una misma administración comparten origen. La publicación de un acto en otro boletín no verifica por sí sola sus resultados.</p></section>
       <div className="mn-summary-grid"><div><strong>{balance.records.length}</strong><span>{recordUnit} del documento {catalogue ? "importadas" : "importados"}</span></div><div><strong>{balance.reviews.length}</strong><span>fichas con revisión documental parcial</span></div><div><strong>{balance.inventoryTotal - balance.reviews.length}</strong><span>medidas pendientes de revisión</span></div></div>
-      <section className="mn-method"><h2>Qué se ha comprobado</h2><div><p>Las fichas separan la actuación documentada, lo que comunica la administración y las partes sin evidencia suficiente. Una aprobación o un plan no acreditan su ejecución ni su impacto. El dato más reciente puede ser anterior a la fecha de revisión.</p><p>{balance.textNote} <a className="mc-link" href={programme.url} target="_blank" rel="noreferrer">{catalogue ? "Consultar el portal municipal del plan" : balance.programmeCopy ? "Consultar la copia del programa" : "Consultar el programa original"}</a>.</p></div></section>
+      <section className="mn-method"><h2>Qué se ha comprobado</h2><div><p>Las fichas separan la actuación documentada, lo que comunica la administración y las partes sin evidencia suficiente. Una aprobación o un plan no acreditan su ejecución ni su impacto. El dato más reciente puede ser anterior a la fecha de revisión.</p><p>{balance.textNote} <a className="mc-link" href={programme.url} target="_blank" rel="noreferrer">{strategic ? "Consultar el acuerdo político CC–PP" : catalogue ? "Consultar el portal municipal del plan" : balance.programmeCopy ? "Consultar la copia del programa" : "Consultar el programa original"}</a>.</p></div></section>
       <section id="territorial-reviews"><h2>Revisiones disponibles · {balance.reviews.length}</h2><p>Cada revisión conserva sus límites y el trabajo pendiente. No se calcula un porcentaje de cumplimiento a partir de esta selección.</p>
         {balance.reviews.map(review => {
           const record = balance.records.find(item => item.id === review.commitmentId)!;
           return <article className="mc-card mt-review" key={record.id} id={`compromiso-${record.id}`}>
-            <p className="mn-eyebrow">Medida {record.officialId} · revisión {review.reviewedAt}</p><h3>{review.title}</h3>
-            <details><summary>{catalogue ? "Actuación publicada y fuente" : "Promesa y página de origen"}</summary><p lang={balance.textLanguage}>{record.text}</p>{record.governmentState ? <p>{governmentLabel} {balance.governmentCutoff}: <strong>{record.governmentState}</strong>. No es una valoración de RegTrack.</p> : null}
-          <RecordSource record={record} fallback={inventorySource.url} label={balance.sourceLabel} /><ProgrammeSheet record={record} language={balance.textLanguage} copy={balance.programmeCopy} /><GovernmentFollowup record={record} /><WebDetail record={record} language={balance.textLanguage} /><Initiatives record={record} sourceUrl={inventorySource.url} /></details>
+            <p className="mn-eyebrow">{strategic ? "Objetivo" : "Medida"} {record.officialId} · revisión {review.reviewedAt}</p><h3>{review.title}</h3>
+            <details><summary>{strategic ? "Objetivo y página de origen" : catalogue ? "Actuación publicada y fuente" : "Promesa y página de origen"}</summary><p lang={balance.textLanguage}>{record.text}</p>{record.governmentState ? <p>{governmentLabel} {balance.governmentCutoff}: <strong>{record.governmentState}</strong>. No es una valoración de RegTrack.</p> : null}
+          <RecordSource record={record} fallback={inventorySource.url} label={balance.sourceLabel} /><ProgrammeSheet record={record} language={balance.textLanguage} copy={balance.programmeCopy} /><GovernmentFollowup record={record} /><WebDetail record={record} language={balance.textLanguage} /><Initiatives record={record} sourceUrl={inventorySource.url} strategic={strategic} /></details>
             <p><strong>{review.conclusion}</strong></p><p>{review.periodNote}</p>
             <div className="mt-components">{review.components.map(component => <section key={component.id} aria-labelledby={`${record.id}-${component.id}`}>
               <h4 id={`${record.id}-${component.id}`}>{component.claim}</h4><p className="mn-eyebrow">{TERRITORIAL_STATUS_LABELS[component.status]}</p><p>{component.finding}</p>
@@ -81,8 +82,8 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
         <div className="mc-filters"><label>Buscar medida {balance.level === "municipality" ? "municipal" : "autonómica"}<input type="search" value={query} onChange={event => { setQuery(event.target.value); setPage(1); }} placeholder="Tema, palabra o número…" /></label><label>Revisión<select value={filter} onChange={event => { setFilter(event.target.value); setPage(1); }}><option value="all">Todas las medidas</option><option value="reviewed">Con revisión documental parcial</option><option value="pending">Pendientes de revisión</option></select></label></div>
         <p className="mc-results" role="status">{records.length} resultados · página {current} de {pages}</p>
         <div className="mc-list">{records.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE).map(record => <article className="mc-card" key={record.id}>
-          <p className="mn-eyebrow">Medida {record.officialId} · {record.topic}</p><h3 lang={balance.textLanguage}>{record.text}</h3><p>{reviews.has(record.id) ? "Con revisión documental parcial" : "Pendiente de revisión · Sin conclusión de RegTrack"}</p>
-          <Initiatives record={record} sourceUrl={inventorySource.url} />
+          <p className="mn-eyebrow">{strategic ? "Objetivo" : "Medida"} {record.officialId} · {record.topic}</p><h3 lang={balance.textLanguage}>{record.text}</h3><p>{reviews.has(record.id) ? "Con revisión documental parcial" : "Pendiente de revisión · Sin conclusión de RegTrack"}</p>
+          <Initiatives record={record} sourceUrl={inventorySource.url} strategic={strategic} />
           <WebDetail record={record} language={balance.textLanguage} />
           <ProgrammeSheet record={record} language={balance.textLanguage} copy={balance.programmeCopy} />
           <GovernmentFollowup record={record} />

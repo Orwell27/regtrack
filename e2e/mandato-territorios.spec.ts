@@ -1,5 +1,42 @@
 import { expect, test } from "@playwright/test";
 
+test("Canarias conserva los objetivos específicos repetidos y permite buscar sus códigos", async ({ page }) => {
+  const errors: string[] = [];
+  page.on("pageerror", error => errors.push(error.message));
+  await page.goto("/observatorio/mandato/territorios/r-05");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Canarias");
+  await expect(page.locator(".mc-intro")).toContainText("promesas políticas pendientes");
+  await expect(page.locator(".mt-review")).toHaveCount(2);
+  await expect(page.getByRole("status")).toHaveText("145 resultados · página 1 de 10");
+  await page.getByLabel("Buscar medida autonómica").fill("BSIJIF.OEsp.3.2");
+  await expect(page.getByRole("status")).toHaveText("1 resultados · página 1 de 1");
+  const inventory = page.locator("#territorial-inventory");
+  await inventory.getByText("Objetivos específicos · 28", { exact: true }).click();
+  await expect(inventory.getByText("BSIJIF.OEsp.3.2", { exact: true })).toHaveCount(2);
+  await expect(inventory.getByText(/El original repite BSIJIF/)).toHaveCount(2);
+  await expect(inventory.locator("ol li")).toHaveCount(28);
+  expect(errors).toEqual([]);
+});
+
+test("Canarias en móvil mantiene los límites y diferencia donantes de donaciones", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-05");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  const waiting = page.locator('[id="compromiso-r-05-S.OEst.1"]');
+  await expect(waiting).toContainText("6.047");
+  await expect(waiting).toContainText("incoherencia");
+  const blood = page.locator('[id="compromiso-r-05-S.OEst.9"]');
+  await expect(blood).toContainText("45.578");
+  await expect(blood).toContainText("59.106");
+  await blood.getByText("Objetivo y página de origen", { exact: true }).click();
+  await blood.getByText("Objetivos específicos · 1", { exact: true }).click();
+  await expect(blood).toContainText("70.000 donantes anuales");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("143 resultados");
+  await page.screenshot({ path: "test-results/canarias-mobile-viewport.png" });
+});
+
 test("Bilbao conserva la copia identificada y busca dentro de las 80 descripciones", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Bilbao");

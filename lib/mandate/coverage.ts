@@ -34,7 +34,8 @@ export function getCoverage() {
       blockers: [
         ...(balance.programmeCopy ? ["Programa importado desde una copia de otro editor; cotejo con el archivo municipal pendiente."] : []),
         ...(balance.inventoryKind === "action-catalogue" ? ["Catálogo de seguimiento importado; reconstrucción de las promesas originales y cambios del plan pendiente."] : []),
-        `${balance.inventoryTotal - balance.reviews.length} ${balance.inventoryKind ? "actuaciones" : "compromisos"} pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
+        ...(balance.inventoryKind === "strategic-plan" ? ["Plan estratégico administrativo importado; inventario completo y correspondencia de las promesas políticas pendientes."] : []),
+        `${balance.inventoryTotal - balance.reviews.length} ${balance.inventoryKind === "strategic-plan" ? "objetivos estratégicos" : balance.inventoryKind ? "actuaciones" : "compromisos"} pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
     };
     const dossier = territorialDossiers[item.id];
     return { ...item, level: item.level as Jurisdiction["level"], mandate: dossier?.mandate ?? null,

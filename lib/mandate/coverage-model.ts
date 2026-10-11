@@ -21,7 +21,7 @@ export type Jurisdiction = {
   imported: number;
   reviewed: number;
   independentlyReviewed: number;
-  inventoryKind?: "action-catalogue";
+  inventoryKind?: "action-catalogue" | "strategic-plan";
   originalInventoryComplete?: boolean;
   blockers: string[];
 };
