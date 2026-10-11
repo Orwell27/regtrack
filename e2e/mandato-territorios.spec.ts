@@ -1,5 +1,35 @@
 import { expect, test } from "@playwright/test";
 
+test("Cantabria conserva las subcláusulas y separa importación de revisión", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Cantabria");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await expect(page.locator(".mc-list")).toContainText("1228 de 1228");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-06$/);
+  await expect(page.getByRole("status")).toHaveText("1228 resultados · página 1 de 82");
+  await page.getByLabel("Buscar medida autonómica").fill("TARIFA PLANA DE EMPRENDIZAJE");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("autónomos societarios");
+  await expect(page.locator("#territorial-inventory")).toContainText("página 11–12");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("1226 resultados");
+});
+
+test("Cantabria en móvil distingue cuota pagada y abono municipal", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-06");
+  await expect(page.locator("#compromiso-r-06-29")).toContainText("cuotas previamente pagadas");
+  await expect(page.locator("#compromiso-r-06-29")).toContainText("su autor sigue siendo el Gobierno");
+  await expect(page.locator("#compromiso-r-06-1198")).toContainText("15,75 euros trimestrales");
+  await expect(page.locator("#compromiso-r-06-1198")).toContainText("sin establecer el abono único de 20 euros");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/cantabria-mobile-top.png" });
+  await page.locator("#r-06-1198-redes").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/cantabria-mobile-networks.png" });
+});
+
 test("La Rioja distingue los apartados documentales de las promesas únicas", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("La Rioja");

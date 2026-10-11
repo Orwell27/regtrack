@@ -1,0 +1,10 @@
+{
+  "url": "https://transportedecantabria.es/es/web/ctl/nueva-tarjeta-contacto",
+  "finalUrl": "https://transportedecantabria.es/es/web/ctl/nueva-tarjeta-contacto",
+  "sha256": "e08937508a52e76cc8d01d76a6cff2b58288d4b82bc4fc5ee99cf43c8cd09a7f",
+  "bytes": 1110,
+  "retrievedAt": "2026-10-11T05:46:27.783094+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/cantabria/transport-card.txt",
+  "originalRetrievedAt": "2026-10-11T05:34:26.974384+00:00",
+  "captureNote": "Nota editorial de lectura. HTML con recursos externos no redistribuido tras bloqueo de protección de credenciales; no se atribuye su hash al original."
+}

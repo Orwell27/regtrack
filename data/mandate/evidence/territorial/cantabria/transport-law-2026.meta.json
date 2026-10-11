@@ -1,0 +1,15 @@
+{
+  "url": "https://boc.cantabria.es/boces/boletines.do?boton=Buscar&cve=2026-5303",
+  "finalUrl": "https://boc.cantabria.es/boces/boletines.do",
+  "requestMethod": "POST",
+  "requestUrl": "https://boc.cantabria.es/boces/boletines.do",
+  "requestForm": {
+    "boton": "Buscar",
+    "cve": "2026-5303"
+  },
+  "sha256": "9d16c4eefdc9db14f9fc32d3ae5d247b1412743a3f159794f868c1bb1237df7a",
+  "bytes": 719016,
+  "retrievedAt": "2026-10-11T05:36:12.876013+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/cantabria/transport-law-2026.pdf",
+  "extractionSha256": "7cf3f6579c2422c4bc2a3c28637ea8366f25eea98b0aebc0cc05574138e5e58d"
+}
