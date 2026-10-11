@@ -38,6 +38,7 @@ export type TerritorialBalance = {
   governmentDateKind?: "capture";
   mandateSourceId: string; sourceLabel: string; level: "municipality" | "region" | "autonomous-city"; governmentCutoff?: string;
   records: TerritorialRecord[]; reviews: TerritorialReview[]; sources: TerritorialSource[];
+  contextBlocks?: { id: string; topic: string; text: string; page: number; endPage: number }[];
 };
 
 /** Invalid evidence must stop publication; an import cannot create a review. */
@@ -62,6 +63,13 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
     || sources.get(balance.registerSourceId)?.role !== "register") throw Error("Inventario sin programa o registro comprobado");
   if (balance.governmentCutoff !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(balance.governmentCutoff)) throw Error("Corte gubernamental inválido");
   const ids = new Set<string>();
+  const contextIds = new Set<string>();
+  for (const block of balance.contextBlocks ?? []) {
+    if (!block.id.startsWith(`${balance.jurisdictionId}-context-`) || contextIds.has(block.id)
+      || !block.topic.trim() || !block.text.trim() || !Number.isInteger(block.page) || block.page < 1
+      || !Number.isInteger(block.endPage) || block.endPage < block.page) throw Error("Contexto territorial inválido");
+    contextIds.add(block.id);
+  }
   for (const record of balance.records) {
     if (ids.has(record.id) || !record.id.startsWith(`${balance.jurisdictionId}-`) || !record.text || !record.officialId
       || record.sourceId !== balance.sourceId) throw Error("Compromiso territorial inválido");

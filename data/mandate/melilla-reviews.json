@@ -1,0 +1,281 @@
+[
+  {
+    "commitmentId": "r-19-81",
+    "reviewedAt": "2026-10-11",
+    "title": "Correos y espacios universitarios: tramitación y obras comunicadas, apertura y resultados pendientes",
+    "conclusion": "Existe una trayectoria documental de rehabilitación y ampliación de espacios, pero las fuentes examinadas no acreditan la recepción y apertura del antiguo edificio de Correos. Tampoco permiten cerrar la adquisición y disponibilidad del conjunto de inmuebles prometidos.",
+    "periodNote": "El programa 2023–2027 conserva antecedentes anteriores a 2019 y una introducción que promete acometer la rehabilitación de inmediato. Se separan la convocatoria de contratación de 2024, el inicio comunicado en 2025 y las advertencias de septiembre de 2026. La aprobación del informe universitario en 2025 no convierte todo su contenido en datos del curso 2023/24.",
+    "components": [
+      {
+        "id": "alcance",
+        "claim": "Promesa, antecedentes y alcance",
+        "status": "documented",
+        "finding": "La medida 81 une rehabilitación de Correos y adquisición de otros edificios para uso universitario. La introducción recuerda una adquisición y un anteproyecto anteriores y pide acometer la rehabilitación de inmediato. Esos antecedentes no se cuentan como nuevas adquisiciones del mandato; el término inmediato no se sustituye por una fecha límite inventada.",
+        "citations": [
+          {
+            "sourceId": "melilla-programme-2023",
+            "locator": "Capítulo IV: introducción, continuidad y medida 81",
+            "page": 24
+          },
+          {
+            "sourceId": "melilla-programme-2023",
+            "locator": "Continuación y medida 81",
+            "page": 25
+          }
+        ]
+      },
+      {
+        "id": "contratacion",
+        "claim": "Fase de contratación realmente conservada",
+        "status": "documented",
+        "finding": "La convocatoria firmada el 12 de noviembre de 2024 prevé para el día 13 la valoración y propuesta de adjudicación del expediente 211/2024/CMA. Es una convocatoria, no el acta de la sesión ni una adjudicación definitiva. Su publicación en la plataforma estatal no cambia la autoría de la Ciudad.",
+        "citations": [
+          {
+            "sourceId": "melilla-correos-tender-2024",
+            "locator": "Orden del día, puntos segundo a quinto",
+            "page": 2
+          },
+          {
+            "sourceId": "melilla-correos-tender-2024",
+            "locator": "Fecha de firma de la convocatoria",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "inicio",
+        "claim": "Inicio, presupuesto y plazo comunicados",
+        "status": "reported",
+        "finding": "La Ciudad anunció el 20 de enero de 2025 el inicio de las obras, una inversión de 8,3 millones de euros y 24 meses de ejecución, con previsión de 18 aulas y 40 espacios para despachos y seminarios. Son datos comunicados por el promotor; no certificaciones de obra, coste liquidado ni espacios ya utilizables.",
+        "citations": [
+          {
+            "sourceId": "melilla-correos-start-2025",
+            "locator": "Noticia de 20/01/2025, cifras y plazo anunciados"
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Qué aporta la Universidad y qué advierte la información posterior",
+        "status": "documented",
+        "finding": "El informe de la UGR aprobado el 28 de febrero de 2025 recoge la licitación por 8,5 millones, la previsión de obras de 24 meses y la adquisición del Local 33 para acondicionarlo. No se equiparan 8,5 millones de licitación con 8,3 millones anunciados ni se calcula un ahorro sin expediente completo. RNE informa en septiembre de 2026 de retrasos en Correos y la Estación Marítima: los tres meses de paralización del titular corresponden al edificio principal del Campus, no a Correos.",
+        "citations": [
+          {
+            "sourceId": "melilla-correos-ugr-report",
+            "locator": "Aprobación del informe",
+            "page": 1
+          },
+          {
+            "sourceId": "melilla-correos-ugr-report",
+            "locator": "Licitación citada",
+            "page": 5
+          },
+          {
+            "sourceId": "melilla-correos-ugr-report",
+            "locator": "Correos, edificio principal y Local 33 separados",
+            "page": 16
+          },
+          {
+            "sourceId": "melilla-correos-rtve-2026",
+            "locator": "Resumen escrito de la información de 16/09/2026; no se ha transcrito el audio"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Recepción, apertura y efecto universitario",
+        "status": "unresolved",
+        "finding": "Faltan adjudicación y contrato completos, acta de replanteo, certificaciones, modificaciones, recepción y apertura efectiva, así como inventario de los demás edificios y su disponibilidad docente. La UGR es colaboradora y usuaria de los espacios, no una auditoría externa de la obra. No se certifica cumplimiento integral ni se atribuye al proyecto un aumento de estudiantes ya medido.",
+        "citations": [
+          {
+            "sourceId": "melilla-correos-ugr-report",
+            "locator": "Infraestructuras y plan de mejora",
+            "page": 16
+          }
+        ]
+      }
+    ],
+    "contrast": "Se contrasta el programa con la convocatoria original, la nota de la Ciudad, el informe de la universidad implicada y el resumen periodístico posterior. Hay emisores distintos, pero no una fiscalización independiente del expediente y sus resultados. Se conserva la diferencia entre edificios y entre importes de fases distintas.",
+    "pending": [
+      "Completar expediente contractual y comprobar fechas, importes, modificaciones y pagos.",
+      "Verificar recepción, apertura docente, inmuebles adquiridos y resultados con documentos y control externo.",
+      "Precisar el alcance temporal de la promesa de inicio inmediato y sus actuaciones de 2023.",
+      "Completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-19-784",
+    "reviewedAt": "2026-10-11",
+    "title": "Compromisos de calidad: seguimiento publicado con tres cartas sin indicadores",
+    "conclusion": "La Ciudad publica compromisos e indicadores de calidad, pero reconoce áreas sin datos y compromisos difíciles de medir. La documentación no sostiene que toda la red esté evaluada ni una mejora general verificada.",
+    "periodNote": "Se examina el ejercicio 2025. Las cartas de servicios comenzaron antes del mandato 2023–2027: mantenerlas o evaluarlas no equivale a crearlas ahora. Las páginas enlazadas son las del PDF; su numeración impresa difiere al final.",
+    "components": [
+      {
+        "id": "compromiso",
+        "claim": "Qué pide la medida",
+        "status": "documented",
+        "finding": "La medida 784 promete potenciar la calidad con compromisos reales de gestión e indicadores para el control ciudadano. El informe de 2025 explica que las cartas y su evaluación proceden de normativa y planes anteriores; no se atribuye al mandato actual la totalidad de su creación.",
+        "citations": [
+          {
+            "sourceId": "melilla-programme-2023",
+            "locator": "Medida 784",
+            "page": 122
+          },
+          {
+            "sourceId": "melilla-quality-charters-2025",
+            "locator": "Presentación y antecedentes",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "lagunas",
+        "claim": "Cobertura y datos ausentes reconocidos",
+        "status": "reported",
+        "finding": "El informe comunica 44 cartas vigentes y señala que Fuerte Rostrogordo, Pabellón Javier Imbroda y Ludotecas no facilitaron indicadores de cumplimiento. También reconoce dificultades de obtención de datos y la necesidad de actualizar compromisos. El juicio oficial de alto cumplimiento no rellena estas lagunas.",
+        "citations": [
+          {
+            "sourceId": "melilla-quality-charters-2025",
+            "locator": "Conclusiones, puntos 1 y 2; impresa 91",
+            "page": 90
+          },
+          {
+            "sourceId": "melilla-quality-charters-2025",
+            "locator": "Continuación y puntos 4 y 5; impresa 92",
+            "page": 91
+          }
+        ]
+      },
+      {
+        "id": "quejas",
+        "claim": "Quejas y sugerencias conservan su denominador",
+        "status": "reported",
+        "finding": "Las conclusiones recogen 268 quejas y 27 sugerencias en el conjunto de la Administración durante 2025, de las que 103 quejas y 6 sugerencias corresponden a servicios con carta. No se suman esos subconjuntos al total ni se calcula una tasa de mala calidad sin volumen de usuarios y servicios comparables.",
+        "citations": [
+          {
+            "sourceId": "melilla-quality-charters-2025",
+            "locator": "Conclusión tercera",
+            "page": 91
+          }
+        ]
+      },
+      {
+        "id": "control",
+        "claim": "Mejora e independencia aún sin resolver",
+        "status": "unresolved",
+        "finding": "El seguimiento lo realizan órganos de la propia administración. Faltan las series completas, justificaciones de los datos ausentes y resultados de los planes de mejora para evaluar la promesa en toda su extensión. La publicación de indicadores no prueba por sí sola una mejora causal del servicio ni una auditoría independiente.",
+        "citations": [
+          {
+            "sourceId": "melilla-quality-charters-2025",
+            "locator": "Responsabilidad del seguimiento",
+            "page": 7
+          },
+          {
+            "sourceId": "melilla-quality-charters-2025",
+            "locator": "Conclusiones y planes de actualización",
+            "page": 91
+          }
+        ]
+      }
+    ],
+    "contrast": "Se leen los anexos y las carencias de la misma fuente que comunica un alto cumplimiento. Esa consistencia interna es distinta de corroboración externa. Las cartas no se equiparan a medidas electorales ni su porcentaje se adopta como valoración de RegTrack.",
+    "pending": [
+      "Obtener indicadores ausentes y verificar el alcance de cada carta y sus series.",
+      "Contrastar planes de mejora con resultados y control externo.",
+      "Completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-19-785",
+    "reviewedAt": "2026-10-11",
+    "title": "Encuestas de satisfacción: estudio de 2025 acreditado, representatividad y alcance pendientes",
+    "conclusion": "Existe un estudio de satisfacción de las oficinas de atención al ciudadano para 2025. Su existencia acredita actividad evaluadora en ese servicio; no demuestra la paralización previa alegada por el programa, cobertura de todos los servicios ni mejora general.",
+    "periodNote": "La muestra corresponde a recogidas mensuales de 2025, con tabulación en febrero y análisis en abril de 2026. No se presenta como percepción de octubre de 2026 ni se extiende a la población que no utilizó las oficinas.",
+    "components": [
+      {
+        "id": "estudio",
+        "claim": "Actividad evaluadora y fechas",
+        "status": "documented",
+        "finding": "La medida 785 promete retomar la evaluación mediante encuestas y afirma que había sido paralizada. Se conserva un estudio OIAC de 2025 bajo supervisión de la Dirección General de Administración Pública. La cronología de 2025–2026 acredita la elaboración de ese estudio; la afirmación sobre paralización anterior requiere una serie histórica que aún no se ha contrastado.",
+        "citations": [
+          {
+            "sourceId": "melilla-programme-2023",
+            "locator": "Medida 785",
+            "page": 122
+          },
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Autoría y supervisión",
+            "page": 4
+          },
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Cronograma",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "muestra",
+        "claim": "Muestra y limitaciones reconocidas",
+        "status": "reported",
+        "finding": "El estudio declara 1.203 participantes y muestreo aleatorio simple entre usuarios de las OIAC. También reconoce mayor reticencia en Palmeras, mayor disposición en Industrial y Centro y cierres discontinuos en Victoria, con desviación de la previsión por oficina. No se asume representatividad de toda Melilla sin comprobar selección, no respuesta y ponderación.",
+        "citations": [
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Diseño muestral y desviaciones",
+            "page": 8
+          },
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Tamaño y método declarado",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "unidad",
+        "claim": "Satisfacción declarada, respuestas válidas y unidades",
+        "status": "reported",
+        "finding": "La tabla atribuye 4,81 sobre 5 al ítem de calidad general, con 1.197 respuestas válidas. La muestra total es 1.203 y otras preguntas tienen denominadores distintos. No se convierte esa media en porcentaje de cumplimiento ni se confunde con una medición objetiva de tiempos o eficacia. La valoración agregada sin ese ítem, comunicada como 4,80, es otro cálculo.",
+        "citations": [
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Tabla de estadísticos descriptivos",
+            "page": 15
+          },
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Interpretación y cálculo alternativo",
+            "page": 16
+          }
+        ]
+      },
+      {
+        "id": "independencia",
+        "claim": "Alcance del término evaluación externa",
+        "status": "unresolved",
+        "finding": "El informe llama externa a la consulta a usuarios, pero está elaborado bajo supervisión administrativa: ese término no acredita un control independiente de la administración. Quedan pendientes cobertura del programa completo de encuestas, evolución comparable, microdatos y comprobación externa del método y de las mejoras derivadas.",
+        "citations": [
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Mecanismos de evaluación",
+            "page": 9
+          },
+          {
+            "sourceId": "melilla-quality-oiac-2025",
+            "locator": "Supervisión del estudio",
+            "page": 4
+          }
+        ]
+      }
+    ],
+    "contrast": "La ficha separa la existencia del estudio de sus resultados declarados, contrasta la cifra resumen con la tabla y conserva las limitaciones de participación reconocidas. No se atribuye independencia a un estudio solo porque consulte a usuarios o se describa como evaluación externa.",
+    "pending": [
+      "Reconstruir la serie previa para comprobar la paralización alegada y el reinicio.",
+      "Completar el mapa de servicios encuestados y comprobar selección, no respuesta, ponderación y evolución comparable.",
+      "Verificar mejoras adoptadas y sus resultados con control externo.",
+      "Completar revisión humana independiente."
+    ]
+  }
+]

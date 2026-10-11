@@ -1,5 +1,45 @@
 import { expect, test } from "@playwright/test";
 
+test("Melilla conserva el número repetido y el contexto sin inflar el inventario", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Melilla");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-19$/);
+  await expect(page.getByRole("status")).toHaveText("816 resultados · página 1 de 55");
+  await page.getByLabel("Buscar medida de la ciudad autónoma").fill("388");
+  await expect(page.getByRole("status")).toContainText("2 resultados");
+  await expect(page.locator("#territorial-inventory article")).toHaveCount(2);
+  await expect(page.locator("#territorial-inventory").getByText(/El número 388 aparece dos veces/)).toHaveCount(2);
+  await page.getByLabel("Buscar medida de la ciudad autónoma").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("813 resultados");
+  await page.getByText("Introducciones y otros textos sin número · 88", { exact: true }).click();
+  const context = page.locator("section").filter({ has: page.getByRole("heading", { name: "Contexto del programa", exact: true }) });
+  await expect(context).toContainText("5000 universitarios");
+  await expect(context).toContainText("de inmediato");
+  await expect(context.getByRole("link", { name: "Página 24–25", exact: true })).toHaveAttribute("href", /\.pdf#page=24$/);
+});
+
+test("Melilla en móvil separa contratación, carencias de indicadores y satisfacción", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-19");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  const works = page.locator("#compromiso-r-19-81");
+  await expect(works).toContainText("no el acta de la sesión ni una adjudicación definitiva");
+  await expect(works).toContainText("edificio principal del Campus, no a Correos");
+  await works.getByText("Promesa y página de origen", { exact: true }).click();
+  await expect(works.getByRole("link", { name: "Programa de gobierno del PP 2023–2027 · página 25", exact: true })).toHaveAttribute("href", /\.pdf#page=25$/);
+  await expect(page.locator("#compromiso-r-19-784")).toContainText("Fuerte Rostrogordo, Pabellón Javier Imbroda y Ludotecas");
+  const survey = page.locator("#compromiso-r-19-785");
+  await expect(survey).toContainText("1.197 respuestas válidas");
+  await expect(survey).toContainText("La muestra total es 1.203");
+  await expect(survey).toContainText("No se convierte esa media en porcentaje de cumplimiento");
+  await page.getByText("Introducciones y otros textos sin número · 88", { exact: true }).click();
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.getByRole("heading", { level: 1 }).scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/melilla-mobile-viewport.png" });
+});
+
 test("Ceuta conserva el alcance inicial, el anexo y los números repetidos", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Ceuta");
