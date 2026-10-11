@@ -33,14 +33,15 @@ export function getCoverage() {
       ...(balance.programmeCopy ? { originalInventoryComplete: false } : {}),
       ...(balance.transcriptionPending ? { originalInventoryComplete: false } : {}),
       blockers: [
-        ...(balance.transcriptionPending ? ["Transcripción OCR provisional; cotejo íntegro independiente del texto escaneado pendiente."] : []),
+        ...(balance.transcriptionPending ? [balance.transcriptionMethod === "digital" ? "Extracción digital provisional; cotejo íntegro independiente con el documento pendiente." : "Transcripción OCR provisional; cotejo íntegro independiente del texto escaneado pendiente."] : []),
         ...(balance.programmeCopy ? ["Programa importado desde una copia de otro editor; cotejo con un archivo publicado por su autor pendiente."] : []),
         ...(balance.inventoryKind === "action-catalogue" ? ["Catálogo de seguimiento importado; reconstrucción de las promesas originales y cambios del plan pendiente."] : []),
         ...(balance.inventoryKind === "strategic-plan" ? ["Plan estratégico administrativo importado; inventario completo y correspondencia de las promesas políticas pendientes."] : []),
+        ...(balance.inventoryKind === "numbered-sections" ? ["Apartados numerados importados; descomposición de submedidas y conciliación de reiteraciones y compromisos posteriores pendientes."] : []),
         ...(balance.inventoryKind === "bullet-sections" ? ["Apartados con viñeta importados; conciliación de reiteraciones y compromisos formulados en prosa pendiente."] : []),
         ...(balance.inventoryKind === "preagreement" ? ["Preacuerdo importado; cotejo con el texto final firmado e inventario definitivo del mandato pendientes."] : []),
         ...(balance.inventoryKind === "initial-programme" ? ["Programa inicial no exhaustivo importado; inventario completo del mandato y modificaciones posteriores pendientes."] : []),
-        `${balance.inventoryTotal - balance.reviews.length} ${balance.inventoryKind === "bullet-sections" ? "apartados con viñeta" : balance.inventoryKind === "preagreement" ? "apartados del preacuerdo" : balance.inventoryKind === "initial-programme" ? "medidas iniciales" : balance.inventoryKind === "strategic-plan" ? "objetivos estratégicos" : balance.inventoryKind ? "actuaciones" : "compromisos"} pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
+        `${balance.inventoryTotal - balance.reviews.length} ${balance.inventoryKind === "numbered-sections" ? "apartados numerados" : balance.inventoryKind === "bullet-sections" ? "apartados con viñeta" : balance.inventoryKind === "preagreement" ? "apartados del preacuerdo" : balance.inventoryKind === "initial-programme" ? "medidas iniciales" : balance.inventoryKind === "strategic-plan" ? "objetivos estratégicos" : balance.inventoryKind ? "actuaciones" : "compromisos"} pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
     };
     const dossier = territorialDossiers[item.id];
     return { ...item, level: item.level as Jurisdiction["level"], mandate: dossier?.mandate ?? null,

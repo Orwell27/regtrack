@@ -1,5 +1,38 @@
 import { expect, test } from "@playwright/test";
 
+test("Galicia conserva apartados pendientes y limita la cifra del partido", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Galicia");
+  await expect(page.locator(".mc-list")).toContainText("793 de 793");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-12$/);
+  await expect(page.locator(".mn-summary-grid")).toContainText("apartados numerados");
+  await expect(page.getByText("Extracción digital provisional.", { exact: false })).toBeVisible();
+  await expect(page.locator(".mc-warning").filter({ hasText: /OCR|viñeta/ })).toHaveCount(0);
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.locator(".mn-method").filter({ has: page.getByRole("heading", { name: "Qué se ha comprobado", exact: true }) })).toContainText("no se interpreta como cumplimiento total");
+  await expect(page.getByRole("status")).toContainText("793 resultados");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("790 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("Sanidad penitenciaria");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("cotejado visualmente");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+});
+
+test("Galicia en móvil distingue normas, entregas y aplicación efectiva", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-12");
+  await expect(page.locator('section[aria-labelledby="r-12-3-4-entregas"]')).toContainText("Dato comunicado por la administración");
+  await expect(page.locator('section[aria-labelledby="r-12-3-4-contraste"]')).toContainText("valoración de la oposición");
+  await expect(page.locator('section[aria-labelledby="r-12-7-1-requisitos"]')).toContainText("90 %");
+  await expect(page.locator('section[aria-labelledby="r-12-7-1-aplicacion"]')).toContainText("15/02/2027");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/galicia-mobile-top.png" });
+  await page.locator("#r-12-7-1-requisitos").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/galicia-mobile-university.png" });
+});
+
 test("Baleares conserva el pacto inicial y no oculta los apartados pendientes", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Balears");

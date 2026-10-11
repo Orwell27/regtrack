@@ -1,0 +1,294 @@
+[
+  {
+    "commitmentId": "r-12-3-4",
+    "reviewedAt": "2026-10-11",
+    "title": "Vivienda pública: objetivo de 8.000 en 2028 y primeras entregas comunicadas",
+    "conclusion": "El programa promete disponer de 8.000 viviendas de promoción pública en 2028. El nuevo pacto mantiene ese hito y añade otras 2.000 hasta 2030. La Xunta comunicó la entrega de 74 viviendas en julio de 2026 y avances en licitación y ejecución, que son estados distintos. No se ha conciliado el parque disponible completo ni se acredita aquí el cumplimiento del objetivo final.",
+    "periodNote": "El plazo de 2028 no ha vencido al corte de 11/10/2026. Se distinguen el programa de 2024, el pacto de febrero de 2026, la crítica del BNG de abril y la entrega anunciada en julio. Los datos de cada fecha no se trasladan automáticamente a octubre ni se mezclan viviendas nuevas, reocupadas, rehabilitadas, protegidas privadas y de titularidad pública.",
+    "components": [
+      {
+        "id": "objetivo",
+        "claim": "Duplicar el parque hasta 8.000 viviendas en 2028",
+        "status": "documented",
+        "finding": "El apartado 4 de Vivienda fija 8.000 viviendas de promoción pública en 2028. El II Pacto recoge 8.000 de titularidad pública en 2028 y una estimación de 2.000 adicionales hasta 2030. La ampliación del horizonte no sustituye ni aplaza el compromiso original. Los objetivos de suelo residencial para vivienda protegida pertenecen a otra medida y no acreditan viviendas terminadas.",
+        "citations": [
+          {
+            "sourceId": "galicia-programme",
+            "locator": "Vivienda, apartado 4",
+            "page": 18
+          },
+          {
+            "sourceId": "galicia-housing-pact",
+            "locator": "Introducción: líneas estratégicas",
+            "page": 21
+          },
+          {
+            "sourceId": "galicia-housing-pact",
+            "locator": "Promoción pública: IGVS y Vipugal",
+            "page": 26
+          }
+        ]
+      },
+      {
+        "id": "entregas",
+        "claim": "Entregas y actuaciones efectivamente comunicadas",
+        "status": "reported",
+        "finding": "El IGVS informa de la entrega de 74 llaves en Valdecorvos el 28/07/2026 y las presenta como las primeras del compromiso de 4.000 nuevas viviendas. La misma nota sitúa más del 60 % de las promociones en ejecución o con obras licitadas. Ese porcentaje se refiere a promociones, no necesariamente a igual proporción de viviendas; tampoco equivale a entregas. La nota no contiene un inventario completo de altas, bajas y disponibilidad del parque.",
+        "citations": [
+          {
+            "sourceId": "galicia-housing-delivery",
+            "locator": "Entrega de 74 llaves y promociones en ejecución o licitadas; 28/07/2026"
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Conciliar las cifras de calificación, entrega y demanda",
+        "status": "unresolved",
+        "finding": "El BNG sostuvo el 5/04/2026 que las viviendas públicas calificadas en 2024 y 2025 no llegaban a 300 y que había más de 30.000 demandantes en marzo de 2026. Es una valoración de la oposición, no una auditoría independiente ni una serie conciliada. Sus cifras tienen fechas y unidades distintas de la entrega de julio y de las promociones en obras. La revisión conserva la discrepancia sin convertirla en un porcentaje alternativo de cumplimiento.",
+        "citations": [
+          {
+            "sourceId": "galicia-opposition-balance",
+            "locator": "Anuncio 30: demanda y calificaciones",
+            "page": 4
+          },
+          {
+            "sourceId": "galicia-opposition-balance",
+            "locator": "Anuncio 42: remisión al 30",
+            "page": 6
+          },
+          {
+            "sourceId": "galicia-housing-delivery",
+            "locator": "Entregas y estado de las promociones"
+          }
+        ]
+      },
+      {
+        "id": "materiales",
+        "claim": "Impulsar materiales sostenibles en la construcción",
+        "status": "unresolved",
+        "finding": "El compromiso incluye materiales más sostenibles. La descripción institucional de edificios eficientes o accesibles no sustituye la revisión de pliegos, certificaciones, materiales instalados y resultados ambientales de todas las promociones. No se ha comprobado ese conjunto documental.",
+        "citations": [
+          {
+            "sourceId": "galicia-programme",
+            "locator": "Vivienda, apartado 4: materiales sostenibles",
+            "page": 18
+          },
+          {
+            "sourceId": "galicia-housing-delivery",
+            "locator": "Descripción de la promoción de Valdecorvos"
+          }
+        ]
+      },
+      {
+        "id": "parque-disponible",
+        "claim": "Comprobar el parque disponible completo y su acceso real",
+        "status": "unresolved",
+        "finding": "Faltan un registro conciliado de viviendas públicas al inicio y al corte, altas y bajas, finalización, entrega, ocupación, régimen de venta o alquiler, demanda atendida y tiempos de espera. No se suma la compra o rehabilitación de una vivienda ya incluida en el parque como si fuera una alta nueva. El plazo futuro tampoco permite concluir incumplimiento definitivo por ausencia de prueba actual del total.",
+        "citations": [
+          {
+            "sourceId": "galicia-programme",
+            "locator": "Vivienda, apartado 4",
+            "page": 18
+          },
+          {
+            "sourceId": "galicia-housing-pact",
+            "locator": "Objetivo de parque público",
+            "page": 21
+          }
+        ]
+      }
+    ],
+    "contrast": "Se conserva la meta literal, se distingue el documento de planificación del resultado y se atribuyen a sus autores tanto los datos del IGVS como las objeciones del BNG. Xunta e IGVS pertenecen a la misma familia de origen. Ninguno de estos documentos constituye una auditoría independiente del parque completo.",
+    "pending": [
+      "Conciliar el inventario público inicial y actual con altas, bajas, finalización, entrega y ocupación, sin datos personales de adjudicatarios.",
+      "Revisar expedientes de obra y certificaciones de sostenibilidad de las promociones.",
+      "Contrastar demanda y tiempos de acceso con series homogéneas y control externo.",
+      "Revisión humana independiente de la ficha y de la atribución temporal."
+    ]
+  },
+  {
+    "commitmentId": "r-12-3-5",
+    "reviewedAt": "2026-10-11",
+    "title": "Pacto de vivienda 2026–2030: documento publicado y firma corroborada",
+    "conclusion": "Se documenta el II Pacto de Vivenda de Galicia 2026–2030 y la participación del sector en su firma. COAFGA confirma directamente su asistencia, lo que corrobora ese hecho concreto. La firma no demuestra que se haya ejecutado todo el pacto ni que se hayan alcanzado sus resultados de vivienda.",
+    "periodNote": "El programa plantea renovar el pacto para 2026–2030. Xunta y COAFGA sitúan la firma el 10/02/2026. El documento incluye también un anexo de seguimiento del pacto 2021–2025: los resultados de ese período anterior no se atribuyen íntegramente al mandato iniciado en 2024.",
+    "components": [
+      {
+        "id": "documento",
+        "claim": "Renovar las líneas estratégicas para 2026–2030",
+        "status": "documented",
+        "finding": "El IGVS publica el II Pacto de 173 páginas. Sus cuatro líneas abordan acceso, rehabilitación y regeneración, suelo residencial y otras medidas, junto con un anexo de vivienda y juventud. El documento mantiene la meta de 2028 y amplía la planificación hasta 2030. La existencia de este texto acredita la renovación documental solicitada en el programa.",
+        "citations": [
+          {
+            "sourceId": "galicia-programme",
+            "locator": "Vivienda, apartado 5",
+            "page": 18
+          },
+          {
+            "sourceId": "galicia-housing-pact",
+            "locator": "Introducción: estructura y horizonte",
+            "page": 21
+          }
+        ]
+      },
+      {
+        "id": "participacion",
+        "claim": "Participación del sector en la firma",
+        "status": "documented",
+        "finding": "La Xunta anuncia la firma del 10/02/2026 y COAFGA confirma que su presidenta participó en el acto con once entidades y colegios profesionales vinculados al sector. Esta fuente procede de un participante distinto del Gobierno y corrobora su participación; no certifica la representatividad de todos los afectados ni la incorporación de cada propuesta del sector.",
+        "citations": [
+          {
+            "sourceId": "galicia-housing-pact-register",
+            "locator": "Acto de firma de 10/02/2026"
+          },
+          {
+            "sourceId": "galicia-housing-coafga",
+            "locator": "Confirmación de la participación de la presidenta; 10/02/2026"
+          }
+        ]
+      },
+      {
+        "id": "seguimiento",
+        "claim": "Ejecución y resultados posteriores del nuevo pacto",
+        "status": "unresolved",
+        "finding": "La firma y los objetivos de inversión no acreditan pagos, viviendas terminadas ni resultados de accesibilidad. Queda por conciliar el seguimiento de las acciones 2026–2030 con ejecución presupuestaria, indicadores y actas del órgano de seguimiento. El anexo del pacto anterior debe mantenerse separado.",
+        "citations": [
+          {
+            "sourceId": "galicia-housing-pact",
+            "locator": "Líneas estratégicas y anexo III: seguimiento del I Pacto"
+          }
+        ]
+      }
+    ],
+    "contrast": "Hay corroboración de un hecho acotado —la participación en la firma— por COAFGA, que es firmante interesado y no auditor de resultados. Las publicaciones de la Xunta y del IGVS se agrupan bajo una misma procedencia. No se interpreta la aprobación del plan como cumplimiento de todas sus acciones.",
+    "pending": [
+      "Revisar aportaciones y actas para comprobar la participación y el seguimiento efectivo.",
+      "Conciliar ejecución de acciones y presupuesto 2026–2030, separándola del seguimiento del pacto anterior.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-12-7-1",
+    "reviewedAt": "2026-10-11",
+    "title": "Primera matrícula de grado: bonificación del 99 % y requisitos de acceso",
+    "conclusion": "La bonificación se implantó normativamente en 2024–2025 y se mantiene en 2026–2027. La regulación establece un 99 % sobre créditos bonificables, con requisitos académicos y de acceso; no elimina todos los gastos ni cubre automáticamente a cualquier estudiante. La normativa de matrícula de la UDC corrobora su incorporación al procedimiento, pero falta conciliar las bonificaciones efectivamente aplicadas y las personas excluidas.",
+    "periodNote": "Se distinguen el anuncio de 24/06/2024, el Decreto 164/2024 publicado el 3/07/2024, el Decreto 55/2025 y el Decreto 72/2026 publicado el 9/07/2026, junto con su corrección de 14/07/2026. La resolución de la UDC se firmó el 7/07/2026 y se publicó en su sede el 9/07/2026. El curso 2026–2027 sigue abierto al corte de revisión.",
+    "components": [
+      {
+        "id": "implantacion",
+        "claim": "Poner en marcha la bonificación de primera matrícula de grado",
+        "status": "documented",
+        "finding": "El Decreto 164/2024 introdujo una bonificación del 99 % para el curso 2024–2025, y las normas de 2025 y 2026 la mantienen. El anuncio institucional habla de gratuidad, mientras que la norma concreta el porcentaje y las condiciones. Se documenta la implantación normativa, sin convertirla en prueba de aplicación a todo el alumnado ni de prioridad histórica frente a otras comunidades.",
+        "citations": [
+          {
+            "sourceId": "galicia-programme",
+            "locator": "Enseñanza universitaria, apartado 1",
+            "page": 24
+          },
+          {
+            "sourceId": "galicia-university-law-2024",
+            "locator": "Artículo 13",
+            "page": 15
+          },
+          {
+            "sourceId": "galicia-university-law-2025",
+            "locator": "Artículo 13"
+          },
+          {
+            "sourceId": "galicia-university-law-2026",
+            "locator": "Artículo 13",
+            "page": 15
+          },
+          {
+            "sourceId": "galicia-university-launch",
+            "locator": "Anuncio de 24/06/2024"
+          }
+        ]
+      },
+      {
+        "id": "requisitos",
+        "claim": "Alcance real para nuevo ingreso y continuidad",
+        "status": "documented",
+        "finding": "En 2026–2027, el artículo 13 exige vías de acceso concretas para nuevo ingreso —pruebas de la CIUG de 2026, ciclo superior superado en 2025–2026 o determinados diplomas obtenidos en centros gallegos—. En continuidad exige estudios previos en el SUG, matrícula mínima y sus excepciones, y porcentajes de créditos superados: 90 % en Artes y Humanidades y Ciencias Sociales y Jurídicas, 80 % en Salud y 65 % en Ciencias e Ingeniería y Arquitectura. En matrícula parcial exige superar la totalidad de créditos del curso anterior. No se aplica a quien ya tenga una titulación universitaria de las previstas. La corrección de julio ajusta la referencia de la letra f) a los apartados anteriores y no suprime estos requisitos.",
+        "citations": [
+          {
+            "sourceId": "galicia-university-law-2026",
+            "locator": "Artículo 13.1–4",
+            "page": 15
+          },
+          {
+            "sourceId": "galicia-university-law-2026",
+            "locator": "Continuidad y porcentajes",
+            "page": 16
+          },
+          {
+            "sourceId": "galicia-university-correction",
+            "locator": "Corrección de la referencia del artículo 13.2.f"
+          }
+        ]
+      },
+      {
+        "id": "importe",
+        "claim": "Distinguir créditos bonificados del coste total de estudiar",
+        "status": "documented",
+        "finding": "La bonificación alcanza como máximo los créditos en primera matrícula y solo los servicios académicos; no genera devolución. En continuidad se calcula a partir de créditos aprobados en primera matrícula el curso anterior. Debe coordinarse con las becas del Ministerio y otras exenciones. En centros adscritos se limita a la parte que se abona a la universidad por expediente y evaluación. No convierte en gratuitos alojamiento, manutención, tasas administrativas, segundas matrículas ni todos los precios propios del centro adscrito.",
+        "citations": [
+          {
+            "sourceId": "galicia-university-law-2026",
+            "locator": "Artículo 13.3–8",
+            "page": 17
+          },
+          {
+            "sourceId": "galicia-university-law-2026",
+            "locator": "Cálculo y centros adscritos",
+            "page": 18
+          },
+          {
+            "sourceId": "galicia-university-udc",
+            "locator": "Artículo 15.2: bonificación, gastos y centros adscritos",
+            "page": 24
+          }
+        ]
+      },
+      {
+        "id": "procedimiento",
+        "claim": "Incorporar la bonificación al procedimiento universitario",
+        "status": "documented",
+        "finding": "La resolución rectoral de la UDC para 2026–2027 incorpora el cálculo del 99 %, los requisitos, la coordinación con becas y la identificación de la bonificación de la Xunta en el documento de matrícula. Es una norma propia de la universidad que acredita el procedimiento previsto, no un certificado agregado de todas las matrículas liquidadas en las tres universidades.",
+        "citations": [
+          {
+            "sourceId": "galicia-university-udc",
+            "locator": "Artículo 15.2 y 15.3",
+            "page": 24
+          },
+          {
+            "sourceId": "galicia-university-udc",
+            "locator": "Información al estudiante y formas de pago",
+            "page": 25
+          }
+        ]
+      },
+      {
+        "id": "aplicacion",
+        "claim": "Verificar beneficiarios, exclusiones y compensación efectiva",
+        "status": "unresolved",
+        "finding": "Faltan cifras conciliadas por universidad, curso, tipo de acceso y motivo de exclusión, así como las certificaciones y pagos de compensación. El Decreto 72/2026 prevé certificación antes del 31/10/2026 y comunicación de datos de matrícula antes del 15/02/2027: esos plazos no habían vencido al corte de 11/10/2026. Por ello, no se presenta el curso en marcha como un resultado anual cerrado.",
+        "citations": [
+          {
+            "sourceId": "galicia-university-law-2026",
+            "locator": "Disposiciones adicionales primera y tercera",
+            "page": 20
+          }
+        ]
+      }
+    ],
+    "contrast": "Se comparan el texto prometido, el anuncio de gratuidad, las reglas de tres cursos y la normativa de matrícula de la UDC. Las normas de la Xunta mantienen su autoría aunque el PDF de 2024 esté alojado por la universidad. La resolución propia de la UDC es una fuente de implementación distinta, pero tampoco sustituye una auditoría de matrículas y pagos.",
+    "pending": [
+      "Conciliar beneficiarios, créditos, exclusiones, incidencias y compensaciones de las tres universidades, sin datos personales.",
+      "Comprobar aplicación efectiva en centros adscritos y modalidades de matrícula.",
+      "Contrastar la afirmación de medida pionera con antecedentes homogéneos de otras comunidades.",
+      "Revisión humana independiente de condiciones y alcance."
+    ]
+  }
+]
