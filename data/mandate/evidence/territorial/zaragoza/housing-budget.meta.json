@@ -1,0 +1,11 @@
+{
+  "url": "https://www.zaragoza.es/contenidos/gobierno-abierto/transparencia/presupuestos_Entidades/ZVivienda2026.pdf",
+  "finalUrl": "https://www.zaragoza.es/contenidos/gobierno-abierto/transparencia/presupuestos_Entidades/ZVivienda2026.pdf",
+  "sha256": "025462a60df7849ab0809f609e0a091199dc419429893b93bff8320768b16504",
+  "bytes": 1637115,
+  "retrievedAt": "2026-10-11T12:42:14.214387+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/zaragoza/housing-budget.pdf",
+  "extractionSha256": "773bfca1651e28d59bef11f3136f5598ea38776f9d4cc8ecfd5d99587043f57a",
+  "ocrSha256": "a01aa4ae003eee8b04c785ed270c3b89e08a6335a6e019a2473097740d7fd667",
+  "ocrMethod": "Windows OCR es-ES; render PDFium scale 2; provisional, page 13 visually checked"
+}

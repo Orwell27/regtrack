@@ -1,0 +1,12 @@
+{
+  "url": "https://nataliachueca.es/wp-content/uploads/2023/05/Programa-electoral-Natalia-Chueca.pdf",
+  "finalUrl": "https://nataliachueca.es/wp-content/uploads/2023/05/Programa-electoral-Natalia-Chueca.pdf",
+  "sha256": "7179edb45c59ead0aadfa0c124d5da20c51c21cdbcb91386352183082c36037d",
+  "bytes": 1464371,
+  "retrievedAt": "2026-10-11T12:36:41.990179+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/zaragoza/programme.pdf",
+  "extractionSha256": "72b46ea2aff6da4c37d84b658bc83928d7088de4cf7c9e889fba2c7a059ac742",
+  "layoutSha256": "258d39b49643551bc39bb0b9e56ee27105ccec67025b632e3d0f3e5e871fdd2c",
+  "extractionMethod": "pypdfium2 get_text_range; line bounds; descending top coordinate, then left",
+  "extractionVersion": "5.13.0"
+}

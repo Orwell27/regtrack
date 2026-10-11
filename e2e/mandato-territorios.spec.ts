@@ -1,5 +1,39 @@
 import { expect, test } from "@playwright/test";
 
+test("Zaragoza municipal consulta las juntas y sus pendientes", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Zaragoza");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("municipality");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-50297$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Zaragoza · mandato municipal 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("34 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("Alfocea");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  const housing = page.locator("#compromiso-m-50297-7");
+  await housing.getByText("Apartado del programa y página de origen", { exact: true }).click();
+  await expect(housing.getByRole("link", { name: "Programa electoral de Natalia Chueca · 2023 · página 32–33", exact: true })).toHaveAttribute("href", /Programa-electoral-Natalia-Chueca.pdf#page=32$/);
+});
+
+test("Zaragoza municipal conserva discrepancias y límites en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-50297");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await page.screenshot({ path: "test-results/zaragoza-mobile-intro.png" });
+  await expect(page.locator("#compromiso-m-50297-3")).toContainText("Zaragoza en 2027 y Nápoles en 2026");
+  await expect(page.locator("#compromiso-m-50297-6")).toContainText("no fija por sí solo un plazo contractual");
+  await expect(page.locator("#compromiso-m-50297-7")).toContainText("anterior a la elección de Chueca");
+  const housing = page.locator("#compromiso-m-50297-7");
+  await expect(housing).toContainText("no son gasto ejecutado");
+  await expect(housing).toContainText("el primer plazo ha pasado y el segundo aún no");
+  await housing.scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/zaragoza-mobile-housing.png" });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
 test("Murcia municipal distingue el municipio de la región y filtra el discurso", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Murcia");
