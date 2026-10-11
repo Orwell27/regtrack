@@ -1,5 +1,26 @@
 import { expect, test } from "@playwright/test";
 
+test("Ávila distingue aperturas, previsiones y atribución municipal en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Ávila");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-05019$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Ávila · programa municipal 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.locator("#compromiso-m-05019-p11-01")).toContainText("documentación preparatoria");
+  await expect(page.locator("#compromiso-m-05019-p18-01")).toContainText("no hogares atendidos");
+  await expect(page.locator("#compromiso-m-05019-p51-01")).toContainText("No se atribuye su ejecución al Ayuntamiento");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("160 resultados");
+  await page.getByLabel("Buscar sección municipal").fill("Vicolozano");
+  await expect(page.getByRole("status")).toContainText("1 resultado");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 37/ })).toHaveAttribute("href", /CUMPLIMOS\.pdf#page=37$/);
+  await expect(page.locator("#territorial-inventory")).toContainText("no es un número oficial");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/avila-mobile-evidence.png" });
+});
+
 test("Almería separa viviendas previstas, reconocimiento y desistimiento en móvil", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/observatorio/mandato/cobertura");

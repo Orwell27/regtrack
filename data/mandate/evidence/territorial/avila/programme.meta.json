@@ -1,0 +1,14 @@
+{
+  "url": "https://poravila.es/wp-content/uploads/2023/05/PROGRAMA-ELECTORAL_POR-AVILA_CIUDAD_28MAYO_CUMPLIMOS.pdf",
+  "finalUrl": "https://poravila.es/wp-content/uploads/2023/05/PROGRAMA-ELECTORAL_POR-AVILA_CIUDAD_28MAYO_CUMPLIMOS.pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "50d0ba3ac4cf04eaa7e6d0d67f714fd0d648adf68c860da3888b320f6e7dba8b",
+  "bytes": 10043208,
+  "retrievedAt": "2026-10-11T14:44:07.630059+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/avila/programme.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "9df601b38c4c67f5a0e8d1fe4d711087cac0f8b8034359e78fc258b3afb07957",
+  "layoutSha256": "ee66ec39a5a7d88f9c8029e3953da5bf91d75818a61eddd4abb0496461d12711",
+  "layoutMethod": "pdfplumber 0.11.9; dedupe_chars; crop x195..585 y40..790; vector bullets x208..212 size2..4; paragraph gap>10pt. Raw PDFium extraction retained separately."
+}

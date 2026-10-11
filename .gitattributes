@@ -1,2 +1,4 @@
 # Preserve the exact bytes underlying the published evidence hashes on every OS.
 data/mandate/evidence/** -text
+# Some uncompressed PDFs have no NUL byte; keep them out of textual diffs.
+data/mandate/evidence/**/*.pdf binary

@@ -1,0 +1,12 @@
+{
+  "url": "https://www.avila.es/index.php?option=com_acymailing&ctrl=url&subid=&urlid=3236&mailid=1486",
+  "finalUrl": "https://www.avila.es/components/com_breezingforms/uploads/men2026547memoriavaloradafescaleras.pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "280a42f1dbedc0a7dd6a828140e1989eae9feb526d66ab2a11f0f467b02575d3",
+  "bytes": 558305,
+  "retrievedAt": "2026-10-11T15:06:12.362574+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/avila/stairs-maintenance.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "e101a4a0f2f3c0c40870083e5f4188a95e2e8c324865108581619acdfd21a9a5"
+}

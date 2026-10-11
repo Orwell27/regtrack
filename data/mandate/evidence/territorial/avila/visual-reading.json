@@ -1,0 +1,10 @@
+{
+  "reviewedAt": "2026-10-11",
+  "method": "Lectura visual asistida de renderizados PDFium; no es revisión humana independiente ni validación de firmas.",
+  "programme": {
+    "pagesInspected": "1–51",
+    "findings": ["Capas de texto superpuestas: evitar duplicados mediante coordenadas.", "Viñetas vectoriales no presentes en el texto PDFium.", "Página 7: síntesis gráfica conservada como contexto, conciliación pendiente.", "Página 21: candidaturas de barrios, no seis medidas.", "Páginas 30 y 37: propuestas reales, pese a la ubicación incorrecta de separadores en el índice.", "Páginas 47–49: prosa con compromisos, además de principios y balance anterior.", "Página 51: peticiones a otras administraciones."]
+  },
+  "constitution": { "pagesInspected": [3,4], "findings": ["Votación 11/7/4/3 y proclamación sin mayoría absoluta.", "Gobierno en minoría y programa como hoja de ruta."] },
+  "stairsMaintenance": { "pagesInspected": [6,7], "findings": ["La página 6 incluye una tabla gráfica de limpieza y condiciones de asistencia 24 horas.", "Total con IVA: 18.149,88 euros; vigencia prevista de siete meses, 01/10/2026–30/04/2027.", "Memoria preparatoria, sin acreditación de adjudicación o ejecución."] }
+}
