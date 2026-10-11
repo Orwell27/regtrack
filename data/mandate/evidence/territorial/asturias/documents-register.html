@@ -1,0 +1,4051 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Izquierda Xunida d&acute;Asturies :: Izquierda Unida de Asturias</title>
+<base href="/">
+
+<link rel="icon" type="image/png" href="images/favicon.ico" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<!--[if lt IE 9]>
+<script src="scripts/ie9.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheets/style.css"> 
+<link rel="stylesheet" href="stylesheets/responsive.css"> 
+<link rel="stylesheet" href="stylesheets/jquery.onebyone.css">
+
+
+
+
+
+<script src="scripts/jquery.min.js"></script> 
+<script src="scripts/jquery.onebyone.min.js"></script>              
+<script src="scripts/jquery.touchwipe.min.js"></script> 
+<script src="scripts/js_func.js"></script>
+
+
+
+<script type="text/javascript" src="jquery/slider.js" ></script>
+
+
+<script type="text/javascript" src="jquery/main.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles/reset.css"  />
+<link rel="stylesheet" type="text/css" href="styles/main.css" />
+<link rel="stylesheet" type="text/css" href="styles/black_theme.css" />
+<link rel="stylesheet" href="estilos_iu.css"> 
+
+<script type="text/javascript">
+<!-- 
+
+
+$(window).load(function() {
+	// initialize scrollable and return the programming API 
+$primer_video1=str_replace("http://youtu.be/","",trim($row_bus_videos_portada['video']));
+
+$primer_video=str_replace("https://youtu.be/","",$primer_video1);
+
+
+
+	
+	if ($("#reproductor").html() != null) {
+		$("#box_reproductor").children("#reproductor").html('<object width="250" height="195"><param name="movie" value="https://www.youtube.com/v/&hl=es&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/&hl=es&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="250" height="195"></embed></object>').load();
+		
+		
+		
+	}
+	/* Cargamos la nueva pelicula en el reproductor */
+	$(".video_detalle h4").click(function() {
+	
+		/* Obtenemos los datos del video a reproducir */
+		vn_ruta_video = $(this).parent().children(".ruta_video").html();
+		vn_ruta_imagen = $(this).parent().children("img").attr("src");
+		vn_titulo = $(this).parent().children("h4").html();
+		vn_descripcion = $(this).parent().children("span").html();
+		
+		/* Obtenemos los datos del video actual */
+		va_ruta_video = $("#box_reproductor").children("#reproductor").attr("href");
+		va_ruta_imagen = $("#box_reproductor").children(".ruta_imagen").html();
+		va_titulo = $("#box_reproductor").children("h4").html();
+		va_descripcion = $("#box_reproductor").children("span").html();
+		
+		/* Cambiamos los datos en el item del listado por los del video actual */
+		$(this).parent().children(".ruta_video").html(va_ruta_video);
+		$(this).parent().children("img").attr("src", va_ruta_imagen);
+		$(this).parent().children("h4").html(va_titulo);
+		$(this).parent().children("span").html(va_descripcion);		
+		
+		/* Actualizamos los datos para reproducir el video seleccionado */
+		$("#box_reproductor").children("#reproductor").attr("href", vn_ruta_video);
+		$("#box_reproductor").children(".ruta_imagen").html(vn_ruta_imagen);
+		$("#box_reproductor").children("h4").html(vn_titulo);
+		$("#box_reproductor").children("span").html(vn_descripcion);
+		
+
+				
+		$("#box_reproductor").children("#reproductor").html('<object width="250" height="195"><param name="movie" value="http://www.youtube.com/v/'+vn_ruta_video+'&hl=es&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/'+vn_ruta_video+'&hl=es&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="250" height="195"></embed></object>').load();
+		
+		//alert(vn_ruta_video);
+		
+	});
+});	
+
+
+function cargar(div, desde)
+{
+     $(div).load(desde);
+}
+
+
+
+//-->
+</script>
+
+
+
+
+
+
+
+<script language="javascript1.1">
+
+function desactivar_capa_cookie(){
+	var expiration = new Date();
+expiration.setTime(expiration.getTime() + 10000 * 24 * 60 * 60);
+
+setCookie('izquierdaxunida_cookie','1',expiration,'/','izquierdaxunida.com');
+	//alert(getCookie('izquierdaxunida_cookie'));
+	//alert(expiration);
+}
+
+</script>
+
+
+<script type='text/javascript'>
+//<![CDATA[
+
+// Grabar
+function setCookie(name, value, expires, path, domain, secure) {
+document.cookie = name + "=" + escape(value) +
+((expires == null) ? "" : "; expires=" + expires.toGMTString()) +
+((path == null) ? "" : "; path=" + path) +
+((domain == null) ? "" : "; domain=" + domain) +
+((secure == null) ? "" : "; secure");
+}
+
+// Leer
+function getCookie(name){
+var cname = name + "=";
+var dc = document.cookie;
+if (dc.length > 0) {
+begin = dc.indexOf(cname);
+if (begin != -1) {
+begin += cname.length;
+end = dc.indexOf(";", begin);
+if (end == -1) end = dc.length;
+return unescape(dc.substring(begin, end));
+}
+}
+return null;
+}
+
+//Borrar
+function delCookie (name,path,domain) {
+if (getCookie(name)) {
+document.cookie = name + "=" +
+((path == null) ? "" : "; path=" + path) +
+((domain == null) ? "" : "; domain=" + domain) +
+"; expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+}
+
+//]]>
+</script>
+
+
+
+
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_effectBlind(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoBlind(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+	
+}
+
+
+//-->
+</script>
+
+<style type="text/css">
+#cokies {
+	background-color: #333;
+	height: 20px;
+	width: 850px;
+	font-family: Verdana, Geneva, sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 11px;
+	color: #FFF;
+	padding: 5px;
+}
+#cokies .cookies_texto {
+	width: 650px;
+	float: left;
+}
+#cokies .cookies_cerrar {
+	float: right;
+	width: 100px;
+}
+#contenedor_cookies {
+	display: none;
+	background-color: #333;
+	width: 100%;
+}
+</style>
+<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="compartelu.css" />
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28231832-1']);
+  _gaq.push(['_setDomainName', 'izquierdaxunida.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</script>
+
+	
+	
+	
+		
+	
+	
+	
+</head>
+
+
+<body onload="MM_effectBlind('contenedor_cookies', 1000, '0%', '100%', false);">
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="contenedor_cookies">
+  <div id="cokies">
+    
+    
+    <div class="cookies_texto">
+      Al navegar por esta web acepta la utilizaci&oacute;n de cookies para an&aacute;lisis y personalizaci&oacute;n
+      
+      
+    </div>
+    <div class="cookies_cerrar">
+    <a href="http://www.izquierdaxunida.com/Politica_de_cookies" class="leermas" style="color:#FFFFFF">
+       Saber m&aacute;s</a>&nbsp;&nbsp;&nbsp;&nbsp;   <img src="aceptar-cerrar.png" width="16" height="16" align="absmiddle" onclick="MM_effectBlind('contenedor_cookies', 1000, '100%', '0%', false);desactivar_capa_cookie();" /></div>
+ 
+  </div>
+</div>
+
+
+<div class="wraper">
+  <header class="header"> <a class="logo" href="index.php">Izquierda Xunida d'Asturies</a>
+    <div id="iconMenuContainer">
+      <ul>
+        <li class="nav2"><a href="#"></a></li>
+      </ul>
+    </div>
+    <div id="idiomas">
+		
+		
+				
+		
+		<a href="index.php?idioma=es">Castellano</a> | <a href="index.php?idioma=as">Asturiano</a></div>
+    <nav>
+      <!-- top menu -->
+     
+     
+     <ul>
+      
+       <li><a href="Quien_Somos">Qui&eacute;n Somos </a>
+          <ul>
+            <li><a href="Coordinador_Xeneral">Coordinador Xeneral </a></li>
+            <li><a href="Coordinadora_IX_Asturies">Coordinadora IX Asturies </a></li>
+                        <li><a href="Comision_Colexada">Comisi&oacute;n Colexada</a></li>
+                                    <li><a href="Secretaries">Secretar&iacute;es</a></li>
+            <li><a href="Sedes_IX">Sedes</a></li>
+			  <li><a href="http://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/cuentas/CUENTAS-ANUALES-2024.pdf" target="_blank">Cuentes 2024</a></li>
+            <li><a href="http://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/cuentas/CUENTAS-ANUALES-2023.xlsx" target="_blank">Cuentes 2023</a></li>
+			  <li><a href="http://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/cuentas/ESTADOS_CONTABLES_IU_ASTURIAS_2022.xlsx">Cuentes 2022</a></li>
+            <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=3028">Cuentes 2021</a></li>
+            <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=3027">Cuentes 2020</a></li>
+             <li><a href="http://www.izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=3022">Cuentes 2019</a></li>
+            <li><a href="http://www.izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=303">Cuentes 2018</a></li>
+                      </ul>
+        </li>
+       
+       
+        <li><a href="Representantes_IX">Representantes</a>
+          <ul>
+                        <li><a href="Coordinador_Xeneral">Coordinador Xeneral</a></li>
+                                                          <li><a href="Grupu_Parlamenterio_IX">Grupu Parlamenterio d&acute;IX</a></li>
+            <li><a href="Alcaldes_y_conceyales">Alcaldes y conceyales</a></li>
+            <li><a href="Representantes_de_IX">Representantes d&acute;IX<br> en otros organismos</a></li>
+          </ul>
+        </li>
+      
+       
+        <li><a href="Actualida">Actualid&aacute;</a>
+          <ul>
+            <li><a href="Actualida_Noticies">Noticies</a></li>
+            
+            <li><a href="Actualida_Axenda">Axenda</a></li>
+            
+                       
+                        
+            <li><a href="Actualida_Grupu_Parlamentario">Grupu Parlamentariu</a></li>
+            
+                       <li><a href="Actualida_Gobiernu">Gobiernu</a></li>
+           
+               <li><a href="Actualida_Campanes">Campa&ntilde;es</a></li>
+          </ul>
+        </li>
+      
+        
+        <li><a href="Documentos_IX">Documentos</a>
+          <ul>
+          <li><a href="/secciones_generales.php?seccion=50&subseccion=3036">XIII Asamblea de IU/IX Asturias</a></li>
+          <li><a href="/secciones_generales.php?seccion=50&subseccion=3032">Primarias/Primaries 2023</a></li>
+          <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=293">PERFIL DEL CONTRATANTE</a></li>
+          <li><a href="Documentos_IX_Cuentes_y_Programes">Cuentes y Programes</a></li>
+                   <li><a href="Mineria">Minerï¿½a y Energ&iacute;a</a></li>
+          <li><a href="Documentos_IX_Estatutos">Estatutos</a></li>
+            
+             <li><a href="Documentos_IX_Politicamunicipal">Pol&iacute;tica Municipal</a></li>
+            <li><a href="Documentos_IX_LGBT">LGBT</a></li>
+            <li><a href="Documentos_IX_Mayores">Mayores</a></li>
+            <li><a href="Documentos_IX_Cooperacion">Cooperaci&oacute;n</a></li>
+            <li><a href="Documentos_IX_Xuventu">Xuvent&uacute;</a></li>
+            <li><a href="Documentos_IX_Industria">Industria</a></li>
+            <li><a href="Documentos_IX_Turismo">Turismo</a></li>
+            <li><a href="Documentos_IX_Salu">Sal&uacute;</a></li>
+            <li><a href="Documentos_IX_Educacion">Educaci&oacute;n</a></li>
+            <li><a href="Documentos_IX_Igualda">Iguald&aacute;</a></li>
+            <li><a href="Documentos_IX_Accion_politica">Acci&oacute;n Pol&iacute;tica</a></li>
+            <li><a href="Documentos_IX">Toos</a></li>
+          </ul>
+        </li>
+     
+     
+        <li><a href="Participa">Participa</a>
+          <ul>
+          
+          
+           <li><a href="Participa_IX_Voto">Informaci&oacute;n Electoral</a></li>
+            <li><a href="Participa_IU_Afiliate">Af&iacute;liate</a></li>
+           <li><a href="Inscripcion_Afiliau" target="_blank">Inscripci&oacute;n Afili&aacute;u</a></li>
+            <li><a href="Inscripcion_Simpatizante_as"  target="_blank">Inscripci&oacute;n Simpatizante</a></li>
+            
+            
+            <li><a href="Participa_IU_Donaciones">Donaciones</a></li>
+            <li><a href="Participa_IU_Contactar">Contactar</a></li>
+          </ul>
+        </li>
+     
+     
+        <li><a href="Enllaces">Enllaces</a>
+          <ul>
+            <li><a href="http://www.izquierda-unida.es" target="_blank">Izquierda Xunida Federal</a></li>
+            <li><a href="http://www.izquierdaxunida.com/ixbolsagrupos/" target="_blank">Infoconceyos</a></li>
+            <li><a href="Enllaces">Otros enllaces d'inter&eacute;s</a></li>
+          </ul>
+        </li>
+        <li><a href="http://izquierdaxunida.com/Documentos_IU_Cuentas_y_Programas">Portal de Transparencia</a>
+        <ul>
+    <li><a href="http://izquierdaxunida.com/Documentos_IU_Cuentas_y_Programas">Portal de Transparencia</a></li>
+     <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=293">Perfil del contratante</a></li>
+     </ul></li>
+      </ul>     
+     
+      <!-- /top menu -->
+    </nav>
+    <div id="navmovil" style="width:100%;">
+      <div id="navMenu2">
+        <div id="menu2" class="center">
+          <h1>Menu<span id="menuClose2"></span></h1>
+           <ul>
+      
+       <li><a href="Quien_Somos">Qui&eacute;n Somos </a>
+          <ul>
+            <li><a href="Coordinador_Xeneral">Coordinador Xeneral </a></li>
+            <li><a href="Coordinadora_IX_Asturies">Coordinadora IX Asturies </a></li>
+                        <li><a href="Comision_Colexada">Comisi&oacute;n Colexada</a></li>
+                                    <li><a href="Secretaries">Secretar&iacute;es</a></li>
+            <li><a href="Sedes_IX">Sedes</a></li>
+			  <li><a href="http://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/cuentas/CUENTAS-ANUALES-2024.pdf" target="_blank">Cuentes 2024</a></li>
+            <li><a href="http://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/cuentas/CUENTAS-ANUALES-2023.xlsx" target="_blank">Cuentes 2023</a></li>
+			  <li><a href="http://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/cuentas/ESTADOS_CONTABLES_IU_ASTURIAS_2022.xlsx">Cuentes 2022</a></li>
+            <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=3028">Cuentes 2021</a></li>
+            <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=3027">Cuentes 2020</a></li>
+             <li><a href="http://www.izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=3022">Cuentes 2019</a></li>
+            <li><a href="http://www.izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=303">Cuentes 2018</a></li>
+                      </ul>
+        </li>
+       
+       
+        <li><a href="Representantes_IX">Representantes</a>
+          <ul>
+                        <li><a href="Coordinador_Xeneral">Coordinador Xeneral</a></li>
+                                                          <li><a href="Grupu_Parlamenterio_IX">Grupu Parlamenterio d&acute;IX</a></li>
+            <li><a href="Alcaldes_y_conceyales">Alcaldes y conceyales</a></li>
+            <li><a href="Representantes_de_IX">Representantes d&acute;IX<br> en otros organismos</a></li>
+          </ul>
+        </li>
+      
+       
+        <li><a href="Actualida">Actualid&aacute;</a>
+          <ul>
+            <li><a href="Actualida_Noticies">Noticies</a></li>
+            
+            <li><a href="Actualida_Axenda">Axenda</a></li>
+            
+                       
+                        
+            <li><a href="Actualida_Grupu_Parlamentario">Grupu Parlamentariu</a></li>
+            
+                       <li><a href="Actualida_Gobiernu">Gobiernu</a></li>
+           
+               <li><a href="Actualida_Campanes">Campa&ntilde;es</a></li>
+          </ul>
+        </li>
+      
+        
+        <li><a href="Documentos_IX">Documentos</a>
+          <ul>
+          <li><a href="/secciones_generales.php?seccion=50&subseccion=3036">XIII Asamblea de IU/IX Asturias</a></li>
+          <li><a href="/secciones_generales.php?seccion=50&subseccion=3032">Primarias/Primaries 2023</a></li>
+          <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=293">PERFIL DEL CONTRATANTE</a></li>
+          <li><a href="Documentos_IX_Cuentes_y_Programes">Cuentes y Programes</a></li>
+                   <li><a href="Mineria">Minerï¿½a y Energ&iacute;a</a></li>
+          <li><a href="Documentos_IX_Estatutos">Estatutos</a></li>
+            
+             <li><a href="Documentos_IX_Politicamunicipal">Pol&iacute;tica Municipal</a></li>
+            <li><a href="Documentos_IX_LGBT">LGBT</a></li>
+            <li><a href="Documentos_IX_Mayores">Mayores</a></li>
+            <li><a href="Documentos_IX_Cooperacion">Cooperaci&oacute;n</a></li>
+            <li><a href="Documentos_IX_Xuventu">Xuvent&uacute;</a></li>
+            <li><a href="Documentos_IX_Industria">Industria</a></li>
+            <li><a href="Documentos_IX_Turismo">Turismo</a></li>
+            <li><a href="Documentos_IX_Salu">Sal&uacute;</a></li>
+            <li><a href="Documentos_IX_Educacion">Educaci&oacute;n</a></li>
+            <li><a href="Documentos_IX_Igualda">Iguald&aacute;</a></li>
+            <li><a href="Documentos_IX_Accion_politica">Acci&oacute;n Pol&iacute;tica</a></li>
+            <li><a href="Documentos_IX">Toos</a></li>
+          </ul>
+        </li>
+     
+     
+        <li><a href="Participa">Participa</a>
+          <ul>
+          
+          
+           <li><a href="Participa_IX_Voto">Informaci&oacute;n Electoral</a></li>
+            <li><a href="Participa_IU_Afiliate">Af&iacute;liate</a></li>
+           <li><a href="Inscripcion_Afiliau" target="_blank">Inscripci&oacute;n Afili&aacute;u</a></li>
+            <li><a href="Inscripcion_Simpatizante_as"  target="_blank">Inscripci&oacute;n Simpatizante</a></li>
+            
+            
+            <li><a href="Participa_IU_Donaciones">Donaciones</a></li>
+            <li><a href="Participa_IU_Contactar">Contactar</a></li>
+          </ul>
+        </li>
+     
+     
+        <li><a href="Enllaces">Enllaces</a>
+          <ul>
+            <li><a href="http://www.izquierda-unida.es" target="_blank">Izquierda Xunida Federal</a></li>
+            <li><a href="http://www.izquierdaxunida.com/ixbolsagrupos/" target="_blank">Infoconceyos</a></li>
+            <li><a href="Enllaces">Otros enllaces d'inter&eacute;s</a></li>
+          </ul>
+        </li>
+        <li><a href="http://izquierdaxunida.com/Documentos_IU_Cuentas_y_Programas">Portal de Transparencia</a>
+        <ul>
+    <li><a href="http://izquierdaxunida.com/Documentos_IU_Cuentas_y_Programas">Portal de Transparencia</a></li>
+     <li><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=293">Perfil del contratante</a></li>
+     </ul></li>
+      </ul>                  </div>
+        <div class="other2"></div>
+      </div>
+    </div>
+  </header>
+</div> 
+
+
+
+
+        <script type="text/javascript" src="desaparecer.js"></script>
+
+
+
+
+      
+      
+            
+      
+      
+
+<div class="content_block">
+ <!-- top_title -->
+ <div class="top_title">
+  <div class="wraper">
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+   <h2> Documentos</h2>
+ 
+ 
+ 
+ 
+  
+
+<ul>
+<li><a href="index.php">Entamu</a></li>
+<li>Documentos</li>
+</ul>
+  
+  
+ 
+  
+  </div>
+ </div>
+ <!-- /top_title -->
+ <div class="wraper ">
+  <!-- blog entries -->
+  
+  
+  
+    <div class="portfolio_sidebar">
+    <ul class="gallery">
+      <li>
+        <div class="img">
+
+        
+   
+        
+             
+                
+		        
+        
+                          
+        <img src="banner_documentos.gif">
+                  
+                  
+         
+         
+                            
+         
+                  
+        </div>
+        <div class="desc">
+        
+        
+        
+        
+
+
+<div class="dentro_izq" id="dentro_izq">
+
+ <h5>Documentos</h5>
+
+
+ 
+
+
+  
+
+
+
+
+ 
+        <br />
+      
+      <p>De sigu&iacute;o amosemos toa una serie de documentos rellacionaos con Izquierda Xunida y que consideramos d'utilid&aacute; pa los nuesos visitantes.</p>  
+      
+      
+	   <br />
+        <br />
+	  
+	   	
+		
+		
+	    
+    
+    
+    
+        
+      
+     
+
+  
+ 
+ 
+ 	<h3>&Aacute;reas</h3>
+    <br>
+
+  <div class="clear"></div>
+  
+       <a class="btn_col btn_black areas_documentos" href="./Documentos_IX">TOOS</a>
+     <a class="btn_col btn_grey areas_documentos" href="./Mineria">Miner&iacute;a y Energ&iacute;a</a>
+     <a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Estatutos">Estatutos</a>
+       <a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Cuentes_y_Programes">Cuentes/Programes</a>
+    <a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Politicamunicipal">Pol&iacute;tica Municipal</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_LGBT">LGBT</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Mayores">Mayores</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Cooperacion">Cooperaci&oacute;n</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Xuventu">Moced&aacute;</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Industria">Industria</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Turismo">Turismu</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Salu">Sal&uacute;</a>
+	<a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Educacion">Educaci&oacute;n</a>
+    <a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Igualda">Iguald&aacute;</a>
+     <a class="btn_col btn_grey areas_documentos" href="./Documentos_IX_Accion_politica">Acci&oacute;n Pol&iacute;tica</a>
+        
+    
+    <div class="clear"></div><br>
+<br>
+<br>
+
+ 	
+	
+	
+
+  
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/cuentas/CUENTAS-ANUALES-2024.pdf" target="_blank">
+  
+    
+  
+  
+  <p>Cuentas 2024</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=3036"><p>XIII Asamblea d&#39;IX</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/cuentas/ESTADOS_CONTABLES_IU_ASTURIAS_2022.xlsx" target="_blank">
+  
+    
+  
+  
+  <p>Cuentes 2022</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=3022"><p>Cuentas 2019</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=3025"><p>INSTRUCCI&Oacute;N DE LA SECRETAR&Iacute;A DE FINANZAS DE IZQUIERDA UNIDA DE ASTURIAS / IZQUIERDA XUNIDA D&rsquo;ASTURIES PARA LA GESTI&Oacute;N, DISTRIBUCI&Oacute;N Y VENTA DE LAS PARTICIPACIONES DE LA LOTER&Iacute;A DE NAVIDAD</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=103"><p>Estatutos d&#39;IX Federal</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2021_12/estatutos_Reglamento_Interno.pdf" target="_blank">
+  
+    
+  
+  
+  <p>Reglamentu internu de la Comisi&oacute;n de Garant&iacute;es</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=301"><p>Elecciones 2019</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=3028"><p>Cuentas 2021</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=3032"><p>Primaries 2023</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2023_07/PREACUERDO_GOBIERNO_DE_UNIDAD_PROGRESISTA.pdf" target="_blank">
+  
+    
+  
+  
+  <p>PREACUERDO GOBIERNO DE UNIDAD PROGRESISTA</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/Programa_Convocatoria_x_Asturies_2023.pdf" target="_blank">
+  
+    
+  
+  
+  <p>Programa electoral auton&oacute;mico 2023</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2022_09/2019_07_10_DECLARACION_PARA_LA_INVESTIDURA.pdf" target="_blank">
+  
+    
+  
+  
+  <p>DECLARACI&Oacute;N CONJUNTA FSA-IU PARA EL PLENO DE INVESTIDURA</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=3030"><p>Fe de erratas</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=3027"><p>Cuentas 2020</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=303"><p>Cuentas 2018</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2021_10/Informe_Gerencia_IU_A_Loteria.pdf" target="_blank">
+  
+    
+  
+  
+  <p>INFORME DE LA GERENCIA ECON&Oacute;MICA DE IU DE ASTURIAS SOBRE VENTA DE PAPELETAS DE LOTER&Iacute;A</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=276"><p>Cuentas 2016</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=277"><p>Cuentas 2015</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=304"><p>XII Asamblea IX Asturies</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2021_12/2021_ESTATUTOS_IU_IX.pdf" target="_blank">
+  
+    
+  
+  
+  <p>Estatutos d&#39;IX d&#39;Asturies</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=292"><p>Cuentas 2017</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=293"><p>Perfil del Contratante</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2018_07/2018_07_17_RESOLUCIOON_TRANSICION.pdf" target="_blank">
+  
+    
+  
+  
+  <p>Resoluci&oacute;n sobre transici&oacute;n energ&eacute;tica en Mieres</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2017_05/CONTABILIDAD_2016.pdf" target="_blank">
+  
+    
+  
+  
+  <p>La contabilidad de IU 2016</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2017_05/CONTABILIDAD_2015.pdf" target="_blank">
+  
+    
+  
+  
+  <p>La contabilidad de IU 2015</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2016_12/Documento_de_Organizacion_2016.pdf" target="_blank">
+  
+    
+  
+  
+  <p>
+	Documento de Organizaci&oacute;n 2016</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2016_12/Tesis_Documento_Politico_2016.pdf" target="_blank">
+  
+    
+  
+  
+  <p>
+	Tesis. Documento Pol&iacute;tico 2016</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2016_12/Estatutos_IU_Asturias_Izquierda_Xunida_noviembre_2016.pdf" target="_blank">
+  
+    
+  
+  
+  <p>Estatutos d&#39;IX d&#39;Asturies payares 2016</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=266">Sola en mitad de la tierra</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=265">La contabilidad de IU 2013, 2014</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=264">POR UNA SOCIEDAD LIBRE DE VIOLENCIA DE GÉNERO</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2015_10/2014_10_21_carta_ahora_en_comun_2.pdf" target="_blank">
+  
+    
+  
+  
+  Información votación primarias</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2015_09/2015_09_25_acuerdo_de_investidura.pdf" target="_blank">
+  
+    
+  
+  
+  Acuerdo de Investidura</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/2015_09/2015_09_03_PGE_2016_Area_Educ_IU.pdf" target="_blank">
+  
+    
+  
+  
+  PGE 2016 de I+D+I. Entre crisis y naufragios</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2015_07/2015_07_22_Resolucion_aprobada.pdf" target="_blank">
+  
+    
+  
+  
+  Resolución Consejo Político 22 de julio 2015</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="http://izquierdaxunida.com/documentos/Programa-2015.pdf" target="_blank">
+  
+    
+  
+  
+  Programa electoral 2015</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2015_04/1-_de-Mayo-2015.pdf" target="_blank">
+  
+    
+  
+  
+  1º de Mayo 2015</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2015_01/2015_01_29_Nos_jugamos_nuestra_credibilidad.pdf" target="_blank">
+  
+    
+  
+  
+  XUGAMOS LA NUESA CREDIBILIDÁ</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2014_11/2015_11_24_resolucion-contra-violencia-genero-25n.pdf" target="_blank">
+  
+    
+  
+  
+  Resolución contra la violencia de género</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2014_10/2014_10_01_resolucion_aborto_libre_seguro_y_gratuito.pdf" target="_blank">
+  
+    
+  
+  
+  Resolución de IU Asturias por un aborto libre, seguro y gratuito</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2014_10/2014_10_16_debateorientacionpolitica.pdf" target="_blank">
+  
+    
+  
+  
+  Discursu Alderica d'Orientación Política 2014</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2014_07/2014-07-17-CP-VENCIENDO-LIMITES-PROPUESTA-RESOLUCION.pdf" target="_blank">
+  
+    
+  
+  
+  Acuerdos del Consejo Político de 15 de Julio de 2014</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2014_06/DISCURSO-INVESTIDURA-Yasmina.pdf" target="_blank">
+  
+    
+  
+  
+  Discursu de investidura de Yasmina Triguero Estevez</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="http://www.izquierda-unida.es/sites/default/files/doc/Programa_Juventud_Europeas2014.pdf" target="_blank">
+  
+    
+  
+  
+  Programa Juventud Europeas 2014</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="http://www.izquierda-unida.es/sites/default/files/doc/Programa_Europeas2014.pdf" target="_blank">
+  
+    
+  
+  
+  Programa de IU para las elecciones europeas 2014</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=246">Por un 1 de mayu de llucha y movilización</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=243">The ELP launches a campaign for the rights of free and safe abortion</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=242">NO a los “Juegos de la Vergüenza”</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/PROGRAMA_IU_ASTURIAS_2012.pdf" target="_blank">
+  
+    
+  
+  
+  Programa electoral de 2012</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2013_10/2013_10_14_Manifiesto_Asamblea_Alcaldes.pdf" target="_blank">
+  
+    
+  
+  
+  Declaración de Alcaldes/as contra Proyecto de Ley de Racionalización y Sostenibilidad de la Administración Local</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2013_09/2013_09_04_15_razones_para_retirar_el_proyecto_de_reforma_educativa.pdf" target="_blank">
+  
+    
+  
+  
+  15 razones para retirar el proyecto de reforma educativa</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_05/2013_05_07_Huelga_general_educacion.pdf" target="_blank">
+  
+    
+  
+  
+  Manifiesto de apoyo a la huelga general de educación</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="http://www.izquierdaxunida.com/documentos/58/0_NOTICIAS/Comunicados/2013_05/2013_05_02_Manifiestu_Dia_de_les_Lletres.pdf" target="_blank">
+  
+    
+  
+  
+  Manifiestu día de les Lletres</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./adjuntos/2013_04_26_manifiesto_1_mayo_asturias.pdf" target="_blank">
+  
+    
+  
+  
+  Manifiesto del 1 Mayo</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=227">Hay Alternativa. Gobierno dimisión</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_03_05_aleasComunicado.pdf" target="_blank">
+  
+    
+  
+  
+  ALEAS-IU en el Día de la Mujer Trabajadora</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=218">#ARajoyLeDiria</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/Manifiesto_8_Marzo_2013.pdf" target="_blank">
+  
+    
+  
+  
+  MANIFIESTO 8 DE MARZO - “SIN IGUALDAD NO HAY DEMOCRACIA”</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_01_31_Politico.pdf" target="_blank">
+  
+    
+  
+  
+  Documentu Políticu d'IX d'Asturies</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_01_31_Organizativo.pdf" target="_blank">
+  
+    
+  
+  
+  Documentu Organizativo d'IX d'Asturies</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_01_30_DECLARACION_LLAVIANA.pdf" target="_blank">
+  
+    
+  
+  
+  "HUNOSA: Desarrollo y Futuro de las Cuencas del Nalón y del Caudal"</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_01_30_resolucionmineria.pdf" target="_blank">
+  
+    
+  
+  
+  Resolucción del consejo político de IU Asturias por la minería</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_01_30_resoluccion_corrupcion.pdf" target="_blank">
+  
+    
+  
+  
+  Resolución del consejo político de IU Asturias contra la corrupción</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=206">Huelga 14N 2012</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2012_06_12_DECLARACION_COMISION_EJECUTIVA_FEDERAL_IU.pdf" target="_blank">
+  
+    
+  
+  
+  Declaración de la Comisión Ejecutiva Federal sobre el rescate</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=201">Asamblea de IU de Asturias</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2012_05/2012_05_24_acuerdo_gobierno.pdf" target="_blank">
+  
+    
+  
+  
+  Acuerdo de Gobierno IU-FSA</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2011_12/2011_12_23_ANALISIS_RESULTADOS_ELECCIONES.pdf" target="_blank">
+  
+    
+  
+  
+  Resolución del Consejo Político sobre las Elecciones Generales 20-N 2011</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2011_11_03_programa_20N.pdf" target="_blank">
+  
+    
+  
+  
+  Bases programátiques d'IX d'Asturies pal 20-N</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/29_09_2011BALANCE_GASPAR_INICIATIVAS ASTURIAS 2011.pdf" target="_blank">
+  
+    
+  
+  
+  Balance parlamentariu / Asturies (Gaspar Llamazares)</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="http://www.sadei.es/Pelicula%20Elec/elecciones.htm" target="_blank">
+  
+    
+  
+  
+  Resultados Autonómicas 2011</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="http://www.sadei.es/Pelicula%20Elec/elecciones.htm" target="_blank">
+  
+    
+  
+  
+  Resultados Municipales 2011</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/programa_asturias.pdf" target="_blank">
+  
+    
+  
+  
+  Programa Electoral Elecciones Autonómiques y Municipales 2011</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=113">Informes políticos IX d'Asturias</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=101">Programa Electoral Elecciones Autonómicas 2007</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=106">Acuerdo político FSA-PSOE e IU-BA-Verdes</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=117">Seis meses de Gobierno: Declaración política Comisión seguimiento acuerdo de gobiernu entre FSA e IX-BA-Verdes</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=171">Declaración política  Comisión de Seguimientu del alcuerdu  Gobiernu entre FSA e IX-BA-Verdes, marzu 2010</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=152">Resultaos electorales</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=112">Documentación de la última Asamblea IU</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=116">Informes políticos IU Federal</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=166">Informe del Consejo de Estado sobre las Propuestas de Modificación del Régimen Electoral General (24/02/2009)</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=119">Otros documentos sectoriales</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+ <a href="secciones_generales.php?seccion=50&amp;subseccion=165">Documento del Acuerdo Político que fundó Izquierda Unida. 27 de abril de  1986</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_DOCUMENTOS/2013_09_11_Resolucion_Siria_CEF.pdf" target="_blank">
+  
+    
+  
+  
+  Resolución guerra de Siria</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/23_12_2013_AreadelajuventuddeIU.pdf" target="_blank">
+  
+    
+  
+  
+  Escrito en contra de la Reforma de la Ley del Aborto</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2013_12/26_12_2013_posicion_IU_ante_la_reforma_de_la_ley_aborto.pdf" target="_blank">
+  
+    
+  
+  
+  POSICIÓN IU ASTURIAS ante la Reforma de la Ley Orgánica 2/2010 de salud sexual y reproductiva y de la interrupción voluntaria del embarazo.</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_I_Resolucion_Cuencas_Mineras_XI_Asamblea_Federal.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo I Resoluci&oacute;n Cuencas Mineras XI Asamblea Federal</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_II_Una_izquierda_para_el_cambio_politico.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo II Una Izquierda para el cambio político</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_III_PNL_GARANTIZAR_FUTURO_COMARCAS_MINERAS.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo III PNL GARANTIZAR FUTURO COMARCAS MINERAS</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_IV_Resolucion_de_apoyo_a_las_Comarcas_Mineras_Coordinadora_IX.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo IV Resoluci&oacute;n apoyo Comarcas Mineras, Coordinadora IX
+</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_V_Conclusiones_jornada_federal_de_trabajo_sobre_problematica_minera_y_cierre_de_centrales_termicas.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo V Conclusiones jornada federal de trabajo sobre problemática minera y cierre de centrales térmicas</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_VI_Resolucion_Gijon_contra_la_descarbonizacion_expres.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo VI Resolución Gijón, contra la descarbonización exprés</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_VII_Comunicado_PCE_Asturias.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo VII Comunicado PCE Asturias</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_VIII_PCE_Aragon_resolucion_sobre_la_actualidad_de_la_Central_Termica_de_Andorra.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo VIII PCE Aragón, resolución sobre la actualidad de la Central Térmica de Andorra</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_IX_Comunicado_IU_Aragon.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo IX Comunicado IU Aragón</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Anexo_adicional_Diario_de_sesiones_del_Congreso_de_los_Diputados.pdf" target="_blank">
+  
+    
+  
+  
+  Anexo adicional Diario de sesiones del Congreso de los Diputados</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+ 
+ 
+
+<div class="submenunietos2">
+    
+    
+  <a href="./documentos/58/0_NOTICIAS/Comunicados/2017_11/Resolucion_Mineria_acordada_por_la_Colegiada.pdf" target="_blank">
+  
+    
+  
+  
+  Resolución Minería acordada por la Colegiada</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+   
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+        <div style="clear:both"></div>
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+<p><span id="botonVisible1"><a href="javascript:aparecer(1)"><img src="compartilu.gif" alt="Compartir"  border="0"/></a></span></p>
+
+<div id="botonNoVisible1" style="display:none">
+
+<p><a href="javascript:desaparecer(1)"><img src="compartilu.gif" alt="Compártilu" border="0"/> </a> </p>
+
+	
+<!-- INICIO CODIGO WEB2.0 LISTADO COMPLETO -->
+
+	<link rel="stylesheet" type="text/css" href="compartelu.css" />
+	<style type="text/css">
+
+	#akst_social ul li {
+		width: 25%;
+	}
+	#akst_social ul li a {
+		background-position: 0px 4px;
+	}
+	#akst_email {
+		display: block;
+	}
+	#akst_email ul li {
+		margin-bottom: 10px;
+	}
+	#akst_email ul li input.akst_text {
+		width: 220px;
+	}
+
+	#info {
+		border-bottom: 1px solid #ddd;
+		line-height: 150%;
+		padding: 10px;
+	}
+	#info p {
+		margin: 0;
+		padding: 0;
+	}
+	#social {
+	float: left;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	width: 90%;
+	border: 1px solid #ddd;
+	}
+	#email {
+		float: left;
+		/*fer padding: 10px;
+		width: 300px;*/
+	}
+	#content {
+		border-top: 1px solid #ddd;
+		padding: 20px 50px;
+	}
+	#content .akst_date {
+		color: #666;
+		float: right;
+		padding-top: 4px;
+	}
+	#content .akst_title {
+		font: bold 18px "Lucida Sans Unicode", "Lucida Grande", "Trebuchet MS", sans-serif;
+		margin: 0 150px 10px 0;
+		padding: 0;
+	}
+	#content .akst_category {
+		color: #333;
+	}
+	#content .akst_entry {
+		font-size: 12px;
+		line-height: 150%;
+		margin-bottom: 20px;
+	}
+	#content .akst_entry p, #content .akst_entry li, #content .akst_entry dt, #content .akst_entry dd, #content .akst_entry div, #content .akst_entry blockquote {
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	#content .akst_entry blockquote {
+		background: #eee;
+		border-left: 2px solid #ccc;
+		padding: 10px;
+	}
+	#content .akst_entry blockquote p {
+		margin: 0 0 10px 0;
+	}
+	#content .akst_entry p, #content .akst_entry li, #content .akst_entry dt, #content .akst_entry dd, #content .akst_entry td, #content .akst_entry blockquote, #content .akst_entry blockquote p {
+		line-height: 150%;
+	}
+	#content .akst_return {
+		font-size: 11px;
+		margin: 0;
+		padding: 20px;
+		text-align: center;
+	}
+	#footer {
+		background: #eee;
+		border-top: 1px solid #ddd;
+		padding: 10px;
+	}
+	#footer p {
+		color: #555;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#footer p a, #footer p a:visited {
+		color: #444;
+	}
+	h2 {
+		color: #333;
+		font: bold 14px "Lucida Sans Unicode", "Lucida Grande", "Trebuchet MS", sans-serif;
+		margin: 0 0;
+		padding: 0;
+	}
+	div.clear {
+		float: none;
+		clear: both;
+	}
+	hr {
+		border: 0;
+		border-bottom: 1px solid #ccc;
+	}
+
+	</style>
+
+
+
+  <div id="social">
+				<div id="akst_social">
+        
+			<ul>
+				<li><a target="_blank"  href="http://www.facebook.com/share.php?u=https://www.izquierdaxunida.com/Documentos_IX" id="akst_facebook">Facebook</a></li>
+				<li><a target="_blank"  href="http://twitter.com/home?status=Documentos%21: https://www.izquierdaxunida.com/Documentos_IX" id="akst_twitter">Twitter</a></li>
+
+				<li><a target="_blank"  href="http://ping.fm/ref/?method=microblog&title=Documentos%21&link=https://www.izquierdaxunida.com/Documentos_IX&body={body}" id="akst_pingfm">Ping FM</a></li>
+				<li><a target="_blank"  href="http://xiki.to/?url=https://www.izquierdaxunida.com/Documentos_IX" id="akst_acurties">Xiki.to</a></li>
+				<li><a target="_blank"  href="http://delicious.com/post?url=https://www.izquierdaxunida.com/Documentos_IX&title=Documentos%21" id="akst_delicious">Delicious</a></li>
+				<li><a href="  http://www.google.com/bookmarks/mark?op=edit&bkmk=https://www.izquierdaxunida.com/Documentos_IX&title=Documentos%21" id="akst_google_bmarks">G Bookmarks</a></li>
+				<li><a target="_blank"  href="http://digg.com/submit?phase=2&url=https://www.izquierdaxunida.com/Documentos_IX&title=Documentos" id="akst_digg">Digg</a></li>
+				<li><a target="_blank"  href="http://meneame.net/submit.php?url=https://www.izquierdaxunida.com/Documentos_IX" id="akst_meneame">Men&eacute;ame</a></li>
+
+				<li><a target="_blank"  href="http://slashdot.org/bookmark.pl?story=&subj=Documentos" id="akst_slashdot">Slashdot</a></li>
+				<li><a target="_blank"  href="http://barrapunto.com/submit.pl?story=&subj=Documentos" id="akst_barrapunto">Barrapunto</a></li>
+				<li><a target="_blank"  href="http://chuza.org/submit.php?url=https://www.izquierdaxunida.com/Documentos_IX" id="akst_chuza">Chuza!</a></li>
+				<li><a target="_blank"  href="http://esbilla.net/submit.php?url=https://www.izquierdaxunida.com/Documentos_IX" id="akst_esbilla">Esbilla</a></li>
+				<li><a target="_blank"  href="http://www.tumblr.com/share?v=3&u=https://www.izquierdaxunida.com/Documentos_IX" id="akst_tumblr">Tumblr</a></li>
+				<li><a href=" http://www.google.com/reader/link?url=https://www.izquierdaxunida.com/Documentos_IX" id="akst_greader">G Reader</a></li>
+
+				<li><a target="_blank"  href="http://bitacoras.com/anotaciones/https://www.izquierdaxunida.com/Documentos_IX" id="akst_bitacoras">Bitacoras.com</a></li>
+				<li><a target="_blank"  href="http://www.friendfeed.com/share?title=Documentos&link=https://www.izquierdaxunida.com/Documentos_IX" id="akst_friendfeed">Friendfeed</a></li>
+				<li><a target="_blank"  href="http://www.printfriendly.com/print?url=http://www.izquierdaxunida.com/index.php?seccion=50" id="akst_imprentar">Imprimir</a></li>
+				<li><a target="_blank"  href="http://www.netvibes.com/share?title=Documentos&url=https://www.izquierdaxunida.com/Documentos_IX" id="akst_netvibes">Netvibes</a></li>
+				<li><a target="_blank"  href="http://reddit.com/submit?url=https://www.izquierdaxunida.com/Documentos_IX&title=Documentos" id="akst_reddit">Reddit</a></li>
+				<li><a target="_blank"  href="http://tec.fresqui.com/post?url=https://www.izquierdaxunida.com/Documentos_IX&title=Documentos" id="akst_fresqui">Fresqui</a></li>
+
+				<li><a target="_blank"  href="http://www.stumbleupon.com/submit?url=https://www.izquierdaxunida.com/Documentos_IX&title=Documentos" id="akst_stumbleupon">Stumbleupon</a></li>
+				<li><a target="_blank"  href="http://myweb2.search.yahoo.com/myresults/bookmarklet?u=https://www.izquierdaxunida.com/Documentos_IX&t=Documentos" id="akst_yahoo_myweb">Yahoo! MyWeb</a></li>
+				<li><a target="_blank"  href="http://www.technorati.com/faves?add=https://www.izquierdaxunida.com/Documentos_IX" id="akst_technorati">Technorati</a></li>
+				<li><a href="https://www.newsvine.com/_wine/save?url=https://www.izquierdaxunida.com/Documentos_IX" id="akst_newsvine">Newsvine</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+	</div>
+	<div class="clear"></div>
+	
+
+</div>
+
+
+
+
+<!-- FIN CODIGO WEB2.0 LISTADO COMPLETO -->
+    
+  
+          
+        </div>
+        
+        
+          
+      </li>
+    
+    </ul>
+    <!-- pager_nav -->
+    <!-- /pager_nav -->
+  </div>
+  
+    
+     
+  <!-- /blog entries -->
+  <!-- sidebar -->
+ 
+ 
+ 
+  
+ 
+
+
+
+
+<div class="sidebar">
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- agenda -->
+  
+
+<div class="most_popular">
+    <h4>Axenda IX Asturies</h4>
+    <ul>
+
+  
+
+ <li>
+       <div class="desc">
+         <p><strong>NUN HAI ACTOS PREVISTOS</strong></p>
+     
+    </div>
+     </li>
+
+ </ul>
+   </div>
+    <div style="background-color:#F00; color:#FFF; padding-top:22px; padding-bottom:22px;">
+  <center><p><a href="/secciones_generales.php?seccion=50&subseccion=3032" style="font-size:16px; color:#FFFFFF;"><strong>PRIMARIAS 2023</strong></a></p></center>
+</div><br>
+<br>
+     
+      
+   
+   
+           
+   <div style="background-color:#F00; color:#FFF; padding:12px;">
+  <center><p><a href="http://izquierdaxunida.com/secciones_generales.php?seccion=50&subseccion=293" target="_blank" style="font-size:16px; color:#FFFFFF;"><strong>PERFIL DEL CONTRATANTE</strong></a></p></center>
+</div>
+
+<br>
+<br>
+   
+   
+    
+   <a href="/Altaboletin"><img src="/acceso-boletin.jpg"></a>
+   <br>
+<br>
+
+
+
+
+
+   
+
+
+
+  
+  <div style="background-color:#F00; color:#FFF; padding:8px;">
+  
+  <p align="center"><strong style="font-size:19px;"> #rescatesocial </strong>  </p>
+  <p>&nbsp;</p>
+  <center><p><a href="/rescatesocial.php" target="_blank" style="font-size:16px; color:#FFFFFF;"><strong>Visualiza todos los v&iacute;deos de: #rescatesocial</strong></a></p></center>
+</div>
+<br>
+<br>
+    
+  
+
+   
+    <div class="most_popular">
+    <h4>La Actualid&aacute; en V&iacute;deo</h4>
+   <div id="box_pp_tv">
+    	
+        <div class="middle">
+<br>
+
+
+        	
+			<div id="box_reproductor"><a href="" id="reproductor"></a>
+              <h4><span class="fecha_video">21/02/2024</span> - <span class="fuente_video"></span><br>
+
+                 
+            Ovidio Zapico negociará en la resolución del conflicto de la ITV cuya gestión se mantendrá pública<br>
+</h4>
+                
+              
+                
+            </div>
+			
+   
+
+        	<div class="video_detalle clearfix">
+	            
+                <a class="ruta_video">_jTujBLOY4k?si=3qM2RkhMOkGuNimc</a>
+                <h4><span class="fecha_video">21/02/2024</span> - <span class="fuente_video"></span><br>
+
+                 
+            
+
+
+
+Los partidos democráticos se suman a la propuesta de Convocatoria para impulsar el proyecto educativo 50/50 para reducir la huella energética<br>
+</h4>
+                
+                
+                
+          </div>
+          
+          
+          
+          
+          
+          
+  
+
+        	<div class="video_detalle clearfix">
+	            
+                <a class="ruta_video">SmyEqO__VME?si=FYHoUE3ecMva8hRU</a>
+                <h4><span class="fecha_video">07/09/2023</span> - <span class="fuente_video"></span><br>
+
+                 
+            
+
+
+
+Xabel Vegas: 'Tantu dende esta cámara como dende l'executivu tenemos la xera de construyir esi proyeutu de l'Asturies del mañana, col remangu del artesanu y cola creatividá del artista'<br>
+</h4>
+                
+                
+                
+          </div>
+          
+          
+          
+          
+          
+          
+  
+
+        	<div class="video_detalle clearfix">
+	            
+                <a class="ruta_video">56hLHRDLTvU</a>
+                <h4><span class="fecha_video">19/07/2023</span> - <span class="fuente_video"></span><br>
+
+                 
+            
+
+
+
+Zapico pide un esfuerzo en la negociación para llegar al 1 de agosto con un acuerdo para un gobierno 'progresista y reformista'<br>
+</h4>
+                
+                
+                
+          </div>
+          
+          
+          
+          
+          
+          
+
+        	
+
+        	
+                              
+        </div>
+        
+    </div>
+   
+   </div>
+    
+  
+   
+      
+   <!-- /agenda -->
+   
+   
+   
+   
+   
+   
+   
+   <!-- latest tweets -->
+   <div class="latest_tweets">
+    <h4>Izquierda Xunida d'Asturies</h4><br>
+
+    
+<a class="twitter-timeline"  href="https://twitter.com/iuasturias"  data-widget-id="386162110264127488">Tweets por @iuasturias</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+   </div>
+   <!-- /latest tweets -->
+   
+   <!-- recent work -->
+   <!-- /recent work -->
+  </div>
+
+
+
+  <!-- /sidebar -->
+ </div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+<!-- /one bt one slider -->
+<div class="content_block">
+  <!-- text bar -->
+  <!-- /text bar -->
+  <div class="wraper">
+    <!-- features_block -->
+    <div class="features_block">
+    <center>
+      <ul>
+        <li class="design"> <a class="circle_link" href="Actualida_Axenda">&nbsp;</a>
+          <h4><span>Axenda</span></h4>
+          
+          
+          <div class="testimonialrotator">
+           
+            
+ <div class="testimonial">
+              <div class="the-author">
+ 
+         <p><strong>NUN HAI ACTOS PREVISTOS</strong></p>
+     </div>
+   </div>
+
+           
+           
+           
+            
+        
+        
+        
+        
+        
+        
+          </div>
+          
+          
+          
+        </li>
+        
+        
+        
+        
+        
+              <li class="support">
+        
+        
+                  
+          <h4><span><a href="http://izquierdaxunida.com/Coordinador_Xeneral">Ovidio Zapico</a></span></h4>
+     
+     <p>Diputáu Autonómicu y Coordinador d'IX</p>
+          
+          
+          
+         
+        </li>
+        
+        <li class="flexible">
+   
+        <h4><span><a href="Actualida_Grupu_Parlamentario">Xabel Vegas</a></span></h4>
+         <p>Diputado Autonómico<br>(Mas Asturies)</p>
+   
+   
+    </li>
+        
+        
+         <li class="easy">
+		<h4><span><a href="Actualida_Grupu_Parlamentario">Delia Campomanes</a></span></h4>
+         <p>Diputada Autonómica</p>
+        </li>
+		  
+		  
+		  
+            <li class="seo">
+     <a class="circle_link" href="http://www.izquierdaxunida.com/Actualida_Gobiernu">&nbsp;</a>
+   <h4><span><a href="http://www.izquierdaxunida.com/Actualida_Gobiernu">Gobiernu</a></span></h4>
+		   <p>Convocatoria por Asturies</p>
+    </li>
+    
+   
+            </ul></center>
+    </div>
+    <!-- /features_block -->
+  </div>
+</div>
+<!-- footer -->
+<!-- social block -->
+<div class="social_block">
+  <div class="wraper">
+    <p>2014 Izquierda Xunida d'Asturies - <a href="http://www.izquierdaxunida.com/Politica_de_privacidad" style="color:#FFF">Pol&iacute;tica de privacidad</a> - <a href="http://www.izquierdaxunida.com/Politica_de_cookies" style="color:#FFF">Pol&iacute;tica de cookies</a></p>
+    <ul>
+      <li class="facebook"><a href="https://www.facebook.com/izquierdaxunida" target="_blank">Facebook</a></li>
+      <li class="twitter"><a href="https://twitter.com/iuasturias" target="_blank">Twitter</a></li>
+      <li class="linkedin"><a href="http://www.flickr.com/photos/47615096@N05" target="_blank">Flickr</a></li>
+      <li class="dribbble"><a href="http://www.youtube.com/izquierdaxunida">Youtube</a></li>
+      <li class="rss"><a href="/rss_ast.php" target="_blank">RSS</a></li>
+    </ul>
+  </div>
+</div>
+<!-- /social block --><!-- copyright -->
+<div class="copyright">
+ <div class="wraper">
+  <p>&nbsp;</p>
+  <a class="top" href="#">Subir</a>
+ </div>
+</div>
+<!-- /copyright -->
+<!-- /footer -->
+ <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+
+    <script src="assets/js/superfish-menu/superfish.js"></script>
+    
+
+
+    <script src="assets/js/testimonialrotator.js"></script>
+   
+   
+    <script src="assets/js/custom.js"></script>
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+</body>
+</html> 

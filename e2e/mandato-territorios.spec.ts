@@ -1,5 +1,35 @@
 import { expect, test } from "@playwright/test";
 
+test("Asturias distingue el preacuerdo y conserva las condiciones sin numeración oficial", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Asturias");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await expect(page.locator(".mc-list")).toContainText("texto final firmado pendiente");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-03$/);
+  await expect(page.locator(".mc-intro")).toContainText("Preacuerdo importado");
+  await expect(page.getByRole("status")).toHaveText("37 resultados · página 1 de 3");
+  await page.getByLabel("Buscar medida autonómica").fill("ocho personas");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Orden editorial");
+  await expect(page.locator("#territorial-inventory")).toContainText("forma semestral");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("35 resultados");
+});
+
+test("Asturias en móvil separa gratuidad, plazas y previsiones", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-03");
+  await expect(page.getByRole("link", { name: "Consultar el preacuerdo publicado", exact: true })).toBeVisible();
+  await expect(page.locator(".mt-review")).toHaveCount(2);
+  await expect(page.locator("#compromiso-r-03-19")).toContainText("previsiones");
+  await expect(page.locator("#compromiso-r-03-19")).toContainText("servicios complementarios");
+  await expect(page.locator("#compromiso-r-03-2")).toContainText("no añade una evaluación independiente");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/asturias-mobile.png", fullPage: true });
+});
+
 test("Murcia permite consultar también las ocho cláusulas finales del pacto", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Murcia");

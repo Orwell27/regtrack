@@ -1,3 +1,5 @@
+import asturiasInventory from "@/data/mandate/asturias-inventory.json";
+import asturiasReviews from "@/data/mandate/asturias-reviews.json";
 import murciaInventory from "@/data/mandate/murcia-inventory.json";
 import murciaReviews from "@/data/mandate/murcia-reviews.json";
 import ceutaInventory from "@/data/mandate/ceuta-inventory.json";
@@ -26,6 +28,7 @@ import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "r-03": { inventory: asturiasInventory, reviews: asturiasReviews, level: "region", mandateSourceId: asturiasInventory.sourceId, sourceLabel: asturiasInventory.sourceLabel, governmentCutoff: undefined },
   "r-14": { inventory: murciaInventory, reviews: murciaReviews, level: "region", mandateSourceId: murciaInventory.sourceId, sourceLabel: murciaInventory.sourceLabel, governmentCutoff: undefined },
   "r-19": { inventory: melillaInventory, reviews: melillaReviews, level: "autonomous-city", mandateSourceId: melillaInventory.sourceId, sourceLabel: melillaInventory.sourceLabel, governmentCutoff: undefined },
   "r-18": { inventory: ceutaInventory, reviews: ceutaReviews, level: "autonomous-city", mandateSourceId: ceutaInventory.sourceId, sourceLabel: ceutaInventory.sourceLabel, governmentCutoff: undefined },
