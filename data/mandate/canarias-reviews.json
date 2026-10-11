@@ -9,7 +9,7 @@
       {
         "id": "origen-incoherente",
         "claim": "Qué dice el plan y qué parte se revisa",
-        "status": "documented",
+        "status": "promise-documented",
         "finding": "La tabla de la página 58 vincula S.OEst.1, sobre decidir tratamientos futuros al perder capacidad, con S.OEsp.1.1, que fija una espera máxima de tres meses. Se conserva la asociación impresa y se revisa solo el objetivo específico de espera. Hace falta aclarar la correspondencia y revisar por separado las decisiones anticipadas.",
         "citations": [
           {
@@ -84,7 +84,7 @@
       {
         "id": "meta",
         "claim": "Unidad de la meta y dimensiones del compromiso",
-        "status": "documented",
+        "status": "promise-documented",
         "finding": "El objetivo estratégico reúne autoabastecimiento y calidad y seguridad de la sangre y sus componentes. El objetivo específico fija 70.000 donantes anuales y mejora de la hemovigilancia. La unidad impresa es donantes, no donaciones: se conserva sin reinterpretarla.",
         "citations": [
           {

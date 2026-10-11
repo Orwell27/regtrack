@@ -1,4 +1,5 @@
 export const TERRITORIAL_STATUS_LABELS = {
+  "promise-documented": "Compromiso documentado · ejecución no acreditada por esta prueba",
   documented: "Actuación documentada",
   reported: "Dato comunicado por la administración",
   unresolved: "Evidencia insuficiente para esta parte",
@@ -126,6 +127,8 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
       for (const citation of component.citations) {
         if (!sources.has(citation.sourceId) || !citation.locator || (citation.page !== undefined && (!Number.isInteger(citation.page) || citation.page < 1))) throw Error("Cita territorial inválida");
       }
+      if (component.status === "documented" && component.citations.every(c => sources.get(c.sourceId)?.role === "programme")) throw Error("Actuación sustentada solo en un programa");
+      if (component.status === "promise-documented" && !component.citations.some(c => sources.get(c.sourceId)?.role === "programme")) throw Error("Compromiso sin programa citado");
     }
   }
 }

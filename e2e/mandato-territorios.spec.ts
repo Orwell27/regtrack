@@ -1,5 +1,37 @@
 import { expect, test } from "@playwright/test";
 
+test("Madrid autonómico conserva el programa y no se mezcla con el Ayuntamiento", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Madrid");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await expect(page.locator(".mc-list")).toContainText("459 de 459");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-13$/);
+  await expect(page.locator(".mt-review")).toHaveCount(4);
+  await expect(page.getByText("Extracción digital provisional.", { exact: false })).toBeVisible();
+  await expect(page.getByRole("status")).toContainText("459 resultados");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("455 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("3.000. Todos los niños");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("tendrán plaza pública");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 34/ })).toHaveAttribute("href", /PE_2023_completo\.pdf#page=34$/);
+});
+
+test("Madrid autonómico en móvil diferencia tarifa, oferta, obras y pagos", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-13");
+  await expect(page.locator('section[aria-labelledby="r-13-5-2-pagos"]')).toContainText("Evidencia insuficiente");
+  await expect(page.locator('section[aria-labelledby="r-13-5-10-promesa"]')).toContainText("Compromiso documentado · ejecución no acreditada");
+  await expect(page.locator('section[aria-labelledby="r-13-5-10-tarifa-familiar"]')).toContainText("Objetivo aún no alcanzado");
+  await expect(page.locator('section[aria-labelledby="r-13-6-2-lista-estatal"]')).toContainText("no equivale necesariamente a ausencia de oferta");
+  await expect(page.locator('section[aria-labelledby="r-13-10-17-entrega"]')).toContainText("Plan Vive general");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/madrid-region-mobile-top.png" });
+  await page.locator("#r-13-5-10-tarifa-familiar").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/madrid-region-mobile-transport.png" });
+});
+
 test("Galicia conserva apartados pendientes y limita la cifra del partido", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Galicia");
@@ -626,5 +658,5 @@ test("el inventario municipal funciona en móvil y no inventa otro balance", asy
   await page.getByLabel("Buscar medida municipal").fill("ninguna medida coincide");
   await expect(page.getByRole("status")).toHaveText("0 resultados · página 1 de 1");
   await expect(page.getByRole("button", { name: "Siguiente" })).toBeDisabled();
-  expect((await request.get("/observatorio/mandato/territorios/r-13")).status()).toBe(404);
+  expect((await request.get("/observatorio/mandato/territorios/inexistente")).status()).toBe(404);
 });

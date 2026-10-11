@@ -1,0 +1,295 @@
+[
+  {
+    "commitmentId": "r-13-5-2",
+    "reviewedAt": "2026-10-11",
+    "title": "Partos múltiples: ayuda regulada de 1.800 euros por hijo y acceso condicionado",
+    "conclusion": "Se documenta la creación de la ayuda y su importe prometido. La norma limita el acceso por residencia, renta y plazo de solicitud. El crédito inicial no demuestra pagos ni cobertura universal; faltan resultados de concesión y abono conciliados por ejercicio.",
+    "periodNote": "Programa de 2023, acuerdo publicado el 28/12/2023 y hechos causantes desde el 01/01/2024. La Orden 297/2024 declara crédito para 2024, no gasto ejecutado ni presupuesto de 2026. El procedimiento consultado en octubre de 2026 muestra actualización de 16/02/2026.",
+    "components": [
+      {
+        "id": "implantacion",
+        "claim": "Crear una ayuda de pago único de 1.800 euros por hijo",
+        "status": "documented",
+        "finding": "Los artículos 1, 4 y 5 regulan nacimientos múltiples en un mismo parto y adopciones simultáneas de dos o más menores desde enero de 2024. El importe es de 1.800 euros por hijo y solo puede reconocerse a uno de los progenitores por los mismos menores. Se acredita la implantación normativa del importe, no el pago a cada familia.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-programme",
+            "locator": "Apartado 5.2; impresa 52",
+            "page": 27
+          },
+          {
+            "sourceId": "madrid-region-birth-law",
+            "locator": "Artículos 1, 4 y 5",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "condiciones",
+        "claim": "Requisitos que restringen el acceso efectivo",
+        "status": "documented",
+        "finding": "La norma exige residencia legal, empadronamiento en Madrid y renta per cápita familiar estrictamente inferior a 30.000 euros, además de los restantes requisitos. La solicitud debe presentarse en 60 días naturales. La concesión se ordena por solicitudes válidas hasta agotar crédito; el plazo máximo de resolución es de tres meses y el silencio es desestimatorio. No es una prestación automática para todos los partos múltiples.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-birth-law",
+            "locator": "Artículos 6 y 7",
+            "page": 5
+          },
+          {
+            "sourceId": "madrid-region-birth-law",
+            "locator": "Artículo 10: plazo de solicitud",
+            "page": 6
+          },
+          {
+            "sourceId": "madrid-region-birth-law",
+            "locator": "Artículos 11 y 12",
+            "page": 7
+          },
+          {
+            "sourceId": "madrid-region-birth-procedure",
+            "locator": "Requisitos y tramitación; actualización 16/02/2026"
+          }
+        ]
+      },
+      {
+        "id": "credito",
+        "claim": "Financiación inicial declarada para 2024",
+        "status": "documented",
+        "finding": "La Orden 297/2024 declara tres millones de euros disponibles para 2024. Es crédito presupuestario: no acredita igual importe concedido o pagado, ni permite extrapolar el presupuesto de años posteriores.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-birth-credit",
+            "locator": "Apartado primero",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "pagos",
+        "claim": "Concesiones, pagos y exclusiones reales",
+        "status": "unresolved",
+        "finding": "Faltan solicitudes, concesiones, denegaciones, motivos de exclusión, pagos y plazos efectivos por ejercicio. El trámite abierto y la previsión de pago único no constituyen un registro de beneficiarios atendidos. Se necesitan datos agregados conciliados, sin información personal.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-birth-law",
+            "locator": "Artículo 14: abono de la subvención",
+            "page": 8
+          },
+          {
+            "sourceId": "madrid-region-birth-procedure",
+            "locator": "Tramitación y pago"
+          }
+        ]
+      }
+    ],
+    "contrast": "Norma, crédito y sede electrónica tienen la misma procedencia autonómica. Su concordancia acredita diseño y tramitación, sin auditoría externa de pagos. La ficha del trámite se conserva como extracto editorial por fallo de descarga directa; los dos BOCM sí se conservan íntegros.",
+    "pending": [
+      "Conciliar concesiones y pagos 2024–2026, denegaciones y agotamiento de crédito.",
+      "Comprobar modificaciones normativas y créditos de ejercicios posteriores al inicial.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-13-5-10",
+    "reviewedAt": "2026-10-11",
+    "title": "Transporte familiar: los descuentos de 2026 no alcanzan el 50 % y la gratuidad prometidos",
+    "conclusion": "El programa promete un 50 % para familias numerosas generales y gratuidad para las especiales. El CRTM mantiene descuentos familiares del 20 % y 50 %, respectivamente, en la información consultada. Las bonificaciones temporales y por edad son condiciones distintas y no acreditan la gratuidad universal prometida a las familias especiales.",
+    "periodNote": "Comparación entre el apartado 5.10 de 2023 y las tarifas base desde 01/01/2026, junto con la guía del CRTM consultada el 11/10/2026. El fin previsto del mandato, 2027, no ha vencido: se describe el ejercicio examinado y no un incumplimiento definitivo del mandato.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Descuento del 50 % general y gratuidad especial",
+        "status": "promise-documented",
+        "finding": "El apartado 5.10 distingue expresamente ambas categorías de familia numerosa. Es una promesa autonómica; no se confunde con títulos o medidas del Ayuntamiento de Madrid.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-programme",
+            "locator": "Apartado 5.10; impresa 54",
+            "page": 28
+          }
+        ]
+      },
+      {
+        "id": "tarifa-familiar",
+        "claim": "Aplicar los dos descuentos familiares prometidos",
+        "status": "target-pending",
+        "finding": "La guía del CRTM publica un 20 % para categoría general y un 50 % para especial. La tabla oficial de 2026 es concordante: abono normal de 30 días, zona A, 56,20 euros sin descuento, 44,90 general y 28,10 especial. Estos importes son tarifas base y no el precio final tras ayudas temporales. Ninguna de esas dos rebajas familiares alcanza la promesa específica del programa.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-transport-guide",
+            "locator": "Descuentos por familia numerosa"
+          },
+          {
+            "sourceId": "madrid-region-transport-tariffs",
+            "locator": "Tabla: título 30 días, normal, zona A",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "bonificaciones",
+        "claim": "Distinguir ayudas temporales y gratuidad por edad",
+        "status": "documented",
+        "finding": "La resolución separa la tarifa base del precio que paga el usuario una vez aplicadas bonificaciones extraordinarias. La guía de 2026 contempla además descuentos temporales y títulos gratuitos por edad. No se suman porcentajes de forma directa ni se presenta la gratuidad de ciertos grupos de edad como gratuidad de toda familia numerosa especial.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-transport-tariffs",
+            "locator": "Tarifa aprobada y precio al usuario",
+            "page": 1
+          },
+          {
+            "sourceId": "madrid-region-transport-guide",
+            "locator": "Bonificaciones 2026 y títulos gratuitos"
+          }
+        ]
+      }
+    ],
+    "contrast": "Se contrasta el texto electoral con la resolución tarifaria y la información operativa del CRTM. BOCM y CRTM corresponden al mismo origen autonómico; dos publicaciones no son dos comprobaciones independientes. El contraste acredita la diferencia de condiciones, no mide cada recarga o desplazamiento.",
+    "pending": [
+      "Revisar nuevas resoluciones tarifarias durante el resto del mandato.",
+      "Verificar precios efectivamente cobrados y aplicación acumulada de bonificaciones por título.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-13-6-2",
+    "reviewedAt": "2026-10-11",
+    "title": "Dependencia: persisten listas publicadas, pero falta medir las ofertas y el plazo desde el PIA",
+    "conclusion": "La promesa combina una oferta de atención antes de seis meses y una plaza residencial para nuevos grandes dependientes en tres meses desde el PIA. Las estadísticas consultadas no miden conjuntamente esos hitos. Se documentan listas de espera, sin equipararlas automáticamente a una falta de oferta ni certificar el cumplimiento universal.",
+    "periodNote": "El BOE de 09/09/2026 usa datos SISAAD a 31/12/2024 y 31/12/2025. La lista residencial regional tiene corte de 31/08/2026. No se trasladan esas cifras a octubre ni se mezclan sus poblaciones o se suman como personas únicas.",
+    "components": [
+      {
+        "id": "garantia",
+        "claim": "Separar oferta, plaza residencial y alternativa privada",
+        "status": "promise-documented",
+        "finding": "El programa fija un máximo de seis meses sin oferta de plaza, prestación o servicio; para nuevos grandes dependientes promete plaza residencial en tres meses desde el Programa Individual de Atención. Si no hay plaza pública, prevé alternativa privada con apenas coste añadido mediante el cheque residencia. Son tres condiciones distintas.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-programme",
+            "locator": "Apartado 6.2; impresa 64",
+            "page": 33
+          }
+        ]
+      },
+      {
+        "id": "lista-estatal",
+        "claim": "Evolución de la lista PIA y PIA efectivo publicada por el Estado",
+        "status": "reported",
+        "finding": "La resolución estatal registra para Madrid 10.068 personas a cierre de 2024 y 9.206 a cierre de 2025 en la lista PIA más PIA efectivo: 862 menos, un 8,6 %. El criterio considera situaciones pendientes tras el plazo legal de seis meses. La fuente es el SISAAD, alimentado por las administraciones; su publicación estatal no constituye una auditoría individual independiente. Pendiente de prestación efectiva no equivale necesariamente a ausencia de oferta.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-dependency-funding",
+            "locator": "C.2.a: definición del indicador",
+            "page": 22
+          },
+          {
+            "sourceId": "madrid-region-dependency-funding",
+            "locator": "Tabla C.2.a: fila Madrid",
+            "page": 23
+          }
+        ]
+      },
+      {
+        "id": "lista-residencial",
+        "claim": "Demanda residencial regional a agosto de 2026",
+        "status": "reported",
+        "finding": "La Comunidad comunica 3.006 personas en espera residencial al 31/08/2026, excluyendo a quienes perciben una prestación económica transitoria vinculada a ese servicio. La tabla no informa del grado, la fecha del PIA ni las ofertas. No permite comprobar por sí sola el límite de tres meses para nuevos grandes dependientes.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-dependency-wait",
+            "locator": "Atención residencial; corte 31/08/2026 y exclusiones"
+          }
+        ]
+      },
+      {
+        "id": "plazos-coste",
+        "claim": "Cumplimiento de los plazos y coste añadido de la alternativa",
+        "status": "unresolved",
+        "finding": "Faltan series de expedientes agregados con inicio de espera, grado, fecha del PIA, fecha y tipo de oferta, incorporación efectiva y coste neto soportado. No se sustituye esta prueba por una media de valoración de discapacidad, una lista residencial sin antigüedad o el número de ayudas. Sin esos datos no se acredita la garantía universal ni se atribuye a cada caso una vulneración del plazo.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-programme",
+            "locator": "Apartado 6.2",
+            "page": 33
+          },
+          {
+            "sourceId": "madrid-region-dependency-funding",
+            "locator": "Definición de lista PIA y PIA efectivo",
+            "page": 22
+          }
+        ]
+      }
+    ],
+    "contrast": "La comparación preserva el hito exacto de la promesa. SISAAD estatal y SIDMA regional tienen cortes y definiciones diferentes, además de dependencia de datos administrativos autonómicos. No se fabrica una corroboración independiente a partir del cambio de organismo publicador.",
+    "pending": [
+      "Obtener distribución de tiempos hasta oferta y atención, con definición de cohortes y exclusiones.",
+      "Comprobar los nuevos grandes dependientes desde su PIA y el coste neto de plaza privada.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-13-10-17",
+    "reviewedAt": "2026-10-11",
+    "title": "Solución Joven: obras anunciadas y condiciones originales todavía sin acreditar",
+    "conclusion": "El programa fija 1.200 viviendas para menores de 35 años, de uno o dos dormitorios y alquiler inferior a 600 euros mensuales. La Comunidad comunica obras de 103 viviendas en Loeches y un objetivo posterior más amplio. El anuncio no acredita entrega ni todas las condiciones prometidas.",
+    "periodNote": "Se mantiene la promesa de 2023 y se contrasta con la comunicación de 16/07/2026. Las metas posteriores de 3.352 adjudicadas y 5.500 previstas son estados y magnitudes distintas. El mandato previsto hasta 2027 continúa; no se declara vencido su plazo.",
+    "components": [
+      {
+        "id": "condiciones",
+        "claim": "Conservar todas las condiciones del programa",
+        "status": "promise-documented",
+        "finding": "El apartado 10.17 prevé 1.200 viviendas, preferentemente industrializadas, para menores de 35 años, con uno o dos dormitorios, renta inferior a 600 euros al mes y alquiler por cinco a siete años o hasta cumplir 35. Ampliar la meta de viviendas no acredita ni sustituye el precio, la duración y el acceso prometidos.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-programme",
+            "locator": "Apartado 10.17; impresa 107",
+            "page": 54
+          }
+        ]
+      },
+      {
+        "id": "obras",
+        "claim": "Inicio de construcción comunicado en Loeches",
+        "status": "reported",
+        "finding": "La nota regional comunica el inicio de 103 viviendas, anuncia otras 192 en el municipio y sitúa 3.352 adjudicadas dentro de una meta de 5.500. La promoción anunciada combina 39 viviendas de un dormitorio, 60 de dos y cuatro de tres. Esa distribución requiere conciliar el nuevo diseño con el programa original; inicio de obras y adjudicación no son entregas.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-housing-start",
+            "locator": "Promoción de Loeches y magnitudes de Solución Joven"
+          }
+        ]
+      },
+      {
+        "id": "entrega",
+        "claim": "Viviendas entregadas que cumplen las condiciones originales",
+        "status": "unresolved",
+        "finding": "No se incorpora certificado de finalización, entrega o contratos de esta promoción. Las 6.419 viviendas disponibles citadas en la noticia corresponden al Plan Vive general y no pueden atribuirse íntegramente a Solución Joven ni a las 1.200 viviendas con las condiciones de 2023.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-housing-start",
+            "locator": "Apartado sobre el Plan Vive general"
+          }
+        ]
+      },
+      {
+        "id": "renta-acceso",
+        "claim": "Renta inferior a 600 euros, duración y destinatarios",
+        "status": "unresolved",
+        "finding": "Faltan pliegos y contratos que permitan comprobar renta inicial, gastos adicionales, actualización, duración, edad de entrada y permanencia, y disponibilidad efectiva. Un anuncio de alquiler asequible no acredita por sí mismo un precio inferior a 600 euros mensuales.",
+        "citations": [
+          {
+            "sourceId": "madrid-region-programme",
+            "locator": "Condiciones de acceso y alquiler, apartado 10.17",
+            "page": 54
+          }
+        ]
+      }
+    ],
+    "contrast": "Se contrasta el anuncio regional con las condiciones originales y se mantienen separados proyectos, obras y viviendas entregadas. No se cuenta la reproducción de la nota por otros medios como corroboración independiente. La noticia se conserva como extracto editorial, no como bytes originales ni certificación de obra.",
+    "pending": [
+      "Conservar expedientes de concesión, pliegos, certificaciones de obra y entrega de promociones Solución Joven.",
+      "Conciliar viviendas y contratos que satisfacen cada condición original, sin duplicarlas con el Plan Vive general.",
+      "Revisión humana independiente de la ficha."
+    ]
+  }
+]

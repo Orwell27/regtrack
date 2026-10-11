@@ -43,7 +43,7 @@ describe("inventario municipal reproducible y separado de la revisión", () => {
     expect(balance.inventoryTotal - balance.reviews.length).toBe(296);
     expect(getCoverage().find(item => item.id === balance.jurisdictionId)).toMatchObject({ imported: 300, reviewed: 4, independentlyReviewed: 0 });
     expect(new Set(balance.sources.map(source => source.family))).toEqual(new Set(["ayto-madrid", "elpais"]));
-    expect(getTerritorialBalance("r-13")).toBeNull();
+    expect(getTerritorialBalance("r-13")?.jurisdictionId).toBe("r-13");
     expect(getTerritorialBalance("es")).toBeNull();
     expect(getTerritorialBalance("../../m-28079")).toBeNull();
   });

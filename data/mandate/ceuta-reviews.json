@@ -238,7 +238,7 @@
       {
         "id": "condicion",
         "claim": "Cómo afecta la condición presupuestaria a las otras medidas",
-        "status": "documented",
+        "status": "promise-documented",
         "finding": "La nota final del programa permite considerar cumplidas las medidas sin dotación con su incorporación al proyecto de presupuesto de 2024. Se identifica como criterio declarado por el Gobierno, no como prueba de ejecución de cada medida. Falta comprobar qué fichas estaban sin crédito y qué partidas incorporó el proyecto; la mera existencia del presupuesto no cierra esas fichas.",
         "citations": [
           {
