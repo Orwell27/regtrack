@@ -1,6 +1,6 @@
 export const TERRITORIAL_STATUS_LABELS = {
   documented: "Actuación documentada",
-  reported: "Avance comunicado por la administración",
+  reported: "Dato comunicado por la administración",
   unresolved: "Evidencia insuficiente para esta parte",
   "target-pending": "Objetivo aún no alcanzado en el ejercicio examinado",
   "deadline-missed": "Plazo comprometido vencido sin alcanzar el hito",
@@ -20,6 +20,7 @@ export type TerritorialReview = {
 export type TerritorialRecord = {
   id: string; officialId: string; text: string; topic: string; page: number; endPage: number; sourceId: string;
   governmentState?: string;
+  initiatives?: { officialId: string; text: string; page: number; endPage: number }[];
 };
 export type TerritorialBalance = {
   jurisdictionId: string; mandateId: string; mandateLabel: string; sourceId: string; registerSourceId: string;
@@ -51,6 +52,16 @@ export function validateTerritorialBalance(balance: TerritorialBalance) {
       || record.sourceId !== balance.sourceId || !Number.isInteger(record.page) || record.page < 1
       || !Number.isInteger(record.endPage) || record.endPage < record.page) throw Error("Compromiso territorial inválido");
     ids.add(record.id);
+    if (record.initiatives !== undefined) {
+      if (!record.initiatives.length) throw Error("Iniciativas territoriales vacías");
+      const initiativeIds = new Set<string>();
+      for (const initiative of record.initiatives) {
+        if (!initiative.officialId || initiativeIds.has(initiative.officialId) || !initiative.text.trim()
+          || !Number.isInteger(initiative.page) || !Number.isInteger(initiative.endPage)
+          || initiative.page < record.page || initiative.endPage < initiative.page || initiative.endPage > record.endPage) throw Error("Iniciativa territorial inválida");
+        initiativeIds.add(initiative.officialId);
+      }
+    }
     if (record.governmentState && (!balance.governmentCutoff || sources.get(balance.sourceId)?.role !== "government-report")) throw Error("Estado gubernamental sin fecha o informe");
   }
   const reviews = new Set<string>();

@@ -2,9 +2,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import { normalizeMandateText } from "@/lib/mandate/model";
-import { TERRITORIAL_STATUS_LABELS, type TerritorialBalance as Balance } from "@/lib/mandate/territorial-model";
+import { TERRITORIAL_STATUS_LABELS, type TerritorialBalance as Balance, type TerritorialRecord } from "@/lib/mandate/territorial-model";
 
 const PAGE_SIZE = 15;
+function Initiatives({ record, sourceUrl }: { record: TerritorialRecord; sourceUrl: string }) {
+  if (!record.initiatives) return null;
+  return <details><summary>Iniciativas del compromiso · {record.initiatives.length}</summary><ol>{record.initiatives.map(initiative => <li key={initiative.officialId} value={Number(initiative.officialId)}><p>{initiative.text}</p><a className="mc-link" href={`${sourceUrl}#page=${initiative.page}`} target="_blank" rel="noreferrer">Página {initiative.page}{initiative.endPage !== initiative.page ? `–${initiative.endPage}` : ""}</a></li>)}</ol></details>;
+}
 export function TerritorialBalance({ balance }: { balance: Balance }) {
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("all");
@@ -13,7 +17,7 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
   const sources = new Map(balance.sources.map(source => [source.id, source]));
   const terms = normalizeMandateText(query).split(/\s+/).filter(Boolean);
   const records = balance.records.filter(record => (filter === "all" || (filter === "reviewed" ? reviews.has(record.id) : !reviews.has(record.id)))
-    && terms.every(term => normalizeMandateText(`${record.officialId} ${record.text} ${record.topic}`).includes(term)));
+    && terms.every(term => normalizeMandateText(`${record.officialId} ${record.text} ${record.topic} ${record.initiatives?.map(initiative => initiative.text).join(" ") ?? ""}`).includes(term)));
   const pages = Math.max(1, Math.ceil(records.length / PAGE_SIZE));
   const current = Math.min(page, pages);
   const inventorySource = sources.get(balance.sourceId)!;
@@ -32,7 +36,7 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
           return <article className="mc-card mt-review" key={record.id} id={`compromiso-${record.id}`}>
             <p className="mn-eyebrow">Medida {record.officialId} · revisión {review.reviewedAt}</p><h3>{review.title}</h3>
             <details><summary>Promesa y página de origen</summary><p>{record.text}</p>{record.governmentState ? <p>Estado declarado por el Gobierno a {balance.governmentCutoff}: <strong>{record.governmentState}</strong>. No es una valoración de RegTrack.</p> : null}
-          <a className="mc-link" href={`${inventorySource.url}#page=${record.page}`} target="_blank" rel="noreferrer">{balance.sourceLabel} · página {record.page}{record.endPage !== record.page ? `–${record.endPage}` : ""}</a></details>
+          <a className="mc-link" href={`${inventorySource.url}#page=${record.page}`} target="_blank" rel="noreferrer">{balance.sourceLabel} · página {record.page}{record.endPage !== record.page ? `–${record.endPage}` : ""}</a><Initiatives record={record} sourceUrl={inventorySource.url} /></details>
             <p><strong>{review.conclusion}</strong></p><p>{review.periodNote}</p>
             <div className="mt-components">{review.components.map(component => <section key={component.id} aria-labelledby={`${record.id}-${component.id}`}>
               <h4 id={`${record.id}-${component.id}`}>{component.claim}</h4><p className="mn-eyebrow">{TERRITORIAL_STATUS_LABELS[component.status]}</p><p>{component.finding}</p>
@@ -50,6 +54,7 @@ export function TerritorialBalance({ balance }: { balance: Balance }) {
         <p className="mc-results" role="status">{records.length} resultados · página {current} de {pages}</p>
         <div className="mc-list">{records.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE).map(record => <article className="mc-card" key={record.id}>
           <p className="mn-eyebrow">Medida {record.officialId} · {record.topic}</p><h3>{record.text}</h3><p>{reviews.has(record.id) ? "Con revisión documental parcial" : "Pendiente de revisión · Sin conclusión de RegTrack"}</p>
+          <Initiatives record={record} sourceUrl={inventorySource.url} />
           {record.governmentState ? <p>Estado declarado por el Gobierno a {balance.governmentCutoff}: <strong>{record.governmentState}</strong>. No es una valoración de RegTrack.</p> : null}
           <a className="mc-link" href={`${inventorySource.url}#page=${record.page}`} target="_blank" rel="noreferrer">{balance.sourceLabel} · página {record.page}{record.endPage !== record.page ? `–${record.endPage}` : ""}</a>
           {reviews.has(record.id) ? <p><a className="mc-link" href={`#compromiso-${record.id}`}>Leer evidencia y límites</a></p> : null}

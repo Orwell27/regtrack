@@ -1,5 +1,45 @@
 import { expect, test } from "@playwright/test";
 
+test("Euskadi conserva las iniciativas y busca dentro de ellas sin inflar las revisiones", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("País Vasco");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-16$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Euskadi · mandato 2024–2028");
+  await expect(page.locator(".mc-intro")).toContainText("846 iniciativas");
+  await expect(page.getByRole("status")).toHaveText("154 resultados · página 1 de 11");
+  await expect(page.locator(".mt-review")).toHaveCount(2);
+  await page.getByLabel("Buscar medida autonómica").fill("Gaztelagun");
+  const inventory = page.locator("#territorial-inventory");
+  await expect(page.getByRole("status")).toContainText("2 resultados");
+  const reviewed = inventory.locator("article").filter({ hasText: "Medida 18" });
+  await reviewed.getByText("Iniciativas del compromiso · 5", { exact: true }).click();
+  await expect(reviewed).toContainText("30.000 euros");
+  await expect(reviewed.getByRole("link", { name: "Página 38", exact: true })).toHaveCount(5);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  await expect(inventory).toContainText("Medida 52");
+  await expect(inventory).toContainText("Sin conclusión de RegTrack");
+  await page.getByLabel("Buscar medida autonómica").fill("");
+  await expect(page.getByRole("status")).toContainText("152 resultados");
+});
+
+test("Euskadi en móvil conserva cortes, umbrales y límites de la corroboración", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-16");
+  const health = page.locator("#compromiso-r-16-1");
+  await expect(health).toContainText("54,19");
+  await expect(health).toContainText("77,40");
+  await expect(health).toContainText("no constituyen un segundo recuento independiente");
+  await expect(health.getByRole("link", { name: "Ararteko · informe anual 2025" })).toHaveAttribute("href", /#page=87$/);
+  await expect(page.locator("#compromiso-r-16-18")).toContainText("exactamente 30.000 € queda fuera");
+  await page.getByLabel("Buscar medida autonómica").fill("transversalidad cuidados");
+  await page.locator("#territorial-inventory").getByText("Iniciativas del compromiso · 8", { exact: true }).click();
+  await expect(page.locator("#territorial-inventory ol li")).toHaveCount(8);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/euskadi-mobile.png", fullPage: true });
+});
+
 test("Navarra conserva el estado declarado sin convertirlo en veredicto y enlaza el acuerdo", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Navarra");

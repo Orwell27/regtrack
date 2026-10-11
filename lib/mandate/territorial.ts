@@ -2,28 +2,33 @@ import madridInventory from "@/data/mandate/madrid-inventory.json";
 import madridReviews from "@/data/mandate/madrid-reviews.json";
 import navarraInventory from "@/data/mandate/navarra-inventory.json";
 import navarraReviews from "@/data/mandate/navarra-reviews.json";
+import euskadiInventory from "@/data/mandate/euskadi-inventory.json";
+import euskadiReviews from "@/data/mandate/euskadi-reviews.json";
 import sources from "@/data/mandate/evidence/territorial/sources.json";
-import { validateTerritorialBalance, type TerritorialBalance, type TerritorialReview, type TerritorialSource } from "./territorial-model";
+import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
-export const TERRITORIAL_BALANCE_IDS = ["m-28079", "r-15"];
+const TERRITORIES = {
+  "m-28079": { inventory: madridInventory, reviews: madridReviews, level: "municipality", mandateSourceId: madridInventory.sourceId, sourceLabel: "Programa", governmentCutoff: undefined },
+  "r-15": { inventory: navarraInventory, reviews: navarraReviews, level: "region", mandateSourceId: navarraInventory.mandateSourceId, sourceLabel: navarraInventory.sourceLabel, governmentCutoff: navarraInventory.governmentCutoff },
+  "r-16": { inventory: euskadiInventory, reviews: euskadiReviews, level: "region", mandateSourceId: euskadiInventory.mandateSourceId, sourceLabel: euskadiInventory.sourceLabel, governmentCutoff: undefined },
+} as const;
+export const TERRITORIAL_BALANCE_IDS = Object.keys(TERRITORIES);
 
 export function getTerritorialBalance(id: string): TerritorialBalance | null {
   if (!TERRITORIAL_BALANCE_IDS.includes(id)) return null;
-  const inventory = id === "r-15" ? navarraInventory : madridInventory;
-  const reviews = id === "r-15" ? navarraReviews : madridReviews;
+  const { inventory, reviews, level, mandateSourceId, sourceLabel, governmentCutoff } = TERRITORIES[id as keyof typeof TERRITORIES];
   // Explicit projection: raw extraction and local evidence paths stay on the server.
   const balance: TerritorialBalance = {
     jurisdictionId: inventory.jurisdictionId, mandateId: inventory.mandateId, mandateLabel: inventory.mandateLabel,
     sourceId: inventory.sourceId, registerSourceId: inventory.registerSourceId, sourceSha256: inventory.sourceSha256,
     inventoryTotal: inventory.inventoryTotal, scope: inventory.scope, textNote: inventory.textNote,
-    level: id === "r-15" ? "region" : "municipality",
-    mandateSourceId: id === "r-15" ? navarraInventory.mandateSourceId : madridInventory.sourceId,
-    sourceLabel: id === "r-15" ? navarraInventory.sourceLabel : "Programa",
-    ...(id === "r-15" ? { governmentCutoff: navarraInventory.governmentCutoff } : {}),
-    records: inventory.records.map(record => {
+    level, mandateSourceId, sourceLabel,
+    ...(governmentCutoff ? { governmentCutoff } : {}),
+    records: (inventory.records as TerritorialRecord[]).map(record => {
       const { id, officialId, text, topic, page, endPage, sourceId } = record;
       return { id, officialId, text, topic, page, endPage, sourceId,
-        ...("governmentState" in record && typeof record.governmentState === "string" ? { governmentState: record.governmentState } : {}) };
+        ...(record.governmentState ? { governmentState: record.governmentState } : {}),
+        ...(record.initiatives ? { initiatives: record.initiatives.map(({ officialId, text, page, endPage }) => ({ officialId, text, page, endPage })) } : {}) };
     }),
     reviews: reviews as TerritorialReview[],
     sources: sources.filter(source => source.jurisdictionId === id).map(({ id, jurisdictionId, title, publisher, family, url, role, publicationDate, retrievedAt, sha256, captureType }) =>

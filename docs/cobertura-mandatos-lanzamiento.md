@@ -2,7 +2,7 @@
 
 Alcance acordado con Alfonso el 10 de octubre de 2026: balance estatal, 17 comunidades autónomas, Ceuta y Melilla y las 50 capitales de provincia. Otros municipios se amplían después. Objetivo orientativo de lanzamiento: alrededor del 17 de octubre; no es una tarea programada ni una promesa de auditoría terminada sin evidencia.
 
-**Estado de la rama tras el contraste nacional del 11 de octubre:** 46/203 fichas nacionales (104 componentes), 4/300 del Ayuntamiento de Madrid y 3/347 de Navarra con revisión parcial. Quedan 157 compromisos nacionales pendientes. Los inventarios importados son completos respecto de sus documentos, no balances cerrados. Los otros 67 territorios aún no tienen un inventario importado ni revisión sustantiva; la revisión humana independiente sigue pendiente en todos los ámbitos. Los bloques de abajo conservan la secuencia de trabajo.
+**Estado de la rama tras la incorporación de Euskadi del 11 de octubre:** 46/203 fichas nacionales (104 componentes), 4/300 del Ayuntamiento de Madrid, 3/347 de Navarra y 2/154 de Euskadi (8 componentes) con revisión parcial. Quedan 157 compromisos nacionales pendientes. Los inventarios importados son completos respecto de sus documentos, no balances cerrados. Los otros 66 territorios aún no tienen un inventario importado ni revisión sustantiva; la revisión humana independiente sigue pendiente en todos los ámbitos. Los bloques de abajo conservan la secuencia de trabajo.
 
 ## Condiciones para dar una ficha por revisada
 
@@ -133,3 +133,18 @@ Ocho fichas nuevas (52, 69, 104, 110, 127, 163, 177 y 184), con 22 componentes y
 Los originales se conservan con huellas verificables. La prueba de integridad comprueba también identificador, título y fecha de los documentos DOUE. La página 28 de AIReF se inspeccionó visualmente para cotejar gráficos, porcentajes y definición de no solicitud.
 
 Pendientes actuales: 157 nacionales, 296 de Madrid, 344 de Navarra y los otros 67 inventarios/balances territoriales; revisión humana independiente pendiente. Esta ampliación no cierra la cobertura ni autoriza a presentarla como completa.
+
+## Euskadi: programa íntegro y dos primeras revisiones (11 de octubre)
+
+El programa de la XIII Legislatura, 2024–2028, contiene 154 compromisos, 846 iniciativas y 32 áreas. Se conserva el PDF original de 129 páginas, la extracción por página, el registro de Irekia y el balance gubernamental de 2025. El importador verifica secuencias y cantidades; no cuenta el índice dos veces ni convierte las 846 iniciativas en compromisos adicionales. La iniciativa 6 del compromiso 11 comparte línea impresa con la 5: se separa sin perder su texto. Se cotejan los 154 títulos con el índice; dos erratas del índice (143 y 151) no sustituyen al texto del cuerpo.
+
+Las iniciativas se despliegan dentro de cada compromiso y son buscables. El compromiso 52 repite medidas de ayudas del 18, pero contiene ocho iniciativas frente a cinco: no hereda su revisión. El balance gubernamental tampoco proporciona estados automáticos ni un porcentaje de cumplimiento de RegTrack.
+
+Dos fichas parciales, ocho componentes:
+
+- Salud: documento del pacto de junio de 2025, tablas de Osakidetza a noviembre de 2025 y mayo de 2026, y expedientes del Ararteko de 2025. Los cortes muestran mayor demora; no se atribuye a huelgas, plantilla u otra causa sin evaluación. Pacientes quirúrgicos y citas de consultas/pruebas conservan sus unidades. El Ararteko aporta expedientes propios pero reproduce las estadísticas del prestador: no es un segundo recuento independiente. Se señalan formulaciones distintas del resumen del informe, sin extrapolar sus porcentajes.
+- Emancipación: se cotejan los umbrales con las normas. Gaztelagun incluye exactamente 30.000 €; Emantzipa exige ingresos inferiores. No se infiere pago, cobertura ni efecto sobre emancipación de estas condiciones; las otras tres iniciativas siguen sin resolver.
+
+Nueve originales conservados (ocho PDF y un HTML) con huellas comprobadas. Inspección visual del programa p. 33, ambas tablas quirúrgicas p. 3, Ararteko PDF p. 87 (impresa 89) y requisitos Gaztelagun p. 4. Reproducción: `npx tsx scripts/import-euskadi-programme.ts`. Pruebas: `npx vitest run tests/mandate-euskadi.test.ts`; los recorridos de `e2e/mandato-territorios.spec.ts` incluyen búsqueda por texto de iniciativa y móvil. La etiqueta de datos declarados se formula de manera neutral: un dato del Gobierno puede reflejar un retroceso.
+
+Pendientes tras esta incorporación: 157 nacionales, 296 de Madrid, 344 de Navarra, 152 de Euskadi y otros 66 inventarios/balances territoriales. La revisión humana independiente sigue pendiente; la sección no está finalizada.
