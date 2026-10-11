@@ -1,0 +1,817 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "m-48020",
+  "mandateId": "m-48020-2023",
+  "mandateLabel": "Ayuntamiento de Bilbao · mandato 2023–2027",
+  "sourceId": "bilbao-programme-copy",
+  "registerSourceId": "bilbao-programme-register",
+  "sourceLabel": "Programa · copia difundida por EAJ-PNV",
+  "sourceSha256": "e701f9741bf86d88e72444f0fb0eea60d88f4197e6e90677574e420f590a0fcb",
+  "inventoryTotal": 80,
+  "textLanguage": "es",
+  "programmeCopy": true,
+  "scope": "Las 80 actuaciones prioritarias y sus descripciones completas del Plan de Mandato 2023–2027, en una copia difundida por EAJ-PNV. El propio documento aclara que no recoge toda la actividad municipal.",
+  "textNote": "La copia de 47 páginas se conserva íntegra y su origen partidario queda identificado: no es corroboración independiente. El registro municipal coincide en título, estructura y 80 actuaciones, pero sus PDF devolvieron 403 y no se ha comprobado igualdad de bytes. El seguimiento municipal anunciado para junio de 2026 no se ha recuperado ni importado; no se inventan estados o porcentajes. Se separan las dos columnas del PDF y se unen espacios tipográficos en palabras como Talento o Turismo, conservando la extracción sin normalizar para cotejo.",
+  "records": [
+    {
+      "id": "m-48020-1.1",
+      "officialId": "1.1",
+      "text": "Fase II del “BAT, Centro Internacional de Emprendimiento”",
+      "programmeText": "Fase II del “BAT, Centro Internacional de Emprendimiento”\nLa promoción y apoyo de iniciativas de emprendimiento va a continuar siendo una de las grandes apuestas económicas de la ciudad. Esta estrategia se va a ver reflejada durante este mandato en el desarrollo de la Fase II del “BAT, Centro Internacional de Emprendimiento”, en colaboración con la Diputación Foral de Bizkaia. Este Centro es un espacio favorecedor de intraemprendimiento en el que se posibilita acelerar el crecimiento de startups innovadoras a la vez que se fomenta la innovación de las empresas referentes de Bilbao-Bizkaia a través de iniciativas de innovación abierta. BAT atrae a Bilbao-Bizkaia proyectos empresariales, start-ups y corporaciones de alto contenido tecnológico e innovador, a la vez que contribuye a posicionarnos internacionalmente como un polo de referencia en emprendimiento innovador, conectándonos con ecosistemas internacionales de referencia y dinamizando nuestro ecosistema local de emprendimiento.",
+      "topic": "Actividad económica y empleo",
+      "page": 13,
+      "endPage": 13,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.2",
+      "officialId": "1.2",
+      "text": "Creación de una “Talent House (Casa del Talento)”",
+      "programmeText": "Creación de una “Talent House (Casa del Talento)”\nConstrucción de una “Talent House (Casa del Talento)” en Zorrotzaurre para dar respuesta a las necesidades de alojamiento del talento internacional, en el marco de una estrategia para la retención, atracción y desarrollo del talento coordinada con el resto de instituciones (Diputación Foral de Bizkaia y Gobierno Vasco).",
+      "topic": "Actividad económica y empleo",
+      "page": 13,
+      "endPage": 13,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.3",
+      "officialId": "1.3",
+      "text": "Desarrollo de nuevas parcelas del Parque Tecnológico Urbano de Zorrotzaurre",
+      "programmeText": "Desarrollo de nuevas parcelas del Parque Tecnológico Urbano de Zorrotzaurre\nZorrotzaurre es uno de los espacios clave de oportunidad y de futuro de la ciudad, que contemplará diferentes usos. Será una isla en la que vivir, trabajar y disfrutar. En este sentido, uno de los elementos diferenciadores de esta isla será el Parque Tecnológico Urbano en el que se dispondrán espacios para crear y albergar empresas de alto componente tecnológico y alto grado de creatividad e innovación en sectores estratégicos como los servicios avanzados a la industria, la economía digital y las industrias creativas y culturales. A lo largo de estos 4 años promoveremos el desarrollo de nuevas parcelas que permitan albergar actividades empresariales, investigadoras y formativas. Todo ello en colaboración con otras instituciones, empresas y agentes del conocimiento.",
+      "topic": "Actividad económica y empleo",
+      "page": 13,
+      "endPage": 13,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.4",
+      "officialId": "1.4",
+      "text": "Nuevo Polo Audiovisual en Punta Zorrotza",
+      "programmeText": "Nuevo Polo Audiovisual en Punta Zorrotza\nPunta Zorrotza es otro de los espacios de oportunidad de nuestra ciudad. En colaboración con la Diputación Foral de Bizkaia desarrollaremos progresivamente este Polo, que contribuirá a potenciar el sector audiovisual en Bilbao-Bizkaia, comenzando por una primera fase de elaboración de un análisis técnico y de oportunidad.",
+      "topic": "Actividad económica y empleo",
+      "page": 13,
+      "endPage": 13,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.5",
+      "officialId": "1.5",
+      "text": "Planes y programas de empleo",
+      "programmeText": "Planes y programas de empleo\nLlevaremos a cabo planes de empleo y otros programas experienciales en colaboración con Lanbide-Servicio Vasco de Empleo y otros agentes, con el objetivo de facilitar la inclusión laboral de las personas con mayores dificultades de acceso al mercado laboral: mujeres, jóvenes menores de 35 años, personas paradas de larga duración, mayores de 45 años y personas en riesgo de exclusión.",
+      "topic": "Actividad económica y empleo",
+      "page": 13,
+      "endPage": 13,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.6",
+      "officialId": "1.6",
+      "text": "Apoyo integral al emprendimiento",
+      "programmeText": "Apoyo integral al emprendimiento\nPromover, contribuir y apoyar todas las iniciativas de emprendimiento con capacidad de generar empleo de calidad en la ciudad, tanto en su fase de creación como en las de consolidación y aceleración, incidiendo especialmente en la promoción de una mayor cultura emprendedora y en el acceso a la financiación necesaria. Desarrollaremos el edificio del Ensanche como eje de los servicios municipales de emprendimiento y colaboración con los agentes tecnológicos y de conocimiento, generando nuevas dinámicas de capacitación, mentorización y localización para apoyar, al menos, 600 nuevas iniciativas emprendedoras.",
+      "topic": "Actividad económica y empleo",
+      "page": 14,
+      "endPage": 14,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.7",
+      "officialId": "1.7",
+      "text": "“Plan Estratégico de Comercio”",
+      "programmeText": "“Plan Estratégico de Comercio”\nEl “Plan Estratégico de Comercio Bilbao 2025” es la hoja de ruta municipal para mejorar y fortalecer la posición competitiva del sector y el atractivo de Bilbao como ciudad comercial, tanto para bilbaínos y bilbaínas como para visitantes. En colaboración con las entidades representativas del sector y otras instituciones, continuaremos desarrollando medidas de revitalización del comercio en los ámbitos del urbanismo, la modernización del sector a través de la digitalización y los nuevos canales de venta e interacción con el cliente, y el rejuvenecimiento en el pequeño comercio. Asimismo continuaremos trabajando en la construcción de un modelo comercial de ciudad ordenado, atractivo y sostenible en el que nuestro comercio aporte una importante oferta de proximidad para garantizar la calidad de vida, la cohesión social y el disfrute en los barrios.",
+      "topic": "Actividad económica y empleo",
+      "page": 14,
+      "endPage": 14,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.8",
+      "officialId": "1.8",
+      "text": "“Plan Estratégico de Mercados Municipales”",
+      "programmeText": "“Plan Estratégico de Mercados Municipales”\nElaborar e implementar un “Plan Estratégico de Mercados Municipales” con el objetivo de preservar y revitalizar un modelo de consumo tradicional y enraizado en la ciudad que apuesta por la sostenibilidad y la inclusión, facilitando a la ciudadanía de Bilbao el acceso a la compra de alimentos variados y de calidad.",
+      "topic": "Actividad económica y empleo",
+      "page": 14,
+      "endPage": 14,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.9",
+      "officialId": "1.9",
+      "text": "“Estrategia de Turismo Bilbao-Bizkaia 2030”",
+      "programmeText": "“Estrategia de Turismo Bilbao-Bizkaia 2030”\nLlevaremos a cabo el desarrollo, despliegue y evaluación continua de la “Estrategia de Turismo Bilbao-Bizkaia 2030”, atendiendo a los objetivos de mejorar la ratio de pernoctaciones, el gasto medio por persona, la fidelización y la tasa de repetición, desarrollando productos, programas y servicios a tal efecto, siempre priorizando un modelo turístico en el que prime la sostenibilidad.",
+      "topic": "Actividad económica y empleo",
+      "page": 14,
+      "endPage": 14,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-1.10",
+      "officialId": "1.10",
+      "text": "Atracción y organización de eventos de dimensión internacional",
+      "programmeText": "Atracción y organización de eventos de dimensión internacional\nAtraer a Bilbao, de forma sostenible y equilibrada, eventos internacionales de alto impacto que cumplan el doble objetivo de generar actividad económica, cultural, deportiva o de ocio y/o atraer conocimiento y de generar riqueza y empleo en la ciudad, tales como la final de la UEFA Women's Champions League en 2024 y la final de la UEFA Europa League en 2025, entre otros.",
+      "topic": "Actividad económica y empleo",
+      "page": 14,
+      "endPage": 14,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-2.1",
+      "officialId": "2.1",
+      "text": "Dinamizar el Consejo Municipal de Servicios Sociales",
+      "programmeText": "Dinamizar el Consejo Municipal de Servicios Sociales\nEl Consejo Municipal de Servicios Sociales es el espacio estructurado de participación social que sirve para determinar y evaluar las líneas de actuación municipales en este ámbito. Dispone de 3 comisiones; infancia y familia, personas sin hogar y personas mayores. El objetivo para este mandato es que el Consejo Municipal de Servicios Sociales se convierta en el gran espacio donde se pueden abordar reflexiones que permitan dar respuesta a los retos de sostenibilidad y calidad de servicio que tienen actualmente las políticas sociales de ámbito municipal en el contexto de una sociedad crecientemente envejecida y cada vez más diversa.",
+      "topic": "Políticas sociales",
+      "page": 16,
+      "endPage": 16,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-2.2",
+      "officialId": "2.2",
+      "text": "IV Plan “Bilbao Ciudad Amigable con las Personas Mayores”",
+      "programmeText": "IV Plan “Bilbao Ciudad Amigable con las Personas Mayores”\nBilbao cuenta con el reconocimiento de “Ciudad Amigable con las Personas Mayores” y con una larga trayectoria en este ámbito, que se ha visto reflejada en la elaboración de planes con medidas específicas para dar respuesta a las necesidades y demandas de las personas mayores. A lo largo de este mandato finaliza el III Plan y se procederá a evaluar los avances alcanzados y los nuevos retos que se pueden producir para mantener la amigabilidad de Bilbao con las personas mayores, y se diseñará el nuevo Plan. Todo ello en un formato participativo en el que se haga partícipe al máximo de personas mayores de la ciudad en el diseño de las acciones que debe incluir el IV Plan.",
+      "topic": "Políticas sociales",
+      "page": 16,
+      "endPage": 16,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-2.3",
+      "officialId": "2.3",
+      "text": "Favorecer la permanencia de las personas mayores en su entorno familiar y social y combatir la soledad no deseada",
+      "programmeText": "Favorecer la permanencia de las personas mayores en su entorno familiar y social y combatir la soledad no deseada\nBilbao dispone desde hace años de servicios y programas, como el Servicio de Ayuda a Domicilio y los programas “Urrats Bat Gehiago”, “Mirada Activa” y “Zaintzea”, que ayudan a que nuestras y nuestros mayores puedan permanecer en su entorno familiar y social en unas condiciones adecuadas de atención y seguridad. Los dos grandes retos en los que continuaremos profundizando en los próximos años son, por un lado, el de garantizar una cobertura suficiente y de calidad en los servicios de atención en un contexto en el que la población de más edad sigue creciendo y, por otro, el de dar respuesta a las situaciones de soledad no deseada y contribuir a una mayor socialización de estas personas.",
+      "topic": "Políticas sociales",
+      "page": 16,
+      "endPage": 16,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-2.4",
+      "officialId": "2.4",
+      "text": "Facilitar la conciliación de la vida personal, laboral y familiar de mujeres y hombres de Bilbao, promoviendo un “Pacto Local por la Conciliación y la Corresponsabilidad”",
+      "programmeText": "Facilitar la conciliación de la vida personal, laboral y familiar de mujeres y hombres de Bilbao, promoviendo un “Pacto Local por la Conciliación y la Corresponsabilidad”\nEl trabajo en materia de corresponsabilidad y conciliación es una línea de acción estratégica para el Ayuntamiento, por lo que en este mandato se van a reforzar las iniciativas desarrolladas en esta materia: red Denbbora, línea de subvenciones para formación en centros educativos, acompañamiento a asociaciones de mujeres y feministas, …Asimismo, impulsaremos un “Pacto Local por la Conciliación y la Corresponsabilidad”, al que puedan adherirse las entidades y empresas comprometidas con este objetivo.",
+      "topic": "Políticas sociales",
+      "page": 16,
+      "endPage": 16,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-2.5",
+      "officialId": "2.5",
+      "text": "Crear la “Emakumeen Etxea-Casa de las Mujeres de Bilbao”",
+      "programmeText": "Crear la “Emakumeen Etxea-Casa de las Mujeres de Bilbao”\nBilbao necesita contar con una Casa de las Mujeres. Un proyecto que, por un lado, responde a una demanda histórica del movimiento feminista y, por otro, nos sitúa en materia de igualdad a la altura del resto de capitales importantes a nivel estatal e internacional, incluidas las otras capitales vascas. Emakumeen Etxea será el espacio de referencia para la reflexión y encuentro, de las mujeres bilbaínas. Un espacio de confianza para favorecer su empoderamiento individual y colectivo.",
+      "topic": "Políticas sociales",
+      "page": 17,
+      "endPage": 17,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-2.6",
+      "officialId": "2.6",
+      "text": "Protocolo frente a las agresiones LGTBI",
+      "programmeText": "Protocolo frente a las agresiones LGTBI\nEl Ayuntamiento de Bilbao continua con su compromiso por promover una conciencia ciudadana a favor de la tolerancia y la diversidad sexual, realizando una labor de visibilización social y de eliminación de la discriminación por motivos de orientación sexual y de identidad de género. Para ello se va a mejorar y profundizar en el protocolo de asesoramiento y actuación ante incidentes de odio, racistas, xenófobos, antigitanos y LGTBIfóbicos, acordado para la Aste Nagusia 2023. Asimismo, se extenderá este protocolo a otros espacios de ocio y eventos importantes de la ciudad. Para ello, será necesario sumar nuevos agentes y garantizar su adecuada formación y sensibilización.",
+      "topic": "Políticas sociales",
+      "page": 17,
+      "endPage": 17,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-2.7",
+      "officialId": "2.7",
+      "text": "Poner la salud en un lugar destacado de la agenda municipal. Impulsar la puesta en marcha del “II Plan Municipal de Salud”",
+      "programmeText": "Poner la salud en un lugar destacado de la agenda municipal. Impulsar la puesta en marcha del “II Plan Municipal de Salud”\nCon la experiencia acumulada durante la implantación del “I Plan 2019-2023”, el “II Plan Municipal de Salud” tendrá como objetivo establecer los compromisos de las diferentes Áreas municipales para lograr un Bilbao más saludable, además de conseguir que la ciudadanía de Bilbao sea protagonista y agente activo de su salud y bienestar, con especial atención a las personas y colectivos de población en situación de mayor vulnerabilidad.",
+      "topic": "Políticas sociales",
+      "page": 17,
+      "endPage": 17,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-3.1",
+      "officialId": "3.1",
+      "text": "Impulsar el “Programa Konekta” como un espacio innovador de relación y servicio a la juventud de Bilbao",
+      "programmeText": "Impulsar el “Programa Konekta” como un espacio innovador de relación y servicio a la juventud de Bilbao\nEl Plan local de Juventud, “Bilbao Hiri Gaztea”, tiene como objetivo hacer de Bilbao una ciudad de oportunidades para el bienestar integral y el desarrollo vital de las pers personas jóvenes, favoreciendo el diálogo y generando espacios de colaboración y co-creación de las y los jóvenes en el diseño del Bilbao del presente y del futuro. En el marco de dicho Plan se impulsará el “Programa Konekta” que, por un lado, apoya las iniciativas y propuestas de las y los jóvenes que tienen incidencia en el desarrollo sostenible e integrador de Bilbao, y por otro es un espacio de participación juvenil y adolescente.",
+      "topic": "Juventud, valores, educación y formación",
+      "page": 19,
+      "endPage": 19,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-3.2",
+      "officialId": "3.2",
+      "text": "Foro Bilbao para la Paz y la Convivencia",
+      "programmeText": "Foro Bilbao para la Paz y la Convivencia\nNuevas iniciativas y acciones para dar continuidad a l F l Foro Bilbao para la Paz y la Convivencia, siempre de la mano de las víctimas. Se desarrollarán nuevas acciones de acompañamiento y al apoyo individual y colectivo a las víctimas, incorporando al Foro Bilbao a personas identificadas como víctimas por el Gobierno Vasco. También se llevarán a cabo acciones orientadas a la promoción de la pedagogía social, la sensibilización y la reparación mediante la organización de los actos de memoria y actividades culturales. Además, se colocarán placas en recuerdo de las víctimas, creando así el Mapa de la Memoria de Bilbao.",
+      "topic": "Juventud, valores, educación y formación",
+      "page": 19,
+      "endPage": 19,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-3.3",
+      "officialId": "3.3",
+      "text": "Continuar con el desarrollo del proyecto ‘Bilbao Balioen Hiria- Bilbao Ciudad de Valores” de manera participativa a través del fortalecimiento de su Comisión y la divulgación de sus actividades",
+      "programmeText": "Continuar con el desarrollo del proyecto ‘Bilbao Balioen Hiria- Bilbao Ciudad de Valores” de manera participativa a través del fortalecimiento de su Comisión y la divulgación de sus actividades\nLa Carta de Valores de Bilbao se aprobó en el año 2018 y desde esa fecha se han desarrollado diferentes acciones para su desarrollo y divulgación en el marco de la i nic niciativa Bilbao Balioen Hiria-Bilbao Ciudad de Valores. En este mandato se realizará una evaluación del impacto conseguido hasta la fecha y se diseñará y pondrá en marcha la agenda 2024-2027, que incidirá especialmente en potenciar la adhesión a la Carta de Valores, el fortalecimiento de la Comisión de Seguimiento (Consejo Cívico) y la difusión de la Carta de Valores tanto a nivel local como internacional.",
+      "topic": "Juventud, valores, educación y formación",
+      "page": 19,
+      "endPage": 19,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-3.4",
+      "officialId": "3.4",
+      "text": "Liderazgo de Bilbao en materia de localización de los ODS. Colaboración institucional continua con el Secretariado de la Coalición Local2030, cuya sede permanente está ubicada en Bilbao",
+      "programmeText": "Liderazgo de Bilbao en materia de localización de los ODS. Colaboración institucional continua con el Secretariado de la Coalición Local2030, cuya sede permanente está ubicada en Bilbao\nSe impulsará el liderazgo de Bilbao en materia de localización de los ODS a través de la implementación de las actuaciones contempladas en el Plan de Acción “Bilbao Sostenible: Agenda 2030 y ODS”. En concreto, aprovechando que Bilbao cuenta con la sede permanente del Secretariado de la Coalición Local2030, se trabajará en el posicionamiento de Bilbao como ciudad comprometida con el desarrollo humano sostenible, atrayendo a Bilbao conocimiento, buenas prácticas y eventos internacionales vinculados con la Agenda 2030.",
+      "topic": "Juventud, valores, educación y formación",
+      "page": 19,
+      "endPage": 19,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-3.5",
+      "officialId": "3.5",
+      "text": "“Plan Municipal de Infancia y Adolescencia”",
+      "programmeText": "“Plan Municipal de Infancia y Adolescencia”\nBilbao consiguió en 2019 el reconocimiento por parte de UNICEF como “Ciudad Amiga de la Infancia”. Además de haber elaborado 2 planes municipales en esta materia, ha creado el Consejo Municipal de la Infancia y la Adolescencia, con el objetivo de articular la participación de las niñas, niños y adolescentes, facilitándoles un espacio para que se expresen y propongan ideas. Durante este mandato se implementarán las 188 acciones contempladas en el II Plan, con vigencia hasta 2025, y se procederá a elaborar el III Plan, que contará con la participación de todas las áreas municipales y un protagonismo especial del Consejo.",
+      "topic": "Juventud, valores, educación y formación",
+      "page": 20,
+      "endPage": 20,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-3.6",
+      "officialId": "3.6",
+      "text": "Ampliación de plazas en las haurreskolak en los distintos barrios de la ciudad",
+      "programmeText": "Ampliación de plazas en las haurreskolak en los distintos barrios de la ciudad\nEl Ayuntamiento de Bilbao está comprometido con facilitar servicios e infraestructuras educativas desde la infancia y favorecer la conciliación de los padres y madres, poniendo a su disposición haurreskolak en los barrios de la ciudad. A pesar de los esfuerzos realizados en los últimos años, la implementación de la gratuidad en la etapa 0-3 años ha conllevado un incremento sustancial de nuevas matriculaciones. Se seguirá desarrollando una labor de coordinación con el Departamento de Educación del Gobierno Vasco para abordar coordinadamente aquellas actuaciones que sean necesarias, dentro de nuestro ámbito competencial, para seguir reforzando el papel del Consorcio Haurreskolak, de tal manera que puedan generarse nuevas haurreskolak y garantizar así la matriculación efectiva de las solicitudes presentadas.",
+      "topic": "Juventud, valores, educación y formación",
+      "page": 20,
+      "endPage": 20,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-3.7",
+      "officialId": "3.7",
+      "text": "Potenciar el posicionamiento de Bilbao como ciudad universitaria",
+      "programmeText": "Potenciar el posicionamiento de Bilbao como ciudad universitaria\nDesarrollaremos la “Estrategia Bilbao Ciudad Universitaria” para atraer a estudiantes a nivel estatal e internacional, especialmente en estudios de posgrado y masters y en materias de carácter técnico y tecnológico, trabajando en 4 líneas de apoyo: • Proyectos tractores a desarrollar por cada universidad que fomenten colaboraciones con otras universidades internacionales. • Proyectos conjuntos para potenciar el conocimiento como vector estratégico, • Plan municipal de acompañamiento en materias para facilitar la vida universitaria: movilidad, ocio, cultura, alojamiento, … • Proyecto “Bilbao Laboratorio Urbano”, para impulsar proyectos de interés para la ciudad aprovechando las capacidades de innovación de la Universidad.",
+      "topic": "Juventud, valores, educación y formación",
+      "page": 20,
+      "endPage": 20,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-4.1",
+      "officialId": "4.1",
+      "text": "Desarrollo museológico del Museo de Bellas Artes de Bilbao",
+      "programmeText": "Desarrollo museológico del Museo de Bellas Artes de Bilbao\nDe la mano de Gobierno Vasco y la Diputación Foral de Bizkaia, el Ayuntamiento de Bilbao continuará impulsando las obras de ampliación y reforma del Museo de Bellas Artes, dotándolo del espacio adecuado para la conservación y exhibición del arte al servicio de la sociedad. La ampliación permitirá profundizar el carácter del Museo como lugar de encuentro de la ciudadanía con la cultura y el arte, poniendo en valor el edificio y sus colecciones tanto ante la sociedad vasca como ante el creciente turismo cultural.",
+      "topic": "Cultura y deporte",
+      "page": 22,
+      "endPage": 22,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-4.2",
+      "officialId": "4.2",
+      "text": "Elaboración del “Plan de Públicos Culturales”",
+      "programmeText": "Elaboración del “Plan de Públicos Culturales”\nUna de las claves para el correcto desarrollo de cualquier política cultural municipal es la creación, promoción y fidelización de las audiencias. Por ello el “Plan Estratégico de Cultura de Bilbao 2023-2033” incluye la elaboración e implementación de un “Plan de Públicos Culturales”, para conocer y segmentar mejor a los públicos, acercar los contenidos culturales a la ciudadanía por nuevos canales, generar espacios de encuentro y diálogo, favorecer la participación y propiciar modelos de co-diseño de programas de manera participada.",
+      "topic": "Cultura y deporte",
+      "page": 22,
+      "endPage": 22,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-4.3",
+      "officialId": "4.3",
+      "text": "Desarrollo museológico y museográfico del Museo Vasco para posicionarlo como referente internacional de la cultura vasca",
+      "programmeText": "Desarrollo museológico y museográfico del Museo Vasco para posicionarlo como referente internacional de la cultura vasca\nEl Euskal Museoa es un referente de la Cultura Vasca y un elemento clave para la difusión del arte y tradiciones vascas, convirtiéndose en la puerta de entrada a la cultura vasca (una puerta abierta al mundo). En la actualidad, alberga un patrimonio que supera los 20.000 objetos, que ilustran y reflejan los distintos aspectos que conformaron la vida y el quehacer cotidiano de nuestros antepasados. De la mano de la Diputación Foral de Bizkaia, el Ayuntamiento de Bilbao continuará impulsando la renovación integral del Euskal Museoa, tanto a nivel arquitectónico (con la culminación de la remodelación integral y replanteamiento funcional del edificio) como museográfico (con un nuevo diseño del discurso expositivo).",
+      "topic": "Cultura y deporte",
+      "page": 22,
+      "endPage": 22,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-4.4",
+      "officialId": "4.4",
+      "text": "Crear el Consejo Municipal de Cultura",
+      "programmeText": "Crear el Consejo Municipal de Cultura\nEl “Plan Estratégico de Cultura de Bilbao 2023-2033” se ha elaborado con una metodología de escucha activa, con una amplia participación de agentes del sector, instituciones, ciudadanía y representantes de asociaciones culturales. De cara a profundizar en esa filosofía participativa, una de las acciones contempladas en el Plan es la puesta en marcha del Consejo Municipal de Cultura, órgano de participación sectorial de naturaleza consultiva que facilitará la información, el debate, la consulta y el seguimiento de la actividad cultural de Bilbao.",
+      "topic": "Cultura y deporte",
+      "page": 22,
+      "endPage": 22,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-4.5",
+      "officialId": "4.5",
+      "text": "Plan plurianual de inversiones y mantenimiento de los Polideportivos y otros equipamientos deportivos municipales",
+      "programmeText": "Plan plurianual de inversiones y mantenimiento de los Polideportivos y otros equipamientos deportivos municipales\nContinuar con el desarrollo del “Plan plurianual de inversiones y mantenimiento de los polideportivos y otros equipamientos municipales”, mediante las siguientes actuaciones: • Accesibilidad universal: Polideportivos de Zorroza, La Peña y Deusto. • Modelos BIM de gestión: Polideportivos de San Ignacio, Miribilla y Zorroza. • Nuevos espacios: Polideportivos de Txurdinaga y Rekalde. • Actuaciones integrales en polideportivos, renovación de ascensores, depuradoras, mejoras de autoprotección, renovación de todas las salas fitness, renovación de la señalética, …",
+      "topic": "Cultura y deporte",
+      "page": 23,
+      "endPage": 23,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-4.6",
+      "officialId": "4.6",
+      "text": "Licitación e inicio de las obras de renovación integral del Polideportivo de La Casilla",
+      "programmeText": "Licitación e inicio de las obras de renovación integral del Polideportivo de La Casilla\nTras la conclusión de la fase de diálogo competitivo para la Nueva Casilla, se abrirá el procedimiento de licitación de la concesión de obra pública, mantenimiento y explotación de la Nueva Casilla. El objetivo será la renovación integral del antiguo pabellón para crear un Nuevo Equipamiento Deportivo compacto Municipal, que sustituya al actual, y que recoja, mejore y amplíe la oferta deportiva existente, además se quiere analizar la posibilidad de desarrollar dentro de la parcela municipal otras actividades e instalaciones deportivas, de ocio y dinamización complementarias, que se adecuen al nuevo equipamiento, de acuerdo con las posibilidades que ofrece el planeamiento urbanístico. Para ello se prevé el lanzamiento de la citada licitación, la adjudicación y el inicio de las obras tras la oportuna aprobación del proyecto y su plan de financiación correspondiente, todo ello dentro de una fórmula de colaboración público-privada.",
+      "topic": "Cultura y deporte",
+      "page": 23,
+      "endPage": 23,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-4.7",
+      "officialId": "4.7",
+      "text": "Ampliar la oferta de equipamientos deportivos en el espacio público",
+      "programmeText": "Ampliar la oferta de equipamientos deportivos en el espacio público\nLa reconquista de los espacios urbanos es una parte esencial de la evolución reciente del deporte. En este contexto aparecen y se refuerzan nuevas prácticas deportivas que incorporan sobre todo una dimensión lúdica y relacional, a la vez que permiten mejorar el estado físico y la salud y se posibilitan nuevas dinámicas de interacción ciudadana, mostrando una nueva manera más lúdica de entender la ciudad. En estos próximos años se trabajará en mejorar y optimizar el uso de las instalaciones deportivas de los centros educativos y en ampliar la oferta de pequeñas instalaciones deportivas en el espacio público, atendiendo a las actividades deportivas emergentes, especialmente aquellas que generan un mayor interés entre la juventud y las personas mayores.",
+      "topic": "Cultura y deporte",
+      "page": 23,
+      "endPage": 23,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.1",
+      "officialId": "5.1",
+      "text": "Actualizar el “Pacto por la Seguridad Ciudadana”",
+      "programmeText": "Actualizar el “Pacto por la Seguridad Ciudadana”\nEl “Pacto por la Seguridad Ciudadana en Bilbao”, firmado por los diferentes grupos municipales en 2018, tiene como compromiso seguir trabajando de manera proactiva para garantizar la convivencia y la seguridad en los barrios, definiendo para ello 35 medidas concretas para reforzar la seguridad ciudadana desde la prevención, promoviendo un modelo de policía vecinal y comunitaria. La vigencia del Pacto termina en 2023, por lo que se trabajará en su actualización para dar respuesta a los nuevos retos de ciudad en materia de seguridad ciudadana.",
+      "topic": "Convivencia y seguridad",
+      "page": 25,
+      "endPage": 25,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.2",
+      "officialId": "5.2",
+      "text": "Campañas de concienciación social por el civismo en la ciudad",
+      "programmeText": "Campañas de concienciación social por el civismo en la ciudad\nDesde el Ayuntamiento de Bilbao se considera imprescindible continuar con la realización de las campañas de concienciación social por el civismo en la ciudad. Se llevarán a cabo campañas sobre temáticas como la venta ambulante, los alimentos, los ruidos, los perros, la música en la calle y las terrazas. Además se ofrecerá formación en el ámbito escolar sobre el bullying, y a nivel general sobre la prevención de los delitos digitales como el ciberacoso y otros delitos informáticos contra la identidad y la propiedad.",
+      "topic": "Convivencia y seguridad",
+      "page": 25,
+      "endPage": 25,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.3",
+      "officialId": "5.3",
+      "text": "Talleres de Seguridad Ciudadana en los barrios como instrumento de participación vecinal",
+      "programmeText": "Talleres de Seguridad Ciudadana en los barrios como instrumento de participación vecinal\nLa participación ciudadana forma parte del modelo de policía vecinal y comunitaria desde la perspectiva de un planteamiento de la seguridad y la prevención como realidades que se construyen en colaboración con la propia ciudadanía, fomentando al mismo tiempo la corresponsabilidad y la confianza. Para ello se van a seguir desarrollando Talleres de Seguridad Ciudadana en los diferentes barrios de Bilbao. Estos talleres permitirán abordar los problemas específicos de cada barrio y realizar un seguimiento de los mismos, generando un foro de escucha activa, rendición de cuentas y colaboración entre ciudadanía, agentes sociales, asociaciones y la propia Policía Municipal.",
+      "topic": "Convivencia y seguridad",
+      "page": 25,
+      "endPage": 25,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.4",
+      "officialId": "5.4",
+      "text": "Reducir los accidentes de tráfico y su lesividad, poniendo una atención especial a que se cumpla el límite de velocidad de 30 km/h en el núcleo urbano",
+      "programmeText": "Reducir los accidentes de tráfico y su lesividad, poniendo una atención especial a que se cumpla el límite de velocidad de 30 km/h en el núcleo urbano\nDesde el Ayuntamiento de Bilbao nos comprometemos a priorizar la seguridad vial y transformar nuestro núcleo urbano en un espacio más seguro, reduciendo los accidentes de tráfico y su impacto en nuestra comunidad. Para ello se desarrollarán acciones de concienciación para fortalecer la tendencia positiva de los últimos años. Asimismo se implementarán medidas de control enfocadas a la reducción de la velocidad en el área urbana, lo que impactará positivamente en una menor siniestralidad y gravedad de los accidentes.",
+      "topic": "Convivencia y seguridad",
+      "page": 25,
+      "endPage": 25,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.5",
+      "officialId": "5.5",
+      "text": "Facilitar la denuncia de delitos, incluyendo la posibilidad de realizarlas a través de internet, además de en las comisarías y en itinerancia",
+      "programmeText": "Facilitar la denuncia de delitos, incluyendo la posibilidad de realizarlas a través de internet, además de en las comisarías y en itinerancia\nSe continuarán desarrollando iniciativas para que los recursos policiales sean cada vez más accesibles. Para ello se dotará de herramientas digitales en movilidad a las y los agentes que permitirán ofrecer la mayoría de servicios policiales in situ, no solo en las inspecciones. Además, se abrirá la posibilidad de interponer denuncias sencillas por delitos leves sin autor conocido a través de internet.",
+      "topic": "Convivencia y seguridad",
+      "page": 26,
+      "endPage": 26,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.6",
+      "officialId": "5.6",
+      "text": "Combinar la presencia uniformada y no uniformada de la Policía Municipal en los diferentes barrios de la ciudad",
+      "programmeText": "Combinar la presencia uniformada y no uniformada de la Policía Municipal en los diferentes barrios de la ciudad\nSe continuará con esta línea de trabajo que se fundamenta en una combinación adecuada de policías uniformados y sin uniforme. Por un lado, la percepción de seguridad es más latente cuando el patrullaje se realiza de uniforme, pero, evidentemente, el seguimiento de cierto tipo de delitos exige la presencia y actuación de policías no uniformados. La combinación de ambos patrullajes es complementaria y necesaria.",
+      "topic": "Convivencia y seguridad",
+      "page": 26,
+      "endPage": 26,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.7",
+      "officialId": "5.7",
+      "text": "Actualizar el “Plan de Emergencia Municipal (PEMU)” e implantar una plataforma digital para su gestión coordinada",
+      "programmeText": "Actualizar el “Plan de Emergencia Municipal (PEMU)” e implantar una plataforma digital para su gestión coordinada\nSe va a llevar a cabo la actualización del “Plan de Emergencia Municipal (PEMU)”, así como la implantación de una plataforma digital para una gestión coordinada del mismo con la implicación efectiva de todas las áreas municipales.",
+      "topic": "Convivencia y seguridad",
+      "page": 26,
+      "endPage": 26,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-5.8",
+      "officialId": "5.8",
+      "text": "Nuevo Parque de Bomberos en la zona de Deusto",
+      "programmeText": "Nuevo Parque de Bomberos en la zona de Deusto\nRealizar durante este mandato la construcción de un nuevo Parque de Bomberos en la zona de Deusto.",
+      "topic": "Convivencia y seguridad",
+      "page": 26,
+      "endPage": 26,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.1",
+      "officialId": "6.1",
+      "text": "Oficina de Atención Ciudadana de Vivienda",
+      "programmeText": "Oficina de Atención Ciudadana de Vivienda\nDesplegar la Oficina de Atención Ciudadana en materia de Vivienda, inaugurada en marzo de 2023, hasta convertirla en el punto central de información y atención ciudadana en esta materia. La Oficina ofrecerá información y apoyo en la tramitación sobre una amplia variedad de cuestiones, como la inscripción como demandante de vivienda en Etxebide, las ayudas vinculadas a prestaciones de vivienda (ayudas para pago de rentas, programas de acceso a la vivienda para jóvenes, …), los programas y ayudas a la accesibilidad y rehabilitación de vivienda, el fomento de la eficiencia energética, la movilización de vivienda vacía y el servicio municipal frente a desahucios.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 28,
+      "endPage": 28,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.2",
+      "officialId": "6.2",
+      "text": "“Plan Renove Vivienda”",
+      "programmeText": "“Plan Renove Vivienda”\nEsta actuación incluirá: • Ayudas para rehabilitación, tanto a nivel de viviendas individuales como de comunidades. • Ayudas destinadas a mejorar la accesibilidad. • Ayudas a la mejora de la eficiencia energética. • Apertura de oficinas de regeneración integral (Programa Open Gela) en diferentes barrios de la ciudad. Con la coordinación de dichas oficinas se abordará la regeneración en los recursos habitacionales, así como la regeneración económica (acciones para la mejora de la empleabilidad de las vecinas y vecinos), la regeneración socio-cultural y la regeneración medioambiental.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 28,
+      "endPage": 28,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.3",
+      "officialId": "6.3",
+      "text": "Incremento del parque público de vivienda social y de la vivienda en alquiler asequible",
+      "programmeText": "Incremento del parque público de vivienda social y de la vivienda en alquiler asequible\nEl objetivo es ofrecer en torno a 200 nuevos recursos residenciales de carácter social en 4 años, a través de la incorporación de alojamientos dotacionales y la compra/promoción de vivienda, con una inversión de unos 23 millones de euros.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 28,
+      "endPage": 28,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.4",
+      "officialId": "6.4",
+      "text": "Definición del ámbito de la nueva Estación de Abando: proyecto constructivo y Master Plan",
+      "programmeText": "Definición del ámbito de la nueva Estación de Abando: proyecto constructivo y Master Plan\nLa llegada de la Alta Velocidad a Bilbao va a conllevar la necesidad de realizar intervenciones urbanísticas sobre el terreno y espacios cercanos a la Estación de Abando, con el fin de integrar la nueva estación en la ciudad y facilitar los accesos de la nueva infraestructura. Se va a redactar el proyecto constructivo (ADIF ya ha adjudicado el contrato para la redacción del proyecto constructivo de la futura estación de Abando, con un plazo de ejecución de 5 años) y la selección del proyecto de Master Plan para los aprovechamientos urbanísticos futuros del ámbito de Abando.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 28,
+      "endPage": 28,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.5",
+      "officialId": "6.5",
+      "text": "Aprobación definitiva del “Plan Especial del Peñascal” y desarrollo de su primera fase",
+      "programmeText": "Aprobación definitiva del “Plan Especial del Peñascal” y desarrollo de su primera fase\nEl Gobierno Vasco y el Ayuntamiento de Bilbao han llevado a cabo un conjunto de actuaciones de renovación urbana en las zonas de Iturrigorri y Gardezabal que han incluido el derribo de viviendas y el realojo de sus ocupantes en nuevos edificios que ofrecen las necesarias garantías de accesibilidad. Con el objetivo de poder completar las actuaciones de regeneración y definir la ordenación definitiva de esta zona, se aprobará de forma definitiva el “Plan Especial del Peñascal” y se tramitará la licencia de la construcción de un bloque de 84 viviendas en El Peñascal, que se construirá a lo largo de este mandato, para iniciar los realojos de la siguiente fase del Plan.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 29,
+      "endPage": 29,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.6",
+      "officialId": "6.6",
+      "text": "Seguir trabajando en el programa “Orain Otxar” de regeneración urbana integral del barrio de Otxarkoaga",
+      "programmeText": "Seguir trabajando en el programa “Orain Otxar” de regeneración urbana integral del barrio de Otxarkoaga\nAsignación de la financiación obtenida de los fondos Next Generation hasta completar la rehabilitación de 240 viviendas, la ampliación de terrazas en 2 bloques de pisos mediante la declaración de zona de especial necesidad de rehabilitación y el desarrollo de la “Opengela” como sede de especialización e investigación en materia de regeneración y rehabilitación urbana.También se planteará la regeneración del “Mercado chino”, mediante la renovación arquitectónica y la adaptación del edificio a la nueva realidad de consumo del barrio.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 29,
+      "endPage": 29,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.7",
+      "officialId": "6.7",
+      "text": "Desarrollar nuevos proyectos de regeneración urbana integral en Párroco Unceta, Torre Urizar y Uretamendi",
+      "programmeText": "Desarrollar nuevos proyectos de regeneración urbana integral en Párroco Unceta, Torre Urizar y Uretamendi\nConcluir las obras de rehabilitación integral en Párroco Unceta, Torre Urizar y Uretamendi con criterios de accesibilidad universal y eficiencia energética. Además se abordarán acciones de renaturalización y programas de formación y empleo asociados a la rehabilitación.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 29,
+      "endPage": 29,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.8",
+      "officialId": "6.8",
+      "text": "Redacción y puesta en marcha del “Plan Especial de Artxanda”",
+      "programmeText": "Redacción y puesta en marcha del “Plan Especial de Artxanda”\nSe llevará a cabo la aprobación del “Plan Especial de Artxanda” y el “Plan de Compatibilización con Sondika en el ámbito de Artxanda”, para la ordenación urbanística de toda la cornisa, desde el límite con Erandio hasta el Alto de Santo Domingo, con el objetivo de consolidar y ampliar el anillo verde de la ciudad, avanzar en la dinamización de Artxanda, recuperando ambientalmente la zona cercana al Camino Berriz, y posibilitar el desarrollo de actividades de hostelería, ocio y tiempo libre en las estructuras preexistentes en este entorno.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 29,
+      "endPage": 29,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.9",
+      "officialId": "6.9",
+      "text": "Proteger y conservar la Ría y convertirla en un motor de actividad económica y disfrute ciudadano",
+      "programmeText": "Proteger y conservar la Ría y convertirla en un motor de actividad económica y disfrute ciudadano\nEn la transformación histórica que está llevando a cabo Bilbao, la Ría se constituye como eje urbano que desempeña un papel dinamizador esencial para la mejora de la calidad de vida en el municipio, potenciándola como eje vertebrador del desarrollo urbano y sostenible de la Villa. Para ello se trabajará en 3 líneas estratégicas: • Seguridad: definir e impulsar actuaciones que mejoren la protección de la ciudad frente a episodios climatológicos adversos. • Biodiversidad: potenciar la presencia de diversidad de especies, ecosistemas y paisajes. • Activación: desarrollar usos y actividades en el entorno de la Ría.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 30,
+      "endPage": 30,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.10",
+      "officialId": "6.10",
+      "text": "Ampliación del Paseo en Punta Zorrotza",
+      "programmeText": "Ampliación del Paseo en Punta Zorrotza\nAbordar de forma paulatina la ampliación de este paseo, desarrollando actuaciones de descontaminación allí donde sea necesario.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 30,
+      "endPage": 30,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.11",
+      "officialId": "6.11",
+      "text": "Facilitar y apoyar proyectos estratégicos de infraestructuras que, si bien son competencia de otras instituciones, son estratégicos para Bilbao",
+      "programmeText": "Facilitar y apoyar proyectos estratégicos de infraestructuras que, si bien son competencia de otras instituciones, son estratégicos para Bilbao\nMantener una interlocución fluida con ADIF, Diputación Foral de Bizkaia y ETS para el desarrollo de las infraestructuras ferroviarias en Bilbao, cofinanciando tanto el soterramiento de FEVE a su paso por Zorrotza como los desarrollos tranviarios, y colaborando con el resto de administraciones en el desarrollo de la línea 4 de metro y la variante de Rekalde.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 30,
+      "endPage": 30,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.12",
+      "officialId": "6.12",
+      "text": "Aumentar el número de huertos urbanos y extenderlos a más zonas de la ciudad",
+      "programmeText": "Aumentar el número de huertos urbanos y extenderlos a más zonas de la ciudad\nEl Ayuntamiento de Bilbao lleva años cediendo a sus vecinos y vecinas y distintos colectivos, terrenos municipales donde pueden obtener hortalizas para consumo personal; adquirir una experiencia que contribuya a extender la educación ambiental para generar comportamientos participativos y responsables; concienciar sobre la importancia de una alimentación sana para mantener una buena salud; y dinamizar la vida social en los barrios. Se proseguirá con este proyecto, aumentando el número de huertos urbanos y llegando a nuevos barrios.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 30,
+      "endPage": 30,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.13",
+      "officialId": "6.13",
+      "text": "Incentivar la creación de comunidades energéticas",
+      "programmeText": "Incentivar la creación de comunidades energéticas\nA través de la sociedad energética municipal BilbaoEner, y de acuerdo con el “Plan de Actuación Energética (PAE)” municipal, se va a impulsar la constitución de comunidades energéticas, informando sobre los beneficios de las instalaciones comunitarias de energía renovables, sobre las necesidades de la infraestructura y sobre las ayudas existentes para este tipo de iniciativas, y se va a facilitar la constitución y desarrollo de estas comunidades en la ciudad.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 31,
+      "endPage": 31,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-6.14",
+      "officialId": "6.14",
+      "text": "Generar nuevos espacios naturalizados en la ciudad (espacios verdes)",
+      "programmeText": "Generar nuevos espacios naturalizados en la ciudad (espacios verdes)\nEl objetivo de esta actuación es poner en valor el patrimonio verde de Bilbao y acercar la naturaleza a la ciudadanía, favoreciendo las zonas naturales y verdes urbanas como parte del denominado “Anillo Verde”. Para ello el Ayuntamiento de Bilbao continuará ampliando las zonas verdes de la ciudad, expropiando o recibiendo como dotación derivada de diferentes desarrollos urbanísticos nuevas superficies que incrementarán la superficie verde de la ciudad en zonas como Bolueta, Zorrotzaurre, Abando y Peñascal. Asimismo se va a continuar ampliando la propiedad municipal en el Anillo Verde de la ciudad, reforestando las parcelas de propiedad municipal, a la vez que se eliminan paulatinamente las especies alóctonas y se plantan especies autóctonas, generando pequeñas zonas verdes de proximidad como en Atxetabidea (Sarrikue) y habilitando un nuevo parque en las laderas de Mina del Morro.",
+      "topic": "Transformación urbana sostenible y vivienda",
+      "page": 31,
+      "endPage": 31,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-7.1",
+      "officialId": "7.1",
+      "text": "Renovar los autobuses urbanos (Bilbobus) con nuevas unidades eléctricas e híbridas",
+      "programmeText": "Renovar los autobuses urbanos (Bilbobus) con nuevas unidades eléctricas e híbridas\nEl Ayuntamiento de Bilbao orienta sus políticas de movilidad hacia la mejora de la salud y la calidad de vida de la ciudadanía. Por ello se impulsa la adopción de alternativas 'cero emisiones' de la flota de autobuses y vehículos municipales, para limitar la emisión de partículas contaminantes y las emisiones de CO2. El objetivo es avanzar en la renovación progresiva de toda la flota de vehículos y autobuses, con el fin de lograr que el 100% de la flota esté constituida con unidades no-contaminantes y preferiblemente eléctricas. Por tanto, todo vehículo nuevo que se incorpore a la flota tendrá estas características.",
+      "topic": "Transporte, movilidad y accesibilidad",
+      "page": 33,
+      "endPage": 33,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-7.2",
+      "officialId": "7.2",
+      "text": "Aumentar los puntos públicos de recarga para facilitar el uso del vehículo eléctrico",
+      "programmeText": "Aumentar los puntos públicos de recarga para facilitar el uso del vehículo eléctrico\nDesde el Ayuntamiento de Bilbao se promueve la descarbonización de la movilidad, fomentando el uso del vehículo eléctrico. Esto no solo contribuye a mejorar la calidad del aire, y por ende, de la salud de la población bilbaína, ya que está menos expuesta a los efectos de la contaminación, sino que también contribuye a la reducción de la contaminación acústica, y por lo tanto de las enfermedades asociadas a la misma. De cara a seguir avanzando en este objetivo, se avanzará en el plan para dotar de puntos de recarga a las plazas de aparcamiento público bajo rasante. En los próximos 4 años se electrificarán nuevas plazas en los aparcamientos para residentes.",
+      "topic": "Transporte, movilidad y accesibilidad",
+      "page": 33,
+      "endPage": 33,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-7.3",
+      "officialId": "7.3",
+      "text": "Incrementar el número de puntos y de bicicletas disponibles en “BilbaoBizi”, servicio municipal de préstamo de bicicletas",
+      "programmeText": "Incrementar el número de puntos y de bicicletas disponibles en “BilbaoBizi”, servicio municipal de préstamo de bicicletas\nGracias a las políticas impulsadas por el Ayuntamiento de Bilbao, como la creación de “BilbaoBizi”, servicio municipal de préstamo de bicicletas, se ha incrementado de manera considerable en los últimos años el uso de la bicicleta como medio de movilidad alternativa y sostenible en nuestra ciudad. A pesar del indudable avance producido, el Ayuntamiento de Bilbao quiere seguir impulsando el uso de la bicicleta. Para ello se tienen previstas acciones como aumentar el número de bicicletas de pedaleo asistido, así como los puntos de préstamo y anclaje de bicicletas. Además, se participará en el proyecto de “BizkaiBizi” con la incorporación a ese servicio público metropolitano y la implementación de diferentes puntos de préstamo de bicicletas de pedaleo asistido de este mismo servicio en la Villa.",
+      "topic": "Transporte, movilidad y accesibilidad",
+      "page": 33,
+      "endPage": 33,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-7.4",
+      "officialId": "7.4",
+      "text": "Continuar desarrollando el “Plan de Accesibilidad de los Barrios de Bilbao”",
+      "programmeText": "Continuar desarrollando el “Plan de Accesibilidad de los Barrios de Bilbao”\nLa mejora y la regeneración de los barrios de Bilbao continúa siendo una prioridad municipal. Por ello se continuará desarrollando este programa, con el objetivo de minimizar progresivamente las deficiencias de accesibilidad y equipamientos motivadas por su especial orografía.",
+      "topic": "Transporte, movilidad y accesibilidad",
+      "page": 33,
+      "endPage": 33,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-7.5",
+      "officialId": "7.5",
+      "text": "Intensificar el proceso de adaptación del transporte público a las personas con diversidad funcional",
+      "programmeText": "Intensificar el proceso de adaptación del transporte público a las personas con diversidad funcional\nSe diseñarán y pondrán en marcha nuevas iniciativas para lograr un acceso universal a todos los modos de transporte, incluyendo medidas técnicas que alcancen también a las personas con diversidad funcional.",
+      "topic": "Transporte, movilidad y accesibilidad",
+      "page": 34,
+      "endPage": 34,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-7.6",
+      "officialId": "7.6",
+      "text": "Continuar ayudando a las comunidades de vecinos a resolver los problemas de accesibilidad",
+      "programmeText": "Continuar ayudando a las comunidades de vecinos a resolver los problemas de accesibilidad\nLa mejora de la accesibilidad es una prioridad para construir un Bilbao para todas las personas. Si bien se ha mejorado sustancialmente en la accesibilidad en los espacios y equipamientos públicos, queda todavía mucho por hacer en la accesibilidad en los espacios privados. Uno de los principales retos es dar una solución progresiva al 15% de los edificios de la ciudad que a día de hoy carecen de ascensor. Para ello, se intensificarán las ayudas económicas municipales y se proseguirá con la cesión de espacio público municipal, allí donde esta sea la mejor solución técnica para poder conseguir la accesibilidad necesaria.",
+      "topic": "Transporte, movilidad y accesibilidad",
+      "page": 34,
+      "endPage": 34,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-8.1",
+      "officialId": "8.1",
+      "text": "Seguir generando espacios peatonales y ´”corazones de barrio”",
+      "programmeText": "Seguir generando espacios peatonales y ´”corazones de barrio”\nEl proyecto “Corazones de Barrio” fue planteado como un proyecto estratégico de ciudad para favorecer el desarrollo equilibrado de los distintos barrios de Bilbao. En estos barrios se están llevando a cabo diferentes actuaciones de regeneración para la recuperación y desarrollo de espacios que impulsen la vida social, cultural y económica de los mismos, potenciando su personalidad e integrándolos en una red de barrios-centro. En este mandato se tiene previsto ampliar las aceras en la avenida Madariaga, en la calle Benidorm, en la calle Ibarrekolanda junto al Colegio Alemán de Txurdinaga, en la calle Kalamua de Santutxu, en la calle Iturribide, en la calle Monte Eretza, en la calle Rodríguez Arias y parte de sus perpendiculares, y en la calle María Díaz de Haro. También se peatonalizará la calle Batalla de Roncesvalles y un tramo de Estrada de San Agustín en Uribarri.",
+      "topic": "Desarrollo de barrios",
+      "page": 36,
+      "endPage": 36,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-8.2",
+      "officialId": "8.2",
+      "text": "Continuar la apuesta por la mejora continua de los barrios a través del “Auzokide Plana 2023-2027”",
+      "programmeText": "Continuar la apuesta por la mejora continua de los barrios a través del “Auzokide Plana 2023-2027”\nSe mantiene el compromiso de desarrollar este Plan que permite debatir y priorizar en cada Consejo de Distrito aquellos proyectos que se consideran importantes para los diferentes barrios, implicando a los vecinos y vecinas en la definición de las actuaciones a realizar en cada zona.",
+      "topic": "Desarrollo de barrios",
+      "page": 36,
+      "endPage": 36,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-8.3",
+      "officialId": "8.3",
+      "text": "Continuar con la implantación de la red WiFi en todos los barrios",
+      "programmeText": "Continuar con la implantación de la red WiFi en todos los barrios\nBilbao WiFi es la red inalámbrica municipal que da servicio de conexión a internet de forma libre, universal y gratuita. Actualmente cuenta con más de 200 puntos de acceso y está presente en todos los edificios municipales y en otros como hospitales, tranvía, metro, instalaciones deportivas o museos.En los próximos años se continuará con la ampliación progresiva de esta red.",
+      "topic": "Desarrollo de barrios",
+      "page": 36,
+      "endPage": 36,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-8.4",
+      "officialId": "8.4",
+      "text": "Incrementar el número de zonas de juegos infantiles cubiertas",
+      "programmeText": "Incrementar el número de zonas de juegos infantiles cubiertas\nAdemás de las zonas de juegos que se prioricen en el debate y aprobación de los diferentes Auzokide Planak, se tiene previsto cubrir la zona de juegos de Panera en Uribarri.",
+      "topic": "Desarrollo de barrios",
+      "page": 36,
+      "endPage": 36,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-8.5",
+      "officialId": "8.5",
+      "text": "Desarrollar la Policía Municipal comunitaria, de cercanía, en los barrios",
+      "programmeText": "Desarrollar la Policía Municipal comunitaria, de cercanía, en los barrios\nSe continuará con la adopción progresiva de este modelo de policía local que se fundamenta en los siguientes principios: • Enfoque en el servicio, y en particular en la labor preventiva. • Interacción con la comunidad y en particular con los colectivos más vulnerables desde el punto de vista de la seguridad ciudadana: mujeres, infancia, mayores, pequeños comercios, …. • Generación de espacios de participación y escucha activa.",
+      "topic": "Desarrollo de barrios",
+      "page": 37,
+      "endPage": 37,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-8.6",
+      "officialId": "8.6",
+      "text": "Instalar nuevas cámaras de videovigilancia para mejorar la seguridad ciudadana",
+      "programmeText": "Instalar nuevas cámaras de videovigilancia para mejorar la seguridad ciudadana\nSe va a realizar una revisión de la eficacia de las cámaras ya instaladas, tanto las que tienen un carácter estable como las 15 que se instalaron ad hoc para la Aste Nagusia y Santo Tomás. Además se instalarán nuevas cámaras en Calzadas de Mallona y Otxarkoaga.",
+      "topic": "Desarrollo de barrios",
+      "page": 37,
+      "endPage": 37,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-9.1",
+      "officialId": "9.1",
+      "text": "Potenciar el Consejo Asesor del Euskera",
+      "programmeText": "Potenciar el Consejo Asesor del Euskera\nEste Consejo orienta los proyectos de promoción del uso del euskera en la Villa y los avances en la normalización. En este Consejo, que se reúne dos veces al año, diferentes instituciones públicas, privadas y agentes sociales analizan los temas relacionados con el euskera y muestran la importancia de que los diferentes agentes puedan interactuar entre sí. Los objetivos para estos años serán aumentar la dimensión evaluativa y estratégica del Consejo, así como poner en mayor valor su papel, informando en mayor medida a la ciudadanía de Bilbao de los trabajos abordados y el impacto logrado.",
+      "topic": "Bilbao euskaldun",
+      "page": 39,
+      "endPage": 39,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-9.2",
+      "officialId": "9.2",
+      "text": "Fomentar las manifestaciones culturales en euskera (teatro, música, literatura, …)",
+      "programmeText": "Fomentar las manifestaciones culturales en euskera (teatro, música, literatura, …)\nEl objetivo de esta actuación será potenciar las actividades culturales en euskera dentro de la programación cultural de la ciudad, especialmente en los ámbitos del teatro, la música y la literatura. También se desarrollará una línea de trabajo específica para potenciar el bertsolarismo.",
+      "topic": "Bilbao euskaldun",
+      "page": 39,
+      "endPage": 39,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-9.3",
+      "officialId": "9.3",
+      "text": "Campañas y programas para fomentar el uso del euskera en las distintas dinámicas sociales de la ciudad, entre ellas en el ámbito del comercio y la hostelería y el deporte y el tiempo libre",
+      "programmeText": "Campañas y programas para fomentar el uso del euskera en las distintas dinámicas sociales de la ciudad, entre ellas en el ámbito del comercio y la hostelería y el deporte y el tiempo libre\nEsta actuación incluirá iniciativas como: • “Bilbon euskaraz“, para incrementar el uso social del euskera en Bilbao y vincular la cultura, el ocio y los eventos que se desarrollan en la ciudad con el euskera. • Programa “Biribilko”, centrado en activar el uso del euskera en el comercio y la hostelería. • Programa de actividades dirigido a promover un cambio en los hábitos lingüísticos orales de la ciudadanía, desde la colaboración y coordinación con los agentes sociales y asociaciones vinculadas con el euskera. Las actividades incluirán espacios específicos para el fomento de las conversaciones, charlas y cursillos formativos, encuentros en los barrios,… tanto en formato presencial como digital. • Estudios, proyectos e iniciativas dirigidas al público infantil y juvenil con el fin de euskaldunizar las actividades extraescolares en torno al deporte y ocio.",
+      "topic": "Bilbao euskaldun",
+      "page": 39,
+      "endPage": 39,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-9.4",
+      "officialId": "9.4",
+      "text": "Desarrollar el “VII Plan de Euskera de Bilbao”",
+      "programmeText": "Desarrollar el “VII Plan de Euskera de Bilbao”\nCon este nuevo plan se pretende consolidar el uso del euskera, tanto en el servicio que se presta a la ciudadanía como en la gestión de los trabajos internos del Ayuntamiento. El objetivo final es garantizar los derechos lingüísticos de las y los ciudadanos en su relación con el Ayuntamiento, pero también contribuir a que el euskera se convierta en mayor medida en la lengua de trabajo dentro de la institución. El nuevo Plan incluirá la realización de acciones de capacitación y formación adecuadas a cada área y entidad municipal.",
+      "topic": "Bilbao euskaldun",
+      "page": 39,
+      "endPage": 39,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.1",
+      "officialId": "10.1",
+      "text": "Elaborar una Carta de Servicios de Transparencia",
+      "programmeText": "Elaborar una Carta de Servicios de Transparencia\nLas Cartas de Servicios son herramientas de mejora de la calidad, comunicación, participación y transparencia. Sirven para comunicar y orientar a los ciudadanos sobre los servicios y prestaciones que puedan ser de su interés, de una forma sencilla y concisa, así como sobre los compromisos y responsabilidades que adquiere la Administración al prestar el servicio. De manera específica, se plantea implantar y certificar una Carta de Servicios de Transparencia para concretar, difundir y evaluar los compromisos de calidad relacionados con el Portal de Transparencia del Ayuntamiento de Bilbao, de manera que se consiga dar respuesta a las demandas, necesidades y expectativas ciudadanas, haciendo hincapié tanto en la publicidad activa como en el ejercicio del Derecho de Acceso a la Información Pública.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 41,
+      "endPage": 41,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.2",
+      "officialId": "10.2",
+      "text": "Intensificar la participación y las acciones de difusión vinculadas a la elaboración de los “Presupuestos Participativos”",
+      "programmeText": "Intensificar la participación y las acciones de difusión vinculadas a la elaboración de los “Presupuestos Participativos”\nLa primera edición de la iniciativa de Presupuestos participativos se realizó en el año 2016. Esta iniciativa se ha ido desarrollando de forma progresiva, incorporando en el año 2021 la votación directa para la priorización de los proyectos por parte de la ciudadanía. Se trata de un proyecto consolidado, con las siguientes acciones de mejora a implementar en los próximos años: • Incorporar la participación infantil en el proceso. • Realizar las acciones necesarias para aumentar la participación de la juventud. • Intensificar las acciones de difusión, tanto en relación al proceso como a la ejecución de los proyectos priorizados por la ciudadanía.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 41,
+      "endPage": 41,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.3",
+      "officialId": "10.3",
+      "text": "Participación ciudadana en la elaboración y evaluación de planes y programas municipales y las experiencias de laboratorios ciudadanos para el diseño y rediseño de los servicios municipales",
+      "programmeText": "Participación ciudadana en la elaboración y evaluación de planes y programas municipales y las experiencias de laboratorios ciudadanos para el diseño y rediseño de los servicios municipales\nCon el fin de reforzar la participación ciudadana en la elaboración y evaluación de planes y programas municipales, se van a desarrollar las siguientes acciones: • Incorporar nuevas tecnologías y metodologías que faciliten la participación ciudadana. • Potenciar los Consejos de Distrito como espacios prioritarios de relación y rendición de cuentas del Ayuntamiento. • Potenciar los Consejos Sectoriales como órganos de participación de los diferentes agentes y entidades de la ciudad. • Continuar con la apuesta de mejora continua de los barrios a través del \"Auzokide Plana\" mediante la implantación y difusión de un nuevo protocolo de funcionamiento.. • Reforzar el trabajo de la Comisión de Participación Ciudadana. • Potenciar el Portal municipal de Participación Ciudadana.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 41,
+      "endPage": 41,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.4",
+      "officialId": "10.4",
+      "text": "Dotar de mayor protagonismo al Consejo Cívico de la Villa",
+      "programmeText": "Dotar de mayor protagonismo al Consejo Cívico de la Villa\nSe va a dotar de un mayor protagonismo al Consejo Cívico de la Villa mediante las siguientes acciones: • Diseñar e implementar una nueva metodología de trabajo para el Consejo. • Generar sesiones concretas para encauzar la participación activa del Consejo en los procesos de diseño de determinados retos o proyectos estratégicos para Bilbao.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 42,
+      "endPage": 42,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.5",
+      "officialId": "10.5",
+      "text": "Implantación de la “Agenda de Transformación Digital Bilbao 2030”",
+      "programmeText": "Implantación de la “Agenda de Transformación Digital Bilbao 2030”\nLa visión de la “Agenda de Transformación Digital Bilbao 2030” es ser “una ciudad Inteligente, atractiva y basada en valores para vivir, trabajar y crear”, es decir, ser una Ciudad Inteligente, centro de Servicios Avanzados y Polo de referencia de Innovación tecnológica en Red, generadora y tractora de conocimiento y Talento; Espacio de Experimentación de Soluciones basadas en valores; y líder en una Calidad de Vida inclusiva y sostenible para la Ciudadanía. Esta visión se logrará a través del cumplimiento de las 5 misiones/objetivos, 15 líneas estratégicas y más de 30 proyectos estratégicos y singulares contempladas en la Agenda. Como proyectos a destacar cabe mencionar la implantación de un plataforma tecnológica para el gobierno de datos, la definición de un procedimiento para realizar el estudio de la viabilidad de los proyectos analíticos, la ampliación de almacenamiento y renovación de servidores y los proyectos de ciberseguridad. Asimismo, se elaborará un “Estudio del Estado del Arte Municipal en el ámbito de la Modernización Tecnológica” y un “Plan Estratégico de Modernización Municipal 2030”.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 42,
+      "endPage": 42,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.6",
+      "officialId": "10.6",
+      "text": "Nueva Plataforma de Administración Electrónica del Ayuntamiento",
+      "programmeText": "Nueva Plataforma de Administración Electrónica del Ayuntamiento\nLa puesta en marcha de la nueva plataforma de Administración Electrónica supondrá un cambio muy relevante tanto a nivel de número de personas afectadas como de funcionamiento (nuevos procesos, como la notificación en sede, y una mayor intuitividad de los mismos).El proyecto incluirá mejoras tecnológicas y acciones de formación dirigidas al personal municipal y a la ciudadanía, empresas y asociaciones.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 42,
+      "endPage": 42,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.7",
+      "officialId": "10.7",
+      "text": "Desarrollar el proyecto “Ciberseguridad para la Ciudadanía”",
+      "programmeText": "Desarrollar el proyecto “Ciberseguridad para la Ciudadanía”\nEl proyecto generará mecanismos de ciberseguridad en la red WiFi municipal que permitan identificar y bloquear cualquier malware en los dispositivos de la ciudadanía con el fin de informarle de los riesgos a los que está expuesto, además de proveer elementos formativos a toda la ciudadanía que le capaciten en los tipos de delitos online más habituales con el objetivo de aumentar su resiliencia digital.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 42,
+      "endPage": 42,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.8",
+      "officialId": "10.8",
+      "text": "Actualización y mejora de los Centros Municipales de Distrito (CMD)",
+      "programmeText": "Actualización y mejora de los Centros Municipales de Distrito (CMD)\nCon el fin de actualizar y mejorar los Centros Municipales de Distrito (CMD) se van a llevar a cabo acciones encaminadas a la revisión y mejora de las infraestructuras e instalaciones de dichos Centros. Las mejoras a realizar contemplan acciones de remodelación, acondicionamiento, diseño y puesta en marcha, siendo las más destacadas las siguientes: • Diseño funcional y búsqueda de ubicación de un nuevo equipamiento municipal en Miribilla/San Adrián. • Puesta en marcha del nuevo CMD de Zorroza. • Revisión de la accesibilidad en los CMD.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 43,
+      "endPage": 43,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.9",
+      "officialId": "10.9",
+      "text": "Continuar con la realización de versiones en lectura fácil de normativa municipal y otros documentos de alto interés para la ciudadanía de Bilbao",
+      "programmeText": "Continuar con la realización de versiones en lectura fácil de normativa municipal y otros documentos de alto interés para la ciudadanía de Bilbao\nDesde 2017 el Ayuntamiento de Bilbao ha implementado dos planes para mejorar la accesibilidad a la información, comunicación y atención de la ciudadanía.Con el fin de continuar con la realización de versiones de lectura fácil, se elaborará y pondrá en marcha el “III Plan de Lectura Fácil y Atención Accesible 2024-2027” para continuar aplicando la lectura fácil en la documentación de alto interés para la ciudadanía de Bilbao y difundir el modelo de atención municipal accesible. Este objetivo será apoyado por un proceso de contraste y validación por parte de la ciudadanía, y otro de formación y sensibilización del personal del Ayuntamiento en este ámbito.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 43,
+      "endPage": 43,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.10",
+      "officialId": "10.10",
+      "text": "Ampliar el Catálogo de Cláusulas de Contratación Verde y Cláusulas Sociales",
+      "programmeText": "Ampliar el Catálogo de Cláusulas de Contratación Verde y Cláusulas Sociales\nLa contratación socialmente responsable se impulsará a través de: • Elaboración de un diagnóstico de la situación actual para valorar el nivel de aplicación de estas cláusulas y el impacto conseguido. • Trabajo conjunto con las áreas y entidades municipales para incluir nuevos criterios ESG (medio ambiente, social y gobernanza) en los pliegos y procedimientos de licitación y de inversión pública del Ayuntamiento de Bilbao. • Constitución de la Mesa específica dentro del Grupo de Trabajo Transversal encargado de la implementación del Plan de Acción “Bilbao Sostenible: Agenda 2030 y ODS”.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 43,
+      "endPage": 43,
+      "sourceId": "bilbao-programme-copy"
+    },
+    {
+      "id": "m-48020-10.11",
+      "officialId": "10.11",
+      "text": "Desplegar la “Estrategia de Internacionalización de Bilbao” para seguir construyendo la imagen internacional de una ciudad atractiva para vivir, trabajar y visitar",
+      "programmeText": "Desplegar la “Estrategia de Internacionalización de Bilbao” para seguir construyendo la imagen internacional de una ciudad atractiva para vivir, trabajar y visitar\nSe va a llevar a cabo el despliegue de la “Estrategia de Internacionalización de Bilbao” a través de las siguientes actuaciones: • Potenciar de forma específica las actividades relacionadas con la dimensión económica de la ciudad, junto con el apoyo al posicionamiento internacional de las empresas de Bilbao, generando oportunidades globales para la ciudad, las empresas y las vecinas y vecinos de Bilbao. • Consolidar el reconocimiento de la ciudad en los ámbitos estratégicos definidos para generar oportunidades en el exterior. Consolidar una imagen atractiva de la ciudad de Bilbao en la comunidad internacional. • Desarrollo de acuerdos y convenios de colaboración con ciudades a nivel internacional, atendiendo a delegaciones internacionales y trabajando por la obtención de reconocimientos internacionales. • Consolidar y mantener la presencia de Bilbao en redes internacionales estratégicas. • Optimizar el aprovechamiento de las misiones que visitan Bilbao, en especial en lo que respecta a las oportunidades para las empresas de la ciudad.",
+      "topic": "Un Ayuntamiento cercano, moderno, eficaz y colaborador",
+      "page": 44,
+      "endPage": 44,
+      "sourceId": "bilbao-programme-copy"
+    }
+  ]
+}

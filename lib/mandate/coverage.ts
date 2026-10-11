@@ -23,13 +23,16 @@ export function getCoverage() {
       mandate: { label: balance.mandateLabel, sourceId: balance.mandateSourceId },
       sources: balance.sources.map(source => ({ ...source,
         consultedAt: source.retrievedAt.slice(0, 10),
-        scopeNote: source.role === "programme" ? balance.scope : source.role === "reporting"
-          ? "Fuente ajena a la administración: consultar su autoría, intereses y límites en la revisión. Se conserva un extracto editorial, no el documento original; no constituye por sí sola una auditoría."
+        scopeNote: source.captureType === "extracto_editorial"
+          ? `Se conserva una nota de lectura editorial; su huella no corresponde al documento original. Origen: ${source.family}. Consultar su autoría, intereses y límites en la revisión; no constituye por sí sola una auditoría.`
+          : source.role === "programme" ? balance.scope
           : `Documento conservado y consultado. Origen: ${source.family}. Un enlace adicional no acredita una corroboración independiente; consultar los límites de cada revisión.`,
       })),
       inventoryTotal: balance.inventoryTotal, imported: balance.records.length, reviewed: balance.reviews.length, independentlyReviewed: 0,
       ...(balance.inventoryKind ? { inventoryKind: balance.inventoryKind, originalInventoryComplete: false } : {}),
+      ...(balance.programmeCopy ? { originalInventoryComplete: false } : {}),
       blockers: [
+        ...(balance.programmeCopy ? ["Programa importado desde una copia de otro editor; cotejo con el archivo municipal pendiente."] : []),
         ...(balance.inventoryKind === "action-catalogue" ? ["Catálogo de seguimiento importado; reconstrucción de las promesas originales y cambios del plan pendiente."] : []),
         `${balance.inventoryTotal - balance.reviews.length} ${balance.inventoryKind ? "actuaciones" : "compromisos"} pendientes de revisión sustantiva.`, "Las revisiones disponibles son parciales: conservan componentes sin resolver y controles externos pendientes.", "Revisión humana independiente pendiente."],
     };

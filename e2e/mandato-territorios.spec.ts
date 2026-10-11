@@ -1,5 +1,45 @@
 import { expect, test } from "@playwright/test";
 
+test("Bilbao conserva la copia identificada y busca dentro de las 80 descripciones", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Bilbao");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-48020$/);
+  await expect(page.locator(".mc-intro")).toContainText("copia difundida por EAJ-PNV");
+  await expect(page.getByRole("status")).toHaveText("80 resultados · página 1 de 6");
+  await expect(page.getByRole("link", { name: "Consultar la copia del programa" })).toHaveAttribute("href", /^https:\/\/bbb\.eaj-pnv\.eus\//);
+  await expect(page.getByRole("link", { name: "Consultar el programa original", exact: true })).toHaveCount(0);
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("78 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("600 iniciativas");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+  const inventory = page.locator("#territorial-inventory");
+  await inventory.getByText("Ficha completa de la copia del programa", { exact: true }).click();
+  await expect(inventory).toContainText("al menos, 600 nuevas iniciativas");
+  await expect(inventory).toContainText("Sin conclusión de RegTrack");
+  await page.getByLabel("Buscar medida municipal").fill("modernización municipal 2030");
+  await expect(page.getByRole("status")).toContainText("1 resultados");
+});
+
+test("Bilbao en móvil distingue adjudicación anterior, celebración y viviendas de otra administración", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/m-48020");
+  const events = page.locator('[id="compromiso-m-48020-1.10"]');
+  await expect(events).toContainText("16 de julio de 2021");
+  await expect(events).toContainText("no audita impacto");
+  await expect(events).toContainText("extracto editorial conservado");
+  const housing = page.locator('[id="compromiso-m-48020-6.3"]');
+  await expect(housing).toContainText("tampoco se cuentan las 63 dos veces");
+  await expect(housing).toContainText("63/200");
+  await housing.getByText("Promesa y página de origen", { exact: true }).click();
+  await housing.getByText("Ficha completa de la copia del programa", { exact: true }).click();
+  await expect(housing).toContainText("en torno a 200 nuevos recursos");
+  await expect(page.locator(".mt-review")).toHaveCount(2);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.getByRole("heading", { level: 1 }).scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/bilbao-mobile-viewport.png" });
+});
+
 test("Donostia conserva 129 fichas, 27 seguimientos y plazos más allá del mandato", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Donostia");

@@ -12,10 +12,13 @@ import vitoriaInventory from "@/data/mandate/vitoria-inventory.json";
 import vitoriaReviews from "@/data/mandate/vitoria-reviews.json";
 import donostiaInventory from "@/data/mandate/donostia-inventory.json";
 import donostiaReviews from "@/data/mandate/donostia-reviews.json";
+import bilbaoInventory from "@/data/mandate/bilbao-inventory.json";
+import bilbaoReviews from "@/data/mandate/bilbao-reviews.json";
 import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "m-48020": { inventory: bilbaoInventory, reviews: bilbaoReviews, level: "municipality", mandateSourceId: bilbaoInventory.sourceId, sourceLabel: bilbaoInventory.sourceLabel, governmentCutoff: undefined },
   "m-20069": { inventory: donostiaInventory, reviews: donostiaReviews, level: "municipality", mandateSourceId: donostiaInventory.mandateSourceId, sourceLabel: donostiaInventory.sourceLabel, governmentCutoff: donostiaInventory.governmentCutoff },
   "m-01059": { inventory: vitoriaInventory, reviews: vitoriaReviews, level: "municipality", mandateSourceId: vitoriaInventory.sourceId, sourceLabel: vitoriaInventory.sourceLabel, governmentCutoff: undefined },
   "m-08019": { inventory: barcelonaInventory, reviews: barcelonaReviews, level: "municipality", mandateSourceId: barcelonaInventory.mandateSourceId, sourceLabel: barcelonaInventory.sourceLabel, governmentCutoff: barcelonaInventory.governmentCutoff },
@@ -35,6 +38,7 @@ export function getTerritorialBalance(id: string): TerritorialBalance | null {
     sourceId: inventory.sourceId, registerSourceId: inventory.registerSourceId, sourceSha256: inventory.sourceSha256,
     inventoryTotal: inventory.inventoryTotal, scope: inventory.scope, textNote: inventory.textNote,
     level, mandateSourceId, sourceLabel,
+    ...("programmeCopy" in inventory ? { programmeCopy: inventory.programmeCopy } : {}),
     ...("textLanguage" in inventory ? { textLanguage: inventory.textLanguage as TerritorialBalance["textLanguage"] } : {}),
     ...(governmentCutoff ? { governmentCutoff } : {}),
     ...("inventoryKind" in inventory ? { inventoryKind: inventory.inventoryKind as TerritorialBalance["inventoryKind"] } : {}),
