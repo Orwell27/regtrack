@@ -1,5 +1,25 @@
 import { expect, test } from "@playwright/test";
 
+test("Albacete distingue apartados, compromisos éticos y pruebas de ejecución en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Albacete");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/m-02003$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Albacete · programa municipal 2023–2027");
+  await expect(page.locator(".mt-review")).toHaveCount(3);
+  await expect(page.locator("#compromiso-m-02003-3")).toContainText("360.000");
+  await expect(page.locator("#compromiso-m-02003-108")).toContainText("Comercia y Ferimotor");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("250 resultados");
+  await page.getByLabel("Buscar medida municipal").fill("Ético");
+  await expect(page.getByRole("status")).toContainText("3 resultados");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 26/ })).toHaveCount(3);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/albacete-mobile-evidence.png" });
+});
+
 test("Huesca conserva el alcance resumido, las pruebas y los pendientes", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/observatorio/mandato/cobertura");

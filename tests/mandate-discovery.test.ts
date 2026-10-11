@@ -20,8 +20,8 @@ describe("fuentes localizadas sin convertirlas en compromisos revisados", () => 
     expect(teruel.sources.every(source => source.role === "register" && source.consultedAt === "2026-10-11")).toBe(true);
     expect(new Set(teruel.sources.map(source => source.family)).size).toBe(1);
     expect(teruel.blockers.join(" ")).toContain("sin transcripción cotejada");
-    expect(all.filter(item => item.inventoryTotal === null)).toHaveLength(39);
-    expect(all.reduce((sum, item) => sum + item.reviewed, 0)).toBe(130);
+    expect(all.filter(item => item.inventoryTotal === null)).toHaveLength(38);
+    expect(all.reduce((sum, item) => sum + item.reviewed, 0)).toBe(133);
     expect(JSON.stringify(all)).not.toMatch(/snapshotPath|extractionSha256|14613671553607447415/);
   });
 

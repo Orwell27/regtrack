@@ -1,3 +1,5 @@
+import albaceteInventory from "@/data/mandate/albacete-inventory.json";
+import albaceteReviews from "@/data/mandate/albacete-reviews.json";
 import huescaInventory from "@/data/mandate/huesca-inventory.json";
 import huescaReviews from "@/data/mandate/huesca-reviews.json";
 import zaragozaInventory from "@/data/mandate/zaragoza-inventory.json";
@@ -62,6 +64,7 @@ import sources from "@/data/mandate/evidence/territorial/sources.json";
 import { validateTerritorialBalance, type TerritorialBalance, type TerritorialRecord, type TerritorialReview, type TerritorialSource } from "./territorial-model";
 
 const TERRITORIES = {
+  "m-02003": { inventory: albaceteInventory, reviews: albaceteReviews, level: "municipality", mandateSourceId: albaceteInventory.mandateSourceId, sourceLabel: albaceteInventory.sourceLabel, governmentCutoff: undefined },
   "m-22125": { inventory: huescaInventory, reviews: huescaReviews, level: "municipality", mandateSourceId: huescaInventory.mandateSourceId, sourceLabel: huescaInventory.sourceLabel, governmentCutoff: undefined },
   "m-50297": { inventory: zaragozaInventory, reviews: zaragozaReviews, level: "municipality", mandateSourceId: zaragozaInventory.sourceId, sourceLabel: zaragozaInventory.sourceLabel, governmentCutoff: undefined },
   "m-30030": { inventory: murciaCityInventory, reviews: murciaCityReviews, level: "municipality", mandateSourceId: murciaCityInventory.sourceId, sourceLabel: murciaCityInventory.sourceLabel, governmentCutoff: undefined },

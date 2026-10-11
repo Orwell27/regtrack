@@ -1,0 +1,12 @@
+{
+  "url": "https://albacete.sedipualba.es/carpetaciudadana/documentoinformativo.aspx?abrir=True&id=5442&idioma=es",
+  "finalUrl": "https://albacete.sedipualba.es/carpetaciudadana/documentoinformativo.aspx?abrir=True&id=5442&idioma=es",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "434f38ce0c11dd7947c1b41793115e0701f0df26e0ed39a9a7c5629c4865f8ea",
+  "bytes": 955178,
+  "retrievedAt": "2026-10-11T13:59:03.413588+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/albacete/cheque-2024.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "8f75a9a9960b2af1f7d937ef86cc8868af0309c92a4609f3f96c550e60c7b704"
+}

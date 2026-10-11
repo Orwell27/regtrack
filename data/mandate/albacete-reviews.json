@@ -1,0 +1,276 @@
+[
+  {
+    "commitmentId": "m-02003-3",
+    "reviewedAt": "2026-10-11",
+    "title": "Cheque escolar: aumentan las cuantías previstas; pagos por comprobar",
+    "conclusion": "Las bases elevan la ayuda individual y la dotación prevista en 2026–2027 respecto a 2023–2024. El anuncio de 500.000 euros en 2024 no coincide con los 360.000 de las bases iniciales: falta conciliar sus modificaciones y ejecución.",
+    "periodNote": "Programa de 2023; bases de los cursos 2023–2024, 2024–2025 y 2026–2027. No se presenta esta selección como una serie anual completa. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Más recursos para el cheque escolar",
+        "status": "promise-documented",
+        "finding": "El punto 3 plantea aumentar los recursos, sin fijar una cantidad ni un número de beneficiarios.",
+        "citations": [
+          {
+            "sourceId": "albacete-programme",
+            "locator": "Apartado 3",
+            "page": 5
+          }
+        ]
+      },
+      {
+        "id": "base",
+        "claim": "Referencia anterior para la comparación",
+        "status": "documented",
+        "finding": "Las bases del curso 2023–2024 prevén 360.000 euros y ayudas mensuales de 90, 60 o 40 euros según baremo, durante un máximo de diez meses. El título interno del PDF menciona 2017–18, pero su contenido identifica 2023–2024; no se usa ese metadato como fecha de la convocatoria.",
+        "citations": [
+          {
+            "sourceId": "albacete-cheque-2023",
+            "locator": "Objeto y cuantía",
+            "page": 1
+          },
+          {
+            "sourceId": "albacete-cheque-2023",
+            "locator": "Dotación y cuantías",
+            "page": 2
+          },
+          {
+            "sourceId": "albacete-cheque-2023",
+            "locator": "Baremo",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "cuantias",
+        "claim": "Aumento de los importes individuales en 2024–2025",
+        "status": "documented",
+        "finding": "Las bases y el extracto del BOP recogen ayudas de 100, 80 o 60 euros, frente a los anteriores 90, 60 o 40. Documentan los importes previstos, no su abono efectivo a cada familia.",
+        "citations": [
+          {
+            "sourceId": "albacete-cheque-2024",
+            "locator": "Cuantía y baremo",
+            "page": 2
+          },
+          {
+            "sourceId": "albacete-cheque-2024",
+            "locator": "Tramos del cheque",
+            "page": 3
+          },
+          {
+            "sourceId": "albacete-cheque-2024-extract",
+            "locator": "Apartado cuarto · página impresa 21",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "versiones",
+        "claim": "Anuncio de 2024 y dotación inicial diferentes",
+        "status": "unresolved",
+        "finding": "La Cerca recoge el 10/05/2024 un anuncio municipal de 500.000 euros. Las bases firmadas el 06/05 y el extracto publicado el 22/05 fijan inicialmente 360.000 y contemplan variaciones. Sin la modificación y liquidación no cabe elegir una cifra como gasto final ni deducir engaño. El extracto también contiene fechas de acuerdo 2023 y 2024 incompatibles; se conserva la discrepancia.",
+        "citations": [
+          {
+            "sourceId": "albacete-cheque-announcement-2024",
+            "locator": "Presentación: partida anunciada"
+          },
+          {
+            "sourceId": "albacete-cheque-2024",
+            "locator": "Cuantía inicial y variaciones",
+            "page": 2
+          },
+          {
+            "sourceId": "albacete-cheque-2024-extract",
+            "locator": "Encabezado, apartado tercero y fecha de firma",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "dotacion-2026",
+        "claim": "Importe previsto para 2026–2027",
+        "status": "documented",
+        "finding": "Las bases de 2026–2027 fijan 500.000 euros, 140.000 más que la referencia inicial de 2023–2024, y mantienen 100, 80 o 60 euros mensuales. La parte de 2027 queda condicionada a su presupuesto. El curso termina el 30/06/2027, después del corte de esta revisión.",
+        "citations": [
+          {
+            "sourceId": "albacete-cheque-2026",
+            "locator": "Periodo de aplicación",
+            "page": 1
+          },
+          {
+            "sourceId": "albacete-cheque-2026",
+            "locator": "Cuantía y condición presupuestaria",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "ejecucion",
+        "claim": "Beneficiarios y pagos efectivos",
+        "status": "unresolved",
+        "finding": "Faltan resoluciones finales, importes reconocidos y pagados, renuncias y solicitudes no atendidas de cada curso. Ni el presupuesto previsto ni una previsión de familias atendidas prueban por sí solos los resultados.",
+        "citations": [
+          {
+            "sourceId": "albacete-cheque-2026",
+            "locator": "Objeto y requisitos de la convocatoria",
+            "page": 1
+          },
+          {
+            "sourceId": "albacete-cheque-2024-extract",
+            "locator": "Alcance del extracto de convocatoria",
+            "page": 1
+          }
+        ]
+      }
+    ],
+    "contrast": "Las bases, el BOP y las declaraciones recogidas por La Cerca proceden del Ayuntamiento; se agrupan en una sola familia de origen. La prensa permite localizar una diferencia documental, pero no añade una auditoría independiente de pagos. Las fechas de firma visibles no equivalen a comprobación criptográfica ni a fecha verificada de publicación de cada archivo.",
+    "pending": [
+      "Conciliar BDNS 762036, modificaciones presupuestarias y liquidación de 2024–2025; aclarar las fechas incompatibles del extracto.",
+      "Incorporar 2025–2026 y contrastar concesiones y pagos de todos los cursos con datos agregados, sin datos personales de menores.",
+      "Verificar las bases definitivas y eventuales modificaciones de 2026–2027 y someter la ficha a revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "m-02003-107",
+    "reviewedAt": "2026-10-11",
+    "title": "EXPOVICAMAN: regreso en 2024 corroborado por una visita",
+    "conclusion": "La documentación de la organización y una crónica de asistentes respaldan que EXPOVICAMAN se celebró de nuevo en 2024. No permiten atribuir el resultado exclusivamente al Ayuntamiento ni medir su impacto económico.",
+    "periodNote": "Programa municipal de 2023 y edición de mayo de 2024. La portada actual mezcla referencias a 2024, 2025 y 2027; no se toma el anuncio de 2027 como evento celebrado. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Recuperación de la feria",
+        "status": "promise-documented",
+        "finding": "El punto 107 propone recuperar EXPOVICAMAN. Se examina su celebración separadamente del traslado y de los objetivos económicos.",
+        "citations": [
+          {
+            "sourceId": "albacete-programme",
+            "locator": "Apartado 107",
+            "page": 13
+          }
+        ]
+      },
+      {
+        "id": "programacion",
+        "claim": "Edición y lugar programados",
+        "status": "documented",
+        "finding": "El dossier de 2024 identifica la feria y sitúa su regreso en el Recinto Ferial, con IFAB, Ayuntamiento, Diputación y Junta como organizadores. Es documentación preparatoria, no prueba aislada de celebración.",
+        "citations": [
+          {
+            "sourceId": "albacete-expovicaman-dossier-2024",
+            "locator": "Presentación",
+            "page": 2
+          },
+          {
+            "sourceId": "albacete-expovicaman-dossier-2024",
+            "locator": "Ficha técnica",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "celebracion",
+        "claim": "Relato externo posterior al evento",
+        "status": "reported",
+        "finding": "Twins’ Farm publicó el 20/05/2024 una crónica de su visita, describe maquinaria expuesta y el cambio de ubicación, y enlaza fotografías y vídeos propios. Corrobora la celebración desde una experiencia de asistentes; no verifica cifras de visitantes ni gasto público.",
+        "citations": [
+          {
+            "sourceId": "albacete-expovicaman-visit",
+            "locator": "Crónica de visita y material propio"
+          }
+        ]
+      },
+      {
+        "id": "alcance",
+        "claim": "Continuidad, coste y atribución",
+        "status": "unresolved",
+        "finding": "Falta conciliar costes y aportaciones por institución y revisar las restantes ediciones. La existencia de la feria no demuestra por sí sola sus efectos económicos ni una causalidad municipal exclusiva.",
+        "citations": [
+          {
+            "sourceId": "albacete-expovicaman-dossier-2024",
+            "locator": "Objetivos de la feria",
+            "page": 3
+          },
+          {
+            "sourceId": "albacete-expovicaman-dossier-2024",
+            "locator": "Organizadores",
+            "page": 6
+          },
+          {
+            "sourceId": "albacete-expovicaman-home",
+            "locator": "Referencias simultáneas a varias ediciones"
+          }
+        ]
+      }
+    ],
+    "contrast": "El dossier y la web comparten origen organizador. IFAB reúne participación de varias administraciones y no es un auditor del Ayuntamiento. Twins’ Farm aporta un relato propio y también opiniones favorables y críticas sobre la visita; no se ha auditado su relación comercial con expositores ni se usa como revisor humano de RegTrack.",
+    "pending": [
+      "Conciliar contratos, aportaciones, gastos y liquidaciones de la edición de 2024.",
+      "Contrastar continuidad y resultados de otras ediciones mediante documentación fechada y una revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "m-02003-108",
+    "reviewedAt": "2026-10-11",
+    "title": "Traslado de ferias: EXPOVICAMAN corroborada; otras dos pendientes",
+    "conclusion": "El traslado de EXPOVICAMAN al Recinto Ferial tiene respaldo documental y de asistentes. El apartado también menciona Comercia y Ferimotor; esta evidencia no acredita sus traslados.",
+    "periodNote": "Apartado 108 del programa de 2023 y EXPOVICAMAN de mayo de 2024. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Tres ferias dentro de un mismo apartado",
+        "status": "promise-documented",
+        "finding": "El punto 108 menciona EXPOVICAMAN, Comercia y Ferimotor como ejemplos de ferias que se trasladarían. El resultado de una no se aplica automáticamente a las otras dos.",
+        "citations": [
+          {
+            "sourceId": "albacete-programme",
+            "locator": "Apartado 108",
+            "page": 13
+          }
+        ]
+      },
+      {
+        "id": "expovicaman",
+        "claim": "Lugar previsto y visita al nuevo emplazamiento",
+        "status": "documented",
+        "finding": "El dossier sitúa EXPOVICAMAN 2024 en el Recinto Ferial de Albacete. La crónica posterior de Twins’ Farm describe el cambio y su visita allí. Se corrobora este componente del apartado, sin contar las dos páginas del organizador como fuentes independientes.",
+        "citations": [
+          {
+            "sourceId": "albacete-expovicaman-dossier-2024",
+            "locator": "Recinto Ferial",
+            "page": 2
+          },
+          {
+            "sourceId": "albacete-expovicaman-visit",
+            "locator": "Cambio de ubicación y visita"
+          }
+        ]
+      },
+      {
+        "id": "otras-ferias",
+        "claim": "Comercia y Ferimotor",
+        "status": "unresolved",
+        "finding": "Los documentos examinados se refieren a EXPOVICAMAN. Faltan programas, permisos y evidencia posterior de Comercia y Ferimotor en el lugar prometido; no se concluye incumplimiento por esta ausencia documental.",
+        "citations": [
+          {
+            "sourceId": "albacete-programme",
+            "locator": "Alcance completo del apartado 108",
+            "page": 13
+          },
+          {
+            "sourceId": "albacete-expovicaman-dossier-2024",
+            "locator": "Identificación del evento",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "contrast": "Esta ficha comparte pruebas con la recuperación de EXPOVICAMAN porque el programa formula dos apartados diferentes. No son dos éxitos independientes ni dos revisiones externas: uno trata la celebración y otro el lugar de tres ferias.",
+    "pending": [
+      "Localizar documentación fechada y corroboración posterior para Comercia y Ferimotor.",
+      "Conciliar reiteraciones entre los apartados 107 y 108 antes de calcular cualquier indicador agregado.",
+      "Someter fuentes y conclusiones a revisión humana independiente."
+    ]
+  }
+]
