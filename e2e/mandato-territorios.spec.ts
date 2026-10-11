@@ -1,5 +1,36 @@
 import { expect, test } from "@playwright/test";
 
+test("Extremadura separa el nuevo mandato, 62 apartados y cuatro fichas", async ({ page }) => {
+  await page.goto("/observatorio/mandato/cobertura");
+  await page.getByLabel("Buscar administración").fill("Extremadura");
+  await page.getByRole("combobox", { name: "Ámbito", exact: true }).selectOption("region");
+  await page.getByRole("link", { name: "Leer inventario y revisiones territoriales" }).click();
+  await expect(page).toHaveURL(/\/territorios\/r-11$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Extremadura · mandato iniciado en abril de 2026");
+  await expect(page.locator(".mt-review")).toHaveCount(4);
+  await expect(page.getByRole("status")).toHaveText("62 resultados · página 1 de 5");
+  await expect(page.locator(".mn-method").filter({ has: page.getByRole("heading", { name: "Qué se ha comprobado", exact: true }) })).toContainText("61 puntos y 74 medidas");
+  await page.getByRole("combobox", { name: "Revisión", exact: true }).selectOption("pending");
+  await expect(page.getByRole("status")).toContainText("58 resultados");
+  await page.getByLabel("Buscar medida autonómica").fill("Senador por designación");
+  await expect(page.locator("#territorial-inventory")).toContainText("Sin conclusión de RegTrack");
+  await expect(page.locator("#territorial-inventory").getByRole("link", { name: /página 23/ })).toHaveAttribute("href", /20260416-ACUERDO-PP-VOX-FINAL-1\.pdf#page=23$/);
+});
+
+test("Extremadura en móvil conserva topes, plazos y pruebas pendientes", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/observatorio/mandato/territorios/r-11");
+  await expect(page.locator(".mc-intro")).toContainText("revisión humana independiente");
+  await expect(page.locator("#compromiso-r-11-50")).toContainText("200 € al mes");
+  await expect(page.locator("#compromiso-r-11-1")).toContainText("149 millones");
+  await expect(page.locator("#compromiso-r-11-6")).toContainText("no terminar todas las obras");
+  await expect(page.locator("#compromiso-r-11-32")).toContainText("puntos porcentuales");
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/extremadura-mobile-intro.png" });
+  await page.locator("#r-11-50-ayudas").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/extremadura-mobile-infantil.png" });
+});
+
 test("Castilla y León separa 220 apartados y tres fichas del mandato de junio", async ({ page }) => {
   await page.goto("/observatorio/mandato/cobertura");
   await page.getByLabel("Buscar administración").fill("Castilla y León");
