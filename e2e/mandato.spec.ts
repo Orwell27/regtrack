@@ -88,7 +88,8 @@ test("la calibración distingue exactitud desconocida y muestra la corrección c
   const quality = page.locator(".mn-quality-summary");
   await expect(quality).toContainText("Exactitud todavía no medida");
   await expect(quality).toContainText("revisión humana independiente sigue pendiente");
-  await expect(quality).toContainText("46 fichas desglosadas en 104 comprobaciones");
+  const components = snapshot.commitments.flatMap(item => item.quality.components).length;
+  await expect(quality).toContainText(`46 fichas desglosadas en ${components} comprobaciones`);
   await expect(quality).toContainText("46 de 203");
   await quality.getByText("Reglas, actualización y correcciones", { exact: true }).click();
   await expect(quality).toContainText("no hay actualización automática");
@@ -254,7 +255,8 @@ test("los enlaces de contexto abren el indicador y el móvil no desborda", async
   await page.screenshot({ path: ".artifacts/observatorio/mandato-mobile.png" });
 });
 
-test("honestidad separa cumplimiento sin calcular de cobertura documental y permite revisar cada estado", async ({ page }) => {
+test("honestidad separa cumplimiento sin calcular de cobertura documental y permite revisar cada estado", async ({ page, request }) => {
+  const snapshot = await readSnapshot(request);
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/observatorio/mandato");
   await page.getByRole("link", { name: "Honestidad", exact: true }).click();
@@ -275,17 +277,18 @@ test("honestidad separa cumplimiento sin calcular de cobertura documental y perm
   await page.getByLabel("Buscar en el balance", { exact: true }).fill("sincoincidenciasdocumentalesxyz");
   await expect(block.locator(".mn-coverage-description")).toContainText("46 de 46");
   for (const state of [
-    { name: "33 actuaciones documentadas", status: "documented", count: 33 },
-    { name: "13 contrastes parciales", status: "partial", count: 13 },
-    { name: "0 pendientes de contraste", status: "pending", count: 0 },
+    { label: "actuaciones documentadas", status: "documented" },
+    { label: "contrastes parciales", status: "partial" },
+    { label: "pendientes de contraste", status: "pending" },
   ]) {
-    await block.getByRole("button", { name: state.name, exact: true }).click();
+    const count = snapshot.commitments.filter(item => item.review.status === state.status).length;
+    await block.getByRole("button", { name: `${count} ${state.label}`, exact: true }).click();
     await expect(page).toHaveURL(/#balance-documental$/);
     await expect(page.getByRole("button", { name: "Compromisos 46", exact: true })).toHaveAttribute("aria-pressed", "true");
     await expect(page.getByLabel("Buscar en el balance", { exact: true })).toHaveValue("");
     await expect(page.getByLabel("Tema del balance", { exact: true })).toHaveValue("");
     await expect(page.getByLabel("Estado de revisión RegTrack", { exact: true })).toHaveValue(state.status);
-    await expect(page.locator(".mn-commitment:visible")).toHaveCount(state.count);
+    await expect(page.locator(".mn-commitment:visible")).toHaveCount(count);
     await expect(page.locator("#ledger-heading")).toBeFocused();
     await expect(block.locator(".mn-accountability-score > strong")).toHaveText("Sin calcular");
     await expect(block.locator(".mn-coverage-description")).toContainText("46 de 46");

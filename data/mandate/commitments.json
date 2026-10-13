@@ -8,7 +8,7 @@
     "totalAvailable": 203,
     "totalImported": 46,
     "reviewedCount": 46,
-    "reviewScope": "46 compromisos revisados entre el 10 y el 13 de octubre de 2026. Esta actualización contrasta resultados de fraude fiscal y protección por desempleo; las otras fichas conservan su fecha. Los 203 registros oficiales están importados y 157 siguen pendientes de primera revisión.",
+    "reviewScope": "46 compromisos revisados entre el 10 y el 13 de octubre de 2026. Esta actualización contrasta fraude fiscal, protección por desempleo, vivienda para jóvenes y brecha laboral por sexo; las otras fichas conservan su fecha. Los 203 registros oficiales están importados y 157 siguen pendientes de primera revisión.",
     "attribution": "Origen de los datos: sitio web de lamoncloa.gob.es. Ministerio de la Presidencia.",
     "sourcePublicationDate": "2026-07-28",
     "importedAt": "2026-10-07T10:16:11.777Z",
@@ -1065,6 +1065,81 @@
       "sha256": "4e46d1229e061061779951617fdb0decb3058fd71f85f88df712e454551ec1c6",
       "captureType": "bytes_originales",
       "kind": "fuente_primaria"
+    },
+    {
+      "id": "ico-vivienda-cierre-2025",
+      "url": "https://www.ico.es/documents/20124/1023875/Informe%2BWEB%2BMensual%2BAvales%2B%2BLinea%2BICO%2BHipotecas%2B31.12.2025.pdf/2dd875c5-1be9-b0ae-643a-5f8eb267cdf4?t=1768206907820",
+      "downloadUrl": "https://www.ico.es/documents/20124/1023875/Informe%2BWEB%2BMensual%2BAvales%2B%2BLinea%2BICO%2BHipotecas%2B31.12.2025.pdf/2dd875c5-1be9-b0ae-643a-5f8eb267cdf4?t=1768206907820",
+      "title": "Seguimiento ICO de avales de primera vivienda a 31/12/2025",
+      "organisation": "Instituto de Crédito Oficial",
+      "publishedAt": null,
+      "publicationDateBasis": "El informe fecha los datos a 31/12/2025; no se certifica su día de publicación",
+      "capturedAt": "2026-10-13T12:35:24.760Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/ico-vivienda-2025.pdf",
+      "bytes": 193211,
+      "sha256": "9c8c3fa4287f5fd4813a3676fb678ea21c6774a1f98d1fefa0b22e56ff546cb9",
+      "captureType": "bytes_originales",
+      "kind": "declaracion_gobierno"
+    },
+    {
+      "id": "ico-vivienda-territorios-2025",
+      "url": "https://www.ico.es/documents/20124/1247246/Tabla+de+actividad+mensual+y+acumulada+de+la+Linea+de+Avales+ICO+MIVAU+para+la+adquisicion+de+primera+vivienda+por+CCAA+diciembre+2025.csv",
+      "downloadUrl": "https://www.ico.es/documents/20124/1247246/Tabla+de+actividad+mensual+y+acumulada+de+la+Linea+de+Avales+ICO+MIVAU+para+la+adquisicion+de+primera+vivienda+por+CCAA+diciembre+2025.csv",
+      "title": "ICO: actividad mensual y acumulada de avales por territorio, cierre 2025",
+      "organisation": "Instituto de Crédito Oficial",
+      "publishedAt": null,
+      "publicationDateBasis": "El archivo identifica diciembre de 2025; no se certifica la fecha de publicación ni de una posible revisión",
+      "capturedAt": "2026-10-13T12:35:01.222Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/ico-vivienda-2025.csv",
+      "bytes": 25418,
+      "sha256": "563c1e6b17134634b18502548702e71465dc0433957d6a1388ee058ec8bd53e3",
+      "captureType": "bytes_originales",
+      "kind": "declaracion_gobierno"
+    },
+    {
+      "id": "epa-tasas-sexo-serie",
+      "url": "https://www.ine.es/jaxiT3/files/t/csv_bdsc/65349.csv",
+      "downloadUrl": "https://www.ine.es/jaxiT3/files/t/csv_bdsc/65349.csv",
+      "title": "EPA: tasas de actividad, paro y empleo por provincia y sexo, tabla 65349",
+      "organisation": "Instituto Nacional de Estadística",
+      "publishedAt": "2026-07-28",
+      "publicationDateBasis": "Fecha de creación 20260728 del PC-Axis de la misma tabla; último periodo 2026T2",
+      "capturedAt": "2026-10-13T12:35:48.899Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/epa-tasas-sexo-65349.csv",
+      "bytes": 2916970,
+      "sha256": "740aa1704da8fb0b1df32f7114b6714fd5749d6997c8bf52b18fbe1ea7b266cf",
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "epa-tasas-sexo-metadatos",
+      "url": "https://www.ine.es/jaxiT3/files/t/px/65349.px",
+      "downloadUrl": "https://www.ine.es/jaxiT3/files/t/px/65349.px",
+      "title": "EPA tabla 65349: datos y nota sobre base poblacional 2021",
+      "organisation": "Instituto Nacional de Estadística",
+      "publishedAt": "2026-07-28",
+      "publicationDateBasis": "CREATION-DATE del PC-Axis: 20260728",
+      "capturedAt": "2026-10-13T12:35:48.253Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/epa-tasas-sexo-65349.px",
+      "bytes": 277003,
+      "sha256": "3910b35841faff22811a63bdbfb33b27ba01017b93305b3d26cb0731cfcf190a",
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "epa-metodologia-2021",
+      "url": "https://www.ine.es/inebaseDYN/epa30308/docs/resumetepa21.pdf",
+      "downloadUrl": "https://www.ine.es/inebaseDYN/epa30308/docs/resumetepa21.pdf",
+      "title": "EPA metodología 2021: definiciones de tasas",
+      "organisation": "Instituto Nacional de Estadística",
+      "publishedAt": null,
+      "publicationDateBasis": "Se identifica la metodología 2021; no se certifica la fecha de esta copia",
+      "capturedAt": "2026-10-13T12:37:04.798Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/epa-metodologia-2021.pdf",
+      "bytes": 234215,
+      "sha256": "8f0fa65730108b682963be02912a1a5914b17e321150211f00b47f4e2fc741b1",
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
     }
   ],
   "commitments": [
@@ -1331,7 +1406,7 @@
       "review": {
         "status": "actuacion_documentada",
         "criterion": "Facilitar a jóvenes la compra o el alquiler de vivienda. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
-        "conclusion": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
+        "conclusion": "El convenio ICO y el Plan 2026–2030 acreditan instrumentos. El seguimiento del ICO a diciembre de 2025 comunica 10.453 operaciones: 7.503 de jóvenes y 2.950 de familias con menores; 255,8 millones de euros son avales solicitados y 1.344,3 millones financiación avalada. Su CSV territorial suma 10.454 operaciones y Andalucía 3.149, frente a 3.148 en el PDF. Se conserva la discrepancia de una operación sin inventar su causa. Son datos del gestor, no verificación independiente del acceso efectivo.",
         "evidence": [
           {
             "sourceId": "BOE-A-2024-9128",
@@ -1344,9 +1419,21 @@
             "locator": "Artículos 1 y 2; líneas de ayuda al acceso",
             "paraphrase": "Regula instrumentos de financiación y ayudas; la ejecución se articula mediante administraciones territoriales.",
             "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "ico-vivienda-cierre-2025",
+            "locator": "Página PDF 2: párrafo de situación a 31/12/2025 y tabla por CC. AA.",
+            "paraphrase": "ICO comunica 10.453 operaciones, 7.503 de jóvenes y 2.950 de familias; 255,8 millones de avales y 1.344,3 de financiación. Andalucía: 3.148. Importes y colectivos distintos; no contar operaciones como personas.",
+            "relation": "declaracion_de_actuacion"
+          },
+          {
+            "sourceId": "ico-vivienda-territorios-2025",
+            "locator": "CSV separado por punto y coma; últimos tres campos del acumulado a diciembre; filas ANDALUCÍA y Total general",
+            "paraphrase": "Total general 10.454 operaciones, financiación 1.344.387.902 euros y avales 255.864.390; Andalucía 3.149. Difiere en una operación del PDF. Las filas de comunidades y provincias se solapan: no sumarlas todas. Misma familia ICO, sin corroboración independiente.",
+            "relation": "declaracion_de_actuacion"
           }
         ],
-        "asOf": "2026-10-10",
+        "asOf": "2026-10-13",
         "history": [
           {
             "asOf": "2026-10-07",
@@ -1360,26 +1447,65 @@
                 "relation": "actuacion_normativa"
               }
             ]
+          },
+          {
+            "status": "actuacion_documentada",
+            "criterion": "Facilitar a jóvenes la compra o el alquiler de vivienda. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+            "conclusion": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2024-9128",
+                "locator": "Anejo, estipulaciones primera y segunda",
+                "paraphrase": "Define la línea de avales para adquisición de primera vivienda.",
+                "relation": "actuacion_normativa"
+              },
+              {
+                "sourceId": "BOE-A-2026-8872",
+                "locator": "Artículos 1 y 2; líneas de ayuda al acceso",
+                "paraphrase": "Regula instrumentos de financiación y ayudas; la ejecución se articula mediante administraciones territoriales.",
+                "relation": "actuacion_normativa"
+              }
+            ],
+            "asOf": "2026-10-10"
           }
         ]
       },
       "assessment": {
         "verdict": "measures",
         "expected": "Facilitar a jóvenes la compra o el alquiler de vivienda.",
-        "observed": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
-        "practicalEffect": "Puede haber vías de aval o ayudas sujetas a edad, renta, vivienda y convocatoria; la ficha no acredita que una persona concreta pueda obtenerlas.",
-        "missingEvidence": "Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
-        "temporalScope": "Convenio de 2024 y plan 2026–2030; revisión documental al 10 de octubre de 2026.",
-        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "observed": "El convenio ICO y el Plan 2026–2030 acreditan instrumentos. El seguimiento del ICO a diciembre de 2025 comunica 10.453 operaciones: 7.503 de jóvenes y 2.950 de familias con menores; 255,8 millones de euros son avales solicitados y 1.344,3 millones financiación avalada. Su CSV territorial suma 10.454 operaciones y Andalucía 3.149, frente a 3.148 en el PDF. Se conserva la discrepancia de una operación sin inventar su causa. Son datos del gestor, no verificación independiente del acceso efectivo.",
+        "practicalEffect": "Se identifica actividad comunicada y reparto territorial de los avales. Las 10.453 operaciones no equivalen a 10.453 jóvenes ni a beneficiarios únicos; un aval no es una subvención pagada. La declaración gubernamental conserva literalmente sus cifras, pero 255,8 millones mide avales, no el total de préstamos. El desglose territorial mezcla jóvenes y familias.",
+        "missingEvidence": "Conciliar la diferencia PDF/CSV con una explicación del ICO; verificar operaciones y beneficiarios únicos por edad, renta y territorio. Siguen pendientes ayudas al alquiler efectivamente pagadas, solicitudes denegadas y evaluación del acceso y coste de vivienda para jóvenes.",
+        "temporalScope": "Convenio 2024, actividad acumulada desde el inicio de la línea hasta 31/12/2025 y Plan 2026–2030. Captura 13/10/2026; el cierre 2025 no representa la ejecución a junio u octubre de 2026.",
+        "scope": "España; línea ICO-MIVAU de primera vivienda para jóvenes y familias con menores. No cubre por sí sola todas las políticas de compra y alquiler para jóvenes.",
         "evidenceSourceIds": [
           "BOE-A-2024-9128",
-          "BOE-A-2026-8872"
+          "BOE-A-2026-8872",
+          "ico-vivienda-cierre-2025",
+          "ico-vivienda-territorios-2025"
         ],
-        "reviewedAt": "2026-10-10"
+        "reviewedAt": "2026-10-13"
       },
       "assessmentHistory": [
         {
           "revision": "2026-10-10-v1",
+          "assessment": {
+            "verdict": "measures",
+            "expected": "Facilitar a jóvenes la compra o el alquiler de vivienda.",
+            "observed": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
+            "practicalEffect": "Puede haber vías de aval o ayudas sujetas a edad, renta, vivienda y convocatoria; la ficha no acredita que una persona concreta pueda obtenerlas.",
+            "missingEvidence": "Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
+            "temporalScope": "Convenio de 2024 y plan 2026–2030; revisión documental al 10 de octubre de 2026.",
+            "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+            "evidenceSourceIds": [
+              "BOE-A-2024-9128",
+              "BOE-A-2026-8872"
+            ],
+            "reviewedAt": "2026-10-10"
+          }
+        },
+        {
+          "revision": "2026-10-13-v5",
           "assessment": {
             "verdict": "measures",
             "expected": "Facilitar a jóvenes la compra o el alquiler de vivienda.",
@@ -1668,41 +1794,92 @@
       "review": {
         "status": "contraste_parcial",
         "criterion": "Avanzar en la eliminación de la brecha de género en el empleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
-        "conclusion": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+        "conclusion": "La serie EPA comparable (base poblacional 2021) sitúa la brecha de empleo de 16 y más años en 11,00 puntos en 2023T3 y 9,92 en 2026T2: reducción de 1,08 puntos. En 2023T4 era 10,21; en 2025T2 ya era 9,92, igual que en 2026T2. En este último trimestre las tasas son 58,52 % para hombres y 48,60 % para mujeres. La brecha de paro baja de 3,34 a 2,18 puntos entre 2023T3 y 2026T2. Hay avance descriptivo parcial, no eliminación de la brecha ni mejora continua.",
         "evidence": [
           {
             "sourceId": "epa-2026-t2",
             "locator": "Apartado Desempleo y tasa de paro, desglose por sexo",
             "paraphrase": "Tasas de paro: mujeres 11,02 %, hombres 8,84 %. Diferencia calculada por RegTrack: 2,18 puntos.",
             "relation": "resultado_estadistico"
+          },
+          {
+            "sourceId": "epa-tasas-sexo-serie",
+            "locator": "Tabla 65349, Total Nacional; Hombres/Mujeres; tasas de empleo, actividad y paro; trimestres 2023T3–2026T2",
+            "paraphrase": "Cálculo editorial de brechas: empleo (hombres menos mujeres) 11,00→9,92 puntos; actividad 10,24→9,58; paro (mujeres menos hombres) 3,34→2,18. Empleo 2025T2=9,92, sin reducción interanual en 2026T2. Serie trimestral no desestacionalizada, sin inferencia causal.",
+            "relation": "resultado_estadistico"
+          },
+          {
+            "sourceId": "epa-tasas-sexo-metadatos",
+            "locator": "Cabecera PC-Axis: CREATION-DATE, NOTE, VALUES y DATA de la tabla 65349",
+            "paraphrase": "Creación 20260728, periodo final 2026T2; la nota establece base poblacional 2021 desde 2021. Los valores de 2023 y 2026 de esta descarga tienen la misma base; no se mezclan con antiguas notas de prensa de base 2011.",
+            "relation": "resultado_estadistico"
+          },
+          {
+            "sourceId": "epa-metodologia-2021",
+            "locator": "Página PDF e impresa 18: tasas de actividad, empleo y paro",
+            "paraphrase": "Actividad y empleo se expresan sobre población de 16 y más años; paro sobre activos. Son denominadores distintos y no deben intercambiarse.",
+            "relation": "resultado_estadistico"
           }
         ],
-        "asOf": "2026-10-10",
+        "asOf": "2026-10-13",
         "history": [
           {
             "asOf": "2026-10-07",
             "status": "sin_verificar",
             "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
             "evidence": []
+          },
+          {
+            "status": "contraste_parcial",
+            "criterion": "Avanzar en la eliminación de la brecha de género en el empleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+            "conclusion": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+            "evidence": [
+              {
+                "sourceId": "epa-2026-t2",
+                "locator": "Apartado Desempleo y tasa de paro, desglose por sexo",
+                "paraphrase": "Tasas de paro: mujeres 11,02 %, hombres 8,84 %. Diferencia calculada por RegTrack: 2,18 puntos.",
+                "relation": "resultado_estadistico"
+              }
+            ],
+            "asOf": "2026-10-10"
           }
         ]
       },
       "assessment": {
-        "verdict": "inconclusive",
+        "verdict": "partial",
         "expected": "Avanzar en la eliminación de la brecha de género en el empleo.",
-        "observed": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
-        "practicalEffect": "Mujeres y hombres siguen teniendo tasas de paro distintas. No permite atribuir a una medida concreta la diferencia ni equiparar paro, empleo y salario.",
-        "missingEvidence": "Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
-        "temporalScope": "EPA 2026T2, publicada el 28 de julio. La falta de base comparable limita el juicio sobre el avance.",
-        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "observed": "La serie EPA comparable (base poblacional 2021) sitúa la brecha de empleo de 16 y más años en 11,00 puntos en 2023T3 y 9,92 en 2026T2: reducción de 1,08 puntos. En 2023T4 era 10,21; en 2025T2 ya era 9,92, igual que en 2026T2. En este último trimestre las tasas son 58,52 % para hombres y 48,60 % para mujeres. La brecha de paro baja de 3,34 a 2,18 puntos entre 2023T3 y 2026T2. Hay avance descriptivo parcial, no eliminación de la brecha ni mejora continua.",
+        "practicalEffect": "En 2026T2 la proporción de mujeres ocupadas sigue 9,92 puntos por debajo de la de hombres. La brecha de actividad pasa de 10,24 puntos en 2023T3 a 9,58 en 2026T2, pero sube frente a 9,54 en 2025T2. Empleo y actividad usan población de 16 y más años; paro usa población activa. Son estimaciones sin ajuste estacional ni por composición de edad; no prueban causalidad de las medidas.",
+        "missingEvidence": "Series de parcialidad, salarios y calidad del empleo por sexo; análisis por edad y otras características, incertidumbre de las diferencias y evaluación específica de las medidas. Falta el resultado final del mandato; no se ha demostrado que las diferencias pequeñas sean estadísticamente significativas.",
+        "temporalScope": "Serie trimestral 2023T3–2026T2 de una misma descarga INE del 13/10/2026, con base poblacional 2021 desde 2021. 2023T3 es el último trimestre completo anterior a la investidura; 2023T4 la contiene. No hay observación exacta de noviembre de 2023. Se muestra también comparación interanual 2025T2–2026T2 para limitar el efecto estacional.",
+        "scope": "España, Total Nacional EPA, hombres y mujeres de 16 y más años en viviendas familiares. Tasas sin estandarización por edad; no equivalen a salarios, parcialidad ni toda la desigualdad laboral.",
         "evidenceSourceIds": [
-          "epa-2026-t2"
+          "epa-2026-t2",
+          "epa-tasas-sexo-serie",
+          "epa-tasas-sexo-metadatos",
+          "epa-metodologia-2021"
         ],
-        "reviewedAt": "2026-10-10"
+        "reviewedAt": "2026-10-13"
       },
       "assessmentHistory": [
         {
           "revision": "2026-10-10-v1",
+          "assessment": {
+            "verdict": "inconclusive",
+            "expected": "Avanzar en la eliminación de la brecha de género en el empleo.",
+            "observed": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+            "practicalEffect": "Mujeres y hombres siguen teniendo tasas de paro distintas. No permite atribuir a una medida concreta la diferencia ni equiparar paro, empleo y salario.",
+            "missingEvidence": "Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
+            "temporalScope": "EPA 2026T2, publicada el 28 de julio. La falta de base comparable limita el juicio sobre el avance.",
+            "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+            "evidenceSourceIds": [
+              "epa-2026-t2"
+            ],
+            "reviewedAt": "2026-10-10"
+          }
+        },
+        {
+          "revision": "2026-10-13-v5",
           "assessment": {
             "verdict": "inconclusive",
             "expected": "Avanzar en la eliminación de la brecha de género en el empleo.",

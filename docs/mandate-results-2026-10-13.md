@@ -1,6 +1,6 @@
 # Contraste de resultados nacionales: 13 de octubre de 2026
 
-Se actualizan dos fichas existentes, c-136 y c-143. Siguen siendo 46 de 203 compromisos con primera revisión; los otros 157 no se consideran revisados. No aumenta la cobertura por añadir fuentes o componentes. Las demás fichas conservan sus fechas y conclusiones.
+Se actualizan cuatro fichas existentes: c-136 y c-143 en la primera tanda; c-17 y c-33 en la continuación. Siguen siendo 46 de 203 compromisos con primera revisión; los otros 157 no se consideran revisados. No aumenta la cobertura por añadir fuentes o componentes. Las demás fichas conservan sus fechas y conclusiones.
 
 ## Protección por desempleo (c-143)
 
@@ -34,8 +34,34 @@ Se mantiene la conclusión de medidas acreditadas con efecto global pendiente. E
 
 No sumar bases fiscales a recaudación. La página 5 advierte que las autoliquidaciones tardías no son atribuibles directamente a una actuación concreta. Las páginas 36–37 atribuyen la caída de deuda pendiente a anulaciones de declaraciones falseadas: no convertir esa caída en cobro. No se trasladan estos resultados de 2025 al plan 2026 ni se utiliza el conjunto de 2023 como base exacta de noviembre de 2023.
 
+## Vivienda para jóvenes (c-17)
+
+El [seguimiento del ICO a diciembre de 2025](https://www.ico.es/documents/20124/1023875/Informe%2BWEB%2BMensual%2BAvales%2B%2BLinea%2BICO%2BHipotecas%2B31.12.2025.pdf/2dd875c5-1be9-b0ae-643a-5f8eb267cdf4?t=1768206907820), página 2, comunica 10.453 operaciones: 7.503 de jóvenes y 2.950 de familias con menores. Los 255,8 millones son avales solicitados; los préstamos avalados suman 1.344,3 millones. No son ayudas pagadas, personas únicas ni 10.453 jóvenes.
+
+El [CSV territorial del ICO](https://www.ico.es/documents/20124/1247246/Tabla+de+actividad+mensual+y+acumulada+de+la+Linea+de+Avales+ICO+MIVAU+para+la+adquisicion+de+primera+vivienda+por+CCAA+diciembre+2025.csv) contiene 10.454 operaciones: Andalucía tiene 3.149 frente a 3.148 en el PDF. No se conoce la causa. Se conservan ambos originales y la discrepancia. El CSV incluye comunidades y provincias: sumarlas todas duplicaría operaciones. Sus tres últimas columnas son financiación, avales y operaciones acumuladas; no se deben confundir con diciembre aislado.
+
+Se mantiene «medidas acreditadas» y un componente de actividad comunicada. Ambos documentos proceden del gestor. La declaración gubernamental original permanece intacta, con la aclaración de unidades en el contraste. Siguen pendientes conciliación, beneficiarios únicos, pagos de alquiler, denegaciones y efecto sobre acceso y precios. El cierre de 2025 no describe ejecución a octubre de 2026.
+
+## Brecha laboral por sexo (c-33)
+
+La [tabla EPA 65349](https://www.ine.es/jaxiT3/Tabla.htm?t=65349) permite recuperar empleo, actividad y paro en una misma descarga. Su PC-Axis señala base poblacional 2021 desde 2021. No se mezclan las estimaciones revisadas con notas de prensa antiguas de otra base. Se conserva la serie completa en CSV y PC-Axis, incluidas todas las observaciones entre los extremos.
+
+| Periodo | Empleo hombres | Empleo mujeres | Brecha empleo H−M | Brecha actividad H−M | Brecha paro M−H |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 2023T3 | 57,89 % | 46,89 % | 11,00 pp | 10,24 pp | 3,34 pp |
+| 2023T4 | 57,14 % | 46,93 % | 10,21 pp | 9,63 pp | 2,91 pp |
+| 2024T2 | 57,46 % | 47,33 % | 10,13 pp | 9,74 pp | 2,53 pp |
+| 2025T2 | 58,05 % | 48,13 % | 9,92 pp | 9,54 pp | 2,30 pp |
+| 2026T2 | 58,52 % | 48,60 % | 9,92 pp | 9,58 pp | 2,18 pp |
+
+La brecha de empleo baja 1,08 puntos frente a 2023T3 y 0,29 frente a 2023T4, pero no disminuye frente al mismo trimestre de 2025. La actividad empeora 0,04 puntos interanuales. La evolución no es monotónica: la brecha de empleo fue 9,76 en 2025T1 y volvió a subir después.
+
+2023T3 es el último trimestre completo anterior a la investidura; 2023T4 la contiene. Ninguno es una medición exacta de noviembre. Son tasas sin ajuste estacional ni estandarización por edad. La [metodología EPA, página 18](https://www.ine.es/inebaseDYN/epa30308/docs/resumetepa21.pdf), define empleo y actividad sobre población de 16 y más años, y paro sobre población activa.
+
+La ficha pasa de «sin base suficiente» a «resultado parcial». Describe una reducción con límites, no causalidad ni eliminación de la desigualdad. Siguen pendientes salarios, parcialidad, calidad, composición y significación estadística de las diferencias.
+
 ## Trazabilidad y comprobación
 
-Tres PDF originales en `data/mandate/evidence/contrast-2026-10-13`, con URL, tamaño, captura y SHA-256. Las fichas y calibración son los datos canónicos. La revisión anterior se conserva en los historiales y en `previous-reviews.json`, que usa la prueba de preservación. Componentes nuevos: resultado administrativo comunicado AEAT y cobertura/gasto documentados SEPE. Se mantienen componentes desconocidos y cero revisión humana independiente.
+Ocho originales (cinco PDF, dos CSV y un PC-Axis) en `data/mandate/evidence/contrast-2026-10-13`, con URL, tamaño, captura y SHA-256. Las fichas y calibración son los datos canónicos. La revisión anterior se conserva en los historiales y en `previous-reviews.json`, que usa la prueba de preservación. Hay 108 componentes, con incertidumbres expresas y cero revisión humana independiente.
 
-Se inspeccionaron visualmente las tablas y notas de los PDF. Los originales están disponibles para comprobar cálculos y perímetros. La validación automatizada comprueba referencias, huellas, preservación histórica, rechazo de promoción indebida de una declaración del organismo y recuperación por el lector documental; no mide exactitud humana. Resultados efectivos de pruebas y estado de entrega se registran en la Bitácora.
+Se inspeccionaron visualmente las tablas y notas relevantes de SEPE, AEAT e ICO; las definiciones EPA se leyeron en el PDF. Los originales permiten comprobar cálculos y perímetros. La validación automatizada comprueba referencias, huellas, preservación histórica, cálculos EPA, suma territorial ICO sin duplicados, rechazo de promoción indebida de una declaración del organismo y recuperación por el lector documental; no mide exactitud humana. Las dos pruebas de navegador que fallaron en la primera tanda por recuentos antiguos ahora comparan pantalla, filtros y datos publicados. Los recuentos esperados concretos se siguen comprobando en las pruebas de datos. Resultados efectivos y estado de entrega se registran en la Bitácora.

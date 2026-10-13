@@ -16,7 +16,7 @@ describe("calibración editorial y límites de la evidencia", () => {
     expect(data.calibration.selection.selectedCount).toBe(46);
     expect(calibration.audits).toHaveLength(46);
     expect(new Set(calibration.audits.map(audit => audit.commitmentId)).size).toBe(46);
-    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(106);
+    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(108);
     expect(collection.commitments.filter(item => item.assessmentHistory.length)).toHaveLength(30);
     for (const item of collection.commitments.filter(item => item.assessmentHistory.length)) {
       expect(item.assessmentHistory[0].revision).toBe("2026-10-10-v1");
@@ -93,7 +93,7 @@ describe("calibración editorial y límites de la evidencia", () => {
     expect(find("c-139").assessment.observed).toMatch(/ocho años|8 años/);
     expect(find("c-87").assessment.verdict).toBe("inconclusive");
     expect(calibration.audits.filter(audit => audit.correction?.kind === "error").map(audit => audit.commitmentId)).toEqual(["c-78"]);
-    expect(calibration.audits.filter(audit => audit.correction)).toHaveLength(10);
+    expect(calibration.audits.filter(audit => audit.correction)).toHaveLength(12);
   });
 
   it("la consulta conserva límites de revisión y citas al acotar la respuesta", () => {

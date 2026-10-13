@@ -147,5 +147,160 @@
       ],
       "correction": null
     }
+  },
+  {
+    "commitmentId": "c-17",
+    "assessment": {
+      "verdict": "measures",
+      "expected": "Facilitar a jóvenes la compra o el alquiler de vivienda.",
+      "observed": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
+      "practicalEffect": "Puede haber vías de aval o ayudas sujetas a edad, renta, vivienda y convocatoria; la ficha no acredita que una persona concreta pueda obtenerlas.",
+      "missingEvidence": "Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
+      "temporalScope": "Convenio de 2024 y plan 2026–2030; revisión documental al 10 de octubre de 2026.",
+      "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+      "evidenceSourceIds": [
+        "BOE-A-2024-9128",
+        "BOE-A-2026-8872"
+      ],
+      "reviewedAt": "2026-10-10"
+    },
+    "review": {
+      "status": "actuacion_documentada",
+      "criterion": "Facilitar a jóvenes la compra o el alquiler de vivienda. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+      "conclusion": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
+      "evidence": [
+        {
+          "sourceId": "BOE-A-2024-9128",
+          "locator": "Anejo, estipulaciones primera y segunda",
+          "paraphrase": "Define la línea de avales para adquisición de primera vivienda.",
+          "relation": "actuacion_normativa"
+        },
+        {
+          "sourceId": "BOE-A-2026-8872",
+          "locator": "Artículos 1 y 2; líneas de ayuda al acceso",
+          "paraphrase": "Regula instrumentos de financiación y ayudas; la ejecución se articula mediante administraciones territoriales.",
+          "relation": "actuacion_normativa"
+        }
+      ],
+      "asOf": "2026-10-10",
+      "history": [
+        {
+          "asOf": "2026-10-07",
+          "status": "actuacion_documentada",
+          "conclusion": "El convenio MIVAU–ICO documenta un instrumento de avales para primera vivienda. No comprueba cuántos jóvenes recibieron financiación ni el efecto sobre el acceso a vivienda o los precios. Su antecedente de 2023 no se atribuye íntegramente al mandato iniciado en noviembre.",
+          "evidence": [
+            {
+              "sourceId": "BOE-A-2024-9128",
+              "locator": "Anejo, estipulaciones primera.a y segunda.b",
+              "paraphrase": "El convenio regula la gestión de avales y prevé inicialmente un máximo de 2.500 millones de euros. La cifra es capacidad prevista, no gasto ni préstamos concedidos.",
+              "relation": "actuacion_normativa"
+            }
+          ]
+        }
+      ]
+    },
+    "audit": {
+      "commitmentId": "c-17",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Instrumentos de compra y alquiler",
+          "criterion": "Identificar normas o convocatorias que habiliten cada vía para jóvenes.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Convenio de avales y plan de vivienda acreditados.",
+          "sourceIds": [
+            "BOE-A-2024-9128",
+            "BOE-A-2026-8872"
+          ],
+          "id": "c-17-part-1"
+        },
+        {
+          "label": "Acceso efectivo",
+          "criterion": "Contar operaciones y ayudas finalizadas por edad, renta y territorio sin duplicarlas.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se ha verificado el total de jóvenes beneficiados.",
+          "sourceIds": [],
+          "id": "c-17-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se ha verificado el total de jóvenes beneficiados.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
+      "overlaps": [
+        "c-55",
+        "c-76",
+        "c-112"
+      ],
+      "correction": null
+    }
+  },
+  {
+    "commitmentId": "c-33",
+    "assessment": {
+      "verdict": "inconclusive",
+      "expected": "Avanzar en la eliminación de la brecha de género en el empleo.",
+      "observed": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+      "practicalEffect": "Mujeres y hombres siguen teniendo tasas de paro distintas. No permite atribuir a una medida concreta la diferencia ni equiparar paro, empleo y salario.",
+      "missingEvidence": "Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
+      "temporalScope": "EPA 2026T2, publicada el 28 de julio. La falta de base comparable limita el juicio sobre el avance.",
+      "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+      "evidenceSourceIds": [
+        "epa-2026-t2"
+      ],
+      "reviewedAt": "2026-10-10"
+    },
+    "review": {
+      "status": "contraste_parcial",
+      "criterion": "Avanzar en la eliminación de la brecha de género en el empleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+      "conclusion": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+      "evidence": [
+        {
+          "sourceId": "epa-2026-t2",
+          "locator": "Apartado Desempleo y tasa de paro, desglose por sexo",
+          "paraphrase": "Tasas de paro: mujeres 11,02 %, hombres 8,84 %. Diferencia calculada por RegTrack: 2,18 puntos.",
+          "relation": "resultado_estadistico"
+        }
+      ],
+      "asOf": "2026-10-10",
+      "history": [
+        {
+          "asOf": "2026-10-07",
+          "status": "sin_verificar",
+          "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+          "evidence": []
+        }
+      ]
+    },
+    "audit": {
+      "commitmentId": "c-33",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Brecha de paro",
+          "criterion": "Comparar mujeres y hombres en la misma EPA y unidad.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "2,18 puntos en 2026T2, observación de paro y no de toda la brecha laboral.",
+          "sourceIds": [
+            "epa-2026-t2"
+          ],
+          "id": "c-33-part-1"
+        },
+        {
+          "label": "Avance en empleo",
+          "criterion": "Usar serie de empleo por sexo desde la base, con edad y definición constantes.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Sin base comparable no se clasifica mejora o empeoramiento del objetivo.",
+          "sourceIds": [],
+          "id": "c-33-part-2"
+        }
+      ],
+      "challenge": "Una brecha de paro positiva no demuestra empeoramiento de la brecha de empleo: falta serie de base.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
+      "overlaps": [],
+      "correction": null
+    }
   }
 ]
