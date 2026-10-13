@@ -1,0 +1,125 @@
+[
+  {
+    "commitmentId": "r-03-2",
+    "reviewedAt": "2026-10-11",
+    "title": "Concertación social: acuerdo firmado y presupuesto previsto, ejecución pendiente de comprobar",
+    "conclusion": "Existe un acuerdo de concertación para 2024–2027. Su documento define actuaciones, financiación prevista y seguimiento; no acredita por sí solo que se hayan ejecutado ni que hayan producido los resultados esperados.",
+    "periodNote": "La referencia política procede del preacuerdo de 2023, todavía pendiente de cotejo con el pacto final. El acuerdo de concertación se firma el 19/09/2024 y alcanza hasta 2027; no se trata de un balance cerrado del mandato.",
+    "components": [
+      {
+        "id": "acuerdo",
+        "claim": "Acuerdo de concertación y participantes",
+        "status": "documented",
+        "finding": "Se conserva el documento de 285 páginas y el registro oficial de su firma. Participan Gobierno de Asturias, FADE, UGT y CCOO. La presencia del mismo archivo en SEKUENS y CCOO permite cotejar su identidad, pero no añade una evaluación independiente de resultados.",
+        "citations": [
+          { "sourceId": "asturias-concertation-signature", "locator": "Actividad de Presidencia de 19/09/2024" },
+          { "sourceId": "asturias-concertation", "locator": "Apartado 7.8 y anexo de integrantes", "page": 272 },
+          { "sourceId": "asturias-concertation-ccoo", "locator": "Archivo idéntico, comprobado por SHA-256" }
+        ]
+      },
+      {
+        "id": "presupuesto",
+        "claim": "Financiación prevista frente a gasto ejecutado",
+        "status": "documented",
+        "finding": "El anexo II recoge un presupuesto total de 4.689.629.183,64 euros para 2024–2027, desglosado por mesas. Es una previsión plurianual: no se suma a los presupuestos anuales como gasto adicional, ni equivale a obligaciones reconocidas o pagos realizados.",
+        "citations": [
+          { "sourceId": "asturias-concertation", "locator": "Anexo II, cuadro presupuestario, páginas 282–285", "page": 282 }
+        ]
+      },
+      {
+        "id": "seguimiento",
+        "claim": "Mecanismo previsto para revisar el acuerdo",
+        "status": "documented",
+        "finding": "El apartado 7.8 prevé dos reuniones ordinarias anuales de la Mesa de Concertación, reuniones bimestrales con informe de la Mesa de Impulso Político y tres reuniones anuales de las mesas temáticas. Son obligaciones de seguimiento previstas. No prueban que todas las reuniones e informes hayan tenido lugar. Tampoco sustituyen a la comisión política de ocho personas del preacuerdo de 2023.",
+        "citations": [
+          { "sourceId": "asturias-concertation", "locator": "Apartado 7.8, gobernanza y periodicidad", "page": 272 },
+          { "sourceId": "asturias-preagreement", "locator": "Cláusula final, comisión política de seguimiento", "page": 14 }
+        ]
+      },
+      {
+        "id": "resultados",
+        "claim": "Ejecución e impacto económico y social",
+        "status": "unresolved",
+        "finding": "Faltan informes de seguimiento, ejecución vinculada a cada actuación e indicadores comparables con una situación inicial. No se atribuyen cambios del empleo o de la economía al acuerdo sin separar otras causas. La ejecución del presupuesto general o de un fondo europeo distinto no resuelve esta comprobación.",
+        "citations": []
+      }
+    ],
+    "contrast": "Las dos copias del acuerdo tienen exactamente la misma huella. Sus autores conjuntos se agrupan bajo un único origen; el alojamiento sindical no convierte el texto en una auditoría externa. Se contrasta el hito de firma con el documento y se mantiene abierta la verificación de ejecución.",
+    "pending": [
+      "Cotejar el preacuerdo político con el texto final firmado.",
+      "Obtener los informes de seguimiento y conciliar sus importes con la ejecución, sin duplicar financiación.",
+      "Examinar resultados y completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-03-19",
+    "reviewedAt": "2026-10-11",
+    "title": "Educación infantil: gratuidad regulada, red en expansión y acceso efectivo por contrastar",
+    "conclusion": "La gratuidad del curso 2024–2025 tiene respaldo normativo y aparece en las bases municipales de Gijón. La creación de una red autonómica está documentada. Esto no acredita una plaza disponible para cada familia ni completa las restantes promesas educativas del apartado.",
+    "periodNote": "El preacuerdo fija el curso 2024–2025 para la gratuidad, no para culminar toda la integración municipal. Se separan las condiciones de ese curso, las bases de 2026–2027 y las cifras comunicadas el 4/09/2026. Falta cotejar el texto político final.",
+    "components": [
+      {
+        "id": "gratuidad",
+        "claim": "Bonificación prevista desde el curso 2024–2025",
+        "status": "documented",
+        "finding": "La disposición adicional sexta de la Ley 4/2023 establece una bonificación del 100 % en los precios públicos de las escuelas municipales de la red mediante sus convenios, desde el curso 2024–2025. Las bases de Gijón para ese curso la incorporan en su apartado 9. Es evidencia de condiciones de acceso reguladas, sin verificar aquí los recibos de todas las familias.",
+        "citations": [
+          { "sourceId": "asturias-budget-law-2024", "locator": "Disposición adicional sexta" },
+          { "sourceId": "asturias-schools-gijon-2024", "locator": "Apartado 9, bonificaciones y precios públicos", "page": 9 }
+        ]
+      },
+      {
+        "id": "red",
+        "claim": "Red autonómica y condiciones de integración",
+        "status": "documented",
+        "finding": "La Ley 5/2024 establece Les Escuelines/As Escolías, con extensión progresiva e integración municipal voluntaria. Su artículo 2.3 garantiza gratuidad con la salvedad de los servicios complementarios. Entró en vigor el 20/11/2024, tras publicarse en el BOPA el día 19; su publicación posterior en el BOE, el 2 de diciembre, no es la fecha de entrada en vigor.",
+        "citations": [
+          { "sourceId": "asturias-schools-law", "locator": "Artículos 1, 2, 4 y 6; disposición final tercera y referencia al BOPA" }
+        ]
+      },
+      {
+        "id": "continuidad",
+        "claim": "Condiciones municipales del curso 2026–2027",
+        "status": "documented",
+        "finding": "Las bases de Gijón de 2026–2027 mantienen la bonificación del 100 % y remiten a la disposición adicional octava de la Ley 5/2025. Se comprueba la condición publicada para ese municipio; no se extrapola a todos los centros ni se interpreta como prueba de cobro efectivo cero en cada servicio.",
+        "citations": [
+          { "sourceId": "asturias-schools-gijon-2026", "locator": "Apartado 9, bonificación para el curso 2026–2027", "page": 9 }
+        ]
+      },
+      {
+        "id": "plazas",
+        "claim": "Una plaza gratuita no equivale a una plaza garantizada",
+        "status": "reported",
+        "finding": "En junio de 2024, Educación comunicó 600 solicitudes para la primera fase: 463 con plaza y 137 en espera. Ese dato describe aquel proceso de admisión, no toda Asturias ni la espera actual. El anuncio de agosto de cinco aperturas tampoco prueba por sí solo que las 31 previstas estuvieran funcionando al inicio del curso.",
+        "citations": [
+          { "sourceId": "asturias-schools-admissions-2024", "locator": "Balance de admisión de la primera fase, 6/06/2024" },
+          { "sourceId": "asturias-schools-opening-2024", "locator": "Anuncio de 29/08/2024 y apertura gradual durante el curso" }
+        ]
+      },
+      {
+        "id": "extension",
+        "claim": "Centros existentes frente a aperturas e integraciones anunciadas",
+        "status": "reported",
+        "finding": "El 4/09/2026, Educación situó la red en 69 centros y anunció 84 para septiembre y 99 para noviembre. Los dos últimos recuentos son previsiones en esa fuente: no se presentan como aperturas verificadas al 11 de octubre. La integración de los centros municipales de Oviedo y Gijón se anunciaba para 2027.",
+        "citations": [
+          { "sourceId": "asturias-schools-extension-2026", "locator": "Párrafo final de recuentos y tercer bloque de incorporaciones" }
+        ]
+      },
+      {
+        "id": "limites",
+        "claim": "Cobertura real y restantes compromisos educativos",
+        "status": "unresolved",
+        "finding": "Faltan el registro actualizado de centros operativos, plazas ocupadas, espera por concejo y posibles pagos por servicios complementarios. También siguen sin revisión la escuela rural con cuatro alumnos, innovación, lenguas, STEM, atención a la diversidad, apoyo emocional, acoso y reducción de burocracia docente. La revisión de 0 a 3 años no convierte todo el apartado educativo en cumplido.",
+        "citations": [
+          { "sourceId": "asturias-preagreement", "locator": "Apartado educativo completo, ordinal editorial 19", "page": 9 }
+        ]
+      }
+    ],
+    "contrast": "La ley autonómica y las bases de Gijón permiten contrastar regulación e incorporación municipal de la bonificación. El ayuntamiento aporta evidencia propia sobre su procedimiento, no una evaluación de toda la comunidad. Los anuncios y recuentos de Educación comparten origen gubernamental y quedan atribuidos como tales.",
+    "pending": [
+      "Cotejar el preacuerdo con el pacto final y completar los demás componentes educativos.",
+      "Comprobar aperturas efectivas, convenios, ocupación, listas de espera y cargos complementarios por municipio.",
+      "Evaluar efectos sobre conciliación y acceso y completar revisión humana independiente."
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "url": "https://sede.murcia.es/sites/default/files/archivos-anuncios/tti-9da669c9-2c4f-4863-9158-88c22b13d879.pdf",
+  "sha256": "05f9771ada355aadb96c062df504cc1da2b3d2a3758a242e838faf9eb230b67b",
+  "bytes": 128082,
+  "retrievedAt": "2026-10-11T12:20:25.807112+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/murcia-city/greenway-contract.pdf",
+  "extractionSha256": "2ab46a0bcebc232526f8f1ca999e317fab9d6a92f34ce8b255d3c6a5115969a7",
+  "transportNote": "La sede devuelve un cuerpo multipart/form-data. Se conserva la respuesta y se extrae sin modificar el único fichero PDF binario adjunto.",
+  "transportPath": "data/mandate/evidence/territorial/murcia-city/greenway-contract.response.bin",
+  "transportSha256": "f653cf80a69d7d2111cdb3dafce117241722c8c53a7ca1eac83395584d7716be"
+}

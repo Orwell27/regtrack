@@ -1,0 +1,286 @@
+[
+  {
+    "commitmentId": "m-30030-6",
+    "reviewedAt": "2026-10-11",
+    "title": "Pedanías: financiación regulada y cifras revisadas; ejecución pendiente",
+    "conclusion": "El BORM respalda la financiación del plan 2026–2027 y su último presupuesto. Los anuncios de mayo y julio difieren en importes y actuaciones. No demuestran por sí solos obras terminadas ni equilibrio territorial.",
+    "periodNote": "Orientación de 17/06/2023, continuidad de 22/05/2026 y plan 2026–2027. La crítica de abril se refiere a inversiones de 2025, un universo distinto. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Equilibrio de servicios entre núcleos",
+        "status": "promise-documented",
+        "finding": "Ballesta plantea equilibrio urbano y de servicios entre núcleos de población. Pérez reitera reforzar servicios e infraestructuras de barrios y pedanías en mayo de 2026. Ninguno de estos pasajes fija un porcentaje de inversión ni una meta medible de igualdad territorial.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-programme",
+            "locator": "Discurso de Ballesta: vertebración",
+            "page": 19
+          },
+          {
+            "sourceId": "murcia-city-succession",
+            "locator": "Discurso de Pérez: servicios de proximidad",
+            "page": 12
+          }
+        ]
+      },
+      {
+        "id": "anuncios",
+        "claim": "Revisión del plan comunicado",
+        "status": "reported",
+        "finding": "En mayo se anuncian 35 proyectos por 3.587.450 €: 2.786.844 € autonómicos y 800.606 € municipales. En julio pasan a 32 actuaciones en 27 pedanías por 3.568.350 €, con 781.506 € municipales. Son versiones sucesivas: no se suman como inversiones diferentes; falta conciliar qué cambió.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-pedanias-may",
+            "locator": "Importes y 35 proyectos anunciados"
+          },
+          {
+            "sourceId": "murcia-city-pedanias-july",
+            "locator": "Importes, 32 actuaciones y 27 pedanías"
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Dotación y anexo del decreto",
+        "status": "documented",
+        "finding": "El Decreto 160/2026 regula una subvención máxima a Murcia de 2.786.844 €, en dos anualidades de 1.393.422 €. El anexo municipal totaliza 3.568.350 € y 781.506 € de aportación local, coincidiendo con julio. Sus 13 proyectos agrupan intervenciones en varias pedanías: no son directamente comparables con las 32 actuaciones del comunicado. La concesión se instrumentará por convenio; la norma no acredita cobro ni gasto ejecutado.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-pedanias-decree",
+            "locator": "Artículo 2: convenio",
+            "page": 3
+          },
+          {
+            "sourceId": "murcia-city-pedanias-decree",
+            "locator": "Artículo 5: cuantías",
+            "page": 5
+          },
+          {
+            "sourceId": "murcia-city-pedanias-decree",
+            "locator": "Anexo municipal: proyectos 1–7",
+            "page": 9
+          },
+          {
+            "sourceId": "murcia-city-pedanias-decree",
+            "locator": "Anexo municipal: proyectos 8–13 y total",
+            "page": 10
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Crítica sobre el ejercicio anterior",
+        "status": "unresolved",
+        "finding": "El PSOE, según Murcia Actualidad, sostiene que se ejecutó aproximadamente un 18 % de las inversiones previstas en pedanías en 2025. Es una denuncia política atribuida, pendiente de comprobar con la liquidación y su perímetro contable; no describe la ejecución del plan 2026–2027.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-pedanias-contrast",
+            "locator": "Declaraciones de Carmen Fructuoso sobre 2025"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Obras recibidas e igualdad territorial",
+        "status": "unresolved",
+        "finding": "El decreto fija ejecución hasta el 30/09/2028 y exige certificaciones, pagos y actas de recepción. Ese plazo no ha vencido al corte. Faltan convenio, seguimiento por proyecto, recepción y comparación de servicios entre barrios y pedanías; el decreto no demuestra que las desigualdades se hayan corregido.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-pedanias-decree",
+            "locator": "Artículo 6: ejecución y justificación",
+            "page": 5
+          },
+          {
+            "sourceId": "murcia-city-pedanias-decree",
+            "locator": "Artículo 6: certificaciones y recepción",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "contrast": "BORM aporta un documento normativo de otra administración, que también financia el plan: no es una auditoría independiente de ejecución. Las dos notas municipales comparten emisor. La crítica del PSOE no sustituye las cuentas de 2025 ni se compara como si tuviera el mismo periodo que el nuevo plan.",
+    "pending": [
+      "Conciliar las versiones de mayo y julio con los 13 proyectos agrupados del anexo y el convenio firmado.",
+      "Comprobar liquidación de 2025 y seguimiento de 2026–2027 por proyecto, sin sumar dos veces financiación autonómica y municipal.",
+      "Obtener recepción y medición de servicios por pedanía con revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "m-30030-7",
+    "reviewedAt": "2026-10-11",
+    "title": "Huerta y Vía Verde: modificación contractual y obras comunicadas",
+    "conclusion": "La ampliación de la Vía Verde tiene una modificación contractual documentada y un anuncio municipal de obras. No acredita la finalización del corredor ni el cumplimiento íntegro de la protección de la huerta.",
+    "periodNote": "Orientación general de 2023; acuerdo de 19/12/2025, comunicado de 16/02/2026 y continuidad del proyecto en mayo de 2026. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Conservación de la huerta y continuidad posterior",
+        "status": "promise-documented",
+        "finding": "El discurso de 2023 defiende conservación y desarrollo sostenible de la huerta, sin longitud ni fecha. En 2026 Pérez menciona la Vía Verde entre proyectos previstos para los próximos meses. La conexión es temática; no se convierte todo el compromiso ambiental en una sola obra.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-programme",
+            "locator": "Huerta y desarrollo sostenible",
+            "page": 19
+          },
+          {
+            "sourceId": "murcia-city-succession",
+            "locator": "Proyectos estratégicos",
+            "page": 10
+          },
+          {
+            "sourceId": "murcia-city-succession",
+            "locator": "Huerta y espacios verdes",
+            "page": 13
+          }
+        ]
+      },
+      {
+        "id": "contrato",
+        "claim": "Modificación aprobada",
+        "status": "documented",
+        "finding": "El extracto de la Junta de Gobierno de 19/12/2025, punto 49, aprueba modificar el contrato de mejoras y ampliación entre Los Dolores y Alquerías-Zeneta, adjudicado a Construcciones Sangonera, S.A. El incremento es de 216.505,05 € más IVA, 261.971,11 € en total. Es un incremento contractual, no el coste total ni una certificación de obra terminada.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-greenway-contract",
+            "locator": "Punto 49 · expediente 2024/02201/000081",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "obras",
+        "claim": "Alcance comunicado de la fase II",
+        "status": "reported",
+        "finding": "El Ayuntamiento comunica el inicio de la fase II con presupuesto de 1,5 millones y cerca de dos kilómetros adicionales, más iluminación, accesibilidad y naturalización. La misma nota sitúa la fase I en 2019: ese tramo anterior no se atribuye al mandato 2023–2027. La visita y la previsión no sustituyen un acta de recepción.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-greenway-works",
+            "locator": "Fase II, alcance y antecedente de 2019"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Finalización y protección efectiva",
+        "status": "unresolved",
+        "finding": "Faltan contrato y modificación íntegros, certificaciones, recepción, trazado final y evaluación ambiental de la huerta. No se suman automáticamente los 261.971,11 € al presupuesto redondeado de la nota, porque no se ha conciliado su composición. Tampoco se deduce una reducción de pérdida de suelo agrícola de los kilómetros de paseo.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-greenway-contract",
+            "locator": "Modificación; no recepción",
+            "page": 9
+          },
+          {
+            "sourceId": "murcia-city-greenway-works",
+            "locator": "Presupuesto y actuaciones comunicados"
+          }
+        ]
+      }
+    ],
+    "contrast": "El extracto contractual y la nota son documentos distintos del mismo Ayuntamiento. La CARM no corrobora en esta ficha la finalización de la Vía Verde. Falta contraste técnico o vecinal ajeno al promotor sobre accesibilidad, estado final e impacto ambiental.",
+    "pending": [
+      "Obtener contrato, modificación, certificaciones y acta de recepción del expediente 2024/02201/000081.",
+      "Conciliar presupuesto, tramos y actuaciones de 2019, 2023–2026 y previstas.",
+      "Medir conservación de suelo agrícola y contrastar el resultado con fuentes técnicas o vecinales."
+    ]
+  },
+  {
+    "commitmentId": "m-30030-8",
+    "reviewedAt": "2026-10-11",
+    "title": "Vivienda: cuatro entregas comunicadas y nueva fase tras quedar sin ofertas",
+    "conclusion": "El piloto de alquiler comunica cuatro primeras entregas. La estrategia de promoción pasó de la convocatoria de ocho parcelas a una consulta para once, tras no recibir ofertas. Las 325 viviendas previstas no están acreditadas como construidas o adjudicadas.",
+    "periodNote": "Discurso de 2023, continuidad de Pérez en mayo de 2026 y anuncios municipales de marzo a septiembre de 2026. Corte: 11/10/2026; no se ha verificado la apertura efectiva de la consulta del 5 de octubre.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Orientación inicial y compromiso posterior",
+        "status": "promise-documented",
+        "finding": "Ballesta advierte en 2023 del desplazamiento residencial por el precio del suelo y pide planes compartidos y bien ejecutados. Pérez se compromete en 2026 a movilizar recursos para vivienda asequible. Son formulaciones generales, sin número de viviendas ni plazo en estos pasajes.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-programme",
+            "locator": "Planeamiento y acceso residencial",
+            "page": 19
+          },
+          {
+            "sourceId": "murcia-city-succession",
+            "locator": "Vivienda asequible",
+            "page": 11
+          }
+        ]
+      },
+      {
+        "id": "piloto",
+        "claim": "Cuatro primeras viviendas, de un piloto de 25",
+        "status": "reported",
+        "finding": "La nota de 15/07/2026 comunica la firma de contratos y entrega de cuatro primeras viviendas de un piloto de 25. El alquiler se limita al 30 % de ingresos, con destinatarios inscritos a 01/01/2026 e ingresos entre 1,5 y 2,5 IPREM. No acredita que se hayan entregado las 25 ni que sean viviendas recién construidas.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-housing-keys",
+            "locator": "Cuatro primeras entregas y condiciones del piloto"
+          }
+        ]
+      },
+      {
+        "id": "estrategia",
+        "claim": "Cambios de alcance y convocatoria sin ofertas",
+        "status": "reported",
+        "finding": "En marzo se anuncian 2.366 viviendas: 1.136 para venta o alquiler con opción a compra y 1.230 de alquiler dotacional. En julio se prevén cerca de 400 en ocho parcelas. En septiembre el Ayuntamiento reconoce que esa convocatoria terminó sin ofertas y anuncia una segunda fase de 325 en once parcelas. Son planes y fases distintos: no se suman como viviendas entregadas ni se interpreta el cambio de cifras como una reducción homogénea sin conciliar los proyectos.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-housing-strategy",
+            "locator": "Distribución de las 2.366 viviendas previstas"
+          },
+          {
+            "sourceId": "murcia-city-housing-july",
+            "locator": "Ocho parcelas y previsión de cerca de 400"
+          },
+          {
+            "sourceId": "murcia-city-housing-september",
+            "locator": "Convocatoria sin ofertas y nueva fase de 325"
+          }
+        ]
+      },
+      {
+        "id": "consulta",
+        "claim": "Consulta previa y crítica política",
+        "status": "unresolved",
+        "finding": "El anuncio del 29/09 sitúa para el 05/10 una consulta de preferencias en Urbamusa; la inscripción oficial y el sorteo se prevén después. No es una adjudicación ni prueba de inicio de construcción. El PSOE considera fallida la primera convocatoria, según SER; esa valoración no demuestra por sí sola el fracaso de toda la política de vivienda.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-housing-september",
+            "locator": "Consulta, inscripción posterior y sorteo"
+          },
+          {
+            "sourceId": "murcia-city-housing-contrast",
+            "locator": "Declaraciones de Ginés Ruiz"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Oferta efectiva y asequibilidad",
+        "status": "unresolved",
+        "finding": "Faltan resoluciones y contratos anonimizados del piloto, acta del resultado de la convocatoria, proyectos definitivos, obras recibidas y datos de esfuerzo económico de los hogares. El criterio anunciado de hasta 6,5 IPREM para las futuras promociones no se mezcla con el de 1,5–2,5 IPREM del piloto. Tampoco se acredita un efecto sobre precios o desplazamiento residencial en todo el municipio.",
+        "citations": [
+          {
+            "sourceId": "murcia-city-housing-keys",
+            "locator": "Requisitos del piloto"
+          },
+          {
+            "sourceId": "murcia-city-housing-september",
+            "locator": "Destinatarios y próximos trámites"
+          }
+        ]
+      }
+    ],
+    "contrast": "Las cuatro notas municipales permiten detectar cambios de alcance pero no añaden cuatro verificaciones independientes. SER recoge la crítica del PSOE, una parte interesada, y la explicación municipal. No se han confirmado externamente las entregas ni la ejecución material de las nuevas promociones.",
+    "pending": [
+      "Obtener expediente y resultado formal de las ocho parcelas y conciliarlo con la fase de once parcelas.",
+      "Verificar la consulta efectiva, inscripciones y sorteos sin recoger datos personales de solicitantes.",
+      "Conciliar piloto de 25, cuatro entregas y promoción de 325; verificar contratos, ocupación y coste real para hogares."
+    ]
+  }
+]

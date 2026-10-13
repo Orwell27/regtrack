@@ -1,0 +1,12 @@
+{
+  "url": "https://almeriaciudad.es/uploads/media/document/18-certificado-pleno-10-02-26.pdf",
+  "finalUrl": "https://almeriaciudad.es/uploads/media/document/18-certificado-pleno-10-02-26.pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "91ffcb8ed158910ad4aaa487aec512f8641fcaf02b71b4784885e24aa29d4e04",
+  "bytes": 1269607,
+  "retrievedAt": "2026-10-11T14:29:16.374451+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/almeria/childhood-certificate.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "4b599ecd09f5728e15e5618174d44b1f6f87b3dab82f91092f76bf04507d6404"
+}

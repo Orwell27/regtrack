@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { MANDATE_TOPICS, type MandateAnswer, type Commitment, type Indicator } from "@/lib/mandate/model";
 
 type SavedAnswer = { question: string; topic: string; response: MandateAnswer };
@@ -63,7 +64,8 @@ export function MandateQuestion({ topic, commitments, indicators, openRecord }: 
     <div className="mn-question-intro">
       <span className="mn-eyebrow">Pregunta a las fuentes</span>
       <h2 id="mandate-question-heading">Una pregunta.<br />Un punto de partida.</h2>
-      <p>Consulta los compromisos, las actuaciones documentadas y los indicadores de esta selección. Cada respuesta debe poder contrastarse.</p>
+      <p>Consulta los compromisos, las actuaciones documentadas y los indicadores de esta selección nacional. Cada respuesta debe poder contrastarse.</p>
+      <p><Link href="/observatorio/mandato/cobertura">Ver inventario completo y cobertura territorial</Link></p>
     </div>
     <div>
       <form className="mn-question-form" onSubmit={ask}>

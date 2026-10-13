@@ -1,0 +1,311 @@
+[
+  {
+    "commitmentId": "r-11-1",
+    "reviewedAt": "2026-10-11",
+    "title": "Almaraz: autorización estatal concedida y ecotasa autonómica por comprobar",
+    "conclusion": "La orden estatal de agosto renueva la autorización de las dos unidades hasta junio de 2030, con condiciones. Esa decisión no demuestra la aprobación ni aplicación de la rebaja de la ecotasa autonómica. El plazo fiscal de enero de 2027 aún no ha vencido al corte de esta revisión.",
+    "periodNote": "Acuerdo anunciado el 16/04/2026, nuevo mandato de abril; solicitud de prórroga de octubre de 2025, informe del CSN de julio y orden de agosto de 2026. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Continuidad, rebaja y fondo territorial",
+        "status": "promise-documented",
+        "finding": "El acuerdo propone reducir un 30 % anual la carga de la ecotasa hasta eliminarla antes de acabar la legislatura y destinar el 50 % de la recaudación anual a un fondo para el entorno de la central. Señala el 1 de enero de 2027 y prevé revisar la decisión si cambian los impuestos estatales o la tasa de ENRESA.",
+        "citations": [
+          {
+            "sourceId": "extremadura-programme",
+            "locator": "Energía e industria · primera viñeta y condición posterior",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "autorizacion",
+        "claim": "Renovación concedida por la Administración del Estado",
+        "status": "documented",
+        "finding": "La Orden TED/864/2026 renueva la autorización de ambas unidades hasta el 8 de junio de 2030 inclusive, sujeta al anexo y a posibles medidas correctoras o revocación. La solicitud del titular es del 30/10/2025: precede al pacto. Ni la competencia ni la cronología permiten atribuir esta autorización exclusivamente al Gobierno autonómico.",
+        "citations": [
+          {
+            "sourceId": "extremadura-almaraz-authorization",
+            "locator": "Solicitud del titular",
+            "page": 1
+          },
+          {
+            "sourceId": "extremadura-almaraz-authorization",
+            "locator": "Resuelvo segundo a quinto",
+            "page": 4
+          },
+          {
+            "sourceId": "extremadura-almaraz-authorization",
+            "locator": "Condiciones y supuestos para dejar sin efecto la autorización",
+            "page": 5
+          }
+        ]
+      },
+      {
+        "id": "control",
+        "claim": "Alcance del informe de seguridad",
+        "status": "documented",
+        "finding": "El CSN comunicó un informe favorable condicionado sobre la renovación. Su evaluación de seguridad y protección radiológica no es una auditoría de la ecotasa ni acredita el beneficio económico o ambiental de la medida fiscal.",
+        "citations": [
+          {
+            "sourceId": "extremadura-almaraz-csn",
+            "locator": "Noticia de 16/07/2026 sobre el informe favorable condicionado"
+          },
+          {
+            "sourceId": "extremadura-almaraz-authorization",
+            "locator": "Informe preceptivo y condiciones incorporadas",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "fiscal",
+        "claim": "Norma fiscal, recaudación y objeción externa",
+        "status": "unresolved",
+        "finding": "La documentación incorporada no acredita todavía una norma autonómica de rebaja, ingresos realizados o transferencias al fondo. La Unión objeta el coste y anuncia una carta a la presidenta; su estimación no es una liquidación fiscal auditada. Los importes anuales de su nota suman 149 millones, frente a los aproximadamente 147 que presenta como total: esa discrepancia impide reproducirlo como una cifra corroborada.",
+        "citations": [
+          {
+            "sourceId": "extremadura-ecotasa-union",
+            "locator": "Estimación anual, total y petición a la presidenta; nota de 25/08/2026"
+          }
+        ]
+      }
+    ],
+    "contrast": "Estado, CSN y organización agraria tienen funciones diferentes. El informe de seguridad y la autorización forman parte del mismo procedimiento; no son dos verificaciones de la política fiscal. La crítica externa se conserva con su discrepancia aritmética, sin adoptar sus valoraciones como hechos probados.",
+    "pending": [
+      "Localizar y cotejar la norma autonómica de la ecotasa, su calendario y el fondo territorial antes de evaluar enero de 2027.",
+      "Contrastar liquidaciones, ingresos, transferencias y respuesta a la objeción con documentación contable.",
+      "Revisión independiente de la atribución causal y de los efectos económicos y ambientales."
+    ]
+  },
+  {
+    "commitmentId": "r-11-6",
+    "reviewedAt": "2026-10-11",
+    "title": "Tierra de Barros: estructura administrativa y financiación prevista, ejecución pendiente",
+    "conclusion": "Hay una Dirección General de Regadíos regulada antes de septiembre y financiación prevista en la ley presupuestaria. La comunicación de septiembre sitúa el encargo y las obras en fechas posteriores. Estos hitos no acreditan la ejecución completa del regadío ni el gasto de los 20 millones.",
+    "periodNote": "El pacto pide primeras medidas antes de septiembre de 2026, no terminar todas las obras entonces. Decreto publicado el 03/06; ley de 03/08; comunicación del 16/09. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Primeras medidas y ejecución del conjunto",
+        "status": "promise-documented",
+        "finding": "El apartado combina creación de una dirección general, ejecución total del proyecto, colaboración permanente con regantes, vigencia ambiental y búsqueda de financiación. El plazo de primeras medidas no puede sustituirse por una fecha de finalización de obra.",
+        "citations": [
+          {
+            "sourceId": "extremadura-programme",
+            "locator": "Sector primario · Tierra de Barros",
+            "page": 5
+          }
+        ]
+      },
+      {
+        "id": "estructura",
+        "claim": "Dirección General de Regadíos",
+        "status": "documented",
+        "finding": "El Decreto 110/2026 regula la Dirección General de Regadíos e Infraestructuras Rurales y sus competencias. Es un paso administrativo documentado antes de septiembre. No prueba por sí solo la mesa permanente con los regantes, la vigencia de cada permiso ni una obra ejecutada.",
+        "citations": [
+          {
+            "sourceId": "extremadura-regadio-structure",
+            "locator": "Artículo 5: dirección general y funciones",
+            "page": 9
+          },
+          {
+            "sourceId": "extremadura-regadio-structure",
+            "locator": "Continuación del artículo 5",
+            "page": 10
+          }
+        ]
+      },
+      {
+        "id": "presupuesto",
+        "claim": "Financiación y calendario comunicado",
+        "status": "reported",
+        "finding": "El preámbulo presupuestario menciona 20 millones para el proyecto; la nota de la Junta prevé formalizar el encargo a TRAGSA en noviembre y comenzar trabajos a principios de 2027. También prevé actualizar el proyecto y un convenio en 2028. Son crédito o previsiones, no certificaciones de obra ni pagos. La nota habla de presupuestos aprobados en julio, mientras la ley publicada es de 3 de agosto; se mantienen separadas ambas fechas.",
+        "citations": [
+          {
+            "sourceId": "extremadura-budget",
+            "locator": "Preámbulo: financiación de Tierra de Barros",
+            "page": 3
+          },
+          {
+            "sourceId": "extremadura-regadio-september",
+            "locator": "Encargo, primera fase, nuevo proyecto y convenio previsto"
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Costes a regantes, transparencia y resultado",
+        "status": "unresolved",
+        "finding": "La Junta anuncia financiación pública de la primera fase y una garantía de compromiso de 150 €/ha, que distingue de una aportación al coste de las obras. La Unión pidió en agosto desglose, calendario y financiación. Ni esa reclamación acredita por sí misma uso indebido de fondos ni la nota oficial acredita contratación, certificaciones, pagos o hectáreas regadas.",
+        "citations": [
+          {
+            "sourceId": "extremadura-regadio-september",
+            "locator": "Garantía por hectárea y financiación de fases posteriores"
+          },
+          {
+            "sourceId": "extremadura-regadio-union",
+            "locator": "Petición de información sobre los 20 millones, 17/08/2026"
+          }
+        ]
+      }
+    ],
+    "contrast": "La norma, la ley autonómica reproducida en el BOE y la nota de prensa tienen el mismo origen administrativo. La Unión aporta un cuestionamiento externo, no una auditoría de ejecución. No se declara incumplido el plazo de primeras medidas porque hay estructura normativa previa; las restantes condiciones siguen abiertas.",
+    "pending": [
+      "Conciliar partida, obligaciones, pagos y certificaciones con el encargo y la contratación publicados.",
+      "Comprobar vigencia y modificaciones de la declaración ambiental, actas de colaboración y elenco definitivo sin exponer datos personales de regantes.",
+      "Revisar respuesta a La Unión y resultados efectivos de las distintas fases con una persona independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-11-32",
+    "reviewedAt": "2026-10-11",
+    "title": "IRPF: primera rebaja normativa y efecto en contribuyentes por medir",
+    "conclusion": "La ley de presupuestos fija los dos primeros tipos autonómicos en el 7,75 % y el 9,75 %, frente al 8 % y el 10 % de 2025. Acredita una reducción inicial de 0,25 puntos porcentuales en ambos, sin acreditar todavía el punto acumulado al final del mandato ni el ahorro efectivamente obtenido por cada contribuyente.",
+    "periodNote": "Promesa desde el primer presupuesto. Ley 2/2026 de 3 de agosto, reproducida en el BOE el 17/08; efectos de esta modificación desde el 01/01/2026. Comparación con el ejercicio fiscal 2025. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Reducciones anuales y meta acumulada",
+        "status": "promise-documented",
+        "finding": "El texto promete una reducción anual en los dos primeros tramos, hasta acumular un punto porcentual al final de la legislatura. Su expresión del 0,25 % debe leerse junto con la meta y con los tipos aprobados; no significa una rebaja del 0,25 % de la factura fiscal de todas las personas.",
+        "citations": [
+          {
+            "sourceId": "extremadura-programme",
+            "locator": "Rebaja de impuestos · reducción del IRPF",
+            "page": 14
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Comparación homogénea de tipos autonómicos",
+        "status": "documented",
+        "finding": "La disposición final segunda modifica el artículo 1 de los tributos cedidos: 7,75 % y 9,75 %. La escala del manual de la AEAT para 2025 muestra 8 % y 10 %. La diferencia es 0,25 puntos en cada tramo. La disposición final séptima da efectos desde enero de 2026 a esta modificación.",
+        "citations": [
+          {
+            "sourceId": "extremadura-budget",
+            "locator": "Disposición final segunda, uno: tabla de la escala autonómica",
+            "page": 66
+          },
+          {
+            "sourceId": "extremadura-budget",
+            "locator": "Disposición final séptima: efectos temporales",
+            "page": 78
+          },
+          {
+            "sourceId": "extremadura-irpf-baseline",
+            "locator": "Escala aplicable en el ejercicio 2025: dos primeros tramos"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Aplicación y ahorro real",
+        "status": "unresolved",
+        "finding": "La aprobación normativa no acredita las liquidaciones de IRPF 2026 ni su distribución por rentas y hogares. No se han incorporado microdatos agregados, liquidaciones o una evaluación independiente que permitan medir el ahorro real o afirmar completada la secuencia de rebajas del mandato.",
+        "citations": [
+          {
+            "sourceId": "extremadura-budget",
+            "locator": "Escala aprobada y efectos, no liquidaciones",
+            "page": 66
+          }
+        ]
+      }
+    ],
+    "contrast": "La AEAT aporta una referencia oficial del ejercicio anterior; no una evaluación independiente de resultados de la medida de 2026. Se comparan tipos de la misma escala autonómica, sin confundir puntos porcentuales con porcentajes sobre el impuesto total.",
+    "pending": [
+      "Cotejar las modificaciones de ejercicios siguientes con la meta acumulada de un punto.",
+      "Contrastar liquidaciones agregadas de 2026 y distribución del ahorro, preservando la confidencialidad tributaria.",
+      "Revisión independiente del cálculo y de su atribución temporal."
+    ]
+  },
+  {
+    "commitmentId": "r-11-50",
+    "reviewedAt": "2026-10-11",
+    "title": "Infantil 0–3: bonificación y ayudas con tope, gratuidad efectiva por acreditar",
+    "conclusion": "La ley bonifica los precios de centros gestionados por la Junta y la convocatoria amplía las ayudas a todo el primer ciclo en otros centros autorizados. Estas últimas tienen un máximo de 200 € por mes y requieren solicitud y concesión. No prueban gratuidad efectiva para todas las familias ni pagos realizados.",
+    "periodNote": "El pacto incorpora 0–1 años desde septiembre de 2026 y el curso 2026–2027. La convocatoria se publicó el 06/08/2026; las bases y ayudas para edades superiores tenían antecedentes en 2024 y 2025. Corte: 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Ampliación a 0–1 años",
+        "status": "promise-documented",
+        "finding": "La promesa completa la gratuidad de 0–3 incorporando 0–1 desde septiembre de 2026. Debe comprobarse el coste final por edad y tipo de centro; la existencia de una convocatoria no equivale a gratuidad universal.",
+        "citations": [
+          {
+            "sourceId": "extremadura-programme",
+            "locator": "Educación · gratuidad de las escuelas infantiles",
+            "page": 20
+          }
+        ]
+      },
+      {
+        "id": "bonificacion",
+        "claim": "Centros gestionados directamente por la Junta",
+        "status": "documented",
+        "finding": "La disposición adicional primera establece una bonificación del 100 % en los precios públicos de escuelas de titularidad de la Junta y gestión propia: 1–3 durante 2026 y 0–1 del 1 de septiembre al 31 de diciembre de 2026. Ese periodo normativo no acredita por sí mismo las cuotas de todo el curso 2026–2027.",
+        "citations": [
+          {
+            "sourceId": "extremadura-budget",
+            "locator": "Disposición adicional primera: bonificación y fechas",
+            "page": 50
+          }
+        ]
+      },
+      {
+        "id": "ayudas",
+        "claim": "Centros autorizados y límite de financiación",
+        "status": "documented",
+        "finding": "La resolución convoca ayudas mediante concesión directa y convocatoria abierta para el primer ciclo en centros públicos y privados autorizados, con requisitos de residencia y escolarización. Prevé 6.408.000 euros para 2026 y 2027. El máximo es 200 € al mes, hasta 12 mensualidades; en privados incluye atención educativa y alimentación, y excluye servicios voluntarios. Una cuota superior puede dejar coste a la familia.",
+        "citations": [
+          {
+            "sourceId": "extremadura-infantil-call",
+            "locator": "Antecedentes y ampliación respecto de 2025",
+            "page": 2
+          },
+          {
+            "sourceId": "extremadura-infantil-call",
+            "locator": "Destinatarios y centros",
+            "page": 3
+          },
+          {
+            "sourceId": "extremadura-infantil-call",
+            "locator": "Crédito y cuantía",
+            "page": 7
+          },
+          {
+            "sourceId": "extremadura-infantil-call",
+            "locator": "Tope y servicios incluidos/excluidos",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "pagos",
+        "claim": "Concesiones, tres pagos y resultado",
+        "status": "unresolved",
+        "finding": "La convocatoria fija tres abonos: anticipo después de conceder, segundo pago con justificación y tercero al acabar el curso. No se han incorporado resoluciones agregadas, justificantes de pagos ni cuotas finales. Además, la disposición adicional decimonovena de la ley habla del primer semestre, mientras la convocatoria está fechada el 30 de julio: queda por aclarar esa diferencia documental, sin cambiar las fechas originales.",
+        "citations": [
+          {
+            "sourceId": "extremadura-infantil-call",
+            "locator": "Apartados undécimo y duodécimo: resolución y abono",
+            "page": 10
+          },
+          {
+            "sourceId": "extremadura-budget",
+            "locator": "Disposición adicional decimonovena: referencia al primer semestre",
+            "page": 58
+          }
+        ]
+      }
+    ],
+    "contrast": "Ley, bases citadas y convocatoria son fuentes de la misma Administración; no constituyen tres verificadores independientes. La regulación prueba condiciones de acceso y financiación, pero el resultado exige datos agregados de solicitudes, concesiones, pagos y costes familiares. No se declara incumplimiento universal por falta de esos datos.",
+    "pending": [
+      "Obtener cifras agregadas por edad y tipo de centro de solicitudes, concesiones, pagos y cuotas residuales, sin publicar datos de menores.",
+      "Cotejar las condiciones aplicables en 2027 y aclarar la diferencia de calendario entre ley y convocatoria.",
+      "Revisión independiente del acceso efectivo, cobertura y costes que soportan las familias."
+    ]
+  }
+]

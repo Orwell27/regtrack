@@ -1,0 +1,109 @@
+[
+  {
+    "commitmentId": "r-02-80",
+    "reviewedAt": "2026-10-11",
+    "title": "Bachillerato: convocatoria anterior al pacto, suspensión comunicada y nueva regulación en preparación",
+    "conclusion": "La orden que abrió la ampliación de conciertos es anterior al acuerdo y al nombramiento del nuevo presidente. Las fuentes consultadas comunican una suspensión cautelar y el aplazamiento de un proyecto afectado. La consulta de agosto acredita preparación normativa, sin demostrar la implantación comprometida para 2026–2027.",
+    "periodNote": "Acuerdo firmado el 22/04/2026, página 29. Anuncio de la consejera en funciones del 7/04 y orden publicada el 8/04; nombramiento presidencial publicado el 30/04. Comunicaciones sobre la suspensión del 11, 25 y 26/06. Consulta previa abierta del 21/08 al 9/09. Fecha de lectura: 11/10/2026; no equivale a fecha de ejecución. El curso 2026–2027 todavía está en marcha y no se considera vencido íntegramente.",
+    "components": [
+      {
+        "id": "cronologia",
+        "claim": "Convocatoria aprobada y atribución temporal",
+        "status": "documented",
+        "finding": "La Orden ECD/515/2026, de 6 de abril, modifica la convocatoria anterior y prevé concertar el primer curso de Bachillerato en régimen singular en 2026–2027. Su publicación el 8 de abril precede tanto al pacto del 22 de abril como a la investidura de los días 28 y 29. Es una actuación previa que el nuevo acuerdo recoge; no se atribuye su aprobación al nuevo mandato ni se confunde convocatoria con concesión y pago.",
+        "citations": [
+          { "sourceId": "aragon-education-order", "locator": "Resuelvo segundo, apartado 2, continuación de la letra n)", "page": 4 },
+          { "sourceId": "aragon-programme", "locator": "Educación y universidad: implantación progresiva de Bachillerato", "page": 29 },
+          { "sourceId": "aragon-appointment", "locator": "Real Decreto 367/2026: sesión de investidura", "page": 1 }
+        ]
+      },
+      {
+        "id": "alcance",
+        "claim": "Ampliación del régimen existente y condiciones de financiación",
+        "status": "documented",
+        "finding": "El anuncio gubernamental reconoce que ocho centros ya ofrecían Bachillerato concertado. Por tanto, esos centros previos no acreditan la ampliación prometida en 2026. La orden permite cuotas familiares dentro de los límites legales de los conciertos singulares y establece criterios de programación: tampoco acredita gratuidad universal ni acceso de todos los centros solicitantes.",
+        "citations": [
+          { "sourceId": "aragon-education-announcement", "locator": "Anuncio de 7/04: centros que ya ofrecen la etapa concertada" },
+          { "sourceId": "aragon-education-order", "locator": "Resuelvo segundo, letras e) y n)", "page": 3 }
+        ]
+      },
+      {
+        "id": "cautelar",
+        "claim": "Evidencia contraria: suspensión y efecto concreto corroborado",
+        "status": "unresolved",
+        "finding": "Las organizaciones recurrentes comunican el 11 de junio la estimación de su petición de suspensión. El Ayuntamiento de Zaragoza anuncia después el aplazamiento del área de formación de Distrito7 y San Valero confirma que no formalizará la concesión para 2026–2027 por faltar la concertación. Son fuentes con intereses distintos, pero implicadas en el litigio o el proyecto. Corroboran lo comunicado sobre ese efecto concreto; no sustituyen el auto judicial original, que no se ha incorporado, ni una comprobación de todas las aulas de Bachillerato. Distrito7 incluye ciclos de FP: no se usa como muestra representativa de Bachillerato. Una cautelar no resuelve definitivamente el fondo del recurso.",
+        "citations": [
+          { "sourceId": "aragon-education-plaintiff", "locator": "Comunicado de 11/06: medida cautelar y recurso pendiente" },
+          { "sourceId": "aragon-education-city", "locator": "Noticia de 25/06: aplazamiento del área de formación" },
+          { "sourceId": "aragon-education-provider", "locator": "Comunicado de 26/06: concesión no formalizada y continuidad privada en CPA Salduie" }
+        ]
+      },
+      {
+        "id": "consulta",
+        "claim": "Actuación posterior: consulta previa, no decreto aprobado",
+        "status": "documented",
+        "finding": "El portal oficial registra una consulta previa del 21 de agosto al 9 de septiembre para preparar el régimen autonómico de conciertos. La memoria plantea regular requisitos, procedimientos, financiación y obligaciones. Que la consulta figure concluida significa que terminó su plazo de aportaciones; no demuestra que el decreto esté aprobado ni que se hayan concedido nuevos conciertos.",
+        "citations": [
+          { "sourceId": "aragon-education-consultation", "locator": "Fechas de inicio y límite; estado de la consulta" },
+          { "sourceId": "aragon-education-consultation-memo", "locator": "Problemas, objetivos y necesidad de la norma", "page": 1 }
+        ]
+      },
+      {
+        "id": "ejecucion",
+        "claim": "Implantación efectiva, calendario y resultados",
+        "status": "unresolved",
+        "finding": "Faltan las resoluciones finales y posteriores incidencias judiciales, las unidades efectivamente concertadas, el alumnado y los pagos separados de los conciertos anteriores. Las fuentes examinadas no permiten declarar cumplida la implantación, ni afirmar que no existe ningún Bachillerato concertado en Aragón. Tampoco permiten cerrar el balance del curso completo, todavía abierto, o convertir el aplazamiento de Distrito7 en un resultado regional.",
+        "citations": []
+      }
+    ],
+    "contrast": "Se enfrenta el compromiso con la orden anterior al pacto, el anuncio del Gobierno, la versión de los recurrentes y comunicaciones de una administración municipal y un proveedor afectado. Orden, anuncio y consulta comparten origen autonómico; FAPAR publica una comunicación colectiva de las partes recurrentes, no del tribunal. Ayuntamiento y proveedor describen el mismo proyecto, de modo que dos enlaces no equivalen a dos muestras ni a una auditoría independiente.",
+    "pending": [
+      "Recuperar el auto judicial íntegro, comprobar su alcance y las resoluciones o recursos posteriores.",
+      "Conciliar las concesiones, aulas, alumnos y pagos de 2026–2027 con la situación anterior al pacto; comprobar el estado final del decreto.",
+      "Revisar el curso al cierre y completar el cotejo íntegro del acuerdo y la revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-02-114",
+    "reviewedAt": "2026-10-11",
+    "title": "Vicepresidencia de Desregulación: nombramiento documentado y precedencia pendiente de cotejo",
+    "conclusion": "El BOA acredita el nombramiento de Alejandro Nolasco como vicepresidente y consejero de Desregulación, Bienestar Social y Familia, efectivo desde el 4 de mayo. El decreto de nombramiento no especifica por sí solo la precedencia de vicepresidencia primera prometida en el acuerdo.",
+    "periodNote": "Compromiso de la página 38 del acuerdo firmado el 22/04/2026. Decreto de nombramiento de 3/05, publicado el 4/05/2026. El acto documenta el nombramiento en esa fecha; no acredita por sí solo toda la estructura vigente a la fecha de consulta ni la eficacia de las políticas de desregulación.",
+    "components": [
+      {
+        "id": "nombramiento",
+        "claim": "Vicepresidencia y acumulación de una consejería",
+        "status": "documented",
+        "finding": "El decreto nombra a Nolasco vicepresidente y consejero de Desregulación, Bienestar Social y Familia, con efectos desde su publicación. Esto acredita una actuación formal que reúne la vicepresidencia y la cartera social en una misma persona. La fecha y el cargo pertenecen al mandato de 2026; no se utilizan los nombramientos de 2023 como cumplimiento del nuevo acuerdo.",
+        "citations": [
+          { "sourceId": "aragon-programme", "locator": "Capítulo 13: vicepresidencia y competencias de una consejería", "page": 38 },
+          { "sourceId": "aragon-vicepresident", "locator": "Parte dispositiva y entrada en efectos", "page": 1 }
+        ]
+      },
+      {
+        "id": "precedencia",
+        "claim": "Rango de vicepresidencia primera y atribuciones concretas",
+        "status": "unresolved",
+        "finding": "El acuerdo exige una vicepresidencia primera. El acto de nombramiento consultado utiliza la denominación de vicepresidente, sin establecer en su texto una precedencia. No se interpreta esa omisión como incumplimiento: falta cotejar la norma organizativa, el orden de sustitución y la distribución efectiva de competencias. El anuncio partidista de la firma tampoco sustituye esas normas.",
+        "citations": [
+          { "sourceId": "aragon-programme", "locator": "Capítulo 13, primera viñeta", "page": 38 },
+          { "sourceId": "aragon-vicepresident", "locator": "Denominación del cargo en el decreto", "page": 1 },
+          { "sourceId": "aragon-programme-register", "locator": "Nota de lectura: anuncio de vicepresidencia y cartera entonces pendiente" }
+        ]
+      },
+      {
+        "id": "limites",
+        "claim": "Qué permite concluir el nombramiento",
+        "status": "unresolved",
+        "finding": "Nombrar un cargo no demuestra que se hayan reducido trámites, costes o plazos administrativos. Esos resultados pertenecen a los compromisos de desregulación y requieren medición propia. Esta ficha tampoco da por revisadas las otras tres viñetas del capítulo, relativas a consejerías, Mesa de las Cortes y senador autonómico.",
+        "citations": []
+      }
+    ],
+    "contrast": "Se compara un acuerdo político conservado en dos copias idénticas con el acto oficial de nombramiento. La nota de VOX registra su anuncio, no una corroboración independiente de resultados. Falta contraste con la normativa organizativa completa y con control externo; no se califica globalmente el reparto institucional como cumplido.",
+    "pending": [
+      "Cotejar el orden de precedencia, las competencias y sus modificaciones en las normas de organización de 2026.",
+      "Revisar por separado las consejerías, la Mesa de las Cortes y la designación del senador.",
+      "Completar el cotejo del acuerdo y la revisión humana independiente."
+    ]
+  }
+]

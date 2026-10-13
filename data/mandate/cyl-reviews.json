@@ -1,0 +1,259 @@
+[
+  {
+    "commitmentId": "r-07-6-2",
+    "reviewedAt": "2026-10-11",
+    "title": "Buscyl: continuidad de la gratuidad y comprobación del servicio pendiente",
+    "conclusion": "La norma anterior al mandato y la sede vigente documentan el sistema de gratuidad para empadronados en los autobuses de la Junta. El acuerdo promete mantenerlo. La relación de rutas acredita el ámbito publicado, pero no demuestra que todos los viajes se presten sin cobros o incidencias.",
+    "periodNote": "Pacto de 03/06/2026 y nuevo mandato de junio. La Orden MTD/589/2025 implantó la medida antes; sede y relación de rutas consultadas el 11/10/2026. El nombre del archivo de rutas indica 02/09/2026, sin convertirlo en fecha certificada de publicación.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Continuidad y alcance de la promesa",
+        "status": "promise-documented",
+        "finding": "El apartado 6.2 compromete mantener la gratuidad desde el arranque del Gobierno para las personas empadronadas en la comunidad, en el transporte de autobús gestionado por la Junta. No incluye por esa sola redacción todos los autobuses municipales, estatales o privados.",
+        "citations": [
+          {
+            "sourceId": "cyl-programme",
+            "locator": "Apartado 6.2",
+            "page": 23
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Regla de gratuidad anterior al mandato",
+        "status": "documented",
+        "finding": "La Orden MTD/589/2025 fija la gratuidad y sus condiciones para concesiones de titularidad autonómica: empadronamiento, tarjeta y calendario desde septiembre de 2025. Documenta el antecedente normativo; no es una creación del mandato de junio de 2026.",
+        "citations": [
+          {
+            "sourceId": "cyl-buscyl-rule",
+            "locator": "Apartados primero a cuarto",
+            "page": 3
+          },
+          {
+            "sourceId": "cyl-appointment",
+            "locator": "Elección parlamentaria de 9 de junio y nombramiento",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "continuidad",
+        "claim": "Información de uso y rutas publicadas",
+        "status": "reported",
+        "finding": "La sede ofrece la tarjeta general para empadronados y enlaza la relación de rutas susceptibles de gratuidad. El listado identifica rutas, concesiones y operadores; no contiene registros de billetes, cancelaciones ni cobros. La tarjeta específica para menores de 15 años figura caducada el 30/04/2026, con recomendación de solicitar la general para menores empadronados.",
+        "citations": [
+          {
+            "sourceId": "cyl-buscyl-register",
+            "locator": "Preguntas 1 y 2, perfiles bonificados y descargas"
+          },
+          {
+            "sourceId": "cyl-buscyl-routes",
+            "locator": "Columnas de rutas, concesiones y operadores",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "incidencias",
+        "claim": "Resultado real y antecedente externo",
+        "status": "unresolved",
+        "finding": "FACUA publicó una reclamación sobre cobros de septiembre de 2025 por equipos de validación ausentes. Es anterior al nuevo mandato y solo se ha leído la parte pública. Sirve de antecedente para pedir billetes, reclamaciones y reembolsos actuales; no demuestra que el problema continúe en octubre de 2026 ni permite medir su frecuencia.",
+        "citations": [
+          {
+            "sourceId": "cyl-buscyl-facua",
+            "locator": "Título, entradilla y comienzo públicos; extracto editorial y límites"
+          }
+        ]
+      }
+    ],
+    "contrast": "La norma, la sede y las rutas proceden de la Junta y no son tres corroboradores independientes. FACUA es otra entidad, pero su publicación parcial trata hechos de 2025; no sustituye una comprobación de los viajes del mandato actual. Una gratuidad jurídica puede coexistir con incidencias de operación, que requieren prueba propia.",
+    "pending": [
+      "Contrastar billetes, cobros, reclamaciones y reembolsos posteriores a junio de 2026 con una muestra territorial definida.",
+      "Conciliar el listado de rutas con frecuencias, plazas y servicios realmente prestados.",
+      "Obtener el escrito completo y la respuesta a FACUA, y revisar las incidencias actuales con una persona independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-07-13-17",
+    "reviewedAt": "2026-10-11",
+    "title": "Primera matrícula universitaria: ayudas convocadas, pagos por acreditar",
+    "conclusion": "Se han aprobado bases y convocado 12,62 millones de euros para el curso 2026–2027. La medida se articula como una ayuda sobre importes pagados, con requisitos y disponibilidad presupuestaria. Estos documentos acreditan su puesta en marcha administrativa; todavía no acreditan el reembolso a todo el alumnado comprendido en la promesa.",
+    "periodNote": "Compromiso desde 2026–2027. Bases publicadas el 09/07, modificación el 07/09 y convocatoria el 21/09/2026, después de la investidura de junio. Corte documental: 11/10/2026; la convocatoria concede un mes desde el día siguiente a su publicación para solicitar.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Gratuidad comprometida y destinatarios",
+        "status": "promise-documented",
+        "finding": "El apartado 13.17 promete la gratuidad de la primera matrícula del primer curso en universidades públicas de Castilla y León para estudiantes empadronados, desde 2026–2027. No promete financiar cualquier curso, universidad privada o servicio complementario.",
+        "citations": [
+          {
+            "sourceId": "cyl-programme",
+            "locator": "Apartado 13.17",
+            "page": 46
+          }
+        ]
+      },
+      {
+        "id": "convocatoria",
+        "claim": "Bases y crédito convocado",
+        "status": "documented",
+        "finding": "La Orden IEM/621/2026 establece las bases y la convocatoria de septiembre destina 12.620.000 euros, ampliables en hasta 2.000.000. Se trata de crédito convocado, no de gasto pagado ni de un recuento de beneficiarios efectivos.",
+        "citations": [
+          {
+            "sourceId": "cyl-university-bases",
+            "locator": "Artículo único y anexo",
+            "page": 3
+          },
+          {
+            "sourceId": "cyl-university-call",
+            "locator": "Apartados tercero a quinto",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "condiciones",
+        "claim": "Requisitos, gastos cubiertos y suficiencia",
+        "status": "documented",
+        "finding": "Las bases limitan la ayuda al primer acceso a estudios oficiales, primer curso de grado o doble grado en universidad pública y empadronamiento antes del fin de solicitudes. Cubren hasta el precio académico efectivamente abonado y excluyen servicios complementarios. La concurrencia competitiva y la disponibilidad presupuestaria impiden deducir de la convocatoria que todas las solicitudes elegibles recibirán el total.",
+        "citations": [
+          {
+            "sourceId": "cyl-university-bases",
+            "locator": "Bases primera a cuarta",
+            "page": 4
+          },
+          {
+            "sourceId": "cyl-university-bases",
+            "locator": "Base tercera: cuantía y exclusiones",
+            "page": 5
+          },
+          {
+            "sourceId": "cyl-university-bases",
+            "locator": "Base octava: régimen y disponibilidad presupuestaria",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "pago-matricula",
+        "claim": "Pago fraccionado y posterior acreditación",
+        "status": "documented",
+        "finding": "La modificación de septiembre adapta la justificación a los plazos y condiciones de cada universidad. No exige que todo el pago esté completado al presentar la solicitud: contempla acreditación posterior antes de la propuesta de resolución. La ayuda sigue vinculada al importe abonado, no a una exención automática de matrícula.",
+        "citations": [
+          {
+            "sourceId": "cyl-university-modification",
+            "locator": "Nueva base decimosegunda.3",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Reembolsos y cobertura del alumnado",
+        "status": "unresolved",
+        "finding": "No se han incorporado resoluciones de concesión, transferencias, denegaciones ni una conciliación entre alumnado elegible y alumnado pagado. Falta comprobar la cobertura final y el coste que conservan las familias. La base decimosegunda regula el pago, pero no acredita que ya se haya producido.",
+        "citations": [
+          {
+            "sourceId": "cyl-university-bases",
+            "locator": "Base decimosegunda.4 y .5: pago tras concesión",
+            "page": 11
+          },
+          {
+            "sourceId": "cyl-university-call",
+            "locator": "Cuantía máxima por beneficiario",
+            "page": 2
+          }
+        ]
+      }
+    ],
+    "contrast": "Se cotejaron el compromiso, las bases, su modificación y la convocatoria. Todos los actos son del mismo emisor autonómico: su publicación en el boletín prueba la norma y el procedimiento, no constituye una auditoría externa de pagos. La gratuidad prometida debe contrastarse con los reembolsos y la cobertura realmente alcanzados, conservando los límites de la norma.",
+    "pending": [
+      "Obtener resoluciones, número de solicitudes elegibles, denegaciones e importes efectivamente abonados.",
+      "Conciliar la suficiencia del crédito con la cobertura de todos los destinatarios de la promesa.",
+      "Revisar el coste final y los plazos de reembolso con evidencias independientes y revisión humana."
+    ]
+  },
+  {
+    "commitmentId": "r-07-15-3",
+    "reviewedAt": "2026-10-11",
+    "title": "Aval de primera vivienda: ampliación anunciada y plazo presupuestario",
+    "conclusion": "El pacto eleva el objetivo del aval del 17,5 % al 20 %. La norma original regula el porcentaje anterior y su extensión a 2026 se aprobó en 2025. En septiembre de 2026 el Gobierno todavía presenta la ampliación como una actuación futura. No se ha acreditado aquí su aplicación ni se declara vencido el plazo del primer presupuesto.",
+    "periodNote": "Norma de origen de 2023 y prórroga de diciembre de 2025 separadas del mandato de junio de 2026. Debate parlamentario de 11/09/2026; revisión al 11/10/2026. El acuerdo sitúa su primer presupuesto en 2027, no en 2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Porcentaje y plazo presupuestario",
+        "status": "promise-documented",
+        "finding": "El apartado 15.3 propone elevar el aval al 20 % para poder optar al 100 % del préstamo, desde el primer presupuesto. El apartado 1.1 enumera los presupuestos 2027–2030. Por ello no se convierte la ausencia de aplicación acreditada en octubre de 2026 en un incumplimiento de plazo ya vencido.",
+        "citations": [
+          {
+            "sourceId": "cyl-programme",
+            "locator": "Apartado 15.3 y plazo",
+            "page": 49
+          },
+          {
+            "sourceId": "cyl-programme",
+            "locator": "Bases presupuestarias y apartado 1.1",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "antecedente",
+        "claim": "Regulación y continuidad anteriores",
+        "status": "documented",
+        "finding": "La Orden MAV/669/2023 regula una garantía máxima del 17,5 % del valor de referencia, calculado sobre el menor entre tasación y compraventa, con financiación hasta el 97,5 % y sin garantizar impuestos o tasas. La Orden MAV/1418/2025 extiende la línea a 2026. Son antecedentes; no acreditan la modificación al 20 % ni bastan por sí solos para certificar todo el régimen vigente al corte.",
+        "citations": [
+          {
+            "sourceId": "cyl-housing-bases",
+            "locator": "Artículo 2: porcentaje, valor de referencia y financiación",
+            "page": 3
+          },
+          {
+            "sourceId": "cyl-housing-extension",
+            "locator": "Extensión de la línea a 2026",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "anuncio",
+        "claim": "Respuesta del Gobierno en septiembre",
+        "status": "reported",
+        "finding": "En la sesión de 11/09/2026 el Gobierno anuncia que elevará el aval del 17,5 % al 20 % y comunica 2.000 hipotecas desde 2023. La cifra mezcla mandatos y no demuestra 2.000 operaciones con el nuevo porcentaje. El acta parlamentaria acredita lo declarado, no la formalización de esas operaciones.",
+        "citations": [
+          {
+            "sourceId": "cyl-housing-debate",
+            "locator": "Intervención del Gobierno: facilitar acceso a la vivienda",
+            "page": 22
+          }
+        ]
+      },
+      {
+        "id": "aplicacion",
+        "claim": "Nueva regulación y operaciones con el 20 %",
+        "status": "unresolved",
+        "finding": "Faltan la disposición que haga efectiva la ampliación, sus convenios bancarios y registros de garantías otorgadas con ese porcentaje. La documentación reunida no permite confirmar la aplicación del objetivo a octubre de 2026. Tampoco permite concluir que no exista ninguna actuación posterior al debate conservado.",
+        "citations": [
+          {
+            "sourceId": "cyl-housing-debate",
+            "locator": "Anuncio de ampliación",
+            "page": 22
+          },
+          {
+            "sourceId": "cyl-programme",
+            "locator": "Apartado 15.3",
+            "page": 49
+          }
+        ]
+      }
+    ],
+    "contrast": "La prórroga, la norma original y la intervención del Gobierno se cotejan con el plazo del pacto. El diario parlamentario no convierte la declaración gubernamental en una corroboración independiente, aunque conserve el debate. No se trasladan a Castilla y León cambios de programas homónimos de Madrid ni se confunde aval con ayuda a fondo perdido.",
+    "pending": [
+      "Localizar cualquier modificación posterior y comprobar su entrada en vigor, porcentaje y requisitos.",
+      "Obtener convenios y operaciones de aval formalizadas, separando periodos y valor de referencia.",
+      "Contrastar con entidades participantes y control externo, y someter la conclusión a revisión humana."
+    ]
+  }
+]

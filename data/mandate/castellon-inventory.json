@@ -1,0 +1,4733 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "m-12040",
+  "mandateId": "m-12040-2023",
+  "mandateLabel": "Castellón · mandato municipal 2023–2027",
+  "sourceId": "castellon-programme",
+  "mandateSourceId": "castellon-programme",
+  "registerSourceId": "castellon-mayor-register",
+  "sourceLabel": "Pacto municipal PP–VOX · agosto de 2023",
+  "sourceSha256": "1e53f809e2e3bcc51ab5794713b5c1778bcf34cf0a9b8d280c571c14851cda19",
+  "importedAt": "2026-10-11",
+  "textLanguage": "es",
+  "programmeCopy": true,
+  "inventoryKind": "numbered-sections",
+  "transcriptionMethod": "ocr",
+  "transcriptionPending": true,
+  "inventoryTotal": 90,
+  "scope": "90 puntos numerados en 14 áreas del pacto municipal PP–VOX presentado el 01/08/2023. Las bases y el reparto de responsabilidades se conservan como contexto. No equivale a promesas únicas ni agota los programas electorales, la investidura y los acuerdos posteriores.",
+  "textNote": "Copia escaneada de 13 páginas alojada por Prensa Ibérica, pendiente de cotejo con copia de los firmantes. La noticia de Castellón Información acredita la presentación del pacto de 90 puntos, pero no autentica este archivo. Se conserva también el programa electoral del PP alojado por su autor: todavía no está conciliado con este inventario. OCR provisional con coordenadas; recuperación visual del número 7 y orden de lectura de números separados en la página 2. Páginas del PDF sin numeración impresa. Las valoraciones políticas se atribuyen a los firmantes. La ficha municipal identifica a Begoña Carrasco como alcaldesa. El 87 % difundido por la alcaldesa en junio de 2026 incluye puntos ejecutados o en ejecución: no es un porcentaje verificado por RegTrack. Sin revisión humana independiente registrada.",
+  "contextBlocks": [
+    {
+      "id": "m-12040-context-1",
+      "topic": "Bases, organización y firmas · texto de los autores",
+      "page": 1,
+      "endPage": 1,
+      "fragments": [
+        {
+          "page": 1,
+          "index": 1,
+          "x": 224,
+          "y": 199,
+          "text": "ACUERDO PROGRAMÁTICO PP-VOX Y DE"
+        },
+        {
+          "page": 1,
+          "index": 2,
+          "x": 228,
+          "y": 244,
+          "text": "DISTRIBUCIÓN DE DELEGACIONES PARA"
+        },
+        {
+          "page": 1,
+          "index": 3,
+          "x": 290,
+          "y": 289,
+          "text": "LA GESTIÓN DE GOBIERNO DE LA"
+        },
+        {
+          "page": 1,
+          "index": 4,
+          "x": 286,
+          "y": 334,
+          "text": "CIUDAD DE CASTELLÓN 2023-2027"
+        },
+        {
+          "page": 1,
+          "index": 5,
+          "x": 167,
+          "y": 417,
+          "text": "Por una parte el Grupo Municipal del Partido Popular como fuerza más"
+        },
+        {
+          "page": 1,
+          "index": 6,
+          "x": 166,
+          "y": 450,
+          "text": "votada en las elecciones municipales celebradas el día 28 de mayo de"
+        },
+        {
+          "page": 1,
+          "index": 7,
+          "x": 166,
+          "y": 482,
+          "text": "2023, con el 35,89 % de los votos y 11 concejales; y por otra parte el"
+        },
+        {
+          "page": 1,
+          "index": 8,
+          "x": 166,
+          "y": 515,
+          "text": "Grupo Municipal de Vox, con el 13,39 % de los votos y 4 concejales,"
+        },
+        {
+          "page": 1,
+          "index": 9,
+          "x": 166,
+          "y": 547,
+          "text": "sumando ambas formaciones la mayoría absoluta necesaria para la"
+        },
+        {
+          "page": 1,
+          "index": 10,
+          "x": 166,
+          "y": 580,
+          "text": "adopción de acuerdos plenarios municipales, y en aras de dotar de la"
+        },
+        {
+          "page": 1,
+          "index": 11,
+          "x": 166,
+          "y": 612,
+          "text": "deseable estabilidad política e institucional al gobierno de la ciudad de"
+        },
+        {
+          "page": 1,
+          "index": 12,
+          "x": 167,
+          "y": 645,
+          "text": "Castellón de la Plana durante el actual mandato 2023-2027, acuerdan:"
+        },
+        {
+          "page": 1,
+          "index": 13,
+          "x": 167,
+          "y": 707,
+          "text": "Primero.- Suscribir el presente documento, que constituye la prueba de"
+        },
+        {
+          "page": 1,
+          "index": 14,
+          "x": 166,
+          "y": 740,
+          "text": "conformidad de los firmantes en nombre de sus respectivos grupos,"
+        },
+        {
+          "page": 1,
+          "index": 15,
+          "x": 167,
+          "y": 772,
+          "text": "respecto de los 90 puntos de acuerdo programático para la gestión del"
+        },
+        {
+          "page": 1,
+          "index": 16,
+          "x": 166,
+          "y": 805,
+          "text": "gobierno de la ciudad a 10 largo del mandato 2023-2027 para el que han"
+        },
+        {
+          "page": 1,
+          "index": 17,
+          "x": 167,
+          "y": 837,
+          "text": "sido elegidos sus 15 concejales, mandato que presidirá, con el"
+        },
+        {
+          "page": 1,
+          "index": 18,
+          "x": 167,
+          "y": 869,
+          "text": "compromiso por parte de los dos grupos firmantes de perdurabilidad de"
+        },
+        {
+          "page": 1,
+          "index": 19,
+          "x": 167,
+          "y": 902,
+          "text": "la presidencia hasta la convocatoria electoral de 2027, la Sra. Da Begoña"
+        },
+        {
+          "page": 1,
+          "index": 20,
+          "x": 167,
+          "y": 934,
+          "text": "Carrasco García, proclamada Alcaldesa de Castellón de la Plana en"
+        },
+        {
+          "page": 1,
+          "index": 21,
+          "x": 167,
+          "y": 967,
+          "text": "sesión plenaria celebrada el pasado 17 de junio de 2023 y a quien"
+        },
+        {
+          "page": 1,
+          "index": 22,
+          "x": 167,
+          "y": 999,
+          "text": "corresponde, en consecuencia, la máxima dirección política del gobierno"
+        },
+        {
+          "page": 1,
+          "index": 23,
+          "x": 167,
+          "y": 1032,
+          "text": "de la institución así como, en su caso, la facultad de decretar las"
+        },
+        {
+          "page": 1,
+          "index": 24,
+          "x": 167,
+          "y": 1064,
+          "text": "delegaciones que considere oportunas en cada uno de los concejales, si"
+        },
+        {
+          "page": 1,
+          "index": 25,
+          "x": 168,
+          "y": 1096,
+          "text": "bien fruto del presente acuerdo se compromete, en reciprocidad, a"
+        },
+        {
+          "page": 1,
+          "index": 26,
+          "x": 168,
+          "y": 1129,
+          "text": "respetar 10 establecido en la cláusula tercera de este documento, relativa"
+        },
+        {
+          "page": 1,
+          "index": 27,
+          "x": 167,
+          "y": 1162,
+          "text": "a las competencias de gobierno que, según se ha acordado, asumirán"
+        },
+        {
+          "page": 1,
+          "index": 28,
+          "x": 167,
+          "y": 1194,
+          "text": "concejales del Grupo Municipal de Vox."
+        },
+        {
+          "page": 1,
+          "index": 29,
+          "x": 168,
+          "y": 1261,
+          "text": "Segundo.- Relacionar aquellos 90 puntos del acuerdo programático"
+        },
+        {
+          "page": 1,
+          "index": 30,
+          "x": 167,
+          "y": 1294,
+          "text": "alcanzado tras las conversaciones y negociaciones mantenidas por los"
+        },
+        {
+          "page": 1,
+          "index": 31,
+          "x": 168,
+          "y": 1326,
+          "text": "representantes de ambos grupos, y que son los siguientes:"
+        }
+      ],
+      "rawText": "ACUERDO PROGRAMÁTICO PP-VOX Y DE\nDISTRIBUCIÓN DE DELEGACIONES PARA\nLA GESTIÓN DE GOBIERNO DE LA\nCIUDAD DE CASTELLÓN 2023-2027\nPor una parte el Grupo Municipal del Partido Popular como fuerza más\nvotada en las elecciones municipales celebradas el día 28 de mayo de\n2023, con el 35,89 % de los votos y 11 concejales; y por otra parte el\nGrupo Municipal de Vox, con el 13,39 % de los votos y 4 concejales,\nsumando ambas formaciones la mayoría absoluta necesaria para la\nadopción de acuerdos plenarios municipales, y en aras de dotar de la\ndeseable estabilidad política e institucional al gobierno de la ciudad de\nCastellón de la Plana durante el actual mandato 2023-2027, acuerdan:\nPrimero.- Suscribir el presente documento, que constituye la prueba de\nconformidad de los firmantes en nombre de sus respectivos grupos,\nrespecto de los 90 puntos de acuerdo programático para la gestión del\ngobierno de la ciudad a 10 largo del mandato 2023-2027 para el que han\nsido elegidos sus 15 concejales, mandato que presidirá, con el\ncompromiso por parte de los dos grupos firmantes de perdurabilidad de\nla presidencia hasta la convocatoria electoral de 2027, la Sra. Da Begoña\nCarrasco García, proclamada Alcaldesa de Castellón de la Plana en\nsesión plenaria celebrada el pasado 17 de junio de 2023 y a quien\ncorresponde, en consecuencia, la máxima dirección política del gobierno\nde la institución así como, en su caso, la facultad de decretar las\ndelegaciones que considere oportunas en cada uno de los concejales, si\nbien fruto del presente acuerdo se compromete, en reciprocidad, a\nrespetar 10 establecido en la cláusula tercera de este documento, relativa\na las competencias de gobierno que, según se ha acordado, asumirán\nconcejales del Grupo Municipal de Vox.\nSegundo.- Relacionar aquellos 90 puntos del acuerdo programático\nalcanzado tras las conversaciones y negociaciones mantenidas por los\nrepresentantes de ambos grupos, y que son los siguientes:",
+      "text": "ACUERDO PROGRAMÁTICO PP-VOX Y DE DISTRIBUCIÓN DE DELEGACIONES PARA LA GESTIÓN DE GOBIERNO DE LA CIUDAD DE CASTELLÓN 2023-2027 Por una parte el Grupo Municipal del Partido Popular como fuerza más votada en las elecciones municipales celebradas el día 28 de mayo de 2023, con el 35,89 % de los votos y 11 concejales; y por otra parte el Grupo Municipal de Vox, con el 13,39 % de los votos y 4 concejales, sumando ambas formaciones la mayoría absoluta necesaria para la adopción de acuerdos plenarios municipales, y en aras de dotar de la deseable estabilidad política e institucional al gobierno de la ciudad de Castellón de la Plana durante el actual mandato 2023-2027, acuerdan: Primero.- Suscribir el presente documento, que constituye la prueba de conformidad de los firmantes en nombre de sus respectivos grupos, respecto de los 90 puntos de acuerdo programático para la gestión del gobierno de la ciudad a 10 largo del mandato 2023-2027 para el que han sido elegidos sus 15 concejales, mandato que presidirá, con el compromiso por parte de los dos grupos firmantes de perdurabilidad de la presidencia hasta la convocatoria electoral de 2027, la Sra. Da Begoña Carrasco García, proclamada Alcaldesa de Castellón de la Plana en sesión plenaria celebrada el pasado 17 de junio de 2023 y a quien corresponde, en consecuencia, la máxima dirección política del gobierno de la institución así como, en su caso, la facultad de decretar las delegaciones que considere oportunas en cada uno de los concejales, si bien fruto del presente acuerdo se compromete, en reciprocidad, a respetar 10 establecido en la cláusula tercera de este documento, relativa a las competencias de gobierno que, según se ha acordado, asumirán concejales del Grupo Municipal de Vox. Segundo.- Relacionar aquellos 90 puntos del acuerdo programático alcanzado tras las conversaciones y negociaciones mantenidas por los representantes de ambos grupos, y que son los siguientes:"
+    },
+    {
+      "id": "m-12040-context-2",
+      "topic": "Familia · epígrafe",
+      "page": 1,
+      "endPage": 1,
+      "fragments": [
+        {
+          "page": 1,
+          "index": 32,
+          "x": 168,
+          "y": 1389,
+          "text": "EN MATERIA DE FAMILIA:"
+        }
+      ],
+      "rawText": "EN MATERIA DE FAMILIA:",
+      "text": "EN MATERIA DE FAMILIA:"
+    },
+    {
+      "id": "m-12040-context-3",
+      "topic": "Seguridad · epígrafe",
+      "page": 2,
+      "endPage": 2,
+      "fragments": [
+        {
+          "page": 2,
+          "index": 5,
+          "x": 166,
+          "y": 432,
+          "text": "EN MATERIA DE SEGURIDAD:"
+        }
+      ],
+      "rawText": "EN MATERIA DE SEGURIDAD:",
+      "text": "EN MATERIA DE SEGURIDAD:"
+    },
+    {
+      "id": "m-12040-context-4",
+      "topic": "Políticas sociales · epígrafe",
+      "page": 2,
+      "endPage": 2,
+      "fragments": [
+        {
+          "page": 2,
+          "index": 25,
+          "x": 168,
+          "y": 1137,
+          "text": "SOBRE POLÍTICAS SOCIALES:"
+        }
+      ],
+      "rawText": "SOBRE POLÍTICAS SOCIALES:",
+      "text": "SOBRE POLÍTICAS SOCIALES:"
+    },
+    {
+      "id": "m-12040-context-5",
+      "topic": "Vivienda y ocupación · epígrafe",
+      "page": 3,
+      "endPage": 3,
+      "fragments": [
+        {
+          "page": 3,
+          "index": 13,
+          "x": 167,
+          "y": 669,
+          "text": "EN MATERIA DE VIVIENDA Y OCUPACIÓN:"
+        }
+      ],
+      "rawText": "EN MATERIA DE VIVIENDA Y OCUPACIÓN:",
+      "text": "EN MATERIA DE VIVIENDA Y OCUPACIÓN:"
+    },
+    {
+      "id": "m-12040-context-6",
+      "topic": "Impuestos y presión fiscal · epígrafe",
+      "page": 3,
+      "endPage": 3,
+      "fragments": [
+        {
+          "page": 3,
+          "index": 24,
+          "x": 168,
+          "y": 1157,
+          "text": "EN MATERIA DE REDUCCIÓN DE IMPUESTOS Y PRESIÓN"
+        },
+        {
+          "page": 3,
+          "index": 25,
+          "x": 169,
+          "y": 1196,
+          "text": "FISCAL:"
+        }
+      ],
+      "rawText": "EN MATERIA DE REDUCCIÓN DE IMPUESTOS Y PRESIÓN\nFISCAL:",
+      "text": "EN MATERIA DE REDUCCIÓN DE IMPUESTOS Y PRESIÓN FISCAL:"
+    },
+    {
+      "id": "m-12040-context-7",
+      "topic": "Comercio · epígrafe",
+      "page": 5,
+      "endPage": 5,
+      "fragments": [
+        {
+          "page": 5,
+          "index": 5,
+          "x": 167,
+          "y": 412,
+          "text": "EN MATERIA DE COMERCIO:"
+        }
+      ],
+      "rawText": "EN MATERIA DE COMERCIO:",
+      "text": "EN MATERIA DE COMERCIO:"
+    },
+    {
+      "id": "m-12040-context-8",
+      "topic": "Movilidad · epígrafe",
+      "page": 5,
+      "endPage": 5,
+      "fragments": [
+        {
+          "page": 5,
+          "index": 21,
+          "x": 169,
+          "y": 1027,
+          "text": "EN MATERIA DE MOVILIDAD:"
+        }
+      ],
+      "rawText": "EN MATERIA DE MOVILIDAD:",
+      "text": "EN MATERIA DE MOVILIDAD:"
+    },
+    {
+      "id": "m-12040-context-9",
+      "topic": "Lenguas oficiales y señas de identidad · epígrafe",
+      "page": 6,
+      "endPage": 6,
+      "fragments": [
+        {
+          "page": 6,
+          "index": 9,
+          "x": 166,
+          "y": 540,
+          "text": "EN MATERIA DE LENGUAS OFICIALES Y SEÑAS DE IDENTIDAD:"
+        }
+      ],
+      "rawText": "EN MATERIA DE LENGUAS OFICIALES Y SEÑAS DE IDENTIDAD:",
+      "text": "EN MATERIA DE LENGUAS OFICIALES Y SEÑAS DE IDENTIDAD:"
+    },
+    {
+      "id": "m-12040-context-10",
+      "topic": "Topónimo de la ciudad · epígrafe",
+      "page": 6,
+      "endPage": 6,
+      "fragments": [
+        {
+          "page": 6,
+          "index": 36,
+          "x": 169,
+          "y": 1519,
+          "text": "RESPECTO DEL TOPÓNIMO DE LA CIUDAD:"
+        }
+      ],
+      "rawText": "RESPECTO DEL TOPÓNIMO DE LA CIUDAD:",
+      "text": "RESPECTO DEL TOPÓNIMO DE LA CIUDAD:"
+    },
+    {
+      "id": "m-12040-context-11",
+      "topic": "Cultura · epígrafe",
+      "page": 7,
+      "endPage": 7,
+      "fragments": [
+        {
+          "page": 7,
+          "index": 1,
+          "x": 165,
+          "y": 203,
+          "text": "EN MATERIA DE CULTURA:"
+        }
+      ],
+      "rawText": "EN MATERIA DE CULTURA:",
+      "text": "EN MATERIA DE CULTURA:"
+    },
+    {
+      "id": "m-12040-context-12",
+      "topic": "Administración local · epígrafe",
+      "page": 7,
+      "endPage": 7,
+      "fragments": [
+        {
+          "page": 7,
+          "index": 27,
+          "x": 169,
+          "y": 1196,
+          "text": "SOBRE EFICACIA Y EFICIENCIA DE LA ADMINISTRACIÓN"
+        },
+        {
+          "page": 7,
+          "index": 28,
+          "x": 170,
+          "y": 1237,
+          "text": "LOCAL:"
+        }
+      ],
+      "rawText": "SOBRE EFICACIA Y EFICIENCIA DE LA ADMINISTRACIÓN\nLOCAL:",
+      "text": "SOBRE EFICACIA Y EFICIENCIA DE LA ADMINISTRACIÓN LOCAL:"
+    },
+    {
+      "id": "m-12040-context-13",
+      "topic": "Urbanismo · epígrafe",
+      "page": 8,
+      "endPage": 8,
+      "fragments": [
+        {
+          "page": 8,
+          "index": 9,
+          "x": 166,
+          "y": 512,
+          "text": "EN MATERIA DE URBANISMO:"
+        }
+      ],
+      "rawText": "EN MATERIA DE URBANISMO:",
+      "text": "EN MATERIA DE URBANISMO:"
+    },
+    {
+      "id": "m-12040-context-14",
+      "topic": "Turismo, deportes y fiestas · epígrafe",
+      "page": 8,
+      "endPage": 8,
+      "fragments": [
+        {
+          "page": 8,
+          "index": 15,
+          "x": 166,
+          "y": 773,
+          "text": "EN MATERIA DE TURISMO, DEPORTES Y FIESTAS:"
+        }
+      ],
+      "rawText": "EN MATERIA DE TURISMO, DEPORTES Y FIESTAS:",
+      "text": "EN MATERIA DE TURISMO, DEPORTES Y FIESTAS:"
+    },
+    {
+      "id": "m-12040-context-15",
+      "topic": "Salud, limpieza, plagas e iluminación · epígrafe",
+      "page": 9,
+      "endPage": 9,
+      "fragments": [
+        {
+          "page": 9,
+          "index": 6,
+          "x": 167,
+          "y": 439,
+          "text": "EN MATERIA DE SALUD, LIMPIEZA, PLAGAS E ILUMINACIÓN:"
+        }
+      ],
+      "rawText": "EN MATERIA DE SALUD, LIMPIEZA, PLAGAS E ILUMINACIÓN:",
+      "text": "EN MATERIA DE SALUD, LIMPIEZA, PLAGAS E ILUMINACIÓN:"
+    },
+    {
+      "id": "m-12040-context-16",
+      "topic": "Bases, organización y firmas · texto de los autores",
+      "page": 9,
+      "endPage": 9,
+      "fragments": [
+        {
+          "page": 9,
+          "index": 23,
+          "x": 169,
+          "y": 1159,
+          "text": "Tercero.- Relacionar la organización y estructura de la Administración"
+        },
+        {
+          "page": 9,
+          "index": 24,
+          "x": 170,
+          "y": 1189,
+          "text": "Municipal ejecutiva entre el Partido Popular y Vox, así como determinar"
+        },
+        {
+          "page": 9,
+          "index": 25,
+          "x": 170,
+          "y": 1219,
+          "text": "las áreas de gobierno y las concejalías delegadas y designar a las"
+        },
+        {
+          "page": 9,
+          "index": 26,
+          "x": 170,
+          "y": 1250,
+          "text": "personas titulares de las mismas, y que son los siguientes:"
+        },
+        {
+          "page": 9,
+          "index": 27,
+          "x": 169,
+          "y": 1307,
+          "text": "Ámbitos de competencia reservados a la Alcaldía."
+        },
+        {
+          "page": 9,
+          "index": 28,
+          "x": 171,
+          "y": 1339,
+          "text": "Declarar como ámbitos de competencia reservados a esta Alcaldía las"
+        },
+        {
+          "page": 9,
+          "index": 29,
+          "x": 170,
+          "y": 1372,
+          "text": "siguientes materias:"
+        },
+        {
+          "page": 9,
+          "index": 30,
+          "x": 170,
+          "y": 1402,
+          "text": "a) Igualdad"
+        },
+        {
+          "page": 9,
+          "index": 31,
+          "x": 171,
+          "y": 1432,
+          "text": "b) Fondos Europeos."
+        },
+        {
+          "page": 9,
+          "index": 32,
+          "x": 172,
+          "y": 1486,
+          "text": "Determinación de las Áreas de Gobierno"
+        },
+        {
+          "page": 9,
+          "index": 33,
+          "x": 172,
+          "y": 1520,
+          "text": "Determinar como niveles esenciales de la organización municipal, las"
+        },
+        {
+          "page": 9,
+          "index": 34,
+          "x": 171,
+          "y": 1548,
+          "text": "siguientes Áreas de Gobierno:"
+        },
+        {
+          "page": 9,
+          "index": 35,
+          "x": 172,
+          "y": 1608,
+          "text": "01 .- Área de Gobierno de Ciudadanía y Participación."
+        },
+        {
+          "page": 9,
+          "index": 36,
+          "x": 172,
+          "y": 1638,
+          "text": "02.- Área de Gobierno de Urbanismo y Servicios Públicos."
+        }
+      ],
+      "rawText": "Tercero.- Relacionar la organización y estructura de la Administración\nMunicipal ejecutiva entre el Partido Popular y Vox, así como determinar\nlas áreas de gobierno y las concejalías delegadas y designar a las\npersonas titulares de las mismas, y que son los siguientes:\nÁmbitos de competencia reservados a la Alcaldía.\nDeclarar como ámbitos de competencia reservados a esta Alcaldía las\nsiguientes materias:\na) Igualdad\nb) Fondos Europeos.\nDeterminación de las Áreas de Gobierno\nDeterminar como niveles esenciales de la organización municipal, las\nsiguientes Áreas de Gobierno:\n01 .- Área de Gobierno de Ciudadanía y Participación.\n02.- Área de Gobierno de Urbanismo y Servicios Públicos.",
+      "text": "Tercero.- Relacionar la organización y estructura de la Administración Municipal ejecutiva entre el Partido Popular y Vox, así como determinar las áreas de gobierno y las concejalías delegadas y designar a las personas titulares de las mismas, y que son los siguientes: Ámbitos de competencia reservados a la Alcaldía. Declarar como ámbitos de competencia reservados a esta Alcaldía las siguientes materias: a) Igualdad b) Fondos Europeos. Determinación de las Áreas de Gobierno Determinar como niveles esenciales de la organización municipal, las siguientes Áreas de Gobierno: 01 .- Área de Gobierno de Ciudadanía y Participación. 02.- Área de Gobierno de Urbanismo y Servicios Públicos."
+    },
+    {
+      "id": "m-12040-context-17",
+      "topic": "Bases, organización y firmas · texto de los autores",
+      "page": 10,
+      "endPage": 10,
+      "fragments": [
+        {
+          "page": 10,
+          "index": 1,
+          "x": 165,
+          "y": 201,
+          "text": "03.- Área de Gobierno de Impulso Económico, Empleo y Capital Humano."
+        },
+        {
+          "page": 10,
+          "index": 2,
+          "x": 165,
+          "y": 231,
+          "text": "04.- Área de Gobierno de Seguridad Ciudadana, Emergencias y Salud"
+        },
+        {
+          "page": 10,
+          "index": 3,
+          "x": 166,
+          "y": 266,
+          "text": "Pública."
+        },
+        {
+          "page": 10,
+          "index": 4,
+          "x": 164,
+          "y": 321,
+          "text": "Al Área de Gobierno de Ciudadanía y Participación se adscriben"
+        },
+        {
+          "page": 10,
+          "index": 5,
+          "x": 165,
+          "y": 354,
+          "text": "directamente las competencias en materia de:"
+        },
+        {
+          "page": 10,
+          "index": 6,
+          "x": 166,
+          "y": 385,
+          "text": "a) Atención Ciudadana"
+        },
+        {
+          "page": 10,
+          "index": 7,
+          "x": 166,
+          "y": 415,
+          "text": "b) Contratación y Patrimonio"
+        },
+        {
+          "page": 10,
+          "index": 8,
+          "x": 166,
+          "y": 445,
+          "text": "c) Relaciones Institucionales"
+        },
+        {
+          "page": 10,
+          "index": 9,
+          "x": 165,
+          "y": 502,
+          "text": "Además de por los ámbitos de competencia señalados en el apartado"
+        },
+        {
+          "page": 10,
+          "index": 10,
+          "x": 166,
+          "y": 532,
+          "text": "anterior, en el área de Gobierno de Ciudadanía y Participación se integran las"
+        },
+        {
+          "page": 10,
+          "index": 11,
+          "x": 167,
+          "y": 565,
+          "text": "siguientes concejalías delegadas:"
+        },
+        {
+          "page": 10,
+          "index": 12,
+          "x": 167,
+          "y": 595,
+          "text": "a) Educación y Cultura"
+        },
+        {
+          "page": 10,
+          "index": 13,
+          "x": 167,
+          "y": 626,
+          "text": "b) Gente Mayor"
+        },
+        {
+          "page": 10,
+          "index": 14,
+          "x": 167,
+          "y": 656,
+          "text": "c) Bienestar Social"
+        },
+        {
+          "page": 10,
+          "index": 15,
+          "x": 167,
+          "y": 686,
+          "text": "d) Familias"
+        },
+        {
+          "page": 10,
+          "index": 16,
+          "x": 167,
+          "y": 716,
+          "text": "e) Juventud"
+        },
+        {
+          "page": 10,
+          "index": 17,
+          "x": 166,
+          "y": 745,
+          "text": "f) Participación Ciudadana"
+        },
+        {
+          "page": 10,
+          "index": 18,
+          "x": 167,
+          "y": 775,
+          "text": "g) Modernización y Transparencia"
+        },
+        {
+          "page": 10,
+          "index": 19,
+          "x": 168,
+          "y": 833,
+          "text": "Se designa a las siguientes personas como titulares, respectivamente."
+        },
+        {
+          "page": 10,
+          "index": 20,
+          "x": 168,
+          "y": 859,
+          "text": "de las concejalías delegadas dependientes del Área de Gobierno de"
+        },
+        {
+          "page": 10,
+          "index": 21,
+          "x": 168,
+          "y": 895,
+          "text": "Ciudadanía y Participación:"
+        },
+        {
+          "page": 10,
+          "index": 22,
+          "x": 168,
+          "y": 953,
+          "text": "a) Concejala delegada de Educación y Cultura, a María España Novoa."
+        },
+        {
+          "page": 10,
+          "index": 23,
+          "x": 169,
+          "y": 983,
+          "text": "b) Concejala delegada de Gente Mayor, a María del Carmen Hurtado"
+        },
+        {
+          "page": 10,
+          "index": 24,
+          "x": 170,
+          "y": 1017,
+          "text": "Palomo."
+        },
+        {
+          "page": 10,
+          "index": 25,
+          "x": 169,
+          "y": 1043,
+          "text": "c) Concejala delegada de Bienestar Social, a Susana Fabregat Carrasquer."
+        },
+        {
+          "page": 10,
+          "index": 26,
+          "x": 169,
+          "y": 1074,
+          "text": "d) Concejal delegado de Familias, a Alberto Vidal Guerrero."
+        },
+        {
+          "page": 10,
+          "index": 27,
+          "x": 169,
+          "y": 1104,
+          "text": "e) Concejal delegado de Juventud, a Cristian Ramírez Martínez."
+        },
+        {
+          "page": 10,
+          "index": 28,
+          "x": 168,
+          "y": 1133,
+          "text": "f) Concejal delegado de Participación Ciudadana, a Francisco Cabañero"
+        },
+        {
+          "page": 10,
+          "index": 29,
+          "x": 170,
+          "y": 1167,
+          "text": "Catalán."
+        },
+        {
+          "page": 10,
+          "index": 30,
+          "x": 169,
+          "y": 1193,
+          "text": "g) Concejal delegado de Modernización y Transparencia, a Francisco"
+        },
+        {
+          "page": 10,
+          "index": 31,
+          "x": 170,
+          "y": 1227,
+          "text": "Cabañero Catalán."
+        },
+        {
+          "page": 10,
+          "index": 32,
+          "x": 170,
+          "y": 1281,
+          "text": "Organización del Área de Gobierno de Urbanismo y Servicios Públicos"
+        },
+        {
+          "page": 10,
+          "index": 33,
+          "x": 171,
+          "y": 1341,
+          "text": "Se designa Delegado del Área de Gobierno de Urbanismo y Servicios"
+        },
+        {
+          "page": 10,
+          "index": 34,
+          "x": 172,
+          "y": 1376,
+          "text": "Públicos a Sergio Toledo Llorens."
+        },
+        {
+          "page": 10,
+          "index": 35,
+          "x": 170,
+          "y": 1433,
+          "text": "Al Área de Gobierno de Urbanismo y Servicios Públicos se adscriben"
+        },
+        {
+          "page": 10,
+          "index": 36,
+          "x": 171,
+          "y": 1466,
+          "text": "directamente las competencias en materia de:"
+        },
+        {
+          "page": 10,
+          "index": 37,
+          "x": 171,
+          "y": 1497,
+          "text": "a) Acción de gobierno"
+        },
+        {
+          "page": 10,
+          "index": 38,
+          "x": 172,
+          "y": 1527,
+          "text": "b) Desarrollo urbanístico"
+        },
+        {
+          "page": 10,
+          "index": 39,
+          "x": 172,
+          "y": 1558,
+          "text": "c) Vivienda"
+        },
+        {
+          "page": 10,
+          "index": 40,
+          "x": 172,
+          "y": 1586,
+          "text": "d) Infraestructuras y Servicios Urbanos"
+        },
+        {
+          "page": 10,
+          "index": 41,
+          "x": 171,
+          "y": 1644,
+          "text": "Además de por los ámbitos de competencia señalados en el apartado"
+        }
+      ],
+      "rawText": "03.- Área de Gobierno de Impulso Económico, Empleo y Capital Humano.\n04.- Área de Gobierno de Seguridad Ciudadana, Emergencias y Salud\nPública.\nAl Área de Gobierno de Ciudadanía y Participación se adscriben\ndirectamente las competencias en materia de:\na) Atención Ciudadana\nb) Contratación y Patrimonio\nc) Relaciones Institucionales\nAdemás de por los ámbitos de competencia señalados en el apartado\nanterior, en el área de Gobierno de Ciudadanía y Participación se integran las\nsiguientes concejalías delegadas:\na) Educación y Cultura\nb) Gente Mayor\nc) Bienestar Social\nd) Familias\ne) Juventud\nf) Participación Ciudadana\ng) Modernización y Transparencia\nSe designa a las siguientes personas como titulares, respectivamente.\nde las concejalías delegadas dependientes del Área de Gobierno de\nCiudadanía y Participación:\na) Concejala delegada de Educación y Cultura, a María España Novoa.\nb) Concejala delegada de Gente Mayor, a María del Carmen Hurtado\nPalomo.\nc) Concejala delegada de Bienestar Social, a Susana Fabregat Carrasquer.\nd) Concejal delegado de Familias, a Alberto Vidal Guerrero.\ne) Concejal delegado de Juventud, a Cristian Ramírez Martínez.\nf) Concejal delegado de Participación Ciudadana, a Francisco Cabañero\nCatalán.\ng) Concejal delegado de Modernización y Transparencia, a Francisco\nCabañero Catalán.\nOrganización del Área de Gobierno de Urbanismo y Servicios Públicos\nSe designa Delegado del Área de Gobierno de Urbanismo y Servicios\nPúblicos a Sergio Toledo Llorens.\nAl Área de Gobierno de Urbanismo y Servicios Públicos se adscriben\ndirectamente las competencias en materia de:\na) Acción de gobierno\nb) Desarrollo urbanístico\nc) Vivienda\nd) Infraestructuras y Servicios Urbanos\nAdemás de por los ámbitos de competencia señalados en el apartado",
+      "text": "03.- Área de Gobierno de Impulso Económico, Empleo y Capital Humano. 04.- Área de Gobierno de Seguridad Ciudadana, Emergencias y Salud Pública. Al Área de Gobierno de Ciudadanía y Participación se adscriben directamente las competencias en materia de: a) Atención Ciudadana b) Contratación y Patrimonio c) Relaciones Institucionales Además de por los ámbitos de competencia señalados en el apartado anterior, en el área de Gobierno de Ciudadanía y Participación se integran las siguientes concejalías delegadas: a) Educación y Cultura b) Gente Mayor c) Bienestar Social d) Familias e) Juventud f) Participación Ciudadana g) Modernización y Transparencia Se designa a las siguientes personas como titulares, respectivamente. de las concejalías delegadas dependientes del Área de Gobierno de Ciudadanía y Participación: a) Concejala delegada de Educación y Cultura, a María España Novoa. b) Concejala delegada de Gente Mayor, a María del Carmen Hurtado Palomo. c) Concejala delegada de Bienestar Social, a Susana Fabregat Carrasquer. d) Concejal delegado de Familias, a Alberto Vidal Guerrero. e) Concejal delegado de Juventud, a Cristian Ramírez Martínez. f) Concejal delegado de Participación Ciudadana, a Francisco Cabañero Catalán. g) Concejal delegado de Modernización y Transparencia, a Francisco Cabañero Catalán. Organización del Área de Gobierno de Urbanismo y Servicios Públicos Se designa Delegado del Área de Gobierno de Urbanismo y Servicios Públicos a Sergio Toledo Llorens. Al Área de Gobierno de Urbanismo y Servicios Públicos se adscriben directamente las competencias en materia de: a) Acción de gobierno b) Desarrollo urbanístico c) Vivienda d) Infraestructuras y Servicios Urbanos Además de por los ámbitos de competencia señalados en el apartado"
+    },
+    {
+      "id": "m-12040-context-18",
+      "topic": "Bases, organización y firmas · texto de los autores",
+      "page": 11,
+      "endPage": 11,
+      "fragments": [
+        {
+          "page": 11,
+          "index": 1,
+          "x": 164,
+          "y": 204,
+          "text": "anterior, en el área de Gobierno de Urbanismo y Servicios Públicos se"
+        },
+        {
+          "page": 11,
+          "index": 2,
+          "x": 164,
+          "y": 234,
+          "text": "integran las siguientes concejalías delegadas:"
+        },
+        {
+          "page": 11,
+          "index": 3,
+          "x": 164,
+          "y": 265,
+          "text": "a) Concejalía delegada de Grao"
+        },
+        {
+          "page": 11,
+          "index": 4,
+          "x": 164,
+          "y": 294,
+          "text": "b) Concejalía delegada de Barrios"
+        },
+        {
+          "page": 11,
+          "index": 5,
+          "x": 164,
+          "y": 324,
+          "text": "c) Concejalía delegada de Movilidad"
+        },
+        {
+          "page": 11,
+          "index": 6,
+          "x": 164,
+          "y": 354,
+          "text": "d) Concejalía delegada de Medio Ambiente y Desarrollo Sostenible"
+        },
+        {
+          "page": 11,
+          "index": 7,
+          "x": 164,
+          "y": 385,
+          "text": "e) Concejalía delegada de Agricultura"
+        },
+        {
+          "page": 11,
+          "index": 8,
+          "x": 164,
+          "y": 444,
+          "text": "Se designa a las siguientes personas como titulares. respectivamente,"
+        },
+        {
+          "page": 11,
+          "index": 9,
+          "x": 164,
+          "y": 469,
+          "text": "de las concejalías delegadas dependientes del Área de Gobierno de"
+        },
+        {
+          "page": 11,
+          "index": 10,
+          "x": 165,
+          "y": 505,
+          "text": "Urbanismo y Servicios Públicos:"
+        },
+        {
+          "page": 11,
+          "index": 11,
+          "x": 164,
+          "y": 564,
+          "text": "a) Concejala delegada de Grao, a Ester Giner Hidalgo."
+        },
+        {
+          "page": 11,
+          "index": 12,
+          "x": 165,
+          "y": 594,
+          "text": "b) Concejal delegado de Barrios, a Francisco Cabañero Catalán."
+        },
+        {
+          "page": 11,
+          "index": 13,
+          "x": 164,
+          "y": 624,
+          "text": "c) Concejal delegado de Movilidad, a Cristian Ramírez Martínez."
+        },
+        {
+          "page": 11,
+          "index": 14,
+          "x": 165,
+          "y": 654,
+          "text": "d) Concejal delegado de Medio Ambiente y Desarrollo Sostenible, a Cristian"
+        },
+        {
+          "page": 11,
+          "index": 15,
+          "x": 166,
+          "y": 686,
+          "text": "Ramírez Martínez."
+        },
+        {
+          "page": 11,
+          "index": 16,
+          "x": 165,
+          "y": 714,
+          "text": "e) Concejal delegado de Agricultura, a Vicent Sales Mateu."
+        },
+        {
+          "page": 11,
+          "index": 17,
+          "x": 165,
+          "y": 770,
+          "text": "Organización del Área de Gobierno de Impulso Económico, Empleo y"
+        },
+        {
+          "page": 11,
+          "index": 18,
+          "x": 165,
+          "y": 806,
+          "text": "Capital Humano."
+        },
+        {
+          "page": 11,
+          "index": 19,
+          "x": 165,
+          "y": 861,
+          "text": "Se designa Delegado del Área de Gobierno de Impulso Económico, Empleo y"
+        },
+        {
+          "page": 11,
+          "index": 20,
+          "x": 165,
+          "y": 895,
+          "text": "Capital Humano a Juan Carlos Redondo Gamero."
+        },
+        {
+          "page": 11,
+          "index": 21,
+          "x": 165,
+          "y": 951,
+          "text": "Al Área de Gobierno de Impulso Económico. Empleo y Capital Humano"
+        },
+        {
+          "page": 11,
+          "index": 22,
+          "x": 165,
+          "y": 985,
+          "text": "se adscriben directamente las competencias en materia de"
+        },
+        {
+          "page": 11,
+          "index": 23,
+          "x": 166,
+          "y": 1016,
+          "text": "a) Economía y Hacienda"
+        },
+        {
+          "page": 11,
+          "index": 24,
+          "x": 166,
+          "y": 1046,
+          "text": "b) Empleo"
+        },
+        {
+          "page": 11,
+          "index": 25,
+          "x": 166,
+          "y": 1076,
+          "text": "c) Recursos Humanos"
+        },
+        {
+          "page": 11,
+          "index": 26,
+          "x": 165,
+          "y": 1134,
+          "text": "Además de por los ámbitos de competencia señalado en el apartado anterior,"
+        },
+        {
+          "page": 11,
+          "index": 27,
+          "x": 166,
+          "y": 1165,
+          "text": "en el área de Gobierno de Impulso Económico, Empleo y Capital Humano se"
+        },
+        {
+          "page": 11,
+          "index": 28,
+          "x": 167,
+          "y": 1195,
+          "text": "integran las siguientes concejalías delegadas:"
+        },
+        {
+          "page": 11,
+          "index": 29,
+          "x": 166,
+          "y": 1226,
+          "text": "a) Concejalía delegada de Turismo"
+        },
+        {
+          "page": 11,
+          "index": 30,
+          "x": 167,
+          "y": 1255,
+          "text": "b) Concejalía delegada de Comercio y Consumo"
+        },
+        {
+          "page": 11,
+          "index": 31,
+          "x": 166,
+          "y": 1286,
+          "text": "c) Concejalía delegada de Fiestas y Ermitas"
+        },
+        {
+          "page": 11,
+          "index": 32,
+          "x": 167,
+          "y": 1316,
+          "text": "d) Concejalía delegada de Deportes"
+        },
+        {
+          "page": 11,
+          "index": 33,
+          "x": 167,
+          "y": 1375,
+          "text": "Se designa a las siguientes personas como titulares, respectivamente."
+        },
+        {
+          "page": 11,
+          "index": 34,
+          "x": 167,
+          "y": 1400,
+          "text": "de las concejalías delegadas dependientes del Área de Gobierno de"
+        },
+        {
+          "page": 11,
+          "index": 35,
+          "x": 168,
+          "y": 1436,
+          "text": "Impulso Económico, Empleo y Capital Humano:"
+        },
+        {
+          "page": 11,
+          "index": 36,
+          "x": 167,
+          "y": 1496,
+          "text": "a) Concejala delegada de Turismo, a Arantxa Miralles Benages."
+        },
+        {
+          "page": 11,
+          "index": 37,
+          "x": 168,
+          "y": 1525,
+          "text": "b) Concejala delegada de Comercio y Consumo, a Alberto Vidal Guerrero."
+        },
+        {
+          "page": 11,
+          "index": 38,
+          "x": 168,
+          "y": 1555,
+          "text": "c) Concejala delegada de Fiestas y Ermitas, a Noelia Selma Andreu."
+        },
+        {
+          "page": 11,
+          "index": 39,
+          "x": 168,
+          "y": 1586,
+          "text": "e) Concejala delegada de Deportes, a Susana Fabregat Carrasquer."
+        }
+      ],
+      "rawText": "anterior, en el área de Gobierno de Urbanismo y Servicios Públicos se\nintegran las siguientes concejalías delegadas:\na) Concejalía delegada de Grao\nb) Concejalía delegada de Barrios\nc) Concejalía delegada de Movilidad\nd) Concejalía delegada de Medio Ambiente y Desarrollo Sostenible\ne) Concejalía delegada de Agricultura\nSe designa a las siguientes personas como titulares. respectivamente,\nde las concejalías delegadas dependientes del Área de Gobierno de\nUrbanismo y Servicios Públicos:\na) Concejala delegada de Grao, a Ester Giner Hidalgo.\nb) Concejal delegado de Barrios, a Francisco Cabañero Catalán.\nc) Concejal delegado de Movilidad, a Cristian Ramírez Martínez.\nd) Concejal delegado de Medio Ambiente y Desarrollo Sostenible, a Cristian\nRamírez Martínez.\ne) Concejal delegado de Agricultura, a Vicent Sales Mateu.\nOrganización del Área de Gobierno de Impulso Económico, Empleo y\nCapital Humano.\nSe designa Delegado del Área de Gobierno de Impulso Económico, Empleo y\nCapital Humano a Juan Carlos Redondo Gamero.\nAl Área de Gobierno de Impulso Económico. Empleo y Capital Humano\nse adscriben directamente las competencias en materia de\na) Economía y Hacienda\nb) Empleo\nc) Recursos Humanos\nAdemás de por los ámbitos de competencia señalado en el apartado anterior,\nen el área de Gobierno de Impulso Económico, Empleo y Capital Humano se\nintegran las siguientes concejalías delegadas:\na) Concejalía delegada de Turismo\nb) Concejalía delegada de Comercio y Consumo\nc) Concejalía delegada de Fiestas y Ermitas\nd) Concejalía delegada de Deportes\nSe designa a las siguientes personas como titulares, respectivamente.\nde las concejalías delegadas dependientes del Área de Gobierno de\nImpulso Económico, Empleo y Capital Humano:\na) Concejala delegada de Turismo, a Arantxa Miralles Benages.\nb) Concejala delegada de Comercio y Consumo, a Alberto Vidal Guerrero.\nc) Concejala delegada de Fiestas y Ermitas, a Noelia Selma Andreu.\ne) Concejala delegada de Deportes, a Susana Fabregat Carrasquer.",
+      "text": "anterior, en el área de Gobierno de Urbanismo y Servicios Públicos se integran las siguientes concejalías delegadas: a) Concejalía delegada de Grao b) Concejalía delegada de Barrios c) Concejalía delegada de Movilidad d) Concejalía delegada de Medio Ambiente y Desarrollo Sostenible e) Concejalía delegada de Agricultura Se designa a las siguientes personas como titulares. respectivamente, de las concejalías delegadas dependientes del Área de Gobierno de Urbanismo y Servicios Públicos: a) Concejala delegada de Grao, a Ester Giner Hidalgo. b) Concejal delegado de Barrios, a Francisco Cabañero Catalán. c) Concejal delegado de Movilidad, a Cristian Ramírez Martínez. d) Concejal delegado de Medio Ambiente y Desarrollo Sostenible, a Cristian Ramírez Martínez. e) Concejal delegado de Agricultura, a Vicent Sales Mateu. Organización del Área de Gobierno de Impulso Económico, Empleo y Capital Humano. Se designa Delegado del Área de Gobierno de Impulso Económico, Empleo y Capital Humano a Juan Carlos Redondo Gamero. Al Área de Gobierno de Impulso Económico. Empleo y Capital Humano se adscriben directamente las competencias en materia de a) Economía y Hacienda b) Empleo c) Recursos Humanos Además de por los ámbitos de competencia señalado en el apartado anterior, en el área de Gobierno de Impulso Económico, Empleo y Capital Humano se integran las siguientes concejalías delegadas: a) Concejalía delegada de Turismo b) Concejalía delegada de Comercio y Consumo c) Concejalía delegada de Fiestas y Ermitas d) Concejalía delegada de Deportes Se designa a las siguientes personas como titulares, respectivamente. de las concejalías delegadas dependientes del Área de Gobierno de Impulso Económico, Empleo y Capital Humano: a) Concejala delegada de Turismo, a Arantxa Miralles Benages. b) Concejala delegada de Comercio y Consumo, a Alberto Vidal Guerrero. c) Concejala delegada de Fiestas y Ermitas, a Noelia Selma Andreu. e) Concejala delegada de Deportes, a Susana Fabregat Carrasquer."
+    },
+    {
+      "id": "m-12040-context-19",
+      "topic": "Bases, organización y firmas · texto de los autores",
+      "page": 12,
+      "endPage": 12,
+      "fragments": [
+        {
+          "page": 12,
+          "index": 1,
+          "x": 165,
+          "y": 229,
+          "text": "Organización del Área de Seguridad Ciudadana, Emergencias y Salud"
+        },
+        {
+          "page": 12,
+          "index": 2,
+          "x": 165,
+          "y": 265,
+          "text": "Pública."
+        },
+        {
+          "page": 12,
+          "index": 3,
+          "x": 165,
+          "y": 319,
+          "text": "Se designa Delegado del Área de Gobierno de Seguridad Ciudadana,"
+        },
+        {
+          "page": 12,
+          "index": 4,
+          "x": 166,
+          "y": 354,
+          "text": "Emergencias y Salud Pública a Antonio Ortolá Ortolá."
+        },
+        {
+          "page": 12,
+          "index": 5,
+          "x": 164,
+          "y": 410,
+          "text": "Al Área de Gobierno de Seguridad Ciudadana. Emergencias y Salud"
+        },
+        {
+          "page": 12,
+          "index": 6,
+          "x": 166,
+          "y": 444,
+          "text": "Pública se adscriben directamente las competencias en materia de"
+        },
+        {
+          "page": 12,
+          "index": 7,
+          "x": 165,
+          "y": 474,
+          "text": "a) Seguridad y Emergencias"
+        },
+        {
+          "page": 12,
+          "index": 8,
+          "x": 165,
+          "y": 505,
+          "text": "b) Salud Pública."
+        },
+        {
+          "page": 12,
+          "index": 9,
+          "x": 165,
+          "y": 564,
+          "text": "Se designa a las siguientes personas como titulares. respectivamente."
+        },
+        {
+          "page": 12,
+          "index": 10,
+          "x": 165,
+          "y": 589,
+          "text": "de las concejalías delegadas dependientes del Área de Gobierno de"
+        },
+        {
+          "page": 12,
+          "index": 11,
+          "x": 165,
+          "y": 624,
+          "text": "Seguridad Ciudadana, Emergencias y Salud Pública:"
+        },
+        {
+          "page": 12,
+          "index": 12,
+          "x": 165,
+          "y": 684,
+          "text": "a) Concejal delegado de Seguridad y Emergencias a Antonio Ortolá Ortolá."
+        },
+        {
+          "page": 12,
+          "index": 13,
+          "x": 166,
+          "y": 714,
+          "text": "b) Concejal delegado de Salud Pública, a Luciano Ferrer Pons."
+        },
+        {
+          "page": 12,
+          "index": 14,
+          "x": 166,
+          "y": 804,
+          "text": "Se acuerda la distribución de las tendencias de alcaldía del Ayuntamiento de"
+        },
+        {
+          "page": 12,
+          "index": 15,
+          "x": 166,
+          "y": 835,
+          "text": "Castellón siguiendo el siguiente criterio:"
+        },
+        {
+          "page": 12,
+          "index": 16,
+          "x": 165,
+          "y": 890,
+          "text": "TENENCIAS DE ALCALDÍA"
+        },
+        {
+          "page": 12,
+          "index": 17,
+          "x": 167,
+          "y": 924,
+          "text": "D. Sergio Toledo Llorens, la tenencia de alcaldía (Este)."
+        },
+        {
+          "page": 12,
+          "index": 18,
+          "x": 167,
+          "y": 954,
+          "text": "D. Vicent Sales Mateu, 2a tenencia de alcaldía (Oeste)."
+        },
+        {
+          "page": 12,
+          "index": 19,
+          "x": 167,
+          "y": 984,
+          "text": "D. Juan Carlos Redondo Gamero, 3a tenencia de alcaldía (Norte)."
+        },
+        {
+          "page": 12,
+          "index": 20,
+          "x": 167,
+          "y": 1014,
+          "text": "D. Antonio Ortolá Ortolá, tenencia de alcaldía (Sur)"
+        },
+        {
+          "page": 12,
+          "index": 21,
+          "x": 167,
+          "y": 1044,
+          "text": "Dña. Ester Giner Hidalgo, 5a tenencia de alcaldía (Grao)"
+        },
+        {
+          "page": 12,
+          "index": 22,
+          "x": 167,
+          "y": 1075,
+          "text": "D. María España Novoa, 6a tenencia de alcaldía."
+        },
+        {
+          "page": 12,
+          "index": 23,
+          "x": 167,
+          "y": 1105,
+          "text": "D. Francisco Cabañero Catalán, P tenencia de alcaldía."
+        },
+        {
+          "page": 12,
+          "index": 24,
+          "x": 167,
+          "y": 1135,
+          "text": "D. Noelia Selma Andreu, 8a tenencia de alcaldía (Centro)."
+        },
+        {
+          "page": 12,
+          "index": 25,
+          "x": 168,
+          "y": 1165,
+          "text": "D. Alberto Vidal Guerrero: 9a tenencia de alcaldía"
+        },
+        {
+          "page": 12,
+          "index": 26,
+          "x": 167,
+          "y": 1225,
+          "text": "Se acuerda la distribución de la representación en los consejos de distritos y"
+        },
+        {
+          "page": 12,
+          "index": 27,
+          "x": 165,
+          "y": 1255,
+          "text": "juntas de distrito del Ayuntamiento de Castellón siguiendo el siguiente criterio:"
+        },
+        {
+          "page": 12,
+          "index": 28,
+          "x": 168,
+          "y": 1316,
+          "text": "DISTRITOS"
+        },
+        {
+          "page": 12,
+          "index": 29,
+          "x": 168,
+          "y": 1345,
+          "text": "Dña. Noelia Selma Andreu, presidenta del distrito centro."
+        },
+        {
+          "page": 12,
+          "index": 30,
+          "x": 168,
+          "y": 1375,
+          "text": "Dña. Arantxa Miralles Benages: vicepresidenta del distrito centro."
+        },
+        {
+          "page": 12,
+          "index": 31,
+          "x": 168,
+          "y": 1406,
+          "text": "D. Sergio Toledo Llorens, presidente del distrito este."
+        },
+        {
+          "page": 12,
+          "index": 32,
+          "x": 168,
+          "y": 1436,
+          "text": "D. Alberto Vidal Guerrero, vicepresidente del distrito este."
+        },
+        {
+          "page": 12,
+          "index": 33,
+          "x": 168,
+          "y": 1466,
+          "text": "D. Vicent Sales Mateu, presidente del distrito oeste."
+        },
+        {
+          "page": 12,
+          "index": 34,
+          "x": 169,
+          "y": 1496,
+          "text": "D. Luciano Ferrer Pons: vicepresidente del distrito oeste."
+        },
+        {
+          "page": 12,
+          "index": 35,
+          "x": 169,
+          "y": 1526,
+          "text": "D. Juan Carlos Redondo Gamero, presidente del distrito norte."
+        },
+        {
+          "page": 12,
+          "index": 36,
+          "x": 169,
+          "y": 1556,
+          "text": "D. Francisco Cabañero Catalán, vicepresidente del distrito norte."
+        },
+        {
+          "page": 12,
+          "index": 37,
+          "x": 169,
+          "y": 1586,
+          "text": "D. Antonio Ortolá Ortolá, presidente del distrito sur."
+        },
+        {
+          "page": 12,
+          "index": 38,
+          "x": 169,
+          "y": 1616,
+          "text": "Dña. María España Novoa,vicepresidenta del distrito sur."
+        },
+        {
+          "page": 12,
+          "index": 39,
+          "x": 169,
+          "y": 1646,
+          "text": "Dña. Ester Giner Hidalgo, presidenta del distrito Grao."
+        }
+      ],
+      "rawText": "Organización del Área de Seguridad Ciudadana, Emergencias y Salud\nPública.\nSe designa Delegado del Área de Gobierno de Seguridad Ciudadana,\nEmergencias y Salud Pública a Antonio Ortolá Ortolá.\nAl Área de Gobierno de Seguridad Ciudadana. Emergencias y Salud\nPública se adscriben directamente las competencias en materia de\na) Seguridad y Emergencias\nb) Salud Pública.\nSe designa a las siguientes personas como titulares. respectivamente.\nde las concejalías delegadas dependientes del Área de Gobierno de\nSeguridad Ciudadana, Emergencias y Salud Pública:\na) Concejal delegado de Seguridad y Emergencias a Antonio Ortolá Ortolá.\nb) Concejal delegado de Salud Pública, a Luciano Ferrer Pons.\nSe acuerda la distribución de las tendencias de alcaldía del Ayuntamiento de\nCastellón siguiendo el siguiente criterio:\nTENENCIAS DE ALCALDÍA\nD. Sergio Toledo Llorens, la tenencia de alcaldía (Este).\nD. Vicent Sales Mateu, 2a tenencia de alcaldía (Oeste).\nD. Juan Carlos Redondo Gamero, 3a tenencia de alcaldía (Norte).\nD. Antonio Ortolá Ortolá, tenencia de alcaldía (Sur)\nDña. Ester Giner Hidalgo, 5a tenencia de alcaldía (Grao)\nD. María España Novoa, 6a tenencia de alcaldía.\nD. Francisco Cabañero Catalán, P tenencia de alcaldía.\nD. Noelia Selma Andreu, 8a tenencia de alcaldía (Centro).\nD. Alberto Vidal Guerrero: 9a tenencia de alcaldía\nSe acuerda la distribución de la representación en los consejos de distritos y\njuntas de distrito del Ayuntamiento de Castellón siguiendo el siguiente criterio:\nDISTRITOS\nDña. Noelia Selma Andreu, presidenta del distrito centro.\nDña. Arantxa Miralles Benages: vicepresidenta del distrito centro.\nD. Sergio Toledo Llorens, presidente del distrito este.\nD. Alberto Vidal Guerrero, vicepresidente del distrito este.\nD. Vicent Sales Mateu, presidente del distrito oeste.\nD. Luciano Ferrer Pons: vicepresidente del distrito oeste.\nD. Juan Carlos Redondo Gamero, presidente del distrito norte.\nD. Francisco Cabañero Catalán, vicepresidente del distrito norte.\nD. Antonio Ortolá Ortolá, presidente del distrito sur.\nDña. María España Novoa,vicepresidenta del distrito sur.\nDña. Ester Giner Hidalgo, presidenta del distrito Grao.",
+      "text": "Organización del Área de Seguridad Ciudadana, Emergencias y Salud Pública. Se designa Delegado del Área de Gobierno de Seguridad Ciudadana, Emergencias y Salud Pública a Antonio Ortolá Ortolá. Al Área de Gobierno de Seguridad Ciudadana. Emergencias y Salud Pública se adscriben directamente las competencias en materia de a) Seguridad y Emergencias b) Salud Pública. Se designa a las siguientes personas como titulares. respectivamente. de las concejalías delegadas dependientes del Área de Gobierno de Seguridad Ciudadana, Emergencias y Salud Pública: a) Concejal delegado de Seguridad y Emergencias a Antonio Ortolá Ortolá. b) Concejal delegado de Salud Pública, a Luciano Ferrer Pons. Se acuerda la distribución de las tendencias de alcaldía del Ayuntamiento de Castellón siguiendo el siguiente criterio: TENENCIAS DE ALCALDÍA D. Sergio Toledo Llorens, la tenencia de alcaldía (Este). D. Vicent Sales Mateu, 2a tenencia de alcaldía (Oeste). D. Juan Carlos Redondo Gamero, 3a tenencia de alcaldía (Norte). D. Antonio Ortolá Ortolá, tenencia de alcaldía (Sur) Dña. Ester Giner Hidalgo, 5a tenencia de alcaldía (Grao) D. María España Novoa, 6a tenencia de alcaldía. D. Francisco Cabañero Catalán, P tenencia de alcaldía. D. Noelia Selma Andreu, 8a tenencia de alcaldía (Centro). D. Alberto Vidal Guerrero: 9a tenencia de alcaldía Se acuerda la distribución de la representación en los consejos de distritos y juntas de distrito del Ayuntamiento de Castellón siguiendo el siguiente criterio: DISTRITOS Dña. Noelia Selma Andreu, presidenta del distrito centro. Dña. Arantxa Miralles Benages: vicepresidenta del distrito centro. D. Sergio Toledo Llorens, presidente del distrito este. D. Alberto Vidal Guerrero, vicepresidente del distrito este. D. Vicent Sales Mateu, presidente del distrito oeste. D. Luciano Ferrer Pons: vicepresidente del distrito oeste. D. Juan Carlos Redondo Gamero, presidente del distrito norte. D. Francisco Cabañero Catalán, vicepresidente del distrito norte. D. Antonio Ortolá Ortolá, presidente del distrito sur. Dña. María España Novoa,vicepresidenta del distrito sur. Dña. Ester Giner Hidalgo, presidenta del distrito Grao."
+    },
+    {
+      "id": "m-12040-context-20",
+      "topic": "Bases, organización y firmas · texto de los autores",
+      "page": 13,
+      "endPage": 13,
+      "fragments": [
+        {
+          "page": 13,
+          "index": 1,
+          "x": 166,
+          "y": 203,
+          "text": "D. Cristian Ramírez Martínez, vicepresidente del distrito Grao."
+        },
+        {
+          "page": 13,
+          "index": 2,
+          "x": 165,
+          "y": 262,
+          "text": "Se acuerda la distribución de la representación en los consejos rectores de"
+        },
+        {
+          "page": 13,
+          "index": 3,
+          "x": 166,
+          "y": 292,
+          "text": "los Patronatos de Fiestas, Deportes y Turismo siguiendo el siguiente criterio:"
+        },
+        {
+          "page": 13,
+          "index": 4,
+          "x": 166,
+          "y": 355,
+          "text": "PATRONATOS"
+        },
+        {
+          "page": 13,
+          "index": 5,
+          "x": 167,
+          "y": 383,
+          "text": "Dña. Noelia Selma Andreu: presidenta del Patronato de Fiestas."
+        },
+        {
+          "page": 13,
+          "index": 6,
+          "x": 167,
+          "y": 413,
+          "text": "Dña. Arantxa Miralles Benages: vicepresidente del Patronato de Fiestas."
+        },
+        {
+          "page": 13,
+          "index": 7,
+          "x": 167,
+          "y": 443,
+          "text": "Dña. Susana Fabregat Carrasquer, presidenta del Patronato de Deportes."
+        },
+        {
+          "page": 13,
+          "index": 8,
+          "x": 167,
+          "y": 473,
+          "text": "D. Alberto Vidal Guerrero: vicepresidente del Patronato de Deportes."
+        },
+        {
+          "page": 13,
+          "index": 9,
+          "x": 167,
+          "y": 503,
+          "text": "Dña. Arantxa Miralles Benages: presidenta del Patronato de Turismo."
+        },
+        {
+          "page": 13,
+          "index": 10,
+          "x": 167,
+          "y": 533,
+          "text": "Dña. Ester Giner Hidalgo: vicepresidenta del Patronato de Turismo."
+        },
+        {
+          "page": 13,
+          "index": 11,
+          "x": 167,
+          "y": 593,
+          "text": "Se acuerda la distribución de la representación en las funciones de portavoz y"
+        },
+        {
+          "page": 13,
+          "index": 12,
+          "x": 167,
+          "y": 623,
+          "text": "portavoz adjunto del Gobierno Municipal en el Ayuntamiento de Castellón"
+        },
+        {
+          "page": 13,
+          "index": 13,
+          "x": 167,
+          "y": 655,
+          "text": "siguiendo el siguiente criterio:"
+        },
+        {
+          "page": 13,
+          "index": 14,
+          "x": 168,
+          "y": 710,
+          "text": "PORTAVOCíA Y PORTAVOCÍA ADJUNTA"
+        },
+        {
+          "page": 13,
+          "index": 15,
+          "x": 168,
+          "y": 744,
+          "text": "D. Vicent Sales Mateu, portavoz del gobierno municipal."
+        },
+        {
+          "page": 13,
+          "index": 16,
+          "x": 168,
+          "y": 773,
+          "text": "D. Antonio Ortolá Ortolá, portavoz adjunto del gobierno municipal."
+        },
+        {
+          "page": 13,
+          "index": 17,
+          "x": 170,
+          "y": 1073,
+          "text": "BEGOÑA"
+        },
+        {
+          "page": 13,
+          "index": 18,
+          "x": 319,
+          "y": 1071,
+          "text": "R SCO GARCIA"
+        },
+        {
+          "page": 13,
+          "index": 20,
+          "x": 622,
+          "y": 1069,
+          "text": "ANTONIO ORTOLÁ ORTOLÁ"
+        },
+        {
+          "page": 13,
+          "index": 19,
+          "x": 338,
+          "y": 1101,
+          "text": "STELLÓN"
+        },
+        {
+          "page": 13,
+          "index": 21,
+          "x": 699,
+          "y": 1099,
+          "text": "VOX CASTELLÓN"
+        }
+      ],
+      "rawText": "D. Cristian Ramírez Martínez, vicepresidente del distrito Grao.\nSe acuerda la distribución de la representación en los consejos rectores de\nlos Patronatos de Fiestas, Deportes y Turismo siguiendo el siguiente criterio:\nPATRONATOS\nDña. Noelia Selma Andreu: presidenta del Patronato de Fiestas.\nDña. Arantxa Miralles Benages: vicepresidente del Patronato de Fiestas.\nDña. Susana Fabregat Carrasquer, presidenta del Patronato de Deportes.\nD. Alberto Vidal Guerrero: vicepresidente del Patronato de Deportes.\nDña. Arantxa Miralles Benages: presidenta del Patronato de Turismo.\nDña. Ester Giner Hidalgo: vicepresidenta del Patronato de Turismo.\nSe acuerda la distribución de la representación en las funciones de portavoz y\nportavoz adjunto del Gobierno Municipal en el Ayuntamiento de Castellón\nsiguiendo el siguiente criterio:\nPORTAVOCíA Y PORTAVOCÍA ADJUNTA\nD. Vicent Sales Mateu, portavoz del gobierno municipal.\nD. Antonio Ortolá Ortolá, portavoz adjunto del gobierno municipal.\nBEGOÑA\nR SCO GARCIA\nANTONIO ORTOLÁ ORTOLÁ\nSTELLÓN\nVOX CASTELLÓN",
+      "text": "D. Cristian Ramírez Martínez, vicepresidente del distrito Grao. Se acuerda la distribución de la representación en los consejos rectores de los Patronatos de Fiestas, Deportes y Turismo siguiendo el siguiente criterio: PATRONATOS Dña. Noelia Selma Andreu: presidenta del Patronato de Fiestas. Dña. Arantxa Miralles Benages: vicepresidente del Patronato de Fiestas. Dña. Susana Fabregat Carrasquer, presidenta del Patronato de Deportes. D. Alberto Vidal Guerrero: vicepresidente del Patronato de Deportes. Dña. Arantxa Miralles Benages: presidenta del Patronato de Turismo. Dña. Ester Giner Hidalgo: vicepresidenta del Patronato de Turismo. Se acuerda la distribución de la representación en las funciones de portavoz y portavoz adjunto del Gobierno Municipal en el Ayuntamiento de Castellón siguiendo el siguiente criterio: PORTAVOCíA Y PORTAVOCÍA ADJUNTA D. Vicent Sales Mateu, portavoz del gobierno municipal. D. Antonio Ortolá Ortolá, portavoz adjunto del gobierno municipal. BEGOÑA R SCO GARCIA ANTONIO ORTOLÁ ORTOLÁ STELLÓN VOX CASTELLÓN"
+    }
+  ],
+  "records": [
+    {
+      "id": "m-12040-1",
+      "officialId": "1",
+      "topic": "Familia",
+      "page": 1,
+      "endPage": 1,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 1,
+          "index": 33,
+          "x": 170,
+          "y": 1439,
+          "text": "1- Establecimiento de un plan de apoyo a las familias, con medidas que"
+        },
+        {
+          "page": 1,
+          "index": 34,
+          "x": 168,
+          "y": 1472,
+          "text": "promuevan la natalidad y la conciliación laboral, y atiendan y den"
+        },
+        {
+          "page": 1,
+          "index": 35,
+          "x": 168,
+          "y": 1505,
+          "text": "solución a las necesidades de las familias numerosas y monoparentales,"
+        },
+        {
+          "page": 1,
+          "index": 36,
+          "x": 167,
+          "y": 1537,
+          "text": "y de aquellas que tengan a su cargo personas mayores, dependientes o"
+        },
+        {
+          "page": 1,
+          "index": 37,
+          "x": 168,
+          "y": 1570,
+          "text": "dispongan de menos recursos, desarrollando campañas informativas y"
+        },
+        {
+          "page": 1,
+          "index": 38,
+          "x": 168,
+          "y": 1602,
+          "text": "de concienciación destinadas al conocimiento de quienes pudieran"
+        },
+        {
+          "page": 1,
+          "index": 39,
+          "x": 169,
+          "y": 1635,
+          "text": "necesitarlas."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "1- Establecimiento de un plan de apoyo a las familias, con medidas que\npromuevan la natalidad y la conciliación laboral, y atiendan y den\nsolución a las necesidades de las familias numerosas y monoparentales,\ny de aquellas que tengan a su cargo personas mayores, dependientes o\ndispongan de menos recursos, desarrollando campañas informativas y\nde concienciación destinadas al conocimiento de quienes pudieran\nnecesitarlas.",
+      "text": "Establecimiento de un plan de apoyo a las familias, con medidas que promuevan la natalidad y la conciliación laboral, y atiendan y den solución a las necesidades de las familias numerosas y monoparentales, y de aquellas que tengan a su cargo personas mayores, dependientes o dispongan de menos recursos, desarrollando campañas informativas y de concienciación destinadas al conocimiento de quienes pudieran necesitarlas."
+    },
+    {
+      "id": "m-12040-2",
+      "officialId": "2",
+      "topic": "Familia",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 1,
+          "x": 164,
+          "y": 202,
+          "text": "2- Reivindicación de la libre elección de los padres de centro educativo"
+        },
+        {
+          "page": 2,
+          "index": 2,
+          "x": 165,
+          "y": 236,
+          "text": "para sus hijos a través del distrito único."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "2- Reivindicación de la libre elección de los padres de centro educativo\npara sus hijos a través del distrito único.",
+      "text": "Reivindicación de la libre elección de los padres de centro educativo para sus hijos a través del distrito único."
+    },
+    {
+      "id": "m-12040-3",
+      "officialId": "3",
+      "topic": "Familia",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 3,
+          "x": 165,
+          "y": 286,
+          "text": "3- Recuperación del servicio de Menjar a casa y Major a casa."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "3- Recuperación del servicio de Menjar a casa y Major a casa.",
+      "text": "Recuperación del servicio de Menjar a casa y Major a casa."
+    },
+    {
+      "id": "m-12040-4",
+      "officialId": "4",
+      "topic": "Familia",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 4,
+          "x": 164,
+          "y": 353,
+          "text": "4- Recuperación de la asesoría jurídica para mayores."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "4- Recuperación de la asesoría jurídica para mayores.",
+      "text": "Recuperación de la asesoría jurídica para mayores."
+    },
+    {
+      "id": "m-12040-5",
+      "officialId": "5",
+      "topic": "Seguridad",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 6,
+          "x": 166,
+          "y": 481,
+          "text": "5- Implementación de un nuevo modelo de Policía Local, con el"
+        },
+        {
+          "page": 2,
+          "index": 7,
+          "x": 165,
+          "y": 514,
+          "text": "objetivo principal de servicio público que tenga como prioridad la"
+        },
+        {
+          "page": 2,
+          "index": 8,
+          "x": 166,
+          "y": 548,
+          "text": "seguridad ciudadana."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "5- Implementación de un nuevo modelo de Policía Local, con el\nobjetivo principal de servicio público que tenga como prioridad la\nseguridad ciudadana.",
+      "text": "Implementación de un nuevo modelo de Policía Local, con el objetivo principal de servicio público que tenga como prioridad la seguridad ciudadana."
+    },
+    {
+      "id": "m-12040-6",
+      "officialId": "6",
+      "topic": "Seguridad",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 10,
+          "x": 165,
+          "y": 598,
+          "text": "6-"
+        },
+        {
+          "page": 2,
+          "index": 9,
+          "x": 237,
+          "y": 597,
+          "text": "Puesta en marcha de la Policía de Barrio."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "6-\nPuesta en marcha de la Policía de Barrio.",
+      "text": "Puesta en marcha de la Policía de Barrio."
+    },
+    {
+      "id": "m-12040-7",
+      "officialId": "7",
+      "topic": "Seguridad",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 11,
+          "x": 238,
+          "y": 647,
+          "text": "Incremento de medios técnicos destinados a la mejora de la"
+        },
+        {
+          "page": 2,
+          "index": 12,
+          "x": 166,
+          "y": 680,
+          "text": "seguridad y respuesta eficiente a las emergencias en la marjalería y en"
+        },
+        {
+          "page": 2,
+          "index": 13,
+          "x": 167,
+          "y": 715,
+          "text": "las urbanizaciones de montaña."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado. El número 7, omitido por el OCR, se recupera visualmente de la página 2; el texto bruto se conserva sin modificar.",
+      "rawText": "Incremento de medios técnicos destinados a la mejora de la\nseguridad y respuesta eficiente a las emergencias en la marjalería y en\nlas urbanizaciones de montaña.",
+      "text": "Incremento de medios técnicos destinados a la mejora de la seguridad y respuesta eficiente a las emergencias en la marjalería y en las urbanizaciones de montaña."
+    },
+    {
+      "id": "m-12040-8",
+      "officialId": "8",
+      "topic": "Seguridad",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 15,
+          "x": 166,
+          "y": 764,
+          "text": "8-"
+        },
+        {
+          "page": 2,
+          "index": 14,
+          "x": 238,
+          "y": 763,
+          "text": "Incremento de la presencia de efectivos en zonas proclives a la"
+        },
+        {
+          "page": 2,
+          "index": 16,
+          "x": 166,
+          "y": 796,
+          "text": "ocupación ilegal de viviendas, procurando vigilancia y seguridad que"
+        },
+        {
+          "page": 2,
+          "index": 17,
+          "x": 166,
+          "y": 830,
+          "text": "evite ocupaciones."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "8-\nIncremento de la presencia de efectivos en zonas proclives a la\nocupación ilegal de viviendas, procurando vigilancia y seguridad que\nevite ocupaciones.",
+      "text": "Incremento de la presencia de efectivos en zonas proclives a la ocupación ilegal de viviendas, procurando vigilancia y seguridad que evite ocupaciones."
+    },
+    {
+      "id": "m-12040-9",
+      "officialId": "9",
+      "topic": "Seguridad",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 19,
+          "x": 167,
+          "y": 880,
+          "text": "9-"
+        },
+        {
+          "page": 2,
+          "index": 18,
+          "x": 238,
+          "y": 879,
+          "text": "Dotación al cuerpo de la Policía Local de una estructura y jefatura"
+        },
+        {
+          "page": 2,
+          "index": 20,
+          "x": 167,
+          "y": 911,
+          "text": "estables, y de instalaciones, medios y recursos adecuados y modernos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "9-\nDotación al cuerpo de la Policía Local de una estructura y jefatura\nestables, y de instalaciones, medios y recursos adecuados y modernos.",
+      "text": "Dotación al cuerpo de la Policía Local de una estructura y jefatura estables, y de instalaciones, medios y recursos adecuados y modernos."
+    },
+    {
+      "id": "m-12040-10",
+      "officialId": "10",
+      "topic": "Seguridad",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 21,
+          "x": 169,
+          "y": 962,
+          "text": "10- Cobertura de todas las plazas vacantes de la plantilla del cuerpo"
+        },
+        {
+          "page": 2,
+          "index": 22,
+          "x": 167,
+          "y": 995,
+          "text": "de bomberos y consolidación de la estructura de su Jefatura."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "10- Cobertura de todas las plazas vacantes de la plantilla del cuerpo\nde bomberos y consolidación de la estructura de su Jefatura.",
+      "text": "Cobertura de todas las plazas vacantes de la plantilla del cuerpo de bomberos y consolidación de la estructura de su Jefatura."
+    },
+    {
+      "id": "m-12040-11",
+      "officialId": "11",
+      "topic": "Seguridad",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 23,
+          "x": 169,
+          "y": 1045,
+          "text": "11- Estudio de un nuevo modelo de cobertura del servicio de bomberos"
+        },
+        {
+          "page": 2,
+          "index": 24,
+          "x": 167,
+          "y": 1078,
+          "text": "con alcance a todo el término municipal."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "11- Estudio de un nuevo modelo de cobertura del servicio de bomberos\ncon alcance a todo el término municipal.",
+      "text": "Estudio de un nuevo modelo de cobertura del servicio de bomberos con alcance a todo el término municipal."
+    },
+    {
+      "id": "m-12040-12",
+      "officialId": "12",
+      "topic": "Políticas sociales",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 26,
+          "x": 170,
+          "y": 1191,
+          "text": "12- Establecimiento de medidas reguladoras del empadronamiento y"
+        },
+        {
+          "page": 2,
+          "index": 27,
+          "x": 168,
+          "y": 1223,
+          "text": "de la inmigración irregular, tendentes a lograr la certeza y veracidad de"
+        },
+        {
+          "page": 2,
+          "index": 28,
+          "x": 169,
+          "y": 1256,
+          "text": "los empadronamientos, de forma que sean reales y no ficticios."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "12- Establecimiento de medidas reguladoras del empadronamiento y\nde la inmigración irregular, tendentes a lograr la certeza y veracidad de\nlos empadronamientos, de forma que sean reales y no ficticios.",
+      "text": "Establecimiento de medidas reguladoras del empadronamiento y de la inmigración irregular, tendentes a lograr la certeza y veracidad de los empadronamientos, de forma que sean reales y no ficticios."
+    },
+    {
+      "id": "m-12040-13",
+      "officialId": "13",
+      "topic": "Políticas sociales",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 29,
+          "x": 170,
+          "y": 1306,
+          "text": "13- Establecimiento de medidas de aseguramiento de que el objeto y"
+        },
+        {
+          "page": 2,
+          "index": 30,
+          "x": 167,
+          "y": 1339,
+          "text": "fines sociales de asociaciones solicitantes de ayudas y subvenciones"
+        },
+        {
+          "page": 2,
+          "index": 31,
+          "x": 169,
+          "y": 1372,
+          "text": "municipales relacionadas con la inmigración, tiene como destino final a"
+        },
+        {
+          "page": 2,
+          "index": 32,
+          "x": 169,
+          "y": 1404,
+          "text": "perceptores inmigrantes en situación acreditada de legalidad, o tenga"
+        },
+        {
+          "page": 2,
+          "index": 33,
+          "x": 169,
+          "y": 1437,
+          "text": "como objeto la regularización inmediata de los mismos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "13- Establecimiento de medidas de aseguramiento de que el objeto y\nfines sociales de asociaciones solicitantes de ayudas y subvenciones\nmunicipales relacionadas con la inmigración, tiene como destino final a\nperceptores inmigrantes en situación acreditada de legalidad, o tenga\ncomo objeto la regularización inmediata de los mismos.",
+      "text": "Establecimiento de medidas de aseguramiento de que el objeto y fines sociales de asociaciones solicitantes de ayudas y subvenciones municipales relacionadas con la inmigración, tiene como destino final a perceptores inmigrantes en situación acreditada de legalidad, o tenga como objeto la regularización inmediata de los mismos."
+    },
+    {
+      "id": "m-12040-14",
+      "officialId": "14",
+      "topic": "Políticas sociales",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 34,
+          "x": 171,
+          "y": 1487,
+          "text": "14-Combatir todo tipo de violencia, especialmente la que sufren mujeres,"
+        },
+        {
+          "page": 2,
+          "index": 35,
+          "x": 170,
+          "y": 1520,
+          "text": "niños y ancianos, garantizándoles atención, asesoramiento y apoyo."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "14-Combatir todo tipo de violencia, especialmente la que sufren mujeres,\nniños y ancianos, garantizándoles atención, asesoramiento y apoyo.",
+      "text": "Combatir todo tipo de violencia, especialmente la que sufren mujeres, niños y ancianos, garantizándoles atención, asesoramiento y apoyo."
+    },
+    {
+      "id": "m-12040-15",
+      "officialId": "15",
+      "topic": "Políticas sociales",
+      "page": 2,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 2,
+          "index": 36,
+          "x": 171,
+          "y": 1570,
+          "text": "15-En materia de violencia contra la mujer, mejora de los planes de"
+        },
+        {
+          "page": 2,
+          "index": 37,
+          "x": 170,
+          "y": 1603,
+          "text": "seguridad y coordinación junto con la Comisión Municipal para una"
+        },
+        {
+          "page": 2,
+          "index": 38,
+          "x": 170,
+          "y": 1635,
+          "text": "mayor atención integral, social, y psicológica de las víctimas, a través de"
+        },
+        {
+          "page": 3,
+          "index": 1,
+          "x": 165,
+          "y": 201,
+          "text": "la implementación de un Protocolo de actuación inmediata de los agentes"
+        },
+        {
+          "page": 3,
+          "index": 2,
+          "x": 165,
+          "y": 235,
+          "text": "policiales y sociales."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "15-En materia de violencia contra la mujer, mejora de los planes de\nseguridad y coordinación junto con la Comisión Municipal para una\nmayor atención integral, social, y psicológica de las víctimas, a través de\nla implementación de un Protocolo de actuación inmediata de los agentes\npoliciales y sociales.",
+      "text": "En materia de violencia contra la mujer, mejora de los planes de seguridad y coordinación junto con la Comisión Municipal para una mayor atención integral, social, y psicológica de las víctimas, a través de la implementación de un Protocolo de actuación inmediata de los agentes policiales y sociales."
+    },
+    {
+      "id": "m-12040-16",
+      "officialId": "16",
+      "topic": "Políticas sociales",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 3,
+          "x": 167,
+          "y": 283,
+          "text": "16- Compromiso firme de garantizar y trabajar por la igualdad ante la ley"
+        },
+        {
+          "page": 3,
+          "index": 4,
+          "x": 164,
+          "y": 315,
+          "text": "y para que ningún ciudadano sufra en Castellón discriminación de ningún"
+        },
+        {
+          "page": 3,
+          "index": 5,
+          "x": 164,
+          "y": 348,
+          "text": "tipo por razón de sexo, raza, opinión, religión u orientación sexual. Los"
+        },
+        {
+          "page": 3,
+          "index": 6,
+          "x": 165,
+          "y": 380,
+          "text": "derechos de todas las personas estarán amparadas por el Gobierno"
+        },
+        {
+          "page": 3,
+          "index": 7,
+          "x": 166,
+          "y": 415,
+          "text": "municipal de Castellón."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "16- Compromiso firme de garantizar y trabajar por la igualdad ante la ley\ny para que ningún ciudadano sufra en Castellón discriminación de ningún\ntipo por razón de sexo, raza, opinión, religión u orientación sexual. Los\nderechos de todas las personas estarán amparadas por el Gobierno\nmunicipal de Castellón.",
+      "text": "Compromiso firme de garantizar y trabajar por la igualdad ante la ley y para que ningún ciudadano sufra en Castellón discriminación de ningún tipo por razón de sexo, raza, opinión, religión u orientación sexual. Los derechos de todas las personas estarán amparadas por el Gobierno municipal de Castellón."
+    },
+    {
+      "id": "m-12040-17",
+      "officialId": "17",
+      "topic": "Políticas sociales",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 8,
+          "x": 167,
+          "y": 463,
+          "text": "17- Reivindicación de la construcción inmediata de una residencia"
+        },
+        {
+          "page": 3,
+          "index": 9,
+          "x": 166,
+          "y": 498,
+          "text": "pública para las personas mayores."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "17- Reivindicación de la construcción inmediata de una residencia\npública para las personas mayores.",
+      "text": "Reivindicación de la construcción inmediata de una residencia pública para las personas mayores."
+    },
+    {
+      "id": "m-12040-18",
+      "officialId": "18",
+      "topic": "Políticas sociales",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 10,
+          "x": 167,
+          "y": 546,
+          "text": "18- Puesta en marcha de unidades de respiro para pacientes con"
+        },
+        {
+          "page": 3,
+          "index": 11,
+          "x": 164,
+          "y": 579,
+          "text": "Alzheimer y con Parkinson por distritos, con actividades formativas para"
+        },
+        {
+          "page": 3,
+          "index": 12,
+          "x": 165,
+          "y": 613,
+          "text": "familiares y personas de apoyo."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "18- Puesta en marcha de unidades de respiro para pacientes con\nAlzheimer y con Parkinson por distritos, con actividades formativas para\nfamiliares y personas de apoyo.",
+      "text": "Puesta en marcha de unidades de respiro para pacientes con Alzheimer y con Parkinson por distritos, con actividades formativas para familiares y personas de apoyo."
+    },
+    {
+      "id": "m-12040-19",
+      "officialId": "19",
+      "topic": "Vivienda y ocupación",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 14,
+          "x": 168,
+          "y": 714,
+          "text": "19- Implementación de un programa de ayudas europeas para"
+        },
+        {
+          "page": 3,
+          "index": 15,
+          "x": 167,
+          "y": 747,
+          "text": "rehabilitación y mantenimiento de viviendas."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "19- Implementación de un programa de ayudas europeas para\nrehabilitación y mantenimiento de viviendas.",
+      "text": "Implementación de un programa de ayudas europeas para rehabilitación y mantenimiento de viviendas."
+    },
+    {
+      "id": "m-12040-20",
+      "officialId": "20",
+      "topic": "Vivienda y ocupación",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 16,
+          "x": 166,
+          "y": 797,
+          "text": "20- Aumento del parque de viviendas sociales."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "20- Aumento del parque de viviendas sociales.",
+      "text": "Aumento del parque de viviendas sociales."
+    },
+    {
+      "id": "m-12040-21",
+      "officialId": "21",
+      "topic": "Vivienda y ocupación",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 17,
+          "x": 166,
+          "y": 847,
+          "text": "21- Promoción de viviendas públicas para alquiler a menores de 35"
+        },
+        {
+          "page": 3,
+          "index": 18,
+          "x": 167,
+          "y": 883,
+          "text": "años."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "21- Promoción de viviendas públicas para alquiler a menores de 35\naños.",
+      "text": "Promoción de viviendas públicas para alquiler a menores de 35 años."
+    },
+    {
+      "id": "m-12040-22",
+      "officialId": "22",
+      "topic": "Vivienda y ocupación",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 19,
+          "x": 166,
+          "y": 931,
+          "text": "22- Impulso de la Oficina Municipal de la Vivienda."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "22- Impulso de la Oficina Municipal de la Vivienda.",
+      "text": "Impulso de la Oficina Municipal de la Vivienda."
+    },
+    {
+      "id": "m-12040-23",
+      "officialId": "23",
+      "topic": "Vivienda y ocupación",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 20,
+          "x": 167,
+          "y": 981,
+          "text": "23- Creación de un plan de lucha contra la ocupación ilegal de"
+        },
+        {
+          "page": 3,
+          "index": 21,
+          "x": 166,
+          "y": 1014,
+          "text": "viviendas y de un servicio municipal \"Anti-okupa\" para asesorar"
+        },
+        {
+          "page": 3,
+          "index": 22,
+          "x": 168,
+          "y": 1046,
+          "text": "legalmente a los propietarios afectados, tanto por allanamiento de sus"
+        },
+        {
+          "page": 3,
+          "index": 23,
+          "x": 167,
+          "y": 1079,
+          "text": "viviendas, como si es consecuencia de alquileres impagados."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "23- Creación de un plan de lucha contra la ocupación ilegal de\nviviendas y de un servicio municipal \"Anti-okupa\" para asesorar\nlegalmente a los propietarios afectados, tanto por allanamiento de sus\nviviendas, como si es consecuencia de alquileres impagados.",
+      "text": "Creación de un plan de lucha contra la ocupación ilegal de viviendas y de un servicio municipal \"Anti-okupa\" para asesorar legalmente a los propietarios afectados, tanto por allanamiento de sus viviendas, como si es consecuencia de alquileres impagados."
+    },
+    {
+      "id": "m-12040-24",
+      "officialId": "24",
+      "topic": "Impuestos y presión fiscal",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 26,
+          "x": 168,
+          "y": 1244,
+          "text": "24- Reducción progresiva del IBI en el recibo hasta el 10% por"
+        },
+        {
+          "page": 3,
+          "index": 27,
+          "x": 169,
+          "y": 1293,
+          "text": "inmueble."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "24- Reducción progresiva del IBI en el recibo hasta el 10% por\ninmueble.",
+      "text": "Reducción progresiva del IBI en el recibo hasta el 10% por inmueble."
+    },
+    {
+      "id": "m-12040-25",
+      "officialId": "25",
+      "topic": "Impuestos y presión fiscal",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 28,
+          "x": 168,
+          "y": 1341,
+          "text": "25- Bonificación de impuestos a unidades familiares con todos sus"
+        },
+        {
+          "page": 3,
+          "index": 29,
+          "x": 169,
+          "y": 1374,
+          "text": "miembros en situación de desempleo y a personas viudas en riesgo de"
+        },
+        {
+          "page": 3,
+          "index": 30,
+          "x": 169,
+          "y": 1409,
+          "text": "exclusión social."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "25- Bonificación de impuestos a unidades familiares con todos sus\nmiembros en situación de desempleo y a personas viudas en riesgo de\nexclusión social.",
+      "text": "Bonificación de impuestos a unidades familiares con todos sus miembros en situación de desempleo y a personas viudas en riesgo de exclusión social."
+    },
+    {
+      "id": "m-12040-26",
+      "officialId": "26",
+      "topic": "Impuestos y presión fiscal",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 31,
+          "x": 169,
+          "y": 1457,
+          "text": "26- Bonificación del IBI a las familias numerosas respecto de su"
+        },
+        {
+          "page": 3,
+          "index": 32,
+          "x": 168,
+          "y": 1490,
+          "text": "vivienda habitual, entre el 10% y el 70% en función de la renta familiar, el"
+        },
+        {
+          "page": 3,
+          "index": 33,
+          "x": 170,
+          "y": 1523,
+          "text": "número de hijos y el valor catastral del inmueble."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "26- Bonificación del IBI a las familias numerosas respecto de su\nvivienda habitual, entre el 10% y el 70% en función de la renta familiar, el\nnúmero de hijos y el valor catastral del inmueble.",
+      "text": "Bonificación del IBI a las familias numerosas respecto de su vivienda habitual, entre el 10% y el 70% en función de la renta familiar, el número de hijos y el valor catastral del inmueble."
+    },
+    {
+      "id": "m-12040-27",
+      "officialId": "27",
+      "topic": "Impuestos y presión fiscal",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 3,
+          "index": 34,
+          "x": 169,
+          "y": 1573,
+          "text": "27- Bonificación el IBI de fincas rústicas para los agricultores que las"
+        },
+        {
+          "page": 3,
+          "index": 35,
+          "x": 170,
+          "y": 1607,
+          "text": "mantengan en producción."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "27- Bonificación el IBI de fincas rústicas para los agricultores que las\nmantengan en producción.",
+      "text": "Bonificación el IBI de fincas rústicas para los agricultores que las mantengan en producción."
+    },
+    {
+      "id": "m-12040-28",
+      "officialId": "28",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 1,
+          "x": 165,
+          "y": 203,
+          "text": "28- Creación de la Tarjeta Verde, con bonificaciones en la tasa de la"
+        },
+        {
+          "page": 4,
+          "index": 2,
+          "x": 166,
+          "y": 235,
+          "text": "basura por la correcta gestión de residuos y reciclaje."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "28- Creación de la Tarjeta Verde, con bonificaciones en la tasa de la\nbasura por la correcta gestión de residuos y reciclaje.",
+      "text": "Creación de la Tarjeta Verde, con bonificaciones en la tasa de la basura por la correcta gestión de residuos y reciclaje."
+    },
+    {
+      "id": "m-12040-29",
+      "officialId": "29",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 3,
+          "x": 165,
+          "y": 285,
+          "text": "29- Bonificación al 100% de la tasa de basuras el primer año de"
+        },
+        {
+          "page": 4,
+          "index": 4,
+          "x": 165,
+          "y": 317,
+          "text": "actividad de autónomos y PYMEs, y activación de un sistema progresivo"
+        },
+        {
+          "page": 4,
+          "index": 5,
+          "x": 165,
+          "y": 350,
+          "text": "del pago de la tasa de basura en los negocios en función de los residuos"
+        },
+        {
+          "page": 4,
+          "index": 6,
+          "x": 165,
+          "y": 390,
+          "text": "que generen."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "29- Bonificación al 100% de la tasa de basuras el primer año de\nactividad de autónomos y PYMEs, y activación de un sistema progresivo\ndel pago de la tasa de basura en los negocios en función de los residuos\nque generen.",
+      "text": "Bonificación al 100% de la tasa de basuras el primer año de actividad de autónomos y PYMEs, y activación de un sistema progresivo del pago de la tasa de basura en los negocios en función de los residuos que generen."
+    },
+    {
+      "id": "m-12040-30",
+      "officialId": "30",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 7,
+          "x": 166,
+          "y": 433,
+          "text": "30- Prórroga de la exención de la tasa de ocupación de vía pública"
+        },
+        {
+          "page": 4,
+          "index": 8,
+          "x": 166,
+          "y": 467,
+          "text": "para todo el ejercicio 2023."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "30- Prórroga de la exención de la tasa de ocupación de vía pública\npara todo el ejercicio 2023.",
+      "text": "Prórroga de la exención de la tasa de ocupación de vía pública para todo el ejercicio 2023."
+    },
+    {
+      "id": "m-12040-31",
+      "officialId": "31",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 9,
+          "x": 166,
+          "y": 514,
+          "text": "31- Reducción del 20% del impuesto sobre construcciones,"
+        },
+        {
+          "page": 4,
+          "index": 10,
+          "x": 167,
+          "y": 549,
+          "text": "instalaciones y obras (ICIO)."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "31- Reducción del 20% del impuesto sobre construcciones,\ninstalaciones y obras (ICIO).",
+      "text": "Reducción del 20% del impuesto sobre construcciones, instalaciones y obras (ICIO)."
+    },
+    {
+      "id": "m-12040-32",
+      "officialId": "32",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 11,
+          "x": 167,
+          "y": 589,
+          "text": "32- Bonificación de hasta el 25% de aquellas construcciones que"
+        },
+        {
+          "page": 4,
+          "index": 12,
+          "x": 167,
+          "y": 622,
+          "text": "incorporen sistemas de energía solar o aprovechamiento eléctrico."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "32- Bonificación de hasta el 25% de aquellas construcciones que\nincorporen sistemas de energía solar o aprovechamiento eléctrico.",
+      "text": "Bonificación de hasta el 25% de aquellas construcciones que incorporen sistemas de energía solar o aprovechamiento eléctrico."
+    },
+    {
+      "id": "m-12040-33",
+      "officialId": "33",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 13,
+          "x": 167,
+          "y": 672,
+          "text": "33- Bonificación del 65% de construcciones, instalaciones u obras en"
+        },
+        {
+          "page": 4,
+          "index": 14,
+          "x": 167,
+          "y": 705,
+          "text": "edificios existentes, que favorezcan la accesibilidad a personas con"
+        },
+        {
+          "page": 4,
+          "index": 15,
+          "x": 168,
+          "y": 740,
+          "text": "movilidad reducida."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "33- Bonificación del 65% de construcciones, instalaciones u obras en\nedificios existentes, que favorezcan la accesibilidad a personas con\nmovilidad reducida.",
+      "text": "Bonificación del 65% de construcciones, instalaciones u obras en edificios existentes, que favorezcan la accesibilidad a personas con movilidad reducida."
+    },
+    {
+      "id": "m-12040-34",
+      "officialId": "34",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 16,
+          "x": 168,
+          "y": 787,
+          "text": "34- Implantación de ayudas I TV de edificios, para que los"
+        },
+        {
+          "page": 4,
+          "index": 17,
+          "x": 167,
+          "y": 820,
+          "text": "castellonenses puedan pagar la revisión de los mismos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "34- Implantación de ayudas I TV de edificios, para que los\ncastellonenses puedan pagar la revisión de los mismos.",
+      "text": "Implantación de ayudas I TV de edificios, para que los castellonenses puedan pagar la revisión de los mismos."
+    },
+    {
+      "id": "m-12040-35",
+      "officialId": "35",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 18,
+          "x": 168,
+          "y": 869,
+          "text": "35- Bonificación hasta el 90% de las obras de adecuación de"
+        },
+        {
+          "page": 4,
+          "index": 19,
+          "x": 168,
+          "y": 902,
+          "text": "inmuebles de más de 50 años que tengan la consideración de primera"
+        },
+        {
+          "page": 4,
+          "index": 20,
+          "x": 167,
+          "y": 936,
+          "text": "vivienda o sean destinados a alquiler social."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "35- Bonificación hasta el 90% de las obras de adecuación de\ninmuebles de más de 50 años que tengan la consideración de primera\nvivienda o sean destinados a alquiler social.",
+      "text": "Bonificación hasta el 90% de las obras de adecuación de inmuebles de más de 50 años que tengan la consideración de primera vivienda o sean destinados a alquiler social."
+    },
+    {
+      "id": "m-12040-36",
+      "officialId": "36",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 21,
+          "x": 169,
+          "y": 985,
+          "text": "36- Revisión de los tipos y bonificaciones del Impuesto de Plusvalía,"
+        },
+        {
+          "page": 4,
+          "index": 22,
+          "x": 168,
+          "y": 1018,
+          "text": "con especial atención a aquellos casos \"mortis causa\" y donaciones en"
+        },
+        {
+          "page": 4,
+          "index": 23,
+          "x": 169,
+          "y": 1050,
+          "text": "primer grado, en los que la transmisión del inmueble carece de carácter"
+        },
+        {
+          "page": 4,
+          "index": 24,
+          "x": 169,
+          "y": 1086,
+          "text": "lucrativo."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "36- Revisión de los tipos y bonificaciones del Impuesto de Plusvalía,\ncon especial atención a aquellos casos \"mortis causa\" y donaciones en\nprimer grado, en los que la transmisión del inmueble carece de carácter\nlucrativo.",
+      "text": "Revisión de los tipos y bonificaciones del Impuesto de Plusvalía, con especial atención a aquellos casos \"mortis causa\" y donaciones en primer grado, en los que la transmisión del inmueble carece de carácter lucrativo."
+    },
+    {
+      "id": "m-12040-37",
+      "officialId": "37",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 25,
+          "x": 169,
+          "y": 1133,
+          "text": "37- Bonificación de hasta el 40% del IAE y el 60% del IBI para"
+        },
+        {
+          "page": 4,
+          "index": 26,
+          "x": 169,
+          "y": 1165,
+          "text": "empresas de nueva implantación en el término municipal."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "37- Bonificación de hasta el 40% del IAE y el 60% del IBI para\nempresas de nueva implantación en el término municipal.",
+      "text": "Bonificación de hasta el 40% del IAE y el 60% del IBI para empresas de nueva implantación en el término municipal."
+    },
+    {
+      "id": "m-12040-38",
+      "officialId": "38",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 27,
+          "x": 170,
+          "y": 1215,
+          "text": "38- Bonificación con variables progresivas del IAE para las empresas"
+        },
+        {
+          "page": 4,
+          "index": 28,
+          "x": 169,
+          "y": 1248,
+          "text": "que contraten trabajadores y seleccionen colectivos con dificultad de"
+        },
+        {
+          "page": 4,
+          "index": 29,
+          "x": 170,
+          "y": 1283,
+          "text": "inserción laboral."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "38- Bonificación con variables progresivas del IAE para las empresas\nque contraten trabajadores y seleccionen colectivos con dificultad de\ninserción laboral.",
+      "text": "Bonificación con variables progresivas del IAE para las empresas que contraten trabajadores y seleccionen colectivos con dificultad de inserción laboral."
+    },
+    {
+      "id": "m-12040-39",
+      "officialId": "39",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 30,
+          "x": 170,
+          "y": 1330,
+          "text": "39- Establecimiento de una bonificación adicional del 25% del"
+        },
+        {
+          "page": 4,
+          "index": 31,
+          "x": 171,
+          "y": 1363,
+          "text": "impuesto sobre actividades económicas, para aquellas actividades más"
+        },
+        {
+          "page": 4,
+          "index": 32,
+          "x": 170,
+          "y": 1396,
+          "text": "afectadas directamente por la pandemia y la subida de costes."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "39- Establecimiento de una bonificación adicional del 25% del\nimpuesto sobre actividades económicas, para aquellas actividades más\nafectadas directamente por la pandemia y la subida de costes.",
+      "text": "Establecimiento de una bonificación adicional del 25% del impuesto sobre actividades económicas, para aquellas actividades más afectadas directamente por la pandemia y la subida de costes."
+    },
+    {
+      "id": "m-12040-40",
+      "officialId": "40",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 33,
+          "x": 170,
+          "y": 1446,
+          "text": "40- Congelación del incremento del 1% del impuesto sobre vehículos"
+        },
+        {
+          "page": 4,
+          "index": 34,
+          "x": 171,
+          "y": 1481,
+          "text": "de tracción mecánica."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "40- Congelación del incremento del 1% del impuesto sobre vehículos\nde tracción mecánica.",
+      "text": "Congelación del incremento del 1% del impuesto sobre vehículos de tracción mecánica."
+    },
+    {
+      "id": "m-12040-41",
+      "officialId": "41",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 35,
+          "x": 170,
+          "y": 1529,
+          "text": "41- Bonificación de hasta el 70% del impuesto, el primer año, para los"
+        },
+        {
+          "page": 4,
+          "index": 36,
+          "x": 171,
+          "y": 1563,
+          "text": "vehículos, de nueva matriculación, menos contaminantes."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "41- Bonificación de hasta el 70% del impuesto, el primer año, para los\nvehículos, de nueva matriculación, menos contaminantes.",
+      "text": "Bonificación de hasta el 70% del impuesto, el primer año, para los vehículos, de nueva matriculación, menos contaminantes."
+    },
+    {
+      "id": "m-12040-42",
+      "officialId": "42",
+      "topic": "Impuestos y presión fiscal",
+      "page": 4,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 4,
+          "index": 37,
+          "x": 171,
+          "y": 1612,
+          "text": "42- Establecimiento de una subvención del 50% del Impuesto de"
+        },
+        {
+          "page": 5,
+          "index": 0,
+          "x": 165,
+          "y": 201,
+          "text": "Circulación a los vehículos comerciales de nueva adquisición para"
+        },
+        {
+          "page": 5,
+          "index": 1,
+          "x": 167,
+          "y": 233,
+          "text": "PYMES y autónomos durante su primer año de actividad económica."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "42- Establecimiento de una subvención del 50% del Impuesto de\nCirculación a los vehículos comerciales de nueva adquisición para\nPYMES y autónomos durante su primer año de actividad económica.",
+      "text": "Establecimiento de una subvención del 50% del Impuesto de Circulación a los vehículos comerciales de nueva adquisición para PYMES y autónomos durante su primer año de actividad económica."
+    },
+    {
+      "id": "m-12040-43",
+      "officialId": "43",
+      "topic": "Impuestos y presión fiscal",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 2,
+          "x": 165,
+          "y": 283,
+          "text": "43- Subvención del Impuesto de Circulación, el primer año, por la"
+        },
+        {
+          "page": 5,
+          "index": 3,
+          "x": 166,
+          "y": 316,
+          "text": "adquisición de vehículos de uso agrícola con destino al mantenimiento de"
+        },
+        {
+          "page": 5,
+          "index": 4,
+          "x": 165,
+          "y": 350,
+          "text": "fincas cultivadas en producción."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "43- Subvención del Impuesto de Circulación, el primer año, por la\nadquisición de vehículos de uso agrícola con destino al mantenimiento de\nfincas cultivadas en producción.",
+      "text": "Subvención del Impuesto de Circulación, el primer año, por la adquisición de vehículos de uso agrícola con destino al mantenimiento de fincas cultivadas en producción."
+    },
+    {
+      "id": "m-12040-44",
+      "officialId": "44",
+      "topic": "Comercio",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 6,
+          "x": 165,
+          "y": 450,
+          "text": "44- Reforma del Mercado Central, incluyendo la apertura de una zona"
+        },
+        {
+          "page": 5,
+          "index": 7,
+          "x": 166,
+          "y": 484,
+          "text": "gastronómica y de ocio."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "44- Reforma del Mercado Central, incluyendo la apertura de una zona\ngastronómica y de ocio.",
+      "text": "Reforma del Mercado Central, incluyendo la apertura de una zona gastronómica y de ocio."
+    },
+    {
+      "id": "m-12040-45",
+      "officialId": "45",
+      "topic": "Comercio",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 8,
+          "x": 165,
+          "y": 533,
+          "text": "45- Impulso de bonos comerciales para activación del consumo e"
+        },
+        {
+          "page": 5,
+          "index": 9,
+          "x": 167,
+          "y": 566,
+          "text": "incentivación de las compras en el comercio local."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "45- Impulso de bonos comerciales para activación del consumo e\nincentivación de las compras en el comercio local.",
+      "text": "Impulso de bonos comerciales para activación del consumo e incentivación de las compras en el comercio local."
+    },
+    {
+      "id": "m-12040-46",
+      "officialId": "46",
+      "topic": "Comercio",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 10,
+          "x": 166,
+          "y": 615,
+          "text": "46- Planificación de la accesibilidad al centro de la ciudad,"
+        },
+        {
+          "page": 5,
+          "index": 11,
+          "x": 167,
+          "y": 648,
+          "text": "reestructurando el tráfico, facilitando el acceso y bonificando, mediante"
+        },
+        {
+          "page": 5,
+          "index": 12,
+          "x": 166,
+          "y": 680,
+          "text": "tickets-descuento obtenidos por compra realizada en comercios locales,"
+        },
+        {
+          "page": 5,
+          "index": 13,
+          "x": 167,
+          "y": 714,
+          "text": "el aparcamiento en parkings."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "46- Planificación de la accesibilidad al centro de la ciudad,\nreestructurando el tráfico, facilitando el acceso y bonificando, mediante\ntickets-descuento obtenidos por compra realizada en comercios locales,\nel aparcamiento en parkings.",
+      "text": "Planificación de la accesibilidad al centro de la ciudad, reestructurando el tráfico, facilitando el acceso y bonificando, mediante tickets-descuento obtenidos por compra realizada en comercios locales, el aparcamiento en parkings."
+    },
+    {
+      "id": "m-12040-47",
+      "officialId": "47",
+      "topic": "Comercio",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 14,
+          "x": 166,
+          "y": 763,
+          "text": "47- Potenciación de campañas comerciales, con especial atención a la"
+        },
+        {
+          "page": 5,
+          "index": 15,
+          "x": 167,
+          "y": 796,
+          "text": "de Navidad con iluminación, música y espectáculos de dinamización del"
+        },
+        {
+          "page": 5,
+          "index": 16,
+          "x": 167,
+          "y": 831,
+          "text": "comercio."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "47- Potenciación de campañas comerciales, con especial atención a la\nde Navidad con iluminación, música y espectáculos de dinamización del\ncomercio.",
+      "text": "Potenciación de campañas comerciales, con especial atención a la de Navidad con iluminación, música y espectáculos de dinamización del comercio."
+    },
+    {
+      "id": "m-12040-48",
+      "officialId": "48",
+      "topic": "Comercio",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 17,
+          "x": 166,
+          "y": 878,
+          "text": "48- Supresión del carácter sancionador de cámaras en el centro de la"
+        },
+        {
+          "page": 5,
+          "index": 18,
+          "x": 167,
+          "y": 911,
+          "text": "ciudad y sustitución por un sistema que no sea recaudatorio."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "48- Supresión del carácter sancionador de cámaras en el centro de la\nciudad y sustitución por un sistema que no sea recaudatorio.",
+      "text": "Supresión del carácter sancionador de cámaras en el centro de la ciudad y sustitución por un sistema que no sea recaudatorio."
+    },
+    {
+      "id": "m-12040-49",
+      "officialId": "49",
+      "topic": "Comercio",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 19,
+          "x": 167,
+          "y": 960,
+          "text": "49- Creación de una plataforma de venta digital para los comercios de"
+        },
+        {
+          "page": 5,
+          "index": 20,
+          "x": 168,
+          "y": 993,
+          "text": "Castellón, con un sistema de entrega de productos a domicilio."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "49- Creación de una plataforma de venta digital para los comercios de\nCastellón, con un sistema de entrega de productos a domicilio.",
+      "text": "Creación de una plataforma de venta digital para los comercios de Castellón, con un sistema de entrega de productos a domicilio."
+    },
+    {
+      "id": "m-12040-50",
+      "officialId": "50",
+      "topic": "Movilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 22,
+          "x": 168,
+          "y": 1076,
+          "text": "50- Revisión de la Zona de Bajas Emisiones y elaboración de un nuevo"
+        },
+        {
+          "page": 5,
+          "index": 23,
+          "x": 169,
+          "y": 1109,
+          "text": "plan de movilidad y accesibilidad urbana sostenible, limitándolo a las"
+        },
+        {
+          "page": 5,
+          "index": 24,
+          "x": 168,
+          "y": 1143,
+          "text": "calles que ya se encontraban peatonalizadas."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "50- Revisión de la Zona de Bajas Emisiones y elaboración de un nuevo\nplan de movilidad y accesibilidad urbana sostenible, limitándolo a las\ncalles que ya se encontraban peatonalizadas.",
+      "text": "Revisión de la Zona de Bajas Emisiones y elaboración de un nuevo plan de movilidad y accesibilidad urbana sostenible, limitándolo a las calles que ya se encontraban peatonalizadas."
+    },
+    {
+      "id": "m-12040-51",
+      "officialId": "51",
+      "topic": "Movilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 25,
+          "x": 169,
+          "y": 1192,
+          "text": "51- Revisión, en coordinación con los representantes vecinales, del"
+        },
+        {
+          "page": 5,
+          "index": 26,
+          "x": 169,
+          "y": 1225,
+          "text": "proyecto y obra de peatonalización de la denominada \"almendra central\""
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "51- Revisión, en coordinación con los representantes vecinales, del\nproyecto y obra de peatonalización de la denominada \"almendra central\"",
+      "text": "Revisión, en coordinación con los representantes vecinales, del proyecto y obra de peatonalización de la denominada \"almendra central\""
+    },
+    {
+      "id": "m-12040-52",
+      "officialId": "52",
+      "topic": "Movilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 27,
+          "x": 169,
+          "y": 1275,
+          "text": "52- Estudio, en coordinación con los representantes vecinales, de"
+        },
+        {
+          "page": 5,
+          "index": 28,
+          "x": 169,
+          "y": 1308,
+          "text": "propuestas de modificación viables que resuelvan incidencias graves de"
+        },
+        {
+          "page": 5,
+          "index": 29,
+          "x": 169,
+          "y": 1340,
+          "text": "movilidad, inundaciones, etc. que sufren los vecinos de la Avenida de"
+        },
+        {
+          "page": 5,
+          "index": 30,
+          "x": 170,
+          "y": 1373,
+          "text": "Lidón y adyacentes, producidas como consecuencia de las obras de"
+        },
+        {
+          "page": 5,
+          "index": 31,
+          "x": 170,
+          "y": 1407,
+          "text": "reforma de la citada avenida."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "52- Estudio, en coordinación con los representantes vecinales, de\npropuestas de modificación viables que resuelvan incidencias graves de\nmovilidad, inundaciones, etc. que sufren los vecinos de la Avenida de\nLidón y adyacentes, producidas como consecuencia de las obras de\nreforma de la citada avenida.",
+      "text": "Estudio, en coordinación con los representantes vecinales, de propuestas de modificación viables que resuelvan incidencias graves de movilidad, inundaciones, etc. que sufren los vecinos de la Avenida de Lidón y adyacentes, producidas como consecuencia de las obras de reforma de la citada avenida."
+    },
+    {
+      "id": "m-12040-53",
+      "officialId": "53",
+      "topic": "Movilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 32,
+          "x": 170,
+          "y": 1455,
+          "text": "53- Revisión, respuesta y soluciones, en coordinación con los"
+        },
+        {
+          "page": 5,
+          "index": 33,
+          "x": 170,
+          "y": 1488,
+          "text": "representantes vecinales, de las reformas realizadas e incidencias"
+        },
+        {
+          "page": 5,
+          "index": 34,
+          "x": 170,
+          "y": 1521,
+          "text": "causadas en la circulación del Bulevard Blasco Ibáñez y de la Avenida"
+        },
+        {
+          "page": 5,
+          "index": 35,
+          "x": 170,
+          "y": 1555,
+          "text": "Capuchinos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "53- Revisión, respuesta y soluciones, en coordinación con los\nrepresentantes vecinales, de las reformas realizadas e incidencias\ncausadas en la circulación del Bulevard Blasco Ibáñez y de la Avenida\nCapuchinos.",
+      "text": "Revisión, respuesta y soluciones, en coordinación con los representantes vecinales, de las reformas realizadas e incidencias causadas en la circulación del Bulevard Blasco Ibáñez y de la Avenida Capuchinos."
+    },
+    {
+      "id": "m-12040-54",
+      "officialId": "54",
+      "topic": "Movilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 5,
+          "index": 36,
+          "x": 170,
+          "y": 1603,
+          "text": "54- Incremento de la seguridad mediante una adecuada iluminación de"
+        },
+        {
+          "page": 5,
+          "index": 37,
+          "x": 171,
+          "y": 1639,
+          "text": "los pasos de peatones."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "54- Incremento de la seguridad mediante una adecuada iluminación de\nlos pasos de peatones.",
+      "text": "Incremento de la seguridad mediante una adecuada iluminación de los pasos de peatones."
+    },
+    {
+      "id": "m-12040-55",
+      "officialId": "55",
+      "topic": "Movilidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 1,
+          "x": 164,
+          "y": 203,
+          "text": "55- Renovación integral del sistema y servicio municipal de préstamo"
+        },
+        {
+          "page": 6,
+          "index": 2,
+          "x": 164,
+          "y": 237,
+          "text": "de bicicletas Bicicas."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "55- Renovación integral del sistema y servicio municipal de préstamo\nde bicicletas Bicicas.",
+      "text": "Renovación integral del sistema y servicio municipal de préstamo de bicicletas Bicicas."
+    },
+    {
+      "id": "m-12040-56",
+      "officialId": "56",
+      "topic": "Movilidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 3,
+          "x": 165,
+          "y": 286,
+          "text": "56- Disminución de la contaminación acústica, mediante el reasfaltado"
+        },
+        {
+          "page": 6,
+          "index": 4,
+          "x": 164,
+          "y": 318,
+          "text": "con material fonoabsorbente de los viales con mayor densidad de"
+        },
+        {
+          "page": 6,
+          "index": 5,
+          "x": 164,
+          "y": 353,
+          "text": "circulación de vehículos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "56- Disminución de la contaminación acústica, mediante el reasfaltado\ncon material fonoabsorbente de los viales con mayor densidad de\ncirculación de vehículos.",
+      "text": "Disminución de la contaminación acústica, mediante el reasfaltado con material fonoabsorbente de los viales con mayor densidad de circulación de vehículos."
+    },
+    {
+      "id": "m-12040-57",
+      "officialId": "57",
+      "topic": "Movilidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 6,
+          "x": 165,
+          "y": 401,
+          "text": "57- Creación de aparcamientos disuasorios en puntos de entrada a la"
+        },
+        {
+          "page": 6,
+          "index": 7,
+          "x": 164,
+          "y": 434,
+          "text": "ciudad, y su conexión con el centro mediante transporte público."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "57- Creación de aparcamientos disuasorios en puntos de entrada a la\nciudad, y su conexión con el centro mediante transporte público.",
+      "text": "Creación de aparcamientos disuasorios en puntos de entrada a la ciudad, y su conexión con el centro mediante transporte público."
+    },
+    {
+      "id": "m-12040-58",
+      "officialId": "58",
+      "topic": "Movilidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 8,
+          "x": 165,
+          "y": 484,
+          "text": "58- Finalización de la Ronda Oeste de circunvalación."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "58- Finalización de la Ronda Oeste de circunvalación.",
+      "text": "Finalización de la Ronda Oeste de circunvalación."
+    },
+    {
+      "id": "m-12040-59",
+      "officialId": "59",
+      "topic": "Lenguas oficiales y señas de identidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 10,
+          "x": 165,
+          "y": 594,
+          "text": "59- Respeto absoluto por la libertad individual de elección de las"
+        },
+        {
+          "page": 6,
+          "index": 11,
+          "x": 166,
+          "y": 627,
+          "text": "lenguas cooficiales de la Comunidad Valenciana, y compromiso del uso"
+        },
+        {
+          "page": 6,
+          "index": 12,
+          "x": 165,
+          "y": 659,
+          "text": "de ambas en la gestión municipal, con especial cuidado de respetar"
+        },
+        {
+          "page": 6,
+          "index": 13,
+          "x": 166,
+          "y": 692,
+          "text": "siempre la de elección del administrado en su relación, oral o escrita, con"
+        },
+        {
+          "page": 6,
+          "index": 14,
+          "x": 165,
+          "y": 726,
+          "text": "el Ayuntamiento."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "59- Respeto absoluto por la libertad individual de elección de las\nlenguas cooficiales de la Comunidad Valenciana, y compromiso del uso\nde ambas en la gestión municipal, con especial cuidado de respetar\nsiempre la de elección del administrado en su relación, oral o escrita, con\nel Ayuntamiento.",
+      "text": "Respeto absoluto por la libertad individual de elección de las lenguas cooficiales de la Comunidad Valenciana, y compromiso del uso de ambas en la gestión municipal, con especial cuidado de respetar siempre la de elección del administrado en su relación, oral o escrita, con el Ayuntamiento."
+    },
+    {
+      "id": "m-12040-60",
+      "officialId": "60",
+      "topic": "Lenguas oficiales y señas de identidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 15,
+          "x": 165,
+          "y": 774,
+          "text": "60- Eliminación del requisito lingüístico del valenciano para acceso a la"
+        },
+        {
+          "page": 6,
+          "index": 16,
+          "x": 165,
+          "y": 807,
+          "text": "función pública, manteniendo su valoración puntuable como mérito en las"
+        },
+        {
+          "page": 6,
+          "index": 17,
+          "x": 166,
+          "y": 840,
+          "text": "bases de procesos selectivos para acceso a plazas que, por sus"
+        },
+        {
+          "page": 6,
+          "index": 18,
+          "x": 166,
+          "y": 872,
+          "text": "características y funciones, requieran de su conocimiento y uso en"
+        },
+        {
+          "page": 6,
+          "index": 19,
+          "x": 166,
+          "y": 904,
+          "text": "atención a su notoria incidencia en la relación de comunicación directa"
+        },
+        {
+          "page": 6,
+          "index": 20,
+          "x": 166,
+          "y": 938,
+          "text": "del empleado público con la ciudadanía."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "60- Eliminación del requisito lingüístico del valenciano para acceso a la\nfunción pública, manteniendo su valoración puntuable como mérito en las\nbases de procesos selectivos para acceso a plazas que, por sus\ncaracterísticas y funciones, requieran de su conocimiento y uso en\natención a su notoria incidencia en la relación de comunicación directa\ndel empleado público con la ciudadanía.",
+      "text": "Eliminación del requisito lingüístico del valenciano para acceso a la función pública, manteniendo su valoración puntuable como mérito en las bases de procesos selectivos para acceso a plazas que, por sus características y funciones, requieran de su conocimiento y uso en atención a su notoria incidencia en la relación de comunicación directa del empleado público con la ciudadanía."
+    },
+    {
+      "id": "m-12040-61",
+      "officialId": "61",
+      "topic": "Lenguas oficiales y señas de identidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 21,
+          "x": 166,
+          "y": 987,
+          "text": "61- Rotulación del callejero y de las instalaciones y dependencias"
+        },
+        {
+          "page": 6,
+          "index": 22,
+          "x": 167,
+          "y": 1020,
+          "text": "municipales en las dos lenguas cooficiales de la Comunidad Valenciana,"
+        },
+        {
+          "page": 6,
+          "index": 23,
+          "x": 166,
+          "y": 1052,
+          "text": "con la excepción del respeto que merece el recuerdo de aquellas"
+        },
+        {
+          "page": 6,
+          "index": 24,
+          "x": 167,
+          "y": 1085,
+          "text": "personas o entidades que hubieran sido conocidas y reconocidas por su"
+        },
+        {
+          "page": 6,
+          "index": 25,
+          "x": 167,
+          "y": 1117,
+          "text": "nombre o denominación en una sola de las dos lenguas, o cuando se"
+        },
+        {
+          "page": 6,
+          "index": 26,
+          "x": 166,
+          "y": 1150,
+          "text": "trate de un topónimo consolidado que nunca haya tenido doble"
+        },
+        {
+          "page": 6,
+          "index": 27,
+          "x": 167,
+          "y": 1184,
+          "text": "denominación."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "61- Rotulación del callejero y de las instalaciones y dependencias\nmunicipales en las dos lenguas cooficiales de la Comunidad Valenciana,\ncon la excepción del respeto que merece el recuerdo de aquellas\npersonas o entidades que hubieran sido conocidas y reconocidas por su\nnombre o denominación en una sola de las dos lenguas, o cuando se\ntrate de un topónimo consolidado que nunca haya tenido doble\ndenominación.",
+      "text": "Rotulación del callejero y de las instalaciones y dependencias municipales en las dos lenguas cooficiales de la Comunidad Valenciana, con la excepción del respeto que merece el recuerdo de aquellas personas o entidades que hubieran sido conocidas y reconocidas por su nombre o denominación en una sola de las dos lenguas, o cuando se trate de un topónimo consolidado que nunca haya tenido doble denominación."
+    },
+    {
+      "id": "m-12040-62",
+      "officialId": "62",
+      "topic": "Lenguas oficiales y señas de identidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 28,
+          "x": 167,
+          "y": 1233,
+          "text": "62- Respeto a las señas de identidad propias valencianas y"
+        },
+        {
+          "page": 6,
+          "index": 29,
+          "x": 167,
+          "y": 1265,
+          "text": "castellonenses, a sus costumbres y tradiciones, sin injerencias de"
+        },
+        {
+          "page": 6,
+          "index": 30,
+          "x": 167,
+          "y": 1298,
+          "text": "aquellas otras que, ajenas a éstas, tratan de imponerse con menosprecio"
+        },
+        {
+          "page": 6,
+          "index": 31,
+          "x": 167,
+          "y": 1330,
+          "text": "de las propias. La protección de estos valores, señas, costumbres y"
+        },
+        {
+          "page": 6,
+          "index": 32,
+          "x": 167,
+          "y": 1363,
+          "text": "tradiciones de la Comunidad Valenciana y de Castellón, hacen necesario"
+        },
+        {
+          "page": 6,
+          "index": 33,
+          "x": 168,
+          "y": 1395,
+          "text": "limitar el acceso a subvenciones a las entidades o asociaciones que"
+        },
+        {
+          "page": 6,
+          "index": 34,
+          "x": 168,
+          "y": 1428,
+          "text": "atenten contra ellas, y las bases de sus convocatorias deberán prever"
+        },
+        {
+          "page": 6,
+          "index": 35,
+          "x": 168,
+          "y": 1462,
+          "text": "esta circunstancia."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "62- Respeto a las señas de identidad propias valencianas y\ncastellonenses, a sus costumbres y tradiciones, sin injerencias de\naquellas otras que, ajenas a éstas, tratan de imponerse con menosprecio\nde las propias. La protección de estos valores, señas, costumbres y\ntradiciones de la Comunidad Valenciana y de Castellón, hacen necesario\nlimitar el acceso a subvenciones a las entidades o asociaciones que\natenten contra ellas, y las bases de sus convocatorias deberán prever\nesta circunstancia.",
+      "text": "Respeto a las señas de identidad propias valencianas y castellonenses, a sus costumbres y tradiciones, sin injerencias de aquellas otras que, ajenas a éstas, tratan de imponerse con menosprecio de las propias. La protección de estos valores, señas, costumbres y tradiciones de la Comunidad Valenciana y de Castellón, hacen necesario limitar el acceso a subvenciones a las entidades o asociaciones que atenten contra ellas, y las bases de sus convocatorias deberán prever esta circunstancia."
+    },
+    {
+      "id": "m-12040-63",
+      "officialId": "63",
+      "topic": "Topónimo de la ciudad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 6,
+          "index": 37,
+          "x": 168,
+          "y": 1574,
+          "text": "63- Recuperación de la doble toponímia de la ciudad, estableciendo su"
+        },
+        {
+          "page": 6,
+          "index": 38,
+          "x": 169,
+          "y": 1606,
+          "text": "denominación oficial en las dos lenguas cooficiales de nuestra"
+        },
+        {
+          "page": 6,
+          "index": 39,
+          "x": 169,
+          "y": 1639,
+          "text": "Comunidad - Castellón de la Plana / Castelló de la Plana."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "63- Recuperación de la doble toponímia de la ciudad, estableciendo su\ndenominación oficial en las dos lenguas cooficiales de nuestra\nComunidad - Castellón de la Plana / Castelló de la Plana.",
+      "text": "Recuperación de la doble toponímia de la ciudad, estableciendo su denominación oficial en las dos lenguas cooficiales de nuestra Comunidad - Castellón de la Plana / Castelló de la Plana."
+    },
+    {
+      "id": "m-12040-64",
+      "officialId": "64",
+      "topic": "Cultura",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 2,
+          "x": 164,
+          "y": 251,
+          "text": "64- Recuperación de las Infraestructuras Culturales, y especialmente"
+        },
+        {
+          "page": 7,
+          "index": 3,
+          "x": 165,
+          "y": 283,
+          "text": "del Teatro Principal, para ofrecer una programación de alto nivel, y"
+        },
+        {
+          "page": 7,
+          "index": 4,
+          "x": 165,
+          "y": 316,
+          "text": "permitir en ellas la actividad propia de todos los colectivos culturales de"
+        },
+        {
+          "page": 7,
+          "index": 5,
+          "x": 166,
+          "y": 349,
+          "text": "la ciudad, con especial atención a la de artistas, escritores, músicos y"
+        },
+        {
+          "page": 7,
+          "index": 6,
+          "x": 166,
+          "y": 384,
+          "text": "promotores locales."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "64- Recuperación de las Infraestructuras Culturales, y especialmente\ndel Teatro Principal, para ofrecer una programación de alto nivel, y\npermitir en ellas la actividad propia de todos los colectivos culturales de\nla ciudad, con especial atención a la de artistas, escritores, músicos y\npromotores locales.",
+      "text": "Recuperación de las Infraestructuras Culturales, y especialmente del Teatro Principal, para ofrecer una programación de alto nivel, y permitir en ellas la actividad propia de todos los colectivos culturales de la ciudad, con especial atención a la de artistas, escritores, músicos y promotores locales."
+    },
+    {
+      "id": "m-12040-65",
+      "officialId": "65",
+      "topic": "Cultura",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 7,
+          "x": 165,
+          "y": 431,
+          "text": "65- Reforma total e integral de la Biblioteca Municipal de la calle Mayor"
+        },
+        {
+          "page": 7,
+          "index": 8,
+          "x": 165,
+          "y": 465,
+          "text": "y ampliación del \"Pla d'Espais Públics de Lectura\"."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "65- Reforma total e integral de la Biblioteca Municipal de la calle Mayor\ny ampliación del \"Pla d'Espais Públics de Lectura\".",
+      "text": "Reforma total e integral de la Biblioteca Municipal de la calle Mayor y ampliación del \"Pla d'Espais Públics de Lectura\"."
+    },
+    {
+      "id": "m-12040-66",
+      "officialId": "66",
+      "topic": "Cultura",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 9,
+          "x": 165,
+          "y": 514,
+          "text": "66- Construcción de la Ciudad de la Música, con los conservatorios de"
+        },
+        {
+          "page": 7,
+          "index": 10,
+          "x": 166,
+          "y": 550,
+          "text": "Música y Danza."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "66- Construcción de la Ciudad de la Música, con los conservatorios de\nMúsica y Danza.",
+      "text": "Construcción de la Ciudad de la Música, con los conservatorios de Música y Danza."
+    },
+    {
+      "id": "m-12040-67",
+      "officialId": "67",
+      "topic": "Cultura",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 11,
+          "x": 166,
+          "y": 597,
+          "text": "67- Buscar el consenso entre todos los grupos políticos para la"
+        },
+        {
+          "page": 7,
+          "index": 12,
+          "x": 166,
+          "y": 630,
+          "text": "denominación de calles y espacios e instalaciones municipales, con el"
+        },
+        {
+          "page": 7,
+          "index": 13,
+          "x": 167,
+          "y": 662,
+          "text": "máximo respeto a las personalidades socio-culturales de nuestra ciudad"
+        },
+        {
+          "page": 7,
+          "index": 14,
+          "x": 166,
+          "y": 698,
+          "text": "e historia."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "67- Buscar el consenso entre todos los grupos políticos para la\ndenominación de calles y espacios e instalaciones municipales, con el\nmáximo respeto a las personalidades socio-culturales de nuestra ciudad\ne historia.",
+      "text": "Buscar el consenso entre todos los grupos políticos para la denominación de calles y espacios e instalaciones municipales, con el máximo respeto a las personalidades socio-culturales de nuestra ciudad e historia."
+    },
+    {
+      "id": "m-12040-68",
+      "officialId": "68",
+      "topic": "Cultura",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 15,
+          "x": 166,
+          "y": 745,
+          "text": "68- Las subvenciones, ayudas y contrataciones se desarrollarán con"
+        },
+        {
+          "page": 7,
+          "index": 16,
+          "x": 167,
+          "y": 778,
+          "text": "criterios legales, objetivos, plurales y debidamente asesorados por el"
+        },
+        {
+          "page": 7,
+          "index": 17,
+          "x": 167,
+          "y": 810,
+          "text": "Consejo Municipal de Cultura que asumirá un auténtico protagonismo en"
+        },
+        {
+          "page": 7,
+          "index": 18,
+          "x": 168,
+          "y": 843,
+          "text": "la decisión de las políticas culturales de nuestra ciudad, procurando una"
+        },
+        {
+          "page": 7,
+          "index": 19,
+          "x": 167,
+          "y": 875,
+          "text": "óptima programación cultural que recoja también todas las iniciativas de"
+        },
+        {
+          "page": 7,
+          "index": 20,
+          "x": 168,
+          "y": 909,
+          "text": "los colectivos y generadores culturales locales."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "68- Las subvenciones, ayudas y contrataciones se desarrollarán con\ncriterios legales, objetivos, plurales y debidamente asesorados por el\nConsejo Municipal de Cultura que asumirá un auténtico protagonismo en\nla decisión de las políticas culturales de nuestra ciudad, procurando una\nóptima programación cultural que recoja también todas las iniciativas de\nlos colectivos y generadores culturales locales.",
+      "text": "Las subvenciones, ayudas y contrataciones se desarrollarán con criterios legales, objetivos, plurales y debidamente asesorados por el Consejo Municipal de Cultura que asumirá un auténtico protagonismo en la decisión de las políticas culturales de nuestra ciudad, procurando una óptima programación cultural que recoja también todas las iniciativas de los colectivos y generadores culturales locales."
+    },
+    {
+      "id": "m-12040-69",
+      "officialId": "69",
+      "topic": "Cultura",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 21,
+          "x": 167,
+          "y": 958,
+          "text": "69- Apoyo y potenciación de los espectáculos taurinos de todo tipo,"
+        },
+        {
+          "page": 7,
+          "index": 22,
+          "x": 168,
+          "y": 991,
+          "text": "dentro de las posibilidades de que dispone la administración local."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "69- Apoyo y potenciación de los espectáculos taurinos de todo tipo,\ndentro de las posibilidades de que dispone la administración local.",
+      "text": "Apoyo y potenciación de los espectáculos taurinos de todo tipo, dentro de las posibilidades de que dispone la administración local."
+    },
+    {
+      "id": "m-12040-70",
+      "officialId": "70",
+      "topic": "Cultura",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 23,
+          "x": 168,
+          "y": 1041,
+          "text": "70- Ubicación en lugar relevante de la ciudad de una escultura o"
+        },
+        {
+          "page": 7,
+          "index": 24,
+          "x": 169,
+          "y": 1074,
+          "text": "monumento que honre la memoria y mantenga el recuerdo a las"
+        },
+        {
+          "page": 7,
+          "index": 25,
+          "x": 168,
+          "y": 1106,
+          "text": "víctimas de la violencia, como estableció ya el acuerdo municipal"
+        },
+        {
+          "page": 7,
+          "index": 26,
+          "x": 169,
+          "y": 1140,
+          "text": "aprobado en los primeros años de la Democracia."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "70- Ubicación en lugar relevante de la ciudad de una escultura o\nmonumento que honre la memoria y mantenga el recuerdo a las\nvíctimas de la violencia, como estableció ya el acuerdo municipal\naprobado en los primeros años de la Democracia.",
+      "text": "Ubicación en lugar relevante de la ciudad de una escultura o monumento que honre la memoria y mantenga el recuerdo a las víctimas de la violencia, como estableció ya el acuerdo municipal aprobado en los primeros años de la Democracia."
+    },
+    {
+      "id": "m-12040-71",
+      "officialId": "71",
+      "topic": "Administración local",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 29,
+          "x": 170,
+          "y": 1284,
+          "text": "71- Creación de una ventanilla única con la administración para facilitar"
+        },
+        {
+          "page": 7,
+          "index": 30,
+          "x": 169,
+          "y": 1320,
+          "text": "trámites burocráticos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "71- Creación de una ventanilla única con la administración para facilitar\ntrámites burocráticos.",
+      "text": "Creación de una ventanilla única con la administración para facilitar trámites burocráticos."
+    },
+    {
+      "id": "m-12040-72",
+      "officialId": "72",
+      "topic": "Administración local",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 31,
+          "x": 170,
+          "y": 1367,
+          "text": "72- Atención física y personal a ciudadanos vulnerables por la brecha"
+        },
+        {
+          "page": 7,
+          "index": 32,
+          "x": 170,
+          "y": 1400,
+          "text": "digital para gestión y tramitación de expedientes administrativos de todo"
+        },
+        {
+          "page": 7,
+          "index": 33,
+          "x": 170,
+          "y": 1436,
+          "text": "tipo."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "72- Atención física y personal a ciudadanos vulnerables por la brecha\ndigital para gestión y tramitación de expedientes administrativos de todo\ntipo.",
+      "text": "Atención física y personal a ciudadanos vulnerables por la brecha digital para gestión y tramitación de expedientes administrativos de todo tipo."
+    },
+    {
+      "id": "m-12040-73",
+      "officialId": "73",
+      "topic": "Administración local",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 34,
+          "x": 171,
+          "y": 1483,
+          "text": "73- Potenciación del servicio municipal para la atención al agricultor."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "73- Potenciación del servicio municipal para la atención al agricultor.",
+      "text": "Potenciación del servicio municipal para la atención al agricultor."
+    },
+    {
+      "id": "m-12040-74",
+      "officialId": "74",
+      "topic": "Administración local",
+      "page": 7,
+      "endPage": 7,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 7,
+          "index": 35,
+          "x": 171,
+          "y": 1534,
+          "text": "74- Reestructuración y simplificación de la tramitación de ayudas,"
+        },
+        {
+          "page": 7,
+          "index": 36,
+          "x": 172,
+          "y": 1567,
+          "text": "permisos y subvenciones a los colectivos festivos, implantando una"
+        },
+        {
+          "page": 7,
+          "index": 37,
+          "x": 171,
+          "y": 1601,
+          "text": "ventanilla única de gestión para ellos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "74- Reestructuración y simplificación de la tramitación de ayudas,\npermisos y subvenciones a los colectivos festivos, implantando una\nventanilla única de gestión para ellos.",
+      "text": "Reestructuración y simplificación de la tramitación de ayudas, permisos y subvenciones a los colectivos festivos, implantando una ventanilla única de gestión para ellos."
+    },
+    {
+      "id": "m-12040-75",
+      "officialId": "75",
+      "topic": "Administración local",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 1,
+          "x": 164,
+          "y": 204,
+          "text": "75- Implantación de un servicio de atención ciudadana por"
+        },
+        {
+          "page": 8,
+          "index": 2,
+          "x": 164,
+          "y": 236,
+          "text": "videoconferencia disponible mañana y tarde, para obtención de citas"
+        },
+        {
+          "page": 8,
+          "index": 3,
+          "x": 165,
+          "y": 269,
+          "text": "previas y facilitar el acceso a los servicios administrativos del"
+        },
+        {
+          "page": 8,
+          "index": 4,
+          "x": 163,
+          "y": 302,
+          "text": "Ayuntamiento."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "75- Implantación de un servicio de atención ciudadana por\nvideoconferencia disponible mañana y tarde, para obtención de citas\nprevias y facilitar el acceso a los servicios administrativos del\nAyuntamiento.",
+      "text": "Implantación de un servicio de atención ciudadana por videoconferencia disponible mañana y tarde, para obtención de citas previas y facilitar el acceso a los servicios administrativos del Ayuntamiento."
+    },
+    {
+      "id": "m-12040-76",
+      "officialId": "76",
+      "topic": "Administración local",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 5,
+          "x": 165,
+          "y": 351,
+          "text": "76- Potenciación de la administración electrónica y mejora de la"
+        },
+        {
+          "page": 8,
+          "index": 6,
+          "x": 164,
+          "y": 384,
+          "text": "calidad y agilidad de comunicación en el seguimiento de los trámites que"
+        },
+        {
+          "page": 8,
+          "index": 7,
+          "x": 165,
+          "y": 416,
+          "text": "los ciudadanos mantienen con su ayuntamiento a través de la carpeta"
+        },
+        {
+          "page": 8,
+          "index": 8,
+          "x": 165,
+          "y": 450,
+          "text": "electrónica."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "76- Potenciación de la administración electrónica y mejora de la\ncalidad y agilidad de comunicación en el seguimiento de los trámites que\nlos ciudadanos mantienen con su ayuntamiento a través de la carpeta\nelectrónica.",
+      "text": "Potenciación de la administración electrónica y mejora de la calidad y agilidad de comunicación en el seguimiento de los trámites que los ciudadanos mantienen con su ayuntamiento a través de la carpeta electrónica."
+    },
+    {
+      "id": "m-12040-77",
+      "officialId": "77",
+      "topic": "Urbanismo",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 10,
+          "x": 165,
+          "y": 562,
+          "text": "77- Modificación del Plan General para subsanar los problemas de"
+        },
+        {
+          "page": 8,
+          "index": 11,
+          "x": 165,
+          "y": 595,
+          "text": "carencia de Zona Industrial y los que afectan a la Marjalería."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "77- Modificación del Plan General para subsanar los problemas de\ncarencia de Zona Industrial y los que afectan a la Marjalería.",
+      "text": "Modificación del Plan General para subsanar los problemas de carencia de Zona Industrial y los que afectan a la Marjalería."
+    },
+    {
+      "id": "m-12040-78",
+      "officialId": "78",
+      "topic": "Urbanismo",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 12,
+          "x": 165,
+          "y": 645,
+          "text": "78- Reparación de la tubería e instalación de un nuevo motor en las"
+        },
+        {
+          "page": 8,
+          "index": 13,
+          "x": 166,
+          "y": 678,
+          "text": "partidas Molinera/Bovar, impulsando, junto al Coto Arrocero, un Plan"
+        },
+        {
+          "page": 8,
+          "index": 14,
+          "x": 167,
+          "y": 711,
+          "text": "Integral de Recuperación de toda la infraestructura."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "78- Reparación de la tubería e instalación de un nuevo motor en las\npartidas Molinera/Bovar, impulsando, junto al Coto Arrocero, un Plan\nIntegral de Recuperación de toda la infraestructura.",
+      "text": "Reparación de la tubería e instalación de un nuevo motor en las partidas Molinera/Bovar, impulsando, junto al Coto Arrocero, un Plan Integral de Recuperación de toda la infraestructura."
+    },
+    {
+      "id": "m-12040-79",
+      "officialId": "79",
+      "topic": "Turismo, deportes y fiestas",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 16,
+          "x": 166,
+          "y": 812,
+          "text": "79- Establecer mecanismos y procedimientos que propicien una mayor"
+        },
+        {
+          "page": 8,
+          "index": 17,
+          "x": 166,
+          "y": 844,
+          "text": "eficiencia de los Patronatos de Turismo, Deportes y Fiestas, e incentiven"
+        },
+        {
+          "page": 8,
+          "index": 18,
+          "x": 166,
+          "y": 877,
+          "text": "la consecución de patrocinios para el fomento de sus actividades y"
+        },
+        {
+          "page": 8,
+          "index": 19,
+          "x": 166,
+          "y": 910,
+          "text": "consolidación de sus objetivos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "79- Establecer mecanismos y procedimientos que propicien una mayor\neficiencia de los Patronatos de Turismo, Deportes y Fiestas, e incentiven\nla consecución de patrocinios para el fomento de sus actividades y\nconsolidación de sus objetivos.",
+      "text": "Establecer mecanismos y procedimientos que propicien una mayor eficiencia de los Patronatos de Turismo, Deportes y Fiestas, e incentiven la consecución de patrocinios para el fomento de sus actividades y consolidación de sus objetivos."
+    },
+    {
+      "id": "m-12040-80",
+      "officialId": "80",
+      "topic": "Turismo, deportes y fiestas",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 20,
+          "x": 166,
+          "y": 959,
+          "text": "80- Mantenimiento y potenciación de las relaciones institucionales y"
+        },
+        {
+          "page": 8,
+          "index": 21,
+          "x": 166,
+          "y": 992,
+          "text": "colaborativas con las Casas Regionales asentadas en nuestra ciudad, en"
+        },
+        {
+          "page": 8,
+          "index": 22,
+          "x": 166,
+          "y": 1025,
+          "text": "aras a la promoción mutua de los valores turísticos y a los intercambios"
+        },
+        {
+          "page": 8,
+          "index": 23,
+          "x": 166,
+          "y": 1058,
+          "text": "culturales con aquellos otros territorios de España."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "80- Mantenimiento y potenciación de las relaciones institucionales y\ncolaborativas con las Casas Regionales asentadas en nuestra ciudad, en\naras a la promoción mutua de los valores turísticos y a los intercambios\nculturales con aquellos otros territorios de España.",
+      "text": "Mantenimiento y potenciación de las relaciones institucionales y colaborativas con las Casas Regionales asentadas en nuestra ciudad, en aras a la promoción mutua de los valores turísticos y a los intercambios culturales con aquellos otros territorios de España."
+    },
+    {
+      "id": "m-12040-81",
+      "officialId": "81",
+      "topic": "Turismo, deportes y fiestas",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 24,
+          "x": 167,
+          "y": 1108,
+          "text": "81- Diseño de un Plan Estratégico de Turismo con el objetivo prioritario"
+        },
+        {
+          "page": 8,
+          "index": 25,
+          "x": 167,
+          "y": 1140,
+          "text": "de desestacionalización mediante una eficaz programación anual, y que"
+        },
+        {
+          "page": 8,
+          "index": 26,
+          "x": 167,
+          "y": 1174,
+          "text": "promocione la Marca Castellón."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "81- Diseño de un Plan Estratégico de Turismo con el objetivo prioritario\nde desestacionalización mediante una eficaz programación anual, y que\npromocione la Marca Castellón.",
+      "text": "Diseño de un Plan Estratégico de Turismo con el objetivo prioritario de desestacionalización mediante una eficaz programación anual, y que promocione la Marca Castellón."
+    },
+    {
+      "id": "m-12040-82",
+      "officialId": "82",
+      "topic": "Turismo, deportes y fiestas",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 27,
+          "x": 167,
+          "y": 1223,
+          "text": "82- Implantación de un plan director de mantenimiento y mejora de las"
+        },
+        {
+          "page": 8,
+          "index": 28,
+          "x": 167,
+          "y": 1256,
+          "text": "instalaciones deportivas municipales, con especial atención a la"
+        },
+        {
+          "page": 8,
+          "index": 29,
+          "x": 167,
+          "y": 1289,
+          "text": "eficiencia energética y sostenibilidad, incluyendo la instalación de placas"
+        },
+        {
+          "page": 8,
+          "index": 30,
+          "x": 167,
+          "y": 1322,
+          "text": "solares y activación de red Wifi."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "82- Implantación de un plan director de mantenimiento y mejora de las\ninstalaciones deportivas municipales, con especial atención a la\neficiencia energética y sostenibilidad, incluyendo la instalación de placas\nsolares y activación de red Wifi.",
+      "text": "Implantación de un plan director de mantenimiento y mejora de las instalaciones deportivas municipales, con especial atención a la eficiencia energética y sostenibilidad, incluyendo la instalación de placas solares y activación de red Wifi."
+    },
+    {
+      "id": "m-12040-83",
+      "officialId": "83",
+      "topic": "Turismo, deportes y fiestas",
+      "page": 8,
+      "endPage": 8,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 8,
+          "index": 31,
+          "x": 168,
+          "y": 1371,
+          "text": "83- Modificación de los estatutos del Patronato Municipal de Fiestas,"
+        },
+        {
+          "page": 8,
+          "index": 32,
+          "x": 167,
+          "y": 1404,
+          "text": "devolviendo la autonomía a los colectivos festeros de la ciudad para que"
+        },
+        {
+          "page": 8,
+          "index": 33,
+          "x": 168,
+          "y": 1437,
+          "text": "sean ellos quienes, a través de la constitución de la Junta de Fiestas"
+        },
+        {
+          "page": 8,
+          "index": 34,
+          "x": 168,
+          "y": 1469,
+          "text": "democráticamente elegida por la Asamblea, asuman y desempeñen las"
+        },
+        {
+          "page": 8,
+          "index": 35,
+          "x": 167,
+          "y": 1502,
+          "text": "funciones de organización y representación de las fiestas, sin perjuicio y"
+        },
+        {
+          "page": 8,
+          "index": 36,
+          "x": 168,
+          "y": 1534,
+          "text": "con la coordinación y colaboración de los órganos municipales a quienes"
+        },
+        {
+          "page": 8,
+          "index": 37,
+          "x": 168,
+          "y": 1567,
+          "text": "corresponde legalmente las funciones presupuestarias, de contratación e"
+        },
+        {
+          "page": 8,
+          "index": 38,
+          "x": 169,
+          "y": 1600,
+          "text": "intervención y control económico."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "83- Modificación de los estatutos del Patronato Municipal de Fiestas,\ndevolviendo la autonomía a los colectivos festeros de la ciudad para que\nsean ellos quienes, a través de la constitución de la Junta de Fiestas\ndemocráticamente elegida por la Asamblea, asuman y desempeñen las\nfunciones de organización y representación de las fiestas, sin perjuicio y\ncon la coordinación y colaboración de los órganos municipales a quienes\ncorresponde legalmente las funciones presupuestarias, de contratación e\nintervención y control económico.",
+      "text": "Modificación de los estatutos del Patronato Municipal de Fiestas, devolviendo la autonomía a los colectivos festeros de la ciudad para que sean ellos quienes, a través de la constitución de la Junta de Fiestas democráticamente elegida por la Asamblea, asuman y desempeñen las funciones de organización y representación de las fiestas, sin perjuicio y con la coordinación y colaboración de los órganos municipales a quienes corresponde legalmente las funciones presupuestarias, de contratación e intervención y control económico."
+    },
+    {
+      "id": "m-12040-84",
+      "officialId": "84",
+      "topic": "Turismo, deportes y fiestas",
+      "page": 9,
+      "endPage": 9,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 9,
+          "index": 1,
+          "x": 166,
+          "y": 204,
+          "text": "84- Asunción y cumplimiento de los acuerdos del \"IV Congrés"
+        },
+        {
+          "page": 9,
+          "index": 2,
+          "x": 167,
+          "y": 236,
+          "text": "Magdalener\" tanto por parte del Ayuntamiento de Castellón, como de"
+        },
+        {
+          "page": 9,
+          "index": 3,
+          "x": 165,
+          "y": 270,
+          "text": "todos los Colectivos Festivos."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "84- Asunción y cumplimiento de los acuerdos del \"IV Congrés\nMagdalener\" tanto por parte del Ayuntamiento de Castellón, como de\ntodos los Colectivos Festivos.",
+      "text": "Asunción y cumplimiento de los acuerdos del \"IV Congrés Magdalener\" tanto por parte del Ayuntamiento de Castellón, como de todos los Colectivos Festivos."
+    },
+    {
+      "id": "m-12040-85",
+      "officialId": "85",
+      "topic": "Turismo, deportes y fiestas",
+      "page": 9,
+      "endPage": 9,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 9,
+          "index": 4,
+          "x": 166,
+          "y": 319,
+          "text": "85- Atención y potenciación de todas las fiestas de la ciudad,"
+        },
+        {
+          "page": 9,
+          "index": 5,
+          "x": 166,
+          "y": 352,
+          "text": "apostando por la recuperación de les Festes de Carrer y Barrios."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "85- Atención y potenciación de todas las fiestas de la ciudad,\napostando por la recuperación de les Festes de Carrer y Barrios.",
+      "text": "Atención y potenciación de todas las fiestas de la ciudad, apostando por la recuperación de les Festes de Carrer y Barrios."
+    },
+    {
+      "id": "m-12040-86",
+      "officialId": "86",
+      "topic": "Salud, limpieza, plagas e iluminación",
+      "page": 9,
+      "endPage": 9,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 9,
+          "index": 7,
+          "x": 167,
+          "y": 495,
+          "text": "86- Erradicación del problema de salud pública provocado por plagas"
+        },
+        {
+          "page": 9,
+          "index": 8,
+          "x": 167,
+          "y": 528,
+          "text": "urbanas de ratas, mosquitos, etc., incrementando decididamente su"
+        },
+        {
+          "page": 9,
+          "index": 9,
+          "x": 167,
+          "y": 560,
+          "text": "control mediante programas y soluciones eficaces de desratización,"
+        },
+        {
+          "page": 9,
+          "index": 10,
+          "x": 167,
+          "y": 594,
+          "text": "desinsectación y desinfección."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "86- Erradicación del problema de salud pública provocado por plagas\nurbanas de ratas, mosquitos, etc., incrementando decididamente su\ncontrol mediante programas y soluciones eficaces de desratización,\ndesinsectación y desinfección.",
+      "text": "Erradicación del problema de salud pública provocado por plagas urbanas de ratas, mosquitos, etc., incrementando decididamente su control mediante programas y soluciones eficaces de desratización, desinsectación y desinfección."
+    },
+    {
+      "id": "m-12040-87",
+      "officialId": "87",
+      "topic": "Salud, limpieza, plagas e iluminación",
+      "page": 9,
+      "endPage": 9,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 9,
+          "index": 11,
+          "x": 168,
+          "y": 685,
+          "text": "87- Incremento del control sanitario de edificios, viviendas y solares"
+        },
+        {
+          "page": 9,
+          "index": 12,
+          "x": 167,
+          "y": 718,
+          "text": "abandonados, adoptando medidas en evitación de insalubridad pública."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "87- Incremento del control sanitario de edificios, viviendas y solares\nabandonados, adoptando medidas en evitación de insalubridad pública.",
+      "text": "Incremento del control sanitario de edificios, viviendas y solares abandonados, adoptando medidas en evitación de insalubridad pública."
+    },
+    {
+      "id": "m-12040-88",
+      "officialId": "88",
+      "topic": "Salud, limpieza, plagas e iluminación",
+      "page": 9,
+      "endPage": 9,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 9,
+          "index": 13,
+          "x": 168,
+          "y": 768,
+          "text": "88- Adopción urgente de un Plan Estratégico de Limpieza,"
+        },
+        {
+          "page": 9,
+          "index": 14,
+          "x": 168,
+          "y": 801,
+          "text": "Mantenimiento y Embellecimiento de las calles y caminos del término"
+        },
+        {
+          "page": 9,
+          "index": 15,
+          "x": 169,
+          "y": 836,
+          "text": "municipal."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "88- Adopción urgente de un Plan Estratégico de Limpieza,\nMantenimiento y Embellecimiento de las calles y caminos del término\nmunicipal.",
+      "text": "Adopción urgente de un Plan Estratégico de Limpieza, Mantenimiento y Embellecimiento de las calles y caminos del término municipal."
+    },
+    {
+      "id": "m-12040-89",
+      "officialId": "89",
+      "topic": "Salud, limpieza, plagas e iluminación",
+      "page": 9,
+      "endPage": 9,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 9,
+          "index": 16,
+          "x": 168,
+          "y": 883,
+          "text": "89- Endurecimiento de las sanciones por infracciones y conductas"
+        },
+        {
+          "page": 9,
+          "index": 17,
+          "x": 169,
+          "y": 916,
+          "text": "incívicas relacionadas con la limpieza y recogidas en la ordenanza"
+        },
+        {
+          "page": 9,
+          "index": 18,
+          "x": 169,
+          "y": 951,
+          "text": "municipal."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "89- Endurecimiento de las sanciones por infracciones y conductas\nincívicas relacionadas con la limpieza y recogidas en la ordenanza\nmunicipal.",
+      "text": "Endurecimiento de las sanciones por infracciones y conductas incívicas relacionadas con la limpieza y recogidas en la ordenanza municipal."
+    },
+    {
+      "id": "m-12040-90",
+      "officialId": "90",
+      "topic": "Salud, limpieza, plagas e iluminación",
+      "page": 9,
+      "endPage": 9,
+      "sourceId": "castellon-programme",
+      "fragments": [
+        {
+          "page": 9,
+          "index": 19,
+          "x": 169,
+          "y": 999,
+          "text": "90- Optimización y mejora de la iluminación en la ciudad, adecuando la"
+        },
+        {
+          "page": 9,
+          "index": 20,
+          "x": 169,
+          "y": 1032,
+          "text": "altura de las luminarias a las características de la vía, en aras a obtener"
+        },
+        {
+          "page": 9,
+          "index": 21,
+          "x": 169,
+          "y": 1064,
+          "text": "la iluminación necesaria que garantice la seguridad y comodidad de los"
+        },
+        {
+          "page": 9,
+          "index": 22,
+          "x": 168,
+          "y": 1099,
+          "text": "viandantes."
+        }
+      ],
+      "sourceNote": "Transcripción OCR provisional de copia escaneada. Cotejar la imagen original; las submedidas se conservan dentro del punto numerado.",
+      "rawText": "90- Optimización y mejora de la iluminación en la ciudad, adecuando la\naltura de las luminarias a las características de la vía, en aras a obtener\nla iluminación necesaria que garantice la seguridad y comodidad de los\nviandantes.",
+      "text": "Optimización y mejora de la iluminación en la ciudad, adecuando la altura de las luminarias a las características de la vía, en aras a obtener la iluminación necesaria que garantice la seguridad y comodidad de los viandantes."
+    }
+  ]
+}

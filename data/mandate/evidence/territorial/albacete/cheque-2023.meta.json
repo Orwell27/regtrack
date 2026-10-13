@@ -1,0 +1,12 @@
+{
+  "url": "https://albacete.sedipualba.es/carpetaciudadana/documentoinformativo.aspx?abrir=True&id=4363&idioma=es",
+  "finalUrl": "https://albacete.sedipualba.es/carpetaciudadana/documentoinformativo.aspx?abrir=True&id=4363&idioma=es",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "41e2f5c761f8d71ed88eeb26089358b00970cf1ed6f512796372ddb86a159a3d",
+  "bytes": 216211,
+  "retrievedAt": "2026-10-11T13:59:03.423598+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/albacete/cheque-2023.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "9dc54c147975c1266120833dd3dbad4747be030e2e1457d4c40508af71b76a88"
+}

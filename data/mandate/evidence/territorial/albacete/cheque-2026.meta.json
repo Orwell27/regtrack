@@ -1,0 +1,12 @@
+{
+  "url": "https://albacete.sedipualba.es/carpetaciudadana/documentoinformativo.aspx?abrir=True&id=6335&idioma=es",
+  "finalUrl": "https://albacete.sedipualba.es/carpetaciudadana/documentoinformativo.aspx?abrir=True&id=6335&idioma=es",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "041814ed41332d2fc5528b2c694c5d898d896e990d1ee1e15292408b4b37354c",
+  "bytes": 599337,
+  "retrievedAt": "2026-10-11T13:59:03.594984+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/albacete/cheque-2026.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "dd513bb2283dad1dc3af4e5c245de617d7d22786aa9637c3979533091cd56b0b"
+}

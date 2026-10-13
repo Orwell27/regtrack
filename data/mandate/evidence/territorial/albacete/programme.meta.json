@@ -1,0 +1,12 @@
+{
+  "url": "https://www.ppab.es/Programa2023.pdf",
+  "finalUrl": "https://www.ppab.es/Programa2023.pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "6b21a166f9bfcd119dc62e01fb920f34ee9935f00aefca5ddffc7a11063b77cc",
+  "bytes": 2504348,
+  "retrievedAt": "2026-10-11T13:59:03.463748+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/albacete/programme.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "a038a5f8f4f27760560aa2fe54444658919e573b4bbd9a6f3e57e1582fb3109b"
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "commitmentId": "r-06-29",
+    "reviewedAt": "2026-10-11",
+    "title": "Cuota Cero: ayuda regulada, condiciones distintas y ejecución pendiente de conciliar",
+    "conclusion": "El Decreto 43/2024 crea una subvención de cuotas previamente pagadas. Su alcance depende de las bonificaciones estatales y no reproduce sin condiciones todos los supuestos de la tarifa de emprendizaje prometida. El Parlamento pidió reorientar fondos no utilizados; faltan concesiones, pagos y resultados conciliados.",
+    "periodNote": "Programa de mayo de 2023, medida 29, páginas 11–12. Decreto publicado el 21/06/2024, con altas subvencionables desde el 1/01/2024. La respuesta gubernamental examinada se publicó el 25/03/2025 y la resolución parlamentaria el 1/07/2025: ninguna permite presumir el estado de todos los expedientes en octubre de 2026.",
+    "components": [
+      {
+        "id": "norma",
+        "claim": "Instrumento aprobado y mecanismo de pago",
+        "status": "documented",
+        "finding": "Los artículos 1, 4 y 6 del Decreto 43/2024 regulan ayudas para nuevas altas, reincorporación de autónomas tras determinados ceses y cuidado de menores con enfermedad grave. Se reembolsa la cuota reducida o la parte no bonificada ya abonada, tras completar los periodos exigidos. El trámite publicado por la sede confirma la vía de solicitud. Aprobar la ayuda no elimina el pago previo ni acredita que toda persona potencialmente beneficiaria haya cobrado.",
+        "citations": [
+          {
+            "sourceId": "cantabria-quota-law",
+            "locator": "Artículos 1, 4, 6 y 8",
+            "page": 4
+          },
+          {
+            "sourceId": "cantabria-quota-procedure",
+            "locator": "Catálogo de trámites: personas beneficiarias, requisitos y solicitud"
+          }
+        ]
+      },
+      {
+        "id": "alcance",
+        "claim": "Dos años, edades y autónomos societarios",
+        "status": "unresolved",
+        "finding": "El programa promete ampliar la tarifa de 80 euros a dos años, aplicar iguales condiciones a los societarios y eliminar la cuota durante dos años para nuevos autónomos menores de 30 y mayores de 50. El decreto vincula el segundo año ordinario al artículo 38 ter.2 estatal, que su preámbulo describe sujeto a rendimientos inferiores al SMI. No establece una exención universal por esas edades ni una categoría societaria separada. Falta conciliar todos los supuestos y su aplicación efectiva; no se deduce que los societarios estén excluidos por no aparecer nombrados.",
+        "citations": [
+          {
+            "sourceId": "cantabria-programme",
+            "locator": "Medida 29, tres subapartados; continuación en página 12",
+            "page": 11
+          },
+          {
+            "sourceId": "cantabria-quota-law",
+            "locator": "Preámbulo II y artículos 4–6",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "balance",
+        "claim": "Qué datos de ejecución aportó el Gobierno",
+        "status": "reported",
+        "finding": "En la contestación 11L/5300-1398 el Gobierno explica que aún no podía valorar Cuota Cero porque las primeras solicitudes se habían presentado en 2025. Las cifras de 1.124 beneficiarios del inicio de actividad y 834 del mantenimiento corresponden a otras líneas del plan: no se atribuyen a Cuota Cero. Aunque el Parlamento publica la respuesta, su autor sigue siendo el Gobierno y no constituye una corroboración externa.",
+        "citations": [
+          {
+            "sourceId": "cantabria-quota-response",
+            "locator": "Contestación 11L/5300-1398, páginas 10336–10337",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "control",
+        "claim": "Requerimiento parlamentario sobre fondos no utilizados",
+        "status": "documented",
+        "finding": "La resolución 6 R aprobada en el debate del estado de la región insta a reorientar antes de octubre el Plan de Autónomos, incluyendo fondos no utilizados de la triple cuota cero como nuevas ayudas directas. Acredita la existencia de un requerimiento parlamentario distinto del balance gubernamental. No es una auditoría contable ni permite fijar aquí un porcentaje de ejecución o afirmar que no se pagó ninguna ayuda.",
+        "citations": [
+          {
+            "sourceId": "cantabria-parliament-resolutions",
+            "locator": "Resolución 6 R: Autónomos, impulso y apoyo real; página impresa 11893",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "resultados",
+        "claim": "Cobro efectivo, supervivencia empresarial y segunda oportunidad",
+        "status": "unresolved",
+        "finding": "Faltan las concesiones y pagos acumulados de esta ayuda, separados de otras líneas, con sus fechas, denegaciones y características de los beneficiarios. También falta evaluar si favoreció la continuidad de la actividad y la segunda oportunidad mencionada en el compromiso. Ni la existencia del trámite ni la resolución parlamentaria sustituyen esas comprobaciones.",
+        "citations": []
+      }
+    ],
+    "contrast": "Se compara el programa con el decreto, su trámite, una contestación gubernamental y una resolución de la Cámara. BOC y sede comparten origen gubernamental; alojar una respuesta en el Parlamento no cambia su autoría. La resolución parlamentaria aporta control político, con el límite de que no presenta una liquidación auditada de la ayuda.",
+    "pending": [
+      "Conciliar cada supuesto de la medida 29 con la normativa estatal y autonómica aplicable, incluidas modificaciones posteriores.",
+      "Recuperar concesiones, pagos y denegaciones de Cuota Cero con fechas de corte comparables y sin sumar otras líneas.",
+      "Comprobar la respuesta al requerimiento parlamentario, evaluar resultados y completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-06-1198",
+    "reviewedAt": "2026-10-11",
+    "title": "Transporte joven: descuento por viaje frente al abono ilimitado de 20 euros prometido",
+    "conclusion": "La regulación de 2026 amplía a menores de 31 años el descuento en las líneas autonómicas. El mecanismo encontrado es una bonificación por viaje con tarjeta monedero: no acredita la tarifa única mensual de 20 euros y viajes ilimitados en medios urbanos e interurbanos del compromiso 1198.",
+    "periodNote": "Programa de mayo de 2023, página 199. Se distinguen el Decreto 40/2025 y el Decreto 48/2026, publicado el 30/06/2026 y aplicable a reducciones entre el 1/07/2026 y el 31/10/2027. Las condiciones de la tarjeta y el aviso del portal se consultaron el 11/10/2026; no se confunde esa captura con una fecha de publicación. De las dos páginas operativas se conservan notas editoriales de lectura identificadas, sin redistribuir su HTML ni atribuir a la nota la huella del original.",
+    "components": [
+      {
+        "id": "precio",
+        "claim": "Precio fijo y viajes ilimitados",
+        "status": "documented",
+        "finding": "El artículo 1 del Decreto 48/2026 limita el precio del viaje bonificado al 30 % del billete ordinario. Las condiciones de la TITC describen un monedero cuyo saldo se descuenta según cada viaje y operador. Estos documentos acreditan un descuento por uso, sin establecer el abono único de 20 euros al mes. La divergencia del mecanismo está documentada; no se convierte por sí sola en un juicio sobre todos los descuentos disponibles.",
+        "citations": [
+          {
+            "sourceId": "cantabria-programme",
+            "locator": "Medida 1198",
+            "page": 199
+          },
+          {
+            "sourceId": "cantabria-transport-law-2026",
+            "locator": "Artículo 1",
+            "page": 2
+          },
+          {
+            "sourceId": "cantabria-transport-card",
+            "locator": "Preguntas: títulos disponibles y bonificaciones por transbordo"
+          }
+        ]
+      },
+      {
+        "id": "edad",
+        "claim": "Ampliación de los perfiles de edad",
+        "status": "documented",
+        "finding": "El Decreto 40/2025 contemplaba el perfil joven de 15 a 25 años. El artículo 5 del Decreto 48/2026 incorpora los perfiles de 15–25 y 26–30 años, ambos inclusive. El aviso operativo del portal publica el 70 % de descuento para ambos, coherente con el máximo del 30 % a pagar. Se distingue el alcance de edad de la tarifa plana prometida: mejorar uno no acredita el otro.",
+        "citations": [
+          {
+            "sourceId": "cantabria-transport-law-2025",
+            "locator": "Artículo 5: perfil joven",
+            "page": 3
+          },
+          {
+            "sourceId": "cantabria-transport-law-2026",
+            "locator": "Artículo 5: perfiles Joven 25 y Joven 30",
+            "page": 3
+          },
+          {
+            "sourceId": "cantabria-transport-portal",
+            "locator": "Aviso de descuentos desde el 1 de julio; se aplica la edad inclusiva del cuerpo, no el titular abreviado"
+          }
+        ]
+      },
+      {
+        "id": "redes",
+        "claim": "Cobertura autonómica y títulos municipales",
+        "status": "documented",
+        "finding": "El decreto autonómico se limita a servicios de carretera de titularidad de Cantabria. Torrelavega publica por separado para TORREBUS un abono joven de 15,75 euros trimestrales con viajes ilimitados y menores de 30 años, condicionado al régimen de ayudas señalado en su resolución. Ese abono municipal no prueba viajes ilimitados en toda Cantabria. Compartir soporte de pago entre redes tampoco demuestra una tarifa integrada única.",
+        "citations": [
+          {
+            "sourceId": "cantabria-transport-law-2026",
+            "locator": "Artículos 2 y 5: líneas de titularidad autonómica",
+            "page": 2
+          },
+          {
+            "sourceId": "cantabria-transport-torrelavega",
+            "locator": "Resolución 6971, apartado primero y tabla de tarifas",
+            "page": 1
+          },
+          {
+            "sourceId": "cantabria-transport-card",
+            "locator": "No existe transbordo externo entre operadores; se aplican sus respectivas tarifas"
+          }
+        ]
+      },
+      {
+        "id": "operacion",
+        "claim": "Acceso al título y funcionamiento publicado",
+        "status": "reported",
+        "finding": "El portal informa de solicitud presencial o electrónica, personalización y recargas de la TITC. Es evidencia de un servicio ofrecido y de condiciones publicadas por el gestor. No se ha realizado una compra o validación de viaje ni obtenido datos transaccionales para comprobar la aplicación efectiva a todos los trayectos y perfiles.",
+        "citations": [
+          {
+            "sourceId": "cantabria-transport-card",
+            "locator": "Obtención, recarga y condiciones de uso de la TITC"
+          }
+        ]
+      },
+      {
+        "id": "resultados",
+        "claim": "Uso, ahorro e integración de todas las redes",
+        "status": "unresolved",
+        "finding": "Faltan validaciones y gasto real por usuario, conciliación de compensaciones a operadores y evaluación del acceso territorial. El artículo 10 exige certificados de viajes e ingresos minorados, pero no se han examinado aquí sus expedientes. Una obligación de justificar no acredita que la justificación se haya presentado o comprobado. También queda pendiente contrastar el resto de redes urbanas y cualquier título posterior que pudiera modificar el alcance observado.",
+        "citations": [
+          {
+            "sourceId": "cantabria-transport-law-2026",
+            "locator": "Artículo 10: justificación de la compensación",
+            "page": 5
+          }
+        ]
+      }
+    ],
+    "contrast": "Programa, decretos y condiciones operativas se comparan por precio, edad, periodo y red. El Ayuntamiento de Torrelavega aporta un origen distinto para su propio servicio, no una auditoría del Gobierno autonómico. Decreto y portal regional comparten origen; su coincidencia documental no se presenta como verificación independiente de los resultados.",
+    "pending": [
+      "Revisar todas las redes urbanas e interurbanas y eventuales cambios posteriores antes de valorar el alcance total del abono prometido.",
+      "Examinar validaciones, ahorro real y certificados de compensación, distinguiendo viajes de personas únicas.",
+      "Completar revisión humana independiente de la comparación de tarifas y competencias."
+    ]
+  }
+]

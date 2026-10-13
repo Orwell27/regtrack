@@ -1,0 +1,137 @@
+// Fixed public originals. A captured programme is not a reviewed outcome.
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+
+const directory = 'data/mandate/evidence/territorial';
+const manifestPath = `${directory}/sources.json`;
+const requests = [
+  { id: 'vitoria-tram-july', jurisdictionId: 'm-01059', role: 'government-report', family: 'gob-euskadi', title: 'Irekia · inicio de trabajos del tranvía a Zabalgana anunciado en julio de 2026', publisher: 'Gobierno Vasco · Irekia', publicationDate: '2026-07-28', format: 'html', expectedText: 'Aldaia', url: 'https://www.irekia.euskadi.eus/es/news/112166-ampliacion-del-tranvia-vitoria-zabalgana-situara-ciudad-entre-las-tres-con-mas-kilometros-este-transporte-nivel-estatal' },
+  { id: 'vitoria-zbe-ordinance', jurisdictionId: 'm-01059', role: 'action', family: 'ayto-vitoria', title: 'Ordenanza de la Zona de Bajas Emisiones · aprobación definitiva', publisher: 'Ayuntamiento de Vitoria-Gasteiz · BOTHA', publicationDate: '2025-05-02', format: 'pdf', url: 'https://www.araba.eus/botha/Boletines/pdfni/2025/048/2025_048_01277_C.pdf' },
+  { id: 'vitoria-zbe-results', jurisdictionId: 'm-01059', role: 'government-report', family: 'ayto-vitoria', title: 'Balance municipal de los primeros seis meses de la ZBE', publisher: 'Ayuntamiento de Vitoria-Gasteiz', publicationDate: '2026-03-18', format: 'html', expectedText: '1065', url: 'https://blogs.vitoria-gasteiz.org/medios/2026/03/18/la-zona-de-bajas-emisiones-evita-ya-1065-toneladas-de-co2-en-seis-meses-y-reduce-a-la-mitad-los-coches-mas-contaminantes-en-el-centro-de-vitoria-gasteiz/' },
+  { id: 'vitoria-apr-decision', jurisdictionId: 'm-01059', role: 'government-report', family: 'ayto-vitoria', title: 'Decisión municipal de no implantar el Área de Prioridad Residencial', publisher: 'Ayuntamiento de Vitoria-Gasteiz', publicationDate: '2026-08-23', format: 'html', expectedText: 'descarta', url: 'https://blogs.vitoria-gasteiz.org/medios/2026/08/23/el-ayuntamiento-descarta-implantar-el-area-de-prioridad-residencial-y-revisara-la-ordenanza-de-la-zbe/' },
+  { id: 'vitoria-tram-mariturri', jurisdictionId: 'm-01059', role: 'action', family: 'gob-euskadi', title: 'Resolución de 10 de junio de 2026 · proyecto constructivo del ramal Mariturri', publisher: 'Gobierno Vasco · BOPV', publicationDate: '2026-06-29', format: 'pdf', url: 'https://www.euskadi.eus/bopv2/datos/2026/06/2602904a.pdf' },
+  { id: 'vitoria-programme-2023', jurisdictionId: 'm-01059', role: 'programme', family: 'ayto-vitoria', title: 'Programa de Gobierno de Vitoria-Gasteiz 2023–2027', publisher: 'Ayuntamiento de Vitoria-Gasteiz', publicationDate: null, format: 'pdf', url: 'https://www.vitoria-gasteiz.org/docs/wb021/contenidosEstaticos/adjuntos/es/96/98/99698.pdf' },
+  { id: 'vitoria-programme-register', jurisdictionId: 'm-01059', role: 'register', family: 'ayto-vitoria', title: 'Registro del Programa de Gobierno de Vitoria-Gasteiz 2023–2027', publisher: 'Ayuntamiento de Vitoria-Gasteiz', publicationDate: null, format: 'html', expectedText: '99698.pdf', url: 'https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=u47d7fd2c_1440feed4e9__7ee8' },
+  { id: 'vitoria-report-2026', jurisdictionId: 'm-01059', role: 'government-report', family: 'ayto-vitoria', title: 'Seguimiento municipal del programa · portal actualizado en julio de 2026', publisher: 'Ayuntamiento de Vitoria-Gasteiz', publicationDate: null, format: 'html', expectedText: '2026-07-29T14:24Z', url: 'https://www.vitoria-gasteiz.org/a29-01w/plan/show/4?c=E14-L38-C377&idioma=es&lang=es&locale=es' },
+  { id: 'vitoria-methodology', jurisdictionId: 'm-01059', role: 'government-report', family: 'ayto-vitoria', title: 'Metodología municipal de seguimiento del Programa de Gobierno', publisher: 'Ayuntamiento de Vitoria-Gasteiz', publicationDate: null, format: 'html', expectedText: 'Descartado', url: 'https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=u7fd3fe51_17766501703__7efd' },
+  { id: 'barcelona-plan-portal', jurisdictionId: 'm-08019', role: 'programme', family: 'ayto-barcelona', title: 'Portal del Pla d’Acció de Govern 2023–2027', publisher: 'Ajuntament de Barcelona', publicationDate: null, format: 'html', expectedText: 'drupal-settings-json', url: 'https://ajuntament.barcelona.cat/pla-accio-govern2023-2027/ca' },
+  { id: 'barcelona-plan-register', jurisdictionId: 'm-08019', role: 'register', family: 'ayto-barcelona', title: 'Ajuntament · registro y enlace al Pla d’Acció de Govern', publisher: 'Ajuntament de Barcelona', publicationDate: null, format: 'html', expectedText: 'pla-accio-govern2023-2027', url: 'https://ajuntament.barcelona.cat/ca/' },
+  { id: 'barcelona-port-sindicatura', jurisdictionId: 'm-08019', role: 'control', family: 'sindicatura-barcelona', title: 'Sindicatura de Greuges · accesibilidad e inclusividad del Port Olímpic', publisher: 'Sindicatura de Greuges de Barcelona', publicationDate: null, format: 'pdf', url: 'https://www.sindicaturabarcelona.cat/wp-content/uploads/202501_Dret-a-la-inclusivitat-i-laccessibilitat-Port-Olimpic.pdf' },
+  { id: 'catalunya-emancipacio-bases', jurisdictionId: 'r-09', role: 'action', family: 'gob-catalunya', title: 'Resolución TER/2245/2025 · bases del Fondo Público de Emancipación', publisher: 'Agencia de la Vivienda de Cataluña · DOGC', publicationDate: '2025-06-18', format: 'pdf', url: 'https://portaldogc.gencat.cat/utilsEADOP/AppJava/PdfProviderServlet?versionId=2094760&type=01' },
+  { id: 'catalunya-emancipacio-call', jurisdictionId: 'r-09', role: 'action', family: 'gob-catalunya', title: 'Resolución TER/2344/2025 · convocatoria del Fondo Público de Emancipación', publisher: 'Agencia de la Vivienda de Cataluña · DOGC', publicationDate: '2025-06-25', format: 'pdf', url: 'https://portaldogc.gencat.cat/utilsEADOP/AppJava/PdfProviderServlet?versionId=2095664&type=01' },
+  { id: 'catalunya-emancipacio-2026', jurisdictionId: 'r-09', role: 'action', family: 'gob-catalunya', title: 'Resolución TER/1649/2026 · modificación de las bases de Emancipación', publisher: 'Agencia de la Vivienda de Cataluña · DOGC', publicationDate: '2026-05-29', format: 'pdf', url: 'https://portaldogc.gencat.cat/utilsEADOP/AppJava/PdfProviderServlet?versionId=2153053&type=01' },
+  { id: 'catalunya-emancipacio-product', jurisdictionId: 'r-09', role: 'government-report', family: 'gob-catalunya', title: 'ICF Habitatge Emancipació · condiciones publicadas', publisher: 'Institut Català de Finances', publicationDate: null, format: 'html', expectedText: '50.000', url: 'https://www.icf.cat/es/prestecs/habitatge/icf-habitatge-emancipacio' },
+  { id: 'catalunya-emancipacio-first', jurisdictionId: 'r-09', role: 'government-report', family: 'gob-catalunya', title: 'ICF comunica la primera operación de Préstamos Emancipación', publisher: 'Institut Català de Finances', publicationDate: '2025-08-05', format: 'html', expectedText: '343', url: 'https://www.icf.cat/es/actualitat/noticies/2025/imagin-icf-signen-dos-joves-sabadell-primera-operacio-prestecs-emancipacio' },
+  { id: 'catalunya-carbon-bopc', jurisdictionId: 'r-09', role: 'action', family: 'parlament-catalunya', title: 'BOPC 381 · presupuestos de carbono y resoluciones 481/XV y 482/XV', publisher: 'Parlament de Catalunya', publicationDate: '2025-12-18', format: 'pdf', url: 'https://www.parlament.cat/document/bopc/439054250.pdf' },
+  { id: 'catalunya-carbon-experts', jurisdictionId: 'r-09', role: 'control', family: 'cecc-catalunya', title: 'Valoración del Comitè d’Experts sobre los presupuestos de carbono aprobados', publisher: 'Comitè d’Experts sobre el Canvi Climàtic', publicationDate: '2025-12-29', format: 'html', expectedText: 'ambicios', url: 'https://canviclimatic.gencat.cat/ca/actualitat/noticies/Noticia/El-Comite-dExperts-sobre-el-Canvi-Climatic-celebra-laprovacio-dels-primers-pressupostos-de-carboni-per-a-Catalunya' },
+  { id: 'catalunya-programme-2024', jurisdictionId: 'r-09', role: 'programme', family: 'gob-catalunya',
+    title: 'Pla de Govern · XV Legislatura · 2024–2027', publisher: 'Generalitat de Catalunya', publicationDate: null, format: 'pdf',
+    url: 'https://exteriors.gencat.cat/web/.content/00_DEPARTAMENT/planificacio-estrategica/pla-govern-xv.pdf' },
+  { id: 'catalunya-programme-register', jurisdictionId: 'r-09', role: 'register', family: 'gob-catalunya',
+    title: 'Pla de Govern · registre i estructura', publisher: 'Generalitat de Catalunya · Departament d’Unió Europea i Acció Exterior', publicationDate: null, format: 'html', expectedText: '260',
+    url: 'https://exteriors.gencat.cat/ca/departament/planificacio-estrategica/pla-govern/' },
+  { id: 'euskadi-waiting-2026', jurisdictionId: 'r-16', role: 'government-report', family: 'gob-euskadi',
+    title: 'Osakidetza · listas de espera a 23 de mayo de 2026', publisher: 'Gobierno Vasco · Osakidetza', publicationDate: null, format: 'pdf',
+    url: 'https://www.euskadi.eus/contenidos/informacion/osk_corp_listas_espera/es_def/adjuntos/Listas-de-espera-a-23-de-mayo-de-2026.pdf' },
+  { id: 'euskadi-waiting-2025', jurisdictionId: 'r-16', role: 'government-report', family: 'gob-euskadi',
+    title: 'Osakidetza · listas de espera a 29 de noviembre de 2025', publisher: 'Gobierno Vasco · Osakidetza', publicationDate: null, format: 'pdf',
+    url: 'https://www.euskadi.eus/contenidos/informacion/osk_corp_listas_espera/es_def/adjuntos/Situacion-de-listas-de-espera-de-Osakidetza-29-de-noviembre-.pdf' },
+  { id: 'euskadi-health-pact', jurisdictionId: 'r-16', role: 'action', family: 'gob-euskadi',
+    title: 'Pacto Vasco de Salud · Líneas estratégicas', publisher: 'Gobierno Vasco', publicationDate: null, format: 'pdf',
+    url: 'https://www.euskadi.eus/contenidos/informacion/pacto_salud_2025/es_def/adjuntos/LIBRO-4-LINEAS-ESTRATEGICAS.pdf' },
+  { id: 'euskadi-ararteko-2025', jurisdictionId: 'r-16', role: 'control', family: 'ararteko',
+    title: 'Ararteko · informe anual 2025', publisher: 'Ararteko', publicationDate: null, format: 'pdf',
+    url: 'https://ararteko.eus/sites/default/files/2026-03/ES-IA-2025.pdf' },
+  { id: 'euskadi-emantzipa-2026', jurisdictionId: 'r-16', role: 'action', family: 'gob-euskadi',
+    title: 'Decreto 42/2026 · Programa Emantzipa', publisher: 'Gobierno Vasco · BOPV', publicationDate: '2026-03-31', format: 'pdf',
+    url: 'https://www.euskadi.eus/bopv2/datos/2026/03/2601387a.pdf' },
+  { id: 'euskadi-gaztelagun-2026', jurisdictionId: 'r-16', role: 'action', family: 'gob-euskadi',
+    title: 'Orden de 5 de junio de 2026 · convocatoria Gaztelagun', publisher: 'Gobierno Vasco · BOPV', publicationDate: '2026-06-15', format: 'pdf',
+    url: 'https://www.euskadi.eus/bopv2/datos/2026/06/2602608a.pdf' },
+  { id: 'euskadi-programme-2024', jurisdictionId: 'r-16', role: 'programme', family: 'gob-euskadi',
+    title: 'Programa de Gobierno 2024–2028 · XIII Legislatura', publisher: 'Gobierno Vasco', publicationDate: null, format: 'pdf',
+    url: 'https://bideoak2.euskadi.eus/paginas/page_98299/Programa_Gobierno_2024-2028_es.pdf' },
+  { id: 'euskadi-programme-register', jurisdictionId: 'r-16', role: 'register', family: 'gob-euskadi',
+    title: 'Irekia · Programa de Gobierno 2024–2028', publisher: 'Gobierno Vasco · Irekia', publicationDate: null, format: 'html', expectedText: 'Programa de Gobierno',
+    url: 'https://www.irekia.euskadi.eus/es/pages/98299-2024-2028-gobernu-programa' },
+  { id: 'euskadi-balance-2025', jurisdictionId: 'r-16', role: 'government-report', family: 'gob-euskadi',
+    title: 'Informe de ejecución del Programa de Gobierno · ejercicio 2025', publisher: 'Gobierno Vasco', publicationDate: null, format: 'pdf',
+    url: 'https://www.euskadi.eus/contenidos/informacion/lxiii_coordinacion_programacio/es_def/adjuntos/Informe-Seguimiento-2025-ES_web.pdf' },
+  { id: 'navarra-comptos-2023', jurisdictionId: 'r-15', role: 'control', family: 'camara-comptos',
+    title: 'Cámara de Comptos · Cuentas generales de Navarra, 2023', publisher: 'Cámara de Comptos de Navarra', publicationDate: null, format: 'pdf',
+    url: 'https://camaradecomptos.navarra.es/sites/default/files/assets/files/informes/InformeComptos2419firmado.pdf' },
+  { id: 'navarra-health-2026', jurisdictionId: 'r-15', role: 'government-report', family: 'gob-navarra',
+    title: 'Salud presenta el anteproyecto de Ley Foral de Salud', publisher: 'Gobierno de Navarra', publicationDate: '2026-03-30', format: 'html', expectedText: 'anteproyecto',
+    url: 'https://www.navarra.es/es/-/nota-prensa/salud-presenta-el-texto-del-anteproyecto-de-ley-foral-de-salud-con-el-objetivo-de-dar-respuesta-a-las-necesidades-reales-de-las-personas' },
+  { id: 'navarra-housing-boe-2025', jurisdictionId: 'r-15', role: 'action', family: 'gob-espana',
+    title: 'BOE-A-2025-15728 · zonas tensionadas de Navarra', publisher: 'Ministerio de Vivienda y Agenda Urbana · BOE', publicationDate: '2025-07-29', format: 'pdf',
+    url: 'https://www.boe.es/boe/dias/2025/07/29/pdfs/BOE-A-2025-15728.pdf' },
+  { id: 'navarra-housing-boe-correction', jurisdictionId: 'r-15', role: 'action', family: 'gob-espana',
+    title: 'BOE-A-2025-20246 · corrección de enlaces de las zonas tensionadas', publisher: 'Ministerio de Vivienda y Agenda Urbana · BOE', publicationDate: '2025-10-10', format: 'pdf',
+    url: 'https://www.boe.es/boe/dias/2025/10/10/pdfs/BOE-A-2025-20246.pdf' },
+  { id: 'navarra-bidean-2025', jurisdictionId: 'r-15', role: 'government-report', family: 'gob-navarra',
+    title: 'Bidean comunica 57.838 traslados en sus tres primeros meses', publisher: 'Bidean · sociedad pública de Navarra', publicationDate: '2025-10-01', format: 'html', expectedText: '57.838',
+    url: 'https://www.bideansalud.es/es/actualidad/la-sociedad-publica-bidean-lleva-cabo-57838-traslados-en-sus-tres-primeros-meses-de' },
+  { id: 'navarra-bidean-start', jurisdictionId: 'r-15', role: 'government-report', family: 'gob-navarra',
+    title: 'CPEN anuncia el inicio de Bidean y describe su constitución', publisher: 'Corporación Pública Empresarial de Navarra', publicationDate: '2025-05-06', format: 'html', expectedText: '2023',
+    url: 'https://www.sociedadespublicasdenavarra.es/es/cpen-al-dia/nuestras-noticias/la-empresa-publica-de-transporte-sanitario-bidean-comenzara-su' },
+  { id: 'madrid-programme-2023', jurisdictionId: 'm-28079', role: 'programme', family: 'ayto-madrid',
+    title: 'Programa de Gobierno 2023–2027: programa electoral publicado por el Ayuntamiento de Madrid',
+    publisher: 'Ayuntamiento de Madrid; documento del Partido Popular',
+    url: 'https://www.madrid.es/UnidadesDescentralizadas/Calidad/Observatorio_Ciudad/03_SG_Operativa/ficheros/Programa_electoral_Partido_Popular_Momento_Madrid.pdf',
+    publicationDate: null, format: 'pdf' },
+  { id: 'madrid-programme-register', jurisdictionId: 'm-28079', role: 'register', family: 'ayto-madrid',
+    title: 'Programa de Gobierno 2023–2027 · catálogo municipal de 300 medidas', publisher: 'Ayuntamiento de Madrid',
+    url: 'https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Calidad-y-Evaluacion/Estrategia-y-planificacion/Programa-de-Gobierno-2023-2027/?vgnextchannel=486a261f46839710VgnVCM1000001d4a900aRCRD&vgnextfmt=default&vgnextoid=03881859be9fb910VgnVCM100000891ecb1aRCRD',
+    publicationDate: null, format: 'html', expectedText: '300 medidas' },
+  { id: 'madrid-bicimad-2026', jurisdictionId: 'm-28079', role: 'government-report', family: 'ayto-madrid',
+    title: 'El nuevo bicimad cumple tres años · balance del operador', publisher: 'EMT Madrid', publicationDate: '2026-03-07', format: 'html', expectedText: '634 estaciones',
+    url: 'https://www.emtmadrid.es/Noticias/El-nuevo-bicimad-cumple-tres-anos-y-alcanza-casi-3.aspx' },
+  { id: 'madrid-tourism-plan', jurisdictionId: 'm-28079', role: 'action', family: 'ayto-madrid',
+    title: 'Plan Estratégico de Turismo 2024–2027 · documento publicado', publisher: 'Ayuntamiento de Madrid', publicationDate: null, format: 'pdf',
+    url: 'https://www.madrid.es/FWProjects/transparencia/PlanesYMemorias/Planes/Turismo/Ficheros/plan_estrategico_turismo.pdf' },
+  { id: 'madrid-tourism-register', jurisdictionId: 'm-28079', role: 'government-report', family: 'ayto-madrid',
+    title: 'Ficha del Plan Estratégico de Turismo y fecha de aprobación', publisher: 'Ayuntamiento de Madrid', publicationDate: null, format: 'html', expectedText: '23 de enero de 2025',
+    url: 'https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Publicaciones/Listado-de-Publicaciones/Plan-Estrategico-de-Turismo-de-la-Ciudad-de-Madrid-para-el-periodo-2024-2027/?vgnextchannel=f1aebadb6b997010VgnVCM100000dc0ca8c0RCRD&vgnextfmt=default&vgnextoid=8475306e7a394910VgnVCM2000001f4a900aRCRD' },
+  { id: 'madrid-ibi-2026', jurisdictionId: 'm-28079', role: 'government-report', family: 'ayto-madrid',
+    title: 'IBI · información de tipos para 2026', publisher: 'Agencia Tributaria Madrid', publicationDate: null, format: 'html', expectedText: '0,414',
+    url: 'https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Bienes-Inmuebles-IBI-/Impuesto-sobre-Bienes-Inmuebles-IBI-Informacion-general/?vgnextchannel=3cd1e5bcc9c78710VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=d88526dcde762810VgnVCM1000001d4a900aRCRD' },
+  { id: 'madrid-ibi-ordenanza-2026', jurisdictionId: 'm-28079', role: 'action', family: 'ayto-madrid',
+    title: 'Ordenanza fiscal del IBI · texto consolidado de 26 de diciembre de 2025', publisher: 'Ayuntamiento de Madrid · Sede electrónica', publicationDate: '2025-12-26', format: 'pdf',
+    url: 'https://sede.madrid.es/eli/es-md-01860896/odnz/1989/12/22/(1)/con/20251226/spa/pdf' },
+  { id: 'madrid-tourism-boam', jurisdictionId: 'm-28079', role: 'action', family: 'ayto-madrid',
+    title: 'BOAM 9814/449 · acuerdo de aprobación del Plan Estratégico de Turismo', publisher: 'Ayuntamiento de Madrid · BOAM', publicationDate: '2025-02-07', format: 'html', expectedText: '9814',
+    url: 'https://sede.madrid.es/sites/v/index.jsp?vgnextoid=ed5e5ec7f30d4910VgnVCM2000001f4a900aRCRD&vgnextchannel=741d814231ede410VgnVCM1000000b205a0aRCRD' },
+  { id: 'navarra-programme-2023', jurisdictionId: 'r-15', role: 'programme', family: 'gob-navarra',
+    title: 'Acuerdo Programático 2023–2027 de Navarra', publisher: 'Gobierno de Navarra; acuerdo PSN-PSOE, Geroa Bai y Contigo-Zurekin',
+    url: 'https://analisisyprospectiva.navarra.es/documents/56417073/56419029/2023_ACUERDO_PROGRAMATICO.pdf/44995778-0664-34c1-1532-996e8b43777b?t=1768556539489', publicationDate: null, format: 'pdf' },
+  { id: 'navarra-programme-register', jurisdictionId: 'r-15', role: 'register', family: 'gob-navarra',
+    title: 'Rendición de cuentas del Acuerdo Programático 2023–2027 · registro', publisher: 'Gobierno de Navarra · Oficina de Análisis y Prospectiva',
+    url: 'https://analisisyprospectiva.navarra.es/es/rendicion-de-cuentas', publicationDate: null, format: 'html', expectedText: '347 compromisos' },
+  { id: 'navarra-balance-2025', jurisdictionId: 'r-15', role: 'government-report', family: 'gob-navarra',
+    title: 'Rendición de cuentas 2025 · Balance II', publisher: 'Gobierno de Navarra · Oficina de Análisis y Prospectiva',
+    url: 'https://analisisyprospectiva.navarra.es/documents/56417073/56419029/Rendici%C3%B3n%2Bde%2Bcuentas%2B2025.pdf/44863f2d-0674-86ee-00a7-25466f583c6f?t=1769157335439', publicationDate: null, format: 'pdf' },
+];
+await mkdir(directory, { recursive: true });
+let sources = [];
+try { sources = JSON.parse(await readFile(manifestPath, 'utf8')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+const selected = process.argv.slice(2);
+if (selected.some(id => !requests.some(request => request.id === id))) throw Error('Unknown source id');
+for (const request of requests.filter(request => !selected.length || selected.includes(request.id))) {
+  const existing = sources.find(source => source.id === request.id);
+  if (existing) {
+    if (hash(await readFile(existing.snapshotPath)) !== existing.sha256) throw Error(`Capture changed: ${request.id}`);
+    continue;
+  }
+  const response = await fetch(request.url, { signal: AbortSignal.timeout(30000) });
+  if (!response.ok) throw Error(`${request.id}: HTTP ${response.status}`);
+  const bytes = Buffer.from(await response.arrayBuffer());
+  if (request.format === 'pdf' && bytes.subarray(0, 5).toString() !== '%PDF-') throw Error(`Not a PDF: ${request.id}`);
+  if (request.format === 'html' && !bytes.toString('utf8').includes(request.expectedText)) throw Error(`Source content not identified: ${request.id}`);
+  const snapshotPath = `${directory}/${request.id}.${request.format}`;
+  await writeFile(snapshotPath, bytes, { flag: 'wx' });
+  sources.push({ ...request, snapshotPath, sha256: hash(bytes), bytes: bytes.length, retrievedAt: new Date().toISOString(), captureType: 'bytes_originales' });
+  await writeFile(manifestPath, JSON.stringify(sources, null, 2) + '\n');
+  console.log(`${request.id}: ${bytes.length} bytes`);
+}

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento fecha_actualizacion="20260918102601">
+  <metadatos>
+    <identificador>DOUE-L-2026-81426</identificador>
+    <origen_legislativo codigo="3">Europeo</origen_legislativo>
+    <departamento codigo="9010">Unión Europea</departamento>
+    <rango codigo="1590">Corrección (errores o erratas)</rango>
+    <fecha_disposicion/>
+    <numero_oficial/>
+    <titulo>Corrección de errores del Reglamento (UE) 2024/1351 del Parlamento Europeo y del Consejo, de 14 de mayo de 2024, sobre la gestión del asilo y la migración, por el que se modifican los Reglamentos (UE) 2021/1147 y (UE) 2021/1060 y se deroga el Reglamento (UE) n.° 604/2013.</titulo>
+    <diario codigo="DOUE">Diario Oficial de la Unión Europea</diario>
+    <fecha_publicacion>20260918</fecha_publicacion>
+    <diario_numero>90777</diario_numero>
+    <seccion>L</seccion>
+    <subseccion/>
+    <pagina_inicial>1</pagina_inicial>
+    <pagina_final>2</pagina_final>
+    <suplemento_pagina_inicial/>
+    <suplemento_pagina_final/>
+    <url_pdf>https://www.boe.es/doue/2026/90777/L00001-00002.pdf</url_pdf>
+    <url_epub/>
+    <url_pdf_catalan/>
+    <url_pdf_euskera/>
+    <url_pdf_gallego/>
+    <url_pdf_valenciano/>
+    <estatus_legislativo>L</estatus_legislativo>
+    <fecha_vigencia/>
+    <estatus_derogacion>N</estatus_derogacion>
+    <fecha_derogacion/>
+    <judicialmente_anulada>N</judicialmente_anulada>
+    <fecha_anulacion/>
+    <vigencia_agotada>N</vigencia_agotada>
+    <estado_consolidacion codigo="0"/>
+    <letra_imagen>L</letra_imagen>
+    <suplemento_letra_imagen/>
+    <url_eli>https://data.europa.eu/eli/reg/2024/1351/corrigendum/2026-09-18</url_eli>
+  </metadatos>
+  <analisis>
+    <materias>
+      <materia codigo="258" orden="1">Apátridas</materia>
+      <materia codigo="294" orden="1">Armonización de legislaciones</materia>
+      <materia codigo="329" orden="1">Asistencia social</materia>
+      <materia codigo="1704" orden="1">Cooperación internacional</materia>
+      <materia codigo="2441" orden="1">Derecho de asilo</materia>
+      <materia codigo="3712" orden="1">Financiación comunitaria</materia>
+      <materia codigo="4950" orden="1">Migraciones</materia>
+      <materia codigo="5703" orden="1">Procedimiento administrativo</materia>
+    </materias>
+    <notas/>
+    <referencias>
+      <anteriores>
+        <anterior referencia="DOUE-L-2024-80742" orden="2120">
+          <palabra codigo="201">CORRECCIÓN de errores</palabra>
+          <texto>del Reglamento 2024/1351, de 14 de mayo</texto>
+        </anterior>
+      </anteriores>
+      <posteriores/>
+    </referencias>
+    <alertas>
+      <alerta codigo="104" orden="1">Asuntos sociales</alerta>
+      <alerta codigo="109" orden="1">Derecho Administrativo</alerta>
+      <alerta codigo="135" orden="1">Extranjería</alerta>
+      <alerta codigo="126" orden="1">Seguridad y Defensa</alerta>
+      <alerta codigo="127" orden="1">Sistema financiero</alerta>
+      <alerta codigo="134" orden="1">Unión Europea</alerta>
+    </alertas>
+  </analisis>
+  <texto>
+    <div>
+      <p class="parrafo"> </p>
+    </div>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">1)</p>
+          </td>
+          <td>
+            <span>En la página 12, considerando 81, última frase:</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>donde dice:</span>
+            </p>
+          </td>
+          <td>
+            <div>
+              <p class="parrafo">«En particular, se debe notificar sin retrasos indebidos a los interesados si la violación de un dato personal puede acarrear un alto riesgo para sus derechos y libertades en el marco del Reglamento (UE) 2016/679.»,</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>debe decir:</span>
+            </p>
+          </td>
+          <td>
+            <div>
+              <p class="parrafo">«En particular, se debe notificar sin retrasos indebidos a los interesados si es probable que la violación de la seguridad de los datos personales acarree un alto riesgo para sus derechos y libertades en el marco del Reglamento (UE) 2016/679.».</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">2)</p>
+          </td>
+          <td>
+            <span>En la página 43, artículo 42, apartado 1:</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>donde dice:</span>
+            </p>
+          </td>
+          <td><div><div><p class="parrafo">«1.   El Estado miembro encargado de la determinación y cuya petición de toma a cargo del solicitante con arreglo al artículo 36, apartado 1, letra a), haya sido aceptada, o que haya enviado una notificación de readmisión con respecto a las personas a que se refiere el artículo 36, apartado 1, letras b) y c), adoptará una decisión sobre el traslado dos semanas después de la aceptación o la confirmación.»</p></div></div>
+			,</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>debe decir:</span>
+            </p>
+          </td>
+          <td>
+            <div>
+              <div>
+                <p class="parrafo">«1.   El Estado miembro encargado de la determinación y cuya petición de toma a cargo del solicitante con arreglo al artículo 36, apartado 1, letra a), haya sido aceptada, o que haya enviado una notificación de readmisión con respecto a las personas a que se refiere el artículo 36, apartado 1, letras b) y c), adoptará una decisión sobre el traslado dentro de las dos semanas siguientes a la aceptación o la confirmación.».</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">3)</p>
+          </td>
+          <td>
+            <span>En la página 46, artículo 46, apartado 2, párrafo primero, segunda frase:</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>donde dice:</span>
+            </p>
+          </td>
+          <td><div><p class="parrafo">«[…] Dicho plazo podrá prorrogarse hasta un año como máximo en caso de que el traslado no pudiera efectuarse por motivo de pena de prisión de la persona interesada o hasta un máximo de tres años en caso de que el Estado miembro requirente informara al Estado miembro responsable de que la persona interesada, o un miembro de la familia que iba a ser trasladado junto con la persona interesada, se haya fugado, se resista físicamente al traslado, se muestre intencionadamente incapaz para el traslado o no cumpla los requisitos médicos para el traslado.»</p></div>
+			,</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>debe decir:</span>
+            </p>
+          </td>
+          <td>
+            <div>
+              <p class="parrafo">«[…] Dicho plazo podrá prorrogarse hasta un año como máximo en caso de que el traslado no pudiera efectuarse por motivo de pena de prisión de la persona interesada o hasta un máximo de tres años desde el momento en que el Estado miembro requirente informe al Estado miembro responsable de que la persona interesada, o un miembro de la familia que iba a ser trasladado junto con la persona interesada, se ha fugado, se resiste físicamente al traslado, se muestra intencionadamente incapaz para el traslado o no cumple los requisitos médicos para el traslado.».</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">4)</p>
+          </td>
+          <td>
+            <span>En la página 49, artículo 51, apartado 3, tercera frase:</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>donde dice:</span>
+            </p>
+          </td>
+          <td><div><p class="parrafo">«[…] El Estado miembro requerido podrá negarse a dar curso a la petición si la comunicación de dicha información puede perjudicar sus intereses esenciales o poner en peligro la protección de los derechos y libertades de la persona afectada o de cualquier otra persona. […]»</p></div>
+			,</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>debe decir:</span>
+            </p>
+          </td>
+          <td>
+            <div>
+              <p class="parrafo">«[…] El Estado miembro requerido podrá negarse a dar curso a la petición si es probable que la comunicación de dicha información perjudique sus intereses esenciales o ponga en peligro la protección de los derechos y libertades de la persona afectada o de cualquier otra persona. […]».</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">5)</p>
+          </td>
+          <td>
+            <span>En la página 49, artículo 51, apartado 4, segunda frase:</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>donde dice:</span>
+            </p>
+          </td>
+          <td><div><p class="parrafo">«[…] Dicha petición deberá motivarse y, cuando tenga por objeto verificar la existencia de un criterio que pudiera implicar la responsabilidad del Estado miembro requerido, señalará las pruebas en las que se funda, incluida la información pertinente procedente de fuentes fiables relativa a las vías y medios de entrada a los territorios de los Estados miembros de los solicitantes, o a las partes concretas y verificables de las declaraciones del solicitante en que se funda. […]»</p></div>
+			,</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>debe decir:</span>
+            </p>
+          </td>
+          <td>
+            <div>
+              <p class="parrafo">«[…] Dicha petición deberá motivarse y, cuando tenga por objeto verificar la existencia de un criterio que sea probable que implique la responsabilidad del Estado miembro requerido, señalará las pruebas en las que se funda, incluida la información pertinente procedente de fuentes fiables relativa a las vías y medios de entrada a los territorios de los Estados miembros de los solicitantes, o a las partes concretas y verificables de las declaraciones del solicitante en que se funda. […].».</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">6)</p>
+          </td>
+          <td>
+            <span>En la página 67, artículo 84, apartado 1:</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>donde dice:</span>
+            </p>
+          </td>
+          <td><div><div><p class="parrafo">«1.   En caso de que la solicitud de asilo se haya presentado después del 1 de julio de 2026, se tendrá en cuenta todo hecho susceptible de determinar la responsabilidad de un Estado miembro en virtud del presente Reglamento, aun cuando fuera anterior a dicha fecha.»</p></div></div>
+			,</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="20%"/>
+        <col width="80%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">
+              <span>debe decir:</span>
+            </p>
+          </td>
+          <td>
+            <div>
+              <div>
+                <p class="parrafo">«1.   En caso de que la solicitud de asilo se haya presentado después del 1 de julio de 2026, se tendrá en cuenta todo hecho que sea probable que determine la responsabilidad de un Estado miembro en virtud del presente Reglamento, aun cuando fuera anterior a dicha fecha.».</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </texto>
+</documento>

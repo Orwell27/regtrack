@@ -1,0 +1,410 @@
+[
+  {
+    "commitmentId": "r-08-1",
+    "reviewedAt": "2026-10-11",
+    "title": "Dependencia: el umbral se supera en prestaciones, no en personas",
+    "conclusion": "La estadística autonómica registra 106.527 prestaciones al cierre de 2024, por encima de las 100.000 prometidas. Son 78.035 personas beneficiarias: varias prestaciones pueden corresponder a una persona. El balance de julio de 2026 comunica un total mayor, sin aportar aquí una auditoría independiente ni demostrar por sí solo calidad o atención sin esperas.",
+    "periodNote": "Promesa del programa 2023–2027. Tabla administrativa a 31/12/2024 y comunicación de 20/08/2026 con 123.558 prestaciones a 31/07/2026. La misma nota incluye personas del primer semestre: no se mezclan ambos cortes.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Compromiso original y alcance",
+        "status": "promise-documented",
+        "finding": "El objetivo se expresa en prestaciones a lo largo de la legislatura, con una referencia inicial de 89.000. No promete 100.000 personas distintas.",
+        "citations": [
+          {
+            "sourceId": "clm-programme",
+            "locator": "Compromiso 1; página del PDF",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "serie",
+        "claim": "Superar las 100.000 prestaciones",
+        "status": "reported",
+        "finding": "La tabla de gestión declara 106.527 prestaciones y 78.035 personas a 31/12/2024. El informe explica que una persona puede recibir varias prestaciones; su cuadro por modalidades suma el mismo total. Es evidencia administrativa de superación del umbral, pendiente de conciliación externa. No se convierte en 106.527 beneficiarios diferentes.",
+        "citations": [
+          {
+            "sourceId": "clm-dependency-2024",
+            "locator": "Gestión: personas, prestaciones y esperas",
+            "page": 3
+          },
+          {
+            "sourceId": "clm-dependency-2024",
+            "locator": "Tipos de prestaciones: total y desglose provincial",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "actualizacion",
+        "claim": "Cifras posteriores con su fecha propia",
+        "status": "reported",
+        "finding": "La nota de agosto comunica 123.558 prestaciones a 31/07/2026. Las 82.648 personas aparecen referidas al balance del primer semestre; no se calcula con ellas una ratio de julio ni se presentan como personas nuevas. La publicación actualiza el dato comunicado, pero no constituye una segunda medición independiente.",
+        "citations": [
+          {
+            "sourceId": "clm-dependency-july",
+            "locator": "Primeros párrafos: cortes de julio y del primer semestre de 2026"
+          }
+        ]
+      },
+      {
+        "id": "calidad",
+        "claim": "Acceso efectivo, calidad y demanda pendiente",
+        "status": "unresolved",
+        "finding": "La propia tabla de 2024 recoge 927 pendientes de prestación y 1.658 solicitudes pendientes de valoración. Superar el objetivo de volumen no equivale a eliminar las esperas. Faltan conciliación con registros comparables, tiempos efectivos, intensidad de servicios y resultados de atención; estas cifras no describen la situación de octubre de 2026.",
+        "citations": [
+          {
+            "sourceId": "clm-dependency-2024",
+            "locator": "Tabla de gestión: pendientes a diciembre de 2024",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "contrast": "Informe estadístico, índice y nota de prensa proceden de la misma administración. Se contrastan unidades, fechas y desgloses, sin contarlos como corroboraciones independientes. La afirmación de liderazgo que contiene la nota no se adopta como conclusión de RegTrack.",
+    "pending": [
+      "Conciliar la serie con datos comparables del SAAD y aclarar altas, bajas y prestaciones simultáneas.",
+      "Incorporar esperas, intensidad y calidad al mismo corte temporal.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-08-166",
+    "reviewedAt": "2026-10-11",
+    "title": "Televisión hospitalaria: implantación comunicada y origen anterior al mandato",
+    "conclusion": "El SESCAM declara terminado el despliegue en el tercer trimestre de 2023, con 2.454 televisores gratuitos. Una noticia de enero ya describe gratuidad en el Hospital General de Albacete. Esto aporta un antecedente local, no prueba por sí solo la cobertura de todos los hospitales ni permite atribuir el inicio al mandato que comenzó en julio.",
+    "periodNote": "Compromiso referido a 2023. Nombramiento del presidente publicado el 08/07/2023. Noticia de Diario Sanitario de 03/01/2023, actualizada el 09/01; seguimiento gubernamental que sitúa el inicio general en marzo y la finalización en el tercer trimestre de 2023, sin fecha de actualización visible.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Compromiso original y alcance",
+        "status": "promise-documented",
+        "finding": "El texto propone plantear la televisión gratuita en todos los hospitales durante 2023. Se conserva esta formulación, sin sustituirla por un compromiso de instalación completamente nuevo desde julio.",
+        "citations": [
+          {
+            "sourceId": "clm-programme",
+            "locator": "Compromiso 166; página del PDF",
+            "page": 17
+          }
+        ]
+      },
+      {
+        "id": "despliegue",
+        "claim": "Cobertura declarada por el SESCAM",
+        "status": "reported",
+        "finding": "La ficha del Gobierno sitúa el inicio del proyecto en marzo de 2023 y su finalización en el tercer trimestre. Declara 2.454 televisores certificados y gratuidad para futuras incorporaciones. No se ha obtenido el inventario de equipos ni las certificaciones que permitan comprobar hospital por hospital.",
+        "citations": [
+          {
+            "sourceId": "clm-tv-followup",
+            "locator": "Cumplimos y resumen final: inicio, finalización y 2.454 equipos"
+          }
+        ]
+      },
+      {
+        "id": "antecedente",
+        "claim": "Gratuidad descrita antes de la nueva investidura",
+        "status": "documented",
+        "finding": "Diario Sanitario informa en enero de carteles de gratuidad en el Hospital General Universitario de Albacete y la sitúa desde el inicio del año. Corrobora un antecedente local anterior al nombramiento de julio. No demuestra que todos los hospitales la ofrecieran entonces: puede corresponder a una implantación local previa al despliegue general de marzo.",
+        "citations": [
+          {
+            "sourceId": "clm-tv-press",
+            "locator": "Artículo de enero de 2023: carteles y Hospital General de Albacete"
+          },
+          {
+            "sourceId": "clm-appointment",
+            "locator": "Real Decreto 602/2023: elección y nombramiento",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "universalidad",
+        "claim": "Cobertura completa y continuidad del servicio",
+        "status": "unresolved",
+        "finding": "Faltan fechas de activación por centro, certificaciones y condiciones de uso e incidencias. Las fuentes sitúan hechos de distinto alcance en enero, marzo y el tercer trimestre; no se fuerza una fecha única ni se da por auditado el conjunto del SESCAM.",
+        "citations": [
+          {
+            "sourceId": "clm-tv-followup",
+            "locator": "Cronología del despliegue comunicada"
+          },
+          {
+            "sourceId": "clm-tv-press",
+            "locator": "Antecedente local de Albacete"
+          }
+        ]
+      }
+    ],
+    "contrast": "La noticia es una fuente distinta del SESCAM y describe un caso local. Se conserva una nota editorial cuya huella corresponde a la paráfrasis, no al artículo original. Aporta contraste cronológico, no una auditoría regional ni una revisión humana independiente. Se separa el trabajo previo a julio de 2023 de la finalización comunicada después.",
+    "pending": [
+      "Obtener certificaciones y cronología por hospital, además de condiciones e incidencias del servicio.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-08-257",
+    "reviewedAt": "2026-10-11",
+    "title": "Banco de libros: programa regulado, préstamo y obligaciones de reposición",
+    "conclusion": "El Decreto 26/2024 crea y regula el banco de libros. La guía de 2026–2027 y un instituto público muestran cómo se tramita su continuidad. El préstamo exige aceptar condiciones y aportar materiales o compensación cuando corresponda; no equivale a libros nuevos gratuitos para todo el alumnado. La entrega efectiva del primer curso 2024–2025 queda pendiente de contraste.",
+    "periodNote": "Promesa de puesta en marcha en 2024–2025. Decreto publicado el 10/06/2024, vigente al día siguiente. Guía de 2026–2027 y página del IES Peñas Negras actualizada el 26/08/2026. Estas últimas no prueban retroactivamente entregas en septiembre de 2024.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Compromiso original y alcance",
+        "status": "promise-documented",
+        "finding": "El compromiso fija la puesta en marcha del banco en el curso 2024–2025; no promete la propiedad de libros nuevos ni cubre expresamente cualquier material.",
+        "citations": [
+          {
+            "sourceId": "clm-programme",
+            "locator": "Compromiso 257; página del PDF",
+            "page": 23
+          }
+        ]
+      },
+      {
+        "id": "regulacion",
+        "claim": "Crear el sistema de reutilización y préstamo",
+        "status": "documented",
+        "finding": "El Decreto 26/2024 crea el banco, obligatorio en centros públicos y de adhesión voluntaria para concertados. El alumnado participa voluntariamente y recibe en préstamo materiales del catálogo. Se documenta la creación jurídica anterior al curso prometido; la norma no es un registro de entregas realizadas.",
+        "citations": [
+          {
+            "sourceId": "clm-books-law",
+            "locator": "Objeto, ámbito y creación del banco",
+            "page": 2
+          },
+          {
+            "sourceId": "clm-books-law",
+            "locator": "Artículos 6 y 7: participación y préstamo",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "condiciones",
+        "claim": "Aportación, devolución y compensaciones",
+        "status": "documented",
+        "finding": "El artículo 7 exige entregar un lote o abonar la compensación establecida, cuidar el material y reponerlo o compensarlo si se pierde o deteriora para continuar. La guía 2026–2027 detalla, cuando proceda, 75 euros por lote de Primaria y 100 en Secundaria, Bachillerato y Grado Básico; 15 o 20 euros por ejemplar faltante. También contempla la incorporación mediante ayudas. No son un cobro universal anual ni una donación de libros en propiedad.",
+        "citations": [
+          {
+            "sourceId": "clm-books-law",
+            "locator": "Artículo 7, apartados 2 y 3",
+            "page": 4
+          },
+          {
+            "sourceId": "clm-books-guide",
+            "locator": "Participación y compensaciones; curso 2026–2027",
+            "page": 8
+          },
+          {
+            "sourceId": "clm-books-guide",
+            "locator": "Importes por lote o ejemplar",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "operacion",
+        "claim": "Tramitación y continuidad observables",
+        "status": "documented",
+        "finding": "La guía establece registro de préstamos antes del inicio de curso y gestión de necesidades. El IES Peñas Negras publica el procedimiento para 2026–2027, incluidos plazos y reposición. Son instrucciones operativas concordantes, no datos regionales de alumnado que haya recibido el lote completo.",
+        "citations": [
+          {
+            "sourceId": "clm-books-guide",
+            "locator": "Préstamos de 2026–2027 y registro informático",
+            "page": 11
+          },
+          {
+            "sourceId": "clm-books-school",
+            "locator": "Procedimiento del banco de libros, actualización de agosto de 2026"
+          }
+        ]
+      },
+      {
+        "id": "entregas",
+        "claim": "Entregas del primer curso y cobertura posterior",
+        "status": "unresolved",
+        "finding": "No se ha conciliado aquí el registro de entregas de 2024–2025 ni el de cursos posteriores: centros participantes, alumnado atendido, lotes incompletos, plazos, gasto y barreras de acceso. La existencia de normas y procedimientos no permite certificar por sí sola la puesta en marcha efectiva en todos los centros en el plazo prometido.",
+        "citations": [
+          {
+            "sourceId": "clm-books-law",
+            "locator": "Artículos 8 y 9: registro, necesidades y seguimiento",
+            "page": 4
+          },
+          {
+            "sourceId": "clm-books-guide",
+            "locator": "Préstamos y registro",
+            "page": 11
+          }
+        ]
+      }
+    ],
+    "contrast": "La norma, la guía y el instituto público pertenecen a la misma administración. Se corroboran reglas y procedimiento, sin sumar una fuente independiente ni confundirlas con una evaluación externa de entregas o ahorro familiar.",
+    "pending": [
+      "Recuperar instrucciones iniciales y registros agregados de entrega 2024–2025.",
+      "Contrastar cobertura, entregas a tiempo, gasto y exclusiones con centros y control externo.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-08-384",
+    "reviewedAt": "2026-10-11",
+    "title": "Primer curso universitario: bonificación del 99 % con límites de acceso",
+    "conclusion": "La Orden 74/2026 mantiene una bonificación del 99 % de créditos de primera matrícula en la UCLM. Se documenta esa medida, con topes y requisitos, sin equipararla a gratuidad total e incondicional del primer curso. El programa supedita además la promesa a aclarar la financiación universitaria; faltan resultados y compensaciones ejecutadas.",
+    "periodNote": "Compromiso inicial 384, condicionado a la financiación. Orden de 19/05/2026, publicada el 27/05/2026, aplicable al curso 2026–2027. No se extrapola esta regulación a cualquier universidad, curso o concepto de matrícula.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Compromiso original y alcance",
+        "status": "promise-documented",
+        "finding": "El programa ofrece gratuidad del primer curso solo si queda despejado el gasto financiero global universitario. La condición forma parte del compromiso y se conserva en la valoración.",
+        "citations": [
+          {
+            "sourceId": "clm-programme",
+            "locator": "Compromiso 384; página del PDF",
+            "page": 30
+          }
+        ]
+      },
+      {
+        "id": "bonificacion",
+        "claim": "Bonificar los créditos de primera matrícula",
+        "status": "documented",
+        "finding": "El artículo 13 establece el 99 % para créditos matriculados por primera vez en el primer curso académico de grado o doble grado de la UCLM, con máximo de 60 o 72 créditos, respectivamente. Excluye segundas y sucesivas matrículas y a quienes ya tienen un grado o equivalente. No acredita una exención del 100 % ni de todas las tasas administrativas.",
+        "citations": [
+          {
+            "sourceId": "clm-university-law",
+            "locator": "Artículo 13.1: porcentaje, ámbito y topes",
+            "page": 6
+          },
+          {
+            "sourceId": "clm-university-law",
+            "locator": "Artículo 13.5: solo servicios académicos",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "requisitos",
+        "claim": "Acceso, beca estatal y situaciones especiales",
+        "status": "documented",
+        "finding": "La norma exige vías de acceso vinculadas a Castilla-La Mancha. Para alumnado procedente de otra universidad pública añade matrícula en 2025–2026 y créditos superados según rama. La bonificación cubre la parte no cubierta por la beca general, cuya solicitud exige el artículo 13.4. Una comisión puede valorar casos no contemplados; no se afirma exclusión absoluta de todos ellos. La disposición adicional prevé compensar a la UCLM, sin demostrar transferencias ejecutadas.",
+        "citations": [
+          {
+            "sourceId": "clm-university-law",
+            "locator": "Artículo 13.2–7 y disposición adicional primera",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Aplicación real y financiación de la promesa",
+        "status": "unresolved",
+        "finding": "Faltan matrículas bonificadas, importes netos, denegaciones, resoluciones de la comisión y compensaciones efectivamente abonadas por curso. Tampoco se ha conciliado la condición financiera del programa ni la aplicación en centros de otras universidades de la región. La norma acredita el derecho regulado, no una gratuidad universal efectivamente disfrutada.",
+        "citations": [
+          {
+            "sourceId": "clm-university-law",
+            "locator": "Ámbito para otras universidades con centros en la región",
+            "page": 2
+          },
+          {
+            "sourceId": "clm-university-law",
+            "locator": "Compensación de exenciones y bonificaciones",
+            "page": 7
+          }
+        ]
+      }
+    ],
+    "contrast": "Programa y orden proceden del Gobierno autonómico. Se compara la formulación completa con los requisitos legales vigentes para el curso examinado. La página operativa de la UCLM devuelve 403 en la descarga directa; no se archiva una página de error como prueba ni se cuenta una verificación operativa que no se ha realizado.",
+    "pending": [
+      "Conciliar normativa y aplicación por universidad, sin extender automáticamente el régimen UCLM.",
+      "Obtener liquidaciones, matrículas beneficiadas y resolución de la condición de financiación.",
+      "Revisión humana independiente de la ficha."
+    ]
+  },
+  {
+    "commitmentId": "r-08-446",
+    "reviewedAt": "2026-10-11",
+    "title": "Informes anuales: el 71 % de avance no son 71 % de compromisos terminados",
+    "conclusion": "El portal oficial enlaza informes de 2024, 2025 y 2026 y explica su metodología. Su seguimiento de 2026 comunica 322 compromisos cumplidos de los 861 iniciales, junto con un 71 % de avance global. Son métricas distintas: 322/861 equivale aproximadamente al 37,4 %, según las categorías del propio Gobierno. Ninguna de ellas es una certificación independiente de RegTrack.",
+    "periodNote": "Registro consultado el 11/10/2026: cortes declarados de 30/06/2024, 14/07/2025 y 30/06/2026. El seguimiento sitúa la presentación del tercer informe el 07/07/2026. Se ha leído el registro, el texto de seguimiento y la metodología; no se ha auditado la totalidad de los informes interactivos enlazados.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Compromiso original y alcance",
+        "status": "promise-documented",
+        "finding": "El compromiso consiste en elaborar anualmente un informe de cumplimiento que dé cuenta de la ejecución; no promete una validación externa de sus propias categorías.",
+        "citations": [
+          {
+            "sourceId": "clm-programme",
+            "locator": "Compromiso 446; página del PDF",
+            "page": 36
+          }
+        ]
+      },
+      {
+        "id": "publicacion",
+        "claim": "Registro de los informes anuales",
+        "status": "documented",
+        "finding": "El índice conserva enlaces a informes para 2024, 2025 y 2026. La ficha de seguimiento describe sus presentaciones y períodos. Se documenta la existencia de ese registro y de su rendición de cuentas publicada, con el límite de que no se han comprobado aquí todas las páginas interactivas ni su accesibilidad completa.",
+        "citations": [
+          {
+            "sourceId": "clm-reports",
+            "locator": "Índice Informes Anuales de Seguimiento: 2024, 2025 y 2026"
+          },
+          {
+            "sourceId": "clm-annual-followup",
+            "locator": "Cumplimos: informes y presentaciones anuales"
+          }
+        ]
+      },
+      {
+        "id": "denominador",
+        "claim": "Avance medio frente a compromisos completos",
+        "status": "reported",
+        "finding": "La ficha de 2026 declara 322 cumplidos, 287 avanzados, 220 en marcha y 32 no iniciados: suman los 861 iniciales. Calculamos 322/861 = 37,4 % aproximadamente, a partir de esas categorías declaradas. El 71 % que publica el Gobierno como avance global no equivale a ese cociente. La misma ficha presenta aparte 112 compromisos añadidos en 2024 y 81 en 2025; no se incluyen en el denominador inicial.",
+        "citations": [
+          {
+            "sourceId": "clm-annual-followup",
+            "locator": "Tercer informe: distribución de los 861 y ampliaciones 2024–2025"
+          }
+        ]
+      },
+      {
+        "id": "metodo",
+        "claim": "Qué acredita el porcentaje de avance",
+        "status": "documented",
+        "finding": "La metodología otorga pesos a etapas de tramitación y ejecución según el tipo de compromiso. Por ejemplo, en ayudas puntúa bases, convocatoria, gestión, resultados y comunicación. Por eso avanzar administrativamente puede aumentar el porcentaje sin que el objetivo final esté totalmente realizado. Este examen explica el indicador; no demuestra que los pesos y evidencias se hayan aplicado correctamente a todas las fichas.",
+        "citations": [
+          {
+            "sourceId": "clm-methodology",
+            "locator": "Metodología: fases y porcentajes orientativos por tipo de actuación"
+          }
+        ]
+      },
+      {
+        "id": "auditoria",
+        "claim": "Integridad y verificación de los informes",
+        "status": "unresolved",
+        "finding": "Quedan por conservar y comprobar los informes interactivos completos, reconciliar cada compromiso y sus documentos, revisar cambios de definición y añadir los compromisos posteriores al programa inicial. La cifra de cobertura de RegTrack tampoco cuenta estas 861 importaciones como 861 revisiones.",
+        "citations": [
+          {
+            "sourceId": "clm-reports",
+            "locator": "Enlaces a informes interactivos"
+          },
+          {
+            "sourceId": "clm-annual-followup",
+            "locator": "Ampliaciones y estados comunicados"
+          }
+        ]
+      }
+    ],
+    "contrast": "Registro, seguimiento y metodología comparten emisor. El cálculo del 37,4 % es aritmética sobre datos declarados, no revisión independiente de cada compromiso. Se separan publicación de informes, progreso administrativo y cumplimiento material.",
+    "pending": [
+      "Conservar exportaciones completas de los informes y verificar enlaces, accesibilidad y evidencias.",
+      "Conciliar las 112 y 81 incorporaciones posteriores, duplicados y formulaciones originales.",
+      "Revisión humana independiente de la ficha."
+    ]
+  }
+]

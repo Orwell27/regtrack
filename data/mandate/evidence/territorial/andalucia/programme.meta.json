@@ -1,0 +1,13 @@
+{
+  "url": "https://static.eldiario.es/eldiario/public/content/file/original/2026/0702/17/pactopp-vox-andalucia.pdf",
+  "finalUrl": "https://static.eldiario.es/eldiario/public/content/file/original/2026/0702/17/pactopp-vox-andalucia.pdf",
+  "sha256": "d4751fc06518d4a80738bee4335181bbedc2696efa4c78f81e5533fa39f3d094",
+  "bytes": 21907847,
+  "retrievedAt": "2026-10-11T08:54:37.797435+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/andalucia/programme.pdf",
+  "extractionSha256": "3f85074a7ef445ddcbdc8498e6f17622b132ac7c98d05c6bdb8d7a3e723a419e",
+  "ocrSha256": "679291b5b3d438f84e4f3b2f9e48cd05b463389fdad32384eb6fe01a5ec3b3ed",
+  "orderedSha256": "b5c008c28b566ad62d6ec1b1bf1e58e0181493057380e4a526b6f680ddddbec6",
+  "ocrEngine": "Windows.Media.Ocr · es-ES · PDFium scale 2",
+  "transcriptionStatus": "OCR provisional; cotejo íntegro independiente pendiente"
+}

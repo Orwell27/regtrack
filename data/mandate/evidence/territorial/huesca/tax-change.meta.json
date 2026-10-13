@@ -1,0 +1,12 @@
+{
+  "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1428566660202&type=pdf",
+  "finalUrl": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1428566660202&type=pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "30d4c6ff36c9a3d878faf58d38788a4fe7d088799e32cacf681e9b4717222bbb",
+  "bytes": 562755,
+  "retrievedAt": "2026-10-11T13:36:04.041199+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/huesca/tax-change.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "ddaf7683b079ef3ae20b196c4557d476e47be7aa4d763eb933e93f0e17d0ee11"
+}

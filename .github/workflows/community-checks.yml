@@ -27,6 +27,8 @@ jobs:
       - run: npm ci
       - run: npm audit --omit=dev --audit-level=high
       - run: npm test -- --maxWorkers=2
+      - name: Verify territorial extraction and archive integrity
+        run: python3 -B -m unittest discover -s tests -p 'test_*_import.py'
       - run: npm run release:prepare
       - name: Lint community and integration
         run: npx eslint scripts/community-release.mjs tests/community-release.test.ts app/comunidad app/api app/registro components/community components/Registration.tsx lib/community lib/auth.ts tests/community-api.test.ts tests/community-db.test.ts tests/lib/auth.test.ts tests/admin-access.test.ts tests/access-db.test.ts tests/registration-api.test.ts tests/auth-confirm.test.ts e2e playwright.config.ts middleware.ts 'app/(auth)/login/page.tsx' 'app/(subscriber)/alerta/[id]/page.tsx' app/components/layouts/SubscriberSidebar.tsx app/components/layouts/AdminSidebar.tsx
@@ -34,7 +36,7 @@ jobs:
       - name: Verify public documentary packaging
         run: node scripts/check-observatory-trace.mjs
       - name: Lint mandate pilot and its evidence readers
-        run: npx eslint lib/mandate components/mandate components/observatorio/ElectionNotice.tsx app/observatorio/mandato app/api/observatorio/mandato scripts/import-mandate-election.mjs scripts/import-mandate-indicators.ts tests/mandate*.test.*
+        run: npx eslint lib/mandate components/mandate components/observatorio/ElectionNotice.tsx app/observatorio/mandato app/api/observatorio/mandato scripts/import-mandate-election.mjs scripts/import-mandate-indicators.ts scripts/import-mandate-inventory.ts scripts/build-mandate-coverage.ts scripts/capture-mandate-expansion.mjs scripts/capture-territorial-sources.mjs scripts/import-madrid-programme.ts scripts/import-navarra-balance.ts scripts/import-euskadi-programme.ts scripts/import-catalunya-programme.ts scripts/capture-barcelona-catalogue.mjs scripts/register-barcelona-sources.mjs scripts/register-vitoria-sources.mjs tests/mandate*.test.*
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4

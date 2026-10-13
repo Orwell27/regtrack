@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-10-v2",
-  "reviewedAt": "2026-10-10",
+  "revision": "2026-10-13-v6",
+  "reviewedAt": "2026-10-13",
   "reviewer": "Codex",
   "reviewMode": "same-author-second-pass",
   "independentReview": "pending",
@@ -20,9 +20,9 @@
   ],
   "selection": {
     "totalAvailable": 203,
-    "selectedCount": 30,
-    "method": "Selección heredada no representativa, basada en temas. No se reconstruyen razones individuales de exclusión que no se registraron.",
-    "limitation": "Los componentes no aumentan el denominador de treinta promesas. Las fichas pueden compartir medidas: no se suman como logros independientes."
+    "selectedCount": 46,
+    "method": "Selección inicial de 30 fichas ampliada por disponibilidad documental. Las nuevas revisiones contrastan normas, correcciones, actos parlamentarios y evaluación de AIReF; no constituyen una muestra representativa.",
+    "limitation": "Los componentes no aumentan el denominador de 46 promesas revisadas sobre 203 registros oficiales. Las medidas compartidas no se suman como logros independientes."
   },
   "rules": [
     "Fijar componente, población, periodo y criterio antes de volver a clasificar. Esta segunda pasada no es ciega: el autor conocía las conclusiones anteriores.",
@@ -130,7 +130,7 @@
     },
     {
       "commitmentId": "c-17",
-      "reviewedAt": "2026-10-10",
+      "reviewedAt": "2026-10-13",
       "components": [
         {
           "label": "Instrumentos de compra y alquiler",
@@ -149,19 +149,64 @@
           "criterion": "Contar operaciones y ayudas finalizadas por edad, renta y territorio sin duplicarlas.",
           "stage": "delivery",
           "state": "unknown",
-          "finding": "No se ha verificado el total de jóvenes beneficiados.",
+          "finding": "El seguimiento comunica operaciones de compra, pero no identifica beneficiarios únicos ni pagos de alquiler; la diferencia PDF/CSV sigue pendiente.",
           "sourceIds": [],
           "id": "c-17-part-2"
+        },
+        {
+          "id": "c-17-part-3",
+          "label": "Operaciones e importes comunicados por ICO",
+          "criterion": "Distinguir jóvenes y familias, avales y préstamos; conciliar PDF y CSV y evitar doble suma territorial.",
+          "stage": "delivery",
+          "state": "reported",
+          "finding": "PDF: 10.453 operaciones, de ellas 7.503 de jóvenes; CSV: 10.454. Andalucía explica la diferencia del recuento publicado (3.148 frente a 3.149), pero no se conoce su causa. El detalle procede del mismo gestor.",
+          "sourceIds": [
+            "ico-vivienda-cierre-2025",
+            "ico-vivienda-territorios-2025"
+          ]
         }
       ],
-      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se ha verificado el total de jóvenes beneficiados.",
-      "refreshTrigger": "Nueva evidencia que resuelva: Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
+      "challenge": "Se comprobó el PDF visualmente y se conciliaron los subtotales del CSV sin duplicar provincias y comunidades. Persiste una operación de diferencia; no se presume revisión ni errata. Avales no son préstamos ni subvenciones y las operaciones de familias no se atribuyen íntegramente a jóvenes.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Conciliar la diferencia PDF/CSV con una explicación del ICO; verificar operaciones y beneficiarios únicos por edad, renta y territorio. Siguen pendientes ayudas al alquiler efectivamente pagadas, solicitudes denegadas y evaluación del acceso y coste de vivienda para jóvenes.",
       "overlaps": [
         "c-55",
         "c-76",
         "c-112"
       ],
-      "correction": null
+      "correction": {
+        "kind": "new_evidence",
+        "reason": "Se incorpora el seguimiento del ICO con desglose de colectivos, importes y territorio. Se mantiene medidas acreditadas: hay actividad comunicada y una discrepancia PDF/CSV pendiente, no evaluación independiente del acceso.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Facilitar a jóvenes la compra o el alquiler de vivienda.",
+          "observed": "El convenio ICO de 2024 creó avales para primera vivienda y el Plan 2026–2030 regula nuevas líneas de apoyo. Se comprueban instrumentos, sin convertir su dotación o anuncios de operaciones en acceso efectivo generalizado.",
+          "practicalEffect": "Puede haber vías de aval o ayudas sujetas a edad, renta, vivienda y convocatoria; la ficha no acredita que una persona concreta pueda obtenerlas.",
+          "missingEvidence": "Operaciones efectivamente formalizadas, distribución territorial, ayudas pagadas y evaluación del acceso y coste para jóvenes.",
+          "temporalScope": "Convenio de 2024 y plan 2026–2030; revisión documental al 10 de octubre de 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2024-9128",
+            "BOE-A-2026-8872"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "measures",
+          "expected": "Facilitar a jóvenes la compra o el alquiler de vivienda.",
+          "observed": "El convenio ICO y el Plan 2026–2030 acreditan instrumentos. El seguimiento del ICO a diciembre de 2025 comunica 10.453 operaciones: 7.503 de jóvenes y 2.950 de familias con menores; 255,8 millones de euros son avales solicitados y 1.344,3 millones financiación avalada. Su CSV territorial suma 10.454 operaciones y Andalucía 3.149, frente a 3.148 en el PDF. Se conserva la discrepancia de una operación sin inventar su causa. Son datos del gestor, no verificación independiente del acceso efectivo.",
+          "practicalEffect": "Se identifica actividad comunicada y reparto territorial de los avales. Las 10.453 operaciones no equivalen a 10.453 jóvenes ni a beneficiarios únicos; un aval no es una subvención pagada. La declaración gubernamental conserva literalmente sus cifras, pero 255,8 millones mide avales, no el total de préstamos. El desglose territorial mezcla jóvenes y familias.",
+          "missingEvidence": "Conciliar la diferencia PDF/CSV con una explicación del ICO; verificar operaciones y beneficiarios únicos por edad, renta y territorio. Siguen pendientes ayudas al alquiler efectivamente pagadas, solicitudes denegadas y evaluación del acceso y coste de vivienda para jóvenes.",
+          "temporalScope": "Convenio 2024, actividad acumulada desde el inicio de la línea hasta 31/12/2025 y Plan 2026–2030. Captura 13/10/2026; el cierre 2025 no representa la ejecución a junio u octubre de 2026.",
+          "scope": "España; línea ICO-MIVAU de primera vivienda para jóvenes y familias con menores. No cubre por sí sola todas las políticas de compra y alquiler para jóvenes.",
+          "evidenceSourceIds": [
+            "BOE-A-2024-9128",
+            "BOE-A-2026-8872",
+            "ico-vivienda-cierre-2025",
+            "ico-vivienda-territorios-2025"
+          ],
+          "reviewedAt": "2026-10-13"
+        }
+      }
     },
     {
       "commitmentId": "c-29",
@@ -233,16 +278,17 @@
     },
     {
       "commitmentId": "c-33",
-      "reviewedAt": "2026-10-10",
+      "reviewedAt": "2026-10-13",
       "components": [
         {
           "label": "Brecha de paro",
           "criterion": "Comparar mujeres y hombres en la misma EPA y unidad.",
           "stage": "outcome",
           "state": "documented",
-          "finding": "2,18 puntos en 2026T2, observación de paro y no de toda la brecha laboral.",
+          "finding": "La brecha de paro femenino menos masculino pasa de 3,34 puntos en 2023T3 a 2,18 en 2026T2; no es la brecha de empleo.",
           "sourceIds": [
-            "epa-2026-t2"
+            "epa-2026-t2",
+            "epa-tasas-sexo-serie"
           ],
           "id": "c-33-part-1"
         },
@@ -250,16 +296,61 @@
           "label": "Avance en empleo",
           "criterion": "Usar serie de empleo por sexo desde la base, con edad y definición constantes.",
           "stage": "outcome",
-          "state": "unknown",
-          "finding": "Sin base comparable no se clasifica mejora o empeoramiento del objetivo.",
-          "sourceIds": [],
+          "state": "documented",
+          "finding": "Brecha de empleo de 16 y más años: 11,00→9,92 puntos entre 2023T3 y 2026T2; desde 2023T4 (10,21) baja 0,29. En 2025T2 ya era 9,92. Descripción de la serie homogénea, sin atribución causal ni afirmación de significación estadística.",
+          "sourceIds": [
+            "epa-tasas-sexo-serie",
+            "epa-tasas-sexo-metadatos",
+            "epa-metodologia-2021"
+          ],
           "id": "c-33-part-2"
+        },
+        {
+          "id": "c-33-part-3",
+          "label": "Calidad del empleo y atribución",
+          "criterion": "Comprobar parcialidad, salarios, composición e incertidumbre y evaluar el efecto de las medidas.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La serie de tasas no resuelve calidad del empleo, salarios ni causalidad. No se ha contrastado la significación estadística de las diferencias.",
+          "sourceIds": []
         }
       ],
-      "challenge": "Una brecha de paro positiva no demuestra empeoramiento de la brecha de empleo: falta serie de base.",
-      "refreshTrigger": "Nueva evidencia que resuelva: Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
+      "challenge": "Se conserva la comparación interanual sin avance en empleo y el aumento de la brecha de actividad; no se eligen solo extremos favorables. La base previa es 2023T3, no un dato de noviembre. Una misma base poblacional no elimina estacionalidad, composición ni error muestral.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Series de parcialidad, salarios y calidad del empleo por sexo; análisis por edad y otras características, incertidumbre de las diferencias y evaluación específica de las medidas. Falta el resultado final del mandato; no se ha demostrado que las diferencias pequeñas sean estadísticamente significativas.",
       "overlaps": [],
-      "correction": null
+      "correction": {
+        "kind": "new_evidence",
+        "reason": "Una serie homogénea sustituye la observación aislada: permite documentar reducción parcial desde una referencia anterior al mandato, manteniendo la ausencia de avance interanual en empleo y las limitaciones de atribución, calidad e incertidumbre.",
+        "before": {
+          "verdict": "inconclusive",
+          "expected": "Avanzar en la eliminación de la brecha de género en el empleo.",
+          "observed": "La EPA 2026T2 registra paro femenino del 11,02 % y masculino del 8,84 %: una diferencia de 2,18 puntos. Acredita que persiste una brecha de paro; esta observación aislada no mide el avance de toda la brecha de empleo desde el inicio del mandato.",
+          "practicalEffect": "Mujeres y hombres siguen teniendo tasas de paro distintas. No permite atribuir a una medida concreta la diferencia ni equiparar paro, empleo y salario.",
+          "missingEvidence": "Series comparables desde 2023 por sexo de empleo, actividad, parcialidad y salarios; evaluación específica de las medidas.",
+          "temporalScope": "EPA 2026T2, publicada el 28 de julio. La falta de base comparable limita el juicio sobre el avance.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "epa-2026-t2"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "partial",
+          "expected": "Avanzar en la eliminación de la brecha de género en el empleo.",
+          "observed": "La serie EPA comparable (base poblacional 2021) sitúa la brecha de empleo de 16 y más años en 11,00 puntos en 2023T3 y 9,92 en 2026T2: reducción de 1,08 puntos. En 2023T4 era 10,21; en 2025T2 ya era 9,92, igual que en 2026T2. En este último trimestre las tasas son 58,52 % para hombres y 48,60 % para mujeres. La brecha de paro baja de 3,34 a 2,18 puntos entre 2023T3 y 2026T2. Hay avance descriptivo parcial, no eliminación de la brecha ni mejora continua.",
+          "practicalEffect": "En 2026T2 la proporción de mujeres ocupadas sigue 9,92 puntos por debajo de la de hombres. La brecha de actividad pasa de 10,24 puntos en 2023T3 a 9,58 en 2026T2, pero sube frente a 9,54 en 2025T2. Empleo y actividad usan población de 16 y más años; paro usa población activa. Son estimaciones sin ajuste estacional ni por composición de edad; no prueban causalidad de las medidas.",
+          "missingEvidence": "Series de parcialidad, salarios y calidad del empleo por sexo; análisis por edad y otras características, incertidumbre de las diferencias y evaluación específica de las medidas. Falta el resultado final del mandato; no se ha demostrado que las diferencias pequeñas sean estadísticamente significativas.",
+          "temporalScope": "Serie trimestral 2023T3–2026T2 de una misma descarga INE del 13/10/2026, con base poblacional 2021 desde 2021. 2023T3 es el último trimestre completo anterior a la investidura; 2023T4 la contiene. No hay observación exacta de noviembre de 2023. Se muestra también comparación interanual 2025T2–2026T2 para limitar el efecto estacional.",
+          "scope": "España, Total Nacional EPA, hombres y mujeres de 16 y más años en viviendas familiares. Tasas sin estandarización por edad; no equivalen a salarios, parcialidad ni toda la desigualdad laboral.",
+          "evidenceSourceIds": [
+            "epa-2026-t2",
+            "epa-tasas-sexo-serie",
+            "epa-tasas-sexo-metadatos",
+            "epa-metodologia-2021"
+          ],
+          "reviewedAt": "2026-10-13"
+        }
+      }
     },
     {
       "commitmentId": "c-53",
@@ -935,7 +1026,7 @@
     },
     {
       "commitmentId": "c-136",
-      "reviewedAt": "2026-10-10",
+      "reviewedAt": "2026-10-13",
       "components": [
         {
           "label": "Plan contra fraude",
@@ -953,17 +1044,58 @@
           "criterion": "Separar liquidaciones, cobros firmes y estimación de fraude con metodología constante.",
           "stage": "outcome",
           "state": "unknown",
-          "finding": "No se ha incorporado una serie auditada de resultados.",
+          "finding": "Existe balance del organismo en otro componente; faltan verificación externa de cobros firmes y estimación de reducción del fraude.",
           "sourceIds": [],
           "id": "c-136-part-2"
+        },
+        {
+          "id": "c-136-part-3",
+          "label": "Resultados administrativos comunicados",
+          "criterion": "Desglosar el balance del emisor y comparar el mismo perímetro, sin equiparar minoraciones con cobros ni confundir ejercicios.",
+          "stage": "delivery",
+          "state": "reported",
+          "finding": "El informe AEAT de 2025 desglosa 22.742,6 millones y permite comparar 18.375,6 con 15.343,4 millones excluidos los extraordinarios. Es información del ejecutor; no una segunda familia independiente ni evidencia del resultado del plan 2026.",
+          "sourceIds": [
+            "aeat-resultados-2025"
+          ]
         }
       ],
-      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se ha incorporado una serie auditada de resultados.",
-      "refreshTrigger": "Nueva evidencia que resuelva: Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+      "challenge": "El informe del mismo organismo mejora el detalle respecto al plan, pero no prueba una reducción de la brecha fiscal. Las cifras de caja, minoraciones y deuda pendiente tienen perímetros distintos. Se mantiene pendiente el resultado global y la verificación externa.",
+      "refreshTrigger": "Auditoría externa y conciliación con cobros firmes, recursos y anulaciones; estimación comparable de la brecha fiscal y evaluación causal. La caída de deuda pendiente que el informe atribuye a anulaciones no se interpreta como cobro. No se ha evaluado el cierre de 2026.",
       "overlaps": [
         "c-29"
       ],
-      "correction": null
+      "correction": {
+        "kind": "new_evidence",
+        "reason": "Se incorpora el balance administrativo 2025 y su desglose; se mantiene «medidas acreditadas» porque no hay evaluación independiente de reducción del fraude.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Combatir fraude, evasión y elusión fiscal.",
+          "observed": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+          "practicalEffect": "Se publican prioridades de control. Las liquidaciones detectadas, ingresos cobrados y fraude estimado deben leerse por separado.",
+          "missingEvidence": "Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+          "temporalScope": "Plan Anual de Control Tributario 2026; no balance final del ejercicio.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5843"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "measures",
+          "expected": "Combatir fraude, evasión y elusión fiscal.",
+          "observed": "La AEAT comunica para 2025 resultados de control de 22.742,6 millones de euros: 11.100,9 de ingresos directos, 10.041,4 de devoluciones evitadas y 1.600,3 de autoliquidaciones extemporáneas. El total no equivale íntegramente a dinero cobrado ni a fraude estimado. La serie sin expedientes extraordinarios de pagos fraccionados pasa de 15.343,4 millones en 2024 a 18.375,6 en 2025 (+19,8 %). Es un balance del propio organismo, no una auditoría independiente ni el resultado del plan de 2026.",
+          "practicalEffect": "Hay resultados administrativos comunicados, además del plan aprobado. Las devoluciones evitadas no son ingresos de caja; las autoliquidaciones tardías no se atribuyen directamente a una actuación concreta. Un mayor importe detectado no demuestra por sí solo que haya menos fraude.",
+          "missingEvidence": "Auditoría externa y conciliación con cobros firmes, recursos y anulaciones; estimación comparable de la brecha fiscal y evaluación causal. La caída de deuda pendiente que el informe atribuye a anulaciones no se interpreta como cobro. No se ha evaluado el cierre de 2026.",
+          "temporalScope": "Balance anual 2025 publicado en julio de 2026, con comparación 2024 dentro del mismo informe; plan de control 2026 separado. No se utiliza todo 2023 como base exacta de la investidura de noviembre.",
+          "scope": "Actividad de control de la AEAT; no representa por sí sola todas las administraciones tributarias ni toda la economía sumergida de España.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5843",
+            "aeat-resultados-2025"
+          ],
+          "reviewedAt": "2026-10-13"
+        }
+      }
     },
     {
       "commitmentId": "c-137",
@@ -1070,7 +1202,7 @@
     },
     {
       "commitmentId": "c-143",
-      "reviewedAt": "2026-10-10",
+      "reviewedAt": "2026-10-13",
       "components": [
         {
           "label": "Reforma del subsidio",
@@ -1088,19 +1220,62 @@
           "criterion": "Medir cobertura, pagos y suficiencia frente al coste de vida.",
           "stage": "outcome",
           "state": "unknown",
-          "finding": "No hay evaluación de cobertura y suficiencia en esta ficha.",
+          "finding": "Se incorpora cobertura administrativa en otro componente; siguen sin evaluar pagos netos, acceso y suficiencia frente al coste de vida.",
           "sourceIds": [],
           "id": "c-143-part-2"
+        },
+        {
+          "id": "c-143-part-3",
+          "label": "Cobertura y gasto registrados",
+          "criterion": "Comparar el mismo mes, conservar denominador y provisionalidad, y separar gasto con cotizaciones de cuantía percibida.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "La tabla provisional muestra +6,40 puntos de cobertura entre agosto de 2025 y 2026 y 1.896.142 beneficiarios en 2026. Documenta un indicador administrativo, no suficiencia, pago neto ni causalidad; ambos boletines proceden del SEPE.",
+          "sourceIds": [
+            "sepe-prestaciones-agosto-2026",
+            "sepe-prestaciones-agosto-2025"
+          ]
         }
       ],
-      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No hay evaluación de cobertura y suficiencia en esta ficha.",
-      "refreshTrigger": "Nueva evidencia que resuelva: Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+      "challenge": "Se comprobó la tabla original y sus notas: cobertura SISPE distinta de paro EPA; gasto incluye cotizaciones; CAE incluye compatibilidad con empleo. La comparación describe dos meses homólogos y no demuestra por sí sola el efecto de la reforma. Los dos informes no son fuentes independientes.",
+      "refreshTrigger": "Denegaciones y acceso de personas fuera del registro, pagos netos efectivamente recibidos, suficiencia frente al coste de vida y evaluación de la reforma por colectivo. Conciliar cambios o revisiones del indicador y construir una serie desde el inicio del mandato; no restar solicitudes y altas del mes para inferir denegaciones.",
       "overlaps": [
         "c-79",
         "c-122",
         "c-137"
       ],
-      "correction": null
+      "correction": {
+        "kind": "new_evidence",
+        "reason": "La ficha pasa de norma sin resultados a resultado parcial documentado: incorpora cobertura y gasto administrativo, manteniendo pendientes suficiencia, acceso y atribución causal.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Mejorar la protección por desempleo.",
+          "observed": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+          "practicalEffect": "Las personas elegibles tienen un régimen de subsidio reformado; cuantía y duración dependen de su situación y del tiempo de percepción.",
+          "missingEvidence": "Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+          "temporalScope": "Reforma de 2024; no se extiende el resultado a todas las medidas o pagos de 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2024-10235"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "partial",
+          "expected": "Mejorar la protección por desempleo.",
+          "observed": "La estadística provisional del SEPE para agosto de 2026 registra 1.896.142 beneficiarios y cobertura del 87,12 %, frente a 1.835.090 y 80,72 % en agosto de 2025: +6,40 puntos de cobertura. El gasto devengado en agosto es 2.242,13 millones de euros, incluidas cotizaciones, y se contabiliza en septiembre. La cuantía media bruta contributiva es 1.008,2 euros; no se confunde con el gasto medio de 1.203,1 euros que incluye cotizaciones. Es un resultado parcial del sistema, no una evaluación causal de la reforma de subsidios.",
+          "practicalEffect": "Aumenta la cobertura en el indicador administrativo para esos dos meses. Su denominador es paro registrado SISPE con experiencia laboral más beneficiarios del subsidio agrario: no todos los parados de la EPA. Incluye beneficiarios del Complemento de Apoyo al Empleo. No permite afirmar que el 87,12 % de todas las personas desempleadas cobre una ayuda ni que esta baste para vivir.",
+          "missingEvidence": "Denegaciones y acceso de personas fuera del registro, pagos netos efectivamente recibidos, suficiencia frente al coste de vida y evaluación de la reforma por colectivo. Conciliar cambios o revisiones del indicador y construir una serie desde el inicio del mandato; no restar solicitudes y altas del mes para inferir denegaciones.",
+          "temporalScope": "Agosto de 2025 y agosto de 2026, datos provisionales del boletín de septiembre de 2026 publicado el 2 de octubre. El PDF de septiembre de 2025 recuperado hoy coincide para agosto de 2025; no se certifica que conserve la versión de su primera publicación. No son prestaciones de septiembre ni un balance completo desde noviembre de 2023.",
+          "scope": "España; registros administrativos del SEPE, niveles contributivo y asistencial con las inclusiones y exclusiones de cada indicador. No equivale a toda la población desempleada EPA.",
+          "evidenceSourceIds": [
+            "BOE-A-2024-10235",
+            "sepe-prestaciones-agosto-2026",
+            "sepe-prestaciones-agosto-2025"
+          ],
+          "reviewedAt": "2026-10-13"
+        }
+      }
     },
     {
       "commitmentId": "c-160",
@@ -1303,6 +1478,595 @@
       "overlaps": [
         "c-137"
       ],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-20",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-20-part-1",
+          "label": "Aprobación de la ley",
+          "criterion": "Comprobar una ley publicada cuyo objeto sea prevenir pérdidas y desperdicio alimentario.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 1/2025 acredita la aprobación normativa.",
+          "sourceIds": [
+            "BOE-A-2025-6597"
+          ]
+        },
+        {
+          "id": "c-20-part-2",
+          "label": "Aplicación y reducción del desperdicio",
+          "criterion": "Comprobar aplicación y comparar cantidades con periodos y cobertura homogéneos.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "El texto legal no mide el desperdicio evitado. Este resultado contextual no forma parte de la promesa literal de aprobar la ley.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se comprobó la disposición final vigésima para evitar confundir publicación, entrada en vigor y aplicación de obligaciones. El objetivo literal es aprobar una ley: su aprobación está acreditada, aunque el efecto social no está medido aquí.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Para valorar sus efectos faltan registros de aplicación y controles, así como una medición comparable de pérdidas y desperdicio posterior a la aplicación de las obligaciones. No son requisitos adicionales para acreditar la aprobación de la ley.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-22",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-22-part-1",
+          "label": "Aprobación legislativa",
+          "criterion": "Localizar una ley orgánica de representación paritaria publicada.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La LO 2/2024 acredita el instrumento legislativo prometido.",
+          "sourceIds": [
+            "BOE-A-2024-15936"
+          ]
+        },
+        {
+          "id": "c-22-part-2",
+          "label": "Representación efectiva",
+          "criterion": "Verificar composición y fecha aplicable en cada tipo de entidad.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se han contrastado las composiciones de todas las entidades; los plazos no son uniformes.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el calendario para evitar tratar como incumplidas obligaciones que todavía no vencen o equiparar las 35 sociedades definidas por la ley con cualquier composición posterior del IBEX. La aprobación no mide la representación efectiva.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Para valorar la aplicación faltan composiciones verificadas por entidad, fecha y régimen aplicable. La aprobación de la ley sí está acreditada; no se condiciona a demostrar todos sus resultados posteriores.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-154",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-154-part-1",
+          "label": "Modificación del artículo 49",
+          "criterion": "Comparar el acto publicado con el objeto constitucional prometido.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El artículo único sustituye la redacción del artículo 49 con garantías expresas sobre discapacidad.",
+          "sourceIds": [
+            "BOE-A-2024-3099"
+          ]
+        },
+        {
+          "id": "c-154-part-2",
+          "label": "Desarrollo práctico de derechos",
+          "criterion": "Medir accesibilidad, autonomía e inclusión después de la reforma.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La publicación constitucional no aporta esas mediciones.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el actor que aprueba la reforma y el alcance del nuevo texto. El cumplimiento del acto constitucional no permite afirmar la eliminación de barreras o desigualdades.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: La modificación constitucional está acreditada. Para evaluar su desarrollo práctico faltan medidas de accesibilidad, inclusión y ejercicio efectivo de derechos, con población y periodo definidos.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-132",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-132-part-1",
+          "label": "Reorganización normativa",
+          "criterion": "Localizar organización y calendario en la ley.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La LO 1/2025 regula Tribunales de Instancia y oficinas judiciales.",
+          "sourceIds": [
+            "BOE-A-2025-76"
+          ]
+        },
+        {
+          "id": "c-132-part-4",
+          "label": "Constitución legal de los tribunales",
+          "criterion": "Contrastar la constitución con un documento del órgano de gobierno judicial distinto del balance del Ejecutivo.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El CGPJ confirma la constitución legal de todos los tribunales el 31/12/2025 y distingue la transición de oficinas. Esta corroboración se limita al estado jurídico descrito en enero de 2026.",
+          "sourceIds": [
+            "cgpj-instancia-20260120"
+          ]
+        },
+        {
+          "id": "c-132-part-2",
+          "label": "Implantación territorial",
+          "criterion": "Comprobar funcionamiento y dotación efectiva por partido judicial.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se dispone en esta ficha de un registro completo de implantación.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-132-part-3",
+          "label": "Calidad del servicio",
+          "criterion": "Comparar tiempos y capacidad con periodos y materias homogéneos.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La norma no demuestra una mejora medida del servicio.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó la ley con un acuerdo del CGPJ, distinto del emisor del balance gubernamental. Confirma la constitución legal, pero documenta fechas y condiciones diferentes para las oficinas. La evidencia de enero no permite certificar ni negar por sí sola el estado operativo comunicado en junio. Tampoco es revisión humana independiente de esta ficha.",
+      "refreshTrigger": "Revisar con registros actualizados de implantación y dotación por partido judicial, y comprobar la efectividad posterior de las oficinas mencionadas por el CGPJ.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-126",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-126-part-1",
+          "label": "Pacto de Estado",
+          "criterion": "Identificar acuerdo, participantes y alcance del pacto.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "El real decreto laboral no documenta un pacto de Estado.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-126-part-2",
+          "label": "Medidas laborales",
+          "criterion": "Localizar obligaciones, ámbito empresarial y protocolo.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Los artículos 1 y 2 y los anexos desarrollan medidas laborales y protocolo.",
+          "sourceIds": [
+            "BOE-A-2024-20402"
+          ]
+        },
+        {
+          "id": "c-126-part-3",
+          "label": "Reducción de discriminación",
+          "criterion": "Medir cambios comparables y distinguirlos de la aprobación normativa.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Esta fuente no ofrece una evaluación de la discriminación.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separó el pacto de Estado de las medidas laborales. La existencia de un real decreto no permite declarar logrado el compromiso completo ni medir una reducción de la discriminación.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Documento y adhesiones del pacto de Estado, registros de negociación y aplicación empresarial y mediciones comparables de discriminación. No encontrar el pacto en esta fuente no demuestra que no exista.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-118",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-118-part-1",
+          "label": "Coordinación y referencia",
+          "criterion": "Comprobar creación, funciones y ámbito de los órganos.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Los artículos 1 a 3 y 7 regulan la mesa y el centro de referencia.",
+          "sourceIds": [
+            "BOE-A-2026-2727"
+          ]
+        },
+        {
+          "id": "c-118-part-2",
+          "label": "Protección efectiva",
+          "criterion": "Contrastar controles y resultados para cada población animal.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se documentan aquí resultados de bienestar ni todos los ámbitos de protección.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el ámbito material del artículo 1. Una mesa y un centro de referencia de producción agraria y acuícola son una medida concreta, no evidencia de bienestar efectivo de todos los animales.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Actas y actividades de los órganos, controles y resultados de bienestar comparables. Para evaluar toda la promesa falta también evidencia de los ámbitos animales no cubiertos por este real decreto.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-191",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-191-part-1",
+          "label": "Ley integral",
+          "criterion": "Comprobar aprobación y contenido de la ley.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 1/2026 acredita el componente legislativo.",
+          "sourceIds": [
+            "BOE-A-2026-7967"
+          ]
+        },
+        {
+          "id": "c-191-part-2",
+          "label": "Desarrollo del PERTE",
+          "criterion": "Verificar ejecución, proyectos y beneficiarios del PERTE.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La publicación de la ley no acredita la ejecución del PERTE.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-191-part-3",
+          "label": "Estrategia de Economía Social",
+          "criterion": "Contrastar seguimiento de acciones y objetivos de la estrategia.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se ha incorporado un seguimiento verificado de la estrategia.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se desglosaron los tres instrumentos de la promesa. El título de la ley no basta para certificar el desarrollo del PERTE ni de la estrategia, ni su efecto en el empleo.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Ejecución presupuestaria y proyectos del PERTE, seguimiento de los objetivos de la estrategia e indicadores de resultados con base comparable y atribución delimitada.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-146",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "id": "c-146-part-1",
+          "label": "Marco de la Agencia Estatal de Salud Pública",
+          "criterion": "Localizar creación y funciones en una ley publicada.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Los artículos 1 y 2 crean la agencia y definen sus fines.",
+          "sourceIds": [
+            "BOE-A-2025-15652"
+          ]
+        },
+        {
+          "id": "c-146-part-2",
+          "label": "Capacidad operativa",
+          "criterion": "Comprobar desarrollo, medios, actividad y sistemas.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La ley por sí sola no acredita operatividad ni dotación efectiva.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-146-part-3",
+          "label": "Mejora de vigilancia y respuesta",
+          "criterion": "Comparar calidad y tiempos con una base explícita.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay en esta ficha indicadores comparables que demuestren la mejora prometida.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separó la creación legal de la agencia de su capacidad operativa. Tampoco se convirtió el plazo de aprobar su estatuto en un veredicto sobre toda la vigilancia sanitaria sin comprobar su desarrollo.",
+      "refreshTrigger": "Revisar cuando se incorpore evidencia sobre: Estatuto y registros de constitución operativa, dotación y actividad; indicadores de oportunidad de alertas, cobertura de vigilancia y respuesta a crisis. La falta de esas capturas aquí no prueba incumplimiento del plazo del estatuto.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-52",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-52-part-1",
+          "label": "Reforma del incentivo laboral",
+          "criterion": "Identificar modificaciones publicadas y su calendario.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El RD 240/2026 modifica la compatibilidad con ingresos laborales.",
+          "sourceIds": [
+            "BOE-A-2026-6976"
+          ]
+        },
+        {
+          "id": "c-52-part-2",
+          "label": "Cobertura y acceso en 2025",
+          "criterion": "Comparar hogares, territorio y periodo homogéneos, distinguiendo estimación de solicitud resuelta.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "AIReF documenta mayor cobertura, del 41,8 % al 44,2 %, y persistencia de un 52 % de no solicitud entre hogares potenciales del territorio fiscal común.",
+          "sourceIds": [
+            "airef-imv-quinta-opinion-2026"
+          ]
+        },
+        {
+          "id": "c-52-part-3",
+          "label": "Efecto de la reforma de 2026",
+          "criterion": "Medir resultados posteriores sin atribuirle cambios anteriores.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Los datos de 2025 no miden el efecto del incentivo reformado en marzo de 2026.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastó el balance con una evaluación externa al Ejecutivo. Se conservan tanto la mejora de cobertura como el acceso insuficiente. El 52 % de no solicitud no se interpreta como denegación; tampoco se atribuye la mejora de 2025 al real decreto de 2026.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Evaluación posterior del incentivo de 2026, resultados comparables de inclusión y una referencia explícita que permita juzgar cuánto refuerzo se prometió. La estimación de hogares potenciales de AIReF no es una resolución individual de reconocimiento del derecho.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-69",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-69-part-1",
+          "label": "Instrumento de alimentación escolar",
+          "criterion": "Verificar objeto, centros y obligaciones de la norma.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El RD 315/2025 regula calidad nutricional, sostenibilidad y menús.",
+          "sourceIds": [
+            "BOE-A-2025-7659"
+          ]
+        },
+        {
+          "id": "c-69-part-2",
+          "label": "Aplicación en centros",
+          "criterion": "Comprobar menús, contratación e inspecciones según la fecha aplicable.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "No se han auditado los centros ni la aplicación de sus obligaciones.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-69-part-3",
+          "label": "Vida saludable y sostenible",
+          "criterion": "Evaluar resultados y políticas más allá del comedor escolar.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "La norma no mide el cambio en salud ni agota el compromiso general.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separó el ámbito escolar del compromiso general y se leyó la excepción temporal del artículo 4.2. No se convierte una norma alimentaria en una mejora medida de toda la salud infantil.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Contratos, menús y controles de aplicación por centro, además de resultados nutricionales comparables y otras políticas de vida saludable. No se considera vencida en 2026 la obligación diferida a 2027.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-104",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-104-part-1",
+          "label": "Vocalías del CGPJ",
+          "criterion": "Comprobar los nombramientos correspondientes a ambas Cámaras.",
+          "stage": "delivery",
+          "state": "documented",
+          "finding": "Los dos decretos documentan los veinte nombramientos.",
+          "sourceIds": [
+            "BOE-A-2024-15351",
+            "BOE-A-2024-15352"
+          ]
+        },
+        {
+          "id": "c-104-part-2",
+          "label": "Conjunto de órganos constitucionales",
+          "criterion": "Revisar órgano, vencimiento y renovación sin extrapolar un caso.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "Estos decretos solo se refieren al CGPJ.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se cotejaron los dos decretos para no confundir diez nombramientos de una Cámara con veinte. Son dos actos complementarios, no dos corroboraciones independientes de un logro exclusivo del Ejecutivo.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Relación de los demás órganos, mandatos y fechas aplicables, junto con sus acuerdos de renovación. Para valorar el servicio judicial hacen falta indicadores distintos de los nombramientos.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-110",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-110-part-1",
+          "label": "Marco del mínimo global",
+          "criterion": "Verificar tipo mínimo, umbral, exclusiones y transposición.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 7/2024 regula el Impuesto Complementario para los grandes grupos incluidos.",
+          "sourceIds": [
+            "BOE-A-2024-26694"
+          ]
+        },
+        {
+          "id": "c-110-part-2",
+          "label": "Tributación y recaudación efectivas",
+          "criterion": "Comprobar liquidaciones y aplicación real del mecanismo.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "El texto legal no aporta liquidaciones ni una medición de la tributación efectiva obtenida.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-110-part-3",
+          "label": "Distribución justa",
+          "criterion": "Definir el criterio de justicia distributiva y contrastar el reparto.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay aquí un criterio cuantificado ni una evaluación del reparto de recaudación.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se comprobaron umbral, exclusiones y cálculo por jurisdicción. Se evita presentar el 15 % como un impuesto general nuevo para todas las sociedades o como recaudación ya ingresada.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Recaudación efectivamente liquidada, aplicación por jurisdicción, alcance de exclusiones y una definición verificable de distribución justa. Tampoco se presume que el impuesto complementario agote todas las medidas españolas de tributación mínima.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-127",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-127-part-1",
+          "label": "Marco europeo aprobado",
+          "criterion": "Comprobar instrumento, atribución institucional y correcciones.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El reglamento y la corrección de su artículo 85 acreditan marco y fecha general.",
+          "sourceIds": [
+            "DOUE-L-2024-80742",
+            "DOUE-L-2025-81799"
+          ]
+        },
+        {
+          "id": "c-127-part-2",
+          "label": "Actuación española de aplicación",
+          "criterion": "Identificar un acto español y delimitar su objeto.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El acuerdo de agosto organiza la notificación en el procedimiento fronterizo.",
+          "sourceIds": [
+            "BOE-A-2026-17614"
+          ]
+        },
+        {
+          "id": "c-127-part-3",
+          "label": "Resultados y contribución española",
+          "criterion": "Medir funcionamiento, garantías e impulso español sin inferirlos de la aprobación europea.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "Los documentos no miden esas mejoras ni individualizan la negociación española.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "El original conservaba el 1 de julio: se buscaron y capturaron sus correcciones antes de publicar la fecha. Se diferencia el acto europeo de la contribución española y la encomienda de notificaciones de una mejora del sistema.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Aplicación efectiva y resultados por procedimiento, tiempos, recursos, garantías y mecanismos de solidaridad. Para valorar el impulso específico español se necesitan documentos de negociación; la norma europea por sí sola no lo individualiza.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-163",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-163-part-1",
+          "label": "Instrumentos de reforma",
+          "criterion": "Localizar mecanismos aprobados y su calendario.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "El reglamento regula contratos de compra y apoyo mediante diferencias.",
+          "sourceIds": [
+            "DOUE-L-2024-80974"
+          ]
+        },
+        {
+          "id": "c-163-part-2",
+          "label": "Implantación y traslado de ingresos",
+          "criterion": "Contrastar contratos efectivos y distribución según el régimen aplicable.",
+          "stage": "delivery",
+          "state": "unknown",
+          "finding": "La publicación no documenta todos los contratos ni ingresos trasladados en España.",
+          "sourceIds": []
+        },
+        {
+          "id": "c-163-part-3",
+          "label": "Ahorro para hogares y empresas",
+          "criterion": "Comparar facturas y aislar el efecto de la reforma.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se ha medido aquí una rebaja atribuible de la factura.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se leyó el calendario de los instrumentos y se separó la reforma legal del precio final. La evolución agregada de precios no permite atribuir un ahorro a esta norma ni afirmar que desapareció el mercado marginalista.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Contratos y apoyos efectivamente implantados, distribución de ingresos y facturas comparables separando energía, impuestos, peajes, consumo y demás factores. Falta una estimación causal de la rebaja atribuible a la reforma.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-177",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-177-part-1",
+          "label": "Refuerzo normativo de atención",
+          "criterion": "Verificar instrumento y ámbito empresarial.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La Ley 10/2025 establece mínimos de calidad y evaluación.",
+          "sourceIds": [
+            "BOE-A-2025-26698"
+          ]
+        },
+        {
+          "id": "c-177-part-2",
+          "label": "Aplicación y derechos efectivos",
+          "criterion": "Contrastar controles, reclamaciones y resultados según el plazo aplicable.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se han verificado adaptación general ni resultados; el plazo de doce meses sigue abierto.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se contrastaron el ámbito y el régimen transitorio antes de valorar la ejecución. Se evita un falso incumplimiento por un plazo todavía abierto y una conclusión global a partir de una sola ley.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Auditorías y controles de adaptación, resolución de reclamaciones y experiencia de consumidores con periodos comparables, además de las otras dimensiones del compromiso general.",
+      "overlaps": [],
+      "correction": null
+    },
+    {
+      "commitmentId": "c-184",
+      "reviewedAt": "2026-10-11",
+      "components": [
+        {
+          "id": "c-184-part-1",
+          "label": "Renovación parlamentaria",
+          "criterion": "Localizar aprobación del pacto por el Pleno.",
+          "stage": "delivery",
+          "state": "documented",
+          "finding": "El Congreso documenta la renovación de febrero de 2025.",
+          "sourceIds": [
+            "congreso-renovacion-pacto-2025"
+          ]
+        },
+        {
+          "id": "c-184-part-2",
+          "label": "Compromisos financieros de 2026",
+          "criterion": "Distinguir distribución acordada de pago y gasto ejecutado.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "La resolución publica el acuerdo de distribución de 160 millones.",
+          "sourceIds": [
+            "BOE-A-2026-9355"
+          ]
+        },
+        {
+          "id": "c-184-part-3",
+          "label": "Eficacia y protección",
+          "criterion": "Evaluar ejecución y resultados de las medidas.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se ha incorporado una evaluación de eficacia del conjunto de medidas.",
+          "sourceIds": []
+        }
+      ],
+      "challenge": "Se separaron renovación, financiación y eficacia. La fuente del Congreso acredita su acto parlamentario y la del BOE el acuerdo financiero: no son dos evaluaciones independientes de resultados.",
+      "refreshTrigger": "Revisar con nueva evidencia sobre: Pagos y gasto justificado, seguimiento de las 461 medidas, cobertura y calidad de servicios y evaluaciones de eficacia. El total presupuestario no se traduce automáticamente en atención recibida por las víctimas.",
+      "overlaps": [],
       "correction": null
     }
   ]

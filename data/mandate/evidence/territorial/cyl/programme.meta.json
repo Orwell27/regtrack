@@ -1,0 +1,13 @@
+{
+  "url": "https://static.eldiario.es/eldiario/public/content/file/original/2026/0603/11/acuerdo-pp-vox-pdf.pdf",
+  "finalUrl": "https://static.eldiario.es/eldiario/public/content/file/original/2026/0603/11/acuerdo-pp-vox-pdf.pdf",
+  "sha256": "73b36eb7727ed6f3da58da996003897dbe9ef6a75445cd9ec46231adf8100496",
+  "bytes": 19886438,
+  "retrievedAt": "2026-10-11T09:29:02.246506+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/cyl/programme.pdf",
+  "extractionSha256": "d8737932d41ffa7411f6b2992655b2e2f707a75ef1502cba06d496001b302add",
+  "ocrSha256": "bddeeb1e7ba508bad5262a50373eb3a04f3894abc55ddbfceb41613685e482c7",
+  "orderedSha256": "61a0f0a5f8985f8774f56b918e5a15f832e25ae627b3f59b1e743d01ca834bf0",
+  "ocrEngine": "Windows.Media.Ocr · es-ES · PDFium scale 1.5",
+  "transcriptionStatus": "OCR provisional; correcciones de numeración y pasajes usados cotejados; revisión íntegra independiente pendiente"
+}

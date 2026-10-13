@@ -1,0 +1,272 @@
+[
+  {
+    "commitmentId": "m-46250-4",
+    "reviewedAt": "2026-10-11",
+    "title": "Rebaja fiscal: cambios normativos acreditados; ahorro agregado pendiente",
+    "conclusion": "Los acuerdos para 2024 reducen el tipo general urbano del IBI y amplían bonificaciones. El ahorro total de más de 67 millones comprometido no queda demostrado por una previsión presupuestaria ni por el balance parcial de plusvalías.",
+    "periodNote": "Promesa del 17/06/2023 para enero de 2024; acuerdos de 20/12/2023, comparación tributaria de 2024 y balance parcial del 19/09/2024. Corte documental: 11/10/2026. Esta ficha no evalúa toda la fiscalidad de 2025–2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Importe y fecha prometidos",
+        "status": "promise-documented",
+        "finding": "Anuncia rebajar más de 67 millones de euros mediante IBI y tasas desde enero de 2024, además de una bonificación del 95 % para herencias y transmisión de negocios familiares.",
+        "citations": [
+          {
+            "sourceId": "valencia-programme",
+            "locator": "Discurso de la alcaldesa: primeras medidas fiscales",
+            "page": 26
+          }
+        ]
+      },
+      {
+        "id": "ibi",
+        "claim": "Cambio del tipo general urbano",
+        "status": "documented",
+        "finding": "El texto anterior fija el 0,723 %. El acuerdo de diciembre cambia el tipo general al 0,5784 %, una reducción relativa del 20 %, y prevé aplicación desde el 01/01/2024. No equivale a una reducción idéntica de todos los recibos ni de los tipos diferenciados. La ficha de Madrid para 2024 recoge también el 0,5784 %.",
+        "citations": [
+          {
+            "sourceId": "valencia-ibi-2023",
+            "locator": "Artículo 10.2.a: tipo anterior",
+            "page": 6
+          },
+          {
+            "sourceId": "valencia-ibi-amendment",
+            "locator": "Artículo 10.2.a y disposición final",
+            "page": 2
+          },
+          {
+            "sourceId": "valencia-tax-comparison",
+            "locator": "Ficha València 2024",
+            "page": 140
+          }
+        ]
+      },
+      {
+        "id": "plusvalia",
+        "claim": "Bonificación con destinatarios y condiciones",
+        "status": "documented",
+        "finding": "El acuerdo prevé el 95 % por herencia para descendientes, ascendientes y cónyuges, con solicitud en seis meses prorrogables otros seis. Para transmisiones entre vivos de terrenos con negocio familiar exige alta en IAE desde al menos el ejercicio anterior, actividad del propietario, licencia y mantenimiento de actividad, propiedad y empleo durante dos años. No es una exención universal ni incondicional.",
+        "citations": [
+          {
+            "sourceId": "valencia-plusvalia-law",
+            "locator": "Artículo 10.A: herencias",
+            "page": 3
+          },
+          {
+            "sourceId": "valencia-plusvalia-law",
+            "locator": "Artículo 10.B: actividad económica y disposición final",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "comunicado",
+        "claim": "Previsión y ahorro parcial comunicados",
+        "status": "reported",
+        "finding": "El Ayuntamiento previó 70 millones de rebaja para 2024. En septiembre comunicó 3.103 beneficiarios y 1.779.653,47 € de ahorro por plusvalías entre enero y agosto. Son magnitudes y periodos distintos; la segunda cifra no verifica el total anual prometido.",
+        "citations": [
+          {
+            "sourceId": "valencia-tax-announcement",
+            "locator": "Aprobación presupuestaria y estimación fiscal"
+          },
+          {
+            "sourceId": "valencia-tax-plusvalia",
+            "locator": "Balance enero–agosto de 2024"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Ahorro neto, distribución y conciliación",
+        "status": "unresolved",
+        "finding": "Faltan liquidaciones, memoria de beneficios fiscales, método contrafactual y conciliación de todos los tributos para comprobar el ahorro anual. La crítica sobre a quién beneficia la rebaja figura en el debate recogido por el Ayuntamiento; requiere evaluación distributiva, no se adopta como resultado probado.",
+        "citations": [
+          {
+            "sourceId": "valencia-tax-announcement",
+            "locator": "Debate de ordenanzas y objeciones de la oposición"
+          },
+          {
+            "sourceId": "valencia-tax-comparison",
+            "locator": "Tipos y tarifas; no ahorro agregado",
+            "page": 140
+          }
+        ]
+      }
+    ],
+    "contrast": "El acuerdo fiscal prueba la modificación normativa. Madrid ofrece una referencia de otra administración para el tipo, no una auditoría del ahorro. Las notas municipales comparten emisor; reproducir la crítica de la oposición en la misma nota tampoco añade una medición independiente.",
+    "pending": [
+      "Conciliar la publicación del BOP y todas las ordenanzas de 2024 con su ejecución.",
+      "Obtener memoria de beneficios fiscales y ahorro comparable, incluyendo distribución por renta y patrimonio.",
+      "Revisar cambios fiscales de 2025–2026 sin confundirlos con la promesa inicial."
+    ]
+  },
+  {
+    "commitmentId": "m-46250-6",
+    "reviewedAt": "2026-10-11",
+    "title": "Licencias: simplificación aprobada y comparación temporal inconsistente",
+    "conclusion": "La ordenanza de 2026 acredita una reforma de procedimientos. El balance municipal comunica menores esperas, pero mezcla trimestre y semestre en la comparación con 2023 y no demuestra que haya desaparecido el atasco.",
+    "periodNote": "Promesa de 17/06/2023; aprobación definitiva de la ordenanza el 22/12/2025, publicación el 27/01/2026 y entrada en vigor indicada el 28/01/2026. Balance municipal del 13/07/2026; revisión a 11/10/2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Plan de choque y simplificación",
+        "status": "promise-documented",
+        "finding": "El discurso promete acabar con el atasco de licencias y simplificar la relación con el Ayuntamiento; no fija en este pasaje una cifra de expedientes ni un plazo concreto.",
+        "citations": [
+          {
+            "sourceId": "valencia-programme",
+            "locator": "Plan de choque de licencias",
+            "page": 26
+          }
+        ]
+      },
+      {
+        "id": "norma",
+        "claim": "Ordenanza aprobada y procedimientos",
+        "status": "documented",
+        "finding": "El texto publicado identifica las fechas de aprobación, publicación y vigencia. Su artículo 8 dispone revisión continua de trámites, actualización de formularios y solicitud simultánea de informes cuando sea posible. La norma permite acreditar el instrumento administrativo, no su efecto causal sobre las esperas.",
+        "citations": [
+          {
+            "sourceId": "valencia-licences-law",
+            "locator": "Portada: fechas de tramitación",
+            "page": 1
+          },
+          {
+            "sourceId": "valencia-licences-law",
+            "locator": "Artículos 8 y 9: simplificación y guía procedimental",
+            "page": 18
+          }
+        ]
+      },
+      {
+        "id": "cifras",
+        "claim": "Resultados declarados por la alcaldesa",
+        "status": "reported",
+        "finding": "El balance habla de reducciones de tiempo de hasta el 70 % en determinados casos y de licencias para 1.484 viviendas en el primer semestre de 2026. Viviendas autorizadas no equivale a número de expedientes resueltos, viviendas terminadas o empleos creados.",
+        "citations": [
+          {
+            "sourceId": "valencia-government-report",
+            "locator": "Balance de licencias y viviendas autorizadas"
+          }
+        ]
+      },
+      {
+        "id": "comparabilidad",
+        "claim": "Trimestre y semestre en la misma nota",
+        "status": "unresolved",
+        "finding": "El destacado compara con cero en el primer semestre de 2023; el cuerpo dice primer trimestre de 2023. No se elige una versión ni se calcula una mejora con esos periodos. Faltan serie original, categorías de licencia, mediana de espera, altas y bajas y stock pendiente para contrastar el atasco y las cifras de empleo atribuidas.",
+        "citations": [
+          {
+            "sourceId": "valencia-government-report",
+            "locator": "Destacado y párrafo final de licencias: periodos distintos"
+          }
+        ]
+      }
+    ],
+    "contrast": "La ordenanza y el balance proceden de la misma administración. No se ha incorporado una serie independiente de expedientes o una evaluación causal. La discrepancia interna se conserva como límite, sin convertirla en prueba de falsedad del conjunto.",
+    "pending": [
+      "Obtener series mensuales con definiciones y periodos equivalentes desde antes de junio de 2023.",
+      "Conciliar la cifra cero de 2023 y comprobar entradas, resoluciones y stock pendiente.",
+      "Buscar controles externos y contrastar creación de empleo por separado."
+    ]
+  },
+  {
+    "commitmentId": "m-46250-15",
+    "reviewedAt": "2026-10-11",
+    "title": "La Marina: convenio de coordinación y antecedentes aún por conciliar",
+    "conclusion": "El convenio publicado establece cooperación entre Ayuntamiento y APV. Las cuentas permiten situar antecedentes y litigios, y hay proyectos comunicados; no acreditan por sí solos la resolución completa de la inseguridad jurídica ni la apertura ciudadana prometida.",
+    "periodNote": "Discurso de 17/06/2023; convenio suscrito el 28/12/2024 y publicado el 14/02/2025; cuentas APV 2024 formuladas en junio de 2025 e informe IGAE de 08/07/2025; anuncio de obras de 17/12/2025. No son un estado completo a octubre de 2026.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Gestión y acceso ciudadano",
+        "status": "promise-documented",
+        "finding": "Catalá anuncia resolver la situación de gestión y convertir la Marina en un espacio accesible y abierto, con colaboración de otras administraciones. Es una promesa amplia sin indicador de acceso definido en ese pasaje.",
+        "citations": [
+          {
+            "sourceId": "valencia-programme",
+            "locator": "Marina y colaboración institucional",
+            "page": 27
+          }
+        ]
+      },
+      {
+        "id": "convenio",
+        "claim": "Cooperación con alcance delimitado",
+        "status": "documented",
+        "finding": "El convenio firmado por Ayuntamiento y APV crea un órgano de cooperación. Excluye determinados bienes náutico-deportivos y recreativos sujetos a concesión. Sus informes son no vinculantes y cada entidad conserva la resolución de sus competencias. No es una transferencia integral de toda la Marina al Ayuntamiento.",
+        "citations": [
+          {
+            "sourceId": "valencia-marina-convention",
+            "locator": "Cláusula primera: objeto y exclusión",
+            "page": 5
+          },
+          {
+            "sourceId": "valencia-marina-convention",
+            "locator": "Cláusula cuarta: funciones e informes",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "antecedentes",
+        "claim": "Proceso heredado y cuentas auditadas",
+        "status": "documented",
+        "finding": "Las cuentas APV sitúan la decisión de disolver el Consorcio en mayo de 2022, antes de este mandato. A cierre de 2024 recogen litigios con provisiones y una reclamación por reparaciones. El informe IGAE opina sobre la imagen fiel de las cuentas en su conjunto; no certifica el cumplimiento de la promesa municipal ni la desaparición de controversias.",
+        "citations": [
+          {
+            "sourceId": "valencia-marina-accounts",
+            "locator": "Nota sobre Consorcio y decisión de 2022",
+            "page": 35
+          },
+          {
+            "sourceId": "valencia-marina-accounts",
+            "locator": "Contingencias y reclamaciones del ejercicio 2024",
+            "page": 51
+          },
+          {
+            "sourceId": "valencia-marina-audit",
+            "locator": "Opinión financiera y alcance",
+            "page": 78
+          }
+        ]
+      },
+      {
+        "id": "obras",
+        "claim": "Proyecto anunciado; recepción no acreditada",
+        "status": "reported",
+        "finding": "APV comunicó en diciembre de 2025 un proyecto de unos 2 millones de euros sin IVA para el entorno del Edificio del Reloj, financiado por el Puerto, con licitación prevista y obras posteriores a una demolición. Ese anuncio no acredita recepción de obras ni acceso ciudadano efectivo.",
+        "citations": [
+          {
+            "sourceId": "valencia-marina-update",
+            "locator": "Proyecto, financiación y calendario previsto"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Situación actual y efectos por verificar",
+        "status": "unresolved",
+        "finding": "Faltan actas posteriores, cierre de litigios, recepción de obras e indicadores de accesibilidad y uso ciudadano. La existencia de controversias en las cuentas de 2024 no permite afirmar que continúen en octubre de 2026.",
+        "citations": [
+          {
+            "sourceId": "valencia-marina-accounts",
+            "locator": "Contingencias al cierre de 2024",
+            "page": 51
+          },
+          {
+            "sourceId": "valencia-marina-update",
+            "locator": "Actuaciones previstas en diciembre de 2025"
+          }
+        ]
+      }
+    ],
+    "contrast": "APV es contraparte del convenio y promotora de obras: su comunicación no constituye una evaluación externa del resultado. IGAE tiene un papel distinto como auditor financiero. Los registros de cuentas y auditoría apuntan al mismo PDF, pero a emisores y páginas diferentes; no se cuentan como dos auditorías ni como validación humana de RegTrack.",
+    "pending": [
+      "Conciliar toda la liquidación del Consorcio y sus antecedentes con las actuaciones de cada administración.",
+      "Revisar actas, contratación, recepción y ejecución económica de los proyectos.",
+      "Medir acceso y uso ciudadano; cotejar controversias posteriores a 2024."
+    ]
+  }
+]

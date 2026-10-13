@@ -1,0 +1,13 @@
+{
+  "url": "https://stories.lavanguardia.com/especial/pdf/20260422_Acuerdo_PP-VOX_Aragon.pdf",
+  "finalUrl": "https://stories.lavanguardia.com/especial/pdf/20260422_Acuerdo_PP-VOX_Aragon.pdf",
+  "sha256": "d7a95e019ee42488ac297813490a63a93e40100368e54555b2f95c6d90092e8c",
+  "bytes": 15917455,
+  "retrievedAt": "2026-10-11T05:54:55.547360+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/aragon/programme.pdf",
+  "extractionSha256": "ee3cd6e2b0fa1b5b23671dcd23c83b37c76269781ec4842659304b55d5064723",
+  "ocrSha256": "41358798e67b87463962fed5256993f3d03dfab2f933b3b71012581680cbc6e4",
+  "orderedSha256": "6955eb7903f133ab50c681b4f659c680bd31248ca89d101051ac9607e7d82434",
+  "ocrEngine": "Windows.Media.Ocr · es-ES · PDFium scale 2",
+  "transcriptionStatus": "OCR con correcciones puntuales; cotejo íntegro independiente pendiente"
+}

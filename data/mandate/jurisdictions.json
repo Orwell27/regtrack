@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "scopeAgreedAt": "2026-10-10",
+  "geographySource": "https://api-features.ign.es/collections/administrativeunit/items",
+  "selection": "17 comunidades, Ceuta y Melilla y las 50 capitales de provincia. España se incorpora desde el inventario nacional. Selección editorial de capitales; nombres y códigos proceden del catálogo geográfico IGN del proyecto.",
+  "jurisdictions": [
+    {
+      "id": "r-01",
+      "name": "Andalucía",
+      "level": "region",
+      "region": "r-01",
+      "province": null
+    },
+    {
+      "id": "r-02",
+      "name": "Aragón",
+      "level": "region",
+      "region": "r-02",
+      "province": null
+    },
+    {
+      "id": "r-03",
+      "name": "Principado de Asturias",
+      "level": "region",
+      "region": "r-03",
+      "province": null
+    },
+    {
+      "id": "r-04",
+      "name": "Illes Balears",
+      "level": "region",
+      "region": "r-04",
+      "province": null
+    },
+    {
+      "id": "r-05",
+      "name": "Canarias",
+      "level": "region",
+      "region": "r-05",
+      "province": null
+    },
+    {
+      "id": "r-06",
+      "name": "Cantabria",
+      "level": "region",
+      "region": "r-06",
+      "province": null
+    },
+    {
+      "id": "r-07",
+      "name": "Castilla y León",
+      "level": "region",
+      "region": "r-07",
+      "province": null
+    },
+    {
+      "id": "r-08",
+      "name": "Castilla-La Mancha",
+      "level": "region",
+      "region": "r-08",
+      "province": null
+    },
+    {
+      "id": "r-09",
+      "name": "Cataluña/Catalunya",
+      "level": "region",
+      "region": "r-09",
+      "province": null
+    },
+    {
+      "id": "r-10",
+      "name": "Comunitat Valenciana",
+      "level": "region",
+      "region": "r-10",
+      "province": null
+    },
+    {
+      "id": "r-11",
+      "name": "Extremadura",
+      "level": "region",
+      "region": "r-11",
+      "province": null
+    },
+    {
+      "id": "r-12",
+      "name": "Galicia",
+      "level": "region",
+      "region": "r-12",
+      "province": null
+    },
+    {
+      "id": "r-13",
+      "name": "Comunidad de Madrid",
+      "level": "region",
+      "region": "r-13",
+      "province": null
+    },
+    {
+      "id": "r-14",
+      "name": "Región de Murcia",
+      "level": "region",
+      "region": "r-14",
+      "province": null
+    },
+    {
+      "id": "r-15",
+      "name": "Comunidad Foral de Navarra",
+      "level": "region",
+      "region": "r-15",
+      "province": null
+    },
+    {
+      "id": "r-16",
+      "name": "País Vasco/Euskadi",
+      "level": "region",
+      "region": "r-16",
+      "province": null
+    },
+    {
+      "id": "r-17",
+      "name": "La Rioja",
+      "level": "region",
+      "region": "r-17",
+      "province": null
+    },
+    {
+      "id": "r-18",
+      "name": "Ciudad Autónoma de Ceuta",
+      "level": "autonomous-city",
+      "region": "r-18",
+      "province": null
+    },
+    {
+      "id": "r-19",
+      "name": "Ciudad Autónoma de Melilla",
+      "level": "autonomous-city",
+      "region": "r-19",
+      "province": null
+    },
+    {
+      "id": "m-01059",
+      "name": "Vitoria-Gasteiz",
+      "level": "municipality",
+      "region": "r-16",
+      "province": "p-01"
+    },
+    {
+      "id": "m-02003",
+      "name": "Albacete",
+      "level": "municipality",
+      "region": "r-08",
+      "province": "p-02"
+    },
+    {
+      "id": "m-03014",
+      "name": "Alacant/Alicante",
+      "level": "municipality",
+      "region": "r-10",
+      "province": "p-03"
+    },
+    {
+      "id": "m-04013",
+      "name": "Almería",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-04"
+    },
+    {
+      "id": "m-05019",
+      "name": "Ávila",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-05"
+    },
+    {
+      "id": "m-06015",
+      "name": "Badajoz",
+      "level": "municipality",
+      "region": "r-11",
+      "province": "p-06"
+    },
+    {
+      "id": "m-07040",
+      "name": "Palma",
+      "level": "municipality",
+      "region": "r-04",
+      "province": "p-07"
+    },
+    {
+      "id": "m-08019",
+      "name": "Barcelona",
+      "level": "municipality",
+      "region": "r-09",
+      "province": "p-08"
+    },
+    {
+      "id": "m-09059",
+      "name": "Burgos",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-09"
+    },
+    {
+      "id": "m-10037",
+      "name": "Cáceres",
+      "level": "municipality",
+      "region": "r-11",
+      "province": "p-10"
+    },
+    {
+      "id": "m-11012",
+      "name": "Cádiz",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-11"
+    },
+    {
+      "id": "m-12040",
+      "name": "Castelló de la Plana/Castellón de la Plana",
+      "level": "municipality",
+      "region": "r-10",
+      "province": "p-12"
+    },
+    {
+      "id": "m-13034",
+      "name": "Ciudad Real",
+      "level": "municipality",
+      "region": "r-08",
+      "province": "p-13"
+    },
+    {
+      "id": "m-14021",
+      "name": "Córdoba",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-14"
+    },
+    {
+      "id": "m-15030",
+      "name": "A Coruña",
+      "level": "municipality",
+      "region": "r-12",
+      "province": "p-15"
+    },
+    {
+      "id": "m-16078",
+      "name": "Cuenca",
+      "level": "municipality",
+      "region": "r-08",
+      "province": "p-16"
+    },
+    {
+      "id": "m-17079",
+      "name": "Girona",
+      "level": "municipality",
+      "region": "r-09",
+      "province": "p-17"
+    },
+    {
+      "id": "m-18087",
+      "name": "Granada",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-18"
+    },
+    {
+      "id": "m-19130",
+      "name": "Guadalajara",
+      "level": "municipality",
+      "region": "r-08",
+      "province": "p-19"
+    },
+    {
+      "id": "m-20069",
+      "name": "Donostia/San Sebastián",
+      "level": "municipality",
+      "region": "r-16",
+      "province": "p-20"
+    },
+    {
+      "id": "m-21041",
+      "name": "Huelva",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-21"
+    },
+    {
+      "id": "m-22125",
+      "name": "Huesca",
+      "level": "municipality",
+      "region": "r-02",
+      "province": "p-22"
+    },
+    {
+      "id": "m-23050",
+      "name": "Jaén",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-23"
+    },
+    {
+      "id": "m-24089",
+      "name": "León",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-24"
+    },
+    {
+      "id": "m-25120",
+      "name": "Lleida",
+      "level": "municipality",
+      "region": "r-09",
+      "province": "p-25"
+    },
+    {
+      "id": "m-26089",
+      "name": "Logroño",
+      "level": "municipality",
+      "region": "r-17",
+      "province": "p-26"
+    },
+    {
+      "id": "m-27028",
+      "name": "Lugo",
+      "level": "municipality",
+      "region": "r-12",
+      "province": "p-27"
+    },
+    {
+      "id": "m-28079",
+      "name": "Madrid",
+      "level": "municipality",
+      "region": "r-13",
+      "province": "p-28"
+    },
+    {
+      "id": "m-29067",
+      "name": "Málaga",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-29"
+    },
+    {
+      "id": "m-30030",
+      "name": "Murcia",
+      "level": "municipality",
+      "region": "r-14",
+      "province": "p-30"
+    },
+    {
+      "id": "m-31201",
+      "name": "Pamplona/Iruña",
+      "level": "municipality",
+      "region": "r-15",
+      "province": "p-31"
+    },
+    {
+      "id": "m-32054",
+      "name": "Ourense",
+      "level": "municipality",
+      "region": "r-12",
+      "province": "p-32"
+    },
+    {
+      "id": "m-33044",
+      "name": "Oviedo",
+      "level": "municipality",
+      "region": "r-03",
+      "province": "p-33"
+    },
+    {
+      "id": "m-34120",
+      "name": "Palencia",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-34"
+    },
+    {
+      "id": "m-35016",
+      "name": "Las Palmas de Gran Canaria",
+      "level": "municipality",
+      "region": "r-05",
+      "province": "p-35"
+    },
+    {
+      "id": "m-36038",
+      "name": "Pontevedra",
+      "level": "municipality",
+      "region": "r-12",
+      "province": "p-36"
+    },
+    {
+      "id": "m-37274",
+      "name": "Salamanca",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-37"
+    },
+    {
+      "id": "m-38038",
+      "name": "Santa Cruz de Tenerife",
+      "level": "municipality",
+      "region": "r-05",
+      "province": "p-38"
+    },
+    {
+      "id": "m-39075",
+      "name": "Santander",
+      "level": "municipality",
+      "region": "r-06",
+      "province": "p-39"
+    },
+    {
+      "id": "m-40194",
+      "name": "Segovia",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-40"
+    },
+    {
+      "id": "m-41091",
+      "name": "Sevilla",
+      "level": "municipality",
+      "region": "r-01",
+      "province": "p-41"
+    },
+    {
+      "id": "m-42173",
+      "name": "Soria",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-42"
+    },
+    {
+      "id": "m-43148",
+      "name": "Tarragona",
+      "level": "municipality",
+      "region": "r-09",
+      "province": "p-43"
+    },
+    {
+      "id": "m-44216",
+      "name": "Teruel",
+      "level": "municipality",
+      "region": "r-02",
+      "province": "p-44"
+    },
+    {
+      "id": "m-45168",
+      "name": "Toledo",
+      "level": "municipality",
+      "region": "r-08",
+      "province": "p-45"
+    },
+    {
+      "id": "m-46250",
+      "name": "València",
+      "level": "municipality",
+      "region": "r-10",
+      "province": "p-46"
+    },
+    {
+      "id": "m-47186",
+      "name": "Valladolid",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-47"
+    },
+    {
+      "id": "m-48020",
+      "name": "Bilbao",
+      "level": "municipality",
+      "region": "r-16",
+      "province": "p-48"
+    },
+    {
+      "id": "m-49275",
+      "name": "Zamora",
+      "level": "municipality",
+      "region": "r-07",
+      "province": "p-49"
+    },
+    {
+      "id": "m-50297",
+      "name": "Zaragoza",
+      "level": "municipality",
+      "region": "r-02",
+      "province": "p-50"
+    }
+  ]
+}

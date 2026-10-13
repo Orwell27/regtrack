@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento fecha_actualizacion="20260423105601">
+  <metadatos>
+    <identificador>BOE-A-2026-6976</identificador>
+    <origen_legislativo codigo="1">Estatal</origen_legislativo>
+    <departamento codigo="9579">Ministerio de Inclusión, Seguridad Social y Migraciones</departamento>
+    <rango codigo="1340">Real Decreto</rango>
+    <fecha_disposicion>20260325</fecha_disposicion>
+    <numero_oficial>240/2026</numero_oficial>
+    <titulo>Real Decreto 240/2026, de 25 de marzo, por el que se modifica el Real Decreto 789/2022, de 27 de septiembre, por el que se regula la compatibilidad del Ingreso Mínimo Vital con los ingresos procedentes de rentas del trabajo o de la actividad económica por cuenta propia con el fin de mejorar las oportunidades reales de inclusión social y laboral de las personas beneficiarias de la prestación.</titulo>
+    <diario codigo="BOE">Boletín Oficial del Estado</diario>
+    <fecha_publicacion>20260326</fecha_publicacion>
+    <diario_numero>75</diario_numero>
+    <seccion>1</seccion>
+    <subseccion/>
+    <pagina_inicial>45424</pagina_inicial>
+    <pagina_final>45431</pagina_final>
+    <suplemento_pagina_inicial/>
+    <suplemento_pagina_final/>
+    <url_pdf>https://www.boe.es/boe/dias/2026/03/26/pdfs/BOE-A-2026-6976.pdf</url_pdf>
+    <url_epub>
+      <url_epub>https://www.boe.es/diario_boe/epub.php?id=BOE-A-2026-6976</url_epub>
+    </url_epub>
+    <url_pdf_catalan>/boe_catalan/dias/2026/03/26/pdfs/BOE-A-2026-6976-C.pdf</url_pdf_catalan>
+    <url_pdf_euskera/>
+    <url_pdf_gallego/>
+    <url_pdf_valenciano/>
+    <estatus_legislativo>L</estatus_legislativo>
+    <fecha_vigencia>20260327</fecha_vigencia>
+    <estatus_derogacion>N</estatus_derogacion>
+    <fecha_derogacion/>
+    <judicialmente_anulada>N</judicialmente_anulada>
+    <fecha_anulacion/>
+    <vigencia_agotada>N</vigencia_agotada>
+    <estado_consolidacion codigo="0"/>
+    <letra_imagen>A</letra_imagen>
+    <suplemento_letra_imagen/>
+    <url_eli>https://www.boe.es/eli/es/rd/2026/03/25/240</url_eli>
+  </metadatos>
+  <metadata-eli>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:eli="http://data.europa.eu/eli/ontology#">
+      <eli:LegalResource rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240">
+        <eli:jurisdiction rdf:resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+        <eli:type_document rdf:resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+        <eli:id_local rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BOE-A-2026-6976</eli:id_local>
+        <eli:date_document rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-25</eli:date_document>
+        <eli:number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">240</eli:number>
+        <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/3506"/>
+        <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/4107"/>
+        <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6909"/>
+        <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/8126"/>
+        <eli:has_member>
+          <eli:LegalResource rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof">
+            <eli:jurisdiction rdf:resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+            <eli:type_document rdf:resource="http://www.elidata.es/mdr/authority/resource-type/1/rd"/>
+            <eli:id_local rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BOE-A-2026-6976</eli:id_local>
+            <eli:date_document rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-25</eli:date_document>
+            <eli:number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">240</eli:number>
+            <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/3506"/>
+            <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/4107"/>
+            <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6909"/>
+            <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/8126"/>
+            <eli:version rdf:resource="http://www.elidata.es/mdr/authority/version/dof"/>
+            <eli:is_member_of rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240"/>
+            <eli:is_realized_by>
+              <eli:LegalExpression rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa">
+                <eli:language rdf:resource="http://www.elidata.es/mdr/authority/language/spa"/>
+                <eli:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real Decreto 240/2026, de 25 de marzo, por el que se modifica el Real Decreto 789/2022, de 27 de septiembre, por el que se regula la compatibilidad del Ingreso Mínimo Vital con los ingresos procedentes de rentas del trabajo o de la actividad económica por cuenta propia con el fin de mejorar las oportunidades reales de inclusión social y laboral de las personas beneficiarias de la prestación.</eli:title>
+                <eli:publisher_agent rdf:resource="https://www.boe.es"/>
+                <eli:date_publication rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-26</eli:date_publication>
+                <eli:realizes rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240/dof"/>
+                <eli:is_embodied_by>
+                  <eli:Format rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa/epub">
+                    <eli:format rdf:resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+                    <eli:embodies rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa"/>
+                  </eli:Format>
+                </eli:is_embodied_by>
+                <eli:is_embodied_by>
+                  <eli:Format rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa/html">
+                    <eli:format rdf:resource="http://www.iana.org/assignments/media-types/text/html"/>
+                    <eli:embodies rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa"/>
+                  </eli:Format>
+                </eli:is_embodied_by>
+                <eli:is_embodied_by>
+                  <eli:Format rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa/pdf">
+                    <eli:format rdf:resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+                    <eli:embodies rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa"/>
+                  </eli:Format>
+                </eli:is_embodied_by>
+                <eli:is_embodied_by>
+                  <eli:Format rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa/xml">
+                    <eli:format rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+                    <eli:embodies rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/spa"/>
+                  </eli:Format>
+                </eli:is_embodied_by>
+              </eli:LegalExpression>
+            </eli:is_realized_by>
+            <eli:is_realized_by>
+              <eli:LegalExpression rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/cat">
+                <eli:language rdf:resource="http://www.elidata.es/mdr/authority/language/cat"/>
+                <eli:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reial decret 240/2026, de 25 de març, pel qual es modifica el Reial decret 789/2022, de 27 de setembre, pel qual es regula la compatibilitat de l'ingrés mínim vital amb els ingressos procedents de rendes del treball o de l'activitat econòmica per compte propi amb la finalitat de millorar les oportunitats reals d'inclusió social i laboral de les persones beneficiàries de la prestació.</eli:title>
+                <eli:publisher_agent rdf:resource="https://www.boe.es"/>
+                <eli:date_publication rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-26</eli:date_publication>
+                <eli:realizes rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240/dof"/>
+                <eli:is_embodied_by>
+                  <eli:Format rdf:about="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/cat/pdf">
+                    <eli:format rdf:resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+                    <eli:embodies rdf:resource="https://www.boe.es/eli/es/rd/2026/03/25/240/dof/cat"/>
+                  </eli:Format>
+                </eli:is_embodied_by>
+              </eli:LegalExpression>
+            </eli:is_realized_by>
+          </eli:LegalResource>
+        </eli:has_member>
+      </eli:LegalResource>
+    </rdf:RDF>
+  </metadata-eli>
+  <analisis>
+    <materias>
+      <materia codigo="3506" orden="1">Exenciones</materia>
+      <materia codigo="4107" orden="1">Impuesto sobre la Renta de las Personas Físicas</materia>
+      <materia codigo="8126" orden="1">Renta Mínima de Inserción</materia>
+      <materia codigo="6909" orden="1">Trabajadores</materia>
+    </materias>
+    <notas>
+      <nota codigo="37" orden="215">Aplicable en la forma indicada en la disposición transitoria única.</nota>
+    </notas>
+    <referencias>
+      <anteriores>
+        <anterior referencia="BOE-A-2022-15764" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>los arts. 1, 3, 4, 5, los anexos I a III y AÑADE la disposición adicional 4 al Real Decreto 789/2022, de 27 de septiembre</texto>
+        </anterior>
+      </anteriores>
+      <posteriores/>
+    </referencias>
+    <alertas>
+      <alerta codigo="104" orden="1">Asuntos sociales</alerta>
+      <alerta codigo="128" orden="1">Sistema tributario</alerta>
+      <alerta codigo="131" orden="1">Trabajo y empleo</alerta>
+    </alertas>
+  </analisis>
+  <texto>
+    <p class="parrafo">La Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital, crea y regula esta prestación dirigida a prevenir el riesgo de pobreza y exclusión social de las personas que se encuentran en una situación de vulnerabilidad por carecer de recursos económicos suficientes para la cobertura de sus necesidades básicas. Esta prestación nace con el objetivo principal de garantizar, a través de la satisfacción de unas condiciones materiales mínimas, la participación plena de toda la ciudadanía en la vida social y económica, rompiendo el vínculo entre ausencia estructural de recursos y falta de acceso a oportunidades en los ámbitos laboral, educativo, o social de las personas.</p>
+    <p class="parrafo">Para impulsar el tránsito desde una situación de exclusión a una de participación en la sociedad, la citada Ley 19/2021, de 20 de diciembre, establece que el ingreso mínimo vital debe contener en su diseño incentivos al empleo y a la inclusión aplicados con el fin de evitar la llamada «trampa de pobreza», es decir, que la mera existencia de la prestación inhiba el objetivo de inclusión social y económica de las personas beneficiarias. En particular, el artículo 11.4 establece que con el fin de que la percepción del ingreso mínimo vital no desincentive la participación en el mercado laboral, la misma es compatible con las rentas del trabajo o la actividad económica por cuenta propia de la persona beneficiaria individual o, en su caso, de uno o varios miembros de la unidad de convivencia en los términos y con los límites que reglamentariamente se establezcan. En estos casos, se determinarán las condiciones en las que la superación en un ejercicio de los límites de rentas establecidos en el apartado 2 del citado artículo por esta causa no suponga la pérdida del derecho a la percepción del ingreso mínimo vital en el ejercicio siguiente. Con objeto de desarrollar reglamentariamente este artículo, se aprobó el Real Decreto 789/2022, de 27 de septiembre, por el que se regula la compatibilidad del ingreso mínimo vital con los ingresos procedentes de rentas del trabajo o de la actividad económica por cuenta propia con el fin de mejorar las oportunidades reales de inclusión social y laboral de las personas beneficiarias de la prestación.</p>
+    <p class="parrafo">El incentivo al empleo vinculado al ingreso mínimo vital persigue motivar a las personas beneficiarias para que se incorporen al mercado laboral o mejoren sus condiciones, es decir, para que puedan obtener ingresos provenientes del trabajo, sin que suponga la pérdida inmediata de la prestación. La regulación del incentivo al empleo establece una fórmula para determinar el porcentaje del incremento de rentas derivadas del trabajo que no se computan para la determinación de la cuantía de la prestación. Dicho porcentaje se determina en función de la composición de la unidad de convivencia, el tipo de incremento de la oferta laboral y los ingresos que dieron lugar a la prestación. La complejidad de esta fórmula ha supuesto que las potenciales personas beneficiarias del incentivo tengan dificultades para comprender su aplicación a situaciones concretas, frenando así su impacto en la toma de decisiones sobre el empleo por parte de las personas beneficiarias del ingreso mínimo vital. Tras más de tres años de aplicación del incentivo al empleo, se considera necesario reformar este mecanismo para mejorar su eficacia y contribuir a que cumpla sus objetivos de fomento de la inserción laboral de las personas beneficiarias del ingreso mínimo vital.</p>
+    <p class="parrafo">En virtud del artículo 31.3 y de la disposición final séptima de la citada Ley 19/2021, de 20 de diciembre, el resultado del ingreso mínimo vital y de las distintas estrategias y políticas de inclusión será evaluado anualmente por la Autoridad Independiente de Responsabilidad Fiscal, mediante la emisión de la correspondiente opinión, de acuerdo con la Ley Orgánica 6/2013, de 14 de noviembre, de creación de la Autoridad Independiente de Responsabilidad Fiscal. La disposición final séptima autoriza al Gobierno para actualizar los valores, escalas y porcentajes de esta ley, cuando, atendiendo a la evolución de las circunstancias sociales y económicas y de las situaciones de vulnerabilidad, se aprecie la necesidad de dicha modificación con el fin de que la prestación pueda mantener su acción protectora dirigida a prevenir el riesgo de pobreza, lograr la inclusión social y suplir las carencias de recursos económicos para la cobertura de necesidades básicas. De la misma manera, la disposición final decimoprimera, habilita al Gobierno a dictar cuantas disposiciones sean necesarias para el desarrollo y la ejecución de lo dispuesto en la citada Ley 19/2021, de 20 de diciembre.</p>
+    <p class="parrafo">De la misma manera, la reforma de este mecanismo pretende otorgar coherencia a la dinámica de la prestación del ingreso mínimo vital, homogeneizando los conceptos de renta computables para el acceso y el mantenimiento de la prestación con los aplicables en el Incentivo al Empleo. Se eliminan del cómputo de los ingresos y rentas, la prestación por desempleo de pago único prevista en el Real Decreto 1044/1985, de 19 de junio, por el que se regula el abono de la prestación por desempleo en su modalidad de pago único por el valor actual de su importe, como medida de fomento del empleo, así como el subsidio no contributivo por desempleo cuando a la fecha de solicitud de IMV dicho subsidio se hubiera extinguido.</p>
+    <p class="parrafo">Por otra parte, es importante tener en cuenta que el colectivo destinatario del ingreso mínimo vital presenta una brecha en las condiciones de empleabilidad que requieren de actuaciones específicas, particularmente en el caso de las mujeres. Las personas en situación de pobreza se enfrentan a desafíos significativos en el mercado laboral que pueden afectar negativamente sus condiciones objetivas de inserción laboral. Entre estos condicionantes, los problemas de salud y bienestar están muy presentes entre las personas vulnerables. También la discriminación, sesgos y estereotipos, hacia las situaciones de pobreza, la aporofobia y demás discriminaciones, la falta de educación y formación específica, la experiencia laboral, así como la falta de vivienda estable, acceso a la tecnología, el transporte o el acceso a los servicios públicos, entre otros. Entre las personas en situación de vulnerabilidad se encuentran las mujeres con discapacidad, las que encabezan hogares monoparentales, las víctimas de violencia de género o las víctimas de trata de seres humanos y explotación sexual. En este contexto, sabiendo que se necesitan implementar políticas de acompañamiento personalizadas para ser más eficaces en el objetivo de la inclusión laboral, la presente modificación busca también fomentar la participación de las personas beneficiarias del IMV en políticas activas de empleo y otras políticas de inclusión que mejoren su empleabilidad y aumenten sus posibilidades de inserción laboral. Asimismo, para garantizar la efectividad de la presente modificación, se prevé una revisión de la eficacia del incentivo al empleo transcurrido el primer ejercicio de aplicación de esta modificación.</p>
+    <p class="parrafo">La norma es coherente con los principios de buena regulación establecidos en el artículo 129 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, y cumple con los principios de necesidad y eficacia, ya que responde a la conveniencia de reformar y mejorar el desarrollo reglamentario previsto en el artículo 11.4 de la Ley 19/2021, de 20 de diciembre, sobre el incentivo al acceso y permanencia en el mercado laboral de las personas beneficiarias del ingreso mínimo vital. Es acorde al principio de proporcionalidad por ser el medio más adecuado para cumplir este objetivo y no conlleva restricciones de derechos, cumple con el principio de seguridad jurídica quedando engarzado con el ordenamiento jurídico y es coherente con la normativa vigente. También cumple con el principio de transparencia habiendo sido sometido al trámite de audiencia e información públicas, tal y como se señala a continuación. Por último, es coherente con el principio de eficiencia, ya que no afecta a las cargas administrativas innecesarias o accesorias y racionaliza, en su aplicación, la gestión de los recursos públicos.</p>
+    <p class="parrafo">En la elaboración de este real decreto se ha llevado a cabo el trámite de audiencia e información públicas de acuerdo con el artículo 26.6 de la Ley 50/1997, de 27 de noviembre, del Gobierno y se ha exceptuado el trámite de consulta pública conforme el artículo 26.2 de la Ley 50/1997, de 27 de noviembre, del Gobierno, dado que la presente norma regula un aspecto parcial de una materia, el desarrollo del artículo 11.4 de la Ley 19/2021, de 20 de diciembre.</p>
+    <p class="parrafo">Asimismo, se han recabado los informes requeridos a tenor del artículo 26.5 de la Ley 50/1997, de 27 de noviembre, del Gobierno, así como el informe de la Oficina de Coordinación y Calidad Normativa previsto en el apartado 9 del citado artículo.</p>
+    <p class="parrafo">Este real decreto se dicta en el ejercicio de la habilitación conferida al efecto en el artículo 11.4 y en la disposición final decimoprimera de la Ley 19/2021, de 20 de diciembre, y al amparo de la competencia exclusiva que el artículo 149.1.17.ª y 18.ª de la Constitución Española atribuye al Estado, en materia de legislación básica y régimen económico de la Seguridad Social, y de bases del régimen jurídico de las Administraciones Públicas.</p>
+    <p class="parrafo">En su virtud, a propuesta de la Ministra de Inclusión, Seguridad Social y Migraciones, de acuerdo con el Consejo de Estado, y previa deliberación del Consejo de Ministros en su reunión del día 24 de marzo de 2026,</p>
+    <p class="centro_redonda">DISPONGO:</p>
+    <p class="articulo"><strong>Artículo único.</strong> Modificación del Real Decreto 789/2022, de 27 de septiembre, por el que se regula la compatibilidad del Ingreso Mínimo Vital con los ingresos procedentes de rentas del trabajo o de la actividad económica por cuenta propia con el fin de mejorar las oportunidades reales de inclusión social y laboral de las personas beneficiarias de la prestación.</p>
+    <p class="parrafo">El Real Decreto 789/2022, de 27 de septiembre, por el que se regula la compatibilidad del Ingreso Mínimo Vital con los ingresos procedentes de rentas del trabajo o de la actividad económica por cuenta propia con el fin de mejorar las oportunidades reales de inclusión social y laboral de las personas beneficiarias de la prestación, queda modificado como sigue:</p>
+    <p class="parrafo_2">Uno. Se modifica el apartado 2 del artículo 1, que queda redactado como sigue:</p>
+    <blockquote class="sangrado">
+      <p class="parrafo_2">«2. La compatibilidad a que se refiere el apartado anterior consistirá en la aplicación de un importe exento del cómputo de los ingresos y rentas que se hayan de tomar en consideración para la determinación de la situación de vulnerabilidad económica de la persona beneficiaria individual o, en su caso, de la unidad de convivencia. Dicho importe se determinará conforme a lo establecido en el artículo 4.</p>
+      <p class="parrafo">La aplicación de lo previsto en el presente real decreto determinará que se mantenga el derecho a la percepción del ingreso mínimo vital en la cuantía de la prestación resultante de aplicar lo previsto en el artículo 13.2. a), b), c) y d) de la Ley 19/2021, de 20 de diciembre, sin perjuicio de que a dicha cuantía se sume el complemento de ayuda a la infancia si se tratara de unidades de convivencia que incluyan menores de edad entre sus miembros.»</p>
+    </blockquote>
+    <p class="parrafo_2">Dos. Se modifica el artículo 3, que queda redactado como sigue:</p>
+    <blockquote class="sangrado">
+      <p class="articulo">«Artículo 3. Cómputo de ingresos procedentes de rentas de trabajo o actividades económicas por cuenta propia.</p>
+      <p class="parrafo">1. Para la aplicación del importe exento al que se refiere el artículo 1.2 se tomará en consideración el incremento procedente de rentas de trabajo o de la actividad económica por cuenta propia que se haya producido en el ejercicio fiscal previo al año de la revisión del ingreso mínimo vital con respecto a las rentas de trabajo o de la actividad económica por cuenta propia obtenidas un año antes. Los datos necesarios para calcular el incremento procedente de las rentas de trabajo o de la actividad económica, serán comunicados por la Agencia Estatal de Administración Tributaria o, en su caso, las Haciendas Forales a la entidad gestora.</p>
+      <p class="parrafo">En el supuesto de que se trate de una unidad de convivencia el cálculo final de la exención se realizará de forma agregada, teniendo en cuenta tanto los incrementos como las disminuciones que se hubieran producido en las mencionadas rentas para la totalidad de las personas.</p>
+      <p class="parrafo">2. A efectos de lo dispuesto en el apartado anterior, se tendrán en cuenta para su cómputo los siguientes rendimientos calculados de acuerdo con lo previsto en las normas del Impuesto sobre la Renta de las Personas Físicas:</p>
+      <p class="parrafo_2">a) Rendimientos del trabajo: computados conforme a lo indicado en los anexos I y II.</p>
+      <p class="parrafo">b) Rendimientos de actividades económicas en estimación directa: rendimiento neto.</p>
+      <p class="parrafo">c) Rendimientos de actividades económicas en estimación objetiva (excepto agrícola, ganadera y forestal): rendimiento neto previo.</p>
+      <p class="parrafo">d) Rendimientos de actividades agrícola, ganaderas y forestales en estimación objetiva: rendimiento neto minorado.</p>
+      <p class="parrafo">e) Régimen de atribución de rentas de actividades económicas: para el método de estimación directa, el rendimiento neto y, para el método de estimación objetiva, en el caso de actividades agrícolas, forestales y ganaderas, el rendimiento neto minorado, y el rendimiento neto previo en el resto de los supuestos.</p>
+      <p class="parrafo">f) Prestaciones del sistema de la Seguridad Social sustitutivas del trabajo exentas del impuesto sobre la renta de las personas físicas: nacimiento y cuidado del menor; cuidado de menores afectados por cáncer u otra enfermedad grave; y corresponsabilidad en el cuidado del lactante.</p>
+      <p class="parrafo_2">En el caso de que en el ejercicio correspondiente se hubiere presentado la declaración del impuesto sobre la renta de las personas físicas, se tomarán los importes que figuren en las casillas de la declaración anual de dicho impuesto que figuran en el anexo I.</p>
+      <p class="parrafo">En el caso de que en el ejercicio correspondiente no se hubiere presentado la declaración del impuesto sobre la renta de las personas físicas, se tomarán los importes que figuren en las casillas de declaración Informativa. Retenciones e ingresos a cuenta. Rendimientos del trabajo y de actividades económicas, premios y determinadas ganancias patrimoniales e imputaciones de rentas. Resumen anual, que figuran en el anexo II.</p>
+      <p class="parrafo">3. A los efectos de lo previsto en el presente real decreto, se excluye del cómputo de ingresos el subsidio no contributivo por desempleo, cuando a la fecha de solicitud de la prestación del ingreso mínimo vital dicho subsidio se hubiera extinguido.»</p>
+    </blockquote>
+    <p class="parrafo_2">Tres. Se modifica el artículo 4, que queda redactado como sigue:</p>
+    <blockquote class="sangrado">
+      <p class="articulo">«Artículo 4. Determinación del importe de la renta exenta.</p>
+      <p class="parrafo">1. El importe de la renta exenta será el que resulte de aplicar los porcentajes previstos en el anexo III al incremento de rentas del trabajo o de la actividad económica por cuenta propia previsto en el artículo 3.</p>
+      <p class="parrafo">2. Los cálculos que determinen la renta exenta en función del aumento en las rentas en el ejercicio fiscal previo al año en el que se realiza la revisión, respecto a las rentas obtenidas un año antes en concepto de rentas de trabajo o de actividad económica por cuenta propia, se llevará a cabo de acuerdo con los datos tributarios facilitados de conformidad con lo previsto en el artículo 3.1.»</p>
+    </blockquote>
+    <p class="parrafo_2">Cuatro. Se modifica el artículo 5, que queda redactado como sigue:</p>
+    <blockquote class="sangrado">
+      <p class="articulo">«Artículo 5. Reconocimiento y efectos de la exención.</p>
+      <p class="parrafo">1. El Instituto Nacional de la Seguridad Social, de conformidad con la información proporcionada por la Agencia Estatal de Administración Tributaria o en su caso las Haciendas Forales, aplicará de oficio la exención que corresponda a las personas beneficiarias del ingreso mínimo vital en los términos previstos en este real decreto con ocasión de la revisión y actualización de la cuantía de la prestación a que se refiere el artículo 16.3 de la Ley 19/2021, de 20 de diciembre, siempre y cuando las personas hayan sido beneficiarias del ingreso mínimo vital en el año anterior a la aplicación de la revisión.</p>
+      <p class="parrafo">Cuando la determinación del requisito de vulnerabilidad económica para el reconocimiento del ingreso mínimo vital se haya hecho en función de los ingresos y rentas computables correspondientes al ejercicio en curso, el incentivo para el empleo sólo podrá aplicarse a partir del segundo ejercicio desde que se inició su percepción.</p>
+      <p class="parrafo">2. La exención tendrá una periodicidad anual y se hará efectiva con ocasión de la revisión y actualización del ingreso mínimo vital de acuerdo con lo dispuesto en el artículo 16.3 de la Ley 19/2021, de 20 de diciembre.»</p>
+    </blockquote>
+    <p class="parrafo_2">Cinco. Se añade una disposición adicional cuarta, con la siguiente redacción:</p>
+    <blockquote class="sangrado">
+      <p class="articulo">«Disposición adicional cuarta. Participación de las personas beneficiarias del ingreso mínimo vital en las políticas activas de empleo.</p>
+      <p class="parrafo">Las personas beneficiarias del ingreso mínimo vital estarán comprendidas en las políticas activas de empleo desplegadas por el conjunto de los servicios públicos de empleo del estado y de las comunidades autónomas.</p>
+      <p class="parrafo">En este sentido el Plan anual para el Fomento del Empleo Digno incluirá programas específicos destinados a fomentar el empleo y el desarrollo de la empleabilidad de las personas beneficiarias del ingreso mínimo vital. Los servicios públicos de empleo se coordinarán con los servicios sociales para dar una mejor atención a estas personas mediante protocolos de coordinación aprobados para tal fin.»</p>
+    </blockquote>
+    <p class="parrafo_2">Seis. Se modifica el anexo I (Conceptos modelo 100), que queda redactado como sigue:</p>
+    <blockquote class="sangrado">
+      <p class="anexo_num">«ANEXO I</p>
+      <p class="anexo_tit">Conceptos modelo 100</p>
+      <p class="centro_cursiva">Incentivo al empleo</p>
+      <table class="tabla_ancha">
+        <colgroup>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="cabeza_tabla">HHPP</th>
+            <th class="cabeza_tabla"> </th>
+            <th class="cabeza_tabla">AEAT</th>
+            <th class="cabeza_tabla">H. Foral Navarra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos del trabajo.</td>
+            <td class="cuerpo_tabla_izq">Modelo 100.</td>
+            <td class="cuerpo_tabla_centro">0011 + 0058 + 0012 - 0013 - 0015</td>
+            <td class="cuerpo_tabla_centro">021</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de actividades económicas en estimación directa: Rendimiento neto.</td>
+            <td class="cuerpo_tabla_izq">Modelo 100.</td>
+            <td class="cuerpo_tabla_centro">0224</td>
+            <td class="cuerpo_tabla_centro">161 y 470</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de actividades económicas en estimación objetiva (excepto agrícola, ganadera y forestal): Rendimiento neto previo.</td>
+            <td class="cuerpo_tabla_izq">Modelo 100.</td>
+            <td class="cuerpo_tabla_centro">1465</td>
+            <td class="cuerpo_tabla_centro"> </td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de actividades agrícola, ganaderas y forestales en estimación objetiva: Rendimiento neto minorado.</td>
+            <td class="cuerpo_tabla_izq">Modelo 100.</td>
+            <td class="cuerpo_tabla_centro">1539</td>
+            <td class="cuerpo_tabla_centro"> </td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Régimen de atribución de rentas de actividades económicas: Rendimiento neto (estimación directa normal y estimación objetiva): Rendimiento neto previo (estimación directa simplificada).</td>
+            <td class="cuerpo_tabla_izq">Modelo 100.</td>
+            <td class="cuerpo_tabla_centro">1577</td>
+            <td class="cuerpo_tabla_centro">»</td>
+          </tr>
+        </tbody>
+      </table>
+    </blockquote>
+    <p class="parrafo_2">Siete. Se modifica el anexo II (Conceptos modelo 190/184), que queda redactado como sigue:</p>
+    <blockquote class="sangrado">
+      <p class="anexo_num">«ANEXO II</p>
+      <p class="anexo_tit">Conceptos modelo 190/184</p>
+      <table class="tabla_ancha">
+        <colgroup>
+          <col/>
+          <col width="10%"/>
+          <col/>
+          <col width="8%"/>
+          <col width="8%"/>
+          <col width="8%"/>
+          <col width="12%"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="cabeza_tabla">HHPP</th>
+            <th class="cabeza_tabla"> </th>
+            <th class="cabeza_tabla">AEAT</th>
+            <th class="cabeza_tabla">H. Foral Araba</th>
+            <th class="cabeza_tabla">H. Foral Bizkaia</th>
+            <th class="cabeza_tabla">H. Foral Gipuzkoa</th>
+            <th class="cabeza_tabla">H. Foral Navarra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de trabajo.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">Imputaciones de los modelos 190 (Claves A, B, C, E y F) y 345 Planes de pensiones y Subvenciones que se consideran rendimientos de trabajo dinerarias y en especie.</td>
+            <td class="cuerpo_tabla_izq" colspan="3">CLAVES: A+B+E.</td>
+            <td class="cuerpo_tabla_izq">CLAVES A+B+C+E.</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Gastos deducibles de trabajo.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">Cotizaciones a la Seguridad Social o a mutualidades generales obligatorias de funcionarios, detracciones por derechos pasivos y cotizaciones a los colegios de huérfanos (Campo de gastos deducibles de las Claves A, B, C, E, L05, L10 Y L27).</td>
+            <td class="cuerpo_tabla_izq" colspan="3">CLAVES: A, B, C, E, L05 y L27 del campo Gastos deducibles.</td>
+            <td class="cuerpo_tabla_izq">CLAVES: A, B, C, E y l05 del campo Gastos deducibles.</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de actividades económicas - Profesionales.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190. Clave G. Subclaves 01 a 08. Dinerarias y en especie.</td>
+            <td class="cuerpo_tabla_izq" colspan="3">CLAVES:F02, G01, G02, G03, I01, I02.</td>
+            <td class="cuerpo_tabla_izq">CLAVES:F02, G01, G02, G03, I01, I02.</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de actividades económicas. Otros.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190. Clave I y J. Dinerarias y en especie.</td>
+            <td class="cuerpo_tabla_izq" colspan="3"> </td>
+            <td class="cuerpo_tabla_izq"> </td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de actividades económicas agrícola, ganaderas, forestales y pesqueras.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190. Clave H. Subclaves 01, 02, 03. Dinerarias y en especie.</td>
+            <td class="cuerpo_tabla_izq" colspan="3">CLAVE H0I, H02, H03.</td>
+            <td class="cuerpo_tabla_izq">CLAVE H01, H02, H03.</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Rendimientos de actividades económicas empresariales.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190. Clave H. Subclave 04. Dinerarias y en especie.</td>
+            <td class="cuerpo_tabla_izq" colspan="3">CLAVE H04.</td>
+            <td class="cuerpo_tabla_izq">CLAVE H04.</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Prestaciones públicas por maternidad o paternidad exentas de IRPF.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">CLAVE L Subclave 27.</td>
+            <td class="cuerpo_tabla_izq" colspan="3">CLAVE L. Subclave 27.</td>
+            <td class="cuerpo_tabla_izq">CLAVE B. Subclaves 90, 91 y 92.</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Prestaciones públicas por cuidado de menores afectados por cáncer u otra enfermedad grave y Corresponsabilidad en el cuidado del lactante.</td>
+            <td class="cuerpo_tabla_izq">Modelo 190.</td>
+            <td class="cuerpo_tabla_izq">CLAVE L. Subclave 20.</td>
+            <td class="cuerpo_tabla_izq" colspan="3"> </td>
+            <td class="cuerpo_tabla_izq"> </td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_izq">Socios/partícipes de entidades en atribución de rentas.</td>
+            <td class="cuerpo_tabla_izq">Modelo 184.</td>
+            <td class="cuerpo_tabla_izq">CLAVE D.</td>
+            <td class="cuerpo_tabla_izq" colspan="3">
+              <p class="cuerpo_tabla_izq">D. Tipo de registro de socio/a, heredero/a, comunero/a y participe.</p>
+              <p class="cuerpo_tabla_izq">D. Rendimientos de actividades económicas.</p>
+            </td>
+            <td class="cuerpo_tabla_izq">
+              <p class="cuerpo_tabla_izq">Tipo de registro de socio/a, heredero/a, comunero/a y participe.</p>
+              <p class="cuerpo_tabla_izq">Clave D - Rendimientos de actividades empresariales y profesionales.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="centro_cursiva">Incentivo al empleo</p>
+      <p class="parrafo_2">Se detallan a continuación las siguientes claves:</p>
+      <p class="parrafo_2">1. Rendimientos de trabajo:</p>
+      <p class="parrafo_2">– Clave A: Rendimientos de trabajo: las personas empleadas por cuenta ajena en general.</p>
+      <p class="parrafo">– Clave B: Rendimientos de trabajo: pensionistas y perceptores de haberes pasivos y demás prestaciones previstas en el artículo 17.2.a) de la Ley de Impuesto.</p>
+      <p class="parrafo">– Clave C: Rendimientos de trabajo: prestaciones o subsidios por desempleo.</p>
+      <p class="parrafo">– Clave E: Rendimientos de trabajo: miembros del Consejo, administradores y administradoras.</p>
+      <p class="parrafo">– Clave F: Rendimientos del trabajo: cursos, conferencias, seminarios y similares y elaboración de obras literarias, artísticas o científicas.</p>
+      <p class="parrafo_2">2. Gastos deducibles de rendimientos de trabajo:</p>
+      <p class="parrafo_2">– Diseño de Registro de Fichero AEAT: 0007- importe 37: gastos deducibles de rendimientos de trabajo.</p>
+      <p class="parrafo_2">3. Rendimientos de actividades económicas:</p>
+      <p class="parrafo_2">– Clave G: Rendimientos de actividades económicas: actividades profesionales.</p>
+      <p class="parrafo">– Clave H: Rendimientos de actividades económicas: actividades agrícolas, ganaderas y forestales y actividades de estimación objetiva a las que se refiere el artículo 95.6 del Reglamento del Impuesto.</p>
+      <p class="parrafo">– Clave I: Rendimientos de actividades económicas: rendimientos a que se refiere el artículo 75.2, letra b), del Reglamento del Impuesto.</p>
+      <p class="parrafo">– Clave J: Imputación de rentas por la cesión de derechos de imagen.</p>
+      <p class="parrafo_2">Se excluirá del cómputo de ingresos a los efectos previstos en este real decreto el subsidio no contributivo por desempleo, cuando a la fecha de solicitud de la prestación del ingreso mínimo vital dicho subsidio se hubiera extinguido.»</p>
+    </blockquote>
+    <p class="parrafo_2">Ocho. Se modifica el anexo III, que queda redactado como sigue:</p>
+    <blockquote class="sangrado">
+      <p class="anexo_num">«ANEXO III</p>
+      <p class="anexo_tit">Porcentajes de exención</p>
+      <p class="parrafo_2">En el caso de que el importe del incremento de las rentas previsto en el artículo 3 sea inferior o igual a 6.000 euros, se excluirá del cómputo de rentas para el cálculo del ingreso mínimo vital el 100 % de este incremento.</p>
+      <p class="parrafo">En el caso de que el importe del incremento de las rentas previsto en el artículo 3 sea superior a 6.000 euros, se excluirá del cómputo de rentas 6.000 euros más el 50 % de la cuantía del incremento de rentas que supere los 6.000 euros.</p>
+      <p class="parrafo">En el caso de unidades de convivencia a las que se aplican los complementos por discapacidad o monoparentalidad a que se refiere el artículo 13.2.a), b), c) y d) de la Ley 19/2021, de 20 de diciembre, el porcentaje de exención para la cuantía superior a 6.000 euros será del 55 %.</p>
+      <p class="parrafo">A tal efecto se tendrán en cuenta las circunstancias existentes el día 1 de enero del ejercicio en que haya de tener efectos la revisión del ingreso mínimo vital resultante de la toma en consideración de dicha exención.»</p>
+    </blockquote>
+    <p class="articulo"><strong>Disposición adicional única.</strong> Revisión de la eficacia del incentivo al empleo.</p>
+    <p class="parrafo">Transcurrido un año desde la entrada en vigor del presente real decreto, y una vez consolidados los datos del primer ejercicio de aplicación, el Ministerio de Inclusión, Seguridad Social y Migraciones realizará una revisión interna sobre los resultados de su implementación.</p>
+    <p class="parrafo">Dicha revisión será elevada a la Comisión Delegada del Gobierno para Asuntos Económicos para su valoración. El informe tendrá por objeto analizar el impacto de la medida y proponer las mejoras necesarias para optimizar la eficacia del incentivo, garantizando así la inclusión sociolaboral de las personas beneficiarias del ingreso mínimo vital.</p>
+    <p class="articulo"><strong>Disposición transitoria única.</strong> Aplicación a procedimientos de actualización anual del importe del ingreso mínimo vital.</p>
+    <p class="parrafo">Lo establecido en la presente norma será de aplicación a las actualizaciones anuales del importe del ingreso mínimo vital que se practiquen a partir de su fecha de entrada en vigor, sin perjuicio de que dichas actualizaciones surtan los efectos previstos en el artículo 16.3 de la Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital.</p>
+    <p class="articulo"><strong>Disposición final única.</strong> Entrada en vigor.</p>
+    <p class="parrafo">El presente real decreto entrará en vigor el día siguiente de su publicación en el «Boletín Oficial del Estado».</p>
+    <p class="parrafo_2">Dado el 25 de marzo de 2026.</p>
+    <p class="firma_rey">FELIPE R.</p>
+    <p class="firma_ministro">La Ministra de Inclusión, Seguridad Social y Migraciones,</p>
+    <p class="firma_ministro">ELMA SAIZ DELGADO</p>
+  </texto>
+</documento>

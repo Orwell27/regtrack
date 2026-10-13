@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="es"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="es"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="es"> <![endif]-->
+
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- <meta charset="utf-8"> -->
+  <!-- <meta http-equiv="Content-Script-Type" content="text/javascript"> -->
+  <!-- <meta http-equiv="Content-Style-Type" content="text/css"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="Description" lang="es" content="Transparencia y participación ciudadana en Eusko Jaurlaritza - Gobierno Vasco">
+  <meta name="Keywords" lang="es" content="Euskadi, País Vasco, Eusko Jaurlaritza - Gobierno Vasco, transparencia, participación ciudadana, gobierno abierto, Irekia,    Eusko Jaurlaritza, Lehendakari, gardentasuna, herritarren parte-hartzea, gobernu irekia, Basque Country,    Basque Government, Open Government, Transparency">
+  <meta name="author" content="Irekia">
+  
+  <meta name="csrf-token" content="roEvFNGw2FafpHhhs7JZnGHEaIdLELHQzynJTFLyKw2_JHl4Fel3PQ2XMsxRI-jTZTzzQdjhlPyJtZf6OUGYQg">
+  <meta name="csrf-param" content="authenticity_token">
+
+<script defer data-domain="irekia.euskadi.eus" src="https://ef820.efaber.net/js/plausible.js"></script>
+<script defer data-domain="irekia.euskadi.eus" src="https://pl.irekia.euskadi.eus/js/plausible.js"></script>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=1210">
+  <meta name="theme-color" content="#EAEAEA">
+  
+  <meta property="fb:pages" content="1567494823469990">
+  <meta property="fb:pages" content="416723460540">
+
+  <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Irekia">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Irekia">
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/apple/apple-icon-57x57-be1d137ac222461c1bacb0c0e08088863aa79a318161b07a51dc89ff27e64e41.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/apple/apple-icon-60x60-3ad1372ed821339690b2ab531ec990a1ba907f72935c3d6e79e691ee0be428df.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/apple/apple-icon-72x72-1f62d24a0386e27fdfb6b0ca74e981fd6cb4930dda5b1252badc242601dd74fe.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/apple/apple-icon-76x76-77092c93247c2715529c69a99b633ccaa2828c00e1179ec112a8ee6f33a8a969.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/apple/apple-icon-114x114-022d4ff43f290b24885f2e40af5b06f24fe689a451c04dff2e17ac0eed937f00.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/apple/apple-icon-120x120-534b4e86a1deea311e0b77e32f616e6a84ffa27ca7855a5b78e92eea5122f408.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/apple/apple-icon-144x144-56226caf2f7c35c34584c5ac6badeb502b943a1f858ae14a67fdbd3cbe8c4650.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/apple/apple-icon-152x152-ed34a64e71e27a04b265c0a737210d207ec49b1016c14b7517d9479a0ca3ccd2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple/apple-icon-180x180-d659c1f7ed312aa92b3a5e1e0779c80563acc1bfa3fcc5f1a4ae028e18259f02.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/apple/android-icon-192x192-4f3e938d9ff6d12e65f38e45c915224cb8059def4e914a52f26372aafe4d31a2.png">
+
+  <title>Irekia Eusko Jaurlaritza - Gobierno Vasco :: Programa de Gobierno 2024-2028</title>
+  <link rel="shortcut icon" href="/assets/favicon-2d77853a4c7708ecf021941c0d854a6c4ff5b860bdd4aa8e98de83b9ae22ead4.ico">
+
+  <link rel="stylesheet" href="/assets/application-c3aa8c0e37156c84ba7ea48ff50a7941eba6677898637b37c98af9ad5a917fbd.css" />
+  <link rel="stylesheet" href="/assets/public/pages-2dbe051ccef4414ae8b3b122fb233c4cb136bbb95f2cae255d86dabcec87e452.css" />
+  <link rel="stylesheet" href="/assets/public/print-405c890ce808a6e9ea8b458f56ac898ef4f527104f5a181fa08abf4726feadff.css" media="print" />
+  
+<link rel="stylesheet" href="/assets/public/readspeaker-0bb6842ba3da4c944c6f75e1913c407dc2d14663f4502d7e6486e9c90a96ff81.css" />
+
+  <script src="/assets/modernizr-2.6.2.min-e9773a69d4d509faccb3cab64446e38606ed4e0deb9b02318b36a5298f951e34.js"></script>
+<script src="/assets/jquery-1.10.0.min-ec93424be84325aca725334dba51f7ca1b094d3db846c82666c819e996a124fc.js"></script>
+  
+    <script src="/assets/public/irekia_tracking-410207477df6aeb02b659efb5926ae57e89908974c154600340ee2cb9c3eade3.js"></script>
+
+<!-- ANALYTICS initializaton -->
+<script type="text/javascript">
+
+  var Irekia = {};
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalytcsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  
+    ga('create', 'UA-10951282-1', 'auto');
+
+  ga('send', 'pageview');
+    
+  ga('set', 'dimension1', 'Ciudadanos')
+ga('set', 'dimension2', 'Paginas');
+  
+</script>
+
+
+  
+  
+  
+
+  <script src="https://insuit.net/i4tservice/insuit-app.js" async="async" type="text/javascript" data-insuit-id="insuit"></script>
+</head>
+
+<body>
+  
+
+  <div class="alert alert-warning alert-dismissable fade in text-center hidden donotprint" id="iexplorer_warning">
+    <button class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <p>Este portal no garantiza su funcionamiento íntegro en las diferentes versiones del navegador iExplorer. Si detecta cualquier anomalía, por favor, utilice otro navegador.</p>
+  </div>
+  
+  <header>
+    <div id='header_logos' class="container">
+  <div class='row-fluid'>
+    <a class="logo pull-left" href="/?locale=es"><img alt="Irekia logo" src="/assets/logo-02aaf8760688708ce9d03974458c9119364c2320f2ebd4a0fffc0e184d546aed.png" /></a>
+    <a class="net_logo pull-right" rel="external" href="https://www.euskadi.eus/inicio/"><img alt="Euskadi.net" src="/assets/euskadi_eus_logo-55cd4f4b32e41d8d50fba0d52264d1df7dc4c66c9147e0f3b11c52377ed28a5e.png" /></a>
+    
+  </div>  
+</div>
+<div id='header_tools_container' class='fullcontainer'>
+  <div id='header_tools' class="container">
+    <ul class="languages pull-left">                    
+      <li><a class="passive" href="/lang">&lt;&lt;</a></li>
+        <li>es</li>
+        <li><a href="/eu/pages/98299-2024-2028-gobernu-programa">eu</a></li>
+        <li><a href="/en/pages/98299-2024-2028-gobernu-programa">en</a></li>
+        <li class='insuit'>
+          <a id='insuit' rel='canonical' href='#'><span>Insuit</span></a>
+        </li>
+      <li class='lectura_facil es'>
+        <a href="/lf?locale=es">
+          <span>Lectura fácil</span>
+</a>      </li>
+    </ul>
+    <ul class="user_options pull-right">
+        <li >
+          <a data-popup="true" rel="external" href="https://www.euskadi.eus/contactar/-/contacta-a-traves-de-internet-telefono-y-presencialmente/">Contacto</a>
+        </li>
+        <li >
+          <a data-popup="true" rel="external" href="https://www.euskadi.eus/gobierno-vasco/-/accesibilidad-euskadieus/">Accesibilidad</a>
+        </li>
+        <li class=last>
+          <a title="Trámites de Eusko Jaurlaritza - Gobierno Vasco en un entorno seguro" data-popup="true" rel="external" href="https://www.euskadi.eus/sede-electronica/">sede electrónica</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+    <nav id='nav_top' class='fullcontainer'>
+  <div class='container'>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <ul class='nav pull-right'>
+          <li class='dropdown nav_follow'>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Síguenos
+              <b class='caret'></b>
+</a>            <ul class='dropdown-menu follow_irekia'>
+                <li><a class="x_twitter follow" rel="external" href="https://twitter.com/irekia"><span>Irekia en X</span></a></li>
+                <li><a class="facebook follow" rel="external" href="https://www.facebook.com/pages/Irekia/416723460540"><span>Irekia en Facebook</span></a></li>
+                <li><a class="youtube follow" rel="external" href="https://www.youtube.com/irekia"><span>Irekia en YouTube</span></a></li>
+                <li><a class="linkedin follow" rel="external" href="https://es.linkedin.com/company/irekia-euskojaurlaritza-gobiernovasco"><span>Irekia en Linkedin</span></a></li>
+                <li><a class="threads follow" rel="external" href="https://www.threads.net/@irekiaejgv"><span>Irekia en Threads</span></a></li>
+                <li><a class="gob_eus_x_twitter follow" rel="external" href="https://twitter.com/Gob_eus"><span>gob_eus en X</span></a></li>
+                <li><a class="gob_eus_facebook follow" rel="external" href="https://www.facebook.com/EuskoJaurlaritza"><span>gob_eus en Facebook</span></a></li>
+                <li><a class="gob_eus_instagram follow" rel="external" href="https://www.instagram.com/gob_eus_ejgv/"><span>gob_eus en Instagram</span></a></li>
+                <li><a class="gob_eus_linkedin follow" rel="external" href="https://es.linkedin.com/company/eusko-jaurlaritza-gobierno-vasco"><span>gob_eus en Linkedin</span></a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/es/site/page/about">Qué es Irekia</a>
+          </li>
+          <li>
+            <a href="/es/site/page/help">Ayuda</a>
+          </li> 
+          <li class='nav_search'>
+            <a class="search_label" href="/es/search/new"><span>Búsqueda</span></a>
+            <form class="navbar-search search_form" style="display:none" role="search" action="/es/search" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FjNU0hUvM9pxeL1Q_LtI0Vy0hMukmf1qUZWp7wc3aXCo47_JF7ZOi3qLMEOFUKNQwmZ_iENxgezU5_qeA4QXzQ" autocomplete="off" />
+              <input type="hidden" name="key" id="key" value="keyword" autocomplete="off" />
+              <input type="hidden" name="new" id="new" value="true" autocomplete="off" />
+              <input type="text" name="value" id="value" value="" aria-label="Búsqueda" />
+              <input type="submit" name="commit" value="Buscar" />
+</form>          </li>
+            <li class='dropdown nav_signup'>
+              <a class="dropdown-toggle dropdown-remote register" data-source="/es/people/intro" data-toggle="dropdown" href="/es/people/intro">Regístrate</a>
+              <div class='dropdown-menu'>
+                <div class='dropdown-menu-content container'>
+                  <div class="spinner"><img alt="" src="/assets/ajax-loader-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" /></div>
+                </div>  
+              </div>
+            </li>
+            <li class='dropdown nav_login'>
+              <a class="dropdown-toggle dropdown-remote login" data-source="/es/login" data-toggle="dropdown" href="/es/login">Iniciar sesión</a>
+              <div class='dropdown-menu'>
+                <div class='dropdown-menu-content container'>
+                  <div class="spinner"><img alt="" src="/assets/ajax-loader-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" /></div>
+                </div>  
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <nav role='navigation' id='nav_bottom' class='fullcontainer'>
+  <div class='container'>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <ul class='nav pull-left'>
+          <li class='dropdown proposals'>
+            <a class="dropdown-toggle dropdown-remote proposals" data-source="/es/proposals/summary" data-toggle="dropdown" id="proposalsDropdownMenuButton" aria-expanded="false" href="/es/proposals">Participación <b class='caret'></b></a>
+            <div class='dropdown-menu proposals' aria-labelledby="proposalsDropdownMenuButton"> 
+              <div class='dropdown-menu-content row-fluid'>
+                <div class='span4'>
+                  <ul class='nav-list'>
+  <li><a href="/es/proposals">Peticiones ciudadanas</a></li>
+  <li><a href="/es/debates">Propuestas de Gobierno</a></li>
+  <li><a href="/es/answers">Respuestas del Gobierno</a></li>
+  <li><a href="/es/surveys">Encuestas</a></li>
+  <li><a href="/es/site/feeds">RSS de Noticias</a></li>
+  <li><a href="/es/pages/35812">Participación en Europa</a>
+  <li><a rel="external" target="_blank" href="http://www.ogp.euskadi.eus/inicio/">OGP Euskadi</a>
+</ul>
+
+                </div>
+                <div class='span8'>                  
+                  <div class="spinner"><img alt="" src="/assets/ajax-loader-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" /><span class="spinner_text">Cargando últimas peticiones y propuestas...</span></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='dropdown departments'>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="/es/departments">Departamentos <b class='caret'></b></a>
+            <div class='dropdown-menu departments w-auto'>
+              <div class='dropdown-menu-content'>
+                <ul class='nav-list departments'>
+                    <li class="text-nowrap"><a href="/es/departments/118-lehendakaritza">Lehendakaritza</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/119-cultura-politica-linguistica">Cultura y Política Lingüística</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/120-economia-trabajo-empleo">Economía, Trabajo y Empleo</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/121-hacienda-finanzas">Hacienda y Finanzas</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/122-gobernanza-administracion-digital-autogobierno">Gobernanza, Administración Digital y Autogobierno</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/123-industria-transicion-energetica-sostenibilidad">Industria, Transición Energética y Sostenibilidad</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/124-seguridad">Seguridad</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/125-educacion">Educación</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/126-vivienda-agenda-urbana">Vivienda y Agenda Urbana</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/127-salud">Salud</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/128-bienestar-juventud-reto-demografico">Bienestar, Juventud y Reto Demográfico</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/129-movilidad-sostenible">Movilidad Sostenible</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/130-ciencia-universidades-innovacion">Ciencia, Universidades e Innovación</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/131-turismo-comercio-consumo">Turismo, Comercio y Consumo</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/132-alimentacion-desarrollo-rural-agricultura-pesca">Alimentación, Desarrollo Rural, Agricultura y Pesca</a></li>
+                    <li class="text-nowrap"><a href="/es/departments/133-justicia-derechos-humanos">Justicia y Derechos Humanos</a></li>
+                  <li class="divider" style="background-color: transparent;">&nbsp;</li>
+                  <li><a href="/es/departments">Visión global</a></li>
+                  <li><a href="/es/politicians">Cargos del sector público</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class='dropdown events'>
+            <a class="dropdown-toggle dropdown-remote events" data-source="/es/events/summary" data-toggle="dropdown" href="/es/events">Agenda <b class='caret'></b></a>
+            <div class='dropdown-menu events'> 
+              <div class='dropdown-menu-content row-fluid'>
+                <div class='span4'>
+                    
+<div class='calendar calendar_container '>
+  <div class="content">
+    <div class="clearfix">
+      
+              <div class="cal_nav">
+        <ul class="month_names">
+        <li class="prev_month_link"></li>
+        <li class="current_month"><span class="current october"><span>octubre 2026</span></span></li>
+        <li class="next_month_link"></li>
+        </ul>
+        </div>
+        <div class="cal_table_a">
+        <div class="cal_table_b">
+        <div class="cal_table_c">
+        <div class="cal_table_d">
+        <table class="calendar">
+          <thead class="visually-hidden">
+            <tr class="day_names"><th scope="col" class="monday"><abbr title="Lunes">Lun</abbr></th><th scope="col" class="tuesday"><abbr title="Martes">Mar</abbr></th><th scope="col" class="wednesday"><abbr title="Miércoles">Mier</abbr></th><th scope="col" class="thursday"><abbr title="Jueves">Jue</abbr></th><th scope="col" class="friday"><abbr title="Viernes">Vie</abbr></th><th scope="col" class="saturday"><abbr title="Sábado">Sab</abbr></th><th scope="col" class="sunday"><abbr title="Domingo">Dom</abbr></th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="day otherMonth normalDay mt7events day1" id="d28_9"><div class="day_number"><a class="day_number" href="/es/events?day=28&amp;month=9&amp;year=2026">28</a></div><div class="events"><a href="/es/events?day=28&amp;month=9&amp;year=2026">11 eventos</a></div></td><td class="day otherMonth normalDay mt7events day2" id="d29_9"><div class="day_number"><a class="day_number" href="/es/events?day=29&amp;month=9&amp;year=2026">29</a></div><div class="events"><a href="/es/events?day=29&amp;month=9&amp;year=2026">14 eventos</a></div></td><td class="day otherMonth normalDay mt7events day3" id="d30_9"><div class="day_number"><a class="day_number" href="/es/events?day=30&amp;month=9&amp;year=2026">30</a></div><div class="events"><a href="/es/events?day=30&amp;month=9&amp;year=2026">23 eventos</a></div></td><td class="day normalDay mt7events day4" id="d1_10"><div class="day_number"><a class="day_number" href="/es/events?day=1&amp;month=10&amp;year=2026">1</a></div><div class="events"><a href="/es/events?day=1&amp;month=10&amp;year=2026">18 eventos</a></div></td><td class="day normalDay mt7events day5" id="d2_10"><div class="day_number"><a class="day_number" href="/es/events?day=2&amp;month=10&amp;year=2026">2</a></div><div class="events"><a href="/es/events?day=2&amp;month=10&amp;year=2026">14 eventos</a></div></td><td class="day weekend f3to5events day6" id="d3_10"><div class="day_number"><a class="day_number" href="/es/events?day=3&amp;month=10&amp;year=2026">3</a></div><div class="events"><a href="/es/events?day=3&amp;month=10&amp;year=2026">4 eventos</a></div></td><td class="day weekend f5to7events day0" id="d4_10"><div class="day_number"><a class="day_number" href="/es/events?day=4&amp;month=10&amp;year=2026">4</a></div><div class="events"><a href="/es/events?day=4&amp;month=10&amp;year=2026">6 eventos</a></div></td></tr><tr><td class="day normalDay mt7events day1" id="d5_10"><div class="day_number"><a class="day_number" href="/es/events?day=5&amp;month=10&amp;year=2026">5</a></div><div class="events"><a href="/es/events?day=5&amp;month=10&amp;year=2026">16 eventos</a></div></td><td class="day normalDay mt7events day2" id="d6_10"><div class="day_number"><a class="day_number" href="/es/events?day=6&amp;month=10&amp;year=2026">6</a></div><div class="events"><a href="/es/events?day=6&amp;month=10&amp;year=2026">16 eventos</a></div></td><td class="day normalDay f5to7events day3" id="d7_10"><div class="day_number"><a class="day_number" href="/es/events?day=7&amp;month=10&amp;year=2026">7</a></div><div class="events"><a href="/es/events?day=7&amp;month=10&amp;year=2026">7 eventos</a></div></td><td class="day normalDay mt7events day4" id="d8_10"><div class="day_number"><a class="day_number" href="/es/events?day=8&amp;month=10&amp;year=2026">8</a></div><div class="events"><a href="/es/events?day=8&amp;month=10&amp;year=2026">31 eventos</a></div></td><td class="day normalDay mt7events day5" id="d9_10"><div class="day_number"><a class="day_number" href="/es/events?day=9&amp;month=10&amp;year=2026">9</a></div><div class="events"><a href="/es/events?day=9&amp;month=10&amp;year=2026">10 eventos</a></div></td><td class="day weekend f1to3events day6" id="d10_10"><div class="day_number"><a class="day_number" href="/es/events?day=10&amp;month=10&amp;year=2026">10</a></div><div class="events"><a href="/es/events?day=10&amp;month=10&amp;year=2026">2 eventos</a></div></td><td class="day weekend today f1to3events day0" id="d11_10"><div class="day_number"><a class="day_number" href="/es/events?day=11&amp;month=10&amp;year=2026">11</a></div><div class="events"><a href="/es/events?day=11&amp;month=10&amp;year=2026">3 eventos</a></div></td></tr><tr><td class="day normalDay f1to3events day1" id="d12_10"><div class="day_number"><a class="day_number" href="/es/events?day=12&amp;month=10&amp;year=2026">12</a></div><div class="events"><a href="/es/events?day=12&amp;month=10&amp;year=2026">1 evento</a></div></td><td class="day normalDay f5to7events day2" id="d13_10"><div class="day_number"><a class="day_number" href="/es/events?day=13&amp;month=10&amp;year=2026">13</a></div><div class="events"><a href="/es/events?day=13&amp;month=10&amp;year=2026">6 eventos</a></div></td><td class="day normalDay mt7events day3" id="d14_10"><div class="day_number"><a class="day_number" href="/es/events?day=14&amp;month=10&amp;year=2026">14</a></div><div class="events"><a href="/es/events?day=14&amp;month=10&amp;year=2026">12 eventos</a></div></td><td class="day normalDay mt7events day4" id="d15_10"><div class="day_number"><a class="day_number" href="/es/events?day=15&amp;month=10&amp;year=2026">15</a></div><div class="events"><a href="/es/events?day=15&amp;month=10&amp;year=2026">14 eventos</a></div></td><td class="day normalDay f3to5events day5" id="d16_10"><div class="day_number"><a class="day_number" href="/es/events?day=16&amp;month=10&amp;year=2026">16</a></div><div class="events"><a href="/es/events?day=16&amp;month=10&amp;year=2026">5 eventos</a></div></td><td class="day weekend f1to3events day6" id="d17_10"><div class="day_number"><a class="day_number" href="/es/events?day=17&amp;month=10&amp;year=2026">17</a></div><div class="events"><a href="/es/events?day=17&amp;month=10&amp;year=2026">2 eventos</a></div></td><td class="day weekend empty day0" id="d18_10"><div class="day_number"><a class="day_number" href="/es/events?day=18&amp;month=10&amp;year=2026">18</a></div></td></tr><tr><td class="day normalDay f3to5events day1" id="d19_10"><div class="day_number"><a class="day_number" href="/es/events?day=19&amp;month=10&amp;year=2026">19</a></div><div class="events"><a href="/es/events?day=19&amp;month=10&amp;year=2026">4 eventos</a></div></td><td class="day normalDay f1to3events day2" id="d20_10"><div class="day_number"><a class="day_number" href="/es/events?day=20&amp;month=10&amp;year=2026">20</a></div><div class="events"><a href="/es/events?day=20&amp;month=10&amp;year=2026">3 eventos</a></div></td><td class="day normalDay f1to3events day3" id="d21_10"><div class="day_number"><a class="day_number" href="/es/events?day=21&amp;month=10&amp;year=2026">21</a></div><div class="events"><a href="/es/events?day=21&amp;month=10&amp;year=2026">3 eventos</a></div></td><td class="day normalDay f1to3events day4" id="d22_10"><div class="day_number"><a class="day_number" href="/es/events?day=22&amp;month=10&amp;year=2026">22</a></div><div class="events"><a href="/es/events?day=22&amp;month=10&amp;year=2026">2 eventos</a></div></td><td class="day normalDay empty day5" id="d23_10"><div class="day_number"><a class="day_number" href="/es/events?day=23&amp;month=10&amp;year=2026">23</a></div></td><td class="day weekend empty day6" id="d24_10"><div class="day_number"><a class="day_number" href="/es/events?day=24&amp;month=10&amp;year=2026">24</a></div></td><td class="day weekend empty day0" id="d25_10"><div class="day_number"><a class="day_number" href="/es/events?day=25&amp;month=10&amp;year=2026">25</a></div></td></tr><tr><td class="day normalDay f1to3events day1" id="d26_10"><div class="day_number"><a class="day_number" href="/es/events?day=26&amp;month=10&amp;year=2026">26</a></div><div class="events"><a href="/es/events?day=26&amp;month=10&amp;year=2026">2 eventos</a></div></td><td class="day normalDay f1to3events day2" id="d27_10"><div class="day_number"><a class="day_number" href="/es/events?day=27&amp;month=10&amp;year=2026">27</a></div><div class="events"><a href="/es/events?day=27&amp;month=10&amp;year=2026">3 eventos</a></div></td><td class="day normalDay f1to3events day3" id="d28_10"><div class="day_number"><a class="day_number" href="/es/events?day=28&amp;month=10&amp;year=2026">28</a></div><div class="events"><a href="/es/events?day=28&amp;month=10&amp;year=2026">3 eventos</a></div></td><td class="day normalDay f3to5events day4" id="d29_10"><div class="day_number"><a class="day_number" href="/es/events?day=29&amp;month=10&amp;year=2026">29</a></div><div class="events"><a href="/es/events?day=29&amp;month=10&amp;year=2026">4 eventos</a></div></td><td class="day normalDay f1to3events day5" id="d30_10"><div class="day_number"><a class="day_number" href="/es/events?day=30&amp;month=10&amp;year=2026">30</a></div><div class="events"><a href="/es/events?day=30&amp;month=10&amp;year=2026">1 evento</a></div></td><td class="day weekend empty day6" id="d31_10"><div class="day_number"><a class="day_number" href="/es/events?day=31&amp;month=10&amp;year=2026">31</a></div></td><td class="day otherMonth weekend empty day0" id="d1_11"><div class="day_number"><a class="day_number" href="/es/events?day=1&amp;month=11&amp;year=2026">1</a></div></td></tr>
+          </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="cal_nav bottom">
+        <ul class="month_names">
+        <li class="prev_month_link"></li>
+        <li class="current_month"><span class="current october"><span>octubre 2026</span></span></li>
+        <li class="next_month_link"></li>
+        </ul>
+        </div>
+
+    </div>
+  </div>  
+
+
+</div>  
+
+
+                </div>
+                <div class='span8'>                  
+                  <div class="spinner"><img alt="" src="/assets/ajax-loader-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" /><span class="spinner_text">Cargando próximos eventos...</span></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='dropdown news'>
+            <a class="dropdown-toggle dropdown-remote news" data-source="/es/news/summary" data-toggle="dropdown" href="/es/news">Noticias <b class='caret'></b></a>
+            <div class='dropdown-menu news'> 
+              <div class='dropdown-menu-content row-fluid'>
+                <div class='span5'>
+                  <div class='menu_heading'>Consulta las noticias por departamentos</div>
+<ul class='nav-list departments'>
+    <li><a href="/es/departments/118/news#middle">Lehendakaritza</a></li>
+    <li><a href="/es/departments/119/news#middle">Cultura y Política Lingüística</a></li>
+    <li><a href="/es/departments/120/news#middle">Economía, Trabajo y Empleo</a></li>
+    <li><a href="/es/departments/121/news#middle">Hacienda y Finanzas</a></li>
+    <li><a href="/es/departments/122/news#middle">Gobernanza, Administración Digital y Autogobierno</a></li>
+    <li><a href="/es/departments/123/news#middle">Industria, Transición Energética y Sostenibilidad</a></li>
+    <li><a href="/es/departments/124/news#middle">Seguridad</a></li>
+    <li><a href="/es/departments/125/news#middle">Educación</a></li>
+    <li><a href="/es/departments/126/news#middle">Vivienda y Agenda Urbana</a></li>
+    <li><a href="/es/departments/127/news#middle">Salud</a></li>
+    <li><a href="/es/departments/128/news#middle">Bienestar, Juventud y Reto Demográfico</a></li>
+    <li><a href="/es/departments/129/news#middle">Movilidad Sostenible</a></li>
+    <li><a href="/es/departments/130/news#middle">Ciencia, Universidades e Innovación</a></li>
+    <li><a href="/es/departments/131/news#middle">Turismo, Comercio y Consumo</a></li>
+    <li><a href="/es/departments/132/news#middle">Alimentación, Desarrollo Rural, Agricultura y Pesca</a></li>
+    <li><a href="/es/departments/133/news#middle">Justicia y Derechos Humanos</a></li>
+</ul>
+
+<ul class='nav-list departments'>
+    <li>
+      <a href="/es/search/1060990">
+        <img style="max-height: 20px" alt="" src="/assets/logos/kpe_logo-5138682b346c655008cbf2d6d29cc9706e36991e58b4c32bfb10d3b0217cddc3.png" />
+        Apertura de plicas
+</a>    </li>
+  <li><a href="/es/bulletin_subscriptions">Suscripción Boletín de noticias</a></li>
+</ul>
+
+                </div>
+                <div class='span7'>                  
+                  <div class="spinner"><img alt="" src="/assets/ajax-loader-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" /><span class="spinner_text">Cargando últimas noticias...</span></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='dropdown videos_photos'>
+            <a class="dropdown-toggle dropdown-remote videos" data-source="/es/web_tv/summary" data-toggle="dropdown" href="/es/web_tv">Vídeos y fotos <b class='caret'></b></a>
+            <div class='dropdown-menu videos_photos pull-right'> 
+              <div class='dropdown-menu-content row-fluid'>
+                <div class='span4'>
+                  <ul class='nav-list'>
+  <li><a href="/es/web_tv">Vídeos</a></li>
+  <li class='indented'><a href="/es/web_tv/closed_captions">Vídeos subtitulados (beta)</a></li>
+  <li><a href="/es/albums">Fotos</a></li>
+  <li><a href="/es/sounds">Audios</a></li>
+</ul>
+
+                </div>
+                <div class='span8'>                  
+                  <div class="spinner"><img alt="" src="/assets/ajax-loader-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" /><span class="spinner_text">Cargando reportajes destacados...</span></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='dropdown snetworks'>
+            <a class="dropdown-toggle dropdown-link" data-toggle="dropdown" href="/es/site/snetworking">Redes sociales <b class='caret'></b></a>
+            <div class='dropdown-menu snetworks pull-right'>
+              <div class='dropdown-menu-content row-fluid'>
+                <div class='span4'>
+                  <ul class='nav-list'>
+                    <li><a href="/es/site/snetworking">Presencia en las redes</a></li>
+                    <!--<li></li>-->
+                    <li><a href="/es/site/page/mobile_apps">Apps para móviles</a></li>
+                  </ul>
+                </div>
+                <div class='span8'>
+                  <div class='description'>
+                    <p>Conscientes del uso y la importancia de las redes sociales para la ciudadanía, recogemos aquí lo que se publica en Euskadi agrupado en los apartados referenciados aquí. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--<li class='programa'>
+          </li>-->
+          <li class='dropdown programa'>
+            <a class="dropdown-toggle dropdown-link" data-toggle="dropdown" href="/es/site/page/programa_gobierno">Programa de Gobierno <b class='caret'></b></a>
+            <div class='dropdown-menu programa pull-right w-auto'>
+              <div class='dropdown-menu-content row-fluid'>
+                <ul class='nav-list'>
+                  <li><span>Programa de Gobierno: </span></li>
+                  <li class='indented-with-bullet'><a rel="external" href="https://programa.irekia.euskadi.eus/?locale=es">Seguimiento de actuaciones</a></li>
+                  <li class='indented-with-bullet'><a href="https://bideoak2.euskadi.eus/paginas/page_98299/Programa_Gobierno_2024-2028_es.pdf">Programa de Gobierno (PDF)</a></li>
+                  <!--<li class='indented-with-bullet'></li>-->
+                  <li class='indented-with-bullet text-nowrap'><a rel="external" href="https://bideoak2.euskadi.eus/paginas/page_98299/LF_Programa_Gobierno_es.pdf">Programa de Gobierno – Lectura Fácil (PDF)</a></li>
+                  <!--<li class='indented'></li>
+                  <li class='indented'></li>
+                  <li class='indented'></li>-->
+                  <li><a rel="external" href="https://www.euskadi.eus/web01-s1leheko/es/?r01kQry=tC:euskadi;tF:planificacion_gobierno;tT:plan_gubernamental;m:contentName.LIKE._planest_xiileg,documentLanguage.EQ.es;o:contentName.ASC;p:Inter">Planificación estratégica</a></li>
+                  <li><a rel="external" href="https://www.euskadi.eus/web01-s1leheko/es/?r01kQry=tC:euskadi;tF:planificacion_gobierno;tT:proyecto_ley;m:contentName.LIKE._pley_xiileg,documentLanguage.EQ.es;o:contentName.ASC;p:Inter">Programa legislativo</a></li> 
+                  <!--<li></li>-->
+                  <li><a rel="external" href="https://www.euskadi.eus/planificacion-de-legislaturas-anteriores/web01-s1leheko/es/">Planificación de legislaturas anteriores</a></li>
+                  <!--<li><span>: </span></li>-->
+                  <!--<li class='indented-with-bullet'></li>-->
+                  <!--<li class='indented-with-bullet'></li>-->
+                  <!--<li class='indented-with-bullet'></li>-->
+                  <!--<li class='indented-with-bullet'></li>-->
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  </header>
+  
+  <div id="main" class="fullcontainer pages show">
+    
+<div class="breadcrumbs container">
+  <ul>
+    <li><a href="/?locale=es">Inicio</a> <span class="divider">&middot;</span></li>
+      <li class="active"><a href="/es/pages/98299-programa-gobierno-2024-2028">Programa de Gobierno 2024-2028</a></li>
+  </ul>
+</div>
+
+
+    
+<p class="only_for_print">https://www.irekia.euskadi.eus/es/pages/98299</p>
+
+<div class='section container pages show'>
+  
+<div class='context'>
+  <span class="ribbon pages"></span>
+  <span class='type'>Irekia</span>
+  
+</div>
+
+  <div class='section_main row-fluid'>
+    <div class='section_content span8'>
+      <div class='article pages' id="readspeaker1">
+        
+
+<script>
+//<![CDATA[
+
+  jQuery(document).ready(function(){
+    jQuery('#stats_link').on('click', function(){
+      Spinner.show('div.admin_links')
+    })
+  })
+
+//]]>
+</script>
+
+        
+
+        <h1 class='title'>Programa de Gobierno 2024-2028</h1>
+
+        <div class='share_rss_listen row-fluid rs_skip'>
+          
+<div class='share_button donotprint'>
+  <a class="share_popover" title="Compartir" data-popover-placement="right" href="#">
+    <span>compartir</span>
+</a>  
+  <div class='share_links' style='display:none'>
+    <a class="share_link email" data-target="#send_email_modal_Page_98299" href="#send_email_modal_Page_98299">
+      <span class='share_logo share_email'></span>
+      <span class='share_text'>Email</span>
+</a>    <a class="share_link facebook" rel="external" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.irekia.euskadi.eus%2Fes%2Fpages%2F98299-programa-gobierno-2024-2028">
+      <span class='share_logo share_facebook'></span>
+      <span class='share_text'>Facebook</span>
+</a>    <a class="share_link x_twitter" rel="external" href="https://twitter.com/share?text=Programa+de+Gobierno+2024-2028&amp;url=https%3A%2F%2Fwww.irekia.euskadi.eus%2Fes%2Fpages%2F98299-programa-gobierno-2024-2028">
+      <span class='share_logo share_x_twitter'></span>
+      <span class='share_text'>X</span>
+</a>  </div>
+
+  <div id='send_email_modal_Page_98299' class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby='send_email_modal_Page_98299' aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <div class="h3">Compartir esta página</div>
+    </div>
+    <form class="form-horizontal" action="/es/site/send_email" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="authenticity_token" value="B5ukG9aD21deFfnRgPcGW-SnVEauL1JFz2kurNRNdmw8ukuh1dpIwSA_EjcZBCPVeteW_jj8hYjF1CS4Z5NNcQ" autocomplete="off" />
+      <div class="modal-body">
+        <input type="hidden" name="id" id="id" value="98299" autocomplete="off" />
+        <input type="hidden" name="t" id="t" value="Page" autocomplete="off" />
+        <input type="hidden" name="share_url" id="share_url" value="https://www.irekia.euskadi.eus/es/pages/98299-programa-gobierno-2024-2028" autocomplete="off" />
+        <div class='control-group'>
+          <label class="control-label" for="sender_name">Tu nombre completo</label>
+          <div class='controls'>
+            <input type="text" name="sender_name" id="sender_name" value="" class="input-xlarge validate" required="required" />
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class="control-label" for="recipient_name">Nombre del destinatario</label>
+          <div class='controls'>
+            <input type="text" name="recipient_name" id="recipient_name" value="" class="input-xlarge validate" required="required" />
+          </div>
+        </div>  
+        <div class='control-group'>
+          <label class="control-label" for="recipient_email">Email del destinatario</label>
+          <div class='controls'>
+            <input type="email" name="recipient_email" id="recipient_email" value="" class="input-xlarge validate" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" name="commit" value="Enviar" class="irekia_btn" data-disable-with="Enviando..." />
+        <a href='#' class="btn btn-link" data-dismiss="modal" aria-hidden="true">Cancelar</a>
+      </div>
+</form>  </div>
+</div>
+
+          
+<div class="">
+  <div id="readspeaker_button1" class="rsbtn_6197 rs_preserve">
+    <a class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=6197&lang=es_es&speed=100&readid=readspeaker1&url=https%3A%2F%2Fwww.irekia.euskadi.eus%2Fes%2Fpages%2F98299-2024-2028-gobernu-programa">
+      <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar la página</span></span></span>
+      <span class="rsbtn_right rsimg rsplay rspart"></span>
+    </a>
+  </div>
+</div>  
+
+
+
+        </div>  
+
+        <div class="text "> 
+          <p>Aqu&iacute; podr&aacute;s consultar el <a href="https://bideoak2.euskadi.eus/paginas/page_98299/Programa_Gobierno_2024-2028_es.pdf" target="_blank" rel="noopener">Programa de Gobierno</a>&nbsp;&iacute;ntegro</p>
+<p>Aqu&iacute; podr&aacute;s consultar el&nbsp;<a href="https://bideoak2.euskadi.eus/paginas/page_98299/LF_Programa_Gobierno_es.pdf">Programa de Gobierno</a> &iacute;ntegro (Lectura f&aacute;cil)</p>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+    <!-- This elements must be included in order to enable window login -->
+    <div id='iddle_container' style='display:none'>
+      <div class='spinner donotprint'>
+        <img alt="" src="/assets/ajax-loader-c6f6eb10a4472f02adf0f74f0805afb04a0bd0f4644a1eeff94d9b36d2ffeaf6.gif" />
+      </div>
+    </div>
+
+    <div class='donotprint'>
+      <a id="login_window_link" style="display:none" target="_blank" title="Irekia embed login" href="/es/embed/login?irekia=1&amp;return_to=%2Fes%2Fembed%2Flogged">Irekia embed login</a>
+    </div>
+  </div>
+  
+  <footer>
+  <div id='banners' class="container donotprint">
+    <div class='row-fluid'>
+      
+  <div class='item span2'>
+    <a class="gida_en" rel="external" title="Plan de Ciencia, Tecnología e Innovación" href="/es/click/154/banner"><img alt="" src="/uploads/banners/154/es/PCTI_berria_es.png" />Plan de Ciencia, Tecnología e Innovación</a>
+  </div>
+
+  <div class='item span2'>
+    <a class="gida_en" rel="external" title="Plan de ayudas 2026. Compromiso con el primer sector" href="/es/click/152/banner"><img alt="" src="/uploads/banners/152/es/plan_ayudas_es(2).png" />Plan de ayudas 2026. Compromiso con el primer sector</a>
+  </div>
+
+  <div class='item span2'>
+    <a class="gida_en" rel="external" title="VI Plan de Justicia Juvenil" href="/es/click/150/banner"><img alt="" src="/uploads/banners/150/es/Plan_justicia_foto.png" />VI Plan de Justicia Juvenil</a>
+  </div>
+
+  <div class='item span2'>
+    <a class="gida_en" rel="external" title="Estrategia Vasca con las personas mayores" href="/es/click/149/banner"><img alt="" src="/uploads/banners/149/es/Foto_es.png" />Estrategia Vasca con las personas mayores</a>
+  </div>
+
+  <div class='item span2'>
+    <a class="gida_en" rel="external" title="Programa de Gobierno 2024-2028" href="/es/click/121/banner"><img alt="" src="/uploads/banners/121/es/Programa_Gobierno.PNG" />Programa de Gobierno 2024-2028</a>
+  </div>
+
+  <div class='item span2'>
+    <a class="gida_en" rel="external" title="Presupuestos Generales de Euskadi" href="/es/click/52/banner"><img alt="" src="/uploads/banners/52/es/WEB_EJ-GV-AURREKONTUAK.png" />Presupuestos Generales de Euskadi</a>
+  </div>
+
+    </div>
+  </div>
+  
+  <div id='site_links' class="container donotprint">
+    <div class='row-fluid'>
+      <div class='span6'>
+        <h2 class='footer_title'>Irekia</h2>
+        <div class='row-fluid'>
+          <ul class='nav nav-list span6'>
+            <li class='nav-header'>Suscripciones y registro</li>
+            <li><a href="/es/site/feeds">RSS de Noticias</a></li>
+            <li><a href="/es/bulletin_subscriptions">Boletín de noticias</a></li>
+            <li><a href="/es/events/myfeed.ics">ICS de la Agenda</a></li>
+            <li><a href="/es/journalists/new">Registro de periodistas</a></li>
+            <!--<li></li>-->
+          </ul>
+          <ul class='nav nav-list span6'>
+            <li class='nav-header'>Open Data y Transparencia</li>
+              <li><a rel="external" href="https://gardena.euskadi.eus/inicio">Transparencia Euskadi</a></li>
+              <li><a rel="external" href="https://www.euskadi.eus/interaccion_ciudadania/acceso-a-la-informacion-publica/web01-tramite/es/">Acceso a la información pública</a></li>
+              <li><a rel="external" href="https://opendata.euskadi.eus/inicio">Open Data Euskadi</a></li>
+              <li><a rel="external" href="https://grafikoak.irekia.euskadi.eus/es">Gráficos elecciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class='span6'>
+        <h2 class='footer_title'>Qué es Irekia</h2>
+        <div class="row-fluid">
+          <ul class='nav nav-list span6'>
+            <li class='nav-header'>Información práctica</li>
+              <li><a href="/es/site/page/faq">FAQ: preguntas frecuentes</a></li>
+              <li><a href="/es/site/page/source_code">Código fuente</a></li>
+            
+          </ul>
+
+          <ul class='nav nav-list span6'>
+            <li class='nav-header'>&nbsp;</li>
+              <li><a rel="external" href="https://www.euskadi.eus/informacion/-/informacion-legal/">Información legal</a></li>
+              <li><a rel="external" href="https://www.euskadi.eus/informacion/-/politica-cookies-euskadieus/">Política de cookies</a></li>
+              <li><a rel="external" href="/es/site/page/tos">Condiciones de uso</a></li>
+              <li><a rel="external" href="/es/site/page/privacy">Política de privacidad</a></li>
+          </ul>
+          <a rel="external" id="cc_by_in_footer" title="CC BY 3.0 ES" href="https://creativecommons.org/licenses/by/3.0/es/"><img alt="CC BY 3.0 ES" src="/assets/icons/cc_l_by_30_es_88x31-27b8bc90586997cd048aa31c2338ce28ba2404aa76dc36fdca0a52f42c804ebf.png" /></a>
+        </div>
+      </div>
+    </div>
+  </div>       
+
+  <div id='copyright' class='container'>
+    <div class='logo'>
+      <img alt="Eusko Jaurlaritza - Gobierno Vasco" src="/assets/footer_logo-e7294ca755bb75a36d96be3b30e79c39cdffb242a3c163409f11cb0035623fc0.png" />
+    </div>  
+  </div>  
+</footer>  
+
+  
+  <script src="/assets/application-e181a5d53585d6aaf0e414d17b2ee489769b1c6eaaea64cfcbf30c8df1da8b64.js"></script>
+  
+
+  <script src="/assets/public/readspeaker-7b6b0d4bc30feab9a754bf1c538b9d027a96a2fd97692222638963c99a452526.js"></script><script src="//f1-eu.readspeaker.com/script/6197/ReadSpeaker.js?pids=embhl" type="text/javascript"></script>
+
+  </body>
+</html>

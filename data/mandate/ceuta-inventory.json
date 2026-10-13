@@ -1,0 +1,1440 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "r-18",
+  "mandateId": "r-18-2023",
+  "mandateLabel": "Ceuta · mandato 2023–2027 · programa inicial julio–octubre de 2023",
+  "sourceId": "ceuta-initial-programme-2023",
+  "mandateSourceId": "ceuta-initial-programme-2023",
+  "sourceLabel": "Programa inicial julio–octubre de 2023",
+  "sourceSha256": "5134bfd954678837cd0ebcfb4ffab56bd5bb0addb85766fbbb2c16a73a8ff7c4",
+  "registerSourceId": "ceuta-programme-register",
+  "importedAt": "2026-10-11",
+  "inventoryKind": "initial-programme",
+  "inventoryTotal": 138,
+  "scope": "Las 138 medidas numeradas de las siete áreas del documento de trabajo del Gobierno de Ceuta para el periodo del 1 de julio al 31 de octubre de 2023. La medida 7 de Fomento incorpora el anexo de obras, conservado dentro de esa ficha. Es un programa inicial expresamente no exhaustivo y modificable, no el inventario completo de promesas del mandato 2023–2027.",
+  "textNote": "Se conservan los textos completos, las condiciones y las fases del anexo. La numeración 26 y 27 se repite en Fomento: son medidas distintas y no se eliminan. Las páginas corresponden al PDF de 29 páginas. La nota final de la página 29 dice: Notas 1. El presente programa no tiene carácter exhaustivo, además podrá ser corregido durante su vigencia. 2. Aquellas medidas para la que no exista dotación presupuestaria, se entenderán cumplidas con su incorporación al proyecto de Presupuesto para 2024. Esa regla pertenece al Gobierno; una inclusión presupuestaria no se convierte en ejecución o resultado verificado por RegTrack. Siguen pendientes el inventario del mandato completo y las modificaciones posteriores.",
+  "records": [
+    {
+      "officialId": "1",
+      "topic": "Presidencia de la Ciudad",
+      "page": 3,
+      "endPage": 3,
+      "id": "r-18-PC-1",
+      "text": "Dirección y seguimiento de la acción de gobierno.",
+      "rawText": "Dirección y seguimiento de la acción de gobierno.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "2",
+      "topic": "Presidencia de la Ciudad",
+      "page": 3,
+      "endPage": 3,
+      "id": "r-18-PC-2",
+      "text": "Contactos con los agentes económicos y sociales, las comunidades religiosas, las entidades sociales, la Federación de Asociaciones de Vecinos, las federaciones deportivas y otras entidades de la sociedad civil de Ceuta, en coordinación con las consejerías competentes por razón de la materia.",
+      "rawText": "Contactos con los agentes económicos y sociales, las comunidades\nreligiosas, las entidades sociales, la Federación de Asociaciones de\nVecinos, las federaciones deportivas y otras entidades de la sociedad civil\nde Ceuta, en coordinación con las consejerías competentes por razón de la\nmateria.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "3",
+      "topic": "Presidencia de la Ciudad",
+      "page": 3,
+      "endPage": 3,
+      "id": "r-18-PC-3",
+      "text": "Iniciativas políticas o de otra índole dirigidas a la protección de los pilares que, para la sostenibilidad de Ceuta, recoge nuestro Estatuto de Autonomía, y de los ejes considerados prioritarios para sentar las bases de un futuro de estabilidad, prosperidad y cohesión social para nuestra ciudad.",
+      "rawText": "Iniciativas políticas o de otra índole dirigidas a la protección de los\npilares que, para la sostenibilidad de Ceuta, recoge nuestro Estatuto de\nAutonomía, y de los ejes considerados prioritarios para sentar las bases de\nun futuro de estabilidad, prosperidad y cohesión social para nuestra ciudad.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "4",
+      "topic": "Presidencia de la Ciudad",
+      "page": 3,
+      "endPage": 3,
+      "id": "r-18-PC-4",
+      "text": "Participación en medios de comunicación, redes sociales y otros foros nacionales para dar a conocer la realidad de Ceuta en todos los aspectos, tanto en lo que hace referencia a riesgos, amenazas y condicionantes, como a los indudables atractivos de nuestra ciudad.",
+      "rawText": "Participación en medios de comunicación, redes sociales y otros foros\nnacionales para dar a conocer la realidad de Ceuta en todos los aspectos,\ntanto en lo que hace referencia a riesgos, amenazas y condicionantes, como\na los indudables atractivos de nuestra ciudad.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "5",
+      "topic": "Presidencia de la Ciudad",
+      "page": 3,
+      "endPage": 3,
+      "id": "r-18-PC-5",
+      "text": "Comunicación permanente y colaboración leal con el Gobierno de la nación y su Delegación en Ceuta, la Comandancia General, la Autoridad Portuaria y otras instituciones.",
+      "rawText": "Comunicación permanente y colaboración leal con el Gobierno de la\nnación y su Delegación en Ceuta, la Comandancia General, la Autoridad\nPortuaria y otras instituciones.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "6",
+      "topic": "Presidencia de la Ciudad",
+      "page": 3,
+      "endPage": 3,
+      "id": "r-18-PC-6",
+      "text": "Mantenimiento de una base de datos relevante acerca de la situación y evolución de asuntos de interés estratégico o prioritario.",
+      "rawText": "Mantenimiento de una base de datos relevante acerca de la situación y\nevolución de asuntos de interés estratégico o prioritario.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "7",
+      "topic": "Presidencia de la Ciudad",
+      "page": 3,
+      "endPage": 3,
+      "id": "r-18-PC-7",
+      "text": "Aumentar la presencia en la calle y el contacto con los vecinos.",
+      "rawText": "Aumentar la presencia en la calle y el contacto con los vecinos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "1",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Urbanismo",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-1",
+      "text": "Creación de una oficina para el desarrollo del nuevo PGOU.",
+      "rawText": "Creación de una oficina para el desarrollo del nuevo PGOU.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "2",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Urbanismo",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-2",
+      "text": "Medidas que se consideren precisas, incluida una posible reforma legal, para agilizar la concesión de licencias y ser más eficaces en la lucha contra la edificación ilegal.",
+      "rawText": "Medidas que se consideren precisas, incluida una posible reforma legal,\npara agilizar la concesión de licencias y ser más eficaces en la lucha contra\nla edificación ilegal.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "3",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Urbanismo",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-3",
+      "text": "Diseño de una actuación urbanística a llevar a cabo, de acuerdo con las previsiones del nuevo PGOU, en la zona comprendida por paseo de Colón, plaza Rafael Gilbert, Patio Hachuel y antiguo cine Cervantes.",
+      "rawText": "Diseño de una actuación urbanística a llevar a cabo, de acuerdo con las\nprevisiones del nuevo PGOU, en la zona comprendida por paseo de Colón,\nplaza Rafael Gilbert, Patio Hachuel y antiguo cine Cervantes.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "4",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Urbanismo",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-4",
+      "text": "Proponer a la Administración General del Estado la realización de una actuación conjunta sobre regeneración de la zona de la Almadraba y aledaños de la frontera.",
+      "rawText": "Proponer a la Administración General del Estado la realización de una\nactuación conjunta sobre regeneración de la zona de la Almadraba y\naledaños de la frontera.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "5",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Urbanismo",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-5",
+      "text": "Encargo del proyecto para conectar, a través de un nuevo vial, la avenida Cañonero Dato con Puertas del Campo.",
+      "rawText": "Encargo del proyecto para conectar, a través de un nuevo vial, la avenida\nCañonero Dato con Puertas del Campo.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "6",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Urbanismo",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-6",
+      "text": "Retomar el proyecto de Arroyo Paneque.",
+      "rawText": "Retomar el proyecto de Arroyo Paneque.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "7",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Obras y barriadas",
+      "page": 5,
+      "endPage": 28,
+      "id": "r-18-F-7",
+      "text": "Cumplir los hitos en cuanto a ejecución, licitación y redacción de proyectos que se señalan en el anexo adjunto.",
+      "rawText": "Cumplir los hitos en cuanto a ejecución, licitación y redacción de\nproyectos que se señalan en el anexo adjunto.",
+      "sourceId": "ceuta-initial-programme-2023",
+      "initiatives": [
+        {
+          "officialId": "1",
+          "page": 27,
+          "endPage": 27,
+          "text": "Finalización\n- Plaza Nicaragua.\n- Mejoras en el cementerio de Santa Catalina.\n- Parque urbano Príncipe Alfonso.\n- Actuación en plazas en Polígono Virgen de África.\n- Infraestructuras C/ Carlos Viñón y Monte Hacho.\n- Suministro e instalación de red semafórica.\n- Arreglo Iglesia de San José.\n- Renovación integral paseo de Benítez.\n- Dependencias anexas ermita de San Antonio.\n- Señalización vertical.",
+          "rawText": "Finalización\n- Plaza Nicaragua.\n- Mejoras en el cementerio de Santa Catalina.\n- Parque urbano Príncipe Alfonso.\n- Actuación en plazas en Polígono Virgen de África.\n- Infraestructuras C/ Carlos Viñón y Monte Hacho.\n- Suministro e instalación de red semafórica.\n- Arreglo Iglesia de San José.\n- Renovación integral paseo de Benítez.\n- Dependencias anexas ermita de San Antonio.\n- Señalización vertical."
+        },
+        {
+          "officialId": "2",
+          "page": 27,
+          "endPage": 27,
+          "text": "Continuación\n- Parque Santa Catalina.\n- Parque urbano y aparcamiento de Los Rosales y Poblado Regulares.\n- Actuación integral en la barriada de Los Rosales.\n- Reformas en el Mercado Central.\n- Polideportivo Juan XXIII.\n- Nuevas dependencias públicas en plaza de Azcárate.",
+          "rawText": "Continuación\n- Parque Santa Catalina.\n- Parque urbano y aparcamiento de Los Rosales y Poblado Regulares.\n- Actuación integral en la barriada de Los Rosales.\n- Reformas en el Mercado Central.\n- Polideportivo Juan XXIII.\n- Nuevas dependencias públicas en plaza de Azcárate."
+        },
+        {
+          "officialId": "3",
+          "page": 28,
+          "endPage": 28,
+          "text": "Licitación\n- Puente en Arroyo Paneque.\n- Actuaciones de Rehabilitación de viviendas en Barriadas:\no General Carvajal.\no Juan XXIII.\no Príncipe Felipe.\n- Ampliación cementerio en Sidi Embarek.\n- Rehabilitación de la Catedral.\n- Adecuación litoral entorno Almadraba (Virgen del Carmen).\n- Trinitarios.\n- Convenio con Defensa para poner en valor la fortaleza del Hacho como\nrecurso turístico.",
+          "rawText": "Licitación\n- Puente en Arroyo Paneque.\n- Actuaciones de Rehabilitación de viviendas en Barriadas:\no General Carvajal.\no Juan XXIII.\no Príncipe Felipe.\n- Ampliación cementerio en Sidi Embarek.\n- Rehabilitación de la Catedral.\n- Adecuación litoral entorno Almadraba (Virgen del Carmen).\n- Trinitarios.\n- Convenio con Defensa para poner en valor la fortaleza del Hacho como\nrecurso turístico."
+        },
+        {
+          "officialId": "4",
+          "page": 28,
+          "endPage": 28,
+          "text": "Proyectos\n- Segunda fase del Paseo del Revellín.\n- Semi-peatonalización Remedios-Azcárate-Maestranza.\n- Segunda fase Marina Española.\n- Adecentamiento de la zona comercial en Hadú.\n- Rehabilitación integral/eficiencia energética polideportivo Campoamor.\n- Construcción de viviendas sociales en Huerta Téllez.\n- Mercado de Terrones.\n- Ampliación del 112.",
+          "rawText": "Proyectos\n- Segunda fase del Paseo del Revellín.\n- Semi-peatonalización Remedios-Azcárate-Maestranza.\n- Segunda fase Marina Española.\n- Adecentamiento de la zona comercial en Hadú.\n- Rehabilitación integral/eficiencia energética polideportivo Campoamor.\n- Construcción de viviendas sociales en Huerta Téllez.\n- Mercado de Terrones.\n- Ampliación del 112."
+        },
+        {
+          "officialId": "5",
+          "page": 28,
+          "endPage": 28,
+          "text": "Impulso de los proyectos financiados con Fondos Europeos",
+          "rawText": "Impulso de los proyectos financiados con Fondos Europeos"
+        }
+      ],
+      "sourceNote": "La medida figura en la página 5 y remite al anexo de las páginas 27–28. Se conservan sus cinco fases, que no se cuentan como medidas adicionales."
+    },
+    {
+      "officialId": "8",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Obras y barriadas",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-8",
+      "text": "Aprobación, previa audiencia a la Federación Provincial de Asociaciones de Vecinos, de un plan de barriadas para los próximos cuatro años (2024- 2027), que incluya, entre otras actuaciones, la rehabilitación de viviendas.",
+      "rawText": "Aprobación, previa audiencia a la Federación Provincial de Asociaciones\nde Vecinos, de un plan de barriadas para los próximos cuatro años (2024-\n2027), que incluya, entre otras actuaciones, la rehabilitación de viviendas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "9",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Obras y barriadas",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-9",
+      "text": "Efectuar el seguimiento periódico de los proyectos, en sus distintas fases, a través de un comité específico en el que participen las consejerías y áreas implicadas.",
+      "rawText": "Efectuar el seguimiento periódico de los proyectos, en sus distintas fases,\na través de un comité específico en el que participen las consejerías y áreas\nimplicadas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "10",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Obras y barriadas",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-10",
+      "text": "Evaluación y control de las inversiones y el funcionamiento de los servicios en las distintas barriadas de la ciudad.",
+      "rawText": "Evaluación y control de las inversiones y el funcionamiento de los\nservicios en las distintas barriadas de la ciudad.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "11",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Vivienda",
+      "page": 5,
+      "endPage": 5,
+      "id": "r-18-F-11",
+      "text": "Informe-propuesta sobre construcción de viviendas a precio tasado para alquiler o venta, mediante colaboración público-privada.",
+      "rawText": "Informe-propuesta sobre construcción de viviendas a precio tasado para\nalquiler o venta, mediante colaboración público-privada.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "12",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Vivienda",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-12",
+      "text": "Activar las gestiones para la cesión del suelo por el Ministerio de Defensa prevista en el Plan Integral para el Desarrollo Socioeconómico de Ceuta, aprobado por el Consejo de Ministros en octubre de 2022.",
+      "rawText": "Activar las gestiones para la cesión del suelo por el Ministerio de\nDefensa prevista en el Plan Integral para el Desarrollo Socioeconómico de\nCeuta, aprobado por el Consejo de Ministros en octubre de 2022.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "13",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Vivienda",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-13",
+      "text": "Instar y promover, en su caso, la ejecución de un plan estatal sobre construcción de viviendas sociales ajustado a las necesidades de nuestra ciudad.",
+      "rawText": "Instar y promover, en su caso, la ejecución de un plan estatal sobre\nconstrucción de viviendas sociales ajustado a las necesidades de nuestra\nciudad.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "14",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Vivienda",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-14",
+      "text": "Medidas para neutralizar el impacto negativo que en el sector inmobiliario y de la construcción producen, en comparación con el mercado peninsular, los altos precios de algunos suministros y la estructura tributaria del IPSI aplicable a la construcción de viviendas.",
+      "rawText": "Medidas para neutralizar el impacto negativo que en el sector\ninmobiliario y de la construcción producen, en comparación con el\nmercado peninsular, los altos precios de algunos suministros y la estructura\ntributaria del IPSI aplicable a la construcción de viviendas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "15",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-15",
+      "text": "Atender, de manera urgente, las necesidades de los servicios urbanos y medioambientales y, por tanto, mejorar la calidad de los mismos, mediante el aprovechamiento, racional y óptimo, de todos los recursos y medios susceptibles de ser empleados, sean estos propios, contratados o concertados. Entre los mencionados servicios urbanos y medioambientales se encuentran los relativos a la limpieza, la recogida de residuos, el área de Jardines, y la conservación y el mantenimiento de las vías y otros espacios públicos, los paseos, las playas, los montes, el mobiliario urbano, los senderos, los parques infantiles y biosaludables, las pistas deportivas descubiertas y otros de análoga naturaleza.",
+      "rawText": "Atender, de manera urgente, las necesidades de los servicios urbanos y\nmedioambientales y, por tanto, mejorar la calidad de los mismos, mediante\nel aprovechamiento, racional y óptimo, de todos los recursos y medios\nsusceptibles de ser empleados, sean estos propios, contratados o\nconcertados.\nEntre los mencionados servicios urbanos y medioambientales se encuentran\nlos relativos a la limpieza, la recogida de residuos, el área de Jardines, y la\nconservación y el mantenimiento de las vías y otros espacios públicos, los\npaseos, las playas, los montes, el mobiliario urbano, los senderos, los\nparques infantiles y biosaludables, las pistas deportivas descubiertas y otros\nde análoga naturaleza.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "16",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-16",
+      "text": "Propuesta sobre la estructura organizativa y de funcionamiento que, a corto plazo, se considere adecuada implantar para dar una respuesta satisfactoria y estable al referido objetivo de mantener y mejorar la calidad de los mencionados servicios urbanos y medioambientales.",
+      "rawText": "Propuesta sobre la estructura organizativa y de funcionamiento que, a\ncorto plazo, se considere adecuada implantar para dar una respuesta\nsatisfactoria y estable al referido objetivo de mantener y mejorar la calidad\nde los mencionados servicios urbanos y medioambientales.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "17",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-17",
+      "text": "Avanzar en el proyecto sobre construcción de una nueva base del servicio de limpieza y la renovación del parque móvil y maquinaria del mismo.",
+      "rawText": "Avanzar en el proyecto sobre construcción de una nueva base del\nservicio de limpieza y la renovación del parque móvil y maquinaria del\nmismo.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "18",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-18",
+      "text": "Informe sobre posibilidad, ventajas e inconvenientes de gestionar de manera directa el servicio de limpieza pública viaria y recogida de basuras.",
+      "rawText": "Informe sobre posibilidad, ventajas e inconvenientes de gestionar de\nmanera directa el servicio de limpieza pública viaria y recogida de basuras.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "19",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 6,
+      "endPage": 6,
+      "id": "r-18-F-19",
+      "text": "Repaso general del estado del alumbrado público y ornamental, al objeto de llevar a cabo las actuaciones correctoras que sean precisas, así como poner en marcha la plataforma de telegestión contratada.",
+      "rawText": "Repaso general del estado del alumbrado público y ornamental, al\nobjeto de llevar a cabo las actuaciones correctoras que sean precisas, así\ncomo poner en marcha la plataforma de telegestión contratada.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "20",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-20",
+      "text": "Propuesta sobre reducción de la factura energética de la planta desalinizadora, mediante la implantación de placas solares.",
+      "rawText": "Propuesta sobre reducción de la factura energética de la planta\ndesalinizadora, mediante la implantación de placas solares.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "21",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-21",
+      "text": "Programación del esfuerzo a realizar, durante la presente legislatura, para continuar con la mejora y renovación de las instalaciones y redes que atienden el ciclo integral del agua; entre las correspondientes actuaciones se contempla la remodelación del colector norte financiada con fondos europeos.",
+      "rawText": "Programación del esfuerzo a realizar, durante la presente legislatura,\npara continuar con la mejora y renovación de las instalaciones y redes que\natienden el ciclo integral del agua; entre las correspondientes actuaciones\nse contempla la remodelación del colector norte financiada con fondos\neuropeos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "22",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-22",
+      "text": "Solicitar a la Administración General del Estado la cesión de los embalses.",
+      "rawText": "Solicitar a la Administración General del Estado la cesión de los\nembalses.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "23",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-23",
+      "text": "Diseño de un plan plurianual para la mejora y regeneración de nuestras playas, que contemple los accesos a las mismas y la totalidad de los servicios afectados, así como, donde proceda, el aporte de arena apropiado y la construcción de arrecifes, un plan que debe estar concebido para la utilización y disfrute de las playas durante todo el año.",
+      "rawText": "Diseño de un plan plurianual para la mejora y regeneración de nuestras\nplayas, que contemple los accesos a las mismas y la totalidad de los\nservicios afectados, así como, donde proceda, el aporte de arena apropiado\ny la construcción de arrecifes, un plan que debe estar concebido para la\nutilización y disfrute de las playas durante todo el año.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "24",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-24",
+      "text": "Inicio de la rehabilitación del Parque de Santa Catalina.",
+      "rawText": "Inicio de la rehabilitación del Parque de Santa Catalina.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "25",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-25",
+      "text": "Aprobación del proyecto para el traslado y sustitución de la actual planta para el tratamiento de residuos por otra en la que la mayor parte de dichos residuos sea objeto de reciclaje y reutilización, lo que supondría, por una parte, reducir de manera drástica el transporte a la península y, por otra, aumentar el empleo local asociado al funcionamiento de la misma.",
+      "rawText": "Aprobación del proyecto para el traslado y sustitución de la actual\nplanta para el tratamiento de residuos por otra en la que la mayor parte de\ndichos residuos sea objeto de reciclaje y reutilización, lo que supondría, por\nuna parte, reducir de manera drástica el transporte a la península y, por\notra, aumentar el empleo local asociado al funcionamiento de la misma.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "26",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-26",
+      "text": "Concretar los proyectos de eficiencia energética en las instalaciones de la Ciudad de conformidad con las previsiones contenidas en el programa FEDER 2021-2027.",
+      "rawText": "Concretar los proyectos de eficiencia energética en las instalaciones de\nla Ciudad de conformidad con las previsiones contenidas en el programa\nFEDER 2021-2027.",
+      "sourceId": "ceuta-initial-programme-2023",
+      "sourceNote": "El número 26 se repite en el original de Fomento, en Medio Ambiente y Servicios Urbanos y en Transporte y Movilidad. Esta ficha corresponde a Medio Ambiente y Servicios Urbanos; se conservan las dos medidas con identidades internas distintas."
+    },
+    {
+      "officialId": "27",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Medio Ambiente y Servicios Urbanos",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-27",
+      "text": "Redactar el plan de reforestación de García Aldave.",
+      "rawText": "Redactar el plan de reforestación de García Aldave.",
+      "sourceId": "ceuta-initial-programme-2023",
+      "sourceNote": "El número 27 se repite en el original de Fomento, en Medio Ambiente y Servicios Urbanos y en Transporte y Movilidad. Esta ficha corresponde a Medio Ambiente y Servicios Urbanos; se conservan las dos medidas con identidades internas distintas."
+    },
+    {
+      "officialId": "26",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-28",
+      "text": "Diseño y programación de una actuación integral para la mejora y modernización del servicio de autobuses.",
+      "rawText": "Diseño y programación de una actuación integral para la mejora y\nmodernización del servicio de autobuses.",
+      "sourceId": "ceuta-initial-programme-2023",
+      "sourceNote": "El número 26 se repite en el original de Fomento, en Medio Ambiente y Servicios Urbanos y en Transporte y Movilidad. Esta ficha corresponde a Transporte y Movilidad; se conservan las dos medidas con identidades internas distintas."
+    },
+    {
+      "officialId": "27",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-29",
+      "text": "Atender las demandas del sector del taxi, con sometimiento a las capacidades presupuestarias, presentes y futuras.",
+      "rawText": "Atender las demandas del sector del taxi, con sometimiento a las\ncapacidades presupuestarias, presentes y futuras.",
+      "sourceId": "ceuta-initial-programme-2023",
+      "sourceNote": "El número 27 se repite en el original de Fomento, en Medio Ambiente y Servicios Urbanos y en Transporte y Movilidad. Esta ficha corresponde a Transporte y Movilidad; se conservan las dos medidas con identidades internas distintas."
+    },
+    {
+      "officialId": "28",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 7,
+      "endPage": 7,
+      "id": "r-18-F-30",
+      "text": "Informe-propuesta sobre medidas a adoptar para la eliminación de barreras y mejora de la accesibilidad, en colaboración con el CERMI.",
+      "rawText": "Informe-propuesta sobre medidas a adoptar para la eliminación de\nbarreras y mejora de la accesibilidad, en colaboración con el CERMI.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "29",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 8,
+      "endPage": 8,
+      "id": "r-18-F-31",
+      "text": "Concretar las necesidades de aparcamiento en cada uno de los distritos de nuestra ciudad, al objeto, en su caso, de llevar a cabo un nuevo Plan Aparca.",
+      "rawText": "Concretar las necesidades de aparcamiento en cada uno de los distritos\nde nuestra ciudad, al objeto, en su caso, de llevar a cabo un nuevo Plan\nAparca.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "30",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 8,
+      "endPage": 8,
+      "id": "r-18-F-32",
+      "text": "Iniciar los trámites para el traslado del depósito de Benzú.",
+      "rawText": "Iniciar los trámites para el traslado del depósito de Benzú.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "31",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 8,
+      "endPage": 8,
+      "id": "r-18-F-33",
+      "text": "Inicio de la redacción del proyecto de carril bici previsto en el programa del FEDER 2021-2027.",
+      "rawText": "Inicio de la redacción del proyecto de carril bici previsto en el\nprograma del FEDER 2021-2027.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "32",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 8,
+      "endPage": 8,
+      "id": "r-18-F-34",
+      "text": "Finalizar la redacción del Plan de Movilidad Urbana Sostenible.",
+      "rawText": "Finalizar la redacción del Plan de Movilidad Urbana Sostenible.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "33",
+      "topic": "Fomento, Medio Ambiente y Servicios Urbanos · Transporte y Movilidad",
+      "page": 8,
+      "endPage": 8,
+      "id": "r-18-F-35",
+      "text": "Impulsar la concesión de ayudas, financiadas con los fondos europeos para la recuperación, a empresas de transporte de mercancías.",
+      "rawText": "Impulsar la concesión de ayudas, financiadas con los fondos europeos\npara la recuperación, a empresas de transporte de mercancías.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "1",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Hacienda",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-1",
+      "text": "Aprobación de expediente de modificación de créditos en el vigente Presupuesto.",
+      "rawText": "Aprobación de expediente de modificación de créditos en el vigente\nPresupuesto.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "2",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Hacienda",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-2",
+      "text": "Proyecto de Presupuesto para 2024.",
+      "rawText": "Proyecto de Presupuesto para 2024.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "3",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Hacienda",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-3",
+      "text": "Propuesta sobre revisión de las ordenanzas fiscales a efectos de: facilitar el cumplimiento de sus obligaciones a particulares y empresas, avanzar en la digitalización de la gestión, y distribuir la carga tributaria de manera equitativa y sin perjuicio de la suficiencia financiera de la administración.",
+      "rawText": "Propuesta sobre revisión de las ordenanzas fiscales a efectos de: facilitar\nel cumplimiento de sus obligaciones a particulares y empresas, avanzar en\nla digitalización de la gestión, y distribuir la carga tributaria de manera\nequitativa y sin perjuicio de la suficiencia financiera de la administración.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "4",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Hacienda",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-4",
+      "text": "Agilizar los trámites de contratación, al objeto de reducir plazos e incorporar en los correspondientes pliegos, siempre de acuerdo con la ley, criterios objetivos que impidan las adjudicaciones por debajo del coste real de los servicios, obras o suministros.",
+      "rawText": "Agilizar los trámites de contratación, al objeto de reducir plazos e\nincorporar en los correspondientes pliegos, siempre de acuerdo con la ley,\ncriterios objetivos que impidan las adjudicaciones por debajo del coste real\nde los servicios, obras o suministros.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "5",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-5",
+      "text": "En relación con la implantación de empresas de base tecnológica, apoyar la culminación de los proyectos en curso y dar continuidad a los esfuerzos para captar nuevas inversiones, mediante, como viene haciéndose, la divulgación de los atractivos de Ceuta, prestar asesoramiento y orientación en cuanto a la localización y las ventajas fiscales de nuestra ciudad, y atender las necesidades de Formación Profesional, entre otras actuaciones.",
+      "rawText": "En relación con la implantación de empresas de base tecnológica, apoyar\nla culminación de los proyectos en curso y dar continuidad a los esfuerzos\npara captar nuevas inversiones, mediante, como viene haciéndose, la\ndivulgación de los atractivos de Ceuta, prestar asesoramiento y orientación\nen cuanto a la localización y las ventajas fiscales de nuestra ciudad, y\natender las necesidades de Formación Profesional, entre otras actuaciones.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "6",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-6",
+      "text": "Potenciar el centro tecnológico de El Ángulo; desarrollar el proyecto de Polo Digital; formalizar el protocolo sobre la nueva plataforma de fomento del emprendimiento digital; y poner en marcha las iniciativas de economía circular previstas en el programa FEDER 2021-2027.",
+      "rawText": "Potenciar el centro tecnológico de El Ángulo; desarrollar el proyecto de\nPolo Digital; formalizar el protocolo sobre la nueva plataforma de fomento\ndel emprendimiento digital; y poner en marcha las iniciativas de economía\ncircular previstas en el programa FEDER 2021-2027.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "7",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-7",
+      "text": "Solicitar al Gobierno de la nación la recuperación del sistema de bonificaciones en las cuotas a la Seguridad Social que estaba en vigor antes de la aprobación del Real Decreto-Ley 1/2023, de 10 de enero.",
+      "rawText": "Solicitar al Gobierno de la nación la recuperación del sistema de\nbonificaciones en las cuotas a la Seguridad Social que estaba en vigor antes\nde la aprobación del Real Decreto-Ley 1/2023, de 10 de enero.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "8",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 10,
+      "endPage": 10,
+      "id": "r-18-H-8",
+      "text": "Propuesta sobre actualización y perfeccionamiento del Régimen Económico y Fiscal especial para dotarlo de una mayor eficacia en relación con el objetivo de impulsar y acelerar el tránsito hacia el nuevo modelo económico al que se aspira.",
+      "rawText": "Propuesta sobre actualización y perfeccionamiento del Régimen\nEconómico y Fiscal especial para dotarlo de una mayor eficacia en relación\ncon el objetivo de impulsar y acelerar el tránsito hacia el nuevo modelo\neconómico al que se aspira.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "9",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 10,
+      "endPage": 11,
+      "id": "r-18-H-9",
+      "text": "Iniciar los trabajos para la revisión del IPSI en colaboración con la Consejería de Comercio, Turismo y Empleo: A corto plazo, mediante la revisión de los tipos de gravamen, de manera consensuada, en lo que proceda, con el Ministerio de Hacienda. A medio plazo, mediante la reforma de la normativa reguladora del impuesto, tanto legal como reglamentaria, al objeto de, por un lado, mejorar la competitividad del tejido productivo local y, por otro, apoyar el desarrollo de los sectores considerados estratégicos.",
+      "rawText": "Iniciar los trabajos para la revisión del IPSI en colaboración con la\nConsejería de Comercio, Turismo y Empleo:\nA corto plazo, mediante la revisión de los tipos de gravamen, de manera\nconsensuada, en lo que proceda, con el Ministerio de Hacienda.\nA medio plazo, mediante la reforma de la normativa reguladora del\nimpuesto, tanto legal como reglamentaria, al objeto de, por un lado,\nmejorar la competitividad del tejido productivo local y, por otro, apoyar el\ndesarrollo de los sectores considerados estratégicos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "10",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 11,
+      "endPage": 11,
+      "id": "r-18-H-10",
+      "text": "Evaluar los déficits estructurales que en la Hacienda local y autonómica originan los condicionantes de la extrapeninsularidad, el reducido tamaño, la alta densidad de población, el singular hecho fronterizo, las dificultades para el desarrollo económico, el plus de residencia que perciben los empleados públicos o la cobertura por la Ciudad de necesidades relacionadas con competencias que no le son propias, entre otros; y ello al objeto de solicitar del Estado el establecimiento de los mecanismos de compensación adecuados.",
+      "rawText": "Evaluar los déficits estructurales que en la Hacienda local y autonómica\noriginan los condicionantes de la extrapeninsularidad, el reducido tamaño,\nla alta densidad de población, el singular hecho fronterizo, las dificultades\npara el desarrollo económico, el plus de residencia que perciben los\nempleados públicos o la cobertura por la Ciudad de necesidades\nrelacionadas con competencias que no le son propias, entre otros; y ello al\nobjeto de solicitar del Estado el establecimiento de los mecanismos de\ncompensación adecuados.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "11",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 11,
+      "endPage": 11,
+      "id": "r-18-H-11",
+      "text": "Mantener un diálogo permanente con los representantes de las organizaciones empresariales y de los sindicatos.",
+      "rawText": "Mantener un diálogo permanente con los representantes de las\norganizaciones empresariales y de los sindicatos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "12",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 11,
+      "endPage": 11,
+      "id": "r-18-H-12",
+      "text": "Medidas para avanzar en la transformación digital en todos los ámbitos, prestando una especial atención a la administración, la enseñanza, el tejido productivo (PYMES y autónomos) y los mayores.",
+      "rawText": "Medidas para avanzar en la transformación digital en todos los ámbitos,\nprestando una especial atención a la administración, la enseñanza, el tejido\nproductivo (PYMES y autónomos) y los mayores.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "13",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 11,
+      "endPage": 11,
+      "id": "r-18-H-13",
+      "text": "Informe sobre el estado de ejecución de los fondos europeos, a efectos de acelerar y mejorar la correspondiente ejecución mediante la adopción de las iniciativas que sean pertinentes.",
+      "rawText": "Informe sobre el estado de ejecución de los fondos europeos, a efectos\nde acelerar y mejorar la correspondiente ejecución mediante la adopción de\nlas iniciativas que sean pertinentes.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "14",
+      "topic": "Hacienda, Transición Económica y Transformación Digital · Transición Económica y Transformación Digital",
+      "page": 11,
+      "endPage": 11,
+      "id": "r-18-H-14",
+      "text": "Fijar la posición acerca del estatus de Ceuta en la Unión Europea, en cuanto a las peculiaridades aduaneras, un tratamiento equiparable al de las regiones ultraperiféricas y la presencia en el Comité de las Regiones.",
+      "rawText": "Fijar la posición acerca del estatus de Ceuta en la Unión Europea, en\ncuanto a las peculiaridades aduaneras, un tratamiento equiparable al de las\nregiones ultraperiféricas y la presencia en el Comité de las Regiones.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "1",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-1",
+      "text": "Atender las necesidades de los centros patrocinados por la Ciudad (UNED, Conservatorio e Instituto de Idiomas) y de las tres bibliotecas.",
+      "rawText": "Atender las necesidades de los centros patrocinados por la Ciudad\n(UNED, Conservatorio e Instituto de Idiomas) y de las tres bibliotecas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "2",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-2",
+      "text": "Potenciar el convenio con la Universidad de Granada.",
+      "rawText": "Potenciar el convenio con la Universidad de Granada.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "3",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-3",
+      "text": "Establecer un servicio permanente y continuado de conservación de las instalaciones del Campus Universitario y aledaños.",
+      "rawText": "Establecer un servicio permanente y continuado de conservación de las\ninstalaciones del Campus Universitario y aledaños.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "4",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-4",
+      "text": "Diseñar un plan director sobre conservación de centros de Enseñanza Primaria, así como mejorar la calidad de la limpieza en los mismos.",
+      "rawText": "Diseñar un plan director sobre conservación de centros de Enseñanza\nPrimaria, así como mejorar la calidad de la limpieza en los mismos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "5",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-5",
+      "text": "Mantener el esfuerzo en becas, ayudas al estudio y el Programa sobre Gratuidad de Libros de Texto.",
+      "rawText": "Mantener el esfuerzo en becas, ayudas al estudio y el Programa sobre\nGratuidad de Libros de Texto.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "6",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-6",
+      "text": "Mejorar la calidad y cobertura de la Educación Especial, mediante, en su caso, la revisión del convenio suscrito con el Ministerio sobre refuerzo educativo, así como la posibilidad de financiar las correspondientes actuaciones a través del Fondo Social Europeo.",
+      "rawText": "Mejorar la calidad y cobertura de la Educación Especial, mediante, en su\ncaso, la revisión del convenio suscrito con el Ministerio sobre refuerzo\neducativo, así como la posibilidad de financiar las correspondientes\nactuaciones a través del Fondo Social Europeo.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "7",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-7",
+      "text": "Estudiar la viabilidad jurídica y económica de establecer, mediante concierto con el Ministerio, la cobertura del servicio de enfermería en los colegios.",
+      "rawText": "Estudiar la viabilidad jurídica y económica de establecer, mediante\nconcierto con el Ministerio, la cobertura del servicio de enfermería en los\ncolegios.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "8",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-8",
+      "text": "Diseño, en coordinación y colaboración con la Administración General del Estado, de un plan plurianual que tenga por objeto cubrir la demanda educativa de toda la población comprendida entre 0 y 3 años.",
+      "rawText": "Diseño, en coordinación y colaboración con la Administración General\ndel Estado, de un plan plurianual que tenga por objeto cubrir la demanda\neducativa de toda la población comprendida entre 0 y 3 años.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "9",
+      "topic": "Educación, Cultura, Juventud y Deporte · Educación",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-9",
+      "text": "Efectuar el seguimiento del proyecto sobre construcción de un nuevo centro educativo en la parcela del Brull, que acomete el Ministerio.",
+      "rawText": "Efectuar el seguimiento del proyecto sobre construcción de un nuevo\ncentro educativo en la parcela del Brull, que acomete el Ministerio.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "10",
+      "topic": "Educación, Cultura, Juventud y Deporte · Cultura",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-10",
+      "text": "Diseño de un plan para la rehabilitación y mantenimiento del patrimonio histórico y cultural, que contemple, entre otras actuaciones, las de la antigua cárcel de mujeres, el castillo de San Amaro, Fuerte Piniers, las murallas Meriníes (siguientes fases) y el antiguo almacén de Intendencia.",
+      "rawText": "Diseño de un plan para la rehabilitación y mantenimiento del\npatrimonio histórico y cultural, que contemple, entre otras actuaciones, las\nde la antigua cárcel de mujeres, el castillo de San Amaro, Fuerte Piniers,\nlas murallas Meriníes (siguientes fases) y el antiguo almacén de\nIntendencia.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "11",
+      "topic": "Educación, Cultura, Juventud y Deporte · Cultura",
+      "page": 13,
+      "endPage": 13,
+      "id": "r-18-E-11",
+      "text": "Promover la formalización de un convenio con el Ministerio de Defensa que tenga por objeto poner en valor el rico patrimonio histórico y militar de nuestra ciudad.",
+      "rawText": "Promover la formalización de un convenio con el Ministerio de\nDefensa que tenga por objeto poner en valor el rico patrimonio histórico y\nmilitar de nuestra ciudad.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "12",
+      "topic": "Educación, Cultura, Juventud y Deporte · Cultura",
+      "page": 14,
+      "endPage": 14,
+      "id": "r-18-E-12",
+      "text": "Ampliar la oferta de la programación cultural, a través, en particular, de fórmulas de colaboración público-privada.",
+      "rawText": "Ampliar la oferta de la programación cultural, a través, en particular, de\nfórmulas de colaboración público-privada.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "13",
+      "topic": "Educación, Cultura, Juventud y Deporte · Cultura",
+      "page": 14,
+      "endPage": 14,
+      "id": "r-18-E-13",
+      "text": "Propuesta para potenciar nuestras fiestas y tradiciones.",
+      "rawText": "Propuesta para potenciar nuestras fiestas y tradiciones.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "14",
+      "topic": "Educación, Cultura, Juventud y Deporte · Cultura",
+      "page": 14,
+      "endPage": 14,
+      "id": "r-18-E-14",
+      "text": "Fomentar el respeto, comprensión y aprecio de la pluralidad cultural de nuestra población, de acuerdo con lo que al respecto se establece en nuestro Estatuto de Autonomía, a través de la Fundación Premio Convivencia, cuya denominación debería ser sustituida por la de, a título de sugerencia, ‘Ciudad de la Convivencia’, al objeto de responder a las actividades que la misma lleva a cabo.",
+      "rawText": "Fomentar el respeto, comprensión y aprecio de la pluralidad cultural de\nnuestra población, de acuerdo con lo que al respecto se establece en nuestro\nEstatuto de Autonomía, a través de la Fundación Premio Convivencia, cuya\ndenominación debería ser sustituida por la de, a título de sugerencia,\n‘Ciudad de la Convivencia’, al objeto de responder a las actividades que la\nmisma lleva a cabo.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "15",
+      "topic": "Educación, Cultura, Juventud y Deporte · Juventud",
+      "page": 14,
+      "endPage": 14,
+      "id": "r-18-E-15",
+      "text": "Atender las demandas del Consejo de la Juventud.",
+      "rawText": "Atender las demandas del Consejo de la Juventud.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "16",
+      "topic": "Educación, Cultura, Juventud y Deporte · Deporte",
+      "page": 14,
+      "endPage": 14,
+      "id": "r-18-E-16",
+      "text": "Propuesta sobre reforma de la organización y funcionamiento del ICD, incluidos sus estatutos, al objeto de cumplir, entre otros, con los siguientes objetivos: - Mayor protagonismo del tejido deportivo y, en general, de la sociedad civil de Ceuta en la gestión del organismo. - Fomentar la práctica del deporte como actividad de utilidad pública dada su función de escuela de valores y generador de hábitos de vida saludable; en definitiva, un derecho de todos. - Favorecer la tecnificación y profesionalización de las escuelas deportivas. - Mejorar el estado de conservación de las instalaciones, así como optimizar su aprovechamiento. - Facilitar el cumplimiento de las obligaciones de justificación de las ayudas por parte de clubes y federaciones. - Mantener, y en su caso, aumentar el calendario de pruebas y eventos, en particular, de aquellos que atraen visitantes a nuestra ciudad, participantes y acompañantes. Como ejemplo, la Cuna de la Legión. - Aprovechar el deporte para la promoción publicitaria de nuestra ciudad, satisfacer demanda de ocio y ampliar los espacios de encuentro.",
+      "rawText": "Propuesta sobre reforma de la organización y funcionamiento del ICD,\nincluidos sus estatutos, al objeto de cumplir, entre otros, con los siguientes\nobjetivos:\n- Mayor protagonismo del tejido deportivo y, en general, de la sociedad\ncivil de Ceuta en la gestión del organismo.\n- Fomentar la práctica del deporte como actividad de utilidad pública dada\nsu función de escuela de valores y generador de hábitos de vida saludable;\nen definitiva, un derecho de todos.\n- Favorecer la tecnificación y profesionalización de las escuelas deportivas.\n- Mejorar el estado de conservación de las instalaciones, así como\noptimizar su aprovechamiento.\n- Facilitar el cumplimiento de las obligaciones de justificación de las\nayudas por parte de clubes y federaciones.\n- Mantener, y en su caso, aumentar el calendario de pruebas y eventos, en\nparticular, de aquellos que atraen visitantes a nuestra ciudad, participantes\ny acompañantes. Como ejemplo, la Cuna de la Legión.\n- Aprovechar el deporte para la promoción publicitaria de nuestra ciudad,\nsatisfacer demanda de ocio y ampliar los espacios de encuentro.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "17",
+      "topic": "Educación, Cultura, Juventud y Deporte · Deporte",
+      "page": 14,
+      "endPage": 14,
+      "id": "r-18-E-17",
+      "text": "Diseño de un plan director del deporte de Ceuta.",
+      "rawText": "Diseño de un plan director del deporte de Ceuta.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "18",
+      "topic": "Educación, Cultura, Juventud y Deporte · Deporte",
+      "page": 15,
+      "endPage": 15,
+      "id": "r-18-E-18",
+      "text": "Inicio de los trámites para acometer la segunda fase de la pista de atletismo, ampliando, con esta finalidad, las disciplinas y actividades que tendrán cabida en la misma.",
+      "rawText": "Inicio de los trámites para acometer la segunda fase de la pista de\natletismo, ampliando, con esta finalidad, las disciplinas y actividades que\ntendrán cabida en la misma.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "19",
+      "topic": "Educación, Cultura, Juventud y Deporte · Deporte",
+      "page": 15,
+      "endPage": 15,
+      "id": "r-18-E-19",
+      "text": "Diseño del proyecto sobre rehabilitación integral del parque Juan Carlos I.",
+      "rawText": "Diseño del proyecto sobre rehabilitación integral del parque Juan\nCarlos I.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "1",
+      "topic": "Presidencia y Gobernación · Presidencia",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-1",
+      "text": "Seguimiento, en coordinación con la Presidencia de la Ciudad, del Plan Integral para el Desarrollo Socioeconómico Ceuta antes mencionado, y de la medida que, para la protección de nuestras dos ciudades autónomas, contempla la Estrategia de Seguridad Nacional.",
+      "rawText": "Seguimiento, en coordinación con la Presidencia de la Ciudad, del Plan\nIntegral para el Desarrollo Socioeconómico Ceuta antes mencionado, y de\nla medida que, para la protección de nuestras dos ciudades autónomas,\ncontempla la Estrategia de Seguridad Nacional.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "2",
+      "topic": "Presidencia y Gobernación · Presidencia",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-2",
+      "text": "Insistir en la necesidad de exigir visado en la frontera del Tarajal para el acceso a España de las personas no residentes en el espacio Schengen.",
+      "rawText": "Insistir en la necesidad de exigir visado en la frontera del Tarajal para el\nacceso a España de las personas no residentes en el espacio Schengen.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "3",
+      "topic": "Presidencia y Gobernación · Presidencia",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-3",
+      "text": "Efectuar el correspondiente seguimiento del Padrón de Habitantes.",
+      "rawText": "Efectuar el correspondiente seguimiento del Padrón de Habitantes.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "4",
+      "topic": "Presidencia y Gobernación · Presidencia",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-4",
+      "text": "Cuidar las relaciones institucionales, de manera especial en todo aquello que concierne a los asuntos considerados de interés prioritario o estratégico, y siempre en coordinación y colaboración con la Presidencia de la Ciudad y las consejerías competentes.",
+      "rawText": "Cuidar las relaciones institucionales, de manera especial en todo aquello\nque concierne a los asuntos considerados de interés prioritario o\nestratégico, y siempre en coordinación y colaboración con la Presidencia de\nla Ciudad y las consejerías competentes.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "5",
+      "topic": "Presidencia y Gobernación · Recursos Humanos y Administración Pública",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-5",
+      "text": "Iniciar los trabajos para la elaboración de la RPT.",
+      "rawText": "Iniciar los trabajos para la elaboración de la RPT.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "6",
+      "topic": "Presidencia y Gobernación · Recursos Humanos y Administración Pública",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-6",
+      "text": "Resolver, de manera consensuada con los sindicatos, los asuntos pendientes en el ámbito de las condiciones laborales de los empleados públicos de la Ciudad, teniendo como límite temporal para dicha resolución el próximo ejercicio de 2024.",
+      "rawText": "Resolver, de manera consensuada con los sindicatos, los asuntos\npendientes en el ámbito de las condiciones laborales de los empleados\npúblicos de la Ciudad, teniendo como límite temporal para dicha resolución\nel próximo ejercicio de 2024.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "7",
+      "topic": "Presidencia y Gobernación · Recursos Humanos y Administración Pública",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-7",
+      "text": "Renovar los Consejos de Administración de las sociedades mercantiles y las Juntas Rectoras de los organismos autónomos.",
+      "rawText": "Renovar los Consejos de Administración de las sociedades mercantiles y\nlas Juntas Rectoras de los organismos autónomos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "8",
+      "topic": "Presidencia y Gobernación · Recursos Humanos y Administración Pública",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-8",
+      "text": "Informe-propuesta sobre modificación de los estatutos de las sociedades dependientes, a efectos de, por un lado, su homogeneización en lo que proceda y, por otro, la consideración de medio propio para, por esta vía, potenciar sus capacidades en cuanto a la cobertura de necesidades relacionadas con los distintos servicios.",
+      "rawText": "Informe-propuesta sobre modificación de los estatutos de las sociedades\ndependientes, a efectos de, por un lado, su homogeneización en lo que\nproceda y, por otro, la consideración de medio propio para, por esta vía,\npotenciar sus capacidades en cuanto a la cobertura de necesidades\nrelacionadas con los distintos servicios.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "9",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 17,
+      "endPage": 17,
+      "id": "r-18-P-9",
+      "text": "Programación, mediante un plan plurianual, cifrado y sistemático, de la renovación del parque móvil, equipos, material y vestuario de la Policía Local y de Bomberos.",
+      "rawText": "Programación, mediante un plan plurianual, cifrado y sistemático, de la\nrenovación del parque móvil, equipos, material y vestuario de la Policía\nLocal y de Bomberos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "10",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-10",
+      "text": "Medidas necesarias para la digitalización de los servicios del área de Gobernación.",
+      "rawText": "Medidas necesarias para la digitalización de los servicios del área de\nGobernación.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "11",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-11",
+      "text": "Aprobación de los nuevos reglamentos de la Policía Local y de Bomberos.",
+      "rawText": "Aprobación de los nuevos reglamentos de la Policía Local y de\nBomberos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "12",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-12",
+      "text": "Informe-propuesta sobre las plantillas necesarias y organigrama de los servicios de Policía Local y de Bomberos, a efectos de acometer, durante el transcurso de la legislatura, las correspondientes actuaciones.",
+      "rawText": "Informe-propuesta sobre las plantillas necesarias y organigrama de los\nservicios de Policía Local y de Bomberos, a efectos de acometer, durante el\ntranscurso de la legislatura, las correspondientes actuaciones.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "13",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-13",
+      "text": "Diseño de un plan para la mejora y modernización del 112 y otros recursos dedicados a las emergencias.",
+      "rawText": "Diseño de un plan para la mejora y modernización del 112 y otros\nrecursos dedicados a las emergencias.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "14",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-14",
+      "text": "Refuerzo de la colaboración con los voluntarios de Protección Civil.",
+      "rawText": "Refuerzo de la colaboración con los voluntarios de Protección Civil.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "15",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-15",
+      "text": "Atender las necesidades del servicio de Parque Móvil.",
+      "rawText": "Atender las necesidades del servicio de Parque Móvil.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "16",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-16",
+      "text": "Medidas para mejorar la seguridad vial.",
+      "rawText": "Medidas para mejorar la seguridad vial.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "17",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-17",
+      "text": "Actualización diaria de la información sobre vehículos abandonados en la vía pública o que, por diferentes causas, se han convertido en chatarra.",
+      "rawText": "Actualización diaria de la información sobre vehículos abandonados en\nla vía pública o que, por diferentes causas, se han convertido en chatarra.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "18",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-18",
+      "text": "Agilizar los trámites y coordinar las tareas entre servicios y áreas para lograr la retirada inmediata de los vehículos abandonados.",
+      "rawText": "Agilizar los trámites y coordinar las tareas entre servicios y áreas para\nlograr la retirada inmediata de los vehículos abandonados.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "19",
+      "topic": "Presidencia y Gobernación · Gobernación",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-19",
+      "text": "Intensificar los esfuerzos en combatir la quema de contenedores y vehículos.",
+      "rawText": "Intensificar los esfuerzos en combatir la quema de contenedores y\nvehículos.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "20",
+      "topic": "Presidencia y Gobernación · Menores",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-20",
+      "text": "Avanzar en el proyecto sobre construcción de un nuevo centro con capacidad para acoger a 100 menores.",
+      "rawText": "Avanzar en el proyecto sobre construcción de un nuevo centro con\ncapacidad para acoger a 100 menores.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "21",
+      "topic": "Presidencia y Gobernación · Menores",
+      "page": 18,
+      "endPage": 18,
+      "id": "r-18-P-21",
+      "text": "Insistir ante la Administración General del Estado en la necesidad de establecer planes de contingencia para dar una respuesta inmediata a situaciones en las que, por diferentes causas, se desborde la capacidad de acogida del centro de realojo existente.",
+      "rawText": "Insistir ante la Administración General del Estado en la necesidad de\nestablecer planes de contingencia para dar una respuesta inmediata a\nsituaciones en las que, por diferentes causas, se desborde la capacidad de\nacogida del centro de realojo existente.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "1",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-1",
+      "text": "Medidas encaminadas a dar una mayor cobertura a los programas de prevención del cáncer y de vacunación.",
+      "rawText": "Medidas encaminadas a dar una mayor cobertura a los programas de\nprevención del cáncer y de vacunación.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "2",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-2",
+      "text": "Atender, de manera prioritaria, las demandas de las asociaciones de lucha contra el cáncer y de mujeres mastectomizadas.",
+      "rawText": "Atender, de manera prioritaria, las demandas de las asociaciones de\nlucha contra el cáncer y de mujeres mastectomizadas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "3",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-3",
+      "text": "Intensificar los esfuerzos en la realización de campañas de prevención de la drogodependencia y conductas adictivas.",
+      "rawText": "Intensificar los esfuerzos en la realización de campañas de prevención de\nla drogodependencia y conductas adictivas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "4",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-4",
+      "text": "Aumentar las frecuencias de las actuaciones de desratización y desinsectación.",
+      "rawText": "Aumentar las frecuencias de las actuaciones de desratización y\ndesinsectación.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "5",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-5",
+      "text": "Avanzar en el proyecto sobre construcción de un nuevo centro zoosanitario.",
+      "rawText": "Avanzar en el proyecto sobre construcción de un nuevo centro\nzoosanitario.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "6",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-6",
+      "text": "Mejorar los convenios de colaboración con las sociedades protectoras de animales.",
+      "rawText": "Mejorar los convenios de colaboración con las sociedades protectoras de\nanimales.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "7",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-7",
+      "text": "Encargo del proyecto sobre nueva sede del área de Sanidad.",
+      "rawText": "Encargo del proyecto sobre nueva sede del área de Sanidad.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "8",
+      "topic": "Sanidad y Servicios Sociales · Sanidad",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-8",
+      "text": "Puesta en marcha del programa de salud bucodental para niños de 6 a 15 años.",
+      "rawText": "Puesta en marcha del programa de salud bucodental para niños de 6 a 15\naños.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "9",
+      "topic": "Sanidad y Servicios Sociales · Cementerios",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-9",
+      "text": "Aumentar la capacidad, adecentar y mantener la conservación de nuestros cementerios durante los doce meses del año.",
+      "rawText": "Aumentar la capacidad, adecentar y mantener la conservación de\nnuestros cementerios durante los doce meses del año.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "10",
+      "topic": "Sanidad y Servicios Sociales · Cementerios",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-10",
+      "text": "Culminación del proyecto sobre renovación y mejora de las instalaciones de los servicios forense y de incineración.",
+      "rawText": "Culminación del proyecto sobre renovación y mejora de las\ninstalaciones de los servicios forense y de incineración.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "11",
+      "topic": "Sanidad y Servicios Sociales · Mataderos",
+      "page": 20,
+      "endPage": 20,
+      "id": "r-18-S-11",
+      "text": "Consolidar la ampliación de las capacidades del matadero durante la celebración de la Fiesta del Sacrificio.",
+      "rawText": "Consolidar la ampliación de las capacidades del matadero durante la\ncelebración de la Fiesta del Sacrificio.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "12",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-12",
+      "text": "Propuesta para mejorar la eficacia de los recursos empleados en combatir la pobreza y la exclusión social, concretando, en lo que proceda, y aplicando las medidas encaminadas a: - Satisfacer de manera inmediata las ayudas que tengan por objeto socorrer situaciones de emergencia, como es el caso de la mayor parte de las que se conceden al amparo del Programa de Prestaciones Básicas. - Realizar una atención y seguimiento personalizado a las personas y familias acogidas a los programas del IMIS y de Alojamiento Alternativo. - Reducir, de manera drástica, la carga administrativa o burocrática, lo que permitiría, a su vez, disminuir los tiempos de espera; dicho de otra forma: un menor número de expedientes por usuario y para un determinado periodo, sin perjuicio de mantener, o incluso aumentar, el montante total de la ayuda que este recibe. - Revisar a estos efectos los reglamentos y procedimientos del área.",
+      "rawText": "Propuesta para mejorar la eficacia de los recursos empleados en\ncombatir la pobreza y la exclusión social, concretando, en lo que proceda, y\naplicando las medidas encaminadas a:\n- Satisfacer de manera inmediata las ayudas que tengan por objeto socorrer\nsituaciones de emergencia, como es el caso de la mayor parte de las que se\nconceden al amparo del Programa de Prestaciones Básicas.\n- Realizar una atención y seguimiento personalizado a las personas y\nfamilias acogidas a los programas del IMIS y de Alojamiento Alternativo.\n- Reducir, de manera drástica, la carga administrativa o burocrática, lo que\npermitiría, a su vez, disminuir los tiempos de espera; dicho de otra forma:\nun menor número de expedientes por usuario y para un determinado\nperiodo, sin perjuicio de mantener, o incluso aumentar, el montante total de\nla ayuda que este recibe.\n- Revisar a estos efectos los reglamentos y procedimientos del área.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "13",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-13",
+      "text": "Intensificar los esfuerzos para evitar los casos de pobreza crónica.",
+      "rawText": "Intensificar los esfuerzos para evitar los casos de pobreza crónica.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "14",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-14",
+      "text": "Avanzar en los proyectos sobre construcción de un albergue y de un comedor para personas vulnerables.",
+      "rawText": "Avanzar en los proyectos sobre construcción de un albergue y de un\ncomedor para personas vulnerables.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "15",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-15",
+      "text": "Atender las demandas de las entidades dedicadas a la discapacidad, la dependencia y los trastornos del comportamiento.",
+      "rawText": "Atender las demandas de las entidades dedicadas a la discapacidad, la\ndependencia y los trastornos del comportamiento.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "16",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-16",
+      "text": "Impulsar el proyecto sobre ampliación de la Residencia de Mayores de Nuestra Señora de África.",
+      "rawText": "Impulsar el proyecto sobre ampliación de la Residencia de Mayores de\nNuestra Señora de África.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "17",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-17",
+      "text": "Ampliar los recursos destinados para asistencia domiciliaria. la teleasistencia y los programas de envejecimiento activo que se llevan a cabo en los centros de mayores.",
+      "rawText": "Ampliar los recursos destinados para asistencia domiciliaria. la\nteleasistencia y los programas de envejecimiento activo que se llevan a\ncabo en los centros de mayores.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "18",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-18",
+      "text": "Realización de controles periódicos sobre la calidad de los servicios en las residencias de mayores.",
+      "rawText": "Realización de controles periódicos sobre la calidad de los servicios en\nlas residencias de mayores.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "19",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 21,
+      "id": "r-18-S-19",
+      "text": "Dar carácter transversal y prioritario a la lucha contra la violencia de género, potenciando, a estos efectos, el CAM.",
+      "rawText": "Dar carácter transversal y prioritario a la lucha contra la violencia de\ngénero, potenciando, a estos efectos, el CAM.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "20",
+      "topic": "Sanidad y Servicios Sociales · Servicios Sociales",
+      "page": 21,
+      "endPage": 22,
+      "id": "r-18-S-20",
+      "text": "Diseño de un plan integral para atender, contando con la financiación de la Administración General del Estado, la singular problemática de las barriadas periféricas en cuanto a niveles de precariedad social, índices de fracaso escolar y tasas de paro, sobre todo, juvenil.",
+      "rawText": "Diseño de un plan integral para atender, contando con la financiación\nde la Administración General del Estado, la singular problemática de las\nbarriadas periféricas en cuanto a niveles de precariedad social, índices de\nfracaso escolar y tasas de paro, sobre todo, juvenil.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "1",
+      "topic": "Comercio, Turismo y Empleo · Comercio",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-1",
+      "text": "Informe sobre la situación del comercio en nuestra ciudad: tamaño de la oferta; potencial de demanda y empleo en comparación con otras localidades de población similar a la de Ceuta; dificultades de carácter estructural; las grandes marcas; el comercio de barrio, entre otros asuntos de interés.",
+      "rawText": "Informe sobre la situación del comercio en nuestra ciudad: tamaño de la\noferta; potencial de demanda y empleo en comparación con otras\nlocalidades de población similar a la de Ceuta; dificultades de carácter\nestructural; las grandes marcas; el comercio de barrio, entre otros asuntos\nde interés.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "2",
+      "topic": "Comercio, Turismo y Empleo · Comercio",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-2",
+      "text": "Propuesta, en su caso, sobre las medidas que, en el ámbito aduanero, deberían ser adoptadas para remover los obstáculos que, en la actualidad, impiden, por un lado, que los productos originarios de Ceuta accedan al mercado comunitario en régimen de libre práctica y, por otro, posibilitar la devolución de mercancías previamente importadas.",
+      "rawText": "Propuesta, en su caso, sobre las medidas que, en el ámbito aduanero,\ndeberían ser adoptadas para remover los obstáculos que, en la actualidad,\nimpiden, por un lado, que los productos originarios de Ceuta accedan al\nmercado comunitario en régimen de libre práctica y, por otro, posibilitar la\ndevolución de mercancías previamente importadas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "3",
+      "topic": "Comercio, Turismo y Empleo · Comercio",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-3",
+      "text": "Explorar la posibilidad de implantación en nuestra ciudad de plataformas logísticas de comercio online con destino al resto de Europa, teniendo en cuenta a este respecto las ventajas fiscales que ofrece el REF.",
+      "rawText": "Explorar la posibilidad de implantación en nuestra ciudad de plataformas\nlogísticas de comercio online con destino al resto de Europa, teniendo en\ncuenta a este respecto las ventajas fiscales que ofrece el REF.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "4",
+      "topic": "Comercio, Turismo y Empleo · Comercio",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-4",
+      "text": "Plantear, de acuerdo con el sector, un paquete de medidas de apoyo al comercio local y para el mantenimiento del empleo, diferenciando las que sean competencia de la Ciudad de aquellas otras que deban ser atendidas por la Administración General del Estado.",
+      "rawText": "Plantear, de acuerdo con el sector, un paquete de medidas de apoyo al\ncomercio local y para el mantenimiento del empleo, diferenciando las que\nsean competencia de la Ciudad de aquellas otras que deban ser atendidas\npor la Administración General del Estado.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "5",
+      "topic": "Comercio, Turismo y Empleo · Hostelería",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-5",
+      "text": "Abordar, previa audiencia a los empresarios y autónomos, una solución estable a la problemática de las terrazas en nuestra ciudad, teniendo en cuenta los distintos factores que inciden en la misma.",
+      "rawText": "Abordar, previa audiencia a los empresarios y autónomos, una solución\nestable a la problemática de las terrazas en nuestra ciudad, teniendo en\ncuenta los distintos factores que inciden en la misma.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "6",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-6",
+      "text": "Mantener, y en lo posible aumentar, los incentivos para la atracción de visitantes a nuestra ciudad, tanto en lo que hace referencia al precio del transporte como a la estancia.",
+      "rawText": "Mantener, y en lo posible aumentar, los incentivos para la atracción de\nvisitantes a nuestra ciudad, tanto en lo que hace referencia al precio del\ntransporte como a la estancia.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "7",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-7",
+      "text": "Continuar apostando, en colaboración con la Autoridad Portuaria, por el segmento de cruceros.",
+      "rawText": "Continuar apostando, en colaboración con la Autoridad Portuaria, por el\nsegmento de cruceros.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "8",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 24,
+      "endPage": 24,
+      "id": "r-18-C-8",
+      "text": "Consolidar y ampliar la programación de eventos deportivos, culturales, profesionales o de cualquier otra índole a celebrar en Ceuta.",
+      "rawText": "Consolidar y ampliar la programación de eventos deportivos, culturales,\nprofesionales o de cualquier otra índole a celebrar en Ceuta.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "9",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 24,
+      "endPage": 25,
+      "id": "r-18-C-9",
+      "text": "En relación con la situación del hotel de la sociedad Puerta de África, procurar, a través de las medidas que se consideren adecuadas, la sostenibilidad económica y financiera de dicho establecimiento, realizar las inversiones precisas y mantener los puestos de trabajo.",
+      "rawText": "En relación con la situación del hotel de la sociedad Puerta de África,\nprocurar, a través de las medidas que se consideren adecuadas, la\nsostenibilidad económica y financiera de dicho establecimiento, realizar las\ninversiones precisas y mantener los puestos de trabajo.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "10",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-10",
+      "text": "Estudiar, y en su caso, promover la construcción de un nuevo puerto deportivo, solicitando, a estos efectos, la correspondiente concesión demanial a la Autoridad Portuaria.",
+      "rawText": "Estudiar, y en su caso, promover la construcción de un nuevo puerto\ndeportivo, solicitando, a estos efectos, la correspondiente concesión\ndemanial a la Autoridad Portuaria.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "11",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-11",
+      "text": "Aprobar el proyecto sobre adecentamiento de los bajos del Mercado Central para la localización de actividades náuticodeportivas.",
+      "rawText": "Aprobar el proyecto sobre adecentamiento de los bajos del Mercado\nCentral para la localización de actividades náuticodeportivas.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "12",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-12",
+      "text": "Proponer al Gobierno de la nación la revisión del contrato de servicio público del transporte marítimo, así como cualesquiera otras medidas sean necesarias para abaratar, sin coste para el Estado, los precios del transporte marítimo.",
+      "rawText": "Proponer al Gobierno de la nación la revisión del contrato de servicio\npúblico del transporte marítimo, así como cualesquiera otras medidas sean\nnecesarias para abaratar, sin coste para el Estado, los precios del transporte\nmarítimo.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "13",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-13",
+      "text": "Apoyar la consolidación de la conexión aérea con la península.",
+      "rawText": "Apoyar la consolidación de la conexión aérea con la península.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "14",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-14",
+      "text": "Reiterar la necesidad de mejorar y ampliar las ayudas al transporte de mercancías con origen o destino la península.",
+      "rawText": "Reiterar la necesidad de mejorar y ampliar las ayudas al transporte de\nmercancías con origen o destino la península.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "15",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-15",
+      "text": "Diseño del proyecto relativo a la rehabilitación integral del Pueblo Marinero.",
+      "rawText": "Diseño del proyecto relativo a la rehabilitación integral del Pueblo\nMarinero.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "16",
+      "topic": "Comercio, Turismo y Empleo · Turismo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-16",
+      "text": "Intensificar los esfuerzos para la puesta en valor de la actividad artesanal del salazón.",
+      "rawText": "Intensificar los esfuerzos para la puesta en valor de la actividad\nartesanal del salazón.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "17",
+      "topic": "Comercio, Turismo y Empleo · Empleo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-17",
+      "text": "En relación con las políticas activas de empleo, plantear a la administración competente las reformas que sean precisas para que las mismas atiendan las siguientes prioridades: - Facilitar los itinerarios de inserción laboral. - No disuadir la aceptación de puestos de trabajo en la empresa privada. - Incorporar la Formación Profesional como un elemento fundamental. - Contar con las empresas en la ejecución de los planes de empleo.",
+      "rawText": "En relación con las políticas activas de empleo, plantear a la\nadministración competente las reformas que sean precisas para que las\nmismas atiendan las siguientes prioridades:\n- Facilitar los itinerarios de inserción laboral.\n- No disuadir la aceptación de puestos de trabajo en la empresa privada.\n- Incorporar la Formación Profesional como un elemento fundamental.\n- Contar con las empresas en la ejecución de los planes de empleo.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "18",
+      "topic": "Comercio, Turismo y Empleo · Empleo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-18",
+      "text": "Informe sobre los puestos de trabajo que no se cubren en nuestra ciudad por falta de formación.",
+      "rawText": "Informe sobre los puestos de trabajo que no se cubren en nuestra ciudad\npor falta de formación.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "19",
+      "topic": "Comercio, Turismo y Empleo · Empleo",
+      "page": 25,
+      "endPage": 25,
+      "id": "r-18-C-19",
+      "text": "Apoyo al proyecto denominado ‘Ciudad de la Formación Profesional’.",
+      "rawText": "Apoyo al proyecto denominado ‘Ciudad de la Formación Profesional’.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "20",
+      "topic": "Comercio, Turismo y Empleo · Mercados",
+      "page": 26,
+      "endPage": 26,
+      "id": "r-18-C-20",
+      "text": "Concreción en sus aspectos técnicos, económicos, jurídicos y urbanísticos, de la actuación que tenga por objeto satisfacer la antigua aspiración de convertir el Mercado Central en un establecimiento de referencia comercial, gastronómica, turística y cultural.",
+      "rawText": "Concreción en sus aspectos técnicos, económicos, jurídicos y\nurbanísticos, de la actuación que tenga por objeto satisfacer la antigua\naspiración de convertir el Mercado Central en un establecimiento de\nreferencia comercial, gastronómica, turística y cultural.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "21",
+      "topic": "Comercio, Turismo y Empleo · Mercados",
+      "page": 26,
+      "endPage": 26,
+      "id": "r-18-C-21",
+      "text": "Poner en marcha en el resto de mercados actuaciones específicas de rehabilitación, modernización y, en su caso, reutilización parcial o total.",
+      "rawText": "Poner en marcha en el resto de mercados actuaciones específicas de\nrehabilitación, modernización y, en su caso, reutilización parcial o total.",
+      "sourceId": "ceuta-initial-programme-2023"
+    },
+    {
+      "officialId": "22",
+      "topic": "Comercio, Turismo y Empleo · Mercados",
+      "page": 26,
+      "endPage": 26,
+      "id": "r-18-C-22",
+      "text": "Avanzar en el proyecto sobre construcción de un nuevo mercado en la barriada de Terrones.",
+      "rawText": "Avanzar en el proyecto sobre construcción de un nuevo mercado en la\nbarriada de Terrones.",
+      "sourceId": "ceuta-initial-programme-2023"
+    }
+  ]
+}

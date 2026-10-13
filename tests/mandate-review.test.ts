@@ -5,14 +5,16 @@ import { getMandateSnapshot } from "@/lib/mandate/data";
 import { validateMandateSnapshot } from "@/lib/mandate/validate";
 import { answerMandate, boundMandateAnswer } from "@/lib/mandate/answer";
 
-describe("revisión de las 30 promesas y efecto práctico", () => {
+describe("revisión de las 46 promesas y efecto práctico", () => {
   it("cierra las 22 primeras revisiones sin perder las 8 anteriores ni llamar cumplimiento a cobertura", () => {
-    expect(collection.commitments).toHaveLength(30);
-    expect(new Set(collection.commitments.map(item => item.officialId)).size).toBe(30);
-    expect(collection.commitments.filter(item => item.review.history[0].status === "sin_verificar")).toHaveLength(22);
+    expect(collection.commitments).toHaveLength(46);
+    expect(new Set(collection.commitments.map(item => item.officialId)).size).toBe(46);
+    expect(collection.commitments.filter(item => item.review.history[0]?.status === "sin_verificar")).toHaveLength(22);
     for (const item of collection.commitments) {
-      expect(item.review.history[0].asOf).toBe("2026-10-07");
-      expect(item.review.asOf).toBe("2026-10-10");
+      if (item.review.history.length) expect(item.review.history[0].asOf).toBe("2026-10-07");
+      const addedOnOct11 = ["c-52", "c-69", "c-104", "c-110", "c-127", "c-163", "c-177", "c-184"].includes(item.id);
+      const updatedOnOct13 = ["c-17", "c-33", "c-136", "c-143"].includes(item.id);
+      expect(item.review.asOf).toBe(updatedOnOct13 ? "2026-10-13" : addedOnOct11 ? "2026-10-11" : "2026-10-10");
       expect(item.review.status).not.toBe("sin_verificar");
       expect(item.assessment.evidenceSourceIds.length).toBeGreaterThan(0);
       for (const id of item.assessment.evidenceSourceIds) {
@@ -66,7 +68,8 @@ describe("revisión de las 30 promesas y efecto práctico", () => {
     const find = (id: string) => snapshot.commitments.find(item => item.id === id)!;
     expect(find("c-123").assessment.observed).toContain("Un anteproyecto no se presenta como ley vigente");
     expect(find("c-10").assessment.observed).toContain("no de ejecución");
-    expect(find("c-33").assessment.verdict).toBe("inconclusive");
+    expect(find("c-33").assessment.verdict).toBe("partial");
+    expect(find("c-33").assessment.observed).toContain("no eliminación de la brecha");
     expect(find("c-32").assessment.missingEvidence).toContain("−2,2 %");
     expect(find("c-32").assessment.missingEvidence).toContain("−2,4 %");
     expect(find("c-187").assessment.observed).toContain("derogó");

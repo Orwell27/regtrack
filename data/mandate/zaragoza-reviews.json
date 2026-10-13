@@ -1,0 +1,274 @@
+[
+  {
+    "commitmentId": "m-50297-3",
+    "reviewedAt": "2026-10-11",
+    "title": "Deporte: capitalidad en 2027; instalaciones y objetivos con calendarios distintos",
+    "conclusion": "ACES confirma la designación para 2027, mientras el programa apuntaba a 2026. El calendario publicado de La Nueva Romareda sigue siendo una previsión de entrega; no acredita el conjunto del capítulo deportivo.",
+    "periodNote": "Programa de 2023 y fuentes consultadas a 11/10/2026. La previsión del estadio llega a agosto de 2027 y el Mundial a 2030.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Capitalidad, instalaciones y acontecimientos deportivos",
+        "status": "promise-documented",
+        "finding": "El capítulo plantea optar a la capitalidad en 2026, construir la Ciudad Inteligente del Deporte y una nueva Romareda con el Real Zaragoza, además de otros equipamientos, becas y eventos. La capitalidad se formula como aspiración; no es una garantía de adjudicación.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-programme",
+            "locator": "Capítulo 3: instalaciones y capitalidad",
+            "page": 16
+          },
+          {
+            "sourceId": "zaragoza-programme",
+            "locator": "Becas y programas deportivos",
+            "page": 17
+          }
+        ]
+      },
+      {
+        "id": "capitalidad",
+        "claim": "Año concedido por la entidad otorgante",
+        "status": "documented",
+        "finding": "ACES Europe incluye Zaragoza en 2027 y Nápoles en 2026. La designación para 2027 está corroborada por quien concede el título; no equivale a obtenerlo en el año 2026 contemplado en el programa ni a haber celebrado ya sus actividades.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-aces",
+            "locator": "Listado European Capitals of Sport: 2027 Zaragoza / 2026 Naples"
+          }
+        ]
+      },
+      {
+        "id": "estadio",
+        "claim": "Calendario publicado de La Nueva Romareda",
+        "status": "reported",
+        "finding": "La sociedad del estadio publica un objetivo de entrega el 31/08/2027 para la temporada 2027–2028 y un proyecto ejecutivo de 151 millones de euros. La misma página conserva previsiones de adjudicación e inicio de 2025: se utiliza como planificación, no como certificado actualizado de avance ni gasto final. El objetivo de entrega aún no ha vencido al corte.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-stadium",
+            "locator": "Calendario del proyecto y presupuesto ejecutivo"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Ejecución del capítulo deportivo completo",
+        "status": "unresolved",
+        "finding": "Faltan recepción y coste final del estadio, evidencia de ejecución de la Ciudad Inteligente del Deporte, los centros deportivos, becas y eventos. La designación de ACES no resuelve esos compromisos ni prueba la celebración de partidos del Mundial de 2030.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-programme",
+            "locator": "Conjunto de compromisos del capítulo",
+            "page": 16
+          },
+          {
+            "sourceId": "zaragoza-stadium",
+            "locator": "Objetivo futuro de apertura"
+          }
+        ]
+      }
+    ],
+    "contrast": "ACES es una corroboración externa del año del título, con alcance limitado a esa designación. La sociedad promotora es parte interesada en el estadio y su calendario no es una auditoría de la obra.",
+    "pending": [
+      "Conciliar la aspiración de 2026 con la candidatura y concesión para 2027, y comprobar la programación ejecutada.",
+      "Obtener seguimiento contractual, recepción y coste final de instalaciones; separar financiación municipal, autonómica y del club.",
+      "Desagregar y revisar las demás propuestas deportivas, sin extender el resultado de la capitalidad al capítulo entero."
+    ]
+  },
+  {
+    "commitmentId": "m-50297-6",
+    "reviewedAt": "2026-10-11",
+    "title": "Huerva: obras comunicadas y afecciones documentadas; recepción pendiente",
+    "conclusion": "Las notas municipales describen avances de la segunda fase y el registro de vía pública mantiene afecciones de obra. No permiten certificar la finalización completa ni la mejora ambiental prometida.",
+    "periodNote": "Compromiso de 2023; partes municipales de mayo y julio de 2026 y registro consultado el 11/10/2026. La ficha examina el Huerva, no todo el capítulo de ecología urbana.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "Regeneración del río con financiación previamente obtenida",
+        "status": "promise-documented",
+        "finding": "El programa propone ejecutar el Plan de las Riberas del Huerva y reconoce que ya había obtenido financiación europea. La ejecución del mandato debe distinguirse de esa preparación anterior.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-programme",
+            "locator": "Plan de las Riberas del Huerva",
+            "page": 30
+          }
+        ]
+      },
+      {
+        "id": "avance",
+        "claim": "Porcentajes de obra y universo al que se refieren",
+        "status": "reported",
+        "finding": "El Ayuntamiento comunica una media del 50 % en mayo y del 62 % en julio para la segunda fase. En mayo diferencia los trabajos vinculados a biodiversidad y fondos europeos, casi al 100 %, del conjunto de la obra. No se suman estos porcentajes ni se toma el 100 % de una parte como finalización del proyecto.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-huerva-may",
+            "locator": "Ejecución media y actuaciones de biodiversidad"
+          },
+          {
+            "sourceId": "zaragoza-huerva-july",
+            "locator": "Proyecto estratégico: segunda fase al 62 %"
+          }
+        ]
+      },
+      {
+        "id": "incidencia",
+        "claim": "Registro operativo de afecciones por obra",
+        "status": "documented",
+        "finding": "La incidencia municipal 26611 documenta afecciones por trabajos en el tramo 1, con encabezado hasta el 19/10/2026 y actuaciones descritas hasta el 20 de octubre y el 30 de noviembre. Las fechas del propio registro no son uniformes; se conserva esa diferencia. El registro respalda la existencia de afecciones, no fija por sí solo un plazo contractual ni acredita recepción.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-huerva-incident",
+            "locator": "Encabezado y observaciones: Marina Española, Martín Ruizanglada y Mariano Renovales"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Finalización y resultados ambientales",
+        "status": "unresolved",
+        "finding": "Faltan actas de recepción, liquidación, situación de todos los tramos y mediciones comparables de calidad del agua y biodiversidad. La nota de julio sigue describiendo obras en curso y una red de cámaras proyectada; no prueba que el corredor completo o esas cámaras estén operativos.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-huerva-july",
+            "locator": "Obras en curso y despliegue proyectado"
+          },
+          {
+            "sourceId": "zaragoza-huerva-incident",
+            "locator": "Afecciones de obra"
+          }
+        ]
+      }
+    ],
+    "contrast": "Las noticias y el registro de incidencias pertenecen al mismo Ayuntamiento: son documentos de funciones distintas, pero no tres verificaciones independientes. Falta contraste externo de la ejecución física y del efecto ambiental.",
+    "pending": [
+      "Obtener certificaciones, actas de recepción, liquidación y calendario vigente por tramo, conciliando las fechas de la incidencia.",
+      "Contrastar el efecto ambiental con mediciones previas y posteriores y con la entidad financiadora.",
+      "Revisar por separado el resto del capítulo de ecología, movilidad, energía y zonas verdes."
+    ]
+  },
+  {
+    "commitmentId": "m-50297-7",
+    "reviewedAt": "2026-10-11",
+    "title": "Vivienda: 486 previstas, financiación anterior y entregas sin conciliar",
+    "conclusion": "El acuerdo de marzo de 2023 respalda 486 viviendas en once parcelas, frente a las nueve promociones del programa. El presupuesto de 2026 conserva esa actuación, pero no acredita viviendas entregadas ni cumplimiento del plazo de junio.",
+    "periodNote": "Promesa de 2023 y documentos de 2023–2026. Corte 11/10/2026: el plazo original de 30/06/2026 ha pasado; faltan cierre, posibles modificaciones y entregas.",
+    "components": [
+      {
+        "id": "promesa",
+        "claim": "486 viviendas y residencia de Pontoneros",
+        "status": "promise-documented",
+        "finding": "El programa plantea construir inmediatamente 486 viviendas en nueve promociones por más de 56 millones de euros y terminar la residencia XIOR de Pontoneros por 29 millones. Son dos actuaciones distintas; no se convierten plazas de residencia en viviendas.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-programme",
+            "locator": "Vivienda asequible y Pontoneros",
+            "page": 33
+          }
+        ]
+      },
+      {
+        "id": "origen",
+        "claim": "Acuerdo anterior al inicio del mandato",
+        "status": "documented",
+        "finding": "El acuerdo nº 3 de la comisión bilateral de 16/03/2023, con firma ministerial impresa de 30/03/2023, recoge 486 viviendas en once parcelas y un presupuesto estimado de 56.319.961,78 €, con ayuda estimada de 15.577.890 €. Es anterior a la elección de Chueca. Once parcelas y nueve promociones no se equiparan sin conciliar las unidades. Se ha leído el documento, sin validar electrónicamente sus firmas.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-housing-first-agreement",
+            "locator": "Objeto y fecha de la comisión",
+            "page": 1
+          },
+          {
+            "sourceId": "zaragoza-housing-first-agreement",
+            "locator": "Financiación estimada",
+            "page": 4
+          },
+          {
+            "sourceId": "zaragoza-housing-first-agreement",
+            "locator": "Firmas impresas",
+            "page": 7
+          }
+        ]
+      },
+      {
+        "id": "presupuesto",
+        "claim": "Importes que cambian entre documentos",
+        "status": "documented",
+        "finding": "El presupuesto 2026 de Zaragoza Vivienda, p. 13 del PDF (p. 6 de su memoria), describe una ayuda definitiva de 14.933.387 € y prevé cobrar 3.882.681 € en 2026. La ficha web mantiene 15.577.913 € para la fase 1 bajo presupuesto y subvención. Se distinguen estimación, ayuda descrita como definitiva y cobro previsto: no se suman, no son gasto ejecutado y falta conciliar documentalmente las diferencias.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-housing-budget",
+            "locator": "Memoria: Programa 6; página cotejada visualmente",
+            "page": 13
+          },
+          {
+            "sourceId": "zaragoza-housing-portal",
+            "locator": "Presupuesto y subvención de la fase 1"
+          },
+          {
+            "sourceId": "zaragoza-housing-first-agreement",
+            "locator": "Estimación de ayuda inicial",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "otra-fase",
+        "claim": "39 viviendas adicionales con expediente propio",
+        "status": "documented",
+        "finding": "El acuerdo nº 41 de 04/06/2024 corresponde a 39 viviendas en cuatro actuaciones y un presupuesto estimado de 5.802.936,76 €, con ayuda PRTR de 1.584.165 €. Es un expediente distinto; no sustituye la comprobación de las 486 ni acredita que unas u otras se hayan entregado.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-housing-agreement",
+            "locator": "Relación de actuaciones",
+            "page": 3
+          },
+          {
+            "sourceId": "zaragoza-housing-agreement",
+            "locator": "Financiación estimada",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "plazo",
+        "claim": "Plazo original y resultado aún no acreditado",
+        "status": "unresolved",
+        "finding": "El acuerdo inicial fija obras finalizadas el 30/06/2026 y justificación antes del 31/12/2026. Al corte, el primer plazo ha pasado y el segundo aún no. No se ha localizado aquí un cierre por promoción ni una conciliación de posibles modificaciones: la falta de esas pruebas no basta para afirmar que las viviendas no existen o declarar un incumplimiento material demostrado.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-housing-first-agreement",
+            "locator": "Cláusula séptima: duración y justificación",
+            "page": 6
+          },
+          {
+            "sourceId": "zaragoza-housing-tender",
+            "locator": "Objetivos iniciales de adjudicación y terminación"
+          },
+          {
+            "sourceId": "zaragoza-housing-portal",
+            "locator": "Duración publicada de ambas fases"
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Acceso real a vivienda y resto del capítulo",
+        "status": "unresolved",
+        "finding": "Faltan viviendas efectivamente recibidas, adjudicadas y ocupadas, rentas y beneficiarios agregados, así como la comprobación separada de Pontoneros, ALZA, rehabilitación y demás medidas del capítulo. El volumen financiado no se presenta como oferta ya disponible.",
+        "citations": [
+          {
+            "sourceId": "zaragoza-programme",
+            "locator": "Vivienda, ALZA y rehabilitación",
+            "page": 33
+          }
+        ]
+      }
+    ],
+    "contrast": "Los acuerdos incorporan varias administraciones, pero no son una comprobación independiente de entregas. La memoria presupuestaria aporta un contraste documental de importes y antecedentes; sus previsiones no equivalen a liquidación. El OCR es provisional y se ha cotejado visualmente la página citada.",
+    "pending": [
+      "Conciliar nueve promociones, once parcelas y las modificaciones del expediente de 486 viviendas; obtener adjudicación, recepción y ocupación agregada.",
+      "Comprobar las resoluciones de ayuda y los pagos para explicar 15.577.890 €, 15.577.913 € y 14.933.387 €, sin sumar versiones.",
+      "Verificar cierre o modificaciones del plazo de junio y justificación de diciembre, y revisar separadamente las 39 viviendas.",
+      "Contrastar Pontoneros, ALZA y el resto de medidas con documentos de ejecución y resultados."
+    ]
+  }
+]

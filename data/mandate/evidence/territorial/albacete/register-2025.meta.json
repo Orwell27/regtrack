@@ -1,0 +1,12 @@
+{
+  "url": "https://www.dipualba.es/bop/ficheros/2025/115/BOP%20115-25-P.PDF",
+  "finalUrl": "https://www.dipualba.es/bop/ficheros/2025/115/BOP%20115-25-P.PDF",
+  "status": 200,
+  "contentType": "application/pdf",
+  "sha256": "f567fc4d7bc8fbcb3a849483c2df801920621e94067cf34f5c2dabdf08420cef",
+  "bytes": 942262,
+  "retrievedAt": "2026-10-11T13:59:03.906593+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/albacete/register-2025.pdf",
+  "captureType": "bytes_originales",
+  "extractionSha256": "0e5efed4328f0afe0ab39e6cfd88eca84bbd26deda2a25e32c85d1fd2d68363b"
+}

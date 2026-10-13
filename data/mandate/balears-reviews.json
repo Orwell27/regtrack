@@ -1,0 +1,276 @@
+[
+  {
+    "commitmentId": "r-04-6",
+    "reviewedAt": "2026-10-11",
+    "title": "Herencias: bonificaciones aprobadas, parentescos y condiciones diferentes",
+    "conclusion": "La bonificación del 100 % para los grupos I y II se aprobó en julio de 2023. Para hermanos, tíos y sobrinos la norma distinguió supuestos con un 50 % y otros con un 25 %, frente al 50 % sin esa distinción que figuraba en el pacto. La reforma de 2025 elevó esos porcentajes al 60 % y 35 %. Son cambios normativos documentados; no prueban por sí solos todas las liquidaciones ni que Baleares tenga la menor carga fiscal de España.",
+    "periodNote": "Se comparan el pacto de junio de 2023, el Decreto ley de 18/07/2023 y la Ley de 23/07/2025. El BOE reprodujo esas normas el 30/11/2023 y el 1/11/2025: esas fechas no son sus fechas de efectos. El texto de 2023 se examina históricamente, sin presentarlo como la regulación completa vigente en octubre de 2026.",
+    "components": [
+      {
+        "id": "familiares-directos",
+        "claim": "Eliminar la cuota de las herencias entre familiares directos dentro de los primeros cien días",
+        "status": "documented",
+        "finding": "El artículo tercero del Decreto ley 4/2023 introdujo una bonificación del 100 % para los grupos I y II en adquisiciones por causa de muerte y pactos sucesorios, inicialmente para sujetos por obligación personal, con condiciones de valoración de inmuebles y obligación de autoliquidar. La ATIB sitúa sus efectos en el 18/07/2023, doce días después de la elección de la presidenta y dentro del plazo inicial de cien días. El Real Decreto 603/2023 acredita la elección en las sesiones de 3, 4 y 6 de julio. El nombre del impuesto incluye Donaciones, pero este punto del pacto concreta su alcance en herencias: no se le atribuye una promesa distinta sobre todas las donaciones inter vivos.",
+        "citations": [
+          {
+            "sourceId": "balears-programme",
+            "locator": "Punto 6",
+            "page": 2
+          },
+          {
+            "sourceId": "balears-succession-law",
+            "locator": "Artículo tercero: redacción del artículo 36; disposición final única"
+          },
+          {
+            "sourceId": "balears-succession-atib",
+            "locator": "Bonificaciones para devengos a partir del 18 de julio de 2023; grupos I y II"
+          },
+          {
+            "sourceId": "balears-appointment",
+            "locator": "Elección por el Parlament en las sesiones de 3, 4 y 6 de julio de 2023"
+          }
+        ]
+      },
+      {
+        "id": "colaterales-2023",
+        "claim": "Rebajar un 50 % las herencias entre hermanos y entre tíos y sobrinos",
+        "status": "documented",
+        "finding": "El artículo cuarto del Decreto ley 4/2023 no aplicó un 50 % uniforme a todos esos casos: estableció ese porcentaje para colaterales de segundo o tercer grado por consanguinidad que no concurriesen con descendientes o adoptados del causante, o que concurriesen con descendientes o adoptados desheredados. Para el resto del grupo III fijó un 25 %. La diferencia de condiciones con el texto del pacto impide presentar esta norma como cumplimiento íntegro de esa parte.",
+        "citations": [
+          {
+            "sourceId": "balears-programme",
+            "locator": "Punto 6: hermanos, tíos y sobrinos",
+            "page": 2
+          },
+          {
+            "sourceId": "balears-succession-law",
+            "locator": "Artículo cuarto: artículo 36 bis, apartado 1"
+          }
+        ]
+      },
+      {
+        "id": "reforma-2025",
+        "claim": "Evolución posterior de las bonificaciones",
+        "status": "documented",
+        "finding": "La disposición final segunda, apartados 8 y 9, de la Ley 6/2025 reformó los artículos 36 y 36 bis: mantuvo el 100 % para los grupos I y II sin la anterior referencia a obligación personal y elevó al 60 % y 35 % los dos supuestos del grupo III. Sus efectos tributarios se fijaron para el 25/07/2025, día siguiente a la publicación en BOIB. Esa ampliación posterior no modifica retrospectivamente qué se había aprobado dentro de los primeros cien días.",
+        "citations": [
+          {
+            "sourceId": "balears-succession-law-2025",
+            "locator": "Disposición final segunda, apartados 8 y 9; disposición final vigésima primera, apartado 2"
+          },
+          {
+            "sourceId": "balears-budget-law-boib",
+            "locator": "BOIB 98 de 24/07/2025; Ley 6/2025"
+          }
+        ]
+      },
+      {
+        "id": "aplicacion",
+        "claim": "Aplicación efectiva a todas las herencias comprendidas",
+        "status": "unresolved",
+        "finding": "Las normas y la información de la ATIB acreditan el diseño de la bonificación, pero esta revisión no ha conciliado liquidaciones, denegaciones, recursos y beneficiarios por parentesco y año. Tampoco se ha reconstruido aquí toda la secuencia de modificaciones entre 2023 y octubre de 2026. No se equipara la aprobación con una aplicación universal comprobada.",
+        "citations": [
+          {
+            "sourceId": "balears-succession-atib",
+            "locator": "Información tributaria sobre condiciones y presentación de autoliquidación"
+          }
+        ]
+      },
+      {
+        "id": "comparacion-espana",
+        "claim": "Convertir Baleares en la comunidad con menor carga de España en este impuesto",
+        "status": "unresolved",
+        "finding": "Falta una comparación entre todas las comunidades para iguales importes, parentescos, bienes, residencia y fechas. Una bonificación máxima o una nota del propio gestor no resuelve esa comparación ni determina una posición única para todos los contribuyentes.",
+        "citations": [
+          {
+            "sourceId": "balears-programme",
+            "locator": "Afirmación comparativa al final del punto 6",
+            "page": 2
+          }
+        ]
+      }
+    ],
+    "contrast": "El documento político se contrasta con las condiciones concretas de dos normas. La ATIB y las publicaciones del BOE y del BOIB no se cuentan como auditorías independientes: la autoría de las normas es balear y la publicación estatal no cambia esa procedencia. La reforma de 2025 se distingue de la medida inicial y del plazo prometido.",
+    "pending": [
+      "Conciliar liquidaciones, beneficiarios, incidencias y resoluciones de control por parentesco y ejercicio.",
+      "Reconstruir las modificaciones intermedias y posteriores antes de dar una conclusión sobre todo el mandato.",
+      "Comparar la carga efectiva en las 17 comunidades con supuestos homogéneos.",
+      "Revisión humana independiente de la interpretación, los plazos y las condiciones."
+    ]
+  },
+  {
+    "commitmentId": "r-04-63",
+    "reviewedAt": "2026-10-11",
+    "title": "Educación 0–3: gratuidad financiada y plazas anunciadas, con acceso universal pendiente de acreditar",
+    "conclusion": "Se documenta la ampliación de la gratuidad y el Govern comunica 15.451 plazas para 2026–2027. La financiación básica, la existencia de plazas y la admisión de todas las familias son hechos diferentes. Persisten condiciones de acceso y observaciones de FAPA Mallorca sobre disponibilidad, conciliación y gastos complementarios; no hay base para dar por acreditada toda la promesa de universalidad y libertad de elección.",
+    "periodNote": "La revisión distingue el antecedente de gratuidad de 2–3 años de 2022, la ampliación de 2023, la observación de familias de julio de 2024, el balance de julio de 2026 y la oferta comunicada el 10/09/2026. No se traslada una cifra de familias sin plaza de 2024 al curso 2026–2027 ni se presenta la oferta de inicio de curso como matrícula efectiva al cierre.",
+    "components": [
+      {
+        "id": "gratuidad",
+        "claim": "Financiar la gratuidad de la etapa 0–3 en las redes pública y complementaria",
+        "status": "documented",
+        "finding": "Los artículos 1 a 4 del Decreto ley 5/2023 ampliaron la financiación desde septiembre de 2023 a los tres niveles del primer ciclo. El texto original fijó un módulo de 45.000 euros por unidad, funcionamiento durante diez meses —con regla proporcional para determinadas aperturas más cortas— y escolarización básica gratuita de un mínimo de cuatro horas, sin comidas. La propia exposición recoge la gratuidad de 2–3 ya aprobada en 2022. Se acredita una ampliación, sin atribuir al nuevo gobierno el inicio de toda la política ni convertir ese módulo histórico en el vigente de 2026.",
+        "citations": [
+          {
+            "sourceId": "balears-education-law",
+            "locator": "Exposición de motivos: Decreto ley 8/2022; artículos 1–4 del texto original de 2023"
+          },
+          {
+            "sourceId": "balears-programme",
+            "locator": "Punto 63",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "id": "oferta",
+        "claim": "Ampliar las plazas gratuitas para 2026–2027",
+        "status": "reported",
+        "finding": "El Govern comunicó el 10/09/2026 una oferta de 15.451 plazas gratuitas, 1.311 más que el curso anterior, y 31 centros de gestión directa con 1.692 plazas. Son magnitudes de alcance diferente: las plazas de gestión directa no equivalen a toda la oferta pública o financiada. La nota no acredita por sí sola cuántas plazas se ocuparon, cuántas solicitudes quedaron sin atender ni una comprobación externa de esas cifras.",
+        "citations": [
+          {
+            "sourceId": "balears-education-2026",
+            "locator": "Párrafo de educación infantil de primer ciclo de la nota de inicio de curso"
+          }
+        ]
+      },
+      {
+        "id": "acceso",
+        "claim": "Garantizar plaza y libertad de elección a todas las familias",
+        "status": "unresolved",
+        "finding": "La resolución de admisión de marzo de 2026 regula listas de espera, vacantes y solicitudes fuera de plazo; la adjudicación fuera del proceso ordinario queda condicionada a plazas disponibles. Su corrección de 24/03/2026 cambia zonas de Calvià y los años de nacimiento del formulario. FAPA Mallorca había comunicado dificultades para encontrar plaza en distintos municipios en julio de 2024. Esa observación corresponde a otro curso y no cuantifica la carencia actual: faltan demanda, adjudicaciones, renuncias y listas de espera por edad, municipio y red para comprobar la universalidad de 2026–2027.",
+        "citations": [
+          {
+            "sourceId": "balears-education-admission-order",
+            "locator": "Anexo 1: listas de espera y solicitudes fuera de plazo; anexo 2: calendario"
+          },
+          {
+            "sourceId": "balears-education-admission-correction",
+            "locator": "Resolución: rectificaciones de zonas escolares y formulario"
+          },
+          {
+            "sourceId": "balears-education-late",
+            "locator": "Baremación y adjudicación según vacantes"
+          },
+          {
+            "sourceId": "balears-education-fapa",
+            "locator": "Escolarització 0–3 i la gratuïtat; valoración publicada el 12/07/2024"
+          }
+        ]
+      },
+      {
+        "id": "conciliacion",
+        "claim": "Comprobar las condiciones prácticas y los gastos que asumen las familias",
+        "status": "unresolved",
+        "finding": "En su balance de 3/07/2026, FAPA Mallorca señala dificultades de conciliación en verano tras la asunción de escoletas municipales por la Conselleria y pide equidad en los gastos complementarios. Es una observación de una organización de familias, no una auditoría de todos los centros ni una prueba de que cualquier cobro sea irregular. Deben cotejarse calendarios, tarifas, servicios incluidos, reclamaciones e inspecciones de los centros afectados.",
+        "citations": [
+          {
+            "sourceId": "balears-education-fapa-2026",
+            "locator": "Conciliació; Altres temes: 0–3"
+          },
+          {
+            "sourceId": "balears-education-law",
+            "locator": "Artículos 2 y 3: escolarización básica, comidas y desglose de cuotas en el régimen original"
+          }
+        ]
+      },
+      {
+        "id": "guarderias",
+        "claim": "Incluir privadas interesadas y guarderías asistenciales con regulación de calidad",
+        "status": "unresolved",
+        "finding": "El pacto incluye expresamente las guarderías asistenciales y una regulación propia con criterios de calidad. Las fuentes revisadas no reconstruyen aquí esa regulación completa, la incorporación de todos los centros interesados, sus autorizaciones ni sus inspecciones. La ampliación de la red financiada no basta para dar esta parte por acreditada.",
+        "citations": [
+          {
+            "sourceId": "balears-programme",
+            "locator": "Punto 63: redes y regulación de guarderías asistenciales",
+            "page": 9
+          }
+        ]
+      }
+    ],
+    "contrast": "El contraste combina la norma, las reglas actuales de admisión, las cifras del propio Govern y las observaciones de FAPA Mallorca, que se identifican como tales. No se comparan automáticamente periodos, plazas ofertadas y alumnos matriculados. La gratuidad básica tampoco acredita la gratuidad de todos los horarios, comidas y servicios ni la atención de toda la demanda.",
+    "pending": [
+      "Conciliar oferta, matrícula efectiva, solicitudes y espera de 2026–2027 por municipio, edad y red, sin publicar datos personales de menores.",
+      "Revisar convenios, conciertos y módulos vigentes, pagos realizados, tarifas y calendarios.",
+      "Contrastar las observaciones de FAPA con centros, expedientes de inspección y respuestas administrativas.",
+      "Comprobar la regulación e incorporación de guarderías asistenciales y la calidad exigida.",
+      "Revisión humana independiente de las evidencias y de la comparación entre cursos."
+    ]
+  },
+  {
+    "commitmentId": "r-04-acuerdo-6",
+    "reviewedAt": "2026-10-11",
+    "title": "Estabilidad presupuestaria: ruptura del pacto inicial y acuerdo posterior",
+    "conclusion": "El pacto inicial contemplaba estabilidad presupuestaria durante la legislatura, con una excepción ligada a incumplimientos acreditados por la comisión. El Govern anunció su ruptura en julio de 2024 y PP y VOX anunciaron otro acuerdo para los presupuestos de 2025. La aprobación de esa ley no acredita continuidad de todas las cláusulas de 2023 ni la ejecución de sus partidas.",
+    "periodNote": "Acuerdo inicial de 28/06/2023; anuncio del Govern de 12/07/2024; acuerdo presupuestario anunciado el 30/05/2025; Ley 6/2025 publicada en BOIB el 24/07/2025. La revisión no cubre todavía todas las votaciones, enmiendas y presupuestos de 2023–2026.",
+    "components": [
+      {
+        "id": "ruptura",
+        "claim": "Mantener durante toda la legislatura la estabilidad prevista en el pacto",
+        "status": "reported",
+        "finding": "La nota oficial del Govern de 12/07/2024 anuncia la ruptura decidida por VOX y afirma que dejaría de asumir los puntos pendientes del acuerdo que no figurasen en el programa propio del PP. Es la posición pública del Ejecutivo. No determina por sí sola qué cláusulas se incumplieron antes, si se activó correctamente la excepción de la cláusula sexta ni qué compromisos continuaron por otros acuerdos.",
+        "citations": [
+          {
+            "sourceId": "balears-programme",
+            "locator": "Cláusula sexta: estabilidad, excepción y partidas presupuestarias",
+            "page": 1
+          },
+          {
+            "sourceId": "balears-pact-break",
+            "locator": "Comparecencia y cambio de compromisos asumidos comunicado el 12/07/2024"
+          }
+        ]
+      },
+      {
+        "id": "presupuesto-2025",
+        "claim": "Distinguir un nuevo acuerdo presupuestario de la continuidad del pacto inicial",
+        "status": "documented",
+        "finding": "El PP anunció el 30/05/2025 la firma de un acuerdo con VOX para aprobar las cuentas de ese ejercicio. Se conserva una copia del texto alojada por Prensa Ibérica, pendiente de cotejo con un archivo de los firmantes. La Ley 6/2025 y su publicación en BOIB documentan la aprobación de las cuentas. Ninguno de estos hechos acredita que todas las partidas pactadas se pagasen o que se reactivase íntegramente el acuerdo de 2023.",
+        "citations": [
+          {
+            "sourceId": "balears-budget-pact-register",
+            "locator": "Anuncio de firma de 30/05/2025"
+          },
+          {
+            "sourceId": "balears-budget-pact-copy",
+            "locator": "Exposición y acuerdos de política presupuestaria",
+            "page": 1
+          },
+          {
+            "sourceId": "balears-budget-law-boib",
+            "locator": "Ley 6/2025, artículo 1: aprobación de los presupuestos"
+          }
+        ]
+      },
+      {
+        "id": "secuencia-completa",
+        "claim": "Cumplimiento de las condiciones de estabilidad, comisión y ejecución anual",
+        "status": "unresolved",
+        "finding": "Faltan las actas y declaraciones de la comisión, la secuencia completa de enmiendas y votaciones, y la vinculación de cada medida con crédito, obligación reconocida y pago. El pacto PP–Sa Unió de 4/07/2023 y el programa PP son otros documentos del mandato pendientes de conciliar. No se atribuye un cumplimiento o incumplimiento total basándose únicamente en el anuncio de ruptura o en la aprobación de una ley presupuestaria.",
+        "citations": [
+          {
+            "sourceId": "balears-programme",
+            "locator": "Cláusulas quinta y sexta; reglas de la comisión",
+            "page": 1
+          },
+          {
+            "sourceId": "balears-formentera-pact",
+            "locator": "Acuerdo de investidura, fecha y firmas",
+            "page": 4
+          },
+          {
+            "sourceId": "balears-pp-programme-register",
+            "locator": "Presentación del programa de gobierno del PP, 16/04/2023"
+          }
+        ]
+      }
+    ],
+    "contrast": "La posición del Govern, el anuncio de un partido, el texto pactado y la ley presupuestaria son evidencias diferentes. Se conserva su autoría aunque estén alojadas en otro portal. El anuncio político de ruptura no borra las promesas originales y la ley de 2025 no prueba por sí misma el grado de ejecución ni el comportamiento parlamentario de todos los ejercicios.",
+    "pending": [
+      "Incorporar y conciliar el programa PP, el pacto PP–Sa Unió y los acuerdos posteriores sin duplicar compromisos.",
+      "Obtener actas de seguimiento, enmiendas y votaciones de cada ejercicio, incluidas las de 2026.",
+      "Vincular partidas pactadas con ejecución presupuestaria y controles externos.",
+      "Revisión humana independiente de las condiciones, los cambios de alcance y las atribuciones."
+    ]
+  }
+]

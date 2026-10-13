@@ -1,0 +1,46 @@
+{
+  "method": "Lectura visual por el agente; no cotejo humano independiente",
+  "date": "2026-10-11",
+  "observations": [
+    {
+      "source": "unicef-2023.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        12
+      ],
+      "finding": "Acta de 27/11/2023; lista de renovaciones 2024–2027 empieza en página 2 y contiene Almería, Andalucía, en página 3. Extracción digital vacía; no se presenta como transcripción."
+    },
+    {
+      "source": "budget-amendment-2024.pdf",
+      "pages": [
+        2
+      ],
+      "finding": "Los 100.000 de Costacabana están bajo Segundo: desistir de continuar; no en la tabla de remanentes incorporados."
+    },
+    {
+      "source": "programme.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        13,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24,
+        27,
+        30,
+        31,
+        32
+      ],
+      "finding": "Página 7: integración antes de familia. Destacados sin viñeta incluidos. Portadas y separadores sin medidas adicionales. Mercado Central continúa en página 20."
+    }
+  ]
+}

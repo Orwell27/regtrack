@@ -1,0 +1,3442 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "m-05019",
+  "mandateId": "m-05019-2023",
+  "mandateLabel": "Ávila · programa municipal 2023–2027",
+  "sourceId": "avila-programme",
+  "mandateSourceId": "avila-programme",
+  "registerSourceId": "avila-constitution",
+  "sourceLabel": "Programa electoral · apartados con referencias editoriales",
+  "sourceSha256": "50d0ba3ac4cf04eaa7e6d0d67f714fd0d648adf68c860da3888b320f6e7dba8b",
+  "importedAt": "2026-10-11",
+  "textLanguage": "es",
+  "inventoryKind": "programme-sections",
+  "inventoryTotal": 163,
+  "scope": "163 apartados del programa de Por Ávila. Incluyen prosa y listas agrupadas por su sentido, con repeticiones y submedidas; no equivalen a 163 promesas únicas. Contexto y balance previo separados. Falta conciliar la síntesis gráfica, el discurso de investidura, otros compromisos y modificaciones del mandato.",
+  "textNote": "Resúmenes editoriales; Pxx-yy indica página y orden creado para esta revisión, no numeración oficial. PDF de 51 páginas revisado visualmente: se conserva extracción bruta y otra por coordenadas para evitar duplicados superpuestos y reconocer viñetas gráficas. El índice interno sitúa erróneamente dos separadores: las páginas 30 y 37 contienen propuestas y están incluidas. El acta 08/23 de 17/06/2023 acredita la proclamación de Sánchez Cabrera y su referencia al programa como hoja de ruta (páginas 3–4); contiene errores de plantilla sobre fecha electoral, asistentes y lugar. Su título interno 7/99 tampoco coincide con el acta. Registro municipal consultado con cambios hasta junio de 2026; continuidad al corte, firmas y revisión humana independiente pendientes. Portada: mayo de 2023, día exacto de publicación desconocido.",
+  "records": [
+    {
+      "id": "m-05019-p10-01",
+      "officialId": "P10-01",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Se llevarán a cabo las modificaciones puntuales y necesarias en el vigente planeamiento urbanístico para adaptarlo a los requerimientos que vayan surgiendo en nuestra ciudad.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 137.68,
+          "text": "Se llevarán a cabo las modificaciones puntuales y necesarias en el vigente planeamiento urbanístico para adaptarlo a los requerimientos que vayan surgiendo en nuestra ciudad."
+        }
+      ],
+      "text": "Adaptar el planeamiento urbanístico mediante modificaciones puntuales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-02",
+      "officialId": "P10-02",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Se estudiarán propuestas de innovación y mejora urbana, como las posibilidades para reducir la barrera que supone para la comunicación entre la ciudad consolidada y la expansión noreste la vía férrea, recuperando la identidad de la ciudad.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 2,
+          "top": 158.66,
+          "bottom": 220.11,
+          "text": "Se estudiarán propuestas de innovación y mejora urbana, como las posibilidades para reducir la barrera que supone para la comunicación entre la ciudad consolidada y la expansión noreste la vía férrea, recuperando la identidad de la ciudad."
+        }
+      ],
+      "text": "Estudiar mejoras urbanas y opciones para reducir la barrera ferroviaria hacia el noreste.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-03",
+      "officialId": "P10-03",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Continuaremos con el asfaltado de nuestras calles y con la mejora de caminos del término municipal, en el marco de un plan anual.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 3,
+          "top": 241.09,
+          "bottom": 269.57,
+          "text": "Continuaremos con el asfaltado de nuestras calles y con la mejora de caminos del término municipal, en el marco de un plan anual."
+        }
+      ],
+      "text": "Mantener un plan anual de asfaltado y mejora de caminos.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-04",
+      "officialId": "P10-04",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Avanzaremos con nuevas operaciones de cambio de redes de abastecimiento y saneamiento.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 4,
+          "top": 290.55,
+          "bottom": 319.03,
+          "text": "Avanzaremos con nuevas operaciones de cambio de redes de abastecimiento y saneamiento."
+        }
+      ],
+      "text": "Renovar redes de suministro de agua y saneamiento.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-05",
+      "officialId": "P10-05",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Avanzaremos en el mantenimiento de vallas, barandillas, puentes, pasarelas peatonales y demás elementos urbanos que lo vayan requiriendo.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 5,
+          "top": 340.01,
+          "bottom": 384.97,
+          "text": "Avanzaremos en el mantenimiento de vallas, barandillas, puentes, pasarelas peatonales y demás elementos urbanos que lo vayan requiriendo."
+        }
+      ],
+      "text": "Conservar barandillas, pasos peatonales, puentes y otros elementos urbanos.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-06",
+      "officialId": "P10-06",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Renovaremos e instalaremos nuevo mobiliario urbano con elementos medioambientalmente sostenibles.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 6,
+          "top": 405.95,
+          "bottom": 434.43,
+          "text": "Renovaremos e instalaremos nuevo mobiliario urbano con elementos medioambientalmente sostenibles."
+        }
+      ],
+      "text": "Instalar y renovar equipamiento urbano con criterios ambientales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-07",
+      "officialId": "P10-07",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Se continuará con el plan de recuperación y puesta en valor de las fuentes ornamentales de la ciudad.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 7,
+          "top": 455.41,
+          "bottom": 483.89,
+          "text": "Se continuará con el plan de recuperación y puesta en valor de las fuentes ornamentales de la ciudad."
+        }
+      ],
+      "text": "Continuar la recuperación de fuentes ornamentales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-08",
+      "officialId": "P10-08",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Continuaremos trabajando en el plan de puesta al día de instalación y adecuación de nuevos juegos y parques infantiles.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 8,
+          "top": 504.87,
+          "bottom": 533.35,
+          "text": "Continuaremos trabajando en el plan de puesta al día de instalación y adecuación de nuevos juegos y parques infantiles."
+        }
+      ],
+      "text": "Actualizar juegos y áreas infantiles.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-09",
+      "officialId": "P10-09",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Seguiremos impulsando el plan de aceras de todo el municipio para ir corrigiendo tanto la accesibilidad como su mal estado.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 9,
+          "top": 554.33,
+          "bottom": 582.81,
+          "text": "Seguiremos impulsando el plan de aceras de todo el municipio para ir corrigiendo tanto la accesibilidad como su mal estado."
+        }
+      ],
+      "text": "Mejorar el estado y la accesibilidad de las aceras.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p10-10",
+      "officialId": "P10-10",
+      "topic": "Urbanismo",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Seguimos apostando por la rehabilitación, mejora y dotación de mobiliario en las calles peatonales y adoquinadas, realizando rehabilitaciones integrales de calles y plazas en nuestra ciudad. En este sentido, se concluirán las diferentes actuaciones puestas en marcha en el actual mandato, como la renovación de las Plazas de Italia y Nalvillos y sus calles aledañas, así como los entornos de San Vicente o San Andrés.",
+      "fragments": [
+        {
+          "page": 10,
+          "block": 10,
+          "top": 603.79,
+          "bottom": 714.69,
+          "text": "Seguimos apostando por la rehabilitación, mejora y dotación de mobiliario en las calles peatonales y adoquinadas, realizando rehabilitaciones integrales de calles y plazas en nuestra ciudad. En este sentido, se concluirán las diferentes actuaciones puestas en marcha en el actual mandato, como la renovación de las Plazas de Italia y Nalvillos y sus calles aledañas, así como los entornos de San Vicente o San Andrés."
+        }
+      ],
+      "text": "Rehabilitar calles y plazas y terminar las actuaciones iniciadas en Italia, Nalvillos, San Vicente y San Andrés.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p11-01",
+      "officialId": "P11-01",
+      "topic": "Movilidad y limpieza",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "Se continuará trabajando en la conexión entre los barrios de la ciudad y, en especial, en la mejora de las conexiones norte – centro – sur. En esta línea, trabajaremos en la mejora del trazo para hacer trayectos más accesibles, como el que unirá la plaza del Descubrimiento con el centro de la ciudad mediante las escaleras mecánicas en la Cuesta Antigua.",
+      "fragments": [
+        {
+          "page": 11,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 187.14,
+          "text": "Se continuará trabajando en la conexión entre los barrios de la ciudad y, en especial, en la mejora de las conexiones norte – centro – sur. En esta línea, trabajaremos en la mejora del trazo para hacer trayectos más accesibles, como el que unirá la plaza del Descubrimiento con el centro de la ciudad mediante las escaleras mecánicas en la Cuesta Antigua."
+        }
+      ],
+      "text": "Mejorar las conexiones entre barrios y el eje norte–centro–sur, incluido el acceso desde plaza del Descubrimiento por las escaleras de Cuesta Antigua.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p11-02",
+      "officialId": "P11-02",
+      "topic": "Movilidad y limpieza",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "Con la entrada en vigor de la nueva licitación del servicio de recogida de basuras y limpieza viaria se incrementarán las intensidades de limpieza de nuestras calles y plazas y la retirada de residuos de las papeleras.",
+      "fragments": [
+        {
+          "page": 11,
+          "block": 2,
+          "top": 208.12,
+          "bottom": 269.57,
+          "text": "Con la entrada en vigor de la nueva licitación del servicio de recogida de basuras y limpieza viaria se incrementarán las intensidades de limpieza de nuestras calles y plazas y la retirada de residuos de las papeleras."
+        }
+      ],
+      "text": "Aumentar la frecuencia de limpieza y vaciado de papeleras con el nuevo contrato de residuos y limpieza viaria.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p12-01",
+      "officialId": "P12-01",
+      "topic": "Patrimonio",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "Se renovarán, entre otras, las siguientes calles y plazas del casco histórico de la ciudad: El Tostado, Tomás Luis de Victoria, Mosén Rubí, Bracamonte, Brieva, Jimena Blázquez y Marcelino Santiago, además de entornos patrimoniales como San Vicente.",
+      "fragments": [
+        {
+          "page": 12,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 154.17,
+          "text": "Se renovarán, entre otras, las siguientes calles y plazas del casco histórico de la ciudad: El Tostado, Tomás Luis de Victoria, Mosén Rubí, Bracamonte, Brieva, Jimena Blázquez y Marcelino Santiago, además de entornos patrimoniales como San Vicente."
+        }
+      ],
+      "text": "Renovar calles del casco histórico —incluidas El Tostado, Tomás Luis de Victoria y Mosén Rubí— y entornos patrimoniales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p12-02",
+      "officialId": "P12-02",
+      "topic": "Patrimonio",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "Se impulsará la creación de una Oficina de Gestión del Patrimonio Mundial, encargada de la coordinación en la zona declarada y del mantenimiento del valor universal excepcional de la ciudad. La conservación de nuestro patrimonio es una de las fortalezas de Ávila, algo que nos aporta un valor universal excepcional que sigue haciendo de Ávila un referente patrimonial. En esta línea, la creación de esta Oficina colocará a la ciudad en la vanguardia de la conservación patrimonial.",
+      "fragments": [
+        {
+          "page": 12,
+          "block": 2,
+          "top": 175.15,
+          "bottom": 302.54,
+          "text": "Se impulsará la creación de una Oficina de Gestión del Patrimonio Mundial, encargada de la coordinación en la zona declarada y del mantenimiento del valor universal excepcional de la ciudad. La conservación de nuestro patrimonio es una de las fortalezas de Ávila, algo que nos aporta un valor universal excepcional que sigue haciendo de Ávila un referente patrimonial. En esta línea, la creación de esta Oficina colocará a la ciudad en la vanguardia de la conservación patrimonial."
+        }
+      ],
+      "text": "Promover una oficina municipal de gestión del patrimonio mundial.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p12-03",
+      "officialId": "P12-03",
+      "topic": "Patrimonio",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "Se estudiarán todas las posibles vinculaciones del aspecto urbanístico del patrimonio con los aspectos educativos, culturales, naturales o económicos.",
+      "fragments": [
+        {
+          "page": 12,
+          "block": 3,
+          "top": 323.52,
+          "bottom": 368.49,
+          "text": "Se estudiarán todas las posibles vinculaciones del aspecto urbanístico del patrimonio con los aspectos educativos, culturales, naturales o económicos."
+        }
+      ],
+      "text": "Estudiar conexiones entre protección urbanística del patrimonio, educación, cultura, naturaleza y economía.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p12-04",
+      "officialId": "P12-04",
+      "topic": "Patrimonio",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "Se impulsará el Plan Director de la Muralla, en vinculación con el Ministerio de Cultura.",
+      "fragments": [
+        {
+          "page": 12,
+          "block": 4,
+          "top": 389.47,
+          "bottom": 417.94,
+          "text": "Se impulsará el Plan Director de la Muralla, en vinculación con el Ministerio de Cultura."
+        }
+      ],
+      "text": "Impulsar con el Ministerio de Cultura la planificación de conservación de la muralla.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p13-01",
+      "officialId": "P13-01",
+      "topic": "Jardines",
+      "page": 13,
+      "endPage": 13,
+      "rawText": "Puesta en valor de las entradas de la ciudad.",
+      "fragments": [
+        {
+          "page": 13,
+          "block": 2,
+          "top": 158.66,
+          "bottom": 170.65,
+          "text": "Puesta en valor de las entradas de la ciudad."
+        }
+      ],
+      "text": "Mejorar las entradas a la ciudad.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p13-02",
+      "officialId": "P13-02",
+      "topic": "Jardines",
+      "page": 13,
+      "endPage": 13,
+      "rawText": "Mejoras de las rotondas, tanto en señalización y balizamiento como ajardinamiento.",
+      "fragments": [
+        {
+          "page": 13,
+          "block": 3,
+          "top": 191.63,
+          "bottom": 220.11,
+          "text": "Mejoras de las rotondas, tanto en señalización y balizamiento como ajardinamiento."
+        }
+      ],
+      "text": "Adecuar señalización, balizamiento y jardines de las rotondas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p13-03",
+      "officialId": "P13-03",
+      "topic": "Jardines",
+      "page": 13,
+      "endPage": 13,
+      "rawText": "Continuar trabajando en espacios ajardinados para ampliar las zonas verdes y pulmones de la ciudad, además de contar con zonas de esparcimiento.",
+      "fragments": [
+        {
+          "page": 13,
+          "block": 4,
+          "top": 241.09,
+          "bottom": 286.05,
+          "text": "Continuar trabajando en espacios ajardinados para ampliar las zonas verdes y pulmones de la ciudad, además de contar con zonas de esparcimiento."
+        }
+      ],
+      "text": "Ampliar jardines, zonas verdes y espacios de ocio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p13-04",
+      "officialId": "P13-04",
+      "topic": "Jardines",
+      "page": 13,
+      "endPage": 13,
+      "rawText": "Recuperación del entorno de Fuentebuena, con el acondicionamiento de los accesos desde la calle del CYLOG, siendo este un nuevo espacio de esparcimiento para los abulenses.",
+      "fragments": [
+        {
+          "page": 13,
+          "block": 5,
+          "top": 307.04,
+          "bottom": 352,
+          "text": "Recuperación del entorno de Fuentebuena, con el acondicionamiento de los accesos desde la calle del CYLOG, siendo este un nuevo espacio de esparcimiento para los abulenses."
+        }
+      ],
+      "text": "Recuperar Fuentebuena y su acceso desde la calle del CYLOG.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p13-05",
+      "officialId": "P13-05",
+      "topic": "Jardines",
+      "page": 13,
+      "endPage": 13,
+      "rawText": "Acondicionamiento de los terraplenes jardines del Rastro y San Roque.",
+      "fragments": [
+        {
+          "page": 13,
+          "block": 6,
+          "top": 372.98,
+          "bottom": 401.46,
+          "text": "Acondicionamiento de los terraplenes jardines del Rastro y San Roque."
+        }
+      ],
+      "text": "Acondicionar los taludes ajardinados de El Rastro y San Roque.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p13-06",
+      "officialId": "P13-06",
+      "topic": "Jardines",
+      "page": 13,
+      "endPage": 13,
+      "rawText": "Se mantendrá también una novedad introducida en este mandato como es el Plan anual de desbroce, que permite evitar la proliferación de la maleza y el crecimiento excesivo de la vegetación en nuestra ciudad, valorando la necesidad de incluir en él nuevas zonas.",
+      "fragments": [
+        {
+          "page": 13,
+          "block": 7,
+          "top": 422.44,
+          "bottom": 483.89,
+          "text": "Se mantendrá también una novedad introducida en este mandato como es el Plan anual de desbroce, que permite evitar la proliferación de la maleza y el crecimiento excesivo de la vegetación en nuestra ciudad, valorando la necesidad de incluir en él nuevas zonas."
+        }
+      ],
+      "text": "Mantener el desbroce anual y estudiar su ampliación a otras zonas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p14-01",
+      "officialId": "P14-01",
+      "topic": "Control urbano y transporte",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "Promover una red de riego inteligente, que en función de las condiciones de humedad y temperatura minimice el uso de agua en los jardines públicos, mediante la instalación de sensores de humedad para el riego inteligente en parques y jardines.",
+      "fragments": [
+        {
+          "page": 14,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 154.16,
+          "text": "Promover una red de riego inteligente, que en función de las condiciones de humedad y temperatura minimice el uso de agua en los jardines públicos, mediante la instalación de sensores de humedad para el riego inteligente en parques y jardines."
+        }
+      ],
+      "text": "Introducir riego inteligente mediante sensores de humedad y temperatura.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p14-02",
+      "officialId": "P14-02",
+      "topic": "Control urbano y transporte",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "Hacer un uso responsable de los recursos ambientales, energía, agua o emisiones, mediante la instalación de dispositivos que monitoricen y racionalicen. En este sentido, se instalarán sensores de:\nRuido.\nDensidad tráfico.\nCalidad del aire.\nConsumo energético y eléctrico en inmuebles municipales.",
+      "fragments": [
+        {
+          "page": 14,
+          "block": 2,
+          "top": 175.15,
+          "bottom": 220.11,
+          "text": "Hacer un uso responsable de los recursos ambientales, energía, agua o emisiones, mediante la instalación de dispositivos que monitoricen y racionalicen. En este sentido, se instalarán sensores de:"
+        },
+        {
+          "page": 14,
+          "block": 3,
+          "top": 241.09,
+          "bottom": 253.08,
+          "text": "Ruido."
+        },
+        {
+          "page": 14,
+          "block": 4,
+          "top": 274.06,
+          "bottom": 286.05,
+          "text": "Densidad tráfico."
+        },
+        {
+          "page": 14,
+          "block": 5,
+          "top": 307.04,
+          "bottom": 319.03,
+          "text": "Calidad del aire."
+        },
+        {
+          "page": 14,
+          "block": 6,
+          "top": 340.01,
+          "bottom": 352,
+          "text": "Consumo energético y eléctrico en inmuebles municipales."
+        }
+      ],
+      "text": "Controlar el uso de recursos con sensores de ruido, tráfico, aire y consumo energético en edificios municipales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p14-03",
+      "officialId": "P14-03",
+      "topic": "Control urbano y transporte",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "Se adaptará el transporte urbano, atendiendo nuevas necesidades y adaptando líneas y frecuencias.",
+      "fragments": [
+        {
+          "page": 14,
+          "block": 8,
+          "top": 478.98,
+          "bottom": 507.45,
+          "text": "Se adaptará el transporte urbano, atendiendo nuevas necesidades y adaptando líneas y frecuencias."
+        }
+      ],
+      "text": "Ajustar rutas y frecuencias del transporte urbano a nuevas necesidades.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p14-04",
+      "officialId": "P14-04",
+      "topic": "Control urbano y transporte",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "Creación de una línea urbana nocturna los fines de semana (“búho”).",
+      "fragments": [
+        {
+          "page": 14,
+          "block": 9,
+          "top": 528.44,
+          "bottom": 556.91,
+          "text": "Creación de una línea urbana nocturna los fines de semana (“búho”)."
+        }
+      ],
+      "text": "Crear un autobús nocturno de fin de semana.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p14-05",
+      "officialId": "P14-05",
+      "topic": "Control urbano y transporte",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "Continuar modernizando la flota de autobuses de manera que dispongan en el interior de pantallas informativas, zonas wifi y videovigilancia entre otras. El pago se modernizará de manera que pueda hacerse con el teléfono móvil y mediante recargas On line.",
+      "fragments": [
+        {
+          "page": 14,
+          "block": 10,
+          "top": 577.89,
+          "bottom": 639.34,
+          "text": "Continuar modernizando la flota de autobuses de manera que dispongan en el interior de pantallas informativas, zonas wifi y videovigilancia entre otras. El pago se modernizará de manera que pueda hacerse con el teléfono móvil y mediante recargas On line."
+        }
+      ],
+      "text": "Modernizar autobuses con información, wifi y videovigilancia, además del pago móvil y recargas por internet.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p15-01",
+      "officialId": "P15-01",
+      "topic": "Cementerio",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "Continuar con el adecentado de sus calles.",
+      "fragments": [
+        {
+          "page": 15,
+          "block": 2,
+          "top": 191.63,
+          "bottom": 203.62,
+          "text": "Continuar con el adecentado de sus calles."
+        }
+      ],
+      "text": "Mejorar los viales del cementerio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p15-02",
+      "officialId": "P15-02",
+      "topic": "Cementerio",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "Implementar una nueva señalización de calles y espacios.",
+      "fragments": [
+        {
+          "page": 15,
+          "block": 3,
+          "top": 224.61,
+          "bottom": 236.6,
+          "text": "Implementar una nueva señalización de calles y espacios."
+        }
+      ],
+      "text": "Renovar la orientación y señalización del cementerio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p15-03",
+      "officialId": "P15-03",
+      "topic": "Cementerio",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "Mejorar la accesibilidad de todo el recinto.",
+      "fragments": [
+        {
+          "page": 15,
+          "block": 4,
+          "top": 257.58,
+          "bottom": 269.57,
+          "text": "Mejorar la accesibilidad de todo el recinto."
+        }
+      ],
+      "text": "Facilitar el acceso y circulación por todo el cementerio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p15-04",
+      "officialId": "P15-04",
+      "topic": "Cementerio",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "Arreglo de la entrada principal del cementerio.",
+      "fragments": [
+        {
+          "page": 15,
+          "block": 5,
+          "top": 290.55,
+          "bottom": 302.54,
+          "text": "Arreglo de la entrada principal del cementerio."
+        }
+      ],
+      "text": "Reparar el acceso principal al cementerio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p15-05",
+      "officialId": "P15-05",
+      "topic": "Cementerio",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "Seguir trabajando en su manteniendo diario.",
+      "fragments": [
+        {
+          "page": 15,
+          "block": 6,
+          "top": 323.52,
+          "bottom": 335.51,
+          "text": "Seguir trabajando en su manteniendo diario."
+        }
+      ],
+      "text": "Mantener la conservación cotidiana del cementerio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p16-01",
+      "officialId": "P16-01",
+      "topic": "Alumbrado",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "Se avanzará progresivamente en la mejora y en la recuperación de aquellas zonas de nuestra ciudad con mala o escasa iluminación.",
+      "fragments": [
+        {
+          "page": 16,
+          "block": 3,
+          "top": 191.63,
+          "bottom": 220.11,
+          "text": "Se avanzará progresivamente en la mejora y en la recuperación de aquellas zonas de nuestra ciudad con mala o escasa iluminación."
+        }
+      ],
+      "text": "Mejorar gradualmente la iluminación insuficiente de calles y zonas urbanas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p16-02",
+      "officialId": "P16-02",
+      "topic": "Alumbrado",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "Continuar con la revisión y puesta al día del Plan Director de Iluminación Ornamental de Monumentos. De manera específica, en primer lugar, se materializará la iluminación ornamental de la iglesia de San Andrés y su entorno, así como del convento de San Francisco (auditorio municipal). Además, se implementarán nuevos proyectos con el fin de alcanzar a la totalidad de monumentos de nuestra ciudad.",
+      "fragments": [
+        {
+          "page": 16,
+          "block": 4,
+          "top": 241.09,
+          "bottom": 352,
+          "text": "Continuar con la revisión y puesta al día del Plan Director de Iluminación Ornamental de Monumentos. De manera específica, en primer lugar, se materializará la iluminación ornamental de la iglesia de San Andrés y su entorno, así como del convento de San Francisco (auditorio municipal). Además, se implementarán nuevos proyectos con el fin de alcanzar a la totalidad de monumentos de nuestra ciudad."
+        }
+      ],
+      "text": "Actualizar el plan de iluminación monumental, empezando por San Andrés y San Francisco y ampliándolo al resto de monumentos.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p16-03",
+      "officialId": "P16-03",
+      "topic": "Alumbrado",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "Finalizar el proyecto del cambio de iluminación ornamental de la muralla para hacerla más eficiente y acorde a las nuevas tecnologías, mediombientalmente más sostenibles.",
+      "fragments": [
+        {
+          "page": 16,
+          "block": 5,
+          "top": 372.98,
+          "bottom": 417.94,
+          "text": "Finalizar el proyecto del cambio de iluminación ornamental de la muralla para hacerla más eficiente y acorde a las nuevas tecnologías, mediombientalmente más sostenibles."
+        }
+      ],
+      "text": "Completar la modernización eficiente de la iluminación ornamental de la muralla.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p16-04",
+      "officialId": "P16-04",
+      "topic": "Alumbrado",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "Continuar en la mejora de la Iluminación de las rotondas de la ciudad, así como de su esculturas y motivos ornamentales.",
+      "fragments": [
+        {
+          "page": 16,
+          "block": 6,
+          "top": 438.93,
+          "bottom": 467.4,
+          "text": "Continuar en la mejora de la Iluminación de las rotondas de la ciudad, así como de su esculturas y motivos ornamentales."
+        }
+      ],
+      "text": "Mejorar la iluminación de glorietas y sus elementos ornamentales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-01",
+      "officialId": "P18-01",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Se continuará avanzando en la mejora del tratamiento de residuos, incorporando el contenedor de orgánico.",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 3,
+          "top": 224.61,
+          "bottom": 253.08,
+          "text": "Se continuará avanzando en la mejora del tratamiento de residuos, incorporando el contenedor de orgánico."
+        }
+      ],
+      "text": "Introducir la recogida separada de residuos orgánicos mediante un nuevo contenedor.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-02",
+      "officialId": "P18-02",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Seguirá incrementándose la ratio de áreas verdes por habitante.",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 4,
+          "top": 274.06,
+          "bottom": 286.05,
+          "text": "Seguirá incrementándose la ratio de áreas verdes por habitante."
+        }
+      ],
+      "text": "Aumentar la superficie verde por habitante.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-03",
+      "officialId": "P18-03",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "En estos cuatro años se han plantado más de 500 árboles en la ciudad, de los cuales 250 han sido en El Soto. Por eso, porque estamos comprometidos con el medio ambiente, continuaremos fomentando la infraestructura verde mediante la plantación de árboles en los espacios urbanos y jardines, avanzando en la accesibilidad. El fomento del arbolado urbano es positivo por sus funciones ambientales como absorción de CO2 y redunda en un Ávila saludable.",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 5,
+          "top": 307.04,
+          "bottom": 434.43,
+          "text": "En estos cuatro años se han plantado más de 500 árboles en la ciudad, de los cuales 250 han sido en El Soto. Por eso, porque estamos comprometidos con el medio ambiente, continuaremos fomentando la infraestructura verde mediante la plantación de árboles en los espacios urbanos y jardines, avanzando en la accesibilidad. El fomento del arbolado urbano es positivo por sus funciones ambientales como absorción de CO2 y redunda en un Ávila saludable."
+        }
+      ],
+      "text": "Continuar las plantaciones en jardines y espacios urbanos con accesibilidad; las cifras de árboles anteriores son antecedentes del programa.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-04",
+      "officialId": "P18-04",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Se continuará trabajando en la conservación, mejora y protección de los espacios forestales y naturales del entorno de la ciudad. Utilización de plantas autóctonas como elementos ornamentales.",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 6,
+          "top": 455.41,
+          "bottom": 500.37,
+          "text": "Se continuará trabajando en la conservación, mejora y protección de los espacios forestales y naturales del entorno de la ciudad. Utilización de plantas autóctonas como elementos ornamentales."
+        }
+      ],
+      "text": "Conservar los espacios forestales y naturales e introducir especies autóctonas ornamentales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-05",
+      "officialId": "P18-05",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Estudiaremos la viabilidad de crear nuevos pulmones verdes en la ciudad en zonas como los entornos de los polígonos industriales.",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 7,
+          "top": 521.36,
+          "bottom": 549.83,
+          "text": "Estudiaremos la viabilidad de crear nuevos pulmones verdes en la ciudad en zonas como los entornos de los polígonos industriales."
+        }
+      ],
+      "text": "Estudiar nuevas zonas verdes, por ejemplo junto a polígonos industriales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-06",
+      "officialId": "P18-06",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Continuaremos mejorando la conexión de la ciudad con su entorno natural. Restauración y acondicionamiento de los denominados ecotonos urbanos (zonas de transición entre la ciudady el campo).",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 8,
+          "top": 570.82,
+          "bottom": 615.78,
+          "text": "Continuaremos mejorando la conexión de la ciudad con su entorno natural. Restauración y acondicionamiento de los denominados ecotonos urbanos (zonas de transición entre la ciudady el campo)."
+        }
+      ],
+      "text": "Restaurar las transiciones entre ciudad y campo y mejorar su conexión.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-07",
+      "officialId": "P18-07",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Seguiremos potenciando la educación ambiental con la realización de talleres ambientales destinados a toda la población, buscando siempre la implicación de los ciudadanos, especialmente de niños, jóvenes y jubilados, en el cuidado de las zonas verdes.",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 9,
+          "top": 636.76,
+          "bottom": 698.21,
+          "text": "Seguiremos potenciando la educación ambiental con la realización de talleres ambientales destinados a toda la población, buscando siempre la implicación de los ciudadanos, especialmente de niños, jóvenes y jubilados, en el cuidado de las zonas verdes."
+        }
+      ],
+      "text": "Ampliar la educación ambiental para distintas edades y promover el cuidado ciudadano de los jardines.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p18-08",
+      "officialId": "P18-08",
+      "topic": "Medio ambiente",
+      "page": 18,
+      "endPage": 18,
+      "rawText": "Garantizaremos que, ante una posible o futura expansión de la ciudad, ésta sea razonable y ambientalmente sostenible.",
+      "fragments": [
+        {
+          "page": 18,
+          "block": 10,
+          "top": 719.19,
+          "bottom": 747.67,
+          "text": "Garantizaremos que, ante una posible o futura expansión de la ciudad, ésta sea razonable y ambientalmente sostenible."
+        }
+      ],
+      "text": "Asegurar criterios ambientales en una posible expansión urbana.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-01",
+      "officialId": "P19-01",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Avanzaremos en la implantación de zonas verdes, fomentando la plantación de árboles en zonas urbanas, consiguiendo una ciudad más saludable.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 137.68,
+          "text": "Avanzaremos en la implantación de zonas verdes, fomentando la plantación de árboles en zonas urbanas, consiguiendo una ciudad más saludable."
+        }
+      ],
+      "text": "Extender el arbolado y las áreas verdes urbanas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-02",
+      "officialId": "P19-02",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Estudiaremos la posibilidad de acondicionar nuevos parques caninos en zonas de expansión de la ciudad.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 2,
+          "top": 158.66,
+          "bottom": 187.14,
+          "text": "Estudiaremos la posibilidad de acondicionar nuevos parques caninos en zonas de expansión de la ciudad."
+        }
+      ],
+      "text": "Estudiar nuevos espacios para perros en las zonas de crecimiento urbano.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-03",
+      "officialId": "P19-03",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Se continuará con el fomento de carriles bici, mediante los cuales se potencia en la ciudad una movilidad urbana sostenible. Se avanzará en los trazados de los carriles bici sur y norte hasta obtener un cinturón que conecte las diferentes zonas de nuestra ciudad.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 3,
+          "top": 208.12,
+          "bottom": 286.05,
+          "text": "Se continuará con el fomento de carriles bici, mediante los cuales se potencia en la ciudad una movilidad urbana sostenible. Se avanzará en los trazados de los carriles bici sur y norte hasta obtener un cinturón que conecte las diferentes zonas de nuestra ciudad."
+        }
+      ],
+      "text": "Desarrollar los carriles bici norte y sur hasta conectarlos en un anillo urbano.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-04",
+      "officialId": "P19-04",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Mantendremos una apuesta decidida por las energías renovables y por las actuaciones encaminadas a mitigar el cambio climático, acogiéndonos y adecuándonos a la normativa vigente y a los Objetivos de Desarrollo Sostenible. La adaptación al cambio climático supone uno de los retos clave del siglo XXI.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 4,
+          "top": 307.04,
+          "bottom": 384.97,
+          "text": "Mantendremos una apuesta decidida por las energías renovables y por las actuaciones encaminadas a mitigar el cambio climático, acogiéndonos y adecuándonos a la normativa vigente y a los Objetivos de Desarrollo Sostenible. La adaptación al cambio climático supone uno de los retos clave del siglo XXI."
+        }
+      ],
+      "text": "Promover energías renovables y medidas de adaptación climática conforme a la normativa y los ODS.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-05",
+      "officialId": "P19-05",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Seguiremos aumentando el número de puntos de recarga para coches eléctricos, en función de la demanda de la ciudadanía y del parque de coches eléctricos de la ciudad.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 5,
+          "top": 405.95,
+          "bottom": 450.92,
+          "text": "Seguiremos aumentando el número de puntos de recarga para coches eléctricos, en función de la demanda de la ciudadanía y del parque de coches eléctricos de la ciudad."
+        }
+      ],
+      "text": "Ampliar los cargadores eléctricos según demanda y parque de vehículos.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-06",
+      "officialId": "P19-06",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Fomentaremos el uso eficiente de la energía, manteniendo el Plan de Ahorro Energético Municipal aprobado este mandato y reforzando nuestra apuesta por la eficiencia energética y las energías renovables en las infraestructuras municipales.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 6,
+          "top": 471.9,
+          "bottom": 533.35,
+          "text": "Fomentaremos el uso eficiente de la energía, manteniendo el Plan de Ahorro Energético Municipal aprobado este mandato y reforzando nuestra apuesta por la eficiencia energética y las energías renovables en las infraestructuras municipales."
+        }
+      ],
+      "text": "Mantener el ahorro energético municipal y mejorar edificios con eficiencia y energías renovables.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-07",
+      "officialId": "P19-07",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "A través de la Hoja de Ruta elaborada por el Comité de Expertos del Agua y aprobada por el Pleno del Ayuntamiento en el presente mandato, se han sentado las bases para solucionar el histórico problema del abastecimiento de agua de nuestra ciudad. En este sentido, seguiremos trabajando en los siguientes pasos, acometiendo todas aquellas intervenciones y obras necesarias marcadas en ese Plan para garantizar que siempre tengamos agua en nuestras casas, establecimientos y empresas.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 7,
+          "top": 554.33,
+          "bottom": 681.72,
+          "text": "A través de la Hoja de Ruta elaborada por el Comité de Expertos del Agua y aprobada por el Pleno del Ayuntamiento en el presente mandato, se han sentado las bases para solucionar el histórico problema del abastecimiento de agua de nuestra ciudad. En este sentido, seguiremos trabajando en los siguientes pasos, acometiendo todas aquellas intervenciones y obras necesarias marcadas en ese Plan para garantizar que siempre tengamos agua en nuestras casas, establecimientos y empresas."
+        }
+      ],
+      "text": "Ejecutar las intervenciones previstas en la hoja de ruta del comité del agua para asegurar el abastecimiento.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p19-08",
+      "officialId": "P19-08",
+      "topic": "Medio ambiente y agua",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Se realizarán nuevas intervenciones estructurales en espacios como las riberas de los ríos Chico y Adaja, el Centro Medioambiental de San Segundo y los aledaños del embalse de Fuentes Claras, generando recursos para el disfrute de los abulenses y fomentando la atracción de nuevos visitantes con la puesta en valor de los recursos naturales de nuestra ciudad.",
+      "fragments": [
+        {
+          "page": 19,
+          "block": 8,
+          "top": 702.7,
+          "bottom": 790,
+          "text": "Se realizarán nuevas intervenciones estructurales en espacios como las riberas de los ríos Chico y Adaja, el Centro Medioambiental de San Segundo y los aledaños del embalse de Fuentes Claras, generando recursos para el disfrute de los abulenses y fomentando la atracción de nuevos visitantes con la puesta en valor de los recursos naturales de nuestra ciudad."
+        }
+      ],
+      "text": "Intervenir en las riberas del Chico y Adaja, San Segundo y Fuentes Claras para uso ciudadano y turístico.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-01",
+      "officialId": "P22-01",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Se garantizarán las partidas presupuestarias para los barrios anexionados en el presupuesto municipal, destinados de forma específica a inversiones en infraestructuras y a mantenimientos de inmuebles, así como al desarrollo de actividades culturales, deportivas y festivas.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 131.83,
+          "text": "Se garantizarán las partidas presupuestarias para los barrios anexionados en el presupuesto municipal, destinados de forma específica a inversiones en infraestructuras y a mantenimientos de inmuebles, así como al desarrollo de actividades culturales, deportivas y festivas."
+        }
+      ],
+      "text": "Reservar recursos municipales para infraestructuras, mantenimiento y actividades de los barrios anexionados.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-02",
+      "officialId": "P22-02",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Se continuará con la pavimentación de las calles.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 2,
+          "top": 185.79,
+          "bottom": 197.78,
+          "text": "Se continuará con la pavimentación de las calles."
+        }
+      ],
+      "text": "Continuar la pavimentación de los barrios anexionados.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-03",
+      "officialId": "P22-03",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Se continuará incluyendo a los barrios anexionados en las operaciones asfalto.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 3,
+          "top": 218.76,
+          "bottom": 247.23,
+          "text": "Se continuará incluyendo a los barrios anexionados en las operaciones asfalto."
+        }
+      ],
+      "text": "Incluir los barrios anexionados en las campañas de asfaltado.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-04",
+      "officialId": "P22-04",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Continuar con el plan de arreglo de caminos rurales en todo el término municipal.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 4,
+          "top": 268.22,
+          "bottom": 296.69,
+          "text": "Continuar con el plan de arreglo de caminos rurales en todo el término municipal."
+        }
+      ],
+      "text": "Reparar caminos rurales en el término municipal.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-05",
+      "officialId": "P22-05",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Mejora del mobiliario urbano.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 5,
+          "top": 317.67,
+          "bottom": 329.66,
+          "text": "Mejora del mobiliario urbano."
+        }
+      ],
+      "text": "Mejorar el equipamiento urbano en los barrios anexionados.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-06",
+      "officialId": "P22-06",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Planificación de las obras que se vayan a realizar en cada barrio anexionado de la mano del representante municipal.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 6,
+          "top": 350.65,
+          "bottom": 379.12,
+          "text": "Planificación de las obras que se vayan a realizar en cada barrio anexionado de la mano del representante municipal."
+        }
+      ],
+      "text": "Acordar las obras de cada barrio anexionado con su representante municipal.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-07",
+      "officialId": "P22-07",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Los barrios anexionados dispondrán, como ya se ha puesto en marcha en este mandato, de presupuesto propio para las inversiones que consideren necesarias.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 7,
+          "top": 400.11,
+          "bottom": 445.07,
+          "text": "Los barrios anexionados dispondrán, como ya se ha puesto en marcha en este mandato, de presupuesto propio para las inversiones que consideren necesarias."
+        }
+      ],
+      "text": "Mantener partidas propias para las inversiones que decidan los barrios anexionados.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-08",
+      "officialId": "P22-08",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Implantación de Estaciones Depuradoras de Aguas residuales en los barrios anexionados que actualmente no disponen de ellas.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 8,
+          "top": 466.05,
+          "bottom": 494.53,
+          "text": "Implantación de Estaciones Depuradoras de Aguas residuales en los barrios anexionados que actualmente no disponen de ellas."
+        }
+      ],
+      "text": "Construir depuradoras en los barrios anexionados que carecen de ellas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-09",
+      "officialId": "P22-09",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Se mantendrá el servicio de transporte a la demanda que comunica los barrios anexionados con la capital a través del servicio de taxi.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 9,
+          "top": 515.51,
+          "bottom": 543.98,
+          "text": "Se mantendrá el servicio de transporte a la demanda que comunica los barrios anexionados con la capital a través del servicio de taxi."
+        }
+      ],
+      "text": "Conservar el taxi a demanda entre los barrios anexionados y la capital.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p22-10",
+      "officialId": "P22-10",
+      "topic": "Barrios anexionados",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Seguiremos avanzando en la resolución de las problemáticas específicas de cada barrio y mejorando la calidad de vida de sus vecinos con herramientas como la ya puesta en marcha Mesa de Barrios Anexionados.",
+      "fragments": [
+        {
+          "page": 22,
+          "block": 10,
+          "top": 564.97,
+          "bottom": 626.42,
+          "text": "Seguiremos avanzando en la resolución de las problemáticas específicas de cada barrio y mejorando la calidad de vida de sus vecinos con herramientas como la ya puesta en marcha Mesa de Barrios Anexionados."
+        }
+      ],
+      "text": "Atender problemas específicos a través de la mesa de barrios anexionados y otras herramientas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p24-01",
+      "officialId": "P24-01",
+      "topic": "Accesibilidad",
+      "page": 24,
+      "endPage": 24,
+      "rawText": "Nuestro compromiso radica, por tanto, en seguir avanzando hacia la accesibilidad universal de calles y plazas y de infraestructuras municipales, en el turismo, en el acceso a la cultura y el ocio y a la totalidad de servicios e información del Ayuntamiento.",
+      "fragments": [
+        {
+          "page": 24,
+          "block": 2,
+          "top": 224.61,
+          "bottom": 286.05,
+          "text": "Nuestro compromiso radica, por tanto, en seguir avanzando hacia la accesibilidad universal de calles y plazas y de infraestructuras municipales, en el turismo, en el acceso a la cultura y el ocio y a la totalidad de servicios e información del Ayuntamiento."
+        }
+      ],
+      "text": "Extender la accesibilidad a calles, instalaciones, turismo, cultura, ocio e información municipal.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p24-02",
+      "officialId": "P24-02",
+      "topic": "Accesibilidad",
+      "page": 24,
+      "endPage": 24,
+      "rawText": "Seguiremos ofreciendo asesoramiento gratuito en materia de accesibilidad a particulares, empresas y colectivos. Asesoramiento que cobra especial importancia en los locales de uso público para comercio o hostelería, manteniendo las bonificaciones fiscales para la eliminación de barreras y mejoras de accesibilidad en establecimientos públicos y viviendas.",
+      "fragments": [
+        {
+          "page": 24,
+          "block": 3,
+          "top": 307.04,
+          "bottom": 401.46,
+          "text": "Seguiremos ofreciendo asesoramiento gratuito en materia de accesibilidad a particulares, empresas y colectivos. Asesoramiento que cobra especial importancia en los locales de uso público para comercio o hostelería, manteniendo las bonificaciones fiscales para la eliminación de barreras y mejoras de accesibilidad en establecimientos públicos y viviendas."
+        }
+      ],
+      "text": "Mantener el asesoramiento gratuito sobre accesibilidad y las ventajas fiscales para eliminar barreras en locales y viviendas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p24-03",
+      "officialId": "P24-03",
+      "topic": "Accesibilidad",
+      "page": 24,
+      "endPage": 24,
+      "rawText": "Del mismo modo, nos comprometemos a mantener el trabajo transversal dentro del Ayuntamiento para abordar los temas que afectan a la movilidad de la ciudad, así como las reuniones de coordinación entre el Área de Accesibilidad y el de Urbanismo, garantizándonos así la accesibilidad en la ejecución de todas las obras municipales, novedad implementada por Por Ávila en el actual mandato.",
+      "fragments": [
+        {
+          "page": 24,
+          "block": 4,
+          "top": 422.44,
+          "bottom": 533.35,
+          "text": "Del mismo modo, nos comprometemos a mantener el trabajo transversal dentro del Ayuntamiento para abordar los temas que afectan a la movilidad de la ciudad, así como las reuniones de coordinación entre el Área de Accesibilidad y el de Urbanismo, garantizándonos así la accesibilidad en la ejecución de todas las obras municipales, novedad implementada por Por Ávila en el actual mandato."
+        }
+      ],
+      "text": "Coordinar accesibilidad y urbanismo para incorporar estos criterios en todas las obras municipales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p24-04",
+      "officialId": "P24-04",
+      "topic": "Accesibilidad",
+      "page": 24,
+      "endPage": 24,
+      "rawText": "Continuaremos trabajando en la accesibilidad de las paradas de autobús, con la realización de zonas de avance y la instalación de marquesinas.",
+      "fragments": [
+        {
+          "page": 24,
+          "block": 5,
+          "top": 554.33,
+          "bottom": 599.29,
+          "text": "Continuaremos trabajando en la accesibilidad de las paradas de autobús, con la realización de zonas de avance y la instalación de marquesinas."
+        }
+      ],
+      "text": "Adaptar las paradas de autobús con avances de acera y marquesinas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p24-05",
+      "officialId": "P24-05",
+      "topic": "Accesibilidad",
+      "page": 24,
+      "endPage": 24,
+      "rawText": "Se continuará garantizando la reserva de estacionamientos y espacios reservados para personas con movilidad reducida en la celebración de eventos de afluencia masiva de público. En este sentido, y a modo de ejemplo, en la Cabalgata de Reyes se mantendrá la zona sin ruido para facilitar a las familias con niños con trastorno del espectro autista que puedan asistir.",
+      "fragments": [
+        {
+          "page": 24,
+          "block": 6,
+          "top": 620.27,
+          "bottom": 714.69,
+          "text": "Se continuará garantizando la reserva de estacionamientos y espacios reservados para personas con movilidad reducida en la celebración de eventos de afluencia masiva de público. En este sentido, y a modo de ejemplo, en la Cabalgata de Reyes se mantendrá la zona sin ruido para facilitar a las familias con niños con trastorno del espectro autista que puedan asistir."
+        }
+      ],
+      "text": "Reservar espacios y aparcamientos accesibles en eventos y mantener el tramo sin ruido de la Cabalgata de Reyes.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p25-01",
+      "officialId": "P25-01",
+      "topic": "Accesibilidad",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "Mantendremos el proyecto de acceso a la cultura para todas las personas. Descubriendo una Semana Santa Diferente, por ejemplo, con especial incidencia en la accesibilidad cognitiva y visual así como nuestro compromiso de seguir incluyendo obras accesibles en las diferentes muestras de teatro organizadas por el Ayuntamiento.",
+      "fragments": [
+        {
+          "page": 25,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 170.65,
+          "text": "Mantendremos el proyecto de acceso a la cultura para todas las personas. Descubriendo una Semana Santa Diferente, por ejemplo, con especial incidencia en la accesibilidad cognitiva y visual así como nuestro compromiso de seguir incluyendo obras accesibles en las diferentes muestras de teatro organizadas por el Ayuntamiento."
+        }
+      ],
+      "text": "Mantener la oferta cultural accesible, incluida Semana Santa y representaciones teatrales adaptadas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p25-02",
+      "officialId": "P25-02",
+      "topic": "Accesibilidad",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "Continuaremos trabajando de la mano del Consejo de Discapacidad en diferentes campañas de sensibilización a la población en general sobre accesibilidad, inclusión y discapacidad.",
+      "fragments": [
+        {
+          "page": 25,
+          "block": 2,
+          "top": 191.63,
+          "bottom": 236.6,
+          "text": "Continuaremos trabajando de la mano del Consejo de Discapacidad en diferentes campañas de sensibilización a la población en general sobre accesibilidad, inclusión y discapacidad."
+        }
+      ],
+      "text": "Organizar con el Consejo de Discapacidad campañas de sensibilización e inclusión.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p26-01",
+      "officialId": "P26-01",
+      "topic": "Mayores",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "A través del Área de mayores del Ayuntamiento y del Plan de Detección y Atención a las Personas Mayores en Soledad “Ávila Contigo”, continuaremos apoyando a las personas mayores para que afronten de forma positiva los cambios psicosociales y se adapten a los nuevos retos que la vida les va presentando, facilitando su participación activa; potenciando su salud física, psíquica y cognitiva; optimizando su calidad de vida y desarrollando su máximo bienestar emocional; posibilitando la permanencia de los mayores dentro de su ámbito cotidiano; fomentando el ocio y la participación de los mayores como modo de promoción del envejecimiento activo; y protegiendo los derechos del mayor con el fin de evitar situaciones de abuso y maltrato, potenciando la cultura del buen trato a los mayores y sensibilizando a la sociedad abulense sobre las necesidades de las personas mayores.",
+      "fragments": [
+        {
+          "page": 26,
+          "block": 2,
+          "top": 175.15,
+          "bottom": 384.97,
+          "text": "A través del Área de mayores del Ayuntamiento y del Plan de Detección y Atención a las Personas Mayores en Soledad “Ávila Contigo”, continuaremos apoyando a las personas mayores para que afronten de forma positiva los cambios psicosociales y se adapten a los nuevos retos que la vida les va presentando, facilitando su participación activa; potenciando su salud física, psíquica y cognitiva; optimizando su calidad de vida y desarrollando su máximo bienestar emocional; posibilitando la permanencia de los mayores dentro de su ámbito cotidiano; fomentando el ocio y la participación de los mayores como modo de promoción del envejecimiento activo; y protegiendo los derechos del mayor con el fin de evitar situaciones de abuso y maltrato, potenciando la cultura del buen trato a los mayores y sensibilizando a la sociedad abulense sobre las necesidades de las personas mayores."
+        }
+      ],
+      "text": "Continuar Ávila Contigo y la atención a mayores en soledad, favoreciendo autonomía, permanencia en casa, participación, salud y protección frente al maltrato.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p26-02",
+      "officialId": "P26-02",
+      "topic": "Mayores",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Se seguirán implementando nuevas actividades para nuestros mayores atendiendo a sus demandas a través del Consejo de Mayores y todas aquellas que día a día nos hacen llegar, tales como nuevos viajes, diversas actividades de ocio, talleres de cocina y manualidades, avanzando en el acceso a las nuevas tecnologías o idiomas.",
+      "fragments": [
+        {
+          "page": 26,
+          "block": 3,
+          "top": 405.95,
+          "bottom": 483.89,
+          "text": "Se seguirán implementando nuevas actividades para nuestros mayores atendiendo a sus demandas a través del Consejo de Mayores y todas aquellas que día a día nos hacen llegar, tales como nuevos viajes, diversas actividades de ocio, talleres de cocina y manualidades, avanzando en el acceso a las nuevas tecnologías o idiomas."
+        }
+      ],
+      "text": "Ampliar actividades para mayores según sus demandas: viajes, ocio, talleres, idiomas y acceso digital.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p27-01",
+      "officialId": "P27-01",
+      "topic": "Política social y conciliación",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "Nos comprometemos a seguir manteniendo la política social que ha caracterizado el presente mandato, evitando que nadie se quede atrás ante las dificultades derivadas de la pandemia y de la actual situación de incremento del coste de los consumos de la electricidad y el gas y de la cesta de la compra, que afecta sobre todo a los más vulnerables y ante el alza de los tipos de interés que gravan préstamos e hipotecas.",
+      "fragments": [
+        {
+          "page": 27,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 203.62,
+          "text": "Nos comprometemos a seguir manteniendo la política social que ha caracterizado el presente mandato, evitando que nadie se quede atrás ante las dificultades derivadas de la pandemia y de la actual situación de incremento del coste de los consumos de la electricidad y el gas y de la cesta de la compra, que afecta sobre todo a los más vulnerables y ante el alza de los tipos de interés que gravan préstamos e hipotecas."
+        }
+      ],
+      "text": "Mantener la protección social ante las dificultades económicas y el encarecimiento de suministros, alimentos y financiación.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p27-02",
+      "officialId": "P27-02",
+      "topic": "Política social y conciliación",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "Continuaremos potenciando las medidas tendentes a favorecer la conciliación de la vida personal, laboral y familiar y el desarrollo integral de la personalidad del menor, fomentando la participación infantil y promoviendo la formación en valores sociales deseables.",
+      "fragments": [
+        {
+          "page": 27,
+          "block": 3,
+          "top": 301.97,
+          "bottom": 363.42,
+          "text": "Continuaremos potenciando las medidas tendentes a favorecer la conciliación de la vida personal, laboral y familiar y el desarrollo integral de la personalidad del menor, fomentando la participación infantil y promoviendo la formación en valores sociales deseables."
+        }
+      ],
+      "text": "Favorecer la conciliación y el desarrollo y participación de la infancia.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p27-03",
+      "officialId": "P27-03",
+      "topic": "Política social y conciliación",
+      "page": 27,
+      "endPage": 27,
+      "rawText": "Incrementaremos la oferta de actividades dirigidas a la infancia poniendo en valor el respeto, la tolerancia, la diversidad y la empatía. Serán sábados divertidos en familia, donde realizaremos talleres, juegos y excursiones a través de las que conoceremos nuestra ciudad y fomentaremos el ejercicio y el ocio en familia.",
+      "fragments": [
+        {
+          "page": 27,
+          "block": 4,
+          "top": 384.4,
+          "bottom": 462.33,
+          "text": "Incrementaremos la oferta de actividades dirigidas a la infancia poniendo en valor el respeto, la tolerancia, la diversidad y la empatía. Serán sábados divertidos en familia, donde realizaremos talleres, juegos y excursiones a través de las que conoceremos nuestra ciudad y fomentaremos el ejercicio y el ocio en familia."
+        }
+      ],
+      "text": "Ampliar actividades familiares los sábados, con juegos, talleres y excursiones que promuevan valores y ejercicio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p28-01",
+      "officialId": "P28-01",
+      "topic": "Juventud",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "Seguiremos trabajando por los jóvenes, fomentando un ocio saludable a través de un mayor número de talleres de diferentes bloques, como los culinarios, fotográficos, de idiomas, digital, natural o creativos, ligas, torneos, actividades de raqueta, deportes de equipo, urbanos, de aventura, gymkhanas…",
+      "fragments": [
+        {
+          "page": 28,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 170.65,
+          "text": "Seguiremos trabajando por los jóvenes, fomentando un ocio saludable a través de un mayor número de talleres de diferentes bloques, como los culinarios, fotográficos, de idiomas, digital, natural o creativos, ligas, torneos, actividades de raqueta, deportes de equipo, urbanos, de aventura, gymkhanas…"
+        }
+      ],
+      "text": "Aumentar talleres y actividades juveniles de ocio saludable y deporte.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p28-02",
+      "officialId": "P28-02",
+      "topic": "Juventud",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "Seguiremos desarrollando una asesoría psicosocial con atenciones psicológicas individualizadas, charlas informativas y preventivas, talleres de técnicas de estudio, habilidades sociales y grupos de adolescentes, trabajando aspectos claves en su desarrollo como la adquisición de habilidades sociales o la prevención de situaciones como el bullying, cutting o abuso y prevención en el uso de pantallas y redes sociales.",
+      "fragments": [
+        {
+          "page": 28,
+          "block": 2,
+          "top": 191.63,
+          "bottom": 302.54,
+          "text": "Seguiremos desarrollando una asesoría psicosocial con atenciones psicológicas individualizadas, charlas informativas y preventivas, talleres de técnicas de estudio, habilidades sociales y grupos de adolescentes, trabajando aspectos claves en su desarrollo como la adquisición de habilidades sociales o la prevención de situaciones como el bullying, cutting o abuso y prevención en el uso de pantallas y redes sociales."
+        }
+      ],
+      "text": "Continuar la asesoría psicosocial juvenil y la prevención del acoso, autolesiones y uso problemático de pantallas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p28-03",
+      "officialId": "P28-03",
+      "topic": "Juventud",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "Potenciaremos el asesoramiento a jóvenes en búsqueda de empleo, orientación en la realización de currículum, preparación de entrevistas, intermediación laboral, orientación laboral, bolsa de empleo, información en materia formativa, autoempleo, información sobre ayudas y subvenciones, estudios de viabilidad y plan de empresa, informar sobre ayudas y ofertas de pisos en venta y alquiler, asesoramiento técnico y jurídico en los trámites de adquisición de vivienda o información de ayudas y subvenciones en alquiler de vivienda.",
+      "fragments": [
+        {
+          "page": 28,
+          "block": 3,
+          "top": 323.52,
+          "bottom": 467.4,
+          "text": "Potenciaremos el asesoramiento a jóvenes en búsqueda de empleo, orientación en la realización de currículum, preparación de entrevistas, intermediación laboral, orientación laboral, bolsa de empleo, información en materia formativa, autoempleo, información sobre ayudas y subvenciones, estudios de viabilidad y plan de empresa, informar sobre ayudas y ofertas de pisos en venta y alquiler, asesoramiento técnico y jurídico en los trámites de adquisición de vivienda o información de ayudas y subvenciones en alquiler de vivienda."
+        }
+      ],
+      "text": "Reforzar la orientación juvenil sobre empleo, formación, emprendimiento y acceso a vivienda.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p28-04",
+      "officialId": "P28-04",
+      "topic": "Juventud",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "Trabajaremos para introducir nuevos grados oficiales con titulación de la Junta de Castilla y León a través de la Escuela Municipal de Animación, así como otras titulaciones similares dirigidas principalmente a la juventud.",
+      "fragments": [
+        {
+          "page": 28,
+          "block": 4,
+          "top": 488.38,
+          "bottom": 549.83,
+          "text": "Trabajaremos para introducir nuevos grados oficiales con titulación de la Junta de Castilla y León a través de la Escuela Municipal de Animación, así como otras titulaciones similares dirigidas principalmente a la juventud."
+        }
+      ],
+      "text": "Trabajar para ampliar titulaciones oficiales y similares en la Escuela Municipal de Animación.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p28-05",
+      "officialId": "P28-05",
+      "topic": "Juventud",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "Continuaremos favoreciendo la difusión cultural entre la población juvenil, con actuaciones de grupos de música y teatro de jóvenes abulenses y Djs de nuestra ciudad, así como concursos de monólogos destinados a la población juvenil abulense, poniendo en valor el talento de los más jóvenes con nuevas iniciativas musicales y relacionadas con las artes.",
+      "fragments": [
+        {
+          "page": 28,
+          "block": 5,
+          "top": 570.82,
+          "bottom": 665.24,
+          "text": "Continuaremos favoreciendo la difusión cultural entre la población juvenil, con actuaciones de grupos de música y teatro de jóvenes abulenses y Djs de nuestra ciudad, así como concursos de monólogos destinados a la población juvenil abulense, poniendo en valor el talento de los más jóvenes con nuevas iniciativas musicales y relacionadas con las artes."
+        }
+      ],
+      "text": "Apoyar la creación cultural juvenil mediante actuaciones, concursos y nuevas iniciativas artísticas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p28-06",
+      "officialId": "P28-06",
+      "topic": "Juventud",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "Se incrementará la oferta de campamentos externos juveniles en verano.",
+      "fragments": [
+        {
+          "page": 28,
+          "block": 6,
+          "top": 686.22,
+          "bottom": 714.69,
+          "text": "Se incrementará la oferta de campamentos externos juveniles en verano."
+        }
+      ],
+      "text": "Aumentar los campamentos juveniles externos de verano.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p29-01",
+      "officialId": "P29-01",
+      "topic": "Igualdad e inclusión",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "En materia de igualdad, se continuará trabajando para dar a conocer a la ciudadanía los aspectos básicos sobre igualdad y violencia de género y de esta forma poder avanzar en una sociedad sin desigualdad ni discriminación por razón de género. Para ello se ha comenzado la elaboración del II Plan Municipal de Igualdad y Contra la Violencia de Género que verá la luz a lo largo de 2023. Se continuarán impartiendo charlas y cursos y campañas de sensibilización, escuelas de padres y madres a las AMPAS en igualdad y se seguirá instalando el punto violeta en actos multitudinarios y festejos.",
+      "fragments": [
+        {
+          "page": 29,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 236.6,
+          "text": "En materia de igualdad, se continuará trabajando para dar a conocer a la ciudadanía los aspectos básicos sobre igualdad y violencia de género y de esta forma poder avanzar en una sociedad sin desigualdad ni discriminación por razón de género. Para ello se ha comenzado la elaboración del II Plan Municipal de Igualdad y Contra la Violencia de Género que verá la luz a lo largo de 2023. Se continuarán impartiendo charlas y cursos y campañas de sensibilización, escuelas de padres y madres a las AMPAS en igualdad y se seguirá instalando el punto violeta en actos multitudinarios y festejos."
+        }
+      ],
+      "text": "Publicar en 2023 el segundo plan de igualdad y contra la violencia de género, y continuar formación, sensibilización y puntos violeta.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p29-02",
+      "officialId": "P29-02",
+      "topic": "Igualdad e inclusión",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "Seguimos avanzando en esta línea con el programa ELI (En la Igualdad), a través del cual se está entrando en todas las aulas de Educación Infantil, Primaria y Secundaria hasta 4º de la ESO de los centros educativos de nuestro municipio. En cuanto a Bachillerato y FP, se mantendrán las charlas de Igualdad y Violencia de Género.",
+      "fragments": [
+        {
+          "page": 29,
+          "block": 2,
+          "top": 257.58,
+          "bottom": 335.51,
+          "text": "Seguimos avanzando en esta línea con el programa ELI (En la Igualdad), a través del cual se está entrando en todas las aulas de Educación Infantil, Primaria y Secundaria hasta 4º de la ESO de los centros educativos de nuestro municipio. En cuanto a Bachillerato y FP, se mantendrán las charlas de Igualdad y Violencia de Género."
+        }
+      ],
+      "text": "Mantener la educación en igualdad con ELI en infantil, primaria y ESO y charlas en bachillerato y FP.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p29-03",
+      "officialId": "P29-03",
+      "topic": "Igualdad e inclusión",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "Se trabajará junto con el sector hostelero para establecer un Protocolo para actuar contra las agresiones y el acoso sexual en espacios de ocio nocturno privado, favoreciendo que el sector empresarial actúe de manera conjunta y consensuada para establecer formas de actuación y prevención que sean efectivas y útiles para el sector con el fin de aumentar la calidad de los servicios que ofrecen.",
+      "fragments": [
+        {
+          "page": 29,
+          "block": 3,
+          "top": 356.49,
+          "bottom": 450.92,
+          "text": "Se trabajará junto con el sector hostelero para establecer un Protocolo para actuar contra las agresiones y el acoso sexual en espacios de ocio nocturno privado, favoreciendo que el sector empresarial actúe de manera conjunta y consensuada para establecer formas de actuación y prevención que sean efectivas y útiles para el sector con el fin de aumentar la calidad de los servicios que ofrecen."
+        }
+      ],
+      "text": "Acordar con la hostelería un protocolo contra agresiones y acoso sexual en el ocio nocturno privado.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p29-04",
+      "officialId": "P29-04",
+      "topic": "Igualdad e inclusión",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "Impulsaremos, en el seno del Consejo Municipal de Personas con Discapacidad, líneas de ayudas para proyectos conjuntos entre las asociaciones del tercer sector.",
+      "fragments": [
+        {
+          "page": 29,
+          "block": 4,
+          "top": 471.9,
+          "bottom": 516.86,
+          "text": "Impulsaremos, en el seno del Consejo Municipal de Personas con Discapacidad, líneas de ayudas para proyectos conjuntos entre las asociaciones del tercer sector."
+        }
+      ],
+      "text": "Promover ayudas para proyectos conjuntos del tercer sector desde el Consejo de Personas con Discapacidad.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p29-05",
+      "officialId": "P29-05",
+      "topic": "Igualdad e inclusión",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "En materia de inclusión social, el Ayuntamiento se consolidará como punto de referencia en cuanto a la atención de las necesidades específicas de la población de origen extranjero con servicio de información sobre recursos para la integración; servicio de información y asesoramiento en materia de extranjería; servicio de mediación social intercultural; actuaciones de sensibilización y participación, con el objetivo de trabajar la integración y promocionar un modelo de convivencia generado desde la diversidad intercultural e intergeneracional; el programa de apoyo a la integración de solicitantes/beneficiarios-as de protección internacional; y el programa de lengua y cultura españolas (PLICE) para personas inmigrantes.",
+      "fragments": [
+        {
+          "page": 29,
+          "block": 5,
+          "top": 537.84,
+          "bottom": 714.69,
+          "text": "En materia de inclusión social, el Ayuntamiento se consolidará como punto de referencia en cuanto a la atención de las necesidades específicas de la población de origen extranjero con servicio de información sobre recursos para la integración; servicio de información y asesoramiento en materia de extranjería; servicio de mediación social intercultural; actuaciones de sensibilización y participación, con el objetivo de trabajar la integración y promocionar un modelo de convivencia generado desde la diversidad intercultural e intergeneracional; el programa de apoyo a la integración de solicitantes/beneficiarios-as de protección internacional; y el programa de lengua y cultura españolas (PLICE) para personas inmigrantes."
+        }
+      ],
+      "text": "Mantener atención e integración de población extranjera: asesoramiento, mediación, protección internacional y aprendizaje de español.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p30-01",
+      "officialId": "P30-01",
+      "topic": "Participación ciudadana",
+      "page": 30,
+      "endPage": 30,
+      "rawText": "Se continuarán potenciando las medidas tendentes a fomentar el asociacionismo y la participación ciudadana. Se blindan las subvenciones tanto a los Consejos de Barrio como al Consejo de Mayores y el de Discapacidad, asociaciones sin ánimo de lucro y la subvención a la Federación de Asociaciones de Vecinos (FAVA) que se han visto incrementadas en casi 100.000 euros en estos cuatro últimos años, incorporándose, además, la subvención por 6.000 euros a las peñas. El trabajo conjunto con estos colectivos permitirá continuar involucrando activamente cada vez en mayor grado a los ciudadanos y al tejido asociativo en la vida de la ciudad y en la toma de decisiones públicas que tienen repercusión en sus vidas.",
+      "fragments": [
+        {
+          "page": 30,
+          "block": 1,
+          "top": 92.72,
+          "bottom": 269.57,
+          "text": "Se continuarán potenciando las medidas tendentes a fomentar el asociacionismo y la participación ciudadana. Se blindan las subvenciones tanto a los Consejos de Barrio como al Consejo de Mayores y el de Discapacidad, asociaciones sin ánimo de lucro y la subvención a la Federación de Asociaciones de Vecinos (FAVA) que se han visto incrementadas en casi 100.000 euros en estos cuatro últimos años, incorporándose, además, la subvención por 6.000 euros a las peñas. El trabajo conjunto con estos colectivos permitirá continuar involucrando activamente cada vez en mayor grado a los ciudadanos y al tejido asociativo en la vida de la ciudad y en la toma de decisiones públicas que tienen repercusión en sus vidas."
+        }
+      ],
+      "text": "Consolidar participación y ayudas a consejos, asociaciones, FAVA y peñas; el incremento de casi 100.000 euros y la ayuda de 6.000 se presentan como antecedentes.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p32-01",
+      "officialId": "P32-01",
+      "topic": "Turismo",
+      "page": 32,
+      "endPage": 32,
+      "rawText": "Seguiremos avanzando en la diversificación de los productos turísticos en aras a atraer nuevos perfiles de visitantes: Desarrollo de nuevos productos dirigidos a un perfil de turista interesado en la naturaleza (rutas, senderismo, biodiversidad, cielos oscuros, riberas…), deportivo (ciclismo, running, senderismo,…) y patrimonial.",
+      "fragments": [
+        {
+          "page": 32,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 131.83,
+          "text": "Seguiremos avanzando en la diversificación de los productos turísticos en aras a atraer nuevos perfiles de visitantes: Desarrollo de nuevos productos dirigidos a un perfil de turista interesado en la naturaleza (rutas, senderismo, biodiversidad, cielos oscuros, riberas…), deportivo (ciclismo, running, senderismo,…) y patrimonial."
+        }
+      ],
+      "text": "Diversificar productos turísticos de naturaleza, deporte y patrimonio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p32-02",
+      "officialId": "P32-02",
+      "topic": "Turismo",
+      "page": 32,
+      "endPage": 32,
+      "rawText": "Continuaremos potenciando la oferta de tarde/noche para aumentar las pernoctaciones en la ciudad: mantenimiento y generación de productos turísticos que desarrollen su actividad en una franja horaria que posibilite y/o invite al visitante o turista a pernoctar en la ciudad, siguiendo la senda de actuaciones ya puestas en marcha como las visitas guiadas y las teatralizadas que se realizan al caer la tarde o incluso entrada la noche. A tal fin, seguiremos con la modificación de horarios de apertura de monumentos y la mejora de la iluminación ornamental.",
+      "fragments": [
+        {
+          "page": 32,
+          "block": 1,
+          "top": 152.81,
+          "bottom": 296.69,
+          "text": "Continuaremos potenciando la oferta de tarde/noche para aumentar las pernoctaciones en la ciudad: mantenimiento y generación de productos turísticos que desarrollen su actividad en una franja horaria que posibilite y/o invite al visitante o turista a pernoctar en la ciudad, siguiendo la senda de actuaciones ya puestas en marcha como las visitas guiadas y las teatralizadas que se realizan al caer la tarde o incluso entrada la noche. A tal fin, seguiremos con la modificación de horarios de apertura de monumentos y la mejora de la iluminación ornamental."
+        }
+      ],
+      "text": "Ampliar actividades turísticas de tarde y noche, horarios de monumentos e iluminación para favorecer pernoctaciones.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p32-03",
+      "officialId": "P32-03",
+      "topic": "Turismo",
+      "page": 32,
+      "endPage": 32,
+      "rawText": "Incorporaremos a nuestra oferta un turismo experiencial: generación de productos que aúnen el rico patrimonio monumental abulense con el histórico, cultural, gastronómico… para ofrecer a los visitantes verdaderas experiencias integrales.",
+      "fragments": [
+        {
+          "page": 32,
+          "block": 2,
+          "top": 317.67,
+          "bottom": 379.12,
+          "text": "Incorporaremos a nuestra oferta un turismo experiencial: generación de productos que aúnen el rico patrimonio monumental abulense con el histórico, cultural, gastronómico… para ofrecer a los visitantes verdaderas experiencias integrales."
+        }
+      ],
+      "text": "Crear experiencias que combinen patrimonio, historia, cultura y gastronomía.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p32-04",
+      "officialId": "P32-04",
+      "topic": "Turismo",
+      "page": 32,
+      "endPage": 32,
+      "rawText": "Seguimos trabajando en la generación y adecuación de nuevos espacios turísticos: intervenciones estructurales en espacios como las riberas del Río Chico y el Río Adaja y los aledaños del embalse de Fuentes Claras, generando recursos para la atracción de nuevos visitantes así como para su disfrute por estos y los abulenses.",
+      "fragments": [
+        {
+          "page": 32,
+          "block": 3,
+          "top": 400.11,
+          "bottom": 478.04,
+          "text": "Seguimos trabajando en la generación y adecuación de nuevos espacios turísticos: intervenciones estructurales en espacios como las riberas del Río Chico y el Río Adaja y los aledaños del embalse de Fuentes Claras, generando recursos para la atracción de nuevos visitantes así como para su disfrute por estos y los abulenses."
+        }
+      ],
+      "text": "Acondicionar espacios turísticos en las riberas del Chico y Adaja y en Fuentes Claras.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p32-05",
+      "officialId": "P32-05",
+      "topic": "Turismo",
+      "page": 32,
+      "endPage": 32,
+      "rawText": "Recuperaremos y adecuaremos el Centro Medioambiental de San Segundo para su uso como centro de recepción de visitantes y de interpretación de los recursos naturales de nuestra ciudad.",
+      "fragments": [
+        {
+          "page": 32,
+          "block": 4,
+          "top": 499.02,
+          "bottom": 543.98,
+          "text": "Recuperaremos y adecuaremos el Centro Medioambiental de San Segundo para su uso como centro de recepción de visitantes y de interpretación de los recursos naturales de nuestra ciudad."
+        }
+      ],
+      "text": "Recuperar San Segundo como centro de recepción e interpretación de recursos naturales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p32-06",
+      "officialId": "P32-06",
+      "topic": "Turismo",
+      "page": 32,
+      "endPage": 32,
+      "rawText": "Continuaremos avanzando en la promoción del destino: promoción nacional e internacional del destino Ávila como un producto experiencial integral, aunando la riqueza patrimonial, cultural, histórica, gastronómica y natural en aras a lograr no sólo atraer a nuevos turistas y visitantes, sino a retener y fidelizar a quienes nos visitan, con una oferta completa y diversa que alargue las estancias de los mismos e incremente las pernoctaciones, y que permita desestacionalizar la demanda del destino. Todo ello trabajando con medios tanto online como offline.",
+      "fragments": [
+        {
+          "page": 32,
+          "block": 5,
+          "top": 564.97,
+          "bottom": 708.85,
+          "text": "Continuaremos avanzando en la promoción del destino: promoción nacional e internacional del destino Ávila como un producto experiencial integral, aunando la riqueza patrimonial, cultural, histórica, gastronómica y natural en aras a lograr no sólo atraer a nuevos turistas y visitantes, sino a retener y fidelizar a quienes nos visitan, con una oferta completa y diversa que alargue las estancias de los mismos e incremente las pernoctaciones, y que permita desestacionalizar la demanda del destino. Todo ello trabajando con medios tanto online como offline."
+        }
+      ],
+      "text": "Promocionar Ávila dentro y fuera de España para prolongar estancias, fidelizar visitas y reducir estacionalidad.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p32-07",
+      "officialId": "P32-07",
+      "topic": "Turismo",
+      "page": 32,
+      "endPage": 32,
+      "rawText": "Recuperaremos zonas de la ciudad para desarrollar actividades de ocio y tiempo libre para aumentar la estancia del visitante y mejorar Ávila como destino turístico.",
+      "fragments": [
+        {
+          "page": 32,
+          "block": 6,
+          "top": 729.83,
+          "bottom": 774.79,
+          "text": "Recuperaremos zonas de la ciudad para desarrollar actividades de ocio y tiempo libre para aumentar la estancia del visitante y mejorar Ávila como destino turístico."
+        }
+      ],
+      "text": "Recuperar espacios de ocio que contribuyan a alargar la estancia turística.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p33-01",
+      "officialId": "P33-01",
+      "topic": "Turismo",
+      "page": 33,
+      "endPage": 33,
+      "rawText": "Continuaremos trabajando en impulsar Ávila como destino turístico inteligente para mejorar la experiencia del turista, la accesibilidad y generar empleos relacionados con el sector.",
+      "fragments": [
+        {
+          "page": 33,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 98.86,
+          "text": "Continuaremos trabajando en impulsar Ávila como destino turístico inteligente para mejorar la experiencia del turista, la accesibilidad y generar empleos relacionados con el sector."
+        }
+      ],
+      "text": "Desarrollar Ávila como destino turístico inteligente, con accesibilidad y empleo sectorial.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p33-02",
+      "officialId": "P33-02",
+      "topic": "Turismo",
+      "page": 33,
+      "endPage": 33,
+      "rawText": "Avanzaremos en la mejora de la estancia de los visitantes y la calidad de vida de los abulenses a través de las nuevas tecnologías mejorando la información de la ciudad y ofreciendo información personalizada en función del tipo de visitante y sus intereses.",
+      "fragments": [
+        {
+          "page": 33,
+          "block": 1,
+          "top": 119.84,
+          "bottom": 181.29,
+          "text": "Avanzaremos en la mejora de la estancia de los visitantes y la calidad de vida de los abulenses a través de las nuevas tecnologías mejorando la información de la ciudad y ofreciendo información personalizada en función del tipo de visitante y sus intereses."
+        }
+      ],
+      "text": "Personalizar la información turística mediante tecnologías digitales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p33-03",
+      "officialId": "P33-03",
+      "topic": "Turismo",
+      "page": 33,
+      "endPage": 33,
+      "rawText": "Mantendremos una gestión eficiente de las actividades turísticas con la implantación de recursos digitales que ayuden al usuario a mejorar el conocimiento de nuestra ciudad y al Ayuntamiento a la protección del patrimonio abulense.",
+      "fragments": [
+        {
+          "page": 33,
+          "block": 2,
+          "top": 202.27,
+          "bottom": 263.72,
+          "text": "Mantendremos una gestión eficiente de las actividades turísticas con la implantación de recursos digitales que ayuden al usuario a mejorar el conocimiento de nuestra ciudad y al Ayuntamiento a la protección del patrimonio abulense."
+        }
+      ],
+      "text": "Utilizar recursos digitales para la gestión turística y la protección patrimonial.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p33-04",
+      "officialId": "P33-04",
+      "topic": "Turismo",
+      "page": 33,
+      "endPage": 33,
+      "rawText": "Seguiremos impulsando las redes sociales actuales y nuevas para la promoción de la ciudad de Ávila.",
+      "fragments": [
+        {
+          "page": 33,
+          "block": 3,
+          "top": 284.7,
+          "bottom": 313.18,
+          "text": "Seguiremos impulsando las redes sociales actuales y nuevas para la promoción de la ciudad de Ávila."
+        }
+      ],
+      "text": "Ampliar la promoción de Ávila mediante redes sociales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p33-05",
+      "officialId": "P33-05",
+      "topic": "Turismo",
+      "page": 33,
+      "endPage": 33,
+      "rawText": "Continuaremos trabajando en potenciar Ávila como destino de referencia del turismo religioso, con la figura de Santa Teresa de Jesús como referente.",
+      "fragments": [
+        {
+          "page": 33,
+          "block": 4,
+          "top": 334.16,
+          "bottom": 379.12,
+          "text": "Continuaremos trabajando en potenciar Ávila como destino de referencia del turismo religioso, con la figura de Santa Teresa de Jesús como referente."
+        }
+      ],
+      "text": "Reforzar el turismo religioso en torno a Teresa de Jesús.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p33-06",
+      "officialId": "P33-06",
+      "topic": "Turismo",
+      "page": 33,
+      "endPage": 33,
+      "rawText": "Continuaremos fomentando la creación de empresas y servicios en el ámbito del turismo que permitan una segmentación adecuada de la oferta turística, basados en la Plan Estratégico de Turismo de Ávila y en el desarrollo turístico sostenible.",
+      "fragments": [
+        {
+          "page": 33,
+          "block": 5,
+          "top": 400.11,
+          "bottom": 461.55,
+          "text": "Continuaremos fomentando la creación de empresas y servicios en el ámbito del turismo que permitan una segmentación adecuada de la oferta turística, basados en la Plan Estratégico de Turismo de Ávila y en el desarrollo turístico sostenible."
+        }
+      ],
+      "text": "Promover empresas y servicios turísticos conforme al plan estratégico y la sostenibilidad.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p33-07",
+      "officialId": "P33-07",
+      "topic": "Turismo",
+      "page": 33,
+      "endPage": 33,
+      "rawText": "Mantenemos nuestra apuesta de Ávila como destino de congresos:\nPotenciando la estancia en ferias y reuniones del sector para situar Ávila como destino de congresos.\nReforzando la colaboración con las administraciones de Castilla y León y de la provincia para aprovechar los recursos turísticos y mejorar la oferta de actividades de los congresos.\nFomentando el desarrollo conjunto de estrategias público-privadas para enriquecer la oferta turística, gastronómica y hotelera de la ciudad de Ávila.",
+      "fragments": [
+        {
+          "page": 33,
+          "block": 6,
+          "top": 482.54,
+          "bottom": 494.53,
+          "text": "Mantenemos nuestra apuesta de Ávila como destino de congresos:"
+        },
+        {
+          "page": 33,
+          "block": 7,
+          "top": 515.51,
+          "bottom": 543.98,
+          "text": "Potenciando la estancia en ferias y reuniones del sector para situar Ávila como destino de congresos."
+        },
+        {
+          "page": 33,
+          "block": 8,
+          "top": 564.97,
+          "bottom": 609.93,
+          "text": "Reforzando la colaboración con las administraciones de Castilla y León y de la provincia para aprovechar los recursos turísticos y mejorar la oferta de actividades de los congresos."
+        },
+        {
+          "page": 33,
+          "block": 9,
+          "top": 630.91,
+          "bottom": 675.87,
+          "text": "Fomentando el desarrollo conjunto de estrategias público-privadas para enriquecer la oferta turística, gastronómica y hotelera de la ciudad de Ávila."
+        }
+      ],
+      "text": "Potenciar el turismo de congresos con presencia en ferias, colaboración entre administraciones y estrategias público-privadas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p34-01",
+      "officialId": "P34-01",
+      "topic": "Rodajes",
+      "page": 34,
+      "endPage": 34,
+      "rawText": "Potenciando las nuevas herramientas digitales para el posicionamiento de Ávila como destino de rodajes por su cercanía a Madrid y su entorno patrimonial, escenarios únicos a una hora de la capital de España y uno de los aeropuertos con más tráfico del mundo.",
+      "fragments": [
+        {
+          "page": 34,
+          "block": 1,
+          "top": 86.87,
+          "bottom": 164.8,
+          "text": "Potenciando las nuevas herramientas digitales para el posicionamiento de Ávila como destino de rodajes por su cercanía a Madrid y su entorno patrimonial, escenarios únicos a una hora de la capital de España y uno de los aeropuertos con más tráfico del mundo."
+        }
+      ],
+      "text": "Promocionar digitalmente Ávila como lugar de rodaje.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p34-02",
+      "officialId": "P34-02",
+      "topic": "Rodajes",
+      "page": 34,
+      "endPage": 34,
+      "rawText": "Recuperando entornos patrimoniales, deportivos, naturales y arqueológicos para generar espacios únicos de rodaje.",
+      "fragments": [
+        {
+          "page": 34,
+          "block": 2,
+          "top": 185.79,
+          "bottom": 214.26,
+          "text": "Recuperando entornos patrimoniales, deportivos, naturales y arqueológicos para generar espacios únicos de rodaje."
+        }
+      ],
+      "text": "Recuperar escenarios patrimoniales, deportivos, naturales y arqueológicos para producciones audiovisuales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p34-03",
+      "officialId": "P34-03",
+      "topic": "Rodajes",
+      "page": 34,
+      "endPage": 34,
+      "rawText": "Aumentando los contactos profesionales con productoras y plataformas digitales de TV para potenciar Ávila como destino audiovisual.",
+      "fragments": [
+        {
+          "page": 34,
+          "block": 3,
+          "top": 235.24,
+          "bottom": 280.21,
+          "text": "Aumentando los contactos profesionales con productoras y plataformas digitales de TV para potenciar Ávila como destino audiovisual."
+        }
+      ],
+      "text": "Aumentar los contactos con productoras y plataformas de televisión.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p36-01",
+      "officialId": "P36-01",
+      "topic": "Empleo y empresas",
+      "page": 36,
+      "endPage": 36,
+      "rawText": "Seguiremos fomentando del empleo y el autoempleo mediante el desarrollo de actuaciones de formación e información, tanto online como offline, con temáticas adaptadas a la situación socioeconómica actual.\nPara ello, continuaremos realizando labores de intermediación que sirvan para poner en contacto oferta y demanda de una forma ágil y certera, pudiendo contar con un catálogo actualizado de ofertas de empleo y potenciales trabajadores, bien sean demandantes de empleo o trabajadores que buscan mejorar su carrera profesional.",
+      "fragments": [
+        {
+          "page": 36,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 115.35,
+          "text": "Seguiremos fomentando del empleo y el autoempleo mediante el desarrollo de actuaciones de formación e información, tanto online como offline, con temáticas adaptadas a la situación socioeconómica actual."
+        },
+        {
+          "page": 36,
+          "block": 1,
+          "top": 136.33,
+          "bottom": 214.26,
+          "text": "Para ello, continuaremos realizando labores de intermediación que sirvan para poner en contacto oferta y demanda de una forma ágil y certera, pudiendo contar con un catálogo actualizado de ofertas de empleo y potenciales trabajadores, bien sean demandantes de empleo o trabajadores que buscan mejorar su carrera profesional."
+        }
+      ],
+      "text": "Apoyar empleo y autoempleo con formación e intermediación y un catálogo actualizado de ofertas y candidatos.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p36-02",
+      "officialId": "P36-02",
+      "topic": "Empleo y empresas",
+      "page": 36,
+      "endPage": 36,
+      "rawText": "Mantendremos y potenciaremos la Oficina de Apoyo al Emprendedor y dotación económica para facilitar su puesta en marcha con líneas como la denominada ‘Cuota Cero’, en funcionamiento.",
+      "fragments": [
+        {
+          "page": 36,
+          "block": 3,
+          "top": 268.22,
+          "bottom": 329.66,
+          "text": "Mantendremos y potenciaremos la Oficina de Apoyo al Emprendedor y dotación económica para facilitar su puesta en marcha con líneas como la denominada ‘Cuota Cero’, en funcionamiento."
+        }
+      ],
+      "text": "Mantener y reforzar la oficina de apoyo al emprendimiento y ayudas como Cuota Cero.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p36-03",
+      "officialId": "P36-03",
+      "topic": "Empleo y empresas",
+      "page": 36,
+      "endPage": 36,
+      "rawText": "Se continuará trabajando en la remodelación del Vivero de Empresas.",
+      "fragments": [
+        {
+          "page": 36,
+          "block": 4,
+          "top": 350.65,
+          "bottom": 379.12,
+          "text": "Se continuará trabajando en la remodelación del Vivero de Empresas."
+        }
+      ],
+      "text": "Continuar la remodelación del vivero empresarial.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p36-04",
+      "officialId": "P36-04",
+      "topic": "Empleo y empresas",
+      "page": 36,
+      "endPage": 36,
+      "rawText": "Se generará un espacio de coworking para el emprendimiento y el teletrabajo.",
+      "fragments": [
+        {
+          "page": 36,
+          "block": 5,
+          "top": 400.11,
+          "bottom": 428.58,
+          "text": "Se generará un espacio de coworking para el emprendimiento y el teletrabajo."
+        }
+      ],
+      "text": "Crear un espacio compartido para emprender y teletrabajar.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p36-05",
+      "officialId": "P36-05",
+      "topic": "Empleo y empresas",
+      "page": 36,
+      "endPage": 36,
+      "rawText": "Se avanzará en la realización de acciones mixtas de formación y empleo dirigidas a colectivos determinados y en temáticas que, además de redundar en un beneficio social para la ciudad, aseguren su integración en el mercado laboral. En este sentido, se está llevando a cabo la rehabilitación parcial del Antiguo Matadero para la creación de un centro de formación para el empleo y el emprendimiento que se pondrá en marcha a principios del año 2024.",
+      "fragments": [
+        {
+          "page": 36,
+          "block": 6,
+          "top": 449.56,
+          "bottom": 576.96,
+          "text": "Se avanzará en la realización de acciones mixtas de formación y empleo dirigidas a colectivos determinados y en temáticas que, además de redundar en un beneficio social para la ciudad, aseguren su integración en el mercado laboral. En este sentido, se está llevando a cabo la rehabilitación parcial del Antiguo Matadero para la creación de un centro de formación para el empleo y el emprendimiento que se pondrá en marcha a principios del año 2024."
+        }
+      ],
+      "text": "Desarrollar formación combinada con empleo y abrir a principios de 2024 el centro del antiguo matadero.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p36-06",
+      "officialId": "P36-06",
+      "topic": "Empleo y empresas",
+      "page": 36,
+      "endPage": 36,
+      "rawText": "Seguiremos avanzando en el desarrollo y modernización del Polígono Industrial de Las Hervencias, haciéndolo más amable e involucrándolo en la vida social de la ciudad: mejora de vías, iluminación y servicios, reorganización del tráfico y generación de zonas de estacionamiento, así como en la mejora de la seguridad del mismo, gestión de residuos, fomento del uso de energías limpias y renaturalización de espacios.",
+      "fragments": [
+        {
+          "page": 36,
+          "block": 7,
+          "top": 597.94,
+          "bottom": 708.85,
+          "text": "Seguiremos avanzando en el desarrollo y modernización del Polígono Industrial de Las Hervencias, haciéndolo más amable e involucrándolo en la vida social de la ciudad: mejora de vías, iluminación y servicios, reorganización del tráfico y generación de zonas de estacionamiento, así como en la mejora de la seguridad del mismo, gestión de residuos, fomento del uso de energías limpias y renaturalización de espacios."
+        }
+      ],
+      "text": "Modernizar Las Hervencias: viales, alumbrado, servicios, tráfico, aparcamiento, seguridad, residuos, energía y zonas naturales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p37-01",
+      "officialId": "P37-01",
+      "topic": "Industria y comercio",
+      "page": 37,
+      "endPage": 37,
+      "rawText": "Desarrollo, modernización y dotación del Polígono Industrial de Vicolozano, en el marco del Plan Territorial de Fomento para Ávila y su entorno, que vio la luz en este mandato y del que el Ayuntamiento forma parte activa. Seguiremos apostando por el desarrollo de este Plan, que permitirá ampliar en 700.000 metros cuadrados más de suelo industrial en el polígono industrial de Vicolozano, y por darle la máxima agilidad. Este programa está dotado con una inversión directa para esta ciudad: 34,5 millones de euros, impulsado por la Junta de Castilla y León, el Ayuntamiento de Ávila, la Diputación Provincial y el Ayuntamiento de la Colilla.",
+      "fragments": [
+        {
+          "page": 37,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 214.26,
+          "text": "Desarrollo, modernización y dotación del Polígono Industrial de Vicolozano, en el marco del Plan Territorial de Fomento para Ávila y su entorno, que vio la luz en este mandato y del que el Ayuntamiento forma parte activa. Seguiremos apostando por el desarrollo de este Plan, que permitirá ampliar en 700.000 metros cuadrados más de suelo industrial en el polígono industrial de Vicolozano, y por darle la máxima agilidad. Este programa está dotado con una inversión directa para esta ciudad: 34,5 millones de euros, impulsado por la Junta de Castilla y León, el Ayuntamiento de Ávila, la Diputación Provincial y el Ayuntamiento de la Colilla."
+        }
+      ],
+      "text": "Impulsar con otras administraciones el plan territorial y la ampliación industrial de Vicolozano, con 700.000 m² y una inversión directa de 34,5 millones descritos en el programa.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p37-02",
+      "officialId": "P37-02",
+      "topic": "Industria y comercio",
+      "page": 37,
+      "endPage": 37,
+      "rawText": "Continuaremos apostando por el comercio local como primera opción de compra, mediante campañas que posicionen el tejido comercial de la ciudad entre los consumidores. Campañas de difusión, promoción o escaparatismo; se seguirán realizando actividades culturales por las diferentes calles y establecimientos que incentiven la visita a los comercios; y se continuará apoyando la modernización del comercio local para adaptarse a las nuevas formas de compra y al uso de las nuevas tecnologías.",
+      "fragments": [
+        {
+          "page": 37,
+          "block": 1,
+          "top": 235.24,
+          "bottom": 362.64,
+          "text": "Continuaremos apostando por el comercio local como primera opción de compra, mediante campañas que posicionen el tejido comercial de la ciudad entre los consumidores. Campañas de difusión, promoción o escaparatismo; se seguirán realizando actividades culturales por las diferentes calles y establecimientos que incentiven la visita a los comercios; y se continuará apoyando la modernización del comercio local para adaptarse a las nuevas formas de compra y al uso de las nuevas tecnologías."
+        }
+      ],
+      "text": "Promover comercio local, actividades y escaparates, apoyando su modernización digital.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p37-03",
+      "officialId": "P37-03",
+      "topic": "Industria y comercio",
+      "page": 37,
+      "endPage": 37,
+      "rawText": "Seguiremos fomentando el desarrollo conjunto de estrategias público-privadas para enriquecer la oferta comercial y hostelera de la ciudad de Ávila.",
+      "fragments": [
+        {
+          "page": 37,
+          "block": 2,
+          "top": 383.62,
+          "bottom": 428.58,
+          "text": "Seguiremos fomentando el desarrollo conjunto de estrategias público-privadas para enriquecer la oferta comercial y hostelera de la ciudad de Ávila."
+        }
+      ],
+      "text": "Desarrollar estrategias público-privadas para comercio y hostelería.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p37-04",
+      "officialId": "P37-04",
+      "topic": "Industria y comercio",
+      "page": 37,
+      "endPage": 37,
+      "rawText": "Se continuará impartiendo formación adaptada al tejido comercial de la ciudad, tanto online como offline, sobre temáticas aplicables a la tipología de los mismos y se seguirá prestando asistencia e información a los comercios de nuestra ciudad, ayudando en las gestiones y trámites que deben realizar con el Consistorio.",
+      "fragments": [
+        {
+          "page": 37,
+          "block": 3,
+          "top": 449.56,
+          "bottom": 527.5,
+          "text": "Se continuará impartiendo formación adaptada al tejido comercial de la ciudad, tanto online como offline, sobre temáticas aplicables a la tipología de los mismos y se seguirá prestando asistencia e información a los comercios de nuestra ciudad, ayudando en las gestiones y trámites que deben realizar con el Consistorio."
+        }
+      ],
+      "text": "Ofrecer formación adaptada y ayuda al comercio en sus gestiones municipales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p37-05",
+      "officialId": "P37-05",
+      "topic": "Industria y comercio",
+      "page": 37,
+      "endPage": 37,
+      "rawText": "Se seguirá trabajando en la modernización y adecuación de la Plaza de Abastos, dinamizando y diversificando su actividad y trabajando para una ocupación plena y promocionando la venta de producto local o kilómetro 0.",
+      "fragments": [
+        {
+          "page": 37,
+          "block": 4,
+          "top": 548.48,
+          "bottom": 609.93,
+          "text": "Se seguirá trabajando en la modernización y adecuación de la Plaza de Abastos, dinamizando y diversificando su actividad y trabajando para una ocupación plena y promocionando la venta de producto local o kilómetro 0."
+        }
+      ],
+      "text": "Modernizar y dinamizar la Plaza de Abastos, buscando ocupación completa y venta de productos locales.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p39-01",
+      "officialId": "P39-01",
+      "topic": "Fiscalidad y economía",
+      "page": 39,
+      "endPage": 39,
+      "rawText": "Queremos que el Ayuntamiento siga siendo uno de los motores económicos de nuestra ciudad, para lo que nos proponemos continuar impulsando la inversión y, al igual que en el actual mandado, continuar reduciendo la deuda municipal, que ha descendido un 20%.",
+      "fragments": [
+        {
+          "page": 39,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 115.34,
+          "text": "Queremos que el Ayuntamiento siga siendo uno de los motores económicos de nuestra ciudad, para lo que nos proponemos continuar impulsando la inversión y, al igual que en el actual mandado, continuar reduciendo la deuda municipal, que ha descendido un 20%."
+        }
+      ],
+      "text": "Continuar impulsando inversión municipal y reduciendo deuda; el descenso del 20 % citado se refiere al mandato anterior.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p39-02",
+      "officialId": "P39-02",
+      "topic": "Fiscalidad y economía",
+      "page": 39,
+      "endPage": 39,
+      "rawText": "Asimismo, nos comprometemos a mantener los incentivos fiscales para empresas puestos en marcha en el presente mandato, con bonificaciones ligadas a la generación de puestos de trabajo, como en el caso del Impuesto de Bienes Inmuebles (IBI) del 50 al 95 por ciento en función de la empleabilidad; Impuesto de Construcciones, Instalaciones y Obras (ICIO); Impuesto de Actividades Económicas (IAE); la tasa de licencias urbanísticas y licencia ambiental, con deducciones planteadas de entre el 50 y el 95 por ciento.",
+      "fragments": [
+        {
+          "page": 39,
+          "block": 1,
+          "top": 136.33,
+          "bottom": 263.72,
+          "text": "Asimismo, nos comprometemos a mantener los incentivos fiscales para empresas puestos en marcha en el presente mandato, con bonificaciones ligadas a la generación de puestos de trabajo, como en el caso del Impuesto de Bienes Inmuebles (IBI) del 50 al 95 por ciento en función de la empleabilidad; Impuesto de Construcciones, Instalaciones y Obras (ICIO); Impuesto de Actividades Económicas (IAE); la tasa de licencias urbanísticas y licencia ambiental, con deducciones planteadas de entre el 50 y el 95 por ciento."
+        }
+      ],
+      "text": "Conservar incentivos fiscales empresariales ligados al empleo, con porcentajes del 50 al 95 % según tributo y condiciones.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p39-03",
+      "officialId": "P39-03",
+      "topic": "Fiscalidad y economía",
+      "page": 39,
+      "endPage": 39,
+      "rawText": "En línea con lo anterior, mantendremos también las bonificaciones en la tasa de licencia urbanística en el caso de la renaturalización en edificaciones y naves industriales, con bonificaciones de entre el 50 y el 95 por ciento en función de la empleabilidad.",
+      "fragments": [
+        {
+          "page": 39,
+          "block": 2,
+          "top": 284.7,
+          "bottom": 346.15,
+          "text": "En línea con lo anterior, mantendremos también las bonificaciones en la tasa de licencia urbanística en el caso de la renaturalización en edificaciones y naves industriales, con bonificaciones de entre el 50 y el 95 por ciento en función de la empleabilidad."
+        }
+      ],
+      "text": "Mantener bonificaciones urbanísticas del 50 al 95 % para renaturalizar edificios y naves, vinculadas al empleo.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p39-04",
+      "officialId": "P39-04",
+      "topic": "Fiscalidad y economía",
+      "page": 39,
+      "endPage": 39,
+      "rawText": "Proponemos mantener, para la tasa de licencia ambiental, la bonificación para la construcción de edificaciones y naves industriales o proyectos de renaturalización del 50 al 95 por ciento mientras que en relación al ICIO continuaremos con las bonificaciones del 50 por ciento en la construcción de edificaciones o naves de nueva planta, y hasta el 95 por ciento en función de la generación de puestos de trabajo.",
+      "fragments": [
+        {
+          "page": 39,
+          "block": 3,
+          "top": 367.13,
+          "bottom": 461.55,
+          "text": "Proponemos mantener, para la tasa de licencia ambiental, la bonificación para la construcción de edificaciones y naves industriales o proyectos de renaturalización del 50 al 95 por ciento mientras que en relación al ICIO continuaremos con las bonificaciones del 50 por ciento en la construcción de edificaciones o naves de nueva planta, y hasta el 95 por ciento en función de la generación de puestos de trabajo."
+        }
+      ],
+      "text": "Conservar incentivos en licencia ambiental e ICIO para edificios y naves, con el 50 % de ICIO en nueva planta y hasta el 95 % por creación de empleo.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p39-05",
+      "officialId": "P39-05",
+      "topic": "Fiscalidad y economía",
+      "page": 39,
+      "endPage": 39,
+      "rawText": "Vamos a mantener, de la misma manera, las bonificaciones a familias numerosas puestas en marcha en el este mandato, que en el Impuesto de Bienes Inmuebles (IBI) para familias numerosas de categoría especial se bonifica hasta el 60 por ciento así como las relativas a la prestación del servicio de la Escuela Municipal de Música o en las actividades de animación comunitaria.",
+      "fragments": [
+        {
+          "page": 39,
+          "block": 4,
+          "top": 482.54,
+          "bottom": 576.96,
+          "text": "Vamos a mantener, de la misma manera, las bonificaciones a familias numerosas puestas en marcha en el este mandato, que en el Impuesto de Bienes Inmuebles (IBI) para familias numerosas de categoría especial se bonifica hasta el 60 por ciento así como las relativas a la prestación del servicio de la Escuela Municipal de Música o en las actividades de animación comunitaria."
+        }
+      ],
+      "text": "Mantener ventajas para familias numerosas, incluido IBI de categoría especial de hasta el 60 %, escuela de música y animación comunitaria.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p39-06",
+      "officialId": "P39-06",
+      "topic": "Fiscalidad y economía",
+      "page": 39,
+      "endPage": 39,
+      "rawText": "También mantendremos las bonificaciones en el IBI por la instalación de sistemas de aprovechamiento térmico o eléctrico de la energía proveniente del sol (placas solares), al igual que las bonificaciones en el impuesto de vehículos de tracción mecánica del 75% en el caso de vehículos eléctricos y del 60% en el caso de vehículos impulsados por gas natural (GNC y GNL) o gas licuado del petróleo (GLP), y las que benefician a las familias en las que uno de sus miembros esté en situación de teletrabajo.",
+      "fragments": [
+        {
+          "page": 39,
+          "block": 5,
+          "top": 597.94,
+          "bottom": 725.33,
+          "text": "También mantendremos las bonificaciones en el IBI por la instalación de sistemas de aprovechamiento térmico o eléctrico de la energía proveniente del sol (placas solares), al igual que las bonificaciones en el impuesto de vehículos de tracción mecánica del 75% en el caso de vehículos eléctricos y del 60% en el caso de vehículos impulsados por gas natural (GNC y GNL) o gas licuado del petróleo (GLP), y las que benefician a las familias en las que uno de sus miembros esté en situación de teletrabajo."
+        }
+      ],
+      "text": "Mantener incentivos solares en IBI y del impuesto de vehículos —75 % eléctricos y 60 % gas—, además de beneficios ligados al teletrabajo.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p40-01",
+      "officialId": "P40-01",
+      "topic": "Bonificaciones",
+      "page": 40,
+      "endPage": 40,
+      "rawText": "Abogamos por el mantenimiento de la reducción del 10 por ciento en instalaciones deportivas, con una bonificación del 50 por ciento para familias numerosas, monoparentales, víctimas de violencia de género y parados de larga duración, al igual que los programas de animación comunitaria y ludotecas, que también cuentan con una bonificación del 30 por ciento en los mismos casos que en los precios de las instalaciones deportivas, mientras que el transporte urbano colectivo experimentará una reducción del 50 por ciento en el bono joven, así como en los bonos de familia numerosa, monoparentales, víctimas de violencia de género y parados de larga duración.",
+      "fragments": [
+        {
+          "page": 40,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 214.26,
+          "text": "Abogamos por el mantenimiento de la reducción del 10 por ciento en instalaciones deportivas, con una bonificación del 50 por ciento para familias numerosas, monoparentales, víctimas de violencia de género y parados de larga duración, al igual que los programas de animación comunitaria y ludotecas, que también cuentan con una bonificación del 30 por ciento en los mismos casos que en los precios de las instalaciones deportivas, mientras que el transporte urbano colectivo experimentará una reducción del 50 por ciento en el bono joven, así como en los bonos de familia numerosa, monoparentales, víctimas de violencia de género y parados de larga duración."
+        }
+      ],
+      "text": "Mantener la reducción general deportiva del 10 % y las bonificaciones del 50 % para colectivos indicados; conservar el 30 % en animación y ludotecas y reducir un 50 % determinados bonos de autobús.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p42-01",
+      "officialId": "P42-01",
+      "topic": "Cultura",
+      "page": 42,
+      "endPage": 42,
+      "rawText": "En Por Ávila queremos seguir aportando a la ciudad espacios y propuestas que consideramos nos han proporcionado y nos proporcionaran una parte del crecimiento cultural al que toda sociedad aspira. Por ello, con el ánimo de dar cabida a todas las inquietudes culturales de la ciudad de Ávila, proponemos con el espíritu de una cultura de calidad, el mantenimiento de la totalidad del calendario cultural establecido a lo largo de todo el año hasta el momento, con numerosos eventos destinados a la ciudadanía, entre otros: Jornadas de Filosofía, Contando la música, Feria del Libro, Feria y talleres del barro en colaboración con Avialfar, Feria del libro antiguo y de ocasión, Festival de órgano en colaboración con la Asociación Organaria, Festival de música Folk, Campeonato de puzles de Ávila, Feria de artesanía, Feria de radioaficionados IBERRADIO, Feria del disco, Cineforum de verano al aire libre, Festival de cortos Ávilacine, Feria de verano (escuelas de flamenco y bailes de sevillanas), Premio de las letras ‘Teresa de Ávila’, Revista el Cobaya, Ronda poético-musical por arcos y plazas de la ciudad, exposiciones en Episcopio y San Francisco, presentaciones de libros, encuentros poéticos, conciertos musicales, Jornadas del Canto Gregoriano, Música en la calle, Cultura en Navidad (Teatro, música, literatura), colaboraciones con las Asociaciones culturales de la ciudad, colaboraciones artísticas con la escuela de música y Artes, Certamen de dulzaina y tamboril ‘Ciudad de Ávila’ o diálogos literarios.",
+      "fragments": [
+        {
+          "page": 42,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 428.58,
+          "text": "En Por Ávila queremos seguir aportando a la ciudad espacios y propuestas que consideramos nos han proporcionado y nos proporcionaran una parte del crecimiento cultural al que toda sociedad aspira. Por ello, con el ánimo de dar cabida a todas las inquietudes culturales de la ciudad de Ávila, proponemos con el espíritu de una cultura de calidad, el mantenimiento de la totalidad del calendario cultural establecido a lo largo de todo el año hasta el momento, con numerosos eventos destinados a la ciudadanía, entre otros: Jornadas de Filosofía, Contando la música, Feria del Libro, Feria y talleres del barro en colaboración con Avialfar, Feria del libro antiguo y de ocasión, Festival de órgano en colaboración con la Asociación Organaria, Festival de música Folk, Campeonato de puzles de Ávila, Feria de artesanía, Feria de radioaficionados IBERRADIO, Feria del disco, Cineforum de verano al aire libre, Festival de cortos Ávilacine, Feria de verano (escuelas de flamenco y bailes de sevillanas), Premio de las letras ‘Teresa de Ávila’, Revista el Cobaya, Ronda poético-musical por arcos y plazas de la ciudad, exposiciones en Episcopio y San Francisco, presentaciones de libros, encuentros poéticos, conciertos musicales, Jornadas del Canto Gregoriano, Música en la calle, Cultura en Navidad (Teatro, música, literatura), colaboraciones con las Asociaciones culturales de la ciudad, colaboraciones artísticas con la escuela de música y Artes, Certamen de dulzaina y tamboril ‘Ciudad de Ávila’ o diálogos literarios."
+        }
+      ],
+      "text": "Mantener el calendario cultural anual: ferias, festivales, cine, literatura, exposiciones, música y colaboración con entidades y escuelas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p42-02",
+      "officialId": "P42-02",
+      "topic": "Cultura",
+      "page": 42,
+      "endPage": 42,
+      "rawText": "Asimismo, se continuará apostando por la Muestra de Teatro ‘Ciudad de Ávila’, que contará como novedad con una muestra para jóvenes.",
+      "fragments": [
+        {
+          "page": 42,
+          "block": 1,
+          "top": 449.56,
+          "bottom": 494.53,
+          "text": "Asimismo, se continuará apostando por la Muestra de Teatro ‘Ciudad de Ávila’, que contará como novedad con una muestra para jóvenes."
+        }
+      ],
+      "text": "Continuar la muestra teatral e incorporar una edición dirigida a jóvenes.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p42-03",
+      "officialId": "P42-03",
+      "topic": "Cultura",
+      "page": 42,
+      "endPage": 42,
+      "rawText": "También se pondrá en marcha el Tatuaje cultural, un encuentro mensual con poemas, canciones y libros que han dejado una impronta indeleble en la memoria de personas conocidas y anónimas.",
+      "fragments": [
+        {
+          "page": 42,
+          "block": 2,
+          "top": 515.51,
+          "bottom": 560.47,
+          "text": "También se pondrá en marcha el Tatuaje cultural, un encuentro mensual con poemas, canciones y libros que han dejado una impronta indeleble en la memoria de personas conocidas y anónimas."
+        }
+      ],
+      "text": "Crear un encuentro cultural mensual en torno a obras que han marcado a sus participantes.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p42-04",
+      "officialId": "P42-04",
+      "topic": "Cultura",
+      "page": 42,
+      "endPage": 42,
+      "rawText": "Por otra parte, se estudiará la instauración de eventos a gran escala, que conformen un atractivo en sí mismos para el abulense y que a su vez sea un referente nacional.",
+      "fragments": [
+        {
+          "page": 42,
+          "block": 3,
+          "top": 581.45,
+          "bottom": 626.42,
+          "text": "Por otra parte, se estudiará la instauración de eventos a gran escala, que conformen un atractivo en sí mismos para el abulense y que a su vez sea un referente nacional."
+        }
+      ],
+      "text": "Estudiar grandes eventos con atractivo local y proyección nacional.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p42-05",
+      "officialId": "P42-05",
+      "topic": "Cultura",
+      "page": 42,
+      "endPage": 42,
+      "rawText": "Se potenciará el arte plástico en la ciudad y la promoción de artistas locales. Se tratará de potenciar a los artistas de Ávila, especialmente a las nuevas generaciones, mediante actividades y el concurso de artes plásticas, en el que tengan cabida al menos, pintura y escultura.",
+      "fragments": [
+        {
+          "page": 42,
+          "block": 4,
+          "top": 647.4,
+          "bottom": 708.85,
+          "text": "Se potenciará el arte plástico en la ciudad y la promoción de artistas locales. Se tratará de potenciar a los artistas de Ávila, especialmente a las nuevas generaciones, mediante actividades y el concurso de artes plásticas, en el que tengan cabida al menos, pintura y escultura."
+        }
+      ],
+      "text": "Promover artistas plásticos locales y jóvenes con actividades y concursos de pintura y escultura.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p42-06",
+      "officialId": "P42-06",
+      "topic": "Cultura",
+      "page": 42,
+      "endPage": 42,
+      "rawText": "Potenciaremos Ávila como ciudad de congresos de referencia histórica.",
+      "fragments": [
+        {
+          "page": 42,
+          "block": 5,
+          "top": 729.83,
+          "bottom": 758.3,
+          "text": "Potenciaremos Ávila como ciudad de congresos de referencia histórica."
+        }
+      ],
+      "text": "Potenciar los congresos de temática histórica.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-01",
+      "officialId": "P43-01",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Se rehabilitará y realizará una reforma integral del edificio de la Escuela Municipal de Música.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 82.37,
+          "text": "Se rehabilitará y realizará una reforma integral del edificio de la Escuela Municipal de Música."
+        }
+      ],
+      "text": "Reformar íntegramente la Escuela Municipal de Música.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-02",
+      "officialId": "P43-02",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Se realizará un Plan de Conservación y Mejora de los colegios públicos de la ciudad, en el que tengan participación activa los Consejos Escolares de los centros educativos.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 1,
+          "top": 103.35,
+          "bottom": 148.32,
+          "text": "Se realizará un Plan de Conservación y Mejora de los colegios públicos de la ciudad, en el que tengan participación activa los Consejos Escolares de los centros educativos."
+        }
+      ],
+      "text": "Diseñar un plan de conservación de colegios públicos con participación de sus consejos escolares.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-03",
+      "officialId": "P43-03",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Se avanzará en la mejora de la eficiencia energética de los colegios públicos.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 2,
+          "top": 169.3,
+          "bottom": 197.78,
+          "text": "Se avanzará en la mejora de la eficiencia energética de los colegios públicos."
+        }
+      ],
+      "text": "Mejorar la eficiencia energética de los centros escolares públicos.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-04",
+      "officialId": "P43-04",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Las fiestas forman parte de nuestra cultura popular. Por eso seguiremos avanzando en la recuperación de nuestras tradiciones abulenses, fomentando la participación de los vecinos y logrando que las fiestas sean participativas.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 3,
+          "top": 218.76,
+          "bottom": 280.21,
+          "text": "Las fiestas forman parte de nuestra cultura popular. Por eso seguiremos avanzando en la recuperación de nuestras tradiciones abulenses, fomentando la participación de los vecinos y logrando que las fiestas sean participativas."
+        }
+      ],
+      "text": "Recuperar tradiciones y fomentar fiestas participativas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-05",
+      "officialId": "P43-05",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Continuaremos potenciando las fiestas de Santa Teresa, patrona de la ciudad, para que se mantengan como referentes para todos los abulenses, de tal manera que la programación cultural, musical y festiva sea de calidad, resultando atractiva, para los abulenses y los turistas y buscando ofrecer una programación dirigida a todas las edades. Asimismo, continuaremos potenciando las fiestas de San Segundo en el marco de referencia de recuperación y mantenimiento de eventos tradicionales.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 4,
+          "top": 301.19,
+          "bottom": 428.58,
+          "text": "Continuaremos potenciando las fiestas de Santa Teresa, patrona de la ciudad, para que se mantengan como referentes para todos los abulenses, de tal manera que la programación cultural, musical y festiva sea de calidad, resultando atractiva, para los abulenses y los turistas y buscando ofrecer una programación dirigida a todas las edades. Asimismo, continuaremos potenciando las fiestas de San Segundo en el marco de referencia de recuperación y mantenimiento de eventos tradicionales."
+        }
+      ],
+      "text": "Mantener fiestas de Santa Teresa y San Segundo atractivas, de calidad y para diferentes edades.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-06",
+      "officialId": "P43-06",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Mantendremos la gratuidad de las principales actividades de las fiestas, para que todo el mundo pueda tener acceso a ellas, con una oferta de conciertos gratuitos de calidad, mejorada con actuaciones de grupos, orquestas y eventos de primer nivel y de actualidad.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 5,
+          "top": 449.56,
+          "bottom": 511.01,
+          "text": "Mantendremos la gratuidad de las principales actividades de las fiestas, para que todo el mundo pueda tener acceso a ellas, con una oferta de conciertos gratuitos de calidad, mejorada con actuaciones de grupos, orquestas y eventos de primer nivel y de actualidad."
+        }
+      ],
+      "text": "Conservar la gratuidad de las principales actividades festivas y ofrecer conciertos y actuaciones de calidad.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-07",
+      "officialId": "P43-07",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Queremos que las asociaciones de vecinos y las peñas cuenten con un papel relevante en la comisión de fiestas, de cara a conseguir que sean lo más participativas posibles.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 6,
+          "top": 531.99,
+          "bottom": 576.96,
+          "text": "Queremos que las asociaciones de vecinos y las peñas cuenten con un papel relevante en la comisión de fiestas, de cara a conseguir que sean lo más participativas posibles."
+        }
+      ],
+      "text": "Dar protagonismo a asociaciones vecinales y peñas en la comisión de fiestas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p43-08",
+      "officialId": "P43-08",
+      "topic": "Educación y fiestas",
+      "page": 43,
+      "endPage": 43,
+      "rawText": "Seguiremos trabajando en el desarrollo de iniciativas en este sentido en el marco del Consejo de Peñas, constituido en este mandato.",
+      "fragments": [
+        {
+          "page": 43,
+          "block": 7,
+          "top": 597.94,
+          "bottom": 626.42,
+          "text": "Seguiremos trabajando en el desarrollo de iniciativas en este sentido en el marco del Consejo de Peñas, constituido en este mandato."
+        }
+      ],
+      "text": "Desarrollar iniciativas participativas a través del Consejo de Peñas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-01",
+      "officialId": "P45-01",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "La actividad deportiva es una prioridad para Por Ávila, así como la mejora de unas instalaciones deportivas que acumulan décadas de dejadez. En este sentido, continuaremos realizando las mejoras ya iniciadas en las infraestructuras deportivas de la ciudad, así como llevando a cabo su oportuno mantenimiento, garantizando la práctica deportiva en condiciones óptimas.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 148.32,
+          "text": "La actividad deportiva es una prioridad para Por Ávila, así como la mejora de unas instalaciones deportivas que acumulan décadas de dejadez. En este sentido, continuaremos realizando las mejoras ya iniciadas en las infraestructuras deportivas de la ciudad, así como llevando a cabo su oportuno mantenimiento, garantizando la práctica deportiva en condiciones óptimas."
+        }
+      ],
+      "text": "Continuar las mejoras y mantenimiento de las instalaciones deportivas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-02",
+      "officialId": "P45-02",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Renovar la pista de atletismo de la Ciudad Deportiva y a realizar una reforma integral de sus gradas.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 2,
+          "top": 202.27,
+          "bottom": 230.75,
+          "text": "Renovar la pista de atletismo de la Ciudad Deportiva y a realizar una reforma integral de sus gradas."
+        }
+      ],
+      "text": "Renovar la pista de atletismo y reformar las gradas de la Ciudad Deportiva.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-03",
+      "officialId": "P45-03",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Renovar las pistas de tenis Ciudad Deportiva.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 3,
+          "top": 251.73,
+          "bottom": 263.72,
+          "text": "Renovar las pistas de tenis Ciudad Deportiva."
+        }
+      ],
+      "text": "Renovar las pistas de tenis de la Ciudad Deportiva.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-04",
+      "officialId": "P45-04",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Sustituir el césped artificial en Sancti Spiritu (Campo nº 1).",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 4,
+          "top": 284.7,
+          "bottom": 296.69,
+          "text": "Sustituir el césped artificial en Sancti Spiritu (Campo nº 1)."
+        }
+      ],
+      "text": "Cambiar el césped artificial del campo 1 de Sancti Spiritu.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-05",
+      "officialId": "P45-05",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Ampliar los elementos en la pista de Skate (ribera del río Adaja).",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 5,
+          "top": 317.67,
+          "bottom": 329.66,
+          "text": "Ampliar los elementos en la pista de Skate (ribera del río Adaja)."
+        }
+      ],
+      "text": "Añadir equipamiento a la pista de skate junto al Adaja.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-06",
+      "officialId": "P45-06",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Hacer un skate park y un parque para deportes alternativos como calistenia y parkour.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 6,
+          "top": 350.65,
+          "bottom": 379.12,
+          "text": "Hacer un skate park y un parque para deportes alternativos como calistenia y parkour."
+        }
+      ],
+      "text": "Crear un skatepark y espacios para calistenia y parkour.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-07",
+      "officialId": "P45-07",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Sustituir las luminarias del pabellón de San Antonio y realizar mejoras en las infraestructuras del mismo.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 7,
+          "top": 400.11,
+          "bottom": 428.58,
+          "text": "Sustituir las luminarias del pabellón de San Antonio y realizar mejoras en las infraestructuras del mismo."
+        }
+      ],
+      "text": "Renovar luminarias y mejorar las instalaciones del pabellón de San Antonio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-08",
+      "officialId": "P45-08",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Acometer un espacio de calentamiento en el Centro Deportivo.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 8,
+          "top": 449.56,
+          "bottom": 461.55,
+          "text": "Acometer un espacio de calentamiento en el Centro Deportivo."
+        }
+      ],
+      "text": "Habilitar una zona de calentamiento en el Centro Deportivo.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-09",
+      "officialId": "P45-09",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Fomentar el turismo deportivo (turismo activo) mediante la potenciación de actividades deportivas en la ciudad.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 9,
+          "top": 482.54,
+          "bottom": 511.01,
+          "text": "Fomentar el turismo deportivo (turismo activo) mediante la potenciación de actividades deportivas en la ciudad."
+        }
+      ],
+      "text": "Fomentar actividades que atraigan turismo deportivo.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p45-10",
+      "officialId": "P45-10",
+      "topic": "Deporte",
+      "page": 45,
+      "endPage": 45,
+      "rawText": "Instalar césped artificial en el campo Anexo nº 2 del estadio Adolfo Suárez.",
+      "fragments": [
+        {
+          "page": 45,
+          "block": 10,
+          "top": 531.99,
+          "bottom": 560.47,
+          "text": "Instalar césped artificial en el campo Anexo nº 2 del estadio Adolfo Suárez."
+        }
+      ],
+      "text": "Instalar césped artificial en el anexo 2 del estadio Adolfo Suárez.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p47-01",
+      "officialId": "P47-01",
+      "topic": "Buen gobierno y transparencia",
+      "page": 47,
+      "endPage": 47,
+      "rawText": "Nos comprometemos a seguir trabajando en esta línea, poniendo al ciudadano y a sus necesidades como centro de la administración, con pleno acceso a una información clara, comprensible y objetiva. En resumen, una información accesible a todos y a todas, independientemente de nuestra edad o nuestras capacidades.",
+      "fragments": [
+        {
+          "page": 47,
+          "block": 2,
+          "top": 202.27,
+          "bottom": 280.21,
+          "text": "Nos comprometemos a seguir trabajando en esta línea, poniendo al ciudadano y a sus necesidades como centro de la administración, con pleno acceso a una información clara, comprensible y objetiva. En resumen, una información accesible a todos y a todas, independientemente de nuestra edad o nuestras capacidades."
+        }
+      ],
+      "text": "Facilitar información pública comprensible y accesible a todas las edades y capacidades.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p47-02",
+      "officialId": "P47-02",
+      "topic": "Buen gobierno y transparencia",
+      "page": 47,
+      "endPage": 47,
+      "rawText": "En materia de contratación pública, se velará por mantener la plena transparencia alcanzada en este mandato, que implica la publicación en la web del Ayuntamiento de todos los gastos corrientes que anualmente superen los 5.000 euros y las inversiones desde el primer euro, con la posibilidad de suscribirse a un boletín a través del cual toda aquella persona interesada recibe las contrataciones que quiere realizar el Ayuntamiento. A partir de 15.000 euros en gasto corriente y de 25.000 euros, en caso de inversiones, se publican en la Plataforma de Contratación del Estado.",
+      "fragments": [
+        {
+          "page": 47,
+          "block": 3,
+          "top": 301.19,
+          "bottom": 445.07,
+          "text": "En materia de contratación pública, se velará por mantener la plena transparencia alcanzada en este mandato, que implica la publicación en la web del Ayuntamiento de todos los gastos corrientes que anualmente superen los 5.000 euros y las inversiones desde el primer euro, con la posibilidad de suscribirse a un boletín a través del cual toda aquella persona interesada recibe las contrataciones que quiere realizar el Ayuntamiento. A partir de 15.000 euros en gasto corriente y de 25.000 euros, en caso de inversiones, se publican en la Plataforma de Contratación del Estado."
+        }
+      ],
+      "text": "Mantener publicación municipal de gastos corrientes superiores a 5.000 euros e inversiones desde el primer euro, boletín de contratos y los umbrales de publicación estatal descritos por el programa.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p47-03",
+      "officialId": "P47-03",
+      "topic": "Buen gobierno y transparencia",
+      "page": 47,
+      "endPage": 47,
+      "rawText": "Anticiparse, planificar, organizar y reforzar los recursos existentes como medidas imprescindibles y eficientes para afrontar con acierto la gestión de los fondos y pensando siempre en las próximas generaciones, en el futuro. Una verdadera estrategia de objetivos realizables a medio y largo plazo.",
+      "fragments": [
+        {
+          "page": 47,
+          "block": 5,
+          "top": 515.51,
+          "bottom": 593.44,
+          "text": "Anticiparse, planificar, organizar y reforzar los recursos existentes como medidas imprescindibles y eficientes para afrontar con acierto la gestión de los fondos y pensando siempre en las próximas generaciones, en el futuro. Una verdadera estrategia de objetivos realizables a medio y largo plazo."
+        }
+      ],
+      "text": "Planificar y reforzar recursos para objetivos realizables a medio y largo plazo.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p47-04",
+      "officialId": "P47-04",
+      "topic": "Buen gobierno y transparencia",
+      "page": 47,
+      "endPage": 47,
+      "rawText": "Continuaremos apostando por los criterios de eficacia y de eficiencia, objetividad, transparencia y no discriminación en la contratación pública y mantendremos que la composición de las mesas de contratación pública estén únicamente integradas técnicos municipales, novedad en este mandato, excluyendo la participación de representantes políticos en las mismas.",
+      "fragments": [
+        {
+          "page": 47,
+          "block": 6,
+          "top": 614.43,
+          "bottom": 708.85,
+          "text": "Continuaremos apostando por los criterios de eficacia y de eficiencia, objetividad, transparencia y no discriminación en la contratación pública y mantendremos que la composición de las mesas de contratación pública estén únicamente integradas técnicos municipales, novedad en este mandato, excluyendo la participación de representantes políticos en las mismas."
+        }
+      ],
+      "text": "Mantener criterios objetivos y transparentes de contratación y mesas compuestas exclusivamente por personal técnico municipal.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p48-01",
+      "officialId": "P48-01",
+      "topic": "Presupuestos y fondos europeos",
+      "page": 48,
+      "endPage": 48,
+      "rawText": "Asimismo, nuestros proyectos se seguirán caracterizando por un claro interés general, por su viabilidad, y por la búsqueda del impulso de la economía de nuestro municipio, a través de las empresas abulenses afectadas por la contratación pública bien sea como adjudicatarias directas o como subcontratistas de las mismas.",
+      "fragments": [
+        {
+          "page": 48,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 131.83,
+          "text": "Asimismo, nuestros proyectos se seguirán caracterizando por un claro interés general, por su viabilidad, y por la búsqueda del impulso de la economía de nuestro municipio, a través de las empresas abulenses afectadas por la contratación pública bien sea como adjudicatarias directas o como subcontratistas de las mismas."
+        }
+      ],
+      "text": "Orientar los proyectos al interés general, viabilidad y actividad de empresas locales, incluidas subcontratistas.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p48-02",
+      "officialId": "P48-02",
+      "topic": "Presupuestos y fondos europeos",
+      "page": 48,
+      "endPage": 48,
+      "rawText": "En el ámbito presupuestario se seguirá trabajando anualmente con un presupuesto real, equilibrado, programado y con publicidad. Un presupuesto que dé respuesta a las necesidades de servicio a la ciudadanía y que siga siendo, como lo ha hecho estos cuatro años, motor de la economía de la ciudad. Un presupuesto en el que todos los gastos tengan su correspondiente contrapartida en un ingreso real, lo que permitirá al Ayuntamiento hacer frente en tiempo y forma a la totalidad de las facturas.",
+      "fragments": [
+        {
+          "page": 48,
+          "block": 1,
+          "top": 152.81,
+          "bottom": 280.21,
+          "text": "En el ámbito presupuestario se seguirá trabajando anualmente con un presupuesto real, equilibrado, programado y con publicidad. Un presupuesto que dé respuesta a las necesidades de servicio a la ciudadanía y que siga siendo, como lo ha hecho estos cuatro años, motor de la economía de la ciudad. Un presupuesto en el que todos los gastos tengan su correspondiente contrapartida en un ingreso real, lo que permitirá al Ayuntamiento hacer frente en tiempo y forma a la totalidad de las facturas."
+        }
+      ],
+      "text": "Aprobar presupuestos anuales públicos, equilibrados y con ingresos reales que permitan pagar las facturas a tiempo.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p48-03",
+      "officialId": "P48-03",
+      "topic": "Presupuestos y fondos europeos",
+      "page": 48,
+      "endPage": 48,
+      "rawText": "En esta línea, mantendremos a Ávila como ciudad pionera en esta gran oportunidad de recuperación que ofrece la Unión Europea, favoreciendo el crecimiento económico, la creación de empleo, la competitividad empresarial, el desarrollo sostenible y la protección al medio ambiente.",
+      "fragments": [
+        {
+          "page": 48,
+          "block": 3,
+          "top": 416.59,
+          "bottom": 494.53,
+          "text": "En esta línea, mantendremos a Ávila como ciudad pionera en esta gran oportunidad de recuperación que ofrece la Unión Europea, favoreciendo el crecimiento económico, la creación de empleo, la competitividad empresarial, el desarrollo sostenible y la protección al medio ambiente."
+        }
+      ],
+      "text": "Aprovechar fondos europeos para empleo, competitividad, desarrollo y protección ambiental.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p48-04",
+      "officialId": "P48-04",
+      "topic": "Presupuestos y fondos europeos",
+      "page": 48,
+      "endPage": 48,
+      "rawText": "A tal fin se pondrá en marcha la Oficina de Fondos Europeos, creada en este mandato, tanto como sea necesario para lograr dichos objetivos en nuestra ciudad aprovechando las ayudas del Plan Europeo de Recuperación y concurriendo a las subvenciones o ayudas se convoquen, entre ellos los nuevos proyectos de iniciativas urbanas, conocido como Edusi, del nuevo período de programación 2021-2027.",
+      "fragments": [
+        {
+          "page": 48,
+          "block": 4,
+          "top": 515.51,
+          "bottom": 609.93,
+          "text": "A tal fin se pondrá en marcha la Oficina de Fondos Europeos, creada en este mandato, tanto como sea necesario para lograr dichos objetivos en nuestra ciudad aprovechando las ayudas del Plan Europeo de Recuperación y concurriendo a las subvenciones o ayudas se convoquen, entre ellos los nuevos proyectos de iniciativas urbanas, conocido como Edusi, del nuevo período de programación 2021-2027."
+        }
+      ],
+      "text": "Activar la Oficina de Fondos Europeos y concurrir a ayudas y programas urbanos del periodo 2021–2027.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p49-01",
+      "officialId": "P49-01",
+      "topic": "Administración digital",
+      "page": 49,
+      "endPage": 49,
+      "rawText": "Continuaremos perseverando en la administración electrónica, distribuida y abierta 24x7, mediante canales como Whatsapp o Kioscos de autoservicio instalados en diferentes espacios municipales.",
+      "fragments": [
+        {
+          "page": 49,
+          "block": 0,
+          "top": 53.9,
+          "bottom": 98.86,
+          "text": "Continuaremos perseverando en la administración electrónica, distribuida y abierta 24x7, mediante canales como Whatsapp o Kioscos de autoservicio instalados en diferentes espacios municipales."
+        }
+      ],
+      "text": "Ampliar la administración electrónica disponible permanentemente con canales como WhatsApp y terminales de autoservicio.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p49-02",
+      "officialId": "P49-02",
+      "topic": "Administración digital",
+      "page": 49,
+      "endPage": 49,
+      "rawText": "Promoveremos una red de comunicaciones libre y gratuita para el uso por toda la población en general y especialmente destinado a emprendedores, investigadores, estudiantes, y comercios y empresas que impulse el uso de dispositivos de Internet de las cosas dinamizando así la economía local.",
+      "fragments": [
+        {
+          "page": 49,
+          "block": 1,
+          "top": 119.84,
+          "bottom": 197.78,
+          "text": "Promoveremos una red de comunicaciones libre y gratuita para el uso por toda la población en general y especialmente destinado a emprendedores, investigadores, estudiantes, y comercios y empresas que impulse el uso de dispositivos de Internet de las cosas dinamizando así la economía local."
+        }
+      ],
+      "text": "Promover una red de comunicaciones gratuita para la población que facilite iniciativas económicas y dispositivos conectados.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-01",
+      "officialId": "P51-01",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Unidad satélite de radioterapia para Ávila. Los abulenses llevamos 16 años esperando, desde que el entonces presidente de la Junta de Castilla y León, Juan Vicente Herrera, lo anunciara.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 2,
+          "top": 201.42,
+          "bottom": 246.46,
+          "text": "Unidad satélite de radioterapia para Ávila. Los abulenses llevamos 16 años esperando, desde que el entonces presidente de la Junta de Castilla y León, Juan Vicente Herrera, lo anunciara."
+        }
+      ],
+      "text": "Reclamar a otras administraciones una unidad satélite de radioterapia en Ávila.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-02",
+      "officialId": "P51-02",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Mejoras en atención sanitaria con más especialistas para que disminuyan las listas de espera.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 3,
+          "top": 267.48,
+          "bottom": 296,
+          "text": "Mejoras en atención sanitaria con más especialistas para que disminuyan las listas de espera."
+        }
+      ],
+      "text": "Reclamar más especialistas sanitarios y menos listas de espera.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-03",
+      "officialId": "P51-03",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Unidad de ictus y unidad de dolor en el Complejo Asistencial de Ávila.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 4,
+          "top": 317.02,
+          "bottom": 345.54,
+          "text": "Unidad de ictus y unidad de dolor en el Complejo Asistencial de Ávila."
+        }
+      ],
+      "text": "Reclamar unidades de ictus y dolor en el hospital de Ávila.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-04",
+      "officialId": "P51-04",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Mejora en transporte ferroviario.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 5,
+          "top": 366.56,
+          "bottom": 378.57,
+          "text": "Mejora en transporte ferroviario."
+        }
+      ],
+      "text": "Reclamar mejoras ferroviarias.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-05",
+      "officialId": "P51-05",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Conexión por autovía con la A-6.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 6,
+          "top": 399.59,
+          "bottom": 411.6,
+          "text": "Conexión por autovía con la A-6."
+        }
+      ],
+      "text": "Reclamar una conexión por autovía con la A-6.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-06",
+      "officialId": "P51-06",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Desarrollo y ejecución de la A-40, que lleva 30 años de retraso.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 7,
+          "top": 432.62,
+          "bottom": 444.63,
+          "text": "Desarrollo y ejecución de la A-40, que lleva 30 años de retraso."
+        }
+      ],
+      "text": "Reclamar la ejecución de la A-40.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-07",
+      "officialId": "P51-07",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Puesta en marcha del Museo del Prado en Ávila, tras 25 años de espera.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 8,
+          "top": 465.64,
+          "bottom": 494.17,
+          "text": "Puesta en marcha del Museo del Prado en Ávila, tras 25 años de espera."
+        }
+      ],
+      "text": "Reclamar la apertura del Museo del Prado en Ávila.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    },
+    {
+      "id": "m-05019-p51-08",
+      "officialId": "P51-08",
+      "topic": "Reivindicaciones a otras administraciones",
+      "page": 51,
+      "endPage": 51,
+      "rawText": "Supresión de los peajes que afectan a los abulenses que se desplazan a la Comunidad de Madrid, que 60 años después continúan en vigor.",
+      "fragments": [
+        {
+          "page": 51,
+          "block": 9,
+          "top": 515.19,
+          "bottom": 560.22,
+          "text": "Supresión de los peajes que afectan a los abulenses que se desplazan a la Comunidad de Madrid, que 60 años después continúan en vigor."
+        }
+      ],
+      "text": "Reclamar la retirada de los peajes hacia la Comunidad de Madrid.",
+      "sourceId": "avila-programme",
+      "sourceNote": "Resumen editorial. Referencia creada con la página y orden del apartado; no es un número oficial."
+    }
+  ],
+  "contextBlocks": [
+    {
+      "id": "m-05019-context-1",
+      "page": 5,
+      "endPage": 5,
+      "topic": "Presentación",
+      "text": "El programa sitúa el mandato 2023–2027 y plantea igualdad, proximidad y una gestión responsable de recursos."
+    },
+    {
+      "id": "m-05019-context-2",
+      "page": 6,
+      "endPage": 6,
+      "topic": "Balance previo",
+      "text": "Las afirmaciones sobre cumplimiento, deuda e inversión describen 2019–2023 según la candidatura; no se consideran resultados del nuevo mandato ni cifras comprobadas."
+    },
+    {
+      "id": "m-05019-context-3",
+      "page": 7,
+      "endPage": 7,
+      "topic": "Síntesis gráfica",
+      "text": "La página gráfica enumera prioridades generales: servicios, educación, sanidad, accesibilidad, agua, comercio, cultura y espacios públicos. Falta conciliar esta síntesis con los apartados y otros compromisos."
+    },
+    {
+      "id": "m-05019-context-4",
+      "page": 9,
+      "endPage": 9,
+      "topic": "Modelo urbano",
+      "text": "La candidatura presenta un proyecto de ciudad a distintos plazos y propone aprovechar fondos europeos y la estrategia Ávila 2030."
+    },
+    {
+      "id": "m-05019-context-5",
+      "page": 13,
+      "endPage": 13,
+      "topic": "Introducción a jardines",
+      "text": "Los planes de jardines se enmarcan en ampliar y mejorar las áreas verdes y el arbolado."
+    },
+    {
+      "id": "m-05019-context-6",
+      "page": 15,
+      "endPage": 15,
+      "topic": "Introducción al cementerio",
+      "text": "Se plantea cuidar el cementerio como espacio que requiere especial atención."
+    },
+    {
+      "id": "m-05019-context-7",
+      "page": 16,
+      "endPage": 16,
+      "topic": "Diagnóstico de alumbrado",
+      "text": "La candidatura reconoce problemas de iluminación anteriores y presenta las propuestas como continuidad de mejoras."
+    },
+    {
+      "id": "m-05019-context-8",
+      "page": 18,
+      "endPage": 18,
+      "topic": "Criterios ambientales",
+      "text": "Se plantea incorporar criterios ambientales a todas las políticas municipales."
+    },
+    {
+      "id": "m-05019-context-9",
+      "page": 21,
+      "endPage": 21,
+      "topic": "Candidaturas de barrios",
+      "text": "Se presentan seis candidaturas a representantes de los barrios anexionados; no son seis compromisos de ejecución."
+    },
+    {
+      "id": "m-05019-context-10",
+      "page": 24,
+      "endPage": 24,
+      "topic": "Accesibilidad universal",
+      "text": "La accesibilidad se propone como criterio transversal de servicios, espacios urbanos e información."
+    },
+    {
+      "id": "m-05019-context-11",
+      "page": 26,
+      "endPage": 26,
+      "topic": "Necesidades de mayores",
+      "text": "Se destaca la demanda de las personas mayores de permanecer en su hogar."
+    },
+    {
+      "id": "m-05019-context-12",
+      "page": 34,
+      "endPage": 34,
+      "topic": "Rodajes",
+      "text": "Los tres apartados de esta página desarrollan la promoción de Ávila como localización audiovisual."
+    },
+    {
+      "id": "m-05019-context-13",
+      "page": 47,
+      "endPage": 47,
+      "topic": "Principios y balance de transparencia",
+      "text": "El programa declara principios de integridad y eficiencia y atribuye al mandato anterior mejoras de acceso a información. Esa autoevaluación no acredita cumplimiento ni honestidad personal."
+    },
+    {
+      "id": "m-05019-context-14",
+      "page": 48,
+      "endPage": 48,
+      "topic": "Antecedentes europeos",
+      "text": "Las cifras de ayudas y proyectos anteriores se conservan como antecedentes declarados por la candidatura, separados de nuevas realizaciones."
+    },
+    {
+      "id": "m-05019-context-15",
+      "page": 51,
+      "endPage": 51,
+      "topic": "Competencias de otras administraciones",
+      "text": "Las ocho peticiones de la última página se dirigen al Estado y a la comunidad autónoma. Que un servicio se abra no demuestra por sí solo causalidad municipal."
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Piloto público de balance de mandato
 
+> Actualización posterior: [contraste de resultados nacionales del 13 de octubre de 2026](mandate-results-2026-10-13.md), sobre las 46 fichas del borrador de cobertura. Revisa desempleo, fraude fiscal, vivienda para jóvenes y brecha laboral por sexo; no representa una nueva revisión de todas las fichas ni confirma publicación en producción.
+
 > **Estado actual:** véase [revisión nacional del 10 de octubre de 2026](mandate-review-2026-10-10.md). Las 30 fichas están revisadas, con 18 medidas acreditadas, seis resultados parciales, un objetivo no alcanzado en plazo y cinco resultados no concluyentes. Lo que sigue documenta el estado inicial del 7 de octubre y sus límites históricos.
 
 Ruta: `/observatorio/mandato`. Entrada desde la cabecera y el bloque electoral de `/observatorio`.

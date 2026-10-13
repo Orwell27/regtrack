@@ -1,0 +1,57 @@
+[
+  {
+    "commitmentId": "m-28079-103",
+    "reviewedAt": "2026-10-10",
+    "title": "BiciMAD: dimensión comunicada por el operador",
+    "conclusion": "EMT comunica una red por encima de los umbrales de estaciones y bicicletas del programa. Esto respalda un avance declarado, pero no verifica por sí solo la disponibilidad real del servicio ni permite cerrar toda la promesa.",
+    "periodNote": "El dato disponible corresponde al 7 de marzo de 2026. La renovación comenzó el 7 de marzo de 2023, antes del mandato 2023–2027: no se atribuye toda la red a este mandato.",
+    "components": [
+      { "id": "red", "claim": "Superar las 600 estaciones y las 7.000 bicicletas", "status": "reported", "finding": "EMT informa de 634 estaciones operativas y 7.782 bicicletas disponibles. Ambas cifras superan los umbrales del programa; son cifras del operador municipal, no un recuento independiente.", "citations": [{ "sourceId": "madrid-bicimad-2026", "locator": "Balance publicado el 7 de marzo de 2026: dimensión de la red" }] },
+      { "id": "territorio", "claim": "Implantación en toda la ciudad", "status": "reported", "finding": "El operador afirma haber alcanzado los 21 distritos en menos de nueve meses desde marzo de 2023. Cubrir distritos no acredita acceso equivalente en todos los barrios.", "citations": [{ "sourceId": "madrid-bicimad-2026", "locator": "Evolución desde marzo de 2023: despliegue en 21 distritos" }] },
+      { "id": "servicio", "claim": "Reforzar el servicio una vez implantado", "status": "unresolved", "finding": "Una observación de EL PAÍS documenta fallos de desbloqueo en Moncloa en septiembre de 2025. Es un episodio; faltan series continuas y comprobaciones posteriores. No resuelve el estado de marzo de 2026 ni refuta las cifras de flota de EMT.", "citations": [{ "sourceId": "bicimad-contraste-2025", "locator": "Apartado sobre BiciMAD: observación directa en la estación 110. Nota editorial conservada, no copia íntegra." }] }
+    ],
+    "contrast": "Se comparan los umbrales con el balance del operador y se separa el despliegue anterior al mandato. Se incorpora además una observación periodística ajena al Ayuntamiento sobre una incidencia localizada. Es evidencia externa de alcance limitado, no un control continuo de disponibilidad ni una corroboración de los totales comunicados por EMT.",
+    "pending": ["Contrastar el inventario de estaciones y la disponibilidad diaria con datos operativos conservados y una fuente de control externa.", "Separar altas y mejoras del mandato 2023–2027 de las actuaciones anteriores.", "Revisión humana independiente de la ficha pendiente."]
+  },
+  {
+    "commitmentId": "m-28079-163",
+    "reviewedAt": "2026-10-10",
+    "title": "Turismo: plan publicado, ejecución pendiente de contraste",
+    "conclusion": "Existe un documento municipal del Plan Estratégico de Turismo 2024–2027 y el BOAM del 7 de febrero de 2025 publica el acuerdo que lo aprobó el 23 de enero. La existencia del plan acredita su redacción, pero no todos los requisitos de participación ni los resultados prometidos.",
+    "periodNote": "El periodo 2024–2027 identifica el plan. La promesa no fija aquí una fecha concreta de aprobación: no se deduce automáticamente un incumplimiento de plazo a partir de la aprobación en 2025.",
+    "components": [
+      { "id": "documento", "claim": "Redactar un Plan Estratégico de Turismo para 2024–2027", "status": "documented", "finding": "Se conserva el PDF del plan y se coteja con su ficha y el acuerdo publicado en el BOAM. El acuerdo aprueba el plan y establece efectos desde su adopción. Los tres documentos comparten origen municipal; no son confirmaciones independientes.", "citations": [{ "sourceId": "madrid-tourism-plan", "locator": "Página 1: título y periodo", "page": 1 }, { "sourceId": "madrid-tourism-register", "locator": "Fecha de aprobación: 23 de enero de 2025" }, { "sourceId": "madrid-tourism-boam", "locator": "BOAM 9814/449 de 7 de febrero de 2025: apartados primero y segundo" }] },
+      { "id": "participacion", "claim": "Elaborarlo con el sector a través del Consejo Local de Turismo", "status": "reported", "finding": "El plan describe cuatro sesiones participativas en marzo de 2024 y enumera sectores participantes. No se han incorporado actas del Consejo Local ni testimonios de participantes que permitan verificar el papel de ese órgano o la incidencia de sus aportaciones.", "citations": [{ "sourceId": "madrid-tourism-plan", "locator": "Páginas 2–3: proceso participativo y temáticas", "page": 2 }] },
+      { "id": "imagen", "claim": "Consolidar la imagen internacional de Madrid", "status": "unresolved", "finding": "No se ha incorporado una evaluación de resultados atribuibles al plan. Los datos de diagnóstico y las intenciones del documento no acreditan por sí mismos una mejora posterior de la imagen internacional.", "citations": [] }
+    ],
+    "contrast": "Se han cotejado el documento, el acuerdo de aprobación, el periodo y el relato municipal de participación. La ficha, el BOAM y el PDF comparten origen. Faltan las actas del Consejo, la ejecución y una evaluación externa; esta revisión no certifica el cumplimiento integral de la medida.",
+    "pending": ["Incorporar las actas del Consejo Local de Turismo.", "Contrastar participación, ejecución y resultados con documentación ajena al promotor.", "Revisión humana independiente de la ficha pendiente."]
+  },
+  {
+    "commitmentId": "m-28079-181",
+    "reviewedAt": "2026-10-10",
+    "title": "Comercios centenarios: bonificación regulada con condiciones",
+    "conclusion": "El artículo 15 bis del texto consolidado municipal del IBI regula una bonificación del 95 % para ciertos establecimientos centenarios. Acredita una medida normativa, pero su ámbito tiene condiciones y esta revisión no comprueba cuántos inmuebles la reciben.",
+    "periodNote": "Se examina la redacción consolidada vigente para 2026. Sus anotaciones sitúan la incorporación del artículo en diciembre de 2023 y una modificación en diciembre de 2025. Es una consolidación informativa municipal; falta cotejar esas modificaciones con sus publicaciones originales.",
+    "components": [
+      { "id": "bonificacion", "claim": "Establecer una bonificación de hasta el 95 % del IBI para actividades centenarias", "status": "documented", "finding": "El artículo 15 bis.1 recoge el 95 % de la cuota íntegra para los usos catastrales enumerados: comercial; bares musicales, salas de fiestas y discotecas; y restaurantes, bares y cafeterías. No se aplica automáticamente a cualquier actividad económica con cien años.", "citations": [{ "sourceId": "madrid-ibi-ordenanza-2026", "locator": "Página 16: artículo 15 bis.1", "page": 16 }] },
+      { "id": "requisitos", "claim": "Declaración de especial interés o utilidad municipal y continuidad de la actividad", "status": "documented", "finding": "La norma exige solicitud, declaración del Pleno, informe municipal y continuidad de idéntica actividad y denominación. Establece reglas sobre interrupciones, titularidad, otros locales y valor catastral individualizado. Estos requisitos delimitan el alcance efectivo frente a la formulación general del programa.", "citations": [{ "sourceId": "madrid-ibi-ordenanza-2026", "locator": "Páginas 16–17: artículo 15 bis.2 a 5", "page": 16 }] },
+      { "id": "aplicacion", "claim": "Aplicar la bonificación a los establecimientos que reúnan los requisitos", "status": "unresolved", "finding": "No se han incorporado declaraciones del Pleno, liquidaciones o una relación contrastada de inmuebles beneficiarios. No se deduce de la norma un volumen de beneficiarios ni un ahorro efectivo.", "citations": [] }
+    ],
+    "contrast": "Se ha comparado la promesa con el alcance y los requisitos del artículo 15 bis. La consolidación informa de la regulación y sus cambios, pero no acredita su aplicación individual ni constituye una comprobación independiente del Ayuntamiento.",
+    "pending": ["Cotejar las modificaciones de 2023 y 2025 con sus publicaciones originales.", "Incorporar declaraciones del Pleno y datos contrastados de aplicación y beneficiarios.", "Revisión humana independiente de la ficha pendiente."]
+  },
+  {
+    "commitmentId": "m-28079-246",
+    "reviewedAt": "2026-10-10",
+    "title": "IBI: el tipo de 2026 sigue por encima del objetivo",
+    "conclusion": "La información tributaria y el artículo 8.2 del texto consolidado municipal fijan un tipo general urbano del 0,414 % para 2026, superior al 0,4 % prometido. El objetivo no consta alcanzado para ese ejercicio; el mandato 2023–2027 continúa y esta ficha no lo declara incumplido al cierre.",
+    "periodNote": "Se compara el objetivo del programa con el ejercicio fiscal 2026. No se anticipa el tipo que pueda aprobarse para 2027 ni se confunde el tipo general con tipos diferenciados, bases o bonificaciones.",
+    "components": [
+      { "id": "tipo", "claim": "Reducir el tipo general del IBI al 0,4 %", "status": "target-pending", "finding": "El 0,414 % para 2026 supera el objetivo del 0,4 % en 0,014 puntos porcentuales. Coinciden la ficha tributaria y el artículo 8.2 del texto consolidado. Esta consolidación municipal se identifica como informativa y remite a los boletines para la versión oficial.", "citations": [{ "sourceId": "madrid-ibi-2026", "locator": "Tipos de gravamen 2026: inmuebles de naturaleza urbana, tipo general" }, { "sourceId": "madrid-ibi-ordenanza-2026", "locator": "Página 9: artículo 8.2; página 1: redacción vigente para 2026; página 26: carácter informativo", "page": 9 }] },
+      { "id": "recibos", "claim": "Beneficiar a 2,2 millones de recibos", "status": "unresolved", "finding": "No se ha incorporado una liquidación que identifique cuántos recibos se beneficiaron ni el ahorro efectivo. El tipo general no determina por sí solo el importe final de cada recibo.", "citations": [{ "sourceId": "madrid-ibi-2026", "locator": "Cálculo de la cuota: base liquidable y beneficios fiscales" }] }
+    ],
+    "contrast": "La comparación numérica impide dar por alcanzado el 0,4 % en 2026. Se han cotejado dos documentos municipales: ficha tributaria y consolidación de la ordenanza. Comparten origen y no aportan un control externo de los recibos beneficiados ni una conclusión sobre el cierre del mandato.",
+    "pending": ["Cotejar la modificación de 2025 con su publicación original en el boletín oficial.", "Obtener liquidaciones y un control externo de beneficiarios y ahorro efectivo.", "Revisar el ejercicio 2027 cuando exista evidencia aplicable.", "Revisión humana independiente de la ficha pendiente."]
+  }
+]

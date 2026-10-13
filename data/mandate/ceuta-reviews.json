@@ -1,0 +1,259 @@
+[
+  {
+    "commitmentId": "r-18-F-28",
+    "reviewedAt": "2026-10-11",
+    "title": "Autobuses: contratación documentada en 2023, presentación en 2024 y emisiones sin verificar",
+    "conclusion": "Hay actuaciones documentadas de renovación de flota, pero no una comprobación completa del diseño integral ni de sus resultados. La municipalización comenzó antes del mandato; los híbridos diésel-eléctricos no se identifican como autobuses de cero emisiones.",
+    "periodNote": "La medida 26 de Transporte y Movilidad del programa julio–octubre de 2023 pide diseño y programación. El número 26 también identifica otra medida ambiental. Se distinguen la gestión directa desde diciembre de 2022, la mesa de septiembre de 2023 y los anuncios y la presentación de 2024. La consulta de la web del operador en octubre de 2026 no fecha la ejecución de cada mejora.",
+    "components": [
+      {
+        "id": "origen",
+        "claim": "Qué se prometió y qué actuación era anterior",
+        "status": "documented",
+        "finding": "La medida pide diseñar y programar una actuación integral de mejora y modernización del autobús, no solo comprar vehículos. El informe de obligaciones de servicio público de la Ciudad sitúa el acuerdo y comienzo de la gestión directa en el 23 de diciembre de 2022, antes del programa y del mandato 2023–2027. Su alojamiento por el Ministerio de Transportes no cambia la autoría municipal.",
+        "citations": [
+          {
+            "sourceId": "ceuta-initial-programme-2023",
+            "locator": "Fomento · Transporte y Movilidad · segunda medida impresa 26",
+            "page": 7
+          },
+          {
+            "sourceId": "ceuta-bus-report-2023",
+            "locator": "Marco jurídico: acuerdo de gestión directa",
+            "page": 3
+          },
+          {
+            "sourceId": "ceuta-bus-report-2023",
+            "locator": "Apartado 3.4: fecha de inicio del servicio",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "contratacion",
+        "claim": "Tramitación de la renovación dentro del periodo inicial",
+        "status": "documented",
+        "finding": "El acta de la mesa de 4 de septiembre de 2023 describe 14 autobuses híbridos diésel-eléctricos y propone adjudicar su suministro a Daimler Buses España. Acredita la propuesta dentro de julio–octubre, no la adjudicación definitiva, la recepción, el pago ni el cumplimiento del diseño integral. Se conserva la fecha de incorporación del documento, 5 de septiembre, separada de la sesión.",
+        "citations": [
+          {
+            "sourceId": "ceuta-bus-tender-2023",
+            "locator": "Objeto de la sesión y propuesta al órgano de contratación",
+            "page": 1
+          },
+          {
+            "sourceId": "ceuta-bus-tender-2023",
+            "locator": "Acuerdo segundo de la mesa: propuesta de adjudicación",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "presentacion",
+        "claim": "Previsión de mayo y presentación posterior",
+        "status": "reported",
+        "finding": "El Gobierno anunció el 2 de abril de 2024 que la flota estaría operativa a principios de mayo. La crónica de El Faro del 29 de junio documenta una presentación con fotografías propias y anuncia el servicio para el lunes siguiente. Corrobora el acto de presentación, no la prestación diaria posterior ni el cumplimiento de la previsión de mayo. No se suma este anuncio a la contratación como si fueran entregas distintas.",
+        "citations": [
+          {
+            "sourceId": "ceuta-bus-announcement-2024",
+            "locator": "Anuncio de 2/04/2024 y previsión de entrada en servicio"
+          },
+          {
+            "sourceId": "ceuta-bus-presentation-report",
+            "locator": "Crónica de Carmen Echarri, 29/06/2024; fotografías del acto"
+          }
+        ]
+      },
+      {
+        "id": "emisiones",
+        "claim": "Contraste de la afirmación sobre emisiones",
+        "status": "documented",
+        "finding": "La nota de abril afirma que los híbridos no producen emisiones. El acta describe tecnología diésel-eléctrica y consumos SORT 1 ofertados de 33,81 y 35,30 litros por 100 km. Esa especificación no sostiene una afirmación general de cero emisiones. Tampoco equivale a una medición del consumo ni de las emisiones reales en las rutas de Ceuta.",
+        "citations": [
+          {
+            "sourceId": "ceuta-bus-announcement-2024",
+            "locator": "Párrafo sobre el primer vehículo y las emisiones"
+          },
+          {
+            "sourceId": "ceuta-bus-tender-2023",
+            "locator": "Tecnología del suministro y consumo de combustible ofertado",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "id": "resultado",
+        "claim": "Calidad del servicio, coste y control externo",
+        "status": "unresolved",
+        "finding": "La web del operador informa sobre líneas y modernización, pero no aporta en esta revisión series contrastadas de puntualidad, frecuencia efectiva, averías, accesibilidad o consumo. Falta el diseño integral fechado, el expediente de recepción y liquidación y una comprobación externa de los resultados. No se atribuye a la mera renovación de flota una mejora ya medida.",
+        "citations": [
+          {
+            "sourceId": "ceuta-bus-service",
+            "locator": "Descripción del servicio, líneas y horarios; consulta de octubre de 2026"
+          }
+        ]
+      }
+    ],
+    "contrast": "El acta técnica permite cuestionar la afirmación de cero emisiones de la nota gubernamental. El Faro es un origen periodístico distinto para la presentación, pero las previsiones de servicio y mejoras siguen siendo declaraciones de los responsables. Ciudad, AMGEVICESA, acta de contratación e informe alojado por el Ministerio comparten el origen municipal. No se ha incorporado una auditoría independiente de resultados.",
+    "pending": [
+      "Obtener el diseño y programación integrales de 2023 y comprobar su alcance, financiación y calendario.",
+      "Completar adjudicación, formalización, recepción, pagos y fecha efectiva de puesta en servicio.",
+      "Contrastar resultados operativos, ambientales y accesibilidad con datos y control externo.",
+      "Completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-18-F-18",
+    "reviewedAt": "2026-10-11",
+    "title": "Limpieza: estudio y gestión directa documentados; ahorro y mejora del servicio pendientes",
+    "conclusion": "Se conserva la secuencia documental del estudio de gestión y la creación de Servilimpce. No se certifica que el informe estuviera terminado en octubre de 2023 ni que el cambio de operador haya producido el ahorro o la mejora previstos.",
+    "periodNote": "El programa inicial julio–octubre de 2023 pide un informe sobre posibilidad, ventajas e inconvenientes de la gestión directa. La memoria publicada es de enero de 2024 y fue aprobada en marzo; un acta de enero de 2025 sitúa el cambio efectivo en septiembre de 2024. Son fases y fechas diferentes.",
+    "components": [
+      {
+        "id": "estudio",
+        "claim": "Inicio del estudio durante el programa inicial",
+        "status": "documented",
+        "finding": "La medida 18 pide un informe comparativo, no da por realizada la municipalización. El BOCCE de marzo de 2024 recoge que el Pleno creó una Comisión de Estudio el 28 de septiembre de 2023. Se acredita el inicio del estudio en el periodo previsto, sin convertirlo en la entrega del informe.",
+        "citations": [
+          {
+            "sourceId": "ceuta-initial-programme-2023",
+            "locator": "Fomento · Medio Ambiente y Servicios Urbanos · medida 18",
+            "page": 6
+          },
+          {
+            "sourceId": "ceuta-cleaning-memorandum-2024",
+            "locator": "Antecedente de creación de la Comisión de Estudio",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "memoria",
+        "claim": "Memoria, observaciones y decisión de gestión",
+        "status": "documented",
+        "finding": "El BOCCE publica una memoria fechada el 17 de enero de 2024 y el acuerdo de 7 de marzo que la aprueba y crea la sociedad. El expediente recoge observaciones de grupos, sindicatos, asociaciones y particulares, desestimadas por el acuerdo con referencia a informes internos. La aprobación no acredita que todas las objeciones materiales estén resueltas ni sustituye a una fiscalización externa.",
+        "citations": [
+          {
+            "sourceId": "ceuta-cleaning-memorandum-2024",
+            "locator": "Antecedentes, observaciones y acuerdos primero a tercero",
+            "page": 2
+          },
+          {
+            "sourceId": "ceuta-cleaning-memorandum-2024",
+            "locator": "Acuerdo de aprobación y constitución de la sociedad",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "inicio",
+        "claim": "Inicio de actividad comunicado en un acta posterior",
+        "status": "reported",
+        "finding": "El acta del Consejo de Gobierno de 14 de enero de 2025 sitúa en el 2 de septiembre de 2024 el cambio efectivo a Servilimpce. Es una constancia de la propia administración sobre el inicio, posterior al estudio y al acuerdo societario; no mide por sí sola la calidad de limpieza.",
+        "citations": [
+          {
+            "sourceId": "ceuta-cleaning-record-2025",
+            "locator": "Antecedente quinto: fecha efectiva de cambio de gestión",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "id": "obligaciones-previas",
+        "claim": "Obligaciones del contrato anterior y costes del nuevo servicio",
+        "status": "documented",
+        "finding": "El Consejo reconoce extrajudicialmente 569.204,26 euros con IPSI por amortización pendiente de maquinaria del contrato anterior, referida a enero de 2023. No se presenta esa obligación como gasto nuevo de Servilimpce ni como pago ya ejecutado. La comparación de costes necesita separar este legado de los gastos ordinarios y de las inversiones posteriores.",
+        "citations": [
+          {
+            "sourceId": "ceuta-cleaning-record-2025",
+            "locator": "Acuerdo de reconocimiento de obligación y periodo de la factura",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "id": "plazo-resultado",
+        "claim": "Entrega en plazo, ahorro y calidad efectiva",
+        "status": "unresolved",
+        "finding": "No se ha conservado un informe completo entregado antes del 31 de octubre de 2023. La fecha posterior de la memoria no demuestra por sí sola que no hubiera versiones previas. También falta comprobar si resultaba aplicable la condición presupuestaria de la nota final del programa. Los cálculos y previsiones de la memoria no se trasladan a ahorro realizado: faltan costes liquidados, indicadores comparables de servicio y control externo.",
+        "citations": [
+          {
+            "sourceId": "ceuta-initial-programme-2023",
+            "locator": "Notas finales sobre carácter no exhaustivo y condición presupuestaria",
+            "page": 29
+          }
+        ]
+      }
+    ],
+    "contrast": "Se contrastan el mandato de elaborar un informe, el inicio del estudio, la memoria aprobada y el acta posterior sobre actividad. La propia documentación incluye observaciones y obligaciones heredadas que impiden presentar una historia de cumplimiento simple. Los informes de Intervención y Secretaría citados por el acuerdo son controles internos; no se contabilizan como revisión humana independiente de RegTrack.",
+    "pending": [
+      "Localizar versiones fechadas del informe de 2023 y determinar la condición presupuestaria aplicable.",
+      "Leer los informes y observaciones completos, más allá de su referencia en el acuerdo.",
+      "Comparar costes efectivamente liquidados, deuda anterior, inversiones y calidad del servicio con fiscalización externa.",
+      "Completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-18-H-2",
+    "reviewedAt": "2026-10-11",
+    "title": "Presupuesto de 2024: proyecto y aprobación inicial acreditados; preparación antes de octubre sin comprobar",
+    "conclusion": "La aprobación inicial del presupuesto de 2024 está documentada el 22 de noviembre de 2023. Prueba la existencia del proyecto en esa fecha, pero no resuelve cuándo se terminó ni convierte las medidas financiadas en actuaciones ejecutadas.",
+    "periodNote": "La ficha 2 de Hacienda pertenece al programa del 1 de julio al 31 de octubre de 2023. La fuente examinada es el anuncio publicado el 22 de noviembre de 2023; no se confunde su aprobación inicial con la definitiva ni con el ejercicio de gasto de 2024.",
+    "components": [
+      {
+        "id": "proyecto",
+        "claim": "Existencia del proyecto y fase acreditada",
+        "status": "documented",
+        "finding": "La medida pide un proyecto de presupuesto para 2024. El BOCCE extraordinario 72 publica que el Pleno lo aprobó inicialmente el 22 de noviembre de 2023 y abrió quince días hábiles para reclamaciones y enmiendas. El anuncio acredita esa fase del expediente 67327/2023, sin probar por sí solo la aprobación definitiva o la liquidación del gasto.",
+        "citations": [
+          {
+            "sourceId": "ceuta-initial-programme-2023",
+            "locator": "Hacienda · medida 2",
+            "page": 10
+          },
+          {
+            "sourceId": "ceuta-budget-initial-2024",
+            "locator": "Anuncio 195: aprobación inicial e información pública",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "plazo",
+        "claim": "Fecha de preparación frente al periodo del programa",
+        "status": "unresolved",
+        "finding": "El anuncio de noviembre es posterior al final del periodo inicial. No permite fechar la terminación del proyecto ni descartar un borrador anterior al 31 de octubre. No se asigna un incumplimiento de plazo a partir de la fecha de publicación de una fase posterior.",
+        "citations": [
+          {
+            "sourceId": "ceuta-initial-programme-2023",
+            "locator": "Portada: periodo del documento",
+            "page": 1
+          },
+          {
+            "sourceId": "ceuta-budget-initial-2024",
+            "locator": "Fecha y fase del anuncio",
+            "page": 2
+          }
+        ]
+      },
+      {
+        "id": "condicion",
+        "claim": "Cómo afecta la condición presupuestaria a las otras medidas",
+        "status": "promise-documented",
+        "finding": "La nota final del programa permite considerar cumplidas las medidas sin dotación con su incorporación al proyecto de presupuesto de 2024. Se identifica como criterio declarado por el Gobierno, no como prueba de ejecución de cada medida. Falta comprobar qué fichas estaban sin crédito y qué partidas incorporó el proyecto; la mera existencia del presupuesto no cierra esas fichas.",
+        "citations": [
+          {
+            "sourceId": "ceuta-initial-programme-2023",
+            "locator": "Nota 2 sobre medidas sin dotación",
+            "page": 29
+          }
+        ]
+      }
+    ],
+    "contrast": "La lectura conjunta del programa y del anuncio evita equiparar proyecto, aprobación inicial y gasto realizado. Ambas fuentes son municipales. La revisión queda acotada al hito de preparación del proyecto y su fecha; no impone resultados de ejecución como si fueran parte de esa promesa, ni da por cumplidas otras medidas por tener financiación.",
+    "pending": [
+      "Localizar el proyecto fechado y su remisión para determinar cuándo se completó.",
+      "Relacionar, medida a medida, la condición de falta de dotación con las partidas del proyecto.",
+      "Completar revisión humana independiente."
+    ]
+  }
+]

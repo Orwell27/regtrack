@@ -1,0 +1,10 @@
+{
+  "url": "https://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/2023_07/PREACUERDO_GOBIERNO_DE_UNIDAD_PROGRESISTA.pdf",
+  "finalUrl": "https://izquierdaxunida.com/documentos/58/0_DOCUMENTOS/2023_07/PREACUERDO_GOBIERNO_DE_UNIDAD_PROGRESISTA.pdf",
+  "sha256": "2da9ad3f2a09cae0fa526e63451d760c1737699b5609fc1362eb00f652675409",
+  "bytes": 586338,
+  "retrievedAt": "2026-10-11T04:34:28.865588+00:00",
+  "snapshotPath": "data/mandate/evidence/territorial/asturias/preagreement.pdf",
+  "extractionSha256": "15b2cc2420eb70e8163532b2dbd743a6a87d193c5d3ea12a10fbf455aa9ef1aa",
+  "extractionMethod": "pypdfium2 get_text_bounded; uncorrected font mapping preserved"
+}

@@ -1,0 +1,1988 @@
+{
+  "portal": {
+    "id": "portal",
+    "url": "https://www.donostia.eus/es/programa-gobierno-23-27",
+    "snapshotPath": "data/mandate/evidence/territorial/donostia/portal.html",
+    "bytes": 163583,
+    "sha256": "c1719f2aa531b9c81c0051dc145991c36b4a74f27c3b94acab0f3079b460dd8b",
+    "retrievedAt": "2026-10-11T01:47:30.189041+00:00"
+  },
+  "catalogue": {
+    "id": "catalogue",
+    "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos",
+    "snapshotPath": "data/mandate/evidence/territorial/donostia/catalogue.html",
+    "bytes": 295962,
+    "sha256": "462e0264de132524f966732fa6ac366af28f4f5610a0a9308caf9f8a36883abe",
+    "retrievedAt": "2026-10-11T01:47:32.917258+00:00"
+  },
+  "projects": [
+    {
+      "slug": "mejora-transporte-publico-ferroviario",
+      "officialId": "27",
+      "detail": {
+        "id": "mejora-transporte-publico-ferroviario",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-transporte-publico-ferroviario",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-transporte-publico-ferroviario.html",
+        "bytes": 151603,
+        "sha256": "fb7846e6069bab6582582bbf901b2e6a7e12510c102eeee190e428d244aa84da",
+        "retrievedAt": "2026-10-11T01:47:34.153926+00:00"
+      },
+      "followup": {
+        "id": "mejora-transporte-publico-ferroviario-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-transporte-publico-ferroviario?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1139104&projectId=27",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-transporte-publico-ferroviario-followup.html",
+        "bytes": 16436,
+        "sha256": "e6ede4ae00fab8edcc15dd2a6578dcefe18a625ba147e810d65c4e12887f3159",
+        "retrievedAt": "2026-10-11T01:47:34.663898+00:00"
+      }
+    },
+    {
+      "slug": "transformacion-evolucion-casas-cultura",
+      "officialId": "18",
+      "detail": {
+        "id": "transformacion-evolucion-casas-cultura",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/transformacion-evolucion-casas-cultura",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/transformacion-evolucion-casas-cultura.html",
+        "bytes": 151932,
+        "sha256": "4a320131271e67a19b7350a8e951c63412568d90e9d8732227f43f2d783129e9",
+        "retrievedAt": "2026-10-11T01:47:34.259563+00:00"
+      },
+      "followup": {
+        "id": "transformacion-evolucion-casas-cultura-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/transformacion-evolucion-casas-cultura?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1139393&projectId=18",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/transformacion-evolucion-casas-cultura-followup.html",
+        "bytes": 12387,
+        "sha256": "23fa536bf1125674f61a42600b9472e3e3949dd4c3e5abe55b3617a8400bdc5e",
+        "retrievedAt": "2026-10-11T01:47:34.663898+00:00"
+      }
+    },
+    {
+      "slug": "2024-centenario-nacimiento-eduardo-chillida",
+      "officialId": "17",
+      "detail": {
+        "id": "2024-centenario-nacimiento-eduardo-chillida",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/2024-centenario-nacimiento-eduardo-chillida",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/2024-centenario-nacimiento-eduardo-chillida.html",
+        "bytes": 151848,
+        "sha256": "6b4158562436ac907553366cc2833153dbdc703f06eb7be90c256631b8cf12e3",
+        "retrievedAt": "2026-10-11T01:47:34.154929+00:00"
+      },
+      "followup": {
+        "id": "2024-centenario-nacimiento-eduardo-chillida-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/2024-centenario-nacimiento-eduardo-chillida?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1139431&projectId=17",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/2024-centenario-nacimiento-eduardo-chillida-followup.html",
+        "bytes": 10904,
+        "sha256": "56af7343f97fe221b4cfd532e02c121ebd6b8e5cddad13e04f74767dd7381bcd",
+        "retrievedAt": "2026-10-11T01:47:34.663898+00:00"
+      }
+    },
+    {
+      "slug": "regeneracion-reurbanizacion-area-manteo-zemoria",
+      "officialId": "15",
+      "detail": {
+        "id": "regeneracion-reurbanizacion-area-manteo-zemoria",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/regeneracion-reurbanizacion-area-manteo-zemoria",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/regeneracion-reurbanizacion-area-manteo-zemoria.html",
+        "bytes": 152971,
+        "sha256": "e6eb058f14ddd92eedec700843c2ef5f279ec27e371ec231db0420eff774f580",
+        "retrievedAt": "2026-10-11T01:47:35.945090+00:00"
+      },
+      "followup": {
+        "id": "regeneracion-reurbanizacion-area-manteo-zemoria-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/regeneracion-reurbanizacion-area-manteo-zemoria?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1139513&projectId=15",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/regeneracion-reurbanizacion-area-manteo-zemoria-followup.html",
+        "bytes": 11648,
+        "sha256": "82206c3e38844e9a4e3295861eea5dcfa470ca5b8cd1730cfb8fc81463d1b400",
+        "retrievedAt": "2026-10-11T01:47:36.294788+00:00"
+      }
+    },
+    {
+      "slug": "generacion-nueva-vivienda",
+      "officialId": "14",
+      "detail": {
+        "id": "generacion-nueva-vivienda",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/generacion-nueva-vivienda",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/generacion-nueva-vivienda.html",
+        "bytes": 151510,
+        "sha256": "371aed602d27306641d7a9d0f0b66749c8c3b405afc3583524930f94816089ff",
+        "retrievedAt": "2026-10-11T01:47:35.667174+00:00"
+      },
+      "followup": {
+        "id": "generacion-nueva-vivienda-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/generacion-nueva-vivienda?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1139532&projectId=14",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/generacion-nueva-vivienda-followup.html",
+        "bytes": 26029,
+        "sha256": "8fbdb1f96740859ea89fbb380dda1ea5694b454318652caae8d983a10015509f",
+        "retrievedAt": "2026-10-11T01:47:36.083202+00:00"
+      }
+    },
+    {
+      "slug": "eje-urumea-recuperacion-revalorizacion-urbana",
+      "officialId": "11",
+      "detail": {
+        "id": "eje-urumea-recuperacion-revalorizacion-urbana",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/eje-urumea-recuperacion-revalorizacion-urbana",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/eje-urumea-recuperacion-revalorizacion-urbana.html",
+        "bytes": 152843,
+        "sha256": "64b403e487048fb6faaa266ddce70627dab0e0d3c12f070abda2314421b739db",
+        "retrievedAt": "2026-10-11T01:47:35.908554+00:00"
+      },
+      "followup": {
+        "id": "eje-urumea-recuperacion-revalorizacion-urbana-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/eje-urumea-recuperacion-revalorizacion-urbana?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1139572&projectId=11",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/eje-urumea-recuperacion-revalorizacion-urbana-followup.html",
+        "bytes": 29893,
+        "sha256": "1a9816c138b578c3bba9fe95541d2e8375bf53e238e85517326fb89da2a7413a",
+        "retrievedAt": "2026-10-11T01:47:36.295787+00:00"
+      }
+    },
+    {
+      "slug": "mejoras-intermodalidad",
+      "detail": {
+        "id": "mejoras-intermodalidad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejoras-intermodalidad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejoras-intermodalidad.html",
+        "bytes": 152375,
+        "sha256": "b21a5e549b4e7b8d9f010f02e608b5a94c9b12fa3b24f38ff55f97aa0bf4fdee",
+        "retrievedAt": "2026-10-11T01:47:37.229076+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "rediseno-infraestructura-viaria",
+      "detail": {
+        "id": "rediseno-infraestructura-viaria",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/rediseno-infraestructura-viaria",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/rediseno-infraestructura-viaria.html",
+        "bytes": 151562,
+        "sha256": "1be48a12db1b66c90c4f6df570ba7f3c59e7a22177cfbb290eaf1ddd5bf8b3c9",
+        "retrievedAt": "2026-10-11T01:47:37.350855+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "plan-estrategico-dbus-2024-2029",
+      "detail": {
+        "id": "plan-estrategico-dbus-2024-2029",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/plan-estrategico-dbus-2024-2029",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/plan-estrategico-dbus-2024-2029.html",
+        "bytes": 151744,
+        "sha256": "a25e2e5cb6bb71e21dafe6448f7b52fbbef603da91c61a143f6beeb045503a47",
+        "retrievedAt": "2026-10-11T01:47:37.379562+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "movilidad-trabajo",
+      "detail": {
+        "id": "movilidad-trabajo",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/movilidad-trabajo",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/movilidad-trabajo.html",
+        "bytes": 151641,
+        "sha256": "92febc7614f43c3241513836a28456531bbdc13c9364783c9e5d7c5324e99ed1",
+        "retrievedAt": "2026-10-11T01:47:38.329131+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejora-servicio-taxis",
+      "detail": {
+        "id": "mejora-servicio-taxis",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-servicio-taxis",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-servicio-taxis.html",
+        "bytes": 151423,
+        "sha256": "6da1258f8f4c022efdb0e8c6977d345235de27af12a58c68faefd0030b4133cb",
+        "retrievedAt": "2026-10-11T01:47:38.425417+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "implantacion-mejoras-gestion-trafico",
+      "detail": {
+        "id": "implantacion-mejoras-gestion-trafico",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/implantacion-mejoras-gestion-trafico",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/implantacion-mejoras-gestion-trafico.html",
+        "bytes": 151757,
+        "sha256": "aa6966a4bc05fdef2b653068a18e63dc1d0d5fbcd0b984800864f6e9437721bd",
+        "retrievedAt": "2026-10-11T01:47:38.467125+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejora-gestion-distribucion-urbana-mercancias-dum",
+      "detail": {
+        "id": "mejora-gestion-distribucion-urbana-mercancias-dum",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-gestion-distribucion-urbana-mercancias-dum",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-gestion-distribucion-urbana-mercancias-dum.html",
+        "bytes": 152095,
+        "sha256": "c28c7e2102d3febf0e880cfe1c1c7ca6a007ad0475f13d7e6a6b2493c4b661d9",
+        "retrievedAt": "2026-10-11T01:47:39.488902+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-movilidad-electrica",
+      "detail": {
+        "id": "fomento-movilidad-electrica",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-movilidad-electrica",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-movilidad-electrica.html",
+        "bytes": 151838,
+        "sha256": "3846ac26827d9e0f7f4398a056779fa8983e602243534f4e51593cfbfc70d225",
+        "retrievedAt": "2026-10-11T01:47:39.561923+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "optimizacion-plazas-aparcamiento-disponibles",
+      "detail": {
+        "id": "optimizacion-plazas-aparcamiento-disponibles",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/optimizacion-plazas-aparcamiento-disponibles",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/optimizacion-plazas-aparcamiento-disponibles.html",
+        "bytes": 152509,
+        "sha256": "5892d2eba4b5851d2b6e752da2f4ed465b8ed4708c22d65e0b74fc56d8399916",
+        "retrievedAt": "2026-10-11T01:47:39.562923+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejora-movilidad-peatonal",
+      "detail": {
+        "id": "mejora-movilidad-peatonal",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-movilidad-peatonal",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-movilidad-peatonal.html",
+        "bytes": 152093,
+        "sha256": "cb35461f0ef22757d641203f03974464e7a4896ddee6140d8b8d1de126f2c55e",
+        "retrievedAt": "2026-10-11T01:47:40.706797+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "plan-aparcamientos-disuasorios",
+      "detail": {
+        "id": "plan-aparcamientos-disuasorios",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/plan-aparcamientos-disuasorios",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/plan-aparcamientos-disuasorios.html",
+        "bytes": 153202,
+        "sha256": "a103b9f4d64c95c676bc6c3786001c2b4436501ca6b1a852947ae92da0cf1b2d",
+        "retrievedAt": "2026-10-11T01:47:40.682797+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "dbizi-ampliacion-servicio",
+      "detail": {
+        "id": "dbizi-ampliacion-servicio",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/dbizi-ampliacion-servicio",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/dbizi-ampliacion-servicio.html",
+        "bytes": 152039,
+        "sha256": "1cb0651d329d806f1e90e666d173010d42b473cde1240c94fdd11a601be358d1",
+        "retrievedAt": "2026-10-11T01:47:40.769410+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-eficiencia-energetica-edificios-comunidades",
+      "detail": {
+        "id": "fomento-eficiencia-energetica-edificios-comunidades",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-eficiencia-energetica-edificios-comunidades",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-eficiencia-energetica-edificios-comunidades.html",
+        "bytes": 152901,
+        "sha256": "c96de90fb9e008fd994e9790d453928b162fec3b9d5d5e9b01a6e28b796ae236",
+        "retrievedAt": "2026-10-11T01:47:41.827467+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "expansion-red-bidegorris",
+      "detail": {
+        "id": "expansion-red-bidegorris",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/expansion-red-bidegorris",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/expansion-red-bidegorris.html",
+        "bytes": 151336,
+        "sha256": "a43c63531f74255df531f92a3990e28bb50ad99e6b723b9391b2394f4347fb88",
+        "retrievedAt": "2026-10-11T01:47:41.825468+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "conservacion-mejora-infraestructuras-verdes",
+      "detail": {
+        "id": "conservacion-mejora-infraestructuras-verdes",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/conservacion-mejora-infraestructuras-verdes",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/conservacion-mejora-infraestructuras-verdes.html",
+        "bytes": 152788,
+        "sha256": "967e7c4fad85e214dbccfc91ab89aad160d50ba2f8e4bf32f59876377c8ad489",
+        "retrievedAt": "2026-10-11T01:47:41.912977+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevo-plan-integral-bicicleta",
+      "detail": {
+        "id": "nuevo-plan-integral-bicicleta",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevo-plan-integral-bicicleta",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevo-plan-integral-bicicleta.html",
+        "bytes": 153314,
+        "sha256": "0b1d4783a0659b2f44072080263cdcc7f8812bb5d8066757177dfc569ddcc05c",
+        "retrievedAt": "2026-10-11T01:47:42.932360+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "renovacion-red-abastacimiento-ciudad",
+      "detail": {
+        "id": "renovacion-red-abastacimiento-ciudad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/renovacion-red-abastacimiento-ciudad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/renovacion-red-abastacimiento-ciudad.html",
+        "bytes": 152037,
+        "sha256": "e4a67031c1a1eb831c3ed02e99cd4131c7f007af075558eeb79dce69f98000aa",
+        "retrievedAt": "2026-10-11T01:47:42.932360+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejora-recogida-gestion-residuos",
+      "detail": {
+        "id": "mejora-recogida-gestion-residuos",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-recogida-gestion-residuos",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-recogida-gestion-residuos.html",
+        "bytes": 151676,
+        "sha256": "828878d34ceece7d78eaaf31274ed4429160c7700de982f0ad372f16cb879f66",
+        "retrievedAt": "2026-10-11T01:47:43.002302+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "renovacion-red-saneamiento-colectores",
+      "detail": {
+        "id": "renovacion-red-saneamiento-colectores",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/renovacion-red-saneamiento-colectores",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/renovacion-red-saneamiento-colectores.html",
+        "bytes": 152250,
+        "sha256": "6167c8955c1db8654093a4d085360141ad5ef267f6083e7d7022d8362c34f1d1",
+        "retrievedAt": "2026-10-11T01:47:44.093648+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "jardin-cenizas-polloe",
+      "detail": {
+        "id": "jardin-cenizas-polloe",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/jardin-cenizas-polloe",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/jardin-cenizas-polloe.html",
+        "bytes": 151693,
+        "sha256": "0d9ba62184aa8d302366de2ca0ee6602487e3f4742ad881181dac8280f584215",
+        "retrievedAt": "2026-10-11T01:47:44.106635+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "auzo-mahaiak",
+      "detail": {
+        "id": "auzo-mahaiak",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/auzo-mahaiak",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/auzo-mahaiak.html",
+        "bytes": 151531,
+        "sha256": "0312bcccb4b7b8e90f5c27d6ccae6bc9018285197e60313926f025307069dd72",
+        "retrievedAt": "2026-10-11T01:47:44.124636+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-dinamicas-participacion-jovenes",
+      "detail": {
+        "id": "fomento-dinamicas-participacion-jovenes",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-dinamicas-participacion-jovenes",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-dinamicas-participacion-jovenes.html",
+        "bytes": 152115,
+        "sha256": "e67ea29d88f4551e67eaa910b2e202fa11192316175d3d8f284c9cbe3d43722e",
+        "retrievedAt": "2026-10-11T01:47:45.171325+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "auzoz-auzo",
+      "detail": {
+        "id": "auzoz-auzo",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/auzoz-auzo",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/auzoz-auzo.html",
+        "bytes": 152108,
+        "sha256": "e8c3123d4b79d413d23c7893a86ba68c84186c009a4ce35a081a624748ed90f1",
+        "retrievedAt": "2026-10-11T01:47:45.189326+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "igualdad-derechos-deberes-oportunidades",
+      "detail": {
+        "id": "igualdad-derechos-deberes-oportunidades",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/igualdad-derechos-deberes-oportunidades",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/igualdad-derechos-deberes-oportunidades.html",
+        "bytes": 152216,
+        "sha256": "98a79fb5872f3df19a81a6764f14218002355076e6b0d5145bdd5cfe91d73df9",
+        "retrievedAt": "2026-10-11T01:47:45.201328+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "defensa-derechos-colectivo-lgtbi",
+      "detail": {
+        "id": "defensa-derechos-colectivo-lgtbi",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/defensa-derechos-colectivo-lgtbi",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/defensa-derechos-colectivo-lgtbi.html",
+        "bytes": 151628,
+        "sha256": "f13ec6826236595fd7b14e602c3892ab39242e9802f27922b145a79981641f03",
+        "retrievedAt": "2026-10-11T01:47:46.303863+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "promocion-diversidad-cultural",
+      "detail": {
+        "id": "promocion-diversidad-cultural",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/promocion-diversidad-cultural",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/promocion-diversidad-cultural.html",
+        "bytes": 151874,
+        "sha256": "1f50beeac1986dd8fb4f1e03a4a512173350a59707aeba5322335a7f784fdffc",
+        "retrievedAt": "2026-10-11T01:47:46.297807+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "compromiso-permanente-cooperacion-internacional",
+      "detail": {
+        "id": "compromiso-permanente-cooperacion-internacional",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/compromiso-permanente-cooperacion-internacional",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/compromiso-permanente-cooperacion-internacional.html",
+        "bytes": 152272,
+        "sha256": "a564f9e4c95d5a349c25d14423c710bb1ce21cb89e12ae21a2f3e725d93e46f8",
+        "retrievedAt": "2026-10-11T01:47:46.329807+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "emakumeen-etxea-nuevo-edificio",
+      "detail": {
+        "id": "emakumeen-etxea-nuevo-edificio",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/emakumeen-etxea-nuevo-edificio",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/emakumeen-etxea-nuevo-edificio.html",
+        "bytes": 152907,
+        "sha256": "7d7462b10e87ea6307ce566436ba732fa66969048a20dcffe3af3682cc258f3d",
+        "retrievedAt": "2026-10-11T01:47:47.458211+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "recuperacion-historica-figura-mujeres",
+      "detail": {
+        "id": "recuperacion-historica-figura-mujeres",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/recuperacion-historica-figura-mujeres",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/recuperacion-historica-figura-mujeres.html",
+        "bytes": 152126,
+        "sha256": "a73064be6ffc9b2060e8b6e1a23c1680cbbd1bdd7a78175c7148af89aee0e188",
+        "retrievedAt": "2026-10-11T01:47:47.426946+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejora-atencion-victimas-agresiones-sexuales",
+      "detail": {
+        "id": "mejora-atencion-victimas-agresiones-sexuales",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-atencion-victimas-agresiones-sexuales",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-atencion-victimas-agresiones-sexuales.html",
+        "bytes": 152944,
+        "sha256": "635ff0938c5eaa607217601f90eb45f29d48f9ce207546166093b4dad1d80557",
+        "retrievedAt": "2026-10-11T01:47:47.391431+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "plena-igualdad-hombres-mujeres",
+      "detail": {
+        "id": "plena-igualdad-hombres-mujeres",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/plena-igualdad-hombres-mujeres",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/plena-igualdad-hombres-mujeres.html",
+        "bytes": 152074,
+        "sha256": "1675239f4c81bf678b3ed143e181efcdb5c008263cc90bc487f36a0b143e1cb9",
+        "retrievedAt": "2026-10-11T01:47:48.483950+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "ciudad-segura-mujeres",
+      "detail": {
+        "id": "ciudad-segura-mujeres",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ciudad-segura-mujeres",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ciudad-segura-mujeres.html",
+        "bytes": 152062,
+        "sha256": "3671108f6c8bf6cee847d7f95670ce107146cb8a551a84472d4d747a9114c58b",
+        "retrievedAt": "2026-10-11T01:47:48.528964+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "finanzas-municipales-bajos-niveles-endeudamiento-alta-solvencia",
+      "detail": {
+        "id": "finanzas-municipales-bajos-niveles-endeudamiento-alta-solvencia",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/finanzas-municipales-bajos-niveles-endeudamiento-alta-solvencia",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/finanzas-municipales-bajos-niveles-endeudamiento-alta-solvencia.html",
+        "bytes": 152298,
+        "sha256": "f073d13e26a7b0656dec41b2a06a61bf9b769fc13f55715ad62cdcfcdef354d1",
+        "retrievedAt": "2026-10-11T01:47:48.565472+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "sistema-municipal-archivo-gestion-documentos",
+      "detail": {
+        "id": "sistema-municipal-archivo-gestion-documentos",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/sistema-municipal-archivo-gestion-documentos",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/sistema-municipal-archivo-gestion-documentos.html",
+        "bytes": 151810,
+        "sha256": "a6b4d3830f8a7ff8cdd251e788823edb159ac0978c7327c60cb3cd11bf3ef9ac",
+        "retrievedAt": "2026-10-11T01:47:49.611027+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "estabilizacion-plantilla-trabajadores-municipales",
+      "detail": {
+        "id": "estabilizacion-plantilla-trabajadores-municipales",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/estabilizacion-plantilla-trabajadores-municipales",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/estabilizacion-plantilla-trabajadores-municipales.html",
+        "bytes": 152457,
+        "sha256": "fe6afdf83205e464c53437f63f5098cbbf545a706f7cac19d5ef56a7ca4311cb",
+        "retrievedAt": "2026-10-11T01:47:49.773556+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "integridad-actuacion-municipal",
+      "detail": {
+        "id": "integridad-actuacion-municipal",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/integridad-actuacion-municipal",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/integridad-actuacion-municipal.html",
+        "bytes": 151614,
+        "sha256": "93a528329df23acfa86d675cd1b501fc9777c67be1110bf263c59244916a1e00",
+        "retrievedAt": "2026-10-11T01:47:49.750375+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "modelo-gestion-publica-alineada-ods",
+      "detail": {
+        "id": "modelo-gestion-publica-alineada-ods",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/modelo-gestion-publica-alineada-ods",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/modelo-gestion-publica-alineada-ods.html",
+        "bytes": 151840,
+        "sha256": "4dbe1b39c00ccc9900579f150b8002aa913d1249d34f0fcae33e39abbbe0bcd8",
+        "retrievedAt": "2026-10-11T01:47:50.777598+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "servicios-informacion-tramitacion-administrativa-municipal",
+      "detail": {
+        "id": "servicios-informacion-tramitacion-administrativa-municipal",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/servicios-informacion-tramitacion-administrativa-municipal",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/servicios-informacion-tramitacion-administrativa-municipal.html",
+        "bytes": 152490,
+        "sha256": "3431b912343962ef8fae1efc3efdf13f894180469868b8926f71835d30ba641e",
+        "retrievedAt": "2026-10-11T01:47:51.140138+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "organizacion-municipal-eficiente-centrada-actividad",
+      "detail": {
+        "id": "organizacion-municipal-eficiente-centrada-actividad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/organizacion-municipal-eficiente-centrada-actividad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/organizacion-municipal-eficiente-centrada-actividad.html",
+        "bytes": 152030,
+        "sha256": "8a2968ce3fcce5a051386f33e6f18e48944c938b5ee637b8c641ec789192ae8f",
+        "retrievedAt": "2026-10-11T01:47:51.250267+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "euskera-personas-inmigrantes",
+      "detail": {
+        "id": "euskera-personas-inmigrantes",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/euskera-personas-inmigrantes",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/euskera-personas-inmigrantes.html",
+        "bytes": 152479,
+        "sha256": "370ddb41b60e72ad3cc3458cdb5db404c206a24032548223da04d27bf8bc80ed",
+        "retrievedAt": "2026-10-11T01:47:52.315958+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "euskera-como-eje-transversal-administracion-publica",
+      "detail": {
+        "id": "euskera-como-eje-transversal-administracion-publica",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/euskera-como-eje-transversal-administracion-publica",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/euskera-como-eje-transversal-administracion-publica.html",
+        "bytes": 152858,
+        "sha256": "b5e75a334e5a7212e5294605b84236c23575776546c3911f917120fd8e84e23b",
+        "retrievedAt": "2026-10-11T01:47:52.272807+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "protocolo-acogida-linguistica",
+      "detail": {
+        "id": "protocolo-acogida-linguistica",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/protocolo-acogida-linguistica",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/protocolo-acogida-linguistica.html",
+        "bytes": 151986,
+        "sha256": "feb414b93d997fe6b7f41396f703c9cc6f514338e909b95923b301b9ad9315ec",
+        "retrievedAt": "2026-10-11T01:47:52.408494+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "gestionar-rendimiento-personas-empleadas-prestar-servicios-publicos-eficientes",
+      "detail": {
+        "id": "gestionar-rendimiento-personas-empleadas-prestar-servicios-publicos-eficientes",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/gestionar-rendimiento-personas-empleadas-prestar-servicios-publicos-eficientes",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/gestionar-rendimiento-personas-empleadas-prestar-servicios-publicos-eficientes.html",
+        "bytes": 152772,
+        "sha256": "8bcd24b5d025456863a0d3c5990fccbc14d8f94415e7a7eb8c8b1a428b11aad1",
+        "retrievedAt": "2026-10-11T01:47:54.139676+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevos-entornos-urbanos",
+      "detail": {
+        "id": "nuevos-entornos-urbanos",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevos-entornos-urbanos",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevos-entornos-urbanos.html",
+        "bytes": 151765,
+        "sha256": "d91529fbbf39a8027323f741a43d187fa81dd809be0ae7f77bd145c4c7505274",
+        "retrievedAt": "2026-10-11T01:47:53.478801+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "planeamiento-auditz-akular",
+      "detail": {
+        "id": "planeamiento-auditz-akular",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/planeamiento-auditz-akular",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/planeamiento-auditz-akular.html",
+        "bytes": 151914,
+        "sha256": "d22c178ac0603493d57ac135e0c975b481f7f3e7af883ff263c092c660ab303d",
+        "retrievedAt": "2026-10-11T01:47:54.497306+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "actualizacion-plan-director-vivienda",
+      "detail": {
+        "id": "actualizacion-plan-director-vivienda",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/actualizacion-plan-director-vivienda",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/actualizacion-plan-director-vivienda.html",
+        "bytes": 151506,
+        "sha256": "d633ce9a9e160d337195c9c0d005d6c7e7efd1e8f9df1b2d4f1e71a2bb3ece59",
+        "retrievedAt": "2026-10-11T01:47:54.614874+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "soluciones-habitacionales-para-jovenes",
+      "detail": {
+        "id": "soluciones-habitacionales-para-jovenes",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/soluciones-habitacionales-para-jovenes",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/soluciones-habitacionales-para-jovenes.html",
+        "bytes": 152059,
+        "sha256": "a8860ba644f327bb6da1d58fa7118e45320c3bff205312c782a53cadb61f2e91",
+        "retrievedAt": "2026-10-11T01:47:55.273224+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "litoral-urbano-mantenimiento-preventivo",
+      "detail": {
+        "id": "litoral-urbano-mantenimiento-preventivo",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/litoral-urbano-mantenimiento-preventivo",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/litoral-urbano-mantenimiento-preventivo.html",
+        "bytes": 152359,
+        "sha256": "c516af13a682308a11e98c527a5e5981f265398e2d4f6545bf771b41e2517132",
+        "retrievedAt": "2026-10-11T01:47:55.613696+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "incremento-oferta-alquiler-asequible-ciudad",
+      "detail": {
+        "id": "incremento-oferta-alquiler-asequible-ciudad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/incremento-oferta-alquiler-asequible-ciudad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/incremento-oferta-alquiler-asequible-ciudad.html",
+        "bytes": 152102,
+        "sha256": "e8ade8fd7eb415d586f0cf6bdbd6a4e3ac474da6c0588f07c7dcf9410760fa17",
+        "retrievedAt": "2026-10-11T01:47:55.631694+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "recuperacion-reactivacion-viviendas-deshabitadas",
+      "detail": {
+        "id": "recuperacion-reactivacion-viviendas-deshabitadas",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/recuperacion-reactivacion-viviendas-deshabitadas",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/recuperacion-reactivacion-viviendas-deshabitadas.html",
+        "bytes": 151841,
+        "sha256": "05a3994a35aefdbfe22dc5e2fe524a9d619b7bd1363052cfab608dd027c50b57",
+        "retrievedAt": "2026-10-11T01:47:56.364303+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "casas-cultura-bibliotecas-renovaciones-nuevas-aperturas",
+      "detail": {
+        "id": "casas-cultura-bibliotecas-renovaciones-nuevas-aperturas",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/casas-cultura-bibliotecas-renovaciones-nuevas-aperturas",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/casas-cultura-bibliotecas-renovaciones-nuevas-aperturas.html",
+        "bytes": 154140,
+        "sha256": "01e1d459e1f979983319176453af5da4805e669f2082907dc65a0191b19c41c0",
+        "retrievedAt": "2026-10-11T01:47:56.671507+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "modernizacion-teatros-ciudad",
+      "detail": {
+        "id": "modernizacion-teatros-ciudad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/modernizacion-teatros-ciudad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/modernizacion-teatros-ciudad.html",
+        "bytes": 151454,
+        "sha256": "a2487ebd90754f4f0353a55c7b746cb8a1f1fef76c652c3d045e90707e5dc2dc",
+        "retrievedAt": "2026-10-11T01:47:56.793319+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "donostia-escaparate-euskera-cultura-vasca",
+      "detail": {
+        "id": "donostia-escaparate-euskera-cultura-vasca",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/donostia-escaparate-euskera-cultura-vasca",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/donostia-escaparate-euskera-cultura-vasca.html",
+        "bytes": 152275,
+        "sha256": "5d93bbfdb51bee30d31ebaf631959baa722f0376da76d393a36e40e5b40118a1",
+        "retrievedAt": "2026-10-11T01:47:57.454914+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "conservatorio-francisco-escudero",
+      "detail": {
+        "id": "conservatorio-francisco-escudero",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/conservatorio-francisco-escudero",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/conservatorio-francisco-escudero.html",
+        "bytes": 151287,
+        "sha256": "fdfddacd97ef084184c0c3693534f14f7288f2d8147fa7d97b82c87db4fc86cd",
+        "retrievedAt": "2026-10-11T01:47:57.766763+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "evolucion-grandes-festivales-ciudad",
+      "detail": {
+        "id": "evolucion-grandes-festivales-ciudad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/evolucion-grandes-festivales-ciudad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/evolucion-grandes-festivales-ciudad.html",
+        "bytes": 151533,
+        "sha256": "4488498976b3bd9e65eddfdb9966a591688f0d0c15a7e03a538f700fe5826f93",
+        "retrievedAt": "2026-10-11T01:47:57.936476+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "donostia-kirola-dinamizador-promotor-deporte-eventos-deportivos",
+      "detail": {
+        "id": "donostia-kirola-dinamizador-promotor-deporte-eventos-deportivos",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/donostia-kirola-dinamizador-promotor-deporte-eventos-deportivos",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/donostia-kirola-dinamizador-promotor-deporte-eventos-deportivos.html",
+        "bytes": 153928,
+        "sha256": "887d0ac9b0a9b4c2b1d9420f44a35926865cf6b5de89c2d718834706e2b6833e",
+        "retrievedAt": "2026-10-11T01:47:58.498770+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "escuela-municipal-musica-danza",
+      "detail": {
+        "id": "escuela-municipal-musica-danza",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/escuela-municipal-musica-danza",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/escuela-municipal-musica-danza.html",
+        "bytes": 151672,
+        "sha256": "63ee6f9ecbc5fec062e27f02bbcaa9aa71d0f4104d0ae4f6455aa04d0deba4d9",
+        "retrievedAt": "2026-10-11T01:47:58.753178+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-creacion-artistica-local",
+      "detail": {
+        "id": "fomento-creacion-artistica-local",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-creacion-artistica-local",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-creacion-artistica-local.html",
+        "bytes": 151725,
+        "sha256": "286451a88d9d51abf9340702ae618e2e2ae14c89a538f5a75e4b34aead88bc91",
+        "retrievedAt": "2026-10-11T01:47:59.064124+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "itienerarios-literarios-ciudad",
+      "detail": {
+        "id": "itienerarios-literarios-ciudad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/itienerarios-literarios-ciudad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/itienerarios-literarios-ciudad.html",
+        "bytes": 151485,
+        "sha256": "0800455aab963bd1f8b92e410bc6d03fb389d682927435490605f83b775310dc",
+        "retrievedAt": "2026-10-11T01:47:59.660945+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "apoyo-deporte-femenino",
+      "detail": {
+        "id": "apoyo-deporte-femenino",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/apoyo-deporte-femenino",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/apoyo-deporte-femenino.html",
+        "bytes": 151908,
+        "sha256": "b2263fe45ad8ed90dd6d1094f230885d63a8795e2c6fe716a44e315a877b495c",
+        "retrievedAt": "2026-10-11T01:47:59.873393+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "plan-mejora-mantenimiento-instalaciones-deportivas",
+      "detail": {
+        "id": "plan-mejora-mantenimiento-instalaciones-deportivas",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/plan-mejora-mantenimiento-instalaciones-deportivas",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/plan-mejora-mantenimiento-instalaciones-deportivas.html",
+        "bytes": 152608,
+        "sha256": "942e611170f336a74010b4b2cebae3d293dc9635db1c87a7c27124720fe2b48b",
+        "retrievedAt": "2026-10-11T01:48:00.209076+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "deporte-vida-saludable",
+      "detail": {
+        "id": "deporte-vida-saludable",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/deporte-vida-saludable",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/deporte-vida-saludable.html",
+        "bytes": 151710,
+        "sha256": "03c98229c6cae16597e0be88373ea8ff858797c51b03665935853314b63f0d49",
+        "retrievedAt": "2026-10-11T01:48:00.863117+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "kirol-txartela-motor-promocion-deporte",
+      "detail": {
+        "id": "kirol-txartela-motor-promocion-deporte",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/kirol-txartela-motor-promocion-deporte",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/kirol-txartela-motor-promocion-deporte.html",
+        "bytes": 151594,
+        "sha256": "ef70c9d1b6ea5ca502094dea833b52d6c285ab53afc1afa2e5d2202228cff314",
+        "retrievedAt": "2026-10-11T01:48:01.392392+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mundial-futbol-2030",
+      "detail": {
+        "id": "mundial-futbol-2030",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mundial-futbol-2030",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mundial-futbol-2030.html",
+        "bytes": 151283,
+        "sha256": "8c80993789511da33f922b8a723482e6a676d234d853e72beceb7adb83842dd7",
+        "retrievedAt": "2026-10-11T01:48:01.339890+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "plan-deporte-urbano",
+      "detail": {
+        "id": "plan-deporte-urbano",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/plan-deporte-urbano",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/plan-deporte-urbano.html",
+        "bytes": 151203,
+        "sha256": "6408e71b6700e348b87ccd014294a2aca9388d9b0b966ef8353a2d37c2859c7f",
+        "retrievedAt": "2026-10-11T01:48:02.015865+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-empleo-calidad-jovenes",
+      "detail": {
+        "id": "fomento-empleo-calidad-jovenes",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-empleo-calidad-jovenes",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-empleo-calidad-jovenes.html",
+        "bytes": 151634,
+        "sha256": "12be8eabd8048ef78d7123b480f85c908b6014366b65807a7ad7520f9f5a8934",
+        "retrievedAt": "2026-10-11T01:48:02.437240+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "formacion-servicio-tejido-productivo-ciudad",
+      "detail": {
+        "id": "formacion-servicio-tejido-productivo-ciudad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/formacion-servicio-tejido-productivo-ciudad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/formacion-servicio-tejido-productivo-ciudad.html",
+        "bytes": 151850,
+        "sha256": "b0a2f27088a273fe00419ff5d991d931e1e0390c8c219c5f10974397d206117d",
+        "retrievedAt": "2026-10-11T01:48:02.545356+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "ayuda-busqueda-empleo",
+      "detail": {
+        "id": "ayuda-busqueda-empleo",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ayuda-busqueda-empleo",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ayuda-busqueda-empleo.html",
+        "bytes": 151484,
+        "sha256": "e9c3fecca57e75d2b796976cf88e8953a89f4d9a6283bffd24b077d248c29d52",
+        "retrievedAt": "2026-10-11T01:48:03.132586+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "eskusaitzeta-parque-industrial-mas-grande-gipuzkoa",
+      "detail": {
+        "id": "eskusaitzeta-parque-industrial-mas-grande-gipuzkoa",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/eskusaitzeta-parque-industrial-mas-grande-gipuzkoa",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/eskusaitzeta-parque-industrial-mas-grande-gipuzkoa.html",
+        "bytes": 151925,
+        "sha256": "7d6ee0886f0bb8d29f584c2bafee6bbffbb09c1b857000d68e473b723f2300d1",
+        "retrievedAt": "2026-10-11T01:48:03.590708+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "regulaciones-sector-hostelero",
+      "detail": {
+        "id": "regulaciones-sector-hostelero",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/regulaciones-sector-hostelero",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/regulaciones-sector-hostelero.html",
+        "bytes": 152177,
+        "sha256": "8fb619c46bc604e6182a7eb6678414c4035a015bbc012bd600281a35779a9877",
+        "retrievedAt": "2026-10-11T01:48:03.706051+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "desarrollo-ampliacion-parques-industriales-empresariales",
+      "detail": {
+        "id": "desarrollo-ampliacion-parques-industriales-empresariales",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/desarrollo-ampliacion-parques-industriales-empresariales",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/desarrollo-ampliacion-parques-industriales-empresariales.html",
+        "bytes": 152676,
+        "sha256": "59fc02bf7ccdb9999cda8826081d9e7195a0ca278892ba1c9c98b2fcbcf1f9d0",
+        "retrievedAt": "2026-10-11T01:48:04.272042+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "revitalizacion-areas-comerciales-ciudad",
+      "detail": {
+        "id": "revitalizacion-areas-comerciales-ciudad",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/revitalizacion-areas-comerciales-ciudad",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/revitalizacion-areas-comerciales-ciudad.html",
+        "bytes": 152300,
+        "sha256": "f0bdffc2be00b304ae486171c67bdfd986d706106b49f72a557c2b99814b0c7c",
+        "retrievedAt": "2026-10-11T01:48:04.716934+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "hub-creacion-audiovisual",
+      "detail": {
+        "id": "hub-creacion-audiovisual",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/hub-creacion-audiovisual",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/hub-creacion-audiovisual.html",
+        "bytes": 152001,
+        "sha256": "9f1d1e50ccdb79198a298ae2fb345de0af2c2017b2e04b60f7d546926cbe5572",
+        "retrievedAt": "2026-10-11T01:48:04.874273+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "dinamizacion-comercio-local",
+      "detail": {
+        "id": "dinamizacion-comercio-local",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/dinamizacion-comercio-local",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/dinamizacion-comercio-local.html",
+        "bytes": 152141,
+        "sha256": "5b0647a094d2e31ccbd0c37e84b21a2e73541a85629e63bebe16a914b2d30fa3",
+        "retrievedAt": "2026-10-11T01:48:05.496194+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-relevo-generacional",
+      "detail": {
+        "id": "fomento-relevo-generacional",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-relevo-generacional",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-relevo-generacional.html",
+        "bytes": 151340,
+        "sha256": "5edc4966f12415ed6c69e237d86b423a6c6be7104bca051fc2920ea9aa2230d1",
+        "retrievedAt": "2026-10-11T01:48:05.958427+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevo-polo-investigacion-cuantica-donostia",
+      "detail": {
+        "id": "nuevo-polo-investigacion-cuantica-donostia",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevo-polo-investigacion-cuantica-donostia",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevo-polo-investigacion-cuantica-donostia.html",
+        "bytes": 151849,
+        "sha256": "06ea077ca11c1fd6083c526130df086ed158506a5d760ce38c4dc30bf69c6e24",
+        "retrievedAt": "2026-10-11T01:48:06.041479+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "reduccion-ruidos-generados-infraestructuras-transporte",
+      "detail": {
+        "id": "reduccion-ruidos-generados-infraestructuras-transporte",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/reduccion-ruidos-generados-infraestructuras-transporte",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/reduccion-ruidos-generados-infraestructuras-transporte.html",
+        "bytes": 152012,
+        "sha256": "e088b367b8beb99985262c7e23e7cbfeaded07b13ee5d25cfaa3b62779ccc847",
+        "retrievedAt": "2026-10-11T01:48:06.694853+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "planificacion-ejecucion-obras-labores-mantenimiento",
+      "detail": {
+        "id": "planificacion-ejecucion-obras-labores-mantenimiento",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/planificacion-ejecucion-obras-labores-mantenimiento",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/planificacion-ejecucion-obras-labores-mantenimiento.html",
+        "bytes": 152093,
+        "sha256": "9a3f00f63830958f06159133cfb31e3ef4838acdec0a1bfb5ee446f934f80a23",
+        "retrievedAt": "2026-10-11T01:48:07.020948+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevos-espacios-peatonales",
+      "detail": {
+        "id": "nuevos-espacios-peatonales",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevos-espacios-peatonales",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevos-espacios-peatonales.html",
+        "bytes": 151498,
+        "sha256": "0ee958d414702e76ce926dea9a34d50b606e6c91af99c2eb795e1f7b41db200f",
+        "retrievedAt": "2026-10-11T01:48:07.156480+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejorar-colaboracion-entre-guardia-municipal-y-ertzaintza",
+      "detail": {
+        "id": "mejorar-colaboracion-entre-guardia-municipal-y-ertzaintza",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejorar-colaboracion-entre-guardia-municipal-y-ertzaintza",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejorar-colaboracion-entre-guardia-municipal-y-ertzaintza.html",
+        "bytes": 152229,
+        "sha256": "131121b15424c0873b29b59b0346b69ef0ac02f11a406b5ad429cfff39566a37",
+        "retrievedAt": "2026-10-11T01:48:07.931068+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevo-plan-director-transporte-vertical",
+      "detail": {
+        "id": "nuevo-plan-director-transporte-vertical",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevo-plan-director-transporte-vertical",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevo-plan-director-transporte-vertical.html",
+        "bytes": 151862,
+        "sha256": "66c12106119f9e5990a7d5f0ace6c657cbac53e3e339e947a76628720a4f645c",
+        "retrievedAt": "2026-10-11T01:48:08.173101+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-turismo-responsable",
+      "detail": {
+        "id": "fomento-turismo-responsable",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-turismo-responsable",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-turismo-responsable.html",
+        "bytes": 151865,
+        "sha256": "19b489da68bcc8942e80f406f313850640edc84cbeeb936f3f0a3f176abd829e",
+        "retrievedAt": "2026-10-11T01:48:08.323236+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejora-adecuacion-centros-servicios-sociales-css",
+      "detail": {
+        "id": "mejora-adecuacion-centros-servicios-sociales-css",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-adecuacion-centros-servicios-sociales-css",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-adecuacion-centros-servicios-sociales-css.html",
+        "bytes": 152077,
+        "sha256": "e6803faa4de54371444cb679c62c4ecd3b3a1369a4cf393d2a3d950ffb1e1cd4",
+        "retrievedAt": "2026-10-11T01:48:09.040237+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "actualizacion-planes-emergencia",
+      "detail": {
+        "id": "actualizacion-planes-emergencia",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/actualizacion-planes-emergencia",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/actualizacion-planes-emergencia.html",
+        "bytes": 151651,
+        "sha256": "1820e13e05a8570cb81ec0b34b73cbf4bf96fddc1c4f4ef8c30af73a59eb2764",
+        "retrievedAt": "2026-10-11T01:48:09.284375+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevo-sistema-comunicaciones-hacia-la-ciudadania",
+      "detail": {
+        "id": "nuevo-sistema-comunicaciones-hacia-la-ciudadania",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevo-sistema-comunicaciones-hacia-la-ciudadania",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevo-sistema-comunicaciones-hacia-la-ciudadania.html",
+        "bytes": 152327,
+        "sha256": "0ca6a2e4ee2c4d8afdd5d150dd6a38c35ea8c504edaba2a77f4aad7938fbb03d",
+        "retrievedAt": "2026-10-11T01:48:09.451019+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "comercio-sostenible-hosteleria",
+      "detail": {
+        "id": "comercio-sostenible-hosteleria",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/comercio-sostenible-hosteleria",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/comercio-sostenible-hosteleria.html",
+        "bytes": 151969,
+        "sha256": "e0dd2328d0f52bb1dce7ad8bb1495e3248a94df0ca16cbd9ad2cddf54ad0d73f",
+        "retrievedAt": "2026-10-11T01:48:10.133936+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "formacion-avanzada-agentes-seguridad-proteccion-civil",
+      "detail": {
+        "id": "formacion-avanzada-agentes-seguridad-proteccion-civil",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/formacion-avanzada-agentes-seguridad-proteccion-civil",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/formacion-avanzada-agentes-seguridad-proteccion-civil.html",
+        "bytes": 153574,
+        "sha256": "291ce91356fc78042b84aa5c8b578f2f2e586f0a7d221877529445a2a0ca4c71",
+        "retrievedAt": "2026-10-11T01:48:10.428695+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevos-convenios-colaboracion-servicios-proteccion-civil-emergencias",
+      "detail": {
+        "id": "nuevos-convenios-colaboracion-servicios-proteccion-civil-emergencias",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevos-convenios-colaboracion-servicios-proteccion-civil-emergencias",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevos-convenios-colaboracion-servicios-proteccion-civil-emergencias.html",
+        "bytes": 152236,
+        "sha256": "261f76d972a77d9a7f3a27edde9921ee79a416588eb803e6dcfae31a16d38a0e",
+        "retrievedAt": "2026-10-11T01:48:10.542357+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "mejora-atencion-nuestros-mayores",
+      "detail": {
+        "id": "mejora-atencion-nuestros-mayores",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/mejora-atencion-nuestros-mayores",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/mejora-atencion-nuestros-mayores.html",
+        "bytes": 152308,
+        "sha256": "ceda015b85fc9c1eaad782c3ef7b2726462930f618a2a94eb059dc634900a579",
+        "retrievedAt": "2026-10-11T01:48:11.254888+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "apoyo-asociaciones-personas-jubiladas",
+      "detail": {
+        "id": "apoyo-asociaciones-personas-jubiladas",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/apoyo-asociaciones-personas-jubiladas",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/apoyo-asociaciones-personas-jubiladas.html",
+        "bytes": 151680,
+        "sha256": "5fc599866efb01ac755fe51b96ff86484a3ddb9fd31c47a26c6a009ada8a84f1",
+        "retrievedAt": "2026-10-11T01:48:11.648504+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "fomento-programa-erlauntza",
+      "detail": {
+        "id": "fomento-programa-erlauntza",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/fomento-programa-erlauntza",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/fomento-programa-erlauntza.html",
+        "bytes": 151877,
+        "sha256": "e98e0cab91419fe58e250b85af7f44ebf9b9ecc9988012e836a071197ba1bfa9",
+        "retrievedAt": "2026-10-11T01:48:11.620505+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "refuerzo-goizaldiak",
+      "detail": {
+        "id": "refuerzo-goizaldiak",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/refuerzo-goizaldiak",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/refuerzo-goizaldiak.html",
+        "bytes": 151289,
+        "sha256": "4b4a5b304348a76b4f49a5b203f23500eaf5233399941aa682910fef6e7a5585",
+        "retrievedAt": "2026-10-11T01:48:12.316388+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "atencion-proteccion-infancia-familias",
+      "detail": {
+        "id": "atencion-proteccion-infancia-familias",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/atencion-proteccion-infancia-familias",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/atencion-proteccion-infancia-familias.html",
+        "bytes": 151815,
+        "sha256": "d8157eb0d4c94d516be4dfa088611dd425f6e57edb8242d883e4eb34f3b988cb",
+        "retrievedAt": "2026-10-11T01:48:12.819712+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "oportunidades-insercion-social-empleo-jovenes",
+      "detail": {
+        "id": "oportunidades-insercion-social-empleo-jovenes",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/oportunidades-insercion-social-empleo-jovenes",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/oportunidades-insercion-social-empleo-jovenes.html",
+        "bytes": 152443,
+        "sha256": "1e99801e44494ba16e582c9d13e327128293909207c12b3408a5c6a4bf8846b9",
+        "retrievedAt": "2026-10-11T01:48:12.794555+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "personas-situacion-calle-exclusion-social",
+      "detail": {
+        "id": "personas-situacion-calle-exclusion-social",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/personas-situacion-calle-exclusion-social",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/personas-situacion-calle-exclusion-social.html",
+        "bytes": 152192,
+        "sha256": "f204fb149147eaa5cbd29f081990e7e5953de54577d169d9cf81cc84f43d7e3c",
+        "retrievedAt": "2026-10-11T01:48:13.523309+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "centros-salud-mantenimiento-mejora-nuevas-aperturas",
+      "detail": {
+        "id": "centros-salud-mantenimiento-mejora-nuevas-aperturas",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/centros-salud-mantenimiento-mejora-nuevas-aperturas",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/centros-salud-mantenimiento-mejora-nuevas-aperturas.html",
+        "bytes": 151975,
+        "sha256": "0d951fd52f8f90e92029402b455f2a497df727323ff329d4ed2e630989e6ad5c",
+        "retrievedAt": "2026-10-11T01:48:14.010872+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "prevencion-atencion-exclusion-social",
+      "detail": {
+        "id": "prevencion-atencion-exclusion-social",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/prevencion-atencion-exclusion-social",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/prevencion-atencion-exclusion-social.html",
+        "bytes": 151488,
+        "sha256": "20a8f8bb8cd203173b169b092e1d15d42eeff07613c050bb52b95699865b75fb",
+        "retrievedAt": "2026-10-11T01:48:14.043871+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "planes-activacion-mejora-barrios",
+      "detail": {
+        "id": "planes-activacion-mejora-barrios",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/planes-activacion-mejora-barrios",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/planes-activacion-mejora-barrios.html",
+        "bytes": 152366,
+        "sha256": "cb0277388928c86162ec9ee01c078e389cdf5026ce4547564fc101d8818ff3b6",
+        "retrievedAt": "2026-10-11T01:48:14.639250+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "patios-inclusivos-centros-escolares",
+      "detail": {
+        "id": "patios-inclusivos-centros-escolares",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/patios-inclusivos-centros-escolares",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/patios-inclusivos-centros-escolares.html",
+        "bytes": 151678,
+        "sha256": "ecf79f57aea907b8ef34502ac3ef33c4211a2ee4e35a57a55a67ea0100a21236",
+        "retrievedAt": "2026-10-11T01:48:15.215842+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "nuevo-complejo-hospitalario-osi-donostialdea",
+      "detail": {
+        "id": "nuevo-complejo-hospitalario-osi-donostialdea",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevo-complejo-hospitalario-osi-donostialdea",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevo-complejo-hospitalario-osi-donostialdea.html",
+        "bytes": 152269,
+        "sha256": "7f465cb0bc218c42f79a6274bf4c0d499e6086f4dfdb290c3778551c8f9a86ae",
+        "retrievedAt": "2026-10-11T01:48:15.436270+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "juventud-atencion-salud-emocional",
+      "detail": {
+        "id": "juventud-atencion-salud-emocional",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/juventud-atencion-salud-emocional",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/juventud-atencion-salud-emocional.html",
+        "bytes": 152258,
+        "sha256": "2bdc6dd64828af4109efeda908f2f0073aa4837700a998509587305091159c18",
+        "retrievedAt": "2026-10-11T01:48:15.876729+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    },
+    {
+      "slug": "espacios-publicos-abiertos-accesibles",
+      "officialId": "1",
+      "detail": {
+        "id": "espacios-publicos-abiertos-accesibles",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/espacios-publicos-abiertos-accesibles",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/espacios-publicos-abiertos-accesibles.html",
+        "bytes": 152634,
+        "sha256": "cb163a099cc88193ef5737a190c4dd648c37fd7f59051b987b259656497ec44b",
+        "retrievedAt": "2026-10-11T01:48:16.417840+00:00"
+      },
+      "followup": {
+        "id": "espacios-publicos-abiertos-accesibles-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/espacios-publicos-abiertos-accesibles?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161512&projectId=1",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/espacios-publicos-abiertos-accesibles-followup.html",
+        "bytes": 13782,
+        "sha256": "d7eaa001f53be9c6449d8f00ada361f2b2b0a80f7f55a668453de4dec11dc92d",
+        "retrievedAt": "2026-10-11T01:48:16.775351+00:00"
+      }
+    },
+    {
+      "slug": "ciudad-inclusiva-e-igualitaria",
+      "officialId": "22",
+      "detail": {
+        "id": "ciudad-inclusiva-e-igualitaria",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ciudad-inclusiva-e-igualitaria",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ciudad-inclusiva-e-igualitaria.html",
+        "bytes": 152705,
+        "sha256": "bb9b01e600d0788ae5c4a51546737b08ae16bafd8c2f4f436e06681cecfa49d0",
+        "retrievedAt": "2026-10-11T01:48:16.586480+00:00"
+      },
+      "followup": {
+        "id": "ciudad-inclusiva-e-igualitaria-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ciudad-inclusiva-e-igualitaria?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161531&projectId=22",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ciudad-inclusiva-e-igualitaria-followup.html",
+        "bytes": 28061,
+        "sha256": "039deedcfa703596e35340f60fad919ce65ddd4de23c2a0361c399f5a9738980",
+        "retrievedAt": "2026-10-11T01:48:17.092457+00:00"
+      }
+    },
+    {
+      "slug": "plan-de-digitalizacion-de-la-administracion-municipal",
+      "officialId": "25",
+      "detail": {
+        "id": "plan-de-digitalizacion-de-la-administracion-municipal",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/plan-de-digitalizacion-de-la-administracion-municipal",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/plan-de-digitalizacion-de-la-administracion-municipal.html",
+        "bytes": 153025,
+        "sha256": "255538fc6ac6bde9c2808688f03e6b51ed2fac266217b40c7c31830034c325d3",
+        "retrievedAt": "2026-10-11T01:48:17.023945+00:00"
+      },
+      "followup": {
+        "id": "plan-de-digitalizacion-de-la-administracion-municipal-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/plan-de-digitalizacion-de-la-administracion-municipal?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161550&projectId=25",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/plan-de-digitalizacion-de-la-administracion-municipal-followup.html",
+        "bytes": 22066,
+        "sha256": "16fc94343d54425a34be6b04da333e8b2a68a87bc50c0f25432e4461f731c87b",
+        "retrievedAt": "2026-10-11T01:48:17.581369+00:00"
+      }
+    },
+    {
+      "slug": "proyecto-nuevo-sagues",
+      "officialId": "16",
+      "detail": {
+        "id": "proyecto-nuevo-sagues",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/proyecto-nuevo-sagues",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/proyecto-nuevo-sagues.html",
+        "bytes": 152289,
+        "sha256": "3f4bf7796dac5ddc33e958ed8f571a1cb9c203c7c205b8662520c148c2144349",
+        "retrievedAt": "2026-10-11T01:48:18.052855+00:00"
+      },
+      "followup": {
+        "id": "proyecto-nuevo-sagues-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/proyecto-nuevo-sagues?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161569&projectId=16",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/proyecto-nuevo-sagues-followup.html",
+        "bytes": 7920,
+        "sha256": "5ec86aa3c72824d0e383e746f8723f8b543b1456aacace063a43c2954fc677e7",
+        "retrievedAt": "2026-10-11T01:48:18.364414+00:00"
+      }
+    },
+    {
+      "slug": "definicion-nueva-movilidad-urbana-sostenible",
+      "officialId": "26",
+      "detail": {
+        "id": "definicion-nueva-movilidad-urbana-sostenible",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/definicion-nueva-movilidad-urbana-sostenible",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/definicion-nueva-movilidad-urbana-sostenible.html",
+        "bytes": 154077,
+        "sha256": "22b699441cca068b0c57395343244e5c3dce7ab096375ce3034d3b489ef0e51e",
+        "retrievedAt": "2026-10-11T01:48:18.327328+00:00"
+      },
+      "followup": {
+        "id": "definicion-nueva-movilidad-urbana-sostenible-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/definicion-nueva-movilidad-urbana-sostenible?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161600&projectId=26",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/definicion-nueva-movilidad-urbana-sostenible-followup.html",
+        "bytes": 22677,
+        "sha256": "4f50bf5e543c148da4fe7d5c30a680d37e429e5b171e45a1b0ce0fb492d79256",
+        "retrievedAt": "2026-10-11T01:48:18.638329+00:00"
+      }
+    },
+    {
+      "slug": "facilitar-acceso-informacion-servicios-municipales",
+      "officialId": "24",
+      "detail": {
+        "id": "facilitar-acceso-informacion-servicios-municipales",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/facilitar-acceso-informacion-servicios-municipales",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/facilitar-acceso-informacion-servicios-municipales.html",
+        "bytes": 152433,
+        "sha256": "83558bd071599bc8ce1bb3dd85957fcee29eb0394b7b8e505c41c4670e903a69",
+        "retrievedAt": "2026-10-11T01:48:18.634328+00:00"
+      },
+      "followup": {
+        "id": "facilitar-acceso-informacion-servicios-municipales-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/facilitar-acceso-informacion-servicios-municipales?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161621&projectId=24",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/facilitar-acceso-informacion-servicios-municipales-followup.html",
+        "bytes": 10014,
+        "sha256": "ceac64a02af0cf2ac61e48e648e3b5ca3462a2f189e5ce90767ffd9b8385b1f0",
+        "retrievedAt": "2026-10-11T01:48:18.980736+00:00"
+      }
+    },
+    {
+      "slug": "ciudad-comprometida-derechos-humanos",
+      "officialId": "21",
+      "detail": {
+        "id": "ciudad-comprometida-derechos-humanos",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ciudad-comprometida-derechos-humanos",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ciudad-comprometida-derechos-humanos.html",
+        "bytes": 151831,
+        "sha256": "04e159d1a0d5803281a70afe29fba69f2769769b688b67036e151c1eebd32451",
+        "retrievedAt": "2026-10-11T01:48:19.460418+00:00"
+      },
+      "followup": {
+        "id": "ciudad-comprometida-derechos-humanos-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ciudad-comprometida-derechos-humanos?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161653&projectId=21",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ciudad-comprometida-derechos-humanos-followup.html",
+        "bytes": 21724,
+        "sha256": "6d7cabe91856ddac4c706b66202c9a8e63103611485a0c9ab3876a40d58a915a",
+        "retrievedAt": "2026-10-11T01:48:19.890074+00:00"
+      }
+    },
+    {
+      "slug": "participacion-ciudadana-analisis-mejora-modelo",
+      "officialId": "20",
+      "detail": {
+        "id": "participacion-ciudadana-analisis-mejora-modelo",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/participacion-ciudadana-analisis-mejora-modelo",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/participacion-ciudadana-analisis-mejora-modelo.html",
+        "bytes": 153605,
+        "sha256": "928961d33e4ec73f917333fbeca360bf0cf660baff069040d6f2616b21e4fe1b",
+        "retrievedAt": "2026-10-11T01:48:19.793679+00:00"
+      },
+      "followup": {
+        "id": "participacion-ciudadana-analisis-mejora-modelo-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/participacion-ciudadana-analisis-mejora-modelo?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161675&projectId=20",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/participacion-ciudadana-analisis-mejora-modelo-followup.html",
+        "bytes": 11122,
+        "sha256": "ddae48f64084f77324e0c40a7796bbb88e25340e2fdec27f9d3d7ee29b7d3950",
+        "retrievedAt": "2026-10-11T01:48:20.119020+00:00"
+      }
+    },
+    {
+      "slug": "illunbe-ciudad-deportiva-anoeta",
+      "officialId": "12",
+      "detail": {
+        "id": "illunbe-ciudad-deportiva-anoeta",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/illunbe-ciudad-deportiva-anoeta",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/illunbe-ciudad-deportiva-anoeta.html",
+        "bytes": 151483,
+        "sha256": "c812b1d68f17a01165445fdf45f308b067a410efee8d6fde74543555bb1a8496",
+        "retrievedAt": "2026-10-11T01:48:20.072225+00:00"
+      },
+      "followup": {
+        "id": "illunbe-ciudad-deportiva-anoeta-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/illunbe-ciudad-deportiva-anoeta?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161721&projectId=12",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/illunbe-ciudad-deportiva-anoeta-followup.html",
+        "bytes": 16538,
+        "sha256": "da7c63a58767d31524d32571c7228f2071b6673d58151f06e1df82f847e472b6",
+        "retrievedAt": "2026-10-11T01:48:20.390077+00:00"
+      }
+    },
+    {
+      "slug": "turismo-cuidado-destino",
+      "officialId": "4",
+      "detail": {
+        "id": "turismo-cuidado-destino",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/turismo-cuidado-destino",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/turismo-cuidado-destino.html",
+        "bytes": 152001,
+        "sha256": "4e1b2cf42ba7afa05cb2e4170b7443806d7fbc7a60e68c4de56c230d887043c4",
+        "retrievedAt": "2026-10-11T01:48:21.384284+00:00"
+      },
+      "followup": {
+        "id": "turismo-cuidado-destino-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/turismo-cuidado-destino?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1161746&projectId=4",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/turismo-cuidado-destino-followup.html",
+        "bytes": 28656,
+        "sha256": "b2cdb5b96ce546267f92fbd04e208f8293d2ffc2c03dcbad73cc37e6ea825686",
+        "retrievedAt": "2026-10-11T01:48:21.868938+00:00"
+      }
+    },
+    {
+      "slug": "donostia-verde-apuesta-accion-climatica",
+      "officialId": "3",
+      "detail": {
+        "id": "donostia-verde-apuesta-accion-climatica",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/donostia-verde-apuesta-accion-climatica",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/donostia-verde-apuesta-accion-climatica.html",
+        "bytes": 151868,
+        "sha256": "a58b7a68b3dd28cdb0ffea6f050b79a8877e37b2d9243775a02612c10d340972",
+        "retrievedAt": "2026-10-11T01:48:21.634858+00:00"
+      },
+      "followup": {
+        "id": "donostia-verde-apuesta-accion-climatica-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/donostia-verde-apuesta-accion-climatica?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163128&projectId=3",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/donostia-verde-apuesta-accion-climatica-followup.html",
+        "bytes": 23278,
+        "sha256": "19881739713c0ae87fb22602483ea03a0df7fc1e31cb0d83f474476ebd8c1e88",
+        "retrievedAt": "2026-10-11T01:48:21.933760+00:00"
+      }
+    },
+    {
+      "slug": "ampliacion-parque-tecnologico-miramon",
+      "officialId": "7",
+      "detail": {
+        "id": "ampliacion-parque-tecnologico-miramon",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ampliacion-parque-tecnologico-miramon",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ampliacion-parque-tecnologico-miramon.html",
+        "bytes": 151670,
+        "sha256": "dbdc25303ee2969f83b278c9ee4fc3bc15a4d0df4e17d5410b3e893e728f9c27",
+        "retrievedAt": "2026-10-11T01:48:21.902760+00:00"
+      },
+      "followup": {
+        "id": "ampliacion-parque-tecnologico-miramon-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ampliacion-parque-tecnologico-miramon?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163180&projectId=7",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ampliacion-parque-tecnologico-miramon-followup.html",
+        "bytes": 12815,
+        "sha256": "3bf067ebe974f584c65fe4d1fbbb8a7fcbfa3310394f8f503a3d8d673bc1b0d9",
+        "retrievedAt": "2026-10-11T01:48:22.232783+00:00"
+      }
+    },
+    {
+      "slug": "nueva-oficina-udalinfo-atencion-ciudadana",
+      "officialId": "23",
+      "detail": {
+        "id": "nueva-oficina-udalinfo-atencion-ciudadana",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nueva-oficina-udalinfo-atencion-ciudadana",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nueva-oficina-udalinfo-atencion-ciudadana.html",
+        "bytes": 153969,
+        "sha256": "f1744e1b74722ef70a73a4d4079c8614a049099592d03e3b722c969bfad4cf6b",
+        "retrievedAt": "2026-10-11T01:48:23.138135+00:00"
+      },
+      "followup": {
+        "id": "nueva-oficina-udalinfo-atencion-ciudadana-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nueva-oficina-udalinfo-atencion-ciudadana?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163247&projectId=23",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nueva-oficina-udalinfo-atencion-ciudadana-followup.html",
+        "bytes": 15958,
+        "sha256": "d3aaf74cfab91bf753fc4275ae8dbf1c3a52dc99bbcb214f5af9cf94790d757f",
+        "retrievedAt": "2026-10-11T01:48:23.503043+00:00"
+      }
+    },
+    {
+      "slug": "euskararen-hiria",
+      "officialId": "19",
+      "detail": {
+        "id": "euskararen-hiria",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/euskararen-hiria",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/euskararen-hiria.html",
+        "bytes": 152127,
+        "sha256": "d90f7561595d8d3311f7bf934186651cbe41f46ca689a781e283ae3f2cb91574",
+        "retrievedAt": "2026-10-11T01:48:23.273078+00:00"
+      },
+      "followup": {
+        "id": "euskararen-hiria-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/euskararen-hiria?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163271&projectId=19",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/euskararen-hiria-followup.html",
+        "bytes": 30845,
+        "sha256": "960c3f090e848bd486e746ca992865027412e56c37bcdd308de2b9fe9629fdfa",
+        "retrievedAt": "2026-10-11T01:48:23.715549+00:00"
+      }
+    },
+    {
+      "slug": "playa-vias-easo-recuperacion-area",
+      "officialId": "13",
+      "detail": {
+        "id": "playa-vias-easo-recuperacion-area",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/playa-vias-easo-recuperacion-area",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/playa-vias-easo-recuperacion-area.html",
+        "bytes": 152561,
+        "sha256": "91749ef6d7d84d4213f16430ce910ea756e4172df6af26e6cd27ea1db16b6a6e",
+        "retrievedAt": "2026-10-11T01:48:23.457728+00:00"
+      },
+      "followup": {
+        "id": "playa-vias-easo-recuperacion-area-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/playa-vias-easo-recuperacion-area?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163288&projectId=13",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/playa-vias-easo-recuperacion-area-followup.html",
+        "bytes": 13262,
+        "sha256": "0fdd23334d02e8c0637fc016bed7fc61f2d2ec624265e37c6e34acd14ca10322",
+        "retrievedAt": "2026-10-11T01:48:23.848075+00:00"
+      }
+    },
+    {
+      "slug": "nuevo-plan-general-ordenacion-urbana-pgou",
+      "officialId": "10",
+      "detail": {
+        "id": "nuevo-plan-general-ordenacion-urbana-pgou",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevo-plan-general-ordenacion-urbana-pgou",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevo-plan-general-ordenacion-urbana-pgou.html",
+        "bytes": 151923,
+        "sha256": "0add22c592cd49fcd7409e8eba4f1f4fdf4ab117611c5cdf7a9a057fdf0d6552",
+        "retrievedAt": "2026-10-11T01:48:24.664287+00:00"
+      },
+      "followup": {
+        "id": "nuevo-plan-general-ordenacion-urbana-pgou-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/nuevo-plan-general-ordenacion-urbana-pgou?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163308&projectId=10",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/nuevo-plan-general-ordenacion-urbana-pgou-followup.html",
+        "bytes": 14988,
+        "sha256": "5264a90375da12a0ae7962261ab2795989ab7f3bfe5c9e791c1fc842c28217ec",
+        "retrievedAt": "2026-10-11T01:48:25.064619+00:00"
+      }
+    },
+    {
+      "slug": "cuarteles-loiola-nuevo-desarrollo-residencial",
+      "officialId": "9",
+      "detail": {
+        "id": "cuarteles-loiola-nuevo-desarrollo-residencial",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/cuarteles-loiola-nuevo-desarrollo-residencial",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/cuarteles-loiola-nuevo-desarrollo-residencial.html",
+        "bytes": 152949,
+        "sha256": "b3ecbdca6b7555ed2103673bed7c4f9d94cb5deaf30560e97cfa11826e3c912a",
+        "retrievedAt": "2026-10-11T01:48:24.987295+00:00"
+      },
+      "followup": {
+        "id": "cuarteles-loiola-nuevo-desarrollo-residencial-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/cuarteles-loiola-nuevo-desarrollo-residencial?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163341&projectId=9",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/cuarteles-loiola-nuevo-desarrollo-residencial-followup.html",
+        "bytes": 11868,
+        "sha256": "e8bf38f8564fef75605a6c0220e3fa265a7202313ea4d89aa7dd567306394c09",
+        "retrievedAt": "2026-10-11T01:48:25.311451+00:00"
+      }
+    },
+    {
+      "slug": "empleo-calidad-herramienta-cohesion-social",
+      "officialId": "8",
+      "detail": {
+        "id": "empleo-calidad-herramienta-cohesion-social",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/empleo-calidad-herramienta-cohesion-social",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/empleo-calidad-herramienta-cohesion-social.html",
+        "bytes": 151849,
+        "sha256": "dcf2befd7368ff6521f23249373855c32d89ed2cd9d53c123be24523ab128b39",
+        "retrievedAt": "2026-10-11T01:48:25.027784+00:00"
+      },
+      "followup": {
+        "id": "empleo-calidad-herramienta-cohesion-social-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/empleo-calidad-herramienta-cohesion-social?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163366&projectId=8",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/empleo-calidad-herramienta-cohesion-social-followup.html",
+        "bytes": 14046,
+        "sha256": "e0567a0e735ac23ee0b256d1def01b0426bdf99a461a7277c0b649db8e3df06f",
+        "retrievedAt": "2026-10-11T01:48:25.389672+00:00"
+      }
+    },
+    {
+      "slug": "ciudad-ciencia-conocimiento-impacto-social",
+      "officialId": "6",
+      "detail": {
+        "id": "ciudad-ciencia-conocimiento-impacto-social",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ciudad-ciencia-conocimiento-impacto-social",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ciudad-ciencia-conocimiento-impacto-social.html",
+        "bytes": 151750,
+        "sha256": "a62127b7bc7077e4eff7a5f644660ff59726b680d8e38f71fd3324854d4413ba",
+        "retrievedAt": "2026-10-11T01:48:26.286563+00:00"
+      },
+      "followup": {
+        "id": "ciudad-ciencia-conocimiento-impacto-social-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/ciudad-ciencia-conocimiento-impacto-social?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163383&projectId=6",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/ciudad-ciencia-conocimiento-impacto-social-followup.html",
+        "bytes": 18456,
+        "sha256": "879d8cff5d20cc95218f260997d3272c9a6f7794c74fcd1c0e0aaf3eb66f65da",
+        "retrievedAt": "2026-10-11T01:48:26.667661+00:00"
+      }
+    },
+    {
+      "slug": "acceso-colectivos-vulnerables-sistema-servicios-sociales",
+      "officialId": "5",
+      "detail": {
+        "id": "acceso-colectivos-vulnerables-sistema-servicios-sociales",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/acceso-colectivos-vulnerables-sistema-servicios-sociales",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/acceso-colectivos-vulnerables-sistema-servicios-sociales.html",
+        "bytes": 152126,
+        "sha256": "355c9f0ab8d6574c7c9ce1e3e8c8c9d68340a467036d47e276f3b44525559821",
+        "retrievedAt": "2026-10-11T01:48:26.531968+00:00"
+      },
+      "followup": {
+        "id": "acceso-colectivos-vulnerables-sistema-servicios-sociales-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/acceso-colectivos-vulnerables-sistema-servicios-sociales?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163400&projectId=5",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/acceso-colectivos-vulnerables-sistema-servicios-sociales-followup.html",
+        "bytes": 14789,
+        "sha256": "355dd8853bb5aa2562852f01f414e13b2f7be81fbab9f772781ad0e0b7b572e5",
+        "retrievedAt": "2026-10-11T01:48:26.876615+00:00"
+      }
+    },
+    {
+      "slug": "seguridad-ciudadana",
+      "officialId": "2",
+      "detail": {
+        "id": "seguridad-ciudadana",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/seguridad-ciudadana",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/seguridad-ciudadana.html",
+        "bytes": 151814,
+        "sha256": "c6428779980de4356a1ca530b0e6ff2a480b3dd76f61f4efab7a78a367ea65d4",
+        "retrievedAt": "2026-10-11T01:48:26.652653+00:00"
+      },
+      "followup": {
+        "id": "seguridad-ciudadana-followup",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/seguridad-ciudadana?p_p_id=PortletsWebRendicionCuentas_WAR_PortletsWebClientePortletRendicionCuentas10SNAPSHOT&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=cargarDatos&p_p_cacheability=cacheLevelPage&assetEntryId=1163418&projectId=2",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/seguridad-ciudadana-followup.html",
+        "bytes": 18586,
+        "sha256": "cbed30f1b289ad6a5521bfeb7c88e2319953ba9892a0f171376dcf3cecd4f5ec",
+        "retrievedAt": "2026-10-11T01:48:27.034630+00:00"
+      }
+    },
+    {
+      "slug": "divulgacion-pedagogica",
+      "detail": {
+        "id": "divulgacion-pedagogica",
+        "url": "https://www.donostia.eus/es/programa-gobierno-23-27/proyectos/divulgacion-pedagogica",
+        "snapshotPath": "data/mandate/evidence/territorial/donostia/divulgacion-pedagogica.html",
+        "bytes": 150788,
+        "sha256": "ed94b6543c5f6d8438494c6e2f8e26b503528ed2986108a04090846f0f74ef7a",
+        "retrievedAt": "2026-10-11T01:48:27.725153+00:00"
+      },
+      "followup": null,
+      "issue": "No unique projectId/resource URL",
+      "ids": []
+    }
+  ]
+}

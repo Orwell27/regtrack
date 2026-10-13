@@ -1,0 +1,90 @@
+[
+  {
+    "commitmentId": "r-09-1.7.6",
+    "reviewedAt": "2026-10-11",
+    "title": "Emancipación: préstamo regulado y primera operación comunicada",
+    "conclusion": "El fondo dispone de bases y convocatoria, y el ICF comunica una primera operación firmada. Esto acredita pasos concretos, pero no resuelve la cobertura efectiva ni toda la promesa sobre ayudas a los intereses.",
+    "periodNote": "Medida 1.7.6 del plan 2024–2027. Bases y convocatoria de junio de 2025, comunicación de agosto de 2025 y modificación publicada el 29-05-2026. La noticia de 2025 no es un balance de octubre de 2026.",
+    "components": [
+      {
+        "id": "convocatoria",
+        "claim": "Poner en marcha el fondo que adelanta la entrada",
+        "status": "documented",
+        "finding": "La Resolución TER/2245/2025 establece las bases y la TER/2344/2025 abre la convocatoria con 100 millones de euros de dotación inicial para 2025. El plazo comienza el 30 de junio de 2025. Una dotación presupuestaria no equivale a dinero desembolsado ni a viviendas adquiridas.",
+        "citations": [
+          { "sourceId": "catalunya-emancipacio-bases", "locator": "Bases reguladoras del fondo; DOGC de 18-06-2025.", "page": 1 },
+          { "sourceId": "catalunya-emancipacio-call", "locator": "Apartados 1, 3 y 4: convocatoria, dotación inicial y apertura de solicitudes.", "page": 1 }
+        ]
+      },
+      {
+        "id": "condiciones",
+        "claim": "Diferir la devolución de la entrada y conservar las condiciones de acceso",
+        "status": "documented",
+        "finding": "La modificación de 2026 amplía la edad de 18–35 a 18–40 años. Regula un préstamo público sin intereses de hasta el 20% del menor valor entre compra y tasación, con máximo de 50.000 €. La carencia llega hasta 30 años y coincide con la amortización del préstamo bancario; el plazo total máximo es 35 años. La vivienda queda protegida de forma permanente y sujeta a precio limitado. Subsisten requisitos de renta, residencia y riesgo bancario: la edad no basta para obtenerlo.",
+        "citations": [
+          { "sourceId": "catalunya-emancipacio-bases", "locator": "Base 3: edad inicial de 18 a 35 años.", "page": 2 },
+          { "sourceId": "catalunya-emancipacio-2026", "locator": "Base 3 modificada (p. 1), protección permanente (p. 2) y base 6: importes, carencia e intereses (p. 3).", "page": 3 },
+          { "sourceId": "catalunya-emancipacio-product", "locator": "Ficha ICF Habitatge Emancipació: condiciones y enlace a la modificación de las bases. Mismo origen gubernamental, no auditoría externa." }
+        ]
+      },
+      {
+        "id": "primera-operacion",
+        "claim": "Comprobar actividad efectiva más allá de la convocatoria",
+        "status": "reported",
+        "finding": "El ICF comunica el 5 de agosto de 2025 la firma de una primera operación en Sabadell y 343 operaciones aprobadas. Aprobadas no significa que todas estuvieran firmadas o desembolsadas. La noticia es del propio gestor; no se incorpora el expediente individual ni una auditoría de pagos.",
+        "citations": [{ "sourceId": "catalunya-emancipacio-first", "locator": "Noticia de 05-08-2025: primera firma y operaciones aprobadas; no es una serie de desembolsos." }]
+      },
+      {
+        "id": "intereses-y-resultados",
+        "claim": "Resolver la convocatoria de bonificaciones y el efecto sobre el acceso a vivienda",
+        "status": "unresolved",
+        "finding": "El plan añade ayudas para bonificar intereses. El tipo cero del préstamo público no acredita por sí solo una convocatoria adicional ni una bonificación de la hipoteca bancaria, cuyas condiciones son distintas. Falta aclarar documentalmente qué instrumento satisface esa parte de la promesa y contrastar beneficiarios, denegaciones, desembolsos y resultados de acceso a vivienda.",
+        "citations": [{ "sourceId": "catalunya-programme-2024", "locator": "Medida 1.7.6: anticipo, devolución al final y ayudas a los intereses; se conserva íntegra la redacción original.", "page": 62 }]
+      }
+    ],
+    "contrast": "Se cotejan programa, bases originales, modificación, convocatoria y comunicación del gestor. Todos proceden del mismo ámbito gubernamental; no se cuentan como cinco corroboraciones independientes. La norma de 2026 corrige la edad de la noticia antigua. No se interpreta la falta de una convocatoria adicional en estas fuentes como prueba de que no exista.",
+    "pending": [
+      "Identificar el instrumento de bonificación de intereses y su relación con el préstamo a tipo cero.",
+      "Incorporar datos actuales de solicitudes, aprobaciones, firmas, desembolsos y denegaciones, con sus denominadores.",
+      "Contrastar modificaciones posteriores y una evaluación externa del acceso y la cobertura.",
+      "Completar revisión humana independiente de las fuentes y de esta interpretación."
+    ]
+  },
+  {
+    "commitmentId": "r-09-2.2.6",
+    "reviewedAt": "2026-10-11",
+    "title": "Carbono: presupuesto aprobado, ambición cuestionada y ejecución pendiente de contraste",
+    "conclusion": "El Parlament aprobó el presupuesto de carbono para 2026–2030. El comité de expertos considera que es menos ambicioso que su propuesta. La aprobación no demuestra una reducción de emisiones ya lograda ni completa las medidas de apoyo prometidas.",
+    "periodNote": "Medida 2.2.6 del plan 2024–2027. Resolución adoptada el 04-12-2025, publicada en el BOPC de 18-12-2025; valoración del comité de 29-12-2025. El periodo presupuestado es 2026–2030 y no se presenta como resultado observado en 2026.",
+    "components": [
+      {
+        "id": "aprobacion",
+        "claim": "Aprobar los presupuestos de carbono de Cataluña",
+        "status": "documented",
+        "finding": "La Resolución 481/XV aprueba el presupuesto de carbono de 2026–2030. La tabla 7 fija 161.562 miles de toneladas de CO₂ equivalente: 161,562 millones acumulados en cinco años, sin LULUCF (usos de la tierra y silvicultura). No es una cantidad anual ni una medición de emisiones. Se conserva una nota de lectura del boletín; el archivo del PDF original y su cotejo visual siguen pendientes.",
+        "citations": [{ "sourceId": "catalunya-carbon-bopc", "locator": "Resolución 481/XV (p. 9) y tabla 7 (p. 32). Extracto editorial, no captura original del PDF.", "page": 9 }]
+      },
+      {
+        "id": "contraste-experto",
+        "claim": "Contrastar la ambición del presupuesto aprobado",
+        "status": "documented",
+        "finding": "El Comitè d’Experts sobre el Canvi Climàtic celebra la aprobación, pero la considera menos ambiciosa que su propuesta y reclama reforzar su carácter vinculante. Es la valoración del comité que formuló la propuesta técnica, publicada en el portal climático de la Generalitat; no es una auditoría de emisiones ni una revisión humana de RegTrack.",
+        "citations": [{ "sourceId": "catalunya-carbon-experts", "locator": "Comunicado de 29-12-2025: valoración comparativa de ambición y petición de límites legales vinculantes." }]
+      },
+      {
+        "id": "apoyos-y-resultados",
+        "claim": "Ejecutar el plan de estímulo, ayudas y mercado de emisiones y comprobar resultados",
+        "status": "unresolved",
+        "finding": "La medida incluye un plan de estímulo, ayudas y mercado de emisiones de ámbito catalán. La aprobación del presupuesto no acredita por sí sola estos instrumentos ni su ejecución. Faltan sus actos, seguimiento y resultados contrastados con inventarios comparables de emisiones. Las proyecciones para 2030 no se contabilizan como reducciones realizadas.",
+        "citations": [{ "sourceId": "catalunya-programme-2024", "locator": "Medida 2.2.6 completa, incluidos los instrumentos de apoyo a los sectores productivos.", "page": 68 }]
+      }
+    ],
+    "contrast": "Se distingue el acto parlamentario de la valoración crítica del comité y de los resultados futuros. El boletín se pudo leer, pero la descarga directa falló: su huella identifica únicamente el extracto editorial conservado. La Resolución 482/XV contiene peticiones adicionales y no se confunde con la aprobación de la 481/XV. No se asigna cumplimiento global.",
+    "pending": [
+      "Conservar los bytes originales del BOPC y cotejar visualmente las páginas 9, 31 y 32.",
+      "Comparar cuantitativamente la propuesta íntegra del comité con el presupuesto aprobado usando el mismo ámbito y unidades.",
+      "Revisar actuaciones de 2026, seguimiento de resoluciones e instrumentos de estímulo, ayudas y mercado.",
+      "Completar revisión humana independiente de las fuentes y de esta interpretación."
+    ]
+  }
+]

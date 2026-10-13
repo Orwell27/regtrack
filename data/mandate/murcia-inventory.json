@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "r-14",
+  "mandateId": "r-14-2023",
+  "mandateLabel": "Región de Murcia · mandato 2023–2027 · pacto de 5/09/2023",
+  "sourceId": "murcia-programme-copy",
+  "mandateSourceId": "murcia-programme-copy",
+  "registerSourceId": "murcia-programme-register",
+  "sourceLabel": "Pacto PP–VOX · copia difundida por La Verdad",
+  "sourceSha256": "4229ac45724eed88acf7b2b6dcfb79727395b14ca6fdf41c0690980507391340",
+  "importedAt": "2026-10-11",
+  "textLanguage": "es",
+  "programmeCopy": true,
+  "inventoryTotal": 38,
+  "scope": "Los 30 puntos programáticos y los ocho acuerdos de organización y gobernabilidad del pacto PP–VOX de 5 de septiembre de 2023. Las 38 fichas son apartados del pacto inicial, no todas las promesas electorales ni todas las actuaciones del mandato. Los acuerdos segundo y séptimo remiten al programa: no añaden 30 promesas nuevas cada uno.",
+  "textNote": "Se conservan las seis páginas, el punto 26 que continúa en la página 5, las ocho cláusulas finales y dos bloques de contexto con introducción, fecha y firmantes. Las valoraciones políticas del texto pertenecen a sus autores. Se han cotejado dos copias difundidas por La Verdad y elDiario.es: sus bytes son distintos, pero su texto extraído coincide página por página al excluir espacios. Ambas reproducen el mismo pacto y no son dos corroboraciones independientes. Sigue pendiente el cotejo con un archivo publicado por sus firmantes. La fecha del pacto no prueba que la composición del Gobierno ni la coalición se mantengan durante todo el mandato; se documentan ceses en julio de 2024.",
+  "contextBlocks": [
+    {
+      "id": "r-14-context-intro",
+      "topic": "Introducción de los firmantes",
+      "page": 1,
+      "endPage": 1,
+      "rawText": "ACUERDO DE GOBIERNO PP- VOX EN LA REGIÓN DE MURCIA\nEl Partido Popular y Vox comparten el objetivo de establecer gobiernos estables y sólidos\nque garanticen los derechos y libertades de todos los ciudadanos dentro del marco\nconstitucional, con pleno respeto a las instituciones y fortaleciendo los vínculos que nos\nunen a todos los españoles.\nAmbos partidos también comparten el objetivo de evitar gobiernos de izquierda que\ndividen a los españoles, sobredimensionan el papel del Estado en la vida de los\nciudadanos, ejecutan políticas intervencionistas que socavan seriamente las libertades\nindividuales y erosionan de forma continuada las instituciones para ponerlas a su servicio.\nLas propuestas electorales de ambos partidos tienen elementos en común suficientes\ncomo para establecer un acuerdo de gobernabilidad que redunde en el beneficio de todos\nlos ciudadanos de la Región de Murcia. Un acuerdo que garantice la constitución de un\ngobierno fiable y duradero que base sus políticas en un conjunto de medidas que integren\nlas propuestas efectuadas por ambos partidos, a partir del cual se desarrolle la acción\npolítica para los próximos cuatro años tanto de la Asamblea Regional como del Gobierno\nde la Región de Murcia.\nPor todo ello, transcurridos 3 meses desde el pasado 28 de mayo, dada la situación de\nbloqueo de la Región de Murcia, con el objetivo de evitar someter a los ciudadanos a unas\nterceras elecciones en 3 meses, y en aras de la gobernabilidad de España, el Partido\nPopular y VOX acuerdan:",
+      "text": "ACUERDO DE GOBIERNO PP- VOX EN LA REGIÓN DE MURCIA El Partido Popular y Vox comparten el objetivo de establecer gobiernos estables y sólidos que garanticen los derechos y libertades de todos los ciudadanos dentro del marco constitucional, con pleno respeto a las instituciones y fortaleciendo los vínculos que nos unen a todos los españoles. Ambos partidos también comparten el objetivo de evitar gobiernos de izquierda que dividen a los españoles, sobredimensionan el papel del Estado en la vida de los ciudadanos, ejecutan políticas intervencionistas que socavan seriamente las libertades individuales y erosionan de forma continuada las instituciones para ponerlas a su servicio. Las propuestas electorales de ambos partidos tienen elementos en común suficientes como para establecer un acuerdo de gobernabilidad que redunde en el beneficio de todos los ciudadanos de la Región de Murcia. Un acuerdo que garantice la constitución de un gobierno fiable y duradero que base sus políticas en un conjunto de medidas que integren las propuestas efectuadas por ambos partidos, a partir del cual se desarrolle la acción política para los próximos cuatro años tanto de la Asamblea Regional como del Gobierno de la Región de Murcia. Por todo ello, transcurridos 3 meses desde el pasado 28 de mayo, dada la situación de bloqueo de la Región de Murcia, con el objetivo de evitar someter a los ciudadanos a unas terceras elecciones en 3 meses, y en aras de la gobernabilidad de España, el Partido Popular y VOX acuerdan:"
+    },
+    {
+      "id": "r-14-context-firma",
+      "topic": "Fecha y firmantes",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "En Cartagena, a 5 de septiembre de 2023\nJOAQUÍN SEGADO MARTÍNEZ RUBÉN MARTÍNEZ ALPAÑEZ\nPORTAVOZ GRUPO PARLAMENTARIO POPULAR PORTAVOZ GRUPO PARLAMENTARIO VOX",
+      "text": "En Cartagena, a 5 de septiembre de 2023 JOAQUÍN SEGADO MARTÍNEZ RUBÉN MARTÍNEZ ALPAÑEZ PORTAVOZ GRUPO PARLAMENTARIO POPULAR PORTAVOZ GRUPO PARLAMENTARIO VOX"
+    }
+  ],
+  "records": [
+    {
+      "id": "r-14-1",
+      "officialId": "1",
+      "topic": "Puntos programáticos",
+      "page": 1,
+      "endPage": 1,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Defendemos la aprobación de un Plan Hidrológico Nacional que contemple las\ninfraestructuras e inversiones necesarias para garantizar agua para todos, a un\nprecio armonizado y sin discriminar a ningún territorio. Que nos permita seguir\nmejorando nuestro entorno natural y crecer social y económicamente. Que nos\nayude a combatir la desertificación, garantice nuestra actividad agraria e industrial,\nsea elemento vertebrador del territorio y genere oportunidades. Es imprescindible\nmantener el Trasvase Tajo-Segura con las reglas de explotación consensuadas\ncon los regantes.",
+      "text": "Defendemos la aprobación de un Plan Hidrológico Nacional que contemple las infraestructuras e inversiones necesarias para garantizar agua para todos, a un precio armonizado y sin discriminar a ningún territorio. Que nos permita seguir mejorando nuestro entorno natural y crecer social y económicamente. Que nos ayude a combatir la desertificación, garantice nuestra actividad agraria e industrial, sea elemento vertebrador del territorio y genere oportunidades. Es imprescindible mantener el Trasvase Tajo-Segura con las reglas de explotación consensuadas con los regantes."
+    },
+    {
+      "id": "r-14-2",
+      "officialId": "2",
+      "topic": "Puntos programáticos",
+      "page": 1,
+      "endPage": 1,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Apoyaremos a las empresas del sector agroalimentario para seguir estando a la\nvanguardia internacional en el uso y el aprovechamiento del agua con tecnología\nhídricas de última generación.. Desarrollaremos tecnologías de agricultura de\nprecisión, con el fin de intensificar el uso más eficiente del agua y de los\nfertilizantes, fortaleciendo el apoyo a la modernización, eficiencia y tecnología del\nriego. Abordaremos la rehabilitación y mejora de la seguridad de balsas de riego en\ncomunidades de regantes.",
+      "text": "Apoyaremos a las empresas del sector agroalimentario para seguir estando a la vanguardia internacional en el uso y el aprovechamiento del agua con tecnología hídricas de última generación.. Desarrollaremos tecnologías de agricultura de precisión, con el fin de intensificar el uso más eficiente del agua y de los fertilizantes, fortaleciendo el apoyo a la modernización, eficiencia y tecnología del riego. Abordaremos la rehabilitación y mejora de la seguridad de balsas de riego en comunidades de regantes."
+    },
+    {
+      "id": "r-14-3",
+      "officialId": "3",
+      "topic": "Puntos programáticos",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "La Región de Murcia es la despensa de Europa. Además, la exportación de\nproductos agroalimentarios es uno de los pilares de nuestra economía, por lo que\nprotegeremos a nuestros agricultores, ganaderos y pescadores en todas las\ninstancias, especialmente frente a desarrollos normativos exteriores que les\nperjudiquen y dificulten su viabilidad. Defendemos el libre comercio y la\ncompetencia, siempre y cuando se desarrollen en igualdad de condiciones, por lo\nque exigiremos el incremento de puntos de inspección fronterizos para proteger\nnuestros productos ante la competencia desleal de terceros países, y exigiremos\nigualmente que se cumplan los acuerdos y las condiciones de reciprocidad.",
+      "text": "La Región de Murcia es la despensa de Europa. Además, la exportación de productos agroalimentarios es uno de los pilares de nuestra economía, por lo que protegeremos a nuestros agricultores, ganaderos y pescadores en todas las instancias, especialmente frente a desarrollos normativos exteriores que les perjudiquen y dificulten su viabilidad. Defendemos el libre comercio y la competencia, siempre y cuando se desarrollen en igualdad de condiciones, por lo que exigiremos el incremento de puntos de inspección fronterizos para proteger nuestros productos ante la competencia desleal de terceros países, y exigiremos igualmente que se cumplan los acuerdos y las condiciones de reciprocidad."
+    },
+    {
+      "id": "r-14-4",
+      "officialId": "4",
+      "topic": "Puntos programáticos",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "La recuperación del Mar Menor es una prioridad de la acción del Gobierno\nRegional. Seguiremos desarrollando todas las acciones ejecutivas y legislativas\nnecesarias para su protección, con la construcción de nuevas infraestructuras que\ncontribuyan a su conservación. Pondremos en marcha nuevos mecanismos de\ncoordinación entre todas las Administraciones Públicas para que cada euro público\ninvertido redunde en el máximo beneficio para el ecosistema.",
+      "text": "La recuperación del Mar Menor es una prioridad de la acción del Gobierno Regional. Seguiremos desarrollando todas las acciones ejecutivas y legislativas necesarias para su protección, con la construcción de nuevas infraestructuras que contribuyan a su conservación. Pondremos en marcha nuevos mecanismos de coordinación entre todas las Administraciones Públicas para que cada euro público invertido redunde en el máximo beneficio para el ecosistema."
+    },
+    {
+      "id": "r-14-5",
+      "officialId": "5",
+      "topic": "Puntos programáticos",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Creemos en una sociedad de ciudadanos libres e iguales. Estamos\ncomprometidos con el pleno avance en materia de igualdad entre todos los\nespañoles sin que pueda prevalecer discriminación alguna por razón de\nnacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia\npersonal o social, tal y como consagra la Constitución Española.",
+      "text": "Creemos en una sociedad de ciudadanos libres e iguales. Estamos comprometidos con el pleno avance en materia de igualdad entre todos los españoles sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social, tal y como consagra la Constitución Española."
+    },
+    {
+      "id": "r-14-6",
+      "officialId": "6",
+      "topic": "Puntos programáticos",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Apoyaremos decididamente la natalidad. Pondremos en marcha medidas que\nfaciliten la conciliación familiar y laboral y especialmente, ayudas dirigidas a las\nmujeres en situación de vulnerabilidad y a las más jóvenes, para que puedan\nacceder a una vivienda o continuar su formación, con flexibilidad de horarios y\nbecas de estudio",
+      "text": "Apoyaremos decididamente la natalidad. Pondremos en marcha medidas que faciliten la conciliación familiar y laboral y especialmente, ayudas dirigidas a las mujeres en situación de vulnerabilidad y a las más jóvenes, para que puedan acceder a una vivienda o continuar su formación, con flexibilidad de horarios y becas de estudio"
+    },
+    {
+      "id": "r-14-7",
+      "officialId": "7",
+      "topic": "Puntos programáticos",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Situaremos a las familias en el centro de las políticas públicas, impulsando una\nLey de protección integral de las familias que reconozca y ampare la trascendencia\nde la familia y su papel esencial en nuestra sociedad.",
+      "text": "Situaremos a las familias en el centro de las políticas públicas, impulsando una Ley de protección integral de las familias que reconozca y ampare la trascendencia de la familia y su papel esencial en nuestra sociedad."
+    },
+    {
+      "id": "r-14-8",
+      "officialId": "8",
+      "topic": "Puntos programáticos",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Promoveremos políticas que perseguirán erradicar la violencia contra las\nmujeres, la que sufren los niños y la violencia que sufren los mayores.",
+      "text": "Promoveremos políticas que perseguirán erradicar la violencia contra las mujeres, la que sufren los niños y la violencia que sufren los mayores."
+    },
+    {
+      "id": "r-14-9",
+      "officialId": "9",
+      "topic": "Puntos programáticos",
+      "page": 2,
+      "endPage": 2,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Apoyar a los mayores será un eje fundamental de la política social del Gobierno\nde la Región de Murcia, con programas para combatir la soledad no deseada,\naumentando el número de plazas residenciales, con programas de ocio y cultura,\nmedidas de protección frente a fraudes y estafas, ayudas al transporte o al alquiler,\nentre otras.",
+      "text": "Apoyar a los mayores será un eje fundamental de la política social del Gobierno de la Región de Murcia, con programas para combatir la soledad no deseada, aumentando el número de plazas residenciales, con programas de ocio y cultura, medidas de protección frente a fraudes y estafas, ayudas al transporte o al alquiler, entre otras."
+    },
+    {
+      "id": "r-14-10",
+      "officialId": "10",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Pondremos en marcha políticas de vivienda que fomenten el aumento de la\noferta tanto de nuevas viviendas como de rehabilitación del parque existente\npromoviendo exenciones fiscales y ayudas para la adquisición de vivienda por\nparte de jóvenes y familias numerosas.",
+      "text": "Pondremos en marcha políticas de vivienda que fomenten el aumento de la oferta tanto de nuevas viviendas como de rehabilitación del parque existente promoviendo exenciones fiscales y ayudas para la adquisición de vivienda por parte de jóvenes y familias numerosas."
+    },
+    {
+      "id": "r-14-11",
+      "officialId": "11",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "La Constitución Española consagra el derecho de los padres a elegir la\neducación que quieren para sus hijos. Garantizaremos el mandato constitucional\nde la libre elección de centro y la Consejería de Educación garantizará la\nneutralidad ideológica del currículo escolar.",
+      "text": "La Constitución Española consagra el derecho de los padres a elegir la educación que quieren para sus hijos. Garantizaremos el mandato constitucional de la libre elección de centro y la Consejería de Educación garantizará la neutralidad ideológica del currículo escolar."
+    },
+    {
+      "id": "r-14-12",
+      "officialId": "12",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Implantaremos de manera progresiva la gratuidad de la educación de 0 a 3\naños, porque la escolarización temprana mejora el desarrollo de los niños y facilita\nla conciliación a las familias.",
+      "text": "Implantaremos de manera progresiva la gratuidad de la educación de 0 a 3 años, porque la escolarización temprana mejora el desarrollo de los niños y facilita la conciliación a las familias."
+    },
+    {
+      "id": "r-14-13",
+      "officialId": "13",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Estableceremos indicadores medibles con evaluaciones anuales de la calidad\nlectora y matemáticas de los alumnos tanto en Primaria como en la ESO para que\nse pueda informar a las familias del progreso de los alumnos.",
+      "text": "Estableceremos indicadores medibles con evaluaciones anuales de la calidad lectora y matemáticas de los alumnos tanto en Primaria como en la ESO para que se pueda informar a las familias del progreso de los alumnos."
+    },
+    {
+      "id": "r-14-14",
+      "officialId": "14",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Garantizar la seguridad de las personas y de sus bienes es una de las\nprincipales funciones del Estado de Derecho. Por ello exigiremos al Gobierno de\nEspaña que dote las plantillas de Guardia Civil y Policía Nacional exigiendo que se\nles proporcionen todos los medios materiales, personales y jurídicos necesarios\npara garantizar la seguridad y el desempeño efectivo de su trabajo.",
+      "text": "Garantizar la seguridad de las personas y de sus bienes es una de las principales funciones del Estado de Derecho. Por ello exigiremos al Gobierno de España que dote las plantillas de Guardia Civil y Policía Nacional exigiendo que se les proporcionen todos los medios materiales, personales y jurídicos necesarios para garantizar la seguridad y el desempeño efectivo de su trabajo."
+    },
+    {
+      "id": "r-14-15",
+      "officialId": "15",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Apostamos por la coordinación de las Policías Locales y las Fuerzas y Cuerpos\nde Seguridad del Estado para prevenir la delincuencia, erradicar con eficacia la\nacción de las bandas organizadas y luchar contra las mafias de la inmigración\nilegal.",
+      "text": "Apostamos por la coordinación de las Policías Locales y las Fuerzas y Cuerpos de Seguridad del Estado para prevenir la delincuencia, erradicar con eficacia la acción de las bandas organizadas y luchar contra las mafias de la inmigración ilegal."
+    },
+    {
+      "id": "r-14-16",
+      "officialId": "16",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Consideramos que la “ocupación” es una forma de delincuencia que roba los\nahorros de las familias ocupadas y genera graves problemas de convivencia e\ninseguridad. Reclamaremos cambios en las leyes nacionales para poder luchar\neficazmente contra este fenómeno, que practican fundamentalmente mafias\nprofesionales y que se ha extendido bajo el amparo de las políticas de izquierda.",
+      "text": "Consideramos que la “ocupación” es una forma de delincuencia que roba los ahorros de las familias ocupadas y genera graves problemas de convivencia e inseguridad. Reclamaremos cambios en las leyes nacionales para poder luchar eficazmente contra este fenómeno, que practican fundamentalmente mafias profesionales y que se ha extendido bajo el amparo de las políticas de izquierda."
+    },
+    {
+      "id": "r-14-17",
+      "officialId": "17",
+      "topic": "Puntos programáticos",
+      "page": 3,
+      "endPage": 3,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Creemos en una sanidad pública, universal y gratuita. Trabajaremos para que\ntodos los ciudadanos disfruten de una sanidad cercana y personalizada y que\naspire a la excelencia. Reduciremos las listas de espera quirúrgicas, en consultas\nexternas y en pruebas diagnósticas así como las demoras en Atención Primaria\nmediante el aumento de actividad, de profesionales, de tecnologías y de\ninfraestructuras.",
+      "text": "Creemos en una sanidad pública, universal y gratuita. Trabajaremos para que todos los ciudadanos disfruten de una sanidad cercana y personalizada y que aspire a la excelencia. Reduciremos las listas de espera quirúrgicas, en consultas externas y en pruebas diagnósticas así como las demoras en Atención Primaria mediante el aumento de actividad, de profesionales, de tecnologías y de infraestructuras."
+    },
+    {
+      "id": "r-14-18",
+      "officialId": "18",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Elaboraremos un plan sanitario que asegure una atención ágil y de calidad en\ntodo el territorio y ofrezca incentivos para cubrir las plazas de difícil cobertura,\nespecialmente en zonas rurales. Aumentaremos el número de profesionales\nsanitarios. Velaremos por la seguridad de nuestro personal médico y sanitario.\nExigiremos también al Ministerio de Sanidad que aumente el número anual de\nplazas de médicos y psicólogos internos residentes.",
+      "text": "Elaboraremos un plan sanitario que asegure una atención ágil y de calidad en todo el territorio y ofrezca incentivos para cubrir las plazas de difícil cobertura, especialmente en zonas rurales. Aumentaremos el número de profesionales sanitarios. Velaremos por la seguridad de nuestro personal médico y sanitario. Exigiremos también al Ministerio de Sanidad que aumente el número anual de plazas de médicos y psicólogos internos residentes."
+    },
+    {
+      "id": "r-14-19",
+      "officialId": "19",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "La salud mental será uno de los pilares del sistema sanitario público con\natención especial a la lacra del suicidio y a la soledad no deseada. Reforzaremos\nlas medidas de prevención para concienciar sobre esta cuestión. Desarrollaremos\nun Plan de Mejora de Salud Mental con la creación de programas tanto públicos\ncomo de iniciativa social, especializados en la infancia y la juventud.",
+      "text": "La salud mental será uno de los pilares del sistema sanitario público con atención especial a la lacra del suicidio y a la soledad no deseada. Reforzaremos las medidas de prevención para concienciar sobre esta cuestión. Desarrollaremos un Plan de Mejora de Salud Mental con la creación de programas tanto públicos como de iniciativa social, especializados en la infancia y la juventud."
+    },
+    {
+      "id": "r-14-20",
+      "officialId": "20",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Reduciremos el IRPF en los tramos de los salarios medios y bajos.\nAmpliaremos la deducción en IRPF por conciliación en hogares con hijos menores\nde 12 años, aumentando su cuantía en el caso de familias numerosas o\nmonoparentales.",
+      "text": "Reduciremos el IRPF en los tramos de los salarios medios y bajos. Ampliaremos la deducción en IRPF por conciliación en hogares con hijos menores de 12 años, aumentando su cuantía en el caso de familias numerosas o monoparentales."
+    },
+    {
+      "id": "r-14-21",
+      "officialId": "21",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Procuraremos la rebaja general de tipo impositivo general del ITP. Ampliaremos\nla bonificación del ITP para compra de vivienda habitual, reduciéndolo para\njóvenes y familias numerosas.",
+      "text": "Procuraremos la rebaja general de tipo impositivo general del ITP. Ampliaremos la bonificación del ITP para compra de vivienda habitual, reduciéndolo para jóvenes y familias numerosas."
+    },
+    {
+      "id": "r-14-22",
+      "officialId": "22",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Se perseguirá en todo momento la correcta y más eficiente gestión del dinero\npúblico.",
+      "text": "Se perseguirá en todo momento la correcta y más eficiente gestión del dinero público."
+    },
+    {
+      "id": "r-14-23",
+      "officialId": "23",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Reduciremos las trabas burocráticas y legislativas para todos los ciudadanos\nde la región con el objetivo de agilizar los trámites y establecer un marco para\ndefender la libertad de todos los ciudadanos.",
+      "text": "Reduciremos las trabas burocráticas y legislativas para todos los ciudadanos de la región con el objetivo de agilizar los trámites y establecer un marco para defender la libertad de todos los ciudadanos."
+    },
+    {
+      "id": "r-14-24",
+      "officialId": "24",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Exigiremos al gobierno de la nación un nuevo sistema de financiación\nautonómica que garantice la justa financiación de la Región de Murcia y acabe con\nel maltrato acumulado a lo largo de más de una década, procurando la reducción\nde la deuda pública regional y la materialización de unos presupuestos\nequilibrados.",
+      "text": "Exigiremos al gobierno de la nación un nuevo sistema de financiación autonómica que garantice la justa financiación de la Región de Murcia y acabe con el maltrato acumulado a lo largo de más de una década, procurando la reducción de la deuda pública regional y la materialización de unos presupuestos equilibrados."
+    },
+    {
+      "id": "r-14-25",
+      "officialId": "25",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 4,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Modificaremos la Ley de Participación Institucional para promover el método de\nconcurrencia competitiva en la concesión de subvenciones, frente al modelo de\nsubvención directa, garantizando así un uso más eficiente de los fondos públicos.",
+      "text": "Modificaremos la Ley de Participación Institucional para promover el método de concurrencia competitiva en la concesión de subvenciones, frente al modelo de subvención directa, garantizando así un uso más eficiente de los fondos públicos."
+    },
+    {
+      "id": "r-14-26",
+      "officialId": "26",
+      "topic": "Puntos programáticos",
+      "page": 4,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Incentivaremos la actividad empresarial impulsando ayudas para apoyar a las\nempresas ante los graves efectos del aumento de costes para que aumenten su\nproductividad y puedan ser más competitivas. Protegeremos a las pequeñas y\nmedianas empresas, así como a las micropymes y autónomos, con especial\natención al comercio local y artesano y a las empresas de gran arraigo,\nfavoreciendo su desarrollo y colaborando con la creación y fijación del empleo.",
+      "text": "Incentivaremos la actividad empresarial impulsando ayudas para apoyar a las empresas ante los graves efectos del aumento de costes para que aumenten su productividad y puedan ser más competitivas. Protegeremos a las pequeñas y medianas empresas, así como a las micropymes y autónomos, con especial atención al comercio local y artesano y a las empresas de gran arraigo, favoreciendo su desarrollo y colaborando con la creación y fijación del empleo."
+    },
+    {
+      "id": "r-14-27",
+      "officialId": "27",
+      "topic": "Puntos programáticos",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Impulsaremos el desarrollo de todas las infraestructuras previstas en el Pacto\nSocial por las Infraestructuras de la Región de Murcia y que refrendaron PP y Vox\nen la Asamblea Regional.",
+      "text": "Impulsaremos el desarrollo de todas las infraestructuras previstas en el Pacto Social por las Infraestructuras de la Región de Murcia y que refrendaron PP y Vox en la Asamblea Regional."
+    },
+    {
+      "id": "r-14-28",
+      "officialId": "28",
+      "topic": "Puntos programáticos",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Reivindicaremos la culminación completa del Corredor Mediterráneo, que\nincluye AVE, cercanías y mercancías, es imprescindible que se ejecute a la\nmáxima celeridad y con capacidad suficiente, culminando su llegada a Cartagena y\ngarantizando su continuidad hacia Andalucía parando en Lorca.",
+      "text": "Reivindicaremos la culminación completa del Corredor Mediterráneo, que incluye AVE, cercanías y mercancías, es imprescindible que se ejecute a la máxima celeridad y con capacidad suficiente, culminando su llegada a Cartagena y garantizando su continuidad hacia Andalucía parando en Lorca."
+    },
+    {
+      "id": "r-14-29",
+      "officialId": "29",
+      "topic": "Puntos programáticos",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Impulsaremos el turismo. Tomaremos medidas fiscales y de promoción interior\ny exterior de esta industria para crear empleo y riqueza. Fomentaremos el turismo\nrural, de montaña o interior, y apoyaremos la conservación y difusión de nuestro\npatrimonio natural y artístico",
+      "text": "Impulsaremos el turismo. Tomaremos medidas fiscales y de promoción interior y exterior de esta industria para crear empleo y riqueza. Fomentaremos el turismo rural, de montaña o interior, y apoyaremos la conservación y difusión de nuestro patrimonio natural y artístico"
+    },
+    {
+      "id": "r-14-30",
+      "officialId": "30",
+      "topic": "Puntos programáticos",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Defenderemos la caza y la pesca compatible con la conservación del medio\nambiente, los ecosistemas y la biodiversidad, facilitando a los cazadores el control\nde plagas, y garantizando los derechos y obligaciones de cazadores y pescadores.",
+      "text": "Defenderemos la caza y la pesca compatible con la conservación del medio ambiente, los ecosistemas y la biodiversidad, facilitando a los cazadores el control de plagas, y garantizando los derechos y obligaciones de cazadores y pescadores."
+    },
+    {
+      "id": "r-14-acuerdo-1",
+      "officialId": "Primero",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Que ambas formaciones suscriben la necesidad de asegurar un gobierno\nestable en la Región de Murcia, con pleno respeto a los votantes de ambas formaciones,\ny reconocen la generosidad mutua de los dos actores en el proceso de negociación,\nagradeciendo el trabajo realizado por los equipos negociadores, que han recogido y\nplasmado las necesidades de los ciudadanos.",
+      "text": "Que ambas formaciones suscriben la necesidad de asegurar un gobierno estable en la Región de Murcia, con pleno respeto a los votantes de ambas formaciones, y reconocen la generosidad mutua de los dos actores en el proceso de negociación, agradeciendo el trabajo realizado por los equipos negociadores, que han recogido y plasmado las necesidades de los ciudadanos."
+    },
+    {
+      "id": "r-14-acuerdo-2",
+      "officialId": "Segundo",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Hacer efectivos los puntos del acuerdo programático aquí expuesto y suscrito\npor ambas formaciones.",
+      "text": "Hacer efectivos los puntos del acuerdo programático aquí expuesto y suscrito por ambas formaciones."
+    },
+    {
+      "id": "r-14-acuerdo-3",
+      "officialId": "Tercero",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Que los Diputados de VOX en la Asamblea de la Región de Murcia favorecerán\ncon su voto afirmativo la investidura como Presidente del Gobierno de la Región de\nMurcia de Fernando López Miras, para que pueda confeccionar gobierno.",
+      "text": "Que los Diputados de VOX en la Asamblea de la Región de Murcia favorecerán con su voto afirmativo la investidura como Presidente del Gobierno de la Región de Murcia de Fernando López Miras, para que pueda confeccionar gobierno."
+    },
+    {
+      "id": "r-14-acuerdo-4",
+      "officialId": "Cuarto",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Que el Partido Popular se compromete a designar en el Gobierno al titular de la\nConsejería de Interior, Seguridad y Emergencias con rango de Vicepresidencia y al titular\nde la Consejería de Fomento, a las personas propuestas por VOX.",
+      "text": "Que el Partido Popular se compromete a designar en el Gobierno al titular de la Consejería de Interior, Seguridad y Emergencias con rango de Vicepresidencia y al titular de la Consejería de Fomento, a las personas propuestas por VOX."
+    },
+    {
+      "id": "r-14-acuerdo-5",
+      "officialId": "Quinto",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "El Consejo de Gobierno estará compuesto como máximo por 11 miembros.",
+      "text": "El Consejo de Gobierno estará compuesto como máximo por 11 miembros."
+    },
+    {
+      "id": "r-14-acuerdo-6",
+      "officialId": "Sexto",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 5,
+      "endPage": 5,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "Que ambos partidos se comprometen a trabajar juntos en la Asamblea Regional\npara consensuar la acción legislativa y que vaya en la dirección del programa que aquí se\nexpone.",
+      "text": "Que ambos partidos se comprometen a trabajar juntos en la Asamblea Regional para consensuar la acción legislativa y que vaya en la dirección del programa que aquí se expone."
+    },
+    {
+      "id": "r-14-acuerdo-7",
+      "officialId": "Séptimo",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "El PP y VOX se comprometen a ejecutar el programa pactado y a dar\nestabilidad al Gobierno de la Región de Murcia. Ambos partidos se comprometen a\nrespaldar con su voto afirmativo en la Asamblea Regional las iniciativas legislativas\naprobadas por el Consejo de Gobierno.",
+      "text": "El PP y VOX se comprometen a ejecutar el programa pactado y a dar estabilidad al Gobierno de la Región de Murcia. Ambos partidos se comprometen a respaldar con su voto afirmativo en la Asamblea Regional las iniciativas legislativas aprobadas por el Consejo de Gobierno."
+    },
+    {
+      "id": "r-14-acuerdo-8",
+      "officialId": "Octavo",
+      "topic": "Acuerdos de organización y gobernabilidad",
+      "page": 6,
+      "endPage": 6,
+      "sourceId": "murcia-programme-copy",
+      "rawText": "El PP y VOX se comprometen a impulsar una reforma legislativa para dotar al\nPresidente del Consejo de la Transparencia de las atribuciones de “Defensor del Pueblo\nde la Región de Murcia”, y a designar al candidato propuesto por la dirección de VOX.",
+      "text": "El PP y VOX se comprometen a impulsar una reforma legislativa para dotar al Presidente del Consejo de la Transparencia de las atribuciones de “Defensor del Pueblo de la Región de Murcia”, y a designar al candidato propuesto por la dirección de VOX."
+    }
+  ]
+}

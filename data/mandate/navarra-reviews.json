@@ -1,0 +1,104 @@
+[
+  {
+    "commitmentId": "r-15-01.01.02",
+    "reviewedAt": "2026-10-10",
+    "title": "Ley Foral de Salud: plazo vencido y tramitación posterior",
+    "conclusion": "La documentación consultada no acredita la presentación del proyecto en el plazo pactado. RegTrack aprecia un retraso del hito: en marzo de 2026 el Gobierno aún describía pasos previos a su registro parlamentario.",
+    "periodNote": "El acuerdo exigía presentar el proyecto antes de diciembre de 2024. El balance cubre 2025 y la comprobación posterior llega al 30 de marzo de 2026; no describe el estado parlamentario a octubre de 2026.",
+    "components": [
+      {
+        "id": "plazo", "claim": "Presentar el proyecto antes de diciembre de 2024", "status": "deadline-missed",
+        "finding": "El acuerdo fija ese plazo. El balance de 2025 mantiene la preparación en curso; Salud explicó el 30 de marzo de 2026 que quedaban informes, aprobación del Gobierno y registro parlamentario. La conclusión de retraso es una inferencia documental sobre este hito, no una valoración jurídica. Presentar un primer texto en 2024 no equivale a presentar el proyecto parlamentario.",
+        "citations": [
+          { "sourceId": "navarra-programme-2023", "locator": "Salud, compromiso 2; página física 8, impresa 7.", "page": 8 },
+          { "sourceId": "navarra-balance-2025", "locator": "Anexo, ficha 01.01.02: estado y trámites anteriores a la presentación parlamentaria.", "page": 46 },
+          { "sourceId": "navarra-health-2026", "locator": "30 de marzo de 2026: secuencia de informes, aprobación y registro todavía pendientes." }
+        ]
+      },
+      {
+        "id": "participacion", "claim": "Avanzar en la elaboración y participación", "status": "reported",
+        "finding": "Salud comunicó la revisión del anteproyecto tras analizar cerca de 1.000 aportaciones. Es un avance declarado por el promotor; no subsana el plazo ni prueba la aprobación de una ley.",
+        "citations": [{ "sourceId": "navarra-health-2026", "locator": "Presentación del anteproyecto y proceso de participación." }]
+      },
+      {
+        "id": "contenido", "claim": "Incorporar las bases sanitarias del acuerdo", "status": "unresolved",
+        "finding": "El acuerdo incluye universalidad, equidad, control de conciertos, atención integral y evaluación de resultados. Falta cotejar cada condición con el texto finalmente tramitado y aprobado.",
+        "citations": [{ "sourceId": "navarra-programme-2023", "locator": "Salud, bases enumeradas bajo el compromiso 2.", "page": 8 }]
+      }
+    ],
+    "contrast": "El acuerdo y las comunicaciones proceden de la misma familia gubernamental. Se contrasta su cronología y su contenido, sin presentarlos como confirmaciones independientes. El intervalo de avance que asigna el Gobierno no mide el cumplimiento del plazo.",
+    "pending": ["Localizar el expediente parlamentario y su fecha efectiva de entrada, incluidas novedades posteriores a marzo de 2026.", "Cotejar el texto tramitado con todas las bases del acuerdo.", "Completar una revisión humana independiente de la interpretación del hito y sus fuentes."]
+  },
+  {
+    "commitmentId": "r-15-01.01.04",
+    "reviewedAt": "2026-10-11",
+    "title": "Bidean: actividad comunicada; condiciones laborales y equidad por comprobar",
+    "conclusion": "Bidean comunica actividad urgente y programada. Eso no basta para dar por cumplidas las mejoras laborales y la eliminación del criterio geográfico que también recoge el acuerdo original.",
+    "periodNote": "La decisión de crear la sociedad se remonta a abril de 2023, antes de este mandato. Los datos operativos consultados abarcan del 31 de mayo al 31 de agosto de 2025 y se publicaron el 1 de octubre de 2025.",
+    "components": [
+      {
+        "id": "actividad", "claim": "Prestar transporte urgente y programado", "status": "reported",
+        "finding": "El operador declara 57.838 traslados: 48.288 programados y 9.550 urgentes, suma que coincide con el total publicado. CPEN había anunciado la puesta en marcha y sitúa la decisión inicial en abril de 2023. Son datos del propio grupo público, pendientes de contraste externo.",
+        "citations": [
+          { "sourceId": "navarra-bidean-2025", "locator": "Balance de los tres primeros meses: periodo y desglose por tipo de traslado." },
+          { "sourceId": "navarra-bidean-start", "locator": "Anuncio de 6 de mayo de 2025; antecedente de abril de 2023." }
+        ]
+      },
+      {
+        "id": "control-creacion", "claim": "Contrastar la justificación de la creación de la sociedad", "status": "documented",
+        "finding": "La Cámara de Comptos incluyó una salvedad sobre eficacia y eficiencia en la autorización de creación de Bidean y Nafarbide. Su apartado 4.3 señala que esos principios no quedaron debidamente acreditados. Es una objeción del órgano fiscalizador sobre la creación en 2023; no demuestra que el servicio iniciado en 2025 sea ineficiente ni evalúa su calidad asistencial.",
+        "citations": [{ "sourceId": "navarra-comptos-2023", "locator": "Informe de las cuentas generales de 2023, noviembre de 2024: salvedad en página física 9 y desarrollo en 38 (apartado 4.3). Se cita el informe del auditor, no las alegaciones de CPEN anexas.", "page": 38 }]
+      },
+      {
+        "id": "trabajo", "claim": "Mejorar las condiciones laborales", "status": "unresolved",
+        "finding": "La previsión de subrogar personal no acredita por sí sola una mejora efectiva de sus condiciones. Falta una comparación de salarios, jornada, dotaciones y acuerdos antes y después del cambio de gestión.",
+        "citations": [
+          { "sourceId": "navarra-programme-2023", "locator": "Salud, compromiso 4: obligación de mejorar las condiciones laborales.", "page": 9 },
+          { "sourceId": "navarra-bidean-start", "locator": "Anuncio de subrogaciones y plantilla prevista; no es una evaluación laboral posterior." }
+        ]
+      },
+      {
+        "id": "equidad", "claim": "Eliminar el criterio geográfico en traslados interhospitalarios", "status": "unresolved",
+        "finding": "El acuerdo exige equidad con criterios clínicos para neonatos, infancia y adultos. Esta condición no aparece completa en el resumen de la ficha 01.01.04 del balance. Los volúmenes agregados de traslados no permiten comprobarla.",
+        "citations": [
+          { "sourceId": "navarra-programme-2023", "locator": "Última frase del compromiso 4 de Salud.", "page": 9 },
+          { "sourceId": "navarra-balance-2025", "locator": "Ficha 01.01.04, que el Gobierno marca como finalizada.", "page": 47 }
+        ]
+      }
+    ],
+    "contrast": "Bidean, CPEN y el balance del Gobierno comparten origen; sus cifras no son corroboraciones independientes. Comptos aporta un control externo de la creación, anterior a la actividad de 2025, cuyo alcance no debe ampliarse. La etiqueta gubernamental «Finalizado» no resuelve las condiciones omitidas en su resumen.",
+    "pending": ["Contrastar los datos de actividad con registros de encargos, facturación y un control externo que cubra la operación desde 2025.", "Incorporar pruebas comparables de condiciones laborales y de acceso por territorio y necesidad clínica.", "Completar revisión humana independiente; no atribuir la decisión de creación anterior al mandato actual."]
+  },
+  {
+    "commitmentId": "r-15-01.04.18",
+    "reviewedAt": "2026-10-10",
+    "title": "Zonas tensionadas: declaración formal de 21 municipios documentada",
+    "conclusion": "Está documentada la declaración de 21 municipios y su publicación estatal. La documentación incorporada no permite evaluar la inmediatez de los trámites ni los resultados sobre los alquileres.",
+    "periodNote": "Orden Foral de 19 de mayo de 2025, publicada en el BON de 13 de junio; resolución estatal publicada el 29 de julio de 2025, con efectos desde el día siguiente. Se ha consultado también la corrección de enlaces de 10 de octubre de 2025.",
+    "components": [
+      {
+        "id": "acto", "claim": "Establecer zonas tensionadas y activar el marco de limitación", "status": "documented",
+        "finding": "El BOE recoge los 21 municipios declarados mediante la Orden Foral 157E/2025 y la aplicación del régimen indicado en su tabla. El acto formal está acreditado; su publicación no acredita el cumplimiento de cada contrato ni una reducción de precios.",
+        "citations": [
+          { "sourceId": "navarra-programme-2023", "locator": "Vivienda, compromiso 18.", "page": 14 },
+          { "sourceId": "navarra-housing-boe-2025", "locator": "Antecedente de la Orden Foral y tabla de Navarra; página física 3 para municipios y vigencia.", "page": 3 }
+        ]
+      },
+      {
+        "id": "vigencia", "claim": "Precisar cuándo empieza la vigencia publicada", "status": "documented",
+        "finding": "La tabla fija tres años desde el día siguiente a la publicación de la resolución: 30 de julio de 2025. La corrección posterior repara enlaces; no modifica ese periodo. No se confunde la fecha del anuncio o de la orden autonómica con la de efectos de esta resolución.",
+        "citations": [
+          { "sourceId": "navarra-housing-boe-2025", "locator": "Apartado tercero, efectos desde el día siguiente a la publicación; tabla de Navarra en página física 3.", "page": 4 },
+          { "sourceId": "navarra-housing-boe-correction", "locator": "Corrección de la dirección de la memoria de Navarra.", "page": 1 }
+        ]
+      },
+      {
+        "id": "inmediatez", "claim": "Iniciar los trámites con la inmediatez comprometida", "status": "unresolved",
+        "finding": "El acuerdo habla de inicio inmediato de trámites, sin fijar un día límite. Las fechas de declaración y publicación no bastan para reconstruir cuándo empezó el expediente y justificar sus intervalos. Tampoco se deduce un efecto sobre los precios; esa evaluación sería distinta del hito administrativo prometido.",
+        "citations": [{ "sourceId": "navarra-programme-2023", "locator": "Vivienda, redacción del compromiso 18.", "page": 14 }]
+      }
+    ],
+    "contrast": "El BOE permite cotejar el acto y su vigencia con el balance, pero reproduce una declaración autonómica: no constituye una auditoría independiente de los resultados. Se distingue el trámite acreditado de una evaluación de impacto aún no realizada.",
+    "pending": ["Incorporar el expediente autonómico completo para reconstruir el inicio y la secuencia de trámites.", "Completar revisión humana independiente del alcance del compromiso; estudiar los resultados de alquiler por separado, sin atribuir causalidad a una mera publicación."]
+  }
+]

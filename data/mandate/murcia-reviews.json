@@ -1,0 +1,270 @@
+[
+  {
+    "commitmentId": "r-14-21",
+    "reviewedAt": "2026-10-11",
+    "title": "ITP: rebaja general y ampliación para jóvenes documentadas; familias numerosas y resultados pendientes",
+    "conclusion": "Las normas examinadas acreditan una reducción del tipo general y una ampliación de acceso al tipo reducido para jóvenes. No bastan para dar por cumplida toda la promesa ni para medir su efecto sobre el acceso a la vivienda.",
+    "periodNote": "Pacto de septiembre de 2023. Se distingue la regulación previa de marzo de 2023 de los cambios con efectos el 30/12/2023 y el 25/07/2025. Las publicaciones posteriores en el BOE no desplazan la entrada en vigor desde el BORM. Es una comprobación histórica de esas reformas, no una liquidación tributaria ni una certificación de todos los cambios vigentes en octubre de 2026.",
+    "components": [
+      {
+        "id": "general",
+        "claim": "Rebaja del tipo general",
+        "status": "documented",
+        "finding": "La Ley 3/2025, artículo 55.Catorce, fija en el 7,75 % el tipo general sobre inmuebles, con las excepciones que conserva la norma. La Agencia Tributaria regional confirma la reducción desde el 8 % y sus efectos desde el 25 de julio de 2025. Son 0,25 puntos porcentuales, no una rebaja del 25 %. La entrada en vigor no se retrotrae a enero por tratarse de un presupuesto anual.",
+        "citations": [
+          {
+            "sourceId": "murcia-programme-copy",
+            "locator": "Punto 21",
+            "page": 4
+          },
+          {
+            "sourceId": "murcia-budget-law-2025",
+            "locator": "Artículo 55.Catorce y disposición final décima"
+          },
+          {
+            "sourceId": "murcia-tax-note-2025",
+            "locator": "ITP y AJD: efectos desde 25/07/2025"
+          }
+        ]
+      },
+      {
+        "id": "jovenes",
+        "claim": "Ampliación del beneficio para vivienda habitual de jóvenes",
+        "status": "documented",
+        "finding": "El tipo del 3 % ya existía antes del pacto para adquirentes de hasta 35 años, sujeto a requisitos. La Ley 4/2023, artículo 55.Trece, amplía la edad hasta 40 años y el umbral de base general menos mínimo personal y familiar a menos de 40.000 euros, manteniendo el límite de ahorro de 1.800 euros y el destino habitual. Rige desde el día siguiente a su publicación en el BORM del 29/12/2023. Se amplía el acceso; no se crea el 3 % ni se reduce ese tipo.",
+        "citations": [
+          {
+            "sourceId": "murcia-tax-history-2023",
+            "locator": "Artículo 6.6, redacción histórica de 8/03/2023"
+          },
+          {
+            "sourceId": "murcia-budget-law-2024",
+            "locator": "Artículo 55.Trece; disposición final duodécima y referencia al BORM de 29/12/2023"
+          }
+        ]
+      },
+      {
+        "id": "familias",
+        "claim": "Familias numerosas: evitar confundir impuestos y usos",
+        "status": "unresolved",
+        "finding": "El artículo 6.5 ya recogía un tipo del 3 % para familias numerosas con condiciones antes del pacto. Las normas examinadas no completan la comprobación de su ampliación posterior. Las mejoras del IRPF y el tipo del 5 % para inmuebles destinados a actividad empresarial no prueban por sí mismos una rebaja del ITP de su vivienda habitual. Falta cotejar todas las modificaciones del periodo y el alcance específico para estas familias.",
+        "citations": [
+          {
+            "sourceId": "murcia-tax-history-2023",
+            "locator": "Artículo 6.5: familias numerosas"
+          },
+          {
+            "sourceId": "murcia-budget-law-2025",
+            "locator": "Artículo 55.Quince: domicilio fiscal o centro de trabajo"
+          }
+        ]
+      },
+      {
+        "id": "efecto",
+        "claim": "Aplicación y efecto sobre vivienda",
+        "status": "unresolved",
+        "finding": "La aprobación acredita el cambio normativo. Faltan beneficiarios, coste fiscal, distribución por renta y evaluación del acceso a vivienda. No se atribuyen a esta reforma variaciones de precios o compraventas sin un análisis que separe otras causas.",
+        "citations": [
+          {
+            "sourceId": "murcia-budget-law-2024",
+            "locator": "Artículo 55.Trece"
+          },
+          {
+            "sourceId": "murcia-budget-law-2025",
+            "locator": "Artículo 55.Catorce"
+          }
+        ]
+      }
+    ],
+    "contrast": "La norma y la explicación de la Agencia Tributaria coinciden en el cambio general y la fecha. BOE y BORM son vías de publicación de normas regionales, no dos evaluaciones independientes de resultados.",
+    "pending": [
+      "Completar la secuencia normativa de familias numerosas hasta el corte de revisión.",
+      "Obtener estadísticas de aplicación y una evaluación independiente de efectos.",
+      "Completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-14-17",
+    "reviewedAt": "2026-10-11",
+    "title": "Sanidad: reducción de medias comunicada, con lagunas de registro y contraste pendiente",
+    "conclusion": "Salud comunica mejores medias en consultas y cirugía. El informe de ADSP aporta objeciones y desgloses, pero también presenta inconsistencias. Con la evidencia reunida no se certifica la reducción completa de las cuatro esperas prometidas.",
+    "periodNote": "El pacto incluye cirugía, consultas, pruebas y Atención Primaria, sin una meta numérica ni fecha final específica para este punto. Se separan diciembre de 2025 y junio de 2026; no se presentan como una comparación completa con septiembre de 2023.",
+    "components": [
+      {
+        "id": "medias",
+        "claim": "Qué comunica la administración para junio de 2026",
+        "status": "reported",
+        "finding": "La nota de Salud del 27/07/2026 comunica 69,82 días de media en consultas y 94,58 en cirugía: reducciones de 19,51 y unos ocho días frente al semestre anterior. Para pruebas sitúa la media por debajo de treinta días. Se conserva un extracto editorial identificado; el formulario fue recuperado, pero no las tablas seleccionadas de junio. Una media menor no implica que todas las personas estén dentro de plazo.",
+        "citations": [
+          {
+            "sourceId": "murcia-waiting-announcement-2026",
+            "locator": "Nota de 27/07/2026, párrafos de consultas, cirugía y pruebas"
+          },
+          {
+            "sourceId": "murcia-waiting-register",
+            "locator": "Formulario sin resultados seleccionados"
+          }
+        ]
+      },
+      {
+        "id": "contraste",
+        "claim": "Informe de ADSP y respuesta de Salud",
+        "status": "documented",
+        "finding": "ADSP, tabla 2, recoge 26.040 registros sin cita en consultas y 31.130 en pruebas; usa datos publicados y cuestiona su integridad. Es un análisis de otro autor, no un recuento clínico independiente. Salud rechaza esas críticas, según Radio Murcia. Ni la acusación ni la réplica prueban por sí solas manipulación o exactitud.",
+        "citations": [
+          {
+            "sourceId": "murcia-waiting-adsp-2026",
+            "locator": "Tabla 2 y observaciones sobre registro",
+            "page": 3
+          },
+          {
+            "sourceId": "murcia-waiting-reply-2026",
+            "locator": "Respuesta de Salud recogida el 16/09/2026"
+          }
+        ]
+      },
+      {
+        "id": "inconsistencias",
+        "claim": "Inconsistencias que impiden adoptar el informe crítico sin revisión",
+        "status": "unresolved",
+        "finding": "El informe de ADSP menciona junio de 2025 en la introducción de un informe de junio de 2026; su tabla usa 150 días para cirugía y el párrafo siguiente dice 120. Además suma esperas excesivas y falta de cita sin demostrar que sean grupos excluyentes. No adoptamos su porcentaje agregado ni contamos la suma de listas como personas únicas. Son límites del documento, no pruebas de falsedad de los registros sanitarios.",
+        "citations": [
+          {
+            "sourceId": "murcia-waiting-adsp-2026",
+            "locator": "Introducción y tabla 1",
+            "page": 2
+          },
+          {
+            "sourceId": "murcia-waiting-adsp-2026",
+            "locator": "Tabla 2, suma de grupos y párrafo quirúrgico",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "serie",
+        "claim": "La recopilación nacional no añade una medición independiente",
+        "status": "reported",
+        "finding": "El SISLE-SNS de diciembre de 2025 recoge para Murcia 34.197 pacientes pendientes de cirugía y 103 días de media. El propio informe atribuye la información de origen a cada comunidad. No se mezcla ese corte ni sus criterios con junio de 2026 para calcular un porcentaje de cumplimiento.",
+        "citations": [
+          {
+            "sourceId": "murcia-waiting-national-2025",
+            "locator": "Distribución autonómica, fila Murcia y nota metodológica",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "id": "limites",
+        "claim": "Qué falta para evaluar la promesa completa",
+        "status": "unresolved",
+        "finding": "Faltan tablas primarias comparables al inicio del mandato y en junio de 2026, criterios de inclusión, espera previa al registro, pacientes sin cita y series de Atención Primaria. También hay que aclarar la comparación temporal de la reducción de 9.241 consultas citada por Salud. La coincidencia de dos publicaciones puede proceder del mismo registro. No se deduce un incumplimiento jurídico individual ni una mejora causal por el pacto.",
+        "citations": [
+          {
+            "sourceId": "murcia-programme-copy",
+            "locator": "Punto 17: cuatro ámbitos de espera",
+            "page": 3
+          },
+          {
+            "sourceId": "murcia-waiting-announcement-2026",
+            "locator": "Comparación de 9.241 pacientes y periodo"
+          },
+          {
+            "sourceId": "murcia-waiting-adsp-2026",
+            "locator": "Tabla 2: junio de 2025 y junio de 2026",
+            "page": 3
+          }
+        ]
+      }
+    ],
+    "contrast": "Salud y ADSP discrepan sobre la fiabilidad. Se conserva la respuesta institucional y se examinan también las inconsistencias del crítico. Las cifras ministeriales proceden del SMS; el análisis externo de ADSP no equivale a auditoría de los registros.",
+    "pending": [
+      "Recuperar las tablas primarias de ambos periodos y comprobar denominadores, inclusión y solapamientos.",
+      "Contrastar Atención Primaria, interconsultas no presenciales y espera antes de la inscripción.",
+      "Obtener una comprobación externa de registros y resolver las inconsistencias temporales.",
+      "Completar revisión humana independiente."
+    ]
+  },
+  {
+    "commitmentId": "r-14-acuerdo-4",
+    "reviewedAt": "2026-10-11",
+    "title": "Designaciones: nombramientos de 2023 y ceses de 2024 separados del pacto inicial",
+    "conclusion": "Se documentan los nombramientos de Antelo y Pancorbo y sus ceses posteriores. La firma del pacto en 2023 no permite presentar aquella composición como vigente durante todo el mandato.",
+    "periodNote": "La cláusula cuarta es de 5/09/2023. Los nombramientos son de 14/09/2023 y los ceses de 15/07/2024, con efectos desde sus publicaciones respectivas. La fecha de consulta de 2026 no actualiza automáticamente la composición del Gobierno.",
+    "components": [
+      {
+        "id": "compromiso",
+        "claim": "Contenido de la cláusula cuarta",
+        "status": "promise-documented",
+        "finding": "El PP asume designar a personas propuestas por VOX en Interior, Seguridad y Emergencias, con Vicepresidencia, y en Fomento. El pacto no identifica por nombre a esas personas. Se conserva la cláusula separada de las otras siete; no se cuentan sus remisiones como nuevas promesas programáticas.",
+        "citations": [
+          {
+            "sourceId": "murcia-programme-copy",
+            "locator": "Acuerdo cuarto",
+            "page": 5
+          }
+        ]
+      },
+      {
+        "id": "nombramientos",
+        "claim": "Actos de nombramiento",
+        "status": "documented",
+        "finding": "El Decreto 32/2023 nombra a José Ángel Antelo vicepresidente y consejero de Interior, Emergencias y Ordenación del Territorio; el 39/2023 nombra a José Manuel Pancorbo consejero de Fomento e Infraestructuras. Ambos tienen efectos el 14/09/2023. La denominación formal de Interior difiere de la del pacto. Se conserva el PDF individual de Antelo y un extracto editorial de la página 15 del suplemento para Pancorbo.",
+        "citations": [
+          {
+            "sourceId": "murcia-antelo-appointment-2023",
+            "locator": "Decreto 32/2023; página impresa 8 del suplemento",
+            "page": 1
+          },
+          {
+            "sourceId": "murcia-pancorbo-appointment-2023",
+            "locator": "Decreto 39/2023, suplemento BORM",
+            "page": 15
+          }
+        ]
+      },
+      {
+        "id": "ceses",
+        "claim": "Cambio posterior documentado",
+        "status": "documented",
+        "finding": "Los decretos 17 y 18/2024 disponen, a petición propia, los ceses respectivos de Antelo y Pancorbo con efectos el 15 de julio de 2024. Este documento acredita el término de esos nombramientos, no por sí solo toda la historia del pacto, sus apoyos parlamentarios posteriores o la ejecución de cada medida.",
+        "citations": [
+          {
+            "sourceId": "murcia-government-cessations-2024",
+            "locator": "Decreto 17/2024",
+            "page": 2
+          },
+          {
+            "sourceId": "murcia-government-cessations-2024",
+            "locator": "Decreto 18/2024",
+            "page": 3
+          }
+        ]
+      },
+      {
+        "id": "alcance",
+        "claim": "Propuesta partidaria y balance del acuerdo",
+        "status": "unresolved",
+        "finding": "Falta incorporar la propuesta formal de candidatos de VOX y cotejar íntegramente las competencias prometidas y asignadas. Los nombramientos y ceses no acreditan por sí mismos el cumplimiento de las cláusulas de estabilidad ni del resto del programa. Esas cláusulas conservan sus propias fichas pendientes.",
+        "citations": [
+          {
+            "sourceId": "murcia-programme-copy",
+            "locator": "Acuerdos primero, cuarto, sexto y séptimo",
+            "page": 5
+          },
+          {
+            "sourceId": "murcia-programme-copy",
+            "locator": "Acuerdo séptimo",
+            "page": 6
+          }
+        ]
+      }
+    ],
+    "contrast": "Los decretos son actos primarios del mismo origen institucional. Permiten contrastar la secuencia temporal; no se presentan como una evaluación externa del pacto ni como prueba de una composición actual no verificada.",
+    "pending": [
+      "Conservar el PDF original del nombramiento de Pancorbo y cotejar competencias y propuesta formal.",
+      "Revisar por separado la estabilidad, apoyos legislativos y cambios posteriores del acuerdo.",
+      "Completar revisión humana independiente."
+    ]
+  }
+]

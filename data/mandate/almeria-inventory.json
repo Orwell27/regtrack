@@ -1,0 +1,4213 @@
+{
+  "schemaVersion": 1,
+  "jurisdictionId": "m-04013",
+  "mandateId": "m-04013-2023",
+  "mandateLabel": "Almería · programa municipal 2023–2027",
+  "sourceId": "almeria-programme",
+  "mandateSourceId": "almeria-programme",
+  "registerSourceId": "almeria-constitution-report",
+  "sourceLabel": "Programa electoral · apartados con referencias editoriales",
+  "sourceSha256": "860b0dc920f87a6878c08ad0c6f5ec01bf7c3bc84988c7d9208488b9871ede16",
+  "importedAt": "2026-10-11",
+  "textLanguage": "es",
+  "inventoryKind": "programme-sections",
+  "inventoryTotal": 155,
+  "scope": "155 apartados extraídos del programa municipal de María del Mar Vázquez (PP), incluidos los destacados sin viñeta. Son unidades editoriales del documento, no 155 promesas únicas: hay reiteraciones, submedidas y solicitudes a otras administraciones. La prosa introductoria se conserva como contexto; falta conciliar otros compromisos y modificaciones del mandato.",
+  "textNote": "Resúmenes editoriales, no citas literales. Los códigos Pxx-yy indican página y orden visual, no numeración oficial. Se conserva el PDF de 32 páginas y su extracción; la página 7 se reordena según su composición visual y el apartado del Mercado Central continúa en la 20. Portadas, separadores, eslóganes y contacto se revisaron visualmente. La crónica municipal documenta la proclamación de la alcaldesa el 17/06/2023 y otra la identifica en el pleno del 08/09/2026; faltan acta constitutiva y comprobación de continuidad hasta el corte. Fecha exacta de publicación del programa y cotejo humano independiente pendientes. No se han validado firmas electrónicas.",
+  "records": [
+    {
+      "id": "m-04013-p05-01",
+      "officialId": "P05-01",
+      "topic": "Inclusión",
+      "page": 5,
+      "endPage": 5,
+      "rawText": "Modificaremos la ordenanza para que los acompañantes\nde las personas con discapacidad viajen gratis en el\ntransporte público urbano colectivo.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 15,
+          "text": "Modificaremos la ordenanza para que los acompañantes"
+        },
+        {
+          "page": 5,
+          "line": 16,
+          "text": "de las personas con discapacidad viajen gratis en el"
+        },
+        {
+          "page": 5,
+          "line": 17,
+          "text": "transporte público urbano colectivo."
+        }
+      ],
+      "text": "Gratuidad del autobús urbano para acompañantes de personas con discapacidad mediante cambio de ordenanza.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p05-02",
+      "officialId": "P05-02",
+      "topic": "Inclusión",
+      "page": 5,
+      "endPage": 5,
+      "rawText": "• Espacios municipales 100% accesibles. Sin barreras\narquitectónicas y con accesibilidad cognitiva.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 18,
+          "text": "• Espacios municipales 100% accesibles. Sin barreras"
+        },
+        {
+          "page": 5,
+          "line": 19,
+          "text": "arquitectónicas y con accesibilidad cognitiva."
+        }
+      ],
+      "text": "Accesibilidad física y cognitiva plena en los espacios municipales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p05-03",
+      "officialId": "P05-03",
+      "topic": "Inclusión",
+      "page": 5,
+      "endPage": 5,
+      "rawText": "• Aplicaremos los resultados del diagnóstico de la Plataforma\nde la Aplicación de la Gestión Municipal de la Accesibilidad.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 20,
+          "text": "• Aplicaremos los resultados del diagnóstico de la Plataforma"
+        },
+        {
+          "page": 5,
+          "line": 21,
+          "text": "de la Aplicación de la Gestión Municipal de la Accesibilidad."
+        }
+      ],
+      "text": "Aplicar el diagnóstico municipal de accesibilidad.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p05-04",
+      "officialId": "P05-04",
+      "topic": "Inclusión",
+      "page": 5,
+      "endPage": 5,
+      "rawText": "• Impulsaremos la Mesa del Tercer Sector desde el Espacio\nALMA.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 22,
+          "text": "• Impulsaremos la Mesa del Tercer Sector desde el Espacio"
+        },
+        {
+          "page": 5,
+          "line": 23,
+          "text": "ALMA."
+        }
+      ],
+      "text": "Promover una mesa del tercer sector desde ALMA.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p05-05",
+      "officialId": "P05-05",
+      "topic": "Inclusión",
+      "page": 5,
+      "endPage": 5,
+      "rawText": "• Reservas de vivienda de protección oficial a los colectivos\nsociales dedicados a trabajar por la discapacidad.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 24,
+          "text": "• Reservas de vivienda de protección oficial a los colectivos"
+        },
+        {
+          "page": 5,
+          "line": 25,
+          "text": "sociales dedicados a trabajar por la discapacidad."
+        }
+      ],
+      "text": "Reservar vivienda protegida a colectivos que trabajan con la discapacidad.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p05-06",
+      "officialId": "P05-06",
+      "topic": "Inclusión",
+      "page": 5,
+      "endPage": 5,
+      "rawText": "• Impulsaremos una “Escuela Artística Inclusiva”.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 26,
+          "text": "• Impulsaremos una “Escuela Artística Inclusiva”."
+        }
+      ],
+      "text": "Promover una escuela artística inclusiva.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p05-07",
+      "officialId": "P05-07",
+      "topic": "Inclusión",
+      "page": 5,
+      "endPage": 5,
+      "rawText": "• Mejoraremos los recursos que faciliten la accesibilidad\nal transporte púbico de las personas con discapacidad.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 27,
+          "text": "• Mejoraremos los recursos que faciliten la accesibilidad"
+        },
+        {
+          "page": 5,
+          "line": 28,
+          "text": "al transporte púbico de las personas con discapacidad."
+        }
+      ],
+      "text": "Mejorar la accesibilidad del transporte público.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-01",
+      "officialId": "P06-01",
+      "topic": "Inclusión",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Instalaremos sistemas tecnológicos en espacios públicos\ny mobiliario urbano que faciliten los trayectos de las\npersonas con dificultades sensoriales.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 1,
+          "text": "• Instalaremos sistemas tecnológicos en espacios públicos"
+        },
+        {
+          "page": 6,
+          "line": 2,
+          "text": "y mobiliario urbano que faciliten los trayectos de las"
+        },
+        {
+          "page": 6,
+          "line": 3,
+          "text": "personas con dificultades sensoriales."
+        }
+      ],
+      "text": "Tecnología en espacios y mobiliario públicos para orientar a personas con dificultades sensoriales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-02",
+      "officialId": "P06-02",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "Ampliación de actividades y horarios en todos los Centros\nde la Mujer.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 5,
+          "text": "Ampliación de actividades y horarios en todos los Centros"
+        },
+        {
+          "page": 6,
+          "line": 6,
+          "text": "de la Mujer."
+        }
+      ],
+      "text": "Ampliar actividades y horarios de los centros de la mujer.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-03",
+      "officialId": "P06-03",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Aumentaremos los recursos y cerraremos convenios con\ncolegios profesionales para atender a las víctimas de la\nviolencia de género.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 7,
+          "text": "• Aumentaremos los recursos y cerraremos convenios con"
+        },
+        {
+          "page": 6,
+          "line": 8,
+          "text": "colegios profesionales para atender a las víctimas de la"
+        },
+        {
+          "page": 6,
+          "line": 9,
+          "text": "violencia de género."
+        }
+      ],
+      "text": "Más recursos y acuerdos profesionales para atender a víctimas de violencia de género.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-04",
+      "officialId": "P06-04",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Promoveremos medidas que sigan facilitando la conciliación\nfamiliar.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 10,
+          "text": "• Promoveremos medidas que sigan facilitando la conciliación"
+        },
+        {
+          "page": 6,
+          "line": 11,
+          "text": "familiar."
+        }
+      ],
+      "text": "Medidas de conciliación familiar.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-05",
+      "officialId": "P06-05",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Plan de fomento del emprendimiento femenino.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 12,
+          "text": "• Plan de fomento del emprendimiento femenino."
+        }
+      ],
+      "text": "Un plan para el emprendimiento de mujeres.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-06",
+      "officialId": "P06-06",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Vinculación del deporte a la causa de la Igualdad\norganizando competiciones y pruebas lúdicas.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 13,
+          "text": "• Vinculación del deporte a la causa de la Igualdad"
+        },
+        {
+          "page": 6,
+          "line": 14,
+          "text": "organizando competiciones y pruebas lúdicas."
+        }
+      ],
+      "text": "Competiciones y actividades deportivas que promuevan la igualdad.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-07",
+      "officialId": "P06-07",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Potenciación y proyección del Consejo Asesor de la Mujer.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 15,
+          "text": "• Potenciación y proyección del Consejo Asesor de la Mujer."
+        }
+      ],
+      "text": "Reforzar el Consejo Asesor de la Mujer.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-08",
+      "officialId": "P06-08",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Apertura de una Oficina de Atención al Inmigrante.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 16,
+          "text": "• Apertura de una Oficina de Atención al Inmigrante."
+        }
+      ],
+      "text": "Abrir una oficina municipal para inmigrantes.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-09",
+      "officialId": "P06-09",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Desarrollo del Plan Municipal de Inmigración.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 17,
+          "text": "• Desarrollo del Plan Municipal de Inmigración."
+        }
+      ],
+      "text": "Desarrollar el plan municipal de inmigración.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p06-10",
+      "officialId": "P06-10",
+      "topic": "Igualdad e inmigración",
+      "page": 6,
+      "endPage": 6,
+      "rawText": "• Agilizaremos los trámites e informes que necesita el\ncolectivo inmigrante y que se emiten desde los Centros\nde Servicios Sociales y la Oficina del Padrón.",
+      "fragments": [
+        {
+          "page": 6,
+          "line": 18,
+          "text": "• Agilizaremos los trámites e informes que necesita el"
+        },
+        {
+          "page": 6,
+          "line": 19,
+          "text": "colectivo inmigrante y que se emiten desde los Centros"
+        },
+        {
+          "page": 6,
+          "line": 20,
+          "text": "de Servicios Sociales y la Oficina del Padrón."
+        }
+      ],
+      "text": "Agilizar informes y trámites de inmigración en servicios sociales y padrón.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-01",
+      "officialId": "P07-01",
+      "topic": "Integración y participación",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "Impulsaremos el programa de alquiler en el Casco\nHistórico.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 17,
+          "text": "Impulsaremos el programa de alquiler en el Casco"
+        },
+        {
+          "page": 7,
+          "line": 18,
+          "text": "Histórico."
+        }
+      ],
+      "text": "Promover alquileres en el centro histórico.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-02",
+      "officialId": "P07-02",
+      "topic": "Integración y participación",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Impulsaremos un Plan Municipal de Integración Social.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 19,
+          "text": "• Impulsaremos un Plan Municipal de Integración Social."
+        }
+      ],
+      "text": "Un plan municipal de integración social.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-03",
+      "officialId": "P07-03",
+      "topic": "Integración y participación",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Reforzaremos las ayudas que mejoren la protección social\nde las familias vulnerables.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 20,
+          "text": "• Reforzaremos las ayudas que mejoren la protección social"
+        },
+        {
+          "page": 7,
+          "line": 21,
+          "text": "de las familias vulnerables."
+        }
+      ],
+      "text": "Reforzar ayudas a familias vulnerables.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-04",
+      "officialId": "P07-04",
+      "topic": "Integración y participación",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Ampliaremos la red de ayuda en calle a las personas sin\nhogar.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 22,
+          "text": "• Ampliaremos la red de ayuda en calle a las personas sin"
+        },
+        {
+          "page": 7,
+          "line": 23,
+          "text": "hogar."
+        }
+      ],
+      "text": "Ampliar la atención en calle a personas sin hogar.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-05",
+      "officialId": "P07-05",
+      "topic": "Integración y participación",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Continuaremos otorgando protagonismo activo a las\nasociaciones vecinales, convocando reuniones periódicas\npara el seguimiento de sus necesidades y sugerencias.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 24,
+          "text": "• Continuaremos otorgando protagonismo activo a las"
+        },
+        {
+          "page": 7,
+          "line": 25,
+          "text": "asociaciones vecinales, convocando reuniones periódicas"
+        },
+        {
+          "page": 7,
+          "line": 26,
+          "text": "para el seguimiento de sus necesidades y sugerencias."
+        }
+      ],
+      "text": "Reuniones periódicas con asociaciones vecinales para seguir sus propuestas y necesidades.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-06",
+      "officialId": "P07-06",
+      "topic": "Integración y participación",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Crearemos el Consejo Consultivo Municipal de AMPAS.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 27,
+          "text": "• Crearemos el Consejo Consultivo Municipal de AMPAS."
+        }
+      ],
+      "text": "Un consejo municipal consultivo de asociaciones de familias del alumnado.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-07",
+      "officialId": "P07-07",
+      "topic": "Familia y mayores",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Habrá programas de asesoramiento y apoyo para prevenir\nla soledad no deseada.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 4,
+          "text": "• Habrá programas de asesoramiento y apoyo para prevenir"
+        },
+        {
+          "page": 7,
+          "line": 5,
+          "text": "la soledad no deseada."
+        }
+      ],
+      "text": "Apoyo y asesoramiento frente a la soledad no deseada.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-08",
+      "officialId": "P07-08",
+      "topic": "Familia y mayores",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Favoreceremos un envejecimiento activo y positivo a través\nde talleres, jornadas y actividades.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 6,
+          "text": "• Favoreceremos un envejecimiento activo y positivo a través"
+        },
+        {
+          "page": 7,
+          "line": 7,
+          "text": "de talleres, jornadas y actividades."
+        }
+      ],
+      "text": "Actividades y talleres para un envejecimiento activo.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-09",
+      "officialId": "P07-09",
+      "topic": "Familia y mayores",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Adaptación integral de los servicios municipales para\nlograr la accesibilidad digital.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 8,
+          "text": "• Adaptación integral de los servicios municipales para"
+        },
+        {
+          "page": 7,
+          "line": 9,
+          "text": "lograr la accesibilidad digital."
+        }
+      ],
+      "text": "Hacer accesibles digitalmente todos los servicios municipales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-10",
+      "officialId": "P07-10",
+      "topic": "Familia y mayores",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Crearemos programas específicos para nuestros mayores\nen la televisión municipal.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 10,
+          "text": "• Crearemos programas específicos para nuestros mayores"
+        },
+        {
+          "page": 7,
+          "line": 11,
+          "text": "en la televisión municipal."
+        }
+      ],
+      "text": "Programación para mayores en la televisión municipal.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-11",
+      "officialId": "P07-11",
+      "topic": "Familia y mayores",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Aprobaremos bonificaciones fiscales para las familias\nnumerosas, como el acceso a las actividades culturales,\ndeportivas y de ocio municipales.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 12,
+          "text": "• Aprobaremos bonificaciones fiscales para las familias"
+        },
+        {
+          "page": 7,
+          "line": 13,
+          "text": "numerosas, como el acceso a las actividades culturales,"
+        },
+        {
+          "page": 7,
+          "line": 14,
+          "text": "deportivas y de ocio municipales."
+        }
+      ],
+      "text": "Bonificaciones para familias numerosas y acceso a actividades municipales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p07-12",
+      "officialId": "P07-12",
+      "topic": "Familia y mayores",
+      "page": 7,
+      "endPage": 7,
+      "rawText": "• Adhesión de Almería a la red de Ciudades Amigables con\nlos Mayores.",
+      "fragments": [
+        {
+          "page": 7,
+          "line": 15,
+          "text": "• Adhesión de Almería a la red de Ciudades Amigables con"
+        },
+        {
+          "page": 7,
+          "line": 16,
+          "text": "los Mayores."
+        }
+      ],
+      "text": "Incorporar Almería a la red de ciudades amigables con las personas mayores.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-01",
+      "officialId": "P08-01",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "Habilitaremos más zonas de ocio infantil en parques y\nplazas",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 2,
+          "text": "Habilitaremos más zonas de ocio infantil en parques y"
+        },
+        {
+          "page": 8,
+          "line": 3,
+          "text": "plazas"
+        }
+      ],
+      "text": "Más espacios de ocio infantil en parques y plazas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-02",
+      "officialId": "P08-02",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "• Lucharemos contra el acoso escolar y ciberacoso a los\nmenores en colaboración con profesionales especializados.",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 4,
+          "text": "• Lucharemos contra el acoso escolar y ciberacoso a los"
+        },
+        {
+          "page": 8,
+          "line": 5,
+          "text": "menores en colaboración con profesionales especializados."
+        }
+      ],
+      "text": "Cooperar con especialistas frente al acoso escolar y digital.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-03",
+      "officialId": "P08-03",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "• Acciones de prevención de todas las adicciones.",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 6,
+          "text": "• Acciones de prevención de todas las adicciones."
+        }
+      ],
+      "text": "Prevenir las adicciones.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-04",
+      "officialId": "P08-04",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "• Medidas activas contra el absentismo escolar.",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 7,
+          "text": "• Medidas activas contra el absentismo escolar."
+        }
+      ],
+      "text": "Actuar contra el absentismo escolar.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-05",
+      "officialId": "P08-05",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "• Colaboración con el Colegio de Psicólogos para cuidar la\nsalud mental de los jóvenes.",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 8,
+          "text": "• Colaboración con el Colegio de Psicólogos para cuidar la"
+        },
+        {
+          "page": 8,
+          "line": 9,
+          "text": "salud mental de los jóvenes."
+        }
+      ],
+      "text": "Cooperar con el Colegio de Psicólogos para la salud mental juvenil.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-06",
+      "officialId": "P08-06",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "• Incentivaremos la colaboración con las asociaciones para\npotenciar el voluntariado.",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 10,
+          "text": "• Incentivaremos la colaboración con las asociaciones para"
+        },
+        {
+          "page": 8,
+          "line": 11,
+          "text": "potenciar el voluntariado."
+        }
+      ],
+      "text": "Colaboración asociativa para promover el voluntariado.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-07",
+      "officialId": "P08-07",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "• Seguiremos impulsando Almería como una Ciudad Amiga\nde la Infancia.",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 12,
+          "text": "• Seguiremos impulsando Almería como una Ciudad Amiga"
+        },
+        {
+          "page": 8,
+          "line": 13,
+          "text": "de la Infancia."
+        }
+      ],
+      "text": "Continuar el desarrollo de Almería como Ciudad Amiga de la Infancia.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p08-08",
+      "officialId": "P08-08",
+      "topic": "Infancia",
+      "page": 8,
+      "endPage": 8,
+      "rawText": "• Nos uniremos a la Asociación Internacional de Ciudades\nEducadoras.",
+      "fragments": [
+        {
+          "page": 8,
+          "line": 14,
+          "text": "• Nos uniremos a la Asociación Internacional de Ciudades"
+        },
+        {
+          "page": 8,
+          "line": 15,
+          "text": "Educadoras."
+        }
+      ],
+      "text": "Incorporarse a la asociación internacional de ciudades educadoras.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p10-01",
+      "officialId": "P10-01",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "Mejoraremos la Interconexión Universidad-El Toyo\ncon una vía verde para uso de ciclistas y peatones y la\nComunicación con los municipios del área metropolitana.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 13,
+          "text": "Mejoraremos la Interconexión Universidad-El Toyo"
+        },
+        {
+          "page": 10,
+          "line": 14,
+          "text": "con una vía verde para uso de ciclistas y peatones y la"
+        },
+        {
+          "page": 10,
+          "line": 15,
+          "text": "Comunicación con los municipios del área metropolitana."
+        }
+      ],
+      "text": "Vía verde peatonal y ciclista Universidad–El Toyo y mejores conexiones metropolitanas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p10-02",
+      "officialId": "P10-02",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "• Contrataremos una auditoría de Eficiencia Energética para\nuna gestión integral e inteligente del suministro energético,\neléctrico y térmico de los edificios e instalaciones de\ntitularidad municipal para minimizar nuestra huella de\ncarbono.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 16,
+          "text": "• Contrataremos una auditoría de Eficiencia Energética para"
+        },
+        {
+          "page": 10,
+          "line": 17,
+          "text": "una gestión integral e inteligente del suministro energético,"
+        },
+        {
+          "page": 10,
+          "line": 18,
+          "text": "eléctrico y térmico de los edificios e instalaciones de"
+        },
+        {
+          "page": 10,
+          "line": 19,
+          "text": "titularidad municipal para minimizar nuestra huella de"
+        },
+        {
+          "page": 10,
+          "line": 20,
+          "text": "carbono."
+        }
+      ],
+      "text": "Auditar la eficiencia del suministro energético de edificios e instalaciones municipales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p10-03",
+      "officialId": "P10-03",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "• Ampliación del Recinto Ferial para crear el primer Bike\nPark de Almería.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 21,
+          "text": "• Ampliación del Recinto Ferial para crear el primer Bike"
+        },
+        {
+          "page": 10,
+          "line": 22,
+          "text": "Park de Almería."
+        }
+      ],
+      "text": "Ampliar el recinto ferial para instalar un Bike Park.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p10-04",
+      "officialId": "P10-04",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "• Aparcamientos para bicis en los parkings municipales.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 23,
+          "text": "• Aparcamientos para bicis en los parkings municipales."
+        }
+      ],
+      "text": "Estacionamiento para bicicletas en aparcamientos municipales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p10-05",
+      "officialId": "P10-05",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "• Ordenanza para regular el uso de patinetes en el casco\nurbano.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 24,
+          "text": "• Ordenanza para regular el uso de patinetes en el casco"
+        },
+        {
+          "page": 10,
+          "line": 25,
+          "text": "urbano."
+        }
+      ],
+      "text": "Regular por ordenanza los patinetes urbanos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p10-06",
+      "officialId": "P10-06",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "• Ordenanza para regular las autocaravanas.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 26,
+          "text": "• Ordenanza para regular las autocaravanas."
+        }
+      ],
+      "text": "Regular por ordenanza las autocaravanas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p10-07",
+      "officialId": "P10-07",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 10,
+      "endPage": 10,
+      "rawText": "• Conexión ciclista y peatonal Almería-Huércal, N-340-\nCuesta de Los Callejones.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 27,
+          "text": "• Conexión ciclista y peatonal Almería-Huércal, N-340-"
+        },
+        {
+          "page": 10,
+          "line": 28,
+          "text": "Cuesta de Los Callejones."
+        }
+      ],
+      "text": "Conexión a pie y en bicicleta entre Almería y Huércal por N-340 y Cuesta de los Callejones.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-01",
+      "officialId": "P11-01",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Nuevos aparcamientos disuasorios en superficie.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 2,
+          "text": "• Nuevos aparcamientos disuasorios en superficie."
+        }
+      ],
+      "text": "Más aparcamientos disuasorios en superficie.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-02",
+      "officialId": "P11-02",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Regularemos e impulsaremos la colocación y gestión de\npuntos de recarga eléctrica de vehículos.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 3,
+          "text": "• Regularemos e impulsaremos la colocación y gestión de"
+        },
+        {
+          "page": 11,
+          "line": 4,
+          "text": "puntos de recarga eléctrica de vehículos."
+        }
+      ],
+      "text": "Regular e impulsar la instalación y gestión de cargadores para vehículos eléctricos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-03",
+      "officialId": "P11-03",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Transporte público colectivo gratis en el Casco Histórico\npara fomentar la movilidad sostenible en la futura zona\nde bajas emisiones.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 5,
+          "text": "• Transporte público colectivo gratis en el Casco Histórico"
+        },
+        {
+          "page": 11,
+          "line": 6,
+          "text": "para fomentar la movilidad sostenible en la futura zona"
+        },
+        {
+          "page": 11,
+          "line": 7,
+          "text": "de bajas emisiones."
+        }
+      ],
+      "text": "Transporte colectivo gratuito en el centro histórico asociado a la futura zona de bajas emisiones.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-04",
+      "officialId": "P11-04",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Nuevo Plan Municipal de fomento de uso de parkings\nsubterráneos municipales para reducir el coste al usuario.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 8,
+          "text": "• Nuevo Plan Municipal de fomento de uso de parkings"
+        },
+        {
+          "page": 11,
+          "line": 9,
+          "text": "subterráneos municipales para reducir el coste al usuario."
+        }
+      ],
+      "text": "Reducir el coste de uso de los aparcamientos subterráneos municipales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-05",
+      "officialId": "P11-05",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Mejoraremos la eficiencia de la nueva Planta de Reciclaje.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 10,
+          "text": "• Mejoraremos la eficiencia de la nueva Planta de Reciclaje."
+        }
+      ],
+      "text": "Mejorar la eficiencia de la planta de reciclaje.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-06",
+      "officialId": "P11-06",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Aumentaremos las medidas del Plan de Ahorro Energético\nen el alumbrado público.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 11,
+          "text": "• Aumentaremos las medidas del Plan de Ahorro Energético"
+        },
+        {
+          "page": 11,
+          "line": 12,
+          "text": "en el alumbrado público."
+        }
+      ],
+      "text": "Más ahorro energético en iluminación pública.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-07",
+      "officialId": "P11-07",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Incrementaremos el número de puntos limpios móviles.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 13,
+          "text": "• Incrementaremos el número de puntos limpios móviles."
+        }
+      ],
+      "text": "Ampliar los puntos limpios móviles.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-08",
+      "officialId": "P11-08",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Realizaremos campañas de concienciación para reciclar\nmás y mejor.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 14,
+          "text": "• Realizaremos campañas de concienciación para reciclar"
+        },
+        {
+          "page": 11,
+          "line": 15,
+          "text": "más y mejor."
+        }
+      ],
+      "text": "Campañas para mejorar el reciclaje.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-09",
+      "officialId": "P11-09",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Añadiremos más contenedores de residuos orgánicos en\ntodos los barrios.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 16,
+          "text": "• Añadiremos más contenedores de residuos orgánicos en"
+        },
+        {
+          "page": 11,
+          "line": 17,
+          "text": "todos los barrios."
+        }
+      ],
+      "text": "Más contenedores orgánicos en todos los barrios.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-10",
+      "officialId": "P11-10",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Habrá más papeleras selectivas distribuidas en el casco\nurbano y la playa.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 18,
+          "text": "• Habrá más papeleras selectivas distribuidas en el casco"
+        },
+        {
+          "page": 11,
+          "line": 19,
+          "text": "urbano y la playa."
+        }
+      ],
+      "text": "Más papeleras de separación de residuos en ciudad y playa.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p11-11",
+      "officialId": "P11-11",
+      "topic": "Movilidad, reciclaje y energía",
+      "page": 11,
+      "endPage": 11,
+      "rawText": "• Incrementaremos los senderos urbanos fomentando las\nrutas a pie y la movilidad sostenible.",
+      "fragments": [
+        {
+          "page": 11,
+          "line": 20,
+          "text": "• Incrementaremos los senderos urbanos fomentando las"
+        },
+        {
+          "page": 11,
+          "line": 21,
+          "text": "rutas a pie y la movilidad sostenible."
+        }
+      ],
+      "text": "Ampliar los recorridos urbanos a pie.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p12-01",
+      "officialId": "P12-01",
+      "topic": "Limpieza y espacio público",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "Llevaremos a cabo un nuevo contrato para actualizar\nel servicio de limpieza adaptándolo a las crecientes\nnecesidades de Almería, con nuevas rutas, más servicios\ny maquinaria más moderna y silenciosa.",
+      "fragments": [
+        {
+          "page": 12,
+          "line": 2,
+          "text": "Llevaremos a cabo un nuevo contrato para actualizar"
+        },
+        {
+          "page": 12,
+          "line": 3,
+          "text": "el servicio de limpieza adaptándolo a las crecientes"
+        },
+        {
+          "page": 12,
+          "line": 4,
+          "text": "necesidades de Almería, con nuevas rutas, más servicios"
+        },
+        {
+          "page": 12,
+          "line": 5,
+          "text": "y maquinaria más moderna y silenciosa."
+        }
+      ],
+      "text": "Nuevo contrato de limpieza con más rutas, servicios y maquinaria moderna y silenciosa.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p12-02",
+      "officialId": "P12-02",
+      "topic": "Limpieza y espacio público",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "Pondremos en marcha un servicio específico contra\nlas pintadas y el vandalismo, reforzando la presencia\npolicial, con ayudas a particulares afectados y trabajos\ncomunitarios para los responsables identificados.",
+      "fragments": [
+        {
+          "page": 12,
+          "line": 6,
+          "text": "Pondremos en marcha un servicio específico contra"
+        },
+        {
+          "page": 12,
+          "line": 7,
+          "text": "las pintadas y el vandalismo, reforzando la presencia"
+        },
+        {
+          "page": 12,
+          "line": 8,
+          "text": "policial, con ayudas a particulares afectados y trabajos"
+        },
+        {
+          "page": 12,
+          "line": 9,
+          "text": "comunitarios para los responsables identificados."
+        }
+      ],
+      "text": "Servicio contra pintadas y vandalismo, refuerzo policial, ayudas a afectados y trabajos comunitarios.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p12-03",
+      "officialId": "P12-03",
+      "topic": "Limpieza y espacio público",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "• Plan de cuidado y colocación de elementos de seguridad\nen los alcorques de los árboles.",
+      "fragments": [
+        {
+          "page": 12,
+          "line": 10,
+          "text": "• Plan de cuidado y colocación de elementos de seguridad"
+        },
+        {
+          "page": 12,
+          "line": 11,
+          "text": "en los alcorques de los árboles."
+        }
+      ],
+      "text": "Cuidar y proteger los alcorques.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p12-04",
+      "officialId": "P12-04",
+      "topic": "Limpieza y espacio público",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "• Plan Renove de mobiliario urbano para unificar elementos\ny que sean más resistentes.",
+      "fragments": [
+        {
+          "page": 12,
+          "line": 12,
+          "text": "• Plan Renove de mobiliario urbano para unificar elementos"
+        },
+        {
+          "page": 12,
+          "line": 13,
+          "text": "y que sean más resistentes."
+        }
+      ],
+      "text": "Renovar el mobiliario urbano con elementos uniformes y resistentes.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p12-05",
+      "officialId": "P12-05",
+      "topic": "Limpieza y espacio público",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "• Embellecimiento floral. Introducción de flores de especies\nmás duraderas en los jardines y zonas verdes.",
+      "fragments": [
+        {
+          "page": 12,
+          "line": 14,
+          "text": "• Embellecimiento floral. Introducción de flores de especies"
+        },
+        {
+          "page": 12,
+          "line": 15,
+          "text": "más duraderas en los jardines y zonas verdes."
+        }
+      ],
+      "text": "Flores más duraderas para jardines y zonas verdes.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p12-06",
+      "officialId": "P12-06",
+      "topic": "Limpieza y espacio público",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "• Implantación de medianas vegetales en las grandes\navenidas.",
+      "fragments": [
+        {
+          "page": 12,
+          "line": 16,
+          "text": "• Implantación de medianas vegetales en las grandes"
+        },
+        {
+          "page": 12,
+          "line": 17,
+          "text": "avenidas."
+        }
+      ],
+      "text": "Medianas con vegetación en las grandes avenidas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p12-07",
+      "officialId": "P12-07",
+      "topic": "Limpieza y espacio público",
+      "page": 12,
+      "endPage": 12,
+      "rawText": "• Plan de embellecimiento de rotondas realizando convenios\ncon las administraciones propietarias.",
+      "fragments": [
+        {
+          "page": 12,
+          "line": 18,
+          "text": "• Plan de embellecimiento de rotondas realizando convenios"
+        },
+        {
+          "page": 12,
+          "line": 19,
+          "text": "con las administraciones propietarias."
+        }
+      ],
+      "text": "Acuerdos con las administraciones titulares para mejorar las rotondas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p14-01",
+      "officialId": "P14-01",
+      "topic": "Centro histórico",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "• Reformularemos la configuración de la Plaza Vieja para\nhacer de este espacio el elemento de atracción de\ninversiones y proyectos que necesita el Casco Histórico.",
+      "fragments": [
+        {
+          "page": 14,
+          "line": 15,
+          "text": "• Reformularemos la configuración de la Plaza Vieja para"
+        },
+        {
+          "page": 14,
+          "line": 16,
+          "text": "hacer de este espacio el elemento de atracción de"
+        },
+        {
+          "page": 14,
+          "line": 17,
+          "text": "inversiones y proyectos que necesita el Casco Histórico."
+        }
+      ],
+      "text": "Replantear la Plaza Vieja para atraer actividad al centro histórico.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p14-02",
+      "officialId": "P14-02",
+      "topic": "Centro histórico",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "• Debatiremos de manera transversal el futuro del tránsito\ncompartido en el Paseo, Puerta Purchena y Obispo Orberá\npara conseguir el máximo consenso posible sobre el diseño\ndel principal eje comercial de Almería.",
+      "fragments": [
+        {
+          "page": 14,
+          "line": 18,
+          "text": "• Debatiremos de manera transversal el futuro del tránsito"
+        },
+        {
+          "page": 14,
+          "line": 19,
+          "text": "compartido en el Paseo, Puerta Purchena y Obispo Orberá"
+        },
+        {
+          "page": 14,
+          "line": 20,
+          "text": "para conseguir el máximo consenso posible sobre el diseño"
+        },
+        {
+          "page": 14,
+          "line": 21,
+          "text": "del principal eje comercial de Almería."
+        }
+      ],
+      "text": "Debate participativo sobre el tránsito compartido en Paseo, Puerta Purchena y Obispo Orberá.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p14-03",
+      "officialId": "P14-03",
+      "topic": "Centro histórico",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "• Conversión de solares y espacios en desuso en microplazas\no lugares de uso vecinal.",
+      "fragments": [
+        {
+          "page": 14,
+          "line": 22,
+          "text": "• Conversión de solares y espacios en desuso en microplazas"
+        },
+        {
+          "page": 14,
+          "line": 23,
+          "text": "o lugares de uso vecinal."
+        }
+      ],
+      "text": "Convertir solares y espacios abandonados en pequeñas plazas y lugares vecinales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p14-04",
+      "officialId": "P14-04",
+      "topic": "Centro histórico",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "• Regeneración paisajística de la antesala de la Alcazaba.",
+      "fragments": [
+        {
+          "page": 14,
+          "line": 24,
+          "text": "• Regeneración paisajística de la antesala de la Alcazaba."
+        }
+      ],
+      "text": "Mejorar el paisaje del acceso a la Alcazaba.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p14-05",
+      "officialId": "P14-05",
+      "topic": "Centro histórico",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "• Seguiremos potenciando las posibilidades del Mesón\nGitano y su entorno como elemento de dinamización\nturística y cultural de la zona.",
+      "fragments": [
+        {
+          "page": 14,
+          "line": 25,
+          "text": "• Seguiremos potenciando las posibilidades del Mesón"
+        },
+        {
+          "page": 14,
+          "line": 26,
+          "text": "Gitano y su entorno como elemento de dinamización"
+        },
+        {
+          "page": 14,
+          "line": 27,
+          "text": "turística y cultural de la zona."
+        }
+      ],
+      "text": "Impulsar el uso turístico y cultural del Mesón Gitano y su entorno.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p14-06",
+      "officialId": "P14-06",
+      "topic": "Centro histórico",
+      "page": 14,
+      "endPage": 14,
+      "rawText": "• Adecuación del entorno de los Torreones de Avda. del\nMar en el barrio de Pescadería.",
+      "fragments": [
+        {
+          "page": 14,
+          "line": 28,
+          "text": "• Adecuación del entorno de los Torreones de Avda. del"
+        },
+        {
+          "page": 14,
+          "line": 29,
+          "text": "Mar en el barrio de Pescadería."
+        }
+      ],
+      "text": "Adecuar el entorno de los Torreones de la avenida del Mar en Pescadería.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-01",
+      "officialId": "P15-01",
+      "topic": "Centro histórico",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Reurbanización de las calles del entorno de la Catedral.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 2,
+          "text": "• Reurbanización de las calles del entorno de la Catedral."
+        }
+      ],
+      "text": "Renovar las calles próximas a la Catedral.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-02",
+      "officialId": "P15-02",
+      "topic": "Centro histórico",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Fijaremos población en la zona histórica facilitando un\nprograma de alquiler de vivienda.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 3,
+          "text": "• Fijaremos población en la zona histórica facilitando un"
+        },
+        {
+          "page": 15,
+          "line": 4,
+          "text": "programa de alquiler de vivienda."
+        }
+      ],
+      "text": "Facilitar alquileres para fijar residentes en la zona histórica.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-03",
+      "officialId": "P15-03",
+      "topic": "Centro histórico",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• II Fase de Reforma del barrio de La Almedina.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 5,
+          "text": "• II Fase de Reforma del barrio de La Almedina."
+        }
+      ],
+      "text": "Segunda fase de reforma de La Almedina.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-04",
+      "officialId": "P15-04",
+      "topic": "Centro histórico",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Conversión del antiguo cine Katiuska en centro de\ndinamización cultural y social.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 6,
+          "text": "• Conversión del antiguo cine Katiuska en centro de"
+        },
+        {
+          "page": 15,
+          "line": 7,
+          "text": "dinamización cultural y social."
+        }
+      ],
+      "text": "Convertir el antiguo cine Katiuska en centro cultural y social.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-05",
+      "officialId": "P15-05",
+      "topic": "Centro histórico",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Reforma del antiguo colegio “Virgen del Socorro”, en\nPescadería.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 8,
+          "text": "• Reforma del antiguo colegio “Virgen del Socorro”, en"
+        },
+        {
+          "page": 15,
+          "line": 9,
+          "text": "Pescadería."
+        }
+      ],
+      "text": "Reformar el antiguo colegio Virgen del Socorro en Pescadería.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-06",
+      "officialId": "P15-06",
+      "topic": "Centro histórico",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Plan de señalización de calles emblemáticas del Casco\nHistórico.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 10,
+          "text": "• Plan de señalización de calles emblemáticas del Casco"
+        },
+        {
+          "page": 15,
+          "line": 11,
+          "text": "Histórico."
+        }
+      ],
+      "text": "Señalización de calles destacadas del centro histórico.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-07",
+      "officialId": "P15-07",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "Nos comprometemos a construir 300 nuevas viviendas\nprotegidas, tanto en regimen de venta como de alquiler.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 13,
+          "text": "Nos comprometemos a construir 300 nuevas viviendas"
+        },
+        {
+          "page": 15,
+          "line": 14,
+          "text": "protegidas, tanto en regimen de venta como de alquiler."
+        }
+      ],
+      "text": "Construir 300 viviendas protegidas nuevas, en venta y alquiler.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-08",
+      "officialId": "P15-08",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "Creación de una unidad específica de la Policía Local para\nprevenir el vandalismo.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 15,
+          "text": "Creación de una unidad específica de la Policía Local para"
+        },
+        {
+          "page": 15,
+          "line": 16,
+          "text": "prevenir el vandalismo."
+        }
+      ],
+      "text": "Una unidad de Policía Local dedicada a prevenir el vandalismo.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-09",
+      "officialId": "P15-09",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Instalación de un sistema de depuración de aguas\nresiduales en la desembocadura de la Rambla para evitar\nmalos olores.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 17,
+          "text": "• Instalación de un sistema de depuración de aguas"
+        },
+        {
+          "page": 15,
+          "line": 18,
+          "text": "residuales en la desembocadura de la Rambla para evitar"
+        },
+        {
+          "page": 15,
+          "line": 19,
+          "text": "malos olores."
+        }
+      ],
+      "text": "Depurar las aguas residuales en la desembocadura de la Rambla para evitar olores.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-10",
+      "officialId": "P15-10",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Ordenanza Cívica para armonizar la convivencia y fomentar\nel civismo.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 20,
+          "text": "• Ordenanza Cívica para armonizar la convivencia y fomentar"
+        },
+        {
+          "page": 15,
+          "line": 21,
+          "text": "el civismo."
+        }
+      ],
+      "text": "Una ordenanza cívica para la convivencia.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-11",
+      "officialId": "P15-11",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Oficina Municipal para atender y asesorar legalmente a\nlos propietarios de viviendas asaltadas y ocupadas.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 22,
+          "text": "• Oficina Municipal para atender y asesorar legalmente a"
+        },
+        {
+          "page": 15,
+          "line": 23,
+          "text": "los propietarios de viviendas asaltadas y ocupadas."
+        }
+      ],
+      "text": "Oficina de asesoramiento jurídico a propietarios de viviendas ocupadas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-12",
+      "officialId": "P15-12",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Reforma integral del mercado de Los Ángeles.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 24,
+          "text": "• Reforma integral del mercado de Los Ángeles."
+        }
+      ],
+      "text": "Reforma completa del mercado de Los Ángeles.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-13",
+      "officialId": "P15-13",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Transformación del Preventorio en un museo una vez\nrecuperada la sede de Alcaldía en Plaza Vieja.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 25,
+          "text": "• Transformación del Preventorio en un museo una vez"
+        },
+        {
+          "page": 15,
+          "line": 26,
+          "text": "recuperada la sede de Alcaldía en Plaza Vieja."
+        }
+      ],
+      "text": "Convertir el Preventorio en museo tras devolver la Alcaldía a Plaza Vieja.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p15-14",
+      "officialId": "P15-14",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 15,
+      "endPage": 15,
+      "rawText": "• Conversión del mercado de Regiones en punto de\nencuentro vecinal.",
+      "fragments": [
+        {
+          "page": 15,
+          "line": 27,
+          "text": "• Conversión del mercado de Regiones en punto de"
+        },
+        {
+          "page": 15,
+          "line": 28,
+          "text": "encuentro vecinal."
+        }
+      ],
+      "text": "Destinar el mercado de Regiones al encuentro vecinal.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-01",
+      "officialId": "P16-01",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• Proyecto “Parque para todos”, incrementando las zonas\nde sombra en los espacios de juegos infantiles y\naumentando los aparatos de juegos adaptados.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 1,
+          "text": "• Proyecto “Parque para todos”, incrementando las zonas"
+        },
+        {
+          "page": 16,
+          "line": 2,
+          "text": "de sombra en los espacios de juegos infantiles y"
+        },
+        {
+          "page": 16,
+          "line": 3,
+          "text": "aumentando los aparatos de juegos adaptados."
+        }
+      ],
+      "text": "Más sombra y juegos adaptados en parques infantiles.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-02",
+      "officialId": "P16-02",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• Plan “Puertas de Almería” para la mejora estética de\nentradas y accesos, dotando de accesibilidad universal\ny criterios estéticos uniformes a las entradas de la ciudad.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 4,
+          "text": "• Plan “Puertas de Almería” para la mejora estética de"
+        },
+        {
+          "page": 16,
+          "line": 5,
+          "text": "entradas y accesos, dotando de accesibilidad universal"
+        },
+        {
+          "page": 16,
+          "line": 6,
+          "text": "y criterios estéticos uniformes a las entradas de la ciudad."
+        }
+      ],
+      "text": "Mejorar estética y accesibilidad de los accesos urbanos con Puertas de Almería.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-03",
+      "officialId": "P16-03",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• Obras de mejora de drenaje en los accesos al barrio de\nCostacabana por la Rambla del Charco.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 7,
+          "text": "• Obras de mejora de drenaje en los accesos al barrio de"
+        },
+        {
+          "page": 16,
+          "line": 8,
+          "text": "Costacabana por la Rambla del Charco."
+        }
+      ],
+      "text": "Mejor drenaje en los accesos a Costacabana por la Rambla del Charco.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-04",
+      "officialId": "P16-04",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• Plan de recuperación del color y el brillo de pavimentos\nde piedra natural deteriorados por el uso.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 9,
+          "text": "• Plan de recuperación del color y el brillo de pavimentos"
+        },
+        {
+          "page": 16,
+          "line": 10,
+          "text": "de piedra natural deteriorados por el uso."
+        }
+      ],
+      "text": "Recuperar los pavimentos deteriorados de piedra natural.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-05",
+      "officialId": "P16-05",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• “Almería Ciudad Cardioprotegida”. Plan de instalación de\nuna red de desfibriladores.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 11,
+          "text": "• “Almería Ciudad Cardioprotegida”. Plan de instalación de"
+        },
+        {
+          "page": 16,
+          "line": 12,
+          "text": "una red de desfibriladores."
+        }
+      ],
+      "text": "Instalar una red de desfibriladores en la ciudad.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-06",
+      "officialId": "P16-06",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• Solicitaremos a la Junta de Andalucía que impulse la\nconstrucción de un gran centro sociosanitario en el solar\ndel 18 de julio.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 13,
+          "text": "• Solicitaremos a la Junta de Andalucía que impulse la"
+        },
+        {
+          "page": 16,
+          "line": 14,
+          "text": "construcción de un gran centro sociosanitario en el solar"
+        },
+        {
+          "page": 16,
+          "line": 15,
+          "text": "del 18 de julio."
+        }
+      ],
+      "text": "Pedir a la Junta un gran centro sociosanitario en el solar del 18 de Julio.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-07",
+      "officialId": "P16-07",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• Firmaremos un convenio con la Junta de Andalucía para\nque los menores infractores realicen servicios a la\ncomunidad.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 16,
+          "text": "• Firmaremos un convenio con la Junta de Andalucía para"
+        },
+        {
+          "page": 16,
+          "line": 17,
+          "text": "que los menores infractores realicen servicios a la"
+        },
+        {
+          "page": 16,
+          "line": 18,
+          "text": "comunidad."
+        }
+      ],
+      "text": "Acordar con la Junta servicios comunitarios de menores infractores.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p16-08",
+      "officialId": "P16-08",
+      "topic": "Vivienda y servicios urbanos",
+      "page": 16,
+      "endPage": 16,
+      "rawText": "• Facilitaremos el acceso a una vivienda disminuyendo en\n3 puntos el tipo de la Plusvalía Municipal.",
+      "fragments": [
+        {
+          "page": 16,
+          "line": 19,
+          "text": "• Facilitaremos el acceso a una vivienda disminuyendo en"
+        },
+        {
+          "page": 16,
+          "line": 20,
+          "text": "3 puntos el tipo de la Plusvalía Municipal."
+        }
+      ],
+      "text": "Reducir tres puntos el tipo de la plusvalía municipal.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-01",
+      "officialId": "P17-01",
+      "topic": "Proyectos pendientes",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "Segunda fase del Parque de Las Familias.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 5,
+          "text": "Segunda fase del Parque de Las Familias."
+        }
+      ],
+      "text": "Desarrollar la segunda fase del Parque de las Familias.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-02",
+      "officialId": "P17-02",
+      "topic": "Proyectos pendientes",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "Ciudad de la Cultura.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 6,
+          "text": "Ciudad de la Cultura."
+        }
+      ],
+      "text": "Impulsar la Ciudad de la Cultura.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-03",
+      "officialId": "P17-03",
+      "topic": "Proyectos pendientes",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "Segunda fase del Parque de La Goleta.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 7,
+          "text": "Segunda fase del Parque de La Goleta."
+        }
+      ],
+      "text": "Desarrollar la segunda fase del Parque de la Goleta.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-04",
+      "officialId": "P17-04",
+      "topic": "Proyectos pendientes",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "Reforma integral de la oficina periférica del barrio de\nEl Alquián.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 8,
+          "text": "Reforma integral de la oficina periférica del barrio de"
+        },
+        {
+          "page": 17,
+          "line": 9,
+          "text": "El Alquián."
+        }
+      ],
+      "text": "Reformar íntegramente la oficina periférica de El Alquián.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-05",
+      "officialId": "P17-05",
+      "topic": "Proyectos pendientes",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "• Centro cultural en la antigua guardería de Blas Infante.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 10,
+          "text": "• Centro cultural en la antigua guardería de Blas Infante."
+        }
+      ],
+      "text": "Centro cultural en la antigua guardería de Blas Infante.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-06",
+      "officialId": "P17-06",
+      "topic": "Proyectos pendientes",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "• Centro de usos deportivos y sociales en el barrio de\nBellavista.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 11,
+          "text": "• Centro de usos deportivos y sociales en el barrio de"
+        },
+        {
+          "page": 17,
+          "line": 12,
+          "text": "Bellavista."
+        }
+      ],
+      "text": "Centro deportivo y social en Bellavista.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-07",
+      "officialId": "P17-07",
+      "topic": "Proyectos pendientes",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "• Trabajaremos conjuntamente con la propiedad para dar\nun nuevo uso al solar del viejo campo de fútbol de la\nFederación en el barrio de La Cañada.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 13,
+          "text": "• Trabajaremos conjuntamente con la propiedad para dar"
+        },
+        {
+          "page": 17,
+          "line": 14,
+          "text": "un nuevo uso al solar del viejo campo de fútbol de la"
+        },
+        {
+          "page": 17,
+          "line": 15,
+          "text": "Federación en el barrio de La Cañada."
+        }
+      ],
+      "text": "Acordar con la propiedad un nuevo uso para el antiguo campo de la Federación en La Cañada.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-08",
+      "officialId": "P17-08",
+      "topic": "Litoral",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "Recuperación del Espigón de la Térmica como un balcón\nabierto a actividades de ocio, deportivas y turísticas.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 16,
+          "text": "Recuperación del Espigón de la Térmica como un balcón"
+        },
+        {
+          "page": 17,
+          "line": 17,
+          "text": "abierto a actividades de ocio, deportivas y turísticas."
+        }
+      ],
+      "text": "Recuperar el espigón de la Térmica para ocio, deporte y turismo.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-09",
+      "officialId": "P17-09",
+      "topic": "Litoral",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "• Ampliación de la temporada de playas y modernización\ndel mobiliario urbano en el Paseo Marítimo.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 18,
+          "text": "• Ampliación de la temporada de playas y modernización"
+        },
+        {
+          "page": 17,
+          "line": 19,
+          "text": "del mobiliario urbano en el Paseo Marítimo."
+        }
+      ],
+      "text": "Alargar la temporada de playas y modernizar el mobiliario del paseo marítimo.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-10",
+      "officialId": "P17-10",
+      "topic": "Litoral",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "• Puesta en marcha de la Semana Azul Escolar, para fomentar\nlos deportes náuticos entre los más jóvenes.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 20,
+          "text": "• Puesta en marcha de la Semana Azul Escolar, para fomentar"
+        },
+        {
+          "page": 17,
+          "line": 21,
+          "text": "los deportes náuticos entre los más jóvenes."
+        }
+      ],
+      "text": "Una Semana Azul Escolar dedicada a los deportes náuticos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-11",
+      "officialId": "P17-11",
+      "topic": "Litoral",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "• Habilitaremos una playa canina en Costacabana, que\ncontará con 3.500 metros cuadrados y 300 metros de costa.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 22,
+          "text": "• Habilitaremos una playa canina en Costacabana, que"
+        },
+        {
+          "page": 17,
+          "line": 23,
+          "text": "contará con 3.500 metros cuadrados y 300 metros de costa."
+        }
+      ],
+      "text": "Una playa para perros en Costacabana de 3.500 m² y 300 metros de litoral.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p17-12",
+      "officialId": "P17-12",
+      "topic": "Litoral",
+      "page": 17,
+      "endPage": 17,
+      "rawText": "• Unidad de criterio estético para los futuros chiringuitos\nen las playas urbanas, con el consenso de los empresarios.",
+      "fragments": [
+        {
+          "page": 17,
+          "line": 24,
+          "text": "• Unidad de criterio estético para los futuros chiringuitos"
+        },
+        {
+          "page": 17,
+          "line": 25,
+          "text": "en las playas urbanas, con el consenso de los empresarios."
+        }
+      ],
+      "text": "Consensuar con los empresarios una estética común para futuros chiringuitos urbanos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p19-01",
+      "officialId": "P19-01",
+      "topic": "Turismo",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Impulso a un parque acuático en la zona de Retamar-El Toyo.",
+      "fragments": [
+        {
+          "page": 19,
+          "line": 19,
+          "text": "Impulso a un parque acuático en la zona de Retamar-El Toyo."
+        }
+      ],
+      "text": "Impulsar un parque acuático en Retamar–El Toyo.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p19-02",
+      "officialId": "P19-02",
+      "topic": "Turismo",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "Creación de un Parque Azul de la vida submarina en nuestra\ncosta.",
+      "fragments": [
+        {
+          "page": 19,
+          "line": 20,
+          "text": "Creación de un Parque Azul de la vida submarina en nuestra"
+        },
+        {
+          "page": 19,
+          "line": 21,
+          "text": "costa."
+        }
+      ],
+      "text": "Crear un parque dedicado a la vida submarina del litoral.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p19-03",
+      "officialId": "P19-03",
+      "topic": "Turismo",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "• Apoyo y permanente voluntad de diálogo y acuerdo entre\ntodas aquellas administraciones públicas y entidades privadas\nque agilicen la mejora de las comunicaciones de Almería.",
+      "fragments": [
+        {
+          "page": 19,
+          "line": 22,
+          "text": "• Apoyo y permanente voluntad de diálogo y acuerdo entre"
+        },
+        {
+          "page": 19,
+          "line": 23,
+          "text": "todas aquellas administraciones públicas y entidades privadas"
+        },
+        {
+          "page": 19,
+          "line": 24,
+          "text": "que agilicen la mejora de las comunicaciones de Almería."
+        }
+      ],
+      "text": "Cooperación pública y privada para mejorar las comunicaciones de Almería.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p19-04",
+      "officialId": "P19-04",
+      "topic": "Turismo",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "• Concesión de terrenos para estudios de rodajes\ncinematográficos.",
+      "fragments": [
+        {
+          "page": 19,
+          "line": 25,
+          "text": "• Concesión de terrenos para estudios de rodajes"
+        },
+        {
+          "page": 19,
+          "line": 26,
+          "text": "cinematográficos."
+        }
+      ],
+      "text": "Conceder terrenos para estudios cinematográficos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p19-05",
+      "officialId": "P19-05",
+      "topic": "Turismo",
+      "page": 19,
+      "endPage": 19,
+      "rawText": "• Desarrollo del entorno de El Toyo como zona turística de\nreferencia en la capital.",
+      "fragments": [
+        {
+          "page": 19,
+          "line": 27,
+          "text": "• Desarrollo del entorno de El Toyo como zona turística de"
+        },
+        {
+          "page": 19,
+          "line": 28,
+          "text": "referencia en la capital."
+        }
+      ],
+      "text": "Desarrollar El Toyo como referencia turística de la capital.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p19-06",
+      "officialId": "P19-06",
+      "topic": "Turismo",
+      "page": 19,
+      "endPage": 20,
+      "rawText": "• Potenciación del Mercado Central como lugar preferente\npara el comercio, el turismo, la gastronomía de calidad y la\ncelebración de eventos.",
+      "fragments": [
+        {
+          "page": 19,
+          "line": 29,
+          "text": "• Potenciación del Mercado Central como lugar preferente"
+        },
+        {
+          "page": 20,
+          "line": 1,
+          "text": "para el comercio, el turismo, la gastronomía de calidad y la"
+        },
+        {
+          "page": 20,
+          "line": 2,
+          "text": "celebración de eventos."
+        }
+      ],
+      "text": "Potenciar el Mercado Central para comercio, turismo, gastronomía y eventos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-01",
+      "officialId": "P20-01",
+      "topic": "Turismo",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Fomentaremos los eventos y espacios para el sector de las\nFood Trucks.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 3,
+          "text": "• Fomentaremos los eventos y espacios para el sector de las"
+        },
+        {
+          "page": 20,
+          "line": 4,
+          "text": "Food Trucks."
+        }
+      ],
+      "text": "Promover espacios y eventos para negocios de comida en vehículos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-02",
+      "officialId": "P20-02",
+      "topic": "Turismo",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Ordenanza para el apoyo a los comercios centenarios y\nemblemáticos.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 5,
+          "text": "• Ordenanza para el apoyo a los comercios centenarios y"
+        },
+        {
+          "page": 20,
+          "line": 6,
+          "text": "emblemáticos."
+        }
+      ],
+      "text": "Una ordenanza de apoyo al comercio histórico y emblemático.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-03",
+      "officialId": "P20-03",
+      "topic": "Turismo",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Actualización de las musealizaciones de la Casa del Cine y\nel Museo de la Guitarra.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 7,
+          "text": "• Actualización de las musealizaciones de la Casa del Cine y"
+        },
+        {
+          "page": 20,
+          "line": 8,
+          "text": "el Museo de la Guitarra."
+        }
+      ],
+      "text": "Actualizar la presentación museística de Casa del Cine y Museo de la Guitarra.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-04",
+      "officialId": "P20-04",
+      "topic": "Turismo",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Crearemos la Mesa de la Conectividad para establecer\nsinergias comunes con los sectores productivos para mejorar\nlas conexiones y comunicaciones con España y Europa.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 9,
+          "text": "• Crearemos la Mesa de la Conectividad para establecer"
+        },
+        {
+          "page": 20,
+          "line": 10,
+          "text": "sinergias comunes con los sectores productivos para mejorar"
+        },
+        {
+          "page": 20,
+          "line": 11,
+          "text": "las conexiones y comunicaciones con España y Europa."
+        }
+      ],
+      "text": "Crear una mesa de conectividad con sectores productivos para las conexiones nacionales y europeas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-05",
+      "officialId": "P20-05",
+      "topic": "Turismo",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Ejecutaremos el proyecto de desarrollo digital y sostenible\ndel comercio turístico en el barrio de Cabo de Gata, con el\nobjetivo de mejorar el mercado y poner en valor de su producto\nlocal km0, caso del pescado o los productos de la “huerta\nde Europa”, así como en la formación de los vendedores, que\nrecibirán cursos para el dominio de varios idiomas, a través\nde las Ayudas para el Fortalecimiento de la Actividad\nComercial en Zonas Turísticas.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 12,
+          "text": "• Ejecutaremos el proyecto de desarrollo digital y sostenible"
+        },
+        {
+          "page": 20,
+          "line": 13,
+          "text": "del comercio turístico en el barrio de Cabo de Gata, con el"
+        },
+        {
+          "page": 20,
+          "line": 14,
+          "text": "objetivo de mejorar el mercado y poner en valor de su producto"
+        },
+        {
+          "page": 20,
+          "line": 15,
+          "text": "local km0, caso del pescado o los productos de la “huerta"
+        },
+        {
+          "page": 20,
+          "line": 16,
+          "text": "de Europa”, así como en la formación de los vendedores, que"
+        },
+        {
+          "page": 20,
+          "line": 17,
+          "text": "recibirán cursos para el dominio de varios idiomas, a través"
+        },
+        {
+          "page": 20,
+          "line": 18,
+          "text": "de las Ayudas para el Fortalecimiento de la Actividad"
+        },
+        {
+          "page": 20,
+          "line": 19,
+          "text": "Comercial en Zonas Turísticas."
+        }
+      ],
+      "text": "Ejecutar la mejora digital y sostenible del comercio turístico de Cabo de Gata, con mercado, producto local y formación en idiomas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-06",
+      "officialId": "P20-06",
+      "topic": "Comercio",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Impulsaremos medidas fiscales de apoyo para nuevos\ncomercios que se implanten en el centro.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 21,
+          "text": "• Impulsaremos medidas fiscales de apoyo para nuevos"
+        },
+        {
+          "page": 20,
+          "line": 22,
+          "text": "comercios que se implanten en el centro."
+        }
+      ],
+      "text": "Apoyo fiscal al nuevo comercio del centro.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-07",
+      "officialId": "P20-07",
+      "topic": "Comercio",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Campañas de ayuda y dinamización del consumo para el\nComercio de Proximidad.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 23,
+          "text": "• Campañas de ayuda y dinamización del consumo para el"
+        },
+        {
+          "page": 20,
+          "line": 24,
+          "text": "Comercio de Proximidad."
+        }
+      ],
+      "text": "Campañas para promover el consumo en comercios próximos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-08",
+      "officialId": "P20-08",
+      "topic": "Comercio",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Convocaremos un concurso de escaparatismo y\nembellecimiento exterior de los comercios de proximidad.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 25,
+          "text": "• Convocaremos un concurso de escaparatismo y"
+        },
+        {
+          "page": 20,
+          "line": 26,
+          "text": "embellecimiento exterior de los comercios de proximidad."
+        }
+      ],
+      "text": "Concurso de escaparates y mejora exterior de tiendas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p20-09",
+      "officialId": "P20-09",
+      "topic": "Comercio",
+      "page": 20,
+      "endPage": 20,
+      "rawText": "• Intermediaremos con los propietarios de locales vacíos\npara fomento del alquiler y activaremos el Programa\nEscapar-ARTE.",
+      "fragments": [
+        {
+          "page": 20,
+          "line": 27,
+          "text": "• Intermediaremos con los propietarios de locales vacíos"
+        },
+        {
+          "page": 20,
+          "line": 28,
+          "text": "para fomento del alquiler y activaremos el Programa"
+        },
+        {
+          "page": 20,
+          "line": 29,
+          "text": "Escapar-ARTE."
+        }
+      ],
+      "text": "Intermediar para alquilar locales vacíos y activar Escapar-ARTE.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p22-01",
+      "officialId": "P22-01",
+      "topic": "Deporte",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "Construcción de un complejo deportivo polivalente en el\nbarrio Costacabana.",
+      "fragments": [
+        {
+          "page": 22,
+          "line": 16,
+          "text": "Construcción de un complejo deportivo polivalente en el"
+        },
+        {
+          "page": 22,
+          "line": 17,
+          "text": "barrio Costacabana."
+        }
+      ],
+      "text": "Un complejo deportivo con varios usos en Costacabana.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p22-02",
+      "officialId": "P22-02",
+      "topic": "Deporte",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "• Habilitación de solares como pistas polideportivas de uso\nlibre en Costacabana, La Cañada, Loma Cabrera, La Goleta,\nSan Vicente o Bellavista, entre otros.",
+      "fragments": [
+        {
+          "page": 22,
+          "line": 18,
+          "text": "• Habilitación de solares como pistas polideportivas de uso"
+        },
+        {
+          "page": 22,
+          "line": 19,
+          "text": "libre en Costacabana, La Cañada, Loma Cabrera, La Goleta,"
+        },
+        {
+          "page": 22,
+          "line": 20,
+          "text": "San Vicente o Bellavista, entre otros."
+        }
+      ],
+      "text": "Pistas deportivas libres en solares de Costacabana, La Cañada, Loma Cabrera, La Goleta, San Vicente y Bellavista, entre otros.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p22-03",
+      "officialId": "P22-03",
+      "topic": "Deporte",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "• Remodelación y cambio de césped en el estadio Juan\nRojas.",
+      "fragments": [
+        {
+          "page": 22,
+          "line": 21,
+          "text": "• Remodelación y cambio de césped en el estadio Juan"
+        },
+        {
+          "page": 22,
+          "line": 22,
+          "text": "Rojas."
+        }
+      ],
+      "text": "Renovar el estadio Juan Rojas y su césped.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p22-04",
+      "officialId": "P22-04",
+      "topic": "Deporte",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "• Construcción de un centro de deportes de playa junto al\npabellón de Retamar-El Toyo.",
+      "fragments": [
+        {
+          "page": 22,
+          "line": 23,
+          "text": "• Construcción de un centro de deportes de playa junto al"
+        },
+        {
+          "page": 22,
+          "line": 24,
+          "text": "pabellón de Retamar-El Toyo."
+        }
+      ],
+      "text": "Un centro de deportes de playa junto al pabellón de Retamar–El Toyo.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p22-05",
+      "officialId": "P22-05",
+      "topic": "Deporte",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "• Proyecto físico/deportivo Parque Delta del Andarax.",
+      "fragments": [
+        {
+          "page": 22,
+          "line": 25,
+          "text": "• Proyecto físico/deportivo Parque Delta del Andarax."
+        }
+      ],
+      "text": "Proyecto de actividad física y deporte en el Parque Delta del Andarax.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p22-06",
+      "officialId": "P22-06",
+      "topic": "Deporte",
+      "page": 22,
+      "endPage": 22,
+      "rawText": "• Restauraremos y pondremos en valor la Red de Senderos\npatrimoniales con el Programa “Almería Camina por su\nHistoria”.",
+      "fragments": [
+        {
+          "page": 22,
+          "line": 26,
+          "text": "• Restauraremos y pondremos en valor la Red de Senderos"
+        },
+        {
+          "page": 22,
+          "line": 27,
+          "text": "patrimoniales con el Programa “Almería Camina por su"
+        },
+        {
+          "page": 22,
+          "line": 28,
+          "text": "Historia”."
+        }
+      ],
+      "text": "Recuperar senderos patrimoniales con Almería Camina por su Historia.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p23-01",
+      "officialId": "P23-01",
+      "topic": "Deporte",
+      "page": 23,
+      "endPage": 23,
+      "rawText": "• Plan de actualización de todos los campos deportivos\nmunicipales de fútbol.",
+      "fragments": [
+        {
+          "page": 23,
+          "line": 2,
+          "text": "• Plan de actualización de todos los campos deportivos"
+        },
+        {
+          "page": 23,
+          "line": 3,
+          "text": "municipales de fútbol."
+        }
+      ],
+      "text": "Actualizar todos los campos de fútbol municipales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p23-02",
+      "officialId": "P23-02",
+      "topic": "Deporte",
+      "page": 23,
+      "endPage": 23,
+      "rawText": "• Construcción de la Casa Club Alborán Golf.",
+      "fragments": [
+        {
+          "page": 23,
+          "line": 4,
+          "text": "• Construcción de la Casa Club Alborán Golf."
+        }
+      ],
+      "text": "Construir la casa club de Alborán Golf.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p23-03",
+      "officialId": "P23-03",
+      "topic": "Deporte",
+      "page": 23,
+      "endPage": 23,
+      "rawText": "• Ampliación a Fútbol-11 del campo de Fútbol-7 de El Toyo.",
+      "fragments": [
+        {
+          "page": 23,
+          "line": 5,
+          "text": "• Ampliación a Fútbol-11 del campo de Fútbol-7 de El Toyo."
+        }
+      ],
+      "text": "Ampliar el campo de El Toyo de fútbol 7 a fútbol 11.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p23-04",
+      "officialId": "P23-04",
+      "topic": "Deporte",
+      "page": 23,
+      "endPage": 23,
+      "rawText": "• Construcción de un campo de béisbol.",
+      "fragments": [
+        {
+          "page": 23,
+          "line": 6,
+          "text": "• Construcción de un campo de béisbol."
+        }
+      ],
+      "text": "Construir un campo de béisbol.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p25-01",
+      "officialId": "P25-01",
+      "topic": "Cultura y patrimonio",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "Proyección del folclore almeriense y de las figuras\nemergentes del flamenco local.",
+      "fragments": [
+        {
+          "page": 25,
+          "line": 13,
+          "text": "Proyección del folclore almeriense y de las figuras"
+        },
+        {
+          "page": 25,
+          "line": 14,
+          "text": "emergentes del flamenco local."
+        }
+      ],
+      "text": "Promover el folclore local y nuevos artistas flamencos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p25-02",
+      "officialId": "P25-02",
+      "topic": "Cultura y patrimonio",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "• Difusión y conservación del patrimonio cultural, el folclore\ny las tradiciones de Almería, organizando talleres y\njornadas de promoción.",
+      "fragments": [
+        {
+          "page": 25,
+          "line": 15,
+          "text": "• Difusión y conservación del patrimonio cultural, el folclore"
+        },
+        {
+          "page": 25,
+          "line": 16,
+          "text": "y las tradiciones de Almería, organizando talleres y"
+        },
+        {
+          "page": 25,
+          "line": 17,
+          "text": "jornadas de promoción."
+        }
+      ],
+      "text": "Talleres y jornadas para conservar y difundir patrimonio y tradiciones.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p25-03",
+      "officialId": "P25-03",
+      "topic": "Cultura y patrimonio",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "• Fomentaremos los Talleres en oficios y tradiciones para\ndifundir y conservar las artes tradicionales (vestimenta,\ncarpintería, bordado, imaginería, etc).",
+      "fragments": [
+        {
+          "page": 25,
+          "line": 18,
+          "text": "• Fomentaremos los Talleres en oficios y tradiciones para"
+        },
+        {
+          "page": 25,
+          "line": 19,
+          "text": "difundir y conservar las artes tradicionales (vestimenta,"
+        },
+        {
+          "page": 25,
+          "line": 20,
+          "text": "carpintería, bordado, imaginería, etc)."
+        }
+      ],
+      "text": "Talleres de oficios y artes tradicionales.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p25-04",
+      "officialId": "P25-04",
+      "topic": "Cultura y patrimonio",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "• Programa “Esculturas en la calle”, con rutas específicas\nque cuenten la historia de nuestra ciudad, su relación con\nel cine o distingan el recuerdo de figuras propias y\nemblemáticas de nuestra ciudad.",
+      "fragments": [
+        {
+          "page": 25,
+          "line": 21,
+          "text": "• Programa “Esculturas en la calle”, con rutas específicas"
+        },
+        {
+          "page": 25,
+          "line": 22,
+          "text": "que cuenten la historia de nuestra ciudad, su relación con"
+        },
+        {
+          "page": 25,
+          "line": 23,
+          "text": "el cine o distingan el recuerdo de figuras propias y"
+        },
+        {
+          "page": 25,
+          "line": 24,
+          "text": "emblemáticas de nuestra ciudad."
+        }
+      ],
+      "text": "Rutas de esculturas vinculadas a la historia, el cine y figuras de la ciudad.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p25-05",
+      "officialId": "P25-05",
+      "topic": "Cultura y patrimonio",
+      "page": 25,
+      "endPage": 25,
+      "rawText": "• Difusión de la obra de los creadores almerienses, apoyando\nla moda, el diseño, la música, la fotografía, la pintura y el\nresto de disciplinas artísticas.",
+      "fragments": [
+        {
+          "page": 25,
+          "line": 25,
+          "text": "• Difusión de la obra de los creadores almerienses, apoyando"
+        },
+        {
+          "page": 25,
+          "line": 26,
+          "text": "la moda, el diseño, la música, la fotografía, la pintura y el"
+        },
+        {
+          "page": 25,
+          "line": 27,
+          "text": "resto de disciplinas artísticas."
+        }
+      ],
+      "text": "Apoyar y difundir a creadores almerienses en distintas disciplinas.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-01",
+      "officialId": "P26-01",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "Exigiremos la conexión directa de la A7 al Puerto para\ndescongestionar de tráfico de vehículos pesados a la Vía\nParque.",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 2,
+          "text": "Exigiremos la conexión directa de la A7 al Puerto para"
+        },
+        {
+          "page": 26,
+          "line": 3,
+          "text": "descongestionar de tráfico de vehículos pesados a la Vía"
+        },
+        {
+          "page": 26,
+          "line": 4,
+          "text": "Parque."
+        }
+      ],
+      "text": "Reclamar una conexión directa entre la A7 y el puerto para reducir el tráfico pesado en Vía Parque.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-02",
+      "officialId": "P26-02",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "• Actualizaremos el Plan General de Ordenación Urbana a\ntravés de una mesas de propuestas y dándole prioridad al\nsuelo industrial y agrícola para generar economía y empleo.",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 5,
+          "text": "• Actualizaremos el Plan General de Ordenación Urbana a"
+        },
+        {
+          "page": 26,
+          "line": 6,
+          "text": "través de una mesas de propuestas y dándole prioridad al"
+        },
+        {
+          "page": 26,
+          "line": 7,
+          "text": "suelo industrial y agrícola para generar economía y empleo."
+        }
+      ],
+      "text": "Actualizar el planeamiento urbano con mesas de propuestas y prioridad industrial y agrícola.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-03",
+      "officialId": "P26-03",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "• Diseñaremos con los vecinos el Plan de Urbanización\nEstética del Casco Histórico y de Cabo de Gata.",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 8,
+          "text": "• Diseñaremos con los vecinos el Plan de Urbanización"
+        },
+        {
+          "page": 26,
+          "line": 9,
+          "text": "Estética del Casco Histórico y de Cabo de Gata."
+        }
+      ],
+      "text": "Diseñar con residentes la mejora urbana del centro histórico y Cabo de Gata.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-04",
+      "officialId": "P26-04",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "• Organizaremos Congresos de sectores específicos como\nla Gastronomía y la Economía Azul en colaboración con\notras administraciones públicas (Vestial y Sun&Blue).",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 10,
+          "text": "• Organizaremos Congresos de sectores específicos como"
+        },
+        {
+          "page": 26,
+          "line": 11,
+          "text": "la Gastronomía y la Economía Azul en colaboración con"
+        },
+        {
+          "page": 26,
+          "line": 12,
+          "text": "otras administraciones públicas (Vestial y Sun&Blue)."
+        }
+      ],
+      "text": "Congresos gastronómicos y de economía azul, como Vestial y Sun&Blue, con otras administraciones.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-05",
+      "officialId": "P26-05",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "• Proyecto de remodelación integral de las calles del barrio\nde la Plaza de Toros y entorno.",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 13,
+          "text": "• Proyecto de remodelación integral de las calles del barrio"
+        },
+        {
+          "page": 26,
+          "line": 14,
+          "text": "de la Plaza de Toros y entorno."
+        }
+      ],
+      "text": "Remodelar las calles de Plaza de Toros y su entorno.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-06",
+      "officialId": "P26-06",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "• Rehabilitación integral de la calle Granada y entorno.",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 15,
+          "text": "• Rehabilitación integral de la calle Granada y entorno."
+        }
+      ],
+      "text": "Rehabilitar la calle Granada y su entorno.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-07",
+      "officialId": "P26-07",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "• Transformaremos completamente el Parque Infantil del 18\nde Julio.",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 16,
+          "text": "• Transformaremos completamente el Parque Infantil del 18"
+        },
+        {
+          "page": 26,
+          "line": 17,
+          "text": "de Julio."
+        }
+      ],
+      "text": "Transformar el parque infantil del 18 de Julio.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p26-08",
+      "officialId": "P26-08",
+      "topic": "Urbanismo y capitalidad",
+      "page": 26,
+      "endPage": 26,
+      "rawText": "• Rehabilitación del Preventorio y del CAMA, como edificio\nsostenible y eficiente y su puesta en valor como espacio\nmuseístico, incorporando las actuales dependencias de\nAlcaldía a las instalaciones del actual museo, a través del\nPIREP.",
+      "fragments": [
+        {
+          "page": 26,
+          "line": 18,
+          "text": "• Rehabilitación del Preventorio y del CAMA, como edificio"
+        },
+        {
+          "page": 26,
+          "line": 19,
+          "text": "sostenible y eficiente y su puesta en valor como espacio"
+        },
+        {
+          "page": 26,
+          "line": 20,
+          "text": "museístico, incorporando las actuales dependencias de"
+        },
+        {
+          "page": 26,
+          "line": 21,
+          "text": "Alcaldía a las instalaciones del actual museo, a través del"
+        },
+        {
+          "page": 26,
+          "line": 22,
+          "text": "PIREP."
+        }
+      ],
+      "text": "Rehabilitar Preventorio y CAMA para eficiencia energética y museo, incorporando las dependencias de Alcaldía mediante PIREP.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p28-01",
+      "officialId": "P28-01",
+      "topic": "Formación y empleo juvenil",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "Crearemos salas de estudio en locales habilitados a tal fin\nen la periferia de la ciudad.",
+      "fragments": [
+        {
+          "page": 28,
+          "line": 14,
+          "text": "Crearemos salas de estudio en locales habilitados a tal fin"
+        },
+        {
+          "page": 28,
+          "line": 15,
+          "text": "en la periferia de la ciudad."
+        }
+      ],
+      "text": "Crear salas de estudio en la periferia.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p28-02",
+      "officialId": "P28-02",
+      "topic": "Formación y empleo juvenil",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "• Llevaremos a cabo las actuaciones previstas en el Plan\nde Empleo PROTA.",
+      "fragments": [
+        {
+          "page": 28,
+          "line": 16,
+          "text": "• Llevaremos a cabo las actuaciones previstas en el Plan"
+        },
+        {
+          "page": 28,
+          "line": 17,
+          "text": "de Empleo PROTA."
+        }
+      ],
+      "text": "Ejecutar las actuaciones del plan de empleo PROTA.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p28-03",
+      "officialId": "P28-03",
+      "topic": "Formación y empleo juvenil",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "• Celebraremos la Feria Anual de Empleo en colaboración\ncon la Universidad.",
+      "fragments": [
+        {
+          "page": 28,
+          "line": 18,
+          "text": "• Celebraremos la Feria Anual de Empleo en colaboración"
+        },
+        {
+          "page": 28,
+          "line": 19,
+          "text": "con la Universidad."
+        }
+      ],
+      "text": "Feria de empleo anual con la Universidad.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p28-04",
+      "officialId": "P28-04",
+      "topic": "Formación y empleo juvenil",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "• Prestaremos especial atención a los jóvenes con\ncapacidades diferentes, para los que realizaremos talleres\nformativos en el Espacio ALMA.",
+      "fragments": [
+        {
+          "page": 28,
+          "line": 20,
+          "text": "• Prestaremos especial atención a los jóvenes con"
+        },
+        {
+          "page": 28,
+          "line": 21,
+          "text": "capacidades diferentes, para los que realizaremos talleres"
+        },
+        {
+          "page": 28,
+          "line": 22,
+          "text": "formativos en el Espacio ALMA."
+        }
+      ],
+      "text": "Formación en ALMA para jóvenes con discapacidad.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p28-05",
+      "officialId": "P28-05",
+      "topic": "Formación y empleo juvenil",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "• Iniciaremos el programa de Coaching Juvenil.",
+      "fragments": [
+        {
+          "page": 28,
+          "line": 23,
+          "text": "• Iniciaremos el programa de Coaching Juvenil."
+        }
+      ],
+      "text": "Un programa de acompañamiento y orientación juvenil.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p28-06",
+      "officialId": "P28-06",
+      "topic": "Formación y empleo juvenil",
+      "page": 28,
+      "endPage": 28,
+      "rawText": "• Activaremos el certamen “Almería Joven y Emprende”,\nde distintas modalidades artísticas, con premios en\nmetálico para incentivar la creatividad.",
+      "fragments": [
+        {
+          "page": 28,
+          "line": 24,
+          "text": "• Activaremos el certamen “Almería Joven y Emprende”,"
+        },
+        {
+          "page": 28,
+          "line": 25,
+          "text": "de distintas modalidades artísticas, con premios en"
+        },
+        {
+          "page": 28,
+          "line": 26,
+          "text": "metálico para incentivar la creatividad."
+        }
+      ],
+      "text": "Certamen artístico Almería Joven y Emprende con premios económicos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-01",
+      "officialId": "P29-01",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "Ampliaremos el recinto de conciertos para ampliar el aforo\nde los conciertos y posibilitar la actuación de solistas y\ngrupos de gran formato escénico.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 3,
+          "text": "Ampliaremos el recinto de conciertos para ampliar el aforo"
+        },
+        {
+          "page": 29,
+          "line": 4,
+          "text": "de los conciertos y posibilitar la actuación de solistas y"
+        },
+        {
+          "page": 29,
+          "line": 5,
+          "text": "grupos de gran formato escénico."
+        }
+      ],
+      "text": "Ampliar aforo y capacidad escénica del recinto de conciertos.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-02",
+      "officialId": "P29-02",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• Programa cultural de celebración del Solsticio de Verano\ncada año con actuaciones, conciertos e iniciativas\ngastronómicas.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 6,
+          "text": "• Programa cultural de celebración del Solsticio de Verano"
+        },
+        {
+          "page": 29,
+          "line": 7,
+          "text": "cada año con actuaciones, conciertos e iniciativas"
+        },
+        {
+          "page": 29,
+          "line": 8,
+          "text": "gastronómicas."
+        }
+      ],
+      "text": "Celebración cultural anual del solsticio de verano con conciertos y gastronomía.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-03",
+      "officialId": "P29-03",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• Realizaremos el “Talento Fest”, para explorar y descubrir\nel talento artístico en los barrios de la capital.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 9,
+          "text": "• Realizaremos el “Talento Fest”, para explorar y descubrir"
+        },
+        {
+          "page": 29,
+          "line": 10,
+          "text": "el talento artístico en los barrios de la capital."
+        }
+      ],
+      "text": "Talento Fest para descubrir artistas en los barrios.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-04",
+      "officialId": "P29-04",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• Organizaremos los I Premios de la Cultura Almeriense.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 11,
+          "text": "• Organizaremos los I Premios de la Cultura Almeriense."
+        }
+      ],
+      "text": "Primera edición de premios de la cultura almeriense.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-05",
+      "officialId": "P29-05",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• Comenzaremos el programa “Almería con Arte” para\ncambiar las pintadas que emborronan por graffitis que\nembellecen.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 12,
+          "text": "• Comenzaremos el programa “Almería con Arte” para"
+        },
+        {
+          "page": 29,
+          "line": 13,
+          "text": "cambiar las pintadas que emborronan por graffitis que"
+        },
+        {
+          "page": 29,
+          "line": 14,
+          "text": "embellecen."
+        }
+      ],
+      "text": "Sustituir pintadas por arte urbano mediante Almería con Arte.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-06",
+      "officialId": "P29-06",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• Activaremos el Banco de Inciativas, para que los jóvenes\npuedan trasladarnos sus propuestas e ideas de cara a\nuna mejor dinamización de su realidad en Almería.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 15,
+          "text": "• Activaremos el Banco de Inciativas, para que los jóvenes"
+        },
+        {
+          "page": 29,
+          "line": 16,
+          "text": "puedan trasladarnos sus propuestas e ideas de cara a"
+        },
+        {
+          "page": 29,
+          "line": 17,
+          "text": "una mejor dinamización de su realidad en Almería."
+        }
+      ],
+      "text": "Un banco de propuestas e iniciativas juveniles.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-07",
+      "officialId": "P29-07",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• Realizaremos una Feria de la Cultura Científica en Almería.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 18,
+          "text": "• Realizaremos una Feria de la Cultura Científica en Almería."
+        }
+      ],
+      "text": "Una feria de cultura científica.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-08",
+      "officialId": "P29-08",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• El Programa de Artistas Urbanos llenará de arte y\ncreatividad joven el Parque Nicolás Salmerón.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 19,
+          "text": "• El Programa de Artistas Urbanos llenará de arte y"
+        },
+        {
+          "page": 29,
+          "line": 20,
+          "text": "creatividad joven el Parque Nicolás Salmerón."
+        }
+      ],
+      "text": "Programa de artistas urbanos en el Parque Nicolás Salmerón.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    },
+    {
+      "id": "m-04013-p29-09",
+      "officialId": "P29-09",
+      "topic": "Talento joven",
+      "page": 29,
+      "endPage": 29,
+      "rawText": "• Estrenaremos un programa de divulgación del arte\nflamenco almeriense en Interalmería TV.",
+      "fragments": [
+        {
+          "page": 29,
+          "line": 21,
+          "text": "• Estrenaremos un programa de divulgación del arte"
+        },
+        {
+          "page": 29,
+          "line": 22,
+          "text": "flamenco almeriense en Interalmería TV."
+        }
+      ],
+      "text": "Divulgación del flamenco almeriense en Interalmería TV.",
+      "sourceId": "almeria-programme",
+      "sourceNote": "Resumen editorial. Código de página y apartado creado para esta revisión; no es un número oficial."
+    }
+  ],
+  "contextBlocks": [
+    {
+      "id": "m-04013-context-1",
+      "page": 3,
+      "endPage": 3,
+      "topic": "Presentación",
+      "text": "La candidatura plantea un proyecto participativo centrado en las personas y en preparar la ciudad para el futuro.",
+      "fragments": [
+        {
+          "page": 3,
+          "line": 1,
+          "text": "Mejorar Almería es un objetivo que compartimos con todos los"
+        },
+        {
+          "page": 3,
+          "line": 2,
+          "text": "almerienses. Para conseguirlo, el Partido Popular quiere reunir"
+        },
+        {
+          "page": 3,
+          "line": 3,
+          "text": "y potenciar el talento de la sociedad almeriense en torno a este"
+        },
+        {
+          "page": 3,
+          "line": 4,
+          "text": "proyecto integrador, positivo y dinámico, que está centrado en las"
+        },
+        {
+          "page": 3,
+          "line": 5,
+          "text": "personas y que quiere incluir todas las voces y las ideas capaces de"
+        },
+        {
+          "page": 3,
+          "line": 6,
+          "text": "seguir preparando a nuestra ciudad para afrontar con garantías los"
+        },
+        {
+          "page": 3,
+          "line": 7,
+          "text": "retos del futuro. Por eso queremos dar gracias a todos los que nos"
+        },
+        {
+          "page": 3,
+          "line": 8,
+          "text": "habéis hecho llegar propuestas e iniciativas a través de los diferentes"
+        },
+        {
+          "page": 3,
+          "line": 9,
+          "text": "canales de participación."
+        },
+        {
+          "page": 3,
+          "line": 10,
+          "text": "Lo que puedes leer ahora es nuestro compromiso con Almería."
+        },
+        {
+          "page": 3,
+          "line": 11,
+          "text": "Mi compromiso contigo."
+        }
+      ]
+    },
+    {
+      "id": "m-04013-context-2",
+      "page": 5,
+      "endPage": 5,
+      "topic": "Personas",
+      "text": "La introducción sitúa la inclusión, la igualdad y la atención a personas vulnerables como prioridades municipales.",
+      "fragments": [
+        {
+          "page": 5,
+          "line": 4,
+          "text": "La cercanía no se explica; se demuestra. Por eso"
+        },
+        {
+          "page": 5,
+          "line": 5,
+          "text": "las personas, desde los mayores a la infancia,"
+        },
+        {
+          "page": 5,
+          "line": 6,
+          "text": "son el centro de nuestra atención en las áreas de"
+        },
+        {
+          "page": 5,
+          "line": 7,
+          "text": "gestión del Ayuntamiento. Trabajar en igualdad"
+        },
+        {
+          "page": 5,
+          "line": 8,
+          "text": "desde lo público para facilitar así la inclusión de"
+        },
+        {
+          "page": 5,
+          "line": 9,
+          "text": "las personas, es el mejor modo de generar nuevas"
+        },
+        {
+          "page": 5,
+          "line": 10,
+          "text": "oportunidades de integración y participación a"
+        },
+        {
+          "page": 5,
+          "line": 11,
+          "text": "todos los modelos de familia. Nos comprometemos"
+        },
+        {
+          "page": 5,
+          "line": 12,
+          "text": "a que el objetivo prioritario de la política municipal"
+        },
+        {
+          "page": 5,
+          "line": 13,
+          "text": "sea seguir al lado de todos, especialmente de los"
+        },
+        {
+          "page": 5,
+          "line": 14,
+          "text": "que más lo necesiten."
+        }
+      ]
+    },
+    {
+      "id": "m-04013-context-3",
+      "page": 10,
+      "endPage": 10,
+      "topic": "Sostenibilidad",
+      "text": "Se propone mejorar movilidad, reciclaje y eficiencia energética para reducir emisiones y mejorar la calidad de vida.",
+      "fragments": [
+        {
+          "page": 10,
+          "line": 4,
+          "text": "El hilo conductor del futuro es la sostenibilidad."
+        },
+        {
+          "page": 10,
+          "line": 5,
+          "text": "Por eso nos comprometemos a seguir haciendo"
+        },
+        {
+          "page": 10,
+          "line": 6,
+          "text": "de Almería una ciudad orientada a prácticas y"
+        },
+        {
+          "page": 10,
+          "line": 7,
+          "text": "hábitos de movilidad sostenible, de reciclaje y"
+        },
+        {
+          "page": 10,
+          "line": 8,
+          "text": "eficiencia energética. Con la progresiva reducción"
+        },
+        {
+          "page": 10,
+          "line": 9,
+          "text": "de emisiones no sólo estaremos cuidando de"
+        },
+        {
+          "page": 10,
+          "line": 10,
+          "text": "nuestra ciudad, sino que disfrutaremos de una"
+        },
+        {
+          "page": 10,
+          "line": 11,
+          "text": "mejor calidad de vida mientras aseguramos el"
+        },
+        {
+          "page": 10,
+          "line": 12,
+          "text": "escenario de un futuro más limpio."
+        }
+      ]
+    },
+    {
+      "id": "m-04013-context-4",
+      "page": 14,
+      "endPage": 14,
+      "topic": "Barrios",
+      "text": "Se anuncia apoyo a todos los barrios, al centro histórico, al litoral y a proyectos pendientes tras la pandemia.",
+      "fragments": [
+        {
+          "page": 14,
+          "line": 4,
+          "text": "En Almería, cada barrio ha escrito un relato paralelo de"
+        },
+        {
+          "page": 14,
+          "line": 5,
+          "text": "crecimiento y expansión que ha dado forma histórica"
+        },
+        {
+          "page": 14,
+          "line": 6,
+          "text": "y social a nuestra realidad urbana. Por eso nos"
+        },
+        {
+          "page": 14,
+          "line": 7,
+          "text": "comprometemos a que todos los barrios sigan estando"
+        },
+        {
+          "page": 14,
+          "line": 8,
+          "text": "en el centro de nuestra historia y a seguir activando"
+        },
+        {
+          "page": 14,
+          "line": 9,
+          "text": "en ellos ideas que hacen ciudad. Y ahora que Almería"
+        },
+        {
+          "page": 14,
+          "line": 10,
+          "text": "vuelve a mirar al mar y estamos reimpulsando"
+        },
+        {
+          "page": 14,
+          "line": 11,
+          "text": "proyectos aplazados por la pandemia, seguiremos"
+        },
+        {
+          "page": 14,
+          "line": 12,
+          "text": "trabajando para que el respaldo y el impulso del"
+        },
+        {
+          "page": 14,
+          "line": 13,
+          "text": "Ayuntamiento llegue por igual a todos los rincones y"
+        },
+        {
+          "page": 14,
+          "line": 14,
+          "text": "asociaciones de nuestra ciudad."
+        }
+      ]
+    },
+    {
+      "id": "m-04013-context-5",
+      "page": 19,
+      "endPage": 19,
+      "topic": "Turismo y comercio",
+      "text": "La candidatura busca turismo durante todo el año y apoyo al comercio local como parte de la identidad y la economía urbana.",
+      "fragments": [
+        {
+          "page": 19,
+          "line": 5,
+          "text": "Almería debe seguir potenciando su extraordinaria"
+        },
+        {
+          "page": 19,
+          "line": 6,
+          "text": "lista de recursos medioambientales, históricos,"
+        },
+        {
+          "page": 19,
+          "line": 7,
+          "text": "patrimoniales y comerciales como medio de"
+        },
+        {
+          "page": 19,
+          "line": 8,
+          "text": "atraer un turismo de calidad a lo largo de todo el"
+        },
+        {
+          "page": 19,
+          "line": 9,
+          "text": "año. Porque en Almería, el turismo es capital. Y"
+        },
+        {
+          "page": 19,
+          "line": 10,
+          "text": "porque buena parte de nuestro atractivo turístico es"
+        },
+        {
+          "page": 19,
+          "line": 11,
+          "text": "nuestra red de establecimientos comerciales, nos"
+        },
+        {
+          "page": 19,
+          "line": 12,
+          "text": "sentimos muy próximos al comercio de cercanía"
+        },
+        {
+          "page": 19,
+          "line": 13,
+          "text": "que, además de ofrecer productos y servicios de"
+        },
+        {
+          "page": 19,
+          "line": 14,
+          "text": "gran calidad, ha sabido convertirse en una seña de"
+        },
+        {
+          "page": 19,
+          "line": 15,
+          "text": "identidad de nuestra ciudad. Nos comprometemos"
+        },
+        {
+          "page": 19,
+          "line": 16,
+          "text": "a seguir facilitando la labor diaria de las familias,"
+        },
+        {
+          "page": 19,
+          "line": 17,
+          "text": "empresas y autónomos que se dedican al comercio"
+        },
+        {
+          "page": 19,
+          "line": 18,
+          "text": "en Almería."
+        }
+      ]
+    },
+    {
+      "id": "m-04013-context-6",
+      "page": 22,
+      "endPage": 22,
+      "topic": "Deporte",
+      "text": "Se plantea mantener instalaciones y facilitar el deporte en todos los barrios y para distintas edades y colectivos.",
+      "fragments": [
+        {
+          "page": 22,
+          "line": 4,
+          "text": "Las ciudades modernas tienen en el deporte el mayor"
+        },
+        {
+          "page": 22,
+          "line": 5,
+          "text": "factor de dinamización social. Los almerienses"
+        },
+        {
+          "page": 22,
+          "line": 6,
+          "text": "hemos sabido incorporar a nuestros hábitos"
+        },
+        {
+          "page": 22,
+          "line": 7,
+          "text": "cotidianos actividades que nos permiten disfrutar"
+        },
+        {
+          "page": 22,
+          "line": 8,
+          "text": "de Almería al aire libre, ganando de ese modo en"
+        },
+        {
+          "page": 22,
+          "line": 9,
+          "text": "salud y calidad de vida. Nos comprometemos a que"
+        },
+        {
+          "page": 22,
+          "line": 10,
+          "text": "el Ayuntamiento siga ofreciendo y gestionando una"
+        },
+        {
+          "page": 22,
+          "line": 11,
+          "text": "amplia red de espacios e instalaciones adecuadas"
+        },
+        {
+          "page": 22,
+          "line": 12,
+          "text": "para todos los deportes, además de fomentar su"
+        },
+        {
+          "page": 22,
+          "line": 13,
+          "text": "práctica en todos los barrios y entre todos los"
+        },
+        {
+          "page": 22,
+          "line": 14,
+          "text": "colectivos, con opciones siempre adecuadas a la"
+        },
+        {
+          "page": 22,
+          "line": 15,
+          "text": "edad de cada deportista."
+        }
+      ]
+    },
+    {
+      "id": "m-04013-context-7",
+      "page": 25,
+      "endPage": 25,
+      "topic": "Cultura",
+      "text": "Se propone conservar el patrimonio y promover una cultura local vinculada a su historia y al futuro de la ciudad.",
+      "fragments": [
+        {
+          "page": 25,
+          "line": 4,
+          "text": "Almería es una gran ciudad que cuenta además"
+        },
+        {
+          "page": 25,
+          "line": 5,
+          "text": "con un extraordinario patrimonio cultural. Nosotros"
+        },
+        {
+          "page": 25,
+          "line": 6,
+          "text": "estamos muy orgullosos de ser y sentirnos"
+        },
+        {
+          "page": 25,
+          "line": 7,
+          "text": "almerienses. Y por eso nos comprometemos a"
+        },
+        {
+          "page": 25,
+          "line": 8,
+          "text": "seguir fomentando una cultura con sello propio,"
+        },
+        {
+          "page": 25,
+          "line": 9,
+          "text": "que sea plenamente consciente de la hondura de sus"
+        },
+        {
+          "page": 25,
+          "line": 10,
+          "text": "raíces y que quiera conservar el valor de la Almería"
+        },
+        {
+          "page": 25,
+          "line": 11,
+          "text": "que fue, de cara al tiempo de transformaciones y"
+        },
+        {
+          "page": 25,
+          "line": 12,
+          "text": "cambios que nos trae la Almería que viene."
+        }
+      ]
+    },
+    {
+      "id": "m-04013-context-8",
+      "page": 28,
+      "endPage": 28,
+      "topic": "Juventud",
+      "text": "La introducción plantea facilitar formación, empleo, cultura y oportunidades para los jóvenes.",
+      "fragments": [
+        {
+          "page": 28,
+          "line": 3,
+          "text": "Los jóvenes son el futuro. Generar condiciones que"
+        },
+        {
+          "page": 28,
+          "line": 4,
+          "text": "ayuden a preparar su espacio en la sociedad es"
+        },
+        {
+          "page": 28,
+          "line": 5,
+          "text": "una prioridad básica para el Ayuntamiento. Por eso"
+        },
+        {
+          "page": 28,
+          "line": 6,
+          "text": "nos comprometemos a seguir facilitando desde el"
+        },
+        {
+          "page": 28,
+          "line": 7,
+          "text": "Ayuntamiento los marcos jurídicos y económicos"
+        },
+        {
+          "page": 28,
+          "line": 8,
+          "text": "necesarios para mejorar su formación y empleo,"
+        },
+        {
+          "page": 28,
+          "line": 9,
+          "text": "sin descuidar la valores adquiridos a través del"
+        },
+        {
+          "page": 28,
+          "line": 10,
+          "text": "aprendizaje, porque nos importan la cultura y el"
+        },
+        {
+          "page": 28,
+          "line": 11,
+          "text": "talento, y porque queremos dar a esa generación"
+        },
+        {
+          "page": 28,
+          "line": 12,
+          "text": "de almerienses todo el espacio y la importancia"
+        },
+        {
+          "page": 28,
+          "line": 13,
+          "text": "que se está ganando."
+        }
+      ]
+    }
+  ]
+}
