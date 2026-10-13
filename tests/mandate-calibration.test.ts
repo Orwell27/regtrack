@@ -16,11 +16,11 @@ describe("calibración editorial y límites de la evidencia", () => {
     expect(data.calibration.selection.selectedCount).toBe(46);
     expect(calibration.audits).toHaveLength(46);
     expect(new Set(calibration.audits.map(audit => audit.commitmentId)).size).toBe(46);
-    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(104);
+    expect(data.commitments.flatMap(item => item.quality.components)).toHaveLength(106);
     expect(collection.commitments.filter(item => item.assessmentHistory.length)).toHaveLength(30);
     for (const item of collection.commitments.filter(item => item.assessmentHistory.length)) {
-      const previous = item.assessmentHistory[0];
-      expect(previous.revision).toBe("2026-10-10-v1");
+      expect(item.assessmentHistory[0].revision).toBe("2026-10-10-v1");
+      const previous = item.assessmentHistory.at(-1)!;
       const audit = calibration.audits.find(audit => audit.commitmentId === item.id)!;
       if (audit.correction) {
         expect(audit.correction.before, item.id).toEqual(previous.assessment);
@@ -31,7 +31,10 @@ describe("calibración editorial y límites de la evidencia", () => {
         }
         expect(item.assessment.evidenceSourceIds).toEqual(expect.arrayContaining(previous.assessment.evidenceSourceIds));
       }
-      expect(item.assessment.verdict, item.id).toBe(previous.assessment.verdict);
+      if (item.assessment.verdict !== previous.assessment.verdict) {
+        expect(audit.correction?.kind).toBe("new_evidence");
+        expect(item.assessment.evidenceSourceIds.some(id => !previous.assessment.evidenceSourceIds.includes(id))).toBe(true);
+      }
     }
   });
 
@@ -90,7 +93,7 @@ describe("calibración editorial y límites de la evidencia", () => {
     expect(find("c-139").assessment.observed).toMatch(/ocho años|8 años/);
     expect(find("c-87").assessment.verdict).toBe("inconclusive");
     expect(calibration.audits.filter(audit => audit.correction?.kind === "error").map(audit => audit.commitmentId)).toEqual(["c-78"]);
-    expect(calibration.audits.filter(audit => audit.correction)).toHaveLength(8);
+    expect(calibration.audits.filter(audit => audit.correction)).toHaveLength(10);
   });
 
   it("la consulta conserva límites de revisión y citas al acotar la respuesta", () => {

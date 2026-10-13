@@ -4,9 +4,9 @@ import { getMandateAccountability } from "@/lib/mandate/accountability";
 import { answerMandate, boundMandateAnswer, mandateAnswerStories } from "@/lib/mandate/answer";
 
 describe("honestidad y cobertura documental separadas", () => {
-  it("no convierte las treinta y ocho revisiones en cumplimiento ni honestidad", () => {
+  it("no convierte las cuarenta y seis revisiones en cumplimiento ni honestidad", () => {
     const summary = getMandateAccountability(getMandateSnapshot().commitments);
-    expect(summary).toEqual({ total: 46, documented: 33, partial: 13, pending: 0, contrasted: 46, coveragePercent: 100, fulfilmentPercent: null });
+    expect(summary).toEqual({ total: 46, documented: 31, partial: 15, pending: 0, contrasted: 46, coveragePercent: 100, fulfilmentPercent: null });
   });
   it("ni una selección totalmente contrastada permite deducir cumplimiento", () => {
     const reviewed = getMandateSnapshot().commitments.filter((item) => item.review.status !== "pending");

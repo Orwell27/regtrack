@@ -13,7 +13,8 @@ describe("revisión de las 46 promesas y efecto práctico", () => {
     for (const item of collection.commitments) {
       if (item.review.history.length) expect(item.review.history[0].asOf).toBe("2026-10-07");
       const addedOnOct11 = ["c-52", "c-69", "c-104", "c-110", "c-127", "c-163", "c-177", "c-184"].includes(item.id);
-      expect(item.review.asOf).toBe(addedOnOct11 ? "2026-10-11" : "2026-10-10");
+      const updatedOnOct13 = ["c-136", "c-143"].includes(item.id);
+      expect(item.review.asOf).toBe(updatedOnOct13 ? "2026-10-13" : addedOnOct11 ? "2026-10-11" : "2026-10-10");
       expect(item.review.status).not.toBe("sin_verificar");
       expect(item.assessment.evidenceSourceIds.length).toBeGreaterThan(0);
       for (const id of item.assessment.evidenceSourceIds) {

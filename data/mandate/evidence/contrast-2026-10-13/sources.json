@@ -1,0 +1,47 @@
+[
+  {
+    "id": "aeat-resultados-2025",
+    "url": "https://www3.agenciatributaria.gob.es/static_files/Sede/Actualidad/Notas_prensa/2026/Presentacion_Resultados_AEAT_2025.pdf",
+    "downloadUrl": "https://www3.agenciatributaria.gob.es/static_files/Sede/Actualidad/Notas_prensa/2026/Presentacion_Resultados_AEAT_2025.pdf",
+    "title": "Principales resultados AEAT 2025",
+    "organisation": "Agencia Estatal de Administración Tributaria",
+    "publishedAt": "2026-07-02",
+    "publicationDateBasis": "Fecha de la página oficial que publica el informe; el PDF identifica mes y ejercicio",
+    "capturedAt": "2026-10-13T12:12:07.930Z",
+    "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/aeat-resultados-2025.pdf",
+    "bytes": 493492,
+    "sha256": "bd1108a144a5a17da13a407636ceaf1e5094240b10ca387ea6da64b1b7fbaa0c",
+    "captureType": "bytes_originales",
+    "kind": "declaracion_gobierno"
+  },
+  {
+    "id": "sepe-prestaciones-agosto-2026",
+    "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Documents/2026/021026-paro-registrado-septiembre-9.pdf",
+    "downloadUrl": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Documents/2026/021026-paro-registrado-septiembre-9.pdf",
+    "title": "Registros del SEPE, septiembre de 2026: prestaciones de agosto",
+    "organisation": "Servicio Público de Empleo Estatal; copia publicada por La Moncloa",
+    "publishedAt": "2026-10-02",
+    "publicationDateBasis": "Fecha de la página oficial que publica el informe; el PDF identifica mes y ejercicio",
+    "capturedAt": "2026-10-13T12:12:14.358Z",
+    "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/sepe-septiembre-2026.pdf",
+    "bytes": 2947611,
+    "sha256": "7c3950d0c6b0b5d2c6e762a51cff8852f59ea6d2ef3bd82038bcc00537b2cf2b",
+    "captureType": "bytes_originales",
+    "kind": "fuente_primaria"
+  },
+  {
+    "id": "sepe-prestaciones-agosto-2025",
+    "url": "https://www.sepe.es/SiteSepe/contenidos/que_es_el_sepe/estadisticas/datos_avance/datos/datos_2025/AV_SISPE_2509.pdf",
+    "downloadUrl": "https://www.sepe.es/SiteSepe/contenidos/que_es_el_sepe/estadisticas/datos_avance/datos/datos_2025/AV_SISPE_2509.pdf",
+    "title": "Registros del SEPE, septiembre de 2025: prestaciones de agosto",
+    "organisation": "Servicio Público de Empleo Estatal",
+    "publishedAt": null,
+    "publicationDateBasis": "El PDF identifica septiembre de 2025; no se certifica el día de publicación ni la fecha de sus posibles revisiones",
+    "capturedAt": "2026-10-13T12:13:27.890Z",
+    "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/sepe-septiembre-2025.pdf",
+    "bytes": 2887190,
+    "sha256": "4e46d1229e061061779951617fdb0decb3058fd71f85f88df712e454551ec1c6",
+    "captureType": "bytes_originales",
+    "kind": "fuente_primaria"
+  }
+]

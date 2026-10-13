@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-11-v4",
-  "reviewedAt": "2026-10-11",
+  "revision": "2026-10-13-v5",
+  "reviewedAt": "2026-10-13",
   "reviewer": "Codex",
   "reviewMode": "same-author-second-pass",
   "independentReview": "pending",
@@ -935,7 +935,7 @@
     },
     {
       "commitmentId": "c-136",
-      "reviewedAt": "2026-10-10",
+      "reviewedAt": "2026-10-13",
       "components": [
         {
           "label": "Plan contra fraude",
@@ -953,17 +953,58 @@
           "criterion": "Separar liquidaciones, cobros firmes y estimación de fraude con metodología constante.",
           "stage": "outcome",
           "state": "unknown",
-          "finding": "No se ha incorporado una serie auditada de resultados.",
+          "finding": "Existe balance del organismo en otro componente; faltan verificación externa de cobros firmes y estimación de reducción del fraude.",
           "sourceIds": [],
           "id": "c-136-part-2"
+        },
+        {
+          "id": "c-136-part-3",
+          "label": "Resultados administrativos comunicados",
+          "criterion": "Desglosar el balance del emisor y comparar el mismo perímetro, sin equiparar minoraciones con cobros ni confundir ejercicios.",
+          "stage": "delivery",
+          "state": "reported",
+          "finding": "El informe AEAT de 2025 desglosa 22.742,6 millones y permite comparar 18.375,6 con 15.343,4 millones excluidos los extraordinarios. Es información del ejecutor; no una segunda familia independiente ni evidencia del resultado del plan 2026.",
+          "sourceIds": [
+            "aeat-resultados-2025"
+          ]
         }
       ],
-      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se ha incorporado una serie auditada de resultados.",
-      "refreshTrigger": "Nueva evidencia que resuelva: Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+      "challenge": "El informe del mismo organismo mejora el detalle respecto al plan, pero no prueba una reducción de la brecha fiscal. Las cifras de caja, minoraciones y deuda pendiente tienen perímetros distintos. Se mantiene pendiente el resultado global y la verificación externa.",
+      "refreshTrigger": "Auditoría externa y conciliación con cobros firmes, recursos y anulaciones; estimación comparable de la brecha fiscal y evaluación causal. La caída de deuda pendiente que el informe atribuye a anulaciones no se interpreta como cobro. No se ha evaluado el cierre de 2026.",
       "overlaps": [
         "c-29"
       ],
-      "correction": null
+      "correction": {
+        "kind": "new_evidence",
+        "reason": "Se incorpora el balance administrativo 2025 y su desglose; se mantiene «medidas acreditadas» porque no hay evaluación independiente de reducción del fraude.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Combatir fraude, evasión y elusión fiscal.",
+          "observed": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+          "practicalEffect": "Se publican prioridades de control. Las liquidaciones detectadas, ingresos cobrados y fraude estimado deben leerse por separado.",
+          "missingEvidence": "Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+          "temporalScope": "Plan Anual de Control Tributario 2026; no balance final del ejercicio.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5843"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "measures",
+          "expected": "Combatir fraude, evasión y elusión fiscal.",
+          "observed": "La AEAT comunica para 2025 resultados de control de 22.742,6 millones de euros: 11.100,9 de ingresos directos, 10.041,4 de devoluciones evitadas y 1.600,3 de autoliquidaciones extemporáneas. El total no equivale íntegramente a dinero cobrado ni a fraude estimado. La serie sin expedientes extraordinarios de pagos fraccionados pasa de 15.343,4 millones en 2024 a 18.375,6 en 2025 (+19,8 %). Es un balance del propio organismo, no una auditoría independiente ni el resultado del plan de 2026.",
+          "practicalEffect": "Hay resultados administrativos comunicados, además del plan aprobado. Las devoluciones evitadas no son ingresos de caja; las autoliquidaciones tardías no se atribuyen directamente a una actuación concreta. Un mayor importe detectado no demuestra por sí solo que haya menos fraude.",
+          "missingEvidence": "Auditoría externa y conciliación con cobros firmes, recursos y anulaciones; estimación comparable de la brecha fiscal y evaluación causal. La caída de deuda pendiente que el informe atribuye a anulaciones no se interpreta como cobro. No se ha evaluado el cierre de 2026.",
+          "temporalScope": "Balance anual 2025 publicado en julio de 2026, con comparación 2024 dentro del mismo informe; plan de control 2026 separado. No se utiliza todo 2023 como base exacta de la investidura de noviembre.",
+          "scope": "Actividad de control de la AEAT; no representa por sí sola todas las administraciones tributarias ni toda la economía sumergida de España.",
+          "evidenceSourceIds": [
+            "BOE-A-2026-5843",
+            "aeat-resultados-2025"
+          ],
+          "reviewedAt": "2026-10-13"
+        }
+      }
     },
     {
       "commitmentId": "c-137",
@@ -1070,7 +1111,7 @@
     },
     {
       "commitmentId": "c-143",
-      "reviewedAt": "2026-10-10",
+      "reviewedAt": "2026-10-13",
       "components": [
         {
           "label": "Reforma del subsidio",
@@ -1088,19 +1129,62 @@
           "criterion": "Medir cobertura, pagos y suficiencia frente al coste de vida.",
           "stage": "outcome",
           "state": "unknown",
-          "finding": "No hay evaluación de cobertura y suficiencia en esta ficha.",
+          "finding": "Se incorpora cobertura administrativa en otro componente; siguen sin evaluar pagos netos, acceso y suficiencia frente al coste de vida.",
           "sourceIds": [],
           "id": "c-143-part-2"
+        },
+        {
+          "id": "c-143-part-3",
+          "label": "Cobertura y gasto registrados",
+          "criterion": "Comparar el mismo mes, conservar denominador y provisionalidad, y separar gasto con cotizaciones de cuantía percibida.",
+          "stage": "outcome",
+          "state": "documented",
+          "finding": "La tabla provisional muestra +6,40 puntos de cobertura entre agosto de 2025 y 2026 y 1.896.142 beneficiarios en 2026. Documenta un indicador administrativo, no suficiencia, pago neto ni causalidad; ambos boletines proceden del SEPE.",
+          "sourceIds": [
+            "sepe-prestaciones-agosto-2026",
+            "sepe-prestaciones-agosto-2025"
+          ]
         }
       ],
-      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No hay evaluación de cobertura y suficiencia en esta ficha.",
-      "refreshTrigger": "Nueva evidencia que resuelva: Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+      "challenge": "Se comprobó la tabla original y sus notas: cobertura SISPE distinta de paro EPA; gasto incluye cotizaciones; CAE incluye compatibilidad con empleo. La comparación describe dos meses homólogos y no demuestra por sí sola el efecto de la reforma. Los dos informes no son fuentes independientes.",
+      "refreshTrigger": "Denegaciones y acceso de personas fuera del registro, pagos netos efectivamente recibidos, suficiencia frente al coste de vida y evaluación de la reforma por colectivo. Conciliar cambios o revisiones del indicador y construir una serie desde el inicio del mandato; no restar solicitudes y altas del mes para inferir denegaciones.",
       "overlaps": [
         "c-79",
         "c-122",
         "c-137"
       ],
-      "correction": null
+      "correction": {
+        "kind": "new_evidence",
+        "reason": "La ficha pasa de norma sin resultados a resultado parcial documentado: incorpora cobertura y gasto administrativo, manteniendo pendientes suficiencia, acceso y atribución causal.",
+        "before": {
+          "verdict": "measures",
+          "expected": "Mejorar la protección por desempleo.",
+          "observed": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+          "practicalEffect": "Las personas elegibles tienen un régimen de subsidio reformado; cuantía y duración dependen de su situación y del tiempo de percepción.",
+          "missingEvidence": "Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+          "temporalScope": "Reforma de 2024; no se extiende el resultado a todas las medidas o pagos de 2026.",
+          "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+          "evidenceSourceIds": [
+            "BOE-A-2024-10235"
+          ],
+          "reviewedAt": "2026-10-10"
+        },
+        "after": {
+          "verdict": "partial",
+          "expected": "Mejorar la protección por desempleo.",
+          "observed": "La estadística provisional del SEPE para agosto de 2026 registra 1.896.142 beneficiarios y cobertura del 87,12 %, frente a 1.835.090 y 80,72 % en agosto de 2025: +6,40 puntos de cobertura. El gasto devengado en agosto es 2.242,13 millones de euros, incluidas cotizaciones, y se contabiliza en septiembre. La cuantía media bruta contributiva es 1.008,2 euros; no se confunde con el gasto medio de 1.203,1 euros que incluye cotizaciones. Es un resultado parcial del sistema, no una evaluación causal de la reforma de subsidios.",
+          "practicalEffect": "Aumenta la cobertura en el indicador administrativo para esos dos meses. Su denominador es paro registrado SISPE con experiencia laboral más beneficiarios del subsidio agrario: no todos los parados de la EPA. Incluye beneficiarios del Complemento de Apoyo al Empleo. No permite afirmar que el 87,12 % de todas las personas desempleadas cobre una ayuda ni que esta baste para vivir.",
+          "missingEvidence": "Denegaciones y acceso de personas fuera del registro, pagos netos efectivamente recibidos, suficiencia frente al coste de vida y evaluación de la reforma por colectivo. Conciliar cambios o revisiones del indicador y construir una serie desde el inicio del mandato; no restar solicitudes y altas del mes para inferir denegaciones.",
+          "temporalScope": "Agosto de 2025 y agosto de 2026, datos provisionales del boletín de septiembre de 2026 publicado el 2 de octubre. El PDF de septiembre de 2025 recuperado hoy coincide para agosto de 2025; no se certifica que conserve la versión de su primera publicación. No son prestaciones de septiembre ni un balance completo desde noviembre de 2023.",
+          "scope": "España; registros administrativos del SEPE, niveles contributivo y asistencial con las inclusiones y exclusiones de cada indicador. No equivale a toda la población desempleada EPA.",
+          "evidenceSourceIds": [
+            "BOE-A-2024-10235",
+            "sepe-prestaciones-agosto-2026",
+            "sepe-prestaciones-agosto-2025"
+          ],
+          "reviewedAt": "2026-10-13"
+        }
+      }
     },
     {
       "commitmentId": "c-160",

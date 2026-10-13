@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "mandateId": "es-2023",
-  "cutoffDate": "2026-10-11",
+  "cutoffDate": "2026-10-13",
   "governmentCutoffDate": "2026-06-30",
   "selection": {
     "description": "Selección editorial no representativa de 46 compromisos del inventario Cumpliendo julio de 2026. Incluye contraste normativo, parlamentario y evaluaciones institucionales; no calcula un porcentaje global de cumplimiento.",
     "totalAvailable": 203,
     "totalImported": 46,
     "reviewedCount": 46,
-    "reviewScope": "Revisión documental de 46 compromisos al 11 de octubre de 2026, con evidencia, criterios y límites. Los 203 registros oficiales están importados; 157 siguen pendientes de revisión.",
+    "reviewScope": "46 compromisos revisados entre el 10 y el 13 de octubre de 2026. Esta actualización contrasta resultados de fraude fiscal y protección por desempleo; las otras fichas conservan su fecha. Los 203 registros oficiales están importados y 157 siguen pendientes de primera revisión.",
     "attribution": "Origen de los datos: sitio web de lamoncloa.gob.es. Ministerio de la Presidencia.",
     "sourcePublicationDate": "2026-07-28",
     "importedAt": "2026-10-07T10:16:11.777Z",
@@ -1020,6 +1020,51 @@
       "bytes": 15060,
       "kind": "norma",
       "captureType": "bytes_originales"
+    },
+    {
+      "id": "aeat-resultados-2025",
+      "url": "https://www3.agenciatributaria.gob.es/static_files/Sede/Actualidad/Notas_prensa/2026/Presentacion_Resultados_AEAT_2025.pdf",
+      "downloadUrl": "https://www3.agenciatributaria.gob.es/static_files/Sede/Actualidad/Notas_prensa/2026/Presentacion_Resultados_AEAT_2025.pdf",
+      "title": "Principales resultados AEAT 2025",
+      "organisation": "Agencia Estatal de Administración Tributaria",
+      "publishedAt": "2026-07-02",
+      "publicationDateBasis": "Fecha de la página oficial que publica el informe; el PDF identifica mes y ejercicio",
+      "capturedAt": "2026-10-13T12:12:07.930Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/aeat-resultados-2025.pdf",
+      "bytes": 493492,
+      "sha256": "bd1108a144a5a17da13a407636ceaf1e5094240b10ca387ea6da64b1b7fbaa0c",
+      "captureType": "bytes_originales",
+      "kind": "declaracion_gobierno"
+    },
+    {
+      "id": "sepe-prestaciones-agosto-2026",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Documents/2026/021026-paro-registrado-septiembre-9.pdf",
+      "downloadUrl": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Documents/2026/021026-paro-registrado-septiembre-9.pdf",
+      "title": "Registros del SEPE, septiembre de 2026: prestaciones de agosto",
+      "organisation": "Servicio Público de Empleo Estatal; copia publicada por La Moncloa",
+      "publishedAt": "2026-10-02",
+      "publicationDateBasis": "Fecha de la página oficial que publica el informe; el PDF identifica mes y ejercicio",
+      "capturedAt": "2026-10-13T12:12:14.358Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/sepe-septiembre-2026.pdf",
+      "bytes": 2947611,
+      "sha256": "7c3950d0c6b0b5d2c6e762a51cff8852f59ea6d2ef3bd82038bcc00537b2cf2b",
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
+    },
+    {
+      "id": "sepe-prestaciones-agosto-2025",
+      "url": "https://www.sepe.es/SiteSepe/contenidos/que_es_el_sepe/estadisticas/datos_avance/datos/datos_2025/AV_SISPE_2509.pdf",
+      "downloadUrl": "https://www.sepe.es/SiteSepe/contenidos/que_es_el_sepe/estadisticas/datos_avance/datos/datos_2025/AV_SISPE_2509.pdf",
+      "title": "Registros del SEPE, septiembre de 2025: prestaciones de agosto",
+      "organisation": "Servicio Público de Empleo Estatal",
+      "publishedAt": null,
+      "publicationDateBasis": "El PDF identifica septiembre de 2025; no se certifica el día de publicación ni la fecha de sus posibles revisiones",
+      "capturedAt": "2026-10-13T12:13:27.890Z",
+      "snapshotPath": "data/mandate/evidence/contrast-2026-10-13/sepe-septiembre-2025.pdf",
+      "bytes": 2887190,
+      "sha256": "4e46d1229e061061779951617fdb0decb3058fd71f85f88df712e454551ec1c6",
+      "captureType": "bytes_originales",
+      "kind": "fuente_primaria"
     }
   ],
   "commitments": [
@@ -3421,43 +3466,80 @@
         "logicalDataRecord": 136
       },
       "review": {
-        "status": "actuacion_documentada",
+        "status": "contraste_parcial",
         "criterion": "Combatir fraude, evasión y elusión fiscal. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
-        "conclusion": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+        "conclusion": "La AEAT comunica para 2025 resultados de control de 22.742,6 millones de euros: 11.100,9 de ingresos directos, 10.041,4 de devoluciones evitadas y 1.600,3 de autoliquidaciones extemporáneas. El total no equivale íntegramente a dinero cobrado ni a fraude estimado. La serie sin expedientes extraordinarios de pagos fraccionados pasa de 15.343,4 millones en 2024 a 18.375,6 en 2025 (+19,8 %). Es un balance del propio organismo, no una auditoría independiente ni el resultado del plan de 2026.",
         "evidence": [
           {
             "sourceId": "BOE-A-2026-5843",
             "locator": "Anexo, líneas de información, prevención, investigación y control",
             "paraphrase": "Planifica actuaciones; su aprobación no constituye un resultado de recaudación.",
             "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "aeat-resultados-2025",
+            "locator": "Páginas PDF e impresas 4–5: desglose y extraordinarios; 36–37: deuda pendiente y anulaciones",
+            "paraphrase": "Resultados propios de la AEAT: ingresos directos, devoluciones evitadas y autoliquidaciones tardías separados. El ajuste homogéneo excluye los extraordinarios de pagos fraccionados; no convierte todas las magnitudes en cobros firmes ni mide el fraude total.",
+            "relation": "declaracion_de_actuacion"
           }
         ],
-        "asOf": "2026-10-10",
+        "asOf": "2026-10-13",
         "history": [
           {
             "asOf": "2026-10-07",
             "status": "sin_verificar",
             "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
             "evidence": []
+          },
+          {
+            "status": "actuacion_documentada",
+            "criterion": "Combatir fraude, evasión y elusión fiscal. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+            "conclusion": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2026-5843",
+                "locator": "Anexo, líneas de información, prevención, investigación y control",
+                "paraphrase": "Planifica actuaciones; su aprobación no constituye un resultado de recaudación.",
+                "relation": "actuacion_normativa"
+              }
+            ],
+            "asOf": "2026-10-10"
           }
         ]
       },
       "assessment": {
         "verdict": "measures",
         "expected": "Combatir fraude, evasión y elusión fiscal.",
-        "observed": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
-        "practicalEffect": "Se publican prioridades de control. Las liquidaciones detectadas, ingresos cobrados y fraude estimado deben leerse por separado.",
-        "missingEvidence": "Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
-        "temporalScope": "Plan Anual de Control Tributario 2026; no balance final del ejercicio.",
-        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "observed": "La AEAT comunica para 2025 resultados de control de 22.742,6 millones de euros: 11.100,9 de ingresos directos, 10.041,4 de devoluciones evitadas y 1.600,3 de autoliquidaciones extemporáneas. El total no equivale íntegramente a dinero cobrado ni a fraude estimado. La serie sin expedientes extraordinarios de pagos fraccionados pasa de 15.343,4 millones en 2024 a 18.375,6 en 2025 (+19,8 %). Es un balance del propio organismo, no una auditoría independiente ni el resultado del plan de 2026.",
+        "practicalEffect": "Hay resultados administrativos comunicados, además del plan aprobado. Las devoluciones evitadas no son ingresos de caja; las autoliquidaciones tardías no se atribuyen directamente a una actuación concreta. Un mayor importe detectado no demuestra por sí solo que haya menos fraude.",
+        "missingEvidence": "Auditoría externa y conciliación con cobros firmes, recursos y anulaciones; estimación comparable de la brecha fiscal y evaluación causal. La caída de deuda pendiente que el informe atribuye a anulaciones no se interpreta como cobro. No se ha evaluado el cierre de 2026.",
+        "temporalScope": "Balance anual 2025 publicado en julio de 2026, con comparación 2024 dentro del mismo informe; plan de control 2026 separado. No se utiliza todo 2023 como base exacta de la investidura de noviembre.",
+        "scope": "Actividad de control de la AEAT; no representa por sí sola todas las administraciones tributarias ni toda la economía sumergida de España.",
         "evidenceSourceIds": [
-          "BOE-A-2026-5843"
+          "BOE-A-2026-5843",
+          "aeat-resultados-2025"
         ],
-        "reviewedAt": "2026-10-10"
+        "reviewedAt": "2026-10-13"
       },
       "assessmentHistory": [
         {
           "revision": "2026-10-10-v1",
+          "assessment": {
+            "verdict": "measures",
+            "expected": "Combatir fraude, evasión y elusión fiscal.",
+            "observed": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+            "practicalEffect": "Se publican prioridades de control. Las liquidaciones detectadas, ingresos cobrados y fraude estimado deben leerse por separado.",
+            "missingEvidence": "Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+            "temporalScope": "Plan Anual de Control Tributario 2026; no balance final del ejercicio.",
+            "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+            "evidenceSourceIds": [
+              "BOE-A-2026-5843"
+            ],
+            "reviewedAt": "2026-10-10"
+          }
+        },
+        {
+          "revision": "2026-10-11-v4",
           "assessment": {
             "verdict": "measures",
             "expected": "Combatir fraude, evasión y elusión fiscal.",
@@ -3788,18 +3870,30 @@
         "logicalDataRecord": 143
       },
       "review": {
-        "status": "actuacion_documentada",
+        "status": "contraste_parcial",
         "criterion": "Mejorar la protección por desempleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
-        "conclusion": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+        "conclusion": "La estadística provisional del SEPE para agosto de 2026 registra 1.896.142 beneficiarios y cobertura del 87,12 %, frente a 1.835.090 y 80,72 % en agosto de 2025: +6,40 puntos de cobertura. El gasto devengado en agosto es 2.242,13 millones de euros, incluidas cotizaciones, y se contabiliza en septiembre. La cuantía media bruta contributiva es 1.008,2 euros; no se confunde con el gasto medio de 1.203,1 euros que incluye cotizaciones. Es un resultado parcial del sistema, no una evaluación causal de la reforma de subsidios.",
         "evidence": [
           {
             "sourceId": "BOE-A-2024-10235",
             "locator": "Artículo segundo, apartado ocho",
             "paraphrase": "Reforma el subsidio y su cuantía escalonada; no ofrece aquí una evaluación de resultados.",
             "relation": "actuacion_normativa"
+          },
+          {
+            "sourceId": "sepe-prestaciones-agosto-2026",
+            "locator": "Páginas PDF 56–57 (impresas 67 y 69): fórmula de cobertura, síntesis agosto 2026, columnas 2025/2026 y notas",
+            "paraphrase": "Beneficiarios 1.835.090→1.896.142; cobertura 80,72→87,12 %, diferencia editorial +6,40 puntos. Datos provisionales; gastos incluyen cotizaciones. La prestación contributiva bruta de 1.008,2 euros difiere del gasto medio de 1.203,1. CAE incluido; denominador SISPE específico.",
+            "relation": "resultado_estadistico"
+          },
+          {
+            "sourceId": "sepe-prestaciones-agosto-2025",
+            "locator": "Páginas PDF 56–57 (impresas 67 y 69): agosto 2025, beneficiarios, cobertura y notas; captura actual",
+            "paraphrase": "La copia recuperada el 13/10/2026 contiene 1.835.090 beneficiarios y 80,72 % para agosto de 2025, coincidentes con la columna 2025 del boletín 2026. Misma familia SEPE; no es corroboración independiente ni prueba de una versión histórica inmutable.",
+            "relation": "resultado_estadistico"
           }
         ],
-        "asOf": "2026-10-10",
+        "asOf": "2026-10-13",
         "history": [
           {
             "asOf": "2026-10-07",
@@ -3813,25 +3907,57 @@
                 "relation": "actuacion_normativa"
               }
             ]
+          },
+          {
+            "status": "actuacion_documentada",
+            "criterion": "Mejorar la protección por desempleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+            "conclusion": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+            "evidence": [
+              {
+                "sourceId": "BOE-A-2024-10235",
+                "locator": "Artículo segundo, apartado ocho",
+                "paraphrase": "Reforma el subsidio y su cuantía escalonada; no ofrece aquí una evaluación de resultados.",
+                "relation": "actuacion_normativa"
+              }
+            ],
+            "asOf": "2026-10-10"
           }
         ]
       },
       "assessment": {
-        "verdict": "measures",
+        "verdict": "partial",
         "expected": "Mejorar la protección por desempleo.",
-        "observed": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
-        "practicalEffect": "Las personas elegibles tienen un régimen de subsidio reformado; cuantía y duración dependen de su situación y del tiempo de percepción.",
-        "missingEvidence": "Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
-        "temporalScope": "Reforma de 2024; no se extiende el resultado a todas las medidas o pagos de 2026.",
-        "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+        "observed": "La estadística provisional del SEPE para agosto de 2026 registra 1.896.142 beneficiarios y cobertura del 87,12 %, frente a 1.835.090 y 80,72 % en agosto de 2025: +6,40 puntos de cobertura. El gasto devengado en agosto es 2.242,13 millones de euros, incluidas cotizaciones, y se contabiliza en septiembre. La cuantía media bruta contributiva es 1.008,2 euros; no se confunde con el gasto medio de 1.203,1 euros que incluye cotizaciones. Es un resultado parcial del sistema, no una evaluación causal de la reforma de subsidios.",
+        "practicalEffect": "Aumenta la cobertura en el indicador administrativo para esos dos meses. Su denominador es paro registrado SISPE con experiencia laboral más beneficiarios del subsidio agrario: no todos los parados de la EPA. Incluye beneficiarios del Complemento de Apoyo al Empleo. No permite afirmar que el 87,12 % de todas las personas desempleadas cobre una ayuda ni que esta baste para vivir.",
+        "missingEvidence": "Denegaciones y acceso de personas fuera del registro, pagos netos efectivamente recibidos, suficiencia frente al coste de vida y evaluación de la reforma por colectivo. Conciliar cambios o revisiones del indicador y construir una serie desde el inicio del mandato; no restar solicitudes y altas del mes para inferir denegaciones.",
+        "temporalScope": "Agosto de 2025 y agosto de 2026, datos provisionales del boletín de septiembre de 2026 publicado el 2 de octubre. El PDF de septiembre de 2025 recuperado hoy coincide para agosto de 2025; no se certifica que conserve la versión de su primera publicación. No son prestaciones de septiembre ni un balance completo desde noviembre de 2023.",
+        "scope": "España; registros administrativos del SEPE, niveles contributivo y asistencial con las inclusiones y exclusiones de cada indicador. No equivale a toda la población desempleada EPA.",
         "evidenceSourceIds": [
-          "BOE-A-2024-10235"
+          "BOE-A-2024-10235",
+          "sepe-prestaciones-agosto-2026",
+          "sepe-prestaciones-agosto-2025"
         ],
-        "reviewedAt": "2026-10-10"
+        "reviewedAt": "2026-10-13"
       },
       "assessmentHistory": [
         {
           "revision": "2026-10-10-v1",
+          "assessment": {
+            "verdict": "measures",
+            "expected": "Mejorar la protección por desempleo.",
+            "observed": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+            "practicalEffect": "Las personas elegibles tienen un régimen de subsidio reformado; cuantía y duración dependen de su situación y del tiempo de percepción.",
+            "missingEvidence": "Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+            "temporalScope": "Reforma de 2024; no se extiende el resultado a todas las medidas o pagos de 2026.",
+            "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+            "evidenceSourceIds": [
+              "BOE-A-2024-10235"
+            ],
+            "reviewedAt": "2026-10-10"
+          }
+        },
+        {
+          "revision": "2026-10-11-v4",
           "assessment": {
             "verdict": "measures",
             "expected": "Mejorar la protección por desempleo.",

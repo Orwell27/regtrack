@@ -1,0 +1,151 @@
+[
+  {
+    "commitmentId": "c-136",
+    "assessment": {
+      "verdict": "measures",
+      "expected": "Combatir fraude, evasión y elusión fiscal.",
+      "observed": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+      "practicalEffect": "Se publican prioridades de control. Las liquidaciones detectadas, ingresos cobrados y fraude estimado deben leerse por separado.",
+      "missingEvidence": "Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+      "temporalScope": "Plan Anual de Control Tributario 2026; no balance final del ejercicio.",
+      "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+      "evidenceSourceIds": [
+        "BOE-A-2026-5843"
+      ],
+      "reviewedAt": "2026-10-10"
+    },
+    "review": {
+      "status": "actuacion_documentada",
+      "criterion": "Combatir fraude, evasión y elusión fiscal. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+      "conclusion": "Las directrices de control tributario de 2026 establecen actuaciones de información, prevención e investigación. Acreditan una planificación oficial, no cuánto fraude se ha evitado ni cuánto se ha cobrado definitivamente.",
+      "evidence": [
+        {
+          "sourceId": "BOE-A-2026-5843",
+          "locator": "Anexo, líneas de información, prevención, investigación y control",
+          "paraphrase": "Planifica actuaciones; su aprobación no constituye un resultado de recaudación.",
+          "relation": "actuacion_normativa"
+        }
+      ],
+      "asOf": "2026-10-10",
+      "history": [
+        {
+          "asOf": "2026-10-07",
+          "status": "sin_verificar",
+          "conclusion": "Se ha importado el compromiso y lo comunicado por el Gobierno. La revisión documental de su ejecución o resultado no se ha realizado en este piloto; este estado no significa incumplimiento.",
+          "evidence": []
+        }
+      ]
+    },
+    "audit": {
+      "commitmentId": "c-136",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Plan contra fraude",
+          "criterion": "Comprobar existencia y prioridades sin contarlas como cobros.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Directrices de control para 2026.",
+          "sourceIds": [
+            "BOE-A-2026-5843"
+          ],
+          "id": "c-136-part-1"
+        },
+        {
+          "label": "Resultados contra fraude",
+          "criterion": "Separar liquidaciones, cobros firmes y estimación de fraude con metodología constante.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No se ha incorporado una serie auditada de resultados.",
+          "sourceIds": [],
+          "id": "c-136-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No se ha incorporado una serie auditada de resultados.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Resultados ejecutados y cobros firmes por actuación, metodología de estimación del fraude y evolución comparable.",
+      "overlaps": [
+        "c-29"
+      ],
+      "correction": null
+    }
+  },
+  {
+    "commitmentId": "c-143",
+    "assessment": {
+      "verdict": "measures",
+      "expected": "Mejorar la protección por desempleo.",
+      "observed": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+      "practicalEffect": "Las personas elegibles tienen un régimen de subsidio reformado; cuantía y duración dependen de su situación y del tiempo de percepción.",
+      "missingEvidence": "Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+      "temporalScope": "Reforma de 2024; no se extiende el resultado a todas las medidas o pagos de 2026.",
+      "scope": "España; alcance concreto delimitado por las fuentes citadas.",
+      "evidenceSourceIds": [
+        "BOE-A-2024-10235"
+      ],
+      "reviewedAt": "2026-10-10"
+    },
+    "review": {
+      "status": "actuacion_documentada",
+      "criterion": "Mejorar la protección por desempleo. Se distinguen norma, ejecución y resultado, con el alcance temporal indicado.",
+      "conclusion": "El RDL 2/2024 reforma el nivel asistencial y establece cuantías escalonadas del subsidio. Se acredita un cambio en la protección legal; no su cobertura efectiva, suficiencia para vivir ni la inserción laboral atribuible.",
+      "evidence": [
+        {
+          "sourceId": "BOE-A-2024-10235",
+          "locator": "Artículo segundo, apartado ocho",
+          "paraphrase": "Reforma el subsidio y su cuantía escalonada; no ofrece aquí una evaluación de resultados.",
+          "relation": "actuacion_normativa"
+        }
+      ],
+      "asOf": "2026-10-10",
+      "history": [
+        {
+          "asOf": "2026-10-07",
+          "status": "actuacion_documentada",
+          "conclusion": "El RDL 2/2024 documenta una reforma del nivel asistencial por desempleo. Falta contrastar cobertura, acceso efectivo y suficiencia mediante datos de prestaciones; no se deduce que haya mejorado toda la protección ni que haya reducido el paro.",
+          "evidence": [
+            {
+              "sourceId": "BOE-A-2024-10235",
+              "locator": "Artículo segundo, apartado ocho, artículo 278 de la LGSS",
+              "paraphrase": "Fija la cuantía general del subsidio en el 95 % del IPREM durante 180 días, el 90 % durante los 180 siguientes y el 80 % después, con los requisitos y excepciones del régimen.",
+              "relation": "actuacion_normativa"
+            }
+          ]
+        }
+      ]
+    },
+    "audit": {
+      "commitmentId": "c-143",
+      "reviewedAt": "2026-10-10",
+      "components": [
+        {
+          "label": "Reforma del subsidio",
+          "criterion": "Identificar cuantías, elegibilidad y fechas aplicables.",
+          "stage": "rule",
+          "state": "documented",
+          "finding": "Reforma del nivel asistencial, no todo el desempleo.",
+          "sourceIds": [
+            "BOE-A-2024-10235"
+          ],
+          "id": "c-143-part-1"
+        },
+        {
+          "label": "Protección efectiva",
+          "criterion": "Medir cobertura, pagos y suficiencia frente al coste de vida.",
+          "stage": "outcome",
+          "state": "unknown",
+          "finding": "No hay evaluación de cobertura y suficiencia en esta ficha.",
+          "sourceIds": [],
+          "id": "c-143-part-2"
+        }
+      ],
+      "challenge": "Se contrastó el salto entre el hecho documentado y el resultado prometido: No hay evaluación de cobertura y suficiencia en esta ficha.",
+      "refreshTrigger": "Nueva evidencia que resuelva: Beneficiarios, denegaciones, pagos, tasa de cobertura y suficiencia frente al coste de vida, incluyendo medidas posteriores específicas.",
+      "overlaps": [
+        "c-79",
+        "c-122",
+        "c-137"
+      ],
+      "correction": null
+    }
+  }
+]
